@@ -98,7 +98,7 @@ request_review:
 start_build:
   stage: start_build
   extends:
-    - .yarn_install_dependent_job
+    - .node_docker_runner
   script:
     - echo "Starting builds..."
   allow_failure: true
@@ -107,19 +107,21 @@ start_build:
 build:
   stage: build
   extends:
-    - .node_docker_runner
-    - .yarn_docker_cache_pull_push
+    - .yarn_install_build_dependent_job
   script:
     - npx yarn build
   artifacts:
-    expire_in: 1 day
+    expire_in: 1 hour
     paths:
       - dist
 
 publish_alpha:
   stage: publish
   extends:
-    - .yarn_install_dependent_job
+    - .yarn_install_build_dependent_job
+  before_script:
+    - sed -i 's/dl-cdn.alpinelinux.org/repo.cdek.ru\/repository/g' /etc/apk/repositories
+    - apk add --no-cache curl jq git
   script:
     - echo "{\"skip\":{\"changelog\":true,\"commit\":true,\"tag\":true}}" > .versionrc
     - npx yarn standard-version --prerelease alpha --no-verify
@@ -149,7 +151,7 @@ publish_alpha:
     - <<: *needs_start_build
 
 ### Install stage dependent jobs config
-.yarn_install_dependent_job:
+.yarn_install_build_dependent_job:
   extends:
     - .node_docker_runner
     - .yarn_docker_cache_pull
