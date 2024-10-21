@@ -46,8 +46,9 @@ request_review:
   stage: review
   extends:
     - .enable_review_request
-    - .review_runner
+    - .alpine_docker_runner
   allow_failure: true
+  interruptible: true
   script:
     - |
       bash -c '
@@ -126,8 +127,9 @@ publish_alpha:
   script:
     - echo "{\"skip\":{\"changelog\":true,\"commit\":true,\"tag\":true}}" > .versionrc
     - npx yarn standard-version --prerelease alpha --no-verify
-    - npx yarn config set npmRegistryServer "https://${ARTIFACTORY_PUBLISH_REPO}"
-    - npx yarn config set npmAuthIdent $ARTIFACTORY_LOGIN:$ARTIFACTORY_PASS
+    - npx yarn config set npmAlwaysAuth true
+    - npx yarn config set npmPublishRegistry "https://${ARTIFACTORY_PUBLISH_REPO}"
+    - npx yarn config set npmAuthIdent "${ARTIFACTORY_LOGIN}:${ARTIFACTORY_PASS}"
     - npx yarn npm publish
     - |
       PACKAGE_VERSION=$(jq -r ".version" package.json)

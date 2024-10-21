@@ -5,7 +5,7 @@
 .yarn_docker_cache: &yarn_docker_cache
   key:
     files: 
-      - package-lock.json
+      - yarn.lock
     prefix: yarn-docker
   paths:
     - node_modules

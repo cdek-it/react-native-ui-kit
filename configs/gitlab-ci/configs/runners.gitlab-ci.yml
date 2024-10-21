@@ -8,7 +8,7 @@ variables:
   tags:
     - docker
 
-.review_runner:
+.alpine_docker_runner:
   image: $IMG_ALPINE
   tags:
     - docker
@@ -24,7 +24,3 @@ variables:
     - export no_proxy="${NO_PROXY}"
     - sed -i 's/dl-cdn.alpinelinux.org/repo.cdek.ru\/repository/g' /etc/apk/repositories
     - apk add --no-cache curl jq bash
-
-.build_report_runner:
-  tags:
-    - $MACOS_RUNNER_TAG
