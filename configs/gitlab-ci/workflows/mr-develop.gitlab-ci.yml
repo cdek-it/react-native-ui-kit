@@ -125,7 +125,7 @@ publish_alpha:
   script:
     - echo "{\"skip\":{\"changelog\":true,\"commit\":true,\"tag\":true}}" > .versionrc
     - npx yarn standard-version --prerelease alpha --no-verify
-    - npx yarn config set npmRegistryServer $ARTIFACTORY_PUBLISH_REPO
+    - npx yarn config set npmRegistryServer "https://${ARTIFACTORY_PUBLISH_REPO}"
     - npx yarn config set npmAuthIdent $ARTIFACTORY_LOGIN:$ARTIFACTORY_PASS
     - npx yarn npm publish
     - |
@@ -150,7 +150,6 @@ publish_alpha:
   needs:
     - <<: *needs_start_build
 
-### Install stage dependent jobs config
 .yarn_install_build_dependent_job:
   extends:
     - .node_docker_runner
@@ -159,4 +158,4 @@ publish_alpha:
     - job: yarn_install
       artifacts: false
       optional: false
-
+    - <<: *needs_start_build
