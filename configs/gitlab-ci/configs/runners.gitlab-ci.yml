@@ -10,6 +10,8 @@ variables:
 
 .review_runner:
   image: $IMG_ALPINE
+  tags:
+    - docker
   variables:
     HTTP_PROXY: "http://runner-proxy.cdek.ru:9000"
     NO_PROXY: "repo.cdek.ru"

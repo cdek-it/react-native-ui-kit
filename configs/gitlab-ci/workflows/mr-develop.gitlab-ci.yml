@@ -102,6 +102,7 @@ start_build:
   script:
     - echo "Starting builds..."
   allow_failure: true
+  interruptible: true
   when: manual
 
 build:
