@@ -1,0 +1,18 @@
+colors: true
+
+prepare-commit-msg:
+  commands:
+    commitzen:
+      interactive: true
+      run: LEFTHOOK=0 exec < /dev/tty && node_modules/.bin/cz --hook || true
+
+pre-commit:
+  parallel: true
+  commands:
+    eslint:
+      glob: "*.{ts,tsx}"
+      run: yarn eslint --fix {staged_files}
+      stage_fixed: true
+    type-check:
+      glob: "*.{ts,tsx}"
+      run: yarn tsc --noEmit

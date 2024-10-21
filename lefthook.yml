@@ -1,0 +1,2 @@
+extends:
+  - "./configs/lefthook/config.yml"

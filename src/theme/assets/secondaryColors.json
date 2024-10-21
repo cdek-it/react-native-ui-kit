@@ -1,0 +1,14 @@
+{
+  "primary-0": "#332d27",
+  "primary-900": "#643602",
+  "primary-800": "#894a03",
+  "primary-700": "#af5e04",
+  "primary-600": "#d57205",
+  "primary-500": "#fa8606",
+  "primary-400": "#fb9d35",
+  "primary-300": "#fcb465",
+  "primary-200": "#fdcb94",
+  "primary-100": "#fee2c3",
+  "primary-50": "#fff9f3",
+  "primary-alpha": "rgba(250, 134, 6, 0.1000)"
+}

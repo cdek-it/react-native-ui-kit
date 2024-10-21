@@ -1,0 +1,46 @@
+{
+  "Radius": {
+    "border-noround": 0,
+    "border-round": 7,
+    "border-round-xs": 1.75,
+    "border-round-sm": 3.5,
+    "border-round-md": 5.25,
+    "border-round-lg": 7,
+    "border-round-xl": 10.5,
+    "border-round-2xl": 14,
+    "border-round-3xl": 21,
+    "border-circle": 100
+  },
+  "Color": {
+    "Common": {
+      "border-transparent": "rgba(255, 255, 255, 0.0001)",
+      "border-primary": "#188700",
+      "surface-border": "#dbdada"
+    },
+    "Surface": {
+      "border-0": "#2f2f2f",
+      "border-50": "#fbfbfb",
+      "border-100": "#ebebea",
+      "border-200": "#dbdada",
+      "border-300": "#cbcaca",
+      "border-400": "#bbbab9",
+      "border-500": "#abaaa9",
+      "border-600": "#919190",
+      "border-700": "#787776",
+      "border-800": "#5e5e5d",
+      "border-900": "#444444"
+    },
+    "Service": {
+      "border-blue-400": "#49a2ef",
+      "border-green-400": "#68c170",
+      "border-orange-400": "#ffb330",
+      "border-red-400": "#e26e63",
+      "border-purple-400": "#ab77df"
+    }
+  },
+  "Width": {
+    "border-1": 1,
+    "border-2": 2,
+    "border-3": 3
+  }
+}

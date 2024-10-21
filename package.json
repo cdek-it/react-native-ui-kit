@@ -1,0 +1,42 @@
+{
+  "name": "react-native-prime-ui-kit",
+  "packageManager": "yarn@3.6.4",
+  "main": "./dist/index.js",
+  "engines": {
+    "node": "20"
+  },
+  "scripts": {
+    "build": "./scripts/build.js",
+    "lint": "eslint .",
+    "test": "jest",
+    "postinstall": "./scripts/postinstall.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@testing-library/react-native": "^12.7.2",
+    "@types/jest": "^29.5.13",
+    "@types/react": "~18.2.79",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.57.1",
+    "eslint-config-expo": "^7.1.2",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-formatter-gitlab": "^5.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "jest": "^29.7.0",
+    "jest-junit": "^16.0.0",
+    "lefthook": "^1.7.18",
+    "prettier": "^3.3.3",
+    "react": "18.2.0",
+    "react-native": "0.74.5",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.3.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

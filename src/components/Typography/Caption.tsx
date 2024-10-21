@@ -1,0 +1,36 @@
+import React from 'react'
+import { Text, type TextProps } from 'react-native'
+
+import { makeStyles } from '../../utils/makeStyles'
+
+export interface TitleProps extends TextProps {
+  color?: 'default' | 'secondary' | 'primary'
+  disabled?: boolean
+}
+
+export const Caption = ({ color = 'default', disabled, style, ...other }: TitleProps) => {
+  const styles = useStyles()
+
+  return (
+    <Text style={[styles.text, styles[color], disabled && styles.disabled, style]} {...other} />
+  )
+}
+
+const useStyles = makeStyles(({ theme }) => ({
+  text: {
+    fontFamily: 'Roboto',
+    fontSize: 12.25,
+  },
+  default: {
+    color: theme.General.textColor,
+  },
+  primary: {
+    color: theme.General.primaryColor,
+  },
+  secondary: {
+    color: theme.General.textSecondaryColor,
+  },
+  disabled: {
+    opacity: 0.6,
+  },
+}))
