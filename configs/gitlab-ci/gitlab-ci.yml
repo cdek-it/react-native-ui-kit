@@ -17,6 +17,7 @@ stages:
   - review
   - start_build
   - build
+  - publish
 
 variables:
   # Pipeline config

@@ -12,6 +12,7 @@ stages:
   - review
   - start_build
   - build
+  - publish
 
 variables:
   ENABLE_REVIEW_REQUEST: "yes"
@@ -97,8 +98,7 @@ request_review:
 start_build:
   stage: start_build
   extends:
-    - .node_docker_runner
-    - .enable_native_builds_manual
+    - .yarn_install_dependent_job
   script:
     - echo "Starting builds..."
   allow_failure: true
@@ -111,6 +111,30 @@ build:
     - .yarn_docker_cache_pull_push
   script:
     - npx yarn build
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - dist
+
+publish_alpha:
+  stage: publish
+  extends:
+    - .yarn_install_dependent_job
+  script:
+    - echo "{\"skip\":{\"changelog\":true,\"commit\":true,\"tag\":true}}" > .versionrc
+    - npx yarn standard-version --prerelease alpha --no-verify
+    - npx yarn config set npmRegistryServer $ARTIFACTORY_PUBLISH_REPO
+    - npx yarn config set npmAuthIdent $ARTIFACTORY_LOGIN:$ARTIFACTORY_PASS
+    - npx yarn npm publish
+    - |
+      PACKAGE_VERSION=$(jq -r ".version" package.json)
+      curl --request POST --header "PRIVATE-TOKEN: $GITLAB_TOKEN" \
+         --data-urlencode "Опубликована альфа версия пакета: ${PACKAGE_VERSION}. Вы можете установить её в проекте для тестирования функционала пакета." \
+           "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/merge_requests/${CI_MERGE_REQUEST_IID}/notes"
+  needs:
+    - job: build
+      artifacts: true
+      optional: false
 
 ## Reusable configs
 
@@ -123,3 +147,14 @@ build:
 .needs_only_start_build:
   needs:
     - <<: *needs_start_build
+
+### Install stage dependent jobs config
+.yarn_install_dependent_job:
+  extends:
+    - .node_docker_runner
+    - .yarn_docker_cache_pull
+  needs:
+    - job: yarn_install
+      artifacts: false
+      optional: false
+

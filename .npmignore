@@ -12,3 +12,7 @@ src
 node_modules
 yarn-error.log
 docs
+.eslintignore
+.gitlab-ci.yml
+.idea
+.versionrc

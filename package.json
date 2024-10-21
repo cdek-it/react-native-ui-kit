@@ -1,7 +1,8 @@
 {
-  "name": "react-native-prime-ui-kit",
+  "name": "@cdek/react-native-prime-ui-kit",
   "packageManager": "yarn@3.6.4",
   "main": "./dist/index.js",
+  "version": "0.0.1",
   "engines": {
     "node": "20"
   },
@@ -31,6 +32,7 @@
     "prettier": "^3.3.3",
     "react": "18.2.0",
     "react-native": "0.74.5",
+    "standard-version": "^9.5.0",
     "ts-node": "^10.9.2",
     "typescript": "~5.3.3"
   },

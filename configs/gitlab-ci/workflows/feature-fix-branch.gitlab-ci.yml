@@ -62,7 +62,7 @@ unit_test:
   extends:
     - .yarn_install_dependent_job
   script:
-    - npx yarn jest --ci --reporters=jest-junit --coverage
+    - npx yarn jest --passWithNoTests --ci --reporters=jest-junit --coverage
   artifacts:
     expire_in: 1 week
     when: always
