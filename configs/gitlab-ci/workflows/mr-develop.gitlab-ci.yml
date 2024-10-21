@@ -131,7 +131,7 @@ publish_alpha:
     - npx yarn config set npmPublishRegistry "https://${ARTIFACTORY_PUBLISH_REPO}"
     - npx yarn config set npmRegistryServer "https://${ARTIFACTORY_PUBLISH_REPO}"
     - npx yarn config set npmAuthIdent "${ARTIFACTORY_LOGIN}:${ARTIFACTORY_PASS}"
-    - npx yarn npm whoamid
+    - npx yarn npm whoami
     - npx yarn npm publish
     - |
       PACKAGE_VERSION=$(jq -r ".version" package.json)
