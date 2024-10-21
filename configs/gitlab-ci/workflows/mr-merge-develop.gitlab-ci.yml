@@ -17,8 +17,7 @@ variables:
   BUILD_CHAT_WEBHOOK: "CHANGE_ME"
 
 yarn_install:
-  stage: build
-  interruptible: true
+  stage: install
   extends:
     - .node_docker_runner
     - .yarn_docker_cache_pull_push
@@ -40,13 +39,16 @@ build:
   extends:
     - .node_docker_runner
     - .yarn_docker_cache_pull
-    - .needs_start_release
   script:
     - npx yarn build
   artifacts:
     expire_in: 1 hour
     paths:
       - dist
+  needs:
+    - job: yarn_install
+      artifacts: false
+      optional: false
 
 publish:
   stage: publish
@@ -82,11 +84,3 @@ publish:
     - job: build
       artifacts: true
       optional: false
-
-### Build start dependent job config
-.needs_start_release:
-  needs:
-    - job: start_release
-      artifacts: false
-      optional: false
-

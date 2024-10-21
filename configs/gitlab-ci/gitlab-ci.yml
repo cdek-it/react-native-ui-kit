@@ -6,6 +6,8 @@ include:
     rules:
       - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "develop"
   - local: /configs/gitlab-ci/workflows/mr-merge-develop.gitlab-ci.yml
+    rules:
+      - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "develop" && $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_STATE == "merged"
 
 default:
   timeout: 2h
