@@ -58,7 +58,8 @@ publish:
     - sed -i 's/dl-cdn.alpinelinux.org/repo.cdek.ru\/repository/g' /etc/apk/repositories
     - apk add --no-cache curl jq git
   script:
-#    - echo "{\"skip\":{\"changelog\":true,\"commit\":true,\"tag\":true}}" > .versionrc
+    - |
+      echo "{\"releaseCommitMessageFormat\":\"chore(release): {{currentTag}} [ci skip]\"}" > .versionrc
     - npx yarn standard-version --no-verify
     - npx yarn config set npmAlwaysAuth true
     - npx yarn config set npmPublishRegistry "https://${ARTIFACTORY_PUBLISH_REPO}"
@@ -69,7 +70,12 @@ publish:
     - |
       PACKAGE_NAME=$(jq -r ".name" package.json)
       PACKAGE_VERSION=$(jq -r ".version" package.json)
-      MESSAGE="Выпущена новая версия ${PACKAGE_NAME}"
+      git push --follow-tags origin v$PACKAGE_VERSION
+      RELEASE_NOTES=$(awk '/^## \[?'"$PACKAGE_VERSION"'\]?/{flag=1;next}/^## /{flag=0}flag' CHANGELOG.md)
+      curl --request POST --header "PRIVATE-TOKEN: $GITLAB_TOKEN" \
+      --data "name=v${PACKAGE_VERSION}&tag_name=v${PACKAGE_VERSION}&description=${RELEASE_NOTES}" \
+      "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/releases"
+      MESSAGE="Выпущена новая версия ${PACKAGE_NAME}\n[v${PACKAGE_VERSION}](${CI_PROJECT_URL}/-/releases/v${PACKAGE_VERSION})"
       echo $MESSAGE
 #      curl -X POST -H "Content-Type: application/json" -d "{\"text\": \"$MESSAGE\"}" "$BUILD_CHAT_WEBHOOK";
   needs:
