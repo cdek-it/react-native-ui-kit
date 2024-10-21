@@ -1,0 +1,86 @@
+include:
+  - local: /configs/gitlab-ci/configs/cache.gitlab-ci.yml
+  - local: /configs/gitlab-ci/configs/runners.gitlab-ci.yml
+  - local: /configs/gitlab-ci/configs/rules.gitlab-ci.yml
+
+workflow:
+  rules:
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "develop" && $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_STATE == "merged"
+
+stages:
+  - install
+  - build
+  - publish
+
+variables:
+  IMG_NODE: "node:18-alpine"
+  BUILD_CHAT_WEBHOOK: "CHANGE_ME"
+
+yarn_install:
+  stage: build
+  interruptible: true
+  extends:
+    - .node_docker_runner
+    - .yarn_docker_cache_pull_push
+  variables:
+    HTTP_PROXY: "http://runner-proxy.cdek.ru:9000"
+    NO_PROXY: "repo.cdek.ru"
+  before_script:
+    - export HTTPS_PROXY="${HTTP_PROXY}"
+    - export HTTP_PROXY="${HTTP_PROXY}"
+    - export http_proxy="${HTTP_PROXY}"
+    - export https_proxy="${HTTP_PROXY}"
+    - export all_proxy="${HTTP_PROXY}"
+    - export no_proxy="${NO_PROXY}"
+  script:
+    - npx yarn install --frozen-lockfile
+
+build:
+  stage: build
+  extends:
+    - .node_docker_runner
+    - .yarn_docker_cache_pull
+    - .needs_start_release
+  script:
+    - npx yarn build
+  artifacts:
+    expire_in: 1 hour
+    paths:
+      - dist
+
+publish:
+  stage: publish
+  extends:
+    - .node_docker_runner
+    - .yarn_docker_cache_pull
+    - .needs_start_release
+  before_script:
+    - sed -i 's/dl-cdn.alpinelinux.org/repo.cdek.ru\/repository/g' /etc/apk/repositories
+    - apk add --no-cache curl jq git
+  script:
+#    - echo "{\"skip\":{\"changelog\":true,\"commit\":true,\"tag\":true}}" > .versionrc
+    - npx yarn standard-version --no-verify
+    - npx yarn config set npmAlwaysAuth true
+    - npx yarn config set npmPublishRegistry "https://${ARTIFACTORY_PUBLISH_REPO}"
+    - npx yarn config set npmRegistryServer "https://${ARTIFACTORY_PUBLISH_REPO}"
+    - npx yarn config set npmAuthIdent "${ARTIFACTORY_LOGIN}:${ARTIFACTORY_PASS}"
+    - npx yarn npm whoami
+    - npx yarn npm publish
+    - |
+      PACKAGE_NAME=$(jq -r ".name" package.json)
+      PACKAGE_VERSION=$(jq -r ".version" package.json)
+      MESSAGE="Выпущена новая версия ${PACKAGE_NAME}"
+      echo $MESSAGE
+#      curl -X POST -H "Content-Type: application/json" -d "{\"text\": \"$MESSAGE\"}" "$BUILD_CHAT_WEBHOOK";
+  needs:
+    - job: build
+      artifacts: true
+      optional: false
+
+### Build start dependent job config
+.needs_start_release:
+  needs:
+    - job: start_release
+      artifacts: false
+      optional: false
+

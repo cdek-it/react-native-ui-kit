@@ -17,11 +17,8 @@ stages:
 variables:
   ENABLE_REVIEW_REQUEST: "yes"
   IMG_NODE: "node:18-alpine"
-  GOOGLE_SERVICES_PLIST_FILENAME: "Google-Service-Info.plist"
   REVIEWERS_LIST: "CHANGE_ME"
   REVIEW_CHAT_WEBHOOK: "CHANGE_ME"
-  BUILD_CHAT_WEBHOOK: "CHANGE_ME"
-  PROJECT_MAINTAINER: "CHANGE_ME"
 
 yarn_install:
   stage: install
