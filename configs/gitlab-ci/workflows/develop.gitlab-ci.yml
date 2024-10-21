@@ -5,9 +5,10 @@ include:
 
 workflow:
   rules:
-    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "develop" && $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_STATE == "merged"
+    - if: $CI_COMMIT_REF_NAME == "develop"
 
 stages:
+  - start_release
   - install
   - build
   - publish
@@ -15,6 +16,15 @@ stages:
 variables:
   IMG_NODE: "node:18-alpine"
   BUILD_CHAT_WEBHOOK: "CHANGE_ME"
+
+start_release:
+  stage: start_release
+  extends:
+    - .node_docker_runner
+  script:
+    - echo "Starting release..."
+  interruptible: true
+  when: manual
 
 yarn_install:
   stage: install
@@ -33,6 +43,10 @@ yarn_install:
     - export no_proxy="${NO_PROXY}"
   script:
     - npx yarn install --frozen-lockfile
+  needs:
+    - job: start_release
+      artifacts: false
+      optional: false
 
 build:
   stage: build
@@ -55,13 +69,23 @@ publish:
   extends:
     - .node_docker_runner
     - .yarn_docker_cache_pull
-    - .needs_start_release
+  variables:
+    HTTP_PROXY: "http://runner-proxy.cdek.ru:9000"
+    NO_PROXY: "repo.cdek.ru"
   before_script:
+    - export HTTPS_PROXY="${HTTP_PROXY}"
+    - export HTTP_PROXY="${HTTP_PROXY}"
+    - export http_proxy="${HTTP_PROXY}"
+    - export https_proxy="${HTTP_PROXY}"
+    - export all_proxy="${HTTP_PROXY}"
+    - export no_proxy="${NO_PROXY}"
     - sed -i 's/dl-cdn.alpinelinux.org/repo.cdek.ru\/repository/g' /etc/apk/repositories
     - apk add --no-cache curl jq git
   script:
     - |
       echo "{\"releaseCommitMessageFormat\":\"chore(release): {{currentTag}} [ci skip]\"}" > .versionrc
+    - git config user.email "gitlab@cdek.ru"
+    - git config user.name "React Native CI"
     - npx yarn standard-version --no-verify
     - npx yarn config set npmAlwaysAuth true
     - npx yarn config set npmPublishRegistry "https://${ARTIFACTORY_PUBLISH_REPO}"
@@ -69,17 +93,16 @@ publish:
     - npx yarn config set npmAuthIdent "${ARTIFACTORY_LOGIN}:${ARTIFACTORY_PASS}"
     - npx yarn npm whoami
     - npx yarn npm publish
+    - git push --tags -f https://$GITLAB_USER:$GITLAB_TOKEN@gitlab.cdek.ru/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME.git HEAD:$CI_COMMIT_REF_NAME
     - |
       PACKAGE_NAME=$(jq -r ".name" package.json)
       PACKAGE_VERSION=$(jq -r ".version" package.json)
-      git push --follow-tags origin v$PACKAGE_VERSION
-      RELEASE_NOTES=$(awk '/^## \[?'"$PACKAGE_VERSION"'\]?/{flag=1;next}/^## /{flag=0}flag' CHANGELOG.md)
+      RELEASE_NOTES=$(sed -n "/^### ${PACKAGE_VERSION}/,/^### [0-9]\+\.[0-9]\+\.[0-9]\+/ {/^### ${PACKAGE_VERSION}/d;/^### [0-9]\+\.[0-9]\+\.[0-9]\+/d;p;}" CHANGELOG.md)
       curl --request POST --header "PRIVATE-TOKEN: $GITLAB_TOKEN" \
-      --data "name=v${PACKAGE_VERSION}&tag_name=v${PACKAGE_VERSION}&description=${RELEASE_NOTES}" \
-      "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/releases"
+        --data "name=v${PACKAGE_VERSION}&tag_name=v${PACKAGE_VERSION}&description=${RELEASE_NOTES}" \
+        "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/releases"
       MESSAGE="Выпущена новая версия ${PACKAGE_NAME}\n[v${PACKAGE_VERSION}](${CI_PROJECT_URL}/-/releases/v${PACKAGE_VERSION})"
-      echo $MESSAGE
-#      curl -X POST -H "Content-Type: application/json" -d "{\"text\": \"$MESSAGE\"}" "$BUILD_CHAT_WEBHOOK";
+      curl -X POST -H "Content-Type: application/json" -d "{\"text\": \"$MESSAGE\"}" "$BUILD_CHAT_WEBHOOK";
   needs:
     - job: build
       artifacts: true

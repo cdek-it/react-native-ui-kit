@@ -5,14 +5,15 @@ include:
   - local: /configs/gitlab-ci/workflows/mr-develop.gitlab-ci.yml
     rules:
       - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "develop"
-  - local: /configs/gitlab-ci/workflows/mr-merge-develop.gitlab-ci.yml
+  - local: /configs/gitlab-ci/workflows/develop.gitlab-ci.yml
     rules:
-      - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "develop" && $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_STATE == "merged"
+      - if: $CI_COMMIT_REF_NAME == "develop"
 
 default:
   timeout: 2h
 
 stages:
+  - start_release
   - install
   - validate
   - test
