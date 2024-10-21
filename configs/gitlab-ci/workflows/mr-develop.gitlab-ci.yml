@@ -126,10 +126,12 @@ publish_alpha:
     - apk add --no-cache curl jq git
   script:
     - echo "{\"skip\":{\"changelog\":true,\"commit\":true,\"tag\":true}}" > .versionrc
-    - npx yarn standard-version --prerelease alpha --no-verify
+    - npx yarn standard-version --prerelease alpha-$CI_MERGE_REQUEST_IID --no-verify
     - npx yarn config set npmAlwaysAuth true
     - npx yarn config set npmPublishRegistry "https://${ARTIFACTORY_PUBLISH_REPO}"
+    - npx yarn config set npmRegistryServer "https://${ARTIFACTORY_PUBLISH_REPO}"
     - npx yarn config set npmAuthIdent "${ARTIFACTORY_LOGIN}:${ARTIFACTORY_PASS}"
+    - npx yarn npm whoamid
     - npx yarn npm publish
     - |
       PACKAGE_VERSION=$(jq -r ".version" package.json)
