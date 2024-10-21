@@ -1,0 +1,4 @@
+.enable_review_request:
+  rules:
+    - if: $ENABLE_REVIEW_REQUEST == "yes"
+      when: manual

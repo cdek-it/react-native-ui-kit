@@ -1,0 +1,125 @@
+include:
+  - local: /configs/gitlab-ci/configs/cache.gitlab-ci.yml
+  - local: /configs/gitlab-ci/configs/runners.gitlab-ci.yml
+  - local: /configs/gitlab-ci/configs/rules.gitlab-ci.yml
+
+workflow:
+  rules:
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "develop"
+
+stages:
+  - install
+  - review
+  - start_build
+  - build
+
+variables:
+  ENABLE_REVIEW_REQUEST: "yes"
+  IMG_NODE: "node:18-alpine"
+  GOOGLE_SERVICES_PLIST_FILENAME: "Google-Service-Info.plist"
+  REVIEWERS_LIST: "CHANGE_ME"
+  REVIEW_CHAT_WEBHOOK: "CHANGE_ME"
+  BUILD_CHAT_WEBHOOK: "CHANGE_ME"
+  PROJECT_MAINTAINER: "CHANGE_ME"
+
+yarn_install:
+  stage: install
+  interruptible: true
+  extends:
+    - .node_docker_runner
+    - .yarn_docker_cache_pull_push
+  variables:
+    HTTP_PROXY: "http://runner-proxy.cdek.ru:9000"
+    NO_PROXY: "repo.cdek.ru"
+  before_script:
+    - export HTTPS_PROXY="${HTTP_PROXY}"
+    - export HTTP_PROXY="${HTTP_PROXY}"
+    - export http_proxy="${HTTP_PROXY}"
+    - export https_proxy="${HTTP_PROXY}"
+    - export all_proxy="${HTTP_PROXY}"
+    - export no_proxy="${NO_PROXY}"
+  script:
+    - npx yarn install --frozen-lockfile
+
+request_review:
+  stage: review
+  extends:
+    - .enable_review_request
+    - .review_runner
+  allow_failure: true
+  script:
+    - |
+      bash -c '
+      AUTHOR=$(curl --header "PRIVATE-TOKEN: $GITLAB_TOKEN" --header "Content-Type: application/json" "$CI_API_V4_URL/projects/$CI_PROJECT_ID/merge_requests/$CI_MERGE_REQUEST_IID" | jq -r ".author.username");
+      REVIEWERS_ARRAY=(${REVIEWERS_LIST//,/ });
+      SELECTED_REVIEWER="";
+      WAS_PREVIOUSLY_SELECTED="no";
+      if [ -f selected_reviewer.json ]; then
+        SELECTED_REVIEWER=$(jq -r ".reviewer" selected_reviewer.json);
+        WAS_PREVIOUSLY_SELECTED="yes";
+      fi;
+      if [ -z "$SELECTED_REVIEWER" ]; then
+        SELECTED_REVIEWER=$(printf "%s\n" "${REVIEWERS_ARRAY[@]}" | shuf | grep -v "$AUTHOR" | head -n 1);
+        if [ -z "$SELECTED_REVIEWER" ]; then
+          echo "Не удалось выбрать ревьюера, все возможные кандидаты являются авторами.";
+          exit 1;
+        fi;
+        echo "{\"branch\":\"$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME\",\"reviewer\":\"$SELECTED_REVIEWER\"}" > selected_reviewer.json;
+      fi;
+      
+      REVIEWER_ID=$(curl --header "PRIVATE-TOKEN: $GITLAB_TOKEN" --header "Content-Type: application/json" "$CI_API_V4_URL/users?username=$SELECTED_REVIEWER" | jq -r ".[0].id");
+      
+      if [ -z "$REVIEWER_ID" ]; then
+        echo "Не удалось получить ID для ревьюера $SELECTED_REVIEWER.";
+        exit 1;
+      fi;
+
+      curl --request PUT --header "PRIVATE-TOKEN: $GITLAB_TOKEN" \
+        --header "Content-Type: application/json" \
+        --data "{\"reviewer_ids\": [$REVIEWER_ID]}" \
+        "$CI_API_V4_URL/projects/$CI_PROJECT_ID/merge_requests/$CI_MERGE_REQUEST_IID";
+    
+      MESSAGE=""
+      if [ "$WAS_PREVIOUSLY_SELECTED" = "no" ]; then
+        MESSAGE="MR [!${CI_MERGE_REQUEST_IID}](${CI_PROJECT_URL}/-/merge_requests/${CI_MERGE_REQUEST_IID}) от @${AUTHOR} (ветка: ${CI_MERGE_REQUEST_SOURCE_BRANCH_NAME}) готов на ревью.\nВыбран ревьюер: @${SELECTED_REVIEWER}.\nСсылка на MR: ${CI_PROJECT_URL}/-/merge_requests/${CI_MERGE_REQUEST_IID}";
+      fi;
+      if [ "$WAS_PREVIOUSLY_SELECTED" = "yes" ]; then
+        MESSAGE="@${AUTHOR} запросил повторное ревью от @${SELECTED_REVIEWER}.\nMR [!${CI_MERGE_REQUEST_IID}](${CI_PROJECT_URL}/-/merge_requests/${CI_MERGE_REQUEST_IID}) (ветка: ${CI_MERGE_REQUEST_SOURCE_BRANCH_NAME})\nСсылка на MR: ${CI_PROJECT_URL}/-/merge_requests/${CI_MERGE_REQUEST_IID}";
+      fi;
+  
+      curl -X POST -H "Content-Type: application/json" -d "{\"text\": \"$MESSAGE\"}" "$REVIEW_CHAT_WEBHOOK";
+      '
+  cache:
+    key: mr-$CI_PROJECT_ID-$CI_MERGE_REQUEST_IID
+    paths:
+      - selected_reviewer.json
+
+start_build:
+  stage: start_build
+  extends:
+    - .node_docker_runner
+    - .enable_native_builds_manual
+  script:
+    - echo "Starting builds..."
+  allow_failure: true
+  when: manual
+
+build:
+  stage: build
+  extends:
+    - .node_docker_runner
+    - .yarn_docker_cache_pull_push
+  script:
+    - npx yarn build
+
+## Reusable configs
+
+### Build start dependent job config
+.needs_start_build: &needs_start_build
+  job: start_build
+  artifacts: false
+  optional: false
+
+.needs_only_start_build:
+  needs:
+    - <<: *needs_start_build

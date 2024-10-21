@@ -1,0 +1,11 @@
+include:
+  - local: /configs/gitlab-ci/gitlab-ci.yml
+
+variables:
+  MACOS_RUNNER_TAG: "courier-mobile-runner-01"
+  ENABLE_REVIEW_REQUEST: "yes"
+  REVIEWERS_LIST: "i.sokolovskii,n.grevtsov,s.ivanov.05"
+  REVIEW_CHAT_WEBHOOK: ""
+  BUILD_CHAT_WEBHOOK: ""
+  PROJECT_MAINTAINER: "i.sokolovskii"
+  IMG_NODE: "node:20-alpine"

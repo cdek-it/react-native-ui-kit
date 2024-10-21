@@ -1,0 +1,40 @@
+include:
+  - local: /configs/gitlab-ci/workflows/feature-fix-branch.gitlab-ci.yml
+    rules:
+      - if: $CI_COMMIT_REF_NAME =~ /^feature\/|^fix\//
+      - if: $CI_COMMIT_REF_NAME == "develop"
+  - local: /configs/gitlab-ci/workflows/mr-develop.gitlab-ci.yml
+    rules:
+      - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "develop"
+
+default:
+  timeout: 2h
+
+stages:
+  - install
+  - validate
+  - test
+  - review
+  - start_build
+  - build
+
+variables:
+  # Pipeline config
+  MACOS_RUNNER_TAG: "CHANGE_ME"
+  CI: "true"
+  LC_ALL: "en_US.UTF-8"
+  LANG: "en_US.UTF-8"
+  GIT_STRATEGY: "clone"
+  IMG_NODE: "node:18-alpine"
+  ENABLE_REVIEW_REQUEST: "yes"
+  REVIEWERS_LIST: "CHANGE_ME"
+  REVIEW_CHAT_WEBHOOK: "CHANGE_ME"
+  BUILD_CHAT_WEBHOOK: "CHANGE_ME"
+  PROJECT_MAINTAINER: "CHANGE_ME"
+
+no_jobs:
+  stage: .pre
+  rules:
+    - when: never
+  script:
+    - echo "No jobs"

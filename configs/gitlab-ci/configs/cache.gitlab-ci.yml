@@ -1,0 +1,26 @@
+# Docker cache
+
+## Basic
+
+.yarn_docker_cache: &yarn_docker_cache
+  key:
+    files: 
+      - package-lock.json
+    prefix: yarn-docker
+  paths:
+    - node_modules
+    - .yarn/cache
+
+## Actual used cache configs
+
+.yarn_docker_cache_pull_push:
+  cache:
+    - <<: *yarn_docker_cache
+      fallback_keys: 
+        - yarn-docker
+      policy: pull-push
+
+.yarn_docker_cache_pull:
+  cache:
+    - <<: *yarn_docker_cache
+      policy: pull
