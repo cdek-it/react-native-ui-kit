@@ -9,8 +9,19 @@ variables:
     - docker
 
 .review_runner:
-  tags:
-    - $MACOS_RUNNER_TAG
+  image: $IMG_ALPINE
+  variables:
+    HTTP_PROXY: "http://runner-proxy.cdek.ru:9000"
+    NO_PROXY: "repo.cdek.ru"
+  before_script:
+    - export HTTPS_PROXY="${HTTP_PROXY}"
+    - export HTTP_PROXY="${HTTP_PROXY}"
+    - export http_proxy="${HTTP_PROXY}"
+    - export https_proxy="${HTTP_PROXY}"
+    - export all_proxy="${HTTP_PROXY}"
+    - export no_proxy="${NO_PROXY}"
+    - sed -i 's/dl-cdn.alpinelinux.org/repo.cdek.ru\/repository/g' /etc/apk/repositories
+    - apk add --no-cache curl jq bash
 
 .build_report_runner:
   tags:
