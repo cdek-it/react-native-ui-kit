@@ -8,7 +8,7 @@
 - [Доска DS в Redmine](https://project.cdek.ru/projects/innerdev)
 - [Прогресс разработки DS](https://cloud.cdek.ru/s/aokcGTsCAoEHiCg)
 - [Подключение токенов DS](https://axiomatic-lock-3b2.notion.site/2e49f2b4e58e46ebab98ea8f844bcfa9)
-- [Confluense DS](https://confluence.cdek.ru/pages/viewpage.action?pageId=122762206)
+- [Confluense DS](https://confluence.cdek.ru/display/development/Prime+Design+System)
 - [Чат в Mattermost](https://talk.cdek.ru/cdek/channels/ds-react-native)
 
 ### Макеты
