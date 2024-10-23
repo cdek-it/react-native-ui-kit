@@ -14,9 +14,6 @@ import {
 
 import { makeStyles } from '../../utils/makeStyles'
 
-/**
- * Базовые свойства компонента Аватар
- */
 interface AvatarBase {
   /**
    * Выбор размера компонента
@@ -25,56 +22,32 @@ interface AvatarBase {
   size?: 'xlarge' | 'large' | 'normal'
   /**
    * Выбор форм-фактора компонента
-   * @default 'circ'e
+   * @default 'circle'
    */
   shape?: 'square' | 'circle'
-  /**
-   * Дополнительная стилизация для контейнера компонента
-   */
+  /** Дополнительная стилизация для контейнера компонента */
   style?: ViewStyle
 }
 
-/**
- * Свойства компонента с лейблом внутри
- */
 interface LabelAvatar extends AvatarBase {
-  /**
-   * Тип контента внутри компонента
-   */
+  /** Тип контента внутри компонента */
   type: 'label'
-  /**
-   * Текст лейбла
-   */
+  /** Текст лейбла */
   children: string
-  /**
-   * Картинка
-   */
+  /** Картинка */
   source?: never
-  /**
-   * Иконка из набора Tabler
-   */
+  /** Иконка из набора Tabler */
   Icon?: never
 }
 
-/**
- * Свойства компонента с иконкой внутри
- */
 interface IconAvatar extends AvatarBase {
-  /**
-   * Тип контента внутри компонента
-   */
+  /** Тип контента внутри компонента */
   type: 'icon'
-  /**
-   * Текст лейбла
-   */
+  /** Текст лейбла */
   children?: never
-  /**
-   * Картинка
-   */
+  /** Картинка */
   source?: never
-  /**
-   * Иконка из набора Tabler
-   */
+  /** Иконка из набора Tabler */
   Icon: Icon
 }
 
@@ -82,50 +55,46 @@ interface IconAvatar extends AvatarBase {
  * Свойства компонента с картинкой внутри
  */
 interface ImageAvatar extends AvatarBase {
-  /**
-   * Тип контента внутри компонента
-   */
+  /** Тип контента внутри компонент */
   type: 'image'
-  /**
-   * Картинка
-   */
+  /** Картинка */
   source?: ImageSourcePropType
-  /**
-   * Текст лейбла
-   */
+  /** Текст лейбла */
   children?: never
-  /**
-   * Иконка из набора Tabler
-   */
+  /** Иконка из набора Tabler */
   Icon?: never
 }
 
-/**
- * Свойства компонента для интеграции бейджа
- */
 interface BadgeAvatar {
+  /** Компонент бейджа **/
   badge: ReactNode
+  /** Показывать бейдж или нет */
   showBadge?: boolean
 }
 
-/**
- * Свойства компонента без бейджа
- */
 interface NoBadgeAvatar {
+  /** Компонент бейджа **/
   badge?: never
+  /** Показывать бейдж или нет */
   showBadge?: never
 }
 
-/**
- * Свойства компонента Аватар
- */
 export type AvatarProps = (LabelAvatar | IconAvatar | ImageAvatar) & (BadgeAvatar | NoBadgeAvatar)
 
 /**
  * Компонент Avatar
+ * @param type - Тип контента внутри компонента
+ * @param size - Выбор размера компонента
+ * @param shape - Выбор форм-фактора компонента
+ * @param style - Дополнительная стилизация для контейнера компонента
+ * @param children - Текст лейбла
+ * @param source - Картинка
+ * @param Icon - Иконка из набора Tabler
+ * @param badge - Компонент бейджа
+ * @param showBadge - Показывать бейдж или нет
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4972&m=dev
  */
-export const Avatar = memo(
+export const Avatar = memo<AvatarProps>(
   ({
     type,
     size = 'normal',
@@ -136,7 +105,7 @@ export const Avatar = memo(
     Icon,
     badge,
     showBadge = true,
-  }: AvatarProps) => {
+  }) => {
     const styles = useStyles()
     const window = useWindowDimensions()
     const [badgeLayout, setBadgeLayout] = useState<LayoutRectangle>()

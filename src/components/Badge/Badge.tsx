@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { Text, View, type ViewStyle } from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
@@ -9,19 +9,21 @@ interface BadgeBase {
    * @default 'basic'
    */
   severity?: 'basic' | 'info' | 'success' | 'warning' | 'danger'
-  /**
-   * Дополнительная стилизация для контейнера компонента
-   */
+  /** Дополнительная стилизация для контейнера компонента */
   style?: ViewStyle
 }
 
 interface BadgeText extends BadgeBase {
+  /** Текст внутри бейджа **/
   children: string
+  /** Отображать бейдж в форме точки **/
   dot?: never
 }
 
 interface BadgeDot extends BadgeBase {
+  /** Отображать бейдж в форме точки **/
   dot: true
+  /** Текст внутри бейджа **/
   children?: never
 }
 
@@ -35,7 +37,7 @@ export type BadgeProps = BadgeText | BadgeDot
  * @param style - Дополнительная стилизация для контейнера компонента
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4871&m=dev
  */
-export const Badge = ({ children, dot, severity = 'basic', style }: BadgeProps) => {
+export const Badge = memo<BadgeProps>(({ children, dot, severity = 'basic', style }) => {
   const styles = useStyles()
 
   return (
@@ -47,7 +49,7 @@ export const Badge = ({ children, dot, severity = 'basic', style }: BadgeProps) 
       )}
     </View>
   )
-}
+})
 
 const useStyles = makeStyles(({ theme }) => ({
   container: {
