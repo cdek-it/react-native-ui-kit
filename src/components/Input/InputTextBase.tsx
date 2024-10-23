@@ -1,0 +1,251 @@
+import { IconLock, IconX } from '@tabler/icons-react-native'
+import React, {
+  memo,
+  type RefObject,
+  useCallback,
+  useEffect,
+  useImperativeHandle,
+  useMemo,
+  useRef,
+  useState,
+} from 'react'
+import {
+  TextInput,
+  View,
+  type TextInputProps,
+  type TextInputFocusEventData,
+  type NativeSyntheticEvent,
+  TouchableOpacity,
+  type ViewStyle,
+} from 'react-native'
+import Animated, {
+  LinearTransition,
+  useAnimatedStyle,
+  useSharedValue,
+} from 'react-native-reanimated'
+
+import { makeStyles } from '../../utils/makeStyles'
+
+/** @see TextInputProps */
+export interface InputTextBaseProps extends TextInputProps {
+  /**
+   * Управление отображения иконки очистки поля
+   * @default true
+   */
+  clearable?: boolean
+  /** Управление стилем контейнера поля ввода */
+  containerStyle?: ViewStyle
+  /** Управление доступностью поля */
+  disabled?: boolean
+  /** Ref для управления полем ввода */
+  inputRef?: RefObject<TextInput | null>
+  /** Управление состоянием компонента */
+  state?: 'default' | 'danger'
+}
+
+/**
+ * Базовое поле
+ * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5470&m=dev
+ * @see InputText
+ */
+export const InputTextBase = memo<InputTextBaseProps>(
+  ({
+    style,
+    state,
+    clearable = true,
+    inputRef: propsInputRef,
+    disabled,
+    containerStyle,
+    ...otherProps
+  }) => {
+    const styles = useStyles()
+    const inputRef = useRef<TextInput>(null)
+    const focusOutlineWidth = useSharedValue(0)
+    const dangerOutlineWidth = useSharedValue(0)
+    const [valueState, setValueState] = useState('')
+
+    const onFocus = useCallback(
+      (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
+        focusOutlineWidth.value = -styles.outlineWidth.borderWidth
+        otherProps.onFocus?.(e)
+      },
+      [focusOutlineWidth, otherProps, styles.outlineWidth.borderWidth]
+    )
+
+    const onBlur = useCallback(
+      (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
+        focusOutlineWidth.value = 0
+        otherProps.onFocus?.(e)
+      },
+      [focusOutlineWidth, otherProps]
+    )
+
+    const onChangeText = useCallback(
+      (nextValue: string) => {
+        otherProps.onChangeText?.(nextValue)
+        setValueState(nextValue)
+      },
+      [otherProps]
+    )
+
+    const clear = useCallback(() => {
+      inputRef.current?.clear()
+      onChangeText('')
+    }, [onChangeText])
+
+    const value = useMemo(() => otherProps.value ?? valueState, [otherProps.value, valueState])
+
+    const showClearButton = useMemo(() => clearable && !!value.length, [clearable, value.length])
+
+    const focusOutlineStyles = useAnimatedStyle(() => ({
+      top: focusOutlineWidth.value,
+      right: focusOutlineWidth.value,
+      bottom: focusOutlineWidth.value,
+      left: focusOutlineWidth.value,
+    }))
+
+    const dangerOutlineStyles = useAnimatedStyle(() => ({
+      top: dangerOutlineWidth.value,
+      right: dangerOutlineWidth.value,
+      bottom: dangerOutlineWidth.value,
+      left: dangerOutlineWidth.value,
+    }))
+
+    const outlineStyles = useMemo<ViewStyle>(
+      () => ({
+        borderRadius: containerStyle?.borderRadius ?? styles.container.borderRadius,
+        borderTopRightRadius: containerStyle?.borderTopRightRadius,
+        borderBottomRightRadius: containerStyle?.borderBottomRightRadius,
+        borderBottomLeftRadius: containerStyle?.borderBottomLeftRadius,
+        borderTopLeftRadius: containerStyle?.borderTopLeftRadius,
+      }),
+      [
+        containerStyle?.borderBottomLeftRadius,
+        containerStyle?.borderBottomRightRadius,
+        containerStyle?.borderRadius,
+        containerStyle?.borderTopLeftRadius,
+        containerStyle?.borderTopRightRadius,
+        styles.container.borderRadius,
+      ]
+    )
+
+    useEffect(() => {
+      dangerOutlineWidth.value = state === 'danger' ? -styles.outlineWidth.borderWidth : 0
+    }, [dangerOutlineWidth, state, styles.outlineWidth.borderWidth])
+
+    useImperativeHandle(propsInputRef, () => inputRef.current)
+
+    return (
+      <>
+        {!disabled && (
+          <>
+            <Animated.View
+              layout={LinearTransition.duration(100)}
+              style={[styles.outline, outlineStyles, styles.dangerOutline, dangerOutlineStyles]}
+            />
+            <Animated.View
+              layout={LinearTransition.duration(100)}
+              style={[styles.outline, outlineStyles, styles.focusOutline, focusOutlineStyles]}
+            />
+          </>
+        )}
+        <View
+          style={[
+            styles.container,
+            containerStyle,
+            state === 'danger' && styles.danger,
+            disabled && styles.disabled,
+          ]}
+        >
+          <TextInput
+            editable={!disabled}
+            placeholderTextColor={styles.placeholderTextColor.color}
+            ref={inputRef}
+            style={styles.input}
+            value={otherProps.value ?? value}
+            onBlur={onBlur}
+            onChangeText={onChangeText}
+            onFocus={onFocus}
+            {...otherProps}
+          />
+
+          {showClearButton && !disabled && (
+            <TouchableOpacity style={styles.rightContainer} onPress={clear}>
+              <IconX
+                height={styles.iconSize.height}
+                style={styles.rightIcon}
+                width={styles.iconSize.width}
+              />
+            </TouchableOpacity>
+          )}
+
+          {disabled && (
+            <View style={styles.rightContainer}>
+              <IconLock
+                height={styles.iconSize.height}
+                style={styles.rightIcon}
+                width={styles.iconSize.width}
+              />
+            </View>
+          )}
+        </View>
+      </>
+    )
+  }
+)
+
+const useStyles = makeStyles(({ theme }) => ({
+  container: {
+    flex: 1,
+    minHeight: 35,
+    flexDirection: 'row',
+    borderWidth: 1,
+    borderRadius: theme.General.borderRadius,
+    borderColor: theme.Form.InputText.inputBorderColor,
+    backgroundColor: theme.Form.InputText.inputBg,
+  },
+  danger: {
+    borderColor: theme.Form.InputText.inputErrorBorderColor,
+  },
+  disabled: {
+    opacity: 0.6,
+    borderColor: theme.Form.InputText.inputBorderColor,
+    backgroundColor: theme.Button.Disabled.disabledButtonBg,
+  },
+  input: {
+    flex: 1,
+    paddingVertical: theme.Form.InputText.inputPaddingTopBottom,
+    paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
+    borderRadius: theme.General.borderRadius,
+    fontFamily: 'Roboto',
+    fontSize: 14,
+    color: theme.Form.InputText.inputTextColor,
+    overflow: 'hidden',
+  },
+  placeholderTextColor: {
+    color: theme.Form.InputText.inputPlaceholderTextColor,
+  },
+  outline: {
+    position: 'absolute',
+  },
+  outlineWidth: {
+    borderWidth: theme.General.focusShadowWidth,
+  },
+  focusOutline: {
+    backgroundColor: theme.General.focusOutlineColor,
+  },
+  dangerOutline: {
+    backgroundColor: theme.General.focusOutlineErrorColor,
+  },
+  rightContainer: {
+    justifyContent: 'center',
+  },
+  rightIcon: {
+    marginHorizontal: theme.Form.InputText.inputPaddingLeftRight,
+    color: theme.Form.InputText.inputIconColor,
+  },
+  iconSize: {
+    width: 14,
+    height: 14,
+  },
+}))

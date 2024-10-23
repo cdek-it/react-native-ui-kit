@@ -5,15 +5,16 @@
 ## Installation
 ```shell
 yarn add --save-exact @cdek/react-native-prime-ui-kit
-yarn add react react-native @tabler/icons-react-native react-native-svg
+yarn add react react-native @tabler/icons-react-native react-native-svg react-native-reanimated
 ```
 
 ## Dependencies
 Для использования данной библиотеки необходимо:
-- react версии - 18.х.х
+- react версии - начиная с 18 major версии (от 18.0.0)
 - react-native - любой версии(оптимально - от 0.74)
-- @tabler/icons-react-native - версии 3.х.х 
-- react-native-svg начиная с 15 major версии(от 15.0.0)
+- @tabler/icons-react-native - начиная с 3 major версии(от 3.0.0)
+- react-native-svg - начиная с 15 major версии(от 15.0.0)
+- react-native-reanimated - начиная с 3 major версии(от 3.0.0) 
 
 ### Ссылки
 - [Доска в Gitlab](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/-/boards)
