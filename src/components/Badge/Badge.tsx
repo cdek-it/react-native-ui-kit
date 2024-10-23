@@ -4,7 +4,14 @@ import { Text, View, type ViewStyle } from 'react-native'
 import { makeStyles } from '../../utils/makeStyles'
 
 interface BadgeBase {
+  /**
+   * Выбор варианта стиля компонента
+   * @default 'basic'
+   */
   severity?: 'basic' | 'info' | 'success' | 'warning' | 'danger'
+  /**
+   * Дополнительная стилизация для контейнера компонента
+   */
   style?: ViewStyle
 }
 
@@ -20,6 +27,14 @@ interface BadgeDot extends BadgeBase {
 
 export type BadgeProps = BadgeText | BadgeDot
 
+/**
+ * Компонент Badge
+ * @param children - Текст внутри бейджа
+ * @param dot - Отображать бейдж в форме точки
+ * @param severiy - Выбор варианта стиля компонента
+ * @param style - Дополнительная стилизация для контейнера компонента
+ * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4871&m=dev
+ */
 export const Badge = ({ children, dot, severity = 'basic', style }: BadgeProps) => {
   const styles = useStyles()
 
