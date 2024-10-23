@@ -2,6 +2,18 @@
 
 Репозиторий UI kit на основе Prime Faces, Prime Flex для React Native
 
+## Installation
+```shell
+yarn add --save-exact @cdek/react-native-prime-ui-kit
+yarn add react react-native @tabler/icons-react-native
+```
+
+## Dependencies
+Для использования данной библиотеки необходимо:
+- react версии 18.х.х
+- react-native любой версии(оптимально - от 0.74)
+- @tabler/icons-react-native - версии 3.х.х 
+
 ### Ссылки
 - [Доска в Gitlab](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/-/boards)
 - [Задачи в Gtilab](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/-/issues)
@@ -16,3 +28,5 @@
 - [Figma Prime Flex Token](https://www.figma.com/design/OK44HgVRLUSTro0IAfD9zk/Tokens-PrimeFlex-(DS)?m=auto&t=MKC7Q8gjUB5eyePK-6)
 - [Figma Prime UI kit](https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?m=auto&t=MKC7Q8gjUB5eyePK-6)
 - [Figma Tabler Icons](https://www.figma.com/design/KTRlyesFYTyaNvv1DXRBCN/Icons-Tabler-(DS)?m=auto&t=MKC7Q8gjUB5eyePK-6)
+
+

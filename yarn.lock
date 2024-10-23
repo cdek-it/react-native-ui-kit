@@ -1034,6 +1034,7 @@ __metadata:
   resolution: "@cdek/react-native-prime-ui-kit@workspace:."
   dependencies:
     "@babel/core": ^7.20.0
+    "@tabler/icons-react-native": ^3.19.0
     "@testing-library/react-native": ^12.7.2
     "@types/jest": ^29.5.13
     "@types/react": ~18.2.79
@@ -1055,6 +1056,10 @@ __metadata:
     standard-version: ^9.5.0
     ts-node: ^10.9.2
     typescript: ~5.3.3
+  peerDependencies:
+    "@tabler/icons-react-native": 3.x
+    react: 18.x
+    react-native: "*"
   languageName: unknown
   linkType: soft
 
@@ -2074,6 +2079,24 @@ __metadata:
   dependencies:
     "@sinonjs/commons": ^3.0.0
   checksum: 614d30cb4d5201550c940945d44c9e0b6d64a888ff2cd5b357f95ad6721070d6b8839cd10e15b76bf5e14af0bcc1d8f9ec00d49a46318f1f669a4bec1d7f3148
+  languageName: node
+  linkType: hard
+
+"@tabler/icons-react-native@npm:^3.19.0":
+  version: 3.19.0
+  resolution: "@tabler/icons-react-native@npm:3.19.0"
+  dependencies:
+    "@tabler/icons": 3.19.0
+  peerDependencies:
+    react: ^16.5.1 || ^17.0.0 || ^18.0.0
+  checksum: c83218348e9d823662be47b43decd6135548398396d2e5bed75a887022a81d3000fa5e246463c91d982a715712734ad154e8a3585847ae5bdfa5dfd503cc59f0
+  languageName: node
+  linkType: hard
+
+"@tabler/icons@npm:3.19.0":
+  version: 3.19.0
+  resolution: "@tabler/icons@npm:3.19.0"
+  checksum: 68f4ead9c534e4da165f764108f5d52ea110813f02698d64335e926f98521139010c26b23f7ca7cb4baaf5e3d436b94263bc1902522258f2f6ac989d46d04cfd
   languageName: node
   linkType: hard
 

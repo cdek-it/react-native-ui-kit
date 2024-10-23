@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@tabler/icons-react-native": "^3.19.0",
     "@testing-library/react-native": "^12.7.2",
     "@types/jest": "^29.5.13",
     "@types/react": "~18.2.79",
@@ -35,6 +36,11 @@
     "standard-version": "^9.5.0",
     "ts-node": "^10.9.2",
     "typescript": "~5.3.3"
+  },
+  "peerDependencies": {
+    "@tabler/icons-react-native": "3.x",
+    "react": "18.x",
+    "react-native": "*"
   },
   "config": {
     "commitizen": {
