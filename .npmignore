@@ -34,3 +34,4 @@ splash.png
 *.zip
 fastlane
 CONTRIBUTING.md
+!**/index.js
