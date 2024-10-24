@@ -25,6 +25,7 @@ Gemfile
 Gemfile.lock
 tsconfig.build.json
 .expo
+scripts
 .storybook
 app.config.js
 *.apk

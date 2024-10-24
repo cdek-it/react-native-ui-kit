@@ -9,7 +9,6 @@
     "build": "node ./scripts/build.js",
     "lint": "eslint .",
     "test": "jest",
-    "postinstall": "node ./scripts/postinstall.js",
     "start": "expo start --dev-client",
     "android": "expo run:android",
     "ios": "expo run:ios",
