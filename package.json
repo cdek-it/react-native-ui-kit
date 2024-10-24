@@ -6,10 +6,10 @@
     "node": "20"
   },
   "scripts": {
-    "build": "./scripts/build.js",
+    "build": "node ./scripts/build.js",
     "lint": "eslint .",
     "test": "jest",
-    "postinstall": "./scripts/postinstall.js",
+    "postinstall": "node ./scripts/postinstall.js",
     "start": "expo start --dev-client",
     "android": "expo run:android",
     "ios": "expo run:ios",

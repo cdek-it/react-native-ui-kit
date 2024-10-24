@@ -1,4 +1,4 @@
-.yarnrc
+.yarnrc.yml
 .eslintrc.js
 .prettierrc
 .gitignore
@@ -27,3 +27,9 @@ tsconfig.build.json
 .expo
 .storybook
 app.config.js
+*.apk
+icon.png
+splash.png
+*.zip
+fastlane
+CONTRIBUTING.md
