@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "CDEK UI",
+    "slug": "cdek-uikit",
+    "version": "1.0.0",
+    "android": {
+      "package": "ru.cdek.superapp.sandbox"
+    },
+    "ios": {
+      "bundleIdentifier": "ru.cdek.superapp.sandbox",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    }
+  }
+}

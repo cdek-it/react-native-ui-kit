@@ -24,8 +24,8 @@
     "allowJs": true,
     "checkJs": true,
     "jsx": "react-native",
-    "resolveJsonModule": true,
-    "outDir": "dist"
+    "resolveJsonModule": true
   },
-  "exclude": ["artifacts", "scripts", "configs", "dist"],
+  "exclude": ["artifacts", "scripts", "configs", "dist", "metro.config.js", "babel.config.js"],
+  "extends": "expo/tsconfig.base"
 }

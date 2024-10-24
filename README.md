@@ -16,6 +16,15 @@ yarn add react react-native @tabler/icons-react-native react-native-svg react-na
 - react-native-svg - начиная с 15 major версии(от 15.0.0)
 - react-native-reanimated - начиная с 3 major версии(от 3.0.0) 
 
+## Development
+
+`yarn install` - установка зависимостей\
+`yarn start` - запуск Metro Bundler для Storybook\
+`yarn ios` - запуск Storybook на iOS \
+`yarn android` - запуск Storybook на Android\
+
+Storybook проект создан с помощью Expo
+
 ### Ссылки
 - [Доска в Gitlab](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/-/boards)
 - [Задачи в Gtilab](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/-/issues)

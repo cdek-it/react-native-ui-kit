@@ -3,3 +3,4 @@ artifacts
 scripts
 dist
 configs
+metro.config.js

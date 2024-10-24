@@ -16,3 +16,14 @@ docs
 .gitlab-ci.yml
 .idea
 .versionrc
+cdek-uikit
+android
+ios
+index.js
+app.json
+babel.config.js
+metro.config.js
+Gemfile
+Gemfile.lock
+tsconfig.build.json
+.expo

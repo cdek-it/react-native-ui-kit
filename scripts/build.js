@@ -3,4 +3,4 @@
 const { exec } = require('child_process')
 
 exec('rm -rf dist')
-exec('npx yarn tsc -p tsconfig.json')
+exec('npx yarn tsc -p tsconfig.build.json')
