@@ -2,10 +2,15 @@ include:
   - local: /configs/gitlab-ci/gitlab-ci.yml
 
 variables:
-  MACOS_RUNNER_TAG: "courier-mobile-runner-01"
   ENABLE_REVIEW_REQUEST: "yes"
   REVIEWERS_LIST: "i.sokolovskii,n.grevtsov,s.ivanov.05"
   REVIEW_CHAT_WEBHOOK: "https://talk.cdek.ru/hooks/mycng55kcfrixnp8t4w1ej6tqa"
   BUILD_CHAT_WEBHOOK: "https://talk.cdek.ru/hooks/mycng55kcfrixnp8t4w1ej6tqa"
   PROJECT_MAINTAINER: "i.sokolovskii"
   IMG_NODE: "node:20-alpine"
+  MACOS_RUNNER_TAG: "office-ekb-xcode-03-shell"
+  ANDROID_PROJECT_DIR: "android"
+  ANDROID_BUILD_TYPE: "Release"
+  IOS_PROJECT_PATH: "ios"
+  IOS_PROJECT_WORKSPACE: "cdekuikit"
+  GYM_OUTPUT_NAME: "cdekui"

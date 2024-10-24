@@ -8,6 +8,21 @@ variables:
   tags:
     - docker
 
+.macos_runner:
+  tags:
+    - $MACOS_RUNNER_TAG
+  before_script:
+    - bundle config set deployment 'true'
+    - bundle config set frozen 'true'
+
+.android_runner:
+  tags:
+    - $MACOS_RUNNER_TAG
+  before_script:
+    - bundle config set deployment 'true'
+    - bundle config set frozen 'true'
+    - echo sdk.dir=/Users/$USER/Library/Android/sdk > $ANDROID_PROJECT_DIR/local.properties
+
 .alpine_docker_runner:
   image: $IMG_ALPINE
   tags:

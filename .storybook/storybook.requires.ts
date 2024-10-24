@@ -47,5 +47,4 @@ if (!global.view) {
   updateView(global.view, annotations, normalizedStories);
 }
 
-// @ts-ignore
 export const view = global.view;
