@@ -3,3 +3,7 @@ artifacts
 scripts
 dist
 configs
+metro.config.js
+babel.config.js
+app.config.js
+.storybook

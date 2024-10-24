@@ -1,0 +1,33 @@
+platform :android do
+  desc 'Build Android APK'
+  lane :build_apk do
+    gradle(task: "clean")
+    build_android_app(
+      task: "app:assemble",
+      build_type: ENV["ANDROID_BUILD_TYPE"]
+    )
+  end
+
+  desc 'Build Android AAB'
+  lane :build_aab do
+    gradle(task: "clean")
+    build_android_app(
+      task: "app:bundle",
+      build_type: ENV["ANDROID_BUILD_TYPE"]
+    )
+  end
+end
+
+platform :ios do
+  desc 'Build iOS'
+  lane :build do
+    match
+    build_ios_app
+  end
+
+  desc 'Upload iOS build to TestFlight'
+  lane :upload do
+    app_store_connect_api_key
+    pilot
+  end
+end

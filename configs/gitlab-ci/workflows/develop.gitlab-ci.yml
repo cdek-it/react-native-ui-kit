@@ -92,6 +92,8 @@ publish:
     - npx yarn config set npmRegistryServer "https://${ARTIFACTORY_PUBLISH_REPO}"
     - npx yarn config set npmAuthIdent "${ARTIFACTORY_LOGIN}:${ARTIFACTORY_PASS}"
     - npx yarn npm whoami
+    - npm pkg set 'main'='./dist/index.js'
+    - npm pkg set 'types'='./dist/index.d.ts'
     - npx yarn npm publish
     - git push --tags -f https://$GITLAB_USER:$GITLAB_TOKEN@gitlab.cdek.ru/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME.git HEAD:$CI_COMMIT_REF_NAME
     - |

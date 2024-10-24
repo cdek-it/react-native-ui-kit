@@ -1,4 +1,6 @@
 export * from './components'
 export { useChangeTheme } from './hooks/useChangeTheme'
-export { ThemeVariant } from './theme'
+export { ThemeContext, ThemeContextProvider, ThemeVariant } from './theme'
 export { makeStyles } from './utils/makeStyles'
+export { useTheme } from './hooks/useTheme'
+export { useFontConfig } from './hooks/useFontConfig'

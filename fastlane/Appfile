@@ -1,0 +1,10 @@
+# Android package identifier
+package_name "ru.cdek.uikit.prime"
+
+# iOS package identifier
+app_identifier "ru.cdek.uikit.prime"
+
+# AppStore Connect Team ID
+itc_team_id "119091977"
+# Developer Portal Team ID
+team_id "AY3Q95T9QG"

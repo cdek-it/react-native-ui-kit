@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "CDEK UI",
+    "slug": "cdek-uikit",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "android": {
+      "package": "ru.cdek.uikit.prime"
+    },
+    "ios": {
+      "bundleIdentifier": "ru.cdek.uikit.prime",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "splash": {
+      "image": "./splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#FFFFFF"
+    },
+    "icon": "./icon.png",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"]
+  }
+}

@@ -2,3 +2,23 @@
   rules:
     - if: $ENABLE_REVIEW_REQUEST == "yes"
       when: manual
+
+.enable_ios:
+  rules:
+    - if: $ENABLE_IOS == "yes"
+
+.enable_android:
+  rules:
+    - if: $ENABLE_ANDROID == "yes"
+
+.enable_native_builds_rule: &enable_native_builds_rule
+  if: $ENABLE_IOS == "yes" || $ENABLE_ANDROID == "yes"
+
+.enable_native_builds:
+  rules:
+    - <<: *enable_native_builds_rule
+
+.enable_native_builds_manual:
+  rules:
+    - <<: *enable_native_builds_rule
+      when: manual
