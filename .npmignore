@@ -16,7 +16,6 @@ docs
 .gitlab-ci.yml
 .idea
 .versionrc
-cdek-uikit
 android
 ios
 index.js
@@ -27,3 +26,5 @@ Gemfile
 Gemfile.lock
 tsconfig.build.json
 .expo
+.storybook
+app.config.js
