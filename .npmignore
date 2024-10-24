@@ -5,7 +5,6 @@
 .gitattributes
 .yarn
 lefthook.yml
-scripts
 configs
 tsconfig.json
 src
