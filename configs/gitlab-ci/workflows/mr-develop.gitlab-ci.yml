@@ -15,6 +15,8 @@ stages:
   - publish
 
 variables:
+  ENABLE_ANDROID: "yes"
+  ENABLE_IOS: "yes"
   ENABLE_REVIEW_REQUEST: "yes"
   IMG_NODE: "node:18-alpine"
   REVIEWERS_LIST: "CHANGE_ME"
