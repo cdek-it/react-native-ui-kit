@@ -235,6 +235,8 @@ publish_alpha:
     - npx yarn config set npmRegistryServer "https://${ARTIFACTORY_PUBLISH_REPO}"
     - npx yarn config set npmAuthIdent "${ARTIFACTORY_LOGIN}:${ARTIFACTORY_PASS}"
     - npx yarn npm whoami
+    - npm pkg set 'main'='./dist/index.js'
+    - npm pkg set 'types'='./dist/index.d.ts'
     - npx yarn npm publish
     - |
       PACKAGE_NAME=$(jq -r ".name" package.json)
