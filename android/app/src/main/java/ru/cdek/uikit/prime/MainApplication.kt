@@ -1,4 +1,4 @@
-package ru.cdek.superapp.sandbox
+package ru.cdek.uikit.prime
 
 import android.app.Application
 import android.content.res.Configuration

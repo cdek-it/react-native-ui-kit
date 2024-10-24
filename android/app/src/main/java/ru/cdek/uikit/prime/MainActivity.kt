@@ -1,4 +1,4 @@
-package ru.cdek.superapp.sandbox
+package ru.cdek.uikit.prime
 
 import android.os.Build
 import android.os.Bundle

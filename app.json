@@ -5,10 +5,10 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "android": {
-      "package": "ru.cdek.superapp.sandbox"
+      "package": "ru.cdek.uikit.prime"
     },
     "ios": {
-      "bundleIdentifier": "ru.cdek.superapp.sandbox",
+      "bundleIdentifier": "ru.cdek.uikit.prime",
       "config": {
         "usesNonExemptEncryption": false
       }

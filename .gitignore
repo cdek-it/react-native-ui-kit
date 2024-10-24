@@ -50,3 +50,9 @@ web-build/
 
 # typescript
 *.tsbuildinfo
+
+# Fastlane
+fastlane
+!configs/fastlane
+!fastlane/Appfile
+!fastlane/Fastfile
