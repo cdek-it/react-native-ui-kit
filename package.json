@@ -6,7 +6,7 @@
     "node": "20"
   },
   "scripts": {
-    "build": "node ./scripts/build.js",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
     "lint": "eslint .",
     "test": "jest",
     "start": "expo start --dev-client",
