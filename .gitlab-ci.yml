@@ -16,3 +16,4 @@ variables:
   IOS_PROJECT_PATH: "ios"
   IOS_PROJECT_WORKSPACE: "cdekuikit"
   GYM_OUTPUT_NAME: "cdekui"
+  GRADLE_HEAP_SIZE_SETTINGS: "4096m"
