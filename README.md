@@ -8,6 +8,39 @@ yarn add --save-exact @cdek/react-native-prime-ui-kit
 yarn add react react-native @tabler/icons-react-native react-native-svg react-native-reanimated
 ```
 
+## Fonts
+С данным UI kit поставляется шрифт Roboto. Он расположен по пути assets/fonts/Roboto\
+Вам необходимо подключить шрифт в проекте в котором используется UI kit.\
+Например если подключаете UI kit в проекте на Expo и используете expo-font то вам необходимо добавть в app.json
+следующий конфиг:
+```json5
+{
+  // Ваш конфиг Expo
+  "plugins": [
+    [
+      "expo-font",
+      {
+        "fonts": [
+          "./node_modules/@cdek/react-native-prime-ui-kit/assets/fonts/Roboto/Roboto-Black.ttf",
+          "./node_modules/@cdek/react-native-prime-ui-kit/assets/fonts/Roboto/Roboto-BlackItalic.ttf",
+          "./node_modules/@cdek/react-native-prime-ui-kit/assets/fonts/Roboto/Roboto-Bold.ttf",
+          "./node_modules/@cdek/react-native-prime-ui-kit/assets/fonts/Roboto/Roboto-BoldItalic.ttf",
+          "./node_modules/@cdek/react-native-prime-ui-kit/assets/fonts/Roboto/Roboto-Italic.ttf",
+          "./node_modules/@cdek/react-native-prime-ui-kit/assets/fonts/Roboto/Roboto-Light.ttf",
+          "./node_modules/@cdek/react-native-prime-ui-kit/assets/fonts/Roboto/Roboto-LightItalic.ttf",
+          "./node_modules/@cdek/react-native-prime-ui-kit/assets/fonts/Roboto/Roboto-Medium.ttf",
+          "./node_modules/@cdek/react-native-prime-ui-kit/assets/fonts/Roboto/Roboto-MediumItalic.ttf",
+          "./node_modules/@cdek/react-native-prime-ui-kit/assets/fonts/Roboto/Roboto-Regular.ttf",
+          "./node_modules/@cdek/react-native-prime-ui-kit/assets/fonts/Roboto/Roboto-Thin.ttf",
+          "./node_modules/@cdek/react-native-prime-ui-kit/assets/fonts/Roboto/Roboto-ThinItalic.ttf"
+        ]
+      }
+    ],
+    // Другие плагины
+  ]
+}
+```
+
 ## Dependencies
 Для использования данной библиотеки необходимо:
 - react версии - начиная с 18 major версии (от 18.0.0)
