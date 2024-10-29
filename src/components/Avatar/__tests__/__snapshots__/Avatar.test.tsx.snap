@@ -220,7 +220,6 @@ exports[`Avatar component tests Size: large, shape: circle, type: label 1`] = `
         [
           {
             "color": "#ffffff",
-            "fontFamily": "Roboto-Regular",
             "fontSize": 14,
             "textTransform": "uppercase",
           },
@@ -448,7 +447,6 @@ exports[`Avatar component tests Size: large, shape: square, type: label 1`] = `
         [
           {
             "color": "#ffffff",
-            "fontFamily": "Roboto-Regular",
             "fontSize": 14,
             "textTransform": "uppercase",
           },
@@ -682,7 +680,6 @@ exports[`Avatar component tests Size: normal, shape: circle, type: label 1`] = `
         [
           {
             "color": "#ffffff",
-            "fontFamily": "Roboto-Regular",
             "fontSize": 14,
             "textTransform": "uppercase",
           },
@@ -910,7 +907,6 @@ exports[`Avatar component tests Size: normal, shape: square, type: label 1`] = `
         [
           {
             "color": "#ffffff",
-            "fontFamily": "Roboto-Regular",
             "fontSize": 14,
             "textTransform": "uppercase",
           },
@@ -1144,7 +1140,6 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: label 1`] = `
         [
           {
             "color": "#ffffff",
-            "fontFamily": "Roboto-Regular",
             "fontSize": 14,
             "textTransform": "uppercase",
           },
@@ -1374,7 +1369,6 @@ exports[`Avatar component tests Size: xlarge, shape: square, type: label 1`] = `
         [
           {
             "color": "#ffffff",
-            "fontFamily": "Roboto-Regular",
             "fontSize": 14,
             "textTransform": "uppercase",
           },
@@ -1427,7 +1421,6 @@ exports[`Avatar component tests With badge, showBadge: false 1`] = `
         [
           {
             "color": "#ffffff",
-            "fontFamily": "Roboto-Regular",
             "fontSize": 14,
             "textTransform": "uppercase",
           },
@@ -1478,7 +1471,6 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
         [
           {
             "color": "#ffffff",
-            "fontFamily": "Roboto-Regular",
             "fontSize": 14,
             "textTransform": "uppercase",
           },
@@ -1529,8 +1521,8 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
               {
                 "borderRadius": 100,
                 "color": "#ffffff",
-                "fontFamily": "Roboto-Bold",
                 "fontSize": 10.5,
+                "fontWeight": 700,
                 "height": 21,
                 "paddingHorizontal": 7,
                 "paddingVertical": 0,

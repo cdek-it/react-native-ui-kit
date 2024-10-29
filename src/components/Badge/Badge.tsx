@@ -66,7 +66,6 @@ const useStyles = makeStyles(({ theme }) => ({
     paddingVertical: theme.Misc.Chip.chipPaddingTopBottom,
     borderRadius: 100,
     verticalAlign: 'middle',
-    fontFamily: 'Roboto',
     color: theme.Misc.Badge.badgeTextColor,
     fontSize: 10.5,
     fontWeight: 700,

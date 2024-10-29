@@ -69,7 +69,6 @@ const useStyles = makeStyles(({ theme }) => ({
     backgroundColor: theme.Button.Disabled.disabledButtonBg,
   },
   text: {
-    fontFamily: 'Roboto',
     fontSize: 14,
     color: theme.Form.InputGroup.inputGroupTextColor,
   },
