@@ -1,26 +1,36 @@
-import React, { memo } from 'react'
+import type { Icon } from '@tabler/icons-react-native'
+import React, { memo, useMemo } from 'react'
 import { View, Text } from 'react-native'
 
 import { makeStyles } from '../../../utils/makeStyles'
 import { type MenuItemTemplateAccessory, MenuItemAccessory } from '../MenuItemAccessory'
+import { MenuItemIcon } from '../MenuItemIcon'
 
 export interface MenuItemTemplateProps {
   title: string
   caption?: string
+  Icon?: Icon
   prefix: MenuItemTemplateAccessory
   suffix: MenuItemTemplateAccessory
 }
 
 export const MenuItemTemplate = memo<MenuItemTemplateProps>(
-  ({ title, caption, prefix = 'none', suffix = 'none' }) => {
+  ({ title, caption, Icon, prefix = 'none', suffix = 'none' }) => {
     const styles = useStyles()
+
+    const icon = useMemo(() => {
+      return Icon !== undefined ? <MenuItemIcon Icon={Icon} style={styles.icon} /> : null
+    }, [Icon, styles.icon])
 
     return (
       <View style={styles.contentContainer}>
         <MenuItemAccessory style={styles.accessory} type={prefix} />
-        <View style={styles.textContainer}>
-          <Text style={[styles.title, styles.titleColor]}>{title}</Text>
-          <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>
+        <View style={styles.templateContainer}>
+          {icon}
+          <View style={styles.textContainer}>
+            <Text style={[styles.title, styles.titleColor]}>{title}</Text>
+            <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>
+          </View>
         </View>
         <MenuItemAccessory style={styles.accessory} type={suffix} />
       </View>
@@ -28,11 +38,16 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
   }
 )
 
-const useStyles = makeStyles(({ theme, spacing }) => ({
+const useStyles = makeStyles(({ theme, spacing, typography }) => ({
   accessory: {
     color: theme.Menu.Item.menuitemIconColor,
     width: theme.Menu.Item.menuitemSubmenuIconFontSize,
     height: theme.Menu.Item.menuitemSubmenuIconFontSize,
+  },
+  icon: {
+    width: typography.Size['text-xl'],
+    height: typography.Size['text-xl'],
+    color: theme.Menu.Item.menuitemIconColor,
   },
   templateContainer: {
     flexDirection: 'row',

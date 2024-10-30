@@ -3,12 +3,14 @@ import { Text, View, type ViewStyle } from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
 
+export type BadgeSeverity = 'basic' | 'info' | 'success' | 'warning' | 'danger'
+
 interface BadgeBase {
   /**
    * Выбор варианта стиля компонента
    * @default 'basic'
    */
-  severity?: 'basic' | 'info' | 'success' | 'warning' | 'danger'
+  severity?: BadgeSeverity
   /** Дополнительная стилизация для контейнера компонента */
   style?: ViewStyle
 }
