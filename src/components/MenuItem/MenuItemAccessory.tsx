@@ -13,21 +13,19 @@ interface AccessoryProps {
   style: AccessoryStyle
 }
 
+const AccessoryBox = ({ icon }: { icon: React.ReactNode }) => {
+  return <View style={{ justifyContent: 'center' }}>{icon}</View>
+}
+
 const AccessoryIcon = ({ type, style }: AccessoryProps) => {
   switch (type) {
     case 'right':
-      return <IconChevronRight color={style.color} />
+      return <AccessoryBox icon={<IconChevronRight color={style.color} />} />
     case 'down':
-      return <IconChevronDown color={style.color} />
+      return <AccessoryBox icon={<IconChevronDown color={style.color} />} />
     case 'none':
       return null
   }
 }
 
-export const MenuItemAccessory = ({ type, style }: AccessoryProps) => {
-  return (
-    <View style={{ justifyContent: 'center' }}>
-      <AccessoryIcon style={style} type={type} />
-    </View>
-  )
-}
+export const MenuItemAccessory = AccessoryIcon
