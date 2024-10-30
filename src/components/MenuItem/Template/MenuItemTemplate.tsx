@@ -31,6 +31,12 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
 const useStyles = makeStyles(({ theme, spacing }) => ({
   accessory: {
     color: theme.Menu.Item.menuitemIconColor,
+    width: theme.Menu.Item.menuitemSubmenuIconFontSize,
+    height: theme.Menu.Item.menuitemSubmenuIconFontSize,
+  },
+  templateContainer: {
+    flexDirection: 'row',
+    gap: spacing.Gap['gap-2'],
   },
   contentContainer: {
     flexDirection: 'row',

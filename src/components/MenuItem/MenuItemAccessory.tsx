@@ -6,6 +6,8 @@ export type MenuItemTemplateAccessory = 'right' | 'down' | 'none'
 
 export interface AccessoryStyle {
   color?: ColorValue
+  width?: number
+  height?: number
 }
 
 interface AccessoryProps {
@@ -20,9 +22,9 @@ const AccessoryBox = ({ icon }: { icon: React.ReactNode }) => {
 const AccessoryIcon = ({ type, style }: AccessoryProps) => {
   switch (type) {
     case 'right':
-      return <AccessoryBox icon={<IconChevronRight color={style.color} />} />
+      return <AccessoryBox icon={<IconChevronRight {...style} />} />
     case 'down':
-      return <AccessoryBox icon={<IconChevronDown color={style.color} />} />
+      return <AccessoryBox icon={<IconChevronDown {...style} />} />
     case 'none':
       return null
   }
