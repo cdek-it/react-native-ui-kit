@@ -24,15 +24,17 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
 
     return (
       <View style={styles.contentContainer}>
-        <MenuItemAccessory style={styles.accessory} type={prefix} />
-        <View style={styles.templateContainer}>
-          {icon}
-          <View style={styles.textContainer}>
-            <Text style={[styles.title, styles.titleColor]}>{title}</Text>
-            <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>
+        <View style={styles.leftContainer}>
+          <MenuItemAccessory iconStyle={styles.accessory} type={prefix} />
+          <View style={styles.templateContainer}>
+            {icon}
+            <View style={styles.textContainer}>
+              <Text style={[styles.title, styles.titleColor]}>{title}</Text>
+              <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>
+            </View>
           </View>
         </View>
-        <MenuItemAccessory style={styles.accessory} type={suffix} />
+        <MenuItemAccessory iconStyle={styles.accessory} type={suffix} />
       </View>
     )
   }
@@ -49,19 +51,24 @@ const useStyles = makeStyles(({ theme, spacing, typography }) => ({
     height: typography.Size['text-xl'],
     color: theme.Menu.Item.menuitemIconColor,
   },
+  leftContainer: {
+    flexDirection: 'row',
+  },
   templateContainer: {
     flexDirection: 'row',
     gap: spacing.Gap['gap-2'],
   },
   contentContainer: {
     flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignSelf: 'stretch',
     gap: theme.General.inlineSpacing,
     paddingHorizontal: theme.Menu.Item.menuitemPaddingLeftRight,
     paddingVertical: theme.Menu.Item.menuitemPaddingTopBottom,
     borderColor: theme.Menu.Item.menuitemBorderColor,
     borderWidth: 1, // theme.Menu.Item.menuitemBorder, - установить когда там будет числовое значение
     borderRadius: theme.Menu.Item.menuitemBorderRadius,
-    backgroundColor: theme.Menu.Item.menuitemBg,
+    backgroundColor: 'lightgray', // theme.Menu.Item.menuitemBg,
   },
   textContainer: {
     flexDirection: 'column',
