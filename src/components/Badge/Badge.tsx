@@ -1,11 +1,12 @@
 import React, { memo } from 'react'
 import { Text, View, type ViewStyle } from 'react-native'
+import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 
 import { makeStyles } from '../../utils/makeStyles'
 
 export type BadgeSeverity = 'basic' | 'info' | 'success' | 'warning' | 'danger'
 
-interface BadgeBase {
+interface BadgeBase extends Pick<ViewProps, 'onLayout'> {
   /**
    * Выбор варианта стиля компонента
    * @default 'basic'
@@ -39,11 +40,11 @@ export type BadgeProps = BadgeText | BadgeDot
  * @param style - Дополнительная стилизация для контейнера компонента
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4871&m=dev
  */
-export const Badge = memo<BadgeProps>(({ children, dot, severity = 'basic', style }) => {
+export const Badge = memo<BadgeProps>(({ children, dot, severity = 'basic', style, ...rest }) => {
   const styles = useStyles()
 
   return (
-    <View style={[styles.container, style]}>
+    <View style={[styles.container, style]} {...rest}>
       {dot ? (
         <View style={[styles.dot, styles[severity]]} />
       ) : (

@@ -3,6 +3,7 @@ import React, { memo, useMemo } from 'react'
 import { View, Text } from 'react-native'
 
 import { makeStyles } from '../../../utils/makeStyles'
+import type { BadgeSeverity } from '../../Badge/Badge'
 import { type MenuItemTemplateAccessory, MenuItemAccessory } from '../MenuItemAccessory'
 import { MenuItemIcon } from '../MenuItemIcon'
 
@@ -10,17 +11,20 @@ export interface MenuItemTemplateProps {
   title: string
   caption?: string
   Icon?: Icon
+  badgeSeverity?: BadgeSeverity
   prefix: MenuItemTemplateAccessory
   suffix: MenuItemTemplateAccessory
 }
 
 export const MenuItemTemplate = memo<MenuItemTemplateProps>(
-  ({ title, caption, Icon, prefix = 'none', suffix = 'none' }) => {
+  ({ title, caption, Icon, badgeSeverity, prefix = 'none', suffix = 'none' }) => {
     const styles = useStyles()
 
     const icon = useMemo(() => {
-      return Icon !== undefined ? <MenuItemIcon Icon={Icon} style={styles.icon} /> : null
-    }, [Icon, styles.icon])
+      return Icon !== undefined ? (
+        <MenuItemIcon Icon={Icon} badgeSeverity={badgeSeverity} style={styles.icon} />
+      ) : null
+    }, [Icon, styles.icon, badgeSeverity])
 
     return (
       <View style={styles.contentContainer}>
