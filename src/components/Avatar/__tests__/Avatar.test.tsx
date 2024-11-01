@@ -1,3 +1,4 @@
+import { IconUser } from '@tabler/icons-react-native'
 import { render } from '@testing-library/react-native'
 import React from 'react'
 
@@ -11,7 +12,13 @@ describe('Avatar component tests', () => {
     { size: 'xlarge', shape: 'circle', type: 'label', children: 'A' },
     { size: 'large', shape: 'circle', type: 'label', children: 'A' },
     { size: 'normal', shape: 'circle', type: 'label', children: 'A' },
-    // TODO: Add tests for Avatar with Icon and Image types
+    { size: 'xlarge', shape: 'square', type: 'icon', Icon: IconUser },
+    { size: 'large', shape: 'square', type: 'icon', Icon: IconUser },
+    { size: 'normal', shape: 'square', type: 'icon', Icon: IconUser },
+    { size: 'xlarge', shape: 'circle', type: 'icon', Icon: IconUser },
+    { size: 'large', shape: 'circle', type: 'icon', Icon: IconUser },
+    { size: 'normal', shape: 'circle', type: 'icon', Icon: IconUser },
+    // TODO: Add tests for Avatar with Image type
   ]
 
   snapshotTestsConfig.map((props) => {
