@@ -4,28 +4,22 @@ import React from 'react'
 import { Badge, type BadgeProps } from '../Badge'
 
 describe('Badge component tests', () => {
-  const snapshotTestsConfig: BadgeProps[] = [
-    { dot: true, severity: 'basic' },
-    { dot: true, severity: 'info' },
-    { dot: true, severity: 'success' },
-    { dot: true, severity: 'warning' },
-    { dot: true, severity: 'danger' },
-    { children: '12', severity: 'basic' },
-    { children: '12', severity: 'info' },
-    { children: '12', severity: 'success' },
-    { children: '12', severity: 'warning' },
-    { children: '12', severity: 'danger' },
+  const snapshotCases: Array<[string, BadgeProps]> = [
+    ['dot, severity: basic', { dot: true, severity: 'basic' }],
+    ['dot, severity: info', { dot: true, severity: 'info' }],
+    ['dot, severity: success', { dot: true, severity: 'success' }],
+    ['dot, severity: warning', { dot: true, severity: 'warning' }],
+    ['dot, severity: danger', { dot: true, severity: 'danger' }],
+    ['severity: basic', { children: '12', severity: 'basic' }],
+    ['severity: basic', { children: '12', severity: 'info' }],
+    ['severity: basic', { children: '12', severity: 'success' }],
+    ['severity: basic', { children: '12', severity: 'warning' }],
+    ['severity: basic', { children: '12', severity: 'danger' }],
+    ['with custom style', { dot: true, severity: 'basic', style: { margin: 10 } }],
   ]
 
-  snapshotTestsConfig.map((props) =>
-    it(`Badge snapshot test: ${props.dot ? 'dot ' : ''} - ${props.severity}`, () => {
-      const renderedBadge = render(<Badge {...props} />)
-      expect(renderedBadge.toJSON()).toMatchSnapshot()
-    })
-  )
-
-  it('Badge snapshot test: Badge with custom style', () => {
-    const renderedBadge = render(<Badge dot severity='basic' style={{ margin: 10 }} />)
+  test.each(snapshotCases)('%s', (_, props) => {
+    const renderedBadge = render(<Badge {...props} />)
     expect(renderedBadge.toJSON()).toMatchSnapshot()
   })
 })
