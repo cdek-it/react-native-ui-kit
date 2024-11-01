@@ -19,6 +19,7 @@ const meta: Meta<typeof MenuItemTemplate> = {
     caption: 'Caption',
     suffix: 'none',
     separator: false,
+    state: 'default',
     extra: undefined,
   },
   argTypes: {
@@ -35,6 +36,7 @@ const meta: Meta<typeof MenuItemTemplate> = {
     title: { control: 'text' },
     suffix: { control: 'radio', options: ['none', 'right', 'down'] },
     separator: { control: 'boolean' },
+    state: { control: 'radio', options: ['default', 'disabled'] },
     extra: {
       control: 'select',
       options: Object.keys(Extras),
@@ -48,7 +50,6 @@ const meta: Meta<typeof MenuItemTemplate> = {
           padding: 16,
           alignContent: 'center',
           alignItems: 'center',
-          backgroundColor: 'orange',
         }}
       >
         <Story />

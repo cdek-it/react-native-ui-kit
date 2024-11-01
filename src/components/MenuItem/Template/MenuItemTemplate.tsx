@@ -7,6 +7,8 @@ import type { BadgeSeverity } from '../../Badge/Badge'
 import { type MenuItemTemplateAccessory, MenuItemAccessory } from '../MenuItemAccessory'
 import { MenuItemIcon } from '../MenuItemIcon'
 
+export type MenuItemTemplateState = 'default' | 'disabled'
+
 export interface MenuItemTemplateProps {
   title: string
   caption?: string
@@ -16,17 +18,31 @@ export interface MenuItemTemplateProps {
   suffix: MenuItemTemplateAccessory
   extra: React.ReactNode
   separator: boolean
+  state: MenuItemTemplateState
 }
 
 export const MenuItemTemplate = memo<MenuItemTemplateProps>(
-  ({ title, caption, Icon, badgeSeverity, prefix = 'none', suffix = 'none', extra, separator }) => {
+  ({
+    title,
+    caption,
+    Icon,
+    badgeSeverity,
+    prefix = 'none',
+    suffix = 'none',
+    extra,
+    separator,
+    state = 'default',
+  }) => {
     const styles = useStyles()
+
+    const disabled = state === 'disabled'
+    const contentExtraStyle = disabled ? styles.disabled : null
 
     return (
       <View style={separator && styles.separator}>
-        <View style={styles.contentContainer}>
+        <View style={[styles.contentContainer, contentExtraStyle]}>
           <View style={styles.leftContainer}>
-            <MenuItemAccessory iconStyle={styles.accessory} type={prefix} />
+            <MenuItemAccessory disabled={disabled} iconStyle={styles.accessory} type={prefix} />
             <View style={styles.templateContainer}>
               {Icon !== undefined && (
                 <MenuItemIcon Icon={Icon} badgeSeverity={badgeSeverity} style={styles.icon} />
@@ -38,7 +54,7 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
               {extra}
             </View>
           </View>
-          <MenuItemAccessory iconStyle={styles.accessory} type={suffix} />
+          <MenuItemAccessory disabled={disabled} iconStyle={styles.accessory} type={suffix} />
         </View>
       </View>
     )
@@ -61,7 +77,13 @@ const useStyles = makeStyles(({ theme, spacing, typography }) => ({
     borderColor: theme.Menu.Item.menuitemBorderColor,
     borderWidth: 1, // theme.Menu.Item.menuitemBorder, - установить когда там будет числовое значение
     borderRadius: theme.Menu.Item.menuitemBorderRadius,
-    backgroundColor: 'lightgray', // theme.Menu.Item.menuitemBg,
+    backgroundColor: theme.Menu.Item.menuitemBg,
+  },
+  disabled: {
+    borderWidth: 1,
+    borderColor: theme.Button.Disabled.disabledButtonBorderColor,
+    backgroundColor: theme.Button.Disabled.disabledButtonBg,
+    opacity: 0.6,
   },
   leftContainer: {
     flexDirection: 'row',
