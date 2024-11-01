@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title component tests level = h1 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+        "fontWeight": 700,
+      },
+      {
+        "fontSize": 28,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Title component tests level = h2 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+        "fontWeight": 700,
+      },
+      {
+        "fontSize": 21,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Title component tests level = h3 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+        "fontWeight": 700,
+      },
+      {
+        "fontSize": 17.5,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Title component tests level = h4 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+        "fontWeight": 700,
+      },
+      {
+        "fontSize": 15.75,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Title component tests level = h5 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+        "fontWeight": 700,
+      },
+      {
+        "fontSize": 14,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Title component tests level = h6 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+        "fontWeight": 700,
+      },
+      {
+        "fontSize": 12.25,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
