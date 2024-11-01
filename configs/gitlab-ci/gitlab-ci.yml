@@ -14,12 +14,12 @@ default:
   timeout: 2h
 
 stages:
-  - start_release
   - install
   - validate
   - test
   - review
   - start_build
+  - start_release
   - build
   - publish
 
