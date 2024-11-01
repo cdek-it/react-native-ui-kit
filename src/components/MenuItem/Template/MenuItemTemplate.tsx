@@ -16,7 +16,7 @@ export interface MenuItemTemplateProps {
   badgeSeverity?: BadgeSeverity
   prefix?: MenuItemTemplateAccessory
   suffix?: MenuItemTemplateAccessory
-  extra: React.ReactNode
+  extra?: React.ReactNode
   separator?: boolean
   state?: MenuItemTemplateState
   onPress?: () => void
