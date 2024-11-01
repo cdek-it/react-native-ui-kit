@@ -11,7 +11,7 @@ interface MenuItemIconStyle {
 }
 
 interface MenuItemIconProps {
-  Icon?: Icon
+  Icon: Icon
   style: MenuItemIconStyle
   badgeSeverity?: BadgeSeverity
 }
@@ -27,10 +27,6 @@ export const MenuItemIcon = ({ Icon, style, badgeSeverity }: MenuItemIconProps) 
     setBadgePosition({ top: -width / 2, right: -height / 2 })
   }, [])
 
-  if (Icon === undefined) {
-    return null
-  }
-
   return (
     <View style={{ justifyContent: 'center', position: 'relative' }}>
       <View>
@@ -40,6 +36,7 @@ export const MenuItemIcon = ({ Icon, style, badgeSeverity }: MenuItemIconProps) 
             dot
             severity={badgeSeverity}
             style={{ position: 'absolute', top: badgePosition.top, right: badgePosition.right }}
+            testID='menuItemIconBadge'
             onLayout={onLayout}
           />
         ) : (

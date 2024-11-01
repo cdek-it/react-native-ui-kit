@@ -6,7 +6,7 @@ import { makeStyles } from '../../utils/makeStyles'
 
 export type BadgeSeverity = 'basic' | 'info' | 'success' | 'warning' | 'danger'
 
-interface BadgeBase extends Pick<ViewProps, 'onLayout'> {
+interface BadgeBase extends Pick<ViewProps, 'onLayout' | 'testID'> {
   /**
    * Выбор варианта стиля компонента
    * @default 'basic'

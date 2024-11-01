@@ -47,6 +47,7 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
           accessibilityRole='button'
           accessibilityValue={{ text: caption }}
           disabled={disabled}
+          testID='menuItemButton'
           onPress={onPress}
         >
           <View style={[styles.contentContainer, maybeDisabled]}>
