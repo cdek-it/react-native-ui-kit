@@ -1,0 +1,305 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar component tests Avatar snapshot test: label - circle - large 1`] = `
+<View
+  collapsable={false}
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 35,
+          "width": 35,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        {
+          "borderRadius": 100,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "fontFamily": "Roboto-Regular",
+            "fontSize": 14,
+            "textTransform": "uppercase",
+          },
+          false,
+        ]
+      }
+    >
+      A
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Avatar snapshot test: label - circle - normal 1`] = `
+<View
+  collapsable={false}
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 28,
+          "width": 28,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        {
+          "borderRadius": 100,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "fontFamily": "Roboto-Regular",
+            "fontSize": 14,
+            "textTransform": "uppercase",
+          },
+          false,
+        ]
+      }
+    >
+      A
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Avatar snapshot test: label - circle - xlarge 1`] = `
+<View
+  collapsable={false}
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 49,
+          "width": 49,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        {
+          "borderRadius": 100,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "fontFamily": "Roboto-Regular",
+            "fontSize": 14,
+            "textTransform": "uppercase",
+          },
+          {
+            "fontSize": 21,
+          },
+        ]
+      }
+    >
+      A
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Avatar snapshot test: label - square - large 1`] = `
+<View
+  collapsable={false}
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 35,
+          "width": 35,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        false,
+        undefined,
+      ]
+    }
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "fontFamily": "Roboto-Regular",
+            "fontSize": 14,
+            "textTransform": "uppercase",
+          },
+          false,
+        ]
+      }
+    >
+      A
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Avatar snapshot test: label - square - normal 1`] = `
+<View
+  collapsable={false}
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 28,
+          "width": 28,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        false,
+        undefined,
+      ]
+    }
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "fontFamily": "Roboto-Regular",
+            "fontSize": 14,
+            "textTransform": "uppercase",
+          },
+          false,
+        ]
+      }
+    >
+      A
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Avatar snapshot test: label - square - xlarge 1`] = `
+<View
+  collapsable={false}
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 49,
+          "width": 49,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        false,
+        undefined,
+      ]
+    }
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "fontFamily": "Roboto-Regular",
+            "fontSize": 14,
+            "textTransform": "uppercase",
+          },
+          {
+            "fontSize": 21,
+          },
+        ]
+      }
+    >
+      A
+    </Text>
+  </View>
+</View>
+`;
