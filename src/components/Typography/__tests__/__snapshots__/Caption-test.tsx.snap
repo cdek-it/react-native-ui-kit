@@ -5,6 +5,7 @@ exports[`Caption component tests color = default, disabled = false 1`] = `
   style={
     [
       {
+        "fontFamily": "Roboto-Regular",
         "fontSize": 12.25,
       },
       {
@@ -24,6 +25,7 @@ exports[`Caption component tests color = default, disabled = true 1`] = `
   style={
     [
       {
+        "fontFamily": "Roboto-Regular",
         "fontSize": 12.25,
       },
       {
@@ -45,6 +47,7 @@ exports[`Caption component tests color = primary, disabled = false 1`] = `
   style={
     [
       {
+        "fontFamily": "Roboto-Regular",
         "fontSize": 12.25,
       },
       {
@@ -64,6 +67,7 @@ exports[`Caption component tests color = primary, disabled = true 1`] = `
   style={
     [
       {
+        "fontFamily": "Roboto-Regular",
         "fontSize": 12.25,
       },
       {
@@ -85,6 +89,7 @@ exports[`Caption component tests color = secondary, disabled = false 1`] = `
   style={
     [
       {
+        "fontFamily": "Roboto-Regular",
         "fontSize": 12.25,
       },
       {
@@ -104,6 +109,7 @@ exports[`Caption component tests color = secondary, disabled = true 1`] = `
   style={
     [
       {
+        "fontFamily": "Roboto-Regular",
         "fontSize": 12.25,
       },
       {
@@ -125,6 +131,7 @@ exports[`Caption component tests default props 1`] = `
   style={
     [
       {
+        "fontFamily": "Roboto-Regular",
         "fontSize": 12.25,
       },
       {
