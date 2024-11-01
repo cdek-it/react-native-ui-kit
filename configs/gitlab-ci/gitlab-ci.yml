@@ -1,8 +1,6 @@
 include:
-  - local: /configs/gitlab-ci/workflows/feature-fix-branch.gitlab-ci.yml
-    rules:
-      - if: $CI_COMMIT_REF_NAME =~ /^feature\/|^fix\//
-      - if: $CI_COMMIT_REF_NAME == "develop"
+  - local: /configs/gitlab-ci/workflows/validate.gitlab-ci.yml
+  - local: /configs/gitlab-ci/workflows/tests.gitlab-ci.yml
   - local: /configs/gitlab-ci/workflows/mr-develop.gitlab-ci.yml
     rules:
       - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "develop"

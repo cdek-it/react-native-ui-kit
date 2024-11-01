@@ -1,0 +1,37 @@
+include:
+  - local: /configs/gitlab-ci/configs/cache.gitlab-ci.yml
+  - local: /configs/gitlab-ci/configs/runners.gitlab-ci.yml
+
+stages:
+  - install
+
+variables:
+  IMG_NODE: "node:18-alpine"
+
+yarn_install:
+  stage: install
+  interruptible: true
+  extends:
+    - .node_docker_runner
+    - .yarn_docker_cache_pull_push
+  variables:
+    HTTP_PROXY: "http://runner-proxy.cdek.ru:9000"
+    NO_PROXY: "repo.cdek.ru"
+  before_script:
+    - export HTTPS_PROXY="${HTTP_PROXY}"
+    - export HTTP_PROXY="${HTTP_PROXY}"
+    - export http_proxy="${HTTP_PROXY}"
+    - export https_proxy="${HTTP_PROXY}"
+    - export all_proxy="${HTTP_PROXY}"
+    - export no_proxy="${NO_PROXY}"
+  script:
+    - npx yarn install --frozen-lockfile
+
+.yarn_install_dependent_job:
+  extends:
+    - .node_docker_runner
+    - .yarn_docker_cache_pull
+  needs:
+    - job: yarn_install
+      artifacts: false
+      optional: false

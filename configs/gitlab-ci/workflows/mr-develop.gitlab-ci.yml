@@ -2,6 +2,7 @@ include:
   - local: /configs/gitlab-ci/configs/cache.gitlab-ci.yml
   - local: /configs/gitlab-ci/configs/runners.gitlab-ci.yml
   - local: /configs/gitlab-ci/configs/rules.gitlab-ci.yml
+  - local: /configs/gitlab-ci/jobs/yarn-install.gitlab-ci.yml
 
 workflow:
   rules:
@@ -49,25 +50,6 @@ variables:
   APP_STORE_CONNECT_API_KEY_KEY_FILE: "AuthKey.p8"
   APP_STORE_CONNECT_API_KEY_DURATION: "1200"
   JOB_ARTIFACT_PATH: $CI_PROJECT_URL/-/jobs/$CI_JOB_ID/artifacts/raw
-
-yarn_install:
-  stage: install
-  interruptible: true
-  extends:
-    - .node_docker_runner
-    - .yarn_docker_cache_pull_push
-  variables:
-    HTTP_PROXY: "http://runner-proxy.cdek.ru:9000"
-    NO_PROXY: "repo.cdek.ru"
-  before_script:
-    - export HTTPS_PROXY="${HTTP_PROXY}"
-    - export HTTP_PROXY="${HTTP_PROXY}"
-    - export http_proxy="${HTTP_PROXY}"
-    - export https_proxy="${HTTP_PROXY}"
-    - export all_proxy="${HTTP_PROXY}"
-    - export no_proxy="${NO_PROXY}"
-  script:
-    - npx yarn install --frozen-lockfile
 
 request_review:
   stage: review
