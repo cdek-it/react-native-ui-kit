@@ -1,5 +1,5 @@
 import type { Icon } from '@tabler/icons-react-native'
-import React, { memo, useMemo } from 'react'
+import React, { memo } from 'react'
 import { View, Text } from 'react-native'
 
 import { makeStyles } from '../../../utils/makeStyles'
@@ -21,18 +21,14 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
   ({ title, caption, Icon, badgeSeverity, prefix = 'none', suffix = 'none', extra }) => {
     const styles = useStyles()
 
-    const icon = useMemo(() => {
-      return Icon !== undefined ? (
-        <MenuItemIcon Icon={Icon} badgeSeverity={badgeSeverity} style={styles.icon} />
-      ) : null
-    }, [Icon, styles.icon, badgeSeverity])
-
     return (
       <View style={styles.contentContainer}>
         <View style={styles.leftContainer}>
           <MenuItemAccessory iconStyle={styles.accessory} type={prefix} />
           <View style={styles.templateContainer}>
-            {icon}
+            {Icon !== undefined && (
+              <MenuItemIcon Icon={Icon} badgeSeverity={badgeSeverity} style={styles.icon} />
+            )}
             <View style={styles.textContainer}>
               <Text style={[styles.title, styles.titleColor]}>{title}</Text>
               <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>
