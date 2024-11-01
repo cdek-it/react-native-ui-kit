@@ -1,6 +1,6 @@
 import type { Icon } from '@tabler/icons-react-native'
 import React, { memo } from 'react'
-import { View, Text, Pressable } from 'react-native'
+import { View, Text, Pressable, type ViewProps } from 'react-native'
 
 import { makeStyles } from '../../../utils/makeStyles'
 import type { BadgeSeverity } from '../../Badge/Badge'
@@ -9,19 +9,44 @@ import { MenuItemIcon } from '../MenuItemIcon'
 
 export type MenuItemTemplateState = 'default' | 'disabled'
 
-export interface MenuItemTemplateProps {
+/** Свойства MenuItemTemplate */
+export interface MenuItemTemplateProps extends ViewProps {
+  /** Заголовок пункта меню */
   title: string
+  /** Подзаголовок пункта меню */
   caption?: string
+  /** Иконка слева от заголовка. Допустимы только иконки из набора tabler */
   Icon?: Icon
+  /** Цвет бейджа (точки) в правом верхнем углу иконки. Бейдж может выводиться только при наличии иконки. */
   badgeSeverity?: BadgeSeverity
+  /** Аксессуар в самой левой части пункта меню (стрелка вниз или вправо) */
   prefix?: MenuItemTemplateAccessory
+  /** Аксессуар в самойправой части пункта меню (стрелка вниз или вправо) */
   suffix?: MenuItemTemplateAccessory
+  /** Дополнительный контент пункта меню, выводится справа от текста. Может быть любым react компонентом. Важно! Размеры доплолнительного контента не контролируются пунктом меню и могут его растягивать. Использовать с осторожностью. */
   extra?: React.ReactNode
+  /** Разделитель. Выводится как полоска сверху. Изменяет общую высоту элемента меню.*/
   separator?: boolean
+  /**  Состояние 'default' | 'disabled' */
   state?: MenuItemTemplateState
+  /** Обработчик нажатия */
   onPress?: () => void
 }
 
+/**
+ * Шаблон элемента меню. Содержит максимальное количество компонентов внутри пункта меню и используется как основа для создания пунктов меню любой возможной конфигурации.
+ *
+ * @param title - Заголовок пункта меню
+ * @param caption - Подзаголовок пункта меню
+ * @param Icon - Иконка слева от заголовка. Допустимы только иконки из набора tabler
+ * @param badgeSeverity - Цвет бейджа (точки) в правом верхнем углу иконки. Бейдж может выводиться только при наличии иконки.
+ * @param prefix - Аксессуар в самой левой части пункта меню (стрелка вниз или вправо)
+ * @param suffix - Аксессуар в самой правой части пункта меню (стрелка вниз или вправо)
+ * @param extra - Дополнительный контент пункта меню, выводится справа от текста. Может быть любым react компонентом. Важно! Размеры доплолнительного контента не контролируются пунктом меню и могут его растягивать. Использовать с осторожностью.
+ * @param separator - Разделитель. Выводится как полоска сверху. Изменяет общую высоту элемента меню.
+ * @param state - Состояние 'default' | 'disabled'. В состоянии 'disabled' отключается чувствительность к нажатиям, компонент становится полупрозрачным, а аксессуары заменяются иконкой с замком
+ * @param onPress - Обработчик нажатия
+ */
 export const MenuItemTemplate = memo<MenuItemTemplateProps>(
   ({
     title,
@@ -34,6 +59,7 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
     separator = false,
     state = 'default',
     onPress = undefined,
+    ...rest
   }) => {
     const styles = useStyles()
 
@@ -49,6 +75,7 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
           disabled={disabled}
           testID='menuItemButton'
           onPress={onPress}
+          {...rest}
         >
           <View style={[styles.contentContainer, maybeDisabled]}>
             <View style={styles.leftContainer}>

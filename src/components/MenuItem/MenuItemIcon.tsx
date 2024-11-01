@@ -5,17 +5,38 @@ import { type ColorValue, type DimensionValue, type LayoutChangeEvent, View } fr
 import { Badge, type BadgeSeverity } from '../Badge/Badge'
 
 interface MenuItemIconStyle {
+  /** Ширина иконки в поинтах*/
   width?: number
+  /** Высота иконки в поинтах*/
   height?: number
+  /** Цвет иконки*/
   color?: ColorValue
 }
 
 interface MenuItemIconProps {
+  /**
+   * Иконка из набора tabler
+   * @type {Icon}
+   */
   Icon: Icon
+  /**
+   * Стиль иконки
+   */
   style: MenuItemIconStyle
+  /**
+   * Цвет бейджа
+   *
+   * @type {BadgeSeverity}
+   */
   badgeSeverity?: BadgeSeverity
 }
 
+/**
+ * Иконка в составе элемента меню. Состоит из центрирующего враппера, иконки и опционального бейджа (точки)
+ * @param Icon - Иконка из набора Tabler
+ * @param style - Стиль иконки
+ * @param badgeSeverity - Цвет бейджа (undefined если бейдж не нужен)
+ */
 export const MenuItemIcon = ({ Icon, style, badgeSeverity }: MenuItemIconProps) => {
   const [badgePosition, setBadgePosition] = useState<{
     top: DimensionValue
@@ -30,7 +51,7 @@ export const MenuItemIcon = ({ Icon, style, badgeSeverity }: MenuItemIconProps) 
   return (
     <View style={{ justifyContent: 'center', position: 'relative' }}>
       <View>
-        <Icon color={style.color} height={style.height} width={style.width} />
+        <Icon {...style} />
         {badgeSeverity ? (
           <Badge
             dot
