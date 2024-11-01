@@ -42,6 +42,7 @@ const meta: Meta<typeof MenuItemTemplate> = {
       options: Object.keys(Extras),
       mapping: Extras,
     },
+    onPress: { action: 'pressed' },
   },
   decorators: [
     (Story) => (

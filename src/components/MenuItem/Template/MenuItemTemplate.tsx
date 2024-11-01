@@ -1,6 +1,6 @@
 import type { Icon } from '@tabler/icons-react-native'
 import React, { memo } from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Pressable } from 'react-native'
 
 import { makeStyles } from '../../../utils/makeStyles'
 import type { BadgeSeverity } from '../../Badge/Badge'
@@ -14,11 +14,12 @@ export interface MenuItemTemplateProps {
   caption?: string
   Icon?: Icon
   badgeSeverity?: BadgeSeverity
-  prefix: MenuItemTemplateAccessory
-  suffix: MenuItemTemplateAccessory
+  prefix?: MenuItemTemplateAccessory
+  suffix?: MenuItemTemplateAccessory
   extra: React.ReactNode
-  separator: boolean
-  state: MenuItemTemplateState
+  separator?: boolean
+  state?: MenuItemTemplateState
+  onPress?: () => void
 }
 
 export const MenuItemTemplate = memo<MenuItemTemplateProps>(
@@ -30,32 +31,41 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
     prefix = 'none',
     suffix = 'none',
     extra,
-    separator,
+    separator = false,
     state = 'default',
+    onPress = undefined,
   }) => {
     const styles = useStyles()
 
     const disabled = state === 'disabled'
-    const contentExtraStyle = disabled ? styles.disabled : null
+    const maybeDisabled = disabled ? styles.disabled : null
 
     return (
       <View style={separator && styles.separator}>
-        <View style={[styles.contentContainer, contentExtraStyle]}>
-          <View style={styles.leftContainer}>
-            <MenuItemAccessory disabled={disabled} iconStyle={styles.accessory} type={prefix} />
-            <View style={styles.templateContainer}>
-              {Icon !== undefined && (
-                <MenuItemIcon Icon={Icon} badgeSeverity={badgeSeverity} style={styles.icon} />
-              )}
-              <View style={styles.textContainer}>
-                <Text style={[styles.title, styles.titleColor]}>{title}</Text>
-                <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>
+        <Pressable
+          accessibilityLabel={title}
+          accessibilityRole='button'
+          accessibilityValue={{ text: caption }}
+          disabled={disabled}
+          onPress={onPress}
+        >
+          <View style={[styles.contentContainer, maybeDisabled]}>
+            <View style={styles.leftContainer}>
+              <MenuItemAccessory disabled={disabled} iconStyle={styles.accessory} type={prefix} />
+              <View style={styles.templateContainer}>
+                {Icon !== undefined && (
+                  <MenuItemIcon Icon={Icon} badgeSeverity={badgeSeverity} style={styles.icon} />
+                )}
+                <View style={styles.textContainer}>
+                  <Text style={[styles.title, styles.titleColor]}>{title}</Text>
+                  <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>
+                </View>
+                {extra}
               </View>
-              {extra}
             </View>
+            <MenuItemAccessory disabled={disabled} iconStyle={styles.accessory} type={suffix} />
           </View>
-          <MenuItemAccessory disabled={disabled} iconStyle={styles.accessory} type={suffix} />
-        </View>
+        </Pressable>
       </View>
     )
   }
