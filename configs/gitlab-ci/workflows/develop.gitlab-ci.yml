@@ -59,6 +59,9 @@ build:
     - job: yarn_install
       artifacts: false
       optional: false
+    - job: start_release
+      artifacts: false
+      optional: false
 
 publish:
   stage: publish
@@ -104,4 +107,7 @@ publish:
   needs:
     - job: build
       artifacts: true
+      optional: false
+    - job: start_release
+      artifacts: false
       optional: false
