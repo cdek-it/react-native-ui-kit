@@ -1,0 +1,1969 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Body component tests base = false, color = default, disabled = false, paragraph = false, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      false,
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = default, disabled = false, paragraph = false, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      false,
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = default, disabled = false, paragraph = false, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      false,
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = default, disabled = false, paragraph = true, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      false,
+      {
+        "lineHeight": 23.63,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = default, disabled = false, paragraph = true, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      false,
+      {
+        "lineHeight": 23.63,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = default, disabled = false, paragraph = true, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      false,
+      {
+        "lineHeight": 23.63,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = default, disabled = true, paragraph = false, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      false,
+      false,
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = default, disabled = true, paragraph = false, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      false,
+      false,
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = default, disabled = true, paragraph = false, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      false,
+      false,
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = default, disabled = true, paragraph = true, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      false,
+      {
+        "lineHeight": 23.63,
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = default, disabled = true, paragraph = true, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      false,
+      {
+        "lineHeight": 23.63,
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = default, disabled = true, paragraph = true, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      false,
+      {
+        "lineHeight": 23.63,
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = primary, disabled = false, paragraph = false, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "#188700",
+      },
+      false,
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = primary, disabled = false, paragraph = false, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "#188700",
+      },
+      false,
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = primary, disabled = false, paragraph = false, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "#188700",
+      },
+      false,
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = primary, disabled = false, paragraph = true, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "#188700",
+      },
+      false,
+      {
+        "lineHeight": 23.63,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = primary, disabled = false, paragraph = true, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "#188700",
+      },
+      false,
+      {
+        "lineHeight": 23.63,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = primary, disabled = false, paragraph = true, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "#188700",
+      },
+      false,
+      {
+        "lineHeight": 23.63,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = primary, disabled = true, paragraph = false, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "#188700",
+      },
+      false,
+      false,
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = primary, disabled = true, paragraph = false, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "#188700",
+      },
+      false,
+      false,
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = primary, disabled = true, paragraph = false, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "#188700",
+      },
+      false,
+      false,
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = primary, disabled = true, paragraph = true, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "#188700",
+      },
+      false,
+      {
+        "lineHeight": 23.63,
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = primary, disabled = true, paragraph = true, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "#188700",
+      },
+      false,
+      {
+        "lineHeight": 23.63,
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = primary, disabled = true, paragraph = true, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "#188700",
+      },
+      false,
+      {
+        "lineHeight": 23.63,
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = secondary, disabled = false, paragraph = false, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      false,
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = secondary, disabled = false, paragraph = false, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      false,
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = secondary, disabled = false, paragraph = false, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      false,
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = secondary, disabled = false, paragraph = true, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      false,
+      {
+        "lineHeight": 23.63,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = secondary, disabled = false, paragraph = true, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      false,
+      {
+        "lineHeight": 23.63,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = secondary, disabled = false, paragraph = true, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      false,
+      {
+        "lineHeight": 23.63,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = secondary, disabled = true, paragraph = false, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      false,
+      false,
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = secondary, disabled = true, paragraph = false, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      false,
+      false,
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = secondary, disabled = true, paragraph = false, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      false,
+      false,
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = secondary, disabled = true, paragraph = true, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      false,
+      {
+        "lineHeight": 23.63,
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = secondary, disabled = true, paragraph = true, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      false,
+      {
+        "lineHeight": 23.63,
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = false, color = secondary, disabled = true, paragraph = true, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      false,
+      {
+        "lineHeight": 23.63,
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = default, disabled = false, paragraph = false, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = default, disabled = false, paragraph = false, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = default, disabled = false, paragraph = false, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = default, disabled = false, paragraph = true, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      {
+        "lineHeight": 21,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = default, disabled = false, paragraph = true, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      {
+        "lineHeight": 21,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = default, disabled = false, paragraph = true, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      {
+        "lineHeight": 21,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = default, disabled = true, paragraph = false, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      false,
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = default, disabled = true, paragraph = false, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      false,
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = default, disabled = true, paragraph = false, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      false,
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = default, disabled = true, paragraph = true, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      {
+        "lineHeight": 21,
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = default, disabled = true, paragraph = true, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      {
+        "lineHeight": 21,
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = default, disabled = true, paragraph = true, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      {
+        "lineHeight": 21,
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = primary, disabled = false, paragraph = false, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "#188700",
+      },
+      {
+        "fontSize": 14,
+      },
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = primary, disabled = false, paragraph = false, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "#188700",
+      },
+      {
+        "fontSize": 14,
+      },
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = primary, disabled = false, paragraph = false, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "#188700",
+      },
+      {
+        "fontSize": 14,
+      },
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = primary, disabled = false, paragraph = true, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "#188700",
+      },
+      {
+        "fontSize": 14,
+      },
+      {
+        "lineHeight": 21,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = primary, disabled = false, paragraph = true, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "#188700",
+      },
+      {
+        "fontSize": 14,
+      },
+      {
+        "lineHeight": 21,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = primary, disabled = false, paragraph = true, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "#188700",
+      },
+      {
+        "fontSize": 14,
+      },
+      {
+        "lineHeight": 21,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = primary, disabled = true, paragraph = false, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "#188700",
+      },
+      {
+        "fontSize": 14,
+      },
+      false,
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = primary, disabled = true, paragraph = false, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "#188700",
+      },
+      {
+        "fontSize": 14,
+      },
+      false,
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = primary, disabled = true, paragraph = false, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "#188700",
+      },
+      {
+        "fontSize": 14,
+      },
+      false,
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = primary, disabled = true, paragraph = true, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "#188700",
+      },
+      {
+        "fontSize": 14,
+      },
+      {
+        "lineHeight": 21,
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = primary, disabled = true, paragraph = true, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "#188700",
+      },
+      {
+        "fontSize": 14,
+      },
+      {
+        "lineHeight": 21,
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = primary, disabled = true, paragraph = true, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "#188700",
+      },
+      {
+        "fontSize": 14,
+      },
+      {
+        "lineHeight": 21,
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = secondary, disabled = false, paragraph = false, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = secondary, disabled = false, paragraph = false, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = secondary, disabled = false, paragraph = false, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = secondary, disabled = false, paragraph = true, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      {
+        "lineHeight": 21,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = secondary, disabled = false, paragraph = true, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      {
+        "lineHeight": 21,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = secondary, disabled = false, paragraph = true, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      {
+        "lineHeight": 21,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = secondary, disabled = true, paragraph = false, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      false,
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = secondary, disabled = true, paragraph = false, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      false,
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = secondary, disabled = true, paragraph = false, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      false,
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = secondary, disabled = true, paragraph = true, weight = bold 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 700,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      {
+        "lineHeight": 21,
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = secondary, disabled = true, paragraph = true, weight = medium 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 500,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      {
+        "lineHeight": 21,
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests base = true, color = secondary, disabled = true, paragraph = true, weight = regular 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      {
+        "fontSize": 14,
+      },
+      {
+        "lineHeight": 21,
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Body component tests default props 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 15.75,
+      },
+      {
+        "fontWeight": 400,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
