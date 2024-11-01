@@ -3,12 +3,12 @@ import { Text, type TextProps } from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
 
-export interface TitleProps extends TextProps {
+export interface CaptionProps extends TextProps {
   color?: 'default' | 'secondary' | 'primary'
   disabled?: boolean
 }
 
-export const Caption = ({ color = 'default', disabled, style, ...other }: TitleProps) => {
+export const Caption = ({ color = 'default', disabled, style, ...other }: CaptionProps) => {
   const styles = useStyles()
 
   return (

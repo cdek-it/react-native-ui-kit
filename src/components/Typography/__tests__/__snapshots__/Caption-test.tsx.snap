@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Caption component tests color = default, disabled = false 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Caption component tests color = default, disabled = true 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Caption component tests color = primary, disabled = false 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+      },
+      {
+        "color": "#188700",
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Caption component tests color = primary, disabled = true 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+      },
+      {
+        "color": "#188700",
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Caption component tests color = secondary, disabled = false 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Caption component tests color = secondary, disabled = true 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Caption component tests default props 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      undefined,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
