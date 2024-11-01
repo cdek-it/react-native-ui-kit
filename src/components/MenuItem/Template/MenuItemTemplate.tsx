@@ -46,6 +46,7 @@ export interface MenuItemTemplateProps extends ViewProps {
  * @param separator - Разделитель. Выводится как полоска сверху. Изменяет общую высоту элемента меню.
  * @param state - Состояние 'default' | 'disabled'. В состоянии 'disabled' отключается чувствительность к нажатиям, компонент становится полупрозрачным, а аксессуары заменяются иконкой с замком
  * @param onPress - Обработчик нажатия
+ * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=937-6724&m=dev
  */
 export const MenuItemTemplate = memo<MenuItemTemplateProps>(
   ({
