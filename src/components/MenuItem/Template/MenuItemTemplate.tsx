@@ -14,10 +14,11 @@ export interface MenuItemTemplateProps {
   badgeSeverity?: BadgeSeverity
   prefix: MenuItemTemplateAccessory
   suffix: MenuItemTemplateAccessory
+  extra: React.ReactNode
 }
 
 export const MenuItemTemplate = memo<MenuItemTemplateProps>(
-  ({ title, caption, Icon, badgeSeverity, prefix = 'none', suffix = 'none' }) => {
+  ({ title, caption, Icon, badgeSeverity, prefix = 'none', suffix = 'none', extra }) => {
     const styles = useStyles()
 
     const icon = useMemo(() => {
@@ -36,6 +37,7 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
               <Text style={[styles.title, styles.titleColor]}>{title}</Text>
               <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>
             </View>
+            {extra}
           </View>
         </View>
         <MenuItemAccessory iconStyle={styles.accessory} type={suffix} />
