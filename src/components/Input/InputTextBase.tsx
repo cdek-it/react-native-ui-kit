@@ -217,7 +217,6 @@ const useStyles = makeStyles(({ theme }) => ({
     paddingVertical: theme.Form.InputText.inputPaddingTopBottom,
     paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
     borderRadius: theme.General.borderRadius,
-    fontFamily: 'Roboto',
     fontSize: 14,
     color: theme.Form.InputText.inputTextColor,
     overflow: 'hidden',

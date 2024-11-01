@@ -158,7 +158,6 @@ const useStyles = makeStyles(({ theme }) => ({
 
   label: {
     color: theme.Button.Basic.buttonTextColor,
-    fontFamily: 'Roboto-Bold',
   },
   outlinedLabel: {
     color: theme.Button.Outlined.outlinedButtonTextColor,

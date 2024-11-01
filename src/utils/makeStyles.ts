@@ -1,19 +1,11 @@
 import { useMemo } from 'react'
 import type { ImageStyle, TextStyle, ViewStyle } from 'react-native'
 
-import { useFontConfig } from '../hooks/useFontConfig'
 import { useTheme } from '../hooks/useTheme'
-import {
-  type ThemeType,
-  darkTheme,
-  lightTheme,
-  ThemeVariant,
-  type FontWeight,
-  type FontConfig,
-} from '../theme'
+import { type ThemeType, darkTheme, lightTheme, ThemeVariant } from '../theme'
 
 export const makeStyles =
-  <T extends CustomStylesObject>(createStyles: CreateStyles<T>): (() => T) =>
+  <T extends StylesObject>(createStyles: CreateStyles<T>): (() => T) =>
   () => {
     const theme = useTheme()
     const themeValues = useMemo(() => {
@@ -26,49 +18,15 @@ export const makeStyles =
           return lightTheme
       }
     }, [theme])
-    const fontConfig = useFontConfig()
 
-    return normalizeFontFamily(createStyles(themeValues) as T, fontConfig)
+    return createStyles(themeValues) as T
   }
 
-const normalizeFontFamily = <T extends CustomStylesObject>(
-  styles: T,
-  fontConfig?: FontConfig
-): T => {
-  if (!fontConfig) {
-    return styles
-  }
+type StylesItem = ViewStyle | ImageStyle | TextStyle
 
-  const knownFontFamilies = [
-    ...Object.values(fontConfig.normal),
-    ...Object.values(fontConfig.italic),
-  ]
+type StylesObject = Record<string, StylesItem>
 
-  Object.values(styles).forEach((value: CustomStylesItem) => {
-    if (isTextStyle(value) && value.fontFamily && !knownFontFamilies.includes(value.fontFamily)) {
-      const fontStyle = value.fontStyle || 'normal'
-      const fontWeight = value.fontWeight || 400
-
-      value.fontFamily = fontConfig[fontStyle][fontWeight]
-
-      delete value.fontStyle
-      delete value.fontWeight
-    }
-  })
-
-  return styles
-}
-
-const isTextStyle = (style: ViewStyle | ImageStyle | TextStyle): style is TextStyle =>
-  'fontFamily' in style
-
-type CustomStylesItem = (ViewStyle | ImageStyle | TextStyle) & {
-  fontWeight?: FontWeight
-}
-
-type CustomStylesObject = Record<string, CustomStylesItem>
-
-type CreateStyles<T extends CustomStylesObject> = (
+type CreateStyles<T extends StylesObject> = (
   theme: ThemeType
 ) => CheckInvalidProps<T> extends never ? T : 'TypeError. Invalid key of style property was used.'
 

@@ -207,7 +207,6 @@ const useStyles = makeStyles(({ theme }) => ({
     borderRadius: 100,
   },
   text: {
-    fontFamily: 'Roboto',
     fontSize: 14,
     textTransform: 'uppercase',
     color: theme.Misc.Avatar.avatarTextColor,

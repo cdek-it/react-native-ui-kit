@@ -1,5 +1,3 @@
-import type { TextStyle } from 'react-native'
-
 import type background from './assets/background.json'
 import type border from './assets/border.json'
 import type effects from './assets/effects.json'
@@ -29,11 +27,4 @@ export interface ThemeType {
 export enum ThemeVariant {
   Light = 'Light',
   Dark = 'Dark',
-}
-
-export type FontWeight = 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
-export type FontConfig = {
-  [key in NonNullable<TextStyle['fontStyle']>]: {
-    [key in FontWeight]: string
-  }
 }

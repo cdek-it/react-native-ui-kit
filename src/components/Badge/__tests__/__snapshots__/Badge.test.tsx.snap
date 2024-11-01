@@ -157,8 +157,8 @@ exports[`Badge component tests severity: basic 1`] = `
         {
           "borderRadius": 100,
           "color": "#ffffff",
-          "fontFamily": "Roboto-Bold",
           "fontSize": 10.5,
+          "fontWeight": 700,
           "height": 21,
           "paddingHorizontal": 7,
           "paddingVertical": 0,
@@ -192,8 +192,8 @@ exports[`Badge component tests severity: basic 2`] = `
         {
           "borderRadius": 100,
           "color": "#ffffff",
-          "fontFamily": "Roboto-Bold",
           "fontSize": 10.5,
+          "fontWeight": 700,
           "height": 21,
           "paddingHorizontal": 7,
           "paddingVertical": 0,
@@ -227,8 +227,8 @@ exports[`Badge component tests severity: basic 3`] = `
         {
           "borderRadius": 100,
           "color": "#ffffff",
-          "fontFamily": "Roboto-Bold",
           "fontSize": 10.5,
+          "fontWeight": 700,
           "height": 21,
           "paddingHorizontal": 7,
           "paddingVertical": 0,
@@ -262,8 +262,8 @@ exports[`Badge component tests severity: basic 4`] = `
         {
           "borderRadius": 100,
           "color": "#ffffff",
-          "fontFamily": "Roboto-Bold",
           "fontSize": 10.5,
+          "fontWeight": 700,
           "height": 21,
           "paddingHorizontal": 7,
           "paddingVertical": 0,
@@ -297,8 +297,8 @@ exports[`Badge component tests severity: basic 5`] = `
         {
           "borderRadius": 100,
           "color": "#ffffff",
-          "fontFamily": "Roboto-Bold",
           "fontSize": 10.5,
+          "fontWeight": 700,
           "height": 21,
           "paddingHorizontal": 7,
           "paddingVertical": 0,

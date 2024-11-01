@@ -16,7 +16,6 @@ export const Title = ({ level, style, ...other }: TitleProps) => {
 const useStyles = makeStyles(({ theme }) => ({
   text: {
     color: theme.General.textColor,
-    fontFamily: 'Roboto',
     fontWeight: 700,
   },
   h1: {

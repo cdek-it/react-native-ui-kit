@@ -43,7 +43,6 @@ const useStyles = makeStyles(({ theme }) => ({
     fontSize: 15.75,
   },
   regular: {
-    fontFamily: 'Roboto',
     fontWeight: 400,
   },
   medium: {
