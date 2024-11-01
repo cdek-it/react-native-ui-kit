@@ -3,13 +3,13 @@ import type { Config } from '@jest/types'
 const config: Config.InitialOptions = {
   preset: 'jest-expo',
   collectCoverage: true,
-  coverageDirectory: 'artifacts/reports/unit/coverage',
   collectCoverageFrom: [
     '<rootDir>/src/**/*.{ts,tsx}',
     '!**/*.stories.{ts,tsx}',
     '!**/index.ts',
     '!**/types.ts',
   ],
+  coverageReporters: ['text', 'text-summary'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   testRunner: 'jest-circus',
   maxWorkers: 4,

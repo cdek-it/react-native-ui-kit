@@ -7,7 +7,7 @@
 !.yarn/versions
 
 # jest
-artifacts
+coverage
 junit.xml
 
 # ESLint

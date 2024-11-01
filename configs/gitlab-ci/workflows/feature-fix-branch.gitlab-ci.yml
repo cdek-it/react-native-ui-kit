@@ -63,13 +63,17 @@ unit_test:
   extends:
     - .yarn_install_dependent_job
   script:
-    - npx yarn jest --passWithNoTests --ci --reporters=jest-junit --coverage
+    - npx yarn jest --passWithNoTests --ci --reporters=jest-junit --coverage --coverageReporters text cobertura
+  coverage: '/All files[^\|]*\|[^\|]*\s+([\d\.]+)/'
   artifacts:
     expire_in: 1 week
     when: always
     reports:
       junit:
         - junit.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage/cobertura-coverage.xml
 
 ## Reusable configs
 
