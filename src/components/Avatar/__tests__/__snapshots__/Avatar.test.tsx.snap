@@ -828,6 +828,264 @@ exports[`Avatar component tests Avatar snapshot test: icon - square - xlarge 1`]
 </View>
 `;
 
+exports[`Avatar component tests Avatar snapshot test: image - circle - large 1`] = `
+<View
+  collapsable={false}
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 35,
+          "width": 35,
+        },
+        false,
+        {
+          "borderRadius": 100,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Image
+      resizeMode="cover"
+      source={1}
+      style={
+        [
+          {
+            "height": 35,
+            "width": 35,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Avatar snapshot test: image - circle - normal 1`] = `
+<View
+  collapsable={false}
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 28,
+          "width": 28,
+        },
+        false,
+        {
+          "borderRadius": 100,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Image
+      resizeMode="cover"
+      source={1}
+      style={
+        [
+          {
+            "height": 28,
+            "width": 28,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Avatar snapshot test: image - circle - xlarge 1`] = `
+<View
+  collapsable={false}
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 49,
+          "width": 49,
+        },
+        false,
+        {
+          "borderRadius": 100,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Image
+      resizeMode="cover"
+      source={1}
+      style={
+        [
+          {
+            "height": 49,
+            "width": 49,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Avatar snapshot test: image - square - large 1`] = `
+<View
+  collapsable={false}
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 35,
+          "width": 35,
+        },
+        false,
+        false,
+        undefined,
+      ]
+    }
+  >
+    <Image
+      resizeMode="cover"
+      source={1}
+      style={
+        [
+          {
+            "height": 35,
+            "width": 35,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Avatar snapshot test: image - square - normal 1`] = `
+<View
+  collapsable={false}
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 28,
+          "width": 28,
+        },
+        false,
+        false,
+        undefined,
+      ]
+    }
+  >
+    <Image
+      resizeMode="cover"
+      source={1}
+      style={
+        [
+          {
+            "height": 28,
+            "width": 28,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Avatar snapshot test: image - square - xlarge 1`] = `
+<View
+  collapsable={false}
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 49,
+          "width": 49,
+        },
+        false,
+        false,
+        undefined,
+      ]
+    }
+  >
+    <Image
+      resizeMode="cover"
+      source={1}
+      style={
+        [
+          {
+            "height": 49,
+            "width": 49,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
 exports[`Avatar component tests Avatar snapshot test: label - circle - large 1`] = `
 <View
   collapsable={false}
@@ -875,6 +1133,166 @@ exports[`Avatar component tests Avatar snapshot test: label - circle - large 1`]
     >
       A
     </Text>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Avatar snapshot test: label - circle - normal - with badge - show badge: false 1`] = `
+<View
+  collapsable={false}
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 28,
+          "width": 28,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        {
+          "borderRadius": 100,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "fontFamily": "Roboto-Regular",
+            "fontSize": 14,
+            "textTransform": "uppercase",
+          },
+          false,
+        ]
+      }
+    >
+      A
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Avatar snapshot test: label - circle - normal - with badge - show badge: true 1`] = `
+<View
+  collapsable={false}
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 28,
+          "width": 28,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        {
+          "borderRadius": 100,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "fontFamily": "Roboto-Regular",
+            "fontSize": 14,
+            "textTransform": "uppercase",
+          },
+          false,
+        ]
+      }
+    >
+      A
+    </Text>
+  </View>
+  <View
+    style={
+      [
+        {
+          "position": "absolute",
+          "right": 0,
+          "top": -7,
+        },
+        {
+          "height": 0,
+          "left": 0,
+          "width": 750,
+        },
+      ]
+    }
+  >
+    <View
+      onLayout={[Function]}
+      style={
+        {
+          "alignSelf": "flex-start",
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "flex-start",
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "borderRadius": 100,
+                "color": "#ffffff",
+                "fontFamily": "Roboto-Bold",
+                "fontSize": 10.5,
+                "height": 21,
+                "paddingHorizontal": 7,
+                "paddingVertical": 0,
+                "verticalAlign": "middle",
+              },
+              {
+                "backgroundColor": "#188700",
+              },
+            ]
+          }
+        >
+          12
+        </Text>
+      </View>
+    </View>
   </View>
 </View>
 `;
