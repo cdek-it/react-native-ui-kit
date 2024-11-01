@@ -8,8 +8,8 @@ workflow:
     - if: $CI_COMMIT_REF_NAME == "develop"
 
 stages:
-  - start_release
   - install
+  - start_release
   - build
   - publish
 
@@ -43,10 +43,6 @@ yarn_install:
     - export no_proxy="${NO_PROXY}"
   script:
     - npx yarn install --frozen-lockfile
-  needs:
-    - job: start_release
-      artifacts: false
-      optional: false
 
 build:
   stage: build

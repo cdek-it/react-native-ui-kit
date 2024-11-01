@@ -5,6 +5,7 @@ include:
 workflow:
   rules:
     - if: $CI_COMMIT_REF_NAME =~ /^feature\/|^fix\//
+    - if: $CI_COMMIT_REF_NAME == "develop"
 
 stages:
   - install
