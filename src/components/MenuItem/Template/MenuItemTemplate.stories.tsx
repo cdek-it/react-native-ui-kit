@@ -1,11 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { IconList, IconSquare, IconUser } from '@tabler/icons-react-native'
+import { IconCircle, IconDiamond, IconList, IconSquare, IconUser } from '@tabler/icons-react-native'
 import React from 'react'
 import { View } from 'react-native'
 
 import { MenuItemTemplate } from './MenuItemTemplate'
 
 const Icons = { undefined, IconUser, IconList, IconSquare }
+const Extras = { undefined, IconDiamond, IconCircle }
 
 const meta: Meta<typeof MenuItemTemplate> = {
   title: 'MenuItemTemplate',
@@ -17,6 +18,8 @@ const meta: Meta<typeof MenuItemTemplate> = {
     badgeSeverity: undefined,
     caption: 'Caption',
     suffix: 'none',
+    separator: false,
+    extra: undefined,
   },
   argTypes: {
     prefix: { control: 'radio', options: ['none', 'right', 'down'] },
@@ -31,6 +34,12 @@ const meta: Meta<typeof MenuItemTemplate> = {
     },
     title: { control: 'text' },
     suffix: { control: 'radio', options: ['none', 'right', 'down'] },
+    separator: { control: 'boolean' },
+    extra: {
+      control: 'select',
+      options: Object.keys(Extras),
+      mapping: Extras,
+    },
   },
   decorators: [
     (Story) => (

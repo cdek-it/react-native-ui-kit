@@ -15,50 +15,41 @@ export interface MenuItemTemplateProps {
   prefix: MenuItemTemplateAccessory
   suffix: MenuItemTemplateAccessory
   extra: React.ReactNode
+  separator: boolean
 }
 
 export const MenuItemTemplate = memo<MenuItemTemplateProps>(
-  ({ title, caption, Icon, badgeSeverity, prefix = 'none', suffix = 'none', extra }) => {
+  ({ title, caption, Icon, badgeSeverity, prefix = 'none', suffix = 'none', extra, separator }) => {
     const styles = useStyles()
 
     return (
-      <View style={styles.contentContainer}>
-        <View style={styles.leftContainer}>
-          <MenuItemAccessory iconStyle={styles.accessory} type={prefix} />
-          <View style={styles.templateContainer}>
-            {Icon !== undefined && (
-              <MenuItemIcon Icon={Icon} badgeSeverity={badgeSeverity} style={styles.icon} />
-            )}
-            <View style={styles.textContainer}>
-              <Text style={[styles.title, styles.titleColor]}>{title}</Text>
-              <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>
+      <View style={separator && styles.separator}>
+        <View style={styles.contentContainer}>
+          <View style={styles.leftContainer}>
+            <MenuItemAccessory iconStyle={styles.accessory} type={prefix} />
+            <View style={styles.templateContainer}>
+              {Icon !== undefined && (
+                <MenuItemIcon Icon={Icon} badgeSeverity={badgeSeverity} style={styles.icon} />
+              )}
+              <View style={styles.textContainer}>
+                <Text style={[styles.title, styles.titleColor]}>{title}</Text>
+                <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>
+              </View>
+              {extra}
             </View>
-            {extra}
           </View>
+          <MenuItemAccessory iconStyle={styles.accessory} type={suffix} />
         </View>
-        <MenuItemAccessory iconStyle={styles.accessory} type={suffix} />
       </View>
     )
   }
 )
 
 const useStyles = makeStyles(({ theme, spacing, typography }) => ({
-  accessory: {
-    color: theme.Menu.Item.menuitemIconColor,
-    width: theme.Menu.Item.menuitemSubmenuIconFontSize,
-    height: theme.Menu.Item.menuitemSubmenuIconFontSize,
-  },
-  icon: {
-    width: typography.Size['text-xl'],
-    height: typography.Size['text-xl'],
-    color: theme.Menu.Item.menuitemIconColor,
-  },
-  leftContainer: {
-    flexDirection: 'row',
-  },
-  templateContainer: {
-    flexDirection: 'row',
-    gap: spacing.Gap['gap-2'],
+  separator: {
+    borderTopWidth: 1,
+    borderTopColor: theme.Menu.Overlay.overlayMenuBorderColor,
+    paddingTop: spacing.Gap['gap-1'],
   },
   contentContainer: {
     flexDirection: 'row',
@@ -71,6 +62,23 @@ const useStyles = makeStyles(({ theme, spacing, typography }) => ({
     borderWidth: 1, // theme.Menu.Item.menuitemBorder, - установить когда там будет числовое значение
     borderRadius: theme.Menu.Item.menuitemBorderRadius,
     backgroundColor: 'lightgray', // theme.Menu.Item.menuitemBg,
+  },
+  leftContainer: {
+    flexDirection: 'row',
+  },
+  accessory: {
+    color: theme.Menu.Item.menuitemIconColor,
+    width: theme.Menu.Item.menuitemSubmenuIconFontSize,
+    height: theme.Menu.Item.menuitemSubmenuIconFontSize,
+  },
+  templateContainer: {
+    flexDirection: 'row',
+    gap: spacing.Gap['gap-2'],
+  },
+  icon: {
+    width: typography.Size['text-xl'],
+    height: typography.Size['text-xl'],
+    color: theme.Menu.Item.menuitemIconColor,
   },
   textContainer: {
     flexDirection: 'column',
