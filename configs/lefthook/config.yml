@@ -8,7 +8,7 @@ prepare-commit-msg:
         - merge
         - rebase
         - merge-commit
-      run: node_modules/.bin/cz --hook
+      run: node_modules/.bin/cz --hook || true
 
 commit-msg:
   commands:
