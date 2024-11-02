@@ -2,13 +2,14 @@ colors: true
 
 prepare-commit-msg:
   commands:
-    commitzen:
+    commitizen:
       interactive: true
       skip:
         - merge
         - rebase
         - merge-commit
-      run: npx cz --hook || true
+        - run: '[ -z "$TERM" ] || [ "$TERM" = "dumb" ]'
+      run: npx cz --hook
 
 commit-msg:
   commands:
