@@ -7,7 +7,7 @@ prepare-commit-msg:
       skip:
         - merge
         - rebase
-      run: LEFTHOOK=0 exec < /dev/tty && node_modules/.bin/cz --hook || true
+      run: node_modules/.bin/cz --hook || true
 
 commit-msg:
   commands:
