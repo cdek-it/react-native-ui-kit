@@ -7,20 +7,33 @@ prepare-commit-msg:
       skip:
         - merge
         - rebase
-      run: node_modules/.bin/cz --hook || true
+        - merge-commit
+      run: node_modules/.bin/cz --hook
 
 commit-msg:
   commands:
     commitlint:
+      skip:
+        - merge
+        - rebase
+        - merge-commit
       run: yarn commitlint --edit $1
 
 pre-commit:
   parallel: true
   commands:
     eslint:
+      skip:
+        - merge
+        - rebase
+        - merge-commit
       glob: "*.{ts,tsx}"
       run: yarn eslint --fix {staged_files}
       stage_fixed: true
     type-check:
+      skip:
+        - merge
+        - rebase
+        - merge-commit
       glob: "*.{ts,tsx}"
       run: yarn tsc --noEmit
