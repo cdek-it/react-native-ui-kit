@@ -1,2 +1,4 @@
-extends:
-  - "./configs/lefthook/config.yml"
+remotes:
+  - git_url: git@gitlab.cdek.ru:react-native/lefthook-config.git
+    configs:
+      - config.yml
