@@ -14,7 +14,6 @@ workflow:
 
 stages:
   - install
-  - review
   - start_build
   - build
   - publish
@@ -22,7 +21,6 @@ stages:
 variables:
   ENABLE_ANDROID: "yes"
   ENABLE_IOS: "yes"
-  ENABLE_REVIEW_REQUEST: "yes"
   IMG_NODE: "node:18-alpine"
   REVIEWERS_LIST: "CHANGE_ME"
   REVIEW_CHAT_WEBHOOK: "CHANGE_ME"
@@ -54,60 +52,6 @@ variables:
   APP_STORE_CONNECT_API_KEY_KEY_FILE: "AuthKey.p8"
   APP_STORE_CONNECT_API_KEY_DURATION: "1200"
   JOB_ARTIFACT_PATH: $CI_PROJECT_URL/-/jobs/$CI_JOB_ID/artifacts/raw
-
-request_review:
-  stage: review
-  extends:
-    - .enable_review_request
-    - .alpine_docker_runner
-  allow_failure: true
-  interruptible: true
-  script:
-    - |
-      bash -c '
-      AUTHOR=$(curl --header "PRIVATE-TOKEN: $GITLAB_TOKEN" --header "Content-Type: application/json" "$CI_API_V4_URL/projects/$CI_PROJECT_ID/merge_requests/$CI_MERGE_REQUEST_IID" | jq -r ".author.username");
-      REVIEWERS_ARRAY=(${REVIEWERS_LIST//,/ });
-      SELECTED_REVIEWER="";
-      WAS_PREVIOUSLY_SELECTED="no";
-      if [ -f selected_reviewer.json ]; then
-        SELECTED_REVIEWER=$(jq -r ".reviewer" selected_reviewer.json);
-        WAS_PREVIOUSLY_SELECTED="yes";
-      fi;
-      if [ -z "$SELECTED_REVIEWER" ]; then
-        SELECTED_REVIEWER=$(printf "%s\n" "${REVIEWERS_ARRAY[@]}" | shuf | grep -v "$AUTHOR" | head -n 1);
-        if [ -z "$SELECTED_REVIEWER" ]; then
-          echo "Не удалось выбрать ревьюера, все возможные кандидаты являются авторами.";
-          exit 1;
-        fi;
-        echo "{\"branch\":\"$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME\",\"reviewer\":\"$SELECTED_REVIEWER\"}" > selected_reviewer.json;
-      fi;
-      
-      REVIEWER_ID=$(curl --header "PRIVATE-TOKEN: $GITLAB_TOKEN" --header "Content-Type: application/json" "$CI_API_V4_URL/users?username=$SELECTED_REVIEWER" | jq -r ".[0].id");
-      
-      if [ -z "$REVIEWER_ID" ]; then
-        echo "Не удалось получить ID для ревьюера $SELECTED_REVIEWER.";
-        exit 1;
-      fi;
-
-      curl --request PUT --header "PRIVATE-TOKEN: $GITLAB_TOKEN" \
-        --header "Content-Type: application/json" \
-        --data "{\"reviewer_ids\": [$REVIEWER_ID]}" \
-        "$CI_API_V4_URL/projects/$CI_PROJECT_ID/merge_requests/$CI_MERGE_REQUEST_IID";
-    
-      MESSAGE=""
-      if [ "$WAS_PREVIOUSLY_SELECTED" = "no" ]; then
-        MESSAGE="MR [!${CI_MERGE_REQUEST_IID}](${CI_PROJECT_URL}/-/merge_requests/${CI_MERGE_REQUEST_IID}) от @${AUTHOR} (ветка: ${CI_MERGE_REQUEST_SOURCE_BRANCH_NAME}) готов на ревью.\nВыбран ревьюер: @${SELECTED_REVIEWER}.\nСсылка на MR: ${CI_PROJECT_URL}/-/merge_requests/${CI_MERGE_REQUEST_IID}";
-      fi;
-      if [ "$WAS_PREVIOUSLY_SELECTED" = "yes" ]; then
-        MESSAGE="@${AUTHOR} запросил повторное ревью от @${SELECTED_REVIEWER}.\nMR [!${CI_MERGE_REQUEST_IID}](${CI_PROJECT_URL}/-/merge_requests/${CI_MERGE_REQUEST_IID}) (ветка: ${CI_MERGE_REQUEST_SOURCE_BRANCH_NAME})\nСсылка на MR: ${CI_PROJECT_URL}/-/merge_requests/${CI_MERGE_REQUEST_IID}";
-      fi;
-  
-      curl -X POST -H "Content-Type: application/json" -d "{\"text\": \"$MESSAGE\"}" "$REVIEW_CHAT_WEBHOOK";
-      '
-  cache:
-    key: mr-$CI_PROJECT_ID-$CI_MERGE_REQUEST_IID
-    paths:
-      - selected_reviewer.json
 
 start_build:
   stage: start_build

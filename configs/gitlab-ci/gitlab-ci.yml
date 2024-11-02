@@ -3,6 +3,10 @@ include:
     file: /workflows/tests.gitlab-ci.yml
   - project: react-native/gitlab-ci
     file: /workflows/validate.gitlab-ci.yml
+  - project: react-native/gitlab-ci
+    file: /workflows/review.gitlab-ci.yml
+    rules:
+      - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
   - local: /configs/gitlab-ci/workflows/mr-develop.gitlab-ci.yml
     rules:
       - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "develop"
