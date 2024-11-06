@@ -38,6 +38,7 @@ export const InputGroup = memo<InputGroupProps>(
         <View style={styles.inputWrapper}>
           <InputTextBase
             containerStyle={StyleSheet.flatten([
+              styles.inputContainer,
               !!left && styles.inputContainerForLeftAddon,
               !!right && styles.inputContainerForRightAddon,
             ])}
@@ -57,11 +58,13 @@ export const InputGroup = memo<InputGroupProps>(
 
 const useStyles = makeStyles(() => ({
   container: {
-    flex: 1,
     flexDirection: 'row',
   },
   inputWrapper: {
-    flex: 1,
+    flexGrow: 1,
+  },
+  inputContainer: {
+    flexGrow: 1,
   },
   inputContainerForLeftAddon: {
     borderTopLeftRadius: 0,
