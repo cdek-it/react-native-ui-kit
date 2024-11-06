@@ -60,9 +60,7 @@ export const MenuItemIcon = ({ Icon, style, badgeSeverity }: MenuItemIconProps) 
             testID='menuItemIconBadge'
             onLayout={onLayout}
           />
-        ) : (
-          false
-        )}
+        ) : null}
       </View>
     </View>
   )

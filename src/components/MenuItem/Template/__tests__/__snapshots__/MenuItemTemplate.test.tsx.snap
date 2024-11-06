@@ -11,7 +11,7 @@ exports[`MenuItemTemplate full disabled 1`] = `
   }
 >
   <View
-    accessibilityLabel="Menu item"
+    accessibilityLabel="Menu Item"
     accessibilityRole="button"
     accessibilityState={
       {
@@ -245,7 +245,7 @@ exports[`MenuItemTemplate full disabled 1`] = `
                 ]
               }
             >
-              Menu item
+              Menu Item
             </Text>
             <Text
               style={
@@ -495,12 +495,12 @@ exports[`MenuItemTemplate full disabled 1`] = `
 </View>
 `;
 
-exports[`MenuItemTemplate minimal 1`] = `
+exports[`MenuItemTemplate minimal config 1`] = `
 <View
   style={false}
 >
   <View
-    accessibilityLabel="Menu item"
+    accessibilityLabel="Menu Item"
     accessibilityRole="button"
     accessibilityState={
       {
@@ -588,7 +588,7 @@ exports[`MenuItemTemplate minimal 1`] = `
                 ]
               }
             >
-              Menu item
+              Menu Item
             </Text>
             <Text
               style={
@@ -616,7 +616,7 @@ exports[`MenuItemTemplate prefix,suffix = down 1`] = `
   style={false}
 >
   <View
-    accessibilityLabel="Menu item"
+    accessibilityLabel="Menu Item"
     accessibilityRole="button"
     accessibilityState={
       {
@@ -632,7 +632,7 @@ exports[`MenuItemTemplate prefix,suffix = down 1`] = `
         "max": undefined,
         "min": undefined,
         "now": undefined,
-        "text": "Cation",
+        "text": "Caption",
       }
     }
     accessible={true}
@@ -789,7 +789,7 @@ exports[`MenuItemTemplate prefix,suffix = down 1`] = `
                 ]
               }
             >
-              Menu item
+              Menu Item
             </Text>
             <Text
               style={
@@ -804,7 +804,7 @@ exports[`MenuItemTemplate prefix,suffix = down 1`] = `
                 ]
               }
             >
-              Cation
+              Caption
             </Text>
           </View>
         </View>
@@ -904,7 +904,7 @@ exports[`MenuItemTemplate prefix,suffix = right 1`] = `
   style={false}
 >
   <View
-    accessibilityLabel="Menu item"
+    accessibilityLabel="Menu Item"
     accessibilityRole="button"
     accessibilityState={
       {
@@ -920,7 +920,7 @@ exports[`MenuItemTemplate prefix,suffix = right 1`] = `
         "max": undefined,
         "min": undefined,
         "now": undefined,
-        "text": "Cation",
+        "text": "Caption",
       }
     }
     accessible={true}
@@ -1077,7 +1077,7 @@ exports[`MenuItemTemplate prefix,suffix = right 1`] = `
                 ]
               }
             >
-              Menu item
+              Menu Item
             </Text>
             <Text
               style={
@@ -1092,7 +1092,7 @@ exports[`MenuItemTemplate prefix,suffix = right 1`] = `
                 ]
               }
             >
-              Cation
+              Caption
             </Text>
           </View>
         </View>
@@ -1192,7 +1192,7 @@ exports[`MenuItemTemplate with extra 1`] = `
   style={false}
 >
   <View
-    accessibilityLabel="Menu item"
+    accessibilityLabel="Menu Item"
     accessibilityRole="button"
     accessibilityState={
       {
@@ -1280,7 +1280,7 @@ exports[`MenuItemTemplate with extra 1`] = `
                 ]
               }
             >
-              Menu item
+              Menu Item
             </Text>
             <Text
               style={
@@ -1404,7 +1404,7 @@ exports[`MenuItemTemplate with icon 1`] = `
   style={false}
 >
   <View
-    accessibilityLabel="Menu item"
+    accessibilityLabel="Menu Item"
     accessibilityRole="button"
     accessibilityState={
       {
@@ -1602,7 +1602,7 @@ exports[`MenuItemTemplate with icon 1`] = `
                 ]
               }
             >
-              Menu item
+              Menu Item
             </Text>
             <Text
               style={
@@ -1630,7 +1630,7 @@ exports[`MenuItemTemplate with icon and badge 1`] = `
   style={false}
 >
   <View
-    accessibilityLabel="Menu item"
+    accessibilityLabel="Menu Item"
     accessibilityRole="button"
     accessibilityState={
       {
@@ -1814,8 +1814,8 @@ exports[`MenuItemTemplate with icon and badge 1`] = `
                     },
                     {
                       "position": "absolute",
-                      "right": 0,
-                      "top": 0,
+                      "right": -3.5,
+                      "top": -3.5,
                     },
                   ]
                 }
@@ -1859,7 +1859,7 @@ exports[`MenuItemTemplate with icon and badge 1`] = `
                 ]
               }
             >
-              Menu item
+              Menu Item
             </Text>
             <Text
               style={
@@ -1893,7 +1893,7 @@ exports[`MenuItemTemplate with separator 1`] = `
   }
 >
   <View
-    accessibilityLabel="Menu item"
+    accessibilityLabel="Menu Item"
     accessibilityRole="button"
     accessibilityState={
       {
@@ -1981,7 +1981,7 @@ exports[`MenuItemTemplate with separator 1`] = `
                 ]
               }
             >
-              Menu item
+              Menu Item
             </Text>
             <Text
               style={
