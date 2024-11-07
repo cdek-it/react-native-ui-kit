@@ -67,3 +67,10 @@ export interface VariantStyles {
   labelVariantStyles: LabelVariantStyles
   iconVariantStyles: IconVariantStyles
 }
+
+export interface ButtonSeverityProps {
+  /**
+   * Controls severity button styling variant
+   */
+  severity: 'help' | 'info' | 'success' | 'warning' | 'danger'
+}
