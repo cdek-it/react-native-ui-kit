@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-import { View } from 'react-native'
 
 import { Caption } from './Caption'
 
@@ -14,13 +13,7 @@ const meta: Meta<typeof Caption> = {
   argTypes: {
     color: { control: 'radio', options: ['default', 'secondary', 'primary'] },
   },
-  decorators: [
-    (Story) => (
-      <View style={{ padding: 16 }}>
-        <Story />
-      </View>
-    ),
-  ],
+  decorators: [(Story) => <Story />],
 }
 
 export default meta
