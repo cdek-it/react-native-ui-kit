@@ -15,6 +15,7 @@ describe('Badge component tests', () => {
     ['severity: basic', { children: '12', severity: 'success' }],
     ['severity: basic', { children: '12', severity: 'warning' }],
     ['severity: basic', { children: '12', severity: 'danger' }],
+    ['severity: default', { children: '12' }],
     ['with custom style', { dot: true, severity: 'basic', style: { margin: 10 } }],
   ]
 

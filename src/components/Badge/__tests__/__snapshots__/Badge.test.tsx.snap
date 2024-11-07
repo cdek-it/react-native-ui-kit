@@ -151,18 +151,15 @@ exports[`Badge component tests severity: basic 1`] = `
     ]
   }
 >
-  <Text
+  <View
     style={
       [
         {
           "borderRadius": 100,
-          "color": "#ffffff",
-          "fontSize": 10.5,
-          "fontWeight": 700,
           "height": 21,
+          "justifyContent": "center",
           "paddingHorizontal": 7,
           "paddingVertical": 0,
-          "verticalAlign": "middle",
         },
         {
           "backgroundColor": "#188700",
@@ -170,8 +167,18 @@ exports[`Badge component tests severity: basic 1`] = `
       ]
     }
   >
-    12
-  </Text>
+    <Text
+      style={
+        {
+          "color": "#ffffff",
+          "fontSize": 10.5,
+          "fontWeight": 700,
+        }
+      }
+    >
+      12
+    </Text>
+  </View>
 </View>
 `;
 
@@ -186,18 +193,15 @@ exports[`Badge component tests severity: basic 2`] = `
     ]
   }
 >
-  <Text
+  <View
     style={
       [
         {
           "borderRadius": 100,
-          "color": "#ffffff",
-          "fontSize": 10.5,
-          "fontWeight": 700,
           "height": 21,
+          "justifyContent": "center",
           "paddingHorizontal": 7,
           "paddingVertical": 0,
-          "verticalAlign": "middle",
         },
         {
           "backgroundColor": "#49a2ef",
@@ -205,8 +209,18 @@ exports[`Badge component tests severity: basic 2`] = `
       ]
     }
   >
-    12
-  </Text>
+    <Text
+      style={
+        {
+          "color": "#ffffff",
+          "fontSize": 10.5,
+          "fontWeight": 700,
+        }
+      }
+    >
+      12
+    </Text>
+  </View>
 </View>
 `;
 
@@ -221,18 +235,15 @@ exports[`Badge component tests severity: basic 3`] = `
     ]
   }
 >
-  <Text
+  <View
     style={
       [
         {
           "borderRadius": 100,
-          "color": "#ffffff",
-          "fontSize": 10.5,
-          "fontWeight": 700,
           "height": 21,
+          "justifyContent": "center",
           "paddingHorizontal": 7,
           "paddingVertical": 0,
-          "verticalAlign": "middle",
         },
         {
           "backgroundColor": "#68c170",
@@ -240,8 +251,18 @@ exports[`Badge component tests severity: basic 3`] = `
       ]
     }
   >
-    12
-  </Text>
+    <Text
+      style={
+        {
+          "color": "#ffffff",
+          "fontSize": 10.5,
+          "fontWeight": 700,
+        }
+      }
+    >
+      12
+    </Text>
+  </View>
 </View>
 `;
 
@@ -256,18 +277,15 @@ exports[`Badge component tests severity: basic 4`] = `
     ]
   }
 >
-  <Text
+  <View
     style={
       [
         {
           "borderRadius": 100,
-          "color": "#ffffff",
-          "fontSize": 10.5,
-          "fontWeight": 700,
           "height": 21,
+          "justifyContent": "center",
           "paddingHorizontal": 7,
           "paddingVertical": 0,
-          "verticalAlign": "middle",
         },
         {
           "backgroundColor": "#ffb330",
@@ -275,8 +293,18 @@ exports[`Badge component tests severity: basic 4`] = `
       ]
     }
   >
-    12
-  </Text>
+    <Text
+      style={
+        {
+          "color": "#ffffff",
+          "fontSize": 10.5,
+          "fontWeight": 700,
+        }
+      }
+    >
+      12
+    </Text>
+  </View>
 </View>
 `;
 
@@ -291,18 +319,15 @@ exports[`Badge component tests severity: basic 5`] = `
     ]
   }
 >
-  <Text
+  <View
     style={
       [
         {
           "borderRadius": 100,
-          "color": "#ffffff",
-          "fontSize": 10.5,
-          "fontWeight": 700,
           "height": 21,
+          "justifyContent": "center",
           "paddingHorizontal": 7,
           "paddingVertical": 0,
-          "verticalAlign": "middle",
         },
         {
           "backgroundColor": "#e26e63",
@@ -310,8 +335,60 @@ exports[`Badge component tests severity: basic 5`] = `
       ]
     }
   >
-    12
-  </Text>
+    <Text
+      style={
+        {
+          "color": "#ffffff",
+          "fontSize": 10.5,
+          "fontWeight": 700,
+        }
+      }
+    >
+      12
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Badge component tests severity: default 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "flex-start",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "borderRadius": 100,
+          "height": 21,
+          "justifyContent": "center",
+          "paddingHorizontal": 7,
+          "paddingVertical": 0,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#ffffff",
+          "fontSize": 10.5,
+          "fontWeight": 700,
+        }
+      }
+    >
+      12
+    </Text>
+  </View>
 </View>
 `;
 

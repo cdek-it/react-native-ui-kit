@@ -45,7 +45,9 @@ export const Badge = memo<BadgeProps>(({ children, dot, severity = 'basic', styl
       {dot ? (
         <View style={[styles.dot, styles[severity]]} />
       ) : (
-        <Text style={[styles.textBadge, styles[severity]]}>{children}</Text>
+        <View style={[styles.textBadgeContainer, styles[severity]]}>
+          <Text style={styles.textBadge}>{children}</Text>
+        </View>
       )}
     </View>
   )
@@ -60,12 +62,14 @@ const useStyles = makeStyles(({ theme }) => ({
     height: theme.Misc.Badge.badgeDotSize,
     borderRadius: 100,
   },
-  textBadge: {
+  textBadgeContainer: {
     height: theme.Misc.Badge.badgeHeight,
     paddingHorizontal: theme.Misc.Tag.tagPadding,
     paddingVertical: theme.Misc.Chip.chipPaddingTopBottom,
+    justifyContent: 'center',
     borderRadius: 100,
-    verticalAlign: 'middle',
+  },
+  textBadge: {
     color: theme.Misc.Badge.badgeTextColor,
     fontSize: 10.5,
     fontWeight: 700,

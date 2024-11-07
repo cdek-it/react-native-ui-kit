@@ -1515,18 +1515,15 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
           ]
         }
       >
-        <Text
+        <View
           style={
             [
               {
                 "borderRadius": 100,
-                "color": "#ffffff",
-                "fontSize": 10.5,
-                "fontWeight": 700,
                 "height": 21,
+                "justifyContent": "center",
                 "paddingHorizontal": 7,
                 "paddingVertical": 0,
-                "verticalAlign": "middle",
               },
               {
                 "backgroundColor": "#188700",
@@ -1534,8 +1531,18 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
             ]
           }
         >
-          12
-        </Text>
+          <Text
+            style={
+              {
+                "color": "#ffffff",
+                "fontSize": 10.5,
+                "fontWeight": 700,
+              }
+            }
+          >
+            12
+          </Text>
+        </View>
       </View>
     </View>
   </View>
