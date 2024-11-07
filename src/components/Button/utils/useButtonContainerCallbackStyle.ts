@@ -7,9 +7,8 @@ import {
 } from 'react-native'
 
 import { makeStyles } from '../../../utils/makeStyles'
-import type { BaseButtonProps } from '../types'
+import type { BaseButtonProps, ContainerVariantStyles, PressedVariantStyles } from '../types'
 
-import { useButtonPressedStyle } from './useButtonPressedStyle'
 import { useTypeBasedStyle } from './useTypeBasedStyle'
 
 export const useButtonContainerCallbackStyle = (
@@ -19,14 +18,16 @@ export const useButtonContainerCallbackStyle = (
   disabled: Required<BaseButtonProps>['disabled'],
   loading: Required<BaseButtonProps>['loading'],
   iconOnly: Required<BaseButtonProps>['iconOnly'],
-  style: BaseButtonProps['style']
+  style: BaseButtonProps['style'],
+  containerVariantStyles: ContainerVariantStyles,
+  pressedVariantStyles: PressedVariantStyles
 ) => {
   const styles = useButtonContainerStyle()
 
   const sizeBasedStyle = useTypeBasedStyle(size, styles)
-  const variantBasedStyle = useTypeBasedStyle(variant, styles)
+  const variantBasedStyle = useTypeBasedStyle(variant, containerVariantStyles)
   const shapeBasedStyle = useTypeBasedStyle(shape, styles)
-  const pressedStyle = useButtonPressedStyle(variant)
+  const pressedStyle = useTypeBasedStyle(variant, pressedVariantStyles)
 
   return useCallback(
     ({ pressed }: PressableStateCallbackType) => {
@@ -115,21 +116,6 @@ const useButtonContainerStyle = makeStyles(({ theme, border }) => ({
     minHeight: theme.Button.Common.buttonHeightSM,
     maxHeight: theme.Button.Common.buttonHeightSM,
     gap: theme.General.inlineSpacing,
-  },
-
-  basic: {
-    borderColor: theme.Button.Basic.buttonBorderColor,
-    backgroundColor: theme.Button.Basic.buttonBg,
-  },
-
-  outlined: {
-    borderColor: theme.Button.Outlined.outlinedButtonBorderColor,
-    backgroundColor: theme.Button.Outlined.outlinedButtonBg,
-  },
-
-  text: {
-    borderColor: theme.Button.Basic.buttonBorderColor,
-    backgroundColor: theme.Button.Text.textButtonBg,
   },
 
   square: {

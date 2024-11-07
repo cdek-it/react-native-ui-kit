@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 import { type ColorValue, StyleSheet } from 'react-native'
 
 import { makeStyles } from '../../../utils/makeStyles'
-import type { BaseButtonProps } from '../types'
+import type { BaseButtonProps, IconVariantStyles } from '../types'
 
 import { useTypeBasedStyle } from './useTypeBasedStyle'
 
@@ -10,12 +10,13 @@ export const useIconStyle = (
   size: Required<BaseButtonProps>['size'],
   variant: Required<BaseButtonProps>['variant'],
   disabled: Required<BaseButtonProps>['disabled'],
-  loading: Required<BaseButtonProps>['loading']
+  loading: Required<BaseButtonProps>['loading'],
+  iconVariantStyles: IconVariantStyles
 ) => {
   const styles = useStyles()
 
   const sizeBasedStyle = useTypeBasedStyle(size, styles)
-  const variantBasedStyle = useTypeBasedStyle(variant, styles)
+  const variantBasedStyle = useTypeBasedStyle(variant, iconVariantStyles)
 
   return useMemo(() => {
     const containerStyle = [sizeBasedStyle, variantBasedStyle]
@@ -51,18 +52,6 @@ const useStyles = makeStyles(({ theme }) => ({
   small: {
     height: 14,
     width: 14,
-  },
-
-  basic: {
-    color: theme.Button.Basic.buttonTextColor,
-  },
-
-  outlined: {
-    color: theme.Button.Outlined.outlinedButtonTextColor,
-  },
-
-  text: {
-    color: theme.Button.Text.textButtonTextColor,
   },
 
   disabled: {

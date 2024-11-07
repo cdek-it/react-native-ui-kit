@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 import { type StyleProp, StyleSheet, type TextStyle } from 'react-native'
 
 import { makeStyles } from '../../../utils/makeStyles'
-import type { BaseButtonProps } from '../types'
+import type { BaseButtonProps, LabelVariantStyles } from '../types'
 
 import { useTypeBasedStyle } from './useTypeBasedStyle'
 
@@ -10,12 +10,13 @@ export const useButtonLabelStyle = (
   size: Required<BaseButtonProps>['size'],
   variant: Required<BaseButtonProps>['variant'],
   disabled: Required<BaseButtonProps>['disabled'],
-  loading: Required<BaseButtonProps>['loading']
+  loading: Required<BaseButtonProps>['loading'],
+  labelVariantStyles: LabelVariantStyles
 ) => {
   const styles = useButtonLabelStyles()
 
   const sizeBasedStyle = useTypeBasedStyle(size, styles)
-  const variantBasedStyle = useTypeBasedStyle(variant, styles)
+  const variantBasedStyle = useTypeBasedStyle(variant, labelVariantStyles)
 
   return useMemo(() => {
     const containerStyle: Array<StyleProp<TextStyle>> = [
@@ -55,18 +56,6 @@ const useButtonLabelStyles = makeStyles(({ theme }) => ({
   small: {
     fontSize: 12.25,
     lineHeight: 14,
-  },
-
-  basic: {
-    color: theme.Button.Basic.buttonTextColor,
-  },
-
-  outlined: {
-    color: theme.Button.Outlined.outlinedButtonTextColor,
-  },
-
-  text: {
-    color: theme.Button.Text.textButtonTextColor,
   },
 
   disabled: {

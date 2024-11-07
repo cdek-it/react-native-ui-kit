@@ -1,7 +1,7 @@
 import React, { memo, type ReactNode } from 'react'
 import { Pressable } from 'react-native'
 
-import type { BaseButtonProps } from '../types'
+import type { BaseButtonProps, VariantStyles } from '../types'
 
 import { useButtonContainerCallbackStyle } from './useButtonContainerCallbackStyle'
 
@@ -12,21 +12,37 @@ export const ButtonContainer = memo<
   > &
     Pick<Required<BaseButtonProps>, 'size' | 'variant' | 'disabled' | 'loading' | 'shape'> & {
       children: ReactNode
-    }
->(({ style, size, disabled, loading, variant, shape, iconOnly, children, ...props }) => {
-  const containerCallbackStyle = useButtonContainerCallbackStyle(
+    } & Pick<VariantStyles, 'containerVariantStyles' | 'pressedVariantStyles'>
+>(
+  ({
+    style,
     size,
-    variant,
-    shape,
     disabled,
     loading,
+    variant,
+    shape,
     iconOnly,
-    style
-  )
+    children,
+    containerVariantStyles,
+    pressedVariantStyles,
+    ...props
+  }) => {
+    const containerCallbackStyle = useButtonContainerCallbackStyle(
+      size,
+      variant,
+      shape,
+      disabled,
+      loading,
+      iconOnly,
+      style,
+      containerVariantStyles,
+      pressedVariantStyles
+    )
 
-  return (
-    <Pressable disabled={disabled || loading} style={containerCallbackStyle} {...props}>
-      {children}
-    </Pressable>
-  )
-})
+    return (
+      <Pressable disabled={disabled || loading} style={containerCallbackStyle} {...props}>
+        {children}
+      </Pressable>
+    )
+  }
+)
