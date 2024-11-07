@@ -9,7 +9,7 @@ import {
 import { makeStyles } from '../../../utils/makeStyles'
 import type { BaseButtonProps } from '../types'
 
-import { useButtonPressedStyle } from './useButtonPressedSty;e'
+import { useButtonPressedStyle } from './useButtonPressedStyle'
 import { useTypeBasedStyle } from './useTypeBasedStyle'
 
 export const useButtonContainerCallbackStyle = (
