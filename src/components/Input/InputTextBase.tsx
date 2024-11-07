@@ -196,7 +196,6 @@ export const InputTextBase = memo<InputTextBaseProps>(
 
 const useStyles = makeStyles(({ theme }) => ({
   container: {
-    flex: 1,
     minHeight: 35,
     flexDirection: 'row',
     borderWidth: 1,
