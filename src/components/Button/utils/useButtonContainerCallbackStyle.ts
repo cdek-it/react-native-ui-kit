@@ -9,6 +9,7 @@ import {
 import { makeStyles } from '../../../utils/makeStyles'
 import type { BaseButtonProps } from '../types'
 
+import { useButtonPressedStyle } from './useButtonPressedSty;e'
 import { useTypeBasedStyle } from './useTypeBasedStyle'
 
 export const useButtonContainerCallbackStyle = (
@@ -25,6 +26,7 @@ export const useButtonContainerCallbackStyle = (
   const sizeBasedStyle = useTypeBasedStyle(size, styles)
   const variantBasedStyle = useTypeBasedStyle(variant, styles)
   const shapeBasedStyle = useTypeBasedStyle(shape, styles)
+  const pressedStyle = useButtonPressedStyle(variant)
 
   return useCallback(
     ({ pressed }: PressableStateCallbackType) => {
@@ -44,7 +46,7 @@ export const useButtonContainerCallbackStyle = (
       }
 
       if (pressed) {
-        containerStyle.push(styles.pressed)
+        containerStyle.push(pressedStyle)
       }
 
       if (typeof style === 'function') {
@@ -59,13 +61,13 @@ export const useButtonContainerCallbackStyle = (
       disabled,
       iconOnly,
       loading,
+      pressedStyle,
       shapeBasedStyle,
       sizeBasedStyle,
       style,
       styles.container,
       styles.disabled,
       styles.iconOnly,
-      styles.pressed,
       variantBasedStyle,
     ]
   )
@@ -128,14 +130,6 @@ const useButtonContainerStyle = makeStyles(({ theme, border }) => ({
   text: {
     borderColor: theme.Button.Basic.buttonBorderColor,
     backgroundColor: theme.Button.Text.textButtonBg,
-  },
-
-  pressed: {
-    shadowColor: theme.General.focusOutlineColor,
-    shadowOffset: { height: 0, width: 0 },
-    elevation: 0,
-    shadowOpacity: 1,
-    shadowRadius: 3.5,
   },
 
   square: {

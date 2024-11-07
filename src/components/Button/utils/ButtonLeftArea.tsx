@@ -12,7 +12,7 @@ export const ButtonLeftArea = memo<
   if (iconPosition === 'left' || !Icon) {
     if (loading && !disabled) {
       return <ButtonActivityIndicator />
-    } else if (Icon) {
+    } else {
       return <ButtonIcon {...{ size, variant, disabled, loading, Icon }} />
     }
   }
