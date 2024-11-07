@@ -29,12 +29,4 @@ const useButtonContainerStyle = makeStyles(({ theme, border }) => ({
     shadowOpacity: 1,
     shadowRadius: 3.5,
   },
-
-  pressed: {
-    shadowColor: theme.General.focusOutlineColor,
-    shadowOffset: { height: 0, width: 0 },
-    elevation: 0,
-    shadowOpacity: 1,
-    shadowRadius: 3.5,
-  },
 }))
