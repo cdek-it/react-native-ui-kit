@@ -13,6 +13,7 @@ describe('Button component tests', () => {
     variant: ['basic', 'outlined', 'text'],
     disabled: [true, false],
     label: ['Button'],
+    testOnly_pressed: [true, false],
   })
 
   test.each(buttonSnapshotCases)(
@@ -63,6 +64,22 @@ describe('Button component tests', () => {
 
   test('Button default props', () => {
     const renderedBody = render(<Button label='Button' />)
+    expect(renderedBody.toJSON()).toMatchSnapshot()
+  })
+
+  test('Button with custom style', () => {
+    const renderedBody = render(<Button label='Button' style={{ margin: 10 }} />)
+    expect(renderedBody.toJSON()).toMatchSnapshot()
+  })
+
+  test('Button with custom pressed-based style', () => {
+    const renderedBody = render(
+      <Button
+        testOnly_pressed
+        label='Button'
+        style={({ pressed }) => ({ margin: pressed ? 10 : 15 })}
+      />
+    )
     expect(renderedBody.toJSON()).toMatchSnapshot()
   })
 })
