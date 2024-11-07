@@ -10,6 +10,7 @@ export const ButtonActivityIndicator = memo(() => {
     <ActivityIndicator
       color={styles.activityIndicator.color}
       size={styles.activityIndicator.height}
+      testID='Button_ActiityIndicator'
     />
   )
 })

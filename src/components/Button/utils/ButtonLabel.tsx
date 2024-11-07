@@ -15,5 +15,9 @@ export const ButtonLabel = memo<
     return null
   }
 
-  return <Text style={labelStyle}>{label}</Text>
+  return (
+    <Text style={labelStyle} testID='Button_Text'>
+      {label}
+    </Text>
+  )
 })

@@ -14,5 +14,12 @@ export const ButtonIcon = memo<
     return null
   }
 
-  return <Icon height={iconStyle.height} style={iconStyle} width={iconStyle.width} />
+  return (
+    <Icon
+      height={iconStyle.height}
+      style={iconStyle}
+      testID='Button_Icon'
+      width={iconStyle.width}
+    />
+  )
 })
