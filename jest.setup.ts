@@ -1,4 +1,5 @@
 import 'react-native-gesture-handler/jestSetup'
+import '@testing-library/react-native/extend-expect'
 
 generatePropsCombinations = <T>(properties: PropertyCombinations<T>): T[] => {
   const keys = Object.keys(properties) as Array<keyof T>

@@ -142,10 +142,12 @@ export const InputTextBase = memo<InputTextBaseProps>(
             <Animated.View
               layout={LinearTransition.duration(100)}
               style={[styles.outline, outlineStyles, styles.dangerOutline, dangerOutlineStyles]}
+              testID='InputTextBase_dangerOutline'
             />
             <Animated.View
               layout={LinearTransition.duration(100)}
               style={[styles.outline, outlineStyles, styles.focusOutline, focusOutlineStyles]}
+              testID='InputTextBase_focusOutline'
             />
           </>
         )}
@@ -162,6 +164,7 @@ export const InputTextBase = memo<InputTextBaseProps>(
             placeholderTextColor={styles.placeholderTextColor.color}
             ref={inputRef}
             style={styles.input}
+            testID='InputTextBase_input'
             value={otherProps.value ?? value}
             onBlur={onBlur}
             onChangeText={onChangeText}
@@ -170,7 +173,11 @@ export const InputTextBase = memo<InputTextBaseProps>(
           />
 
           {showClearButton && !disabled && (
-            <TouchableOpacity style={styles.rightContainer} onPress={clear}>
+            <TouchableOpacity
+              style={styles.rightContainer}
+              testID='InputTextBase_clearButton'
+              onPress={clear}
+            >
               <IconX
                 height={styles.iconSize.height}
                 style={styles.rightIcon}
@@ -180,7 +187,7 @@ export const InputTextBase = memo<InputTextBaseProps>(
           )}
 
           {disabled && (
-            <View style={styles.rightContainer}>
+            <View style={styles.rightContainer} testID='InputTextBase_disabledIcon'>
               <IconLock
                 height={styles.iconSize.height}
                 style={styles.rightIcon}

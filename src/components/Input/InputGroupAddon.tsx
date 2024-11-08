@@ -28,6 +28,7 @@ export const InputGroupAddon = memo<InputGroupAddonProps>(
       <Pressable
         disabled={disabled}
         style={[styles.container, styles[position], disabled && styles.disabled]}
+        testID='InputGroupAddon_pressable'
         onPress={onPress}
       >
         {typeof content === 'string' ? (
