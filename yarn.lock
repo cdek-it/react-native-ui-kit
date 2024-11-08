@@ -2294,6 +2294,7 @@ __metadata:
     "@storybook/addon-ondevice-controls": "npm:^8.3.5"
     "@storybook/addon-ondevice-notes": "npm:^8.3.5"
     "@storybook/core": "npm:^8.3.5"
+    "@storybook/preview-api": "npm:^8.3.5"
     "@storybook/react": "npm:^8.3.5"
     "@storybook/react-native": "npm:^8.3.5"
     "@storybook/test": "npm:^8.3.5"
@@ -4327,6 +4328,15 @@ __metadata:
   peerDependencies:
     storybook: ^8.3.6
   checksum: 10/94faf62726b948c2f8e52e15ac99f4ca2f5884a874fbecda6a81e58a03ff316d17ed36c8c146bd388bb58dad2a2bd09cd61c6d7fc1ff2cddfc774c2aed34e37c
+  languageName: node
+  linkType: hard
+
+"@storybook/preview-api@npm:^8.3.5":
+  version: 8.4.1
+  resolution: "@storybook/preview-api@npm:8.4.1"
+  peerDependencies:
+    storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+  checksum: 10/36dee1deb1c6c905fc73854315b5f5d8f4d144e409433fef8885f10e506e2663a528458d88a854968e7de1bebc6bfb1091d7a7e00506344f9dd11b024a63d66f
   languageName: node
   linkType: hard
 
