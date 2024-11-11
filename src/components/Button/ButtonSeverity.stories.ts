@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { IconArrowDownRight, IconArrowDownLeft } from '@tabler/icons-react-native'
-import React from 'react'
 
 import { ButtonSeverity } from './ButtonSeverity'
 
@@ -27,7 +26,6 @@ const meta: Meta<typeof ButtonSeverity> = {
     onPress: { action: 'OnPress' },
     severity: { control: 'radio', options: ['help', 'info', 'success', 'warning', 'danger'] },
   },
-  decorators: [(Story) => <Story />],
 }
 
 export default meta
