@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.3 (2024-11-11)
+
+
+### Features
+
+* **button:** add ButtonSeverity component ([c16fcfe](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/c16fcfe238467a4f19b211a9632e7dc3e578f0b3))
+* **button:** implement base button with all possible states ([a2e3303](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/a2e33037b799f2cf035207b90f0fd6965cbe8256))
+* **button:** use hover state instead of focus for pressed styles ([52a55c5](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/52a55c562686100344543017c2dbda9756c8fa2c))
+* **menuitemtemplate:** added disabled state ([42728cb](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/42728cba1893d815e51eab44214ff0231a8871e5))
+* **menuitemtemplate:** added extra content ([e2a9bd4](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/e2a9bd4a5f7ec6915951eee4fbfbd3ecc5c835a0))
+* **menuitemtemplate:** added icon ([23d1a48](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/23d1a48be7cce45af5bb894a123b0b0efb72af35))
+* **menuitemtemplate:** added separator ([aa2a92e](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/aa2a92e325037459563bdd56ac90712856f4a77d))
+* **menuitemtemplate:** badge is positioned according to design ([765318b](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/765318b26893c8cf8cba278f852d3232687c30f6))
+* **menuitemtemplate:** menu item with text and accessories ([392bf89](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/392bf8942dfe1fdd8f6941d82fc19d920fc6f6d1))
+* **menuitemtemplate:** right icon is now at right when stretching ([ed9740a](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/ed9740ac8073a32261be6bf6982b0c0e78964177))
+* **storybook:** change storybook theme for larger text sizes ([234bdec](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/234bdec6d069d8611a67fac00d73b7c5f0fa0e26))
+* **ToggleButton:** implement ToggleButton component ([84cb6e9](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/84cb6e99cd7e179b29f093d6d7ecaa1ac9dc60f2))
+
+
+### Bug Fixes
+
+* **badge:** fix badge layout for iOS ([a6498cd](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/a6498cd411d3a167482f1c4fbffd18f8105b769e))
+* **input:** fix input layouts ([a35680f](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/a35680fe2a227c6de3f08f37ed0bc9faef6a1a1b))
+
 ### [0.0.2](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.1...v0.0.2) (2024-10-24)
 
 
