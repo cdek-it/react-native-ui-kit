@@ -1,5 +1,5 @@
 import type { Icon } from '@tabler/icons-react-native'
-import type { PressableProps } from 'react-native'
+import type { ColorValue, PressableProps, TextStyle, ViewStyle } from 'react-native'
 
 export interface BaseButtonProps extends PressableProps {
   /**
@@ -52,4 +52,25 @@ export interface IconOnlyButtonProps extends BaseButtonProps {
   iconOnly: true
   iconPosition?: never
   label?: never
+}
+
+export type ButtonProps = IconTextButton | IconOnlyButtonProps
+
+export type LabelVariantStyles = Record<Required<BaseButtonProps>['variant'], TextStyle>
+export type PressedVariantStyles = Record<Required<BaseButtonProps>['variant'], ViewStyle>
+export type ContainerVariantStyles = Record<Required<BaseButtonProps>['variant'], ViewStyle>
+export type IconVariantStyles = Record<Required<BaseButtonProps>['variant'], { color: ColorValue }>
+
+export interface VariantStyles {
+  containerVariantStyles: ContainerVariantStyles
+  pressedVariantStyles: PressedVariantStyles
+  labelVariantStyles: LabelVariantStyles
+  iconVariantStyles: IconVariantStyles
+}
+
+export interface ButtonSeverityProps {
+  /**
+   * Controls severity button styling variant
+   */
+  severity: 'help' | 'info' | 'success' | 'warning' | 'danger'
 }

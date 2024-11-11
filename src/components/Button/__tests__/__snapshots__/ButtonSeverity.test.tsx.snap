@@ -1,0 +1,326 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonSeverity component tests severity - danger 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#e26e63",
+      "borderColor": "rgba(255, 255, 255, 0.0001)",
+      "borderRadius": 7,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "gap": 7,
+      "height": 35,
+      "justifyContent": "center",
+      "maxHeight": 35,
+      "minHeight": 35,
+      "paddingHorizontal": 14,
+      "paddingVertical": 0,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#ffffff",
+        "fontSize": 14,
+        "fontWeight": 700,
+        "lineHeight": 16,
+      }
+    }
+    testID="Button_Text"
+  >
+    Button
+  </Text>
+</View>
+`;
+
+exports[`ButtonSeverity component tests severity - help 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#ab77df",
+      "borderColor": "rgba(255, 255, 255, 0.0001)",
+      "borderRadius": 7,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "gap": 7,
+      "height": 35,
+      "justifyContent": "center",
+      "maxHeight": 35,
+      "minHeight": 35,
+      "paddingHorizontal": 14,
+      "paddingVertical": 0,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#ffffff",
+        "fontSize": 14,
+        "fontWeight": 700,
+        "lineHeight": 16,
+      }
+    }
+    testID="Button_Text"
+  >
+    Button
+  </Text>
+</View>
+`;
+
+exports[`ButtonSeverity component tests severity - info 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#49a2ef",
+      "borderColor": "rgba(255, 255, 255, 0.0001)",
+      "borderRadius": 7,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "gap": 7,
+      "height": 35,
+      "justifyContent": "center",
+      "maxHeight": 35,
+      "minHeight": 35,
+      "paddingHorizontal": 14,
+      "paddingVertical": 0,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#ffffff",
+        "fontSize": 14,
+        "fontWeight": 700,
+        "lineHeight": 16,
+      }
+    }
+    testID="Button_Text"
+  >
+    Button
+  </Text>
+</View>
+`;
+
+exports[`ButtonSeverity component tests severity - success 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#68c170",
+      "borderColor": "rgba(255, 255, 255, 0.0001)",
+      "borderRadius": 7,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "gap": 7,
+      "height": 35,
+      "justifyContent": "center",
+      "maxHeight": 35,
+      "minHeight": 35,
+      "paddingHorizontal": 14,
+      "paddingVertical": 0,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#ffffff",
+        "fontSize": 14,
+        "fontWeight": 700,
+        "lineHeight": 16,
+      }
+    }
+    testID="Button_Text"
+  >
+    Button
+  </Text>
+</View>
+`;
+
+exports[`ButtonSeverity component tests severity - warning 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#ffb330",
+      "borderColor": "rgba(255, 255, 255, 0.0001)",
+      "borderRadius": 7,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "gap": 7,
+      "height": 35,
+      "justifyContent": "center",
+      "maxHeight": 35,
+      "minHeight": 35,
+      "paddingHorizontal": 14,
+      "paddingVertical": 0,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#ffffff",
+        "fontSize": 14,
+        "fontWeight": 700,
+        "lineHeight": 16,
+      }
+    }
+    testID="Button_Text"
+  >
+    Button
+  </Text>
+</View>
+`;
