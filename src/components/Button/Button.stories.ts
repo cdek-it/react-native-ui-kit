@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { IconArrowDownRight, IconArrowDownLeft } from '@tabler/icons-react-native'
-import React from 'react'
 
 import { Button } from './Button'
 
@@ -17,7 +16,7 @@ const meta: Meta<typeof Button> = {
     iconPosition: 'left',
   },
   argTypes: {
-    size: { control: 'radio', options: ['small', 'base', 'large', 'xLarge'] },
+    size: { control: 'radio', options: ['small', 'base', 'large', 'xlarge'] },
     shape: { control: 'radio', options: ['square', 'circle'] },
     variant: { control: 'radio', options: ['basic', 'outlined', 'text'] },
     loading: { control: 'boolean' },
@@ -25,7 +24,6 @@ const meta: Meta<typeof Button> = {
     iconPosition: { control: 'radio', options: ['left', 'right'] },
     onPress: { action: 'OnPress' },
   },
-  decorators: [(Story) => <Story />],
 }
 
 export default meta

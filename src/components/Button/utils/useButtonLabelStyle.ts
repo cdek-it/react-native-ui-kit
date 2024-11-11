@@ -37,7 +37,7 @@ const useButtonLabelStyles = makeStyles(({ theme }) => ({
     fontWeight: 700,
   },
 
-  xLarge: {
+  xlarge: {
     fontSize: 21,
     lineHeight: 25,
   },

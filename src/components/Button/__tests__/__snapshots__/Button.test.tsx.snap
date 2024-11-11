@@ -941,7 +941,7 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -1011,7 +1011,7 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -2119,7 +2119,7 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -2189,7 +2189,7 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -3321,7 +3321,7 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -3391,7 +3391,7 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -4507,7 +4507,7 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -4577,7 +4577,7 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -5685,7 +5685,7 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -5755,7 +5755,7 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -6887,7 +6887,7 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -6957,7 +6957,7 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -8073,7 +8073,7 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -8143,7 +8143,7 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -9251,7 +9251,7 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -9321,7 +9321,7 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -10453,7 +10453,7 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -10523,7 +10523,7 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -11639,7 +11639,7 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -11709,7 +11709,7 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -12817,7 +12817,7 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -12887,7 +12887,7 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -14019,7 +14019,7 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -14089,7 +14089,7 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -15205,7 +15205,7 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -15275,7 +15275,7 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -16383,7 +16383,7 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -16453,7 +16453,7 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -17585,7 +17585,7 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -17655,7 +17655,7 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -18771,7 +18771,7 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -18841,7 +18841,7 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -19949,7 +19949,7 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -20019,7 +20019,7 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -21151,7 +21151,7 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -21221,7 +21221,7 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -21593,7 +21593,7 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - basic, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - basic, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -21766,7 +21766,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - basic, loading - false, disabled - false 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - basic, loading - false, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -21939,7 +21939,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - basic, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - basic, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -22112,7 +22112,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - basic, loading - false, disabled - true 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - basic, loading - false, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -22285,7 +22285,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - basic, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - basic, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -22337,7 +22337,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -22355,7 +22355,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - basic, loading - true, disabled - false 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - basic, loading - true, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -22407,7 +22407,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -22425,7 +22425,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - basic, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - basic, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -22598,7 +22598,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - basic, loading - true, disabled - true 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - basic, loading - true, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -22771,7 +22771,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - outlined, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - outlined, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -22944,7 +22944,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - outlined, loading - false, disabled - false 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - outlined, loading - false, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -23117,7 +23117,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - outlined, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - outlined, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -23290,7 +23290,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - outlined, loading - false, disabled - true 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - outlined, loading - false, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -23463,7 +23463,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - outlined, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - outlined, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -23515,7 +23515,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -23533,7 +23533,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - outlined, loading - true, disabled - false 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - outlined, loading - true, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -23585,7 +23585,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -23603,7 +23603,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - outlined, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - outlined, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -23776,7 +23776,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - outlined, loading - true, disabled - true 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - outlined, loading - true, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -23949,7 +23949,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - text, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - text, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -24130,7 +24130,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - text, loading - false, disabled - false 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - text, loading - false, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -24303,7 +24303,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - text, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - text, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -24484,7 +24484,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - text, loading - false, disabled - true 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - text, loading - false, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -24657,7 +24657,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - text, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - text, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -24717,7 +24717,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -24735,7 +24735,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - text, loading - true, disabled - false 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - text, loading - true, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -24787,7 +24787,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -24805,7 +24805,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - text, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - text, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -24986,7 +24986,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - circle, variant - text, loading - true, disabled - true 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - circle, variant - text, loading - true, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -25159,7 +25159,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - basic, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - basic, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -25332,7 +25332,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - basic, loading - false, disabled - false 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - basic, loading - false, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -25505,7 +25505,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - basic, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - basic, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -25678,7 +25678,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - basic, loading - false, disabled - true 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - basic, loading - false, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -25851,7 +25851,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - basic, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - basic, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -25903,7 +25903,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -25921,7 +25921,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - basic, loading - true, disabled - false 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - basic, loading - true, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -25973,7 +25973,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -25991,7 +25991,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - basic, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - basic, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -26164,7 +26164,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - basic, loading - true, disabled - true 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - basic, loading - true, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -26337,7 +26337,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - outlined, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - outlined, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -26510,7 +26510,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - outlined, loading - false, disabled - false 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - outlined, loading - false, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -26683,7 +26683,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - outlined, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - outlined, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -26856,7 +26856,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - outlined, loading - false, disabled - true 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - outlined, loading - false, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -27029,7 +27029,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - outlined, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - outlined, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -27081,7 +27081,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -27099,7 +27099,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - outlined, loading - true, disabled - false 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - outlined, loading - true, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -27151,7 +27151,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -27169,7 +27169,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - outlined, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - outlined, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -27342,7 +27342,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - outlined, loading - true, disabled - true 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - outlined, loading - true, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -27515,7 +27515,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - text, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - text, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -27696,7 +27696,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - text, loading - false, disabled - false 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - text, loading - false, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -27869,7 +27869,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - text, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - text, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -28050,7 +28050,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - text, loading - false, disabled - true 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - text, loading - false, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -28223,7 +28223,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - text, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - text, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -28283,7 +28283,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -28301,7 +28301,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - text, loading - true, disabled - false 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - text, loading - true, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -28353,7 +28353,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -28371,7 +28371,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - text, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - text, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -28552,7 +28552,7 @@ exports[`Button component tests Button with icon on left, size - xLarge, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on left, size - xLarge, shape - square, variant - text, loading - true, disabled - true 2`] = `
+exports[`Button component tests Button with icon on left, size - xlarge, shape - square, variant - text, loading - true, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -29482,7 +29482,7 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -29552,7 +29552,7 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -30660,7 +30660,7 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -30730,7 +30730,7 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -31862,7 +31862,7 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -31932,7 +31932,7 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -33048,7 +33048,7 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -33118,7 +33118,7 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -34226,7 +34226,7 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -34296,7 +34296,7 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -35428,7 +35428,7 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -35498,7 +35498,7 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -36614,7 +36614,7 @@ exports[`Button component tests Button with icon on right, size - large, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -36684,7 +36684,7 @@ exports[`Button component tests Button with icon on right, size - large, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -37792,7 +37792,7 @@ exports[`Button component tests Button with icon on right, size - large, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -37862,7 +37862,7 @@ exports[`Button component tests Button with icon on right, size - large, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -38994,7 +38994,7 @@ exports[`Button component tests Button with icon on right, size - large, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -39064,7 +39064,7 @@ exports[`Button component tests Button with icon on right, size - large, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -40180,7 +40180,7 @@ exports[`Button component tests Button with icon on right, size - large, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -40250,7 +40250,7 @@ exports[`Button component tests Button with icon on right, size - large, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -41358,7 +41358,7 @@ exports[`Button component tests Button with icon on right, size - large, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -41428,7 +41428,7 @@ exports[`Button component tests Button with icon on right, size - large, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -42560,7 +42560,7 @@ exports[`Button component tests Button with icon on right, size - large, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -42630,7 +42630,7 @@ exports[`Button component tests Button with icon on right, size - large, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -43746,7 +43746,7 @@ exports[`Button component tests Button with icon on right, size - small, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -43816,7 +43816,7 @@ exports[`Button component tests Button with icon on right, size - small, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -44924,7 +44924,7 @@ exports[`Button component tests Button with icon on right, size - small, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -44994,7 +44994,7 @@ exports[`Button component tests Button with icon on right, size - small, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -46126,7 +46126,7 @@ exports[`Button component tests Button with icon on right, size - small, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -46196,7 +46196,7 @@ exports[`Button component tests Button with icon on right, size - small, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -47312,7 +47312,7 @@ exports[`Button component tests Button with icon on right, size - small, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -47382,7 +47382,7 @@ exports[`Button component tests Button with icon on right, size - small, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -48490,7 +48490,7 @@ exports[`Button component tests Button with icon on right, size - small, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -48560,7 +48560,7 @@ exports[`Button component tests Button with icon on right, size - small, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -49692,7 +49692,7 @@ exports[`Button component tests Button with icon on right, size - small, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -49762,7 +49762,7 @@ exports[`Button component tests Button with icon on right, size - small, shape -
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -50121,7 +50121,7 @@ exports[`Button component tests Button with icon on right, size - small, shape -
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - basic, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - basic, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -50294,7 +50294,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - basic, loading - false, disabled - false 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - basic, loading - false, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -50467,7 +50467,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - basic, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - basic, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -50640,7 +50640,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - basic, loading - false, disabled - true 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - basic, loading - false, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -50813,7 +50813,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - basic, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - basic, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -50878,12 +50878,12 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - basic, loading - true, disabled - false 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - basic, loading - true, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -50948,12 +50948,12 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - basic, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - basic, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -51126,7 +51126,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - basic, loading - true, disabled - true 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - basic, loading - true, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -51299,7 +51299,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - outlined, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - outlined, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -51472,7 +51472,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - outlined, loading - false, disabled - false 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - outlined, loading - false, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -51645,7 +51645,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - outlined, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - outlined, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -51818,7 +51818,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - outlined, loading - false, disabled - true 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - outlined, loading - false, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -51991,7 +51991,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - outlined, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - outlined, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -52056,12 +52056,12 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - outlined, loading - true, disabled - false 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - outlined, loading - true, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -52126,12 +52126,12 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - outlined, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - outlined, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -52304,7 +52304,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - outlined, loading - true, disabled - true 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - outlined, loading - true, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -52477,7 +52477,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - text, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - text, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -52658,7 +52658,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - text, loading - false, disabled - false 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - text, loading - false, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -52831,7 +52831,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - text, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - text, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -53012,7 +53012,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - text, loading - false, disabled - true 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - text, loading - false, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -53185,7 +53185,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - text, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - text, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -53258,12 +53258,12 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - text, loading - true, disabled - false 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - text, loading - true, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -53328,12 +53328,12 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - text, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - text, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -53514,7 +53514,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - circle, variant - text, loading - true, disabled - true 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - circle, variant - text, loading - true, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -53687,7 +53687,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - basic, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - basic, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -53860,7 +53860,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - basic, loading - false, disabled - false 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - basic, loading - false, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -54033,7 +54033,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - basic, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - basic, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -54206,7 +54206,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - basic, loading - false, disabled - true 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - basic, loading - false, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -54379,7 +54379,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - basic, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - basic, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -54444,12 +54444,12 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - basic, loading - true, disabled - false 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - basic, loading - true, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -54514,12 +54514,12 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - basic, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - basic, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -54692,7 +54692,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - basic, loading - true, disabled - true 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - basic, loading - true, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -54865,7 +54865,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - outlined, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - outlined, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -55038,7 +55038,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - outlined, loading - false, disabled - false 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - outlined, loading - false, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -55211,7 +55211,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - outlined, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - outlined, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -55384,7 +55384,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - outlined, loading - false, disabled - true 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - outlined, loading - false, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -55557,7 +55557,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - outlined, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - outlined, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -55622,12 +55622,12 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - outlined, loading - true, disabled - false 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - outlined, loading - true, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -55692,12 +55692,12 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - outlined, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - outlined, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -55870,7 +55870,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - outlined, loading - true, disabled - true 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - outlined, loading - true, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -56043,7 +56043,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - text, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - text, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -56224,7 +56224,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - text, loading - false, disabled - false 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - text, loading - false, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -56397,7 +56397,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - text, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - text, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -56578,7 +56578,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - text, loading - false, disabled - true 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - text, loading - false, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -56751,7 +56751,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - text, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - text, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -56824,12 +56824,12 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - text, loading - true, disabled - false 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - text, loading - true, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -56894,12 +56894,12 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - text, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - text, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -57080,7 +57080,7 @@ exports[`Button component tests Button with icon on right, size - xLarge, shape 
 </View>
 `;
 
-exports[`Button component tests Button with icon on right, size - xLarge, shape - square, variant - text, loading - true, disabled - true 2`] = `
+exports[`Button component tests Button with icon on right, size - xlarge, shape - square, variant - text, loading - true, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -57628,7 +57628,7 @@ exports[`Button component tests Button with only icon, size - base, shape - circ
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -58169,7 +58169,7 @@ exports[`Button component tests Button with only icon, size - base, shape - circ
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -58710,7 +58710,7 @@ exports[`Button component tests Button with only icon, size - base, shape - circ
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -59251,7 +59251,7 @@ exports[`Button component tests Button with only icon, size - base, shape - squa
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -59792,7 +59792,7 @@ exports[`Button component tests Button with only icon, size - base, shape - squa
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -60333,7 +60333,7 @@ exports[`Button component tests Button with only icon, size - base, shape - squa
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -60874,7 +60874,7 @@ exports[`Button component tests Button with only icon, size - large, shape - cir
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -61415,7 +61415,7 @@ exports[`Button component tests Button with only icon, size - large, shape - cir
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -61956,7 +61956,7 @@ exports[`Button component tests Button with only icon, size - large, shape - cir
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -62497,7 +62497,7 @@ exports[`Button component tests Button with only icon, size - large, shape - squ
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -63038,7 +63038,7 @@ exports[`Button component tests Button with only icon, size - large, shape - squ
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -63579,7 +63579,7 @@ exports[`Button component tests Button with only icon, size - large, shape - squ
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -64120,7 +64120,7 @@ exports[`Button component tests Button with only icon, size - small, shape - cir
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -64661,7 +64661,7 @@ exports[`Button component tests Button with only icon, size - small, shape - cir
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -65202,7 +65202,7 @@ exports[`Button component tests Button with only icon, size - small, shape - cir
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -65743,7 +65743,7 @@ exports[`Button component tests Button with only icon, size - small, shape - squ
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -66284,7 +66284,7 @@ exports[`Button component tests Button with only icon, size - small, shape - squ
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -66825,7 +66825,7 @@ exports[`Button component tests Button with only icon, size - small, shape - squ
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
@@ -66991,7 +66991,7 @@ exports[`Button component tests Button with only icon, size - small, shape - squ
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - circle, variant - basic, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - circle, variant - basic, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -67152,7 +67152,7 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - ci
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - circle, variant - basic, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - circle, variant - basic, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -67313,7 +67313,7 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - ci
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - circle, variant - basic, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - circle, variant - basic, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -67366,12 +67366,12 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - ci
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - circle, variant - basic, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - circle, variant - basic, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -67532,7 +67532,7 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - ci
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - circle, variant - outlined, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - circle, variant - outlined, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -67693,7 +67693,7 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - ci
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - circle, variant - outlined, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - circle, variant - outlined, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -67854,7 +67854,7 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - ci
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - circle, variant - outlined, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - circle, variant - outlined, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -67907,12 +67907,12 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - ci
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - circle, variant - outlined, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - circle, variant - outlined, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -68073,7 +68073,7 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - ci
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - circle, variant - text, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - circle, variant - text, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -68234,7 +68234,7 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - ci
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - circle, variant - text, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - circle, variant - text, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -68395,7 +68395,7 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - ci
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - circle, variant - text, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - circle, variant - text, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -68448,12 +68448,12 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - ci
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - circle, variant - text, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - circle, variant - text, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -68614,7 +68614,7 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - ci
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - square, variant - basic, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - square, variant - basic, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -68775,7 +68775,7 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - sq
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - square, variant - basic, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - square, variant - basic, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -68936,7 +68936,7 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - sq
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - square, variant - basic, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - square, variant - basic, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -68989,12 +68989,12 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - sq
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - square, variant - basic, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - square, variant - basic, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -69155,7 +69155,7 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - sq
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - square, variant - outlined, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - square, variant - outlined, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -69316,7 +69316,7 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - sq
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - square, variant - outlined, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - square, variant - outlined, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -69477,7 +69477,7 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - sq
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - square, variant - outlined, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - square, variant - outlined, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -69530,12 +69530,12 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - sq
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - square, variant - outlined, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - square, variant - outlined, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -69696,7 +69696,7 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - sq
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - square, variant - text, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - square, variant - text, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -69857,7 +69857,7 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - sq
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - square, variant - text, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - square, variant - text, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -70018,7 +70018,7 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - sq
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - square, variant - text, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - square, variant - text, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -70071,12 +70071,12 @@ exports[`Button component tests Button with only icon, size - xLarge, shape - sq
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
 </View>
 `;
 
-exports[`Button component tests Button with only icon, size - xLarge, shape - square, variant - text, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with only icon, size - xlarge, shape - square, variant - text, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -70549,7 +70549,7 @@ exports[`Button component tests Button with text, size - base, shape - circle, v
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -70619,7 +70619,7 @@ exports[`Button component tests Button with text, size - base, shape - circle, v
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -71079,7 +71079,7 @@ exports[`Button component tests Button with text, size - base, shape - circle, v
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -71149,7 +71149,7 @@ exports[`Button component tests Button with text, size - base, shape - circle, v
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -71633,7 +71633,7 @@ exports[`Button component tests Button with text, size - base, shape - circle, v
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -71703,7 +71703,7 @@ exports[`Button component tests Button with text, size - base, shape - circle, v
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -72171,7 +72171,7 @@ exports[`Button component tests Button with text, size - base, shape - square, v
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -72241,7 +72241,7 @@ exports[`Button component tests Button with text, size - base, shape - square, v
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -72701,7 +72701,7 @@ exports[`Button component tests Button with text, size - base, shape - square, v
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -72771,7 +72771,7 @@ exports[`Button component tests Button with text, size - base, shape - square, v
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -73255,7 +73255,7 @@ exports[`Button component tests Button with text, size - base, shape - square, v
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -73325,7 +73325,7 @@ exports[`Button component tests Button with text, size - base, shape - square, v
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -73793,7 +73793,7 @@ exports[`Button component tests Button with text, size - large, shape - circle, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -73863,7 +73863,7 @@ exports[`Button component tests Button with text, size - large, shape - circle, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -74323,7 +74323,7 @@ exports[`Button component tests Button with text, size - large, shape - circle, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -74393,7 +74393,7 @@ exports[`Button component tests Button with text, size - large, shape - circle, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -74877,7 +74877,7 @@ exports[`Button component tests Button with text, size - large, shape - circle, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -74947,7 +74947,7 @@ exports[`Button component tests Button with text, size - large, shape - circle, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -75415,7 +75415,7 @@ exports[`Button component tests Button with text, size - large, shape - square, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -75485,7 +75485,7 @@ exports[`Button component tests Button with text, size - large, shape - square, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -75945,7 +75945,7 @@ exports[`Button component tests Button with text, size - large, shape - square, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -76015,7 +76015,7 @@ exports[`Button component tests Button with text, size - large, shape - square, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -76499,7 +76499,7 @@ exports[`Button component tests Button with text, size - large, shape - square, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -76569,7 +76569,7 @@ exports[`Button component tests Button with text, size - large, shape - square, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -77037,7 +77037,7 @@ exports[`Button component tests Button with text, size - small, shape - circle, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -77107,7 +77107,7 @@ exports[`Button component tests Button with text, size - small, shape - circle, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -77567,7 +77567,7 @@ exports[`Button component tests Button with text, size - small, shape - circle, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -77637,7 +77637,7 @@ exports[`Button component tests Button with text, size - small, shape - circle, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -78121,7 +78121,7 @@ exports[`Button component tests Button with text, size - small, shape - circle, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -78191,7 +78191,7 @@ exports[`Button component tests Button with text, size - small, shape - circle, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -78659,7 +78659,7 @@ exports[`Button component tests Button with text, size - small, shape - square, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -78729,7 +78729,7 @@ exports[`Button component tests Button with text, size - small, shape - square, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -79189,7 +79189,7 @@ exports[`Button component tests Button with text, size - small, shape - square, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -79259,7 +79259,7 @@ exports[`Button component tests Button with text, size - small, shape - square, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -79743,7 +79743,7 @@ exports[`Button component tests Button with text, size - small, shape - square, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -79813,7 +79813,7 @@ exports[`Button component tests Button with text, size - small, shape - square, 
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -79969,7 +79969,7 @@ exports[`Button component tests Button with text, size - small, shape - square, 
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - basic, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - basic, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -80034,7 +80034,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - basic, loading - false, disabled - false 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - basic, loading - false, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -80099,7 +80099,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - basic, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - basic, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -80164,7 +80164,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - basic, loading - false, disabled - true 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - basic, loading - false, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -80229,7 +80229,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - basic, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - basic, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -80281,7 +80281,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -80299,7 +80299,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - basic, loading - true, disabled - false 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - basic, loading - true, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -80351,7 +80351,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -80369,7 +80369,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - basic, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - basic, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -80434,7 +80434,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - basic, loading - true, disabled - true 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - basic, loading - true, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -80499,7 +80499,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - outlined, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - outlined, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -80564,7 +80564,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - outlined, loading - false, disabled - false 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - outlined, loading - false, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -80629,7 +80629,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - outlined, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - outlined, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -80694,7 +80694,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - outlined, loading - false, disabled - true 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - outlined, loading - false, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -80759,7 +80759,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - outlined, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - outlined, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -80811,7 +80811,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -80829,7 +80829,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - outlined, loading - true, disabled - false 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - outlined, loading - true, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -80881,7 +80881,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -80899,7 +80899,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - outlined, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - outlined, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -80964,7 +80964,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - outlined, loading - true, disabled - true 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - outlined, loading - true, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -81029,7 +81029,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - text, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - text, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -81102,7 +81102,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - text, loading - false, disabled - false 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - text, loading - false, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -81167,7 +81167,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - text, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - text, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -81240,7 +81240,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - text, loading - false, disabled - true 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - text, loading - false, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -81305,7 +81305,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - text, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - text, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -81365,7 +81365,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -81383,7 +81383,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - text, loading - true, disabled - false 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - text, loading - true, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -81435,7 +81435,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -81453,7 +81453,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - text, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - text, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -81526,7 +81526,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - circle, variant - text, loading - true, disabled - true 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - circle, variant - text, loading - true, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -81591,7 +81591,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - circle,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - basic, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - basic, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -81656,7 +81656,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - basic, loading - false, disabled - false 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - basic, loading - false, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -81721,7 +81721,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - basic, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - basic, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -81786,7 +81786,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - basic, loading - false, disabled - true 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - basic, loading - false, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -81851,7 +81851,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - basic, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - basic, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -81903,7 +81903,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -81921,7 +81921,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - basic, loading - true, disabled - false 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - basic, loading - true, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -81973,7 +81973,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -81991,7 +81991,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - basic, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - basic, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -82056,7 +82056,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - basic, loading - true, disabled - true 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - basic, loading - true, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -82121,7 +82121,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - outlined, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - outlined, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -82186,7 +82186,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - outlined, loading - false, disabled - false 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - outlined, loading - false, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -82251,7 +82251,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - outlined, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - outlined, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -82316,7 +82316,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - outlined, loading - false, disabled - true 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - outlined, loading - false, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -82381,7 +82381,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - outlined, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - outlined, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -82433,7 +82433,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -82451,7 +82451,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - outlined, loading - true, disabled - false 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - outlined, loading - true, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -82503,7 +82503,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -82521,7 +82521,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - outlined, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - outlined, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -82586,7 +82586,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - outlined, loading - true, disabled - true 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - outlined, loading - true, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -82651,7 +82651,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - text, loading - false, disabled - false 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - text, loading - false, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -82724,7 +82724,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - text, loading - false, disabled - false 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - text, loading - false, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -82789,7 +82789,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - text, loading - false, disabled - true 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - text, loading - false, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -82862,7 +82862,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - text, loading - false, disabled - true 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - text, loading - false, disabled - true 2`] = `
 <View
   accessibilityState={
     {
@@ -82927,7 +82927,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - text, loading - true, disabled - false 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - text, loading - true, disabled - false 1`] = `
 <View
   accessibilityState={
     {
@@ -82987,7 +82987,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -83005,7 +83005,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - text, loading - true, disabled - false 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - text, loading - true, disabled - false 2`] = `
 <View
   accessibilityState={
     {
@@ -83057,7 +83057,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
   <ActivityIndicator
     color="rgba(0, 0, 0, 0.6000)"
     size={14}
-    testID="Button_ActiityIndicator"
+    testID="Button_ActivityIndicator"
   />
   <Text
     style={
@@ -83075,7 +83075,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - text, loading - true, disabled - true 1`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - text, loading - true, disabled - true 1`] = `
 <View
   accessibilityState={
     {
@@ -83148,7 +83148,7 @@ exports[`Button component tests Button with text, size - xLarge, shape - square,
 </View>
 `;
 
-exports[`Button component tests Button with text, size - xLarge, shape - square, variant - text, loading - true, disabled - true 2`] = `
+exports[`Button component tests Button with text, size - xlarge, shape - square, variant - text, loading - true, disabled - true 2`] = `
 <View
   accessibilityState={
     {

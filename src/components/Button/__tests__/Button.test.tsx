@@ -7,7 +7,7 @@ import type { IconOnlyButtonProps, IconTextButton } from '../types'
 
 describe('Button component tests', () => {
   const buttonSnapshotCases = generatePropsCombinations<IconTextButton>({
-    size: ['base', 'small', 'large', 'xLarge'],
+    size: ['base', 'small', 'large', 'xlarge'],
     shape: ['square', 'circle'],
     loading: [true, false],
     variant: ['basic', 'outlined', 'text'],
@@ -45,7 +45,7 @@ describe('Button component tests', () => {
   )
 
   const iconOnlyButtonSnapshotCases = generatePropsCombinations<IconOnlyButtonProps>({
-    size: ['base', 'small', 'large', 'xLarge'],
+    size: ['base', 'small', 'large', 'xlarge'],
     shape: ['square', 'circle'],
     loading: [true, false],
     variant: ['basic', 'outlined', 'text'],

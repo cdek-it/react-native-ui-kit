@@ -6,7 +6,7 @@ export interface BaseButtonProps extends PressableProps {
    * Controls button size
    * @default 'base'
    */
-  size?: 'xLarge' | 'large' | 'base' | 'small'
+  size?: 'xlarge' | 'large' | 'base' | 'small'
   /**
    * Controls button shape
    * @default 'square'

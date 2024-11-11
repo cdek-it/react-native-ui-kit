@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { IconActivity, IconUser } from '@tabler/icons-react-native'
-import React from 'react'
 
 import { Avatar } from './Avatar'
 
@@ -15,7 +14,6 @@ const meta: Meta<typeof Avatar> = {
     size: { control: 'radio', options: ['xlarge', 'large', 'normal'] },
     shape: { control: 'radio', options: ['circle', 'square'] },
   },
-  decorators: [(Story) => <Story />],
 }
 
 export default meta

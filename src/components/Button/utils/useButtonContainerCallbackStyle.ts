@@ -81,7 +81,7 @@ const useButtonContainerStyle = makeStyles(({ theme, border }) => ({
     borderWidth: border.Width['border-1'],
   },
 
-  xLarge: {
+  xlarge: {
     paddingHorizontal: 21,
     paddingVertical: theme.Button.Common.buttonPaddingTopBottom,
     height: theme.Button.Common.buttonHeightXL,

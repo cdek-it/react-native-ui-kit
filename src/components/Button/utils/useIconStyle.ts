@@ -33,7 +33,7 @@ export const useIconStyle = (
 }
 
 const useStyles = makeStyles(({ theme }) => ({
-  xLarge: {
+  xlarge: {
     height: 28,
     width: 28,
   },
