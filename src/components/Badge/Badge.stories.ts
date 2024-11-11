@@ -1,6 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import React from 'react'
-import { View } from 'react-native'
 
 import { Badge } from './Badge'
 
@@ -13,13 +11,6 @@ const meta: Meta<typeof Badge> = {
   argTypes: {
     severity: { control: 'radio', options: ['basic', 'info', 'success', 'warning', 'danger'] },
   },
-  decorators: [
-    (Story) => (
-      <View style={{ padding: 16 }}>
-        <Story />
-      </View>
-    ),
-  ],
 }
 
 export default meta

@@ -1,9 +1,3 @@
-import { Body } from './Body'
-import { Caption } from './Caption'
-import { Title } from './Title'
-
-export const Typography = {
-  Body,
-  Caption,
-  Title,
-}
+export { Body } from './Body'
+export { Caption } from './Caption'
+export { Title } from './Title'

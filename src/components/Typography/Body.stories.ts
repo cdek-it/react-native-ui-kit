@@ -1,6 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import React from 'react'
-import { View } from 'react-native'
 
 import { Body } from './Body'
 
@@ -22,13 +20,6 @@ const meta: Meta<typeof Body> = {
     weight: { control: 'radio', options: ['regular', 'medium', 'bold'] },
     base: { control: 'boolean' },
   },
-  decorators: [
-    (Story) => (
-      <View style={{ padding: 16 }}>
-        <Story />
-      </View>
-    ),
-  ],
 }
 
 export default meta
