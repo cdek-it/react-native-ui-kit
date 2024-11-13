@@ -10,7 +10,5 @@
   "primary-200": "#a0e491",
   "primary-100": "#caf0c2",
   "primary-50": "#f4fcf2",
-  "primary-alpha": "rgba(34, 193, 0, 0.1000)",
-  "test": "#9b6161",
-  "test2": "#9b6161"
+  "primary-alpha": "rgba(34, 193, 0, 0.1000)"
 }
