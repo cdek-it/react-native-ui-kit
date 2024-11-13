@@ -849,11 +849,11 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={28}
-      bbWidth={28}
+      bbHeight={31.5}
+      bbWidth={31.5}
       fill="none"
       focusable={false}
-      height={28}
+      height={31.5}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -880,15 +880,15 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
           ],
           {
             "flex": 0,
-            "height": 28,
-            "width": 28,
+            "height": 31,
+            "width": 31,
           },
         ]
       }
       tintColor="#ffffff"
       vbHeight={24}
       vbWidth={24}
-      width={28}
+      width={31.5}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
