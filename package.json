@@ -1,7 +1,7 @@
 {
   "name": "@cdek/react-native-prime-ui-kit",
   "packageManager": "yarn@4.5.1",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "node": "20"
   },

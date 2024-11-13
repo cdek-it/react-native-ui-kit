@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.3...v0.0.4) (2024-11-13)
+
+
+### Bug Fixes
+
+* **ToggleButton:** fix exports ([e9d29ef](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/e9d29ef0a91b8b792c4ad1a879524682e985bdb0))
+
 ### 0.0.3 (2024-11-11)
 
 
