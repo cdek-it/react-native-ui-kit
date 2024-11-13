@@ -79,7 +79,7 @@ const useButtonContainerStyle = makeStyles(({ theme, border }) => ({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: border.Width['border-1'],
+    borderWidth: border.Width.border,
   },
 
   xlarge: {
@@ -123,7 +123,7 @@ const useButtonContainerStyle = makeStyles(({ theme, border }) => ({
   },
 
   circle: {
-    borderRadius: border.Radius['border-circle'],
+    borderRadius: border.Radius['rounded-full'],
   },
 
   disabled: {
