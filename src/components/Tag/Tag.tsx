@@ -48,7 +48,10 @@ export const Tag = memo<TagProps>(
               width={styles.icon.width}
             />
           )}
-          <Text style={[styles.text, severity === 'secondary' && styles.textSecondary]}>
+          <Text
+            numberOfLines={1}
+            style={[styles.text, severity === 'secondary' && styles.textSecondary]}
+          >
             {text}
           </Text>
         </View>

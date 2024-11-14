@@ -22,6 +22,7 @@ exports[`Tag snapshot: default 1`] = `
     }
   >
     <Text
+      numberOfLines={1}
       style={
         [
           {
@@ -151,6 +152,7 @@ exports[`Tag snapshot: severity = basic, rounded = true, with Icon 1`] = `
       </RNSVGGroup>
     </RNSVGSvgView>
     <Text
+      numberOfLines={1}
       style={
         [
           {
@@ -192,6 +194,7 @@ exports[`Tag snapshot: severity = danger 1`] = `
     }
   >
     <Text
+      numberOfLines={1}
       style={
         [
           {
@@ -319,6 +322,7 @@ exports[`Tag snapshot: severity = info, showIcon = false, with Icon 1`] = `
       </RNSVGGroup>
     </RNSVGSvgView>
     <Text
+      numberOfLines={1}
       style={
         [
           {
@@ -448,6 +452,7 @@ exports[`Tag snapshot: severity = secondary, rounded = false, showIcon = true, w
       </RNSVGGroup>
     </RNSVGSvgView>
     <Text
+      numberOfLines={1}
       style={
         [
           {
@@ -497,6 +502,7 @@ exports[`Tag snapshot: severity = success, with custom styles 1`] = `
     }
   >
     <Text
+      numberOfLines={1}
       style={
         [
           {
@@ -538,6 +544,7 @@ exports[`Tag snapshot: severity = warning 1`] = `
     }
   >
     <Text
+      numberOfLines={1}
       style={
         [
           {
