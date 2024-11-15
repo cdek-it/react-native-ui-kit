@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.4...v0.0.5) (2024-11-15)
+
+
+### Features
+
+* **Tag:** implement Tag component ([7d4dec2](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/7d4dec2d5436e304c33e268765ef22a286f6bf28))
+* **Tag:** restrict number of lines ([5531b21](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/5531b211fe81bb31f187d9251b63312bf7b70b81))
+
 ### [0.0.4](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.3...v0.0.4) (2024-11-13)
 
 
