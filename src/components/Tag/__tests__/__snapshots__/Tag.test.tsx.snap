@@ -1,0 +1,565 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag snapshot: default 1`] = `
+<View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "borderRadius": 7,
+          "flexDirection": "row",
+          "gap": 3.5,
+          "paddingHorizontal": 7,
+          "paddingVertical": 1,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "flexShrink": 1,
+            "fontSize": 12.25,
+            "fontWeight": 700,
+            "lineHeight": 18.3800225,
+          },
+          false,
+        ]
+      }
+    >
+      Tag
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Tag snapshot: severity = basic, rounded = true, with Icon 1`] = `
+<View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "borderRadius": 7,
+          "flexDirection": "row",
+          "gap": 3.5,
+          "paddingHorizontal": 7,
+          "paddingVertical": 1,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        {
+          "borderRadius": 100,
+        },
+      ]
+    }
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={12.25}
+      bbWidth={12.25}
+      fill="none"
+      focusable={false}
+      height={12.25}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          [
+            {
+              "color": "#ffffff",
+              "height": 12.25,
+              "width": 12.25,
+            },
+            false,
+          ],
+          {
+            "flex": 0,
+            "height": 12,
+            "width": 12,
+          },
+        ]
+      }
+      tintColor="#ffffff"
+      vbHeight={24}
+      vbWidth={24}
+      width={12.25}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        color="#ffffff"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          color="#ffffff"
+          d="M5 12l5 5l10 -10"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+    <Text
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "flexShrink": 1,
+            "fontSize": 12.25,
+            "fontWeight": 700,
+            "lineHeight": 18.3800225,
+          },
+          false,
+        ]
+      }
+    >
+      Tag
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Tag snapshot: severity = danger 1`] = `
+<View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "borderRadius": 7,
+          "flexDirection": "row",
+          "gap": 3.5,
+          "paddingHorizontal": 7,
+          "paddingVertical": 1,
+        },
+        {
+          "backgroundColor": "#e26e63",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "flexShrink": 1,
+            "fontSize": 12.25,
+            "fontWeight": 700,
+            "lineHeight": 18.3800225,
+          },
+          false,
+        ]
+      }
+    >
+      Tag
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Tag snapshot: severity = info, showIcon = false, with Icon 1`] = `
+<View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "borderRadius": 7,
+          "flexDirection": "row",
+          "gap": 3.5,
+          "paddingHorizontal": 7,
+          "paddingVertical": 1,
+        },
+        {
+          "backgroundColor": "#49a2ef",
+        },
+        undefined,
+      ]
+    }
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={12.25}
+      bbWidth={12.25}
+      fill="none"
+      focusable={false}
+      height={12.25}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          [
+            {
+              "color": "#ffffff",
+              "height": 12.25,
+              "width": 12.25,
+            },
+            false,
+          ],
+          {
+            "flex": 0,
+            "height": 12,
+            "width": 12,
+          },
+        ]
+      }
+      tintColor="#ffffff"
+      vbHeight={24}
+      vbWidth={24}
+      width={12.25}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        color="#ffffff"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          color="#ffffff"
+          d="M5 12l5 5l10 -10"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+    <Text
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "flexShrink": 1,
+            "fontSize": 12.25,
+            "fontWeight": 700,
+            "lineHeight": 18.3800225,
+          },
+          false,
+        ]
+      }
+    >
+      Tag
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Tag snapshot: severity = secondary, rounded = false, showIcon = true, with Icon 1`] = `
+<View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "borderRadius": 7,
+          "flexDirection": "row",
+          "gap": 3.5,
+          "paddingHorizontal": 7,
+          "paddingVertical": 1,
+        },
+        {
+          "backgroundColor": "#dbdada",
+        },
+        false,
+      ]
+    }
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={12.25}
+      bbWidth={12.25}
+      fill="none"
+      focusable={false}
+      height={12.25}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          [
+            {
+              "color": "#ffffff",
+              "height": 12.25,
+              "width": 12.25,
+            },
+            {
+              "color": "rgba(0, 0, 0, 0.6000)",
+            },
+          ],
+          {
+            "flex": 0,
+            "height": 12,
+            "width": 12,
+          },
+        ]
+      }
+      tintColor="rgba(0, 0, 0, 0.6000)"
+      vbHeight={24}
+      vbWidth={24}
+      width={12.25}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        color="rgba(0, 0, 0, 0.6000)"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          color="rgba(0, 0, 0, 0.6000)"
+          d="M5 12l5 5l10 -10"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+    <Text
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "flexShrink": 1,
+            "fontSize": 12.25,
+            "fontWeight": 700,
+            "lineHeight": 18.3800225,
+          },
+          {
+            "color": "rgba(0, 0, 0, 0.6000)",
+          },
+        ]
+      }
+    >
+      Tag
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Tag snapshot: severity = success, with custom styles 1`] = `
+<View
+  style={
+    {
+      "margin": 10,
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "borderRadius": 7,
+          "flexDirection": "row",
+          "gap": 3.5,
+          "paddingHorizontal": 7,
+          "paddingVertical": 1,
+        },
+        {
+          "backgroundColor": "#68c170",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "flexShrink": 1,
+            "fontSize": 12.25,
+            "fontWeight": 700,
+            "lineHeight": 18.3800225,
+          },
+          false,
+        ]
+      }
+    >
+      Tag
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Tag snapshot: severity = warning 1`] = `
+<View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "borderRadius": 7,
+          "flexDirection": "row",
+          "gap": 3.5,
+          "paddingHorizontal": 7,
+          "paddingVertical": 1,
+        },
+        {
+          "backgroundColor": "#ffb330",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "flexShrink": 1,
+            "fontSize": 12.25,
+            "fontWeight": 700,
+            "lineHeight": 18.3800225,
+          },
+          false,
+        ]
+      }
+    >
+      Tag
+    </Text>
+  </View>
+</View>
+`;
