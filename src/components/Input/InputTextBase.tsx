@@ -226,6 +226,8 @@ const useStyles = makeStyles(({ theme }) => ({
     fontSize: 14,
     color: theme.Form.InputText.inputTextColor,
     overflow: 'hidden',
+    includeFontPadding: false,
+    verticalAlign: 'middle',
   },
   placeholderTextColor: {
     color: theme.Form.InputText.inputPlaceholderTextColor,

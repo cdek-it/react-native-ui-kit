@@ -55,7 +55,8 @@ exports[`ButtonSeverity component tests severity - danger 1`] = `
         "color": "#ffffff",
         "fontSize": 14,
         "fontWeight": 700,
-        "lineHeight": 16,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       }
     }
     testID="Button_Text"
@@ -120,7 +121,8 @@ exports[`ButtonSeverity component tests severity - help 1`] = `
         "color": "#ffffff",
         "fontSize": 14,
         "fontWeight": 700,
-        "lineHeight": 16,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       }
     }
     testID="Button_Text"
@@ -185,7 +187,8 @@ exports[`ButtonSeverity component tests severity - info 1`] = `
         "color": "#ffffff",
         "fontSize": 14,
         "fontWeight": 700,
-        "lineHeight": 16,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       }
     }
     testID="Button_Text"
@@ -250,7 +253,8 @@ exports[`ButtonSeverity component tests severity - success 1`] = `
         "color": "#ffffff",
         "fontSize": 14,
         "fontWeight": 700,
-        "lineHeight": 16,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       }
     }
     testID="Button_Text"
@@ -315,7 +319,8 @@ exports[`ButtonSeverity component tests severity - warning 1`] = `
         "color": "#ffffff",
         "fontSize": 14,
         "fontWeight": 700,
-        "lineHeight": 16,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       }
     }
     testID="Button_Text"

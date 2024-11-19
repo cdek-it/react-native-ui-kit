@@ -159,6 +159,8 @@ exports[`InputGroup component tests content: string, position: left 1`] = `
       {
         "color": "rgba(0, 0, 0, 0.6000)",
         "fontSize": 14,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       }
     }
   >
@@ -196,6 +198,8 @@ exports[`InputGroup component tests disabled: false 1`] = `
       {
         "color": "rgba(0, 0, 0, 0.6000)",
         "fontSize": 14,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       }
     }
   >
@@ -236,6 +240,8 @@ exports[`InputGroup component tests disabled: true 1`] = `
       {
         "color": "rgba(0, 0, 0, 0.6000)",
         "fontSize": 14,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       }
     }
   >

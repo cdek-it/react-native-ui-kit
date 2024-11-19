@@ -237,7 +237,9 @@ exports[`MenuItemTemplate full disabled 1`] = `
                 [
                   {
                     "fontSize": 14,
+                    "includeFontPadding": false,
                     "textAlign": "left",
+                    "verticalAlign": "middle",
                   },
                   {
                     "color": "rgba(0, 0, 0, 0.8000)",
@@ -252,7 +254,9 @@ exports[`MenuItemTemplate full disabled 1`] = `
                 [
                   {
                     "fontSize": 12,
+                    "includeFontPadding": false,
                     "textAlign": "left",
+                    "verticalAlign": "middle",
                   },
                   {
                     "color": "rgba(0, 0, 0, 0.8000)",
@@ -580,7 +584,9 @@ exports[`MenuItemTemplate minimal config 1`] = `
                 [
                   {
                     "fontSize": 14,
+                    "includeFontPadding": false,
                     "textAlign": "left",
+                    "verticalAlign": "middle",
                   },
                   {
                     "color": "rgba(0, 0, 0, 0.8000)",
@@ -595,7 +601,9 @@ exports[`MenuItemTemplate minimal config 1`] = `
                 [
                   {
                     "fontSize": 12,
+                    "includeFontPadding": false,
                     "textAlign": "left",
+                    "verticalAlign": "middle",
                   },
                   {
                     "color": "rgba(0, 0, 0, 0.8000)",
@@ -781,7 +789,9 @@ exports[`MenuItemTemplate prefix,suffix = down 1`] = `
                 [
                   {
                     "fontSize": 14,
+                    "includeFontPadding": false,
                     "textAlign": "left",
+                    "verticalAlign": "middle",
                   },
                   {
                     "color": "rgba(0, 0, 0, 0.8000)",
@@ -796,7 +806,9 @@ exports[`MenuItemTemplate prefix,suffix = down 1`] = `
                 [
                   {
                     "fontSize": 12,
+                    "includeFontPadding": false,
                     "textAlign": "left",
+                    "verticalAlign": "middle",
                   },
                   {
                     "color": "rgba(0, 0, 0, 0.8000)",
@@ -1069,7 +1081,9 @@ exports[`MenuItemTemplate prefix,suffix = right 1`] = `
                 [
                   {
                     "fontSize": 14,
+                    "includeFontPadding": false,
                     "textAlign": "left",
+                    "verticalAlign": "middle",
                   },
                   {
                     "color": "rgba(0, 0, 0, 0.8000)",
@@ -1084,7 +1098,9 @@ exports[`MenuItemTemplate prefix,suffix = right 1`] = `
                 [
                   {
                     "fontSize": 12,
+                    "includeFontPadding": false,
                     "textAlign": "left",
+                    "verticalAlign": "middle",
                   },
                   {
                     "color": "rgba(0, 0, 0, 0.8000)",
@@ -1272,7 +1288,9 @@ exports[`MenuItemTemplate with extra 1`] = `
                 [
                   {
                     "fontSize": 14,
+                    "includeFontPadding": false,
                     "textAlign": "left",
+                    "verticalAlign": "middle",
                   },
                   {
                     "color": "rgba(0, 0, 0, 0.8000)",
@@ -1287,7 +1305,9 @@ exports[`MenuItemTemplate with extra 1`] = `
                 [
                   {
                     "fontSize": 12,
+                    "includeFontPadding": false,
                     "textAlign": "left",
+                    "verticalAlign": "middle",
                   },
                   {
                     "color": "rgba(0, 0, 0, 0.8000)",
@@ -1594,7 +1614,9 @@ exports[`MenuItemTemplate with icon 1`] = `
                 [
                   {
                     "fontSize": 14,
+                    "includeFontPadding": false,
                     "textAlign": "left",
+                    "verticalAlign": "middle",
                   },
                   {
                     "color": "rgba(0, 0, 0, 0.8000)",
@@ -1609,7 +1631,9 @@ exports[`MenuItemTemplate with icon 1`] = `
                 [
                   {
                     "fontSize": 12,
+                    "includeFontPadding": false,
                     "textAlign": "left",
+                    "verticalAlign": "middle",
                   },
                   {
                     "color": "rgba(0, 0, 0, 0.8000)",
@@ -1851,7 +1875,9 @@ exports[`MenuItemTemplate with icon and badge 1`] = `
                 [
                   {
                     "fontSize": 14,
+                    "includeFontPadding": false,
                     "textAlign": "left",
+                    "verticalAlign": "middle",
                   },
                   {
                     "color": "rgba(0, 0, 0, 0.8000)",
@@ -1866,7 +1892,9 @@ exports[`MenuItemTemplate with icon and badge 1`] = `
                 [
                   {
                     "fontSize": 12,
+                    "includeFontPadding": false,
                     "textAlign": "left",
+                    "verticalAlign": "middle",
                   },
                   {
                     "color": "rgba(0, 0, 0, 0.8000)",
@@ -1973,7 +2001,9 @@ exports[`MenuItemTemplate with separator 1`] = `
                 [
                   {
                     "fontSize": 14,
+                    "includeFontPadding": false,
                     "textAlign": "left",
+                    "verticalAlign": "middle",
                   },
                   {
                     "color": "rgba(0, 0, 0, 0.8000)",
@@ -1988,7 +2018,9 @@ exports[`MenuItemTemplate with separator 1`] = `
                 [
                   {
                     "fontSize": 12,
+                    "includeFontPadding": false,
                     "textAlign": "left",
+                    "verticalAlign": "middle",
                   },
                   {
                     "color": "rgba(0, 0, 0, 0.8000)",

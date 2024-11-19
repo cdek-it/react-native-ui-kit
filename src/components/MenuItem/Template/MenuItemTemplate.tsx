@@ -148,6 +148,8 @@ const useStyles = makeStyles(({ theme, spacing, typography }) => ({
   title: {
     fontSize: 14,
     textAlign: 'left',
+    includeFontPadding: false,
+    verticalAlign: 'middle',
   },
   titleColor: {
     color: theme.Menu.Item.menuitemTextColor,
@@ -155,6 +157,8 @@ const useStyles = makeStyles(({ theme, spacing, typography }) => ({
   caption: {
     fontSize: 12,
     textAlign: 'left',
+    includeFontPadding: false,
+    verticalAlign: 'middle',
   },
   captionColor: {
     color: theme.Menu.Item.menuitemTextColor,

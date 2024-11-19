@@ -6,6 +6,8 @@ exports[`Caption component tests color = default, disabled = false 1`] = `
     [
       {
         "fontSize": 12.25,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "color": "rgba(0, 0, 0, 0.8000)",
@@ -25,6 +27,8 @@ exports[`Caption component tests color = default, disabled = true 1`] = `
     [
       {
         "fontSize": 12.25,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "color": "rgba(0, 0, 0, 0.8000)",
@@ -46,6 +50,8 @@ exports[`Caption component tests color = primary, disabled = false 1`] = `
     [
       {
         "fontSize": 12.25,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "color": "#188700",
@@ -65,6 +71,8 @@ exports[`Caption component tests color = primary, disabled = true 1`] = `
     [
       {
         "fontSize": 12.25,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "color": "#188700",
@@ -86,6 +94,8 @@ exports[`Caption component tests color = secondary, disabled = false 1`] = `
     [
       {
         "fontSize": 12.25,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "color": "rgba(0, 0, 0, 0.6000)",
@@ -105,6 +115,8 @@ exports[`Caption component tests color = secondary, disabled = true 1`] = `
     [
       {
         "fontSize": 12.25,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "color": "rgba(0, 0, 0, 0.6000)",
@@ -126,6 +138,8 @@ exports[`Caption component tests default props 1`] = `
     [
       {
         "fontSize": 12.25,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "color": "rgba(0, 0, 0, 0.8000)",

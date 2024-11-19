@@ -17,6 +17,8 @@ const useStyles = makeStyles(({ theme }) => ({
   text: {
     color: theme.General.textColor,
     fontWeight: 700,
+    includeFontPadding: false,
+    verticalAlign: 'middle',
   },
   h1: {
     fontSize: 28,

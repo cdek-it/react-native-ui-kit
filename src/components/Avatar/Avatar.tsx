@@ -210,6 +210,8 @@ const useStyles = makeStyles(({ theme }) => ({
     fontSize: 14,
     textTransform: 'uppercase',
     color: theme.Misc.Avatar.avatarTextColor,
+    includeFontPadding: false,
+    verticalAlign: 'middle',
   },
   textXLarge: {
     fontSize: 21,

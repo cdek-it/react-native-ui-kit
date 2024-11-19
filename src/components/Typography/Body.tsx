@@ -41,6 +41,8 @@ export const Body = ({
 const useStyles = makeStyles(({ theme }) => ({
   text: {
     fontSize: 15.75,
+    includeFontPadding: false,
+    verticalAlign: 'middle',
   },
   regular: {
     fontWeight: 400,

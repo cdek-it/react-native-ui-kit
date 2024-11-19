@@ -19,6 +19,8 @@ export const Caption = ({ color = 'default', disabled, style, ...other }: Captio
 const useStyles = makeStyles(({ theme }) => ({
   text: {
     fontSize: 12.25,
+    includeFontPadding: false,
+    verticalAlign: 'middle',
   },
   default: {
     color: theme.General.textColor,

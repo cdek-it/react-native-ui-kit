@@ -6,6 +6,8 @@ exports[`Body component tests base = false, color = default, disabled = false, p
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -30,6 +32,8 @@ exports[`Body component tests base = false, color = default, disabled = false, p
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -54,6 +58,8 @@ exports[`Body component tests base = false, color = default, disabled = false, p
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -78,6 +84,8 @@ exports[`Body component tests base = false, color = default, disabled = false, p
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -104,6 +112,8 @@ exports[`Body component tests base = false, color = default, disabled = false, p
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -130,6 +140,8 @@ exports[`Body component tests base = false, color = default, disabled = false, p
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -156,6 +168,8 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -182,6 +196,8 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -208,6 +224,8 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -234,6 +252,8 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -262,6 +282,8 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -290,6 +312,8 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -318,6 +342,8 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -342,6 +368,8 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -366,6 +394,8 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -390,6 +420,8 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -416,6 +448,8 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -442,6 +476,8 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -468,6 +504,8 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -494,6 +532,8 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -520,6 +560,8 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -546,6 +588,8 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -574,6 +618,8 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -602,6 +648,8 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -630,6 +678,8 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -654,6 +704,8 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -678,6 +730,8 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -702,6 +756,8 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -728,6 +784,8 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -754,6 +812,8 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -780,6 +840,8 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -806,6 +868,8 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -832,6 +896,8 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -858,6 +924,8 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -886,6 +954,8 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -914,6 +984,8 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -942,6 +1014,8 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -968,6 +1042,8 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -994,6 +1070,8 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -1020,6 +1098,8 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -1048,6 +1128,8 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -1076,6 +1158,8 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -1104,6 +1188,8 @@ exports[`Body component tests base = true, color = default, disabled = true, par
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -1132,6 +1218,8 @@ exports[`Body component tests base = true, color = default, disabled = true, par
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -1160,6 +1248,8 @@ exports[`Body component tests base = true, color = default, disabled = true, par
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -1188,6 +1278,8 @@ exports[`Body component tests base = true, color = default, disabled = true, par
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -1218,6 +1310,8 @@ exports[`Body component tests base = true, color = default, disabled = true, par
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -1248,6 +1342,8 @@ exports[`Body component tests base = true, color = default, disabled = true, par
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -1278,6 +1374,8 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -1304,6 +1402,8 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -1330,6 +1430,8 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -1356,6 +1458,8 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -1384,6 +1488,8 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -1412,6 +1518,8 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -1440,6 +1548,8 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -1468,6 +1578,8 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -1496,6 +1608,8 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -1524,6 +1638,8 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -1554,6 +1670,8 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -1584,6 +1702,8 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -1614,6 +1734,8 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -1640,6 +1762,8 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -1666,6 +1790,8 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -1692,6 +1818,8 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -1720,6 +1848,8 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -1748,6 +1878,8 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -1776,6 +1908,8 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -1804,6 +1938,8 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -1832,6 +1968,8 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -1860,6 +1998,8 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 700,
@@ -1890,6 +2030,8 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 500,
@@ -1920,6 +2062,8 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,
@@ -1950,6 +2094,8 @@ exports[`Body component tests default props 1`] = `
     [
       {
         "fontSize": 15.75,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
       },
       {
         "fontWeight": 400,

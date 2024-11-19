@@ -221,7 +221,9 @@ exports[`Avatar component tests Size: large, shape: circle, type: label 1`] = `
           {
             "color": "#ffffff",
             "fontSize": 14,
+            "includeFontPadding": false,
             "textTransform": "uppercase",
+            "verticalAlign": "middle",
           },
           false,
         ]
@@ -448,7 +450,9 @@ exports[`Avatar component tests Size: large, shape: square, type: label 1`] = `
           {
             "color": "#ffffff",
             "fontSize": 14,
+            "includeFontPadding": false,
             "textTransform": "uppercase",
+            "verticalAlign": "middle",
           },
           false,
         ]
@@ -681,7 +685,9 @@ exports[`Avatar component tests Size: normal, shape: circle, type: label 1`] = `
           {
             "color": "#ffffff",
             "fontSize": 14,
+            "includeFontPadding": false,
             "textTransform": "uppercase",
+            "verticalAlign": "middle",
           },
           false,
         ]
@@ -908,7 +914,9 @@ exports[`Avatar component tests Size: normal, shape: square, type: label 1`] = `
           {
             "color": "#ffffff",
             "fontSize": 14,
+            "includeFontPadding": false,
             "textTransform": "uppercase",
+            "verticalAlign": "middle",
           },
           false,
         ]
@@ -1141,7 +1149,9 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: label 1`] = `
           {
             "color": "#ffffff",
             "fontSize": 14,
+            "includeFontPadding": false,
             "textTransform": "uppercase",
+            "verticalAlign": "middle",
           },
           {
             "fontSize": 21,
@@ -1370,7 +1380,9 @@ exports[`Avatar component tests Size: xlarge, shape: square, type: label 1`] = `
           {
             "color": "#ffffff",
             "fontSize": 14,
+            "includeFontPadding": false,
             "textTransform": "uppercase",
+            "verticalAlign": "middle",
           },
           {
             "fontSize": 21,
@@ -1422,7 +1434,9 @@ exports[`Avatar component tests With badge, showBadge: false 1`] = `
           {
             "color": "#ffffff",
             "fontSize": 14,
+            "includeFontPadding": false,
             "textTransform": "uppercase",
+            "verticalAlign": "middle",
           },
           false,
         ]
@@ -1472,7 +1486,9 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
           {
             "color": "#ffffff",
             "fontSize": 14,
+            "includeFontPadding": false,
             "textTransform": "uppercase",
+            "verticalAlign": "middle",
           },
           false,
         ]
@@ -1537,6 +1553,8 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
                 "color": "#ffffff",
                 "fontSize": 10.5,
                 "fontWeight": 700,
+                "includeFontPadding": false,
+                "verticalAlign": "middle",
               }
             }
           >
