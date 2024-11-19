@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.5...v0.0.6) (2024-11-19)
+
+
+### Bug Fixes
+
+* fix text vertical align for Android ([c0928be](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/c0928becefa26e3319a4da44dc2e586455f32557))
+
 ### [0.0.5](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.4...v0.0.5) (2024-11-15)
 
 
