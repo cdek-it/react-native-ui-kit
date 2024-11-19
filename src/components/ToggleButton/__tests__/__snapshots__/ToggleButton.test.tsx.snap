@@ -176,6 +176,8 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           [
             {
               "fontWeight": "700",
+              "includeFontPadding": false,
+              "verticalAlign": "middle",
             },
             {
               "fontSize": 12.25,
@@ -266,6 +268,8 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           [
             {
               "fontWeight": "700",
+              "includeFontPadding": false,
+              "verticalAlign": "middle",
             },
             {
               "fontSize": 12.25,
@@ -755,6 +759,8 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
           [
             {
               "fontWeight": "700",
+              "includeFontPadding": false,
+              "verticalAlign": "middle",
             },
             {
               "fontSize": 17.5,

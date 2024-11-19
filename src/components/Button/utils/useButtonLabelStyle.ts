@@ -36,26 +36,24 @@ export const useButtonLabelStyle = (
 const useButtonLabelStyles = makeStyles(({ theme }) => ({
   font: {
     fontWeight: 700,
+    includeFontPadding: false,
+    verticalAlign: 'middle',
   },
 
   xlarge: {
     fontSize: 21,
-    lineHeight: 25,
   },
 
   large: {
     fontSize: 17.5,
-    lineHeight: 21,
   },
 
   base: {
     fontSize: 14,
-    lineHeight: 16,
   },
 
   small: {
     fontSize: 12.25,
-    lineHeight: 14,
   },
 
   disabled: {

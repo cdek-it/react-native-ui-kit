@@ -15,6 +15,8 @@ export const useLabelSize = (size: ToggleButtonProps['size'] = 'base') => {
 const useStyles = makeStyles(() => ({
   common: {
     fontWeight: '700',
+    includeFontPadding: false,
+    verticalAlign: 'middle',
   },
   xlarge: {
     fontSize: 21,

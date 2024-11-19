@@ -76,6 +76,8 @@ const useStyles = makeStyles(({ theme }) => ({
     color: theme.Misc.Badge.badgeTextColor,
     fontSize: 10.5,
     fontWeight: 700,
+    includeFontPadding: false,
+    verticalAlign: 'middle',
   },
   basic: {
     backgroundColor: theme.Misc.Badge.badgeBg,

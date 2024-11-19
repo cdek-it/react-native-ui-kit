@@ -173,6 +173,8 @@ exports[`Badge component tests severity: basic 1`] = `
           "color": "#ffffff",
           "fontSize": 10.5,
           "fontWeight": 700,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
         }
       }
     >
@@ -215,6 +217,8 @@ exports[`Badge component tests severity: basic 2`] = `
           "color": "#ffffff",
           "fontSize": 10.5,
           "fontWeight": 700,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
         }
       }
     >
@@ -257,6 +261,8 @@ exports[`Badge component tests severity: basic 3`] = `
           "color": "#ffffff",
           "fontSize": 10.5,
           "fontWeight": 700,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
         }
       }
     >
@@ -299,6 +305,8 @@ exports[`Badge component tests severity: basic 4`] = `
           "color": "#ffffff",
           "fontSize": 10.5,
           "fontWeight": 700,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
         }
       }
     >
@@ -341,6 +349,8 @@ exports[`Badge component tests severity: basic 5`] = `
           "color": "#ffffff",
           "fontSize": 10.5,
           "fontWeight": 700,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
         }
       }
     >
@@ -383,6 +393,8 @@ exports[`Badge component tests severity: default 1`] = `
           "color": "#ffffff",
           "fontSize": 10.5,
           "fontWeight": 700,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
         }
       }
     >

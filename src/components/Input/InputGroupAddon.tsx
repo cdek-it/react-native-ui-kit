@@ -72,6 +72,8 @@ const useStyles = makeStyles(({ theme }) => ({
   text: {
     fontSize: 14,
     color: theme.Form.InputGroup.inputGroupTextColor,
+    includeFontPadding: false,
+    verticalAlign: 'middle',
   },
   icon: {
     width: 14,
