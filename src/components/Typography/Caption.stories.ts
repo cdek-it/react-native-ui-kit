@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Caption } from './Caption'
 
 const meta: Meta<typeof Caption> = {
-  title: 'Caption',
+  title: 'Typography/Caption',
   component: Caption,
   args: {
     color: 'default',
@@ -18,7 +18,6 @@ export default meta
 
 type Story = StoryObj<typeof Caption>
 
-export const Typography: Story = {
-  args: {},
-  argTypes: {},
-}
+const CaptionStory: Story = {}
+
+export { CaptionStory as Caption }

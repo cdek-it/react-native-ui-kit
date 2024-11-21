@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Body } from './Body'
 
 const meta: Meta<typeof Body> = {
-  title: 'Body',
+  title: 'Typography/Body',
   component: Body,
   args: {
     color: 'default',
@@ -26,7 +26,6 @@ export default meta
 
 type Story = StoryObj<typeof Body>
 
-export const Typography: Story = {
-  args: {},
-  argTypes: {},
-}
+const BodyStory: Story = {}
+
+export { BodyStory as Body }
