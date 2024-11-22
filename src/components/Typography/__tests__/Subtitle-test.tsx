@@ -7,6 +7,7 @@ describe('Subtitle component tests', () => {
   const snapshotCases = generatePropsCombinations<Partial<SubtitleProps>>({
     base: [true, false, undefined],
     color: ['default', 'primary', 'secondary', undefined],
+    style: [{ margin: 10 }],
   })
 
   test.each(snapshotCases)('base = $base, color = $color', (props) => {
