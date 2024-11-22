@@ -1,0 +1,249 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Subtitle component tests base = false, color = default 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+        "fontWeight": 700,
+        "textTransform": "uppercase",
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      false,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Subtitle component tests base = false, color = primary 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+        "fontWeight": 700,
+        "textTransform": "uppercase",
+      },
+      {
+        "color": "#188700",
+      },
+      false,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Subtitle component tests base = false, color = secondary 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+        "fontWeight": 700,
+        "textTransform": "uppercase",
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      false,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Subtitle component tests base = false, color = undefined 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+        "fontWeight": 700,
+        "textTransform": "uppercase",
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      false,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Subtitle component tests base = true, color = default 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+        "fontWeight": 700,
+        "textTransform": "uppercase",
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      {
+        "fontSize": 14,
+      },
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Subtitle component tests base = true, color = primary 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+        "fontWeight": 700,
+        "textTransform": "uppercase",
+      },
+      {
+        "color": "#188700",
+      },
+      {
+        "fontSize": 14,
+      },
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Subtitle component tests base = true, color = secondary 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+        "fontWeight": 700,
+        "textTransform": "uppercase",
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      {
+        "fontSize": 14,
+      },
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Subtitle component tests base = true, color = undefined 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+        "fontWeight": 700,
+        "textTransform": "uppercase",
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      {
+        "fontSize": 14,
+      },
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Subtitle component tests base = undefined, color = default 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+        "fontWeight": 700,
+        "textTransform": "uppercase",
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      false,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Subtitle component tests base = undefined, color = primary 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+        "fontWeight": 700,
+        "textTransform": "uppercase",
+      },
+      {
+        "color": "#188700",
+      },
+      false,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Subtitle component tests base = undefined, color = secondary 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+        "fontWeight": 700,
+        "textTransform": "uppercase",
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      false,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Subtitle component tests base = undefined, color = undefined 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+        "fontWeight": 700,
+        "textTransform": "uppercase",
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      false,
+    ]
+  }
+>
+  Text
+</Text>
+`;

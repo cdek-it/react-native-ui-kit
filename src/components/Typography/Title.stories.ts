@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Title } from './Title'
 
 const meta: Meta<typeof Title> = {
-  title: 'Title',
+  title: 'Typography/Title',
   component: Title,
   args: {
     level: 'h1',
@@ -18,7 +18,6 @@ export default meta
 
 type Story = StoryObj<typeof Title>
 
-export const Typography: Story = {
-  args: {},
-  argTypes: {},
-}
+const TitleStory: Story = {}
+
+export { TitleStory as Title }
