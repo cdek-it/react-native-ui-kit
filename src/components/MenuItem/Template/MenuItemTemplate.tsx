@@ -1,12 +1,12 @@
 import type { Icon } from '@tabler/icons-react-native'
 import React, { memo } from 'react'
-import { View, Text, Pressable, type ViewProps, ColorValue } from 'react-native'
+import { View, Text, Pressable, type ViewProps, type ColorValue } from 'react-native'
 
+import { isNonEmptyString } from '../../../utils/isNonEmptyString'
 import { makeStyles } from '../../../utils/makeStyles'
 import type { BadgeSeverity } from '../../Badge/Badge'
 import { type MenuItemTemplateAccessory, MenuItemAccessory } from '../MenuItemAccessory'
 import { MenuItemIcon } from '../MenuItemIcon'
-import { isNonEmptyString } from '../../../utils/isNonEmptyString'
 
 export type MenuItemTemplateState = 'default' | 'disabled'
 
@@ -104,7 +104,7 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
         </Pressable>
       </View>
     )
-  },
+  }
 )
 
 const useStyles = (iconColor?: ColorValue) =>

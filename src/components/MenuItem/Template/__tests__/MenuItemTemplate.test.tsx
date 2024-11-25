@@ -73,7 +73,7 @@ it('MenuItemTemplate press', () => {
       onPress={() => {
         pressCount += 1
       }}
-    />,
+    />
   )
 
   const button = minimal.getByTestId('menuItemButton')
