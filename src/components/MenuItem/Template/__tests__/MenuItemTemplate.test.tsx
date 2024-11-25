@@ -15,6 +15,7 @@ const snapshotTestsConfig: Array<[string, MenuItemTemplateProps]> = [
     { title: 'Menu Item', caption: 'Caption', prefix: 'down', suffix: 'down' },
   ],
   ['with icon', { title: 'Menu Item', Icon: IconUser }],
+  ['with colored icon', { title: 'Menu Item', Icon: IconUser, iconColor: 'red' }],
   ['with icon and badge', { title: 'Menu Item', Icon: IconUser, badgeSeverity: 'warning' }],
   ['with extra', { title: 'Menu Item', extra: <IconUser /> }],
   ['with separator', { title: 'Menu Item', separator: true }],
@@ -72,7 +73,7 @@ it('MenuItemTemplate press', () => {
       onPress={() => {
         pressCount += 1
       }}
-    />
+    />,
   )
 
   const button = minimal.getByTestId('menuItemButton')

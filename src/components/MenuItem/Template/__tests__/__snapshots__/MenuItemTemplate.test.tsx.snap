@@ -596,21 +596,6 @@ exports[`MenuItemTemplate minimal config 1`] = `
             >
               Menu Item
             </Text>
-            <Text
-              style={
-                [
-                  {
-                    "fontSize": 12,
-                    "includeFontPadding": false,
-                    "textAlign": "left",
-                    "verticalAlign": "middle",
-                  },
-                  {
-                    "color": "rgba(0, 0, 0, 0.8000)",
-                  },
-                ]
-              }
-            />
           </View>
         </View>
       </View>
@@ -1203,6 +1188,221 @@ exports[`MenuItemTemplate prefix,suffix = right 1`] = `
 </View>
 `;
 
+exports[`MenuItemTemplate with colored icon 1`] = `
+<View
+  style={false}
+>
+  <View
+    accessibilityLabel="Menu Item"
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    testID="menuItemButton"
+  >
+    <View
+      style={
+        [
+          {
+            "alignSelf": "stretch",
+            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "borderColor": "rgba(255, 255, 255, 0.0001)",
+            "borderRadius": 7,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "gap": 7,
+            "justifyContent": "space-between",
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 7,
+          },
+          null,
+        ]
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+              "gap": 7,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
+          >
+            <View>
+              <RNSVGSvgView
+                align="xMidYMid"
+                bbHeight={17.5}
+                bbWidth={17.5}
+                fill="none"
+                focusable={false}
+                height={17.5}
+                meetOrSlice={0}
+                minX={0}
+                minY={0}
+                stroke="red"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                style={
+                  [
+                    {
+                      "backgroundColor": "transparent",
+                      "borderWidth": 0,
+                    },
+                    {
+                      "flex": 0,
+                      "height": 17,
+                      "width": 17,
+                    },
+                  ]
+                }
+                vbHeight={24}
+                vbWidth={24}
+                width={17.5}
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <RNSVGGroup
+                  fill={null}
+                  propList={
+                    [
+                      "fill",
+                      "stroke",
+                      "strokeWidth",
+                      "strokeLinecap",
+                      "strokeLinejoin",
+                    ]
+                  }
+                  stroke={
+                    {
+                      "payload": 4294901760,
+                      "type": 0,
+                    }
+                  }
+                  strokeLinecap={1}
+                  strokeLinejoin={1}
+                  strokeWidth={2}
+                >
+                  <RNSVGPath
+                    d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+                    fill={null}
+                    propList={
+                      [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                        "strokeLinecap",
+                        "strokeLinejoin",
+                      ]
+                    }
+                    stroke={
+                      {
+                        "payload": 4294901760,
+                        "type": 0,
+                      }
+                    }
+                    strokeLinecap={1}
+                    strokeLinejoin={1}
+                    strokeWidth={2}
+                  />
+                  <RNSVGPath
+                    d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+                    fill={null}
+                    propList={
+                      [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                        "strokeLinecap",
+                        "strokeLinejoin",
+                      ]
+                    }
+                    stroke={
+                      {
+                        "payload": 4294901760,
+                        "type": 0,
+                      }
+                    }
+                    strokeLinecap={1}
+                    strokeLinejoin={1}
+                    strokeWidth={2}
+                  />
+                </RNSVGGroup>
+              </RNSVGSvgView>
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "flexDirection": "column",
+                "gap": 3.5,
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontSize": 14,
+                    "includeFontPadding": false,
+                    "textAlign": "left",
+                    "verticalAlign": "middle",
+                  },
+                  {
+                    "color": "rgba(0, 0, 0, 0.8000)",
+                  },
+                ]
+              }
+            >
+              Menu Item
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`MenuItemTemplate with extra 1`] = `
 <View
   style={false}
@@ -1300,21 +1500,6 @@ exports[`MenuItemTemplate with extra 1`] = `
             >
               Menu Item
             </Text>
-            <Text
-              style={
-                [
-                  {
-                    "fontSize": 12,
-                    "includeFontPadding": false,
-                    "textAlign": "left",
-                    "verticalAlign": "middle",
-                  },
-                  {
-                    "color": "rgba(0, 0, 0, 0.8000)",
-                  },
-                ]
-              }
-            />
           </View>
           <RNSVGSvgView
             align="xMidYMid"
@@ -1626,21 +1811,6 @@ exports[`MenuItemTemplate with icon 1`] = `
             >
               Menu Item
             </Text>
-            <Text
-              style={
-                [
-                  {
-                    "fontSize": 12,
-                    "includeFontPadding": false,
-                    "textAlign": "left",
-                    "verticalAlign": "middle",
-                  },
-                  {
-                    "color": "rgba(0, 0, 0, 0.8000)",
-                  },
-                ]
-              }
-            />
           </View>
         </View>
       </View>
@@ -1887,21 +2057,6 @@ exports[`MenuItemTemplate with icon and badge 1`] = `
             >
               Menu Item
             </Text>
-            <Text
-              style={
-                [
-                  {
-                    "fontSize": 12,
-                    "includeFontPadding": false,
-                    "textAlign": "left",
-                    "verticalAlign": "middle",
-                  },
-                  {
-                    "color": "rgba(0, 0, 0, 0.8000)",
-                  },
-                ]
-              }
-            />
           </View>
         </View>
       </View>
@@ -2013,21 +2168,6 @@ exports[`MenuItemTemplate with separator 1`] = `
             >
               Menu Item
             </Text>
-            <Text
-              style={
-                [
-                  {
-                    "fontSize": 12,
-                    "includeFontPadding": false,
-                    "textAlign": "left",
-                    "verticalAlign": "middle",
-                  },
-                  {
-                    "color": "rgba(0, 0, 0, 0.8000)",
-                  },
-                ]
-              }
-            />
           </View>
         </View>
       </View>

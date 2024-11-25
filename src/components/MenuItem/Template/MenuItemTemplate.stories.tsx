@@ -15,6 +15,7 @@ const meta: Meta<typeof MenuItemTemplate> = {
     prefix: 'none',
     title: 'Menu Item',
     Icon: undefined,
+    iconColor: 'rgba(0, 0, 0, 0.8000)',
     badgeSeverity: undefined,
     caption: 'Caption',
     suffix: 'none',
@@ -68,4 +69,23 @@ export const MenuItemTemplateNormal: Story = {
     title: 'Menu item template',
   },
   argTypes: {},
+  parameters: {
+    notes: `
+      #### Элемент меню - полный набор свойств
+  
+      <MenuItemTemplate 
+        title="Menu item title"
+        caption="Menu item subtitle",
+        Icon=IconUser,
+        iconColor="#ff0000",
+        badgeSeverity="warning",
+        prefix="down",
+        suffix="right",
+        extra=IconDiamond,
+        separator=false,
+        state="default",
+        onPress = { Console.log("Menu item pressed) }
+      />
+  `,
+  },
 }
