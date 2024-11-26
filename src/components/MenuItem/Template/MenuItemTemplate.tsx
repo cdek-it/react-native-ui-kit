@@ -1,8 +1,7 @@
 import type { Icon } from '@tabler/icons-react-native'
-import React, { memo } from 'react'
+import React, { memo, useMemo } from 'react'
 import { View, Text, Pressable, type ViewProps, type ColorValue } from 'react-native'
 
-import { isNonEmptyString } from '../../../utils/isNonEmptyString'
 import { makeStyles } from '../../../utils/makeStyles'
 import type { BadgeSeverity } from '../../Badge/Badge'
 import { type MenuItemTemplateAccessory, MenuItemAccessory } from '../MenuItemAccessory'
@@ -67,10 +66,15 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
     onPress = undefined,
     ...rest
   }) => {
-    const styles = useStyles(iconColor)
+    const styles = useStyles()
 
     const disabled = state === 'disabled'
     const maybeDisabled = disabled ? styles.disabled : null
+
+    const iconStyle = useMemo(
+      () => ({ ...styles.icon, color: iconColor || styles.icon.color }),
+      [iconColor, styles.icon]
+    )
 
     return (
       <View style={separator && styles.separator}>
@@ -87,14 +91,12 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
             <View style={styles.leftContainer}>
               <MenuItemAccessory disabled={disabled} iconStyle={styles.accessory} type={prefix} />
               <View style={styles.templateContainer}>
-                {Icon !== undefined && (
-                  <MenuItemIcon Icon={Icon} badgeSeverity={badgeSeverity} style={styles.icon} />
+                {Icon && (
+                  <MenuItemIcon Icon={Icon} badgeSeverity={badgeSeverity} style={iconStyle} />
                 )}
                 <View style={styles.textContainer}>
                   <Text style={[styles.title, styles.titleColor]}>{title}</Text>
-                  {isNonEmptyString(caption) && (
-                    <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>
-                  )}
+                  {caption && <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>}
                 </View>
                 {extra}
               </View>
@@ -107,68 +109,67 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
   }
 )
 
-const useStyles = (iconColor?: ColorValue) =>
-  makeStyles(({ theme, spacing, typography }) => ({
-    separator: {
-      borderTopWidth: 1,
-      borderTopColor: theme.Menu.Overlay.overlayMenuBorderColor,
-      paddingTop: spacing.Gap['gap-1'],
-    },
-    contentContainer: {
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      alignSelf: 'stretch',
-      gap: theme.General.inlineSpacing,
-      paddingHorizontal: theme.Menu.Item.menuitemPaddingLeftRight,
-      paddingVertical: theme.Menu.Item.menuitemPaddingTopBottom,
-      borderColor: theme.Menu.Item.menuitemBorderColor,
-      borderWidth: 1, // theme.Menu.Item.menuitemBorder, - установить когда там будет числовое значение
-      borderRadius: theme.Menu.Item.menuitemBorderRadius,
-      backgroundColor: theme.Menu.Item.menuitemBg,
-    },
-    disabled: {
-      borderWidth: 1,
-      borderColor: theme.Button.Disabled.disabledButtonBorderColor,
-      backgroundColor: theme.Button.Disabled.disabledButtonBg,
-      opacity: 0.6,
-    },
-    leftContainer: {
-      flexDirection: 'row',
-    },
-    accessory: {
-      color: theme.Menu.Item.menuitemIconColor,
-      width: theme.Menu.Item.menuitemSubmenuIconFontSize,
-      height: theme.Menu.Item.menuitemSubmenuIconFontSize,
-    },
-    templateContainer: {
-      flexDirection: 'row',
-      gap: spacing.Gap['gap-2'],
-    },
-    icon: {
-      width: typography.Size['text-xl'],
-      height: typography.Size['text-xl'],
-      color: iconColor ?? theme.Menu.Item.menuitemIconColor,
-    },
-    textContainer: {
-      flexDirection: 'column',
-      gap: spacing.Gap['gap-1'],
-    },
-    title: {
-      fontSize: 14,
-      textAlign: 'left',
-      includeFontPadding: false,
-      verticalAlign: 'middle',
-    },
-    titleColor: {
-      color: theme.Menu.Item.menuitemTextColor,
-    },
-    caption: {
-      fontSize: 12,
-      textAlign: 'left',
-      includeFontPadding: false,
-      verticalAlign: 'middle',
-    },
-    captionColor: {
-      color: theme.Menu.Item.menuitemTextColor,
-    },
-  }))()
+const useStyles = makeStyles(({ theme, spacing, typography }) => ({
+  separator: {
+    borderTopWidth: 1,
+    borderTopColor: theme.Menu.Overlay.overlayMenuBorderColor,
+    paddingTop: spacing.Gap['gap-1'],
+  },
+  contentContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignSelf: 'stretch',
+    gap: theme.General.inlineSpacing,
+    paddingHorizontal: theme.Menu.Item.menuitemPaddingLeftRight,
+    paddingVertical: theme.Menu.Item.menuitemPaddingTopBottom,
+    borderColor: theme.Menu.Item.menuitemBorderColor,
+    borderWidth: 1, // theme.Menu.Item.menuitemBorder, - установить когда там будет числовое значение
+    borderRadius: theme.Menu.Item.menuitemBorderRadius,
+    backgroundColor: theme.Menu.Item.menuitemBg,
+  },
+  disabled: {
+    borderWidth: 1,
+    borderColor: theme.Button.Disabled.disabledButtonBorderColor,
+    backgroundColor: theme.Button.Disabled.disabledButtonBg,
+    opacity: 0.6,
+  },
+  leftContainer: {
+    flexDirection: 'row',
+  },
+  accessory: {
+    color: theme.Menu.Item.menuitemIconColor,
+    width: theme.Menu.Item.menuitemSubmenuIconFontSize,
+    height: theme.Menu.Item.menuitemSubmenuIconFontSize,
+  },
+  templateContainer: {
+    flexDirection: 'row',
+    gap: spacing.Gap['gap-2'],
+  },
+  icon: {
+    width: typography.Size['text-xl'],
+    height: typography.Size['text-xl'],
+    color: theme.Menu.Item.menuitemIconColor,
+  },
+  textContainer: {
+    flexDirection: 'column',
+    gap: spacing.Gap['gap-1'],
+  },
+  title: {
+    fontSize: 14,
+    textAlign: 'left',
+    includeFontPadding: false,
+    verticalAlign: 'middle',
+  },
+  titleColor: {
+    color: theme.Menu.Item.menuitemTextColor,
+  },
+  caption: {
+    fontSize: 12,
+    textAlign: 'left',
+    includeFontPadding: false,
+    verticalAlign: 'middle',
+  },
+  captionColor: {
+    color: theme.Menu.Item.menuitemTextColor,
+  },
+}))

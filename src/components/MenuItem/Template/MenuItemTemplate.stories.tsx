@@ -15,7 +15,7 @@ const meta: Meta<typeof MenuItemTemplate> = {
     prefix: 'none',
     title: 'Menu Item',
     Icon: undefined,
-    iconColor: 'rgba(0, 0, 0, 0.8000)',
+    iconColor: undefined,
     badgeSeverity: undefined,
     caption: 'Caption',
     suffix: 'none',
@@ -30,6 +30,7 @@ const meta: Meta<typeof MenuItemTemplate> = {
       options: Object.keys(Icons),
       mapping: Icons,
     },
+    iconColor: { control: { type: 'color' } },
     badgeSeverity: {
       control: 'radio',
       options: ['undefined', 'basic', 'info', 'success', 'warning', 'danger'],
