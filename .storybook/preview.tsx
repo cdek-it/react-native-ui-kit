@@ -9,7 +9,7 @@ const preview: Preview = {
       return (
         <ThemeContextProvider initialTheme={args.theme}>
           <Container theme={args.theme}>
-            <View style={{ padding: 16 }}>
+            <View style={{ padding: 16, flex: 1 }}>
               <Story />
             </View>
           </Container>
