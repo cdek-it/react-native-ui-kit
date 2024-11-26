@@ -1,6 +1,6 @@
 import type { Icon } from '@tabler/icons-react-native'
-import React, { memo } from 'react'
-import { View, Text, Pressable, type ViewProps } from 'react-native'
+import React, { memo, useMemo } from 'react'
+import { View, Text, Pressable, type ViewProps, type ColorValue } from 'react-native'
 
 import { makeStyles } from '../../../utils/makeStyles'
 import type { BadgeSeverity } from '../../Badge/Badge'
@@ -17,6 +17,8 @@ export interface MenuItemTemplateProps extends ViewProps {
   caption?: string
   /** Иконка слева от заголовка. Допустимы только иконки из набора tabler */
   Icon?: Icon
+  /** Цвет иконки. Если цвет не задан - применяется такой же цвет что и для аксессуаров (prefix, suffix) */
+  iconColor?: ColorValue
   /** Цвет бейджа (точки) в правом верхнем углу иконки. Бейдж может выводиться только при наличии иконки. */
   badgeSeverity?: BadgeSeverity
   /** Аксессуар в самой левой части пункта меню (стрелка вниз или вправо) */
@@ -39,6 +41,7 @@ export interface MenuItemTemplateProps extends ViewProps {
  * @param title - Заголовок пункта меню
  * @param caption - Подзаголовок пункта меню
  * @param Icon - Иконка слева от заголовка. Допустимы только иконки из набора tabler
+ * @param iconColor - Цвет иконки. Если цвет не задан - применяется такой же цвет что и для аксессуаров (prefix, suffix)
  * @param badgeSeverity - Цвет бейджа (точки) в правом верхнем углу иконки. Бейдж может выводиться только при наличии иконки.
  * @param prefix - Аксессуар в самой левой части пункта меню (стрелка вниз или вправо)
  * @param suffix - Аксессуар в самой правой части пункта меню (стрелка вниз или вправо)
@@ -53,6 +56,7 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
     title,
     caption,
     Icon,
+    iconColor,
     badgeSeverity,
     prefix = 'none',
     suffix = 'none',
@@ -66,6 +70,11 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
 
     const disabled = state === 'disabled'
     const maybeDisabled = disabled ? styles.disabled : null
+
+    const iconStyle = useMemo(
+      () => ({ ...styles.icon, color: iconColor || styles.icon.color }),
+      [iconColor, styles.icon]
+    )
 
     return (
       <View style={separator && styles.separator}>
@@ -82,12 +91,12 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
             <View style={styles.leftContainer}>
               <MenuItemAccessory disabled={disabled} iconStyle={styles.accessory} type={prefix} />
               <View style={styles.templateContainer}>
-                {Icon !== undefined && (
-                  <MenuItemIcon Icon={Icon} badgeSeverity={badgeSeverity} style={styles.icon} />
+                {Icon && (
+                  <MenuItemIcon Icon={Icon} badgeSeverity={badgeSeverity} style={iconStyle} />
                 )}
                 <View style={styles.textContainer}>
                   <Text style={[styles.title, styles.titleColor]}>{title}</Text>
-                  <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>
+                  {caption && <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>}
                 </View>
                 {extra}
               </View>
