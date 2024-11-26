@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.6...v0.0.7) (2024-11-26)
+
+
+### Features
+
+* **Subtitle:** implement Subtitle component ([1f4df4b](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/1f4df4b6c016b9606e937a9956175a2f9aa0b6a9))
+
+
+### Bug Fixes
+
+* **Divider:** implement Divider component ([186f685](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/186f685c6b5f51b2a3514b6b2a3357536b6445af))
+* **menuitemtemplate:** Фикс позиционирования заголовка при отсутствии подзаголовка. Добавлен параметр цвета в иконке. ([6cd5280](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/6cd52806581d834aa718183c831514e330d17135))
+* **Subtitle:** fix passing styles and children ([21c050c](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/21c050c50fe8103f1bf9d193102b32d30a6f3352))
+
 ### [0.0.6](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.5...v0.0.6) (2024-11-19)
 
 
