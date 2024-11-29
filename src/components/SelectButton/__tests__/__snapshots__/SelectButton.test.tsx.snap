@@ -1,0 +1,434 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectButtonItem {"disabled": true, "initialIndex": 1, "size": "small", "style": [Object]} 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "borderRadius": 7,
+        "flexDirection": "row",
+        "gap": 3.5,
+        "padding": 3.5,
+      },
+      {
+        "margin": 10,
+      },
+    ]
+  }
+>
+  <SelectButtonItem
+    Icon={
+      {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      }
+    }
+    disabled={true}
+    index={0}
+    label="ButtonSelect"
+    onLayout={[Function]}
+    onPress={[Function]}
+    position={
+      {
+        "_isReanimatedSharedValue": true,
+        "_value": 1,
+        "addListener": [Function],
+        "modify": [Function],
+        "removeListener": [Function],
+        "value": 1,
+      }
+    }
+    size="small"
+    testID="SelectButton_SelectButtonItem_0"
+  />
+  <SelectButtonItem
+    Icon={
+      {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      }
+    }
+    disabled={true}
+    index={1}
+    label="ButtonSelect"
+    onLayout={[Function]}
+    onPress={[Function]}
+    position={
+      {
+        "_isReanimatedSharedValue": true,
+        "_value": 1,
+        "addListener": [Function],
+        "modify": [Function],
+        "removeListener": [Function],
+        "value": 1,
+      }
+    }
+    showIcon={false}
+    size="small"
+    testID="SelectButton_SelectButtonItem_1"
+  />
+</View>
+`;
+
+exports[`SelectButtonItem {"initialIndex": 1, "size": "xlarge"} 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "borderRadius": 7,
+        "flexDirection": "row",
+        "gap": 3.5,
+        "padding": 3.5,
+      },
+      undefined,
+    ]
+  }
+>
+  <SelectButtonItem
+    Icon={
+      {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      }
+    }
+    index={0}
+    label="ButtonSelect"
+    onLayout={[Function]}
+    onPress={[Function]}
+    position={
+      {
+        "_isReanimatedSharedValue": true,
+        "_value": 1,
+        "addListener": [Function],
+        "modify": [Function],
+        "removeListener": [Function],
+        "value": 1,
+      }
+    }
+    size="xlarge"
+    testID="SelectButton_SelectButtonItem_0"
+  />
+  <SelectButtonItem
+    Icon={
+      {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      }
+    }
+    index={1}
+    label="ButtonSelect"
+    onLayout={[Function]}
+    onPress={[Function]}
+    position={
+      {
+        "_isReanimatedSharedValue": true,
+        "_value": 1,
+        "addListener": [Function],
+        "modify": [Function],
+        "removeListener": [Function],
+        "value": 1,
+      }
+    }
+    showIcon={false}
+    size="xlarge"
+    testID="SelectButton_SelectButtonItem_1"
+  />
+  <View
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {
+          "left": 0,
+          "width": 0,
+        },
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#ffffff",
+        "borderRadius": 3.5,
+        "bottom": 3.5,
+        "left": 0,
+        "position": "absolute",
+        "top": 3.5,
+        "width": 0,
+        "zIndex": -1,
+      }
+    }
+    testID="SelectButton_AnimatedFrame"
+  />
+</View>
+`;
+
+exports[`SelectButtonItem {"initialIndex": 2, "size": "base"} 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "borderRadius": 7,
+        "flexDirection": "row",
+        "gap": 3.5,
+        "padding": 3.5,
+      },
+      undefined,
+    ]
+  }
+>
+  <SelectButtonItem
+    Icon={
+      {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      }
+    }
+    index={0}
+    label="ButtonSelect"
+    onLayout={[Function]}
+    onPress={[Function]}
+    position={
+      {
+        "_isReanimatedSharedValue": true,
+        "_value": 0,
+        "addListener": [Function],
+        "modify": [Function],
+        "removeListener": [Function],
+        "value": 0,
+      }
+    }
+    size="base"
+    testID="SelectButton_SelectButtonItem_0"
+  />
+  <SelectButtonItem
+    Icon={
+      {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      }
+    }
+    index={1}
+    label="ButtonSelect"
+    onLayout={[Function]}
+    onPress={[Function]}
+    position={
+      {
+        "_isReanimatedSharedValue": true,
+        "_value": 0,
+        "addListener": [Function],
+        "modify": [Function],
+        "removeListener": [Function],
+        "value": 0,
+      }
+    }
+    showIcon={false}
+    size="base"
+    testID="SelectButton_SelectButtonItem_1"
+  />
+  <View
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {
+          "left": 0,
+          "width": 0,
+        },
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#ffffff",
+        "borderRadius": 3.5,
+        "bottom": 3.5,
+        "left": 0,
+        "position": "absolute",
+        "top": 3.5,
+        "width": 0,
+        "zIndex": -1,
+      }
+    }
+    testID="SelectButton_AnimatedFrame"
+  />
+</View>
+`;
+
+exports[`SelectButtonItem {"size": "large"} 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "borderRadius": 7,
+        "flexDirection": "row",
+        "gap": 3.5,
+        "padding": 3.5,
+      },
+      undefined,
+    ]
+  }
+>
+  <SelectButtonItem
+    Icon={
+      {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      }
+    }
+    index={0}
+    label="ButtonSelect"
+    onLayout={[Function]}
+    onPress={[Function]}
+    position={
+      {
+        "_isReanimatedSharedValue": true,
+        "_value": 0,
+        "addListener": [Function],
+        "modify": [Function],
+        "removeListener": [Function],
+        "value": 0,
+      }
+    }
+    size="large"
+    testID="SelectButton_SelectButtonItem_0"
+  />
+  <SelectButtonItem
+    Icon={
+      {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      }
+    }
+    index={1}
+    label="ButtonSelect"
+    onLayout={[Function]}
+    onPress={[Function]}
+    position={
+      {
+        "_isReanimatedSharedValue": true,
+        "_value": 0,
+        "addListener": [Function],
+        "modify": [Function],
+        "removeListener": [Function],
+        "value": 0,
+      }
+    }
+    showIcon={false}
+    size="large"
+    testID="SelectButton_SelectButtonItem_1"
+  />
+  <View
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {
+          "left": 0,
+          "width": 0,
+        },
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#ffffff",
+        "borderRadius": 3.5,
+        "bottom": 3.5,
+        "left": 0,
+        "position": "absolute",
+        "top": 3.5,
+        "width": 0,
+        "zIndex": -1,
+      }
+    }
+    testID="SelectButton_AnimatedFrame"
+  />
+</View>
+`;
+
+exports[`SelectButtonItem {} 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "borderRadius": 7,
+        "flexDirection": "row",
+        "gap": 3.5,
+        "padding": 3.5,
+      },
+      undefined,
+    ]
+  }
+>
+  <SelectButtonItem
+    Icon={
+      {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      }
+    }
+    index={0}
+    label="ButtonSelect"
+    onLayout={[Function]}
+    onPress={[Function]}
+    position={
+      {
+        "_isReanimatedSharedValue": true,
+        "_value": 0,
+        "addListener": [Function],
+        "modify": [Function],
+        "removeListener": [Function],
+        "value": 0,
+      }
+    }
+    testID="SelectButton_SelectButtonItem_0"
+  />
+  <SelectButtonItem
+    Icon={
+      {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      }
+    }
+    index={1}
+    label="ButtonSelect"
+    onLayout={[Function]}
+    onPress={[Function]}
+    position={
+      {
+        "_isReanimatedSharedValue": true,
+        "_value": 0,
+        "addListener": [Function],
+        "modify": [Function],
+        "removeListener": [Function],
+        "value": 0,
+      }
+    }
+    showIcon={false}
+    testID="SelectButton_SelectButtonItem_1"
+  />
+  <View
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {
+          "left": 0,
+          "width": 0,
+        },
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#ffffff",
+        "borderRadius": 3.5,
+        "bottom": 3.5,
+        "left": 0,
+        "position": "absolute",
+        "top": 3.5,
+        "width": 0,
+        "zIndex": -1,
+      }
+    }
+    testID="SelectButton_AnimatedFrame"
+  />
+</View>
+`;

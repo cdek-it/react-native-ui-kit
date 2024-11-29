@@ -1,0 +1,677 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonSelect", "showIcon": true, "size": "large"} 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "borderColor": "#dbdada",
+      "borderRadius": 3.5,
+      "borderWidth": 1,
+      "flex": 1,
+      "flexDirection": "row",
+      "gap": 10.5,
+      "height": 49,
+      "justifyContent": "center",
+      "opacity": 1,
+    }
+  }
+  testID="SelectButtonItem_TouchableOpacity"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={21}
+    bbWidth={21}
+    fill="none"
+    focusable={false}
+    height={21}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        [
+          {
+            "color": "rgba(0, 0, 0, 0.6000)",
+          },
+          {
+            "color": "#188700",
+          },
+          {
+            "color": "#dbdada",
+          },
+        ],
+        {
+          "flex": 0,
+          "height": 21,
+          "width": 21,
+        },
+      ]
+    }
+    testID="SelectButtonItem_Icon"
+    tintColor="#dbdada"
+    vbHeight={24}
+    vbWidth={24}
+    width={21}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      color="#dbdada"
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "type": 2,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        color="#dbdada"
+        d="M7 7l10 10"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+        testID="SelectButtonItem_Icon"
+      />
+      <RNSVGPath
+        color="#dbdada"
+        d="M17 8l0 9l-9 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+        testID="SelectButtonItem_Icon"
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <Text
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    numberOfLines={1}
+    style={
+      {
+        "color": "#dbdada",
+        "flexShrink": 1,
+        "fontSize": 17.5,
+        "fontWeight": 700,
+      }
+    }
+    testID="SelectButtonItem_Text"
+  >
+    ButtonSelect
+  </Text>
+</View>
+`;
+
+exports[`SelectButtonItem {"Icon": [Object], "index": 1, "label": "ButtonSelect", "size": "xlarge"} 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "borderColor": "transparent",
+      "borderWidth": 1,
+      "flex": 1,
+      "flexDirection": "row",
+      "gap": 10.5,
+      "height": 56,
+      "justifyContent": "center",
+      "opacity": 1,
+    }
+  }
+  testID="SelectButtonItem_TouchableOpacity"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={28}
+    bbWidth={28}
+    fill="none"
+    focusable={false}
+    height={28}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        [
+          {
+            "color": "rgba(0, 0, 0, 0.6000)",
+          },
+          false,
+          undefined,
+        ],
+        {
+          "flex": 0,
+          "height": 28,
+          "width": 28,
+        },
+      ]
+    }
+    testID="SelectButtonItem_Icon"
+    tintColor="rgba(0, 0, 0, 0.6000)"
+    vbHeight={24}
+    vbWidth={24}
+    width={28}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      color="rgba(0, 0, 0, 0.6000)"
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "type": 2,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        color="rgba(0, 0, 0, 0.6000)"
+        d="M7 7l10 10"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+        testID="SelectButtonItem_Icon"
+      />
+      <RNSVGPath
+        color="rgba(0, 0, 0, 0.6000)"
+        d="M17 8l0 9l-9 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+        testID="SelectButtonItem_Icon"
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <Text
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {
+          "color": "rgba(0, 0, 0, 0.6)",
+        },
+      }
+    }
+    numberOfLines={1}
+    style={
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "flexShrink": 1,
+        "fontSize": 21,
+        "fontWeight": 700,
+      }
+    }
+    testID="SelectButtonItem_Text"
+  >
+    ButtonSelect
+  </Text>
+</View>
+`;
+
+exports[`SelectButtonItem {"Icon": [Object], "showIcon": false, "size": "base"} 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "borderColor": "transparent",
+      "borderWidth": 1,
+      "flex": 1,
+      "flexDirection": "row",
+      "gap": 7,
+      "height": 35,
+      "justifyContent": "center",
+      "opacity": 1,
+    }
+  }
+  testID="SelectButtonItem_TouchableOpacity"
+>
+  <Text
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {
+          "color": "rgba(24, 135, 0, 1)",
+        },
+      }
+    }
+    numberOfLines={1}
+    style={
+      {
+        "color": "rgba(24, 135, 0, 1)",
+        "flexShrink": 1,
+        "fontSize": 14,
+        "fontWeight": 700,
+      }
+    }
+    testID="SelectButtonItem_Text"
+  />
+</View>
+`;
+
+exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "borderColor": "transparent",
+      "borderWidth": 1,
+      "flex": 1,
+      "flexDirection": "row",
+      "gap": 7,
+      "height": 28,
+      "justifyContent": "center",
+      "opacity": 1,
+    }
+  }
+  testID="SelectButtonItem_TouchableOpacity"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={14}
+    bbWidth={14}
+    fill="none"
+    focusable={false}
+    height={14}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        [
+          {
+            "color": "rgba(0, 0, 0, 0.6000)",
+          },
+          {
+            "color": "#188700",
+          },
+          undefined,
+        ],
+        {
+          "flex": 0,
+          "height": 14,
+          "width": 14,
+        },
+      ]
+    }
+    testID="SelectButtonItem_Icon"
+    tintColor="#188700"
+    vbHeight={24}
+    vbWidth={24}
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      color="#188700"
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "type": 2,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        color="#188700"
+        d="M7 7l10 10"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+        testID="SelectButtonItem_Icon"
+      />
+      <RNSVGPath
+        color="#188700"
+        d="M17 8l0 9l-9 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+        testID="SelectButtonItem_Icon"
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <Text
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {
+          "color": "rgba(24, 135, 0, 1)",
+        },
+      }
+    }
+    numberOfLines={1}
+    style={
+      {
+        "color": "rgba(24, 135, 0, 1)",
+        "flexShrink": 1,
+        "fontSize": 12.25,
+        "fontWeight": 700,
+      }
+    }
+    testID="SelectButtonItem_Text"
+  />
+</View>
+`;
+
+exports[`SelectButtonItem {"label": "ButtonSelect"} 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "borderColor": "transparent",
+      "borderWidth": 1,
+      "flex": 1,
+      "flexDirection": "row",
+      "gap": 7,
+      "height": 35,
+      "justifyContent": "center",
+      "opacity": 1,
+    }
+  }
+  testID="SelectButtonItem_TouchableOpacity"
+>
+  <Text
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {
+          "color": "rgba(24, 135, 0, 1)",
+        },
+      }
+    }
+    numberOfLines={1}
+    style={
+      {
+        "color": "rgba(24, 135, 0, 1)",
+        "flexShrink": 1,
+        "fontSize": 14,
+        "fontWeight": 700,
+      }
+    }
+    testID="SelectButtonItem_Text"
+  >
+    ButtonSelect
+  </Text>
+</View>
+`;
