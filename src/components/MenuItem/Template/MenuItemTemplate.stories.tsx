@@ -15,7 +15,7 @@ const meta: Meta<typeof MenuItemTemplate> = {
     prefix: 'none',
     title: 'Menu Item',
     Icon: undefined,
-    iconColor: undefined,
+    iconColor: 'rgba(0, 0, 0, 0.8000)',
     badgeSeverity: undefined,
     caption: 'Caption',
     suffix: 'none',
