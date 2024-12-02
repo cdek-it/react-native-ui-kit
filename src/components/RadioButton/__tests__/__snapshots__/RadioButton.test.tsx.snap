@@ -1,0 +1,513 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButton snapshots checked = false, disabled = false, state = danger 1`] = `
+[
+  <View
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "backgroundColor": "#f6d4d1",
+          "borderRadius": 28,
+          "height": 28,
+          "position": "absolute",
+          "width": 28,
+        },
+      ]
+    }
+    layout={
+      LinearTransition {
+        "build": [Function],
+        "durationV": 100,
+        "randomizeDelay": false,
+        "reduceMotionV": "system",
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#f6d4d1",
+        "borderRadius": 28,
+        "height": 28,
+        "position": "absolute",
+        "width": 28,
+      }
+    }
+  />,
+  <Pressable
+    disabled={false}
+    onPress={[Function]}
+    onPressIn={[Function]}
+    onPressOut={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "borderRadius": 21,
+          "height": 21,
+          "justifyContent": "center",
+          "marginLeft": 3.5,
+          "marginTop": 3.5,
+          "position": "absolute",
+          "width": 21,
+        },
+        [
+          {
+            "backgroundColor": "#ffffff",
+            "borderColor": "#dbdada",
+            "borderWidth": 1,
+          },
+          false,
+          false,
+          false,
+          {
+            "borderColor": "#e26e63",
+            "borderWidth": 1,
+          },
+          false,
+          false,
+          false,
+          false,
+        ],
+      ]
+    }
+    testID="RadioButton_Pressable"
+  >
+    <View
+      style={
+        [
+          {
+            "borderRadius": 10.5,
+            "height": 10.5,
+            "width": 10.5,
+          },
+          [
+            {
+              "backgroundColor": "#ffffff",
+            },
+            false,
+          ],
+        ]
+      }
+    />
+  </Pressable>,
+]
+`;
+
+exports[`RadioButton snapshots checked = false, disabled = false, state = default 1`] = `
+<Pressable
+  disabled={false}
+  onPress={[Function]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "borderRadius": 21,
+        "height": 21,
+        "justifyContent": "center",
+        "marginLeft": 3.5,
+        "marginTop": 3.5,
+        "position": "absolute",
+        "width": 21,
+      },
+      [
+        {
+          "backgroundColor": "#ffffff",
+          "borderColor": "#dbdada",
+          "borderWidth": 1,
+        },
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+      ],
+    ]
+  }
+  testID="RadioButton_Pressable"
+>
+  <View
+    style={
+      [
+        {
+          "borderRadius": 10.5,
+          "height": 10.5,
+          "width": 10.5,
+        },
+        [
+          {
+            "backgroundColor": "#ffffff",
+          },
+          false,
+        ],
+      ]
+    }
+  />
+</Pressable>
+`;
+
+exports[`RadioButton snapshots checked = false, disabled = true, state = default 1`] = `
+<Pressable
+  disabled={true}
+  onPress={[Function]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "borderRadius": 21,
+        "height": 21,
+        "justifyContent": "center",
+        "marginLeft": 3.5,
+        "marginTop": 3.5,
+        "position": "absolute",
+        "width": 21,
+      },
+      [
+        {
+          "backgroundColor": "#ffffff",
+          "borderColor": "#dbdada",
+          "borderWidth": 1,
+        },
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        {
+          "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+          "borderColor": "#dbdada",
+          "borderWidth": 1,
+          "opacity": 0.6,
+        },
+        false,
+      ],
+    ]
+  }
+  testID="RadioButton_Pressable"
+>
+  <View
+    style={
+      [
+        {
+          "borderRadius": 10.5,
+          "height": 10.5,
+          "width": 10.5,
+        },
+        [
+          {
+            "backgroundColor": "#ffffff",
+          },
+          {
+            "backgroundColor": "transparent",
+          },
+        ],
+      ]
+    }
+  />
+</Pressable>
+`;
+
+exports[`RadioButton snapshots checked = true, disabled = false, state = danger 1`] = `
+[
+  <View
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "backgroundColor": "#f6d4d1",
+          "borderRadius": 28,
+          "height": 28,
+          "position": "absolute",
+          "width": 28,
+        },
+      ]
+    }
+    layout={
+      LinearTransition {
+        "build": [Function],
+        "durationV": 100,
+        "randomizeDelay": false,
+        "reduceMotionV": "system",
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#f6d4d1",
+        "borderRadius": 28,
+        "height": 28,
+        "position": "absolute",
+        "width": 28,
+      }
+    }
+  />,
+  <Pressable
+    disabled={false}
+    onPress={[Function]}
+    onPressIn={[Function]}
+    onPressOut={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "borderRadius": 21,
+          "height": 21,
+          "justifyContent": "center",
+          "marginLeft": 3.5,
+          "marginTop": 3.5,
+          "position": "absolute",
+          "width": 21,
+        },
+        [
+          {
+            "backgroundColor": "#ffffff",
+            "borderColor": "#dbdada",
+            "borderWidth": 1,
+          },
+          false,
+          {
+            "backgroundColor": "#188700",
+            "borderColor": "#188700",
+            "borderWidth": 5,
+          },
+          false,
+          {
+            "borderColor": "#e26e63",
+            "borderWidth": 1,
+          },
+          {
+            "backgroundColor": "#188700",
+            "borderColor": "#e26e63",
+            "borderWidth": 1,
+          },
+          false,
+          false,
+          false,
+        ],
+      ]
+    }
+    testID="RadioButton_Pressable"
+  >
+    <View
+      style={
+        [
+          {
+            "borderRadius": 10.5,
+            "height": 10.5,
+            "width": 10.5,
+          },
+          [
+            {
+              "backgroundColor": "#ffffff",
+            },
+            false,
+          ],
+        ]
+      }
+    />
+  </Pressable>,
+]
+`;
+
+exports[`RadioButton snapshots checked = true, disabled = false, state = default 1`] = `
+<Pressable
+  disabled={false}
+  onPress={[Function]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "borderRadius": 21,
+        "height": 21,
+        "justifyContent": "center",
+        "marginLeft": 3.5,
+        "marginTop": 3.5,
+        "position": "absolute",
+        "width": 21,
+      },
+      [
+        {
+          "backgroundColor": "#ffffff",
+          "borderColor": "#dbdada",
+          "borderWidth": 1,
+        },
+        false,
+        {
+          "backgroundColor": "#188700",
+          "borderColor": "#188700",
+          "borderWidth": 5,
+        },
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+      ],
+    ]
+  }
+  testID="RadioButton_Pressable"
+>
+  <View
+    style={
+      [
+        {
+          "borderRadius": 10.5,
+          "height": 10.5,
+          "width": 10.5,
+        },
+        [
+          {
+            "backgroundColor": "#ffffff",
+          },
+          false,
+        ],
+      ]
+    }
+  />
+</Pressable>
+`;
+
+exports[`RadioButton snapshots checked = true, disabled = true, state = default 1`] = `
+<Pressable
+  disabled={true}
+  onPress={[Function]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "borderRadius": 21,
+        "height": 21,
+        "justifyContent": "center",
+        "marginLeft": 3.5,
+        "marginTop": 3.5,
+        "position": "absolute",
+        "width": 21,
+      },
+      [
+        {
+          "backgroundColor": "#ffffff",
+          "borderColor": "#dbdada",
+          "borderWidth": 1,
+        },
+        false,
+        {
+          "backgroundColor": "#188700",
+          "borderColor": "#188700",
+          "borderWidth": 5,
+        },
+        false,
+        false,
+        false,
+        false,
+        {
+          "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+          "borderColor": "#dbdada",
+          "borderWidth": 1,
+          "opacity": 0.6,
+        },
+        {
+          "backgroundColor": "grey",
+          "borderColor": "grey",
+          "borderWidth": 5,
+        },
+      ],
+    ]
+  }
+  testID="RadioButton_Pressable"
+>
+  <View
+    style={
+      [
+        {
+          "borderRadius": 10.5,
+          "height": 10.5,
+          "width": 10.5,
+        },
+        [
+          {
+            "backgroundColor": "#ffffff",
+          },
+          false,
+        ],
+      ]
+    }
+  />
+</Pressable>
+`;
+
+exports[`RadioButton snapshots default 1`] = `
+<Pressable
+  onPress={[Function]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "borderRadius": 21,
+        "height": 21,
+        "justifyContent": "center",
+        "marginLeft": 3.5,
+        "marginTop": 3.5,
+        "position": "absolute",
+        "width": 21,
+      },
+      [
+        {
+          "backgroundColor": "#ffffff",
+          "borderColor": "#dbdada",
+          "borderWidth": 1,
+        },
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+      ],
+    ]
+  }
+  testID="RadioButton_Pressable"
+>
+  <View
+    style={
+      [
+        {
+          "borderRadius": 10.5,
+          "height": 10.5,
+          "width": 10.5,
+        },
+        [
+          {
+            "backgroundColor": "#ffffff",
+          },
+          false,
+        ],
+      ]
+    }
+  />
+</Pressable>
+`;
