@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.7...v0.0.8) (2024-12-03)
+
+
+### Features
+
+* **SelectButton:** implement SelectButton component ([d14be71](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/d14be71af8e8a352f87c820fefe7cce56fc2ac00))
+
 ### [0.0.7](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.6...v0.0.7) (2024-11-26)
 
 
