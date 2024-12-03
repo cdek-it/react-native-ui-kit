@@ -1,6 +1,6 @@
 import type { Icon } from '@tabler/icons-react-native'
 import React, { memo, useMemo, useState } from 'react'
-import { type LayoutChangeEvent, TouchableOpacity, type ViewStyle } from 'react-native'
+import { TouchableOpacity, type ViewProps, type ViewStyle } from 'react-native'
 import Animated, {
   interpolateColor,
   runOnJS,
@@ -11,7 +11,7 @@ import Animated, {
 
 import { makeStyles } from '../../utils/makeStyles'
 
-export interface SelectButtonItemProps {
+export interface SelectButtonItemProps extends Pick<ViewProps, 'onLayout' | 'testID'> {
   /** Индекс кнопки */
   index: number
 
@@ -31,12 +31,6 @@ export interface SelectButtonItemProps {
   label?: string
 
   /**
-   * Вызывается при изменении размеров компонента
-   * @param event
-   */
-  onLayout?: (event: LayoutChangeEvent) => void
-
-  /**
    * Выбор размера элемента
    * @default 'base'
    */
@@ -47,8 +41,6 @@ export interface SelectButtonItemProps {
    * @default true
    */
   showIcon?: boolean
-
-  testID?: string
 
   /** Иконка из набора Tabler */
   Icon?: Icon
