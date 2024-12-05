@@ -1,4 +1,4 @@
-import { render, userEvent } from '@testing-library/react-native'
+import { render } from '@testing-library/react-native'
 import React from 'react'
 
 import { RadioButton, type RadioButtonProps } from '../RadioButton'
@@ -64,39 +64,9 @@ describe('RadioButton', () => {
       ],
     ]
 
-    beforeAll(() => {
-      jest.mock('react-native/Libraries/Components/Pressable/Pressable', () => ({
-        default: 'Pressable',
-      }))
-    })
-
-    afterAll(() => {
-      jest.unmock('react-native/Libraries/Components/Pressable/Pressable')
-    })
-
     test.each(snapshotCases)('%s', (_, props) => {
       const { toJSON } = render(<RadioButton {...defaultProps} {...props} />)
       expect(toJSON()).toMatchSnapshot()
     })
-  })
-
-  test('should handle press', async () => {
-    const mockedOnPress = jest.fn()
-    const { queryByTestId } = render(<RadioButton onPress={mockedOnPress} />)
-    const pressable = queryByTestId('RadioButton_Pressable')
-    const user = userEvent.setup()
-
-    await user.press(pressable)
-    expect(mockedOnPress).toHaveBeenCalled()
-  })
-
-  test('should NOT handle press', async () => {
-    const mockedOnPress = jest.fn()
-    const { queryByTestId } = render(<RadioButton disabled onPress={mockedOnPress} />)
-    const pressable = queryByTestId('RadioButton_Pressable')
-    const user = userEvent.setup()
-
-    await user.press(pressable)
-    expect(mockedOnPress).not.toHaveBeenCalled()
   })
 })

@@ -1,10 +1,8 @@
-import React, { memo, useCallback, useState } from 'react'
-import { Pressable, View } from 'react-native'
+import React, { memo, useCallback, useMemo } from 'react'
+import { Pressable, type PressableStateCallbackType, StyleSheet, View } from 'react-native'
 import Animated, { LinearTransition } from 'react-native-reanimated'
 
 import { makeStyles } from '../../utils/makeStyles'
-
-import { useStateStyles } from './hooks/useStateStyles'
 
 export interface RadioButtonProps {
   /** Обработчик нажатия на кнопку */
@@ -23,32 +21,78 @@ export interface RadioButtonProps {
   state?: 'default' | 'danger'
 }
 
-export const RadioButton = memo<RadioButtonProps>(({ onPress, checked, disabled, state }) => {
-  const styles = useStyles()
-  const [pressed, setPressed] = useState(false)
-  const stateStyles = useStateStyles(checked, disabled, pressed, state)
+export const RadioButton = memo<RadioButtonProps>(
+  ({ onPress, checked = false, disabled = false, state = 'default' }) => {
+    const styles = useStyles()
 
-  const onPressIn = useCallback(() => setPressed(true), [])
-  const onPressOut = useCallback(() => setPressed(false), [])
+    const centerViewBackground = useMemo(
+      () => [styles.defaultView, disabled && !checked && styles.disabledView],
+      [disabled, checked, styles.defaultView, styles.disabledView]
+    )
 
-  return (
-    <>
-      {!disabled && state === 'danger' && (
-        <Animated.View layout={LinearTransition.duration(100)} style={[styles.outline]} />
-      )}
-      <Pressable
-        disabled={disabled}
-        style={[styles.container, stateStyles.viewState]}
-        testID='RadioButton_Pressable'
-        onPress={onPress}
-        onPressIn={onPressIn}
-        onPressOut={onPressOut}
-      >
-        <View style={[styles.center, stateStyles.centerViewBackground]} />
-      </Pressable>
-    </>
-  )
-})
+    const pressableStyles = useCallback(
+      ({ pressed }: PressableStateCallbackType) => {
+        const result = [styles.container, styles.default]
+        if (checked) {
+          result.push(styles.checked)
+        }
+        if (pressed) {
+          result.push(styles.pressed)
+          if (checked) {
+            result.push(styles.checkedPressed)
+          }
+        }
+        if (state === 'danger') {
+          result.push(styles.danger)
+          if (checked) {
+            result.push(styles.dangerChecked)
+            if (pressed) {
+              result.push(styles.dangerCheckedPressed)
+            }
+          }
+        }
+        if (disabled) {
+          result.push(styles.disabled)
+          if (checked) {
+            result.push(styles.disabledChecked)
+          }
+        }
+        return StyleSheet.flatten(result)
+      },
+      [
+        checked,
+        disabled,
+        state,
+        styles.container,
+        styles.default,
+        styles.pressed,
+        styles.checked,
+        styles.checkedPressed,
+        styles.danger,
+        styles.dangerChecked,
+        styles.dangerCheckedPressed,
+        styles.disabled,
+        styles.disabledChecked,
+      ]
+    )
+
+    return (
+      <>
+        {!disabled && state === 'danger' && (
+          <Animated.View layout={LinearTransition.duration(100)} style={[styles.outline]} />
+        )}
+        <Pressable
+          disabled={disabled}
+          style={pressableStyles}
+          testID='RadioButton_Pressable'
+          onPress={onPress}
+        >
+          <View style={[styles.center, centerViewBackground]} />
+        </Pressable>
+      </>
+    )
+  }
+)
 
 const useStyles = makeStyles(({ theme }) => ({
   container: {
@@ -72,5 +116,63 @@ const useStyles = makeStyles(({ theme }) => ({
     height: theme.Form.RadioButton.radiobuttonHeight + theme.General.focusShadowWidth * 2,
     borderRadius: theme.Form.RadioButton.radiobuttonHeight + theme.General.focusShadowWidth * 2,
     backgroundColor: theme.General.focusOutlineErrorColor,
+  },
+
+  // centerView
+  defaultView: {
+    backgroundColor: theme.Form.InputText.inputBg,
+  },
+  disabledView: {
+    backgroundColor: 'transparent',
+  },
+
+  // container viewState
+  default: {
+    borderColor: theme.Form.InputText.inputBorderColor,
+    borderWidth: 1,
+    backgroundColor: theme.Form.InputText.inputBg,
+  },
+  pressed: {
+    borderColor: theme.Form.InputText.inputHoverBorderColor,
+    backgroundColor: theme.Form.InputText.inputBg,
+    borderWidth: 1,
+  },
+  checked: {
+    borderColor: theme.Form.RadioButton.radiobuttonActiveBorderColor,
+    backgroundColor: theme.Form.RadioButton.radiobuttonActiveBorderColor,
+    borderWidth: 5,
+  },
+  checkedPressed: {
+    borderColor: theme.Form.RadioButton.radiobuttonActiveHoverBorderColor,
+    backgroundColor: theme.Form.RadioButton.radiobuttonActiveHoverBorderColor,
+    borderWidth: 5,
+  },
+  // danger viewState
+  danger: {
+    borderColor: theme.Form.InputText.inputErrorBorderColor,
+    backgroundColor: theme.Form.InputText.inputBg,
+    borderWidth: 1,
+  },
+  dangerChecked: {
+    borderColor: theme.Form.InputText.inputErrorBorderColor,
+    backgroundColor: theme.Form.RadioButton.radiobuttonActiveBorderColor,
+    borderWidth: 1,
+  },
+  dangerCheckedPressed: {
+    borderColor: theme.Form.InputText.inputErrorBorderColor,
+    backgroundColor: theme.Form.RadioButton.radiobuttonActiveBorderColor,
+    borderWidth: 1,
+  },
+  // disabled viewState
+  disabled: {
+    borderColor: theme.Form.InputText.inputBorderColor,
+    backgroundColor: theme.Button.Disabled.disabledButtonBg,
+    opacity: 0.6,
+    borderWidth: 1,
+  },
+  disabledChecked: {
+    borderColor: 'grey',
+    backgroundColor: 'grey',
+    borderWidth: 5,
   },
 }))
