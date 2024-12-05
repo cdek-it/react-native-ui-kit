@@ -1,4 +1,4 @@
-import { IconLock, IconX } from '@tabler/icons-react-native'
+import { IconLoader2, IconLock, IconX } from '@tabler/icons-react-native'
 import React, {
   memo,
   type RefObject,
@@ -24,10 +24,16 @@ import Animated, {
   useSharedValue,
 } from 'react-native-reanimated'
 
+import { useLoadingRotationAnimation } from '../../hooks/useLoadingRotationAnimation'
 import { makeStyles } from '../../utils/makeStyles'
 
+interface PrivateInputTextBaseProps {
+  inputStyle?: ViewStyle
+  loading?: boolean
+}
+
 /** @see TextInputProps */
-export interface InputTextBaseProps extends TextInputProps {
+export interface InputTextBaseProps extends Omit<TextInputProps, 'style' | 'editable'> {
   /**
    * Управление отображения иконки очистки поля
    * @default true
@@ -48,14 +54,15 @@ export interface InputTextBaseProps extends TextInputProps {
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5470&m=dev
  * @see InputText
  */
-export const InputTextBase = memo<InputTextBaseProps>(
+export const InputTextBase = memo<InputTextBaseProps & PrivateInputTextBaseProps>(
   ({
-    style,
     state,
     clearable = true,
     inputRef: propsInputRef,
     disabled,
     containerStyle,
+    inputStyle,
+    loading,
     ...otherProps
   }) => {
     const styles = useStyles()
@@ -75,7 +82,7 @@ export const InputTextBase = memo<InputTextBaseProps>(
     const onBlur = useCallback(
       (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
         focusOutlineWidth.value = 0
-        otherProps.onFocus?.(e)
+        otherProps.onBlur?.(e)
       },
       [focusOutlineWidth, otherProps]
     )
@@ -129,6 +136,8 @@ export const InputTextBase = memo<InputTextBaseProps>(
       ]
     )
 
+    const loadingAnimatedStyle = useLoadingRotationAnimation(loading)
+
     useEffect(() => {
       dangerOutlineWidth.value = state === 'danger' ? -styles.outlineWidth.borderWidth : 0
     }, [dangerOutlineWidth, state, styles.outlineWidth.borderWidth])
@@ -160,41 +169,48 @@ export const InputTextBase = memo<InputTextBaseProps>(
           ]}
         >
           <TextInput
-            editable={!disabled}
             placeholderTextColor={styles.placeholderTextColor.color}
             ref={inputRef}
-            style={styles.input}
             testID='InputTextBase_input'
-            value={otherProps.value ?? value}
+            {...otherProps}
+            editable={!disabled}
+            style={[styles.input, inputStyle]}
+            value={value}
             onBlur={onBlur}
             onChangeText={onChangeText}
             onFocus={onFocus}
-            {...otherProps}
           />
 
-          {showClearButton && !disabled && (
-            <TouchableOpacity
-              style={styles.rightContainer}
-              testID='InputTextBase_clearButton'
-              onPress={clear}
-            >
-              <IconX
-                height={styles.iconSize.height}
-                style={styles.rightIcon}
-                width={styles.iconSize.width}
-              />
-            </TouchableOpacity>
-          )}
+          <View style={styles.rightContainer}>
+            {loading && (
+              <Animated.View style={[loadingAnimatedStyle]} testID='InputTextBase_loading'>
+                <IconLoader2
+                  height={styles.iconSize.height}
+                  style={styles.rightIcon}
+                  width={styles.iconSize.width}
+                />
+              </Animated.View>
+            )}
 
-          {disabled && (
-            <View style={styles.rightContainer} testID='InputTextBase_disabledIcon'>
+            {showClearButton && !disabled && (
+              <TouchableOpacity testID='InputTextBase_clearButton' onPress={clear}>
+                <IconX
+                  height={styles.iconSize.height}
+                  style={styles.rightIcon}
+                  width={styles.iconSize.width}
+                />
+              </TouchableOpacity>
+            )}
+
+            {disabled && (
               <IconLock
                 height={styles.iconSize.height}
                 style={styles.rightIcon}
+                testID='InputTextBase_disabledIcon'
                 width={styles.iconSize.width}
               />
-            </View>
-          )}
+            )}
+          </View>
         </View>
       </>
     )
@@ -245,12 +261,16 @@ const useStyles = makeStyles(({ theme }) => ({
     backgroundColor: theme.General.focusOutlineErrorColor,
   },
   rightContainer: {
-    justifyContent: 'center',
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingRight: theme.Form.InputText.inputPaddingLeftRight,
+    maxHeight: 54,
+    gap: theme.Form.InputText.inputPaddingLeftRight,
+    overflow: 'hidden',
   },
   rightIcon: {
-    marginHorizontal: theme.Form.InputText.inputPaddingLeftRight,
     color: theme.Form.InputText.inputIconColor,
-  },
+  } as ViewStyle,
   iconSize: {
     width: 14,
     height: 14,
