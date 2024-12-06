@@ -1,12 +1,11 @@
 import { useArgs } from '@storybook/preview-api'
 import type { Meta, StoryObj } from '@storybook/react'
 import React, { useCallback } from 'react'
-import { View } from 'react-native'
 
-import { InputText } from './InputText'
+import { InputText } from '../InputText'
 
 const meta: Meta<typeof InputText> = {
-  title: 'InputText',
+  title: 'Input/InputText',
   args: {
     clearable: true,
     disabled: false,
@@ -17,13 +16,6 @@ const meta: Meta<typeof InputText> = {
   argTypes: {
     state: { control: 'radio', options: ['default', 'danger'] },
   },
-  decorators: [
-    (Story) => (
-      <View style={{ padding: 16 }}>
-        <Story />
-      </View>
-    ),
-  ],
   render: function Render(args) {
     const [, updateArgs] = useArgs()
 

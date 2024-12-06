@@ -87,12 +87,23 @@ describe('InputTextBase component functionality tests', () => {
   })
 
   test('should show disabled icon when input is disabled', () => {
-    const { queryByTestId, update } = render(<InputTextBase />)
-    let disabledIcon = queryByTestId('InputTextBase_disabledIcon')
+    const { queryAllByTestId, update } = render(<InputTextBase />)
+    let [disabledIcon] = queryAllByTestId('InputTextBase_disabledIcon')
 
-    expect(disabledIcon).not.toBeOnTheScreen()
+    expect(disabledIcon).toBeFalsy()
     update(<InputTextBase disabled />)
-    disabledIcon = queryByTestId('InputTextBase_disabledIcon')
-    expect(disabledIcon).toBeOnTheScreen()
+    disabledIcon = queryAllByTestId('InputTextBase_disabledIcon')
+    expect(disabledIcon).toBeDefined()
+  })
+
+  test('should show loading icon', () => {
+    const { queryByTestId, update } = render(<InputTextBase />)
+    let loadingIcon = queryByTestId('InputTextBase_loading')
+
+    expect(loadingIcon).not.toBeOnTheScreen()
+    update(<InputTextBase loading />)
+    loadingIcon = queryByTestId('InputTextBase_loading')
+    expect(loadingIcon).toBeOnTheScreen()
+    expect(loadingIcon).toHaveAnimatedStyle({ transform: [{ rotate: '0deg' }] })
   })
 })
