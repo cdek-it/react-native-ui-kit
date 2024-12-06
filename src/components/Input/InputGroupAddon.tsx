@@ -53,6 +53,7 @@ const useStyles = makeStyles(({ theme }) => ({
     borderRadius: theme.General.borderRadius,
     borderWidth: 1,
     borderColor: theme.Form.InputText.inputBorderColor,
+    backgroundColor: theme.Form.InputGroup.inputGroupBg,
     zIndex: -1,
   },
   left: {
