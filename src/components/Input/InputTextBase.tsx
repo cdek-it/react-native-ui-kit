@@ -185,8 +185,8 @@ export const InputTextBase = memo<InputTextBaseProps & PrivateInputTextBaseProps
             {loading && (
               <Animated.View style={[loadingAnimatedStyle]} testID='InputTextBase_loading'>
                 <IconLoader2
+                  color={styles.rightIcon.color}
                   height={styles.iconSize.height}
-                  style={styles.rightIcon}
                   width={styles.iconSize.width}
                 />
               </Animated.View>
@@ -195,8 +195,8 @@ export const InputTextBase = memo<InputTextBaseProps & PrivateInputTextBaseProps
             {showClearButton && !disabled && (
               <TouchableOpacity testID='InputTextBase_clearButton' onPress={clear}>
                 <IconX
+                  color={styles.rightIcon.color}
                   height={styles.iconSize.height}
-                  style={styles.rightIcon}
                   width={styles.iconSize.width}
                 />
               </TouchableOpacity>
@@ -204,8 +204,8 @@ export const InputTextBase = memo<InputTextBaseProps & PrivateInputTextBaseProps
 
             {disabled && (
               <IconLock
+                color={styles.rightIcon.color}
                 height={styles.iconSize.height}
-                style={styles.rightIcon}
                 testID='InputTextBase_disabledIcon'
                 width={styles.iconSize.width}
               />
@@ -270,7 +270,7 @@ const useStyles = makeStyles(({ theme }) => ({
   },
   rightIcon: {
     color: theme.Form.InputText.inputIconColor,
-  } as ViewStyle,
+  },
   iconSize: {
     width: 14,
     height: 14,
