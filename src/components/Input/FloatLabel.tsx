@@ -74,23 +74,27 @@ export const FloatLabel = memo<FloatLabelProps>(
     }, [focused, labelColorAnimation, state])
 
     const labelAnimatedStyle = useAnimatedStyle(() => {
-      const labelBaseStyles = value ? styles.labelReduced : styles.label
+      const labelBaseStyles = value ? styles.labelReducedAnimatedStyles : styles.labelAnimatedStyles
 
       return {
-        top: interpolate(
-          labelAnimation.value,
-          [0, 1],
-          [labelBaseStyles.top, styles.labelReduced.top]
-        ),
+        transform: [
+          {
+            translateY: interpolate(
+              labelAnimation.value,
+              [0, 1],
+              [labelBaseStyles.top, styles.labelReducedAnimatedStyles.top]
+            ),
+          },
+        ],
         fontSize: interpolate(
           labelAnimation.value,
           [0, 1],
-          [labelBaseStyles.fontSize, styles.labelReduced.top]
+          [labelBaseStyles.fontSize, styles.labelReducedAnimatedStyles.top]
         ),
         opacity: interpolate(
           labelAnimation.value,
           [0, 1],
-          [labelBaseStyles.opacity, styles.labelReduced.opacity]
+          [labelBaseStyles.opacity, styles.labelReducedAnimatedStyles.opacity]
         ),
       }
     })
@@ -187,12 +191,14 @@ const useStyles = makeStyles(({ spacing, typography }) => ({
     position: 'absolute',
     paddingHorizontal: spacing.Padding['p-1'],
     left: 10.5,
+    color: typography.Color.Common['text-color-secondary'],
+  },
+  labelAnimatedStyles: {
     top: 20,
     fontSize: 14,
-    color: typography.Color.Common['text-color-secondary'],
     opacity: 0.6,
   },
-  labelReduced: {
+  labelReducedAnimatedStyles: {
     top: 10.5,
     fontSize: 12.25,
     opacity: 1,
