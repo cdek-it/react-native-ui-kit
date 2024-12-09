@@ -17,7 +17,7 @@ interface SkeletonProps {
   style?: ViewStyle
 }
 
-const ANIMATION_DURATION = 1200 // ms
+export const ANIMATION_DURATION = 1200 // ms
 
 /**
  * Используется для отображения контента в момент загрузки
