@@ -1,64 +1,64 @@
 import { type Icon, IconX } from '@tabler/icons-react-native'
-import React from 'react'
-import { Text, Pressable, type PressableProps } from 'react-native'
+import React, { memo, useCallback } from 'react'
+import { Text, Pressable, type PressableProps, type ViewStyle } from 'react-native'
 
-import { makeStyles, type StylesObject } from '../../utils/makeStyles'
+import { makeStyles } from '../../utils/makeStyles'
 
-export type ChipProps = Omit<PressableProps, 'disabled'> &
-  React.PropsWithChildren<{
-    /** Иконка из библиотеки Tabler */
-    Icon?: Icon
-    /**
-     * Признак для отображения крестика внутри компонента
-     * @default true
-     */
-    showClose: boolean
-    /** Обработчик нажатия на крестик */
-    onClose?: () => void
-    /** Признак доступности для нажатия */
-    disabled?: boolean
-  }>
+export interface ChipProps extends PressableProps {
+  /** Иконка из библиотеки Tabler */
+  Icon?: Icon
+
+  /** Признак доступности для нажатия */
+  // disabled?: boolean
+
+  /** Текст для отображения */
+  label: string
+
+  /** Признак для отображения крестика внутри компонента */
+  removable?: boolean
+
+  /** Обработчик нажатия на крестик */
+  onRemove?: () => void
+}
 
 /** Компонет Нажимабельного тега с возможностью закрытия
  * Используется для представления массива данных в виде меток
+ * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5126&t=jMMaE0JO924pG1ga-4
  */
-export const Chip = (props: ChipProps) => {
-  const { Icon, showClose, children, disabled = false, onClose, ...rest } = props
+export const Chip = memo<ChipProps>(({ Icon, label, disabled, removable, onRemove, ...rest }) => {
   const styles = useStyles()
+  const getPressableStyle = useCallback(
+    ({ pressed }: { pressed: boolean }) => [
+      styles.chip,
+      disabled && styles.disabledChip,
+      pressed && styles.highlightChip,
+    ],
+    [styles]
+  )
 
   return (
-    <Pressable
-      {...rest}
-      disabled={disabled}
-      style={({ pressed }) => [
-        styles.chip,
-        disabled && styles.disabledChip,
-        pressed && styles.highlightChip,
-      ]}
-    >
+    <Pressable {...rest} disabled={disabled} style={getPressableStyle}>
       {Icon && (
-        <Icon
-          size={styles.icon.height as number}
-          style={[styles.icon, disabled && styles.disabledIcon]}
-        />
+        <Icon size={styles.icon.height} style={[styles.icon, styles.disabledIcon as ViewStyle]} />
       )}
 
       <Text numberOfLines={1} style={[styles.text, disabled && styles.disabledText]}>
-        {children}
+        {label}
       </Text>
 
-      {showClose && (
-        <IconX
-          disabled={disabled}
-          size={styles.icon.height as number}
-          style={[styles.icon, disabled && styles.disabledIcon]}
-          onPress={onClose}
-        />
+      {removable && (
+        <Pressable disabled={disabled} onPress={onRemove}>
+          <IconX
+            size={styles.icon.height}
+            style={[styles.icon, styles.disabledIcon as ViewStyle]}
+          />
+        </Pressable>
       )}
     </Pressable>
   )
-}
-const useStyles = makeStyles<StylesObject>(({ theme }) => ({
+})
+
+const useStyles = makeStyles(({ theme }) => ({
   chip: {
     height: theme.Misc.Chip.chipHeight,
     alignSelf: 'flex-start',
@@ -97,9 +97,9 @@ const useStyles = makeStyles<StylesObject>(({ theme }) => ({
   },
   text: {
     fontSize: 14,
-    fontWeight: 400,
     verticalAlign: 'middle',
     color: theme.Misc.Chip.chipTextColor,
+    includeFontPadding: false,
   },
   disabledText: {
     color: theme.General.textSecondaryColor,

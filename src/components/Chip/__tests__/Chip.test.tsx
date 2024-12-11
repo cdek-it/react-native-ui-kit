@@ -5,10 +5,10 @@ import { Chip, type ChipProps } from '../Chip'
 
 describe('Chip component tests', () => {
   const snapshotCases: Array<[string, ChipProps]> = [
-    ['showClose: true', { showClose: true, children: 'Chip' }],
-    ['showClose: false', { showClose: false, children: 'Chip' }],
-    ['showClose: true, disabled: true', { showClose: true, disabled: true, children: 'Chip' }],
-    ['showClose: false, disabled: true', { showClose: false, disabled: true, children: 'Chip' }],
+    ['removable: true', { removable: true, label: 'Chip' }],
+    ['removable: false', { removable: false, label: 'Chip' }],
+    ['removable: true, disabled: true', { removable: true, disabled: true, label: 'Chip' }],
+    ['removable: false, disabled: true', { removable: false, disabled: true, label: 'Chip' }],
   ]
 
   test.each(snapshotCases)('%s', (_, props) => {

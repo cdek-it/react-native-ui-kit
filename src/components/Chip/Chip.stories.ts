@@ -1,38 +1,37 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { IconCheck } from '@tabler/icons-react-native'
+import { IconCheck, IconUser } from '@tabler/icons-react-native'
 
 import { Chip } from './Chip'
+
+const icons = {
+  IconCheck,
+  IconUser,
+  none: undefined,
+}
 
 const meta: Meta<typeof Chip> = {
   title: 'Chip',
   component: Chip,
   args: {
-    showClose: true,
+    Icon: IconCheck,
+    label: 'Chip',
+    removable: true,
     disabled: false,
   },
   argTypes: {
-    showClose: { control: 'boolean' },
-    disabled: { control: 'boolean' },
+    Icon: {
+      control: 'radio',
+      options: Object.keys(icons),
+      mapping: icons,
+    },
+    onRemove: { action: 'onRemove' },
+    onPress: { action: 'onPress' },
   },
-  tags: ['autodocs'],
 }
 export default meta
 
 type Story = StoryObj<typeof Chip>
 
-const ChipStory: Story = {
-  args: {
-    children: 'Chip',
-    Icon: IconCheck,
-    showClose: true,
-    disabled: false,
-    onClose: () => {
-      console.log('Tap close Chip')
-    },
-    onPress: () => {
-      console.log('Tap Chip')
-    },
-  },
-}
+const ChipStory: Story = {}
 
 export { ChipStory as Chip }

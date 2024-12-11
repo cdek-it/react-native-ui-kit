@@ -24,7 +24,7 @@ export const makeStyles =
 
 type StylesItem = ViewStyle | ImageStyle | TextStyle
 
-export type StylesObject = Record<string, StylesItem>
+type StylesObject = Record<string, StylesItem>
 
 type CreateStyles<T extends StylesObject> = (
   theme: ThemeType
