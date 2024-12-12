@@ -1,0 +1,449 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timer should reset timer on changing countFrom prop: after 1 s 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "height": 28,
+      "justifyContent": "center",
+      "overflow": "hidden",
+      "width": 28,
+    }
+  }
+>
+  <RNSVGSvgView
+    bbHeight={28}
+    bbWidth={28}
+    focusable={false}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "height": 28,
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+          "width": 28,
+        },
+        {
+          "flex": 0,
+          "height": 28,
+          "width": 28,
+        },
+      ]
+    }
+  >
+    <RNSVGGroup
+      fill={
+        {
+          "payload": 4278190080,
+          "type": 0,
+        }
+      }
+    >
+      <RNSVGCircle
+        cx={14}
+        cy={14}
+        fill={null}
+        matrix={
+          [
+            6.123233995736766e-17,
+            -1,
+            1,
+            6.123233995736766e-17,
+            0,
+            28,
+          ]
+        }
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeDasharray",
+            "strokeDashoffset",
+            "strokeLinecap",
+          ]
+        }
+        r={12}
+        stroke={
+          {
+            "payload": 4281282351,
+            "type": 0,
+          }
+        }
+        strokeDasharray={
+          [
+            75.39822368615503,
+            75.39822368615503,
+          ]
+        }
+        strokeDashoffset={null}
+        strokeLinecap={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <Text
+    collapsable={false}
+    entering={[Function]}
+    exiting={[Function]}
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    style={
+      {
+        "color": "#2f2f2f",
+        "fontSize": 14,
+        "fontWeight": 700,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
+      }
+    }
+  >
+    4
+  </Text>
+</View>
+`;
+
+exports[`Timer should reset timer on changing countFrom prop: after reset 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "height": 28,
+      "justifyContent": "center",
+      "overflow": "hidden",
+      "width": 28,
+    }
+  }
+>
+  <RNSVGSvgView
+    bbHeight={28}
+    bbWidth={28}
+    focusable={false}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "height": 28,
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+          "width": 28,
+        },
+        {
+          "flex": 0,
+          "height": 28,
+          "width": 28,
+        },
+      ]
+    }
+  >
+    <RNSVGGroup
+      fill={
+        {
+          "payload": 4278190080,
+          "type": 0,
+        }
+      }
+    >
+      <RNSVGCircle
+        cx={14}
+        cy={14}
+        fill={null}
+        matrix={
+          [
+            6.123233995736766e-17,
+            -1,
+            1,
+            6.123233995736766e-17,
+            0,
+            28,
+          ]
+        }
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeDasharray",
+            "strokeDashoffset",
+            "strokeLinecap",
+          ]
+        }
+        r={12}
+        stroke={
+          {
+            "payload": 4281282351,
+            "type": 0,
+          }
+        }
+        strokeDasharray={
+          [
+            75.39822368615503,
+            75.39822368615503,
+          ]
+        }
+        strokeDashoffset={null}
+        strokeLinecap={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <Text
+    collapsable={false}
+    entering={[Function]}
+    exiting={[Function]}
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    style={
+      {
+        "color": "#2f2f2f",
+        "fontSize": 14,
+        "fontWeight": 700,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
+      }
+    }
+  >
+    10
+  </Text>
+</View>
+`;
+
+exports[`Timer snapshot: before start 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "height": 28,
+      "justifyContent": "center",
+      "overflow": "hidden",
+      "width": 28,
+    }
+  }
+>
+  <RNSVGSvgView
+    bbHeight={28}
+    bbWidth={28}
+    focusable={false}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "height": 28,
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+          "width": 28,
+        },
+        {
+          "flex": 0,
+          "height": 28,
+          "width": 28,
+        },
+      ]
+    }
+  >
+    <RNSVGGroup
+      fill={
+        {
+          "payload": 4278190080,
+          "type": 0,
+        }
+      }
+    >
+      <RNSVGCircle
+        cx={14}
+        cy={14}
+        fill={null}
+        matrix={
+          [
+            6.123233995736766e-17,
+            -1,
+            1,
+            6.123233995736766e-17,
+            0,
+            28,
+          ]
+        }
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeDasharray",
+            "strokeDashoffset",
+            "strokeLinecap",
+          ]
+        }
+        r={12}
+        stroke={
+          {
+            "payload": 4281282351,
+            "type": 0,
+          }
+        }
+        strokeDasharray={
+          [
+            75.39822368615503,
+            75.39822368615503,
+          ]
+        }
+        strokeDashoffset={null}
+        strokeLinecap={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <Text
+    collapsable={false}
+    entering={[Function]}
+    exiting={[Function]}
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    style={
+      {
+        "color": "#2f2f2f",
+        "fontSize": 14,
+        "fontWeight": 700,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
+      }
+    }
+  >
+    2
+  </Text>
+</View>
+`;
+
+exports[`Timer snapshot: on finish 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "height": 28,
+      "justifyContent": "center",
+      "overflow": "hidden",
+      "width": 28,
+    }
+  }
+>
+  <RNSVGSvgView
+    bbHeight={28}
+    bbWidth={28}
+    focusable={false}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "height": 28,
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+          "width": 28,
+        },
+        {
+          "flex": 0,
+          "height": 28,
+          "width": 28,
+        },
+      ]
+    }
+  >
+    <RNSVGGroup
+      fill={
+        {
+          "payload": 4278190080,
+          "type": 0,
+        }
+      }
+    >
+      <RNSVGCircle
+        cx={14}
+        cy={14}
+        fill={null}
+        matrix={
+          [
+            6.123233995736766e-17,
+            -1,
+            1,
+            6.123233995736766e-17,
+            0,
+            28,
+          ]
+        }
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeDasharray",
+            "strokeDashoffset",
+            "strokeLinecap",
+          ]
+        }
+        r={12}
+        stroke={
+          {
+            "payload": 4281282351,
+            "type": 0,
+          }
+        }
+        strokeDasharray={
+          [
+            75.39822368615503,
+            75.39822368615503,
+          ]
+        }
+        strokeDashoffset={null}
+        strokeLinecap={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <Text
+    collapsable={false}
+    entering={[Function]}
+    exiting={[Function]}
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    style={
+      {
+        "color": "#2f2f2f",
+        "fontSize": 14,
+        "fontWeight": 700,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
+      }
+    }
+  >
+    0
+  </Text>
+</View>
+`;
