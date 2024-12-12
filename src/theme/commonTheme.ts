@@ -1,5 +1,6 @@
 import background from './assets/background.json'
 import border from './assets/border.json'
+import { customCommon } from './assets/customCommon'
 import effects from './assets/effects.json'
 import global from './assets/global.json'
 import primaryColors from './assets/primaryColors.json'
@@ -20,4 +21,5 @@ export const commonTheme = {
   sizing,
   spacing,
   typography,
+  custom: customCommon,
 }
