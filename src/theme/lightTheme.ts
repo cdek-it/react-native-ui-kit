@@ -6,7 +6,7 @@ import type { ThemeType } from './types'
 export const lightTheme: ThemeType = {
   theme: {
     ...lightThemeAssets,
-    ...customLight,
+    custom: customLight,
   },
   ...commonTheme,
 }

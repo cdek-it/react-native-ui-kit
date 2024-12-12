@@ -22,7 +22,7 @@ export interface ThemeType {
   global: typeof global
   sizing: typeof sizing
   spacing: typeof spacing
-  theme: typeof lightTheme & typeof customLight
+  theme: typeof lightTheme & { custom: typeof customLight }
   typography: typeof typography
   custom: typeof customCommon
 }
