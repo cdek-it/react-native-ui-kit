@@ -5,6 +5,7 @@ exports[`InputGroup component tests content: icon, position: right 1`] = `
   style={
     [
       {
+        "backgroundColor": "#ffffff",
         "borderColor": "#dbdada",
         "borderRadius": 7,
         "borderWidth": 1,
@@ -136,6 +137,7 @@ exports[`InputGroup component tests content: string, position: left 1`] = `
   style={
     [
       {
+        "backgroundColor": "#ffffff",
         "borderColor": "#dbdada",
         "borderRadius": 7,
         "borderWidth": 1,
@@ -175,6 +177,7 @@ exports[`InputGroup component tests disabled: false 1`] = `
   style={
     [
       {
+        "backgroundColor": "#ffffff",
         "borderColor": "#dbdada",
         "borderRadius": 7,
         "borderWidth": 1,
@@ -214,6 +217,7 @@ exports[`InputGroup component tests disabled: true 1`] = `
   style={
     [
       {
+        "backgroundColor": "#ffffff",
         "borderColor": "#dbdada",
         "borderRadius": 7,
         "borderWidth": 1,
