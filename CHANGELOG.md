@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.9](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.8...v0.0.9) (2024-12-12)
+
+
+### Features
+
+* **FloatLabel:** implement input with floating label ([4d56a0b](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/4d56a0b1681011f6e61578d10eb7abd4e4df3747))
+* **Message:** implement Message component ([7b2fee0](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/7b2fee050c0293f323211d2a4f5c806ed5eda118))
+* **radiobutton:** implement RadioButton component ([6af3de2](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/6af3de24e181662bb98dba0635881995ff5f1996))
+* **Skeleton:** implement skeleton loader ([b1cd04c](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/b1cd04c8cb5c34331c5dec9fab243c67db04632a))
+* **theme:** add opportunity for adding custom style tokens ([608a29b](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/608a29ba1d5c6df88920aaaf82a749d5372e79fa))
+
+
+### Bug Fixes
+
+* **InputGroupAddon:** fix background color ([e798b9d](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/e798b9d237a6ac1993929a503c9dd458c995c86c))
+
 ### [0.0.8](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.7...v0.0.8) (2024-12-03)
 
 
