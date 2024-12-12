@@ -1,5 +1,7 @@
 import type background from './assets/background.json'
 import type border from './assets/border.json'
+import type { customCommon } from './assets/customCommon'
+import type { customLight } from './assets/customLight'
 import type effects from './assets/effects.json'
 import type global from './assets/global.json'
 import type primaryColors from './assets/primaryColors.json'
@@ -20,8 +22,9 @@ export interface ThemeType {
   global: typeof global
   sizing: typeof sizing
   spacing: typeof spacing
-  theme: typeof lightTheme
+  theme: typeof lightTheme & { custom: typeof customLight }
   typography: typeof typography
+  custom: typeof customCommon
 }
 
 export enum ThemeVariant {
