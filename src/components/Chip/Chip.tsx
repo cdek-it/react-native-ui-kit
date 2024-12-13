@@ -1,5 +1,5 @@
 import { type Icon, IconX } from '@tabler/icons-react-native'
-import React, { memo, useCallback } from 'react'
+import React, { memo } from 'react'
 import { Text, Pressable, type PressableProps, type ViewStyle } from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
@@ -27,17 +27,9 @@ export interface ChipProps extends PressableProps {
  */
 export const Chip = memo<ChipProps>(({ Icon, label, disabled, removable, onRemove, ...rest }) => {
   const styles = useStyles()
-  const getPressableStyle = useCallback(
-    ({ pressed }: { pressed: boolean }) => [
-      styles.chip,
-      disabled && styles.disabledChip,
-      pressed && styles.highlightChip,
-    ],
-    [styles]
-  )
 
   return (
-    <Pressable {...rest} disabled={disabled} style={getPressableStyle}>
+    <Pressable {...rest} disabled={disabled} style={[styles.chip, disabled && styles.disabledChip]}>
       {Icon && (
         <Icon size={styles.icon.height} style={[styles.icon, styles.disabledIcon as ViewStyle]} />
       )}
@@ -79,13 +71,6 @@ const useStyles = makeStyles(({ theme }) => ({
   disabledChip: {
     backgroundColor: theme.Button.Disabled.disabledButtonBg,
     borderColor: theme.Button.Disabled.disabledButtonBorderColor,
-  },
-  highlightChip: {
-    shadowColor: theme.General.focusOutlineColor,
-    shadowRadius: 3.5,
-    shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 1,
-    elevation: 3,
   },
   icon: {
     width: 14,
