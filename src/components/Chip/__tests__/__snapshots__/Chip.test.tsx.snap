@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Chip component tests showClose: false 1`] = `
+exports[`Chip component tests removable: false 1`] = `
 <View
   accessibilityState={
     {
       "busy": undefined,
       "checked": undefined,
-      "disabled": false,
+      "disabled": undefined,
       "expanded": undefined,
       "selected": undefined,
     }
@@ -47,8 +47,7 @@ exports[`Chip component tests showClose: false 1`] = `
         "paddingHorizontal": 7,
         "paddingVertical": 0,
       },
-      false,
-      false,
+      undefined,
     ]
   }
 >
@@ -59,10 +58,10 @@ exports[`Chip component tests showClose: false 1`] = `
         {
           "color": "rgba(0, 0, 0, 0.8000)",
           "fontSize": 14,
-          "fontWeight": 400,
+          "includeFontPadding": false,
           "verticalAlign": "middle",
         },
-        false,
+        undefined,
       ]
     }
   >
@@ -71,7 +70,7 @@ exports[`Chip component tests showClose: false 1`] = `
 </View>
 `;
 
-exports[`Chip component tests showClose: false, disabled: true 1`] = `
+exports[`Chip component tests removable: false, disabled: true 1`] = `
 <View
   accessibilityState={
     {
@@ -122,7 +121,6 @@ exports[`Chip component tests showClose: false, disabled: true 1`] = `
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
         "borderColor": "#dbdada",
       },
-      false,
     ]
   }
 >
@@ -133,7 +131,7 @@ exports[`Chip component tests showClose: false, disabled: true 1`] = `
         {
           "color": "rgba(0, 0, 0, 0.8000)",
           "fontSize": 14,
-          "fontWeight": 400,
+          "includeFontPadding": false,
           "verticalAlign": "middle",
         },
         {
@@ -147,13 +145,13 @@ exports[`Chip component tests showClose: false, disabled: true 1`] = `
 </View>
 `;
 
-exports[`Chip component tests showClose: true 1`] = `
+exports[`Chip component tests removable: true 1`] = `
 <View
   accessibilityState={
     {
       "busy": undefined,
       "checked": undefined,
-      "disabled": false,
+      "disabled": undefined,
       "expanded": undefined,
       "selected": undefined,
     }
@@ -194,8 +192,7 @@ exports[`Chip component tests showClose: true 1`] = `
         "paddingHorizontal": 7,
         "paddingVertical": 0,
       },
-      false,
-      false,
+      undefined,
     ]
   }
 >
@@ -206,95 +203,92 @@ exports[`Chip component tests showClose: true 1`] = `
         {
           "color": "rgba(0, 0, 0, 0.8000)",
           "fontSize": 14,
-          "fontWeight": 400,
+          "includeFontPadding": false,
           "verticalAlign": "middle",
         },
-        false,
+        undefined,
       ]
     }
   >
     Chip
   </Text>
-  <RNSVGSvgView
-    align="xMidYMid"
-    bbHeight={14}
-    bbWidth={14}
-    disabled={false}
-    fill="none"
-    focusable={false}
-    height={14}
-    meetOrSlice={0}
-    minX={0}
-    minY={0}
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    responsible={true}
-    stroke="currentColor"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    strokeWidth={2}
-    style={
-      [
-        {
-          "backgroundColor": "transparent",
-          "borderWidth": 0,
-        },
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={14}
+      bbWidth={14}
+      fill="none"
+      focusable={false}
+      height={14}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
         [
           {
-            "color": "rgba(0, 0, 0, 0.8000)",
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          [
+            {
+              "color": "rgba(0, 0, 0, 0.8000)",
+              "height": 14,
+              "width": 14,
+            },
+            {
+              "color": "rgba(0, 0, 0, 0.6000)",
+            },
+          ],
+          {
+            "flex": 0,
             "height": 14,
             "width": 14,
           },
-          false,
-        ],
-        {
-          "flex": 0,
-          "height": 14,
-          "width": 14,
-        },
-      ]
-    }
-    tintColor="rgba(0, 0, 0, 0.8000)"
-    vbHeight={24}
-    vbWidth={24}
-    width={14}
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <RNSVGGroup
-      color="rgba(0, 0, 0, 0.8000)"
-      fill={null}
-      propList={
-        [
-          "fill",
-          "stroke",
-          "strokeWidth",
-          "strokeLinecap",
-          "strokeLinejoin",
         ]
       }
-      stroke={
-        {
-          "type": 2,
-        }
-      }
-      strokeLinecap={1}
-      strokeLinejoin={1}
-      strokeWidth={2}
+      tintColor="rgba(0, 0, 0, 0.6000)"
+      vbHeight={24}
+      vbWidth={24}
+      width={14}
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <RNSVGPath
-        color="rgba(0, 0, 0, 0.8000)"
-        d="M18 6l-12 12"
+      <RNSVGGroup
+        color="rgba(0, 0, 0, 0.6000)"
         fill={null}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         propList={
           [
             "fill",
@@ -304,7 +298,6 @@ exports[`Chip component tests showClose: true 1`] = `
             "strokeLinejoin",
           ]
         }
-        responsible={true}
         stroke={
           {
             "type": 2,
@@ -313,42 +306,58 @@ exports[`Chip component tests showClose: true 1`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-      />
-      <RNSVGPath
-        color="rgba(0, 0, 0, 0.8000)"
-        d="M6 6l12 12"
-        fill={null}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        propList={
-          [
-            "fill",
-            "stroke",
-            "strokeWidth",
-            "strokeLinecap",
-            "strokeLinejoin",
-          ]
-        }
-        responsible={true}
-        stroke={
-          {
-            "type": 2,
+      >
+        <RNSVGPath
+          color="rgba(0, 0, 0, 0.6000)"
+          d="M18 6l-12 12"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
           }
-        }
-        strokeLinecap={1}
-        strokeLinejoin={1}
-        strokeWidth={2}
-      />
-    </RNSVGGroup>
-  </RNSVGSvgView>
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+        <RNSVGPath
+          color="rgba(0, 0, 0, 0.6000)"
+          d="M6 6l12 12"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
 </View>
 `;
 
-exports[`Chip component tests showClose: true, disabled: true 1`] = `
+exports[`Chip component tests removable: true, disabled: true 1`] = `
 <View
   accessibilityState={
     {
@@ -399,7 +408,6 @@ exports[`Chip component tests showClose: true, disabled: true 1`] = `
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
         "borderColor": "#dbdada",
       },
-      false,
     ]
   }
 >
@@ -410,7 +418,7 @@ exports[`Chip component tests showClose: true, disabled: true 1`] = `
         {
           "color": "rgba(0, 0, 0, 0.8000)",
           "fontSize": 14,
-          "fontWeight": 400,
+          "includeFontPadding": false,
           "verticalAlign": "middle",
         },
         {
@@ -421,88 +429,83 @@ exports[`Chip component tests showClose: true, disabled: true 1`] = `
   >
     Chip
   </Text>
-  <RNSVGSvgView
-    align="xMidYMid"
-    bbHeight={14}
-    bbWidth={14}
-    disabled={true}
-    fill="none"
-    focusable={false}
-    height={14}
-    meetOrSlice={0}
-    minX={0}
-    minY={0}
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": true,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    responsible={true}
-    stroke="currentColor"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    strokeWidth={2}
-    style={
-      [
-        {
-          "backgroundColor": "transparent",
-          "borderWidth": 0,
-        },
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={14}
+      bbWidth={14}
+      fill="none"
+      focusable={false}
+      height={14}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
         [
           {
-            "color": "rgba(0, 0, 0, 0.8000)",
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          [
+            {
+              "color": "rgba(0, 0, 0, 0.8000)",
+              "height": 14,
+              "width": 14,
+            },
+            {
+              "color": "rgba(0, 0, 0, 0.6000)",
+            },
+          ],
+          {
+            "flex": 0,
             "height": 14,
             "width": 14,
           },
-          {
-            "color": "rgba(0, 0, 0, 0.6000)",
-          },
-        ],
-        {
-          "flex": 0,
-          "height": 14,
-          "width": 14,
-        },
-      ]
-    }
-    tintColor="rgba(0, 0, 0, 0.6000)"
-    vbHeight={24}
-    vbWidth={24}
-    width={14}
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <RNSVGGroup
-      color="rgba(0, 0, 0, 0.6000)"
-      fill={null}
-      propList={
-        [
-          "fill",
-          "stroke",
-          "strokeWidth",
-          "strokeLinecap",
-          "strokeLinejoin",
         ]
       }
-      stroke={
-        {
-          "type": 2,
-        }
-      }
-      strokeLinecap={1}
-      strokeLinejoin={1}
-      strokeWidth={2}
+      tintColor="rgba(0, 0, 0, 0.6000)"
+      vbHeight={24}
+      vbWidth={24}
+      width={14}
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <RNSVGPath
+      <RNSVGGroup
         color="rgba(0, 0, 0, 0.6000)"
-        d="M18 6l-12 12"
         fill={null}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         propList={
           [
             "fill",
@@ -512,7 +515,6 @@ exports[`Chip component tests showClose: true, disabled: true 1`] = `
             "strokeLinejoin",
           ]
         }
-        responsible={true}
         stroke={
           {
             "type": 2,
@@ -521,37 +523,53 @@ exports[`Chip component tests showClose: true, disabled: true 1`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-      />
-      <RNSVGPath
-        color="rgba(0, 0, 0, 0.6000)"
-        d="M6 6l12 12"
-        fill={null}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        propList={
-          [
-            "fill",
-            "stroke",
-            "strokeWidth",
-            "strokeLinecap",
-            "strokeLinejoin",
-          ]
-        }
-        responsible={true}
-        stroke={
-          {
-            "type": 2,
+      >
+        <RNSVGPath
+          color="rgba(0, 0, 0, 0.6000)"
+          d="M18 6l-12 12"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
           }
-        }
-        strokeLinecap={1}
-        strokeLinejoin={1}
-        strokeWidth={2}
-      />
-    </RNSVGGroup>
-  </RNSVGSvgView>
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+        <RNSVGPath
+          color="rgba(0, 0, 0, 0.6000)"
+          d="M6 6l12 12"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
 </View>
 `;
