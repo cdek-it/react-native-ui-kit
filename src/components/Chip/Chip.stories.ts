@@ -15,7 +15,6 @@ const meta: Meta<typeof Chip> = {
   args: {
     Icon: IconCheck,
     label: 'Chip',
-    removable: true,
     disabled: false,
   },
   argTypes: {
@@ -24,7 +23,6 @@ const meta: Meta<typeof Chip> = {
       options: Object.keys(icons),
       mapping: icons,
     },
-    onRemove: { action: 'onRemove' },
     onPress: { action: 'onPress' },
   },
 }
@@ -32,6 +30,9 @@ export default meta
 
 type Story = StoryObj<typeof Chip>
 
-const ChipStory: Story = {}
-
-export { ChipStory as Chip }
+export const DefaultChip: Story = {}
+export const RemovableChip: Story = {
+  argTypes: {
+    onRemove: { action: 'onRemove' },
+  },
+}
