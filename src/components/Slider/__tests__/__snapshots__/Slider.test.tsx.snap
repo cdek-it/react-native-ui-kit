@@ -1,0 +1,709 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slider snapshots default 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "borderRadius": 14,
+        "height": 3.5,
+        "justifyContent": "center",
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        [
+          [
+            {
+              "backgroundColor": "#188700",
+              "borderRadius": 14,
+              "height": 3.5,
+              "position": "absolute",
+            },
+            false,
+            false,
+          ],
+          {
+            "left": 0,
+            "width": 8.75,
+          },
+        ]
+      }
+    />
+    <View
+      onMoveShouldSetResponder={[Function]}
+      onMoveShouldSetResponderCapture={[Function]}
+      onResponderEnd={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderReject={[Function]}
+      onResponderRelease={[Function]}
+      onResponderStart={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      onStartShouldSetResponderCapture={[Function]}
+      pointerEvents="auto"
+      style={
+        [
+          [
+            {
+              "backgroundColor": "#188700",
+              "borderRadius": 8.75,
+              "height": 17.5,
+              "position": "absolute",
+              "width": 17.5,
+            },
+            false,
+            false,
+          ],
+          {
+            "left": 0,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Slider snapshots disabled = false, range = false 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "borderRadius": 14,
+        "height": 3.5,
+        "justifyContent": "center",
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        [
+          [
+            {
+              "backgroundColor": "#188700",
+              "borderRadius": 14,
+              "height": 3.5,
+              "position": "absolute",
+            },
+            false,
+            false,
+          ],
+          {
+            "left": 0,
+            "width": 8.75,
+          },
+        ]
+      }
+    />
+    <View
+      onMoveShouldSetResponder={[Function]}
+      onMoveShouldSetResponderCapture={[Function]}
+      onResponderEnd={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderReject={[Function]}
+      onResponderRelease={[Function]}
+      onResponderStart={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      onStartShouldSetResponderCapture={[Function]}
+      pointerEvents="auto"
+      style={
+        [
+          [
+            {
+              "backgroundColor": "#188700",
+              "borderRadius": 8.75,
+              "height": 17.5,
+              "position": "absolute",
+              "width": 17.5,
+            },
+            false,
+            false,
+          ],
+          {
+            "left": 0,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Slider snapshots disabled = false, range = true 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "borderRadius": 14,
+        "height": 3.5,
+        "justifyContent": "center",
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        [
+          [
+            {
+              "backgroundColor": "#188700",
+              "borderRadius": 14,
+              "height": 3.5,
+              "position": "absolute",
+            },
+            false,
+            false,
+          ],
+          {
+            "left": 8.75,
+            "width": 0,
+          },
+        ]
+      }
+    />
+    <View
+      onMoveShouldSetResponder={[Function]}
+      onMoveShouldSetResponderCapture={[Function]}
+      onResponderEnd={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderReject={[Function]}
+      onResponderRelease={[Function]}
+      onResponderStart={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      onStartShouldSetResponderCapture={[Function]}
+      pointerEvents="auto"
+      style={
+        [
+          [
+            {
+              "backgroundColor": "#188700",
+              "borderRadius": 8.75,
+              "height": 17.5,
+              "position": "absolute",
+              "width": 17.5,
+            },
+            false,
+            false,
+          ],
+          {
+            "left": 0,
+          },
+        ]
+      }
+    />
+    <View
+      onMoveShouldSetResponder={[Function]}
+      onMoveShouldSetResponderCapture={[Function]}
+      onResponderEnd={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderReject={[Function]}
+      onResponderRelease={[Function]}
+      onResponderStart={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      onStartShouldSetResponderCapture={[Function]}
+      pointerEvents="auto"
+      style={
+        [
+          [
+            {
+              "backgroundColor": "#188700",
+              "borderRadius": 8.75,
+              "height": 17.5,
+              "position": "absolute",
+              "width": 17.5,
+            },
+            false,
+            false,
+          ],
+          {
+            "left": 0,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 80 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "borderRadius": 14,
+        "height": 3.5,
+        "justifyContent": "center",
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        [
+          [
+            {
+              "backgroundColor": "#188700",
+              "borderRadius": 14,
+              "height": 3.5,
+              "position": "absolute",
+            },
+            false,
+            false,
+          ],
+          {
+            "left": 8.75,
+            "width": 0,
+          },
+        ]
+      }
+    />
+    <View
+      onMoveShouldSetResponder={[Function]}
+      onMoveShouldSetResponderCapture={[Function]}
+      onResponderEnd={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderReject={[Function]}
+      onResponderRelease={[Function]}
+      onResponderStart={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      onStartShouldSetResponderCapture={[Function]}
+      pointerEvents="auto"
+      style={
+        [
+          [
+            {
+              "backgroundColor": "#188700",
+              "borderRadius": 8.75,
+              "height": 17.5,
+              "position": "absolute",
+              "width": 17.5,
+            },
+            false,
+            false,
+          ],
+          {
+            "left": 0,
+          },
+        ]
+      }
+    />
+    <View
+      onMoveShouldSetResponder={[Function]}
+      onMoveShouldSetResponderCapture={[Function]}
+      onResponderEnd={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderReject={[Function]}
+      onResponderRelease={[Function]}
+      onResponderStart={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      onStartShouldSetResponderCapture={[Function]}
+      pointerEvents="auto"
+      style={
+        [
+          [
+            {
+              "backgroundColor": "#188700",
+              "borderRadius": 8.75,
+              "height": 17.5,
+              "position": "absolute",
+              "width": 17.5,
+            },
+            false,
+            false,
+          ],
+          {
+            "left": 0,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Slider snapshots disabled = true, range = false 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "borderRadius": 14,
+        "height": 3.5,
+        "justifyContent": "center",
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        [
+          [
+            {
+              "backgroundColor": "#188700",
+              "borderRadius": 14,
+              "height": 3.5,
+              "position": "absolute",
+            },
+            false,
+            {
+              "backgroundColor": "grey",
+            },
+          ],
+          {
+            "left": 0,
+            "width": 8.75,
+          },
+        ]
+      }
+    />
+    <View
+      onMoveShouldSetResponder={[Function]}
+      onMoveShouldSetResponderCapture={[Function]}
+      onResponderEnd={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderReject={[Function]}
+      onResponderRelease={[Function]}
+      onResponderStart={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      onStartShouldSetResponderCapture={[Function]}
+      pointerEvents="none"
+      style={
+        [
+          [
+            {
+              "backgroundColor": "#188700",
+              "borderRadius": 8.75,
+              "height": 17.5,
+              "position": "absolute",
+              "width": 17.5,
+            },
+            false,
+            {
+              "backgroundColor": "grey",
+            },
+          ],
+          {
+            "left": 0,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Slider snapshots disabled = true, range = true 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "borderRadius": 14,
+        "height": 3.5,
+        "justifyContent": "center",
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        [
+          [
+            {
+              "backgroundColor": "#188700",
+              "borderRadius": 14,
+              "height": 3.5,
+              "position": "absolute",
+            },
+            false,
+            {
+              "backgroundColor": "grey",
+            },
+          ],
+          {
+            "left": 8.75,
+            "width": 0,
+          },
+        ]
+      }
+    />
+    <View
+      onMoveShouldSetResponder={[Function]}
+      onMoveShouldSetResponderCapture={[Function]}
+      onResponderEnd={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderReject={[Function]}
+      onResponderRelease={[Function]}
+      onResponderStart={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      onStartShouldSetResponderCapture={[Function]}
+      pointerEvents="none"
+      style={
+        [
+          [
+            {
+              "backgroundColor": "#188700",
+              "borderRadius": 8.75,
+              "height": 17.5,
+              "position": "absolute",
+              "width": 17.5,
+            },
+            false,
+            {
+              "backgroundColor": "grey",
+            },
+          ],
+          {
+            "left": 0,
+          },
+        ]
+      }
+    />
+    <View
+      onMoveShouldSetResponder={[Function]}
+      onMoveShouldSetResponderCapture={[Function]}
+      onResponderEnd={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderReject={[Function]}
+      onResponderRelease={[Function]}
+      onResponderStart={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      onStartShouldSetResponderCapture={[Function]}
+      pointerEvents="none"
+      style={
+        [
+          [
+            {
+              "backgroundColor": "#188700",
+              "borderRadius": 8.75,
+              "height": 17.5,
+              "position": "absolute",
+              "width": 17.5,
+            },
+            false,
+            {
+              "backgroundColor": "grey",
+            },
+          ],
+          {
+            "left": 0,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 80 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "borderRadius": 14,
+        "height": 3.5,
+        "justifyContent": "center",
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        [
+          [
+            {
+              "backgroundColor": "#188700",
+              "borderRadius": 14,
+              "height": 3.5,
+              "position": "absolute",
+            },
+            false,
+            {
+              "backgroundColor": "grey",
+            },
+          ],
+          {
+            "left": 8.75,
+            "width": 0,
+          },
+        ]
+      }
+    />
+    <View
+      onMoveShouldSetResponder={[Function]}
+      onMoveShouldSetResponderCapture={[Function]}
+      onResponderEnd={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderReject={[Function]}
+      onResponderRelease={[Function]}
+      onResponderStart={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      onStartShouldSetResponderCapture={[Function]}
+      pointerEvents="none"
+      style={
+        [
+          [
+            {
+              "backgroundColor": "#188700",
+              "borderRadius": 8.75,
+              "height": 17.5,
+              "position": "absolute",
+              "width": 17.5,
+            },
+            false,
+            {
+              "backgroundColor": "grey",
+            },
+          ],
+          {
+            "left": 0,
+          },
+        ]
+      }
+    />
+    <View
+      onMoveShouldSetResponder={[Function]}
+      onMoveShouldSetResponderCapture={[Function]}
+      onResponderEnd={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderReject={[Function]}
+      onResponderRelease={[Function]}
+      onResponderStart={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      onStartShouldSetResponderCapture={[Function]}
+      pointerEvents="none"
+      style={
+        [
+          [
+            {
+              "backgroundColor": "#188700",
+              "borderRadius": 8.75,
+              "height": 17.5,
+              "position": "absolute",
+              "width": 17.5,
+            },
+            false,
+            {
+              "backgroundColor": "grey",
+            },
+          ],
+          {
+            "left": 0,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
