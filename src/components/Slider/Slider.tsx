@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useMemo, useRef, useState } from 'react'
+import React, { memo, useMemo, useRef, useState } from 'react'
 import {
   type GestureResponderEvent,
   PanResponder,
@@ -9,14 +9,40 @@ import {
 import { makeStyles } from '../../utils/makeStyles'
 
 export interface SliderProps {
+  /**
+   * Управление доступностью компонента
+   * @default false
+   */
   disabled?: boolean
+  /**
+   * Признак наличия диапазона выбираемых значений
+   * @default false
+   */
   range?: boolean
+  /**
+   * Начальное значение/позиция стартового ползунка
+   * @default 0
+   */
   minPointerValueInit: number
+  /**
+   * Конечное значение/позиция конечного ползунка
+   * @default 100
+   */
   maxPointerValueInit?: number
+  /**
+   * Значение/позиция возвращаемое стартовым ползунком
+   */
   onReturnMinPointerValue: (value: number) => void
+  /**
+   * Значение/позиция возвращаемое конечным ползунком
+   */
   onReturnMaxPointerValue: (value: number) => void
 }
 
+/**
+ * Используется для указания значения или диапазона значений с помощью ползунка
+ * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-6090&m=dev
+ */
 export const Slider = memo<SliderProps>(
   ({
     disabled = false,
@@ -36,80 +62,91 @@ export const Slider = memo<SliderProps>(
     const trackWidth = useRef<number>(0)
     const layoutStartPos = useRef<number>(0)
     const layoutStep = useRef<number>(0)
-    const trackRef = useRef<View | null>(null)
     const pointerWidth = styles.pointWidth.width
     const trackScale = 100
 
     const [isHover, setHoverState] = useState(false)
 
-    useEffect(() => {
-      if (trackRef.current) {
-        trackRef.current.measure((x, y, width) => {
-          trackWidth.current = width
-          layoutStartPos.current = x
-        })
-      }
-    }, [])
+    const minPointerResponder = useMemo(() => {
+      return PanResponder.create({
+        onStartShouldSetPanResponder: () => true,
+        onMoveShouldSetPanResponder: () => true,
+        onPanResponderGrant: (event: GestureResponderEvent) => {
+          const pointerX = event.nativeEvent.pageX
+          const offset = pointerX - pointMinPosition
+          setPointMinOffset(event.nativeEvent.locationX)
+          setPointMinPosition(Math.max(0, pointerX - offset))
+          setHoverState(true)
+        },
+        onPanResponderMove: (
+          event: GestureResponderEvent,
+          gestureState: PanResponderGestureState
+        ) => {
+          const newPointer1Position =
+            gestureState.moveX - (layoutStartPos.current + absolutePosX.current) - pointMinOffset
+          const newPosition = Math.max(
+            0,
+            Math.min(newPointer1Position, pointMaxPosition - pointerWidth)
+          )
+          if (pointMinPosition !== Math.max(0, newPosition)) {
+            setPointMinPosition(newPosition)
+            onReturnMinPointerValue(newPosition / layoutStep.current)
+          }
+        },
+        onPanResponderRelease: () => {
+          setHoverState(false)
+        },
+      })
+    }, [
+      pointMinPosition,
+      layoutStartPos,
+      absolutePosX,
+      pointMinOffset,
+      pointMaxPosition,
+      pointerWidth,
+      layoutStep,
+    ])
 
-    const minPointerResponder = PanResponder.create({
-      onStartShouldSetPanResponder: () => true,
-      onMoveShouldSetPanResponder: () => true,
-      onPanResponderGrant: (event: GestureResponderEvent) => {
-        const pointerX = event.nativeEvent.pageX
-        const offset = pointerX - pointMinPosition
-        setPointMinOffset(event.nativeEvent.locationX)
-        setPointMinPosition(Math.max(0, pointerX - offset))
-        setHoverState(true)
-      },
-      onPanResponderMove: (
-        event: GestureResponderEvent,
-        gestureState: PanResponderGestureState
-      ) => {
-        const newPointer1Position =
-          gestureState.moveX - (layoutStartPos.current + absolutePosX.current) - pointMinOffset
-        const newPosition = Math.max(
-          0,
-          Math.min(newPointer1Position, pointMaxPosition - pointerWidth)
-        )
-        if (pointMinPosition !== Math.max(0, newPosition)) {
-          setPointMinPosition(newPosition)
-          onReturnMinPointerValue(newPosition / layoutStep.current)
-        }
-      },
-      onPanResponderRelease: () => {
-        setHoverState(false)
-      },
-    })
-
-    const maxPointerResponder = PanResponder.create({
-      onStartShouldSetPanResponder: () => true,
-      onMoveShouldSetPanResponder: () => true,
-      onPanResponderGrant: (event: GestureResponderEvent) => {
-        const pointerX = event.nativeEvent.pageX
-        const offset = pointerX - pointMaxPosition
-        setPointMaxOffset(event.nativeEvent.locationX)
-        setPointMaxPosition(
-          Math.max(pointMinPosition, Math.min(pointerX - offset, trackWidth.current))
-        )
-        setHoverState(true)
-      },
-      onPanResponderMove: (
-        event: GestureResponderEvent,
-        gestureState: PanResponderGestureState
-      ) => {
-        const newPointer2Position =
-          gestureState.moveX - (layoutStartPos.current + absolutePosX.current) - pointMaxOffset
-        const newPosition = Math.max(
-          pointMinPosition + pointerWidth,
-          Math.min(newPointer2Position, trackWidth.current - pointerWidth)
-        )
-        setPointMaxPosition(newPosition)
-        onReturnMaxPointerValue((newPosition - pointerWidth) / layoutStep.current)
-      },
-      onPanResponderRelease: () => {
-        setHoverState(false)
-      },
-    })
+    const maxPointerResponder = useMemo(() => {
+      return PanResponder.create({
+        onStartShouldSetPanResponder: () => true,
+        onMoveShouldSetPanResponder: () => true,
+        onPanResponderGrant: (event: GestureResponderEvent) => {
+          const pointerX = event.nativeEvent.pageX
+          const offset = pointerX - pointMaxPosition
+          setPointMaxOffset(event.nativeEvent.locationX)
+          setPointMaxPosition(
+            Math.max(pointMinPosition, Math.min(pointerX - offset, trackWidth.current))
+          )
+          setHoverState(true)
+        },
+        onPanResponderMove: (
+          event: GestureResponderEvent,
+          gestureState: PanResponderGestureState
+        ) => {
+          const newPointer2Position =
+            gestureState.moveX - (layoutStartPos.current + absolutePosX.current) - pointMaxOffset
+          const newPosition = Math.max(
+            pointMinPosition + pointerWidth,
+            Math.min(newPointer2Position, trackWidth.current - pointerWidth)
+          )
+          setPointMaxPosition(newPosition)
+          onReturnMaxPointerValue((newPosition - pointerWidth) / layoutStep.current)
+        },
+        onPanResponderRelease: () => {
+          setHoverState(false)
+        },
+      })
+    }, [
+      pointMaxPosition,
+      pointMinPosition,
+      trackWidth,
+      layoutStartPos,
+      absolutePosX,
+      pointMaxOffset,
+      pointerWidth,
+      layoutStep,
+    ])
 
     const pointStyles = useMemo(
       () => [styles.point, isHover && styles.hovered, disabled && styles.disabledView],
@@ -143,7 +180,15 @@ export const Slider = memo<SliderProps>(
           })
         }
       >
-        <View ref={trackRef} style={styles.track}>
+        <View
+          style={styles.track}
+          onLayout={(event) =>
+            event.target.measure((x, y, width, height, pageX, pageY) => {
+              trackWidth.current = width
+              layoutStartPos.current = x
+            })
+          }
+        >
           {range ? null : ( // индикатор старта
             <View style={[lineStyles, { left: 0, width: pointMinPosition + pointerWidth / 2 }]} />
           )}
@@ -182,7 +227,7 @@ export const Slider = memo<SliderProps>(
 const useStyles = makeStyles(({ theme }) => {
   return {
     container: {
-      width: '100%',
+      width: '80%',
       justifyContent: 'center',
       alignItems: 'center',
     },
