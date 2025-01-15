@@ -227,7 +227,7 @@ export const Slider = memo<SliderProps>(
 const useStyles = makeStyles(({ theme }) => {
   return {
     container: {
-      width: '80%',
+      width: '100%',
       justifyContent: 'center',
       alignItems: 'center',
     },

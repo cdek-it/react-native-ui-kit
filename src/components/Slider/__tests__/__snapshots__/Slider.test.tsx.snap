@@ -12,6 +12,7 @@ exports[`Slider snapshots default 1`] = `
   }
 >
   <View
+    onLayout={[Function]}
     style={
       {
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
@@ -92,6 +93,7 @@ exports[`Slider snapshots disabled = false, range = false 1`] = `
   }
 >
   <View
+    onLayout={[Function]}
     style={
       {
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
@@ -172,6 +174,7 @@ exports[`Slider snapshots disabled = false, range = true 1`] = `
   }
 >
   <View
+    onLayout={[Function]}
     style={
       {
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
@@ -285,6 +288,7 @@ exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 
   }
 >
   <View
+    onLayout={[Function]}
     style={
       {
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
@@ -398,6 +402,7 @@ exports[`Slider snapshots disabled = true, range = false 1`] = `
   }
 >
   <View
+    onLayout={[Function]}
     style={
       {
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
@@ -482,6 +487,7 @@ exports[`Slider snapshots disabled = true, range = true 1`] = `
   }
 >
   <View
+    onLayout={[Function]}
     style={
       {
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
@@ -601,6 +607,7 @@ exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 8
   }
 >
   <View
+    onLayout={[Function]}
     style={
       {
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
