@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.9...v0.0.10) (2025-01-16)
+
+
+### Features
+
+* **chip:** implement Chip component ([0c95a9f](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/0c95a9fa3abdb0d4d85bc5d74f871a894e670fe8)), closes [#23](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/issues/23)
+* **ProgressSpinner:** implement ProgressSpinner component ([90745a5](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/90745a5087ebd75d1d0fdad0501ac3aa3e03bf3d))
+
+
+### Bug Fixes
+
+* **chips:** tests ([b677615](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/b6776152a06b54bf686452b8f4093ba54f9a9495))
+
 ### [0.0.9](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.8...v0.0.9) (2024-12-12)
 
 
