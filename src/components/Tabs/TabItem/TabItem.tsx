@@ -29,39 +29,47 @@ export const TabItem = memo<TabItemProps>(({ Icon, label, badge, index, ...rest 
     return context.activeIndex === index
   })()
 
-  const iconColor = () => {
+  const iconColor = (pressed: boolean) => {
     if (context.disabled) return styles.disabledIcon.color
+    if (pressed) return styles.highlightIcon.color
     if (active) return styles.activeIcon.color
     return styles.icon.color
   }
 
   return (
-    <Pressable
-      {...rest}
-      disabled={context.disabled}
-      style={[
-        styles.container,
-        active && styles.activeContainer,
-        context.disabled && styles.disabledContainer,
-      ]}
-      onPress={() => context.onChange(index)}
-    >
-      {Icon && <Icon color={iconColor()} height={styles.icon.height} width={styles.icon.width} />}
-
-      <View style={styles.textContainer}>
-        <Text
-          numberOfLines={1}
+    <Pressable {...rest} disabled={context.disabled} onPress={() => context.onChange(index)}>
+      {({ pressed }) => (
+        <View
           style={[
-            styles.text,
-            active && styles.activeText,
-            context.disabled && styles.disabledText,
+            styles.container,
+            pressed && styles.highlightContainer,
+            active && styles.activeContainer,
+            context.disabled && styles.disabledContainer,
           ]}
         >
-          {label}
-        </Text>
-      </View>
-
-      {badge}
+          {Icon && (
+            <Icon
+              color={iconColor(pressed)}
+              height={styles.icon.height}
+              width={styles.icon.width}
+            />
+          )}
+          <View style={styles.textContainer}>
+            <Text
+              numberOfLines={1}
+              style={[
+                styles.text,
+                active && styles.activeText,
+                pressed && styles.highlightText,
+                context.disabled && styles.disabledText,
+              ]}
+            >
+              {label}
+            </Text>
+          </View>
+          {badge}
+        </View>
+      )}
     </Pressable>
   )
 })
@@ -81,6 +89,10 @@ const useStyles = makeStyles(({ theme, typography }) => ({
     backgroundColor: theme.Panel.TabView.tabviewHeaderBg,
     borderColor: theme.Panel.TabView.tabviewHeaderBorderColor,
   },
+  highlightContainer: {
+    backgroundColor: theme.Panel.TabView.tabviewHeaderHoverBg,
+    borderColor: theme.Panel.TabView.tabviewHeaderHoverBorderColor,
+  },
   activeContainer: {
     backgroundColor: theme.Panel.TabView.tabviewHeaderActiveBg,
     borderColor: theme.Panel.TabView.tabviewHeaderActiveBorderColor,
@@ -92,6 +104,9 @@ const useStyles = makeStyles(({ theme, typography }) => ({
     width: theme.Menu.Item.menuitemSubmenuIconFontSize,
     height: theme.Menu.Item.menuitemSubmenuIconFontSize,
     color: theme.Panel.TabView.tabviewHeaderTextColor,
+  },
+  highlightIcon: {
+    color: theme.Panel.TabView.tabviewHeaderHoverTextColor,
   },
   activeIcon: {
     color: theme.Panel.TabView.tabviewHeaderActiveTextColor,
@@ -108,6 +123,9 @@ const useStyles = makeStyles(({ theme, typography }) => ({
     includeFontPadding: false,
 
     color: theme.Panel.TabView.tabviewHeaderTextColor,
+  },
+  highlightText: {
+    color: theme.Panel.TabView.tabviewHeaderHoverTextColor,
   },
   activeText: {
     color: theme.Panel.TabView.tabviewHeaderActiveTextColor,
