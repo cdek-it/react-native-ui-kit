@@ -37,7 +37,12 @@ export const TabItem = memo<TabItemProps>(({ Icon, label, badge, index, ...rest 
   }
 
   return (
-    <Pressable {...rest} disabled={context.disabled} onPress={() => context.onChange(index)}>
+    <Pressable
+      {...rest}
+      disabled={context.disabled}
+      testID={TestId.Container + index}
+      onPress={() => context.onChange(index)}
+    >
       {({ pressed }) => (
         <View
           style={[
@@ -134,3 +139,7 @@ const useStyles = makeStyles(({ theme, typography }) => ({
     color: theme.Button.Disabled.disabledButtonTextColor,
   },
 }))
+
+export enum TestId {
+  Container = 'TabItem_Container',
+}
