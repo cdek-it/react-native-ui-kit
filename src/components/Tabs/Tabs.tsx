@@ -45,8 +45,6 @@ export const Tabs = memo<TabsProps>(
 
 const useStyles = makeStyles(({ theme }) => ({
   container: {
-    flexWrap: 'wrap',
-    alignItems: 'center',
     flexDirection: 'row',
     gap: theme.Panel.TabView.tabviewHeaderSpacing,
 
