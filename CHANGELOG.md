@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.12](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.11...v0.0.12) (2025-01-21)
+
+
+### Features
+
+* **InputTextBase:** add function for rendering custom input ([9dfcd36](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/9dfcd3660ee465c5cdc669d333da1f4a4b0bc28d))
+
 ### [0.0.11](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.10...v0.0.11) (2025-01-16)
 
 ### [0.0.10](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.9...v0.0.10) (2025-01-16)
