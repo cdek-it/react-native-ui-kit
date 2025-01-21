@@ -1,6 +1,7 @@
 import React, { memo, useMemo, useRef, useState } from 'react'
 import {
   type GestureResponderEvent,
+  type LayoutChangeEvent,
   PanResponder,
   type PanResponderGestureState,
   View,
@@ -53,15 +54,15 @@ export const Slider = memo<SliderProps>(
     onReturnMaxPointerValue,
   }) => {
     const styles = useStyles()
-    const [pointMinOffset, setPointMinOffset] = useState<number>(0)
-    const [pointMaxOffset, setPointMaxOffset] = useState<number>(0)
-    const [pointMinPosition, setPointMinPosition] = useState<number>(0)
-    const [pointMaxPosition, setPointMaxPosition] = useState<number>(0)
+    const [pointMinOffset, setPointMinOffset] = useState(0)
+    const [pointMaxOffset, setPointMaxOffset] = useState(0)
+    const [pointMinPosition, setPointMinPosition] = useState(0)
+    const [pointMaxPosition, setPointMaxPosition] = useState(0)
 
-    const absolutePosX = useRef<number>(0)
-    const trackWidth = useRef<number>(0)
-    const layoutStartPos = useRef<number>(0)
-    const layoutStep = useRef<number>(0)
+    const absolutePosX = useRef(0)
+    const trackWidth = useRef(0)
+    const layoutStartPos = useRef(0)
+    const layoutStep = useRef(0)
     const pointerWidth = styles.pointWidth.width
     const trackScale = 100
 
@@ -158,37 +159,35 @@ export const Slider = memo<SliderProps>(
       [styles.line, isHover, styles.hovered, styles.disabledView, disabled]
     )
 
-    return (
-      <View
-        style={styles.container}
-        onLayout={(event) =>
-          event.target.measure((x, y, width, height, pageX, pageY) => {
-            absolutePosX.current = pageX
-            const step = range
-              ? (width - pointerWidth * 2) / trackScale
-              : (width - pointerWidth) / trackScale
-            layoutStep.current = step
+    const onContainerLayout = (event: LayoutChangeEvent) => {
+      event.target.measure((x, y, width, height, pageX, pageY) => {
+        absolutePosX.current = pageX
+        const step = range
+          ? (width - pointerWidth * 2) / trackScale
+          : (width - pointerWidth) / trackScale
+        layoutStep.current = step
 
-            setPointMinPosition(step * minPointerValueInit)
-            // если не стоит признак , то для надежности игнорируем стартовое значение
-            // второй точки даже если его задали
-            if (range) {
-              setPointMaxPosition(step * maxPointerValueInit + pointerWidth)
-            } else {
-              setPointMaxPosition(width)
-            }
-          })
+        setPointMinPosition(step * minPointerValueInit)
+        // если не стоит признак , то для надежности игнорируем стартовое значение
+        // второй точки даже если его задали
+        if (range) {
+          setPointMaxPosition(step * maxPointerValueInit + pointerWidth)
+        } else {
+          setPointMaxPosition(width)
         }
-      >
-        <View
-          style={styles.track}
-          onLayout={(event) =>
-            event.target.measure((x, y, width, height, pageX, pageY) => {
-              trackWidth.current = width
-              layoutStartPos.current = x
-            })
-          }
-        >
+      })
+    }
+
+    const onTrackLayout = (event: LayoutChangeEvent) => {
+      event.target.measure((x, y, width, height, pageX, pageY) => {
+        trackWidth.current = width
+        layoutStartPos.current = x
+      })
+    }
+
+    return (
+      <View style={styles.container} onLayout={onContainerLayout}>
+        <View style={styles.track} onLayout={onTrackLayout}>
           {range ? null : ( // индикатор старта
             <View style={[lineStyles, { left: 0, width: pointMinPosition + pointerWidth / 2 }]} />
           )}
