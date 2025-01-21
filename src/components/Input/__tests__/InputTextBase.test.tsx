@@ -106,4 +106,13 @@ describe('InputTextBase component functionality tests', () => {
     expect(loadingIcon).toBeOnTheScreen()
     expect(loadingIcon).toHaveAnimatedStyle({ transform: [{ rotate: '0deg' }] })
   })
+
+  test('should pass args to custom render function correctly', () => {
+    const renderTextInput = jest.fn()
+
+    render(<InputTextBase renderTextInput={renderTextInput} />)
+
+    expect(renderTextInput).toHaveBeenCalled()
+    expect(renderTextInput.mock.calls[0]).toMatchSnapshot()
+  })
 })

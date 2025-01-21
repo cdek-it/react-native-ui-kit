@@ -1,6 +1,7 @@
 import { IconLoader2, IconLock, IconX } from '@tabler/icons-react-native'
 import React, {
   memo,
+  type ReactNode,
   type RefObject,
   useCallback,
   useEffect,
@@ -45,9 +46,16 @@ export interface InputTextBaseProps extends Omit<TextInputProps, 'style' | 'edit
   disabled?: boolean
   /** Ref для управления полем ввода */
   inputRef?: RefObject<TextInput | null>
+  /** Функция для рендера поля ввода.
+   * Используется, когда необходимо использовать отличный от стандартного компонент.
+   * Например, для реализации масок
+   */
+  renderTextInput?: (props: RenderTextInputArgs) => ReactNode
   /** Управление состоянием компонента */
   state?: 'default' | 'danger'
 }
+
+export type RenderTextInputArgs = TextInputProps & { inputRef: RefObject<TextInput> }
 
 /**
  * Базовое поле
@@ -63,6 +71,7 @@ export const InputTextBase = memo<InputTextBaseProps & PrivateInputTextBaseProps
     containerStyle,
     inputStyle,
     loading,
+    renderTextInput,
     ...otherProps
   }) => {
     const styles = useStyles()
@@ -144,6 +153,32 @@ export const InputTextBase = memo<InputTextBaseProps & PrivateInputTextBaseProps
 
     useImperativeHandle(propsInputRef, () => inputRef.current)
 
+    const texInputProps = useMemo<RenderTextInputArgs>(
+      () => ({
+        placeholderTextColor: styles.placeholderTextColor.color,
+        testID: 'InputTextBase_input',
+        ...otherProps,
+        editable: !disabled,
+        style: [styles.input, inputStyle],
+        inputRef,
+        value,
+        onBlur,
+        onChangeText,
+        onFocus,
+      }),
+      [
+        disabled,
+        inputStyle,
+        onBlur,
+        onChangeText,
+        onFocus,
+        otherProps,
+        styles.input,
+        styles.placeholderTextColor.color,
+        value,
+      ]
+    )
+
     return (
       <>
         {!disabled && (
@@ -168,18 +203,11 @@ export const InputTextBase = memo<InputTextBaseProps & PrivateInputTextBaseProps
             disabled && styles.disabled,
           ]}
         >
-          <TextInput
-            placeholderTextColor={styles.placeholderTextColor.color}
-            ref={inputRef}
-            testID='InputTextBase_input'
-            {...otherProps}
-            editable={!disabled}
-            style={[styles.input, inputStyle]}
-            value={value}
-            onBlur={onBlur}
-            onChangeText={onChangeText}
-            onFocus={onFocus}
-          />
+          {renderTextInput ? (
+            renderTextInput(texInputProps)
+          ) : (
+            <TextInput {...texInputProps} ref={inputRef} />
+          )}
 
           <View style={styles.rightContainer}>
             {loading && (
