@@ -1,4 +1,4 @@
-export { Button } from './Button'
+export { Button, ButtonBadge, ButtonSeverity } from './Button'
 export { Body, Title, Caption } from './Typography'
 export { Avatar } from './Avatar'
 export { Badge } from './Badge'

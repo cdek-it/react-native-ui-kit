@@ -1,6 +1,8 @@
 import type { Icon } from '@tabler/icons-react-native'
 import type { ColorValue, PressableProps, TextStyle, ViewStyle } from 'react-native'
 
+import type { BadgeSeverity } from '../Badge/Badge'
+
 export interface BaseButtonProps extends PressableProps {
   /**
    * Controls button size
@@ -73,4 +75,17 @@ export interface ButtonSeverityProps {
    * Controls severity button styling variant
    */
   severity: 'help' | 'info' | 'success' | 'warning' | 'danger'
+}
+
+export interface ButtonBadgeProps {
+  /**
+   * Text inside badge
+   */
+  badgeLabel: string
+  /**
+   * Controls color of Badge component
+   *
+   * @type {BadgeSeverity}
+   */
+  badgeSeverity: BadgeSeverity
 }
