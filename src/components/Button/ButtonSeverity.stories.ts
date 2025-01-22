@@ -17,7 +17,7 @@ const meta: Meta<typeof ButtonSeverity> = {
     severity: 'info',
   },
   argTypes: {
-    size: { control: 'radio', options: ['small', 'base', 'large', 'xLarge'] },
+    size: { control: 'radio', options: ['small', 'base', 'large', 'xlarge'] },
     shape: { control: 'radio', options: ['square', 'circle'] },
     variant: { control: 'radio', options: ['basic', 'outlined', 'text'] },
     loading: { control: 'boolean' },

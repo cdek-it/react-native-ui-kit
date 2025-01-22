@@ -14,18 +14,18 @@ const meta: Meta<typeof ButtonBadge> = {
     loading: false,
     disabled: false,
     iconPosition: 'left',
-    badgeSeverity: 'info',
+    badgeSeverity: 'basic',
     badgeLabel: 'Badge',
   },
   argTypes: {
-    size: { control: 'radio', options: ['small', 'base', 'large', 'xLarge'] },
+    size: { control: 'radio', options: ['small', 'base', 'large', 'xlarge'] },
     shape: { control: 'radio', options: ['square', 'circle'] },
     variant: { control: 'radio', options: ['basic', 'outlined', 'text'] },
     loading: { control: 'boolean' },
     disabled: { control: 'boolean' },
     iconPosition: { control: 'radio', options: ['left', 'right'] },
-    onPress: { action: 'OnPress' },
-    badgeSeverity: { control: 'radio', options: ['help', 'info', 'success', 'warning', 'danger'] },
+    onPress: { action: 'onPress' },
+    badgeSeverity: { control: 'radio', options: ['basic', 'info', 'success', 'warning', 'danger'] },
   },
 }
 
