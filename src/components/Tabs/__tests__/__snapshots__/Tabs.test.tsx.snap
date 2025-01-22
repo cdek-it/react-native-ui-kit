@@ -42,7 +42,6 @@ exports[`TabItem component tests label 1`] = `
           "borderBottomWidth": 3.5,
           "borderColor": "rgba(255, 255, 255, 0.0001)",
           "flexDirection": "row",
-          "flexWrap": "wrap",
           "gap": 7,
           "paddingHorizontal": 0,
           "paddingVertical": 14,
@@ -130,7 +129,6 @@ exports[`TabItem component tests label, badge 1`] = `
           "borderBottomWidth": 3.5,
           "borderColor": "rgba(255, 255, 255, 0.0001)",
           "flexDirection": "row",
-          "flexWrap": "wrap",
           "gap": 7,
           "paddingHorizontal": 0,
           "paddingVertical": 14,
@@ -259,7 +257,6 @@ exports[`TabItem component tests label, icon 1`] = `
           "borderBottomWidth": 3.5,
           "borderColor": "rgba(255, 255, 255, 0.0001)",
           "flexDirection": "row",
-          "flexWrap": "wrap",
           "gap": 7,
           "paddingHorizontal": 0,
           "paddingVertical": 14,
@@ -446,7 +443,6 @@ exports[`TabItem component tests label, icon, badge 1`] = `
           "borderBottomWidth": 3.5,
           "borderColor": "rgba(255, 255, 255, 0.0001)",
           "flexDirection": "row",
-          "flexWrap": "wrap",
           "gap": 7,
           "paddingHorizontal": 0,
           "paddingVertical": 14,
@@ -646,11 +642,9 @@ exports[`Tabs component tests disabled 1`] = `
 <View
   style={
     {
-      "alignItems": "center",
       "borderBottomWidth": 1,
       "borderColor": "#dbdada",
       "flexDirection": "row",
-      "flexWrap": "wrap",
       "gap": 21,
     }
   }
@@ -696,7 +690,6 @@ exports[`Tabs component tests disabled 1`] = `
             "borderBottomWidth": 3.5,
             "borderColor": "rgba(255, 255, 255, 0.0001)",
             "flexDirection": "row",
-            "flexWrap": "wrap",
             "gap": 7,
             "paddingHorizontal": 0,
             "paddingVertical": 14,
@@ -884,7 +877,6 @@ exports[`Tabs component tests disabled 1`] = `
             "borderBottomWidth": 3.5,
             "borderColor": "rgba(255, 255, 255, 0.0001)",
             "flexDirection": "row",
-            "flexWrap": "wrap",
             "gap": 7,
             "paddingHorizontal": 0,
             "paddingVertical": 14,
@@ -968,7 +960,6 @@ exports[`Tabs component tests disabled 1`] = `
             "borderBottomWidth": 3.5,
             "borderColor": "rgba(255, 255, 255, 0.0001)",
             "flexDirection": "row",
-            "flexWrap": "wrap",
             "gap": 7,
             "paddingHorizontal": 0,
             "paddingVertical": 14,
@@ -1059,11 +1050,9 @@ exports[`Tabs component tests normal 1`] = `
 <View
   style={
     {
-      "alignItems": "center",
       "borderBottomWidth": 1,
       "borderColor": "#dbdada",
       "flexDirection": "row",
-      "flexWrap": "wrap",
       "gap": 21,
     }
   }
@@ -1109,7 +1098,6 @@ exports[`Tabs component tests normal 1`] = `
             "borderBottomWidth": 3.5,
             "borderColor": "rgba(255, 255, 255, 0.0001)",
             "flexDirection": "row",
-            "flexWrap": "wrap",
             "gap": 7,
             "paddingHorizontal": 0,
             "paddingVertical": 14,
@@ -1293,7 +1281,6 @@ exports[`Tabs component tests normal 1`] = `
             "borderBottomWidth": 3.5,
             "borderColor": "rgba(255, 255, 255, 0.0001)",
             "flexDirection": "row",
-            "flexWrap": "wrap",
             "gap": 7,
             "paddingHorizontal": 0,
             "paddingVertical": 14,
@@ -1373,7 +1360,6 @@ exports[`Tabs component tests normal 1`] = `
             "borderBottomWidth": 3.5,
             "borderColor": "rgba(255, 255, 255, 0.0001)",
             "flexDirection": "row",
-            "flexWrap": "wrap",
             "gap": 7,
             "paddingHorizontal": 0,
             "paddingVertical": 14,
