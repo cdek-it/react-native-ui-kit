@@ -12,7 +12,6 @@ exports[`Slider snapshots default 1`] = `
   }
 >
   <View
-    onLayout={[Function]}
     style={
       {
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
@@ -45,36 +44,32 @@ exports[`Slider snapshots default 1`] = `
       }
     />
     <View
-      onMoveShouldSetResponder={[Function]}
-      onMoveShouldSetResponderCapture={[Function]}
-      onResponderEnd={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderReject={[Function]}
-      onResponderRelease={[Function]}
-      onResponderStart={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      onStartShouldSetResponderCapture={[Function]}
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
       pointerEvents="auto"
       style={
-        [
-          [
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
             {
-              "backgroundColor": "#188700",
-              "borderRadius": 8.75,
-              "height": 17.5,
-              "position": "absolute",
-              "width": 17.5,
+              "translateX": 0,
             },
-            false,
-            false,
           ],
-          {
-            "left": 0,
-          },
-        ]
+          "width": 17.5,
+        }
       }
     />
   </View>
@@ -93,7 +88,6 @@ exports[`Slider snapshots disabled = false, range = false 1`] = `
   }
 >
   <View
-    onLayout={[Function]}
     style={
       {
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
@@ -126,36 +120,32 @@ exports[`Slider snapshots disabled = false, range = false 1`] = `
       }
     />
     <View
-      onMoveShouldSetResponder={[Function]}
-      onMoveShouldSetResponderCapture={[Function]}
-      onResponderEnd={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderReject={[Function]}
-      onResponderRelease={[Function]}
-      onResponderStart={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      onStartShouldSetResponderCapture={[Function]}
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
       pointerEvents="auto"
       style={
-        [
-          [
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
             {
-              "backgroundColor": "#188700",
-              "borderRadius": 8.75,
-              "height": 17.5,
-              "position": "absolute",
-              "width": 17.5,
+              "translateX": 0,
             },
-            false,
-            false,
           ],
-          {
-            "left": 0,
-          },
-        ]
+          "width": 17.5,
+        }
       }
     />
   </View>
@@ -174,7 +164,6 @@ exports[`Slider snapshots disabled = false, range = true 1`] = `
   }
 >
   <View
-    onLayout={[Function]}
     style={
       {
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
@@ -207,69 +196,61 @@ exports[`Slider snapshots disabled = false, range = true 1`] = `
       }
     />
     <View
-      onMoveShouldSetResponder={[Function]}
-      onMoveShouldSetResponderCapture={[Function]}
-      onResponderEnd={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderReject={[Function]}
-      onResponderRelease={[Function]}
-      onResponderStart={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      onStartShouldSetResponderCapture={[Function]}
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
       pointerEvents="auto"
       style={
-        [
-          [
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
             {
-              "backgroundColor": "#188700",
-              "borderRadius": 8.75,
-              "height": 17.5,
-              "position": "absolute",
-              "width": 17.5,
+              "translateX": 0,
             },
-            false,
-            false,
           ],
-          {
-            "left": 0,
-          },
-        ]
+          "width": 17.5,
+        }
       }
     />
     <View
-      onMoveShouldSetResponder={[Function]}
-      onMoveShouldSetResponderCapture={[Function]}
-      onResponderEnd={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderReject={[Function]}
-      onResponderRelease={[Function]}
-      onResponderStart={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      onStartShouldSetResponderCapture={[Function]}
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
       pointerEvents="auto"
       style={
-        [
-          [
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
             {
-              "backgroundColor": "#188700",
-              "borderRadius": 8.75,
-              "height": 17.5,
-              "position": "absolute",
-              "width": 17.5,
+              "translateX": 0,
             },
-            false,
-            false,
           ],
-          {
-            "left": 0,
-          },
-        ]
+          "width": 17.5,
+        }
       }
     />
   </View>
@@ -288,7 +269,6 @@ exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 
   }
 >
   <View
-    onLayout={[Function]}
     style={
       {
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
@@ -321,69 +301,61 @@ exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 
       }
     />
     <View
-      onMoveShouldSetResponder={[Function]}
-      onMoveShouldSetResponderCapture={[Function]}
-      onResponderEnd={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderReject={[Function]}
-      onResponderRelease={[Function]}
-      onResponderStart={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      onStartShouldSetResponderCapture={[Function]}
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
       pointerEvents="auto"
       style={
-        [
-          [
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
             {
-              "backgroundColor": "#188700",
-              "borderRadius": 8.75,
-              "height": 17.5,
-              "position": "absolute",
-              "width": 17.5,
+              "translateX": 0,
             },
-            false,
-            false,
           ],
-          {
-            "left": 0,
-          },
-        ]
+          "width": 17.5,
+        }
       }
     />
     <View
-      onMoveShouldSetResponder={[Function]}
-      onMoveShouldSetResponderCapture={[Function]}
-      onResponderEnd={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderReject={[Function]}
-      onResponderRelease={[Function]}
-      onResponderStart={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      onStartShouldSetResponderCapture={[Function]}
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
       pointerEvents="auto"
       style={
-        [
-          [
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
             {
-              "backgroundColor": "#188700",
-              "borderRadius": 8.75,
-              "height": 17.5,
-              "position": "absolute",
-              "width": 17.5,
+              "translateX": 0,
             },
-            false,
-            false,
           ],
-          {
-            "left": 0,
-          },
-        ]
+          "width": 17.5,
+        }
       }
     />
   </View>
@@ -402,7 +374,6 @@ exports[`Slider snapshots disabled = true, range = false 1`] = `
   }
 >
   <View
-    onLayout={[Function]}
     style={
       {
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
@@ -437,38 +408,32 @@ exports[`Slider snapshots disabled = true, range = false 1`] = `
       }
     />
     <View
-      onMoveShouldSetResponder={[Function]}
-      onMoveShouldSetResponderCapture={[Function]}
-      onResponderEnd={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderReject={[Function]}
-      onResponderRelease={[Function]}
-      onResponderStart={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      onStartShouldSetResponderCapture={[Function]}
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
       pointerEvents="none"
       style={
-        [
-          [
+        {
+          "backgroundColor": "grey",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
             {
-              "backgroundColor": "#188700",
-              "borderRadius": 8.75,
-              "height": 17.5,
-              "position": "absolute",
-              "width": 17.5,
-            },
-            false,
-            {
-              "backgroundColor": "grey",
+              "translateX": 0,
             },
           ],
-          {
-            "left": 0,
-          },
-        ]
+          "width": 17.5,
+        }
       }
     />
   </View>
@@ -487,7 +452,6 @@ exports[`Slider snapshots disabled = true, range = true 1`] = `
   }
 >
   <View
-    onLayout={[Function]}
     style={
       {
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
@@ -522,73 +486,61 @@ exports[`Slider snapshots disabled = true, range = true 1`] = `
       }
     />
     <View
-      onMoveShouldSetResponder={[Function]}
-      onMoveShouldSetResponderCapture={[Function]}
-      onResponderEnd={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderReject={[Function]}
-      onResponderRelease={[Function]}
-      onResponderStart={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      onStartShouldSetResponderCapture={[Function]}
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
       pointerEvents="none"
       style={
-        [
-          [
+        {
+          "backgroundColor": "grey",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
             {
-              "backgroundColor": "#188700",
-              "borderRadius": 8.75,
-              "height": 17.5,
-              "position": "absolute",
-              "width": 17.5,
-            },
-            false,
-            {
-              "backgroundColor": "grey",
+              "translateX": 0,
             },
           ],
-          {
-            "left": 0,
-          },
-        ]
+          "width": 17.5,
+        }
       }
     />
     <View
-      onMoveShouldSetResponder={[Function]}
-      onMoveShouldSetResponderCapture={[Function]}
-      onResponderEnd={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderReject={[Function]}
-      onResponderRelease={[Function]}
-      onResponderStart={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      onStartShouldSetResponderCapture={[Function]}
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
       pointerEvents="none"
       style={
-        [
-          [
+        {
+          "backgroundColor": "grey",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
             {
-              "backgroundColor": "#188700",
-              "borderRadius": 8.75,
-              "height": 17.5,
-              "position": "absolute",
-              "width": 17.5,
-            },
-            false,
-            {
-              "backgroundColor": "grey",
+              "translateX": 0,
             },
           ],
-          {
-            "left": 0,
-          },
-        ]
+          "width": 17.5,
+        }
       }
     />
   </View>
@@ -607,7 +559,6 @@ exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 8
   }
 >
   <View
-    onLayout={[Function]}
     style={
       {
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
@@ -642,73 +593,61 @@ exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 8
       }
     />
     <View
-      onMoveShouldSetResponder={[Function]}
-      onMoveShouldSetResponderCapture={[Function]}
-      onResponderEnd={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderReject={[Function]}
-      onResponderRelease={[Function]}
-      onResponderStart={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      onStartShouldSetResponderCapture={[Function]}
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
       pointerEvents="none"
       style={
-        [
-          [
+        {
+          "backgroundColor": "grey",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
             {
-              "backgroundColor": "#188700",
-              "borderRadius": 8.75,
-              "height": 17.5,
-              "position": "absolute",
-              "width": 17.5,
-            },
-            false,
-            {
-              "backgroundColor": "grey",
+              "translateX": 0,
             },
           ],
-          {
-            "left": 0,
-          },
-        ]
+          "width": 17.5,
+        }
       }
     />
     <View
-      onMoveShouldSetResponder={[Function]}
-      onMoveShouldSetResponderCapture={[Function]}
-      onResponderEnd={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderReject={[Function]}
-      onResponderRelease={[Function]}
-      onResponderStart={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      onStartShouldSetResponderCapture={[Function]}
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
       pointerEvents="none"
       style={
-        [
-          [
+        {
+          "backgroundColor": "grey",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
             {
-              "backgroundColor": "#188700",
-              "borderRadius": 8.75,
-              "height": 17.5,
-              "position": "absolute",
-              "width": 17.5,
-            },
-            false,
-            {
-              "backgroundColor": "grey",
+              "translateX": 0,
             },
           ],
-          {
-            "left": 0,
-          },
-        ]
+          "width": 17.5,
+        }
       }
     />
   </View>

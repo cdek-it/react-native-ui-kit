@@ -1,11 +1,12 @@
 import React, { memo, useMemo, useRef, useState } from 'react'
-import {
-  type GestureResponderEvent,
-  type LayoutChangeEvent,
-  PanResponder,
-  type PanResponderGestureState,
-  View,
-} from 'react-native'
+import { type LayoutChangeEvent, View } from 'react-native'
+import { Gesture, GestureDetector } from 'react-native-gesture-handler'
+import Animated, {
+  useSharedValue,
+  useAnimatedStyle,
+  interpolate,
+  Extrapolation,
+} from 'react-native-reanimated'
 
 import { makeStyles } from '../../utils/makeStyles'
 
@@ -54,148 +55,146 @@ export const Slider = memo<SliderProps>(
     onReturnMaxPointerValue,
   }) => {
     const styles = useStyles()
-    const [pointMinOffset, setPointMinOffset] = useState(0)
-    const [pointMaxOffset, setPointMaxOffset] = useState(0)
     const [pointMinPosition, setPointMinPosition] = useState(0)
     const [pointMaxPosition, setPointMaxPosition] = useState(0)
 
-    const absolutePosX = useRef(0)
     const trackWidth = useRef(0)
-    const layoutStartPos = useRef(0)
-    const layoutStep = useRef(0)
     const pointerWidth = styles.pointWidth.width
-    const trackScale = 100
+    const minTrackScale = 0
+    const maxTrackScale = 100
 
     const [isHover, setHoverState] = useState(false)
 
-    const minPointerResponder = useMemo(() => {
-      return PanResponder.create({
-        onStartShouldSetPanResponder: () => true,
-        onMoveShouldSetPanResponder: () => true,
-        onPanResponderGrant: (event: GestureResponderEvent) => {
-          const pointerX = event.nativeEvent.pageX
-          const offset = pointerX - pointMinPosition
-          setPointMinOffset(event.nativeEvent.locationX)
-          setPointMinPosition(Math.max(0, pointerX - offset))
-          setHoverState(true)
-        },
-        onPanResponderMove: (
-          event: GestureResponderEvent,
-          gestureState: PanResponderGestureState
-        ) => {
-          const newPointer1Position =
-            gestureState.moveX - (layoutStartPos.current + absolutePosX.current) - pointMinOffset
-          const newPosition = Math.max(
-            0,
-            Math.min(newPointer1Position, pointMaxPosition - pointerWidth)
-          )
-          if (pointMinPosition !== Math.max(0, newPosition)) {
-            setPointMinPosition(newPosition)
-            onReturnMinPointerValue(newPosition / layoutStep.current)
-          }
-        },
-        onPanResponderRelease: () => {
-          setHoverState(false)
-        },
-      })
-    }, [
-      pointMinPosition,
-      layoutStartPos,
-      absolutePosX,
-      pointMinOffset,
-      pointMaxPosition,
-      pointerWidth,
-      layoutStep,
-    ])
+    const minPointX = useSharedValue(0)
+    const prevMinPointX = useSharedValue(0)
 
-    const maxPointerResponder = useMemo(() => {
-      return PanResponder.create({
-        onStartShouldSetPanResponder: () => true,
-        onMoveShouldSetPanResponder: () => true,
-        onPanResponderGrant: (event: GestureResponderEvent) => {
-          const pointerX = event.nativeEvent.pageX
-          const offset = pointerX - pointMaxPosition
-          setPointMaxOffset(event.nativeEvent.locationX)
-          setPointMaxPosition(
-            Math.max(pointMinPosition, Math.min(pointerX - offset, trackWidth.current))
-          )
-          setHoverState(true)
-        },
-        onPanResponderMove: (
-          event: GestureResponderEvent,
-          gestureState: PanResponderGestureState
-        ) => {
-          const newPointer2Position =
-            gestureState.moveX - (layoutStartPos.current + absolutePosX.current) - pointMaxOffset
-          const newPosition = Math.max(
-            pointMinPosition + pointerWidth,
-            Math.min(newPointer2Position, trackWidth.current - pointerWidth)
-          )
-          setPointMaxPosition(newPosition)
-          onReturnMaxPointerValue((newPosition - pointerWidth) / layoutStep.current)
-        },
-        onPanResponderRelease: () => {
-          setHoverState(false)
-        },
-      })
-    }, [
-      pointMaxPosition,
-      pointMinPosition,
-      trackWidth,
-      layoutStartPos,
-      absolutePosX,
-      pointMaxOffset,
-      pointerWidth,
-      layoutStep,
-    ])
+    const maxPointX = useSharedValue(0)
+    const prevMaxPointX = useSharedValue(0)
 
-    const pointStyles = useMemo(
+    const pointerStyle = useMemo(
       () => [styles.point, isHover && styles.hovered, disabled && styles.disabledView],
       [styles.point, isHover, styles.hovered, styles.disabledView, disabled]
     )
 
-    const lineStyles = useMemo(
+    const lineStyle = useMemo(
       () => [styles.line, isHover && styles.hovered, disabled && styles.disabledView],
       [styles.line, isHover, styles.hovered, styles.disabledView, disabled]
     )
 
+    function interpolateInitVal(value: number, width: number) {
+      return interpolate(
+        value,
+        [minTrackScale, maxTrackScale],
+        [0, width - pointerWidth],
+        Extrapolation.CLAMP
+      )
+    }
+
     const onContainerLayout = (event: LayoutChangeEvent) => {
       event.target.measure((x, y, width, height, pageX, pageY) => {
-        absolutePosX.current = pageX
-        const step = range
-          ? (width - pointerWidth * 2) / trackScale
-          : (width - pointerWidth) / trackScale
-        layoutStep.current = step
-
-        setPointMinPosition(step * minPointerValueInit)
-        // если не стоит признак , то для надежности игнорируем стартовое значение
-        // второй точки даже если его задали
-        if (range) {
-          setPointMaxPosition(step * maxPointerValueInit + pointerWidth)
-        } else {
-          setPointMaxPosition(width)
-        }
-      })
-    }
-
-    const onTrackLayout = (event: LayoutChangeEvent) => {
-      event.target.measure((x, y, width, height, pageX, pageY) => {
         trackWidth.current = width
-        layoutStartPos.current = x
+        const min = interpolateInitVal(minPointerValueInit, width)
+        const max = interpolateInitVal(maxPointerValueInit, width)
+
+        minPointX.value = min
+        maxPointX.value = max
+        setPointMinPosition(min)
+        setPointMaxPosition(max)
       })
     }
+
+    function clamp(val: number, min: number, max: number) {
+      return Math.min(Math.max(val, min), max)
+    }
+
+    function returnMinVal(val: number) {
+      const min = interpolate(
+        val,
+        [0, trackWidth.current - pointerWidth * 2],
+        [minTrackScale, maxTrackScale],
+        Extrapolation.CLAMP
+      )
+      onReturnMinPointerValue(min)
+    }
+
+    function returnMaxVal(val: number) {
+      const min = interpolate(
+        val,
+        [pointerWidth, trackWidth.current - pointerWidth],
+        [minTrackScale, maxTrackScale],
+        Extrapolation.CLAMP
+      )
+      onReturnMaxPointerValue(min)
+    }
+
+    const panMinPoint = Gesture.Pan()
+      .minDistance(1)
+      .onStart(() => {
+        prevMinPointX.value = minPointX.value
+        setHoverState(true)
+      })
+      .onUpdate((event) => {
+        const maxTranslateX = trackWidth.current - pointerWidth
+
+        minPointX.value = clamp(
+          prevMinPointX.value + event.translationX,
+          0,
+          range ? maxPointX.value - pointerWidth : maxTranslateX
+        )
+
+        setPointMinPosition(minPointX.value)
+        returnMinVal(minPointX.value)
+      })
+      .onEnd(() => {
+        returnMinVal(minPointX.value)
+        setPointMinPosition(minPointX.value)
+        setHoverState(false)
+      })
+      .runOnJS(true)
+
+    const minPointStyle = useAnimatedStyle(() => ({
+      transform: [{ translateX: minPointX.value }],
+    }))
+
+    const panMaxPoint = Gesture.Pan()
+      .minDistance(1)
+      .onStart(() => {
+        prevMaxPointX.value = maxPointX.value
+        setHoverState(true)
+      })
+      .onUpdate((event) => {
+        const maxTranslateX = trackWidth.current - pointerWidth
+
+        maxPointX.value = clamp(
+          prevMaxPointX.value + event.translationX,
+          minPointX.value + pointerWidth,
+          maxTranslateX
+        )
+        setPointMaxPosition(maxPointX.value)
+        returnMaxVal(maxPointX.value)
+      })
+      .onEnd(() => {
+        setPointMaxPosition(maxPointX.value)
+        returnMaxVal(maxPointX.value)
+        setHoverState(false)
+      })
+      .runOnJS(true)
+
+    const maxPointStyle = useAnimatedStyle(() => ({
+      transform: [{ translateX: maxPointX.value }],
+    }))
 
     return (
       <View style={styles.container} onLayout={onContainerLayout}>
-        <View style={styles.track} onLayout={onTrackLayout}>
+        <View style={styles.track}>
           {range ? null : ( // индикатор старта
-            <View style={[lineStyles, { left: 0, width: pointMinPosition + pointerWidth / 2 }]} />
+            <View style={[lineStyle, { left: 0, width: pointMinPosition + pointerWidth / 2 }]} />
           )}
 
           {range ? ( // индикатор между точками
             <View
               style={[
-                lineStyles,
+                lineStyle,
                 {
                   left: pointMinPosition + pointerWidth / 2,
                   width: pointMaxPosition - pointMinPosition,
@@ -204,18 +203,20 @@ export const Slider = memo<SliderProps>(
             />
           ) : null}
 
-          <View
-            pointerEvents={disabled ? 'none' : 'auto'}
-            {...minPointerResponder.panHandlers}
-            style={[pointStyles, { left: pointMinPosition }]}
-          />
-
-          {range ? (
-            <View
+          <GestureDetector gesture={panMinPoint}>
+            <Animated.View
               pointerEvents={disabled ? 'none' : 'auto'}
-              {...maxPointerResponder.panHandlers}
-              style={[pointStyles, { left: pointMaxPosition }]}
+              style={[pointerStyle, minPointStyle]}
             />
+          </GestureDetector>
+
+          {range ? ( // индикатор между точками
+            <GestureDetector gesture={panMaxPoint}>
+              <Animated.View
+                pointerEvents={disabled ? 'none' : 'auto'}
+                style={[pointerStyle, maxPointStyle]}
+              />
+            </GestureDetector>
           ) : null}
         </View>
       </View>
