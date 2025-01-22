@@ -39,24 +39,36 @@ export const useSliderStyles = (checked: boolean, disabled: boolean, danger: boo
 
   const calculateSliderBorderColor = useCallback(
     (danger: boolean) => {
-      if (danger) {
+      if (danger && !disabled) {
         return styles.sliderDanger.borderColor
       }
       return styles.sliderNoDanger.borderColor
     },
-    [styles.sliderDanger.borderColor, styles.sliderNoDanger.borderColor]
+    [disabled, styles.sliderDanger.borderColor, styles.sliderNoDanger.borderColor]
   )
 
   const sliderBackground = useSharedValue(calculateSliderBackground(checked, disabled, false))
   const sliderBorderColor = useSharedValue(calculateSliderBorderColor(danger))
 
+  useEffect(() => {
+    sliderBorderColor.value = withTiming(calculateSliderBorderColor(danger))
+  }, [calculateSliderBorderColor, danger, sliderBorderColor])
+
   const sliderStyle = useMemo(
     () =>
       StyleSheet.flatten([
         styles.slider,
+        danger && !disabled && styles.sliderDangerShadow,
         { backgroundColor: sliderBackground, borderColor: sliderBorderColor },
       ]),
-    [sliderBackground, sliderBorderColor, styles.slider]
+    [
+      danger,
+      disabled,
+      sliderBackground,
+      sliderBorderColor,
+      styles.slider,
+      styles.sliderDangerShadow,
+    ]
   )
 
   const onPressedChange = useCallback(
@@ -67,10 +79,6 @@ export const useSliderStyles = (checked: boolean, disabled: boolean, danger: boo
     },
     [calculateSliderBackground, checked, disabled, sliderBackground, styles.container]
   )
-
-  useEffect(() => {
-    sliderBorderColor.value = withTiming(calculateSliderBorderColor(danger))
-  }, [calculateSliderBorderColor, danger, sliderBorderColor])
 
   return {
     sliderStyle,
@@ -122,5 +130,13 @@ const useStyles = makeStyles(({ theme }) => ({
 
   sliderDanger: {
     borderColor: theme.Form.InputText.inputErrorBorderColor,
+  },
+
+  sliderDangerShadow: {
+    shadowColor: theme.General.focusOutlineErrorColor,
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 1,
+    shadowRadius: theme.General.focusShadowWidth,
+    elevation: theme.General.focusShadowWidth,
   },
 }))
