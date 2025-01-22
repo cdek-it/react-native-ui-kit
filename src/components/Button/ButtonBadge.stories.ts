@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { IconArrowDownRight, IconArrowDownLeft } from '@tabler/icons-react-native'
 
-import { ButtonSeverity } from './ButtonSeverity'
+import { ButtonBadge } from './ButtonBadge'
 
-const meta: Meta<typeof ButtonSeverity> = {
-  title: 'ButtonSeverity',
-  component: ButtonSeverity,
+const meta: Meta<typeof ButtonBadge> = {
+  title: 'ButtonBadge',
+  component: ButtonBadge,
   args: {
     size: 'base',
     shape: 'square',
@@ -14,7 +14,8 @@ const meta: Meta<typeof ButtonSeverity> = {
     loading: false,
     disabled: false,
     iconPosition: 'left',
-    severity: 'info',
+    badgeSeverity: 'basic',
+    badgeLabel: 'Badge',
   },
   argTypes: {
     size: { control: 'radio', options: ['small', 'base', 'large', 'xlarge'] },
@@ -23,14 +24,14 @@ const meta: Meta<typeof ButtonSeverity> = {
     loading: { control: 'boolean' },
     disabled: { control: 'boolean' },
     iconPosition: { control: 'radio', options: ['left', 'right'] },
-    onPress: { action: 'OnPress' },
-    severity: { control: 'radio', options: ['help', 'info', 'success', 'warning', 'danger'] },
+    onPress: { action: 'onPress' },
+    badgeSeverity: { control: 'radio', options: ['basic', 'info', 'success', 'warning', 'danger'] },
   },
 }
 
 export default meta
 
-type Story = StoryObj<typeof ButtonSeverity>
+type Story = StoryObj<typeof ButtonBadge>
 
 export const TextButton: Story = {
   args: {},
