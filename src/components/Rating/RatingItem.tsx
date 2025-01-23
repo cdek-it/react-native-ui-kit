@@ -5,10 +5,24 @@ import { makeStyles } from '../../utils/makeStyles'
 
 import { RatingItemContainer, type RatingItemContainerProps } from './RatingItemContainer'
 
+/**
+ * Свойства компонента элемента рейтинга с иконкой звёздочки
+ * @see RatingItemContainerProps - тип свойств компонента контейнера элемента от которого наследуется данный тип свойств
+ * @see RatingItem - компонент элемента рейтинга с иконкой звёздочки
+ */
 export interface RatingItemProps extends Omit<RatingItemContainerProps, 'children'> {
+  /**
+   * Управление состоянием активности элемента
+   */
   checked: boolean
 }
 
+/**
+ * Компонент элемента рейтинга с иконкой звёздочки
+ * @param checked - Управление состоянием активности элемента
+ * @see RatingItemProps - тип свойств компонента
+ * @see RatingItemContainer - компонент контейнер для элемента
+ */
 export const RatingItem = memo<RatingItemProps>(({ checked, ...rest }) => {
   const styles = useStyles()
 

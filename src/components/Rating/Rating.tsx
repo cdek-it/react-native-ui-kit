@@ -1,20 +1,58 @@
 import React, { memo, useCallback } from 'react'
-import { View } from 'react-native'
+import { View, type ViewProps } from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
 
 import { RatingClear } from './RatingClear'
 import { RatingItem } from './RatingItem'
 
-export interface RatingProps {
+/**
+ * Свойства компонента рейтинга
+ * @see Rating - компонент рейтинга
+ */
+export interface RatingProps extends Pick<ViewProps, 'testID'> {
+  /**
+   * Управление состоянием включённости компонента для нажатий пользователем
+   * @default false
+   */
   disabled?: boolean
+  /**
+   * Отображение элемента с паддингами
+   * @default false
+   */
   paddings?: boolean
+  /**
+   * Максимальный рейтинг(количество звёздочек)
+   * @default 5
+   */
   maxRating?: number
+  /**
+   * Текущий рейтинг
+   */
   rating: number
+  /**
+   * Обработчик изменения рейтинга
+   * @param rating - новый рейтинг
+   */
   onChange: (rating: number) => void
+  /**
+   * Обработчик очистки рейтинга
+   */
   onClear: () => void
 }
 
+/**
+ * Компонент рейтинга
+ * @param disabled - управление состоянием включённости компонента для нажатий пользователем
+ * @param paddings - отображение элемента с паддингами
+ * @param maxRating - максимальный рейтинг(количество звёздочек)
+ * @param rating - текущий рейтинг
+ * @param onChange - обработчик изменения рейтинга
+ * @param onClear - обработчик изменения рейтинга
+ * @see RatingProps - тип свойств компонента рейтинга
+ * @see RatingItem - элемент рейтинга с иконкой звёздочки
+ * @see RatingClear - элемент рейтинга для очистки
+ */
 export const Rating = memo<RatingProps>(
   ({ disabled = false, paddings = false, maxRating = 5, rating, onChange, onClear }) => {
     const styles = useStyles()
