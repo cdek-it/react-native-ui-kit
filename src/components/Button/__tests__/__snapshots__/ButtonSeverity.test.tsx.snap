@@ -2,6 +2,7 @@
 
 exports[`ButtonSeverity component tests severity - danger 1`] = `
 <View
+  accessibilityRole="button"
   accessibilityState={
     {
       "busy": undefined,
@@ -68,6 +69,7 @@ exports[`ButtonSeverity component tests severity - danger 1`] = `
 
 exports[`ButtonSeverity component tests severity - help 1`] = `
 <View
+  accessibilityRole="button"
   accessibilityState={
     {
       "busy": undefined,
@@ -134,6 +136,7 @@ exports[`ButtonSeverity component tests severity - help 1`] = `
 
 exports[`ButtonSeverity component tests severity - info 1`] = `
 <View
+  accessibilityRole="button"
   accessibilityState={
     {
       "busy": undefined,
@@ -200,6 +203,7 @@ exports[`ButtonSeverity component tests severity - info 1`] = `
 
 exports[`ButtonSeverity component tests severity - success 1`] = `
 <View
+  accessibilityRole="button"
   accessibilityState={
     {
       "busy": undefined,
@@ -266,6 +270,7 @@ exports[`ButtonSeverity component tests severity - success 1`] = `
 
 exports[`ButtonSeverity component tests severity - warning 1`] = `
 <View
+  accessibilityRole="button"
   accessibilityState={
     {
       "busy": undefined,

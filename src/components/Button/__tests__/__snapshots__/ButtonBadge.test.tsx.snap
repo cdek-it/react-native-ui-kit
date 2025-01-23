@@ -3,6 +3,7 @@
 exports[`ButtonSeverity component tests badge - basic 1`] = `
 <View>
   <View
+    accessibilityRole="button"
     accessibilityState={
       {
         "busy": undefined,
