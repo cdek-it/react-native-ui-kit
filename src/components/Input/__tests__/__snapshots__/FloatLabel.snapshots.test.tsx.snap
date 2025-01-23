@@ -1,0 +1,301 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FloatLabel snapshots focused/unfocused snapshots: focused 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "margin": 10,
+    }
+  }
+  testID="FloatLabel_PressableContainer"
+>
+  <InputTextBase
+    containerStyle={
+      {
+        "height": 56,
+      }
+    }
+    inputRef={
+      {
+        "current": null,
+      }
+    }
+    inputStyle={
+      {
+        "paddingBottom": 13,
+        "paddingTop": 26,
+      }
+    }
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    placeholder=""
+    testID="FloatLabel_InputTextBase"
+    value=""
+  />
+  <Text
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {
+          "color": "rgba(24, 135, 0, 1)",
+          "fontSize": 10.5,
+          "opacity": 1,
+          "transform": [
+            {
+              "translateY": 10.5,
+            },
+          ],
+        },
+      }
+    }
+    style={
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "fontSize": 14,
+        "left": 10.5,
+        "opacity": 0.6,
+        "paddingHorizontal": 3.5,
+        "position": "absolute",
+        "transform": [
+          {
+            "translateY": 20,
+          },
+        ],
+      }
+    }
+  >
+    Label
+  </Text>
+</View>
+`;
+
+exports[`FloatLabel snapshots focused/unfocused snapshots: unfocused 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "margin": 10,
+    }
+  }
+  testID="FloatLabel_PressableContainer"
+>
+  <InputTextBase
+    containerStyle={
+      {
+        "height": 56,
+      }
+    }
+    inputRef={
+      {
+        "current": null,
+      }
+    }
+    inputStyle={
+      {
+        "paddingBottom": 13,
+        "paddingTop": 26,
+      }
+    }
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    placeholder=""
+    testID="FloatLabel_InputTextBase"
+    value=""
+  />
+  <Text
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {
+          "color": "rgba(0, 0, 0, 0.6)",
+          "fontSize": 14,
+          "opacity": 0.6,
+          "transform": [
+            {
+              "translateY": 20,
+            },
+          ],
+        },
+      }
+    }
+    style={
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "fontSize": 14,
+        "left": 10.5,
+        "opacity": 0.6,
+        "paddingHorizontal": 3.5,
+        "position": "absolute",
+        "transform": [
+          {
+            "translateY": 20,
+          },
+        ],
+      }
+    }
+  >
+    Label
+  </Text>
+</View>
+`;
+
+exports[`FloatLabel snapshots unfocused with value snapshots, multiline: focused with value 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "margin": 10,
+    }
+  }
+  testID="FloatLabel_PressableContainer"
+>
+  <InputTextBase
+    containerStyle={
+      {
+        "height": 120,
+      }
+    }
+    inputRef={
+      {
+        "current": null,
+      }
+    }
+    inputStyle={
+      {
+        "marginBottom": 13,
+        "marginTop": 26,
+        "paddingBottom": 0,
+        "paddingTop": 0,
+      }
+    }
+    multiline={true}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    placeholder=""
+    testID="FloatLabel_InputTextBase"
+    value="Value"
+  />
+  <Text
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {
+          "color": "rgba(0, 0, 0, 0.6)",
+          "fontSize": 10.5,
+          "opacity": 1,
+          "transform": [
+            {
+              "translateY": 10.5,
+            },
+          ],
+        },
+      }
+    }
+    style={
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "fontSize": 12.25,
+        "left": 10.5,
+        "opacity": 1,
+        "paddingHorizontal": 3.5,
+        "position": "absolute",
+        "transform": [
+          {
+            "translateY": 10.5,
+          },
+        ],
+      }
+    }
+  >
+    Label
+  </Text>
+</View>
+`;

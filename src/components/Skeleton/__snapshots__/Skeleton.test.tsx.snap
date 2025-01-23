@@ -205,3 +205,106 @@ exports[`Skeleton 100% animation 1`] = `
   </View>
 </View>
 `;
+
+exports[`Skeleton before animation started: before animation started 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#dbdada",
+        "borderRadius": 7,
+        "overflow": "hidden",
+      },
+      {
+        "height": 50,
+      },
+    ]
+  }
+>
+  <View
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {
+          "left": "-100%",
+        },
+      }
+    }
+    style={
+      {
+        "height": "100%",
+        "left": "-100%",
+        "position": "absolute",
+        "width": "100%",
+      }
+    }
+  >
+    <RNSVGSvgView
+      bbHeight="100%"
+      bbWidth="100%"
+      focusable={false}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": "100%",
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGDefs>
+          <RNSVGLinearGradient
+            gradient={
+              [
+                0,
+                1725684442,
+                0.5,
+                1727790075,
+                1,
+                1725684442,
+              ]
+            }
+            gradientTransform={null}
+            gradientUnits={0}
+            name="gradient"
+            x1="0"
+            x2="1"
+            y1="1"
+            y2="1"
+          />
+        </RNSVGDefs>
+        <RNSVGRect
+          fill={
+            {
+              "brushRef": "gradient",
+              "type": 1,
+            }
+          }
+          height="100%"
+          propList={
+            [
+              "fill",
+            ]
+          }
+          width="100%"
+          x={0}
+          y={0}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+</View>
+`;
