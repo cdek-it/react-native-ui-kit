@@ -9,4 +9,9 @@ export const customDark: typeof customLight = {
     inputSwitchSliderOffDisabledBg: '#535259',
     inputSwitchSliderOnDisabledBg: '#75737A',
   },
+  rating: {
+    ratingStarIconOnDisabledColor: '#7B7B82',
+    ratingStarIconOffDisabledColor: '#89888B',
+    ratingCancelIconDisabledColor: '#89888B',
+  },
 }
