@@ -5,7 +5,7 @@ import { View, Text } from 'react-native'
 
 import { Badge } from '../Badge'
 
-import { Tabs, TabItem, TabPanel } from '.'
+import { Tabs, TabPanel } from '.'
 
 const meta: Meta<typeof Tabs> = {
   title: 'Tabs',
@@ -19,11 +19,16 @@ const TabsExample = (props: { disabled?: boolean }) => {
 
   return (
     <View>
-      <Tabs activeIndex={activeIndex} disabled={props.disabled} onChange={setActiveIndex}>
-        <TabItem Icon={IconUser} index={0} label='First Tab' />
-        <TabItem index={1} label='Second Tab' />
-        <TabItem badge={<Badge severity='danger'>0</Badge>} index={2} label='Third Tab' />
-      </Tabs>
+      <Tabs
+        activeIndex={activeIndex}
+        disabled={props.disabled}
+        items={[
+          { Icon: IconUser, label: 'First Tab', key: '1' },
+          { label: 'Second Tab', key: '2' },
+          { badge: <Badge severity='danger'>0</Badge>, label: 'Third Tab', key: '3' },
+        ]}
+        onChange={setActiveIndex}
+      />
       <TabPanel activeIndex={activeIndex} index={0}>
         <Text>Content First Tab</Text>
       </TabPanel>

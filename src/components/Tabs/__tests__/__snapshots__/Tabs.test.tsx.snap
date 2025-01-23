@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TabItem component tests label 1`] = `
+exports[`TabItem component tests active: label 1`] = `
 <View
   accessibilityState={
     {
       "busy": undefined,
       "checked": undefined,
-      "disabled": false,
+      "disabled": undefined,
       "expanded": undefined,
       "selected": undefined,
     }
@@ -39,50 +39,1293 @@ exports[`TabItem component tests label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-          "borderBottomWidth": 3.5,
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
           "flexDirection": "row",
           "gap": 7,
+          "height": 49,
           "paddingHorizontal": 0,
           "paddingVertical": 14,
         },
         false,
         {
           "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-          "borderColor": "#188700",
         },
-        false,
+        undefined,
       ]
     }
   >
-    <View
+    <Text
+      numberOfLines={1}
       style={
-        {
-          "height": 21,
-        }
+        [
+          {
+            "color": "rgba(0, 0, 0, 0.8000)",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          },
+          {
+            "color": "#188700",
+          },
+          false,
+          undefined,
+        ]
       }
     >
-      <Text
-        numberOfLines={1}
+      label
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`TabItem component tests active: label, badge 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  testID="TabItem_Container0"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "flexDirection": "row",
+          "gap": 7,
+          "height": 49,
+          "paddingHorizontal": 0,
+          "paddingVertical": 14,
+        },
+        false,
+        {
+          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "rgba(0, 0, 0, 0.8000)",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          },
+          {
+            "color": "#188700",
+          },
+          false,
+          undefined,
+        ]
+      }
+    >
+      label
+    </Text>
+    <View
+      style={
+        [
+          {
+            "alignItems": "flex-start",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
         style={
           [
             {
-              "color": "rgba(0, 0, 0, 0.8000)",
-              "fontSize": 14,
-              "includeFontPadding": false,
-              "verticalAlign": "middle",
+              "borderRadius": 100,
+              "height": 21,
+              "justifyContent": "center",
+              "paddingHorizontal": 7,
+              "paddingVertical": 0,
             },
             {
-              "color": "#188700",
+              "backgroundColor": "#188700",
             },
-            false,
-            false,
           ]
         }
       >
-        label
-      </Text>
+        <Text
+          style={
+            {
+              "color": "#ffffff",
+              "fontSize": 10.5,
+              "fontWeight": 700,
+              "includeFontPadding": false,
+              "verticalAlign": "middle",
+            }
+          }
+        >
+          99
+        </Text>
+      </View>
     </View>
+  </View>
+</View>
+`;
+
+exports[`TabItem component tests active: label, icon 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  testID="TabItem_Container0"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "flexDirection": "row",
+          "gap": 7,
+          "height": 49,
+          "paddingHorizontal": 0,
+          "paddingVertical": 14,
+        },
+        false,
+        {
+          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        },
+        undefined,
+      ]
+    }
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fill="none"
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="#188700"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4279797504,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4279797504,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+        <RNSVGPath
+          d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4279797504,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+    <Text
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "rgba(0, 0, 0, 0.8000)",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          },
+          {
+            "color": "#188700",
+          },
+          false,
+          undefined,
+        ]
+      }
+    >
+      label
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`TabItem component tests active: label, icon, badge 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  testID="TabItem_Container0"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "flexDirection": "row",
+          "gap": 7,
+          "height": 49,
+          "paddingHorizontal": 0,
+          "paddingVertical": 14,
+        },
+        false,
+        {
+          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        },
+        undefined,
+      ]
+    }
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fill="none"
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="#188700"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4279797504,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4279797504,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+        <RNSVGPath
+          d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4279797504,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+    <Text
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "rgba(0, 0, 0, 0.8000)",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          },
+          {
+            "color": "#188700",
+          },
+          false,
+          undefined,
+        ]
+      }
+    >
+      label
+    </Text>
+    <View
+      style={
+        [
+          {
+            "alignItems": "flex-start",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "borderRadius": 100,
+              "height": 21,
+              "justifyContent": "center",
+              "paddingHorizontal": 7,
+              "paddingVertical": 0,
+            },
+            {
+              "backgroundColor": "#188700",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#ffffff",
+              "fontSize": 10.5,
+              "fontWeight": 700,
+              "includeFontPadding": false,
+              "verticalAlign": "middle",
+            }
+          }
+        >
+          99
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`TabItem component tests disabled + active : label 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  testID="TabItem_Container0"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "flexDirection": "row",
+          "gap": 7,
+          "height": 49,
+          "paddingHorizontal": 0,
+          "paddingVertical": 14,
+        },
+        false,
+        {
+          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        },
+        {
+          "opacity": 0.6,
+        },
+      ]
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "rgba(0, 0, 0, 0.8000)",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          },
+          {
+            "color": "#188700",
+          },
+          false,
+          {
+            "color": "rgba(0, 0, 0, 0.6000)",
+          },
+        ]
+      }
+    >
+      label
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`TabItem component tests disabled: label 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  testID="TabItem_Container0"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "flexDirection": "row",
+          "gap": 7,
+          "height": 49,
+          "paddingHorizontal": 0,
+          "paddingVertical": 14,
+        },
+        false,
+        undefined,
+        {
+          "opacity": 0.6,
+        },
+      ]
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "rgba(0, 0, 0, 0.8000)",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          },
+          undefined,
+          false,
+          {
+            "color": "rgba(0, 0, 0, 0.6000)",
+          },
+        ]
+      }
+    >
+      label
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`TabItem component tests disabled: label, badge 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  testID="TabItem_Container0"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "flexDirection": "row",
+          "gap": 7,
+          "height": 49,
+          "paddingHorizontal": 0,
+          "paddingVertical": 14,
+        },
+        false,
+        undefined,
+        {
+          "opacity": 0.6,
+        },
+      ]
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "rgba(0, 0, 0, 0.8000)",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          },
+          undefined,
+          false,
+          {
+            "color": "rgba(0, 0, 0, 0.6000)",
+          },
+        ]
+      }
+    >
+      label
+    </Text>
+    <View
+      style={
+        [
+          {
+            "alignItems": "flex-start",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "borderRadius": 100,
+              "height": 21,
+              "justifyContent": "center",
+              "paddingHorizontal": 7,
+              "paddingVertical": 0,
+            },
+            {
+              "backgroundColor": "#188700",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#ffffff",
+              "fontSize": 10.5,
+              "fontWeight": 700,
+              "includeFontPadding": false,
+              "verticalAlign": "middle",
+            }
+          }
+        >
+          99
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`TabItem component tests disabled: label, icon 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  testID="TabItem_Container0"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "flexDirection": "row",
+          "gap": 7,
+          "height": 49,
+          "paddingHorizontal": 0,
+          "paddingVertical": 14,
+        },
+        false,
+        undefined,
+        {
+          "opacity": 0.6,
+        },
+      ]
+    }
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fill="none"
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="rgba(0, 0, 0, 0.6000)"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 2566914048,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+        <RNSVGPath
+          d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 2566914048,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+    <Text
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "rgba(0, 0, 0, 0.8000)",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          },
+          undefined,
+          false,
+          {
+            "color": "rgba(0, 0, 0, 0.6000)",
+          },
+        ]
+      }
+    >
+      label
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`TabItem component tests disabled: label, icon, badge 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  testID="TabItem_Container0"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "flexDirection": "row",
+          "gap": 7,
+          "height": 49,
+          "paddingHorizontal": 0,
+          "paddingVertical": 14,
+        },
+        false,
+        undefined,
+        {
+          "opacity": 0.6,
+        },
+      ]
+    }
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fill="none"
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="rgba(0, 0, 0, 0.6000)"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 2566914048,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+        <RNSVGPath
+          d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 2566914048,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+    <Text
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "rgba(0, 0, 0, 0.8000)",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          },
+          undefined,
+          false,
+          {
+            "color": "rgba(0, 0, 0, 0.6000)",
+          },
+        ]
+      }
+    >
+      label
+    </Text>
+    <View
+      style={
+        [
+          {
+            "alignItems": "flex-start",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "borderRadius": 100,
+              "height": 21,
+              "justifyContent": "center",
+              "paddingHorizontal": 7,
+              "paddingVertical": 0,
+            },
+            {
+              "backgroundColor": "#188700",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#ffffff",
+              "fontSize": 10.5,
+              "fontWeight": 700,
+              "includeFontPadding": false,
+              "verticalAlign": "middle",
+            }
+          }
+        >
+          99
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`TabItem component tests label 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  testID="TabItem_Container0"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "flexDirection": "row",
+          "gap": 7,
+          "height": 49,
+          "paddingHorizontal": 0,
+          "paddingVertical": 14,
+        },
+        false,
+        undefined,
+        undefined,
+      ]
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "rgba(0, 0, 0, 0.8000)",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          },
+          undefined,
+          false,
+          undefined,
+        ]
+      }
+    >
+      label
+    </Text>
   </View>
 </View>
 `;
@@ -93,7 +1336,7 @@ exports[`TabItem component tests label, badge 1`] = `
     {
       "busy": undefined,
       "checked": undefined,
-      "disabled": false,
+      "disabled": undefined,
       "expanded": undefined,
       "selected": undefined,
     }
@@ -126,50 +1369,36 @@ exports[`TabItem component tests label, badge 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-          "borderBottomWidth": 3.5,
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
           "flexDirection": "row",
           "gap": 7,
+          "height": 49,
           "paddingHorizontal": 0,
           "paddingVertical": 14,
         },
         false,
-        {
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-          "borderColor": "#188700",
-        },
-        false,
+        undefined,
+        undefined,
       ]
     }
   >
-    <View
+    <Text
+      numberOfLines={1}
       style={
-        {
-          "height": 21,
-        }
+        [
+          {
+            "color": "rgba(0, 0, 0, 0.8000)",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          },
+          undefined,
+          false,
+          undefined,
+        ]
       }
     >
-      <Text
-        numberOfLines={1}
-        style={
-          [
-            {
-              "color": "rgba(0, 0, 0, 0.8000)",
-              "fontSize": 14,
-              "includeFontPadding": false,
-              "verticalAlign": "middle",
-            },
-            {
-              "color": "#188700",
-            },
-            false,
-            false,
-          ]
-        }
-      >
-        label
-      </Text>
-    </View>
+      label
+    </Text>
     <View
       style={
         [
@@ -221,7 +1450,7 @@ exports[`TabItem component tests label, icon 1`] = `
     {
       "busy": undefined,
       "checked": undefined,
-      "disabled": false,
+      "disabled": undefined,
       "expanded": undefined,
       "selected": undefined,
     }
@@ -254,19 +1483,15 @@ exports[`TabItem component tests label, icon 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-          "borderBottomWidth": 3.5,
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
           "flexDirection": "row",
           "gap": 7,
+          "height": 49,
           "paddingHorizontal": 0,
           "paddingVertical": 14,
         },
         false,
-        {
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-          "borderColor": "#188700",
-        },
-        false,
+        undefined,
+        undefined,
       ]
     }
   >
@@ -280,7 +1505,7 @@ exports[`TabItem component tests label, icon 1`] = `
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#188700"
+      stroke="rgba(0, 0, 0, 0.8000)"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -315,7 +1540,7 @@ exports[`TabItem component tests label, icon 1`] = `
         }
         stroke={
           {
-            "payload": 4279797504,
+            "payload": 3422552064,
             "type": 0,
           }
         }
@@ -337,7 +1562,7 @@ exports[`TabItem component tests label, icon 1`] = `
           }
           stroke={
             {
-              "payload": 4279797504,
+              "payload": 3422552064,
               "type": 0,
             }
           }
@@ -359,7 +1584,7 @@ exports[`TabItem component tests label, icon 1`] = `
           }
           stroke={
             {
-              "payload": 4279797504,
+              "payload": 3422552064,
               "type": 0,
             }
           }
@@ -369,34 +1594,24 @@ exports[`TabItem component tests label, icon 1`] = `
         />
       </RNSVGGroup>
     </RNSVGSvgView>
-    <View
+    <Text
+      numberOfLines={1}
       style={
-        {
-          "height": 21,
-        }
+        [
+          {
+            "color": "rgba(0, 0, 0, 0.8000)",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          },
+          undefined,
+          false,
+          undefined,
+        ]
       }
     >
-      <Text
-        numberOfLines={1}
-        style={
-          [
-            {
-              "color": "rgba(0, 0, 0, 0.8000)",
-              "fontSize": 14,
-              "includeFontPadding": false,
-              "verticalAlign": "middle",
-            },
-            {
-              "color": "#188700",
-            },
-            false,
-            false,
-          ]
-        }
-      >
-        label
-      </Text>
-    </View>
+      label
+    </Text>
   </View>
 </View>
 `;
@@ -407,7 +1622,7 @@ exports[`TabItem component tests label, icon, badge 1`] = `
     {
       "busy": undefined,
       "checked": undefined,
-      "disabled": false,
+      "disabled": undefined,
       "expanded": undefined,
       "selected": undefined,
     }
@@ -440,19 +1655,15 @@ exports[`TabItem component tests label, icon, badge 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-          "borderBottomWidth": 3.5,
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
           "flexDirection": "row",
           "gap": 7,
+          "height": 49,
           "paddingHorizontal": 0,
           "paddingVertical": 14,
         },
         false,
-        {
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-          "borderColor": "#188700",
-        },
-        false,
+        undefined,
+        undefined,
       ]
     }
   >
@@ -466,7 +1677,7 @@ exports[`TabItem component tests label, icon, badge 1`] = `
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#188700"
+      stroke="rgba(0, 0, 0, 0.8000)"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -501,7 +1712,7 @@ exports[`TabItem component tests label, icon, badge 1`] = `
         }
         stroke={
           {
-            "payload": 4279797504,
+            "payload": 3422552064,
             "type": 0,
           }
         }
@@ -523,7 +1734,7 @@ exports[`TabItem component tests label, icon, badge 1`] = `
           }
           stroke={
             {
-              "payload": 4279797504,
+              "payload": 3422552064,
               "type": 0,
             }
           }
@@ -545,7 +1756,7 @@ exports[`TabItem component tests label, icon, badge 1`] = `
           }
           stroke={
             {
-              "payload": 4279797504,
+              "payload": 3422552064,
               "type": 0,
             }
           }
@@ -555,34 +1766,24 @@ exports[`TabItem component tests label, icon, badge 1`] = `
         />
       </RNSVGGroup>
     </RNSVGSvgView>
-    <View
+    <Text
+      numberOfLines={1}
       style={
-        {
-          "height": 21,
-        }
+        [
+          {
+            "color": "rgba(0, 0, 0, 0.8000)",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          },
+          undefined,
+          false,
+          undefined,
+        ]
       }
     >
-      <Text
-        numberOfLines={1}
-        style={
-          [
-            {
-              "color": "rgba(0, 0, 0, 0.8000)",
-              "fontSize": 14,
-              "includeFontPadding": false,
-              "verticalAlign": "middle",
-            },
-            {
-              "color": "#188700",
-            },
-            false,
-            false,
-          ]
-        }
-      >
-        label
-      </Text>
-    </View>
+      label
+    </Text>
     <View
       style={
         [
@@ -687,17 +1888,15 @@ exports[`Tabs component tests disabled 1`] = `
           {
             "alignItems": "center",
             "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-            "borderBottomWidth": 3.5,
-            "borderColor": "rgba(255, 255, 255, 0.0001)",
             "flexDirection": "row",
             "gap": 7,
+            "height": 49,
             "paddingHorizontal": 0,
             "paddingVertical": 14,
           },
           false,
           {
             "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-            "borderColor": "#188700",
           },
           {
             "opacity": 0.6,
@@ -804,36 +2003,28 @@ exports[`Tabs component tests disabled 1`] = `
           />
         </RNSVGGroup>
       </RNSVGSvgView>
-      <View
+      <Text
+        numberOfLines={1}
         style={
-          {
-            "height": 21,
-          }
+          [
+            {
+              "color": "rgba(0, 0, 0, 0.8000)",
+              "fontSize": 14,
+              "includeFontPadding": false,
+              "verticalAlign": "middle",
+            },
+            {
+              "color": "#188700",
+            },
+            false,
+            {
+              "color": "rgba(0, 0, 0, 0.6000)",
+            },
+          ]
         }
       >
-        <Text
-          numberOfLines={1}
-          style={
-            [
-              {
-                "color": "rgba(0, 0, 0, 0.8000)",
-                "fontSize": 14,
-                "includeFontPadding": false,
-                "verticalAlign": "middle",
-              },
-              {
-                "color": "#188700",
-              },
-              false,
-              {
-                "color": "rgba(0, 0, 0, 0.6000)",
-              },
-            ]
-          }
-        >
-          First Tab
-        </Text>
-      </View>
+        First Tab
+      </Text>
     </View>
   </View>
   <View
@@ -874,10 +2065,9 @@ exports[`Tabs component tests disabled 1`] = `
           {
             "alignItems": "center",
             "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-            "borderBottomWidth": 3.5,
-            "borderColor": "rgba(255, 255, 255, 0.0001)",
             "flexDirection": "row",
             "gap": 7,
+            "height": 49,
             "paddingHorizontal": 0,
             "paddingVertical": 14,
           },
@@ -889,34 +2079,26 @@ exports[`Tabs component tests disabled 1`] = `
         ]
       }
     >
-      <View
+      <Text
+        numberOfLines={1}
         style={
-          {
-            "height": 21,
-          }
+          [
+            {
+              "color": "rgba(0, 0, 0, 0.8000)",
+              "fontSize": 14,
+              "includeFontPadding": false,
+              "verticalAlign": "middle",
+            },
+            false,
+            false,
+            {
+              "color": "rgba(0, 0, 0, 0.6000)",
+            },
+          ]
         }
       >
-        <Text
-          numberOfLines={1}
-          style={
-            [
-              {
-                "color": "rgba(0, 0, 0, 0.8000)",
-                "fontSize": 14,
-                "includeFontPadding": false,
-                "verticalAlign": "middle",
-              },
-              false,
-              false,
-              {
-                "color": "rgba(0, 0, 0, 0.6000)",
-              },
-            ]
-          }
-        >
-          Second Tab
-        </Text>
-      </View>
+        Second Tab
+      </Text>
     </View>
   </View>
   <View
@@ -957,10 +2139,9 @@ exports[`Tabs component tests disabled 1`] = `
           {
             "alignItems": "center",
             "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-            "borderBottomWidth": 3.5,
-            "borderColor": "rgba(255, 255, 255, 0.0001)",
             "flexDirection": "row",
             "gap": 7,
+            "height": 49,
             "paddingHorizontal": 0,
             "paddingVertical": 14,
           },
@@ -972,34 +2153,26 @@ exports[`Tabs component tests disabled 1`] = `
         ]
       }
     >
-      <View
+      <Text
+        numberOfLines={1}
         style={
-          {
-            "height": 21,
-          }
+          [
+            {
+              "color": "rgba(0, 0, 0, 0.8000)",
+              "fontSize": 14,
+              "includeFontPadding": false,
+              "verticalAlign": "middle",
+            },
+            false,
+            false,
+            {
+              "color": "rgba(0, 0, 0, 0.6000)",
+            },
+          ]
         }
       >
-        <Text
-          numberOfLines={1}
-          style={
-            [
-              {
-                "color": "rgba(0, 0, 0, 0.8000)",
-                "fontSize": 14,
-                "includeFontPadding": false,
-                "verticalAlign": "middle",
-              },
-              false,
-              false,
-              {
-                "color": "rgba(0, 0, 0, 0.6000)",
-              },
-            ]
-          }
-        >
-          Third Tab
-        </Text>
-      </View>
+        Third Tab
+      </Text>
       <View
         style={
           [
@@ -1095,17 +2268,15 @@ exports[`Tabs component tests normal 1`] = `
           {
             "alignItems": "center",
             "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-            "borderBottomWidth": 3.5,
-            "borderColor": "rgba(255, 255, 255, 0.0001)",
             "flexDirection": "row",
             "gap": 7,
+            "height": 49,
             "paddingHorizontal": 0,
             "paddingVertical": 14,
           },
           false,
           {
             "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-            "borderColor": "#188700",
           },
           false,
         ]
@@ -1210,34 +2381,26 @@ exports[`Tabs component tests normal 1`] = `
           />
         </RNSVGGroup>
       </RNSVGSvgView>
-      <View
+      <Text
+        numberOfLines={1}
         style={
-          {
-            "height": 21,
-          }
+          [
+            {
+              "color": "rgba(0, 0, 0, 0.8000)",
+              "fontSize": 14,
+              "includeFontPadding": false,
+              "verticalAlign": "middle",
+            },
+            {
+              "color": "#188700",
+            },
+            false,
+            false,
+          ]
         }
       >
-        <Text
-          numberOfLines={1}
-          style={
-            [
-              {
-                "color": "rgba(0, 0, 0, 0.8000)",
-                "fontSize": 14,
-                "includeFontPadding": false,
-                "verticalAlign": "middle",
-              },
-              {
-                "color": "#188700",
-              },
-              false,
-              false,
-            ]
-          }
-        >
-          First Tab
-        </Text>
-      </View>
+        First Tab
+      </Text>
     </View>
   </View>
   <View
@@ -1278,10 +2441,9 @@ exports[`Tabs component tests normal 1`] = `
           {
             "alignItems": "center",
             "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-            "borderBottomWidth": 3.5,
-            "borderColor": "rgba(255, 255, 255, 0.0001)",
             "flexDirection": "row",
             "gap": 7,
+            "height": 49,
             "paddingHorizontal": 0,
             "paddingVertical": 14,
           },
@@ -1291,32 +2453,24 @@ exports[`Tabs component tests normal 1`] = `
         ]
       }
     >
-      <View
+      <Text
+        numberOfLines={1}
         style={
-          {
-            "height": 21,
-          }
+          [
+            {
+              "color": "rgba(0, 0, 0, 0.8000)",
+              "fontSize": 14,
+              "includeFontPadding": false,
+              "verticalAlign": "middle",
+            },
+            false,
+            false,
+            false,
+          ]
         }
       >
-        <Text
-          numberOfLines={1}
-          style={
-            [
-              {
-                "color": "rgba(0, 0, 0, 0.8000)",
-                "fontSize": 14,
-                "includeFontPadding": false,
-                "verticalAlign": "middle",
-              },
-              false,
-              false,
-              false,
-            ]
-          }
-        >
-          Second Tab
-        </Text>
-      </View>
+        Second Tab
+      </Text>
     </View>
   </View>
   <View
@@ -1357,10 +2511,9 @@ exports[`Tabs component tests normal 1`] = `
           {
             "alignItems": "center",
             "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-            "borderBottomWidth": 3.5,
-            "borderColor": "rgba(255, 255, 255, 0.0001)",
             "flexDirection": "row",
             "gap": 7,
+            "height": 49,
             "paddingHorizontal": 0,
             "paddingVertical": 14,
           },
@@ -1370,32 +2523,24 @@ exports[`Tabs component tests normal 1`] = `
         ]
       }
     >
-      <View
+      <Text
+        numberOfLines={1}
         style={
-          {
-            "height": 21,
-          }
+          [
+            {
+              "color": "rgba(0, 0, 0, 0.8000)",
+              "fontSize": 14,
+              "includeFontPadding": false,
+              "verticalAlign": "middle",
+            },
+            false,
+            false,
+            false,
+          ]
         }
       >
-        <Text
-          numberOfLines={1}
-          style={
-            [
-              {
-                "color": "rgba(0, 0, 0, 0.8000)",
-                "fontSize": 14,
-                "includeFontPadding": false,
-                "verticalAlign": "middle",
-              },
-              false,
-              false,
-              false,
-            ]
-          }
-        >
-          Third Tab
-        </Text>
-      </View>
+        Third Tab
+      </Text>
       <View
         style={
           [

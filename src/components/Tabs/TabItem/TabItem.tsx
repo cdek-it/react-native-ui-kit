@@ -1,9 +1,8 @@
 import type { Icon } from '@tabler/icons-react-native'
-import React, { memo, useCallback, useContext, type ReactNode } from 'react'
+import React, { memo, useCallback, type ReactNode } from 'react'
 import { Text, Pressable, View } from 'react-native'
 
 import { makeStyles } from '../../../utils/makeStyles'
-import { TabsContext } from '../Tabs'
 
 export interface TabItemProps {
   /** Иконка из библиотеки Tabler */
@@ -17,88 +16,92 @@ export interface TabItemProps {
 
   /** Индекс этой табы **/
   index: number
+
+  /** Обработчик нажатия на кнопку */
+  onPress: (index: number) => void
+
+  /** Признак доступности компонента */
+  disabled?: boolean
+
+  /** Признак активен ли компонент */
+  active?: boolean
 }
 
 /** Часть навигационного компонента Tabs
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=888-13076&t=hIQjdrqPKK8BWYev-4
  */
-export const TabItem = memo<TabItemProps>(({ Icon, label, badge, index }) => {
-  const context = useContext(TabsContext)
-  const styles = useStyles()
-  const active = (() => {
-    return context.activeIndex === index
-  })()
+export const TabItem = memo<TabItemProps>(
+  ({ Icon, label, badge, index, onPress, disabled, active }) => {
+    const styles = useStyles()
 
-  const getIconColor = useCallback((pressed: boolean) => {
-    if (context.disabled) return styles.disabledIcon.color
-    if (pressed) return styles.pressedIcon.color
-    if (active) return styles.activeIcon.color
-    return styles.icon.color
-  }, [])
+    const getIconColor = useCallback(
+      (pressed: boolean) => {
+        if (disabled) return styles.disabledIcon.color
+        if (pressed) return styles.pressedIcon.color
+        if (active) return styles.activeIcon.color
+        return styles.icon.color
+      },
+      [disabled, active]
+    )
 
-  return (
-    <Pressable
-      disabled={context.disabled}
-      testID={TestId.Container + index}
-      onPress={() => context.onChange(index)}
-    >
-      {({ pressed }) => (
-        <View
-          style={[
-            styles.container,
-            pressed && styles.pressedContainer,
-            active && styles.activeContainer,
-            context.disabled && styles.disabledContainer,
-          ]}
-        >
-          {Icon && (
-            <Icon
-              color={getIconColor(pressed)}
-              height={styles.icon.height}
-              width={styles.icon.width}
-            />
-          )}
-          <View style={styles.textContainer}>
+    return (
+      <Pressable
+        disabled={disabled}
+        testID={TestId.Container + index}
+        onPress={() => onPress(index)}
+      >
+        {({ pressed }) => (
+          <View
+            style={[
+              styles.container,
+              pressed && styles.pressedContainer,
+              active && styles.activeContainer,
+              disabled && styles.disabledContainer,
+            ]}
+          >
+            {Icon && (
+              <Icon
+                color={getIconColor(pressed)}
+                height={styles.icon.height}
+                width={styles.icon.width}
+              />
+            )}
             <Text
               numberOfLines={1}
               style={[
                 styles.text,
                 active && styles.activeText,
                 pressed && styles.pressedText,
-                context.disabled && styles.disabledText,
+                disabled && styles.disabledText,
               ]}
             >
               {label}
             </Text>
+            {badge}
           </View>
-          {badge}
-        </View>
-      )}
-    </Pressable>
-  )
-})
+        )}
+      </Pressable>
+    )
+  }
+)
 
 const useStyles = makeStyles(({ theme, typography }) => ({
   container: {
     alignItems: 'center',
     flexDirection: 'row',
 
+    height: theme.Misc.Badge.badgeHeight + theme.Panel.TabView.tabviewHeaderPaddingTopBottom * 2,
     gap: theme.General.inlineSpacing,
     paddingHorizontal: theme.Panel.TabView.tabviewHeaderPaddingLeftRight,
     paddingVertical: theme.Panel.TabView.tabviewHeaderPaddingTopBottom,
 
-    borderBottomWidth: theme.Panel.TabView.tabviewHeaderBorderWidth,
-
     backgroundColor: theme.Panel.TabView.tabviewHeaderBg,
-    borderColor: theme.Panel.TabView.tabviewHeaderBorderColor,
   },
   pressedContainer: {
     backgroundColor: theme.Panel.TabView.tabviewHeaderHoverBg,
-    borderColor: theme.Panel.TabView.tabviewHeaderHoverBorderColor,
   },
   activeContainer: {
     backgroundColor: theme.Panel.TabView.tabviewHeaderActiveBg,
-    borderColor: theme.Panel.TabView.tabviewHeaderActiveBorderColor,
   },
   disabledContainer: {
     opacity: 0.6,
@@ -116,9 +119,6 @@ const useStyles = makeStyles(({ theme, typography }) => ({
   },
   disabledIcon: {
     color: theme.Button.Disabled.disabledButtonTextColor,
-  },
-  textContainer: {
-    height: theme.Misc.Badge.badgeHeight,
   },
   text: {
     fontSize: typography.Size['text-base'],

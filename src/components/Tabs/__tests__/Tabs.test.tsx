@@ -10,10 +10,63 @@ import { Tabs, type TabsProps } from '../Tabs'
 
 describe('TabItem component tests', () => {
   const snapshotCases: Array<[string, TabItemProps]> = [
-    ['label', { index: 0, label: 'label' }],
-    ['label, icon', { index: 0, label: 'label', Icon: IconUser }],
-    ['label, badge', { index: 0, label: 'label', badge: <Badge>99</Badge> }],
-    ['label, icon, badge', { index: 0, label: 'label', Icon: IconUser, badge: <Badge>99</Badge> }],
+    ['label', { index: 0, label: 'label', onPress: jest.fn() }],
+    ['label, icon', { index: 0, label: 'label', Icon: IconUser, onPress: jest.fn() }],
+    ['label, badge', { index: 0, label: 'label', badge: <Badge>99</Badge>, onPress: jest.fn() }],
+    [
+      'label, icon, badge',
+      { index: 0, label: 'label', Icon: IconUser, badge: <Badge>99</Badge>, onPress: jest.fn() },
+    ],
+
+    // active
+    ['active: label', { active: true, index: 0, label: 'label', onPress: jest.fn() }],
+    [
+      'active: label, icon',
+      { active: true, index: 0, label: 'label', Icon: IconUser, onPress: jest.fn() },
+    ],
+    [
+      'active: label, badge',
+      { active: true, index: 0, label: 'label', badge: <Badge>99</Badge>, onPress: jest.fn() },
+    ],
+    [
+      'active: label, icon, badge',
+      {
+        active: true,
+        index: 0,
+        label: 'label',
+        Icon: IconUser,
+        badge: <Badge>99</Badge>,
+        onPress: jest.fn(),
+      },
+    ],
+
+    // disabled
+    ['disabled: label', { disabled: true, index: 0, label: 'label', onPress: jest.fn() }],
+    [
+      'disabled: label, icon',
+      { disabled: true, index: 0, label: 'label', Icon: IconUser, onPress: jest.fn() },
+    ],
+    [
+      'disabled: label, badge',
+      { disabled: true, index: 0, label: 'label', badge: <Badge>99</Badge>, onPress: jest.fn() },
+    ],
+    [
+      'disabled: label, icon, badge',
+      {
+        disabled: true,
+        index: 0,
+        label: 'label',
+        Icon: IconUser,
+        badge: <Badge>99</Badge>,
+        onPress: jest.fn(),
+      },
+    ],
+
+    // disabled + active
+    [
+      'disabled + active : label',
+      { disabled: true, active: true, index: 0, label: 'label', onPress: jest.fn() },
+    ],
   ]
 
   test.each(snapshotCases)('%s', (_, props) => {
@@ -40,17 +93,20 @@ describe('TabPanel component tests', () => {
 
 describe('Tabs component tests', () => {
   const snapshotCases: Array<[string, TabsProps]> = [
-    ['normal', { activeIndex: 0, disabled: false, onChange: jest.fn() }],
-    ['disabled', { activeIndex: 0, disabled: true, onChange: jest.fn() }],
+    ['normal', { activeIndex: 0, disabled: false, onChange: jest.fn(), items: [] }],
+    ['disabled', { activeIndex: 0, disabled: true, onChange: jest.fn(), items: [] }],
   ]
 
   test.each(snapshotCases)('%s', (_, props) => {
     const renderedTabItem = render(
-      <Tabs {...props}>
-        <TabItem Icon={IconUser} index={0} label='First Tab' />
-        <TabItem index={1} label='Second Tab' />
-        <TabItem badge={<Badge severity='danger'>0</Badge>} index={2} label='Third Tab' />
-      </Tabs>
+      <Tabs
+        {...props}
+        items={[
+          { Icon: IconUser, label: 'First Tab', key: '0' },
+          { label: 'Second Tab', key: '1' },
+          { badge: <Badge severity='danger'>0</Badge>, label: 'Third Tab', key: '2' },
+        ]}
+      />
     )
     expect(renderedTabItem.toJSON()).toMatchSnapshot()
   })
@@ -60,10 +116,14 @@ describe('Tabs component tests', () => {
     const testableIndex = 1
 
     const { getByTestId } = render(
-      <Tabs activeIndex={testableIndex} onChange={mockedOnTapTabItem}>
-        <TabItem Icon={IconUser} index={0} label='First Tab' />
-        <TabItem index={1} label='Second Tab' />
-      </Tabs>
+      <Tabs
+        activeIndex={testableIndex}
+        items={[
+          { Icon: IconUser, label: 'First Tab', key: '0' },
+          { label: 'Second Tab', key: '1' },
+        ]}
+        onChange={mockedOnTapTabItem}
+      />
     )
     const container = getByTestId(TestId.Container + testableIndex)
     const user = userEvent.setup()
