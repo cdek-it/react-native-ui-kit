@@ -12,6 +12,18 @@ const meta: Meta<typeof RatingClear> = {
   argTypes: {
     onPress: { action: 'onPress' },
   },
+  parameters: {
+    notes: `
+      Компонент элемента рейтинга. Предоставляет функционал очистки рейтинга.
+      Используется компонентом Rating
+
+      <RatingClear
+        disabled={disabled}
+        paddings={paddings}
+        onPress={onClear}
+      />
+    `,
+  },
 }
 
 export default meta

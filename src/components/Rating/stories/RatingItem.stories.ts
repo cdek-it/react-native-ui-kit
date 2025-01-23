@@ -13,6 +13,18 @@ const meta: Meta<typeof RatingItem> = {
   argTypes: {
     onPress: { action: 'onPress' },
   },
+  parameters: {
+    notes: `
+      Компонент элемента рейтинга. Предоставляет функционал отображения и обработки нажатий на "звёздочки"
+      Используется компонентом Rating
+
+      <RatingItem
+        checked={checked}
+        paddings={paddings}
+        onPress={handleItemPress}
+      />
+    `,
+  },
 }
 
 export default meta

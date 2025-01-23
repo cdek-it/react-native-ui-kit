@@ -14,6 +14,31 @@ const meta: Meta<typeof Rating> = {
   argTypes: {
     rating: { control: 'number' },
   },
+  parameters: {
+    notes: `
+      #### Элемент рейтинга
+      const [rating, setRating] = useState(0)
+
+      const onChange = (r: number) => {
+        setRating(r)
+      }
+
+      const onClear = () => {
+        setRating(0)
+      }
+
+      return (
+        <Rating
+          disabled={false}
+          paddings={false}
+          maxRating={5}
+          rating={rating}
+          onChange={onChange}
+          onClear={onClear}
+        />
+      )
+  `,
+  },
   render: function Render(args) {
     const [, updateArgs] = useArgs()
 
