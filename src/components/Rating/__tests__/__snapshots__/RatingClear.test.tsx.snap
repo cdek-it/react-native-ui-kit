@@ -1,0 +1,1173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RatingItem component tests checked - $checked, disabled - false, pressed - false, paddings - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "height": 17.5,
+        "justifyContent": "center",
+        "width": 17.5,
+      },
+      false,
+    ]
+  }
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={17.5}
+    bbWidth={17.5}
+    fill="none"
+    focusable={false}
+    height={17.5}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="rgba(0, 0, 0, 0.6000)"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 17,
+          "width": 17,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={17.5}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "payload": 2566914048,
+          "type": 0,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M5.7 5.7l12.6 12.6"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`RatingItem component tests checked - $checked, disabled - false, pressed - false, paddings - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "height": 17.5,
+        "justifyContent": "center",
+        "width": 17.5,
+      },
+      {
+        "height": 42,
+        "width": 42,
+      },
+    ]
+  }
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={17.5}
+    bbWidth={17.5}
+    fill="none"
+    focusable={false}
+    height={17.5}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="rgba(0, 0, 0, 0.6000)"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 17,
+          "width": 17,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={17.5}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "payload": 2566914048,
+          "type": 0,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M5.7 5.7l12.6 12.6"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`RatingItem component tests checked - $checked, disabled - false, pressed - true, paddings - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "height": 17.5,
+        "justifyContent": "center",
+        "width": 17.5,
+      },
+      false,
+    ]
+  }
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={17.5}
+    bbWidth={17.5}
+    fill="none"
+    focusable={false}
+    height={17.5}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="rgba(0, 0, 0, 0.8000)"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 17,
+          "width": 17,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={17.5}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "payload": 3422552064,
+          "type": 0,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 3422552064,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M5.7 5.7l12.6 12.6"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 3422552064,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`RatingItem component tests checked - $checked, disabled - false, pressed - true, paddings - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "height": 17.5,
+        "justifyContent": "center",
+        "width": 17.5,
+      },
+      {
+        "height": 42,
+        "width": 42,
+      },
+    ]
+  }
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={17.5}
+    bbWidth={17.5}
+    fill="none"
+    focusable={false}
+    height={17.5}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="rgba(0, 0, 0, 0.8000)"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 17,
+          "width": 17,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={17.5}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "payload": 3422552064,
+          "type": 0,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 3422552064,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M5.7 5.7l12.6 12.6"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 3422552064,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`RatingItem component tests checked - $checked, disabled - true, pressed - false, paddings - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "height": 17.5,
+        "justifyContent": "center",
+        "width": 17.5,
+      },
+      false,
+    ]
+  }
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={17.5}
+    bbWidth={17.5}
+    fill="none"
+    focusable={false}
+    height={17.5}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="#A3A3A3"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 17,
+          "width": 17,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={17.5}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "payload": 4288914339,
+          "type": 0,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4288914339,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M5.7 5.7l12.6 12.6"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4288914339,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`RatingItem component tests checked - $checked, disabled - true, pressed - false, paddings - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "height": 17.5,
+        "justifyContent": "center",
+        "width": 17.5,
+      },
+      {
+        "height": 42,
+        "width": 42,
+      },
+    ]
+  }
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={17.5}
+    bbWidth={17.5}
+    fill="none"
+    focusable={false}
+    height={17.5}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="#A3A3A3"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 17,
+          "width": 17,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={17.5}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "payload": 4288914339,
+          "type": 0,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4288914339,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M5.7 5.7l12.6 12.6"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4288914339,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`RatingItem component tests checked - $checked, disabled - true, pressed - true, paddings - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "height": 17.5,
+        "justifyContent": "center",
+        "width": 17.5,
+      },
+      false,
+    ]
+  }
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={17.5}
+    bbWidth={17.5}
+    fill="none"
+    focusable={false}
+    height={17.5}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="#A3A3A3"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 17,
+          "width": 17,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={17.5}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "payload": 4288914339,
+          "type": 0,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4288914339,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M5.7 5.7l12.6 12.6"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4288914339,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`RatingItem component tests checked - $checked, disabled - true, pressed - true, paddings - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "height": 17.5,
+        "justifyContent": "center",
+        "width": 17.5,
+      },
+      {
+        "height": 42,
+        "width": 42,
+      },
+    ]
+  }
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={17.5}
+    bbWidth={17.5}
+    fill="none"
+    focusable={false}
+    height={17.5}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="#A3A3A3"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 17,
+          "width": 17,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={17.5}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "payload": 4288914339,
+          "type": 0,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4288914339,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M5.7 5.7l12.6 12.6"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4288914339,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
