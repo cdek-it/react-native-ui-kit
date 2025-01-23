@@ -1,0 +1,2394 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rating component tests renders correctly with default props 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "gap": 7,
+    }
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": 17.5,
+          "justifyContent": "center",
+          "width": 17.5,
+        },
+        false,
+      ]
+    }
+    testID="RatingClear"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fill="none"
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="rgba(0, 0, 0, 0.6000)"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 2566914048,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+        <RNSVGPath
+          d="M5.7 5.7l12.6 12.6"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 2566914048,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": 17.5,
+          "justifyContent": "center",
+          "width": 17.5,
+        },
+        false,
+      ]
+    }
+    testID="RatingItem-1"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fill="#ffb330"
+      fillOpacity={1}
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="#ffb330"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        fillOpacity={1}
+        propList={
+          [
+            "fill",
+            "fillOpacity",
+            "stroke",
+            "strokeWidth",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+          fill={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          fillOpacity={1}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+              "stroke",
+              "strokeWidth",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": 17.5,
+          "justifyContent": "center",
+          "width": 17.5,
+        },
+        false,
+      ]
+    }
+    testID="RatingItem-2"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fill="#ffb330"
+      fillOpacity={1}
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="#ffb330"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        fillOpacity={1}
+        propList={
+          [
+            "fill",
+            "fillOpacity",
+            "stroke",
+            "strokeWidth",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+          fill={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          fillOpacity={1}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+              "stroke",
+              "strokeWidth",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": 17.5,
+          "justifyContent": "center",
+          "width": 17.5,
+        },
+        false,
+      ]
+    }
+    testID="RatingItem-3"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fill="#ffb330"
+      fillOpacity={1}
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="#ffb330"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        fillOpacity={1}
+        propList={
+          [
+            "fill",
+            "fillOpacity",
+            "stroke",
+            "strokeWidth",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+          fill={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          fillOpacity={1}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+              "stroke",
+              "strokeWidth",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": 17.5,
+          "justifyContent": "center",
+          "width": 17.5,
+        },
+        false,
+      ]
+    }
+    testID="RatingItem-4"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fillOpacity={0}
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="rgba(0, 0, 0, 0.6000)"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+        fillOpacity={0}
+        propList={
+          [
+            "fillOpacity",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          fillOpacity={0}
+          propList={
+            [
+              "fillOpacity",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 2566914048,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": 17.5,
+          "justifyContent": "center",
+          "width": 17.5,
+        },
+        false,
+      ]
+    }
+    testID="RatingItem-5"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fillOpacity={0}
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="rgba(0, 0, 0, 0.6000)"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+        fillOpacity={0}
+        propList={
+          [
+            "fillOpacity",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          fillOpacity={0}
+          propList={
+            [
+              "fillOpacity",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 2566914048,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+</View>
+`;
+
+exports[`Rating component tests renders the correct number of checked items - $rating 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "gap": 7,
+    }
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": 17.5,
+          "justifyContent": "center",
+          "width": 17.5,
+        },
+        false,
+      ]
+    }
+    testID="RatingClear"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fill="none"
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="rgba(0, 0, 0, 0.6000)"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 2566914048,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+        <RNSVGPath
+          d="M5.7 5.7l12.6 12.6"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 2566914048,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": 17.5,
+          "justifyContent": "center",
+          "width": 17.5,
+        },
+        false,
+      ]
+    }
+    testID="RatingItem-1"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fill="#ffb330"
+      fillOpacity={1}
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="#ffb330"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        fillOpacity={1}
+        propList={
+          [
+            "fill",
+            "fillOpacity",
+            "stroke",
+            "strokeWidth",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+          fill={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          fillOpacity={1}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+              "stroke",
+              "strokeWidth",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": 17.5,
+          "justifyContent": "center",
+          "width": 17.5,
+        },
+        false,
+      ]
+    }
+    testID="RatingItem-2"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fill="#ffb330"
+      fillOpacity={1}
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="#ffb330"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        fillOpacity={1}
+        propList={
+          [
+            "fill",
+            "fillOpacity",
+            "stroke",
+            "strokeWidth",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+          fill={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          fillOpacity={1}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+              "stroke",
+              "strokeWidth",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": 17.5,
+          "justifyContent": "center",
+          "width": 17.5,
+        },
+        false,
+      ]
+    }
+    testID="RatingItem-3"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fill="#ffb330"
+      fillOpacity={1}
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="#ffb330"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        fillOpacity={1}
+        propList={
+          [
+            "fill",
+            "fillOpacity",
+            "stroke",
+            "strokeWidth",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+          fill={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          fillOpacity={1}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+              "stroke",
+              "strokeWidth",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": 17.5,
+          "justifyContent": "center",
+          "width": 17.5,
+        },
+        false,
+      ]
+    }
+    testID="RatingItem-4"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fillOpacity={0}
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="rgba(0, 0, 0, 0.6000)"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+        fillOpacity={0}
+        propList={
+          [
+            "fillOpacity",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          fillOpacity={0}
+          propList={
+            [
+              "fillOpacity",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 2566914048,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": 17.5,
+          "justifyContent": "center",
+          "width": 17.5,
+        },
+        false,
+      ]
+    }
+    testID="RatingItem-5"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fillOpacity={0}
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="rgba(0, 0, 0, 0.6000)"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+        fillOpacity={0}
+        propList={
+          [
+            "fillOpacity",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          fillOpacity={0}
+          propList={
+            [
+              "fillOpacity",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 2566914048,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+</View>
+`;
+
+exports[`Rating component tests renders the correct number of checked items - $rating 2`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "gap": 7,
+    }
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": 17.5,
+          "justifyContent": "center",
+          "width": 17.5,
+        },
+        false,
+      ]
+    }
+    testID="RatingClear"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fill="none"
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="rgba(0, 0, 0, 0.6000)"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 2566914048,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+        <RNSVGPath
+          d="M5.7 5.7l12.6 12.6"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 2566914048,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": 17.5,
+          "justifyContent": "center",
+          "width": 17.5,
+        },
+        false,
+      ]
+    }
+    testID="RatingItem-1"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fill="#ffb330"
+      fillOpacity={1}
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="#ffb330"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        fillOpacity={1}
+        propList={
+          [
+            "fill",
+            "fillOpacity",
+            "stroke",
+            "strokeWidth",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+          fill={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          fillOpacity={1}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+              "stroke",
+              "strokeWidth",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": 17.5,
+          "justifyContent": "center",
+          "width": 17.5,
+        },
+        false,
+      ]
+    }
+    testID="RatingItem-2"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fill="#ffb330"
+      fillOpacity={1}
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="#ffb330"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        fillOpacity={1}
+        propList={
+          [
+            "fill",
+            "fillOpacity",
+            "stroke",
+            "strokeWidth",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+          fill={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          fillOpacity={1}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+              "stroke",
+              "strokeWidth",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": 17.5,
+          "justifyContent": "center",
+          "width": 17.5,
+        },
+        false,
+      ]
+    }
+    testID="RatingItem-3"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fill="#ffb330"
+      fillOpacity={1}
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="#ffb330"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        fillOpacity={1}
+        propList={
+          [
+            "fill",
+            "fillOpacity",
+            "stroke",
+            "strokeWidth",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+          fill={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          fillOpacity={1}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+              "stroke",
+              "strokeWidth",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": 17.5,
+          "justifyContent": "center",
+          "width": 17.5,
+        },
+        false,
+      ]
+    }
+    testID="RatingItem-4"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fill="#ffb330"
+      fillOpacity={1}
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="#ffb330"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        fillOpacity={1}
+        propList={
+          [
+            "fill",
+            "fillOpacity",
+            "stroke",
+            "strokeWidth",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4294947632,
+            "type": 0,
+          }
+        }
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+          fill={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          fillOpacity={1}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+              "stroke",
+              "strokeWidth",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4294947632,
+              "type": 0,
+            }
+          }
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": 17.5,
+          "justifyContent": "center",
+          "width": 17.5,
+        },
+        false,
+      ]
+    }
+    testID="RatingItem-5"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fillOpacity={0}
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="rgba(0, 0, 0, 0.6000)"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+        fillOpacity={0}
+        propList={
+          [
+            "fillOpacity",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          fillOpacity={0}
+          propList={
+            [
+              "fillOpacity",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 2566914048,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+</View>
+`;
