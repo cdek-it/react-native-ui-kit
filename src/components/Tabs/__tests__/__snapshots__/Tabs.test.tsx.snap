@@ -2,6 +2,7 @@
 
 exports[`TabItem component tests active: label 1`] = `
 <View
+  accessibilityRole="button"
   accessibilityState={
     {
       "busy": undefined,
@@ -79,6 +80,7 @@ exports[`TabItem component tests active: label 1`] = `
 
 exports[`TabItem component tests active: label, badge 1`] = `
 <View
+  accessibilityRole="button"
   accessibilityState={
     {
       "busy": undefined,
@@ -197,6 +199,7 @@ exports[`TabItem component tests active: label, badge 1`] = `
 
 exports[`TabItem component tests active: label, icon 1`] = `
 <View
+  accessibilityRole="button"
   accessibilityState={
     {
       "busy": undefined,
@@ -373,6 +376,7 @@ exports[`TabItem component tests active: label, icon 1`] = `
 
 exports[`TabItem component tests active: label, icon, badge 1`] = `
 <View
+  accessibilityRole="button"
   accessibilityState={
     {
       "busy": undefined,
@@ -590,6 +594,7 @@ exports[`TabItem component tests active: label, icon, badge 1`] = `
 
 exports[`TabItem component tests disabled + active : label 1`] = `
 <View
+  accessibilityRole="button"
   accessibilityState={
     {
       "busy": undefined,
@@ -671,6 +676,7 @@ exports[`TabItem component tests disabled + active : label 1`] = `
 
 exports[`TabItem component tests disabled: label 1`] = `
 <View
+  accessibilityRole="button"
   accessibilityState={
     {
       "busy": undefined,
@@ -748,6 +754,7 @@ exports[`TabItem component tests disabled: label 1`] = `
 
 exports[`TabItem component tests disabled: label, badge 1`] = `
 <View
+  accessibilityRole="button"
   accessibilityState={
     {
       "busy": undefined,
@@ -866,6 +873,7 @@ exports[`TabItem component tests disabled: label, badge 1`] = `
 
 exports[`TabItem component tests disabled: label, icon 1`] = `
 <View
+  accessibilityRole="button"
   accessibilityState={
     {
       "busy": undefined,
@@ -1042,6 +1050,7 @@ exports[`TabItem component tests disabled: label, icon 1`] = `
 
 exports[`TabItem component tests disabled: label, icon, badge 1`] = `
 <View
+  accessibilityRole="button"
   accessibilityState={
     {
       "busy": undefined,
@@ -1259,6 +1268,7 @@ exports[`TabItem component tests disabled: label, icon, badge 1`] = `
 
 exports[`TabItem component tests label 1`] = `
 <View
+  accessibilityRole="button"
   accessibilityState={
     {
       "busy": undefined,
@@ -1332,6 +1342,7 @@ exports[`TabItem component tests label 1`] = `
 
 exports[`TabItem component tests label, badge 1`] = `
 <View
+  accessibilityRole="button"
   accessibilityState={
     {
       "busy": undefined,
@@ -1446,6 +1457,7 @@ exports[`TabItem component tests label, badge 1`] = `
 
 exports[`TabItem component tests label, icon 1`] = `
 <View
+  accessibilityRole="button"
   accessibilityState={
     {
       "busy": undefined,
@@ -1618,6 +1630,7 @@ exports[`TabItem component tests label, icon 1`] = `
 
 exports[`TabItem component tests label, icon, badge 1`] = `
 <View
+  accessibilityRole="button"
   accessibilityState={
     {
       "busy": undefined,
@@ -1851,6 +1864,7 @@ exports[`Tabs component tests disabled 1`] = `
   }
 >
   <View
+    accessibilityRole="button"
     accessibilityState={
       {
         "busy": undefined,
@@ -2028,6 +2042,7 @@ exports[`Tabs component tests disabled 1`] = `
     </View>
   </View>
   <View
+    accessibilityRole="button"
     accessibilityState={
       {
         "busy": undefined,
@@ -2102,6 +2117,7 @@ exports[`Tabs component tests disabled 1`] = `
     </View>
   </View>
   <View
+    accessibilityRole="button"
     accessibilityState={
       {
         "busy": undefined,
@@ -2216,6 +2232,25 @@ exports[`Tabs component tests disabled 1`] = `
       </View>
     </View>
   </View>
+  <View
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#188700",
+        "bottom": 0,
+        "height": 3.5,
+        "left": 0,
+        "position": "absolute",
+        "width": 0,
+        "zIndex": -1,
+      }
+    }
+  />
 </View>
 `;
 
@@ -2231,6 +2266,7 @@ exports[`Tabs component tests normal 1`] = `
   }
 >
   <View
+    accessibilityRole="button"
     accessibilityState={
       {
         "busy": undefined,
@@ -2404,6 +2440,7 @@ exports[`Tabs component tests normal 1`] = `
     </View>
   </View>
   <View
+    accessibilityRole="button"
     accessibilityState={
       {
         "busy": undefined,
@@ -2474,6 +2511,7 @@ exports[`Tabs component tests normal 1`] = `
     </View>
   </View>
   <View
+    accessibilityRole="button"
     accessibilityState={
       {
         "busy": undefined,
@@ -2584,5 +2622,24 @@ exports[`Tabs component tests normal 1`] = `
       </View>
     </View>
   </View>
+  <View
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#188700",
+        "bottom": 0,
+        "height": 3.5,
+        "left": 0,
+        "position": "absolute",
+        "width": 0,
+        "zIndex": -1,
+      }
+    }
+  />
 </View>
 `;

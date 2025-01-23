@@ -1,5 +1,6 @@
-import React, { memo } from 'react'
+import React, { memo, useEffect, useRef } from 'react'
 import { View } from 'react-native'
+import Animated, { useSharedValue, withTiming } from 'react-native-reanimated'
 
 import { makeStyles } from '../../utils/makeStyles'
 
@@ -26,6 +27,18 @@ export const Tabs = memo<TabsProps>(
   ({ items, disabled = false, activeIndex, onChange, ...rest }) => {
     const styles = useStyles()
 
+    const activeRef = useRef<View>(null)
+
+    useEffect(() => {
+      activeRef.current?.measure((x, y, width) => {
+        lineWidth.value = withTiming(width)
+        lineXPosition.value = withTiming(x)
+      })
+    }, [activeIndex])
+
+    const lineWidth = useSharedValue(0)
+    const lineXPosition = useSharedValue(0)
+
     return (
       <View {...rest} style={styles.container}>
         {items.map((prop, index) => {
@@ -35,11 +48,13 @@ export const Tabs = memo<TabsProps>(
               active={activeIndex === index}
               disabled={disabled}
               index={index}
+              innerRef={activeIndex === index ? activeRef : undefined}
               key={prop.key}
               onPress={onChange}
             />
           )
         })}
+        <Animated.View style={[styles.line, { width: lineWidth, left: lineXPosition }]} />
       </View>
     )
   }
@@ -52,5 +67,13 @@ const useStyles = makeStyles(({ theme }) => ({
 
     borderBottomWidth: 1,
     borderColor: theme.Panel.TabView.tabviewNavBorderColor,
+  },
+  line: {
+    position: 'absolute',
+    zIndex: -1,
+    bottom: 0,
+    height: theme.Panel.TabView.tabviewHeaderBorderWidth,
+
+    backgroundColor: theme.Panel.TabView.tabviewHeaderActiveBorderColor,
   },
 }))
