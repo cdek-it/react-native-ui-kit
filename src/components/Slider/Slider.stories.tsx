@@ -40,8 +40,8 @@ const Template = (args: SliderProps) => {
           range
           maxPointerValueInit={80}
           minPointerValueInit={20}
-          onReturnMaxPointerValue={(value) => handleChangeMaxRange(value)}
-          onReturnMinPointerValue={(value) => handleChangeMinRange(value)}
+          onMaxPointerValueChange={(value) => handleChangeMaxRange(value)}
+          onMinPointerValueChange={(value) => handleChangeMinRange(value)}
         />
       </View>
 
@@ -51,7 +51,7 @@ const Template = (args: SliderProps) => {
           {...args}
           minPointerValueInit={40}
           range={false}
-          onReturnMinPointerValue={(value) => handleChangeMin(value)}
+          onMinPointerValueChange={(value) => handleChangeMin(value)}
         />
       </View>
     </View>

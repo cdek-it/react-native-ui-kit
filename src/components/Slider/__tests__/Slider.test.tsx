@@ -6,8 +6,8 @@ import { Slider, type SliderProps } from '../Slider'
 describe('Slider', () => {
   const defaultProps: SliderProps = {
     minPointerValueInit: 10,
-    onReturnMaxPointerValue: (value) => undefined,
-    onReturnMinPointerValue: (value) => undefined,
+    onMaxPointerValueChange: (value) => undefined,
+    onMinPointerValueChange: (value) => undefined,
   }
 
   describe('snapshots', () => {

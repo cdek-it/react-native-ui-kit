@@ -1,4 +1,4 @@
-import React, { memo, useMemo, useRef, useState } from 'react'
+import React, { memo, useCallback, useMemo, useState } from 'react'
 import { type LayoutChangeEvent, View } from 'react-native'
 import { Gesture, GestureDetector } from 'react-native-gesture-handler'
 import Animated, {
@@ -6,6 +6,7 @@ import Animated, {
   useAnimatedStyle,
   interpolate,
   Extrapolation,
+  runOnJS,
 } from 'react-native-reanimated'
 
 import { makeStyles } from '../../utils/makeStyles'
@@ -34,11 +35,19 @@ export interface SliderProps {
   /**
    * Значение/позиция возвращаемое стартовым ползунком
    */
-  onReturnMinPointerValue: (value: number) => void
+  onMinPointerValueChange: (value: number) => void
   /**
    * Значение/позиция возвращаемое конечным ползунком
    */
-  onReturnMaxPointerValue: (value: number) => void
+  onMaxPointerValueChange: (value: number) => void
+}
+
+const MIN_TRACK_SCALE = 0
+const MAX_TRACK_SCALE = 100
+
+const clamp = (val: number, min: number, max: number) => {
+  'worklet'
+  return Math.min(Math.max(val, min), max)
 }
 
 /**
@@ -51,137 +60,129 @@ export const Slider = memo<SliderProps>(
     range = false,
     minPointerValueInit = 0,
     maxPointerValueInit = 100,
-    onReturnMinPointerValue,
-    onReturnMaxPointerValue,
+    onMinPointerValueChange,
+    onMaxPointerValueChange,
   }) => {
     const styles = useStyles()
     const [pointMinPosition, setPointMinPosition] = useState(0)
     const [pointMaxPosition, setPointMaxPosition] = useState(0)
 
-    const trackWidth = useRef(0)
-    const pointerWidth = styles.pointWidth.width
-    const minTrackScale = 0
-    const maxTrackScale = 100
+    const trackWidth = useSharedValue(0)
+    const pointerWidth = styles.point.width
 
-    const [isHover, setHoverState] = useState(false)
+    const [isPressed, setIsPressed] = useState(false)
 
-    const minPointX = useSharedValue(0)
     const prevMinPointX = useSharedValue(0)
-
-    const maxPointX = useSharedValue(0)
     const prevMaxPointX = useSharedValue(0)
 
     const pointerStyle = useMemo(
-      () => [styles.point, isHover && styles.hovered, disabled && styles.disabledView],
-      [styles.point, isHover, styles.hovered, styles.disabledView, disabled]
+      () => [styles.point, isPressed && styles.hovered, disabled && styles.disabledView],
+      [styles.point, isPressed, styles.hovered, styles.disabledView, disabled]
     )
 
     const lineStyle = useMemo(
-      () => [styles.line, isHover && styles.hovered, disabled && styles.disabledView],
-      [styles.line, isHover, styles.hovered, styles.disabledView, disabled]
+      () => [styles.line, isPressed && styles.hovered, disabled && styles.disabledView],
+      [styles.line, isPressed, styles.hovered, styles.disabledView, disabled]
     )
 
-    function interpolateInitVal(value: number, width: number) {
-      return interpolate(
-        value,
-        [minTrackScale, maxTrackScale],
-        [0, width - pointerWidth],
-        Extrapolation.CLAMP
-      )
-    }
+    const interpolateInitVal = useCallback(
+      (value: number, width: number) => {
+        return interpolate(
+          value,
+          [MIN_TRACK_SCALE, MAX_TRACK_SCALE],
+          [0, width - pointerWidth],
+          Extrapolation.CLAMP
+        )
+      },
+      [pointerWidth]
+    )
 
     const onContainerLayout = (event: LayoutChangeEvent) => {
       event.target.measure((x, y, width, height, pageX, pageY) => {
-        trackWidth.current = width
+        trackWidth.value = width
         const min = interpolateInitVal(minPointerValueInit, width)
         const max = interpolateInitVal(maxPointerValueInit, width)
 
-        minPointX.value = min
-        maxPointX.value = max
         setPointMinPosition(min)
         setPointMaxPosition(max)
       })
     }
 
-    function clamp(val: number, min: number, max: number) {
-      return Math.min(Math.max(val, min), max)
-    }
+    const returnMinVal = useCallback(
+      (value: number) => {
+        const min = interpolate(
+          value,
+          [0, trackWidth.value - pointerWidth * 2],
+          [MIN_TRACK_SCALE, MAX_TRACK_SCALE],
+          Extrapolation.CLAMP
+        )
+        onMinPointerValueChange(min)
+      },
+      [trackWidth, pointerWidth]
+    )
 
-    function returnMinVal(val: number) {
-      const min = interpolate(
-        val,
-        [0, trackWidth.current - pointerWidth * 2],
-        [minTrackScale, maxTrackScale],
-        Extrapolation.CLAMP
-      )
-      onReturnMinPointerValue(min)
-    }
-
-    function returnMaxVal(val: number) {
-      const min = interpolate(
-        val,
-        [pointerWidth, trackWidth.current - pointerWidth],
-        [minTrackScale, maxTrackScale],
-        Extrapolation.CLAMP
-      )
-      onReturnMaxPointerValue(min)
-    }
+    const returnMaxVal = useCallback(
+      (value: number) => {
+        const min = interpolate(
+          value,
+          [pointerWidth, trackWidth.value - pointerWidth],
+          [MIN_TRACK_SCALE, MAX_TRACK_SCALE],
+          Extrapolation.CLAMP
+        )
+        onMaxPointerValueChange(min)
+      },
+      [trackWidth, pointerWidth]
+    )
 
     const panMinPoint = Gesture.Pan()
       .minDistance(1)
-      .onStart(() => {
-        prevMinPointX.value = minPointX.value
-        setHoverState(true)
+      .onBegin(() => {
+        prevMinPointX.value = pointMinPosition
+        runOnJS(setIsPressed)(true)
       })
       .onUpdate((event) => {
-        const maxTranslateX = trackWidth.current - pointerWidth
+        const maxTranslateX = trackWidth.value - pointerWidth
 
-        minPointX.value = clamp(
+        const minPointX = clamp(
           prevMinPointX.value + event.translationX,
           0,
-          range ? maxPointX.value - pointerWidth : maxTranslateX
+          range ? pointMaxPosition - pointerWidth : maxTranslateX
         )
 
-        setPointMinPosition(minPointX.value)
-        returnMinVal(minPointX.value)
+        setPointMinPosition(minPointX)
+        returnMinVal(minPointX)
       })
-      .onEnd(() => {
-        returnMinVal(minPointX.value)
-        setPointMinPosition(minPointX.value)
-        setHoverState(false)
+      .onFinalize(() => {
+        runOnJS(setIsPressed)(false)
       })
-      .runOnJS(true)
 
     const minPointStyle = useAnimatedStyle(() => ({
-      transform: [{ translateX: minPointX.value }],
+      transform: [{ translateX: pointMinPosition }],
     }))
 
     const panMaxPoint = Gesture.Pan()
       .minDistance(1)
-      .onStart(() => {
-        prevMaxPointX.value = maxPointX.value
-        setHoverState(true)
+      .onBegin(() => {
+        prevMaxPointX.value = pointMaxPosition
+        runOnJS(setIsPressed)(true)
       })
       .onUpdate((event) => {
-        const maxTranslateX = trackWidth.current - pointerWidth
+        const maxTranslateX = trackWidth.value - pointerWidth
 
-        maxPointX.value = clamp(
+        const maxPointX = clamp(
           prevMaxPointX.value + event.translationX,
-          minPointX.value + pointerWidth,
+          pointMinPosition + pointerWidth,
           maxTranslateX
         )
-        setPointMaxPosition(maxPointX.value)
-        returnMaxVal(maxPointX.value)
+        setPointMaxPosition(maxPointX)
+        returnMaxVal(maxPointX)
       })
-      .onEnd(() => {
-        setPointMaxPosition(maxPointX.value)
-        returnMaxVal(maxPointX.value)
-        setHoverState(false)
+      .onFinalize(() => {
+        runOnJS(setIsPressed)(false)
       })
-      .runOnJS(true)
 
     const maxPointStyle = useAnimatedStyle(() => ({
-      transform: [{ translateX: maxPointX.value }],
+      transform: [{ translateX: pointMaxPosition }],
     }))
 
     return (
@@ -261,10 +262,6 @@ const useStyles = makeStyles(({ theme }) => {
 
     hovered: {
       backgroundColor: theme.Form.Slider.sliderHandleHoverBg,
-    },
-
-    pointWidth: {
-      width: theme.Form.Slider.sliderHandleWidth,
     },
   }
 })
