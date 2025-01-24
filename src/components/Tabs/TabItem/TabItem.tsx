@@ -1,6 +1,6 @@
 import type { Icon } from '@tabler/icons-react-native'
-import React, { type LegacyRef, memo, useCallback, type ReactNode } from 'react'
-import { Text, Pressable, View } from 'react-native'
+import React, { memo, useCallback, type ReactNode } from 'react'
+import { Text, Pressable, View, type ViewProps } from 'react-native'
 
 import { makeStyles } from '../../../utils/makeStyles'
 
@@ -26,14 +26,14 @@ export interface TabItemProps {
   /** Признак активен ли компонент */
   active?: boolean
 
-  innerRef?: LegacyRef<View>
+  onLayout?: ViewProps['onLayout']
 }
 
 /** Часть навигационного компонента Tabs
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=888-13076&t=hIQjdrqPKK8BWYev-4
  */
 export const TabItem = memo<TabItemProps>(
-  ({ Icon, label, badge, index, onPress, disabled, active, innerRef }) => {
+  ({ Icon, label, badge, index, onPress, disabled, active, onLayout }) => {
     const styles = useStyles()
 
     const getIconColor = useCallback(
@@ -50,8 +50,8 @@ export const TabItem = memo<TabItemProps>(
       <Pressable
         accessibilityRole='button'
         disabled={disabled}
-        ref={innerRef}
         testID={TestId.Container + index}
+        onLayout={onLayout}
         onPress={() => onPress(index)}
       >
         {({ pressed }) => (

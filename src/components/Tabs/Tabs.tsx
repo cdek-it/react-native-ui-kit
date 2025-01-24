@@ -1,5 +1,5 @@
-import React, { memo, useEffect, useRef } from 'react'
-import { View } from 'react-native'
+import React, { memo, useEffect, useState } from 'react'
+import { type LayoutChangeEvent, type LayoutRectangle, View } from 'react-native'
 import Animated, { useSharedValue, withTiming } from 'react-native-reanimated'
 
 import { makeStyles } from '../../utils/makeStyles'
@@ -27,17 +27,29 @@ export const Tabs = memo<TabsProps>(
   ({ items, disabled = false, activeIndex, onChange, ...rest }) => {
     const styles = useStyles()
 
-    const activeRef = useRef<View>(null)
+    const [tabsLayouts, setTabsLayouts] = useState<Record<string, LayoutRectangle>>({})
+
+    const widthLineSharedValue = useSharedValue(0)
+    const xLineSharedValue = useSharedValue(0)
 
     useEffect(() => {
-      activeRef.current?.measure((x, y, width) => {
-        lineWidth.value = withTiming(width)
-        lineXPosition.value = withTiming(x)
-      })
-    }, [activeIndex])
+      const activeLayout = tabsLayouts[items[activeIndex].key]
+      if (activeLayout) {
+        widthLineSharedValue.value = withTiming(activeLayout.width)
+        xLineSharedValue.value = withTiming(activeLayout.x)
+      }
+    }, [activeIndex, tabsLayouts, widthLineSharedValue, xLineSharedValue, items])
 
-    const lineWidth = useSharedValue(0)
-    const lineXPosition = useSharedValue(0)
+    const handleTabLayout = (e: LayoutChangeEvent, key: string) => {
+      e.persist()
+
+      setTabsLayouts((prevTabsLayouts) => {
+        return {
+          ...prevTabsLayouts,
+          [key]: e.nativeEvent.layout,
+        }
+      })
+    }
 
     return (
       <View {...rest} style={styles.container}>
@@ -48,13 +60,15 @@ export const Tabs = memo<TabsProps>(
               active={activeIndex === index}
               disabled={disabled}
               index={index}
-              innerRef={activeIndex === index ? activeRef : undefined}
               key={prop.key}
+              onLayout={(e) => handleTabLayout(e, prop.key)}
               onPress={onChange}
             />
           )
         })}
-        <Animated.View style={[styles.line, { width: lineWidth, left: lineXPosition }]} />
+        <Animated.View
+          style={[styles.line, { width: widthLineSharedValue, left: xLineSharedValue }]}
+        />
       </View>
     )
   }
@@ -70,7 +84,6 @@ const useStyles = makeStyles(({ theme }) => ({
   },
   line: {
     position: 'absolute',
-    zIndex: -1,
     bottom: 0,
     height: theme.Panel.TabView.tabviewHeaderBorderWidth,
 

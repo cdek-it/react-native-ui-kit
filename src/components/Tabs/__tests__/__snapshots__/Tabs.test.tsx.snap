@@ -1888,6 +1888,7 @@ exports[`Tabs component tests disabled 1`] = `
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
+    onLayout={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -2066,6 +2067,7 @@ exports[`Tabs component tests disabled 1`] = `
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
+    onLayout={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -2141,6 +2143,7 @@ exports[`Tabs component tests disabled 1`] = `
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
+    onLayout={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -2247,7 +2250,6 @@ exports[`Tabs component tests disabled 1`] = `
         "left": 0,
         "position": "absolute",
         "width": 0,
-        "zIndex": -1,
       }
     }
   />
@@ -2290,6 +2292,7 @@ exports[`Tabs component tests normal 1`] = `
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
+    onLayout={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -2464,6 +2467,7 @@ exports[`Tabs component tests normal 1`] = `
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
+    onLayout={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -2535,6 +2539,7 @@ exports[`Tabs component tests normal 1`] = `
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
+    onLayout={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -2637,7 +2642,6 @@ exports[`Tabs component tests normal 1`] = `
         "left": 0,
         "position": "absolute",
         "width": 0,
-        "zIndex": -1,
       }
     }
   />

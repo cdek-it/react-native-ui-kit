@@ -23,9 +23,9 @@ const TabsExample = (props: { disabled?: boolean }) => {
         activeIndex={activeIndex}
         disabled={props.disabled}
         items={[
-          { Icon: IconUser, label: 'First Tab', key: '1' },
+          { Icon: IconUser, label: 'First', key: '1' },
           { label: 'Second Tab', key: '2' },
-          { badge: <Badge severity='danger'>0</Badge>, label: 'Third Tab', key: '3' },
+          { badge: <Badge severity='danger'>0</Badge>, label: 'Long Third Tab', key: '3' },
         ]}
         onChange={setActiveIndex}
       />
