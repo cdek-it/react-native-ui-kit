@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.13](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.12...v0.0.13) (2025-01-24)
+
+
+### Features
+
+* **buttonbadge:** add component for button with badge ([01d51e0](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/01d51e02bd7577ddf9b7b22d2f0aa04b48475600))
+* **inputswitch:** add custom switch component ([0c20a8b](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/0c20a8b82d8a2324d68f76034a85885bb971f9be))
+* **ProgressBar:** реализация компонента ProgressBar ([6841f60](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/6841f60f84a57f1af4ea51f9481d04eede52b8e7))
+* **rating:** add Rating component ([5be32e4](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/5be32e46a23937ba2427afbc3cf8c215f17577db))
+* **rating:** add RatingClear component ([18a66d2](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/18a66d26fcc13a0497fb4923007a540e48b3b460))
+* **Rating:** add RatingItem component ([ffef232](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/ffef23274aacbfadeecc8c112e955014eaa4224c))
+
+
+### Bug Fixes
+
+* **buttonbadge:** fix storybook props ([eb31535](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/eb31535fc0311b8a97b70023837e3da83f9d97f6))
+
 ### [0.0.12](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.11...v0.0.12) (2025-01-21)
 
 
