@@ -40,7 +40,12 @@ export const ButtonContainer = memo<
     )
 
     return (
-      <Pressable disabled={disabled || loading} style={containerCallbackStyle} {...props}>
+      <Pressable
+        accessibilityRole='button'
+        disabled={disabled || loading}
+        style={containerCallbackStyle}
+        {...props}
+      >
         {children}
       </Pressable>
     )
