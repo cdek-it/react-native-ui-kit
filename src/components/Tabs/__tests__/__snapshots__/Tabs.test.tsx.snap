@@ -2239,7 +2239,10 @@ exports[`Tabs component tests disabled 1`] = `
     collapsable={false}
     jestAnimatedStyle={
       {
-        "value": {},
+        "value": {
+          "left": 0,
+          "width": 0,
+        },
       }
     }
     style={
@@ -2631,7 +2634,10 @@ exports[`Tabs component tests normal 1`] = `
     collapsable={false}
     jestAnimatedStyle={
       {
-        "value": {},
+        "value": {
+          "left": 0,
+          "width": 0,
+        },
       }
     }
     style={

@@ -1,6 +1,6 @@
 import React, { memo, useEffect, useState } from 'react'
 import { type LayoutChangeEvent, type LayoutRectangle, View } from 'react-native'
-import Animated, { useSharedValue, withTiming } from 'react-native-reanimated'
+import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated'
 
 import { makeStyles } from '../../utils/makeStyles'
 
@@ -29,16 +29,24 @@ export const Tabs = memo<TabsProps>(
 
     const [tabsLayouts, setTabsLayouts] = useState<Record<string, LayoutRectangle>>({})
 
-    const widthLineSharedValue = useSharedValue(0)
-    const xLineSharedValue = useSharedValue(0)
+    const lineSharedValue = useSharedValue({
+      x: 0,
+      width: 0,
+    })
+
+    const animatedStyles = useAnimatedStyle(() => {
+      return {
+        width: withTiming(lineSharedValue.value.width),
+        left: withTiming(lineSharedValue.value.x),
+      }
+    })
 
     useEffect(() => {
       const activeLayout = tabsLayouts[items[activeIndex].key]
       if (activeLayout) {
-        widthLineSharedValue.value = withTiming(activeLayout.width)
-        xLineSharedValue.value = withTiming(activeLayout.x)
+        lineSharedValue.value = { width: activeLayout.width, x: activeLayout.x }
       }
-    }, [activeIndex, tabsLayouts, widthLineSharedValue, xLineSharedValue, items])
+    }, [activeIndex, tabsLayouts, lineSharedValue, items])
 
     const handleTabLayout = (e: LayoutChangeEvent, key: string) => {
       e.persist()
@@ -66,9 +74,7 @@ export const Tabs = memo<TabsProps>(
             />
           )
         })}
-        <Animated.View
-          style={[styles.line, { width: widthLineSharedValue, left: xLineSharedValue }]}
-        />
+        <Animated.View style={[styles.line, animatedStyles]} />
       </View>
     )
   }
