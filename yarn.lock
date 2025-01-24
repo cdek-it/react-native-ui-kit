@@ -2324,6 +2324,7 @@ __metadata:
     prettier: "npm:^3.3.3"
     react: "npm:18.2.0"
     react-native: "npm:0.74.5"
+    react-native-advanced-input-mask: "npm:^1.2.0"
     react-native-gesture-handler: "npm:~2.16.1"
     react-native-reanimated: "npm:~3.15.5"
     react-native-safe-area-context: "npm:4.10.5"
@@ -14010,6 +14011,16 @@ __metadata:
   version: 17.0.2
   resolution: "react-is@npm:17.0.2"
   checksum: 10/73b36281e58eeb27c9cc6031301b6ae19ecdc9f18ae2d518bdb39b0ac564e65c5779405d623f1df9abf378a13858b79442480244bd579968afc1faf9a2ce5e05
+  languageName: node
+  linkType: hard
+
+"react-native-advanced-input-mask@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "react-native-advanced-input-mask@npm:1.2.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10/5094a7bd42a21c4a4fba99e1774a777d9963fc137289dc6a2973eaca942ece336dc2e01511428800f774400d177540fcc81f26ac67a5d239a3e5266cfecb18aa
   languageName: node
   linkType: hard
 
