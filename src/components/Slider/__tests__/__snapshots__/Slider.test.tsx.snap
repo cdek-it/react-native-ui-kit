@@ -24,23 +24,24 @@ exports[`Slider snapshots default 1`] = `
     }
   >
     <View
-      style={
-        [
-          [
-            {
-              "backgroundColor": "#188700",
-              "borderRadius": 14,
-              "height": 3.5,
-              "position": "absolute",
-            },
-            false,
-            false,
-          ],
-          {
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
             "left": 0,
             "width": 8.75,
           },
-        ]
+        }
+      }
+      style={
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 14,
+          "height": 3.5,
+          "left": 0,
+          "position": "absolute",
+          "width": 8.75,
+        }
       }
     />
     <View
@@ -100,23 +101,24 @@ exports[`Slider snapshots disabled = false, range = false 1`] = `
     }
   >
     <View
-      style={
-        [
-          [
-            {
-              "backgroundColor": "#188700",
-              "borderRadius": 14,
-              "height": 3.5,
-              "position": "absolute",
-            },
-            false,
-            false,
-          ],
-          {
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
             "left": 0,
             "width": 8.75,
           },
-        ]
+        }
+      }
+      style={
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 14,
+          "height": 3.5,
+          "left": 0,
+          "position": "absolute",
+          "width": 8.75,
+        }
       }
     />
     <View
@@ -176,23 +178,24 @@ exports[`Slider snapshots disabled = false, range = true 1`] = `
     }
   >
     <View
-      style={
-        [
-          [
-            {
-              "backgroundColor": "#188700",
-              "borderRadius": 14,
-              "height": 3.5,
-              "position": "absolute",
-            },
-            false,
-            false,
-          ],
-          {
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
             "left": 8.75,
             "width": 0,
           },
-        ]
+        }
+      }
+      style={
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 14,
+          "height": 3.5,
+          "left": 8.75,
+          "position": "absolute",
+          "width": 0,
+        }
       }
     />
     <View
@@ -281,23 +284,24 @@ exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 
     }
   >
     <View
-      style={
-        [
-          [
-            {
-              "backgroundColor": "#188700",
-              "borderRadius": 14,
-              "height": 3.5,
-              "position": "absolute",
-            },
-            false,
-            false,
-          ],
-          {
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
             "left": 8.75,
             "width": 0,
           },
-        ]
+        }
+      }
+      style={
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 14,
+          "height": 3.5,
+          "left": 8.75,
+          "position": "absolute",
+          "width": 0,
+        }
       }
     />
     <View
@@ -386,25 +390,24 @@ exports[`Slider snapshots disabled = true, range = false 1`] = `
     }
   >
     <View
-      style={
-        [
-          [
-            {
-              "backgroundColor": "#188700",
-              "borderRadius": 14,
-              "height": 3.5,
-              "position": "absolute",
-            },
-            false,
-            {
-              "backgroundColor": "grey",
-            },
-          ],
-          {
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
             "left": 0,
             "width": 8.75,
           },
-        ]
+        }
+      }
+      style={
+        {
+          "backgroundColor": "grey",
+          "borderRadius": 14,
+          "height": 3.5,
+          "left": 0,
+          "position": "absolute",
+          "width": 8.75,
+        }
       }
     />
     <View
@@ -464,25 +467,24 @@ exports[`Slider snapshots disabled = true, range = true 1`] = `
     }
   >
     <View
-      style={
-        [
-          [
-            {
-              "backgroundColor": "#188700",
-              "borderRadius": 14,
-              "height": 3.5,
-              "position": "absolute",
-            },
-            false,
-            {
-              "backgroundColor": "grey",
-            },
-          ],
-          {
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
             "left": 8.75,
             "width": 0,
           },
-        ]
+        }
+      }
+      style={
+        {
+          "backgroundColor": "grey",
+          "borderRadius": 14,
+          "height": 3.5,
+          "left": 8.75,
+          "position": "absolute",
+          "width": 0,
+        }
       }
     />
     <View
@@ -571,25 +573,24 @@ exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 8
     }
   >
     <View
-      style={
-        [
-          [
-            {
-              "backgroundColor": "#188700",
-              "borderRadius": 14,
-              "height": 3.5,
-              "position": "absolute",
-            },
-            false,
-            {
-              "backgroundColor": "grey",
-            },
-          ],
-          {
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
             "left": 8.75,
             "width": 0,
           },
-        ]
+        }
+      }
+      style={
+        {
+          "backgroundColor": "grey",
+          "borderRadius": 14,
+          "height": 3.5,
+          "left": 8.75,
+          "position": "absolute",
+          "width": 0,
+        }
       }
     />
     <View
