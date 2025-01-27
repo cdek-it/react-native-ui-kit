@@ -1,6 +1,11 @@
 import React, { memo, useEffect, useState } from 'react'
 import { type LayoutChangeEvent, type LayoutRectangle, View } from 'react-native'
-import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated'
+import Animated, {
+  interpolate,
+  useAnimatedStyle,
+  useSharedValue,
+  withTiming,
+} from 'react-native-reanimated'
 
 import { makeStyles } from '../../utils/makeStyles'
 
@@ -29,23 +34,25 @@ export const Tabs = memo<TabsProps>(
 
     const [tabsLayouts, setTabsLayouts] = useState<Record<string, LayoutRectangle>>({})
 
-    const lineSharedValue = useSharedValue({
-      x: 0,
-      width: 0,
-    })
+    const lineSharedValue = useSharedValue(activeIndex)
 
     const animatedStyles = useAnimatedStyle(() => {
       return {
-        width: withTiming(lineSharedValue.value.width),
-        left: withTiming(lineSharedValue.value.x),
+        width: interpolate(
+          lineSharedValue.value,
+          items.map((_, index) => index),
+          items.map(({ key }) => tabsLayouts[key]?.width ?? 0)
+        ),
+        left: interpolate(
+          lineSharedValue.value,
+          items.map((_, index) => index),
+          items.map(({ key }) => tabsLayouts[key]?.x ?? 0)
+        ),
       }
     })
 
     useEffect(() => {
-      const activeLayout = tabsLayouts[items[activeIndex].key]
-      if (activeLayout) {
-        lineSharedValue.value = { width: activeLayout.width, x: activeLayout.x }
-      }
+      lineSharedValue.value = withTiming(activeIndex)
     }, [activeIndex, tabsLayouts, lineSharedValue, items])
 
     const handleTabLayout = (e: LayoutChangeEvent, key: string) => {
