@@ -97,16 +97,26 @@ export const Slider = memo<SliderProps>(
       [pointerWidth]
     )
 
-    const onContainerLayout = (event: LayoutChangeEvent) => {
-      event.target.measure((x, y, width, height, pageX, pageY) => {
-        trackWidth.value = width
-        const min = interpolateInitVal(minPointerValueInit, width)
-        const max = interpolateInitVal(maxPointerValueInit, width)
+    const onContainerLayout = useCallback(
+      (event: LayoutChangeEvent) => {
+        event.target.measure((x, y, width) => {
+          trackWidth.value = width
+          const min = interpolateInitVal(minPointerValueInit, width)
+          const max = interpolateInitVal(maxPointerValueInit, width)
 
-        minPointX.value = min
-        maxPointX.value = max
-      })
-    }
+          minPointX.value = min
+          maxPointX.value = max
+        })
+      },
+      [
+        minPointerValueInit,
+        maxPointerValueInit,
+        interpolateInitVal,
+        trackWidth,
+        minPointX,
+        maxPointX,
+      ]
+    )
 
     const returnMinVal = useCallback(
       (value: number) => {
@@ -118,7 +128,7 @@ export const Slider = memo<SliderProps>(
         )
         onMinPointerValueChange(min)
       },
-      [trackWidth, pointerWidth]
+      [trackWidth, pointerWidth, onMinPointerValueChange]
     )
 
     const returnMaxVal = useCallback(
@@ -131,7 +141,7 @@ export const Slider = memo<SliderProps>(
         )
         onMaxPointerValueChange(min)
       },
-      [trackWidth, pointerWidth]
+      [trackWidth, pointerWidth, onMaxPointerValueChange]
     )
 
     const panMinPoint = Gesture.Pan()
