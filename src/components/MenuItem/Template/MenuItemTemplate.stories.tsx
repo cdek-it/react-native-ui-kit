@@ -44,6 +44,8 @@ const meta: Meta<typeof MenuItemTemplate> = {
       options: Object.keys(Extras),
       mapping: Extras,
     },
+    contentPaddingTop: { control: 'number' },
+    contentPaddingBottom: { control: 'number' },
     onPress: { action: 'pressed' },
   },
   decorators: [
@@ -85,6 +87,8 @@ export const MenuItemTemplateNormal: Story = {
         extra=IconDiamond,
         separator=false,
         state="default",
+        contentPaddingTop: 0,
+        contentPaddingBottom: 0,
         onPress = { Console.log("Menu item pressed) }
       />
   `,
