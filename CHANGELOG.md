@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.14](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.13...v0.0.14) (2025-01-30)
+
+
+### Features
+
+* **menuitemtemplate:** Добавлены свойства для паддингов сверху и снизу от контента ([f860926](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/f8609267377fd2813ec0245fac4a43835edb2203))
+* **slider:** changed on React native gesture handler ([94735a8](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/94735a86a7915be5bb8addcfe901ac0dd7771e0c))
+* **slider:** fix ([96de913](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/96de913b51dc4164561d015975dfe210c9a408a8))
+* **slider:** fix ([4e6d3eb](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/4e6d3eb0c737882708b7768dc02c355e1c45c093))
+* **slider:** fix ([2d8acc9](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/2d8acc95a8f8b19c6787f8835e4aea2e772e224b))
+* **slider:** fix ([a4c4f4e](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/a4c4f4ef270862a37581e0f2d6f7f7a1caec019e))
+* **slider:** fix ([9c037fd](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/9c037fda92445d7b9e1d08d0dbc3f7842f00e7cc))
+* **slider:** fix ([20f9d4c](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/20f9d4c5ac137fbe4dddf34d0efeedce8a2b76c6))
+* **slider:** implement Slider component ([1f715cd](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/1f715cd1484ab17ad0dcfc3ba73628a04579ed8d))
+* **tabs:** add highlight when pressed ([ed7a3c5](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/ed7a3c5eb74cadbbcbb79d291d9c8dacf0988b50)), closes [#34](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/issues/34)
+
 ### [0.0.13](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.12...v0.0.13) (2025-01-24)
 
 
