@@ -229,6 +229,8 @@ exports[`MenuItemTemplate full disabled 1`] = `
               {
                 "flexDirection": "column",
                 "gap": 3.5,
+                "paddingBottom": 0,
+                "paddingTop": 0,
               }
             }
           >
@@ -576,6 +578,8 @@ exports[`MenuItemTemplate minimal config 1`] = `
               {
                 "flexDirection": "column",
                 "gap": 3.5,
+                "paddingBottom": 0,
+                "paddingTop": 0,
               }
             }
           >
@@ -766,6 +770,8 @@ exports[`MenuItemTemplate prefix,suffix = down 1`] = `
               {
                 "flexDirection": "column",
                 "gap": 3.5,
+                "paddingBottom": 0,
+                "paddingTop": 0,
               }
             }
           >
@@ -1058,6 +1064,8 @@ exports[`MenuItemTemplate prefix,suffix = right 1`] = `
               {
                 "flexDirection": "column",
                 "gap": 3.5,
+                "paddingBottom": 0,
+                "paddingTop": 0,
               }
             }
           >
@@ -1375,6 +1383,8 @@ exports[`MenuItemTemplate with colored icon 1`] = `
               {
                 "flexDirection": "column",
                 "gap": 3.5,
+                "paddingBottom": 0,
+                "paddingTop": 0,
               }
             }
           >
@@ -1480,6 +1490,8 @@ exports[`MenuItemTemplate with extra 1`] = `
               {
                 "flexDirection": "column",
                 "gap": 3.5,
+                "paddingBottom": 0,
+                "paddingTop": 0,
               }
             }
           >
@@ -1791,6 +1803,8 @@ exports[`MenuItemTemplate with icon 1`] = `
               {
                 "flexDirection": "column",
                 "gap": 3.5,
+                "paddingBottom": 0,
+                "paddingTop": 0,
               }
             }
           >
@@ -2037,6 +2051,115 @@ exports[`MenuItemTemplate with icon and badge 1`] = `
               {
                 "flexDirection": "column",
                 "gap": 3.5,
+                "paddingBottom": 0,
+                "paddingTop": 0,
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontSize": 14,
+                    "includeFontPadding": false,
+                    "textAlign": "left",
+                    "verticalAlign": "middle",
+                  },
+                  {
+                    "color": "rgba(0, 0, 0, 0.8000)",
+                  },
+                ]
+              }
+            >
+              Menu Item
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`MenuItemTemplate with padding 1`] = `
+<View
+  style={false}
+>
+  <View
+    accessibilityLabel="Menu Item"
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    testID="menuItemButton"
+  >
+    <View
+      style={
+        [
+          {
+            "alignSelf": "stretch",
+            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "borderColor": "rgba(255, 255, 255, 0.0001)",
+            "borderRadius": 7,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "gap": 7,
+            "justifyContent": "space-between",
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 7,
+          },
+          null,
+        ]
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+              "gap": 7,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flexDirection": "column",
+                "gap": 3.5,
+                "paddingBottom": 2,
+                "paddingTop": 2,
               }
             }
           >
@@ -2148,6 +2271,8 @@ exports[`MenuItemTemplate with separator 1`] = `
               {
                 "flexDirection": "column",
                 "gap": 3.5,
+                "paddingBottom": 0,
+                "paddingTop": 0,
               }
             }
           >

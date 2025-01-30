@@ -6,6 +6,9 @@
 !.yarn/sdks
 !.yarn/versions
 
+# vscode
+.vscode
+
 # jest
 coverage
 junit.xml

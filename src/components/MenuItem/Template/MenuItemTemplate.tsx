@@ -31,6 +31,10 @@ export interface MenuItemTemplateProps extends ViewProps {
   separator?: boolean
   /**  Состояние 'default' | 'disabled' */
   state?: MenuItemTemplateState
+  /** Отступ от контента сверху */
+  contentPaddingTop?: number
+  /** Отступ от контента снизу */
+  contentPaddingBottom?: number
   /** Обработчик нажатия */
   onPress?: () => void
 }
@@ -48,6 +52,8 @@ export interface MenuItemTemplateProps extends ViewProps {
  * @param extra - Дополнительный контент пункта меню, выводится справа от текста. Может быть любым react компонентом. Важно! Размеры доплолнительного контента не контролируются пунктом меню и могут его растягивать. Использовать с осторожностью.
  * @param separator - Разделитель. Выводится как полоска сверху. Изменяет общую высоту элемента меню.
  * @param state - Состояние 'default' | 'disabled'. В состоянии 'disabled' отключается чувствительность к нажатиям, компонент становится полупрозрачным, а аксессуары заменяются иконкой с замком
+ * @param contentPaddingTop - Отступ от контента сверху
+ * @param contentPaddingBottom - Отступ от контента снизу
  * @param onPress - Обработчик нажатия
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=937-6724&m=dev
  */
@@ -63,6 +69,8 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
     extra,
     separator = false,
     state = 'default',
+    contentPaddingTop = 0,
+    contentPaddingBottom = 0,
     onPress = undefined,
     ...rest
   }) => {
@@ -94,7 +102,13 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
                 {Icon && (
                   <MenuItemIcon Icon={Icon} badgeSeverity={badgeSeverity} style={iconStyle} />
                 )}
-                <View style={styles.textContainer}>
+                <View
+                  style={{
+                    ...styles.textContainer,
+                    paddingTop: contentPaddingTop,
+                    paddingBottom: contentPaddingBottom,
+                  }}
+                >
                   <Text style={[styles.title, styles.titleColor]}>{title}</Text>
                   {caption && <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>}
                 </View>

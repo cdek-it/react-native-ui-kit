@@ -7,6 +7,10 @@ import { MenuItemTemplate, type MenuItemTemplateProps } from '../MenuItemTemplat
 const snapshotTestsConfig: Array<[string, MenuItemTemplateProps]> = [
   ['minimal config', { title: 'Menu Item', state: 'default' }],
   [
+    'with padding',
+    { title: 'Menu Item', state: 'default', contentPaddingTop: 2, contentPaddingBottom: 2 },
+  ],
+  [
     'prefix,suffix = right',
     { title: 'Menu Item', caption: 'Caption', prefix: 'right', suffix: 'right' },
   ],
