@@ -59,6 +59,7 @@ exports[`MenuItemTemplate full disabled 1`] = `
             "paddingHorizontal": 10.5,
             "paddingVertical": 7,
           },
+          false,
           {
             "backgroundColor": "rgba(0, 0, 0, 0.1000)",
             "borderColor": "#dbdada",
@@ -554,7 +555,8 @@ exports[`MenuItemTemplate minimal config 1`] = `
             "paddingHorizontal": 10.5,
             "paddingVertical": 7,
           },
-          null,
+          false,
+          false,
         ]
       }
     >
@@ -661,7 +663,8 @@ exports[`MenuItemTemplate prefix,suffix = down 1`] = `
             "paddingHorizontal": 10.5,
             "paddingVertical": 7,
           },
-          null,
+          false,
+          false,
         ]
       }
     >
@@ -955,7 +958,8 @@ exports[`MenuItemTemplate prefix,suffix = right 1`] = `
             "paddingHorizontal": 10.5,
             "paddingVertical": 7,
           },
-          null,
+          false,
+          false,
         ]
       }
     >
@@ -1249,7 +1253,8 @@ exports[`MenuItemTemplate with colored icon 1`] = `
             "paddingHorizontal": 10.5,
             "paddingVertical": 7,
           },
-          null,
+          false,
+          false,
         ]
       }
     >
@@ -1466,7 +1471,8 @@ exports[`MenuItemTemplate with extra 1`] = `
             "paddingHorizontal": 10.5,
             "paddingVertical": 7,
           },
-          null,
+          false,
+          false,
         ]
       }
     >
@@ -1669,7 +1675,8 @@ exports[`MenuItemTemplate with icon 1`] = `
             "paddingHorizontal": 10.5,
             "paddingVertical": 7,
           },
-          null,
+          false,
+          false,
         ]
       }
     >
@@ -1886,7 +1893,8 @@ exports[`MenuItemTemplate with icon and badge 1`] = `
             "paddingHorizontal": 10.5,
             "paddingVertical": 7,
           },
-          null,
+          false,
+          false,
         ]
       }
     >
@@ -2134,7 +2142,8 @@ exports[`MenuItemTemplate with padding 1`] = `
             "paddingHorizontal": 10.5,
             "paddingVertical": 7,
           },
-          null,
+          false,
+          false,
         ]
       }
     >
@@ -2247,7 +2256,8 @@ exports[`MenuItemTemplate with separator 1`] = `
             "paddingHorizontal": 10.5,
             "paddingVertical": 7,
           },
-          null,
+          false,
+          false,
         ]
       }
     >
