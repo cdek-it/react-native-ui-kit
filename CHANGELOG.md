@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.16](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.15...v0.0.16) (2025-01-31)
+
+
+### Features
+
+* **menuitemtemplate:** добавлен визуальный стиль для нажатого состояния ([0609e5d](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/0609e5dde20e73b191286f87fe059a423d55fcc5))
+
 ### [0.0.15](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.14...v0.0.15) (2025-01-30)
 
 ### [0.0.14](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.13...v0.0.14) (2025-01-30)
