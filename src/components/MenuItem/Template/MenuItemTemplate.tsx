@@ -77,7 +77,6 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
     const styles = useStyles()
 
     const disabled = state === 'disabled'
-    const maybeDisabled = disabled ? styles.disabled : null
 
     const iconStyle = useMemo(
       () => ({ ...styles.icon, color: iconColor || styles.icon.color }),
@@ -95,28 +94,38 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
           onPress={onPress}
           {...rest}
         >
-          <View style={[styles.contentContainer, maybeDisabled]}>
-            <View style={styles.leftContainer}>
-              <MenuItemAccessory disabled={disabled} iconStyle={styles.accessory} type={prefix} />
-              <View style={styles.templateContainer}>
-                {Icon && (
-                  <MenuItemIcon Icon={Icon} badgeSeverity={badgeSeverity} style={iconStyle} />
-                )}
-                <View
-                  style={{
-                    ...styles.textContainer,
-                    paddingTop: contentPaddingTop,
-                    paddingBottom: contentPaddingBottom,
-                  }}
-                >
-                  <Text style={[styles.title, styles.titleColor]}>{title}</Text>
-                  {caption && <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>}
+          {({ pressed }) => (
+            <View
+              style={[
+                styles.contentContainer,
+                pressed && styles.contentContainerPressed,
+                disabled && styles.contentContainerDisabled,
+              ]}
+            >
+              <View style={styles.leftContainer}>
+                <MenuItemAccessory disabled={disabled} iconStyle={styles.accessory} type={prefix} />
+                <View style={styles.templateContainer}>
+                  {Icon && (
+                    <MenuItemIcon Icon={Icon} badgeSeverity={badgeSeverity} style={iconStyle} />
+                  )}
+                  <View
+                    style={{
+                      ...styles.textContainer,
+                      paddingTop: contentPaddingTop,
+                      paddingBottom: contentPaddingBottom,
+                    }}
+                  >
+                    <Text style={[styles.title, styles.titleColor]}>{title}</Text>
+                    {caption && (
+                      <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>
+                    )}
+                  </View>
+                  {extra}
                 </View>
-                {extra}
               </View>
+              <MenuItemAccessory disabled={disabled} iconStyle={styles.accessory} type={suffix} />
             </View>
-            <MenuItemAccessory disabled={disabled} iconStyle={styles.accessory} type={suffix} />
-          </View>
+          )}
         </Pressable>
       </View>
     )
@@ -141,7 +150,10 @@ const useStyles = makeStyles(({ theme, spacing, typography }) => ({
     borderRadius: theme.Menu.Item.menuitemBorderRadius,
     backgroundColor: theme.Menu.Item.menuitemBg,
   },
-  disabled: {
+  contentContainerPressed: {
+    backgroundColor: theme.Menu.Item.menuitemHoverBg,
+  },
+  contentContainerDisabled: {
     borderWidth: 1,
     borderColor: theme.Button.Disabled.disabledButtonBorderColor,
     backgroundColor: theme.Button.Disabled.disabledButtonBg,
