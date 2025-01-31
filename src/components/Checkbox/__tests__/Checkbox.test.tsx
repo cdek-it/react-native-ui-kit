@@ -7,6 +7,7 @@ describe('Checkbox', () => {
   const defaultProps: CheckboxProps = {
     // eslint-disable-next-line @typescript-eslint/no-empty-function
     onPress: () => {},
+    state: 'default',
   }
 
   describe('snapshots', () => {

@@ -758,6 +758,8 @@ exports[`Checkbox snapshots default 1`] = `
     style={
       {
         "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderColor": "#dbdada",
         "borderRadius": 3.5,
         "borderWidth": 1,
         "height": 21,

@@ -26,7 +26,7 @@ export interface CheckboxProps {
    */
   indeterminate?: boolean
   /** Выбор состояния компонента */
-  state?: CheckboxState
+  state: CheckboxState
 }
 
 export const Checkbox = memo<CheckboxProps>((props: CheckboxProps) => {
@@ -53,51 +53,54 @@ export const Checkbox = memo<CheckboxProps>((props: CheckboxProps) => {
 const usePressableStyles = (props: CheckboxProps) => {
   const styles = useStyles()
   const { checked, indeterminate, state } = props
+
+  const styleMap = useMemo(
+    () => ({
+      default: {
+        filled: styles.defaultFilled,
+        clean: styles.defaultClean,
+      },
+      disabled: {
+        filled: styles.disabledFilled,
+        clean: styles.disabledClean,
+      },
+      danger: {
+        filled: styles.dangerFilled,
+        clean: styles.dangerClean,
+      },
+      hover: {
+        filled: styles.hoverFilled,
+        clean: styles.hoverClean,
+      },
+    }),
+    [
+      styles.defaultFilled,
+      styles.defaultClean,
+      styles.disabledFilled,
+      styles.disabledClean,
+      styles.dangerFilled,
+      styles.dangerClean,
+      styles.hoverFilled,
+      styles.hoverClean,
+    ]
+  )
+
   return useCallback(
     ({ pressed }: PressableStateCallbackType) => {
-      const result: ViewStyle[] = [styles.container]
       const isFilled = checked || indeterminate
-      if (isFilled && state === 'default') {
-        result.push(styles.defaultFilled)
+      const result: ViewStyle[] = [styles.container]
+
+      if (state in styleMap) {
+        result.push(styleMap[state][isFilled ? 'filled' : 'clean'])
       }
-      if (!isFilled && state === 'default') {
-        result.push(styles.defaultClean)
-      }
-      if (isFilled && state === 'disabled') {
-        result.push(styles.disabledFilled)
-      }
-      if (!isFilled && state === 'disabled') {
-        result.push(styles.disabledClean)
-      }
-      if (isFilled && state === 'danger') {
-        result.push(styles.dangerFilled)
-      }
-      if (!isFilled && state === 'danger') {
-        result.push(styles.dangerClean)
-      }
-      if (pressed && isFilled) {
-        result.push(styles.hoverFilled)
-      }
-      if (pressed && !isFilled) {
-        result.push(styles.hoverClean)
+
+      if (pressed) {
+        result.push(styleMap.hover[isFilled ? 'filled' : 'clean'])
       }
 
       return StyleSheet.flatten(result)
     },
-    [
-      checked,
-      indeterminate,
-      state,
-      styles.container,
-      styles.defaultClean,
-      styles.defaultFilled,
-      styles.disabledClean,
-      styles.disabledFilled,
-      styles.dangerClean,
-      styles.dangerFilled,
-      styles.hoverClean,
-      styles.hoverFilled,
-    ]
+    [checked, indeterminate, state, styles.container, styleMap]
   )
 }
 
