@@ -2235,7 +2235,7 @@ __metadata:
     react-native: "npm:0.77.0"
     react-native-advanced-input-mask: "npm:1.2.3"
     react-native-gesture-handler: "npm:2.22.1"
-    react-native-reanimated: "npm:3.15.5"
+    react-native-reanimated: "patch:react-native-reanimated@npm%3A3.16.7#~/.yarn/patches/react-native-reanimated-npm-3.16.7-1e7cd6d376.patch"
     react-native-safe-area-context: "npm:5.1.0"
     react-native-svg: "npm:15.11.1"
     react-test-renderer: "npm:18.3.1"
@@ -13875,9 +13875,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-reanimated@npm:3.15.5":
-  version: 3.15.5
-  resolution: "react-native-reanimated@npm:3.15.5"
+"react-native-reanimated@npm:3.16.7":
+  version: 3.16.7
+  resolution: "react-native-reanimated@npm:3.16.7"
   dependencies:
     "@babel/plugin-transform-arrow-functions": "npm:^7.0.0-0"
     "@babel/plugin-transform-class-properties": "npm:^7.0.0-0"
@@ -13894,7 +13894,30 @@ __metadata:
     "@babel/core": ^7.0.0-0
     react: "*"
     react-native: "*"
-  checksum: 10/e516405ed52f1d4f844680e3c403bb3e57447be18df0e684d775eb25baa4563678f88fab32553f1c0242e3bbbe0a5566750a60241ac609634b2ab5489b401284
+  checksum: 10/37099178efca335ea74bb0fc1b50ad898c2b24b1ed99e67bfb90e8898e1fadace2d2765a275d7d23b9c141d19fc673bb4b78dcb9f47d08921dd911c76b5040aa
+  languageName: node
+  linkType: hard
+
+"react-native-reanimated@patch:react-native-reanimated@npm%3A3.16.7#~/.yarn/patches/react-native-reanimated-npm-3.16.7-1e7cd6d376.patch":
+  version: 3.16.7
+  resolution: "react-native-reanimated@patch:react-native-reanimated@npm%3A3.16.7#~/.yarn/patches/react-native-reanimated-npm-3.16.7-1e7cd6d376.patch::version=3.16.7&hash=7b42ea"
+  dependencies:
+    "@babel/plugin-transform-arrow-functions": "npm:^7.0.0-0"
+    "@babel/plugin-transform-class-properties": "npm:^7.0.0-0"
+    "@babel/plugin-transform-classes": "npm:^7.0.0-0"
+    "@babel/plugin-transform-nullish-coalescing-operator": "npm:^7.0.0-0"
+    "@babel/plugin-transform-optional-chaining": "npm:^7.0.0-0"
+    "@babel/plugin-transform-shorthand-properties": "npm:^7.0.0-0"
+    "@babel/plugin-transform-template-literals": "npm:^7.0.0-0"
+    "@babel/plugin-transform-unicode-regex": "npm:^7.0.0-0"
+    "@babel/preset-typescript": "npm:^7.16.7"
+    convert-source-map: "npm:^2.0.0"
+    invariant: "npm:^2.2.4"
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+    react: "*"
+    react-native: "*"
+  checksum: 10/cde2ed7f169d6703d782142b032f69f0c7917feff114aaddeeefaccf4a50c82340462e061a16e77048655d5dfcce7b47d34d91af78ffa8ec0e9de04da73cb753
   languageName: node
   linkType: hard
 

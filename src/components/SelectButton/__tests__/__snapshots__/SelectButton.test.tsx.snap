@@ -32,7 +32,6 @@ exports[`SelectButtonItem {"disabled": true, "initialIndex": 1, "size": "small",
     position={
       {
         "_isReanimatedSharedValue": true,
-        "_value": 1,
         "addListener": [Function],
         "modify": [Function],
         "removeListener": [Function],
@@ -57,7 +56,6 @@ exports[`SelectButtonItem {"disabled": true, "initialIndex": 1, "size": "small",
     position={
       {
         "_isReanimatedSharedValue": true,
-        "_value": 1,
         "addListener": [Function],
         "modify": [Function],
         "removeListener": [Function],
@@ -100,7 +98,6 @@ exports[`SelectButtonItem {"initialIndex": 1, "size": "xlarge"} 1`] = `
     position={
       {
         "_isReanimatedSharedValue": true,
-        "_value": 1,
         "addListener": [Function],
         "modify": [Function],
         "removeListener": [Function],
@@ -124,7 +121,6 @@ exports[`SelectButtonItem {"initialIndex": 1, "size": "xlarge"} 1`] = `
     position={
       {
         "_isReanimatedSharedValue": true,
-        "_value": 1,
         "addListener": [Function],
         "modify": [Function],
         "removeListener": [Function],
@@ -191,7 +187,6 @@ exports[`SelectButtonItem {"initialIndex": 2, "size": "base"} 1`] = `
     position={
       {
         "_isReanimatedSharedValue": true,
-        "_value": 0,
         "addListener": [Function],
         "modify": [Function],
         "removeListener": [Function],
@@ -215,7 +210,6 @@ exports[`SelectButtonItem {"initialIndex": 2, "size": "base"} 1`] = `
     position={
       {
         "_isReanimatedSharedValue": true,
-        "_value": 0,
         "addListener": [Function],
         "modify": [Function],
         "removeListener": [Function],
@@ -282,7 +276,6 @@ exports[`SelectButtonItem {"size": "large"} 1`] = `
     position={
       {
         "_isReanimatedSharedValue": true,
-        "_value": 0,
         "addListener": [Function],
         "modify": [Function],
         "removeListener": [Function],
@@ -306,7 +299,6 @@ exports[`SelectButtonItem {"size": "large"} 1`] = `
     position={
       {
         "_isReanimatedSharedValue": true,
-        "_value": 0,
         "addListener": [Function],
         "modify": [Function],
         "removeListener": [Function],
@@ -373,7 +365,6 @@ exports[`SelectButtonItem {} 1`] = `
     position={
       {
         "_isReanimatedSharedValue": true,
-        "_value": 0,
         "addListener": [Function],
         "modify": [Function],
         "removeListener": [Function],
@@ -396,7 +387,6 @@ exports[`SelectButtonItem {} 1`] = `
     position={
       {
         "_isReanimatedSharedValue": true,
-        "_value": 0,
         "addListener": [Function],
         "modify": [Function],
         "removeListener": [Function],

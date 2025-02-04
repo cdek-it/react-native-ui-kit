@@ -1,0 +1,30 @@
+diff --git a/lib/module/createAnimatedComponent/createAnimatedComponent.js b/lib/module/createAnimatedComponent/createAnimatedComponent.js
+index 69682cb3b85d04d83ae29dc8d07e16204e62b29c..62fe52439729a7280c1fc5d33addc53fd367a5ca 100644
+--- a/lib/module/createAnimatedComponent/createAnimatedComponent.js
++++ b/lib/module/createAnimatedComponent/createAnimatedComponent.js
+@@ -172,9 +172,9 @@ export function createAnimatedComponent(Component, options) {
+       } else {
+         const hostInstance = findHostInstance(this);
+         if (!hostInstance) {
+-          /* 
+-            findHostInstance can return null for a component that doesn't render anything 
+-            (render function returns null). Example: 
++          /*
++            findHostInstance can return null for a component that doesn't render anything
++            (render function returns null). Example:
+             svg Stop: https://github.com/react-native-svg/react-native-svg/blob/develop/src/elements/Stop.tsx
+           */
+           throw new ReanimatedError('Cannot find host instance for this component. Maybe it renders nothing?');
+@@ -392,8 +392,10 @@ export function createAnimatedComponent(Component, options) {
+       const skipEntering = this.context?.current;
+       const nativeID = skipEntering || !isFabric() ? undefined : `${this.reanimatedID}`;
+       const jestProps = IS_JEST ? {
+-        jestInlineStyle: this.props.style,
+-        jestAnimatedStyle: this.jestAnimatedStyle
++        // In react-native-reanimated 3.16.0>, there's a bug that generates components infinitely, because of the circular reference in jestAnimatedStyle.
++        // To fix this, let's temporarily not pass the jestAnimatedStyle to the component.
++        // jestInlineStyle: this.props.style,
++        // jestAnimatedStyle: this.jestAnimatedStyle
+       } : {};
+       return /*#__PURE__*/React.createElement(Component, _extends({
+         nativeID: nativeID
