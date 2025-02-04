@@ -8,10 +8,11 @@ const meta: Meta<typeof Checkbox> = {
   args: {
     checked: false,
     indeterminate: false,
+    disabled: false,
     state: 'default',
   },
   argTypes: {
-    state: { control: 'radio', options: ['default', 'danger', 'disabled'] },
+    state: { control: 'radio', options: ['default', 'danger'] },
   },
 }
 
