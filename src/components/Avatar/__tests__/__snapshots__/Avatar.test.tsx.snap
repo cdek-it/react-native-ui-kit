@@ -62,7 +62,6 @@ exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
           },
         ]
       }
-      tintColor="#ffffff"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -169,7 +168,11 @@ exports[`Avatar component tests Size: large, shape: circle, type: image 1`] = `
   >
     <Image
       resizeMode="cover"
-      source={1}
+      source={
+        {
+          "testUri": "../../../src/components/Avatar/__tests__/testImage.png",
+        }
+      }
       style={
         [
           {
@@ -295,7 +298,6 @@ exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
           },
         ]
       }
-      tintColor="#ffffff"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -400,7 +402,11 @@ exports[`Avatar component tests Size: large, shape: square, type: image 1`] = `
   >
     <Image
       resizeMode="cover"
-      source={1}
+      source={
+        {
+          "testUri": "../../../src/components/Avatar/__tests__/testImage.png",
+        }
+      }
       style={
         [
           {
@@ -526,7 +532,6 @@ exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
           },
         ]
       }
-      tintColor="#ffffff"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -633,7 +638,11 @@ exports[`Avatar component tests Size: normal, shape: circle, type: image 1`] = `
   >
     <Image
       resizeMode="cover"
-      source={1}
+      source={
+        {
+          "testUri": "../../../src/components/Avatar/__tests__/testImage.png",
+        }
+      }
       style={
         [
           {
@@ -759,7 +768,6 @@ exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
           },
         ]
       }
-      tintColor="#ffffff"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -864,7 +872,11 @@ exports[`Avatar component tests Size: normal, shape: square, type: image 1`] = `
   >
     <Image
       resizeMode="cover"
-      source={1}
+      source={
+        {
+          "testUri": "../../../src/components/Avatar/__tests__/testImage.png",
+        }
+      }
       style={
         [
           {
@@ -990,7 +1002,6 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
           },
         ]
       }
-      tintColor="#ffffff"
       vbHeight={24}
       vbWidth={24}
       width={21}
@@ -1097,7 +1108,11 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: image 1`] = `
   >
     <Image
       resizeMode="cover"
-      source={1}
+      source={
+        {
+          "testUri": "../../../src/components/Avatar/__tests__/testImage.png",
+        }
+      }
       style={
         [
           {
@@ -1225,7 +1240,6 @@ exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
           },
         ]
       }
-      tintColor="#ffffff"
       vbHeight={24}
       vbWidth={24}
       width={21}
@@ -1330,7 +1344,11 @@ exports[`Avatar component tests Size: xlarge, shape: square, type: image 1`] = `
   >
     <Image
       resizeMode="cover"
-      source={1}
+      source={
+        {
+          "testUri": "../../../src/components/Avatar/__tests__/testImage.png",
+        }
+      }
       style={
         [
           {

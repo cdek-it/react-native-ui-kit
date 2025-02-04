@@ -94,7 +94,6 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           },
         ]
       }
-      tintColor="rgba(0, 0, 0, 0.6000)"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -325,7 +324,6 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           },
         ]
       }
-      tintColor="rgba(0, 0, 0, 0.6000)"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -501,7 +499,6 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
           },
         ]
       }
-      tintColor="rgba(0, 0, 0, 0.6000)"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -677,7 +674,6 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
           },
         ]
       }
-      tintColor="rgba(0, 0, 0, 0.6000)"
       vbHeight={24}
       vbWidth={24}
       width={21}
@@ -891,7 +887,6 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
           },
         ]
       }
-      tintColor="#ffffff"
       vbHeight={24}
       vbWidth={24}
       width={31.5}

@@ -804,7 +804,6 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
           ]
         }
         testID="Button_Icon"
-        tintColor="#68c170"
         vbHeight={24}
         vbWidth={24}
         width={14}

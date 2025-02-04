@@ -286,7 +286,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -461,7 +460,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -636,7 +634,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -811,7 +808,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -1130,7 +1126,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -1305,7 +1300,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -1480,7 +1474,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -1655,7 +1648,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -1830,7 +1822,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -2005,7 +1996,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -2324,7 +2314,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -2499,7 +2488,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -2682,7 +2670,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -2857,7 +2844,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -3040,7 +3026,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -3215,7 +3200,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -3550,7 +3534,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -3725,7 +3708,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -3900,7 +3882,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -4075,7 +4056,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -4250,7 +4230,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -4425,7 +4404,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -4744,7 +4722,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -4919,7 +4896,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -5094,7 +5070,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -5269,7 +5244,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -5444,7 +5418,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -5619,7 +5592,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -5938,7 +5910,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -6113,7 +6084,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -6296,7 +6266,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -6471,7 +6440,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -6654,7 +6622,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -6829,7 +6796,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -7164,7 +7130,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -7339,7 +7304,6 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -7514,7 +7478,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -7689,7 +7652,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -7864,7 +7826,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -8039,7 +8000,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -8358,7 +8318,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -8533,7 +8492,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -8708,7 +8666,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -8883,7 +8840,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -9058,7 +9014,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -9233,7 +9188,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -9552,7 +9506,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -9727,7 +9680,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -9910,7 +9862,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -10085,7 +10036,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -10268,7 +10218,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -10443,7 +10392,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -10778,7 +10726,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -10953,7 +10900,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -11128,7 +11074,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -11303,7 +11248,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -11478,7 +11422,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -11653,7 +11596,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -11972,7 +11914,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -12147,7 +12088,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -12322,7 +12262,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -12497,7 +12436,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -12672,7 +12610,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -12847,7 +12784,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -13166,7 +13102,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -13341,7 +13276,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -13524,7 +13458,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -13699,7 +13632,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -13882,7 +13814,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -14057,7 +13988,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -14392,7 +14322,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -14567,7 +14496,6 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -14742,7 +14670,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -14917,7 +14844,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -15092,7 +15018,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -15267,7 +15192,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -15586,7 +15510,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -15761,7 +15684,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -15936,7 +15858,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -16111,7 +16032,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -16286,7 +16206,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -16461,7 +16380,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -16780,7 +16698,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -16955,7 +16872,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -17138,7 +17054,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -17313,7 +17228,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -17496,7 +17410,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -17671,7 +17584,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -18006,7 +17918,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -18181,7 +18092,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -18356,7 +18266,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -18531,7 +18440,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -18706,7 +18614,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -18881,7 +18788,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -19200,7 +19106,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -19375,7 +19280,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -19550,7 +19454,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -19725,7 +19628,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -19900,7 +19802,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -20075,7 +19976,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -20394,7 +20294,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -20569,7 +20468,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -20752,7 +20650,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -20927,7 +20824,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -21110,7 +21006,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -21285,7 +21180,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -21620,7 +21514,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -21795,7 +21688,6 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -21970,7 +21862,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -22145,7 +22036,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -22320,7 +22210,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -22495,7 +22384,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -22814,7 +22702,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -22989,7 +22876,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -23164,7 +23050,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -23339,7 +23224,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -23514,7 +23398,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -23689,7 +23572,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -24008,7 +23890,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -24183,7 +24064,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -24366,7 +24246,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -24541,7 +24420,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -24724,7 +24602,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -24899,7 +24776,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -25234,7 +25110,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -25409,7 +25284,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -25584,7 +25458,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -25759,7 +25632,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -25934,7 +25806,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -26109,7 +25980,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -26428,7 +26298,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -26603,7 +26472,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -26778,7 +26646,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -26953,7 +26820,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -27128,7 +26994,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -27303,7 +27168,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -27622,7 +27486,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -27797,7 +27660,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -27980,7 +27842,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -28155,7 +28016,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -28338,7 +28198,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -28513,7 +28372,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -28848,7 +28706,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -29023,7 +28880,6 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -29212,7 +29068,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -29387,7 +29242,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -29562,7 +29416,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -29737,7 +29590,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -30056,7 +29908,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -30231,7 +30082,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -30406,7 +30256,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -30581,7 +30430,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -30756,7 +30604,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -30931,7 +30778,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -31250,7 +31096,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -31425,7 +31270,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -31608,7 +31452,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -31783,7 +31626,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -31966,7 +31808,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -32141,7 +31982,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -32476,7 +32316,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -32651,7 +32490,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -32826,7 +32664,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -33001,7 +32838,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -33176,7 +33012,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -33351,7 +33186,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -33670,7 +33504,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -33845,7 +33678,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -34020,7 +33852,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -34195,7 +34026,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -34370,7 +34200,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -34545,7 +34374,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -34864,7 +34692,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -35039,7 +34866,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -35222,7 +35048,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -35397,7 +35222,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -35580,7 +35404,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -35755,7 +35578,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -36090,7 +35912,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -36265,7 +36086,6 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -36440,7 +36260,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -36615,7 +36434,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -36790,7 +36608,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -36965,7 +36782,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -37284,7 +37100,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -37459,7 +37274,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -37634,7 +37448,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -37809,7 +37622,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -37984,7 +37796,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -38159,7 +37970,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -38478,7 +38288,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -38653,7 +38462,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -38836,7 +38644,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -39011,7 +38818,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -39194,7 +39000,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -39369,7 +39174,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -39704,7 +39508,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -39879,7 +39682,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -40054,7 +39856,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -40229,7 +40030,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -40404,7 +40204,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -40579,7 +40378,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -40898,7 +40696,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -41073,7 +40870,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -41248,7 +41044,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -41423,7 +41218,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -41598,7 +41392,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -41773,7 +41566,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -42092,7 +41884,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -42267,7 +42058,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -42450,7 +42240,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -42625,7 +42414,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -42808,7 +42596,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -42983,7 +42770,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -43318,7 +43104,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -43493,7 +43278,6 @@ exports[`Button component tests Button with icon on right, size - large, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -43668,7 +43452,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -43843,7 +43626,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -44018,7 +43800,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -44193,7 +43974,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -44512,7 +44292,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -44687,7 +44466,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -44862,7 +44640,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -45037,7 +44814,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -45212,7 +44988,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -45387,7 +45162,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -45706,7 +45480,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -45881,7 +45654,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -46064,7 +45836,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -46239,7 +46010,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -46422,7 +46192,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -46597,7 +46366,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -46932,7 +46700,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -47107,7 +46874,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -47282,7 +47048,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -47457,7 +47222,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -47632,7 +47396,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -47807,7 +47570,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -48126,7 +47888,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -48301,7 +48062,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -48476,7 +48236,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -48651,7 +48410,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -48826,7 +48584,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -49001,7 +48758,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -49320,7 +49076,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -49495,7 +49250,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -49678,7 +49432,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -49853,7 +49606,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -50036,7 +49788,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -50211,7 +49962,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -50546,7 +50296,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -50721,7 +50470,6 @@ exports[`Button component tests Button with icon on right, size - small, shape -
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -50896,7 +50644,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -51071,7 +50818,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -51246,7 +50992,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -51421,7 +51166,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -51740,7 +51484,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -51915,7 +51658,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -52090,7 +51832,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -52265,7 +52006,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -52440,7 +52180,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -52615,7 +52354,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -52934,7 +52672,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -53109,7 +52846,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -53292,7 +53028,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -53467,7 +53202,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -53650,7 +53384,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -53825,7 +53558,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -54160,7 +53892,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -54335,7 +54066,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -54510,7 +54240,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -54685,7 +54414,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -54860,7 +54588,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -55035,7 +54762,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -55354,7 +55080,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -55529,7 +55254,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -55704,7 +55428,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -55879,7 +55602,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -56054,7 +55776,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -56229,7 +55950,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -56548,7 +56268,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -56723,7 +56442,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -56906,7 +56624,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -57081,7 +56798,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -57264,7 +56980,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -57439,7 +57154,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -57774,7 +57488,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -57949,7 +57662,6 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -58111,7 +57823,6 @@ exports[`Button component tests Button with only icon, size - base, shape - circ
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -58273,7 +57984,6 @@ exports[`Button component tests Button with only icon, size - base, shape - circ
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -58494,7 +58204,6 @@ exports[`Button component tests Button with only icon, size - base, shape - circ
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -58656,7 +58365,6 @@ exports[`Button component tests Button with only icon, size - base, shape - circ
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -58818,7 +58526,6 @@ exports[`Button component tests Button with only icon, size - base, shape - circ
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -59039,7 +58746,6 @@ exports[`Button component tests Button with only icon, size - base, shape - circ
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -59201,7 +58907,6 @@ exports[`Button component tests Button with only icon, size - base, shape - circ
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -59363,7 +59068,6 @@ exports[`Button component tests Button with only icon, size - base, shape - circ
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -59584,7 +59288,6 @@ exports[`Button component tests Button with only icon, size - base, shape - circ
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -59746,7 +59449,6 @@ exports[`Button component tests Button with only icon, size - base, shape - squa
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -59908,7 +59610,6 @@ exports[`Button component tests Button with only icon, size - base, shape - squa
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -60129,7 +59830,6 @@ exports[`Button component tests Button with only icon, size - base, shape - squa
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -60291,7 +59991,6 @@ exports[`Button component tests Button with only icon, size - base, shape - squa
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -60453,7 +60152,6 @@ exports[`Button component tests Button with only icon, size - base, shape - squa
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -60674,7 +60372,6 @@ exports[`Button component tests Button with only icon, size - base, shape - squa
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -60836,7 +60533,6 @@ exports[`Button component tests Button with only icon, size - base, shape - squa
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -60998,7 +60694,6 @@ exports[`Button component tests Button with only icon, size - base, shape - squa
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -61219,7 +60914,6 @@ exports[`Button component tests Button with only icon, size - base, shape - squa
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -61381,7 +61075,6 @@ exports[`Button component tests Button with only icon, size - large, shape - cir
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -61543,7 +61236,6 @@ exports[`Button component tests Button with only icon, size - large, shape - cir
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -61764,7 +61456,6 @@ exports[`Button component tests Button with only icon, size - large, shape - cir
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -61926,7 +61617,6 @@ exports[`Button component tests Button with only icon, size - large, shape - cir
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -62088,7 +61778,6 @@ exports[`Button component tests Button with only icon, size - large, shape - cir
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -62309,7 +61998,6 @@ exports[`Button component tests Button with only icon, size - large, shape - cir
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -62471,7 +62159,6 @@ exports[`Button component tests Button with only icon, size - large, shape - cir
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -62633,7 +62320,6 @@ exports[`Button component tests Button with only icon, size - large, shape - cir
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -62854,7 +62540,6 @@ exports[`Button component tests Button with only icon, size - large, shape - cir
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -63016,7 +62701,6 @@ exports[`Button component tests Button with only icon, size - large, shape - squ
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -63178,7 +62862,6 @@ exports[`Button component tests Button with only icon, size - large, shape - squ
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -63399,7 +63082,6 @@ exports[`Button component tests Button with only icon, size - large, shape - squ
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -63561,7 +63243,6 @@ exports[`Button component tests Button with only icon, size - large, shape - squ
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -63723,7 +63404,6 @@ exports[`Button component tests Button with only icon, size - large, shape - squ
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -63944,7 +63624,6 @@ exports[`Button component tests Button with only icon, size - large, shape - squ
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -64106,7 +63785,6 @@ exports[`Button component tests Button with only icon, size - large, shape - squ
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -64268,7 +63946,6 @@ exports[`Button component tests Button with only icon, size - large, shape - squ
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -64489,7 +64166,6 @@ exports[`Button component tests Button with only icon, size - large, shape - squ
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -64651,7 +64327,6 @@ exports[`Button component tests Button with only icon, size - small, shape - cir
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -64813,7 +64488,6 @@ exports[`Button component tests Button with only icon, size - small, shape - cir
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -65034,7 +64708,6 @@ exports[`Button component tests Button with only icon, size - small, shape - cir
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -65196,7 +64869,6 @@ exports[`Button component tests Button with only icon, size - small, shape - cir
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -65358,7 +65030,6 @@ exports[`Button component tests Button with only icon, size - small, shape - cir
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -65579,7 +65250,6 @@ exports[`Button component tests Button with only icon, size - small, shape - cir
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -65741,7 +65411,6 @@ exports[`Button component tests Button with only icon, size - small, shape - cir
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -65903,7 +65572,6 @@ exports[`Button component tests Button with only icon, size - small, shape - cir
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -66124,7 +65792,6 @@ exports[`Button component tests Button with only icon, size - small, shape - cir
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -66286,7 +65953,6 @@ exports[`Button component tests Button with only icon, size - small, shape - squ
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -66448,7 +66114,6 @@ exports[`Button component tests Button with only icon, size - small, shape - squ
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -66669,7 +66334,6 @@ exports[`Button component tests Button with only icon, size - small, shape - squ
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -66831,7 +66495,6 @@ exports[`Button component tests Button with only icon, size - small, shape - squ
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -66993,7 +66656,6 @@ exports[`Button component tests Button with only icon, size - small, shape - squ
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -67214,7 +66876,6 @@ exports[`Button component tests Button with only icon, size - small, shape - squ
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -67376,7 +67037,6 @@ exports[`Button component tests Button with only icon, size - small, shape - squ
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -67538,7 +67198,6 @@ exports[`Button component tests Button with only icon, size - small, shape - squ
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -67759,7 +67418,6 @@ exports[`Button component tests Button with only icon, size - small, shape - squ
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -67921,7 +67579,6 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - ci
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -68083,7 +67740,6 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - ci
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -68304,7 +67960,6 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - ci
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -68466,7 +68121,6 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - ci
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -68628,7 +68282,6 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - ci
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -68849,7 +68502,6 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - ci
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -69011,7 +68663,6 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - ci
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -69173,7 +68824,6 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - ci
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -69394,7 +69044,6 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - ci
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -69556,7 +69205,6 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - sq
       ]
     }
     testID="Button_Icon"
-    tintColor="#ffffff"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -69718,7 +69366,6 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - sq
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -69939,7 +69586,6 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - sq
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -70101,7 +69747,6 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - sq
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -70263,7 +69908,6 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - sq
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -70484,7 +70128,6 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - sq
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -70646,7 +70289,6 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - sq
       ]
     }
     testID="Button_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -70808,7 +70450,6 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - sq
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -71029,7 +70670,6 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - sq
       ]
     }
     testID="Button_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}

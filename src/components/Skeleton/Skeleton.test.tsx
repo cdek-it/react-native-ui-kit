@@ -4,6 +4,15 @@ import React from 'react'
 import { ANIMATION_DURATION, Skeleton } from './Skeleton'
 
 describe('Skeleton', () => {
+  beforeEach(() => {
+    jest.useFakeTimers() // Включаем фейковые таймеры перед каждым тестом
+  })
+
+  afterEach(() => {
+    jest.runOnlyPendingTimers()
+    jest.useRealTimers() // Возвращаем реальное время после тестов
+  })
+
   test('before animation started', () => {
     const { toJSON } = render(<Skeleton style={{ height: 50 }} />)
 
@@ -11,8 +20,6 @@ describe('Skeleton', () => {
   })
 
   test('50% animation', () => {
-    jest.useFakeTimers()
-
     const { toJSON } = render(<Skeleton style={{ height: 50 }} />)
 
     jest.advanceTimersByTime(ANIMATION_DURATION / 2)
@@ -20,8 +27,6 @@ describe('Skeleton', () => {
   })
 
   test('100% animation', () => {
-    jest.useFakeTimers()
-
     const { toJSON } = render(<Skeleton style={{ height: 50 }} />)
 
     jest.advanceTimersByTime(ANIMATION_DURATION)
