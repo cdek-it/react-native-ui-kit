@@ -71,7 +71,7 @@ export const ToggleButton = memo<ToggleButtonProps>(
       return (
         <Icon
           height={iconSize.height}
-          style={stateStyles.label as ViewStyle}
+          style={stateStyles.label as unknown as ViewStyle}
           width={iconSize.width}
         />
       )
