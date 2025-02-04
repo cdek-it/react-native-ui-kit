@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.17](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.16...v0.0.17) (2025-02-04)
+
+
+### Bug Fixes
+
+* **menuitemtemplateprops:** добавлен экспорт MenuItemTemplateProps ([e4eed81](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/e4eed818ada0163122c6580b9ebbd3592be93977))
+
 ### [0.0.16](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.15...v0.0.16) (2025-01-31)
 
 
