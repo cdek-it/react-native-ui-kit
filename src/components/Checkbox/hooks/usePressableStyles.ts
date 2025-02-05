@@ -46,15 +46,11 @@ export const usePressableStyles = ({
   return useCallback(
     ({ pressed }: PressableStateCallbackType) => {
       const isFilled = checked || indeterminate
-      const stateStyles = isFilled ? styleMap[state].filled : styleMap[state].clean
+      const stateStyles =
+        state in styleMap && isFilled ? styleMap[state].filled : styleMap[state].clean
       const disabledStyles = isFilled ? styleMap.disabled.filled : styleMap.disabled.clean
       const pressedStyles = isFilled ? styleMap.hover.filled : styleMap.hover.clean
-      return [
-        styles.container,
-        state in styleMap && stateStyles,
-        disabled ? disabledStyles : {},
-        pressed && pressedStyles,
-      ]
+      return [styles.container, stateStyles, disabled && disabledStyles, pressed && pressedStyles]
     },
     [checked, indeterminate, disabled, state, styles.container, styleMap]
   )

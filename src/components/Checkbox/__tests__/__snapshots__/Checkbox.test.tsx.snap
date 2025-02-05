@@ -61,7 +61,7 @@ exports[`Checkbox snapshots checked = false, indeterminate = false, disabled = f
           "backgroundColor": "#ffffff",
           "borderColor": "#e26e63",
         },
-        {},
+        false,
         false,
       ]
     }
@@ -120,7 +120,7 @@ exports[`Checkbox snapshots checked = false, indeterminate = false, disabled = f
           "backgroundColor": "#ffffff",
           "borderColor": "#dbdada",
         },
-        {},
+        false,
         false,
       ]
     }
@@ -190,7 +190,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
           "backgroundColor": "#188700",
           "borderColor": "#e26e63",
         },
-        {},
+        false,
         false,
       ]
     }
@@ -333,7 +333,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
           "backgroundColor": "#188700",
           "borderColor": "#188700",
         },
-        {},
+        false,
         false,
       ]
     }
@@ -487,7 +487,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
           "backgroundColor": "#188700",
           "borderColor": "#e26e63",
         },
-        {},
+        false,
         false,
       ]
     }
@@ -630,7 +630,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
           "backgroundColor": "#188700",
           "borderColor": "#188700",
         },
-        {},
+        false,
         false,
       ]
     }
@@ -1076,7 +1076,7 @@ exports[`Checkbox snapshots default 1`] = `
           "backgroundColor": "#ffffff",
           "borderColor": "#dbdada",
         },
-        {},
+        false,
         false,
       ]
     }
