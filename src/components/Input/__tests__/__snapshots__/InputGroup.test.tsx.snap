@@ -20,6 +20,7 @@ exports[`InputTextBase component functionality tests left & right 1`] = `
     style={
       {
         "flexGrow": 1,
+        "zIndex": 10,
       }
     }
   >
@@ -68,6 +69,7 @@ exports[`InputTextBase component functionality tests left 1`] = `
     style={
       {
         "flexGrow": 1,
+        "zIndex": 10,
       }
     }
   >
@@ -106,6 +108,7 @@ exports[`InputTextBase component functionality tests no addons, style 1`] = `
     style={
       {
         "flexGrow": 1,
+        "zIndex": 10,
       }
     }
   >
@@ -140,6 +143,7 @@ exports[`InputTextBase component functionality tests right 1`] = `
     style={
       {
         "flexGrow": 1,
+        "zIndex": 10,
       }
     }
   >

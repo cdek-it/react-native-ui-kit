@@ -2,6 +2,7 @@
 
 exports[`InputGroup component tests content: icon, position: right 1`] = `
 <Pressable
+  collapsable={false}
   style={
     [
       {
@@ -12,7 +13,6 @@ exports[`InputGroup component tests content: icon, position: right 1`] = `
         "justifyContent": "center",
         "paddingHorizontal": 10.5,
         "paddingVertical": 0,
-        "zIndex": -1,
       },
       {
         "borderBottomLeftRadius": 0,
@@ -133,6 +133,7 @@ exports[`InputGroup component tests content: icon, position: right 1`] = `
 
 exports[`InputGroup component tests content: string, position: left 1`] = `
 <Pressable
+  collapsable={false}
   style={
     [
       {
@@ -143,7 +144,6 @@ exports[`InputGroup component tests content: string, position: left 1`] = `
         "justifyContent": "center",
         "paddingHorizontal": 10.5,
         "paddingVertical": 0,
-        "zIndex": -1,
       },
       {
         "borderBottomRightRadius": 0,
@@ -172,6 +172,7 @@ exports[`InputGroup component tests content: string, position: left 1`] = `
 
 exports[`InputGroup component tests disabled: false 1`] = `
 <Pressable
+  collapsable={false}
   disabled={false}
   style={
     [
@@ -183,7 +184,6 @@ exports[`InputGroup component tests disabled: false 1`] = `
         "justifyContent": "center",
         "paddingHorizontal": 10.5,
         "paddingVertical": 0,
-        "zIndex": -1,
       },
       {
         "borderBottomRightRadius": 0,
@@ -212,6 +212,7 @@ exports[`InputGroup component tests disabled: false 1`] = `
 
 exports[`InputGroup component tests disabled: true 1`] = `
 <Pressable
+  collapsable={false}
   disabled={true}
   style={
     [
@@ -223,7 +224,6 @@ exports[`InputGroup component tests disabled: true 1`] = `
         "justifyContent": "center",
         "paddingHorizontal": 10.5,
         "paddingVertical": 0,
-        "zIndex": -1,
       },
       {
         "borderBottomRightRadius": 0,

@@ -131,7 +131,7 @@ export const SelectButton = memo<SelectButtonProps>(
     )
 
     return (
-      <View style={[styles.container, style]}>
+      <View collapsable={false} style={[styles.container, style]}>
         {buttons.map(({ label, Icon, key, showIcon }, index) => (
           <SelectButtonItem
             Icon={Icon}

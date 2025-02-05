@@ -2,6 +2,7 @@
 
 exports[`SelectButtonItem {"disabled": true, "initialIndex": 1, "size": "small", "style": [Object]} 1`] = `
 <View
+  collapsable={false}
   style={
     [
       {
@@ -71,6 +72,7 @@ exports[`SelectButtonItem {"disabled": true, "initialIndex": 1, "size": "small",
 
 exports[`SelectButtonItem {"initialIndex": 1, "size": "xlarge"} 1`] = `
 <View
+  collapsable={false}
   style={
     [
       {
@@ -160,6 +162,7 @@ exports[`SelectButtonItem {"initialIndex": 1, "size": "xlarge"} 1`] = `
 
 exports[`SelectButtonItem {"initialIndex": 2, "size": "base"} 1`] = `
 <View
+  collapsable={false}
   style={
     [
       {
@@ -249,6 +252,7 @@ exports[`SelectButtonItem {"initialIndex": 2, "size": "base"} 1`] = `
 
 exports[`SelectButtonItem {"size": "large"} 1`] = `
 <View
+  collapsable={false}
   style={
     [
       {
@@ -338,6 +342,7 @@ exports[`SelectButtonItem {"size": "large"} 1`] = `
 
 exports[`SelectButtonItem {} 1`] = `
 <View
+  collapsable={false}
   style={
     [
       {

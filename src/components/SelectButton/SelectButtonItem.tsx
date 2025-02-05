@@ -100,7 +100,7 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
       }
     })
 
-    const [isSelected, setIsSelected] = useState(index === position.value)
+    const [isSelected, setIsSelected] = useState(false)
 
     useAnimatedReaction(
       () => position.value,

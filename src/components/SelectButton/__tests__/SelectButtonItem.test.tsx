@@ -1,5 +1,5 @@
 import { IconArrowDownRight } from '@tabler/icons-react-native'
-import { act, render, userEvent } from '@testing-library/react-native'
+import { act, render, userEvent, waitFor } from '@testing-library/react-native'
 import React from 'react'
 import { Pressable } from 'react-native'
 import { useSharedValue } from 'react-native-reanimated'
@@ -61,9 +61,12 @@ describe('SelectButtonItem', () => {
     [{ size: 'xlarge', label: 'ButtonSelect', Icon: IconArrowDownRight, index: 1 }],
   ]
 
-  test.each(snapshotCases)('%p', (props) => {
+  test.each(snapshotCases)('%p', async (props) => {
     const { toJSON } = render(<TestComponent {...props} />)
-    expect(toJSON()).toMatchSnapshot()
+    await act(async () => {
+      jest.advanceTimersByTime(600)
+      expect(toJSON()).toMatchSnapshot()
+    })
   })
 
   test('handle press', async () => {
@@ -71,11 +74,9 @@ describe('SelectButtonItem', () => {
     const { queryByTestId } = render(<TestComponent onPress={mockedOnPress} />)
     const user = userEvent.setup()
 
-    await act(async () => {
-      const touchableOpacity = queryByTestId('SelectButtonItem_TouchableOpacity')
-      await user.press(touchableOpacity)
-      expect(mockedOnPress).toHaveBeenCalled()
-    })
+    const touchableOpacity = queryByTestId('SelectButtonItem_TouchableOpacity')
+    await user.press(touchableOpacity)
+    expect(mockedOnPress).toHaveBeenCalled()
   })
 
   test('position change', async () => {
@@ -84,20 +85,16 @@ describe('SelectButtonItem', () => {
       <TestComponent withButton Icon={IconArrowDownRight} onPress={mockedOnPress} />
     )
     const user = userEvent.setup()
-    let icon
+    const pressable = queryAllByTestId('ChangePosition')
+    let icons = queryAllByTestId('SelectButtonItem_Icon')
 
-    await act(async () => {
-      const pressable = queryAllByTestId('ChangePosition')
-      icon = queryAllByTestId('SelectButtonItem_Icon')
+    await waitFor(() => expect(icons[0]).toHaveStyle({ color: '#188700' }))
 
-      expect(icon[0]).toHaveStyle({ color: '#188700' })
+    await user.press(pressable[0])
+    jest.advanceTimersByTime(600)
 
-      await user.press(pressable[0])
-      jest.advanceTimersByTime(600)
-    })
+    icons = queryAllByTestId('SelectButtonItem_Icon')
 
-    icon = queryAllByTestId('SelectButtonItem_Icon')
-
-    expect(icon[0]).toHaveStyle({ color: 'rgba(0, 0, 0, 0.6000)' })
+    expect(icons[0]).toHaveStyle({ color: 'rgba(0, 0, 0, 0.6000)' })
   })
 })

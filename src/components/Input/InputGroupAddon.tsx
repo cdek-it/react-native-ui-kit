@@ -26,6 +26,7 @@ export const InputGroupAddon = memo<InputGroupAddonProps>(
 
     return (
       <Pressable
+        collapsable={false}
         disabled={disabled}
         style={[styles.container, styles[position], disabled && styles.disabled]}
         testID='InputGroupAddon_pressable'
@@ -54,7 +55,6 @@ const useStyles = makeStyles(({ theme }) => ({
     borderWidth: 1,
     borderColor: theme.Form.InputText.inputBorderColor,
     backgroundColor: theme.Form.InputGroup.inputGroupBg,
-    zIndex: -1,
   },
   left: {
     borderRightWidth: 0,

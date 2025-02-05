@@ -64,6 +64,7 @@ const useStyles = makeStyles(() => ({
   },
   inputWrapper: {
     flexGrow: 1,
+    zIndex: 10,
   },
   inputContainer: {
     flexGrow: 1,
