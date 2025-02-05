@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.18](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.17...v0.0.18) (2025-02-05)
+
+
+### Features
+
+* **app:** обновил testing library react native ([073a54f](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/073a54f20c0beac7e2be728b4b88c6c3c6a60468))
+* **app:** обновление react-native-reanimated ([08dda15](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/08dda152e8488dd131e7ac85215ffb6be852edeb))
+* **app:** обновление нативных и ненативных библиотек экосистемы Expo и RN ([57e697d](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/57e697d1082e554615ed4322cc9015b6198995f7))
+
+
+### Bug Fixes
+
+* **app:** исправил ошибки tsc и обновил Podfile.lock ([4f37ab6](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/4f37ab68e69a736747a5c1c05e6a0911cad337e3))
+
 ### [0.0.17](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.16...v0.0.17) (2025-02-04)
 
 
