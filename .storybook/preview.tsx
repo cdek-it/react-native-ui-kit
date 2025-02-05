@@ -1,7 +1,7 @@
 import type { Preview } from "@storybook/react";
 import { makeStyles, ThemeContextProvider, ThemeVariant, useChangeTheme } from "../src";
 import { View } from "react-native";
-import { type FunctionComponent, type ReactNode, useEffect } from "react";
+import React, { type FunctionComponent, type ReactNode, useEffect } from "react";
 
 const preview: Preview = {
   decorators: [
