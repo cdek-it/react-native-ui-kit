@@ -12,22 +12,9 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = danger
     layout={
       LinearTransition {
         "build": [Function],
-        "callbackV": undefined,
-        "dampingRatioV": undefined,
-        "dampingV": undefined,
-        "delayV": undefined,
         "durationV": 100,
-        "easingV": undefined,
-        "initialValues": undefined,
-        "massV": undefined,
-        "overshootClampingV": undefined,
         "randomizeDelay": false,
         "reduceMotionV": "system",
-        "restDisplacementThresholdV": undefined,
-        "restSpeedThresholdV": undefined,
-        "rotateV": undefined,
-        "stiffnessV": undefined,
-        "type": undefined,
       }
     }
     style={
@@ -259,22 +246,9 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = danger 
     layout={
       LinearTransition {
         "build": [Function],
-        "callbackV": undefined,
-        "dampingRatioV": undefined,
-        "dampingV": undefined,
-        "delayV": undefined,
         "durationV": 100,
-        "easingV": undefined,
-        "initialValues": undefined,
-        "massV": undefined,
-        "overshootClampingV": undefined,
         "randomizeDelay": false,
         "reduceMotionV": "system",
-        "restDisplacementThresholdV": undefined,
-        "restSpeedThresholdV": undefined,
-        "rotateV": undefined,
-        "stiffnessV": undefined,
-        "type": undefined,
       }
     }
     style={

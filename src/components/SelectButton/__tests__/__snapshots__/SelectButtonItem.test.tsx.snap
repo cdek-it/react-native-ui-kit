@@ -21,7 +21,7 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
   }
   accessible={true}
   collapsable={false}
-  focusable={true}
+  focusable={false}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -84,7 +84,6 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
       ]
     }
     testID="SelectButtonItem_Icon"
-    tintColor="#dbdada"
     vbHeight={24}
     vbWidth={24}
     width={21}
@@ -261,7 +260,6 @@ exports[`SelectButtonItem {"Icon": [Object], "index": 1, "label": "ButtonSelect"
       ]
     }
     testID="SelectButtonItem_Icon"
-    tintColor="rgba(0, 0, 0, 0.6000)"
     vbHeight={24}
     vbWidth={24}
     width={28}
@@ -509,7 +507,6 @@ exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
       ]
     }
     testID="SelectButtonItem_Icon"
-    tintColor="#188700"
     vbHeight={24}
     vbWidth={24}
     width={14}

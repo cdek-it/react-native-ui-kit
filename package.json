@@ -1,6 +1,6 @@
 {
   "name": "@cdek/react-native-prime-ui-kit",
-  "packageManager": "yarn@4.5.1",
+  "packageManager": "yarn@4.6.0",
   "version": "0.0.17",
   "engines": {
     "node": "20"
@@ -12,75 +12,101 @@
     "start": "expo start --dev-client",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "storybook-generate": "sb-rn-get-stories --config-path .storybook"
+    "storybook-generate": "sb-rn-get-stories --config-path .storybook",
+    "doctor": "expo-doctor",
+    "check": "expo install --check"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0",
-    "@babel/preset-env": "^7.25.4",
-    "@commitlint/cli": "^19.5.0",
-    "@commitlint/config-conventional": "^19.5.0",
-    "@expo/metro-runtime": "~3.2.3",
-    "@gorhom/bottom-sheet": "^4.6.4",
+    "@babel/core": "7.26.7",
+    "@babel/preset-env": "7.26.7",
+    "@commitlint/cli": "19.6.1",
+    "@commitlint/config-conventional": "19.6.0",
+    "@expo/metro-runtime": "4.0.1",
+    "@gorhom/bottom-sheet": "5.0.6",
     "@react-native-async-storage/async-storage": "1.23.1",
-    "@react-native-community/datetimepicker": "8.0.1",
-    "@react-native-community/slider": "4.5.2",
-    "@storybook/addon-actions": "^8.3.5",
-    "@storybook/addon-controls": "^8.3.5",
-    "@storybook/addon-ondevice-actions": "^8.3.5",
-    "@storybook/addon-ondevice-controls": "^8.3.5",
-    "@storybook/addon-ondevice-notes": "^8.3.5",
-    "@storybook/core": "^8.3.5",
-    "@storybook/preview-api": "^8.3.5",
-    "@storybook/react": "^8.3.5",
-    "@storybook/react-native": "^8.3.5",
-    "@storybook/test": "^8.3.5",
-    "@tabler/icons-react-native": "^3.19.0",
-    "@testing-library/react-native": "^12.7.2",
-    "@types/jest": "^29.5.13",
-    "@types/node": "^22.7.8",
-    "@types/react": "~18.2.79",
-    "babel-loader": "^8.2.3",
-    "cross-env": "^7.0.3",
-    "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.57.1",
-    "eslint-config-expo": "^7.1.2",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-formatter-gitlab": "^5.1.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.37.1",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "expo": "~51.0.28",
-    "expo-constants": "~16.0.2",
-    "expo-status-bar": "~1.12.1",
-    "jest": "^29.7.0",
-    "jest-expo": "^51.0.4",
-    "jest-junit": "^16.0.0",
-    "lefthook": "^1.7.18",
-    "prettier": "^3.3.3",
-    "react": "18.2.0",
-    "react-native": "0.74.5",
-    "react-native-advanced-input-mask": "^1.2.0",
-    "react-native-gesture-handler": "~2.16.1",
-    "react-native-reanimated": "~3.15.5",
-    "react-native-safe-area-context": "4.10.5",
-    "react-native-svg": "^15.8.0",
-    "react-test-renderer": "^18.3.1",
-    "standard-version": "^9.5.0",
-    "storybook": "^8.3.5",
-    "ts-node": "^10.9.2",
-    "typescript": "~5.3.3"
+    "@react-native-community/datetimepicker": "8.2.0",
+    "@react-native-community/slider": "4.5.5",
+    "@storybook/addon-actions": "8.3.5",
+    "@storybook/addon-controls": "8.3.5",
+    "@storybook/addon-ondevice-actions": "8.3.5",
+    "@storybook/addon-ondevice-controls": "8.3.5",
+    "@storybook/addon-ondevice-notes": "8.3.5",
+    "@storybook/core": "8.3.5",
+    "@storybook/preview-api": "8.3.5",
+    "@storybook/react": "8.3.5",
+    "@storybook/react-native": "8.3.5",
+    "@storybook/test": "8.3.5",
+    "@tabler/icons-react-native": "3.29.0",
+    "@testing-library/react-native": "13.0.1",
+    "@types/jest": "29.5.13",
+    "@types/react": "18.3.12",
+    "babel-loader": "8.2.3",
+    "cross-env": "7.0.3",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "8.57.1",
+    "eslint-config-expo": "7.1.2",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-formatter-gitlab": "5.1.0",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "eslint-plugin-react": "7.37.1",
+    "eslint-plugin-react-hooks": "4.6.2",
+    "expo": "52.0.28",
+    "expo-constants": "17.0.5",
+    "expo-doctor": "1.12.5",
+    "expo-status-bar": "2.0.1",
+    "jest": "29.7.0",
+    "jest-expo": "52.0.3",
+    "jest-junit": "16.0.0",
+    "lefthook": "1.10.10",
+    "prettier": "3.3.3",
+    "react": "18.3.1",
+    "react-native": "0.77.0",
+    "react-native-advanced-input-mask": "1.2.3",
+    "react-native-gesture-handler": "2.22.1",
+    "react-native-reanimated": "patch:react-native-reanimated@npm%3A3.16.7#~/.yarn/patches/react-native-reanimated-npm-3.16.7-1e7cd6d376.patch",
+    "react-native-safe-area-context": "5.1.0",
+    "react-native-svg": "15.11.1",
+    "react-test-renderer": "18.3.1",
+    "standard-version": "9.5.0",
+    "storybook": "8.3.5",
+    "ts-node": "10.9.2",
+    "typescript": "5.5.4"
   },
   "peerDependencies": {
     "@tabler/icons-react-native": ">=3.x",
     "react": ">=18.x",
-    "react-native": "*",
-    "react-native-reanimated": ">=3.x",
-    "react-native-svg": ">=15.x"
+    "react-native": ">=0.77.x",
+    "react-native-reanimated": ">=3.15.x",
+    "react-native-svg": ">=15.11.x"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "expo": {
+    "install": {
+      "exclude": [
+        "react-native@~0.76.6",
+        "react-native-reanimated@~3.16.1",
+        "react-native-gesture-handler@~2.20.0",
+        "react-native-screens@~4.4.0",
+        "react-native-safe-area-context@~4.12.0",
+        "react-native-webview@~13.12.5",
+        "react-native-svg@~15.8.0"
+      ]
+    },
+    "doctor": {
+      "appConfigFieldsNotSyncedCheck": {
+        "enabled": false
+      },
+      "reactNativeDirectoryCheck": {
+        "exclude": [
+          "@tabler/icons-react-native",
+          "eslint-config-expo"
+        ]
+      }
     }
   }
 }

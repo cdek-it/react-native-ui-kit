@@ -101,7 +101,6 @@ exports[`Tag snapshot: severity = basic, rounded = true, with Icon 1`] = `
           },
         ]
       }
-      tintColor="#ffffff"
       vbHeight={24}
       vbWidth={24}
       width={12.25}
@@ -273,7 +272,6 @@ exports[`Tag snapshot: severity = info, showIcon = false, with Icon 1`] = `
           },
         ]
       }
-      tintColor="#ffffff"
       vbHeight={24}
       vbWidth={24}
       width={12.25}
@@ -404,7 +402,6 @@ exports[`Tag snapshot: severity = secondary, rounded = false, showIcon = true, w
           },
         ]
       }
-      tintColor="rgba(0, 0, 0, 0.6000)"
       vbHeight={24}
       vbWidth={24}
       width={12.25}

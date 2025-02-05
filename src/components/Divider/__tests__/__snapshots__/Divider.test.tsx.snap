@@ -315,7 +315,6 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
           },
         ]
       }
-      tintColor="rgba(0, 0, 0, 0.6000)"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -510,7 +509,6 @@ exports[`Divider {"Icon": [Object], "align": "start", "layout": "horizontal", "s
           },
         ]
       }
-      tintColor="rgba(0, 0, 0, 0.6000)"
       vbHeight={24}
       vbWidth={24}
       width={14}

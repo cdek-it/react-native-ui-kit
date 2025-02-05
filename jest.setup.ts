@@ -1,5 +1,4 @@
 import 'react-native-gesture-handler/jestSetup'
-import '@testing-library/react-native/extend-expect'
 import { setUpTests } from 'react-native-reanimated'
 
 setUpTests()
