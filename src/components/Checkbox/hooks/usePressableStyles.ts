@@ -23,8 +23,8 @@ export const usePressableStyles = ({
         clean: styles.disabledClean,
       },
       danger: {
-        filled: styles.dangerFilled,
-        clean: styles.dangerClean,
+        filled: { ...styles.dangerFilled, ...styles.dangerOutline },
+        clean: { ...styles.dangerClean, ...styles.dangerOutline },
       },
       hover: {
         filled: styles.hoverFilled,
@@ -40,6 +40,7 @@ export const usePressableStyles = ({
       styles.dangerClean,
       styles.hoverFilled,
       styles.hoverClean,
+      styles.dangerOutline,
     ]
   )
 
@@ -90,6 +91,11 @@ const useStyles = makeStyles(({ theme }) => ({
   dangerFilled: {
     backgroundColor: theme.Form.Checkbox.checkboxActiveBg,
     borderColor: theme.Form.InputText.inputErrorBorderColor,
+  },
+  dangerOutline: {
+    outlineStyle: 'solid',
+    outlineColor: theme.General.focusOutlineErrorColor,
+    outlineWidth: theme.General.focusShadowWidth,
   },
   disabledClean: {
     backgroundColor: theme.Button.Disabled.disabledButtonBg,

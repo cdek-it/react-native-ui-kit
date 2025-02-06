@@ -1,6 +1,6 @@
 import { IconCheck, IconMinus } from '@tabler/icons-react-native'
 import React, { memo, useMemo } from 'react'
-import { Pressable, View } from 'react-native'
+import { Pressable } from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
 
@@ -35,7 +35,7 @@ export interface CheckboxProps {
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5316
  */
 export const Checkbox = memo<CheckboxProps>((props: CheckboxProps) => {
-  const { onPress, checked = false, disabled = false, indeterminate = false, state } = props
+  const { onPress, checked = false, disabled = false, indeterminate = false } = props
 
   const Icon = useMemo(() => {
     if (indeterminate) {
@@ -50,30 +50,20 @@ export const Checkbox = memo<CheckboxProps>((props: CheckboxProps) => {
   const pressableStyles = usePressableStyles(props)
   const styles = useStyles()
   return (
-    <View>
-      {state === 'danger' && <View style={styles.outline} />}
-      <Pressable
-        accessibilityRole='button'
-        disabled={disabled}
-        hitSlop={10}
-        style={pressableStyles}
-        testID='CheckboxButton_Pressable'
-        onPress={onPress}
-      >
-        {Icon && <Icon height={styles.icon.height} style={styles.icon} width={styles.icon.width} />}
-      </Pressable>
-    </View>
+    <Pressable
+      accessibilityRole='button'
+      disabled={disabled}
+      hitSlop={10}
+      style={pressableStyles}
+      testID='CheckboxButton_Pressable'
+      onPress={onPress}
+    >
+      {Icon && <Icon height={styles.icon.height} style={styles.icon} width={styles.icon.width} />}
+    </Pressable>
   )
 })
 
 const useStyles = makeStyles(({ theme }) => ({
-  outline: {
-    position: 'absolute',
-    width: theme.Form.Checkbox.checkboxWidth + theme.General.focusShadowWidth * 2,
-    height: theme.Form.Checkbox.checkboxHeight + theme.General.focusShadowWidth * 2,
-    borderRadius: 7,
-    backgroundColor: theme.General.focusOutlineErrorColor,
-  },
   icon: {
     height: 14,
     width: 14,
