@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.19](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.18...v0.0.19) (2025-02-06)
+
+
+### Bug Fixes
+
+* **ci:** исправления сборки в CI после смены раннера ([a1371b8](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/a1371b8489728c9b1f068982844a2335551c81b7))
+* **ci:** попытка исправить сборку сторибука ([a1c358f](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/a1c358f77c4ea252c275170479b0e23763aca6b6))
+
 ### [0.0.18](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.17...v0.0.18) (2025-02-05)
 
 
