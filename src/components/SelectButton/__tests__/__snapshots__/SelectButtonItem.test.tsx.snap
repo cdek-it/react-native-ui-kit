@@ -69,9 +69,7 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
           {
             "color": "rgba(0, 0, 0, 0.6000)",
           },
-          {
-            "color": "#188700",
-          },
+          false,
           {
             "color": "#dbdada",
           },
@@ -494,9 +492,7 @@ exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
           {
             "color": "rgba(0, 0, 0, 0.6000)",
           },
-          {
-            "color": "#188700",
-          },
+          false,
           undefined,
         ],
         {
@@ -513,7 +509,7 @@ exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
-      color="#188700"
+      color="rgba(0, 0, 0, 0.6000)"
       fill={null}
       propList={
         [
@@ -534,7 +530,7 @@ exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
       strokeWidth={2}
     >
       <RNSVGPath
-        color="#188700"
+        color="rgba(0, 0, 0, 0.6000)"
         d="M7 7l10 10"
         fill={null}
         propList={
@@ -557,7 +553,7 @@ exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
         testID="SelectButtonItem_Icon"
       />
       <RNSVGPath
-        color="#188700"
+        color="rgba(0, 0, 0, 0.6000)"
         d="M17 8l0 9l-9 0"
         fill={null}
         propList={
