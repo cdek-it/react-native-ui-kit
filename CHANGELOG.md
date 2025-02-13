@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.20](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.19...v0.0.20) (2025-02-13)
+
+
+### Features
+
+* **checkbox:** add component ([237de41](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/237de41eac5e43a20a8981e07162199fcbfb351b))
+
 ### [0.0.19](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.18...v0.0.19) (2025-02-06)
 
 
