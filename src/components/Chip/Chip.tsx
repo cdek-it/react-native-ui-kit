@@ -77,6 +77,8 @@ const useStyles = makeStyles(({ theme, typography }) => ({
   disabledChip: {
     backgroundColor: theme.Button.Disabled.disabledButtonBg,
     borderColor: theme.Button.Disabled.disabledButtonBorderColor,
+    opacity: 0.6,
+    mixBlendMode: 'luminosity',
   },
   icon: {
     width: 14,

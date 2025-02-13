@@ -352,6 +352,8 @@ exports[`Chip component tests onRemove, icon: IconUser, disabled: true 1`] = `
       {
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
         "borderColor": "#dbdada",
+        "mixBlendMode": "luminosity",
+        "opacity": 0.6,
       },
     ]
   }
@@ -862,6 +864,8 @@ exports[`Chip component tests onRemove, icon: empty, disabled: true 1`] = `
       {
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
         "borderColor": "#dbdada",
+        "mixBlendMode": "luminosity",
+        "opacity": 0.6,
       },
     ]
   }
@@ -1240,6 +1244,8 @@ exports[`Chip component tests onRemove: empty, icon: IconUser, disabled: true 1`
       {
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
         "borderColor": "#dbdada",
+        "mixBlendMode": "luminosity",
+        "opacity": 0.6,
       },
     ]
   }
@@ -1486,6 +1492,8 @@ exports[`Chip component tests onRemove: empty, icon: empty, disabled: true 1`] =
       {
         "backgroundColor": "rgba(0, 0, 0, 0.1000)",
         "borderColor": "#dbdada",
+        "mixBlendMode": "luminosity",
+        "opacity": 0.6,
       },
     ]
   }

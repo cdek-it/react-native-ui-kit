@@ -177,10 +177,11 @@ const useStyles = makeStyles(({ theme }) => ({
     backgroundColor: theme.Button.Disabled.disabledButtonBg,
     opacity: 0.6,
     borderWidth: 1,
+    mixBlendMode: 'luminosity',
   },
   disabledChecked: {
-    borderColor: 'grey',
-    backgroundColor: 'grey',
+    borderColor: theme.Form.RadioButton.radiobuttonActiveBorderColor,
+    backgroundColor: theme.Form.RadioButton.radiobuttonActiveBorderColor,
     borderWidth: 5,
   },
 }))
