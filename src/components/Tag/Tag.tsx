@@ -28,6 +28,7 @@ export interface TagProps {
 
   /** Иконка из библиотеки Tabler */
   Icon?: Icon
+  testID?: string
 }
 
 /**
@@ -35,22 +36,27 @@ export interface TagProps {
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4921
  */
 export const Tag = memo<TagProps>(
-  ({ text, rounded, severity = 'basic', showIcon = true, style, Icon }) => {
+  ({ text, rounded, severity = 'basic', showIcon = true, style, Icon, testID }) => {
     const styles = useStyles()
 
     return (
-      <View style={style}>
-        <View style={[styles.container, styles[severity], rounded && styles.roundedContainer]}>
+      <View style={style} testID={testID || TagTestId.root}>
+        <View
+          style={[styles.container, styles[severity], rounded && styles.roundedContainer]}
+          testID={TagTestId.innerContainer}
+        >
           {showIcon && Icon && (
             <Icon
               height={styles.icon.height}
               style={[styles.icon, severity === 'secondary' && (styles.textSecondary as ViewStyle)]}
+              testID={TagTestId.icon}
               width={styles.icon.width}
             />
           )}
           <Text
             numberOfLines={1}
             style={[styles.text, severity === 'secondary' && styles.textSecondary]}
+            testID={TagTestId.text}
           >
             {text}
           </Text>
@@ -108,3 +114,10 @@ const useStyles = makeStyles(({ theme, border, spacing }) => ({
     backgroundColor: theme.Surface['surface-border'],
   },
 }))
+
+export const TagTestId = {
+  root: 'Tag',
+  innerContainer: 'Tag.innerContainer',
+  icon: 'Tag.icon',
+  text: 'Tag.text',
+}

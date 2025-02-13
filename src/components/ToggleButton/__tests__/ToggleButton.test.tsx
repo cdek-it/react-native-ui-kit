@@ -2,7 +2,7 @@ import { IconArrowDownRight } from '@tabler/icons-react-native'
 import { render, userEvent } from '@testing-library/react-native'
 import React from 'react'
 
-import { ToggleButton, type ToggleButtonProps } from '../ToggleButton'
+import { ToggleButton, type ToggleButtonProps, ToggleButtonTestId } from '../ToggleButton'
 
 describe('ToggleButton', () => {
   const defaultProps: ToggleButtonProps = {
@@ -91,7 +91,7 @@ describe('ToggleButton', () => {
   test('should handle press', async () => {
     const mockedOnPress = jest.fn()
     const { queryByTestId } = render(<ToggleButton onPress={mockedOnPress} />)
-    const pressable = queryByTestId('ToggleButton_Pressable')
+    const pressable = queryByTestId(ToggleButtonTestId.root)
     const user = userEvent.setup()
 
     await user.press(pressable)
@@ -101,7 +101,7 @@ describe('ToggleButton', () => {
   test('should NOT handle press', async () => {
     const mockedOnPress = jest.fn()
     const { queryByTestId } = render(<ToggleButton disabled onPress={mockedOnPress} />)
-    const pressable = queryByTestId('ToggleButton_Pressable')
+    const pressable = queryByTestId(ToggleButtonTestId.root)
     const user = userEvent.setup()
 
     await user.press(pressable)

@@ -3,6 +3,7 @@
 exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -29,6 +30,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -62,6 +64,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
           },
         ]
       }
+      testID="Avatar.icon"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -109,6 +112,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="Avatar.icon"
         />
         <RNSVGPath
           color="#ffffff"
@@ -131,6 +135,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="Avatar.icon"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -141,6 +146,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
 exports[`Avatar component tests Size: large, shape: circle, type: image 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -165,6 +171,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: image 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <Image
       resizeMode="cover"
@@ -181,6 +188,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: image 1`] = `
           },
         ]
       }
+      testID="Avatar.image"
     />
   </View>
 </View>
@@ -189,6 +197,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: image 1`] = `
 exports[`Avatar component tests Size: large, shape: circle, type: label 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -215,6 +224,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: label 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <Text
       ellipsizeMode="clip"
@@ -231,6 +241,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: label 1`] = `
           false,
         ]
       }
+      testID="Avatar.text"
     >
       A
     </Text>
@@ -241,6 +252,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: label 1`] = `
 exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -265,6 +277,7 @@ exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -298,6 +311,7 @@ exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
           },
         ]
       }
+      testID="Avatar.icon"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -345,6 +359,7 @@ exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="Avatar.icon"
         />
         <RNSVGPath
           color="#ffffff"
@@ -367,6 +382,7 @@ exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="Avatar.icon"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -377,6 +393,7 @@ exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
 exports[`Avatar component tests Size: large, shape: square, type: image 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -399,6 +416,7 @@ exports[`Avatar component tests Size: large, shape: square, type: image 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <Image
       resizeMode="cover"
@@ -415,6 +433,7 @@ exports[`Avatar component tests Size: large, shape: square, type: image 1`] = `
           },
         ]
       }
+      testID="Avatar.image"
     />
   </View>
 </View>
@@ -423,6 +442,7 @@ exports[`Avatar component tests Size: large, shape: square, type: image 1`] = `
 exports[`Avatar component tests Size: large, shape: square, type: label 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -447,6 +467,7 @@ exports[`Avatar component tests Size: large, shape: square, type: label 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <Text
       ellipsizeMode="clip"
@@ -463,6 +484,7 @@ exports[`Avatar component tests Size: large, shape: square, type: label 1`] = `
           false,
         ]
       }
+      testID="Avatar.text"
     >
       A
     </Text>
@@ -473,6 +495,7 @@ exports[`Avatar component tests Size: large, shape: square, type: label 1`] = `
 exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -499,6 +522,7 @@ exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -532,6 +556,7 @@ exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
           },
         ]
       }
+      testID="Avatar.icon"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -579,6 +604,7 @@ exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="Avatar.icon"
         />
         <RNSVGPath
           color="#ffffff"
@@ -601,6 +627,7 @@ exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="Avatar.icon"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -611,6 +638,7 @@ exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
 exports[`Avatar component tests Size: normal, shape: circle, type: image 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -635,6 +663,7 @@ exports[`Avatar component tests Size: normal, shape: circle, type: image 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <Image
       resizeMode="cover"
@@ -651,6 +680,7 @@ exports[`Avatar component tests Size: normal, shape: circle, type: image 1`] = `
           },
         ]
       }
+      testID="Avatar.image"
     />
   </View>
 </View>
@@ -659,6 +689,7 @@ exports[`Avatar component tests Size: normal, shape: circle, type: image 1`] = `
 exports[`Avatar component tests Size: normal, shape: circle, type: label 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -685,6 +716,7 @@ exports[`Avatar component tests Size: normal, shape: circle, type: label 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <Text
       ellipsizeMode="clip"
@@ -701,6 +733,7 @@ exports[`Avatar component tests Size: normal, shape: circle, type: label 1`] = `
           false,
         ]
       }
+      testID="Avatar.text"
     >
       A
     </Text>
@@ -711,6 +744,7 @@ exports[`Avatar component tests Size: normal, shape: circle, type: label 1`] = `
 exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -735,6 +769,7 @@ exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -768,6 +803,7 @@ exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
           },
         ]
       }
+      testID="Avatar.icon"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -815,6 +851,7 @@ exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="Avatar.icon"
         />
         <RNSVGPath
           color="#ffffff"
@@ -837,6 +874,7 @@ exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="Avatar.icon"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -847,6 +885,7 @@ exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
 exports[`Avatar component tests Size: normal, shape: square, type: image 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -869,6 +908,7 @@ exports[`Avatar component tests Size: normal, shape: square, type: image 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <Image
       resizeMode="cover"
@@ -885,6 +925,7 @@ exports[`Avatar component tests Size: normal, shape: square, type: image 1`] = `
           },
         ]
       }
+      testID="Avatar.image"
     />
   </View>
 </View>
@@ -893,6 +934,7 @@ exports[`Avatar component tests Size: normal, shape: square, type: image 1`] = `
 exports[`Avatar component tests Size: normal, shape: square, type: label 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -917,6 +959,7 @@ exports[`Avatar component tests Size: normal, shape: square, type: label 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <Text
       ellipsizeMode="clip"
@@ -933,6 +976,7 @@ exports[`Avatar component tests Size: normal, shape: square, type: label 1`] = `
           false,
         ]
       }
+      testID="Avatar.text"
     >
       A
     </Text>
@@ -943,6 +987,7 @@ exports[`Avatar component tests Size: normal, shape: square, type: label 1`] = `
 exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -969,6 +1014,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -1002,6 +1048,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
           },
         ]
       }
+      testID="Avatar.icon"
       vbHeight={24}
       vbWidth={24}
       width={21}
@@ -1049,6 +1096,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="Avatar.icon"
         />
         <RNSVGPath
           color="#ffffff"
@@ -1071,6 +1119,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="Avatar.icon"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -1081,6 +1130,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
 exports[`Avatar component tests Size: xlarge, shape: circle, type: image 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -1105,6 +1155,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: image 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <Image
       resizeMode="cover"
@@ -1121,6 +1172,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: image 1`] = `
           },
         ]
       }
+      testID="Avatar.image"
     />
   </View>
 </View>
@@ -1129,6 +1181,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: image 1`] = `
 exports[`Avatar component tests Size: xlarge, shape: circle, type: label 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -1155,6 +1208,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: label 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <Text
       ellipsizeMode="clip"
@@ -1173,6 +1227,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: label 1`] = `
           },
         ]
       }
+      testID="Avatar.text"
     >
       A
     </Text>
@@ -1183,6 +1238,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: label 1`] = `
 exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -1207,6 +1263,7 @@ exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -1240,6 +1297,7 @@ exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
           },
         ]
       }
+      testID="Avatar.icon"
       vbHeight={24}
       vbWidth={24}
       width={21}
@@ -1287,6 +1345,7 @@ exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="Avatar.icon"
         />
         <RNSVGPath
           color="#ffffff"
@@ -1309,6 +1368,7 @@ exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="Avatar.icon"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -1319,6 +1379,7 @@ exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
 exports[`Avatar component tests Size: xlarge, shape: square, type: image 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -1341,6 +1402,7 @@ exports[`Avatar component tests Size: xlarge, shape: square, type: image 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <Image
       resizeMode="cover"
@@ -1357,6 +1419,7 @@ exports[`Avatar component tests Size: xlarge, shape: square, type: image 1`] = `
           },
         ]
       }
+      testID="Avatar.image"
     />
   </View>
 </View>
@@ -1365,6 +1428,7 @@ exports[`Avatar component tests Size: xlarge, shape: square, type: image 1`] = `
 exports[`Avatar component tests Size: xlarge, shape: square, type: label 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -1389,6 +1453,7 @@ exports[`Avatar component tests Size: xlarge, shape: square, type: label 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <Text
       ellipsizeMode="clip"
@@ -1407,6 +1472,7 @@ exports[`Avatar component tests Size: xlarge, shape: square, type: label 1`] = `
           },
         ]
       }
+      testID="Avatar.text"
     >
       A
     </Text>
@@ -1417,6 +1483,7 @@ exports[`Avatar component tests Size: xlarge, shape: square, type: label 1`] = `
 exports[`Avatar component tests With badge, showBadge: false 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -1443,6 +1510,7 @@ exports[`Avatar component tests With badge, showBadge: false 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <Text
       ellipsizeMode="clip"
@@ -1459,6 +1527,7 @@ exports[`Avatar component tests With badge, showBadge: false 1`] = `
           false,
         ]
       }
+      testID="Avatar.text"
     >
       A
     </Text>
@@ -1469,6 +1538,7 @@ exports[`Avatar component tests With badge, showBadge: false 1`] = `
 exports[`Avatar component tests With badge, showBadge: true 1`] = `
 <View
   collapsable={false}
+  testID="Avatar"
 >
   <View
     style={
@@ -1495,6 +1565,7 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
         undefined,
       ]
     }
+    testID="Avatar.container"
   >
     <Text
       ellipsizeMode="clip"
@@ -1511,6 +1582,7 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
           false,
         ]
       }
+      testID="Avatar.text"
     >
       A
     </Text>
@@ -1530,6 +1602,7 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
         },
       ]
     }
+    testID="Avatar.badgeContainer"
   >
     <View
       onLayout={[Function]}
@@ -1538,6 +1611,7 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
           "alignSelf": "flex-start",
         }
       }
+      testID="Avatar.badgeInnerContainer"
     >
       <View
         style={
