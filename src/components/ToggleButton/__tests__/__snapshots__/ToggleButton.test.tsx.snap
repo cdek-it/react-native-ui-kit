@@ -26,7 +26,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
       ],
     ]
   }
-  testID="ToggleButton_Pressable"
+  testID="ToggleButton"
 >
   <View
     style={
@@ -57,6 +57,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
         ],
       ]
     }
+    testID="ToggleButton.container"
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -94,6 +95,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           },
         ]
       }
+      testID="ToggleButton.icon"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -141,6 +143,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="ToggleButton.icon"
         />
         <RNSVGPath
           color="rgba(0, 0, 0, 0.6000)"
@@ -163,6 +166,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="ToggleButton.icon"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -193,6 +197,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           ],
         ]
       }
+      testID="ToggleButton.text"
     >
       ButtonToggle
     </Text>
@@ -226,7 +231,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
       ],
     ]
   }
-  testID="ToggleButton_Pressable"
+  testID="ToggleButton"
 >
   <View
     style={
@@ -257,6 +262,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
         ],
       ]
     }
+    testID="ToggleButton.container"
   >
     <Text
       style={
@@ -285,6 +291,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           ],
         ]
       }
+      testID="ToggleButton.text"
     >
       ButtonToggle
     </Text>
@@ -324,6 +331,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           },
         ]
       }
+      testID="ToggleButton.icon"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -371,6 +379,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="ToggleButton.icon"
         />
         <RNSVGPath
           color="rgba(0, 0, 0, 0.6000)"
@@ -393,6 +402,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="ToggleButton.icon"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -426,7 +436,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
       ],
     ]
   }
-  testID="ToggleButton_Pressable"
+  testID="ToggleButton"
 >
   <View
     style={
@@ -462,6 +472,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
         ],
       ]
     }
+    testID="ToggleButton.container"
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -499,6 +510,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
           },
         ]
       }
+      testID="ToggleButton.icon"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -546,6 +558,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="ToggleButton.icon"
         />
         <RNSVGPath
           color="rgba(0, 0, 0, 0.6000)"
@@ -568,6 +581,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="ToggleButton.icon"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -604,7 +618,7 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
       ],
     ]
   }
-  testID="ToggleButton_Pressable"
+  testID="ToggleButton"
 >
   <View
     style={
@@ -635,6 +649,7 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
         ],
       ]
     }
+    testID="ToggleButton.container"
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -674,6 +689,7 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
           },
         ]
       }
+      testID="ToggleButton.icon"
       vbHeight={24}
       vbWidth={24}
       width={21}
@@ -721,6 +737,7 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="ToggleButton.icon"
         />
         <RNSVGPath
           color="rgba(0, 0, 0, 0.6000)"
@@ -743,6 +760,7 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="ToggleButton.icon"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -775,6 +793,7 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
           ],
         ]
       }
+      testID="ToggleButton.text"
     >
       ButtonToggle
     </Text>
@@ -812,7 +831,7 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
       ],
     ]
   }
-  testID="ToggleButton_Pressable"
+  testID="ToggleButton"
 >
   <View
     style={
@@ -848,6 +867,7 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
         ],
       ]
     }
+    testID="ToggleButton.container"
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -887,6 +907,7 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
           },
         ]
       }
+      testID="ToggleButton.icon"
       vbHeight={24}
       vbWidth={24}
       width={31.5}
@@ -934,6 +955,7 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="ToggleButton.icon"
         />
         <RNSVGPath
           color="#ffffff"
@@ -956,6 +978,7 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="ToggleButton.icon"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -988,7 +1011,7 @@ exports[`ToggleButton snapshots default 1`] = `
       ],
     ]
   }
-  testID="ToggleButton_Pressable"
+  testID="ToggleButton"
 >
   <View
     style={
@@ -1024,6 +1047,7 @@ exports[`ToggleButton snapshots default 1`] = `
         ],
       ]
     }
+    testID="ToggleButton.container"
   />
 </Pressable>
 `;

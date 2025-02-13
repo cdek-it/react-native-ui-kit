@@ -39,6 +39,7 @@ export interface ToggleButtonProps {
   style?: ViewStyle
   /** Иконка из библиотеки Tabler */
   Icon?: Icon
+  testID?: string
 }
 
 /**
@@ -56,6 +57,7 @@ export const ToggleButton = memo<ToggleButtonProps>(
     size = 'base',
     style,
     Icon,
+    testID,
   }) => {
     const styles = useStyles()
     const labelSize = useLabelSize(size)
@@ -72,6 +74,7 @@ export const ToggleButton = memo<ToggleButtonProps>(
         <Icon
           height={iconSize.height}
           style={stateStyles.label as unknown as ViewStyle}
+          testID={ToggleButtonTestId.icon}
           width={iconSize.width}
         />
       )
@@ -84,7 +87,7 @@ export const ToggleButton = memo<ToggleButtonProps>(
       <Pressable
         disabled={disabled}
         style={[styles.container, style, stateStyles.borderContainer]}
-        testID='ToggleButton_Pressable'
+        testID={testID || ToggleButtonTestId.root}
         onPress={onPress}
         onPressIn={onPressIn}
         onPressOut={onPressOut}
@@ -96,13 +99,19 @@ export const ToggleButton = memo<ToggleButtonProps>(
             iconOnly && styles.iconOnly,
             stateStyles.contentContainer,
           ]}
+          testID={ToggleButtonTestId.container}
         >
           {iconOnly ? (
             icon
           ) : (
             <>
               {iconPos === 'left' && icon}
-              <Text style={[styles.label, labelSize, stateStyles.label]}>{label}</Text>
+              <Text
+                style={[styles.label, labelSize, stateStyles.label]}
+                testID={ToggleButtonTestId.text}
+              >
+                {label}
+              </Text>
               {Icon && iconPos === 'right' && icon}
             </>
           )}
@@ -154,3 +163,10 @@ const useStyles = makeStyles(({ theme }) => ({
     flexShrink: 1,
   },
 }))
+
+export const ToggleButtonTestId = {
+  root: 'ToggleButton',
+  container: 'ToggleButton.container',
+  text: 'ToggleButton.text',
+  icon: 'ToggleButton.icon',
+}

@@ -14,6 +14,7 @@ exports[`Skeleton 50% animation 1`] = `
       },
     ]
   }
+  testID="Skeleton"
 >
   <View
     collapsable={false}
@@ -32,6 +33,7 @@ exports[`Skeleton 50% animation 1`] = `
         "width": "100%",
       }
     }
+    testID="Skeleton.animatedView"
   >
     <RNSVGSvgView
       bbHeight="100%"
@@ -50,6 +52,7 @@ exports[`Skeleton 50% animation 1`] = `
           },
         ]
       }
+      testID="Skeleton.svg"
     >
       <RNSVGGroup
         fill={
@@ -117,6 +120,7 @@ exports[`Skeleton 100% animation 1`] = `
       },
     ]
   }
+  testID="Skeleton"
 >
   <View
     collapsable={false}
@@ -135,6 +139,7 @@ exports[`Skeleton 100% animation 1`] = `
         "width": "100%",
       }
     }
+    testID="Skeleton.animatedView"
   >
     <RNSVGSvgView
       bbHeight="100%"
@@ -153,6 +158,7 @@ exports[`Skeleton 100% animation 1`] = `
           },
         ]
       }
+      testID="Skeleton.svg"
     >
       <RNSVGGroup
         fill={
@@ -220,6 +226,7 @@ exports[`Skeleton before animation started: before animation started 1`] = `
       },
     ]
   }
+  testID="Skeleton"
 >
   <View
     collapsable={false}
@@ -238,6 +245,7 @@ exports[`Skeleton before animation started: before animation started 1`] = `
         "width": "100%",
       }
     }
+    testID="Skeleton.animatedView"
   >
     <RNSVGSvgView
       bbHeight="100%"
@@ -256,6 +264,7 @@ exports[`Skeleton before animation started: before animation started 1`] = `
           },
         ]
       }
+      testID="Skeleton.svg"
     >
       <RNSVGGroup
         fill={

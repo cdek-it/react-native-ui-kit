@@ -15,6 +15,7 @@ import { makeStyles } from '../../utils/makeStyles'
 interface SkeletonProps {
   /** Дополнительная стилизация для контейнера компонента */
   style?: ViewStyle
+  testID?: string
 }
 
 export const ANIMATION_DURATION = 1200 // ms
@@ -23,7 +24,7 @@ export const ANIMATION_DURATION = 1200 // ms
  * Используется для отображения контента в момент загрузки
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=5241-3731
  */
-export const Skeleton = memo<SkeletonProps>(({ style }) => {
+export const Skeleton = memo<SkeletonProps>(({ style, testID }) => {
   const styles = useStyles()
   const animation = useSharedValue(0)
   const animatedStyles = useAnimatedStyle(() => ({
@@ -41,9 +42,12 @@ export const Skeleton = memo<SkeletonProps>(({ style }) => {
   }, [animation])
 
   return (
-    <View style={[styles.container, style]}>
-      <Animated.View style={[styles.gradientContainer, animatedStyles]}>
-        <Svg>
+    <View style={[styles.container, style]} testID={testID || SkeletonTestId.root}>
+      <Animated.View
+        style={[styles.gradientContainer, animatedStyles]}
+        testID={SkeletonTestId.animatedView}
+      >
+        <Svg testID={SkeletonTestId.svg}>
           <Defs>
             <LinearGradient id='gradient' x1='0' x2='1' y1='1' y2='1'>
               <Stop offset='0' stopColor={styles.container.backgroundColor} stopOpacity='0.4' />
@@ -78,3 +82,9 @@ const useStyles = makeStyles(({ border, theme }) => ({
     backgroundColor: '#FBFBFB',
   },
 }))
+
+export const SkeletonTestId = {
+  root: 'Skeleton',
+  animatedView: 'Skeleton.animatedView',
+  svg: 'Skeleton.svg',
+}

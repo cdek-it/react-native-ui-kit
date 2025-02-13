@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tag snapshot: default 1`] = `
-<View>
+<View
+  testID="Tag"
+>
   <View
     style={
       [
@@ -20,6 +22,7 @@ exports[`Tag snapshot: default 1`] = `
         undefined,
       ]
     }
+    testID="Tag.innerContainer"
   >
     <Text
       numberOfLines={1}
@@ -36,6 +39,7 @@ exports[`Tag snapshot: default 1`] = `
           false,
         ]
       }
+      testID="Tag.text"
     >
       Tag
     </Text>
@@ -44,7 +48,9 @@ exports[`Tag snapshot: default 1`] = `
 `;
 
 exports[`Tag snapshot: severity = basic, rounded = true, with Icon 1`] = `
-<View>
+<View
+  testID="Tag"
+>
   <View
     style={
       [
@@ -65,6 +71,7 @@ exports[`Tag snapshot: severity = basic, rounded = true, with Icon 1`] = `
         },
       ]
     }
+    testID="Tag.innerContainer"
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -101,6 +108,7 @@ exports[`Tag snapshot: severity = basic, rounded = true, with Icon 1`] = `
           },
         ]
       }
+      testID="Tag.icon"
       vbHeight={24}
       vbWidth={24}
       width={12.25}
@@ -148,6 +156,7 @@ exports[`Tag snapshot: severity = basic, rounded = true, with Icon 1`] = `
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="Tag.icon"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -166,6 +175,7 @@ exports[`Tag snapshot: severity = basic, rounded = true, with Icon 1`] = `
           false,
         ]
       }
+      testID="Tag.text"
     >
       Tag
     </Text>
@@ -174,7 +184,9 @@ exports[`Tag snapshot: severity = basic, rounded = true, with Icon 1`] = `
 `;
 
 exports[`Tag snapshot: severity = danger 1`] = `
-<View>
+<View
+  testID="Tag"
+>
   <View
     style={
       [
@@ -193,6 +205,7 @@ exports[`Tag snapshot: severity = danger 1`] = `
         undefined,
       ]
     }
+    testID="Tag.innerContainer"
   >
     <Text
       numberOfLines={1}
@@ -209,6 +222,7 @@ exports[`Tag snapshot: severity = danger 1`] = `
           false,
         ]
       }
+      testID="Tag.text"
     >
       Tag
     </Text>
@@ -217,7 +231,9 @@ exports[`Tag snapshot: severity = danger 1`] = `
 `;
 
 exports[`Tag snapshot: severity = info, showIcon = false, with Icon 1`] = `
-<View>
+<View
+  testID="Tag"
+>
   <View
     style={
       [
@@ -236,6 +252,7 @@ exports[`Tag snapshot: severity = info, showIcon = false, with Icon 1`] = `
         undefined,
       ]
     }
+    testID="Tag.innerContainer"
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -272,6 +289,7 @@ exports[`Tag snapshot: severity = info, showIcon = false, with Icon 1`] = `
           },
         ]
       }
+      testID="Tag.icon"
       vbHeight={24}
       vbWidth={24}
       width={12.25}
@@ -319,6 +337,7 @@ exports[`Tag snapshot: severity = info, showIcon = false, with Icon 1`] = `
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="Tag.icon"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -337,6 +356,7 @@ exports[`Tag snapshot: severity = info, showIcon = false, with Icon 1`] = `
           false,
         ]
       }
+      testID="Tag.text"
     >
       Tag
     </Text>
@@ -345,7 +365,9 @@ exports[`Tag snapshot: severity = info, showIcon = false, with Icon 1`] = `
 `;
 
 exports[`Tag snapshot: severity = secondary, rounded = false, showIcon = true, with Icon 1`] = `
-<View>
+<View
+  testID="Tag"
+>
   <View
     style={
       [
@@ -364,6 +386,7 @@ exports[`Tag snapshot: severity = secondary, rounded = false, showIcon = true, w
         false,
       ]
     }
+    testID="Tag.innerContainer"
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -402,6 +425,7 @@ exports[`Tag snapshot: severity = secondary, rounded = false, showIcon = true, w
           },
         ]
       }
+      testID="Tag.icon"
       vbHeight={24}
       vbWidth={24}
       width={12.25}
@@ -449,6 +473,7 @@ exports[`Tag snapshot: severity = secondary, rounded = false, showIcon = true, w
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="Tag.icon"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -469,6 +494,7 @@ exports[`Tag snapshot: severity = secondary, rounded = false, showIcon = true, w
           },
         ]
       }
+      testID="Tag.text"
     >
       Tag
     </Text>
@@ -483,6 +509,7 @@ exports[`Tag snapshot: severity = success, with custom styles 1`] = `
       "margin": 10,
     }
   }
+  testID="Tag"
 >
   <View
     style={
@@ -502,6 +529,7 @@ exports[`Tag snapshot: severity = success, with custom styles 1`] = `
         undefined,
       ]
     }
+    testID="Tag.innerContainer"
   >
     <Text
       numberOfLines={1}
@@ -518,6 +546,7 @@ exports[`Tag snapshot: severity = success, with custom styles 1`] = `
           false,
         ]
       }
+      testID="Tag.text"
     >
       Tag
     </Text>
@@ -526,7 +555,9 @@ exports[`Tag snapshot: severity = success, with custom styles 1`] = `
 `;
 
 exports[`Tag snapshot: severity = warning 1`] = `
-<View>
+<View
+  testID="Tag"
+>
   <View
     style={
       [
@@ -545,6 +576,7 @@ exports[`Tag snapshot: severity = warning 1`] = `
         undefined,
       ]
     }
+    testID="Tag.innerContainer"
   >
     <Text
       numberOfLines={1}
@@ -561,6 +593,7 @@ exports[`Tag snapshot: severity = warning 1`] = `
           false,
         ]
       }
+      testID="Tag.text"
     >
       Tag
     </Text>

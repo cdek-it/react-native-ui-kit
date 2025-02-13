@@ -27,6 +27,7 @@ interface AvatarBase {
   shape?: 'square' | 'circle'
   /** Дополнительная стилизация для контейнера компонента */
   style?: ViewStyle
+  testID?: string
 }
 
 interface LabelAvatar extends AvatarBase {
@@ -105,6 +106,7 @@ export const Avatar = memo<AvatarProps>(
     Icon,
     badge,
     showBadge = true,
+    testID,
   }) => {
     const styles = useStyles()
     const window = useWindowDimensions()
@@ -131,7 +133,14 @@ export const Avatar = memo<AvatarProps>(
 
       const iconStyle = StyleSheet.flatten([styles.icon, size === 'xlarge' && styles.iconXLarge])
 
-      return <Icon height={iconStyle.height} style={iconStyle} width={iconStyle.width} />
+      return (
+        <Icon
+          height={iconStyle.height}
+          style={iconStyle}
+          testID={AvatarTestId.icon}
+          width={iconStyle.width}
+        />
+      )
     }, [Icon, size, styles.icon, styles.iconXLarge, type])
 
     useEffect(() => {
@@ -141,7 +150,7 @@ export const Avatar = memo<AvatarProps>(
     }, [badge])
 
     return (
-      <View collapsable={false}>
+      <View collapsable={false} testID={testID || AvatarTestId.root}>
         <View
           style={[
             styles.container,
@@ -150,12 +159,14 @@ export const Avatar = memo<AvatarProps>(
             shape === 'circle' && styles.circle,
             style,
           ]}
+          testID={AvatarTestId.container}
         >
           {type === 'label' && (
             <Text
               ellipsizeMode='clip'
               numberOfLines={1}
               style={[styles.text, size === 'xlarge' && styles.textXLarge]}
+              testID={AvatarTestId.text}
             >
               {children}
             </Text>
@@ -163,12 +174,26 @@ export const Avatar = memo<AvatarProps>(
 
           {icon}
 
-          {type === 'image' && <Image resizeMode='cover' source={source} style={[styles[size]]} />}
+          {type === 'image' && (
+            <Image
+              resizeMode='cover'
+              source={source}
+              style={[styles[size]]}
+              testID={AvatarTestId.image}
+            />
+          )}
         </View>
 
         {badge && showBadge && (
-          <View style={[styles.badgeContainer, badgeContainerStyle]}>
-            <View style={styles.badgeMeasureContainer} onLayout={handleBadgeLayout}>
+          <View
+            style={[styles.badgeContainer, badgeContainerStyle]}
+            testID={AvatarTestId.badgeContainer}
+          >
+            <View
+              style={styles.badgeMeasureContainer}
+              testID={AvatarTestId.badgeInnerContainer}
+              onLayout={handleBadgeLayout}
+            >
               {badge}
             </View>
           </View>
@@ -235,3 +260,13 @@ const useStyles = makeStyles(({ theme }) => ({
     color: theme.Misc.Avatar.avatarTextColor,
   },
 }))
+
+export const AvatarTestId = {
+  root: 'Avatar',
+  icon: 'Avatar.icon',
+  container: 'Avatar.container',
+  text: 'Avatar.text',
+  image: 'Avatar.image',
+  badgeContainer: 'Avatar.badgeContainer',
+  badgeInnerContainer: 'Avatar.badgeInnerContainer',
+}
