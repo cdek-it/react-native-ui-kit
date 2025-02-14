@@ -103,27 +103,23 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
                 disabled && styles.contentContainerDisabled,
               ]}
             >
-              <View style={styles.leftContainer}>
-                <MenuItemAccessory disabled={disabled} iconStyle={styles.accessory} type={prefix} />
-                <View style={styles.templateContainer}>
-                  {Icon && (
-                    <MenuItemIcon Icon={Icon} badgeSeverity={badgeSeverity} style={iconStyle} />
-                  )}
-                  <View
-                    style={{
-                      ...styles.textContainer,
-                      paddingTop: contentPaddingTop,
-                      paddingBottom: contentPaddingBottom,
-                    }}
-                  >
-                    <Text style={[styles.title, styles.titleColor]}>{title}</Text>
-                    {caption && (
-                      <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>
-                    )}
-                  </View>
-                  {extra}
+              <MenuItemAccessory disabled={disabled} iconStyle={styles.accessory} type={prefix} />
+              <View style={styles.templateContainer}>
+                {Icon && (
+                  <MenuItemIcon Icon={Icon} badgeSeverity={badgeSeverity} style={iconStyle} />
+                )}
+                <View
+                  style={{
+                    ...styles.textContainer,
+                    paddingTop: contentPaddingTop,
+                    paddingBottom: contentPaddingBottom,
+                  }}
+                >
+                  <Text style={[styles.title, styles.titleColor]}>{title}</Text>
+                  {caption && <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>}
                 </View>
               </View>
+              {extra}
               <MenuItemAccessory disabled={disabled} iconStyle={styles.accessory} type={suffix} />
             </View>
           )}
@@ -144,8 +140,7 @@ const useStyles = makeStyles(({ theme, spacing, typography }) => ({
   },
   contentContainer: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignSelf: 'stretch',
+    alignItems: 'center',
     gap: theme.General.inlineSpacing,
     paddingHorizontal: theme.Menu.Item.menuitemPaddingLeftRight,
     paddingVertical: theme.Menu.Item.menuitemPaddingTopBottom,
@@ -163,9 +158,6 @@ const useStyles = makeStyles(({ theme, spacing, typography }) => ({
     backgroundColor: theme.Button.Disabled.disabledButtonBg,
     opacity: 0.6,
   },
-  leftContainer: {
-    flexDirection: 'row',
-  },
   accessory: {
     color: theme.Menu.Item.menuitemIconColor,
     width: theme.Menu.Item.menuitemSubmenuIconFontSize,
@@ -174,6 +166,7 @@ const useStyles = makeStyles(({ theme, spacing, typography }) => ({
   templateContainer: {
     flexDirection: 'row',
     gap: spacing.Gap['gap-2'],
+    flexGrow: 1,
   },
   icon: {
     width: typography.Size['text-xl'],

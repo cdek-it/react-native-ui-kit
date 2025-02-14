@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { IconCircle, IconDiamond, IconList, IconSquare, IconUser } from '@tabler/icons-react-native'
+import { IconDiamond, IconList, IconSquare, IconUser } from '@tabler/icons-react-native'
 import React from 'react'
 import { View } from 'react-native'
 
 import { MenuItemTemplate } from './MenuItemTemplate'
 
 const Icons = { undefined, IconUser, IconList, IconSquare }
-const Extras = { undefined, IconDiamond, IconCircle }
+const Extras = { undefined, IconDiamond: <IconDiamond height={21} width={21} /> }
 
 const meta: Meta<typeof MenuItemTemplate> = {
   title: 'MenuItemTemplate',
