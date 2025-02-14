@@ -1,6 +1,13 @@
 import type { Icon } from '@tabler/icons-react-native'
 import React, { memo, useCallback, useMemo, useState } from 'react'
-import { Pressable, Text, View, type ViewStyle } from 'react-native'
+import {
+  type AccessibilityProps,
+  Pressable,
+  Text,
+  View,
+  type ViewProps,
+  type ViewStyle,
+} from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
 
@@ -8,7 +15,7 @@ import { useIconSize } from './hooks/useIconSize'
 import { useLabelSize } from './hooks/useLabelSize'
 import { useStateStyles } from './hooks/useStateStyles'
 
-export interface ToggleButtonProps {
+export interface ToggleButtonProps extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Обработчик нажатия на кнопку */
   onPress: () => void
   /**
@@ -39,7 +46,6 @@ export interface ToggleButtonProps {
   style?: ViewStyle
   /** Иконка из библиотеки Tabler */
   Icon?: Icon
-  testID?: string
 }
 
 /**
@@ -58,6 +64,7 @@ export const ToggleButton = memo<ToggleButtonProps>(
     style,
     Icon,
     testID,
+    ...rest
   }) => {
     const styles = useStyles()
     const labelSize = useLabelSize(size)
@@ -91,6 +98,7 @@ export const ToggleButton = memo<ToggleButtonProps>(
         onPress={onPress}
         onPressIn={onPressIn}
         onPressOut={onPressOut}
+        {...rest}
       >
         <View
           style={[

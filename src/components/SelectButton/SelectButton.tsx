@@ -1,9 +1,11 @@
 import React, { memo, useCallback, useMemo, useRef, useState } from 'react'
 import {
+  type AccessibilityProps,
   type LayoutChangeEvent,
   type LayoutRectangle,
   type StyleProp,
   View,
+  type ViewProps,
   type ViewStyle,
 } from 'react-native'
 import Animated, {
@@ -23,7 +25,7 @@ import { SelectButtonItem, type SelectButtonItemProps } from './SelectButtonItem
 
 const DEFAULT_ANIMATION_DURATION = 200 // ms
 
-export interface SelectButtonProps {
+export interface SelectButtonProps extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Массив кнопок. Должен содержать как минимум 2 кнопки. */
   buttons: Array<Pick<SelectButtonItemProps, 'label' | 'showIcon' | 'Icon'> & { key: string }>
 
@@ -64,7 +66,9 @@ export const SelectButton = memo<SelectButtonProps>(
     onPress: onPressProp,
     size,
     style,
+    testID,
     position: positionProp,
+    ...rest
   }) => {
     const styles = useStyles()
     const buttonsLayoutListRef = useRef<LayoutRectangle[]>([])
@@ -131,7 +135,7 @@ export const SelectButton = memo<SelectButtonProps>(
     )
 
     return (
-      <View collapsable={false} style={[styles.container, style]}>
+      <View collapsable={false} style={[styles.container, style]} testID={testID} {...rest}>
         {buttons.map(({ label, Icon, key, showIcon }, index) => (
           <SelectButtonItem
             Icon={Icon}

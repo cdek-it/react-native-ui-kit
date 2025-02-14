@@ -1,6 +1,7 @@
 import type { Icon } from '@tabler/icons-react-native'
 import React, { memo, type ReactNode, useCallback, useEffect, useMemo, useState } from 'react'
 import {
+  type AccessibilityProps,
   Image,
   type ImageSourcePropType,
   type LayoutChangeEvent,
@@ -14,7 +15,7 @@ import {
 
 import { makeStyles } from '../../utils/makeStyles'
 
-interface AvatarBase {
+interface AvatarBase extends AccessibilityProps {
   /**
    * Выбор размера компонента
    * @default 'normal'

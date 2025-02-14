@@ -1,10 +1,17 @@
 import type { Icon } from '@tabler/icons-react-native'
 import React, { memo } from 'react'
-import { View, Text, type ViewStyle, type StyleProp } from 'react-native'
+import {
+  View,
+  Text,
+  type ViewStyle,
+  type StyleProp,
+  type AccessibilityProps,
+  type ViewProps,
+} from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
 
-export interface TagProps {
+export interface TagProps extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Текст */
   text: string
 
@@ -28,7 +35,6 @@ export interface TagProps {
 
   /** Иконка из библиотеки Tabler */
   Icon?: Icon
-  testID?: string
 }
 
 /**
@@ -36,11 +42,11 @@ export interface TagProps {
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4921
  */
 export const Tag = memo<TagProps>(
-  ({ text, rounded, severity = 'basic', showIcon = true, style, Icon, testID }) => {
+  ({ text, rounded, severity = 'basic', showIcon = true, style, Icon, testID, ...rest }) => {
     const styles = useStyles()
 
     return (
-      <View style={style} testID={testID || TagTestId.root}>
+      <View style={style} testID={testID || TagTestId.root} {...rest}>
         <View
           style={[styles.container, styles[severity], rounded && styles.roundedContainer]}
           testID={TagTestId.innerContainer}

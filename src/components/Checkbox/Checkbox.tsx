@@ -1,6 +1,7 @@
 import { IconCheck, IconMinus } from '@tabler/icons-react-native'
 import React, { memo, useMemo } from 'react'
-import { Pressable } from 'react-native'
+import { type AccessibilityProps, Pressable } from 'react-native'
+import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 
 import { makeStyles } from '../../utils/makeStyles'
 
@@ -8,7 +9,7 @@ import { usePressableStyles } from './hooks/usePressableStyles'
 
 type CheckboxState = 'default' | 'danger'
 
-export interface CheckboxProps {
+export interface CheckboxProps extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Обработчик нажатия на чекбокс */
   onPress: () => void
   /**
@@ -35,7 +36,7 @@ export interface CheckboxProps {
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5316
  */
 export const Checkbox = memo<CheckboxProps>((props: CheckboxProps) => {
-  const { onPress, checked = false, disabled = false, indeterminate = false } = props
+  const { onPress, checked = false, disabled = false, indeterminate = false, testID } = props
 
   const Icon = useMemo(() => {
     if (indeterminate) {
@@ -55,7 +56,7 @@ export const Checkbox = memo<CheckboxProps>((props: CheckboxProps) => {
       disabled={disabled}
       hitSlop={10}
       style={pressableStyles}
-      testID='CheckboxButton_Pressable'
+      testID={testID || 'CheckboxButton_Pressable'}
       onPress={onPress}
     >
       {Icon && <Icon height={styles.icon.height} style={styles.icon} width={styles.icon.width} />}

@@ -24,7 +24,7 @@ import type { ButtonBadgeProps, ButtonProps } from './types'
  * @see BaseButton
  */
 export const ButtonBadge = memo<ButtonProps & ButtonBadgeProps>(
-  ({ badgeLabel, badgeSeverity, ...props }) => {
+  ({ badgeLabel, badgeSeverity, testID, ...props }) => {
     const buttonStyles = useBasicButtonStyles()
     const [badgeLayout, setBadgeLayout] = useState<LayoutRectangle>()
 
@@ -46,7 +46,7 @@ export const ButtonBadge = memo<ButtonProps & ButtonBadgeProps>(
         <Badge
           severity={badgeSeverity}
           style={badgeContainerStyle}
-          testID='buttonBadge'
+          testID={testID || 'buttonBadge'}
           onLayout={onLayout}
         >
           {badgeLabel}

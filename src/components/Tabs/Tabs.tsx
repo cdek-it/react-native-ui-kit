@@ -1,5 +1,11 @@
 import React, { memo, useEffect, useState } from 'react'
-import { type LayoutChangeEvent, type LayoutRectangle, View } from 'react-native'
+import {
+  type AccessibilityProps,
+  type LayoutChangeEvent,
+  type LayoutRectangle,
+  View,
+  type ViewProps,
+} from 'react-native'
 import Animated, {
   interpolate,
   useAnimatedStyle,
@@ -11,7 +17,7 @@ import { makeStyles } from '../../utils/makeStyles'
 
 import { TabItem, type TabItemProps } from './TabItem/TabItem'
 
-export interface TabsProps {
+export interface TabsProps extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Список табов см. компонент TabItem */
   items: Array<Pick<TabItemProps, 'Icon' | 'label' | 'badge'> & { key: string }>
 
@@ -29,7 +35,7 @@ export interface TabsProps {
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=888-13076&t=hIQjdrqPKK8BWYev-4
  */
 export const Tabs = memo<TabsProps>(
-  ({ items, disabled = false, activeIndex, onChange, ...rest }) => {
+  ({ items, disabled = false, activeIndex, onChange, testID, ...rest }) => {
     const styles = useStyles()
 
     const [tabsLayouts, setTabsLayouts] = useState<Record<string, LayoutRectangle>>({})
@@ -67,7 +73,7 @@ export const Tabs = memo<TabsProps>(
     }
 
     return (
-      <View {...rest} style={styles.container}>
+      <View {...rest} style={styles.container} testID={testID}>
         {items.map((prop, index) => {
           return (
             <TabItem

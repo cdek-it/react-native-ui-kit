@@ -1,12 +1,12 @@
 import React, { memo } from 'react'
-import { Text, View, type ViewStyle } from 'react-native'
+import { type AccessibilityProps, Text, View, type ViewStyle } from 'react-native'
 import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 
 import { makeStyles } from '../../utils/makeStyles'
 
 export type BadgeSeverity = 'basic' | 'info' | 'success' | 'warning' | 'danger'
 
-interface BadgeBase extends Pick<ViewProps, 'onLayout' | 'testID'> {
+interface BadgeBase extends AccessibilityProps, Pick<ViewProps, 'onLayout' | 'testID'> {
   /**
    * Выбор варианта стиля компонента
    * @default 'basic'

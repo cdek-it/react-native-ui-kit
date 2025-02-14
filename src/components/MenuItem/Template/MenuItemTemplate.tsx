@@ -69,6 +69,7 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
     extra,
     separator = false,
     state = 'default',
+    testID,
     contentPaddingTop = 0,
     contentPaddingBottom = 0,
     onPress = undefined,
@@ -90,7 +91,7 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
           accessibilityRole='button'
           accessibilityValue={{ text: caption }}
           disabled={disabled}
-          testID='menuItemButton'
+          testID={testID || 'menuItemButton'}
           onPress={onPress}
           {...rest}
         >

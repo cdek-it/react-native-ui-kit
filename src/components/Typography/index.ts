@@ -1,4 +1,4 @@
-export { Body } from './Body'
-export { Caption } from './Caption'
-export { Title } from './Title'
-export { Subtitle } from './Subtitle'
+export { Body, type BodyProps } from './Body'
+export { Caption, type CaptionProps } from './Caption'
+export { Title, type TitleProps } from './Title'
+export { Subtitle, type SubtitleProps } from './Subtitle'

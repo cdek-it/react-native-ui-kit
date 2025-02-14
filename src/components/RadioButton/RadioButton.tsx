@@ -1,10 +1,17 @@
 import React, { memo, useCallback, useMemo } from 'react'
-import { Pressable, type PressableStateCallbackType, StyleSheet, View } from 'react-native'
+import {
+  type AccessibilityProps,
+  Pressable,
+  type PressableStateCallbackType,
+  StyleSheet,
+  View,
+  type ViewProps,
+} from 'react-native'
 import Animated, { LinearTransition } from 'react-native-reanimated'
 
 import { makeStyles } from '../../utils/makeStyles'
 
-export interface RadioButtonProps {
+export interface RadioButtonProps extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Обработчик нажатия на кнопку */
   onPress: () => void
   /**
@@ -22,7 +29,7 @@ export interface RadioButtonProps {
 }
 
 export const RadioButton = memo<RadioButtonProps>(
-  ({ onPress, checked = false, disabled = false, state = 'default' }) => {
+  ({ onPress, checked = false, disabled = false, state = 'default', testID, ...rest }) => {
     const styles = useStyles()
 
     const centerViewBackground = useMemo(
@@ -84,8 +91,9 @@ export const RadioButton = memo<RadioButtonProps>(
         <Pressable
           disabled={disabled}
           style={pressableStyles}
-          testID='RadioButton_Pressable'
+          testID={testID || 'RadioButton_Pressable'}
           onPress={onPress}
+          {...rest}
         >
           <View style={[styles.center, centerViewBackground]} />
         </Pressable>
