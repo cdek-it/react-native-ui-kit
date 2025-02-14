@@ -1,1 +1,1 @@
-export { ToggleButton } from './ToggleButton'
+export { ToggleButton, type ToggleButtonProps } from './ToggleButton'

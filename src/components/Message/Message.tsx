@@ -7,14 +7,14 @@ import {
   IconX,
 } from '@tabler/icons-react-native'
 import React, { memo, useMemo } from 'react'
-import { View, type ViewStyle } from 'react-native'
+import { type AccessibilityProps, View, type ViewProps, type ViewStyle } from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
 import { ButtonSeverity } from '../Button/ButtonSeverity'
 import { Timer } from '../Timer/Timer'
 import { Body, Caption } from '../Typography'
 
-export interface MessageProps {
+export interface MessageProps extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Текст заголовка */
   title: string
 
@@ -75,8 +75,10 @@ export const Message = memo<MessageProps>(
     onTimerFinish,
     severity = 'info',
     style,
+    testID,
     timerValue,
     Icon: IconProp,
+    ...rest
   }) => {
     const styles = useStyles()
     const Icon = useMemo(() => {
@@ -97,7 +99,11 @@ export const Message = memo<MessageProps>(
     }, [IconProp, severity])
 
     return (
-      <View style={[styles.container, styles[severity], style]} testID={TestId.Container}>
+      <View
+        style={[styles.container, styles[severity], style]}
+        testID={testID || TestId.Container}
+        {...rest}
+      >
         <View style={styles.titleRow}>
           {timerValue ? (
             <Timer countFrom={timerValue} onFinish={onTimerFinish} />

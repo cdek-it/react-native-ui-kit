@@ -1,1 +1,1 @@
-export { SelectButton } from './SelectButton'
+export { SelectButton, type SelectButtonProps } from './SelectButton'

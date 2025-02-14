@@ -1,5 +1,5 @@
 import React, { memo, useCallback } from 'react'
-import { View, type ViewProps } from 'react-native'
+import { type AccessibilityProps, View, type ViewProps } from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
 
@@ -10,7 +10,7 @@ import { RatingItem } from './RatingItem'
  * Свойства компонента рейтинга
  * @see Rating - компонент рейтинга
  */
-export interface RatingProps extends Pick<ViewProps, 'testID'> {
+export interface RatingProps extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /**
    * Управление состоянием включённости компонента для нажатий пользователем
    * @default false
@@ -54,7 +54,16 @@ export interface RatingProps extends Pick<ViewProps, 'testID'> {
  * @see RatingClear - элемент рейтинга для очистки
  */
 export const Rating = memo<RatingProps>(
-  ({ disabled = false, paddings = false, maxRating = 5, rating, onChange, onClear }) => {
+  ({
+    disabled = false,
+    paddings = false,
+    maxRating = 5,
+    rating,
+    onChange,
+    onClear,
+    testID,
+    ...rest
+  }) => {
     const styles = useStyles()
 
     const handleItemPress = useCallback(
@@ -69,8 +78,9 @@ export const Rating = memo<RatingProps>(
         <RatingClear
           disabled={disabled}
           paddings={paddings}
-          testID='RatingClear'
+          testID={testID || 'RatingClear'}
           onPress={onClear}
+          {...rest}
         />
         {new Array(maxRating).fill(null).map((_, index) => (
           <RatingItem

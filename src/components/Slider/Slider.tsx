@@ -1,5 +1,5 @@
 import React, { memo, useCallback, useMemo, useState } from 'react'
-import { type LayoutChangeEvent, View } from 'react-native'
+import { type AccessibilityProps, type LayoutChangeEvent, View, type ViewProps } from 'react-native'
 import { Gesture, GestureDetector } from 'react-native-gesture-handler'
 import Animated, {
   useSharedValue,
@@ -11,7 +11,7 @@ import Animated, {
 
 import { makeStyles } from '../../utils/makeStyles'
 
-export interface SliderProps {
+export interface SliderProps extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /**
    * Управление доступностью компонента
    * @default false
@@ -62,6 +62,8 @@ export const Slider = memo<SliderProps>(
     maxPointerValueInit = 100,
     onMinPointerValueChange,
     onMaxPointerValueChange,
+    testID,
+    ...rest
   }) => {
     const styles = useStyles()
     const minPointX = useSharedValue(0)
@@ -206,7 +208,7 @@ export const Slider = memo<SliderProps>(
     }))
 
     return (
-      <View style={styles.container} onLayout={onContainerLayout}>
+      <View style={styles.container} testID={testID} onLayout={onContainerLayout} {...rest}>
         <View style={styles.track}>
           {range ? null : ( // индикатор старта
             <Animated.View style={[lineStyle, minLineStyle]} />

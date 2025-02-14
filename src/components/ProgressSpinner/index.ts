@@ -1,1 +1,1 @@
-export { ProgressSpinner } from './ProgressSpinner'
+export { ProgressSpinner, type ProgressSpinnerProps } from './ProgressSpinner'

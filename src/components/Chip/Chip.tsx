@@ -21,7 +21,7 @@ export interface ChipProps extends PressableProps {
  * Используется для представления массива данных в виде меток
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5126&t=jMMaE0JO924pG1ga-4
  */
-export const Chip = memo<ChipProps>(({ Icon, label, disabled, onRemove, ...rest }) => {
+export const Chip = memo<ChipProps>(({ Icon, label, disabled, testID, onRemove, ...rest }) => {
   const styles = useStyles()
 
   return (
@@ -29,7 +29,7 @@ export const Chip = memo<ChipProps>(({ Icon, label, disabled, onRemove, ...rest 
       {...rest}
       disabled={disabled}
       style={[styles.chip, disabled && styles.disabledChip]}
-      testID={TestId.Container}
+      testID={testID || TestId.Container}
     >
       {Icon && (
         <Icon

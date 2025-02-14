@@ -1,1 +1,1 @@
-export { Message } from './Message'
+export { Message, type MessageProps } from './Message'
