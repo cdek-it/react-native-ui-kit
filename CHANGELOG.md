@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.23](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.22...v0.0.23) (2025-02-14)
+
+
+### Bug Fixes
+
+* **menu-template-item:** another fix for extra item position ([7167aad](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/7167aad7f7f46b7c2c2788bd611636f5a2effc80))
+
 ### [0.0.22](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.21...v0.0.22) (2025-02-14)
 
 
