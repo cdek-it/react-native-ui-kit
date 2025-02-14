@@ -84,7 +84,7 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
     )
 
     return (
-      <View style={separator && styles.separator}>
+      <View style={[styles.root, separator && styles.separator]}>
         <Pressable
           accessibilityLabel={title}
           accessibilityRole='button'
@@ -133,6 +133,9 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
 )
 
 const useStyles = makeStyles(({ theme, spacing, typography }) => ({
+  root: {
+    width: '100%',
+  },
   separator: {
     borderTopWidth: 1,
     borderTopColor: theme.Menu.Overlay.overlayMenuBorderColor,

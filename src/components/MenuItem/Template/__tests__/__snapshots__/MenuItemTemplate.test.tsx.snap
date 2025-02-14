@@ -3,11 +3,16 @@
 exports[`MenuItemTemplate full disabled 1`] = `
 <View
   style={
-    {
-      "borderTopColor": "#dbdada",
-      "borderTopWidth": 1,
-      "paddingTop": 3.5,
-    }
+    [
+      {
+        "width": "100%",
+      },
+      {
+        "borderTopColor": "#dbdada",
+        "borderTopWidth": 1,
+        "paddingTop": 3.5,
+      },
+    ]
   }
 >
   <View
@@ -504,7 +509,14 @@ exports[`MenuItemTemplate full disabled 1`] = `
 
 exports[`MenuItemTemplate minimal config 1`] = `
 <View
-  style={false}
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      false,
+    ]
+  }
 >
   <View
     accessibilityLabel="Menu Item"
@@ -612,7 +624,14 @@ exports[`MenuItemTemplate minimal config 1`] = `
 
 exports[`MenuItemTemplate prefix,suffix = down 1`] = `
 <View
-  style={false}
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      false,
+    ]
+  }
 >
   <View
     accessibilityLabel="Menu Item"
@@ -907,7 +926,14 @@ exports[`MenuItemTemplate prefix,suffix = down 1`] = `
 
 exports[`MenuItemTemplate prefix,suffix = right 1`] = `
 <View
-  style={false}
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      false,
+    ]
+  }
 >
   <View
     accessibilityLabel="Menu Item"
@@ -1202,7 +1228,14 @@ exports[`MenuItemTemplate prefix,suffix = right 1`] = `
 
 exports[`MenuItemTemplate with colored icon 1`] = `
 <View
-  style={false}
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      false,
+    ]
+  }
 >
   <View
     accessibilityLabel="Menu Item"
@@ -1420,7 +1453,14 @@ exports[`MenuItemTemplate with colored icon 1`] = `
 
 exports[`MenuItemTemplate with extra 1`] = `
 <View
-  style={false}
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      false,
+    ]
+  }
 >
   <View
     accessibilityLabel="Menu Item"
@@ -1624,7 +1664,14 @@ exports[`MenuItemTemplate with extra 1`] = `
 
 exports[`MenuItemTemplate with icon 1`] = `
 <View
-  style={false}
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      false,
+    ]
+  }
 >
   <View
     accessibilityLabel="Menu Item"
@@ -1842,7 +1889,14 @@ exports[`MenuItemTemplate with icon 1`] = `
 
 exports[`MenuItemTemplate with icon and badge 1`] = `
 <View
-  style={false}
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      false,
+    ]
+  }
 >
   <View
     accessibilityLabel="Menu Item"
@@ -2091,7 +2145,14 @@ exports[`MenuItemTemplate with icon and badge 1`] = `
 
 exports[`MenuItemTemplate with padding 1`] = `
 <View
-  style={false}
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      false,
+    ]
+  }
 >
   <View
     accessibilityLabel="Menu Item"
@@ -2200,11 +2261,16 @@ exports[`MenuItemTemplate with padding 1`] = `
 exports[`MenuItemTemplate with separator 1`] = `
 <View
   style={
-    {
-      "borderTopColor": "#dbdada",
-      "borderTopWidth": 1,
-      "paddingTop": 3.5,
-    }
+    [
+      {
+        "width": "100%",
+      },
+      {
+        "borderTopColor": "#dbdada",
+        "borderTopWidth": 1,
+        "paddingTop": 3.5,
+      },
+    ]
   }
 >
   <View
