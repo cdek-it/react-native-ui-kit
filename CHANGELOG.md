@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.22](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.21...v0.0.22) (2025-02-14)
+
+
+### Bug Fixes
+
+* **accessibility:** добавлен проброс testID и accessibility свойств ([c696d4c](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/c696d4cd6b58e2027e8cc0a45f1deb598f85be7e))
+
 ### [0.0.21](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.20...v0.0.21) (2025-02-14)
 
 
