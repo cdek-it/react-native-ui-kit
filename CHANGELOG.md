@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.21](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.20...v0.0.21) (2025-02-14)
+
+
+### Bug Fixes
+
+* **menu-item-template:** width of the component is set to 100% of the parent ([b5f8344](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/b5f8344d18a7587946b7690f7353eaadcd32d683))
+
 ### [0.0.20](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.19...v0.0.20) (2025-02-13)
 
 
