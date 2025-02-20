@@ -19,39 +19,9 @@ stages:
   - publish
 
 variables:
-  ENABLE_ANDROID: "yes"
-  ENABLE_IOS: "yes"
   IMG_NODE: "node:18-alpine"
   REVIEWERS_LIST: "CHANGE_ME"
   REVIEW_CHAT_WEBHOOK: "CHANGE_ME"
-  FASTLANE_SKIP_UPDATE_CHECK: "true"
-  FASTLANE_HIDE_CHANGELOG: "true"
-  FASTLANE_OPT_OUT_USAGE: "true"
-  FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT: "30"
-  FASTLANE_XCODEBUILD_SETTINGS_RETRIES: "4"
-  ANDROID_PROJECT_DIR: "android"
-  ANDROID_BUILD_TYPE: "CHANGE_ME"
-  PILOT_SKIP_WAITING_FOR_BUILD_PROCESSING: "true"
-  MATCH_READONLY: "true"
-  MATCH_STORAGE_MODE: "git"
-  MATCH_GIT_URL: "git@gitlab.cdek.ru:react-native/fastlane-match-storage.git"
-  MATCH_GIT_BRANCH: "master"
-  MATCH_PASSWORD:  "SUPER_SECRET"
-  IOS_PROJECT_PATH: "ios"
-  IOS_PROJECT_WORKSPACE: "CHANGE_ME"
-  GYM_WORKSPACE: $IOS_PROJECT_PATH/$IOS_PROJECT_WORKSPACE.xcworkspace
-  GYM_CLEAN: "true"
-  GYM_OUTPUT_DIRECTORY: $IOS_PROJECT_PATH/build
-  GYM_OUTPUT_NAME: "CHANGE_ME"
-  GYM_BUILD_PATH: $IOS_PROJECT_PATH/build
-  GYM_ARCHIVE_PATH: $IOS_PROJECT_PATH/build/archive
-  GYM_DERIVED_DATA_PATH: $IOS_PROJECT_PATH/build/DerivedData
-  GYM_BUILDLOG_PATH: $IOS_PROJECT_PATH/build/Logs
-  APP_STORE_CONNECT_API_KEY_KEY_ID: "SUPER_SECRET"
-  APP_STORE_CONNECT_API_KEY_ISSUER_ID: "SUPER_SECRET"
-  APP_STORE_CONNECT_API_KEY_KEY_FILE: "AuthKey.p8"
-  APP_STORE_CONNECT_API_KEY_DURATION: "1200"
-  JOB_ARTIFACT_PATH: $CI_PROJECT_URL/-/jobs/$CI_JOB_ID/artifacts/raw
 
 start_build:
   stage: start_build
@@ -73,82 +43,6 @@ build:
     expire_in: 1 hour
     paths:
       - dist
-
-yarn_install_mac:
-  stage: build
-  extends:
-    - .macos_runner
-    - .yarn_macos_cache_pull_push
-    - .enable_native_builds
-    - .needs_only_start_build
-  script:
-    - npx yarn install --frozen-lockfile
-
-ruby_install_mac:
-  stage: build
-  extends:
-    - .macos_runner
-    - .ruby_macos_cache_pull_push
-    - .enable_native_builds
-    - .needs_only_start_build
-  script:
-    - bundle install
-
-pods_install_mac:
-  stage: build
-  extends:
-    - .macos_runner
-    - .pods_macos_cache_pull_push
-    - .enable_ios
-    - .needs_yarn_ruby_start_build
-  script:
-    - bundle exec pod install --project-directory=ios
-
-build_ios_simulator:
-  stage: build
-  extends:
-    - .basic_ios_job
-  variables:
-    MATCH_TYPE: "appstore"
-    GYM_EXPORT_METHOD: "app-store"
-    GYM_SKIP_PACKAGE_IPA: "true"
-    GYM_SKIP_ARCHIVE: "true"
-    GYM_DESTINATION: "generic/platform=iOS Simulator"
-    GYM_CONFIGURATION: Release
-    APP_ARTIFACT_PATH: $JOB_ARTIFACT_PATH/$GYM_OUTPUT_NAME.app.zip
-  script:
-    - bundle exec pod install --project-directory=ios
-    - bundle exec fastlane ios build
-    - mv $GYM_DERIVED_DATA_PATH/Build/Products/$GYM_CONFIGURATION-iphonesimulator/$GYM_OUTPUT_NAME.app $GYM_OUTPUT_NAME.app
-    - zip -r $GYM_OUTPUT_NAME.app.zip $GYM_OUTPUT_NAME.app
-    - echo "SIMULATOR_APP_ARTIFACT=${APP_ARTIFACT_PATH}" >> artifacts.env
-  artifacts:
-    expire_in: 1 week
-    reports:
-      dotenv: artifacts.env
-    paths:
-      - $GYM_OUTPUT_NAME.app.zip
-
-build_android_apk:
-  stage: build
-  extends:
-    - .android_runner
-    - .yarn_ruby_macos_cache_pull
-    - .enable_android
-    - .needs_android_dependencies
-  variables:
-    FL_GRADLE_PROJECT_DIR: $ANDROID_PROJECT_DIR
-    APK_ARTIFACT_PATH: $JOB_ARTIFACT_PATH/app.apk
-  script:
-    - bundle exec fastlane android build_apk
-    - mv $ANDROID_PROJECT_DIR/app/build/outputs/apk/$ANDROID_BUILD_TYPE/app-$ANDROID_BUILD_TYPE.apk app.apk
-    - echo "ANDROID_APK_ARTIFACT=${APK_ARTIFACT_PATH}" >> artifacts.env
-  artifacts:
-    expire_in: 1 week
-    reports:
-      dotenv: artifacts.env
-    paths:
-      - app.apk
 
 publish_alpha:
   stage: publish
@@ -174,18 +68,12 @@ publish_alpha:
       PACKAGE_NAME_IN_CACHE=$(echo "$PACKAGE_NAME" | sed 's/\//-/g')
       curl --request POST --header "PRIVATE-TOKEN: $GITLAB_TOKEN" \
           --data-urlencode "body=Опубликована альфа версия пакета: ${PACKAGE_VERSION}. Вы можете установить её в проекте для тестирования функционала пакета.
-          \`yarn add ${PACKAGE_NAME}@${PACKAGE_VERSION}\`. Если вы уже устанавливали данную версию prerelease то следует почистить проект и кэш перед установкой - \`yarn remove ${PACKAGE_NAME} && rm ~/.yarn/**/cache/${PACKAGE_NAME_IN_CACHE}-npm-${PACKAGE_VERSION}*\`. Собраны сборки Storybook: [Android APK](${ANDROID_APK_ARTIFACT}), [iOS Simulator](${SIMULATOR_APP_ARTIFACT})" \
-         "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/merge_requests/${CI_MERGE_REQUEST_IID}/notes"
+          \`yarn add ${PACKAGE_NAME}@${PACKAGE_VERSION}\`. Если вы уже устанавливали данную версию prerelease то следует почистить проект и кэш перед установкой - \`yarn remove ${PACKAGE_NAME} && rm ~/.yarn/**/cache/${PACKAGE_NAME_IN_CACHE}-npm-${PACKAGE_VERSION}*\`. \
+        "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/merge_requests/${CI_MERGE_REQUEST_IID}/notes"
   needs:
     - job: build
       artifacts: true
       optional: false
-    - job: build_android_apk
-      artifacts: true
-      optional: true
-    - job: build_ios_simulator
-      artifacts: true
-      optional: true
 
 ## Reusable configs
 
