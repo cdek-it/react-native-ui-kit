@@ -35,3 +35,7 @@ splash.png
 fastlane
 CONTRIBUTING.md
 !**/index.js
+jest.config.ts
+jest.d.ts
+jest.setup.ts
+.commitlintrc.json
