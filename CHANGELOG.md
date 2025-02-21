@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.24](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.23...v0.0.24) (2025-02-21)
+
+
+### Bug Fixes
+
+* добавлен стиль mixBlendMode у компонентов Chip, RadioButton ([8254802](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/82548028f8298508028b53a1346d5aa6c5c8a972))
+
 ### [0.0.23](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.22...v0.0.23) (2025-02-14)
 
 
