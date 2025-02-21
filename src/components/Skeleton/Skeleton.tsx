@@ -1,5 +1,5 @@
 import React, { memo, useEffect } from 'react'
-import { View, type ViewStyle } from 'react-native'
+import { View } from 'react-native'
 import Animated, {
   Easing,
   interpolate,
@@ -9,14 +9,11 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated'
 import Svg, { Defs, LinearGradient, Rect, Stop } from 'react-native-svg'
+import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 
 import { makeStyles } from '../../utils/makeStyles'
 
-interface SkeletonProps {
-  /** Дополнительная стилизация для контейнера компонента */
-  style?: ViewStyle
-  testID?: string
-}
+interface SkeletonProps extends ViewProps {}
 
 export const ANIMATION_DURATION = 1200 // ms
 
@@ -24,7 +21,7 @@ export const ANIMATION_DURATION = 1200 // ms
  * Используется для отображения контента в момент загрузки
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=5241-3731
  */
-export const Skeleton = memo<SkeletonProps>(({ style, testID }) => {
+export const Skeleton = memo<SkeletonProps>(({ style, testID, ...rest }) => {
   const styles = useStyles()
   const animation = useSharedValue(0)
   const animatedStyles = useAnimatedStyle(() => ({
@@ -42,7 +39,7 @@ export const Skeleton = memo<SkeletonProps>(({ style, testID }) => {
   }, [animation])
 
   return (
-    <View style={[styles.container, style]} testID={testID || SkeletonTestId.root}>
+    <View {...rest} style={[styles.container, style]} testID={testID ?? SkeletonTestId.root}>
       <Animated.View
         style={[styles.gradientContainer, animatedStyles]}
         testID={SkeletonTestId.animatedView}
