@@ -1,10 +1,9 @@
 include:
-  - local: /configs/gitlab-ci/gitlab-ci.yml
+  - project: react-native/gitlab-ci
+    file: base-lib-v1.yml
 
 variables:
-  ENABLE_REVIEW_REQUEST: "yes"
   REVIEWERS_LIST: "i.sokolovskii,n.grevtsov,s.ivanov.05"
   REVIEW_CHAT_WEBHOOK: "https://talk.cdek.ru/hooks/mycng55kcfrixnp8t4w1ej6tqa"
   BUILD_CHAT_WEBHOOK: "https://talk.cdek.ru/hooks/mycng55kcfrixnp8t4w1ej6tqa"
-  PROJECT_MAINTAINER: "i.sokolovskii"
   IMG_NODE: "node:20-alpine"
