@@ -1,5 +1,9 @@
 # react-native-prime-ui-kit
 
+[![pipeline status](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/badges/develop/pipeline.svg)](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/-/commits/develop)
+[![coverage report](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/badges/develop/coverage.svg)](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/-/commits/develop)
+[![Latest Release](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/-/badges/release.svg)](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/-/releases)
+
 Репозиторий UI kit на основе Prime Faces, Prime Flex для React Native
 
 ## Installation
@@ -14,7 +18,7 @@ yarn add react react-native @tabler/icons-react-native react-native-svg react-na
 - react-native - любой версии(оптимально - от 0.74)
 - @tabler/icons-react-native - начиная с 3 major версии(от 3.0.0)
 - react-native-svg - начиная с 15 major версии(от 15.0.0)
-- react-native-reanimated - начиная с 3 major версии(от 3.0.0) 
+- react-native-reanimated - начиная с 3 major версии(от 3.0.0)
 
 ## Development
 
@@ -39,5 +43,3 @@ Storybook проект создан с помощью Expo
 - [Figma Prime Flex Token](https://www.figma.com/design/OK44HgVRLUSTro0IAfD9zk/Tokens-PrimeFlex-(DS)?m=auto&t=MKC7Q8gjUB5eyePK-6)
 - [Figma Prime UI kit](https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?m=auto&t=MKC7Q8gjUB5eyePK-6)
 - [Figma Tabler Icons](https://www.figma.com/design/KTRlyesFYTyaNvv1DXRBCN/Icons-Tabler-(DS)?m=auto&t=MKC7Q8gjUB5eyePK-6)
-
-
