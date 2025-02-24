@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.25](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.24...v0.0.25) (2025-02-24)
+
+
+### Другое
+
+* **commitizen:** переключил конфигурацию commitizen на собственный адаптер ([4d8b6c1](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/4d8b6c1ea2b5e55f73fdcac0cabb723698f6d887))
+* **repo:** перенёс конфигурацию CI в настройки GitLab, добавил бейджи в ридми ([8ab89d5](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/8ab89d5e4c9c9ed4127565db945de6d71fdb51ae))
+
+
+### Рефакторинг
+
+* **skeleton:** изменена передача свойств ([e317f92](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/e317f924d3c0e70269df9dfc9cedc7021cfcc920))
+
 ### [0.0.24](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.23...v0.0.24) (2025-02-21)
 
 
