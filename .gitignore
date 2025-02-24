@@ -14,7 +14,8 @@ coverage
 junit.xml
 
 # ESLint
-gl-codequality.json
+eslint_code_quality_report.json
+.eslintcache
 
 # debug
 npm-debug.*
