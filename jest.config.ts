@@ -2,6 +2,8 @@ import type { Config } from '@jest/types'
 
 const config: Config.InitialOptions = {
   preset: 'jest-expo',
+  cache: true,
+  cacheDirectory: '.jest/cache',
   collectCoverage: true,
   collectCoverageFrom: [
     '<rootDir>/src/**/*.{ts,tsx}',

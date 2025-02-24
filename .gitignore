@@ -10,6 +10,7 @@
 .vscode
 
 # jest
+.jest
 coverage
 junit.xml
 
