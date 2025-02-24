@@ -7,3 +7,4 @@ metro.config.js
 babel.config.js
 app.config.js
 .storybook
+eslint-formatter.js
