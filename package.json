@@ -1,9 +1,9 @@
 {
   "name": "@cdek/react-native-prime-ui-kit",
-  "packageManager": "yarn@4.6.0",
   "version": "0.0.25",
-  "engines": {
-    "node": "20"
+  "publishConfig": {
+    "main": "./dist/index.js",
+    "type": "./dist/index.d.ts"
   },
   "scripts": {
     "build": "rm -rf dist && tsc -p tsconfig.build.json",
@@ -81,6 +81,10 @@
     "react-native": ">=0.77.x",
     "react-native-reanimated": ">=3.15.x",
     "react-native-svg": ">=15.11.x"
+  },
+  "packageManager": "yarn@4.6.0",
+  "engines": {
+    "node": "20"
   },
   "config": {
     "commitizen": {
