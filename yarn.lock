@@ -2246,6 +2246,7 @@ __metadata:
     jest-expo: "npm:52.0.3"
     jest-junit: "npm:16.0.0"
     lefthook: "npm:1.10.10"
+    npm-check-updates: "npm:17.1.15"
     prettier: "npm:3.3.3"
     react: "npm:18.3.1"
     react-native: "npm:0.77.0"
@@ -12937,6 +12938,16 @@ __metadata:
   version: 3.0.0
   resolution: "normalize-path@npm:3.0.0"
   checksum: 10/88eeb4da891e10b1318c4b2476b6e2ecbeb5ff97d946815ffea7794c31a89017c70d7f34b3c2ebf23ef4e9fc9fb99f7dffe36da22011b5b5c6ffa34f4873ec20
+  languageName: node
+  linkType: hard
+
+"npm-check-updates@npm:17.1.15":
+  version: 17.1.15
+  resolution: "npm-check-updates@npm:17.1.15"
+  bin:
+    ncu: build/cli.js
+    npm-check-updates: build/cli.js
+  checksum: 10/25780c2168502c4737a41a0756aa59253bc13d743390ba3da09825d71232fe9aedb643e0074f0b44af43e52e35be2915220d9ffdedc06fd70e71fb3442e1c5f1
   languageName: node
   linkType: hard
 
