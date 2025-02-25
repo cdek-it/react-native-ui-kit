@@ -7,7 +7,7 @@
   },
   "scripts": {
     "build": "rm -rf dist && tsc -p tsconfig.build.json",
-    "lint": "eslint --cache --cache-strategy content .",
+    "lint": "eslint .",
     "test": "jest",
     "start": "expo start --dev-client",
     "android": "expo run:android",
@@ -19,7 +19,7 @@
   "devDependencies": {
     "@babel/core": "7.26.7",
     "@babel/preset-env": "7.26.7",
-    "@cdek/cz-conventional-mobile": "1.1.1",
+    "@cdek/cz-conventional-mobile": "1.1.2",
     "@commitlint/cli": "19.6.1",
     "@commitlint/config-conventional": "19.6.0",
     "@expo/metro-runtime": "4.0.1",
