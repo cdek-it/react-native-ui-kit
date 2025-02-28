@@ -1,1 +1,1 @@
-import_from_git(url: 'git@gitlab.cdek.ru:react-native/fastlane-config.git', cache_path: '.cache')
+import_from_git(url: 'git@gitlab.cdek.ru:react-native/fastlane-config.git')
