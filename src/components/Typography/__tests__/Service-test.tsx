@@ -3,7 +3,7 @@ import React from 'react'
 
 import { Service, type ServiceProps } from '../Service'
 
-describe('Body component tests', () => {
+describe('Service component tests', () => {
   const snapshotCases = generatePropsCombinations<ServiceProps>({
     base: [true, false],
     showIcon: [true, false],
