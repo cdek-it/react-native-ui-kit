@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Body component tests base = false, showIcon = false, variant = danger 1`] = `
+exports[`Service component tests base = false, showIcon = false, variant = danger 1`] = `
 <View
   style={
     {
@@ -32,7 +32,7 @@ exports[`Body component tests base = false, showIcon = false, variant = danger 1
 </View>
 `;
 
-exports[`Body component tests base = false, showIcon = false, variant = help 1`] = `
+exports[`Service component tests base = false, showIcon = false, variant = help 1`] = `
 <View
   style={
     {
@@ -64,7 +64,7 @@ exports[`Body component tests base = false, showIcon = false, variant = help 1`]
 </View>
 `;
 
-exports[`Body component tests base = false, showIcon = false, variant = info 1`] = `
+exports[`Service component tests base = false, showIcon = false, variant = info 1`] = `
 <View
   style={
     {
@@ -96,7 +96,7 @@ exports[`Body component tests base = false, showIcon = false, variant = info 1`]
 </View>
 `;
 
-exports[`Body component tests base = false, showIcon = false, variant = success 1`] = `
+exports[`Service component tests base = false, showIcon = false, variant = success 1`] = `
 <View
   style={
     {
@@ -128,7 +128,7 @@ exports[`Body component tests base = false, showIcon = false, variant = success 
 </View>
 `;
 
-exports[`Body component tests base = false, showIcon = false, variant = warning 1`] = `
+exports[`Service component tests base = false, showIcon = false, variant = warning 1`] = `
 <View
   style={
     {
@@ -160,7 +160,7 @@ exports[`Body component tests base = false, showIcon = false, variant = warning 
 </View>
 `;
 
-exports[`Body component tests base = false, showIcon = true, variant = danger 1`] = `
+exports[`Service component tests base = false, showIcon = true, variant = danger 1`] = `
 <View
   style={
     {
@@ -291,7 +291,7 @@ exports[`Body component tests base = false, showIcon = true, variant = danger 1`
 </View>
 `;
 
-exports[`Body component tests base = false, showIcon = true, variant = help 1`] = `
+exports[`Service component tests base = false, showIcon = true, variant = help 1`] = `
 <View
   style={
     {
@@ -444,7 +444,7 @@ exports[`Body component tests base = false, showIcon = true, variant = help 1`] 
 </View>
 `;
 
-exports[`Body component tests base = false, showIcon = true, variant = info 1`] = `
+exports[`Service component tests base = false, showIcon = true, variant = info 1`] = `
 <View
   style={
     {
@@ -597,7 +597,7 @@ exports[`Body component tests base = false, showIcon = true, variant = info 1`] 
 </View>
 `;
 
-exports[`Body component tests base = false, showIcon = true, variant = success 1`] = `
+exports[`Service component tests base = false, showIcon = true, variant = success 1`] = `
 <View
   style={
     {
@@ -728,7 +728,7 @@ exports[`Body component tests base = false, showIcon = true, variant = success 1
 </View>
 `;
 
-exports[`Body component tests base = false, showIcon = true, variant = warning 1`] = `
+exports[`Service component tests base = false, showIcon = true, variant = warning 1`] = `
 <View
   style={
     {
@@ -881,7 +881,7 @@ exports[`Body component tests base = false, showIcon = true, variant = warning 1
 </View>
 `;
 
-exports[`Body component tests base = true, showIcon = false, variant = danger 1`] = `
+exports[`Service component tests base = true, showIcon = false, variant = danger 1`] = `
 <View
   style={
     {
@@ -913,7 +913,7 @@ exports[`Body component tests base = true, showIcon = false, variant = danger 1`
 </View>
 `;
 
-exports[`Body component tests base = true, showIcon = false, variant = help 1`] = `
+exports[`Service component tests base = true, showIcon = false, variant = help 1`] = `
 <View
   style={
     {
@@ -945,7 +945,7 @@ exports[`Body component tests base = true, showIcon = false, variant = help 1`] 
 </View>
 `;
 
-exports[`Body component tests base = true, showIcon = false, variant = info 1`] = `
+exports[`Service component tests base = true, showIcon = false, variant = info 1`] = `
 <View
   style={
     {
@@ -977,7 +977,7 @@ exports[`Body component tests base = true, showIcon = false, variant = info 1`] 
 </View>
 `;
 
-exports[`Body component tests base = true, showIcon = false, variant = success 1`] = `
+exports[`Service component tests base = true, showIcon = false, variant = success 1`] = `
 <View
   style={
     {
@@ -1009,7 +1009,7 @@ exports[`Body component tests base = true, showIcon = false, variant = success 1
 </View>
 `;
 
-exports[`Body component tests base = true, showIcon = false, variant = warning 1`] = `
+exports[`Service component tests base = true, showIcon = false, variant = warning 1`] = `
 <View
   style={
     {
@@ -1041,7 +1041,7 @@ exports[`Body component tests base = true, showIcon = false, variant = warning 1
 </View>
 `;
 
-exports[`Body component tests base = true, showIcon = true, variant = danger 1`] = `
+exports[`Service component tests base = true, showIcon = true, variant = danger 1`] = `
 <View
   style={
     {
@@ -1172,7 +1172,7 @@ exports[`Body component tests base = true, showIcon = true, variant = danger 1`]
 </View>
 `;
 
-exports[`Body component tests base = true, showIcon = true, variant = help 1`] = `
+exports[`Service component tests base = true, showIcon = true, variant = help 1`] = `
 <View
   style={
     {
@@ -1325,7 +1325,7 @@ exports[`Body component tests base = true, showIcon = true, variant = help 1`] =
 </View>
 `;
 
-exports[`Body component tests base = true, showIcon = true, variant = info 1`] = `
+exports[`Service component tests base = true, showIcon = true, variant = info 1`] = `
 <View
   style={
     {
@@ -1478,7 +1478,7 @@ exports[`Body component tests base = true, showIcon = true, variant = info 1`] =
 </View>
 `;
 
-exports[`Body component tests base = true, showIcon = true, variant = success 1`] = `
+exports[`Service component tests base = true, showIcon = true, variant = success 1`] = `
 <View
   style={
     {
@@ -1609,7 +1609,7 @@ exports[`Body component tests base = true, showIcon = true, variant = success 1`
 </View>
 `;
 
-exports[`Body component tests base = true, showIcon = true, variant = warning 1`] = `
+exports[`Service component tests base = true, showIcon = true, variant = warning 1`] = `
 <View
   style={
     {
