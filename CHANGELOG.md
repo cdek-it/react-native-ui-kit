@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.26](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.25...v0.0.26) (2025-03-05)
+
+
+### Другое
+
+* **eslint:** включил кэширование для команды yarn lint ([8f80f65](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/8f80f65c191a043edbc5eb264806e2c0c2a2bfad))
+* **eslint:** выключил кэширование линтьера ([174897d](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/174897d5bb4abbcf7e0bec0942c797b032fa87c3))
+* **eslint:** добавил файл с форматтером в eslintignore ([2556bb9](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/2556bb9e5dd30ce23a6c189ab75654f66179f094))
+* **expo:** добавил динамическую конфигурацию expo ([c706aa7](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/c706aa779731681daf5e7f464919241d2316d4b9))
+* **fastlane:** добавил недостающий для сборок файл .env ([f34ed39](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/f34ed39ddbddb34dc38744fef99196d6849fe5c8))
+* **jest:** настроил кэширование для запусков юнит тестов ([640136a](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/640136ad20f7e7d3e3a914c3bdedce06f3a1b14a))
+* **package:** добавил publish config в настройки пакета ([5f5f8d7](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/5f5f8d7f268dd3f0e092e03964b9ff3839d441a6))
+* **package:** добавил в конфигурацию пакета описание и ссылку на репозиторий ([4683f44](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/4683f44da57b786f31762a093d3da98613570474))
+* добавил анализ пакетов в CI ([b1d8b9b](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/b1d8b9b294d30fca61e41fa45180fbcfecd9765d))
+* убрал анализатор пакетов из зависимостей репозитория ([1168ec3](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/1168ec348d037d6c891c625d6202ece86d9c7ca5))
+
+
+### Новый функционал
+
+* **typography-service:** implement component ([5bea9d1](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/5bea9d16751a5366cf5191d7e429a75c8c6cbc78))
+* **typography-service:** implement component ([25e0ed0](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/25e0ed00ec62d436034092de460c6e7b6c2fa80d))
+* update snapshots ([6954b34](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/6954b340dd9957fb5ea633bd95e67583bbd733f0))
+
 ### [0.0.25](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.24...v0.0.25) (2025-02-24)
 
 
