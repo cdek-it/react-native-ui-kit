@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.27](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.26...v0.0.27) (2025-03-05)
+
+
+### Исправления багов
+
+* **typography-service:** add missed import ([a2b8876](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/a2b887665153e502f3b7484da6b151679c36d3c5))
+* **typography:** add missed import ([5de09d4](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/5de09d41db0f96f353a2e3a14f568c8479220c51))
+
 ### [0.0.26](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.25...v0.0.26) (2025-03-05)
 
 
