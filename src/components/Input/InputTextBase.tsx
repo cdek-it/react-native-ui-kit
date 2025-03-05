@@ -2,7 +2,7 @@ import { IconLoader2, IconLock, IconX } from '@tabler/icons-react-native'
 import React, {
   memo,
   type ReactNode,
-  type RefObject,
+  type Ref,
   useCallback,
   useEffect,
   useImperativeHandle,
@@ -45,7 +45,7 @@ export interface InputTextBaseProps extends Omit<TextInputProps, 'style' | 'edit
   /** Управление доступностью поля */
   disabled?: boolean
   /** Ref для управления полем ввода */
-  inputRef?: RefObject<TextInput | null>
+  inputRef?: Ref<TextInput | null>
   /** Функция для рендера поля ввода.
    * Используется, когда необходимо использовать отличный от стандартного компонент.
    * Например, для реализации масок
@@ -55,7 +55,7 @@ export interface InputTextBaseProps extends Omit<TextInputProps, 'style' | 'edit
   state?: 'default' | 'danger'
 }
 
-export type RenderTextInputArgs = TextInputProps & { inputRef: RefObject<TextInput> }
+export type RenderTextInputArgs = TextInputProps & { inputRef: Ref<TextInput> }
 
 /**
  * Базовое поле
