@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.28](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.27...v0.0.28) (2025-03-06)
+
+
+### Исправления багов
+
+* **float-label:** generalize inputRef type ([bc91e64](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/bc91e643a56fa65beeb7e0b48b8e1f4fef52fd55))
+
 ### [0.0.27](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.26...v0.0.27) (2025-03-05)
 
 
