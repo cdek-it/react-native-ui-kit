@@ -57,10 +57,14 @@ web-build/
 *.tsbuildinfo
 
 # Fastlane
-fastlane
-!configs/fastlane
-!fastlane/Appfile
-!fastlane/Fastfile
-!fastlane/.env
+fastlane/README.md
+fastlane/report.xml
 build
 artifacts.env
+
+# direnv
+.envrc
+
+# BEGIN encrypted files
+fastlane/AuthKey_64224VQS8A.p8
+# END encrypted files
