@@ -26,6 +26,7 @@ export default {
     updates: {
       fallbackToCacheTimeout: 0,
     },
+    plugins: ['./expo/plugins/withEnsureBundler.js'],
     newArchEnabled: true,
     assetBundlePatterns: ['**/*'],
   } satisfies ExpoConfig,
