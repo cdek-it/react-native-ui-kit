@@ -2184,9 +2184,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cdek/cz-conventional-mobile@npm:1.1.2":
-  version: 1.1.2
-  resolution: "@cdek/cz-conventional-mobile@npm:1.1.2"
+"@cdek/cz-conventional-mobile@npm:1.2.0":
+  version: 1.2.0
+  resolution: "@cdek/cz-conventional-mobile@npm:1.2.0"
   dependencies:
     chalk: "npm:4.1.2"
     commitizen: "npm:4.3.1"
@@ -2195,7 +2195,7 @@ __metadata:
     longest: "npm:2.0.1"
     standard-version: "npm:9.5.0"
     word-wrap: "npm:1.2.5"
-  checksum: 10/f1055d1a4f580ac394432b75726c7def0daadc6cd22cbea28dadfde9d3e2b658f2942031ee362e81b5eda214b81cb8b51e2a58e1e1c4b46f0595f700ef18c669
+  checksum: 10/80b31228033dc94f3d601d42b654fc3f73e08dc150b1fe85f8c3eb9b21d7ba4c7be5ca023fcb22e2788b882be9d332fa7f28b38a4bf6d484c0d05b4d7ef11094
   languageName: node
   linkType: hard
 
@@ -2205,7 +2205,7 @@ __metadata:
   dependencies:
     "@babel/core": "npm:7.26.7"
     "@babel/preset-env": "npm:7.26.7"
-    "@cdek/cz-conventional-mobile": "npm:1.1.2"
+    "@cdek/cz-conventional-mobile": "npm:1.2.0"
     "@commitlint/cli": "npm:19.6.1"
     "@commitlint/config-conventional": "npm:19.6.0"
     "@expo/metro-runtime": "npm:4.0.1"
