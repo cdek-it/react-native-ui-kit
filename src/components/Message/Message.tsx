@@ -13,6 +13,7 @@ import { makeStyles } from '../../utils/makeStyles'
 import { ButtonSeverity } from '../Button/ButtonSeverity'
 import { Timer } from '../Timer/Timer'
 import { Body, Caption } from '../Typography'
+import { ButtonSeverityProps } from '../Button'
 
 export interface MessageProps extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Текст заголовка */
@@ -32,6 +33,13 @@ export interface MessageProps extends AccessibilityProps, Pick<ViewProps, 'testI
    * Кнопка не отображается, если обработчик не передан.
    */
   onClose?: () => void
+
+  /**
+   * Текст на кнопке закрытия тоста
+   * Если не указан, в кнопке отображается иконка "крестик"
+   * Это свойство игнорируется если onClose = undefined
+   */
+  closeLabel?: string
 
   /** Срабатывает при истечении таймера */
   onTimerFinish?: () => void
@@ -72,6 +80,7 @@ export const Message = memo<MessageProps>(
     caption,
     footer,
     onClose,
+    closeLabel,
     onTimerFinish,
     severity = 'info',
     style,
@@ -98,6 +107,36 @@ export const Message = memo<MessageProps>(
       }
     }, [IconProp, severity])
 
+    const Button = useMemo(() => {
+      if (!onClose) {
+        return null
+      }
+      if (closeLabel) {
+        return (
+          <ButtonSeverity
+            label={closeLabel}
+            severity={severity}
+            size='small'
+            testID={TestId.CloseButton}
+            variant='outlined'
+            onPress={onClose}
+          />
+        )
+      } else {
+        return (
+          <ButtonSeverity
+            iconOnly
+            Icon={IconX}
+            severity={severity}
+            size='small'
+            testID={TestId.CloseButton}
+            variant='outlined'
+            onPress={onClose}
+          />
+        )
+      }
+    }, [closeLabel, severity, onClose])
+
     return (
       <View
         style={[styles.container, styles[severity], style]}
@@ -122,17 +161,7 @@ export const Message = memo<MessageProps>(
             {caption && <Caption color='secondary'>{caption}</Caption>}
           </View>
 
-          {onClose && (
-            <ButtonSeverity
-              iconOnly
-              Icon={IconX}
-              severity={severity}
-              size='small'
-              testID={TestId.CloseButton}
-              variant='outlined'
-              onPress={onClose}
-            />
-          )}
+          {Button}
         </View>
         {body}
         {footer}

@@ -572,6 +572,226 @@ exports[`Message {"body": [Object], "footer": [Object], "severity": "warning"} 1
 </View>
 `;
 
+exports[`Message {"closeLabel": "Close", "footer": [Object], "onClose": [Function mockConstructor], "severity": "success"} 1`] = `
+<View
+  style={
+    [
+      {
+        "borderLeftWidth": 3.5,
+        "borderRadius": 7,
+        "borderWidth": 1,
+        "gap": 14,
+        "overflow": "hidden",
+        "padding": 14,
+        "paddingLeft": 17,
+      },
+      {
+        "backgroundColor": "#f6fbf6",
+        "borderBottomColor": "#afdeb3",
+        "borderLeftColor": "#68c170",
+        "borderRightColor": "#afdeb3",
+        "borderTopColor": "#afdeb3",
+      },
+      undefined,
+    ]
+  }
+  testID="Message_Container"
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 14,
+      }
+    }
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={31.5}
+      bbWidth={31.5}
+      fill="none"
+      focusable={false}
+      height={31.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="#68c170"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 31,
+            "width": 31,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={31.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4285055344,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4285055344,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+        <RNSVGPath
+          d="M9 12l2 2l4 -4"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4285055344,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+    <View
+      style={
+        {
+          "alignSelf": "center",
+          "flex": 1,
+          "gap": 3.5,
+        }
+      }
+    >
+      <Body
+        base={true}
+        weight="bold"
+      >
+        Message
+      </Body>
+    </View>
+    <View
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "borderColor": "#afdeb3",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "gap": 7,
+          "height": 28,
+          "justifyContent": "center",
+          "maxHeight": 28,
+          "minHeight": 28,
+          "paddingHorizontal": 10.5,
+          "paddingVertical": 0,
+        }
+      }
+      testID="Message_CloseButton"
+    >
+      <Text
+        style={
+          {
+            "color": "#68c170",
+            "fontSize": 12.25,
+            "fontWeight": 700,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          }
+        }
+        testID="Button_Text"
+      >
+        Close
+      </Text>
+    </View>
+  </View>
+  <View>
+    footer
+  </View>
+</View>
+`;
+
 exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "severity": "success"} 1`] = `
 <View
   style={

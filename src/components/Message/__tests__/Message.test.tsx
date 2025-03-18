@@ -26,6 +26,7 @@ describe('Message', () => {
     {},
     { severity: 'info', body: <Stub>body</Stub>, caption: 'caption', style: { margin: 10 } },
     { severity: 'success', footer: <Stub>footer</Stub>, onClose: jest.fn() },
+    { severity: 'success', footer: <Stub>footer</Stub>, onClose: jest.fn(), closeLabel: 'Close' },
     { severity: 'warning', body: <Stub>body</Stub>, footer: <Stub>footer</Stub> },
     { severity: 'danger' },
     { timerValue: 5, onTimerFinish: jest.fn() },
