@@ -13,7 +13,6 @@ import { makeStyles } from '../../utils/makeStyles'
 import { ButtonSeverity } from '../Button/ButtonSeverity'
 import { Timer } from '../Timer/Timer'
 import { Body, Caption } from '../Typography'
-import { ButtonSeverityProps } from '../Button'
 
 export interface MessageProps extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Текст заголовка */
