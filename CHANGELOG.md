@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.29](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.28...v0.0.29) (2025-03-19)
+
+
+### Другое
+
+* **ios:** добавил плагин expo для выставления ensure_bundler в Podfile ([0762c5b](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/0762c5b9801ab1c625666c5f2ebcdaca1ee6f172))
+* **java:** указал конкретную версию JDK ([c95cecb](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/c95cecb7508414a41326eea04a8b88aad9e98082))
+* **node:** указал конкретную версию Node.js ([40c0aeb](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/40c0aeb5dcdca27a99086d738d525155c8a8638d))
+* **ruby:** указал конкретную версию Ruby ([d55d04b](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/d55d04b9ea9f895c483cba2fbf412139de456ed8))
+* **secrets:** добавил работу с секретами в проекте ([45b2d20](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/45b2d2066a6aab802deb73929dd8765a97218d02))
+* **xcode:** указал конкретную версию XCode ([b92fc0b](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/b92fc0be139cb60d2620e7f93f7b882d3918d05d))
+* обновил cz-conventional-mobile до 1.2.0 ([c1b659f](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/c1b659f794dc6dac41861a41675feb63b313bb02))
+
+
+### Новый функционал
+
+* **message:** в Message добавлено свойство closeLabel ([cb29546](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/cb29546ce97532ae9ac0dec2e71ac3e6bc7ac44a))
+
+
+### Исправления багов
+
+* **message:** убран лишний импорт ([17ec164](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/17ec16410a607c9c296ff106e728964e74c695c9))
+
+
+### Рефакторинг
+
+* **message:** правки по замечаниям линтера ([a2b76e3](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/a2b76e30c1ace4d7ec916945422304430fda1b26))
+* **message:** рефакторинг по замечаниям в ревью ([f81a576](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/f81a576260101939e7e8bbcc651e8d5352f8e4f4))
+
 ### [0.0.28](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.27...v0.0.28) (2025-03-06)
 
 
