@@ -1,18 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import React from 'react'
+
 import { StyleSheet, View } from 'react-native'
 
 import { Skeleton } from './Skeleton'
 
 const styles = StyleSheet.create({
-  row: {
-    flexDirection: 'row',
-    gap: 10,
-  },
-  rowSkeleton: {
-    height: 50,
-    flex: 1,
-  },
+  row: { flexDirection: 'row', gap: 10 },
+  rowSkeleton: { height: 50, flex: 1 },
 })
 
 const meta: Meta<typeof Skeleton> = {

@@ -1,5 +1,5 @@
 import type { Icon } from '@tabler/icons-react-native'
-import React, { memo, useMemo } from 'react'
+import { memo, useMemo } from 'react'
 import { View, type ViewStyle, type StyleProp } from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
@@ -65,7 +65,10 @@ export const Divider = memo<DividerProps>(
   }) => {
     const styles = useStyles()
     const isVertical = useMemo(() => layout === 'vertical', [layout])
-    const showIcon = useMemo(() => !!(showIconProp && Icon), [Icon, showIconProp])
+    const showIcon = useMemo(
+      () => !!(showIconProp && Icon),
+      [Icon, showIconProp]
+    )
 
     const showContent = useMemo(
       () => !!(showContentProp && (showIcon || text)),
@@ -84,28 +87,41 @@ export const Divider = memo<DividerProps>(
           isVertical && styles.containerVertical,
           showContent &&
             align === 'end' &&
-            (isVertical ? styles.containerColumnReverse : styles.containerRowReverse),
+            (isVertical
+              ? styles.containerColumnReverse
+              : styles.containerRowReverse),
           style,
         ]}
       >
-        {showContent && (
+        {showContent ? (
           <>
-            <View style={[styles.lineContainer, align !== 'center' && styles.lineContainerSide]}>
+            <View
+              style={[
+                styles.lineContainer,
+                align !== 'center' && styles.lineContainerSide,
+              ]}
+            >
               <View style={lineStyle} />
             </View>
 
-            <View style={[styles.content, isVertical && styles.contentVertical]}>
-              {showIcon && Icon && (
-                <Icon height={styles.icon.height} style={styles.icon} width={styles.icon.width} />
-              )}
-              {text && (
+            <View
+              style={[styles.content, isVertical && styles.contentVertical]}
+            >
+              {showIcon && Icon ? (
+                <Icon
+                  height={styles.icon.height}
+                  style={styles.icon}
+                  width={styles.icon.width}
+                />
+              ) : null}
+              {text ? (
                 <Subtitle color='secondary' style={styles.text}>
                   {text}
                 </Subtitle>
-              )}
+              ) : null}
             </View>
           </>
-        )}
+        ) : null}
 
         <View style={styles.lineContainer}>
           <View style={lineStyle} />
@@ -128,12 +144,8 @@ const useStyles = makeStyles(({ spacing, theme, sizing, typography }) => ({
     flexGrow: 1,
     alignSelf: 'flex-start',
   },
-  containerRowReverse: {
-    flexDirection: 'row-reverse',
-  },
-  containerColumnReverse: {
-    flexDirection: 'column-reverse',
-  },
+  containerRowReverse: { flexDirection: 'row-reverse' },
+  containerColumnReverse: { flexDirection: 'column-reverse' },
   lineContainer: {
     flexGrow: 1,
     flexBasis: spacing.Gap['gap-4'],
@@ -141,18 +153,14 @@ const useStyles = makeStyles(({ spacing, theme, sizing, typography }) => ({
     height: 1,
     overflow: 'hidden',
   },
-  lineContainerSide: {
-    flexGrow: 0,
-  },
+  lineContainerSide: { flexGrow: 0 },
   line: {
     width: '100%',
     height: '100%',
     borderWidth: 1,
     borderColor: theme.General.dividerColor,
   },
-  lineDash: {
-    borderStyle: 'dashed',
-  },
+  lineDash: { borderStyle: 'dashed' },
   content: {
     flexShrink: 1,
     flexDirection: 'row',
@@ -170,7 +178,5 @@ const useStyles = makeStyles(({ spacing, theme, sizing, typography }) => ({
     height: typography.Size['text-base'],
     color: theme.General.textSecondaryColor,
   },
-  text: {
-    flexShrink: 1,
-  },
+  text: { flexShrink: 1 },
 }))

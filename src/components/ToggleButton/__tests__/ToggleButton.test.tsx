@@ -1,8 +1,11 @@
 import { IconArrowDownRight } from '@tabler/icons-react-native'
 import { render, userEvent } from '@testing-library/react-native'
-import React from 'react'
 
-import { ToggleButton, type ToggleButtonProps, ToggleButtonTestId } from '../ToggleButton'
+import {
+  ToggleButton,
+  type ToggleButtonProps,
+  ToggleButtonTestId,
+} from '../ToggleButton'
 
 describe('ToggleButton', () => {
   const defaultProps: ToggleButtonProps = {
@@ -73,9 +76,10 @@ describe('ToggleButton', () => {
     ]
 
     beforeAll(() => {
-      jest.mock('react-native/Libraries/Components/Pressable/Pressable', () => ({
-        default: 'Pressable',
-      }))
+      jest.mock(
+        'react-native/Libraries/Components/Pressable/Pressable',
+        () => ({ default: 'Pressable' })
+      )
     })
 
     afterAll(() => {
@@ -84,6 +88,7 @@ describe('ToggleButton', () => {
 
     test.each(snapshotCases)('%s', (_, props) => {
       const { toJSON } = render(<ToggleButton {...defaultProps} {...props} />)
+
       expect(toJSON()).toMatchSnapshot()
     })
   })
@@ -95,16 +100,20 @@ describe('ToggleButton', () => {
     const user = userEvent.setup()
 
     await user.press(pressable)
+
     expect(mockedOnPress).toHaveBeenCalled()
   })
 
   test('should NOT handle press', async () => {
     const mockedOnPress = jest.fn()
-    const { queryByTestId } = render(<ToggleButton disabled onPress={mockedOnPress} />)
+    const { queryByTestId } = render(
+      <ToggleButton disabled onPress={mockedOnPress} />
+    )
     const pressable = queryByTestId(ToggleButtonTestId.root)
     const user = userEvent.setup()
 
     await user.press(pressable)
+
     expect(mockedOnPress).not.toHaveBeenCalled()
   })
 })

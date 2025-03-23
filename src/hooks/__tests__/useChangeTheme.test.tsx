@@ -1,5 +1,4 @@
 import { renderHook } from '@testing-library/react-native'
-import React from 'react'
 
 import { ThemeContext, ThemeVariant } from '../../theme'
 import { useChangeTheme } from '../useChangeTheme'
@@ -17,8 +16,10 @@ describe('useChangeTheme', () => {
       ),
     })
 
-    expect(result.current).toEqual(expect.any(Function))
+    expect(result.current).toStrictEqual(expect.any(Function))
+
     result.current?.(ThemeVariant.Dark)
+
     expect(mockedChangeTheme).toHaveBeenCalledWith(ThemeVariant.Dark)
   })
 })

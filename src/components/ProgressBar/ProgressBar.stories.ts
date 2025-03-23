@@ -5,13 +5,7 @@ import { ProgressBar } from './ProgressBar'
 const meta: Meta<typeof ProgressBar> = {
   title: 'ProgressBar',
   component: ProgressBar,
-  args: {
-    showValue: false,
-    value: 20,
-    style: {
-      height: 7,
-    },
-  },
+  args: { showValue: false, value: 20, style: { height: 7 } },
   parameters: {
     notes: `
       Компонент ProgressBar

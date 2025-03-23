@@ -1,5 +1,4 @@
 import { render } from '@testing-library/react-native'
-import React from 'react'
 
 import { RadioButton, type RadioButtonProps } from '../RadioButton'
 
@@ -14,58 +13,35 @@ describe('RadioButton', () => {
       ['default', {}],
       [
         'checked = true, disabled = false, state = danger',
-        {
-          checked: true,
-          disabled: false,
-          state: 'danger',
-        },
+        { checked: true, disabled: false, state: 'danger' },
       ],
       [
         'checked = false, disabled = false, state = danger',
-        {
-          checked: false,
-          disabled: false,
-          state: 'danger',
-        },
+        { checked: false, disabled: false, state: 'danger' },
       ],
 
       [
         'checked = true, disabled = false, state = default',
-        {
-          checked: true,
-          disabled: false,
-          state: 'default',
-        },
+        { checked: true, disabled: false, state: 'default' },
       ],
       [
         'checked = false, disabled = false, state = default',
-        {
-          checked: false,
-          disabled: false,
-          state: 'default',
-        },
+        { checked: false, disabled: false, state: 'default' },
       ],
 
       [
         'checked = true, disabled = true, state = default',
-        {
-          checked: true,
-          disabled: true,
-          state: 'default',
-        },
+        { checked: true, disabled: true, state: 'default' },
       ],
       [
         'checked = false, disabled = true, state = default',
-        {
-          checked: false,
-          disabled: true,
-          state: 'default',
-        },
+        { checked: false, disabled: true, state: 'default' },
       ],
     ]
 
     test.each(snapshotCases)('%s', (_, props) => {
       const { toJSON } = render(<RadioButton {...defaultProps} {...props} />)
+
       expect(toJSON()).toMatchSnapshot()
     })
   })

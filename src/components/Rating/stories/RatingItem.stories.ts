@@ -5,14 +5,8 @@ import { RatingItem } from '../RatingItem'
 const meta: Meta<typeof RatingItem> = {
   title: 'Rating/RatingItem',
   component: RatingItem,
-  args: {
-    checked: false,
-    disabled: false,
-    paddings: false,
-  },
-  argTypes: {
-    onPress: { action: 'onPress' },
-  },
+  args: { checked: false, disabled: false, paddings: false },
+  argTypes: { onPress: { action: 'onPress' } },
   parameters: {
     notes: `
       Компонент элемента рейтинга. Предоставляет функционал отображения и обработки нажатий на "звёздочки"

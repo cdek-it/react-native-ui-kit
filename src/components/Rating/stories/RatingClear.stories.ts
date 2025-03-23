@@ -5,13 +5,8 @@ import { RatingClear } from '../RatingClear'
 const meta: Meta<typeof RatingClear> = {
   title: 'Rating/RatingClear',
   component: RatingClear,
-  args: {
-    disabled: false,
-    paddings: false,
-  },
-  argTypes: {
-    onPress: { action: 'onPress' },
-  },
+  args: { disabled: false, paddings: false },
+  argTypes: { onPress: { action: 'onPress' } },
   parameters: {
     notes: `
       Компонент элемента рейтинга. Предоставляет функционал очистки рейтинга.

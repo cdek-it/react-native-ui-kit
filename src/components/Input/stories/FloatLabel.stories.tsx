@@ -1,6 +1,6 @@
 import { useArgs } from '@storybook/preview-api'
 import type { Meta, StoryObj } from '@storybook/react'
-import React, { useCallback } from 'react'
+import { useCallback } from 'react'
 
 import { FloatLabel } from '../FloatLabel'
 
@@ -14,10 +14,8 @@ const meta: Meta<typeof FloatLabel> = {
     value: '',
     loading: false,
   },
-  argTypes: {
-    state: { control: 'radio', options: ['default', 'danger'] },
-  },
-  render: function Render(args) {
+  argTypes: { state: { control: 'radio', options: ['default', 'danger'] } },
+  render: (args) => {
     const [, updateArgs] = useArgs()
 
     const onChangeText = useCallback(
@@ -37,16 +35,12 @@ type Story = StoryObj<typeof FloatLabel>
 
 const FloatLabelStory: Story = {}
 const FloatLabelMultilineStory: Story = {
-  args: {
-    multiline: true,
-    value: undefined,
-  },
-  parameters: {
-    controls: {
-      exclude: ['multiline', 'value'],
-    },
-  },
+  args: { multiline: true, value: undefined },
+  parameters: { controls: { exclude: ['multiline', 'value'] } },
   render: (args) => <FloatLabel {...args} />,
 }
 
-export { FloatLabelStory as FloatLabel, FloatLabelMultilineStory as FloatLabelMultiline }
+export {
+  FloatLabelStory as FloatLabel,
+  FloatLabelMultilineStory as FloatLabelMultiline,
+}

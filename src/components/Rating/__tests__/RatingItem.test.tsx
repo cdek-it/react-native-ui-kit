@@ -1,5 +1,4 @@
 import { render, userEvent } from '@testing-library/react-native'
-import React from 'react'
 
 import { RatingItem, type RatingItemProps } from '../RatingItem'
 
@@ -15,6 +14,7 @@ describe('RatingItem component tests', () => {
     'checked - $checked, disabled - $disabled, pressed - $testOnly_pressed, paddings - $paddings',
     (props) => {
       const renderRatingItem = render(<RatingItem {...props} />)
+
       expect(renderRatingItem.toJSON()).toMatchSnapshot()
     }
   )
@@ -29,7 +29,9 @@ describe('RatingItem component tests', () => {
     const user = userEvent.setup()
 
     expect(mockedOnPress).not.toHaveBeenCalled()
+
     await user.press(pressableContainer)
+
     expect(mockedOnPress).toHaveBeenCalled()
   })
 })

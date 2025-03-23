@@ -5,11 +5,7 @@ import { Subtitle } from './Subtitle'
 const meta: Meta<typeof Subtitle> = {
   title: 'Typography/Subtitle',
   component: Subtitle,
-  args: {
-    base: false,
-    color: 'default',
-    children: 'Subtitle',
-  },
+  args: { base: false, color: 'default', children: 'Subtitle' },
   argTypes: {
     color: { control: 'radio', options: ['default', 'primary', 'secondary'] },
   },

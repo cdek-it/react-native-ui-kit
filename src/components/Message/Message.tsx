@@ -6,26 +6,33 @@ import {
   IconInfoCircle,
   IconX,
 } from '@tabler/icons-react-native'
-import React, { type ComponentProps, memo, useMemo } from 'react'
-import { type AccessibilityProps, View, type ViewProps, type ViewStyle } from 'react-native'
+import { type ComponentProps, memo, type ReactNode, useMemo } from 'react'
+import {
+  type AccessibilityProps,
+  View,
+  type ViewProps,
+  type ViewStyle,
+} from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
 import { ButtonSeverity } from '../Button/ButtonSeverity'
 import { Timer } from '../Timer/Timer'
 import { Body, Caption } from '../Typography'
 
-export interface MessageProps extends AccessibilityProps, Pick<ViewProps, 'testID'> {
+export interface MessageProps
+  extends AccessibilityProps,
+    Pick<ViewProps, 'testID'> {
   /** Текст заголовка */
   title: string
 
   /** Тело сообщения */
-  body?: React.ReactNode
+  body?: ReactNode
 
   /** Текст подписи */
   caption?: string
 
   /** Футер сообщения */
-  footer?: React.ReactNode
+  footer?: ReactNode
 
   /**
    * Обработчик нажатия на кнопку закрытия.
@@ -97,10 +104,13 @@ export const Message = memo<MessageProps>(
       switch (severity) {
         case 'info':
           return IconInfoCircle
+
         case 'success':
           return IconCircleCheck
+
         case 'warning':
           return IconAlertTriangle
+
         case 'danger':
           return IconCircleX
       }
@@ -110,6 +120,7 @@ export const Message = memo<MessageProps>(
       if (!onClose) {
         return null
       }
+
       const buttonCommonProps: Omit<
         ComponentProps<typeof ButtonSeverity>,
         'iconOnly' | 'Icon' | 'iconPosition' | 'label'
@@ -123,9 +134,9 @@ export const Message = memo<MessageProps>(
 
       if (closeLabel) {
         return <ButtonSeverity label={closeLabel} {...buttonCommonProps} />
-      } else {
-        return <ButtonSeverity iconOnly Icon={IconX} {...buttonCommonProps} />
       }
+
+      return <ButtonSeverity iconOnly Icon={IconX} {...buttonCommonProps} />
     }, [closeLabel, severity, onClose])
 
     return (
@@ -149,7 +160,7 @@ export const Message = memo<MessageProps>(
             <Body base weight='bold'>
               {title}
             </Body>
-            {caption && <Caption color='secondary'>{caption}</Caption>}
+            {caption ? <Caption color='secondary'>{caption}</Caption> : null}
           </View>
 
           {button}
@@ -180,15 +191,19 @@ const useStyles = makeStyles(({ theme, typography, spacing }) => ({
   },
   success: {
     borderTopColor: theme.Message.Severities.Success.successMessageBorderColor,
-    borderRightColor: theme.Message.Severities.Success.successMessageBorderColor,
-    borderBottomColor: theme.Message.Severities.Success.successMessageBorderColor,
+    borderRightColor:
+      theme.Message.Severities.Success.successMessageBorderColor,
+    borderBottomColor:
+      theme.Message.Severities.Success.successMessageBorderColor,
     borderLeftColor: theme.Message.Severities.Success.successMessageIconColor,
     backgroundColor: theme.Message.Severities.Success.successMessageBg,
   },
   warning: {
     borderTopColor: theme.Message.Severities.Warning.warningMessageBorderColor,
-    borderRightColor: theme.Message.Severities.Warning.warningMessageBorderColor,
-    borderBottomColor: theme.Message.Severities.Warning.warningMessageBorderColor,
+    borderRightColor:
+      theme.Message.Severities.Warning.warningMessageBorderColor,
+    borderBottomColor:
+      theme.Message.Severities.Warning.warningMessageBorderColor,
     borderLeftColor: theme.Message.Severities.Warning.warningMessageIconColor,
     backgroundColor: theme.Message.Severities.Warning.warningMessageBg,
   },
@@ -199,10 +214,7 @@ const useStyles = makeStyles(({ theme, typography, spacing }) => ({
     borderLeftColor: theme.Message.Severities.Danger.dangerMessageIconColor,
     backgroundColor: theme.Message.Severities.Danger.dangerMessageBg,
   },
-  titleRow: {
-    flexDirection: 'row',
-    gap: spacing.Gap['gap-4'],
-  },
+  titleRow: { flexDirection: 'row', gap: spacing.Gap['gap-4'] },
   titleTextContainer: {
     flex: 1,
     alignSelf: 'center',

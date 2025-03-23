@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useState } from 'react'
+import { memo, useEffect, useState } from 'react'
 import { View } from 'react-native'
 import Animated, {
   cancelAnimation,
@@ -13,6 +13,7 @@ import Svg, { Circle } from 'react-native-svg'
 
 import { makeStyles } from '../../utils/makeStyles'
 
+// eslint-disable-next-line import-x/no-deprecated
 const AnimatedCircle = Animated.createAnimatedComponent(Circle)
 
 interface TimerProps {
@@ -47,7 +48,10 @@ export const Timer = memo<TimerProps>(({ countFrom, onFinish }) => {
   useEffect(() => {
     setCurrentTimerValue(countFrom)
     circleAnimation.value = 0
-    circleAnimation.value = withTiming(1, { duration: countFrom * 1000, easing: Easing.linear })
+    circleAnimation.value = withTiming(1, {
+      duration: countFrom * 1000,
+      easing: Easing.linear,
+    })
 
     return () => cancelAnimation(circleAnimation)
   }, [circleAnimation, countFrom])
@@ -56,7 +60,10 @@ export const Timer = memo<TimerProps>(({ countFrom, onFinish }) => {
     let timeoutId: ReturnType<typeof setTimeout>
 
     if (currentTimerValue > 0) {
-      timeoutId = setTimeout(() => setCurrentTimerValue((prev) => prev - 1), 1000)
+      timeoutId = setTimeout(
+        () => setCurrentTimerValue((prev) => prev - 1),
+        1000
+      )
     }
 
     return () => clearTimeout(timeoutId)

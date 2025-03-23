@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useMemo } from 'react'
+import { memo, useCallback, useMemo } from 'react'
 import {
   type AccessibilityProps,
   Pressable,
@@ -11,7 +11,9 @@ import Animated, { LinearTransition } from 'react-native-reanimated'
 
 import { makeStyles } from '../../utils/makeStyles'
 
-export interface RadioButtonProps extends AccessibilityProps, Pick<ViewProps, 'testID'> {
+export interface RadioButtonProps
+  extends AccessibilityProps,
+    Pick<ViewProps, 'testID'> {
   /** Обработчик нажатия на кнопку */
   onPress: () => void
   /**
@@ -29,7 +31,14 @@ export interface RadioButtonProps extends AccessibilityProps, Pick<ViewProps, 't
 }
 
 export const RadioButton = memo<RadioButtonProps>(
-  ({ onPress, checked = false, disabled = false, state = 'default', testID, ...rest }) => {
+  ({
+    onPress,
+    checked = false,
+    disabled = false,
+    state = 'default',
+    testID,
+    ...rest
+  }) => {
     const styles = useStyles()
 
     const centerViewBackground = useMemo(
@@ -40,30 +49,39 @@ export const RadioButton = memo<RadioButtonProps>(
     const pressableStyles = useCallback(
       ({ pressed }: PressableStateCallbackType) => {
         const result = [styles.container, styles.default]
+
         if (checked) {
           result.push(styles.checked)
         }
+
         if (pressed) {
           result.push(styles.pressed)
+
           if (checked) {
             result.push(styles.checkedPressed)
           }
         }
+
         if (state === 'danger') {
           result.push(styles.danger)
+
           if (checked) {
             result.push(styles.dangerChecked)
+
             if (pressed) {
               result.push(styles.dangerCheckedPressed)
             }
           }
         }
+
         if (disabled) {
           result.push(styles.disabled)
+
           if (checked) {
             result.push(styles.disabledChecked)
           }
         }
+
         return StyleSheet.flatten(result)
       },
       [
@@ -86,7 +104,10 @@ export const RadioButton = memo<RadioButtonProps>(
     return (
       <>
         {!disabled && state === 'danger' && (
-          <Animated.View layout={LinearTransition.duration(100)} style={[styles.outline]} />
+          <Animated.View
+            layout={LinearTransition.duration(100)}
+            style={styles.outline}
+          />
         )}
         <Pressable
           disabled={disabled}
@@ -120,19 +141,21 @@ const useStyles = makeStyles(({ theme }) => ({
   },
   outline: {
     position: 'absolute',
-    width: theme.Form.RadioButton.radiobuttonWidth + theme.General.focusShadowWidth * 2,
-    height: theme.Form.RadioButton.radiobuttonHeight + theme.General.focusShadowWidth * 2,
-    borderRadius: theme.Form.RadioButton.radiobuttonHeight + theme.General.focusShadowWidth * 2,
+    width:
+      theme.Form.RadioButton.radiobuttonWidth +
+      theme.General.focusShadowWidth * 2,
+    height:
+      theme.Form.RadioButton.radiobuttonHeight +
+      theme.General.focusShadowWidth * 2,
+    borderRadius:
+      theme.Form.RadioButton.radiobuttonHeight +
+      theme.General.focusShadowWidth * 2,
     backgroundColor: theme.General.focusOutlineErrorColor,
   },
 
   // centerView
-  defaultView: {
-    backgroundColor: theme.Form.InputText.inputBg,
-  },
-  disabledView: {
-    backgroundColor: 'transparent',
-  },
+  defaultView: { backgroundColor: theme.Form.InputText.inputBg },
+  disabledView: { backgroundColor: 'transparent' },
 
   // container viewState
   default: {

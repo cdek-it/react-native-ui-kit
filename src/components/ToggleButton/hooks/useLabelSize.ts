@@ -1,4 +1,3 @@
-// eslint-disable-next-line react-hooks/exhaustive-deps
 import { useMemo } from 'react'
 
 import { makeStyles } from '../../../utils/makeStyles'
@@ -18,16 +17,8 @@ const useStyles = makeStyles(() => ({
     includeFontPadding: false,
     verticalAlign: 'middle',
   },
-  xlarge: {
-    fontSize: 21,
-  },
-  large: {
-    fontSize: 17.5,
-  },
-  base: {
-    fontSize: 14,
-  },
-  small: {
-    fontSize: 12.25,
-  },
+  xlarge: { fontSize: 21 },
+  large: { fontSize: 17.5 },
+  base: { fontSize: 14 },
+  small: { fontSize: 12.25 },
 }))

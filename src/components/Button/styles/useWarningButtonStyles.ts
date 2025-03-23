@@ -15,12 +15,11 @@ export const useWarningButtonStyles = () => {
 }
 
 const useLabelVariantStyles = makeStyles(({ theme }) => ({
-  basic: {
-    color: theme.Button.Severity.Warning.Basic.warningButtonTextColor,
-  },
+  basic: { color: theme.Button.Severity.Warning.Basic.warningButtonTextColor },
 
   outlined: {
-    color: theme.Button.Severity.Warning.Outlined.warningOutlinedButtonTextColor,
+    color:
+      theme.Button.Severity.Warning.Outlined.warningOutlinedButtonTextColor,
   },
 
   text: {
@@ -35,15 +34,22 @@ const usePressedVarianttyles = makeStyles(({ theme }) => ({
   },
 
   outlined: {
-    borderColor: theme.Button.Severity.Warning.Outlined.warningOutlinedButtonHoverBorderColor,
-    backgroundColor: theme.Button.Severity.Warning.Outlined.warningOutlinedButtonHoverBg,
+    borderColor:
+      theme.Button.Severity.Warning.Outlined
+        .warningOutlinedButtonHoverBorderColor,
+    backgroundColor:
+      theme.Button.Severity.Warning.Outlined.warningOutlinedButtonHoverBg,
   },
 
   text: {
     borderColor: theme.Surface['surface-transparent'],
-    backgroundColor: theme.Button.Severity.Warning.Text.warningTextButtonHoverBg,
+    backgroundColor:
+      theme.Button.Severity.Warning.Text.warningTextButtonHoverBg,
     shadowColor: theme.General.focusOutlineColor,
-    shadowOffset: { height: theme.General.focusShadowWidth, width: theme.General.focusShadowWidth },
+    shadowOffset: {
+      height: theme.General.focusShadowWidth,
+      width: theme.General.focusShadowWidth,
+    },
     elevation: theme.General.focusShadowWidth,
     shadowOpacity: 1,
     shadowRadius: 3.5,
@@ -57,8 +63,10 @@ const useContainerVariantStyles = makeStyles(({ theme }) => ({
   },
 
   outlined: {
-    borderColor: theme.Button.Severity.Warning.Outlined.warningOutlinedButtonBorderColor,
-    backgroundColor: theme.Button.Severity.Warning.Outlined.warningOutlinedButtonBg,
+    borderColor:
+      theme.Button.Severity.Warning.Outlined.warningOutlinedButtonBorderColor,
+    backgroundColor:
+      theme.Button.Severity.Warning.Outlined.warningOutlinedButtonBg,
   },
 
   text: {
@@ -68,12 +76,11 @@ const useContainerVariantStyles = makeStyles(({ theme }) => ({
 }))
 
 const useIconVariantStyles = makeStyles(({ theme }) => ({
-  basic: {
-    color: theme.Button.Severity.Warning.Basic.warningButtonTextColor,
-  },
+  basic: { color: theme.Button.Severity.Warning.Basic.warningButtonTextColor },
 
   outlined: {
-    color: theme.Button.Severity.Warning.Outlined.warningOutlinedButtonTextColor,
+    color:
+      theme.Button.Severity.Warning.Outlined.warningOutlinedButtonTextColor,
   },
 
   text: {

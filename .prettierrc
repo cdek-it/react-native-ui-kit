@@ -1,13 +1,1 @@
-{
-  "printWidth": 100,
-  "tabWidth": 2,
-  "useTabs": false,
-  "semi": false,
-  "singleQuote": true,
-  "trailingComma": "es5",
-  "parser": "typescript",
-  "arrowParens": "always",
-  "jsxSingleQuote": true,
-  "bracketSpacing": true,
-  "bracketSameLine": false
-}
+"@cdek/prettier-config-mobile"

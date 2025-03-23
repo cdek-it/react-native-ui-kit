@@ -1,5 +1,4 @@
 import { render } from '@testing-library/react-native'
-import React from 'react'
 
 import { Badge, type BadgeProps } from '../Badge'
 
@@ -16,11 +15,15 @@ describe('Badge component tests', () => {
     ['severity: basic', { children: '12', severity: 'warning' }],
     ['severity: basic', { children: '12', severity: 'danger' }],
     ['severity: default', { children: '12' }],
-    ['with custom style', { dot: true, severity: 'basic', style: { margin: 10 } }],
+    [
+      'with custom style',
+      { dot: true, severity: 'basic', style: { margin: 10 } },
+    ],
   ]
 
   test.each(snapshotCases)('%s', (_, props) => {
     const renderedBadge = render(<Badge {...props} />)
+
     expect(renderedBadge.toJSON()).toMatchSnapshot()
   })
 })

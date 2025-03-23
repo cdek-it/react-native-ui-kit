@@ -5,10 +5,7 @@ import { Caption } from './Caption'
 const meta: Meta<typeof Caption> = {
   title: 'Typography/Caption',
   component: Caption,
-  args: {
-    color: 'default',
-    children: 'Test',
-  },
+  args: { color: 'default', children: 'Test' },
   argTypes: {
     color: { control: 'radio', options: ['default', 'secondary', 'primary'] },
   },

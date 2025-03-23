@@ -1,5 +1,5 @@
 import type { Icon } from '@tabler/icons-react-native'
-import React, { memo, useCallback, useMemo, useState } from 'react'
+import { memo, useCallback, useMemo, useState } from 'react'
 import {
   type AccessibilityProps,
   Pressable,
@@ -15,7 +15,9 @@ import { useIconSize } from './hooks/useIconSize'
 import { useLabelSize } from './hooks/useLabelSize'
 import { useStateStyles } from './hooks/useStateStyles'
 
-export interface ToggleButtonProps extends AccessibilityProps, Pick<ViewProps, 'testID'> {
+export interface ToggleButtonProps
+  extends AccessibilityProps,
+    Pick<ViewProps, 'testID'> {
   /** Обработчик нажатия на кнопку */
   onPress: () => void
   /**
@@ -72,10 +74,15 @@ export const ToggleButton = memo<ToggleButtonProps>(
     const [pressed, setPressed] = useState(false)
     const stateStyles = useStateStyles(checked, disabled, pressed)
 
-    const iconOnly = useMemo(() => iconOnlyProp || !label, [iconOnlyProp, label])
+    const iconOnly = useMemo(
+      () => iconOnlyProp || !label,
+      [iconOnlyProp, label]
+    )
 
     const icon = useMemo(() => {
-      if (!Icon) return null
+      if (!Icon) {
+        return null
+      }
 
       return (
         <Icon
@@ -120,7 +127,7 @@ export const ToggleButton = memo<ToggleButtonProps>(
               >
                 {label}
               </Text>
-              {Icon && iconPos === 'right' && icon}
+              {Icon && iconPos === 'right' ? icon : null}
             </>
           )}
         </View>
@@ -145,12 +152,8 @@ const useStyles = makeStyles(({ theme }) => ({
     paddingHorizontal: 21,
     gap: 10.5,
   },
-  xlarge: {
-    minHeight: theme.Button.Common.buttonHeightXL,
-  },
-  large: {
-    minHeight: theme.Button.Common.buttonHeightLG,
-  },
+  xlarge: { minHeight: theme.Button.Common.buttonHeightXL },
+  large: { minHeight: theme.Button.Common.buttonHeightLG },
   base: {
     minHeight: theme.Button.Common.buttonHeight,
     paddingHorizontal: theme.Button.Common.buttonPaddingLeftRight,
@@ -167,9 +170,7 @@ const useStyles = makeStyles(({ theme }) => ({
     paddingVertical: 0,
     justifyContent: 'center',
   },
-  label: {
-    flexShrink: 1,
-  },
+  label: { flexShrink: 1 },
 }))
 
 export const ToggleButtonTestId = {

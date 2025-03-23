@@ -1,16 +1,20 @@
 import { IconStar, IconStarFilled } from '@tabler/icons-react-native'
-import React, { memo, useMemo } from 'react'
+import { memo, useMemo } from 'react'
 
 import { makeStyles } from '../../utils/makeStyles'
 
-import { RatingItemContainer, type RatingItemContainerProps } from './RatingItemContainer'
+import {
+  RatingItemContainer,
+  type RatingItemContainerProps,
+} from './RatingItemContainer'
 
 /**
  * Свойства компонента элемента рейтинга с иконкой звёздочки
  * @see RatingItemContainerProps - тип свойств компонента контейнера элемента от которого наследуется данный тип свойств
  * @see RatingItem - компонент элемента рейтинга с иконкой звёздочки
  */
-export interface RatingItemProps extends Omit<RatingItemContainerProps, 'children'> {
+export interface RatingItemProps
+  extends Omit<RatingItemContainerProps, 'children'> {
   /**
    * Управление состоянием активности элемента
    */
@@ -61,24 +65,18 @@ export const RatingItem = memo<RatingItemProps>(({ checked, ...rest }) => {
   )
 })
 
-const useStyles = makeStyles(({ theme, sizing }) => ({
+const useStyles = makeStyles(({ theme }) => ({
   icon: {
     height: theme.Form.Rating.ratingIconFontSize,
     width: theme.Form.Rating.ratingIconFontSize,
     color: theme.Form.Rating.ratingStarIconOffColor,
   },
 
-  iconPressed: {
-    color: theme.Form.Rating.ratingStarIconHoverColor,
-  },
+  iconPressed: { color: theme.Form.Rating.ratingStarIconHoverColor },
 
-  iconChecked: {
-    color: theme.Form.Rating.ratingStarIconOnColor,
-  },
+  iconChecked: { color: theme.Form.Rating.ratingStarIconOnColor },
 
-  iconDisabled: {
-    color: theme.custom.rating.ratingStarIconOffDisabledColor,
-  },
+  iconDisabled: { color: theme.custom.rating.ratingStarIconOffDisabledColor },
 
   iconCheckedDisabled: {
     color: theme.custom.rating.ratingStarIconOnDisabledColor,

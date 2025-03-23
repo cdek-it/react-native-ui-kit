@@ -1,10 +1,19 @@
 import type { Icon } from '@tabler/icons-react-native'
-import React, { memo, useMemo } from 'react'
-import { View, Text, Pressable, type ViewProps, type ColorValue } from 'react-native'
+import { memo, useMemo, type ReactNode } from 'react'
+import {
+  View,
+  Text,
+  Pressable,
+  type ViewProps,
+  type ColorValue,
+} from 'react-native'
 
 import { makeStyles } from '../../../utils/makeStyles'
 import type { BadgeSeverity } from '../../Badge/Badge'
-import { type MenuItemTemplateAccessory, MenuItemAccessory } from '../MenuItemAccessory'
+import {
+  type MenuItemTemplateAccessory,
+  MenuItemAccessory,
+} from '../MenuItemAccessory'
 import { MenuItemIcon } from '../MenuItemIcon'
 
 export type MenuItemTemplateState = 'default' | 'disabled'
@@ -26,7 +35,7 @@ export interface MenuItemTemplateProps extends ViewProps {
   /** Аксессуар в самойправой части пункта меню (стрелка вниз или вправо) */
   suffix?: MenuItemTemplateAccessory
   /** Дополнительный контент пункта меню, выводится справа от текста. Может быть любым react компонентом. Важно! Размеры доплолнительного контента не контролируются пунктом меню и могут его растягивать. Использовать с осторожностью. */
-  extra?: React.ReactNode
+  extra?: ReactNode
   /** Разделитель. Выводится как полоска сверху. Изменяет общую высоту элемента меню.*/
   separator?: boolean
   /**  Состояние 'default' | 'disabled' */
@@ -103,11 +112,19 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
                 disabled && styles.contentContainerDisabled,
               ]}
             >
-              <MenuItemAccessory disabled={disabled} iconStyle={styles.accessory} type={prefix} />
+              <MenuItemAccessory
+                disabled={disabled}
+                iconStyle={styles.accessory}
+                type={prefix}
+              />
               <View style={styles.templateContainer}>
-                {Icon && (
-                  <MenuItemIcon Icon={Icon} badgeSeverity={badgeSeverity} style={iconStyle} />
-                )}
+                {Icon ? (
+                  <MenuItemIcon
+                    Icon={Icon}
+                    badgeSeverity={badgeSeverity}
+                    style={iconStyle}
+                  />
+                ) : null}
                 <View
                   style={{
                     ...styles.textContainer,
@@ -116,11 +133,19 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
                   }}
                 >
                   <Text style={[styles.title, styles.titleColor]}>{title}</Text>
-                  {caption && <Text style={[styles.caption, styles.captionColor]}>{caption}</Text>}
+                  {caption ? (
+                    <Text style={[styles.caption, styles.captionColor]}>
+                      {caption}
+                    </Text>
+                  ) : null}
                 </View>
               </View>
               {extra}
-              <MenuItemAccessory disabled={disabled} iconStyle={styles.accessory} type={suffix} />
+              <MenuItemAccessory
+                disabled={disabled}
+                iconStyle={styles.accessory}
+                type={suffix}
+              />
             </View>
           )}
         </Pressable>
@@ -130,9 +155,7 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
 )
 
 const useStyles = makeStyles(({ theme, spacing, typography }) => ({
-  root: {
-    width: '100%',
-  },
+  root: { width: '100%' },
   separator: {
     borderTopWidth: 1,
     borderTopColor: theme.Menu.Overlay.overlayMenuBorderColor,
@@ -149,9 +172,7 @@ const useStyles = makeStyles(({ theme, spacing, typography }) => ({
     borderRadius: theme.Menu.Item.menuitemBorderRadius,
     backgroundColor: theme.Menu.Item.menuitemBg,
   },
-  contentContainerPressed: {
-    backgroundColor: theme.Menu.Item.menuitemHoverBg,
-  },
+  contentContainerPressed: { backgroundColor: theme.Menu.Item.menuitemHoverBg },
   contentContainerDisabled: {
     borderWidth: 1,
     borderColor: theme.Button.Disabled.disabledButtonBorderColor,
@@ -173,26 +194,19 @@ const useStyles = makeStyles(({ theme, spacing, typography }) => ({
     height: typography.Size['text-xl'],
     color: theme.Menu.Item.menuitemIconColor,
   },
-  textContainer: {
-    flexDirection: 'column',
-    gap: spacing.Gap['gap-1'],
-  },
+  textContainer: { flexDirection: 'column', gap: spacing.Gap['gap-1'] },
   title: {
     fontSize: 14,
     textAlign: 'left',
     includeFontPadding: false,
     verticalAlign: 'middle',
   },
-  titleColor: {
-    color: theme.Menu.Item.menuitemTextColor,
-  },
+  titleColor: { color: theme.Menu.Item.menuitemTextColor },
   caption: {
     fontSize: 12,
     textAlign: 'left',
     includeFontPadding: false,
     verticalAlign: 'middle',
   },
-  captionColor: {
-    color: theme.Menu.Item.menuitemTextColor,
-  },
+  captionColor: { color: theme.Menu.Item.menuitemTextColor },
 }))

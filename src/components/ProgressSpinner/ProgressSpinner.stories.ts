@@ -5,19 +5,10 @@ import { ProgressSpinner } from './ProgressSpinner'
 const meta: Meta<typeof ProgressSpinner> = {
   title: 'ProgressSpinner',
   component: ProgressSpinner,
-  args: {
-    size: 'md',
-    fill: 'primary',
-  },
+  args: { size: 'md', fill: 'primary' },
   argTypes: {
-    fill: {
-      control: 'radio',
-      options: ['primary', 'white'],
-    },
-    size: {
-      control: 'radio',
-      options: ['xl', 'lg', 'md', 'sm'],
-    },
+    fill: { control: 'radio', options: ['primary', 'white'] },
+    size: { control: 'radio', options: ['xl', 'lg', 'md', 'sm'] },
   },
 }
 

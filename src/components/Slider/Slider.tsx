@@ -1,5 +1,10 @@
-import React, { memo, useCallback, useMemo, useState } from 'react'
-import { type AccessibilityProps, type LayoutChangeEvent, View, type ViewProps } from 'react-native'
+import { memo, useCallback, useMemo, useState } from 'react'
+import {
+  type AccessibilityProps,
+  type LayoutChangeEvent,
+  View,
+  type ViewProps,
+} from 'react-native'
 import { Gesture, GestureDetector } from 'react-native-gesture-handler'
 import Animated, {
   useSharedValue,
@@ -11,7 +16,9 @@ import Animated, {
 
 import { makeStyles } from '../../utils/makeStyles'
 
-export interface SliderProps extends AccessibilityProps, Pick<ViewProps, 'testID'> {
+export interface SliderProps
+  extends AccessibilityProps,
+    Pick<ViewProps, 'testID'> {
   /**
    * Управление доступностью компонента
    * @default false
@@ -47,6 +54,7 @@ const MAX_TRACK_SCALE = 100
 
 const clamp = (val: number, min: number, max: number) => {
   'worklet'
+
   return Math.min(Math.max(val, min), max)
 }
 
@@ -78,12 +86,20 @@ export const Slider = memo<SliderProps>(
     const prevMaxPointX = useSharedValue(0)
 
     const pointerStyle = useMemo(
-      () => [styles.point, isPressed && styles.hovered, disabled && styles.disabledView],
+      () => [
+        styles.point,
+        isPressed && styles.hovered,
+        disabled && styles.disabledView,
+      ],
       [styles.point, isPressed, styles.hovered, styles.disabledView, disabled]
     )
 
     const lineStyle = useMemo(
-      () => [styles.line, isPressed && styles.hovered, disabled && styles.disabledView],
+      () => [
+        styles.line,
+        isPressed && styles.hovered,
+        disabled && styles.disabledView,
+      ],
       [styles.line, isPressed, styles.hovered, styles.disabledView, disabled]
     )
 
@@ -208,7 +224,12 @@ export const Slider = memo<SliderProps>(
     }))
 
     return (
-      <View style={styles.container} testID={testID} onLayout={onContainerLayout} {...rest}>
+      <View
+        style={styles.container}
+        testID={testID}
+        onLayout={onContainerLayout}
+        {...rest}
+      >
         <View style={styles.track}>
           {range ? null : ( // индикатор старта
             <Animated.View style={[lineStyle, minLineStyle]} />
@@ -270,12 +291,8 @@ const useStyles = makeStyles(({ theme }) => {
       backgroundColor: theme.Form.Slider.sliderHandleBg,
     },
 
-    disabledView: {
-      backgroundColor: 'grey',
-    },
+    disabledView: { backgroundColor: 'grey' },
 
-    hovered: {
-      backgroundColor: theme.Form.Slider.sliderHandleHoverBg,
-    },
+    hovered: { backgroundColor: theme.Form.Slider.sliderHandleHoverBg },
   }
 })

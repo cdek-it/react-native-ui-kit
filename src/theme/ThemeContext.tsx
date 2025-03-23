@@ -1,4 +1,10 @@
-import React, { type ReactNode, createContext, useCallback, useMemo, useState } from 'react'
+import {
+  type ReactNode,
+  createContext,
+  useCallback,
+  useMemo,
+  useState,
+} from 'react'
 
 import { ThemeVariant } from './types'
 
@@ -8,8 +14,8 @@ interface ThemeContextType {
 }
 
 interface ThemeContextProviderProps {
-  initialTheme?: ThemeVariant
-  children: ReactNode
+  readonly initialTheme?: ThemeVariant
+  readonly children: ReactNode
 }
 
 const defaultThemeContext = {
@@ -30,7 +36,14 @@ export const ThemeContextProvider = ({
     setTheme(nextTheme)
   }, [])
 
-  const contextValue = useMemo(() => ({ theme, changeTheme }), [theme, changeTheme])
+  const contextValue = useMemo(
+    () => ({ theme, changeTheme }),
+    [theme, changeTheme]
+  )
 
-  return <ThemeContext.Provider value={contextValue}>{children}</ThemeContext.Provider>
+  return (
+    <ThemeContext.Provider value={contextValue}>
+      {children}
+    </ThemeContext.Provider>
+  )
 }

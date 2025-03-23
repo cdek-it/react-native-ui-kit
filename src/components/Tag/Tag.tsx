@@ -1,5 +1,5 @@
 import type { Icon } from '@tabler/icons-react-native'
-import React, { memo } from 'react'
+import { memo } from 'react'
 import {
   View,
   Text,
@@ -11,7 +11,9 @@ import {
 
 import { makeStyles } from '../../utils/makeStyles'
 
-export interface TagProps extends AccessibilityProps, Pick<ViewProps, 'testID'> {
+export interface TagProps
+  extends AccessibilityProps,
+    Pick<ViewProps, 'testID'> {
   /** Текст */
   text: string
 
@@ -42,26 +44,45 @@ export interface TagProps extends AccessibilityProps, Pick<ViewProps, 'testID'> 
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4921
  */
 export const Tag = memo<TagProps>(
-  ({ text, rounded, severity = 'basic', showIcon = true, style, Icon, testID, ...rest }) => {
+  ({
+    text,
+    rounded,
+    severity = 'basic',
+    showIcon = true,
+    style,
+    Icon,
+    testID,
+    ...rest
+  }) => {
     const styles = useStyles()
 
     return (
       <View style={style} testID={testID || TagTestId.root} {...rest}>
         <View
-          style={[styles.container, styles[severity], rounded && styles.roundedContainer]}
+          style={[
+            styles.container,
+            styles[severity],
+            rounded && styles.roundedContainer,
+          ]}
           testID={TagTestId.innerContainer}
         >
-          {showIcon && Icon && (
+          {showIcon && Icon ? (
             <Icon
               height={styles.icon.height}
-              style={[styles.icon, severity === 'secondary' && (styles.textSecondary as ViewStyle)]}
+              style={[
+                styles.icon,
+                severity === 'secondary' && (styles.textSecondary as ViewStyle),
+              ]}
               testID={TagTestId.icon}
               width={styles.icon.width}
             />
-          )}
+          ) : null}
           <Text
             numberOfLines={1}
-            style={[styles.text, severity === 'secondary' && styles.textSecondary]}
+            style={[
+              styles.text,
+              severity === 'secondary' && styles.textSecondary,
+            ]}
             testID={TagTestId.text}
           >
             {text}
@@ -82,9 +103,7 @@ const useStyles = makeStyles(({ theme, border, spacing }) => ({
     paddingHorizontal: theme.Misc.Tag.tagPadding,
     borderRadius: theme.General.borderRadius,
   },
-  roundedContainer: {
-    borderRadius: border.Radius['rounded-full'],
-  },
+  roundedContainer: { borderRadius: border.Radius['rounded-full'] },
   icon: {
     width: theme.Misc.Tag.tagFontSize,
     height: theme.Misc.Tag.tagFontSize,
@@ -98,15 +117,9 @@ const useStyles = makeStyles(({ theme, border, spacing }) => ({
     includeFontPadding: false,
     verticalAlign: 'middle',
   },
-  textSecondary: {
-    color: theme.General.textSecondaryColor,
-  },
-  basic: {
-    backgroundColor: theme.Misc.Badge.badgeBg,
-  },
-  info: {
-    backgroundColor: theme.Button.Severity.Info.Basic.infoButtonBg,
-  },
+  textSecondary: { color: theme.General.textSecondaryColor },
+  basic: { backgroundColor: theme.Misc.Badge.badgeBg },
+  info: { backgroundColor: theme.Button.Severity.Info.Basic.infoButtonBg },
   success: {
     backgroundColor: theme.Button.Severity.Success.Basic.successButtonBg,
   },
@@ -116,9 +129,7 @@ const useStyles = makeStyles(({ theme, border, spacing }) => ({
   danger: {
     backgroundColor: theme.Button.Severity.Danger.Basic.dangerButtonBg,
   },
-  secondary: {
-    backgroundColor: theme.Surface['surface-border'],
-  },
+  secondary: { backgroundColor: theme.Surface['surface-border'] },
 }))
 
 export const TagTestId = {

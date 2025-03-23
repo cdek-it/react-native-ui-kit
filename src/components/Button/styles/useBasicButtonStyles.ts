@@ -15,17 +15,11 @@ export const useBasicButtonStyles = () => {
 }
 
 const useLabelVariantStyles = makeStyles(({ theme }) => ({
-  basic: {
-    color: theme.Button.Basic.buttonTextColor,
-  },
+  basic: { color: theme.Button.Basic.buttonTextColor },
 
-  outlined: {
-    color: theme.Button.Outlined.outlinedButtonTextColor,
-  },
+  outlined: { color: theme.Button.Outlined.outlinedButtonTextColor },
 
-  text: {
-    color: theme.Button.Text.textButtonTextColor,
-  },
+  text: { color: theme.Button.Text.textButtonTextColor },
 }))
 
 const usePressedVarianttyles = makeStyles(({ theme }) => ({
@@ -43,7 +37,10 @@ const usePressedVarianttyles = makeStyles(({ theme }) => ({
     borderColor: theme.Button.Common.buttonHoverShadowColor,
     backgroundColor: theme.Button.Text.textButtonHoverBg,
     shadowColor: theme.General.focusOutlineColor,
-    shadowOffset: { height: theme.General.focusShadowWidth, width: theme.General.focusShadowWidth },
+    shadowOffset: {
+      height: theme.General.focusShadowWidth,
+      width: theme.General.focusShadowWidth,
+    },
     elevation: theme.General.focusShadowWidth,
     shadowOpacity: 1,
     shadowRadius: 3.5,
@@ -68,15 +65,9 @@ const useContainerVariantStyles = makeStyles(({ theme }) => ({
 }))
 
 const useIconVariantStyles = makeStyles(({ theme }) => ({
-  basic: {
-    color: theme.Button.Basic.buttonTextColor,
-  },
+  basic: { color: theme.Button.Basic.buttonTextColor },
 
-  outlined: {
-    color: theme.Button.Outlined.outlinedButtonTextColor,
-  },
+  outlined: { color: theme.Button.Outlined.outlinedButtonTextColor },
 
-  text: {
-    color: theme.Button.Text.textButtonTextColor,
-  },
+  text: { color: theme.Button.Text.textButtonTextColor },
 }))

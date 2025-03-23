@@ -1,5 +1,10 @@
 import type { Icon } from '@tabler/icons-react-native'
-import type { ColorValue, PressableProps, TextStyle, ViewStyle } from 'react-native'
+import type {
+  ColorValue,
+  PressableProps,
+  TextStyle,
+  ViewStyle,
+} from 'react-native'
 
 import type { BadgeSeverity } from '../Badge/Badge'
 
@@ -58,10 +63,22 @@ export interface IconOnlyButtonProps extends BaseButtonProps {
 
 export type ButtonProps = IconTextButton | IconOnlyButtonProps
 
-export type LabelVariantStyles = Record<Required<BaseButtonProps>['variant'], TextStyle>
-export type PressedVariantStyles = Record<Required<BaseButtonProps>['variant'], ViewStyle>
-export type ContainerVariantStyles = Record<Required<BaseButtonProps>['variant'], ViewStyle>
-export type IconVariantStyles = Record<Required<BaseButtonProps>['variant'], { color: ColorValue }>
+export type LabelVariantStyles = Record<
+  Required<BaseButtonProps>['variant'],
+  TextStyle
+>
+export type PressedVariantStyles = Record<
+  Required<BaseButtonProps>['variant'],
+  ViewStyle
+>
+export type ContainerVariantStyles = Record<
+  Required<BaseButtonProps>['variant'],
+  ViewStyle
+>
+export type IconVariantStyles = Record<
+  Required<BaseButtonProps>['variant'],
+  { color: ColorValue }
+>
 
 export interface VariantStyles {
   containerVariantStyles: ContainerVariantStyles

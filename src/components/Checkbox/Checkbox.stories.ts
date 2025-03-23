@@ -11,9 +11,7 @@ const meta: Meta<typeof Checkbox> = {
     disabled: false,
     state: 'default',
   },
-  argTypes: {
-    state: { control: 'radio', options: ['default', 'danger'] },
-  },
+  argTypes: { state: { control: 'radio', options: ['default', 'danger'] } },
 }
 
 export default meta

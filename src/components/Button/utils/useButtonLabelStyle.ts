@@ -30,33 +30,26 @@ export const useButtonLabelStyle = (
     }
 
     return StyleSheet.flatten(containerStyle)
-  }, [disabled, loading, sizeBasedStyle, styles.disabled, styles.font, variantBasedStyle])
+  }, [
+    disabled,
+    loading,
+    sizeBasedStyle,
+    styles.disabled,
+    styles.font,
+    variantBasedStyle,
+  ])
 }
 
 const useButtonLabelStyles = makeStyles(({ theme }) => ({
-  font: {
-    fontWeight: 700,
-    includeFontPadding: false,
-    verticalAlign: 'middle',
-  },
+  font: { fontWeight: 700, includeFontPadding: false, verticalAlign: 'middle' },
 
-  xlarge: {
-    fontSize: 21,
-  },
+  xlarge: { fontSize: 21 },
 
-  large: {
-    fontSize: 17.5,
-  },
+  large: { fontSize: 17.5 },
 
-  base: {
-    fontSize: 14,
-  },
+  base: { fontSize: 14 },
 
-  small: {
-    fontSize: 12.25,
-  },
+  small: { fontSize: 12.25 },
 
-  disabled: {
-    color: theme.Button.Disabled.disabledButtonTextColor,
-  },
+  disabled: { color: theme.Button.Disabled.disabledButtonTextColor },
 }))

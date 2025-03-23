@@ -1,4 +1,4 @@
-import React, { memo, type ReactNode } from 'react'
+import { memo, type ReactNode } from 'react'
 import { Pressable, type PressableProps } from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
@@ -24,7 +24,10 @@ export interface RatingItemContainerProps
    * @param renderProps - свойства состояния контейнера для изменения отображения дочернего компонента
    * @returns отрендеренный компонент
    */
-  children: (renderProps: { disabled: boolean | null; pressed: boolean }) => ReactNode
+  children: (renderProps: {
+    disabled: boolean | null
+    pressed: boolean
+  }) => ReactNode
 }
 
 /**

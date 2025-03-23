@@ -15,13 +15,20 @@ describe('FloatLabel interactions', () => {
 
   test('should focus on container press', async () => {
     const inputRef = createRef<TextInput>()
-    const { getByTestId } = render(<FloatLabel inputRef={inputRef} placeholder='Label' />)
+    const { getByTestId } = render(
+      <FloatLabel inputRef={inputRef} placeholder='Label' />
+    )
     const pressableContainer = getByTestId('FloatLabel_PressableContainer')
     const user = userEvent.setup()
 
-    expect(inputRef.current?.focus).not.toHaveBeenCalled()
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    const spyOnFocus = jest.spyOn(inputRef.current!, 'focus')
+
+    expect(spyOnFocus).not.toHaveBeenCalled()
+
     await user.press(pressableContainer)
-    expect(inputRef.current?.focus).toHaveBeenCalled()
+
+    expect(spyOnFocus).toHaveBeenCalled()
   })
 
   test('should handle focus, blur and onChangeText', async () => {

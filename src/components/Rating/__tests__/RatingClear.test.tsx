@@ -1,5 +1,4 @@
 import { render } from '@testing-library/react-native'
-import React from 'react'
 
 import { RatingClear, type RatingClearProps } from '../RatingClear'
 
@@ -14,6 +13,7 @@ describe('RatingItem component tests', () => {
     'checked - $checked, disabled - $disabled, pressed - $testOnly_pressed, paddings - $paddings',
     (props) => {
       const renderRatingItem = render(<RatingClear {...props} />)
+
       expect(renderRatingItem.toJSON()).toMatchSnapshot()
     }
   )

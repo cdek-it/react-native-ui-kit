@@ -1,4 +1,5 @@
 import { registerRootComponent } from 'expo'
+
 // import { configureReanimatedLogger, ReanimatedLogLevel } from 'react-native-reanimated'
 
 import App from './.storybook'

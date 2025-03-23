@@ -1,3 +1,4 @@
+import 'jest-extended'
 import 'react-native-gesture-handler/jestSetup'
 import { setUpTests } from 'react-native-reanimated'
 
@@ -6,7 +7,7 @@ setUpTests()
 generatePropsCombinations = <T>(properties: PropertyCombinations<T>): T[] => {
   const keys = Object.keys(properties) as Array<keyof T>
 
-  function combine(index: number, current: Partial<T>): T[] {
+  const combine = (index: number, current: Partial<T>): T[] => {
     if (index === keys.length) {
       return [current as T]
     }

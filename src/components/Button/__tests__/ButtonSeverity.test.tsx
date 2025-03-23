@@ -1,5 +1,4 @@
 import { render } from '@testing-library/react-native'
-import React from 'react'
 
 import { ButtonSeverity } from '../ButtonSeverity'
 import type { ButtonSeverityProps } from '../types'
@@ -11,6 +10,7 @@ describe('ButtonSeverity component tests', () => {
 
   test.each(buttonSnapshotCases)('severity - $severity', (props) => {
     const renderedButton = render(<ButtonSeverity {...props} label='Button' />)
+
     expect(renderedButton.toJSON()).toMatchSnapshot()
   })
 })

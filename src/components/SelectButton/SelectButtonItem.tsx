@@ -1,5 +1,5 @@
 import type { Icon } from '@tabler/icons-react-native'
-import React, { memo, useMemo, useState } from 'react'
+import { memo, useMemo, useState } from 'react'
 import { TouchableOpacity, type ViewProps, type ViewStyle } from 'react-native'
 import Animated, {
   interpolateColor,
@@ -11,7 +11,8 @@ import Animated, {
 
 import { makeStyles } from '../../utils/makeStyles'
 
-export interface SelectButtonItemProps extends Pick<ViewProps, 'onLayout' | 'testID'> {
+export interface SelectButtonItemProps
+  extends Pick<ViewProps, 'onLayout' | 'testID'> {
   /** Индекс кнопки */
   index: number
 
@@ -68,34 +69,56 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
       switch (size) {
         case 'small':
           return styles.iconSmall
+
         case 'base':
           return styles.iconBase
+
         case 'large':
           return styles.iconLarge
+
         case 'xlarge':
           return styles.iconXLarge
       }
-    }, [size, styles.iconBase, styles.iconLarge, styles.iconSmall, styles.iconXLarge])
+    }, [
+      size,
+      styles.iconBase,
+      styles.iconLarge,
+      styles.iconSmall,
+      styles.iconXLarge,
+    ])
 
     const labelFontSize = useMemo(() => {
       switch (size) {
         case 'small':
           return styles.labelSmall
+
         case 'base':
           return styles.labelBase
+
         case 'large':
           return styles.labelLarge
+
         case 'xlarge':
           return styles.labelXLarge
       }
-    }, [size, styles.labelBase, styles.labelLarge, styles.labelSmall, styles.labelXLarge])
+    }, [
+      size,
+      styles.labelBase,
+      styles.labelLarge,
+      styles.labelSmall,
+      styles.labelXLarge,
+    ])
 
     const animatedColorStyle = useAnimatedStyle(() => {
       return {
         color: interpolateColor(
           position.value,
           [index - 1, index, index + 1],
-          [styles.textColor.color, styles.checkedTextColor.color, styles.textColor.color]
+          [
+            styles.textColor.color,
+            styles.checkedTextColor.color,
+            styles.textColor.color,
+          ]
         ),
       }
     })
@@ -114,12 +137,16 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
     return (
       <TouchableOpacity
         disabled={disabled}
-        style={[styles.container, styles[size], disabled && styles.disabledContainer]}
+        style={[
+          styles.container,
+          styles[size],
+          disabled && styles.disabledContainer,
+        ]}
         testID='SelectButtonItem_TouchableOpacity'
         onLayout={onLayout}
         onPress={onPress}
       >
-        {Icon && showIcon && (
+        {Icon && showIcon ? (
           <Icon
             height={iconSize.height}
             style={
@@ -132,7 +159,7 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
             testID='SelectButtonItem_Icon'
             width={iconSize.width}
           />
-        )}
+        ) : null}
         <Animated.Text
           numberOfLines={1}
           style={[
@@ -160,20 +187,10 @@ const useStyles = makeStyles(({ theme, typography }) => ({
     borderWidth: 1,
     borderColor: 'transparent',
   },
-  small: {
-    height: theme.Button.Common.buttonHeightSM,
-  },
-  base: {
-    height: theme.Button.Common.buttonHeight,
-  },
-  large: {
-    height: theme.Button.Common.buttonHeightLG,
-    gap: 10.5,
-  },
-  xlarge: {
-    height: theme.Button.Common.buttonHeightXL,
-    gap: 10.5,
-  },
+  small: { height: theme.Button.Common.buttonHeightSM },
+  base: { height: theme.Button.Common.buttonHeight },
+  large: { height: theme.Button.Common.buttonHeightLG, gap: 10.5 },
+  xlarge: { height: theme.Button.Common.buttonHeightXL, gap: 10.5 },
   disabledContainer: {
     borderRadius: theme.Form.SelectButton.selectButtonBorderRadius,
     borderWidth: 1,
@@ -191,33 +208,15 @@ const useStyles = makeStyles(({ theme, typography }) => ({
     width: typography.Size['text-2xl'],
     height: typography.Size['text-2xl'],
   },
-  iconXLarge: {
-    width: 28,
-    height: 28,
-  },
-  label: {
-    flexShrink: 1,
-    fontWeight: 700,
-  },
-  labelSmall: {
-    fontSize: 12.25,
-  },
-  labelBase: {
-    fontSize: 14,
-  },
-  labelLarge: {
-    fontSize: 17.5,
-  },
-  labelXLarge: {
-    fontSize: 21,
-  },
-  textColor: {
-    color: theme.Form.SelectButton.selectButtonTextColor,
-  },
+  iconXLarge: { width: 28, height: 28 },
+  label: { flexShrink: 1, fontWeight: 700 },
+  labelSmall: { fontSize: 12.25 },
+  labelBase: { fontSize: 14 },
+  labelLarge: { fontSize: 17.5 },
+  labelXLarge: { fontSize: 21 },
+  textColor: { color: theme.Form.SelectButton.selectButtonTextColor },
   checkedTextColor: {
     color: theme.Form.SelectButton.selectButtonIconActiveColor,
   },
-  disabledTextColor: {
-    color: theme.Button.Disabled.disabledButtonBorderColor,
-  },
+  disabledTextColor: { color: theme.Button.Disabled.disabledButtonBorderColor },
 }))

@@ -15,17 +15,13 @@ export const useInfoButtonStyles = () => {
 }
 
 const useLabelVariantStyles = makeStyles(({ theme }) => ({
-  basic: {
-    color: theme.Button.Severity.Info.Basic.infoButtonTextColor,
-  },
+  basic: { color: theme.Button.Severity.Info.Basic.infoButtonTextColor },
 
   outlined: {
     color: theme.Button.Severity.Info.Outlined.infoOutlinedButtonTextColor,
   },
 
-  text: {
-    color: theme.Button.Severity.Info.Text.infoTextButtonTextColor,
-  },
+  text: { color: theme.Button.Severity.Info.Text.infoTextButtonTextColor },
 }))
 
 const usePressedVarianttyles = makeStyles(({ theme }) => ({
@@ -35,15 +31,20 @@ const usePressedVarianttyles = makeStyles(({ theme }) => ({
   },
 
   outlined: {
-    borderColor: theme.Button.Severity.Info.Outlined.infoOutlinedButtonHoverBorderColor,
-    backgroundColor: theme.Button.Severity.Info.Outlined.infoOutlinedButtonHoverBg,
+    borderColor:
+      theme.Button.Severity.Info.Outlined.infoOutlinedButtonHoverBorderColor,
+    backgroundColor:
+      theme.Button.Severity.Info.Outlined.infoOutlinedButtonHoverBg,
   },
 
   text: {
     borderColor: theme.Surface['surface-transparent'],
     backgroundColor: theme.Button.Severity.Info.Text.infoTextButtonHoverBg,
     shadowColor: theme.General.focusOutlineColor,
-    shadowOffset: { height: theme.General.focusShadowWidth, width: theme.General.focusShadowWidth },
+    shadowOffset: {
+      height: theme.General.focusShadowWidth,
+      width: theme.General.focusShadowWidth,
+    },
     elevation: theme.General.focusShadowWidth,
     shadowOpacity: 1,
     shadowRadius: 3.5,
@@ -57,7 +58,8 @@ const useContainerVariantStyles = makeStyles(({ theme }) => ({
   },
 
   outlined: {
-    borderColor: theme.Button.Severity.Info.Outlined.infoOutlinedButtonBorderColor,
+    borderColor:
+      theme.Button.Severity.Info.Outlined.infoOutlinedButtonBorderColor,
     backgroundColor: theme.Button.Severity.Info.Outlined.infoOutlinedButtonBg,
   },
 
@@ -68,15 +70,11 @@ const useContainerVariantStyles = makeStyles(({ theme }) => ({
 }))
 
 const useIconVariantStyles = makeStyles(({ theme }) => ({
-  basic: {
-    color: theme.Button.Severity.Info.Basic.infoButtonTextColor,
-  },
+  basic: { color: theme.Button.Severity.Info.Basic.infoButtonTextColor },
 
   outlined: {
     color: theme.Button.Severity.Info.Outlined.infoOutlinedButtonTextColor,
   },
 
-  text: {
-    color: theme.Button.Severity.Info.Text.infoTextButtonTextColor,
-  },
+  text: { color: theme.Button.Severity.Info.Text.infoTextButtonTextColor },
 }))

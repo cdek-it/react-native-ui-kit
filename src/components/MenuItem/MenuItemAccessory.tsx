@@ -1,6 +1,13 @@
-import { IconChevronRight, IconChevronDown, IconLock } from '@tabler/icons-react-native'
-import React from 'react'
+import {
+  IconChevronRight,
+  IconChevronDown,
+  IconLock,
+} from '@tabler/icons-react-native'
+import type { ReactNode } from 'react'
+
 import { type ColorValue, View } from 'react-native'
+
+import { makeStyles } from '../../utils/makeStyles'
 
 export type MenuItemTemplateAccessory = 'right' | 'down' | 'none'
 
@@ -15,13 +22,15 @@ export interface AccessoryStyle {
 }
 
 interface AccessoryProps {
-  type: MenuItemTemplateAccessory
-  iconStyle: AccessoryStyle
-  disabled: boolean
+  readonly type: MenuItemTemplateAccessory
+  readonly iconStyle: AccessoryStyle
+  readonly disabled: boolean
 }
 
-const AccessoryBox = ({ icon }: { icon: React.ReactNode }) => {
-  return <View style={{ justifyContent: 'center' }}>{icon}</View>
+const AccessoryBox = ({ icon }: { readonly icon: ReactNode }) => {
+  const styles = useStyles()
+
+  return <View style={styles.accessoryBox}>{icon}</View>
 }
 
 /**
@@ -36,14 +45,21 @@ const AccessoryIcon = ({ type, iconStyle, disabled }: AccessoryProps) => {
   if (type !== 'none' && disabled) {
     return <AccessoryBox icon={<IconLock {...iconStyle} />} />
   }
+
   switch (type) {
     case 'right':
       return <AccessoryBox icon={<IconChevronRight {...iconStyle} />} />
+
     case 'down':
       return <AccessoryBox icon={<IconChevronDown {...iconStyle} />} />
+
     case 'none':
       return null
   }
 }
 
 export const MenuItemAccessory = AccessoryIcon
+
+const useStyles = makeStyles(() => ({
+  accessoryBox: { justifyContent: 'center' },
+}))

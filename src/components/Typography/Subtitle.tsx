@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import { memo } from 'react'
 import { Text, type TextProps } from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
@@ -24,26 +24,19 @@ export const Subtitle = memo<SubtitleProps>(
   ({ base = false, color = 'default', style, ...other }) => {
     const styles = useStyles()
 
-    return <Text style={[styles.text, styles[color], base && styles.base, style]} {...other} />
+    return (
+      <Text
+        style={[styles.text, styles[color], base && styles.base, style]}
+        {...other}
+      />
+    )
   }
 )
 
 const useStyles = makeStyles(({ theme }) => ({
-  text: {
-    fontSize: 12.25,
-    fontWeight: 700,
-    textTransform: 'uppercase',
-  },
-  base: {
-    fontSize: 14,
-  },
-  default: {
-    color: theme.General.textColor,
-  },
-  primary: {
-    color: theme.General.primaryColor,
-  },
-  secondary: {
-    color: theme.General.textSecondaryColor,
-  },
+  text: { fontSize: 12.25, fontWeight: 700, textTransform: 'uppercase' },
+  base: { fontSize: 14 },
+  default: { color: theme.General.textColor },
+  primary: { color: theme.General.primaryColor },
+  secondary: { color: theme.General.textSecondaryColor },
 }))

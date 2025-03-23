@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import { memo } from 'react'
 
 import { BaseButton } from './BaseButton'
 import { useSeverityButtonStyles } from './styles'
@@ -19,8 +19,10 @@ import type { ButtonProps, ButtonSeverityProps } from './types'
  * @param severity - severity button styling variant
  * @see BaseButton
  */
-export const ButtonSeverity = memo<ButtonProps & ButtonSeverityProps>(({ severity, ...props }) => {
-  const buttonStyles = useSeverityButtonStyles(severity)
+export const ButtonSeverity = memo<ButtonProps & ButtonSeverityProps>(
+  ({ severity, ...props }) => {
+    const buttonStyles = useSeverityButtonStyles(severity)
 
-  return <BaseButton {...props} {...buttonStyles} />
-})
+    return <BaseButton {...props} {...buttonStyles} />
+  }
+)

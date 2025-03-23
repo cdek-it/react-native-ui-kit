@@ -9,27 +9,18 @@ export const usePressableStyles = ({
   indeterminate = false,
   disabled = false,
   state,
-}: CheckboxProps) => {
+}: Pick<CheckboxProps, 'checked' | 'indeterminate' | 'disabled' | 'state'>) => {
   const styles = useStyles()
 
   const styleMap = useMemo(
     () => ({
-      default: {
-        filled: styles.defaultFilled,
-        clean: styles.defaultClean,
-      },
-      disabled: {
-        filled: styles.disabledFilled,
-        clean: styles.disabledClean,
-      },
+      default: { filled: styles.defaultFilled, clean: styles.defaultClean },
+      disabled: { filled: styles.disabledFilled, clean: styles.disabledClean },
       danger: {
         filled: { ...styles.dangerFilled, ...styles.dangerOutline },
         clean: { ...styles.dangerClean, ...styles.dangerOutline },
       },
-      hover: {
-        filled: styles.hoverFilled,
-        clean: styles.hoverClean,
-      },
+      hover: { filled: styles.hoverFilled, clean: styles.hoverClean },
     }),
     [
       styles.defaultFilled,
@@ -48,10 +39,22 @@ export const usePressableStyles = ({
     ({ pressed }: PressableStateCallbackType) => {
       const isFilled = checked || indeterminate
       const stateStyles =
-        state in styleMap && isFilled ? styleMap[state].filled : styleMap[state].clean
-      const disabledStyles = isFilled ? styleMap.disabled.filled : styleMap.disabled.clean
-      const pressedStyles = isFilled ? styleMap.hover.filled : styleMap.hover.clean
-      return [styles.container, stateStyles, disabled && disabledStyles, pressed && pressedStyles]
+        state in styleMap && isFilled
+          ? styleMap[state].filled
+          : styleMap[state].clean
+      const disabledStyles = isFilled
+        ? styleMap.disabled.filled
+        : styleMap.disabled.clean
+      const pressedStyles = isFilled
+        ? styleMap.hover.filled
+        : styleMap.hover.clean
+
+      return [
+        styles.container,
+        stateStyles,
+        disabled && disabledStyles,
+        pressed && pressedStyles,
+      ]
     },
     [checked, indeterminate, disabled, state, styles.container, styleMap]
   )
@@ -101,8 +104,5 @@ const useStyles = makeStyles(({ theme }) => ({
     backgroundColor: theme.Button.Disabled.disabledButtonBg,
     borderColor: theme.Form.InputText.inputBorderColor,
   },
-  disabledFilled: {
-    backgroundColor: 'grey',
-    borderColor: 'grey',
-  },
+  disabledFilled: { backgroundColor: 'grey', borderColor: 'grey' },
 }))

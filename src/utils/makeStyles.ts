@@ -12,8 +12,10 @@ export const makeStyles =
       switch (theme) {
         case ThemeVariant.Light:
           return lightTheme
+
         case ThemeVariant.Dark:
           return darkTheme
+
         default:
           return lightTheme
       }
@@ -28,9 +30,14 @@ type StylesObject = Record<string, StylesItem>
 
 type CreateStyles<T extends StylesObject> = (
   theme: ThemeType
-) => CheckInvalidProps<T> extends never ? T : 'TypeError. Invalid key of style property was used.'
+) => CheckInvalidProps<T> extends never
+  ? T
+  : 'TypeError. Invalid key of style property was used.'
 
-type ExcludeStylesProps<T> = Exclude<keyof T, keyof (ViewStyle & ImageStyle & TextStyle)>
+type ExcludeStylesProps<T> = Exclude<
+  keyof T,
+  keyof (ViewStyle & ImageStyle & TextStyle)
+>
 
 type CheckInvalidProps<T extends object> = {
   [Key in keyof T]: ExcludeStylesProps<T[Key]>

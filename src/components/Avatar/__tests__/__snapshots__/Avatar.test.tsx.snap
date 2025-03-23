@@ -181,12 +181,10 @@ exports[`Avatar component tests Size: large, shape: circle, type: image 1`] = `
         }
       }
       style={
-        [
-          {
-            "height": 35,
-            "width": 35,
-          },
-        ]
+        {
+          "height": 35,
+          "width": 35,
+        }
       }
       testID="Avatar.image"
     />
@@ -426,12 +424,10 @@ exports[`Avatar component tests Size: large, shape: square, type: image 1`] = `
         }
       }
       style={
-        [
-          {
-            "height": 35,
-            "width": 35,
-          },
-        ]
+        {
+          "height": 35,
+          "width": 35,
+        }
       }
       testID="Avatar.image"
     />
@@ -673,12 +669,10 @@ exports[`Avatar component tests Size: normal, shape: circle, type: image 1`] = `
         }
       }
       style={
-        [
-          {
-            "height": 28,
-            "width": 28,
-          },
-        ]
+        {
+          "height": 28,
+          "width": 28,
+        }
       }
       testID="Avatar.image"
     />
@@ -918,12 +912,10 @@ exports[`Avatar component tests Size: normal, shape: square, type: image 1`] = `
         }
       }
       style={
-        [
-          {
-            "height": 28,
-            "width": 28,
-          },
-        ]
+        {
+          "height": 28,
+          "width": 28,
+        }
       }
       testID="Avatar.image"
     />
@@ -1165,12 +1157,10 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: image 1`] = `
         }
       }
       style={
-        [
-          {
-            "height": 49,
-            "width": 49,
-          },
-        ]
+        {
+          "height": 49,
+          "width": 49,
+        }
       }
       testID="Avatar.image"
     />
@@ -1412,12 +1402,10 @@ exports[`Avatar component tests Size: xlarge, shape: square, type: image 1`] = `
         }
       }
       style={
-        [
-          {
-            "height": 49,
-            "width": 49,
-          },
-        ]
+        {
+          "height": 49,
+          "width": 49,
+        }
       }
       testID="Avatar.image"
     />

@@ -1,4 +1,4 @@
-import React, { memo, useCallback } from 'react'
+import { memo, useCallback } from 'react'
 import { type AccessibilityProps, View, type ViewProps } from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
@@ -10,7 +10,9 @@ import { RatingItem } from './RatingItem'
  * Свойства компонента рейтинга
  * @see Rating - компонент рейтинга
  */
-export interface RatingProps extends AccessibilityProps, Pick<ViewProps, 'testID'> {
+export interface RatingProps
+  extends AccessibilityProps,
+    Pick<ViewProps, 'testID'> {
   /**
    * Управление состоянием включённости компонента для нажатий пользователем
    * @default false

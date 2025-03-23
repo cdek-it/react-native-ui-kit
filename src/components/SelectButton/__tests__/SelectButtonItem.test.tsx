@@ -1,15 +1,17 @@
 import { IconArrowDownRight } from '@tabler/icons-react-native'
 import { act, render, userEvent, waitFor } from '@testing-library/react-native'
-import React from 'react'
+
 import { Pressable } from 'react-native'
 import { useSharedValue } from 'react-native-reanimated'
 
-import { type SelectButtonItemProps, SelectButtonItem } from '../SelectButtonItem'
+import {
+  type SelectButtonItemProps,
+  SelectButtonItem,
+} from '../SelectButtonItem'
 
-type SelectButtonItemTestProps = Partial<Omit<SelectButtonItemProps, 'position'>> & {
-  position?: number
-  withButton?: boolean
-}
+type SelectButtonItemTestProps = Partial<
+  Omit<SelectButtonItemProps, 'position'>
+> & { readonly position?: number; readonly withButton?: boolean }
 
 const TestComponent = ({
   position: positionProp = 0,
@@ -22,15 +24,20 @@ const TestComponent = ({
 
   return (
     <>
-      <SelectButtonItem index={index} position={position} onPress={onPress} {...rest} />
-      {withButton && (
+      <SelectButtonItem
+        index={index}
+        position={position}
+        onPress={onPress}
+        {...rest}
+      />
+      {withButton ? (
         <Pressable
           testID='ChangePosition'
           onPress={() => {
-            position.value = position.value + 1
+            position.value += 1
           }}
         />
-      )}
+      ) : null}
     </>
   )
 }
@@ -58,13 +65,21 @@ describe('SelectButtonItem', () => {
         disabled: true,
       },
     ],
-    [{ size: 'xlarge', label: 'ButtonSelect', Icon: IconArrowDownRight, index: 1 }],
+    [
+      {
+        size: 'xlarge',
+        label: 'ButtonSelect',
+        Icon: IconArrowDownRight,
+        index: 1,
+      },
+    ],
   ]
 
   test.each(snapshotCases)('%p', async (props) => {
     const { toJSON } = render(<TestComponent {...props} />)
     await act(async () => {
       jest.advanceTimersByTime(600)
+
       expect(toJSON()).toMatchSnapshot()
     })
   })
@@ -76,13 +91,18 @@ describe('SelectButtonItem', () => {
 
     const touchableOpacity = queryByTestId('SelectButtonItem_TouchableOpacity')
     await user.press(touchableOpacity)
+
     expect(mockedOnPress).toHaveBeenCalled()
   })
 
   test('position change', async () => {
     const mockedOnPress = jest.fn()
     const { queryAllByTestId } = render(
-      <TestComponent withButton Icon={IconArrowDownRight} onPress={mockedOnPress} />
+      <TestComponent
+        withButton
+        Icon={IconArrowDownRight}
+        onPress={mockedOnPress}
+      />
     )
     const user = userEvent.setup()
     const pressable = queryAllByTestId('ChangePosition')

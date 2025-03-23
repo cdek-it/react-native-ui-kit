@@ -38,10 +38,5 @@
       "border-help": "#ab77df"
     }
   },
-  "Width": {
-    "border": 1,
-    "border-2": 2,
-    "border-3": 3,
-    "border-4": 4
-  }
+  "Width": { "border": 1, "border-2": 2, "border-3": 3, "border-4": 4 }
 }

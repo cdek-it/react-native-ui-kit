@@ -1,20 +1,14 @@
 import { useArgs } from '@storybook/preview-api'
 import type { Meta, StoryObj } from '@storybook/react'
-import React, { useCallback } from 'react'
+import { useCallback } from 'react'
 
 import { InputSwitch } from './InputSwitch'
 
 const meta: Meta<typeof InputSwitch> = {
   title: 'Input/InputSwitch',
-  args: {
-    disabled: false,
-    danger: false,
-    checked: false,
-  },
-  argTypes: {
-    onCheckedChange: { action: 'onCheckedChange' },
-  },
-  render: function Render(args) {
+  args: { disabled: false, danger: false, checked: false },
+  argTypes: { onCheckedChange: { action: 'onCheckedChange' } },
+  render: (args) => {
     const [, updateArgs] = useArgs()
 
     const onCheckedChange = useCallback(

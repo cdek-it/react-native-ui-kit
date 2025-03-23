@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import { memo } from 'react'
 
 import type { BaseButtonProps, VariantStyles } from '../types'
 
@@ -9,7 +9,13 @@ export const ButtonIcon = memo<
     Pick<BaseButtonProps, 'Icon'> &
     Pick<VariantStyles, 'iconVariantStyles'>
 >(({ size, variant, disabled, loading, Icon, iconVariantStyles }) => {
-  const iconStyle = useIconStyle(size, variant, disabled, loading, iconVariantStyles)
+  const iconStyle = useIconStyle(
+    size,
+    variant,
+    disabled,
+    loading,
+    iconVariantStyles
+  )
 
   if (!Icon) {
     return null

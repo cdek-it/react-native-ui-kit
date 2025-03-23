@@ -6,16 +6,12 @@ export default {
   expo: {
     name: 'CDEK UI',
     slug: 'cdek-uikit',
-    version: version,
+    version,
     orientation: 'portrait',
-    android: {
-      package: 'ru.cdek.uikit.prime',
-    },
+    android: { package: 'ru.cdek.uikit.prime' },
     ios: {
       bundleIdentifier: 'ru.cdek.uikit.prime',
-      config: {
-        usesNonExemptEncryption: false,
-      },
+      config: { usesNonExemptEncryption: false },
     },
     splash: {
       image: './splash.png',
@@ -23,9 +19,7 @@ export default {
       backgroundColor: '#FFFFFF',
     },
     icon: './icon.png',
-    updates: {
-      fallbackToCacheTimeout: 0,
-    },
+    updates: { fallbackToCacheTimeout: 0 },
     plugins: ['./expo/plugins/withEnsureBundler.js'],
     newArchEnabled: true,
     assetBundlePatterns: ['**/*'],

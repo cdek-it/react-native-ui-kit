@@ -11,10 +11,7 @@ import typography from './assets/typography.json'
 
 export const commonTheme = {
   background,
-  colors: {
-    primary: primaryColors,
-    secondary: secondaryColors,
-  },
+  colors: { primary: primaryColors, secondary: secondaryColors },
   border,
   effects,
   global,

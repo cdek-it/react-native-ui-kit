@@ -1,0 +1,53 @@
+{
+  "java.compile.nullAnalysis.mode": "disabled",
+  "yaml.schemas": {
+    "https://yarnpkg.com/configuration/yarnrc.json": ["/.yarnrc.yml"],
+    "https://raw.githubusercontent.com/evilmartians/lefthook/refs/heads/master/schema.json": [
+      "/lefthook.yml"
+    ]
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSaveMode": "file",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.codeActionsOnSave": [],
+  "editor.indentSize": 2,
+  "editor.tabSize": 2,
+  "prettier.enable": true,
+  "eslint.enable": true,
+  "eslint.format.enable": true,
+  "eslint.useFlatConfig": true,
+  "eslint.run": "onSave",
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "[javascript]": {
+    "editor.codeActionsOnSave": [
+      "source.formatDocument",
+      "source.fixAll.eslint"
+    ]
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": [
+      "source.formatDocument",
+      "source.fixAll.eslint"
+    ]
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": [
+      "source.formatDocument",
+      "source.fixAll.eslint"
+    ]
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": [
+      "source.formatDocument",
+      "source.fixAll.eslint"
+    ]
+  },
+  "postman.settings.dotenv-detection-notification-visibility": false
+}

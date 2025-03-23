@@ -1,5 +1,5 @@
 import type { Icon } from '@tabler/icons-react-native'
-import React, { createElement, memo } from 'react'
+import { createElement, memo } from 'react'
 import { Pressable, Text } from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
@@ -28,8 +28,12 @@ export const InputGroupAddon = memo<InputGroupAddonProps>(
       <Pressable
         collapsable={false}
         disabled={disabled}
-        style={[styles.container, styles[position], disabled && styles.disabled]}
-        testID='InputGroupAddon_pressable'
+        style={[
+          styles.container,
+          styles[position],
+          disabled && styles.disabled,
+        ]}
+        testID='InputGroupAddon_Pressable'
         onPress={onPress}
       >
         {typeof content === 'string' ? (

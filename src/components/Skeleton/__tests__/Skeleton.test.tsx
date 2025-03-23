@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react-native'
-import React from 'react'
 
-import { ANIMATION_DURATION, Skeleton } from './Skeleton'
+import { ANIMATION_DURATION, Skeleton } from '../Skeleton'
 
 describe('Skeleton', () => {
   beforeEach(() => {
@@ -23,6 +22,7 @@ describe('Skeleton', () => {
     const { toJSON } = render(<Skeleton style={{ height: 50 }} />)
 
     jest.advanceTimersByTime(ANIMATION_DURATION / 2)
+
     expect(toJSON()).toMatchSnapshot()
   })
 
@@ -30,6 +30,7 @@ describe('Skeleton', () => {
     const { toJSON } = render(<Skeleton style={{ height: 50 }} />)
 
     jest.advanceTimersByTime(ANIMATION_DURATION)
+
     expect(toJSON()).toMatchSnapshot()
   })
 })

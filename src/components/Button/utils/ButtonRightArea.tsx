@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import { memo } from 'react'
 
 import type { BaseButtonProps, VariantStyles } from '../types'
 
@@ -7,16 +7,33 @@ import { ButtonIcon } from './ButtonIcon'
 
 export const ButtonRightArea = memo<
   Pick<BaseButtonProps, 'iconPosition' | 'Icon'> &
-    Pick<Required<BaseButtonProps>, 'size' | 'variant' | 'loading' | 'disabled'> &
+    Pick<
+      Required<BaseButtonProps>,
+      'size' | 'variant' | 'loading' | 'disabled'
+    > &
     Pick<VariantStyles, 'iconVariantStyles'>
->(({ size, iconPosition, variant, Icon, loading, disabled, iconVariantStyles }) => {
-  if (iconPosition === 'right' && Icon) {
-    if (loading && !disabled) {
-      return <ButtonActivityIndicator />
-    } else {
-      return <ButtonIcon {...{ size, variant, disabled, loading, Icon, iconVariantStyles }} />
-    }
-  }
+>(
+  ({
+    size,
+    iconPosition,
+    variant,
+    Icon,
+    loading,
+    disabled,
+    iconVariantStyles,
+  }) => {
+    if (iconPosition === 'right' && Icon) {
+      if (loading && !disabled) {
+        return <ButtonActivityIndicator />
+      }
 
-  return null
-})
+      return (
+        <ButtonIcon
+          {...{ size, variant, disabled, loading, Icon, iconVariantStyles }}
+        />
+      )
+    }
+
+    return null
+  }
+)

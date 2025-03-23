@@ -1,7 +1,12 @@
-import type { Preview } from "@storybook/react";
-import { makeStyles, ThemeContextProvider, ThemeVariant, useChangeTheme } from "../src";
-import { View } from "react-native";
-import React, { type FunctionComponent, type ReactNode, useEffect } from "react";
+import type { Preview } from '@storybook/react'
+import {
+  makeStyles,
+  ThemeContextProvider,
+  ThemeVariant,
+  useChangeTheme,
+} from '../src'
+import { View } from 'react-native'
+import { type FunctionComponent, type ReactNode, useEffect } from 'react'
 
 const preview: Preview = {
   decorators: [
@@ -18,13 +23,8 @@ const preview: Preview = {
     },
   ],
   parameters: {
-    actions: { argTypesRegex: "^on[A-Z].*" },
-    controls: {
-      matchers: {
-        color: /(background|color)$/i,
-        date: /Date$/,
-      },
-    },
+    actions: { argTypesRegex: '^on[A-Z].*' },
+    controls: { matchers: { color: /(background|color)$/i, date: /Date$/ } },
   },
   argTypes: {
     theme: {
@@ -32,32 +32,29 @@ const preview: Preview = {
       control: { type: 'radio' },
     },
   },
-  args: {
-    theme: ThemeVariant.Light,
-  },
-};
+  args: { theme: ThemeVariant.Light },
+}
 
-export default preview;
+export default preview
 
-const Container: FunctionComponent<{children: ReactNode, theme: ThemeVariant}> = ({ children, theme }) => {
+const Container: FunctionComponent<{
+  children: ReactNode
+  theme: ThemeVariant
+}> = ({ children, theme }) => {
   const styles = useStyles()
   const changeTheme = useChangeTheme()
 
   useEffect(() => {
     changeTheme(theme)
-  }, [theme, changeTheme]);
+  }, [theme, changeTheme])
 
-  return (
-    <View style={styles.container}>
-      {children}
-    </View>
-  )
+  return <View style={styles.container}>{children}</View>
 }
 
-const useStyles = makeStyles( ( theme) => ({
+const useStyles = makeStyles((theme) => ({
   container: {
     width: '100%',
     height: '100%',
-    backgroundColor: theme.theme.Surface["surface-ground"]
+    backgroundColor: theme.theme.Surface['surface-ground'],
   },
 }))

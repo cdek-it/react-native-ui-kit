@@ -15,12 +15,11 @@ export const useSuccessButtonStyles = () => {
 }
 
 const useLabelVariantStyles = makeStyles(({ theme }) => ({
-  basic: {
-    color: theme.Button.Severity.Success.Basic.successButtonTextColor,
-  },
+  basic: { color: theme.Button.Severity.Success.Basic.successButtonTextColor },
 
   outlined: {
-    color: theme.Button.Severity.Success.Outlined.successOutlinedButtonTextColor,
+    color:
+      theme.Button.Severity.Success.Outlined.successOutlinedButtonTextColor,
   },
 
   text: {
@@ -35,15 +34,22 @@ const usePressedVarianttyles = makeStyles(({ theme }) => ({
   },
 
   outlined: {
-    borderColor: theme.Button.Severity.Success.Outlined.successOutlinedButtonHoverBorderColor,
-    backgroundColor: theme.Button.Severity.Success.Outlined.successOutlinedButtonHoverBg,
+    borderColor:
+      theme.Button.Severity.Success.Outlined
+        .successOutlinedButtonHoverBorderColor,
+    backgroundColor:
+      theme.Button.Severity.Success.Outlined.successOutlinedButtonHoverBg,
   },
 
   text: {
     borderColor: theme.Surface['surface-transparent'],
-    backgroundColor: theme.Button.Severity.Success.Text.successTextButtonHoverBg,
+    backgroundColor:
+      theme.Button.Severity.Success.Text.successTextButtonHoverBg,
     shadowColor: theme.General.focusOutlineColor,
-    shadowOffset: { height: theme.General.focusShadowWidth, width: theme.General.focusShadowWidth },
+    shadowOffset: {
+      height: theme.General.focusShadowWidth,
+      width: theme.General.focusShadowWidth,
+    },
     elevation: theme.General.focusShadowWidth,
     shadowOpacity: 1,
     shadowRadius: 3.5,
@@ -57,8 +63,10 @@ const useContainerVariantStyles = makeStyles(({ theme }) => ({
   },
 
   outlined: {
-    borderColor: theme.Button.Severity.Success.Outlined.successOutlinedButtonBorderColor,
-    backgroundColor: theme.Button.Severity.Success.Outlined.successOutlinedButtonBg,
+    borderColor:
+      theme.Button.Severity.Success.Outlined.successOutlinedButtonBorderColor,
+    backgroundColor:
+      theme.Button.Severity.Success.Outlined.successOutlinedButtonBg,
   },
 
   text: {
@@ -68,12 +76,11 @@ const useContainerVariantStyles = makeStyles(({ theme }) => ({
 }))
 
 const useIconVariantStyles = makeStyles(({ theme }) => ({
-  basic: {
-    color: theme.Button.Severity.Success.Basic.successButtonTextColor,
-  },
+  basic: { color: theme.Button.Severity.Success.Basic.successButtonTextColor },
 
   outlined: {
-    color: theme.Button.Severity.Success.Outlined.successOutlinedButtonTextColor,
+    color:
+      theme.Button.Severity.Success.Outlined.successOutlinedButtonTextColor,
   },
 
   text: {

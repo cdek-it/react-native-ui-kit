@@ -6,9 +6,6 @@
 !.yarn/sdks
 !.yarn/versions
 
-# vscode
-.vscode
-
 # jest
 .jest
 coverage

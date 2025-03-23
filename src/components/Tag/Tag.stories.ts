@@ -31,11 +31,7 @@ const meta: Meta<typeof Tag> = {
       control: 'radio',
       options: ['basic', 'info', 'success', 'warning', 'danger', 'secondary'],
     },
-    Icon: {
-      control: 'radio',
-      options: Object.keys(icons),
-      mapping: icons,
-    },
+    Icon: { control: 'radio', options: Object.keys(icons), mapping: icons },
   },
 }
 

@@ -1,19 +1,13 @@
 import { useArgs } from '@storybook/preview-api'
 import type { Meta, StoryObj } from '@storybook/react'
-import React, { useCallback } from 'react'
+import { useCallback } from 'react'
 
 import { Rating } from '../Rating'
 
 const meta: Meta<typeof Rating> = {
   title: 'Rating/Rating',
-  args: {
-    disabled: false,
-    paddings: false,
-    maxRating: 5,
-  },
-  argTypes: {
-    rating: { control: 'number' },
-  },
+  args: { disabled: false, paddings: false, maxRating: 5 },
+  argTypes: { rating: { control: 'number' } },
   parameters: {
     notes: `
       #### Элемент рейтинга
@@ -39,7 +33,7 @@ const meta: Meta<typeof Rating> = {
       )
   `,
   },
-  render: function Render(args) {
+  render: (args) => {
     const [, updateArgs] = useArgs()
 
     const onChange = useCallback(

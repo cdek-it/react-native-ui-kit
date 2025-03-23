@@ -1,5 +1,4 @@
 import { render } from '@testing-library/react-native'
-import React from 'react'
 
 import { Service, type ServiceProps } from '../Service'
 
@@ -10,8 +9,11 @@ describe('Service component tests', () => {
     variant: ['danger', 'help', 'info', 'success', 'warning'],
   })
 
-  test.each(snapshotCases)('base = $base, showIcon = $showIcon, variant = $variant', (props) => {
-    const renderedBody = render(<Service {...props}>Text</Service>)
-    expect(renderedBody.toJSON()).toMatchSnapshot()
-  })
+  test.each(snapshotCases)(
+    'base = $base, showIcon = $showIcon, variant = $variant',
+    (props) => {
+      const renderedBody = render(<Service {...props}>Text</Service>)
+      expect(renderedBody.toJSON()).toMatchSnapshot()
+    }
+  )
 })

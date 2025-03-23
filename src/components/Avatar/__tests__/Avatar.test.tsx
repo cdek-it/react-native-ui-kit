@@ -1,6 +1,5 @@
 import { IconUser } from '@tabler/icons-react-native'
 import { render } from '@testing-library/react-native'
-import React from 'react'
 
 import { Badge } from '../../Badge/Badge'
 import { Avatar, type AvatarProps } from '../Avatar'
@@ -58,27 +57,57 @@ describe('Avatar component tests', () => {
     ],
     [
       'Size: xlarge, shape: square, type: image',
-      { size: 'xlarge', shape: 'square', type: 'image', source: require('./testImage.png') },
+      {
+        size: 'xlarge',
+        shape: 'square',
+        type: 'image',
+        source: require('./testImage.png'),
+      },
     ],
     [
       'Size: large, shape: square, type: image',
-      { size: 'large', shape: 'square', type: 'image', source: require('./testImage.png') },
+      {
+        size: 'large',
+        shape: 'square',
+        type: 'image',
+        source: require('./testImage.png'),
+      },
     ],
     [
       'Size: normal, shape: square, type: image',
-      { size: 'normal', shape: 'square', type: 'image', source: require('./testImage.png') },
+      {
+        size: 'normal',
+        shape: 'square',
+        type: 'image',
+        source: require('./testImage.png'),
+      },
     ],
     [
       'Size: xlarge, shape: circle, type: image',
-      { size: 'xlarge', shape: 'circle', type: 'image', source: require('./testImage.png') },
+      {
+        size: 'xlarge',
+        shape: 'circle',
+        type: 'image',
+        source: require('./testImage.png'),
+      },
     ],
     [
       'Size: large, shape: circle, type: image',
-      { size: 'large', shape: 'circle', type: 'image', source: require('./testImage.png') },
+      {
+        size: 'large',
+        shape: 'circle',
+        type: 'image',
+        source: require('./testImage.png'),
+      },
     ],
     [
       'Size: normal, shape: circle, type: image',
-      { size: 'normal', shape: 'circle', type: 'image', source: require('./testImage.png') },
+      {
+        size: 'normal',
+        shape: 'circle',
+        type: 'image',
+        source: require('./testImage.png'),
+      },
     ],
     [
       'With badge, showBadge: false',
@@ -106,6 +135,7 @@ describe('Avatar component tests', () => {
 
   test.each(snapshotCases)('%s', (_, props) => {
     const renderedAvatar = render(<Avatar {...props} />)
+
     expect(renderedAvatar.toJSON()).toMatchSnapshot()
   })
 })

@@ -3,11 +3,7 @@ import { IconArrowDownRight, IconUser } from '@tabler/icons-react-native'
 
 import { ToggleButton } from './ToggleButton'
 
-const icons = {
-  IconArrowDownRight,
-  IconUser,
-  none: undefined,
-}
+const icons = { IconArrowDownRight, IconUser, none: undefined }
 
 const meta: Meta<typeof ToggleButton> = {
   title: 'ToggleButton',
@@ -22,13 +18,13 @@ const meta: Meta<typeof ToggleButton> = {
     Icon: IconArrowDownRight,
   },
   argTypes: {
-    iconPos: { control: 'radio', options: ['left', 'right', 'null'], mapping: { null: null } },
-    size: { control: 'radio', options: ['xlarge', 'large', 'base', 'small'] },
-    Icon: {
+    iconPos: {
       control: 'radio',
-      options: Object.keys(icons),
-      mapping: icons,
+      options: ['left', 'right', 'null'],
+      mapping: { null: null },
     },
+    size: { control: 'radio', options: ['xlarge', 'large', 'base', 'small'] },
+    Icon: { control: 'radio', options: Object.keys(icons), mapping: icons },
     onPress: { action: 'onPress' },
   },
 }

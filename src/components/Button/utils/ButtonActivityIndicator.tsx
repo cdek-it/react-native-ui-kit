@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import { memo } from 'react'
 import { ActivityIndicator } from 'react-native'
 
 import { makeStyles } from '../../../utils/makeStyles'

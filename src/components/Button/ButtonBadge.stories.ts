@@ -1,5 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { IconArrowDownRight, IconArrowDownLeft } from '@tabler/icons-react-native'
+import {
+  IconArrowDownRight,
+  IconArrowDownLeft,
+} from '@tabler/icons-react-native'
 
 import { ButtonBadge } from './ButtonBadge'
 
@@ -25,7 +28,10 @@ const meta: Meta<typeof ButtonBadge> = {
     disabled: { control: 'boolean' },
     iconPosition: { control: 'radio', options: ['left', 'right'] },
     onPress: { action: 'onPress' },
-    badgeSeverity: { control: 'radio', options: ['basic', 'info', 'success', 'warning', 'danger'] },
+    badgeSeverity: {
+      control: 'radio',
+      options: ['basic', 'info', 'success', 'warning', 'danger'],
+    },
   },
 }
 
@@ -33,27 +39,18 @@ export default meta
 
 type Story = StoryObj<typeof ButtonBadge>
 
-export const TextButton: Story = {
-  args: {},
-  argTypes: {},
-}
+export const TextButton: Story = { args: {}, argTypes: {} }
 
 const Icons = { IconArrowDownRight, IconArrowDownLeft }
 
 export const IconButton: Story = {
-  args: {
-    Icon: IconArrowDownRight,
-  },
+  args: { Icon: IconArrowDownRight },
   argTypes: {
     iconOnly: {
       control: 'radio',
       options: ['IconOnly', 'Not IconOnly'],
       mapping: { IconOnly: true, 'Not IconOnly': undefined },
     },
-    Icon: {
-      control: 'select',
-      options: Object.keys(Icons),
-      mapping: Icons,
-    },
+    Icon: { control: 'select', options: Object.keys(Icons), mapping: Icons },
   },
 }

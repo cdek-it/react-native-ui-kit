@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Text, View } from 'react-native'
 
 import { Slider, type SliderProps } from './Slider'
@@ -7,9 +7,7 @@ import { Slider, type SliderProps } from './Slider'
 const meta: Meta<typeof Slider> = {
   title: 'Slider',
   component: Slider,
-  args: {
-    disabled: false,
-  },
+  args: { disabled: false },
   render: (args) => Template(args),
 }
 
@@ -30,6 +28,7 @@ const Template = (args: SliderProps) => {
   const handleChangeMaxRange = (value: number) => {
     setPositionMaxRange(value)
   }
+
   return (
     <View style={{ gap: 20 }}>
       <View style={{ gap: 10 }}>
@@ -62,7 +61,5 @@ export default meta
 
 type Story = StoryObj<typeof Slider>
 
-const SliderStory: Story = {
-  args: {},
-}
+const SliderStory: Story = { args: {} }
 export { SliderStory as Slider }

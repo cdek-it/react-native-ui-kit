@@ -8,7 +8,9 @@ import { useInfoButtonStyles } from './useInfoButtonStyles'
 import { useSuccessButtonStyles } from './useSuccessButtonStyles'
 import { useWarningButtonStyles } from './useWarningButtonStyles'
 
-export const useSeverityButtonStyles = (severity: ButtonSeverityProps['severity']) => {
+export const useSeverityButtonStyles = (
+  severity: ButtonSeverityProps['severity']
+) => {
   const dangerButtonStyles = useDangerButtonStyles()
   const warningButtonStyles = useWarningButtonStyles()
   const helpButtonStyles = useHelpButtonStyles()
@@ -19,12 +21,16 @@ export const useSeverityButtonStyles = (severity: ButtonSeverityProps['severity'
     switch (severity) {
       case 'danger':
         return dangerButtonStyles
+
       case 'warning':
         return warningButtonStyles
+
       case 'help':
         return helpButtonStyles
+
       case 'info':
         return infoButtonStyles
+
       case 'success':
         return successButtonStyles
     }

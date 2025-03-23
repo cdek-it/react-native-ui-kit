@@ -34,27 +34,13 @@ export const useIconStyle = (
 }
 
 const useStyles = makeStyles(({ theme }) => ({
-  xlarge: {
-    height: 28,
-    width: 28,
-  },
+  xlarge: { height: 28, width: 28 },
 
-  large: {
-    height: 21,
-    width: 21,
-  },
+  large: { height: 21, width: 21 },
 
-  base: {
-    height: 17.5,
-    width: 17.5,
-  },
+  base: { height: 17.5, width: 17.5 },
 
-  small: {
-    height: 14,
-    width: 14,
-  },
+  small: { height: 14, width: 14 },
 
-  disabled: {
-    color: theme.Button.Disabled.disabledButtonTextColor,
-  },
+  disabled: { color: theme.Button.Disabled.disabledButtonTextColor },
 }))

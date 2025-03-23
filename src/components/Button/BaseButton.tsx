@@ -1,7 +1,12 @@
-import React, { memo } from 'react'
+import { memo } from 'react'
 
 import type { ButtonProps, VariantStyles } from './types'
-import { ButtonLeftArea, ButtonRightArea, ButtonLabel, ButtonContainer } from './utils'
+import {
+  ButtonLeftArea,
+  ButtonRightArea,
+  ButtonLabel,
+  ButtonContainer,
+} from './utils'
 
 export const BaseButton = memo<ButtonProps & VariantStyles>(
   ({
@@ -37,13 +42,37 @@ export const BaseButton = memo<ButtonProps & VariantStyles>(
         {...props}
       >
         <ButtonLeftArea
-          {...{ size, variant, loading, disabled, Icon, iconPosition, iconVariantStyles }}
+          {...{
+            size,
+            variant,
+            loading,
+            disabled,
+            Icon,
+            iconPosition,
+            iconVariantStyles,
+          }}
         />
         <ButtonLabel
-          {...{ size, variant, loading, disabled, iconOnly, label, labelVariantStyles }}
+          {...{
+            size,
+            variant,
+            loading,
+            disabled,
+            iconOnly,
+            label,
+            labelVariantStyles,
+          }}
         />
         <ButtonRightArea
-          {...{ size, variant, loading, disabled, Icon, iconPosition, iconVariantStyles }}
+          {...{
+            size,
+            variant,
+            loading,
+            disabled,
+            Icon,
+            iconPosition,
+            iconVariantStyles,
+          }}
         />
       </ButtonContainer>
     )

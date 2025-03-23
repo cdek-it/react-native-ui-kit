@@ -15,15 +15,19 @@ export const useLoadingRotationAnimation = (loading?: boolean) => {
 
   useEffect(() => {
     loadingAnimation.value = loading
-      ? withRepeat(withTiming(1, { duration: DURATION, easing: Easing.inOut(Easing.ease) }), -1)
+      ? withRepeat(
+          withTiming(1, {
+            duration: DURATION,
+            easing: Easing.inOut(Easing.ease),
+          }),
+          -1
+        )
       : 0
   }, [loading, loadingAnimation])
 
   return useAnimatedStyle(() => ({
     transform: [
-      {
-        rotate: `${interpolate(loadingAnimation.value, [0, 1], [0, 360])}deg`,
-      },
+      { rotate: `${interpolate(loadingAnimation.value, [0, 1], [0, 360])}deg` },
     ],
   }))
 }

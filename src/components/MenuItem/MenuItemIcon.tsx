@@ -1,7 +1,14 @@
 import type { Icon } from '@tabler/icons-react-native'
-import React, { useCallback, useState } from 'react'
-import { type ColorValue, type DimensionValue, type LayoutChangeEvent, View } from 'react-native'
+import { useCallback, useMemo, useState } from 'react'
+import {
+  type ColorValue,
+  type DimensionValue,
+  type LayoutChangeEvent,
+  View,
+  StyleSheet,
+} from 'react-native'
 
+import { makeStyles } from '../../utils/makeStyles'
 import { Badge, type BadgeSeverity } from '../Badge/Badge'
 
 interface MenuItemIconStyle {
@@ -18,17 +25,17 @@ interface MenuItemIconProps {
    * Иконка из набора tabler
    * @type {Icon}
    */
-  Icon: Icon
+  readonly Icon: Icon
   /**
    * Стиль иконки
    */
-  style: MenuItemIconStyle
+  readonly style: MenuItemIconStyle
   /**
    * Цвет бейджа
    *
    * @type {BadgeSeverity}
    */
-  badgeSeverity?: BadgeSeverity
+  readonly badgeSeverity?: BadgeSeverity
 }
 
 /**
@@ -37,7 +44,13 @@ interface MenuItemIconProps {
  * @param style - Стиль иконки
  * @param badgeSeverity - Цвет бейджа (undefined если бейдж не нужен)
  */
-export const MenuItemIcon = ({ Icon, style, badgeSeverity }: MenuItemIconProps) => {
+export const MenuItemIcon = ({
+  Icon,
+  style,
+  badgeSeverity,
+}: MenuItemIconProps) => {
+  const styles = useStyles()
+
   const [badgePosition, setBadgePosition] = useState<{
     top: DimensionValue
     right: DimensionValue
@@ -48,16 +61,25 @@ export const MenuItemIcon = ({ Icon, style, badgeSeverity }: MenuItemIconProps) 
     setBadgePosition({ top: -width / 2, right: -height / 2 })
   }, [])
 
+  const badgeStyle = useMemo(
+    () =>
+      StyleSheet.flatten([
+        styles.badge,
+        { top: badgePosition.top, right: badgePosition.right },
+      ]),
+    [badgePosition.right, badgePosition.top, styles.badge]
+  )
+
   return (
-    <View style={{ justifyContent: 'center', position: 'relative' }}>
+    <View style={styles.container}>
       <View>
         <Icon {...style} />
         {badgeSeverity ? (
           <Badge
             dot
             severity={badgeSeverity}
-            style={{ position: 'absolute', top: badgePosition.top, right: badgePosition.right }}
-            testID='menuItemIconBadge'
+            style={badgeStyle}
+            testID='MenuItemIconBadge'
             onLayout={onLayout}
           />
         ) : null}
@@ -65,3 +87,9 @@ export const MenuItemIcon = ({ Icon, style, badgeSeverity }: MenuItemIconProps) 
     </View>
   )
 }
+
+const useStyles = makeStyles(() => ({
+  container: { justifyContent: 'center', position: 'relative' },
+
+  badge: { position: 'absolute' },
+}))

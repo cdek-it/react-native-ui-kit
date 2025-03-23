@@ -1,14 +1,13 @@
 import { fireEvent, render, userEvent } from '@testing-library/react-native'
-import React from 'react'
 
 import { InputTextBase } from '../InputTextBase'
 
 describe('InputTextBase component functionality tests', () => {
   test('should render outline elements', () => {
-    const { queryByTestId } = render(<InputTextBase />)
+    const { getByTestId } = render(<InputTextBase />)
 
-    expect(queryByTestId('InputTextBase_dangerOutline')).toBeOnTheScreen()
-    expect(queryByTestId('InputTextBase_focusOutline')).toBeOnTheScreen()
+    expect(getByTestId('InputTextBase_dangerOutline')).toBeOnTheScreen()
+    expect(getByTestId('InputTextBase_focusOutline')).toBeOnTheScreen()
   })
 
   test('should NOT be render outline elements in disabled state', () => {
@@ -22,7 +21,9 @@ describe('InputTextBase component functionality tests', () => {
     const { queryByTestId, update } = render(<InputTextBase />)
 
     expect(queryByTestId('InputTextBase_input')).toHaveProp('editable', true)
+
     update(<InputTextBase disabled />)
+
     expect(queryByTestId('InputTextBase_input')).toHaveProp('editable', false)
   })
 
@@ -32,6 +33,7 @@ describe('InputTextBase component functionality tests', () => {
     const input = queryByTestId('InputTextBase_input')
 
     fireEvent(input, 'focus')
+
     expect(onFocusMock).toHaveBeenCalled()
   })
 
@@ -41,15 +43,19 @@ describe('InputTextBase component functionality tests', () => {
     const input = queryByTestId('InputTextBase_input')
 
     fireEvent(input, 'blur')
+
     expect(onBlurMock).toHaveBeenCalled()
   })
 
   test('should handle text change', () => {
     const onChangeTextMock = jest.fn()
-    const { queryByTestId } = render(<InputTextBase onChangeText={onChangeTextMock} />)
+    const { queryByTestId } = render(
+      <InputTextBase onChangeText={onChangeTextMock} />
+    )
     const input = queryByTestId('InputTextBase_input')
 
     fireEvent.changeText(input, 'new text')
+
     expect(onChangeTextMock).toHaveBeenCalledWith('new text')
   })
 
@@ -60,8 +66,10 @@ describe('InputTextBase component functionality tests', () => {
     let clearButton = queryByTestId('InputTextBase_clearButton')
 
     expect(clearButton).not.toBeOnTheScreen()
+
     await user.type(input, 'text')
     clearButton = queryByTestId('InputTextBase_clearButton')
+
     expect(clearButton).toBeOnTheScreen()
   })
 
@@ -82,7 +90,9 @@ describe('InputTextBase component functionality tests', () => {
     const clearButton = queryByTestId('InputTextBase_clearButton')
 
     expect(input).toHaveProp('value', 'text')
+
     fireEvent.press(clearButton)
+
     expect(input).toHaveProp('value', '')
   })
 
@@ -91,8 +101,10 @@ describe('InputTextBase component functionality tests', () => {
     let [disabledIcon] = queryAllByTestId('InputTextBase_disabledIcon')
 
     expect(disabledIcon).toBeFalsy()
+
     update(<InputTextBase disabled />)
     disabledIcon = queryAllByTestId('InputTextBase_disabledIcon')
+
     expect(disabledIcon).toBeDefined()
   })
 
@@ -101,8 +113,10 @@ describe('InputTextBase component functionality tests', () => {
     let loadingIcon = queryByTestId('InputTextBase_loading')
 
     expect(loadingIcon).not.toBeOnTheScreen()
+
     update(<InputTextBase loading />)
     loadingIcon = queryByTestId('InputTextBase_loading')
+
     expect(loadingIcon).toBeOnTheScreen()
     expect(loadingIcon).toHaveAnimatedStyle({ transform: [{ rotate: '0deg' }] })
   })

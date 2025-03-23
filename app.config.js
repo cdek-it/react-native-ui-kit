@@ -1,6 +1,3 @@
 const { version } = require('./package.json')
 
-export default ({ config }) => ({
-  ...config,
-  version: version,
-});
+export default ({ config }) => ({ ...config, version })

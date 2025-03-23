@@ -4,7 +4,11 @@ import { useSharedValue, withTiming } from 'react-native-reanimated'
 
 import { makeStyles } from '../../../../utils/makeStyles'
 
-export const useSliderStyles = (checked: boolean, disabled: boolean, danger: boolean) => {
+export const useSliderStyles = (
+  checked: boolean,
+  disabled: boolean,
+  danger: boolean
+) => {
   const styles = useStyles()
 
   const calculateSliderBackground = useCallback(
@@ -12,20 +16,24 @@ export const useSliderStyles = (checked: boolean, disabled: boolean, danger: boo
       if (disabled) {
         if (checked) {
           return styles.sliderOnDisabled.backgroundColor
-        } else {
-          return styles.sliderDisabled.backgroundColor
         }
-      } else if (pressed) {
+
+        return styles.sliderDisabled.backgroundColor
+      }
+
+      if (pressed) {
         if (checked) {
           return styles.sliderOnPressed.backgroundColor
-        } else {
-          return styles.sliderPressed.backgroundColor
         }
-      } else if (checked) {
-        return styles.sliderOn.backgroundColor
-      } else {
-        return styles.sliderOff.backgroundColor
+
+        return styles.sliderPressed.backgroundColor
       }
+
+      if (checked) {
+        return styles.sliderOn.backgroundColor
+      }
+
+      return styles.sliderOff.backgroundColor
     },
     [
       styles.sliderDisabled.backgroundColor,
@@ -42,12 +50,19 @@ export const useSliderStyles = (checked: boolean, disabled: boolean, danger: boo
       if (danger && !disabled) {
         return styles.sliderDanger.borderColor
       }
+
       return styles.sliderNoDanger.borderColor
     },
-    [disabled, styles.sliderDanger.borderColor, styles.sliderNoDanger.borderColor]
+    [
+      disabled,
+      styles.sliderDanger.borderColor,
+      styles.sliderNoDanger.borderColor,
+    ]
   )
 
-  const sliderBackground = useSharedValue(calculateSliderBackground(checked, disabled, false))
+  const sliderBackground = useSharedValue(
+    calculateSliderBackground(checked, disabled, false)
+  )
   const sliderBorderColor = useSharedValue(calculateSliderBorderColor(danger))
 
   useEffect(() => {
@@ -73,17 +88,22 @@ export const useSliderStyles = (checked: boolean, disabled: boolean, danger: boo
 
   const onPressedChange = useCallback(
     ({ pressed }: PressableStateCallbackType) => {
-      sliderBackground.value = withTiming(calculateSliderBackground(checked, disabled, pressed))
+      sliderBackground.value = withTiming(
+        calculateSliderBackground(checked, disabled, pressed)
+      )
 
       return styles.container
     },
-    [calculateSliderBackground, checked, disabled, sliderBackground, styles.container]
+    [
+      calculateSliderBackground,
+      checked,
+      disabled,
+      sliderBackground,
+      styles.container,
+    ]
   )
 
-  return {
-    sliderStyle,
-    onPressedChange,
-  }
+  return { sliderStyle, onPressedChange }
 }
 
 const useStyles = makeStyles(({ theme }) => ({
@@ -100,13 +120,9 @@ const useStyles = makeStyles(({ theme }) => ({
     borderWidth: 1,
   },
 
-  sliderOff: {
-    backgroundColor: theme.Form.inputSwitch.inputSwitchSliderOffBg,
-  },
+  sliderOff: { backgroundColor: theme.Form.inputSwitch.inputSwitchSliderOffBg },
 
-  sliderOn: {
-    backgroundColor: theme.Form.inputSwitch.inputSwitchSliderOnBg,
-  },
+  sliderOn: { backgroundColor: theme.Form.inputSwitch.inputSwitchSliderOnBg },
 
   sliderPressed: {
     backgroundColor: theme.Form.inputSwitch.inputSwitchSliderOffHoverBg,
@@ -124,13 +140,9 @@ const useStyles = makeStyles(({ theme }) => ({
     backgroundColor: theme.custom.inputSwitch.inputSwitchSliderOnDisabledBg,
   },
 
-  sliderNoDanger: {
-    borderColor: 'transparent',
-  },
+  sliderNoDanger: { borderColor: 'transparent' },
 
-  sliderDanger: {
-    borderColor: theme.Form.InputText.inputErrorBorderColor,
-  },
+  sliderDanger: { borderColor: theme.Form.InputText.inputErrorBorderColor },
 
   sliderDangerShadow: {
     shadowColor: theme.General.focusOutlineErrorColor,

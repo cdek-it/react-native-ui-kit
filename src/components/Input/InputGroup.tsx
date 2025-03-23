@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useImperativeHandle, useRef } from 'react'
+import { memo, useCallback, useImperativeHandle, useRef } from 'react'
 import { type TextInput, View, StyleSheet, type ViewStyle } from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
@@ -23,7 +23,14 @@ export interface InputGroupProps extends InputTextBaseProps {
  * @see InputGroupAddon
  */
 export const InputGroup = memo<InputGroupProps>(
-  ({ left, right, style, inputRef: propsInputRef, disabled, ...otherProps }) => {
+  ({
+    left,
+    right,
+    style,
+    inputRef: propsInputRef,
+    disabled,
+    ...otherProps
+  }) => {
     const styles = useStyles()
     const inputRef = useRef<TextInput>(null)
 
@@ -33,9 +40,14 @@ export const InputGroup = memo<InputGroupProps>(
 
     return (
       <View style={[styles.container, style]}>
-        {left && (
-          <InputGroupAddon content={left} disabled={disabled} position='left' onPress={focus} />
-        )}
+        {left ? (
+          <InputGroupAddon
+            content={left}
+            disabled={disabled}
+            position='left'
+            onPress={focus}
+          />
+        ) : null}
 
         <View style={styles.inputWrapper}>
           <InputTextBase
@@ -50,25 +62,23 @@ export const InputGroup = memo<InputGroupProps>(
           />
         </View>
 
-        {right && (
-          <InputGroupAddon content={right} disabled={disabled} position='right' onPress={focus} />
-        )}
+        {right ? (
+          <InputGroupAddon
+            content={right}
+            disabled={disabled}
+            position='right'
+            onPress={focus}
+          />
+        ) : null}
       </View>
     )
   }
 )
 
 const useStyles = makeStyles(() => ({
-  container: {
-    flexDirection: 'row',
-  },
-  inputWrapper: {
-    flexGrow: 1,
-    zIndex: 10,
-  },
-  inputContainer: {
-    flexGrow: 1,
-  },
+  container: { flexDirection: 'row' },
+  inputWrapper: { flexGrow: 1, zIndex: 10 },
+  inputContainer: { flexGrow: 1 },
   inputContainerForLeftAddon: {
     borderTopLeftRadius: 0,
     borderBottomLeftRadius: 0,

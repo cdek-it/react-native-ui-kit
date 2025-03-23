@@ -1,13 +1,10 @@
 import { fireEvent, render } from '@testing-library/react-native'
-import React from 'react'
 
 import { FloatLabel } from '../FloatLabel'
 
 import useFakeTimers = jest.useFakeTimers
 
-jest.mock('../InputTextBase', () => ({
-  InputTextBase: 'InputTextBase',
-}))
+jest.mock('../InputTextBase', () => ({ InputTextBase: 'InputTextBase' }))
 
 describe('FloatLabel snapshots', () => {
   beforeEach(() => {
@@ -30,7 +27,12 @@ describe('FloatLabel snapshots', () => {
 
   test('unfocused with value snapshots, multiline', () => {
     const { toJSON } = render(
-      <FloatLabel multiline placeholder='Label' style={{ margin: 10 }} value='Value' />
+      <FloatLabel
+        multiline
+        placeholder='Label'
+        style={{ margin: 10 }}
+        value='Value'
+      />
     )
     jest.runAllTimers()
 

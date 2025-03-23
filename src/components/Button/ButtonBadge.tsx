@@ -1,5 +1,10 @@
-import React, { memo, useCallback, useMemo, useState } from 'react'
-import { type LayoutChangeEvent, type LayoutRectangle, View, type ViewStyle } from 'react-native'
+import { memo, useCallback, useMemo, useState } from 'react'
+import {
+  type LayoutChangeEvent,
+  type LayoutRectangle,
+  View,
+  type ViewStyle,
+} from 'react-native'
 
 import { Badge } from '../Badge'
 
@@ -37,7 +42,10 @@ export const ButtonBadge = memo<ButtonProps & ButtonBadgeProps>(
       [badgeLayout]
     )
 
-    const onLayout = useCallback((e: LayoutChangeEvent) => setBadgeLayout(e.nativeEvent.layout), [])
+    const onLayout = useCallback(
+      (e: LayoutChangeEvent) => setBadgeLayout(e.nativeEvent.layout),
+      []
+    )
 
     return (
       <View>

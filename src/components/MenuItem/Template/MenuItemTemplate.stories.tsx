@@ -1,12 +1,20 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { IconDiamond, IconList, IconSquare, IconUser } from '@tabler/icons-react-native'
-import React from 'react'
+import {
+  IconDiamond,
+  IconList,
+  IconSquare,
+  IconUser,
+} from '@tabler/icons-react-native'
+
 import { View } from 'react-native'
 
 import { MenuItemTemplate } from './MenuItemTemplate'
 
 const Icons = { undefined, IconUser, IconList, IconSquare }
-const Extras = { undefined, IconDiamond: <IconDiamond height={21} width={21} /> }
+const Extras = {
+  undefined,
+  IconDiamond: <IconDiamond height={21} width={21} />,
+}
 
 const meta: Meta<typeof MenuItemTemplate> = {
   title: 'MenuItemTemplate',
@@ -25,11 +33,7 @@ const meta: Meta<typeof MenuItemTemplate> = {
   },
   argTypes: {
     prefix: { control: 'radio', options: ['none', 'right', 'down'] },
-    Icon: {
-      control: 'select',
-      options: Object.keys(Icons),
-      mapping: Icons,
-    },
+    Icon: { control: 'select', options: Object.keys(Icons), mapping: Icons },
     iconColor: { control: { type: 'color' } },
     badgeSeverity: {
       control: 'radio',
@@ -39,11 +43,7 @@ const meta: Meta<typeof MenuItemTemplate> = {
     suffix: { control: 'radio', options: ['none', 'right', 'down'] },
     separator: { control: 'boolean' },
     state: { control: 'radio', options: ['default', 'disabled'] },
-    extra: {
-      control: 'select',
-      options: Object.keys(Extras),
-      mapping: Extras,
-    },
+    extra: { control: 'select', options: Object.keys(Extras), mapping: Extras },
     contentPaddingTop: { control: 'number' },
     contentPaddingBottom: { control: 'number' },
     onPress: { action: 'pressed' },
@@ -51,11 +51,7 @@ const meta: Meta<typeof MenuItemTemplate> = {
   decorators: [
     (Story) => (
       <View
-        style={{
-          padding: 16,
-          alignContent: 'center',
-          alignItems: 'center',
-        }}
+        style={{ padding: 16, alignContent: 'center', alignItems: 'center' }}
       >
         <Story />
       </View>
@@ -68,15 +64,13 @@ export default meta
 type Story = StoryObj<typeof MenuItemTemplate>
 
 export const MenuItemTemplateNormal: Story = {
-  args: {
-    title: 'Menu item template',
-  },
+  args: { title: 'Menu item template' },
   argTypes: {},
   parameters: {
     notes: `
       #### Элемент меню - полный набор свойств
-  
-      <MenuItemTemplate 
+
+      <MenuItemTemplate
         title="Menu item title"
         caption="Menu item subtitle",
         Icon=IconUser,

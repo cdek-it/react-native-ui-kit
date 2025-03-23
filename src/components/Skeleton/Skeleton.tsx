@@ -1,4 +1,4 @@
-import React, { memo, useEffect } from 'react'
+import { memo, useEffect } from 'react'
 import { View } from 'react-native'
 import Animated, {
   Easing,
@@ -30,16 +30,17 @@ export const Skeleton = memo<SkeletonProps>(({ style, testID, ...rest }) => {
 
   useEffect(() => {
     animation.value = withRepeat(
-      withTiming(1, {
-        duration: ANIMATION_DURATION,
-        easing: Easing.ease,
-      }),
+      withTiming(1, { duration: ANIMATION_DURATION, easing: Easing.ease }),
       -1
     )
   }, [animation])
 
   return (
-    <View {...rest} style={[styles.container, style]} testID={testID ?? SkeletonTestId.root}>
+    <View
+      {...rest}
+      style={[styles.container, style]}
+      testID={testID ?? SkeletonTestId.root}
+    >
       <Animated.View
         style={[styles.gradientContainer, animatedStyles]}
         testID={SkeletonTestId.animatedView}
@@ -47,13 +48,21 @@ export const Skeleton = memo<SkeletonProps>(({ style, testID, ...rest }) => {
         <Svg testID={SkeletonTestId.svg}>
           <Defs>
             <LinearGradient id='gradient' x1='0' x2='1' y1='1' y2='1'>
-              <Stop offset='0' stopColor={styles.container.backgroundColor} stopOpacity='0.4' />
+              <Stop
+                offset='0'
+                stopColor={styles.container.backgroundColor}
+                stopOpacity='0.4'
+              />
               <Stop
                 offset='0.5'
                 stopColor={styles.gradientColor.backgroundColor}
                 stopOpacity='0.4'
               />
-              <Stop offset='1' stopColor={styles.container.backgroundColor} stopOpacity='0.4' />
+              <Stop
+                offset='1'
+                stopColor={styles.container.backgroundColor}
+                stopOpacity='0.4'
+              />
             </LinearGradient>
           </Defs>
           <Rect fill='url(#gradient)' height='100%' width='100%' />
@@ -75,9 +84,7 @@ const useStyles = makeStyles(({ border, theme }) => ({
     height: '100%',
     left: '-100%',
   },
-  gradientColor: {
-    backgroundColor: '#FBFBFB',
-  },
+  gradientColor: { backgroundColor: '#FBFBFB' },
 }))
 
 export const SkeletonTestId = {

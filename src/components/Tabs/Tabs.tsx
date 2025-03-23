@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useState } from 'react'
+import { memo, useEffect, useState } from 'react'
 import {
   type AccessibilityProps,
   type LayoutChangeEvent,
@@ -17,7 +17,9 @@ import { makeStyles } from '../../utils/makeStyles'
 
 import { TabItem, type TabItemProps } from './TabItem/TabItem'
 
-export interface TabsProps extends AccessibilityProps, Pick<ViewProps, 'testID'> {
+export interface TabsProps
+  extends AccessibilityProps,
+    Pick<ViewProps, 'testID'> {
   /** Список табов см. компонент TabItem */
   items: Array<Pick<TabItemProps, 'Icon' | 'label' | 'badge'> & { key: string }>
 
@@ -31,14 +33,16 @@ export interface TabsProps extends AccessibilityProps, Pick<ViewProps, 'testID'>
   disabled?: boolean
 }
 
-/** Навигационный компонент Tabs
- * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=888-13076&t=hIQjdrqPKK8BWYev-4
- */
+// Навигационный компонент Tabs
+// @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=888-13076&t=hIQjdrqPKK8BWYev-4
+//
 export const Tabs = memo<TabsProps>(
   ({ items, disabled = false, activeIndex, onChange, testID, ...rest }) => {
     const styles = useStyles()
 
-    const [tabsLayouts, setTabsLayouts] = useState<Record<string, LayoutRectangle>>({})
+    const [tabsLayouts, setTabsLayouts] = useState<
+      Record<string, LayoutRectangle>
+    >({})
 
     const lineSharedValue = useSharedValue(activeIndex)
 
@@ -65,10 +69,7 @@ export const Tabs = memo<TabsProps>(
       e.persist()
 
       setTabsLayouts((prevTabsLayouts) => {
-        return {
-          ...prevTabsLayouts,
-          [key]: e.nativeEvent.layout,
-        }
+        return { ...prevTabsLayouts, [key]: e.nativeEvent.layout }
       })
     }
 

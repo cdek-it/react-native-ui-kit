@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useEffect, useMemo, useState } from 'react'
+import { memo, useCallback, useEffect, useMemo, useState } from 'react'
 import {
   View,
   Text,
@@ -60,6 +60,7 @@ export const ProgressBar = memo<ProgressBarProps>(
       if (propsValue > 100) {
         return 100
       }
+
       if (propsValue < 0) {
         return 0
       }
@@ -73,11 +74,17 @@ export const ProgressBar = memo<ProgressBarProps>(
 
     return (
       <View
-        style={[styles.container, style, showValue && styles.containerShowValue]}
+        style={[
+          styles.container,
+          style,
+          showValue && styles.containerShowValue,
+        ]}
         onLayout={onLayout}
       >
         <Animated.View style={[styles.indicator, { width: indicatorWidth }]}>
-          {showValue && <Text style={styles.indicatorText}>{value} %</Text>}
+          {showValue ? (
+            <Text style={styles.indicatorText}>{value} %</Text>
+          ) : null}
         </Animated.View>
       </View>
     )
@@ -99,9 +106,7 @@ const useStyles = makeStyles(({ theme, typography }) => ({
     overflow: 'hidden',
   },
 
-  containerShowValue: {
-    height: theme.Misc.ProgressBar.progressBarHeight,
-  },
+  containerShowValue: { height: theme.Misc.ProgressBar.progressBarHeight },
 
   indicatorText: {
     fontSize: typography.Size['text-xs'],

@@ -1,6 +1,6 @@
 import { useArgs } from '@storybook/preview-api'
 import type { Meta, StoryObj } from '@storybook/react'
-import React, { useCallback } from 'react'
+import { useCallback } from 'react'
 
 import { InputText } from '../InputText'
 
@@ -13,10 +13,8 @@ const meta: Meta<typeof InputText> = {
     placeholder: 'Placeholder',
     value: '',
   },
-  argTypes: {
-    state: { control: 'radio', options: ['default', 'danger'] },
-  },
-  render: function Render(args) {
+  argTypes: { state: { control: 'radio', options: ['default', 'danger'] } },
+  render: (args) => {
     const [, updateArgs] = useArgs()
 
     const onChangeText = useCallback(

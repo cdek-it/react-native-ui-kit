@@ -8,7 +8,8 @@ export const useHandleStyles = (checked: boolean) => {
   const styles = useStyles()
 
   const calculateHandleLeftPosition = useCallback(
-    (checked: boolean) => (checked ? styles.handleOn.left : styles.handleOff.left),
+    (checked: boolean) =>
+      checked ? styles.handleOn.left : styles.handleOff.left,
     [styles.handleOff.left, styles.handleOn.left]
   )
 
@@ -18,7 +19,9 @@ export const useHandleStyles = (checked: boolean) => {
     [styles.handle.backgroundColor, styles.handleOn.backgroundColor]
   )
 
-  const handleLeftPosition = useSharedValue(calculateHandleLeftPosition(checked))
+  const handleLeftPosition = useSharedValue(
+    calculateHandleLeftPosition(checked)
+  )
   const handlerBackgrouind = useSharedValue(calculateHandleBackground(checked))
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import { memo } from 'react'
 
 import { BaseButton } from './BaseButton'
 import { useBasicButtonStyles } from './styles'

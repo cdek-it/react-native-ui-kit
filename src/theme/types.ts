@@ -13,10 +13,7 @@ import type typography from './assets/typography.json'
 
 export interface ThemeType {
   background: typeof background
-  colors: {
-    primary: typeof primaryColors
-    secondary: typeof secondaryColors
-  }
+  colors: { primary: typeof primaryColors; secondary: typeof secondaryColors }
   border: typeof border
   effects: typeof effects
   global: typeof global

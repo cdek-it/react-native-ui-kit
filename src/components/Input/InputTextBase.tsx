@@ -1,5 +1,5 @@
 import { IconLoader2, IconLock, IconX } from '@tabler/icons-react-native'
-import React, {
+import {
   memo,
   type ReactNode,
   type Ref,
@@ -34,7 +34,8 @@ interface PrivateInputTextBaseProps {
 }
 
 /** @see TextInputProps */
-export interface InputTextBaseProps extends Omit<TextInputProps, 'style' | 'editable'> {
+export interface InputTextBaseProps
+  extends Omit<TextInputProps, 'style' | 'editable'> {
   /**
    * Управление отображения иконки очистки поля
    * @default true
@@ -46,10 +47,10 @@ export interface InputTextBaseProps extends Omit<TextInputProps, 'style' | 'edit
   disabled?: boolean
   /** Ref для управления полем ввода */
   inputRef?: Ref<TextInput | null>
-  /** Функция для рендера поля ввода.
-   * Используется, когда необходимо использовать отличный от стандартного компонент.
-   * Например, для реализации масок
-   */
+  // Функция для рендера поля ввода.
+  // Используется, когда необходимо использовать отличный от стандартного компонент.
+  // Например, для реализации масок
+  //
   renderTextInput?: (props: RenderTextInputArgs) => ReactNode
   /** Управление состоянием компонента */
   state?: 'default' | 'danger'
@@ -62,7 +63,9 @@ export type RenderTextInputArgs = TextInputProps & { inputRef: Ref<TextInput> }
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5470&m=dev
  * @see InputText
  */
-export const InputTextBase = memo<InputTextBaseProps & PrivateInputTextBaseProps>(
+export const InputTextBase = memo<
+  InputTextBaseProps & PrivateInputTextBaseProps
+>(
   ({
     state,
     clearable = true,
@@ -109,9 +112,15 @@ export const InputTextBase = memo<InputTextBaseProps & PrivateInputTextBaseProps
       onChangeText('')
     }, [onChangeText])
 
-    const value = useMemo(() => otherProps.value ?? valueState, [otherProps.value, valueState])
+    const value = useMemo(
+      () => otherProps.value ?? valueState,
+      [otherProps.value, valueState]
+    )
 
-    const showClearButton = useMemo(() => clearable && !!value.length, [clearable, value.length])
+    const showClearButton = useMemo(
+      () => clearable && !!value.length,
+      [clearable, value.length]
+    )
 
     const focusOutlineStyles = useAnimatedStyle(() => ({
       top: focusOutlineWidth.value,
@@ -129,7 +138,8 @@ export const InputTextBase = memo<InputTextBaseProps & PrivateInputTextBaseProps
 
     const outlineStyles = useMemo<ViewStyle>(
       () => ({
-        borderRadius: containerStyle?.borderRadius ?? styles.container.borderRadius,
+        borderRadius:
+          containerStyle?.borderRadius ?? styles.container.borderRadius,
         borderTopRightRadius: containerStyle?.borderTopRightRadius,
         borderBottomRightRadius: containerStyle?.borderBottomRightRadius,
         borderBottomLeftRadius: containerStyle?.borderBottomLeftRadius,
@@ -148,7 +158,8 @@ export const InputTextBase = memo<InputTextBaseProps & PrivateInputTextBaseProps
     const loadingAnimatedStyle = useLoadingRotationAnimation(loading)
 
     useEffect(() => {
-      dangerOutlineWidth.value = state === 'danger' ? -styles.outlineWidth.borderWidth : 0
+      dangerOutlineWidth.value =
+        state === 'danger' ? -styles.outlineWidth.borderWidth : 0
     }, [dangerOutlineWidth, state, styles.outlineWidth.borderWidth])
 
     useImperativeHandle(propsInputRef, () => inputRef.current)
@@ -185,13 +196,23 @@ export const InputTextBase = memo<InputTextBaseProps & PrivateInputTextBaseProps
           <>
             <Animated.View
               layout={LinearTransition.duration(100)}
-              style={[styles.outline, outlineStyles, styles.dangerOutline, dangerOutlineStyles]}
-              testID='InputTextBase_dangerOutline'
+              style={[
+                styles.outline,
+                outlineStyles,
+                styles.dangerOutline,
+                dangerOutlineStyles,
+              ]}
+              testID='InputTextBase_DangerOutline'
             />
             <Animated.View
               layout={LinearTransition.duration(100)}
-              style={[styles.outline, outlineStyles, styles.focusOutline, focusOutlineStyles]}
-              testID='InputTextBase_focusOutline'
+              style={[
+                styles.outline,
+                outlineStyles,
+                styles.focusOutline,
+                focusOutlineStyles,
+              ]}
+              testID='InputTextBase_FocusOutline'
             />
           </>
         )}
@@ -210,34 +231,40 @@ export const InputTextBase = memo<InputTextBaseProps & PrivateInputTextBaseProps
           )}
 
           <View style={styles.rightContainer}>
-            {loading && (
-              <Animated.View style={[loadingAnimatedStyle]} testID='InputTextBase_loading'>
+            {loading ? (
+              <Animated.View
+                style={loadingAnimatedStyle}
+                testID='InputTextBase_Loading'
+              >
                 <IconLoader2
                   color={styles.rightIcon.color}
                   height={styles.iconSize.height}
                   width={styles.iconSize.width}
                 />
               </Animated.View>
-            )}
+            ) : null}
 
-            {showClearButton && !disabled && (
-              <TouchableOpacity testID='InputTextBase_clearButton' onPress={clear}>
+            {showClearButton && !disabled ? (
+              <TouchableOpacity
+                testID='InputTextBase_ClearButton'
+                onPress={clear}
+              >
                 <IconX
                   color={styles.rightIcon.color}
                   height={styles.iconSize.height}
                   width={styles.iconSize.width}
                 />
               </TouchableOpacity>
-            )}
+            ) : null}
 
-            {disabled && (
+            {disabled ? (
               <IconLock
                 color={styles.rightIcon.color}
                 height={styles.iconSize.height}
-                testID='InputTextBase_disabledIcon'
+                testID='InputTextBase_DisabledIcon'
                 width={styles.iconSize.width}
               />
-            )}
+            ) : null}
           </View>
         </View>
       </>
@@ -254,9 +281,7 @@ const useStyles = makeStyles(({ theme }) => ({
     borderColor: theme.Form.InputText.inputBorderColor,
     backgroundColor: theme.Form.InputText.inputBg,
   },
-  danger: {
-    borderColor: theme.Form.InputText.inputErrorBorderColor,
-  },
+  danger: { borderColor: theme.Form.InputText.inputErrorBorderColor },
   disabled: {
     opacity: 0.6,
     borderColor: theme.Form.InputText.inputBorderColor,
@@ -276,18 +301,10 @@ const useStyles = makeStyles(({ theme }) => ({
   placeholderTextColor: {
     color: theme.Form.InputText.inputPlaceholderTextColor,
   },
-  outline: {
-    position: 'absolute',
-  },
-  outlineWidth: {
-    borderWidth: theme.General.focusShadowWidth,
-  },
-  focusOutline: {
-    backgroundColor: theme.General.focusOutlineColor,
-  },
-  dangerOutline: {
-    backgroundColor: theme.General.focusOutlineErrorColor,
-  },
+  outline: { position: 'absolute' },
+  outlineWidth: { borderWidth: theme.General.focusShadowWidth },
+  focusOutline: { backgroundColor: theme.General.focusOutlineColor },
+  dangerOutline: { backgroundColor: theme.General.focusOutlineErrorColor },
   rightContainer: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -296,11 +313,6 @@ const useStyles = makeStyles(({ theme }) => ({
     gap: theme.Form.InputText.inputPaddingLeftRight,
     overflow: 'hidden',
   },
-  rightIcon: {
-    color: theme.Form.InputText.inputIconColor,
-  },
-  iconSize: {
-    width: 14,
-    height: 14,
-  },
+  rightIcon: { color: theme.Form.InputText.inputIconColor },
+  iconSize: { width: 14, height: 14 },
 }))

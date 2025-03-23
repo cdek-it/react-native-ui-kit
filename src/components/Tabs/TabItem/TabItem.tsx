@@ -1,5 +1,5 @@
 import type { Icon } from '@tabler/icons-react-native'
-import React, { memo, useCallback, type ReactNode } from 'react'
+import { memo, useCallback, type ReactNode } from 'react'
 import { Text, Pressable, View, type ViewProps } from 'react-native'
 
 import { makeStyles } from '../../../utils/makeStyles'
@@ -29,18 +29,27 @@ export interface TabItemProps {
   onLayout?: ViewProps['onLayout']
 }
 
-/** Часть навигационного компонента Tabs
- * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=888-13076&t=hIQjdrqPKK8BWYev-4
- */
+// Часть навигационного компонента Tabs
+// @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=888-13076&t=hIQjdrqPKK8BWYev-4
+//
 export const TabItem = memo<TabItemProps>(
   ({ Icon, label, badge, index, onPress, disabled, active, onLayout }) => {
     const styles = useStyles()
 
     const getIconColor = useCallback(
       (pressed: boolean) => {
-        if (disabled) return styles.disabledIcon.color
-        if (pressed) return styles.pressedIcon.color
-        if (active) return styles.activeIcon.color
+        if (disabled) {
+          return styles.disabledIcon.color
+        }
+
+        if (pressed) {
+          return styles.pressedIcon.color
+        }
+
+        if (active) {
+          return styles.activeIcon.color
+        }
+
         return styles.icon.color
       },
       [disabled, active, styles]
@@ -63,13 +72,13 @@ export const TabItem = memo<TabItemProps>(
               disabled && styles.disabledContainer,
             ]}
           >
-            {Icon && (
+            {Icon ? (
               <Icon
                 color={getIconColor(pressed)}
                 height={styles.icon.height}
                 width={styles.icon.width}
               />
-            )}
+            ) : null}
             <Text
               numberOfLines={1}
               style={[
@@ -94,7 +103,9 @@ const useStyles = makeStyles(({ theme, typography }) => ({
     alignItems: 'center',
     flexDirection: 'row',
 
-    height: theme.Misc.Badge.badgeHeight + theme.Panel.TabView.tabviewHeaderPaddingTopBottom * 2,
+    height:
+      theme.Misc.Badge.badgeHeight +
+      theme.Panel.TabView.tabviewHeaderPaddingTopBottom * 2,
     gap: theme.General.inlineSpacing,
     paddingHorizontal: theme.Panel.TabView.tabviewHeaderPaddingLeftRight,
     paddingVertical: theme.Panel.TabView.tabviewHeaderPaddingTopBottom,
@@ -107,23 +118,15 @@ const useStyles = makeStyles(({ theme, typography }) => ({
   activeContainer: {
     backgroundColor: theme.Panel.TabView.tabviewHeaderActiveBg,
   },
-  disabledContainer: {
-    opacity: 0.6,
-  },
+  disabledContainer: { opacity: 0.6 },
   icon: {
     width: theme.Menu.Item.menuitemSubmenuIconFontSize,
     height: theme.Menu.Item.menuitemSubmenuIconFontSize,
     color: theme.Panel.TabView.tabviewHeaderTextColor,
   },
-  pressedIcon: {
-    color: theme.Panel.TabView.tabviewHeaderHoverTextColor,
-  },
-  activeIcon: {
-    color: theme.Panel.TabView.tabviewHeaderActiveTextColor,
-  },
-  disabledIcon: {
-    color: theme.Button.Disabled.disabledButtonTextColor,
-  },
+  pressedIcon: { color: theme.Panel.TabView.tabviewHeaderHoverTextColor },
+  activeIcon: { color: theme.Panel.TabView.tabviewHeaderActiveTextColor },
+  disabledIcon: { color: theme.Button.Disabled.disabledButtonTextColor },
   text: {
     fontSize: typography.Size['text-base'],
     verticalAlign: 'middle',
@@ -131,15 +134,9 @@ const useStyles = makeStyles(({ theme, typography }) => ({
 
     color: theme.Panel.TabView.tabviewHeaderTextColor,
   },
-  pressedText: {
-    color: theme.Panel.TabView.tabviewHeaderHoverTextColor,
-  },
-  activeText: {
-    color: theme.Panel.TabView.tabviewHeaderActiveTextColor,
-  },
-  disabledText: {
-    color: theme.Button.Disabled.disabledButtonTextColor,
-  },
+  pressedText: { color: theme.Panel.TabView.tabviewHeaderHoverTextColor },
+  activeText: { color: theme.Panel.TabView.tabviewHeaderActiveTextColor },
+  disabledText: { color: theme.Button.Disabled.disabledButtonTextColor },
 }))
 
 export enum TestId {

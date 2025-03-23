@@ -1,5 +1,4 @@
 import { render } from '@testing-library/react-native'
-import React from 'react'
 
 import { Checkbox, type CheckboxProps } from '../Checkbox'
 
@@ -78,16 +77,13 @@ describe('Checkbox', () => {
       ],
       [
         'checked = true, indeterminate = true, disabled = true, state = danger',
-        {
-          checked: true,
-          indeterminate: true,
-          disabled: true,
-          state: 'danger',
-        },
+        { checked: true, indeterminate: true, disabled: true, state: 'danger' },
       ],
     ]
+
     test.each(snapshotCases)('%s', (_, props) => {
       const { toJSON } = render(<Checkbox {...defaultProps} {...props} />)
+
       expect(toJSON()).toMatchSnapshot()
     })
   })

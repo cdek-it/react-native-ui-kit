@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useMemo, useRef, useState } from 'react'
+import { memo, useCallback, useMemo, useRef, useState } from 'react'
 import {
   type AccessibilityProps,
   type LayoutChangeEvent,
@@ -21,13 +21,20 @@ import Animated, {
 
 import { makeStyles } from '../../utils/makeStyles'
 
-import { SelectButtonItem, type SelectButtonItemProps } from './SelectButtonItem'
+import {
+  SelectButtonItem,
+  type SelectButtonItemProps,
+} from './SelectButtonItem'
 
 const DEFAULT_ANIMATION_DURATION = 200 // ms
 
-export interface SelectButtonProps extends AccessibilityProps, Pick<ViewProps, 'testID'> {
+export interface SelectButtonProps
+  extends AccessibilityProps,
+    Pick<ViewProps, 'testID'> {
   /** Массив кнопок. Должен содержать как минимум 2 кнопки. */
-  buttons: Array<Pick<SelectButtonItemProps, 'label' | 'showIcon' | 'Icon'> & { key: string }>
+  buttons: Array<
+    Pick<SelectButtonItemProps, 'label' | 'showIcon' | 'Icon'> & { key: string }
+  >
 
   /** true - если кнопки недоступны для нажатия */
   disabled?: boolean
@@ -76,7 +83,10 @@ export const SelectButton = memo<SelectButtonProps>(
     const [frameKey, setFrameKey] = useState(Date.now())
 
     const initialIndex = useMemo(
-      () => (initialIndexProp && initialIndexProp < buttons.length ? initialIndexProp : 0),
+      () =>
+        initialIndexProp && initialIndexProp < buttons.length
+          ? initialIndexProp
+          : 0,
       [buttons.length, initialIndexProp]
     )
 
@@ -101,19 +111,29 @@ export const SelectButton = memo<SelectButtonProps>(
     )
 
     const positionInner = useSharedValue(initialIndex)
-    const position = useMemo(() => positionProp || positionInner, [positionInner, positionProp])
-    const animationInputRange = useMemo(() => buttons.map((_, index) => index), [buttons])
+    const position = useMemo(
+      () => positionProp || positionInner,
+      [positionInner, positionProp]
+    )
+    const animationInputRange = useMemo(
+      () => buttons.map((_, index) => index),
+      [buttons]
+    )
 
     const framePositionStyle = useAnimatedStyle(() => {
       const left = interpolate(
         position.value,
         animationInputRange,
-        animationInputRange.map((index) => buttonsLayoutList.value[index]?.x ?? 0)
+        animationInputRange.map(
+          (index) => buttonsLayoutList.value[index]?.x ?? 0
+        )
       )
       const width = interpolate(
         position.value,
         animationInputRange,
-        animationInputRange.map((index) => buttonsLayoutList.value[index]?.width ?? 0)
+        animationInputRange.map(
+          (index) => buttonsLayoutList.value[index]?.width ?? 0
+        )
       )
 
       return { left, width }
@@ -135,7 +155,12 @@ export const SelectButton = memo<SelectButtonProps>(
     )
 
     return (
-      <View collapsable={false} style={[styles.container, style]} testID={testID} {...rest}>
+      <View
+        collapsable={false}
+        style={[styles.container, style]}
+        testID={testID}
+        {...rest}
+      >
         {buttons.map(({ label, Icon, key, showIcon }, index) => (
           <SelectButtonItem
             Icon={Icon}
@@ -181,9 +206,7 @@ const useStyles = makeStyles(({ theme }) => ({
     backgroundColor: theme.Form.SelectButton.selectButtonActiveBg,
     zIndex: -1,
   },
-  textColor: {
-    color: theme.Form.SelectButton.selectButtonTextColor,
-  },
+  textColor: { color: theme.Form.SelectButton.selectButtonTextColor },
   checkedTextColor: {
     color: theme.Form.SelectButton.selectButtonIconActiveColor,
   },

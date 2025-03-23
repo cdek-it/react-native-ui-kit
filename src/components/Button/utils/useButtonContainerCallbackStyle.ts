@@ -7,7 +7,11 @@ import {
 } from 'react-native'
 
 import { makeStyles } from '../../../utils/makeStyles'
-import type { BaseButtonProps, ContainerVariantStyles, PressedVariantStyles } from '../types'
+import type {
+  BaseButtonProps,
+  ContainerVariantStyles,
+  PressedVariantStyles,
+} from '../types'
 
 import { useTypeBasedStyle } from './useTypeBasedStyle'
 
@@ -118,20 +122,14 @@ const useButtonContainerStyle = makeStyles(({ theme, border }) => ({
     gap: theme.General.inlineSpacing,
   },
 
-  square: {
-    borderRadius: theme.General.borderRadius,
-  },
+  square: { borderRadius: theme.General.borderRadius },
 
-  circle: {
-    borderRadius: border.Radius['rounded-full'],
-  },
+  circle: { borderRadius: border.Radius['rounded-full'] },
 
   disabled: {
     backgroundColor: theme.Button.Disabled.disabledButtonBg,
     borderColor: theme.Button.Disabled.disabledButtonBorderColor,
   },
 
-  iconOnly: {
-    aspectRatio: 1,
-  },
+  iconOnly: { aspectRatio: 1 },
 }))

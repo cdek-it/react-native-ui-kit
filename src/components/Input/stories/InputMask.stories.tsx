@@ -1,7 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import React, { type ComponentProps, type ComponentType, useCallback, useState } from 'react'
+import {
+  type ComponentProps,
+  type ComponentType,
+  useCallback,
+  useState,
+} from 'react'
 import { View } from 'react-native'
-import { MaskedTextInput, type MaskedTextInputProps } from 'react-native-advanced-input-mask'
+import {
+  MaskedTextInput,
+  type MaskedTextInputProps,
+} from 'react-native-advanced-input-mask'
 
 import { Body } from '../../Typography'
 import { FloatLabel } from '../FloatLabel'
@@ -11,7 +19,7 @@ type InputTextProps = ComponentProps<typeof InputText>
 
 type MaskedInputProps<T extends InputTextProps> = Omit<T, 'onChangeText'> &
   Pick<MaskedTextInputProps, 'onChangeText' | 'mask'> & {
-    Control: ComponentType<T>
+    readonly Control: ComponentType<T>
   }
 
 /**
@@ -72,10 +80,14 @@ const meta: Meta<typeof MaskedInput> = {
     },
     mask: {
       control: 'radio',
-      options: ['+7 ([000]) [000]-[00]-[00]', '[00]/[00]/[0000]', '[000]-[000]'],
+      options: [
+        '+7 ([000]) [000]-[00]-[00]',
+        '[00]/[00]/[0000]',
+        '[000]-[000]',
+      ],
     },
   },
-  render: function Render(args) {
+  render: (args) => {
     const [formatted, setFormatted] = useState('')
     const [extracted, setExtracted] = useState('')
 

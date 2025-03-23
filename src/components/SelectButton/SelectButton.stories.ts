@@ -8,31 +8,16 @@ const meta: Meta<typeof SelectButton> = {
   component: SelectButton,
   args: {
     buttons: [
-      {
-        label: 'But',
-        Icon: IconArrowDownRight,
-        key: '1',
-      },
-      {
-        label: 'ButtonSelect',
-        Icon: IconArrowDownRight,
-        key: '2',
-      },
-      {
-        label: 'Button',
-        Icon: IconArrowDownRight,
-        key: '3',
-      },
+      { label: 'But', Icon: IconArrowDownRight, key: '1' },
+      { label: 'ButtonSelect', Icon: IconArrowDownRight, key: '2' },
+      { label: 'Button', Icon: IconArrowDownRight, key: '3' },
     ],
     size: 'base',
     initialIndex: 1,
     disabled: false,
   },
   argTypes: {
-    size: {
-      control: 'radio',
-      options: ['small', 'base', 'large', 'xlarge'],
-    },
+    size: { control: 'radio', options: ['small', 'base', 'large', 'xlarge'] },
     onPress: { action: 'onPress' },
   },
 }

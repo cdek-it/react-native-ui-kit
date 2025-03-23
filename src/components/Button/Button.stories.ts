@@ -1,5 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { IconArrowDownRight, IconArrowDownLeft } from '@tabler/icons-react-native'
+import {
+  IconArrowDownRight,
+  IconArrowDownLeft,
+} from '@tabler/icons-react-native'
 
 import { Button } from './Button'
 
@@ -30,27 +33,18 @@ export default meta
 
 type Story = StoryObj<typeof Button>
 
-export const TextButton: Story = {
-  args: {},
-  argTypes: {},
-}
+export const TextButton: Story = { args: {}, argTypes: {} }
 
 const Icons = { IconArrowDownRight, IconArrowDownLeft }
 
 export const IconButton: Story = {
-  args: {
-    Icon: IconArrowDownRight,
-  },
+  args: { Icon: IconArrowDownRight },
   argTypes: {
     iconOnly: {
       control: 'radio',
       options: ['IconOnly', 'Not IconOnly'],
       mapping: { IconOnly: true, 'Not IconOnly': undefined },
     },
-    Icon: {
-      control: 'select',
-      options: Object.keys(Icons),
-      mapping: Icons,
-    },
+    Icon: { control: 'select', options: Object.keys(Icons), mapping: Icons },
   },
 }

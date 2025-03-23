@@ -2,7 +2,11 @@ import { useMemo } from 'react'
 
 import { makeStyles } from '../../../utils/makeStyles'
 
-export const useStateStyles = (checked = false, disabled = false, pressed = false) => {
+export const useStateStyles = (
+  checked = false,
+  disabled = false,
+  pressed = false
+) => {
   const styles = useStyles()
 
   const borderContainer = useMemo(
@@ -66,11 +70,7 @@ export const useStateStyles = (checked = false, disabled = false, pressed = fals
   )
 
   return useMemo(
-    () => ({
-      borderContainer,
-      contentContainer,
-      label,
-    }),
+    () => ({ borderContainer, contentContainer, label }),
     [borderContainer, contentContainer, label]
   )
 }
@@ -93,9 +93,7 @@ const useStyles = makeStyles(({ theme }) => ({
     opacity: 0.6,
   },
 
-  contentContainer: {
-    backgroundColor: theme.Form.ToggleButton.toggleButtonBg,
-  },
+  contentContainer: { backgroundColor: theme.Form.ToggleButton.toggleButtonBg },
   pressedContentContainer: {
     backgroundColor: theme.Form.ToggleButton.toggleButtonHoverBg,
   },
@@ -109,19 +107,11 @@ const useStyles = makeStyles(({ theme }) => ({
     backgroundColor: theme.Button.Disabled.disabledButtonBg,
   },
 
-  label: {
-    color: theme.Form.ToggleButton.toggleButtonTextColor,
-  },
-  pressedLabel: {
-    color: theme.Form.ToggleButton.toggleButtonHoverTextColor,
-  },
-  checkedLabel: {
-    color: theme.Form.ToggleButton.toggleButtonActiveTextColor,
-  },
+  label: { color: theme.Form.ToggleButton.toggleButtonTextColor },
+  pressedLabel: { color: theme.Form.ToggleButton.toggleButtonHoverTextColor },
+  checkedLabel: { color: theme.Form.ToggleButton.toggleButtonActiveTextColor },
   checkedPressedLabel: {
     color: theme.Form.ToggleButton.toggleButtonTextActiveHoverColor,
   },
-  disabledLabel: {
-    color: theme.Button.Disabled.disabledButtonTextColor,
-  },
+  disabledLabel: { color: theme.Button.Disabled.disabledButtonTextColor },
 }))

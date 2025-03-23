@@ -1,5 +1,4 @@
 import { act, render } from '@testing-library/react-native'
-import React from 'react'
 
 import { Timer } from '../Timer'
 
@@ -31,6 +30,7 @@ describe('Timer', () => {
     expect(toJSON()).toMatchSnapshot('after 1 s')
 
     rerender(<Timer countFrom={10} />)
+
     expect(toJSON()).toMatchSnapshot('after reset')
   })
 
@@ -40,20 +40,26 @@ describe('Timer', () => {
     render(<Timer countFrom={1} onFinish={mockedOnFinish} />)
 
     expect(mockedOnFinish).not.toHaveBeenCalled()
+
     act(() => {
       jest.runAllTimers()
     })
+
     expect(mockedOnFinish).toHaveBeenCalled()
   })
 
   test('should NOT call onFinish until the timer expires', () => {
     jest.useFakeTimers()
     const mockedOnFinish = jest.fn()
-    const { unmount } = render(<Timer countFrom={1} onFinish={mockedOnFinish} />)
+    const { unmount } = render(
+      <Timer countFrom={1} onFinish={mockedOnFinish} />
+    )
 
     expect(mockedOnFinish).not.toHaveBeenCalled()
+
     unmount()
     jest.runAllTimers()
+
     expect(mockedOnFinish).not.toHaveBeenCalled()
   })
 
@@ -63,6 +69,6 @@ describe('Timer', () => {
     const { unmount } = render(<Timer countFrom={1} />)
     unmount()
 
-    expect(mockedClearTimeout).toHaveBeenCalledTimes(1)
+    expect(mockedClearTimeout).toHaveBeenCalledOnce()
   })
 })

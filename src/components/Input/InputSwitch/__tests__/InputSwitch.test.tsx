@@ -1,5 +1,4 @@
 import { act, render, userEvent } from '@testing-library/react-native'
-import React from 'react'
 
 import { InputSwitch, type InputSwitchProps } from '../InputSwitch'
 
@@ -15,6 +14,7 @@ describe('InputSwitch component tests', () => {
     'checked - $checked, danger - $danger, disabled - $disabled, pressed - $testOnly_pressed',
     (props) => {
       const renderSwitch = render(<InputSwitch {...props} />)
+
       expect(renderSwitch.toJSON()).toMatchSnapshot()
     }
   )
@@ -23,15 +23,21 @@ describe('InputSwitch component tests', () => {
     const mockedOnCheckedChange = jest.fn()
 
     const { getByTestId } = render(
-      <InputSwitch checked testID='InputSwitch' onCheckedChange={mockedOnCheckedChange} />
+      <InputSwitch
+        checked
+        testID='InputSwitch'
+        onCheckedChange={mockedOnCheckedChange}
+      />
     )
     const pressableContainer = getByTestId('InputSwitch')
     const user = userEvent.setup()
 
     expect(mockedOnCheckedChange).not.toHaveBeenCalled()
+
     await act(async () => {
       await user.press(pressableContainer)
     })
+
     expect(mockedOnCheckedChange).toHaveBeenCalledWith(false)
   })
 })

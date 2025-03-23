@@ -1,15 +1,10 @@
 import { render } from '@testing-library/react-native'
-import React from 'react'
 
 import { InputGroup, type InputGroupProps } from '../InputGroup'
 
-jest.mock('../InputTextBase', () => ({
-  InputTextBase: 'InputTextBase',
-}))
+jest.mock('../InputTextBase', () => ({ InputTextBase: 'InputTextBase' }))
 
-jest.mock('../InputGroupAddon', () => ({
-  InputGroupAddon: 'InputGroupAddon',
-}))
+jest.mock('../InputGroupAddon', () => ({ InputGroupAddon: 'InputGroupAddon' }))
 
 describe('InputTextBase component functionality tests', () => {
   const snapshotCases: Array<[string, InputGroupProps]> = [
@@ -21,6 +16,7 @@ describe('InputTextBase component functionality tests', () => {
 
   test.each(snapshotCases)('%s', (_, props) => {
     const { toJSON } = render(<InputGroup {...props} />)
+
     expect(toJSON()).toMatchSnapshot()
   })
 })

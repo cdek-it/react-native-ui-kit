@@ -1,4 +1,4 @@
-import React, {
+import {
   memo,
   useCallback,
   useEffect,
@@ -61,20 +61,28 @@ export const FloatLabel = memo<FloatLabelProps>(
     const [valueState, setValueState] = useState('')
     const inputRef = useRef<TextInput>(null)
 
-    const value = useMemo(() => valueProp ?? valueState, [valueProp, valueState])
+    const value = useMemo(
+      () => valueProp ?? valueState,
+      [valueProp, valueState]
+    )
 
     useEffect(() => {
-      labelAnimation.value = withTiming(focused || value ? 1 : 0, { duration: 100 })
+      labelAnimation.value = withTiming(focused || value ? 1 : 0, {
+        duration: 100,
+      })
     }, [focused, labelAnimation, value])
 
     useEffect(() => {
-      labelColorAnimation.value = withTiming(focused && state !== 'danger' ? 1 : 0, {
-        duration: 100,
-      })
+      labelColorAnimation.value = withTiming(
+        focused && state !== 'danger' ? 1 : 0,
+        { duration: 100 }
+      )
     }, [focused, labelColorAnimation, state])
 
     const labelAnimatedStyle = useAnimatedStyle(() => {
-      const labelBaseStyles = value ? styles.labelReducedAnimatedStyles : styles.labelAnimatedStyles
+      const labelBaseStyles = value
+        ? styles.labelReducedAnimatedStyles
+        : styles.labelAnimatedStyles
 
       return {
         transform: [
@@ -127,7 +135,9 @@ export const FloatLabel = memo<FloatLabelProps>(
       [onBlurProp]
     )
 
-    const onChangeText = useCallback<NonNullable<TextInputProps['onChangeText']>>(
+    const onChangeText = useCallback<
+      NonNullable<TextInputProps['onChangeText']>
+    >(
       (nextValue) => {
         setValueState(nextValue)
         onChangeTextProp?.(nextValue)
@@ -152,7 +162,10 @@ export const FloatLabel = memo<FloatLabelProps>(
           ])}
           disabled={disabled}
           inputRef={inputRef}
-          inputStyle={StyleSheet.flatten([styles.input, multiline && styles.multilineInput])}
+          inputStyle={StyleSheet.flatten([
+            styles.input,
+            multiline && styles.multilineInput,
+          ])}
           multiline={multiline}
           placeholder=''
           state={state}
@@ -162,7 +175,9 @@ export const FloatLabel = memo<FloatLabelProps>(
           onChangeText={onChangeText}
           onFocus={onFocus}
         />
-        <Animated.Text style={[styles.label, labelAnimatedStyle, labelColorAnimatedStyle]}>
+        <Animated.Text
+          style={[styles.label, labelAnimatedStyle, labelColorAnimatedStyle]}
+        >
           {placeholder}
         </Animated.Text>
       </Pressable>
@@ -171,16 +186,9 @@ export const FloatLabel = memo<FloatLabelProps>(
 )
 
 const useStyles = makeStyles(({ spacing, typography }) => ({
-  inputContainer: {
-    height: 56,
-  },
-  multilineInputContainer: {
-    height: 120,
-  },
-  input: {
-    paddingTop: 26,
-    paddingBottom: 13,
-  },
+  inputContainer: { height: 56 },
+  multilineInputContainer: { height: 120 },
+  input: { paddingTop: 26, paddingBottom: 13 },
   multilineInput: {
     marginTop: 26,
     marginBottom: 13,
@@ -193,17 +201,7 @@ const useStyles = makeStyles(({ spacing, typography }) => ({
     left: 10.5,
     color: typography.Color.Common['text-color-secondary'],
   },
-  labelAnimatedStyles: {
-    top: 20,
-    fontSize: 14,
-    opacity: 0.6,
-  },
-  labelReducedAnimatedStyles: {
-    top: 10.5,
-    fontSize: 12.25,
-    opacity: 1,
-  },
-  labelFocused: {
-    color: typography.Color.Common['text-primary'],
-  },
+  labelAnimatedStyles: { top: 20, fontSize: 14, opacity: 0.6 },
+  labelReducedAnimatedStyles: { top: 10.5, fontSize: 12.25, opacity: 1 },
+  labelFocused: { color: typography.Color.Common['text-primary'] },
 }))

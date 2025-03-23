@@ -1,16 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { IconCheck, IconUser } from '@tabler/icons-react-native'
-import React from 'react'
 
 import { Badge } from '../../Badge'
 
 import { TabItem } from './TabItem'
 
-const icons = {
-  IconUser,
-  IconCheck,
-  none: undefined,
-}
+const icons = { IconUser, IconCheck, none: undefined }
 
 const badges = {
   basic: <Badge>99</Badge>,
@@ -23,16 +18,8 @@ const meta: Meta<typeof TabItem> = {
   title: 'TabItem',
   component: TabItem,
   argTypes: {
-    Icon: {
-      control: 'radio',
-      options: Object.keys(icons),
-      mapping: icons,
-    },
-    badge: {
-      control: 'radio',
-      options: Object.keys(badges),
-      mapping: badges,
-    },
+    Icon: { control: 'radio', options: Object.keys(icons), mapping: icons },
+    badge: { control: 'radio', options: Object.keys(badges), mapping: badges },
   },
 }
 export default meta
@@ -40,9 +27,5 @@ export default meta
 export type Story = StoryObj<typeof TabItem>
 
 export const TabItemStory: Story = {
-  args: {
-    Icon: IconUser,
-    label: 'First Tab',
-    badge: <Badge>99</Badge>,
-  },
+  args: { Icon: IconUser, label: 'First Tab', badge: <Badge>99</Badge> },
 }

@@ -1,5 +1,12 @@
 import type { Icon } from '@tabler/icons-react-native'
-import React, { memo, type ReactNode, useCallback, useEffect, useMemo, useState } from 'react'
+import {
+  memo,
+  type ReactNode,
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+} from 'react'
 import {
   type AccessibilityProps,
   Image,
@@ -81,7 +88,8 @@ interface NoBadgeAvatar {
   showBadge?: never
 }
 
-export type AvatarProps = (LabelAvatar | IconAvatar | ImageAvatar) & (BadgeAvatar | NoBadgeAvatar)
+export type AvatarProps = (LabelAvatar | IconAvatar | ImageAvatar) &
+  (BadgeAvatar | NoBadgeAvatar)
 
 /**
  * Компонент Avatar
@@ -115,7 +123,9 @@ export const Avatar = memo<AvatarProps>(
 
     const badgeContainerStyle = useMemo<ViewStyle>(
       () => ({
-        left: badgeLayout?.width ? Math.round(styles[size].width - badgeLayout.width / 2) : 0,
+        left: badgeLayout?.width
+          ? Math.round(styles[size].width - badgeLayout.width / 2)
+          : 0,
         width: badgeLayout?.width ? badgeLayout.width : window.width,
         height: badgeLayout?.width ? 'auto' : 0,
       }),
@@ -132,7 +142,10 @@ export const Avatar = memo<AvatarProps>(
         return null
       }
 
-      const iconStyle = StyleSheet.flatten([styles.icon, size === 'xlarge' && styles.iconXLarge])
+      const iconStyle = StyleSheet.flatten([
+        styles.icon,
+        size === 'xlarge' && styles.iconXLarge,
+      ])
 
       return (
         <Icon
@@ -179,13 +192,13 @@ export const Avatar = memo<AvatarProps>(
             <Image
               resizeMode='cover'
               source={source}
-              style={[styles[size]]}
+              style={styles[size]}
               testID={AvatarTestId.image}
             />
           )}
         </View>
 
-        {badge && showBadge && (
+        {badge && showBadge ? (
           <View
             style={[styles.badgeContainer, badgeContainerStyle]}
             testID={AvatarTestId.badgeContainer}
@@ -198,7 +211,7 @@ export const Avatar = memo<AvatarProps>(
               {badge}
             </View>
           </View>
-        )}
+        ) : null}
       </View>
     )
   }
@@ -214,10 +227,7 @@ const useStyles = makeStyles(({ theme }) => ({
     backgroundColor: theme.Misc.Avatar.avatarBg,
     overflow: 'hidden',
   },
-  normal: {
-    width: 28,
-    height: 28,
-  },
+  normal: { width: 28, height: 28 },
   large: {
     width: theme.Button.Common.buttonHeight,
     height: theme.Button.Common.buttonHeight,
@@ -226,12 +236,8 @@ const useStyles = makeStyles(({ theme }) => ({
     width: theme.Button.Common.buttonHeightLG,
     height: theme.Button.Common.buttonHeightLG,
   },
-  backgroundFill: {
-    backgroundColor: theme.Misc.Avatar.avatarBg,
-  },
-  circle: {
-    borderRadius: 100,
-  },
+  backgroundFill: { backgroundColor: theme.Misc.Avatar.avatarBg },
+  circle: { borderRadius: 100 },
   text: {
     fontSize: 14,
     textTransform: 'uppercase',
@@ -239,22 +245,10 @@ const useStyles = makeStyles(({ theme }) => ({
     includeFontPadding: false,
     verticalAlign: 'middle',
   },
-  textXLarge: {
-    fontSize: 21,
-  },
-  badgeContainer: {
-    position: 'absolute',
-    right: 0,
-    top: -7,
-  },
-  badgeMeasureContainer: {
-    alignSelf: 'flex-start',
-  },
-  icon: {
-    width: 14,
-    height: 14,
-    color: theme.Misc.Avatar.avatarTextColor,
-  },
+  textXLarge: { fontSize: 21 },
+  badgeContainer: { position: 'absolute', right: 0, top: -7 },
+  badgeMeasureContainer: { alignSelf: 'flex-start' },
+  icon: { width: 14, height: 14, color: theme.Misc.Avatar.avatarTextColor },
   iconXLarge: {
     width: 21,
     height: 21,

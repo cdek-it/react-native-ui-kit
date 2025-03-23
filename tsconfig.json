@@ -26,6 +26,13 @@
     "jsx": "react-native",
     "resolveJsonModule": true
   },
-  "exclude": ["artifacts", "scripts", "configs", "dist", "metro.config.js", "babel.config.js", "app.config.js"],
+  "exclude": [
+    "artifacts",
+    "scripts",
+    "dist",
+    "metro.config.js",
+    "babel.config.js",
+    "app.config.js"
+  ],
   "extends": "expo/tsconfig.base"
 }

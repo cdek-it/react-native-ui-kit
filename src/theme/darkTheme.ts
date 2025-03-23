@@ -4,9 +4,6 @@ import { commonTheme } from './commonTheme'
 import type { ThemeType } from './types'
 
 export const darkTheme: ThemeType = {
-  theme: {
-    ...darkThemeAssets,
-    custom: customDark,
-  },
+  theme: { ...darkThemeAssets, custom: customDark },
   ...commonTheme,
 }

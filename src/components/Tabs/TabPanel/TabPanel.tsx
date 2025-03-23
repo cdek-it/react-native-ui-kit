@@ -1,4 +1,4 @@
-import React, { memo, type ReactNode } from 'react'
+import { memo, type ReactNode } from 'react'
 import { View } from 'react-native'
 
 export interface TabPanelProps {
@@ -9,11 +9,15 @@ export interface TabPanelProps {
   children?: ReactNode
 }
 
-/** Часть навигационного компонента Tabs
- * Для упрощения связанного с табами контекста в верстке
- */
-export const TabPanel = memo<TabPanelProps>(({ activeIndex, index, children, ...rest }) => {
-  if (activeIndex !== index) return null
+// Часть навигационного компонента Tabs
+// Для упрощения связанного с табами контекста в верстке
+//
+export const TabPanel = memo<TabPanelProps>(
+  ({ activeIndex, index, children, ...rest }) => {
+    if (activeIndex !== index) {
+      return null
+    }
 
-  return <View {...rest}>{children}</View>
-})
+    return <View {...rest}>{children}</View>
+  }
+)

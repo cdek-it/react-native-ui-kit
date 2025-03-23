@@ -1,16 +1,20 @@
 import { IconBan } from '@tabler/icons-react-native'
-import React, { memo } from 'react'
+import { memo } from 'react'
 
 import { makeStyles } from '../../utils/makeStyles'
 
-import { RatingItemContainer, type RatingItemContainerProps } from './RatingItemContainer'
+import {
+  RatingItemContainer,
+  type RatingItemContainerProps,
+} from './RatingItemContainer'
 
 /**
  * Свойства компонента элемента рейтинга для очистки рейтинга
  * @see RatingItemContainerProps - тип свойств компонента контейнера элемента от которого наследуется данный тип свойств
  * @see RatingClear = компонент элемента рейтинга для очистки рейтинга
  */
-export interface RatingClearProps extends Omit<RatingItemContainerProps, 'children'> {}
+export interface RatingClearProps
+  extends Omit<RatingItemContainerProps, 'children'> {}
 
 /**
  * Компонент элемента рейтинга для очистки рейтинга
@@ -39,18 +43,14 @@ export const RatingClear = memo<RatingClearProps>(({ ...rest }) => {
   )
 })
 
-const useStyles = makeStyles(({ theme, sizing }) => ({
+const useStyles = makeStyles(({ theme }) => ({
   icon: {
     height: theme.Form.Rating.ratingIconFontSize,
     width: theme.Form.Rating.ratingIconFontSize,
     color: theme.Form.Rating.ratingCancelIconColor,
   },
 
-  iconPressed: {
-    color: theme.Form.Rating.ratingCancelIconHoverColor,
-  },
+  iconPressed: { color: theme.Form.Rating.ratingCancelIconHoverColor },
 
-  iconDisabled: {
-    color: theme.custom.rating.ratingCancelIconDisabledColor,
-  },
+  iconDisabled: { color: theme.custom.rating.ratingCancelIconDisabledColor },
 }))
