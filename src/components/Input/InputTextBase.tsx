@@ -167,7 +167,7 @@ export const InputTextBase = memo<
     const texInputProps = useMemo<RenderTextInputArgs>(
       () => ({
         placeholderTextColor: styles.placeholderTextColor.color,
-        testID: 'InputTextBase_input',
+        testID: 'InputTextBase_Input',
         ...otherProps,
         editable: !disabled,
         style: [styles.input, inputStyle],

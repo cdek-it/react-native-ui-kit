@@ -22,7 +22,7 @@ exports[`InputGroup component tests content: icon, position: right 1`] = `
       undefined,
     ]
   }
-  testID="InputGroupAddon_pressable"
+  testID="InputGroupAddon_Pressable"
 >
   <RNSVGSvgView
     align="xMidYMid"
@@ -153,7 +153,7 @@ exports[`InputGroup component tests content: string, position: left 1`] = `
       undefined,
     ]
   }
-  testID="InputGroupAddon_pressable"
+  testID="InputGroupAddon_Pressable"
 >
   <Text
     style={
@@ -193,7 +193,7 @@ exports[`InputGroup component tests disabled: false 1`] = `
       false,
     ]
   }
-  testID="InputGroupAddon_pressable"
+  testID="InputGroupAddon_Pressable"
 >
   <Text
     style={
@@ -236,7 +236,7 @@ exports[`InputGroup component tests disabled: true 1`] = `
       },
     ]
   }
-  testID="InputGroupAddon_pressable"
+  testID="InputGroupAddon_Pressable"
 >
   <Text
     style={

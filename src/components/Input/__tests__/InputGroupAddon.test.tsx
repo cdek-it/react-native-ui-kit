@@ -29,7 +29,7 @@ describe('InputGroup component tests', () => {
     const { queryByTestId } = render(
       <InputGroupAddon content='text' position='left' onPress={onPress} />
     )
-    const pressable = queryByTestId('InputGroupAddon_pressable')
+    const pressable = queryByTestId('InputGroupAddon_Pressable')
 
     fireEvent.press(pressable)
 
