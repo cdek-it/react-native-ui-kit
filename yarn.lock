@@ -2213,9 +2213,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cdek/eslint-config-mobile@npm:1.1.4":
-  version: 1.1.4
-  resolution: "@cdek/eslint-config-mobile@npm:1.1.4"
+"@cdek/eslint-config-mobile@npm:1.1.9":
+  version: 1.1.9
+  resolution: "@cdek/eslint-config-mobile@npm:1.1.9"
   dependencies:
     "@eslint/compat": "npm:1.2.7"
     "@eslint/js": "npm:9.22.0"
@@ -2235,7 +2235,7 @@ __metadata:
     "@cdek/prettier-config-mobile": "*"
     eslint: ">=9"
     prettier: ">=3"
-  checksum: 10/82c164e8b5b53146c285e304abd9ead829ff9528a381c1da749ae6806ffdbe74a3e652a72cdeefcfb58ac4ea737920ff66923a0121fb5d61546ccbaf8761fd04
+  checksum: 10/83bf90e721582f606b1fe773ae4db8bc40ae2770038fe7f0faaad532a740cb897c89ca754b05bbbcdb6dbeafac8c531bbc49950cced862e95c1ecf7a6a88789f
   languageName: node
   linkType: hard
 
@@ -2255,7 +2255,7 @@ __metadata:
     "@babel/core": "npm:7.26.7"
     "@babel/preset-env": "npm:7.26.7"
     "@cdek/cz-conventional-mobile": "npm:1.2.0"
-    "@cdek/eslint-config-mobile": "npm:1.1.4"
+    "@cdek/eslint-config-mobile": "npm:1.1.9"
     "@cdek/prettier-config-mobile": "npm:1.1.0"
     "@commitlint/cli": "npm:19.6.1"
     "@commitlint/config-conventional": "npm:19.6.0"
