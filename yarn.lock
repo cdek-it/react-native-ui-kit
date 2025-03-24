@@ -2292,6 +2292,7 @@ __metadata:
     jest-junit: "npm:16.0.0"
     jiti: "npm:2.4.2"
     lefthook: "npm:1.10.10"
+    npm-check-updates: "npm:17.1.16"
     onchange: "npm:7.1.0"
     prettier: "npm:3.5.3"
     react: "npm:18.3.1"
@@ -13744,6 +13745,16 @@ __metadata:
   version: 3.0.0
   resolution: "normalize-path@npm:3.0.0"
   checksum: 10/88eeb4da891e10b1318c4b2476b6e2ecbeb5ff97d946815ffea7794c31a89017c70d7f34b3c2ebf23ef4e9fc9fb99f7dffe36da22011b5b5c6ffa34f4873ec20
+  languageName: node
+  linkType: hard
+
+"npm-check-updates@npm:17.1.16":
+  version: 17.1.16
+  resolution: "npm-check-updates@npm:17.1.16"
+  bin:
+    ncu: build/cli.js
+    npm-check-updates: build/cli.js
+  checksum: 10/38008eec222f1dbbb89064d76d01c91639f2d46afbf462bef9bc50c84c576a557e899e7480934ba4aa0d4617c660607b72f081e624543449dae25366e96bd228
   languageName: node
   linkType: hard
 
