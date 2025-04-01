@@ -16,7 +16,7 @@
     "test": "jest",
     "start": "expo start --dev-client",
     "android": "expo run:android",
-    "ios": "expo run:ios",
+    "ios": "expo run:ios --no-install",
     "storybook-generate": "sb-rn-get-stories --config-path .storybook",
     "doctor": "expo-doctor",
     "check": "expo install --check",
