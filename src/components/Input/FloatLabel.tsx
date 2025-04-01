@@ -85,15 +85,11 @@ export const FloatLabel = memo<FloatLabelProps>(
         : styles.labelAnimatedStyles
 
       return {
-        transform: [
-          {
-            translateY: interpolate(
-              labelAnimation.value,
-              [0, 1],
-              [labelBaseStyles.top, styles.labelReducedAnimatedStyles.top]
-            ),
-          },
-        ],
+        top: interpolate(
+          labelAnimation.value,
+          [0, 1],
+          [labelBaseStyles.top, styles.labelReducedAnimatedStyles.top]
+        ),
         fontSize: interpolate(
           labelAnimation.value,
           [0, 1],
@@ -104,16 +100,13 @@ export const FloatLabel = memo<FloatLabelProps>(
           [0, 1],
           [labelBaseStyles.opacity, styles.labelReducedAnimatedStyles.opacity]
         ),
+        color: interpolateColor(
+          labelColorAnimation.value,
+          [0, 1],
+          [styles.label.color, styles.labelFocused.color]
+        ),
       }
     })
-
-    const labelColorAnimatedStyle = useAnimatedStyle(() => ({
-      color: interpolateColor(
-        labelColorAnimation.value,
-        [0, 1],
-        [styles.label.color, styles.labelFocused.color]
-      ),
-    }))
 
     const onContainerPress = useCallback(() => {
       inputRef.current?.focus()
@@ -175,9 +168,7 @@ export const FloatLabel = memo<FloatLabelProps>(
           onChangeText={onChangeText}
           onFocus={onFocus}
         />
-        <Animated.Text
-          style={[styles.label, labelAnimatedStyle, labelColorAnimatedStyle]}
-        >
+        <Animated.Text style={[styles.label, labelAnimatedStyle]}>
           {placeholder}
         </Animated.Text>
       </Pressable>
