@@ -19,11 +19,7 @@ import {
   TouchableOpacity,
   type ViewStyle,
 } from 'react-native'
-import Animated, {
-  LinearTransition,
-  useAnimatedStyle,
-  useSharedValue,
-} from 'react-native-reanimated'
+import Animated, { useSharedValue, withTiming } from 'react-native-reanimated'
 
 import { useLoadingRotationAnimation } from '../../hooks/useLoadingRotationAnimation'
 import { makeStyles } from '../../utils/makeStyles'
@@ -58,6 +54,9 @@ export interface InputTextBaseProps
 
 export type RenderTextInputArgs = TextInputProps & { inputRef: Ref<TextInput> }
 
+const withOutlineAnimation = (toValue: number) =>
+  withTiming(toValue, { duration: 100 })
+
 /**
  * Базовое поле
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5470&m=dev
@@ -85,7 +84,9 @@ export const InputTextBase = memo<
 
     const onFocus = useCallback(
       (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
-        focusOutlineWidth.value = -styles.outlineWidth.borderWidth
+        focusOutlineWidth.value = withOutlineAnimation(
+          -styles.outlineWidth.borderWidth
+        )
         otherProps.onFocus?.(e)
       },
       [focusOutlineWidth, otherProps, styles.outlineWidth.borderWidth]
@@ -93,7 +94,7 @@ export const InputTextBase = memo<
 
     const onBlur = useCallback(
       (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
-        focusOutlineWidth.value = 0
+        focusOutlineWidth.value = withOutlineAnimation(0)
         otherProps.onBlur?.(e)
       },
       [focusOutlineWidth, otherProps]
@@ -122,19 +123,24 @@ export const InputTextBase = memo<
       [clearable, value.length]
     )
 
-    const focusOutlineStyles = useAnimatedStyle(() => ({
-      top: focusOutlineWidth.value,
-      right: focusOutlineWidth.value,
-      bottom: focusOutlineWidth.value,
-      left: focusOutlineWidth.value,
-    }))
+    const focusOutlineAnimatedStyles = useMemo(() => {
+      return {
+        top: focusOutlineWidth,
+        right: focusOutlineWidth,
+        bottom: focusOutlineWidth,
+        left: focusOutlineWidth,
+      }
+    }, [focusOutlineWidth])
 
-    const dangerOutlineStyles = useAnimatedStyle(() => ({
-      top: dangerOutlineWidth.value,
-      right: dangerOutlineWidth.value,
-      bottom: dangerOutlineWidth.value,
-      left: dangerOutlineWidth.value,
-    }))
+    const dangerOutlineAnimatedStyles = useMemo(
+      () => ({
+        top: dangerOutlineWidth,
+        right: dangerOutlineWidth,
+        bottom: dangerOutlineWidth,
+        left: dangerOutlineWidth,
+      }),
+      [dangerOutlineWidth]
+    )
 
     const outlineStyles = useMemo<ViewStyle>(
       () => ({
@@ -158,8 +164,9 @@ export const InputTextBase = memo<
     const loadingAnimatedStyle = useLoadingRotationAnimation(loading)
 
     useEffect(() => {
-      dangerOutlineWidth.value =
+      dangerOutlineWidth.value = withOutlineAnimation(
         state === 'danger' ? -styles.outlineWidth.borderWidth : 0
+      )
     }, [dangerOutlineWidth, state, styles.outlineWidth.borderWidth])
 
     useImperativeHandle(propsInputRef, () => inputRef.current)
@@ -195,22 +202,20 @@ export const InputTextBase = memo<
         {!disabled && (
           <>
             <Animated.View
-              layout={LinearTransition.duration(100)}
               style={[
                 styles.outline,
                 outlineStyles,
                 styles.dangerOutline,
-                dangerOutlineStyles,
+                dangerOutlineAnimatedStyles,
               ]}
               testID='InputTextBase_DangerOutline'
             />
             <Animated.View
-              layout={LinearTransition.duration(100)}
               style={[
                 styles.outline,
                 outlineStyles,
                 styles.focusOutline,
-                focusOutlineStyles,
+                focusOutlineAnimatedStyles,
               ]}
               testID='InputTextBase_FocusOutline'
             />
