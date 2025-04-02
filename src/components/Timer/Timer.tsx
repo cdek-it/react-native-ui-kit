@@ -3,8 +3,6 @@ import { View } from 'react-native'
 import Animated, {
   cancelAnimation,
   Easing,
-  FadeInUp,
-  FadeOutDown,
   useAnimatedProps,
   useSharedValue,
   withTiming,
@@ -12,6 +10,7 @@ import Animated, {
 import Svg, { Circle } from 'react-native-svg'
 
 import { makeStyles } from '../../utils/makeStyles'
+
 import { TimerFlip } from './TimerFlip'
 
 // eslint-disable-next-line import-x/no-deprecated
@@ -114,7 +113,5 @@ const useStyles = makeStyles(({ typography }) => ({
     width: SIZE,
     height: SIZE,
   },
-  circle: {
-    color: typography.Color.Surface['text-surface-0'],
-  },
+  circle: { color: typography.Color.Surface['text-surface-0'] },
 }))

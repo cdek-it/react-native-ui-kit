@@ -6,6 +6,7 @@ import Animated, {
   withTiming,
   runOnJS,
 } from 'react-native-reanimated'
+
 import { makeStyles } from '../../utils/makeStyles'
 
 interface TimerFlipProps {
@@ -40,7 +41,9 @@ export const TimerFlip: React.FC<TimerFlipProps> = ({
     (value: number) => {
       setCurrentValue(value)
       setNextValue(null)
-      setTimeout(() => {progress.value = 0 }, 0)
+      setTimeout(() => {
+        progress.value = 0
+      }, 0)
     },
     [progress]
   )
