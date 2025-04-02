@@ -17,7 +17,7 @@
     "start": "expo start --dev-client",
     "android": "expo run:android",
     "ios": "expo run:ios --no-install",
-    "storybook-generate": "sb-rn-get-stories --config-path .storybook",
+    "storybook-generate": "sb-rn-get-stories --config-path .storybook && sed -i -e 's/export const view = global.view/export const view: ReturnType<typeof start> = global.view/' .storybook/storybook.requires.ts && prettier .storybook --write",
     "doctor": "expo-doctor",
     "check": "expo install --check",
     "lint:check": "eslint .",

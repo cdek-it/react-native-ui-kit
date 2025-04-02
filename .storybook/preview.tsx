@@ -6,7 +6,7 @@ import {
   useChangeTheme,
 } from '../src'
 import { View } from 'react-native'
-import { type FunctionComponent, type ReactNode, useEffect } from 'react'
+import React, { type FunctionComponent, type ReactNode, useEffect } from 'react'
 
 const preview: Preview = {
   decorators: [
