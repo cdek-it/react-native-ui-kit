@@ -4,6 +4,30 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.30](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.29...v0.0.30) (2025-04-02)
+
+### Исправления багов
+
+- **FloatLabel:** исправлена анимация
+  ([e2cb264](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/e2cb264fb83fda0d2aa3e496bc4e9d27df1df2ba))
+- **InputTextBase:** исправлена анимация для корректной работы на Android
+  ([5f85832](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/5f858326e2ab0ca12fe52e6d89087f46278b42fc))
+
+### Другое
+
+- **eslint:** обновил ESLint до свежей версии
+  ([4f1f619](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/4f1f619a7e2d95510efd5d286355eb23e962a8ad))
+- **lint:** установил конфигурации eslint и prettier
+  ([439bfe5](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/439bfe5d33c3eb1102cfb180fa70a1049a3df34f))
+- **npm:** убрал npmRegistryServer и npmAuditServer из локального конфига
+  ([9320d30](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/9320d305a71e64e3fa492b7cd3138a8ef417f30e))
+- **packages-check:** установил npm-check-updates локально в репозитории проекта
+  ([18a9db9](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/18a9db9ce2ec3764d03dc27405b381b6d5e88032))
+- **scripts:** исключена установка зависимостей при запуске yarn ios
+  ([9f02e11](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/9f02e11ac8b35bfca17cd8f087f6c7c40579fea0))
+- **tests:** исправление тестов после правок линтера
+  ([2c01634](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/2c01634e0448e1cea58f7212bb22a01e2af92d67))
+
 ### [0.0.29](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.28...v0.0.29) (2025-03-19)
 
 ### Другое
