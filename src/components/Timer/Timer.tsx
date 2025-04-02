@@ -12,6 +12,7 @@ import Animated, {
 import Svg, { Circle } from 'react-native-svg'
 
 import { makeStyles } from '../../utils/makeStyles'
+import { TimerFlip } from './TimerFlip'
 
 // eslint-disable-next-line import-x/no-deprecated
 const AnimatedCircle = Animated.createAnimatedComponent(Circle)
@@ -86,21 +87,14 @@ export const Timer = memo<TimerProps>(({ countFrom, onFinish }) => {
           origin={[center, center]}
           r={circumferenceRadius}
           rotation={-90}
-          stroke={styles.text.color}
+          stroke={styles.circle.color}
           strokeDasharray={circumferenceLength}
           strokeLinecap='round'
           strokeWidth={BORDER_WIDTH}
         />
       </Svg>
 
-      <Animated.Text
-        entering={FadeInUp}
-        exiting={FadeOutDown}
-        key={currentTimerValue}
-        style={styles.text}
-      >
-        {currentTimerValue}
-      </Animated.Text>
+      <TimerFlip value={currentTimerValue} />
     </View>
   )
 })
@@ -120,11 +114,7 @@ const useStyles = makeStyles(({ typography }) => ({
     width: SIZE,
     height: SIZE,
   },
-  text: {
-    fontSize: typography.Size['text-base'],
-    fontWeight: 700,
-    includeFontPadding: false,
-    verticalAlign: 'middle',
+  circle: {
     color: typography.Color.Surface['text-surface-0'],
   },
 }))

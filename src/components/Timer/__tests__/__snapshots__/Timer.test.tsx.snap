@@ -88,27 +88,110 @@ exports[`Timer should reset timer on changing countFrom prop: after 1 s 1`] = `
       />
     </RNSVGGroup>
   </RNSVGSvgView>
-  <Text
-    collapsable={false}
-    entering={[Function]}
-    exiting={[Function]}
-    jestAnimatedStyle={
-      {
-        "value": {},
-      }
-    }
+  <View
     style={
       {
-        "color": "#2f2f2f",
-        "fontSize": 14,
-        "fontWeight": 700,
-        "includeFontPadding": false,
-        "verticalAlign": "middle",
+        "alignItems": "center",
+        "height": 28,
+        "justifyContent": "center",
+        "overflow": "hidden",
+        "position": "relative",
+        "width": 28,
       }
     }
   >
-    4
-  </Text>
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "bottom": 28,
+            "opacity": 0,
+            "position": "absolute",
+            "transform": [
+              {
+                "translateY": 0,
+              },
+            ],
+          },
+        }
+      }
+      style={
+        {
+          "alignItems": "center",
+          "bottom": 28,
+          "height": 28,
+          "justifyContent": "center",
+          "opacity": 0,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateY": 0,
+            },
+          ],
+          "width": 28,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#2f2f2f",
+            "fontSize": 14,
+            "fontWeight": 700,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          }
+        }
+      >
+        4
+      </Text>
+    </View>
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "opacity": 1,
+            "transform": [
+              {
+                "translateY": 0,
+              },
+            ],
+          },
+        }
+      }
+      style={
+        {
+          "alignItems": "center",
+          "height": 28,
+          "justifyContent": "center",
+          "opacity": 1,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateY": 0,
+            },
+          ],
+          "width": 28,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#2f2f2f",
+            "fontSize": 14,
+            "fontWeight": 700,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          }
+        }
+      >
+        5
+      </Text>
+    </View>
+  </View>
 </View>
 `;
 
@@ -200,27 +283,110 @@ exports[`Timer should reset timer on changing countFrom prop: after reset 1`] = 
       />
     </RNSVGGroup>
   </RNSVGSvgView>
-  <Text
-    collapsable={false}
-    entering={[Function]}
-    exiting={[Function]}
-    jestAnimatedStyle={
-      {
-        "value": {},
-      }
-    }
+  <View
     style={
       {
-        "color": "#2f2f2f",
-        "fontSize": 14,
-        "fontWeight": 700,
-        "includeFontPadding": false,
-        "verticalAlign": "middle",
+        "alignItems": "center",
+        "height": 28,
+        "justifyContent": "center",
+        "overflow": "hidden",
+        "position": "relative",
+        "width": 28,
       }
     }
   >
-    10
-  </Text>
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "bottom": 28,
+            "opacity": 0,
+            "position": "absolute",
+            "transform": [
+              {
+                "translateY": 0,
+              },
+            ],
+          },
+        }
+      }
+      style={
+        {
+          "alignItems": "center",
+          "bottom": 28,
+          "height": 28,
+          "justifyContent": "center",
+          "opacity": 0,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateY": 0,
+            },
+          ],
+          "width": 28,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#2f2f2f",
+            "fontSize": 14,
+            "fontWeight": 700,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          }
+        }
+      >
+        4
+      </Text>
+    </View>
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "opacity": 1,
+            "transform": [
+              {
+                "translateY": 0,
+              },
+            ],
+          },
+        }
+      }
+      style={
+        {
+          "alignItems": "center",
+          "height": 28,
+          "justifyContent": "center",
+          "opacity": 1,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateY": 0,
+            },
+          ],
+          "width": 28,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#2f2f2f",
+            "fontSize": 14,
+            "fontWeight": 700,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          }
+        }
+      >
+        5
+      </Text>
+    </View>
+  </View>
 </View>
 `;
 
@@ -312,27 +478,63 @@ exports[`Timer snapshot: before start 1`] = `
       />
     </RNSVGGroup>
   </RNSVGSvgView>
-  <Text
-    collapsable={false}
-    entering={[Function]}
-    exiting={[Function]}
-    jestAnimatedStyle={
-      {
-        "value": {},
-      }
-    }
+  <View
     style={
       {
-        "color": "#2f2f2f",
-        "fontSize": 14,
-        "fontWeight": 700,
-        "includeFontPadding": false,
-        "verticalAlign": "middle",
+        "alignItems": "center",
+        "height": 28,
+        "justifyContent": "center",
+        "overflow": "hidden",
+        "position": "relative",
+        "width": 28,
       }
     }
   >
-    2
-  </Text>
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "opacity": 1,
+            "transform": [
+              {
+                "translateY": 0,
+              },
+            ],
+          },
+        }
+      }
+      style={
+        {
+          "alignItems": "center",
+          "height": 28,
+          "justifyContent": "center",
+          "opacity": 1,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateY": 0,
+            },
+          ],
+          "width": 28,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#2f2f2f",
+            "fontSize": 14,
+            "fontWeight": 700,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          }
+        }
+      >
+        2
+      </Text>
+    </View>
+  </View>
 </View>
 `;
 
@@ -424,26 +626,109 @@ exports[`Timer snapshot: on finish 1`] = `
       />
     </RNSVGGroup>
   </RNSVGSvgView>
-  <Text
-    collapsable={false}
-    entering={[Function]}
-    exiting={[Function]}
-    jestAnimatedStyle={
-      {
-        "value": {},
-      }
-    }
+  <View
     style={
       {
-        "color": "#2f2f2f",
-        "fontSize": 14,
-        "fontWeight": 700,
-        "includeFontPadding": false,
-        "verticalAlign": "middle",
+        "alignItems": "center",
+        "height": 28,
+        "justifyContent": "center",
+        "overflow": "hidden",
+        "position": "relative",
+        "width": 28,
       }
     }
   >
-    0
-  </Text>
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "bottom": 28,
+            "opacity": 0,
+            "position": "absolute",
+            "transform": [
+              {
+                "translateY": 0,
+              },
+            ],
+          },
+        }
+      }
+      style={
+        {
+          "alignItems": "center",
+          "bottom": 28,
+          "height": 28,
+          "justifyContent": "center",
+          "opacity": 0,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateY": 0,
+            },
+          ],
+          "width": 28,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#2f2f2f",
+            "fontSize": 14,
+            "fontWeight": 700,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          }
+        }
+      >
+        0
+      </Text>
+    </View>
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "opacity": 1,
+            "transform": [
+              {
+                "translateY": 0,
+              },
+            ],
+          },
+        }
+      }
+      style={
+        {
+          "alignItems": "center",
+          "height": 28,
+          "justifyContent": "center",
+          "opacity": 1,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateY": 0,
+            },
+          ],
+          "width": 28,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#2f2f2f",
+            "fontSize": 14,
+            "fontWeight": 700,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          }
+        }
+      >
+        1
+      </Text>
+    </View>
+  </View>
 </View>
 `;
