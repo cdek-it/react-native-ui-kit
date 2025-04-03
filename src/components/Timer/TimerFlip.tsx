@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { memo, useEffect, useState } from 'react'
 import { View, Text } from 'react-native'
 import Animated, {
   useSharedValue,
@@ -8,15 +8,14 @@ import Animated, {
 } from 'react-native-reanimated'
 
 import { makeStyles } from '../../utils/makeStyles'
+import { COUNTER_SIZE } from './constants'
 
 interface TimerFlipProps {
   readonly value: number
   readonly duration?: number
 }
 
-const SIZE = 28
-
-export const TimerFlip: React.FC<TimerFlipProps> = ({
+export const TimerFlip =memo<TimerFlipProps>( ({
   value,
   duration = 300,
 }) => {
@@ -26,15 +25,14 @@ export const TimerFlip: React.FC<TimerFlipProps> = ({
   const progress = useSharedValue(0)
 
   const currentStyle = useAnimatedStyle(() => ({
-    transform: [{ translateY: progress.value * SIZE }],
+    transform: [{ translateY: progress.value * COUNTER_SIZE }],
     opacity: 1 - progress.value,
   }))
 
   const nextStyle = useAnimatedStyle(() => ({
-    transform: [{ translateY: progress.value * SIZE }],
+    transform: [{ translateY: progress.value * COUNTER_SIZE }],
     opacity: progress.value,
-    position: 'absolute',
-    bottom: SIZE,
+    bottom: COUNTER_SIZE,
   }))
 
   useEffect(() => {
@@ -67,27 +65,20 @@ export const TimerFlip: React.FC<TimerFlipProps> = ({
       </Animated.View>
     </View>
   )
-}
+})
 
 const useStyles = makeStyles(({ typography }) => ({
   container: {
     overflow: 'hidden',
-    width: SIZE,
-    height: SIZE,
+    width: COUNTER_SIZE,
+    height: COUNTER_SIZE,
     alignItems: 'center',
     justifyContent: 'center',
     position: 'relative',
   },
-  svgContainer: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: SIZE,
-    height: SIZE,
-  },
   textWrapper: {
-    height: SIZE,
-    width: SIZE,
+    height: COUNTER_SIZE,
+    width: COUNTER_SIZE,
     justifyContent: 'center',
     alignItems: 'center',
     position: 'absolute',

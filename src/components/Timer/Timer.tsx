@@ -12,6 +12,7 @@ import Svg, { Circle } from 'react-native-svg'
 import { makeStyles } from '../../utils/makeStyles'
 
 import { TimerFlip } from './TimerFlip'
+import { COUNTER_SIZE } from './constants'
 
 // eslint-disable-next-line import-x/no-deprecated
 const AnimatedCircle = Animated.createAnimatedComponent(Circle)
@@ -26,7 +27,6 @@ interface TimerProps {
   onFinish?: () => void
 }
 
-const SIZE = 28
 const BORDER_WIDTH = 2
 
 /**
@@ -37,9 +37,9 @@ export const Timer = memo<TimerProps>(({ countFrom, onFinish }) => {
   const styles = useStyles()
   const circleAnimation = useSharedValue(0)
   const [currentTimerValue, setCurrentTimerValue] = useState(countFrom)
-  const circumferenceRadius = SIZE / 2 - BORDER_WIDTH
+  const circumferenceRadius = COUNTER_SIZE / 2 - BORDER_WIDTH
   const circumferenceLength = 2 * Math.PI * circumferenceRadius
-  const center = SIZE / 2
+  const center = COUNTER_SIZE / 2
 
   const circleAnimatedProps = useAnimatedProps(() => ({
     strokeDashoffset: -circleAnimation.value * circumferenceLength,
@@ -101,8 +101,8 @@ export const Timer = memo<TimerProps>(({ countFrom, onFinish }) => {
 const useStyles = makeStyles(({ typography }) => ({
   container: {
     overflow: 'hidden',
-    width: SIZE,
-    height: SIZE,
+    width: COUNTER_SIZE,
+    height: COUNTER_SIZE,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -110,8 +110,8 @@ const useStyles = makeStyles(({ typography }) => ({
     position: 'absolute',
     top: 0,
     left: 0,
-    width: SIZE,
-    height: SIZE,
+    width: COUNTER_SIZE,
+    height: COUNTER_SIZE,
   },
   circle: { color: typography.Color.Surface['text-surface-0'] },
 }))
