@@ -16,10 +16,7 @@ interface TimerFlipProps {
   readonly duration?: number
 }
 
-export const TimerFlip =memo<TimerFlipProps>(({
-  value,
-  duration = 300,
-}) => {
+export const TimerFlip =memo<TimerFlipProps>(({ value, duration = 300 }) => {
   const styles = useStyles()
   const [currentValue, setCurrentValue] = useState(value)
   const [nextValue, setNextValue] = useState<number | null>(value)
