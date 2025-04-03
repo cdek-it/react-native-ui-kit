@@ -495,6 +495,53 @@ exports[`Timer snapshot: before start 1`] = `
       jestAnimatedStyle={
         {
           "value": {
+            "bottom": 28,
+            "opacity": 0,
+            "position": "absolute",
+            "transform": [
+              {
+                "translateY": 0,
+              },
+            ],
+          },
+        }
+      }
+      style={
+        {
+          "alignItems": "center",
+          "bottom": 28,
+          "height": 28,
+          "justifyContent": "center",
+          "opacity": 0,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateY": 0,
+            },
+          ],
+          "width": 28,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#2f2f2f",
+            "fontSize": 14,
+            "fontWeight": 700,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          }
+        }
+      >
+        2
+      </Text>
+    </View>
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
             "opacity": 1,
             "transform": [
               {

@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { View, Text } from 'react-native'
 import Animated, {
   useSharedValue,
@@ -22,7 +22,7 @@ export const TimerFlip: React.FC<TimerFlipProps> = ({
 }) => {
   const styles = useStyles()
   const [currentValue, setCurrentValue] = useState(value)
-  const [nextValue, setNextValue] = useState<number | null>(null)
+  const [nextValue, setNextValue] = useState<number | null>(value)
   const progress = useSharedValue(0)
 
   const currentStyle = useAnimatedStyle(() => ({
@@ -37,28 +37,23 @@ export const TimerFlip: React.FC<TimerFlipProps> = ({
     bottom: SIZE,
   }))
 
-  const updateCurrentValue = useCallback(
-    (value: number) => {
-      setCurrentValue(value)
+  useEffect(() => {
+    if (nextValue === currentValue && value !== currentValue) {
       setNextValue(null)
-      setTimeout(() => {
-        progress.value = 0
-      }, 0)
-    },
-    [progress]
-  )
+      progress.value = 0
+    }
+  }, [currentValue, nextValue, progress, value])
 
   useEffect(() => {
     if (value === currentValue || nextValue !== null) return
 
     setNextValue(value)
-    progress.value = 0
     progress.value = withTiming(1, { duration }, (finished) => {
       if (finished) {
-        runOnJS(updateCurrentValue)(value)
+        runOnJS(setCurrentValue)(value)
       }
     })
-  }, [value, currentValue, duration, progress, nextValue, updateCurrentValue])
+  }, [value, currentValue, duration, progress, nextValue])
 
   return (
     <View style={styles.container}>
