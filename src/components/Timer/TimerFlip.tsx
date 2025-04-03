@@ -8,6 +8,7 @@ import Animated, {
 } from 'react-native-reanimated'
 
 import { makeStyles } from '../../utils/makeStyles'
+
 import { COUNTER_SIZE } from './constants'
 
 interface TimerFlipProps {
@@ -15,7 +16,7 @@ interface TimerFlipProps {
   readonly duration?: number
 }
 
-export const TimerFlip =memo<TimerFlipProps>( ({
+export const TimerFlip =memo<TimerFlipProps>(({
   value,
   duration = 300,
 }) => {
