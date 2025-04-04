@@ -4,6 +4,32 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.31](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.30...v0.0.31) (2025-04-04)
+
+### Исправления багов
+
+- **TimeFlip:** исправлено моргание анимации
+  ([d6f5e84](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/d6f5e841c0e66ea40cea920e116a366a0d696472))
+- **timer:** опять линтер
+  ([8ad3b50](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/8ad3b5028cfe488300b6b02ffdf51955a3ea3aaf))
+- **timer:** правки по замечанием в ревью
+  ([d6ad428](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/d6ad42816b967c198590eb53220d22d423726d0f))
+- **timer:** правки по замечаниям линтера
+  ([988c48a](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/988c48a6d120256825242bdc0f7739be77568902))
+- **timer:** снова линтер
+  ([69acfa6](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/69acfa60fe908183295d4af685612b5c04719187))
+- **timer:** фикс анимаций таймера MOBILE-76
+  ([20d811c](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/20d811c15070aa7a4aa36c7d03e520143eff1871))
+
+### Другое
+
+- **storybook:** исправление команды storybook-generate
+  ([7f01454](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/7f01454005fbf7c1a88bf944f292ffbf35fa8df1))
+- **timer:** обновление снапшотов
+  ([b333e28](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/b333e2841856ce590656453f59abfde3b47641a5))
+- отключена проверка типов в storybook.requires.ts
+  ([553f004](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/553f004488408a7e6e1a367f7b4553e7d1a37fd2))
+
 ### [0.0.30](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.29...v0.0.30) (2025-04-02)
 
 ### Исправления багов
