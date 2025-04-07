@@ -21,8 +21,8 @@ const meta: Meta<typeof ListBase> = {
   component: ListBase,
   args: {
     iconAlignment: 'top',
-    title: 'Title',
-    subtitle: 'Subtitle',
+    text: 'Title',
+    title: 'Subtitle',
     caption: 'Caption',
     LeftIcon: IconList,
     RightIcon: IconCheck,
@@ -37,8 +37,8 @@ const meta: Meta<typeof ListBase> = {
       options: Object.keys(Icons),
       mapping: Icons,
     },
+    text: { control: 'text' },
     title: { control: 'text' },
-    subtitle: { control: 'text' },
     caption: { control: 'text' },
     RightIcon: {
       control: 'select',
@@ -66,7 +66,7 @@ export default meta
 type Story = StoryObj<typeof ListBase>
 
 export const ListBaseStory: Story = {
-  args: { title: 'ListBase' },
+  args: { text: 'ListBase' },
   argTypes: {},
   parameters: {
     notes: `

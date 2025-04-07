@@ -5,24 +5,38 @@ import { View, type ViewStyle, type ViewProps, Pressable } from 'react-native'
 import { makeStyles } from '../../../utils/makeStyles'
 import { Subtitle, Body, Caption } from '../../Typography'
 
+/** Свойства ListBase */
 export interface ListBaseProps extends ViewProps {
+  /** Положение левой иконки - вверху или по центру. Правая иконка всегда по центру. */
   iconAlignment?: 'top' | 'center'
-  title: string
-  subtitle?: string
+  /** Основной текст */
+  text: string
+  /** Заголовок */
+  title?: string
+  /** Пояснение */
   caption?: string
+  /** Левая иконка (из набора Tabler) */
   LeftIcon?: Icon
+  /** Правая иконка (из набора Tabler) */
   RightIcon?: Icon
+  /** Дополнительный контент. Выводится между названием и правой иконкой */
   extra?: React.ReactNode
+  /** Разделитель - наверху только контента, не захватывая левую иконку, либо наверху всего компонента*/
   divider?: 'content' | 'full'
   disabled?: boolean
   onPress?: () => void
 }
 
+/**
+ * Базовый элемент списка
+ *
+ * Фигма https://www.figma.com/design/2ZnL6XPKEpxAHvrlbRvnMu/Template-Tailwind-CSS-(DS)?node-id=641-2254&m=dev
+ */
 export const ListBase = memo<ListBaseProps>(
   ({
     iconAlignment = 'top',
-    title,
-    subtitle,
+    text: title,
+    title: subtitle,
     caption,
     LeftIcon,
     RightIcon,

@@ -5,13 +5,13 @@ import { ListBase, type ListBaseProps } from '../ListBase'
 
 describe('ListBase tests', () => {
   const snapshotTestsConfig: Array<[string, ListBaseProps]> = [
-    ['minimal config', { title: 'Menu Item' }],
+    ['minimal config', { text: 'Menu Item' }],
     [
       'maximal config',
       {
         iconAlignment: 'top',
-        title: 'Title',
-        subtitle: 'Subtitle',
+        text: 'Title',
+        title: 'Subtitle',
         caption: 'Caption',
         LeftIcon: IconList,
         RightIcon: IconUser,
@@ -23,8 +23,8 @@ describe('ListBase tests', () => {
       'centered and full divider',
       {
         iconAlignment: 'center',
-        title: 'Title',
-        subtitle: 'Subtitle',
+        text: 'Title',
+        title: 'Subtitle',
         caption: 'Caption',
         LeftIcon: IconList,
         RightIcon: IconUser,
@@ -36,8 +36,8 @@ describe('ListBase tests', () => {
       'full disabled',
       {
         iconAlignment: 'center',
-        title: 'Title',
-        subtitle: 'Subtitle',
+        text: 'Title',
+        title: 'Subtitle',
         caption: 'Caption',
         LeftIcon: IconList,
         RightIcon: IconUser,
@@ -60,7 +60,7 @@ describe('ListBase tests', () => {
   test('Calls onPress when pressed', async () => {
     const onPressMock = jest.fn()
     const { getByText } = render(
-      <ListBase title='title' onPress={onPressMock} />
+      <ListBase text='title' onPress={onPressMock} />
     )
 
     fireEvent.press(getByText('title'))
