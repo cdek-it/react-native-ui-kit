@@ -1,24 +1,26 @@
 import type { Icon } from '@tabler/icons-react-native'
 import React, { memo, useMemo } from 'react'
-import { View, type ViewStyle, type ViewProps } from 'react-native'
+import { View, type ViewStyle, type ViewProps, Pressable } from 'react-native'
 
 import { makeStyles } from '../../../utils/makeStyles'
 import { Subtitle, Body, Caption } from '../../Typography'
 
 export interface ListBaseProps extends ViewProps {
-  iconAlignment: 'top' | 'center'
-  title?: string
+  iconAlignment?: 'top' | 'center'
+  title: string
   subtitle?: string
   caption?: string
-  LeftIcon: Icon
-  RightIcon: Icon
+  LeftIcon?: Icon
+  RightIcon?: Icon
   extra?: React.ReactNode
   divider?: 'content' | 'full'
+  disabled?: boolean
+  onPress?: () => void
 }
 
 export const ListBase = memo<ListBaseProps>(
   ({
-    iconAlignment,
+    iconAlignment = 'top',
     title,
     subtitle,
     caption,
@@ -26,7 +28,10 @@ export const ListBase = memo<ListBaseProps>(
     RightIcon,
     extra,
     divider,
+    disabled = false,
+    onPress,
     style,
+    testID,
     ...rest
   }) => {
     const styles = useStyles()
@@ -41,39 +46,72 @@ export const ListBase = memo<ListBaseProps>(
 
     const fullDivider = divider === 'full' ? styles.divider : {}
     const contentDivider = divider === 'content' ? styles.divider : {}
+    const accessibilityLabel = useMemo(
+      () => [subtitle, title].join(' '),
+      [subtitle, title]
+    )
 
     return (
-      <View style={[style, styles.container, fullDivider]} {...rest}>
-        {LeftIcon ? (
-          <View style={leftIconStyle}>
-            <LeftIcon {...styles.icon} />
-          </View>
-        ) : null}
-        <View style={[styles.content, contentDivider]}>
-          <View style={styles.labelContainer}>
-            {subtitle ? <Subtitle color='primary'>{subtitle}</Subtitle> : null}
-            <View style={styles.titleContainer}>
-              {title ? <Body>{title}</Body> : null}
-              {caption ? <Caption color='secondary'>{caption}</Caption> : null}
+      <Pressable
+        accessibilityLabel={accessibilityLabel}
+        accessibilityRole='button'
+        accessibilityValue={{ text: caption }}
+        disabled={disabled}
+        testID={testID || 'ListBase'}
+        onPress={onPress}
+        {...rest}
+      >
+        {({ pressed }) => (
+          <View
+            style={[
+              style,
+              styles.container,
+              fullDivider,
+              disabled && styles.disabled,
+              pressed && styles.pressed,
+            ]}
+            {...rest}
+          >
+            {LeftIcon ? (
+              <View style={leftIconStyle}>
+                <LeftIcon {...styles.icon} />
+              </View>
+            ) : null}
+            <View style={[styles.content, contentDivider]}>
+              <View style={styles.labelContainer}>
+                {subtitle ? (
+                  <Subtitle color='primary'>{subtitle}</Subtitle>
+                ) : null}
+                <View style={styles.titleContainer}>
+                  <Body>{title}</Body>
+                  {caption ? (
+                    <Caption color='secondary'>{caption}</Caption>
+                  ) : null}
+                </View>
+              </View>
+              <View style={styles.rightSection}>
+                {extra ? (
+                  <View style={styles.extraContainer}>{extra}</View>
+                ) : null}
+                {RightIcon ? <RightIcon {...styles.icon} /> : null}
+              </View>
             </View>
           </View>
-          <View style={styles.rightSection}>
-            {extra ? <View style={styles.extraContainer}>{extra}</View> : null}
-            {RightIcon ? <RightIcon {...styles.icon} /> : null}
-          </View>
-        </View>
-      </View>
+        )}
+      </Pressable>
     )
   }
 )
 
-const useStyles = makeStyles(({ spacing, typography, theme }) => ({
+const useStyles = makeStyles(({ spacing, typography, theme, background }) => ({
   container: {
     flexDirection: 'row',
     paddingLeft: spacing.Padding['p-4'],
     gap: spacing.Padding['p-4'],
     alignItems: 'center',
   },
+  pressed: { backgroundColor: background.Common['bg-surface-hover'] },
+  disabled: { opacity: 0.6 },
   leftIcon: { paddingVertical: spacing.Padding['p-4'] },
   content: {
     flexDirection: 'row',

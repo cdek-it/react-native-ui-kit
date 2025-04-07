@@ -28,6 +28,7 @@ const meta: Meta<typeof ListBase> = {
     RightIcon: IconCheck,
     extra: <IconUser />,
     divider: undefined,
+    disabled: false,
   },
   argTypes: {
     iconAlignment: { control: 'radio', options: ['top', 'center'] },
@@ -46,6 +47,8 @@ const meta: Meta<typeof ListBase> = {
     },
     extra: { control: 'select', options: Object.keys(Extras), mapping: Extras },
     divider: { control: 'radio', options: [undefined, 'content', 'full'] },
+    disabled: { control: 'boolean' },
+    onPress: { action: 'pressed' },
   },
   decorators: [
     (Story) => (
