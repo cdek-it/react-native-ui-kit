@@ -51,11 +51,10 @@ export const ListBase = memo<ListBaseProps>(
     const styles = useStyles()
 
     const leftIconStyle: ViewStyle = useMemo(() => {
-      if (iconAlignment === 'top') {
-        return { ...styles.leftIcon, alignSelf: 'flex-start' }
+      return {
+        ...styles.leftIcon,
+        alignSelf: iconAlignment === 'top' ? 'flex-start' : undefined,
       }
-
-      return styles.leftIcon
     }, [styles.leftIcon, iconAlignment])
 
     const fullDivider = divider === 'full' ? styles.divider : {}
