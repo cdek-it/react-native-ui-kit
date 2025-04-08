@@ -57,6 +57,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
     <View
       style={
         {
+          "alignSelf": undefined,
           "paddingVertical": 14,
         }
       }
@@ -586,6 +587,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
     <View
       style={
         {
+          "alignSelf": undefined,
           "paddingVertical": 14,
         }
       }
