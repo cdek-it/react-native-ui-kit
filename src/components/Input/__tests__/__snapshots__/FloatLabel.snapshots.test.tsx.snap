@@ -36,7 +36,7 @@ exports[`FloatLabel snapshots focused/unfocused snapshots: focused 1`] = `
       "margin": 10,
     }
   }
-  testID="FloatLabel_PressableContainer"
+  testID="FloatLabel"
 >
   <InputTextBase
     containerStyle={
@@ -127,7 +127,7 @@ exports[`FloatLabel snapshots focused/unfocused snapshots: unfocused 1`] = `
       "margin": 10,
     }
   }
-  testID="FloatLabel_PressableContainer"
+  testID="FloatLabel"
 >
   <InputTextBase
     containerStyle={
@@ -182,7 +182,7 @@ exports[`FloatLabel snapshots focused/unfocused snapshots: unfocused 1`] = `
 </View>
 `;
 
-exports[`FloatLabel snapshots unfocused with value snapshots, multiline: focused with value 1`] = `
+exports[`FloatLabel snapshots unfocused with value snapshots, multiline, custom testID: focused with value 1`] = `
 <View
   accessibilityState={
     {
@@ -218,7 +218,7 @@ exports[`FloatLabel snapshots unfocused with value snapshots, multiline: focused
       "margin": 10,
     }
   }
-  testID="FloatLabel_PressableContainer"
+  testID="CustomTestId"
 >
   <InputTextBase
     containerStyle={

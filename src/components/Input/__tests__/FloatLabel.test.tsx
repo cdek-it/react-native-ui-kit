@@ -18,7 +18,7 @@ describe('FloatLabel interactions', () => {
     const { getByTestId } = render(
       <FloatLabel inputRef={inputRef} placeholder='Label' />
     )
-    const pressableContainer = getByTestId('FloatLabel_PressableContainer')
+    const pressableContainer = getByTestId('FloatLabel')
     const user = userEvent.setup()
 
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion

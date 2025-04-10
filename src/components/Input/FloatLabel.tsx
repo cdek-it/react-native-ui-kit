@@ -144,7 +144,7 @@ export const FloatLabel = memo<FloatLabelProps>(
       <Pressable
         disabled={disabled}
         style={style}
-        testID='FloatLabel_PressableContainer'
+        testID={otherProps.testID || FloatLabelTestId.root}
         onPress={onContainerPress}
       >
         <InputTextBase
@@ -162,7 +162,7 @@ export const FloatLabel = memo<FloatLabelProps>(
           multiline={multiline}
           placeholder=''
           state={state}
-          testID='FloatLabel_InputTextBase'
+          testID={FloatLabelTestId.inputTextBase}
           value={value}
           onBlur={onBlur}
           onChangeText={onChangeText}
@@ -196,3 +196,8 @@ const useStyles = makeStyles(({ spacing, typography }) => ({
   labelReducedAnimatedStyles: { top: 10.5, fontSize: 12.25, opacity: 1 },
   labelFocused: { color: typography.Color.Common['text-primary'] },
 }))
+
+export const FloatLabelTestId = {
+  root: 'FloatLabel',
+  inputTextBase: 'FloatLabel_InputTextBase',
+}

@@ -25,12 +25,13 @@ describe('FloatLabel snapshots', () => {
     expect(toJSON()).toMatchSnapshot('focused')
   })
 
-  test('unfocused with value snapshots, multiline', () => {
+  test('unfocused with value snapshots, multiline, custom testID', () => {
     const { toJSON } = render(
       <FloatLabel
         multiline
         placeholder='Label'
         style={{ margin: 10 }}
+        testID='CustomTestId'
         value='Value'
       />
     )
