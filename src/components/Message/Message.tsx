@@ -152,20 +152,25 @@ export const Message = memo<MessageProps>(
             <Icon
               color={styles[severity].borderLeftColor}
               height={styles.iconSize.height}
+              testID={TestId.Icon}
               width={styles.iconSize.width}
             />
           )}
 
           <View style={styles.titleTextContainer}>
-            <Body base weight='bold'>
+            <Body base testID={TestId.Title} weight='bold'>
               {title}
             </Body>
-            {caption ? <Caption color='secondary'>{caption}</Caption> : null}
+            {caption ? (
+              <Caption color='secondary' testID={TestId.Caption}>
+                {caption}
+              </Caption>
+            ) : null}
           </View>
 
           {button}
         </View>
-        {body}
+        <View testID={TestId.Body}>{body}</View>
         {footer}
       </View>
     )
@@ -229,4 +234,8 @@ const useStyles = makeStyles(({ theme, typography, spacing }) => ({
 export enum TestId {
   Container = 'Message_Container',
   CloseButton = 'Message_CloseButton',
+  Title = 'MessageTitle',
+  Caption = 'MessageCaption',
+  Body = 'MessageBody',
+  Icon = 'MessageIcon',
 }
