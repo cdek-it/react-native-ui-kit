@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.33](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.32...v0.0.33) (2025-04-14)
+
+### Новый функционал
+
+- **message-ids:** добавлены айди к мессадж
+  ([1dc35d2](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/1dc35d24262508db36e9b31c6935dc70d667c3bf))
+
 ### [0.0.32](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.31...v0.0.32) (2025-04-11)
 
 ### Исправления багов
