@@ -21,7 +21,7 @@ export const makeStyles =
       }
     }, [theme])
 
-    return createStyles(themeValues) as T
+    return useMemo(() => createStyles(themeValues) as T, [themeValues])
   }
 
 type StylesItem = ViewStyle | ImageStyle | TextStyle
