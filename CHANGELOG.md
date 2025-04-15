@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.34](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.33...v0.0.34) (2025-04-15)
+
+### Новый функционал
+
+- **Typography:** реализован компонент Anchor
+  ([576765f](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/576765f3c8d746cc4fe264912a9fbaac83defa4e))
+
 ### [0.0.33](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.32...v0.0.33) (2025-04-14)
 
 ### Новый функционал
