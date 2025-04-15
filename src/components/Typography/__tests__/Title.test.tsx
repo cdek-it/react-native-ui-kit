@@ -9,6 +9,7 @@ describe('Title component tests', () => {
 
   test.each(snapshotCases)('level = $level', (props) => {
     const renderedTitle = render(<Title {...props}>Text</Title>)
+
     expect(renderedTitle.toJSON()).toMatchSnapshot()
   })
 })

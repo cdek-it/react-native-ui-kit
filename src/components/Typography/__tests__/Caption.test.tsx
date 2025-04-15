@@ -10,11 +10,13 @@ describe('Caption component tests', () => {
 
   test.each(snapshotCases)('color = $color, disabled = $disabled', (props) => {
     const renderedCaption = render(<Caption {...props}>Text</Caption>)
+
     expect(renderedCaption.toJSON()).toMatchSnapshot()
   })
 
   test('default props', () => {
     const renderedCaption = render(<Caption>Text</Caption>)
+
     expect(renderedCaption.toJSON()).toMatchSnapshot()
   })
 })

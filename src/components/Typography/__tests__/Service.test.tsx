@@ -13,6 +13,7 @@ describe('Service component tests', () => {
     'base = $base, showIcon = $showIcon, variant = $variant',
     (props) => {
       const renderedBody = render(<Service {...props}>Text</Service>)
+
       expect(renderedBody.toJSON()).toMatchSnapshot()
     }
   )

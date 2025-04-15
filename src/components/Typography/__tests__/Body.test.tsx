@@ -15,12 +15,14 @@ describe('Body component tests', () => {
     'base = $base, color = $color, disabled = $disabled, paragraph = $paragraph, weight = $weight',
     (props) => {
       const renderedBody = render(<Body {...props}>Text</Body>)
+
       expect(renderedBody.toJSON()).toMatchSnapshot()
     }
   )
 
   test('default props', () => {
     const renderedBody = render(<Body>Text</Body>)
+
     expect(renderedBody.toJSON()).toMatchSnapshot()
   })
 })

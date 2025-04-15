@@ -11,6 +11,7 @@ describe('Subtitle component tests', () => {
 
   test.each(snapshotCases)('base = $base, color = $color', (props) => {
     const renderedTitle = render(<Subtitle {...props}>Text</Subtitle>)
+
     expect(renderedTitle.toJSON()).toMatchSnapshot()
   })
 })
