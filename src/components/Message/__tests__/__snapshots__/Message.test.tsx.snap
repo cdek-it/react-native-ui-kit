@@ -54,9 +54,6 @@ exports[`Message {"Icon": [Object], "timerValue": 5} 1`] = `
       </Body>
     </View>
   </View>
-  <View
-    testID="MessageBody"
-  />
 </View>
 `;
 
@@ -213,9 +210,6 @@ exports[`Message {"Icon": [Object]} 1`] = `
       </Body>
     </View>
   </View>
-  <View
-    testID="MessageBody"
-  />
 </View>
 `;
 
@@ -820,9 +814,6 @@ exports[`Message {"closeLabel": "Close", "footer": [Object], "onClose": [Functio
       </Text>
     </View>
   </View>
-  <View
-    testID="MessageBody"
-  />
   <View>
     footer
   </View>
@@ -1141,9 +1132,6 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
       </RNSVGSvgView>
     </View>
   </View>
-  <View
-    testID="MessageBody"
-  />
   <View>
     footer
   </View>
@@ -1205,9 +1193,6 @@ exports[`Message {"onTimerFinish": [Function mockConstructor], "timerValue": 5} 
       </Body>
     </View>
   </View>
-  <View
-    testID="MessageBody"
-  />
 </View>
 `;
 
@@ -1364,9 +1349,6 @@ exports[`Message {"severity": "danger"} 1`] = `
       </Body>
     </View>
   </View>
-  <View
-    testID="MessageBody"
-  />
 </View>
 `;
 
@@ -1546,8 +1528,5 @@ exports[`Message {} 1`] = `
       </Body>
     </View>
   </View>
-  <View
-    testID="MessageBody"
-  />
 </View>
 `;

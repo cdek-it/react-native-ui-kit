@@ -170,7 +170,7 @@ export const Message = memo<MessageProps>(
 
           {button}
         </View>
-        <View testID={TestId.Body}>{body}</View>
+        {body ? <View testID={TestId.Body}>{body}</View> : null}
         {footer}
       </View>
     )
