@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.35](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.34...v0.0.35) (2025-04-16)
+
+### Новый функционал
+
+- **makeStyles:** добавлена мемоизация стилей
+  ([acece28](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/acece28a52bf8137d6c64b46c9aef3e45e033788))
+
+### Исправления багов
+
+- **Message:** поправлены отступы при отсутствующем body
+  ([64588a9](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/64588a945ce414cfd508b4363faf49237106fad8))
+- **Typography:** добавлен экспорт компонента Anchor
+  ([28bbb40](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/28bbb40f24f09d3e3774e97bd2d9454f27540659))
+
 ### [0.0.34](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.33...v0.0.34) (2025-04-15)
 
 ### Новый функционал
