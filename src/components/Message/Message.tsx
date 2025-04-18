@@ -141,6 +141,7 @@ export const Message = memo<MessageProps>(
 
     return (
       <View
+        accessible
         style={[styles.container, styles[severity], style]}
         testID={testID || TestId.Container}
         {...rest}
@@ -232,10 +233,10 @@ const useStyles = makeStyles(({ theme, typography, spacing }) => ({
 }))
 
 export enum TestId {
-  Container = 'Message_Container',
-  CloseButton = 'Message_CloseButton',
-  Title = 'MessageTitle',
-  Caption = 'MessageCaption',
-  Body = 'MessageBody',
-  Icon = 'MessageIcon',
+  Container = 'MessageContainer',
+  CloseButton = 'CloseButton',
+  Title = 'Title',
+  Caption = 'Caption',
+  Body = 'Body',
+  Icon = 'Icon',
 }

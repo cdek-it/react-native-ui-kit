@@ -11,6 +11,7 @@ exports[`Timer should reset timer on changing countFrom prop: after 1 s 1`] = `
       "width": 28,
     }
   }
+  testID="TimerContainer"
 >
   <RNSVGSvgView
     bbHeight={28}
@@ -205,6 +206,7 @@ exports[`Timer should reset timer on changing countFrom prop: after reset 1`] = 
       "width": 28,
     }
   }
+  testID="TimerContainer"
 >
   <RNSVGSvgView
     bbHeight={28}
@@ -399,6 +401,7 @@ exports[`Timer snapshot: before start 1`] = `
       "width": 28,
     }
   }
+  testID="TimerContainer"
 >
   <RNSVGSvgView
     bbHeight={28}
@@ -593,6 +596,7 @@ exports[`Timer snapshot: on finish 1`] = `
       "width": 28,
     }
   }
+  testID="TimerContainer"
 >
   <RNSVGSvgView
     bbHeight={28}

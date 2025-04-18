@@ -76,7 +76,7 @@ export const Timer = memo<TimerProps>(({ countFrom, onFinish }) => {
   }, [currentTimerValue, onFinish])
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container} testID={TestId.Container}>
       <Svg style={styles.svgContainer}>
         <AnimatedCircle
           animatedProps={circleAnimatedProps}
@@ -115,3 +115,7 @@ const useStyles = makeStyles(({ typography }) => ({
   },
   circle: { color: typography.Color.Surface['text-surface-0'] },
 }))
+
+export enum TestId {
+  Container = 'TimerContainer',
+}
