@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.36](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.35...v0.0.36) (2025-04-22)
+
+### Новый функционал
+
+- **ids:** ids message timer
+  ([acb4280](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/acb42801fd5987bf48d9aabeaed454ca539342d2))
+
 ### [0.0.35](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.34...v0.0.35) (2025-04-16)
 
 ### Новый функционал
