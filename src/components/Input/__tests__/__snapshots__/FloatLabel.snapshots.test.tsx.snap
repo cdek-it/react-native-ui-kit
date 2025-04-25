@@ -78,11 +78,13 @@ exports[`FloatLabel snapshots focused/unfocused snapshots: focused 1`] = `
       {
         "color": "rgba(0, 0, 0, 0.6)",
         "fontSize": 14,
+        "includeFontPadding": false,
         "left": 10.5,
         "opacity": 0.6,
         "paddingHorizontal": 3.5,
         "position": "absolute",
         "top": 20,
+        "verticalAlign": "middle",
       }
     }
   >
@@ -169,11 +171,13 @@ exports[`FloatLabel snapshots focused/unfocused snapshots: unfocused 1`] = `
       {
         "color": "rgba(0, 0, 0, 0.6)",
         "fontSize": 14,
+        "includeFontPadding": false,
         "left": 10.5,
         "opacity": 0.6,
         "paddingHorizontal": 3.5,
         "position": "absolute",
         "top": 20,
+        "verticalAlign": "middle",
       }
     }
   >
@@ -263,11 +267,13 @@ exports[`FloatLabel snapshots unfocused with value snapshots, multiline, custom 
       {
         "color": "rgba(0, 0, 0, 0.6)",
         "fontSize": 12.25,
+        "includeFontPadding": false,
         "left": 10.5,
         "opacity": 1,
         "paddingHorizontal": 3.5,
         "position": "absolute",
         "top": 10.5,
+        "verticalAlign": "middle",
       }
     }
   >

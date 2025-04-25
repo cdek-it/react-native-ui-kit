@@ -191,6 +191,8 @@ const useStyles = makeStyles(({ spacing, typography }) => ({
     paddingHorizontal: spacing.Padding['p-1'],
     left: 10.5,
     color: typography.Color.Common['text-color-secondary'],
+    includeFontPadding: false,
+    verticalAlign: 'middle',
   },
   labelAnimatedStyles: { top: 20, fontSize: 14, opacity: 0.6 },
   labelReducedAnimatedStyles: { top: 10.5, fontSize: 12.25, opacity: 1 },
