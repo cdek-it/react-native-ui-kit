@@ -205,19 +205,19 @@ export const InputTextBase = memo<
               style={[
                 styles.outline,
                 outlineStyles,
-                styles.dangerOutline,
-                dangerOutlineAnimatedStyles,
+                styles.focusOutline,
+                focusOutlineAnimatedStyles,
               ]}
-              testID='InputTextBase_DangerOutline'
+              testID='InputTextBase_FocusOutline'
             />
             <Animated.View
               style={[
                 styles.outline,
                 outlineStyles,
-                styles.focusOutline,
-                focusOutlineAnimatedStyles,
+                styles.dangerOutline,
+                dangerOutlineAnimatedStyles,
               ]}
-              testID='InputTextBase_FocusOutline'
+              testID='InputTextBase_DangerOutline'
             />
           </>
         )}
