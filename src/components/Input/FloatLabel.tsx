@@ -58,7 +58,7 @@ export const FloatLabel = memo<FloatLabelProps>(
     const labelAnimation = useSharedValue(0)
     const labelColorAnimation = useSharedValue(0)
     const [focused, setFocused] = useState(false)
-    const [valueState, setValueState] = useState('')
+    const [valueState, setValueState] = useState(otherProps.defaultValue || '')
     const inputRef = useRef<TextInput>(null)
 
     const value = useMemo(
