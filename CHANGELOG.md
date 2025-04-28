@@ -4,6 +4,37 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.37](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.36...v0.0.37) (2025-04-28)
+
+### Новый функционал
+
+- **listbase:** добавлена реакция на нажатие и тесты
+  ([9c14e8d](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/9c14e8dcf2e5247fe0096a8f6b74187221b1b905))
+- **listbase:** добален компонент ListBase
+  ([798b88a](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/798b88abb2ba2e9fb0951fa7d714868d9aaffa92))
+- **listbase:** перименование свойств для повышения понятности и дока
+  ([4d21eb8](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/4d21eb84467d9d6159c76f2f21a8f914347ce7fa))
+
+### Рефакторинг
+
+- **listbase:** правки по замечаниям в ревью
+  ([7425afc](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/7425afc50bb8b5ea37e7e4da599119ea51b3ac8a))
+
+### Другое
+
+- **listbase:** обновление снапшотов
+  ([fd60e84](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/fd60e84e81a1a4e3acf13d5c02b57f677bd1c89a))
+
+### Исправления багов
+
+- **FloatLabel:** добавлен учет defaultValue при первом рендере
+  ([75bcbeb](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/75bcbeb410bc189d0a27e76c7e28ada58df329bd))
+- **FloatLabel:** исправлено вертикальное выравнивание плейсхолдера на Android
+  ([38ceecf](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/38ceecfdef5fc05f87b8125394888425c58e1557))
+- **InputTextBase:** outline при фокусе в состоянии danger не меняется на
+  зеленый, остается красный
+  ([398368e](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/398368e1bd0f24042d04a8b47b81bb13988be7cd))
+
 ### [0.0.36](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.35...v0.0.36) (2025-04-22)
 
 ### Новый функционал
