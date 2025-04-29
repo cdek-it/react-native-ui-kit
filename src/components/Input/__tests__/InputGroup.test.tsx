@@ -8,10 +8,10 @@ jest.mock('../InputGroupAddon', () => ({ InputGroupAddon: 'InputGroupAddon' }))
 
 describe('InputTextBase component functionality tests', () => {
   const snapshotCases: Array<[string, InputGroupProps]> = [
-    ['left', { left: 'left text' }],
-    ['right', { right: 'right text' }],
-    ['left & right', { left: 'left text', right: 'right text' }],
-    ['no addons, style', { style: { margin: 10 } }],
+    ['left', { left: 'left text', input: 'InputTextBase' }],
+    ['right', { right: 'right text', input: 'InputTextBase' }],
+    ['left & right', { left: 'left text', right: 'right text', input: 'InputTextBase' }],
+    ['no addons, style', { style: { margin: 10 }, input: 'InputTextBase' }],
   ]
 
   test.each(snapshotCases)('%s', (_, props) => {
