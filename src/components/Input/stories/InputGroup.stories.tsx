@@ -11,6 +11,7 @@ const meta: Meta<typeof InputGroup> = {
     clearable: true,
     disabled: false,
     state: 'default',
+    input: 'FloatLabel',
     placeholder: 'Placeholder',
     value: '',
   },

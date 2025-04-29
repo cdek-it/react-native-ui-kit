@@ -152,6 +152,7 @@ export const FloatLabel = memo<FloatLabelProps>(
           containerStyle={StyleSheet.flatten([
             styles.inputContainer,
             multiline && styles.multilineInputContainer,
+            otherProps.containerStyle,
           ])}
           disabled={disabled}
           inputRef={inputRef}

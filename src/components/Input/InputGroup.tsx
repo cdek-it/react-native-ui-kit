@@ -1,13 +1,14 @@
-import { memo, useCallback, useImperativeHandle, useRef } from 'react'
+import { memo, useCallback, useImperativeHandle, useMemo, useRef } from 'react'
 import { type TextInput, View, StyleSheet, type ViewStyle } from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
 
+import { FloatLabel, type FloatLabelProps } from './FloatLabel'
 import { InputGroupAddon, type InputGroupAddonProps } from './InputGroupAddon'
 import { InputTextBase, type InputTextBaseProps } from './InputTextBase'
 
 /** @see InputTextBaseProps */
-export interface InputGroupProps extends InputTextBaseProps {
+interface InputGroupBaseProps {
   /** Содержимое левого аддона группы */
   left?: InputGroupAddonProps['content']
   /** Содержимое правого аддона группы */
@@ -15,6 +16,10 @@ export interface InputGroupProps extends InputTextBaseProps {
   /** Дополнительная стилизация для контейнера компонента */
   style?: ViewStyle
 }
+
+export type InputGroupProps =
+  | (InputGroupBaseProps & { input: 'FloatLabel' } & FloatLabelProps)
+  | (InputGroupBaseProps & { input: 'InputTextBase' } & InputTextBaseProps)
 
 /**
  * Компонент группы инпута. Позволяет обернуть инпут в группу и добавить кнопки-аддоны слева и справа
@@ -27,16 +32,47 @@ export const InputGroup = memo<InputGroupProps>(
     left,
     right,
     style,
-    inputRef: propsInputRef,
     disabled,
+    inputRef: propsInputRef,
+    input = 'InputTextBase',
     ...otherProps
   }) => {
     const styles = useStyles()
     const inputRef = useRef<TextInput>(null)
 
     const focus = useCallback(() => inputRef.current?.focus(), [inputRef])
-
     useImperativeHandle(propsInputRef, () => inputRef.current, [inputRef])
+
+    const containerStyle = useMemo(() => {
+      return StyleSheet.flatten([
+        styles.inputContainer,
+        !!left && styles.inputContainerForLeftAddon,
+        !!right && styles.inputContainerForRightAddon,
+      ])
+    }, [left, right])
+
+    const renderInput = useCallback(() => {
+      if (input === 'FloatLabel') {
+        return (
+          <FloatLabel
+            containerStyle={containerStyle}
+            disabled={disabled}
+            inputRef={inputRef}
+            placeholder={otherProps.placeholder ?? ''}
+            {...otherProps}
+          />
+        )
+      }
+
+      return (
+        <InputTextBase
+          containerStyle={containerStyle}
+          disabled={disabled}
+          inputRef={inputRef}
+          {...otherProps}
+        />
+      )
+    }, [input, inputRef, containerStyle, disabled, otherProps])
 
     return (
       <View style={[styles.container, style]}>
@@ -49,18 +85,7 @@ export const InputGroup = memo<InputGroupProps>(
           />
         ) : null}
 
-        <View style={styles.inputWrapper}>
-          <InputTextBase
-            containerStyle={StyleSheet.flatten([
-              styles.inputContainer,
-              !!left && styles.inputContainerForLeftAddon,
-              !!right && styles.inputContainerForRightAddon,
-            ])}
-            disabled={disabled}
-            inputRef={inputRef}
-            {...otherProps}
-          />
-        </View>
+        <View style={styles.inputWrapper}>{renderInput()}</View>
 
         {right ? (
           <InputGroupAddon
