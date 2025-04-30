@@ -49,7 +49,13 @@ export const InputGroup = memo<InputGroupProps>(
         !!left && styles.inputContainerForLeftAddon,
         !!right && styles.inputContainerForRightAddon,
       ])
-    }, [left, right])
+    }, [
+      left,
+      right,
+      styles.inputContainer,
+      styles.inputContainerForLeftAddon,
+      styles.inputContainerForRightAddon,
+    ])
 
     const renderInput = useCallback(() => {
       if (input === 'FloatLabel') {
@@ -58,7 +64,7 @@ export const InputGroup = memo<InputGroupProps>(
             containerStyle={containerStyle}
             disabled={disabled}
             inputRef={inputRef}
-            placeholder={otherProps.placeholder ?? ''}
+            placeholder={otherProps.placeholder || ''}
             {...otherProps}
           />
         )
