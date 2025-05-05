@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.38](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.37...v0.0.38) (2025-05-05)
+
+### Новый функционал
+
+- **input-group:** добавлена поддержка floatLabel
+  ([dbe1da4](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/dbe1da4e64a127ad639fc1438d74c71e692ef1ef))
+- **input-group:** линт
+  ([085a4e2](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/085a4e2c36a08f7af2ce866e944f54dc3cf234ad))
+- **input-group:** фикс тайп
+  ([526f6a4](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/526f6a410c4a3e3d6474808c6036802aa6541d82))
+
+### Исправления багов
+
+- **input-group:** ревью
+  ([37f473a](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/37f473a44418d1b0430cf1fdbdd8f5d2410d94aa))
+
 ### [0.0.37](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.36...v0.0.37) (2025-04-28)
 
 ### Новый функционал
