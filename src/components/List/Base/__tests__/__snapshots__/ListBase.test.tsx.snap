@@ -326,6 +326,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
                 },
                 undefined,
                 undefined,
+                undefined,
               ]
             }
           >
@@ -856,6 +857,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
                 },
                 undefined,
                 undefined,
+                undefined,
               ]
             }
           >
@@ -1382,6 +1384,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
                 {
                   "color": "rgba(0, 0, 0, 0.6000)",
                 },
+                undefined,
                 undefined,
                 undefined,
               ]
