@@ -1,4 +1,5 @@
 import {
+  type Icon,
   IconAlertTriangle,
   IconCircleCheck,
   IconCircleX,
@@ -26,6 +27,8 @@ export interface ServiceProps extends TextProps {
    * @default false
    */
   readonly base?: boolean
+  /** Иконка из набора Tabler */
+  readonly Icon?: Icon
 }
 
 /**
@@ -35,6 +38,7 @@ export const Service = ({
   variant = 'success',
   showIcon = true,
   base = true,
+  Icon: IconFromProps,
   ...other
 }: ServiceProps) => {
   const styles = useStyles()
@@ -50,7 +54,7 @@ export const Service = ({
       }
 
       return {
-        Icon: iconMap[variant]?.Icon || IconInfoCircle,
+        Icon: IconFromProps || iconMap[variant]?.Icon || IconInfoCircle,
         variantStyle: iconMap[variant]?.style || styles.info,
         iconSize: base ? styles.iconBase : styles.icon,
         textStyles: [
@@ -60,7 +64,7 @@ export const Service = ({
         ],
         containerStyle: base ? styles.containerBase : styles.container,
       }
-    }, [variant, base, styles])
+    }, [variant, base, styles, IconFromProps])
 
   return (
     <View style={containerStyle}>

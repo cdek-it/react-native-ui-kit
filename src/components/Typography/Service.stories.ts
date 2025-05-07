@@ -1,6 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
+import { IconBuildingSkyscraper } from '@tabler/icons-react-native'
+
 import { Service } from './Service'
+
+const icons = { IconBuildingSkyscraper, none: undefined }
 
 const meta: Meta<typeof Service> = {
   title: 'Typography/Service',
@@ -11,6 +15,7 @@ const meta: Meta<typeof Service> = {
       control: 'radio',
       options: ['success', 'danger', 'info', 'help', 'warning'],
     },
+    Icon: { control: 'radio', options: Object.keys(icons), mapping: icons },
   },
 }
 
