@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.39](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.38...v0.0.39) (2025-05-07)
+
+### Новый функционал
+
+- **Caption:** добавлена иконка
+  ([5bfcd02](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/5bfcd026dba5f46f197658f629abdda958815589))
+- **Service:** реализована возможность указывать кастомную иконку
+  ([e8a21af](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/e8a21af37f0ec82faffea455e66a78f46524a57e))
+
 ### [0.0.38](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.37...v0.0.38) (2025-05-05)
 
 ### Новый функционал
