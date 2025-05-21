@@ -1,0 +1,689 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion Header elements maximal 1`] = `
+<View
+  style={
+    {
+      "width": "100%",
+    }
+  }
+  testID="Accordion"
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 7,
+        "paddingVertical": 14,
+      }
+    }
+    testID="Header"
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "rotate": "0rad",
+              },
+            ],
+          },
+        }
+      }
+      style={
+        {
+          "transform": [
+            {
+              "rotate": "0rad",
+            },
+          ],
+        }
+      }
+      testID="Arrow"
+    >
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight={17.5}
+        bbWidth={17.5}
+        fill="none"
+        focusable={false}
+        height={17.5}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        stroke="rgba(0, 0, 0, 0.6000)"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            {
+              "flex": 0,
+              "height": 17,
+              "width": 17,
+            },
+          ]
+        }
+        vbHeight={24}
+        vbWidth={24}
+        width={17.5}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <RNSVGGroup
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 2566914048,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        >
+          <RNSVGPath
+            d="M9 6l6 6l-6 6"
+            fill={null}
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "payload": 2566914048,
+                "type": 0,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth={2}
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fill="none"
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="rgba(0, 0, 0, 0.6000)"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      testID="TitleIcon"
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 2566914048,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="TitleIcon"
+        />
+        <RNSVGPath
+          d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 2566914048,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="TitleIcon"
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+    <Text
+      style={
+        {
+          "color": "rgba(0, 0, 0, 0.6000)",
+          "fontSize": 15.75,
+          "fontWeight": 700,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
+        }
+      }
+    >
+      Accordion
+    </Text>
+    <View
+      testID="Extra"
+    >
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight={24}
+        bbWidth={24}
+        fill="none"
+        focusable={false}
+        height={24}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            {
+              "flex": 0,
+              "height": 24,
+              "width": 24,
+            },
+          ]
+        }
+        vbHeight={24}
+        vbWidth={24}
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <RNSVGGroup
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        >
+          <RNSVGPath
+            d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z"
+            fill={null}
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "type": 2,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth={2}
+          />
+          <RNSVGPath
+            d="M10 16h6"
+            fill={null}
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "type": 2,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth={2}
+          />
+          <RNSVGPath
+            d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"
+            fill={null}
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "type": 2,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth={2}
+          />
+          <RNSVGPath
+            d="M4 8h3"
+            fill={null}
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "type": 2,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth={2}
+          />
+          <RNSVGPath
+            d="M4 12h3"
+            fill={null}
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "type": 2,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth={2}
+          />
+          <RNSVGPath
+            d="M4 16h3"
+            fill={null}
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "type": 2,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth={2}
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+  </View>
+  <View
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {
+          "height": 0,
+          "opacity": 0,
+        },
+      }
+    }
+    style={
+      {
+        "height": 0,
+        "opacity": 0,
+        "overflow": "hidden",
+      }
+    }
+    testID="Content"
+  >
+    <View
+      onLayout={[Function]}
+      style={
+        {
+          "position": "absolute",
+        }
+      }
+      testID="ContentWrapper"
+    >
+      <Text>
+        This is Accordion content
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Accordion Header elements minimal 1`] = `
+<View
+  style={
+    {
+      "width": "100%",
+    }
+  }
+  testID="Accordion"
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 7,
+        "paddingVertical": 14,
+      }
+    }
+    testID="Header"
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "rotate": "0rad",
+              },
+            ],
+          },
+        }
+      }
+      style={
+        {
+          "transform": [
+            {
+              "rotate": "0rad",
+            },
+          ],
+        }
+      }
+      testID="Arrow"
+    >
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight={17.5}
+        bbWidth={17.5}
+        fill="none"
+        focusable={false}
+        height={17.5}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        stroke="rgba(0, 0, 0, 0.6000)"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            {
+              "flex": 0,
+              "height": 17,
+              "width": 17,
+            },
+          ]
+        }
+        vbHeight={24}
+        vbWidth={24}
+        width={17.5}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <RNSVGGroup
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 2566914048,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        >
+          <RNSVGPath
+            d="M9 6l6 6l-6 6"
+            fill={null}
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "payload": 2566914048,
+                "type": 0,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth={2}
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+    <Text
+      style={
+        {
+          "color": "rgba(0, 0, 0, 0.6000)",
+          "fontSize": 15.75,
+          "fontWeight": 700,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
+        }
+      }
+    >
+      Accordion
+    </Text>
+  </View>
+  <View
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {
+          "height": 0,
+          "opacity": 0,
+        },
+      }
+    }
+    style={
+      {
+        "height": 0,
+        "opacity": 0,
+        "overflow": "hidden",
+      }
+    }
+    testID="Content"
+  >
+    <View
+      onLayout={[Function]}
+      style={
+        {
+          "position": "absolute",
+        }
+      }
+      testID="ContentWrapper"
+    >
+      <Text>
+        This is Accordion content
+      </Text>
+    </View>
+  </View>
+</View>
+`;
