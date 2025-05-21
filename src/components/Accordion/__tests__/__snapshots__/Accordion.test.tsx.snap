@@ -10,12 +10,14 @@ exports[`Accordion Header elements maximal 1`] = `
   testID="Accordion"
 >
   <View
+    accessibilityLabel="Accordion"
+    accessibilityRole="button"
     accessibilityState={
       {
         "busy": undefined,
         "checked": undefined,
         "disabled": undefined,
-        "expanded": undefined,
+        "expanded": false,
         "selected": undefined,
       }
     }
@@ -50,7 +52,9 @@ exports[`Accordion Header elements maximal 1`] = `
     testID="Header"
   >
     <View
+      accessibilityElementsHidden={true}
       collapsable={false}
+      importantForAccessibility="no-hide-descendants"
       jestAnimatedStyle={
         {
           "value": {
@@ -497,12 +501,14 @@ exports[`Accordion Header elements minimal 1`] = `
   testID="Accordion"
 >
   <View
+    accessibilityLabel="Accordion"
+    accessibilityRole="button"
     accessibilityState={
       {
         "busy": undefined,
         "checked": undefined,
         "disabled": undefined,
-        "expanded": undefined,
+        "expanded": false,
         "selected": undefined,
       }
     }
@@ -537,7 +543,9 @@ exports[`Accordion Header elements minimal 1`] = `
     testID="Header"
   >
     <View
+      accessibilityElementsHidden={true}
       collapsable={false}
+      importantForAccessibility="no-hide-descendants"
       jestAnimatedStyle={
         {
           "value": {
