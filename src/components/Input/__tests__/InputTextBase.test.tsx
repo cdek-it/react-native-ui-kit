@@ -6,31 +6,31 @@ describe('InputTextBase component functionality tests', () => {
   test('should render outline elements', () => {
     const { getByTestId } = render(<InputTextBase />)
 
-    expect(getByTestId('InputTextBase_DangerOutline')).toBeOnTheScreen()
-    expect(getByTestId('InputTextBase_FocusOutline')).toBeOnTheScreen()
+    expect(getByTestId('InputTextBaseDangerOutline')).toBeOnTheScreen()
+    expect(getByTestId('InputTextBaseFocusOutline')).toBeOnTheScreen()
   })
 
   test('should NOT be render outline elements in disabled state', () => {
     const { queryByTestId } = render(<InputTextBase disabled />)
 
-    expect(queryByTestId('InputTextBase_DangerOutline')).not.toBeOnTheScreen()
-    expect(queryByTestId('InputTextBase_FocusOutline')).not.toBeOnTheScreen()
+    expect(queryByTestId('InputTextBaseDangerOutline')).not.toBeOnTheScreen()
+    expect(queryByTestId('InputTextBaseFocusOutline')).not.toBeOnTheScreen()
   })
 
   test('should set editable prop correctly', () => {
     const { queryByTestId, update } = render(<InputTextBase />)
 
-    expect(queryByTestId('InputTextBase_Input')).toHaveProp('editable', true)
+    expect(queryByTestId('InputTextBase')).toHaveProp('editable', true)
 
     update(<InputTextBase disabled />)
 
-    expect(queryByTestId('InputTextBase_Input')).toHaveProp('editable', false)
+    expect(queryByTestId('InputTextBase')).toHaveProp('editable', false)
   })
 
   test('should handle focus event', () => {
     const onFocusMock = jest.fn()
     const { queryByTestId } = render(<InputTextBase onFocus={onFocusMock} />)
-    const input = queryByTestId('InputTextBase_Input')
+    const input = queryByTestId('InputTextBase')
 
     fireEvent(input, 'focus')
 
@@ -40,7 +40,7 @@ describe('InputTextBase component functionality tests', () => {
   test('should handle blur event', () => {
     const onBlurMock = jest.fn()
     const { queryByTestId } = render(<InputTextBase onBlur={onBlurMock} />)
-    const input = queryByTestId('InputTextBase_Input')
+    const input = queryByTestId('InputTextBase')
 
     fireEvent(input, 'blur')
 
@@ -52,7 +52,7 @@ describe('InputTextBase component functionality tests', () => {
     const { queryByTestId } = render(
       <InputTextBase onChangeText={onChangeTextMock} />
     )
-    const input = queryByTestId('InputTextBase_Input')
+    const input = queryByTestId('InputTextBase')
 
     fireEvent.changeText(input, 'new text')
 
@@ -61,33 +61,33 @@ describe('InputTextBase component functionality tests', () => {
 
   test('should show clear button only when value exists', async () => {
     const { queryByTestId } = render(<InputTextBase />)
-    const input = queryByTestId('InputTextBase_Input')
+    const input = queryByTestId('InputTextBase')
     const user = userEvent.setup()
-    let clearButton = queryByTestId('InputTextBase_ClearButton')
+    let clearButton = queryByTestId('InputTextBaseClearButton')
 
     expect(clearButton).not.toBeOnTheScreen()
 
     await user.type(input, 'text')
-    clearButton = queryByTestId('InputTextBase_ClearButton')
+    clearButton = queryByTestId('InputTextBaseClearButton')
 
     expect(clearButton).toBeOnTheScreen()
   })
 
   test('should NOT show clear button when input is disabled', async () => {
     const { queryByTestId } = render(<InputTextBase disabled value='text' />)
-    const clearButton = queryByTestId('InputTextBase_ClearButton')
+    const clearButton = queryByTestId('InputTextBaseClearButton')
 
     expect(clearButton).not.toBeOnTheScreen()
   })
 
   test('should clear text when clear button is pressed', async () => {
     const { queryByTestId } = render(<InputTextBase />)
-    const input = queryByTestId('InputTextBase_Input')
+    const input = queryByTestId('InputTextBase')
     const user = userEvent.setup()
 
     await user.type(input, 'text')
 
-    const clearButton = queryByTestId('InputTextBase_ClearButton')
+    const clearButton = queryByTestId('InputTextBaseClearButton')
 
     expect(input).toHaveProp('value', 'text')
 
@@ -98,24 +98,24 @@ describe('InputTextBase component functionality tests', () => {
 
   test('should show disabled icon when input is disabled', () => {
     const { queryAllByTestId, update } = render(<InputTextBase />)
-    let [disabledIcon] = queryAllByTestId('InputTextBase_DisabledIcon')
+    let [disabledIcon] = queryAllByTestId('InputTextBaseDisabledIcon')
 
     expect(disabledIcon).toBeFalsy()
 
     update(<InputTextBase disabled />)
-    disabledIcon = queryAllByTestId('InputTextBase_DisabledIcon')
+    disabledIcon = queryAllByTestId('InputTextBaseDisabledIcon')
 
     expect(disabledIcon).toBeDefined()
   })
 
   test('should show loading icon', () => {
     const { queryByTestId, update } = render(<InputTextBase />)
-    let loadingIcon = queryByTestId('InputTextBase_Loading')
+    let loadingIcon = queryByTestId('InputTextBaseLoading')
 
     expect(loadingIcon).not.toBeOnTheScreen()
 
     update(<InputTextBase loading />)
-    loadingIcon = queryByTestId('InputTextBase_Loading')
+    loadingIcon = queryByTestId('InputTextBaseLoading')
 
     expect(loadingIcon).toBeOnTheScreen()
     expect(loadingIcon).toHaveAnimatedStyle({ transform: [{ rotate: '0deg' }] })

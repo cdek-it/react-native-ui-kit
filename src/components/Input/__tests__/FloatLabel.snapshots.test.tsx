@@ -1,6 +1,6 @@
 import { fireEvent, render } from '@testing-library/react-native'
 
-import { FloatLabel } from '../FloatLabel'
+import { FloatLabel, FloatLabelTestId } from '../FloatLabel'
 
 import useFakeTimers = jest.useFakeTimers
 
@@ -18,7 +18,7 @@ describe('FloatLabel snapshots', () => {
 
     expect(toJSON()).toMatchSnapshot('unfocused')
 
-    const inputTextBase = getByTestId('FloatLabel_InputTextBase')
+    const inputTextBase = getByTestId(FloatLabelTestId.root)
     fireEvent(inputTextBase, 'focus')
     jest.runAllTimers()
 

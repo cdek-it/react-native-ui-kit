@@ -22,6 +22,7 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated'
 
+import { useMakeTestId } from '../../hooks/useMakeTestId'
 import { makeStyles } from '../../utils/makeStyles'
 
 import { InputTextBase, type InputTextBaseProps } from './InputTextBase'
@@ -138,17 +139,23 @@ export const FloatLabel = memo<FloatLabelProps>(
       [onChangeTextProp]
     )
 
+    const { makeTestId } = useMakeTestId(
+      otherProps.testID || FloatLabelTestId.root
+    )
+
     useImperativeHandle(inputRefProp, () => inputRef.current, [])
 
     return (
       <Pressable
+        accessible={false}
         disabled={disabled}
         style={style}
-        testID={otherProps.testID || FloatLabelTestId.root}
+        testID={makeTestId(FloatLabelTestId.pressable)}
         onPress={onContainerPress}
       >
         <InputTextBase
           {...otherProps}
+          accessibilityLabel={placeholder}
           containerStyle={StyleSheet.flatten([
             styles.inputContainer,
             multiline && styles.multilineInputContainer,
@@ -163,13 +170,16 @@ export const FloatLabel = memo<FloatLabelProps>(
           multiline={multiline}
           placeholder=''
           state={state}
-          testID={FloatLabelTestId.inputTextBase}
+          testID={makeTestId()}
           value={value}
           onBlur={onBlur}
           onChangeText={onChangeText}
           onFocus={onFocus}
         />
-        <Animated.Text style={[styles.label, labelAnimatedStyle]}>
+        <Animated.Text
+          style={[styles.label, labelAnimatedStyle]}
+          testID={makeTestId(FloatLabelTestId.placeholder)}
+        >
           {placeholder}
         </Animated.Text>
       </Pressable>
@@ -202,5 +212,6 @@ const useStyles = makeStyles(({ spacing, typography }) => ({
 
 export const FloatLabelTestId = {
   root: 'FloatLabel',
-  inputTextBase: 'FloatLabel_InputTextBase',
+  pressable: 'PressableContainer',
+  placeholder: 'Placeholder',
 }

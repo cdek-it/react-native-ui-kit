@@ -22,6 +22,7 @@ import {
 import Animated, { useSharedValue, withTiming } from 'react-native-reanimated'
 
 import { useLoadingRotationAnimation } from '../../hooks/useLoadingRotationAnimation'
+import { useMakeTestId } from '../../hooks/useMakeTestId'
 import { makeStyles } from '../../utils/makeStyles'
 
 interface PrivateInputTextBaseProps {
@@ -171,11 +172,15 @@ export const InputTextBase = memo<
 
     useImperativeHandle(propsInputRef, () => inputRef.current)
 
+    const { makeTestId } = useMakeTestId(
+      otherProps.testID || InputTextBaseTestId.default
+    )
+
     const texInputProps = useMemo<RenderTextInputArgs>(
       () => ({
         placeholderTextColor: styles.placeholderTextColor.color,
-        testID: 'InputTextBase_Input',
         ...otherProps,
+        testID: makeTestId(),
         editable: !disabled,
         style: [styles.input, inputStyle],
         inputRef,
@@ -187,6 +192,7 @@ export const InputTextBase = memo<
       [
         disabled,
         inputStyle,
+        makeTestId,
         onBlur,
         onChangeText,
         onFocus,
@@ -208,7 +214,7 @@ export const InputTextBase = memo<
                 styles.focusOutline,
                 focusOutlineAnimatedStyles,
               ]}
-              testID='InputTextBase_FocusOutline'
+              testID={makeTestId(InputTextBaseTestId.focusOutline)}
             />
             <Animated.View
               style={[
@@ -217,7 +223,7 @@ export const InputTextBase = memo<
                 styles.dangerOutline,
                 dangerOutlineAnimatedStyles,
               ]}
-              testID='InputTextBase_DangerOutline'
+              testID={makeTestId(InputTextBaseTestId.dangerOutline)}
             />
           </>
         )}
@@ -239,7 +245,7 @@ export const InputTextBase = memo<
             {loading ? (
               <Animated.View
                 style={loadingAnimatedStyle}
-                testID='InputTextBase_Loading'
+                testID={makeTestId(InputTextBaseTestId.loading)}
               >
                 <IconLoader2
                   color={styles.rightIcon.color}
@@ -251,7 +257,7 @@ export const InputTextBase = memo<
 
             {showClearButton && !disabled ? (
               <TouchableOpacity
-                testID='InputTextBase_ClearButton'
+                testID={makeTestId(InputTextBaseTestId.clearButton)}
                 onPress={clear}
               >
                 <IconX
@@ -266,7 +272,7 @@ export const InputTextBase = memo<
               <IconLock
                 color={styles.rightIcon.color}
                 height={styles.iconSize.height}
-                testID='InputTextBase_DisabledIcon'
+                testID={makeTestId(InputTextBaseTestId.disabledIcon)}
                 width={styles.iconSize.width}
               />
             ) : null}
@@ -321,3 +327,12 @@ const useStyles = makeStyles(({ theme }) => ({
   rightIcon: { color: theme.Form.InputText.inputIconColor },
   iconSize: { width: 14, height: 14 },
 }))
+
+export const InputTextBaseTestId = {
+  default: 'InputTextBase',
+  focusOutline: 'FocusOutline',
+  dangerOutline: 'DangerOutline',
+  loading: 'Loading',
+  clearButton: 'ClearButton',
+  disabledIcon: 'DisabledIcon',
+}

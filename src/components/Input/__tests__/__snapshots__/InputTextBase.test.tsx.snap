@@ -25,7 +25,7 @@ exports[`InputTextBase component functionality tests should pass args to custom 
       },
       undefined,
     ],
-    "testID": "InputTextBase_Input",
+    "testID": "InputTextBase",
     "value": "",
   },
 ]

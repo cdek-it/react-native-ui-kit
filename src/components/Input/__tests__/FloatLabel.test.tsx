@@ -18,7 +18,7 @@ describe('FloatLabel interactions', () => {
     const { getByTestId } = render(
       <FloatLabel inputRef={inputRef} placeholder='Label' />
     )
-    const pressableContainer = getByTestId('FloatLabel')
+    const pressableContainer = getByTestId('FloatLabelPressableContainer')
     const user = userEvent.setup()
 
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
@@ -44,7 +44,7 @@ describe('FloatLabel interactions', () => {
         onFocus={mockedOnFocus}
       />
     )
-    const textInput = getByTestId('FloatLabel_InputTextBase')
+    const textInput = getByTestId('FloatLabel')
     const user = userEvent.setup()
 
     expect(mockedOnFocus).not.toHaveBeenCalled()
