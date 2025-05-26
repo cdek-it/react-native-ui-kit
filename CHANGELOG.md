@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.40](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.39...v0.0.40) (2025-05-26)
+
+### Другое
+
+- **FloatLabel:** доработаны testID для корректной работы автотестов
+  ([ad6e989](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/ad6e989caec29c60bf578c5749c7829fe76ad58e))
+
 ### [0.0.39](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.38...v0.0.39) (2025-05-07)
 
 ### Новый функционал
