@@ -35,13 +35,17 @@ const meta: Meta<typeof Accordion> = {
   args: {
     title: 'Accordion',
     Icon: undefined,
-    extra: undefined,
+    titleExtra: undefined,
     withSeparator: false,
   },
   argTypes: {
     Icon: { control: 'select', options: Object.keys(Icons), mapping: Icons },
     title: { control: 'text' },
-    extra: { control: 'select', options: Object.keys(Extras), mapping: Extras },
+    titleExtra: {
+      control: 'select',
+      options: Object.keys(Extras),
+      mapping: Extras,
+    },
     withSeparator: { control: 'boolean' },
     disabled: { control: 'boolean' },
   },

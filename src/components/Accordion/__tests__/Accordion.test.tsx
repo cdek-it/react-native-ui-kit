@@ -8,7 +8,7 @@ import {
 } from '@testing-library/react-native'
 import { Text, View } from 'react-native'
 
-import { Accordion, AccordionTestids, type AccordionProps } from '../Accordion'
+import { Accordion, AccordionTestIds, type AccordionProps } from '../Accordion'
 
 describe('Accordion', () => {
   test('Header elements minimal', () => {
@@ -29,7 +29,7 @@ describe('Accordion', () => {
     const props: Omit<AccordionProps, 'children'> = {
       Icon: IconUser,
       title: 'Accordion',
-      extra: <IconAddressBook />,
+      titleExtra: <IconAddressBook />,
       withSeparator: true,
     }
     const contentText = 'This is Accordion content'
@@ -47,36 +47,36 @@ describe('Accordion', () => {
   test('Content toggle', async () => {
     const title = 'Title'
     render(
-      <Accordion isExpanded title={title}>
+      <Accordion isInitiallyExpanded title={title}>
         <View style={{ height: 100 }} />
       </Accordion>
     )
 
-    fireEvent(screen.getByTestId(AccordionTestids.contentWrapper), 'layout', {
+    fireEvent(screen.getByTestId(AccordionTestIds.contentWrapper), 'layout', {
       nativeEvent: { layout: { height: 100, width: 200, x: 0, y: 0 } },
     })
 
     await waitFor(() =>
-      expect(screen.getByTestId(AccordionTestids.content)).toHaveAnimatedStyle({
+      expect(screen.getByTestId(AccordionTestIds.content)).toHaveAnimatedStyle({
         height: 100,
         opacity: 1,
       })
     )
 
-    expect(screen.getByTestId(AccordionTestids.arrow)).toHaveAnimatedStyle({
+    expect(screen.getByTestId(AccordionTestIds.arrow)).toHaveAnimatedStyle({
       transform: [{ rotate: `${Math.PI / 2}rad` }],
     })
 
     fireEvent.press(screen.getByText(title))
 
     await waitFor(() =>
-      expect(screen.getByTestId(AccordionTestids.content)).toHaveAnimatedStyle({
+      expect(screen.getByTestId(AccordionTestIds.content)).toHaveAnimatedStyle({
         height: 0,
         opacity: 0,
       })
     )
 
-    expect(screen.getByTestId(AccordionTestids.arrow)).toHaveAnimatedStyle({
+    expect(screen.getByTestId(AccordionTestIds.arrow)).toHaveAnimatedStyle({
       transform: [{ rotate: '0rad' }],
     })
   })
@@ -93,23 +93,23 @@ const assertAccordionIsDisplaying = (
   expect(instance.getByText(props.title)).toBeVisible()
 
   if (props.Icon) {
-    expect(instance.getAllByTestId(AccordionTestids.icon).length).toBeTruthy()
+    expect(instance.getAllByTestId(AccordionTestIds.icon).length).toBeTruthy()
   } else {
-    expect(instance.queryByTestId(AccordionTestids.icon)).toBeFalsy()
+    expect(instance.queryByTestId(AccordionTestIds.icon)).toBeFalsy()
   }
 
-  if (props.extra) {
-    expect(instance.getByTestId(AccordionTestids.extra)).toBeVisible()
+  if (props.titleExtra) {
+    expect(instance.getByTestId(AccordionTestIds.titleExtra)).toBeVisible()
   } else {
-    expect(instance.queryByTestId(AccordionTestids.extra)).toBeFalsy()
+    expect(instance.queryByTestId(AccordionTestIds.titleExtra)).toBeFalsy()
   }
 
   if (props.withSeparator) {
-    expect(instance.getByTestId(AccordionTestids.component)).toHaveStyle({
+    expect(instance.getByTestId(AccordionTestIds.component)).toHaveStyle({
       borderTopWidth: 1,
     })
   } else {
-    expect(instance.getByTestId(AccordionTestids.component)).not.toHaveStyle({
+    expect(instance.getByTestId(AccordionTestIds.component)).not.toHaveStyle({
       borderTopWidth: 1,
     })
   }

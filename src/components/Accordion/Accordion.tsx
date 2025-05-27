@@ -13,22 +13,38 @@ import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 import { makeStyles } from '../../utils/makeStyles'
 
 export interface AccordionProps extends ViewProps {
+  // Иконка слева от заголовка
   readonly Icon?: Icon
+  // Текст заголовка
   readonly title: string
-  readonly isExpanded?: boolean
+  // Состояние при первом рендере. true - контент раскрыт, false - контент свернут
+  readonly isInitiallyExpanded?: boolean
+  // Наличие разделитель. Когда true, верхняя граница заголовка становится разделителем
   readonly withSeparator?: boolean
+  // Отключенное состояние. Когда true компонент рендерится в соответствии со значением isInitiallyExpanded и не реагирует на нажатия
   readonly disabled?: boolean
-  readonly extra?: React.ReactNode
+  // Дополнительный элемент справа от заголовка
+  readonly titleExtra?: React.ReactNode
   readonly children: React.ReactNode
 }
 
+/**
+ * Компонент Гармошка - умеет скрывать и раскрывать контент по нажатию на заголовок
+ * @param title - Текст заголовка
+ * @param Icon - Иконка слева от заголовка
+ * @param isInitiallyExpanded - Состояние при первом рендере. true - контент раскрыт, false - контент свернут
+ * @param extra - Дополнительный элемент справа от заголовка
+ * @param withSeparator - Наличие разделитель. Когда true, верхняя граница заголовка становится разделителем
+ * @param disabled - Отключенное состояние. Когда true компонент рендерится в соответствии со значением isInitiallyExpanded и не реагирует на нажатия
+ * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace--DS-?node-id=1207-1852&m=dev
+ */
 export const Accordion: React.FC<AccordionProps> = ({
   Icon,
   title,
-  isExpanded: initiallyExpanded = false,
+  isInitiallyExpanded: initiallyExpanded = false,
   withSeparator = false,
   disabled = false,
-  extra,
+  titleExtra,
   testID,
   children,
   ...rest
@@ -53,9 +69,7 @@ export const Accordion: React.FC<AccordionProps> = ({
 
   const arrowAnimatedStyle = useAnimatedStyle(() => ({
     transform: [
-      {
-        rotate: `${interpolate(contentOpenRatio.value, [0, 1], [0, Math.PI / 2])}rad`,
-      },
+      { rotate: `${interpolate(contentOpenRatio.value, [0, 1], [0, 90])}deg` },
     ],
   }))
 
@@ -71,7 +85,7 @@ export const Accordion: React.FC<AccordionProps> = ({
   return (
     <View
       style={[styles.component, withSeparator ? styles.separator : {}]}
-      testID={testID || AccordionTestids.component}
+      testID={testID || AccordionTestIds.component}
       {...rest}
     >
       <Pressable
@@ -81,29 +95,31 @@ export const Accordion: React.FC<AccordionProps> = ({
         accessibilityState={isExpanded ? { expanded: true } : {}}
         disabled={disabled}
         style={[styles.header, disabled ? styles.disabled : {}]}
-        testID={AccordionTestids.header}
+        testID={AccordionTestIds.header}
         onPress={toggle}
       >
         <Animated.View
           accessibilityElementsHidden={isExpanded}
           importantForAccessibility={isExpanded ? 'no-hide-descendants' : 'yes'}
           style={arrowAnimatedStyle}
-          testID={AccordionTestids.arrow}
+          testID={AccordionTestIds.arrow}
         >
           <IconChevronRight {...styles.icon} />
         </Animated.View>
-        {Icon ? <Icon {...styles.icon} testID={AccordionTestids.icon} /> : null}
+        {Icon ? <Icon {...styles.icon} testID={AccordionTestIds.icon} /> : null}
         <Text style={styles.title}>{title}</Text>
-        {extra ? <View testID={AccordionTestids.extra}>{extra}</View> : null}
+        {titleExtra ? (
+          <View testID={AccordionTestIds.titleExtra}>{titleExtra}</View>
+        ) : null}
       </Pressable>
 
       <Animated.View
         style={[styles.contentAnimated, contentAnimatedStyle]}
-        testID={AccordionTestids.content}
+        testID={AccordionTestIds.content}
       >
         <View
           style={styles.contentWrapper}
-          testID={AccordionTestids.contentWrapper}
+          testID={AccordionTestIds.contentWrapper}
           onLayout={onLayout}
         >
           {children}
@@ -113,12 +129,12 @@ export const Accordion: React.FC<AccordionProps> = ({
   )
 }
 
-export const AccordionTestids = {
+export const AccordionTestIds = {
   component: 'Accordion',
   header: 'Header',
   arrow: 'Arrow',
   icon: 'TitleIcon',
-  extra: 'Extra',
+  titleExtra: 'Extra',
   content: 'Content',
   contentWrapper: 'ContentWrapper',
   separator: 'Separator',
