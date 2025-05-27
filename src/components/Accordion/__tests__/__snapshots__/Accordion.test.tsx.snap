@@ -3,9 +3,15 @@
 exports[`Accordion Header elements maximal 1`] = `
 <View
   style={
-    {
-      "width": "100%",
-    }
+    [
+      {
+        "width": "100%",
+      },
+      {
+        "borderTopColor": "#dbdada",
+        "borderTopWidth": 1,
+      },
+    ]
   }
   testID="Accordion"
 >
@@ -44,6 +50,7 @@ exports[`Accordion Header elements maximal 1`] = `
     style={
       {
         "alignItems": "center",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
         "flexDirection": "row",
         "gap": 7,
         "paddingVertical": 14,
@@ -478,6 +485,10 @@ exports[`Accordion Header elements maximal 1`] = `
       onLayout={[Function]}
       style={
         {
+          "paddingBottom": 14,
+          "paddingLeft": 24.5,
+          "paddingRight": 0,
+          "paddingTop": 0,
           "position": "absolute",
         }
       }
@@ -494,9 +505,12 @@ exports[`Accordion Header elements maximal 1`] = `
 exports[`Accordion Header elements minimal 1`] = `
 <View
   style={
-    {
-      "width": "100%",
-    }
+    [
+      {
+        "width": "100%",
+      },
+      {},
+    ]
   }
   testID="Accordion"
 >
@@ -535,6 +549,7 @@ exports[`Accordion Header elements minimal 1`] = `
     style={
       {
         "alignItems": "center",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
         "flexDirection": "row",
         "gap": 7,
         "paddingVertical": 14,
@@ -683,6 +698,10 @@ exports[`Accordion Header elements minimal 1`] = `
       onLayout={[Function]}
       style={
         {
+          "paddingBottom": 14,
+          "paddingLeft": 24.5,
+          "paddingRight": 0,
+          "paddingTop": 0,
           "position": "absolute",
         }
       }

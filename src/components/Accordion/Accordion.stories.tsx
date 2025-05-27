@@ -32,11 +32,18 @@ const TestAccordion = memo<Omit<AccordionProps, 'childern'>>((props) => {
 const meta: Meta<typeof Accordion> = {
   title: 'Accordion',
   component: TestAccordion,
-  args: { title: 'Accordion', Icon: undefined, extra: undefined },
+  args: {
+    title: 'Accordion',
+    Icon: undefined,
+    extra: undefined,
+    withSeparator: false,
+  },
   argTypes: {
     Icon: { control: 'select', options: Object.keys(Icons), mapping: Icons },
     title: { control: 'text' },
     extra: { control: 'select', options: Object.keys(Extras), mapping: Extras },
+    withSeparator: { control: 'boolean' },
+    disabled: { control: 'boolean' },
   },
   decorators: [
     (Story) => (

@@ -30,6 +30,7 @@ describe('Accordion', () => {
       Icon: IconUser,
       title: 'Accordion',
       extra: <IconAddressBook />,
+      withSeparator: true,
     }
     const contentText = 'This is Accordion content'
     const { toJSON } = render(
@@ -101,5 +102,15 @@ const assertAccordionIsDisplaying = (
     expect(instance.getByTestId(AccordionTestids.extra)).toBeVisible()
   } else {
     expect(instance.queryByTestId(AccordionTestids.extra)).toBeFalsy()
+  }
+
+  if (props.withSeparator) {
+    expect(instance.getByTestId(AccordionTestids.component)).toHaveStyle({
+      borderTopWidth: 1,
+    })
+  } else {
+    expect(instance.getByTestId(AccordionTestids.component)).not.toHaveStyle({
+      borderTopWidth: 1,
+    })
   }
 }

@@ -16,6 +16,8 @@ export interface AccordionProps extends ViewProps {
   readonly Icon?: Icon
   readonly title: string
   readonly isExpanded?: boolean
+  readonly withSeparator?: boolean
+  readonly disabled?: boolean
   readonly extra?: React.ReactNode
   readonly children: React.ReactNode
 }
@@ -24,6 +26,8 @@ export const Accordion: React.FC<AccordionProps> = ({
   Icon,
   title,
   isExpanded: initiallyExpanded = false,
+  withSeparator = false,
+  disabled = false,
   extra,
   testID,
   children,
@@ -63,7 +67,7 @@ export const Accordion: React.FC<AccordionProps> = ({
 
   return (
     <View
-      style={styles.component}
+      style={[styles.component, withSeparator ? styles.separator : {}]}
       testID={testID || AccordionTestids.component}
     >
       <Pressable
@@ -71,7 +75,8 @@ export const Accordion: React.FC<AccordionProps> = ({
         accessibilityLabel={title}
         accessibilityRole='button'
         accessibilityState={{ expanded: contentOpenRatio.value > 0 }}
-        style={styles.header}
+        disabled={disabled}
+        style={[styles.header, disabled ? styles.disabled : {}]}
         testID={AccordionTestids.header}
         onPress={toggle}
       >
@@ -114,6 +119,7 @@ export const AccordionTestids = {
   extra: 'Extra',
   content: 'Content',
   contentWrapper: 'ContentWrapper',
+  separator: 'Separator',
 }
 
 const useStyles = makeStyles(({ theme }) => ({
@@ -123,6 +129,7 @@ const useStyles = makeStyles(({ theme }) => ({
     gap: 7,
     flexDirection: 'row',
     alignItems: 'center',
+    backgroundColor: theme.Panel.Accordion.accordionHeaderBg,
   },
   icon: {
     width: 17.5,
@@ -137,5 +144,16 @@ const useStyles = makeStyles(({ theme }) => ({
     color: theme.Panel.Accordion.accordionHeaderTextColor,
   },
   contentAnimated: { overflow: 'hidden' },
-  contentWrapper: { position: 'absolute' },
+  contentWrapper: {
+    position: 'absolute',
+    paddingLeft: theme.Panel.Accordion.accordionContentPaddingLeft,
+    paddingTop: theme.Panel.Accordion.accordionContentPaddingTop,
+    paddingRight: theme.Panel.Accordion.accordionContentPaddingRight,
+    paddingBottom: theme.Panel.Accordion.accordionContentPaddingBottom,
+  },
+  separator: {
+    borderTopColor: theme.Panel.Accordion.accordionHeaderBorderColor,
+    borderTopWidth: 1,
+  },
+  disabled: { mixBlendMode: 'luminosity', opacity: 0.6 },
 }))
