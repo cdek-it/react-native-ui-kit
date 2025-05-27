@@ -4,6 +4,34 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.41](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.40...v0.0.41) (2025-05-27)
+
+### Новый функционал
+
+- **Accordion:** добавлен разделитель и состояние disabled
+  ([796bf86](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/796bf861b4e6be0d409c8cf57c7dd1ebb23063a4))
+- **Accordion:** добавлены свойства доступности
+  ([9e938b6](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/9e938b6d31648752cd5e4d6505f612959f3b93f5))
+- **Accordion:** китовый компонент Accordion
+  ([28890fa](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/28890fa72125051d50b9b87bc5e69032892dde71))
+- **ListBase:** добавлены пропсы для цветов иконок и поправлено растягивание по
+  ширине
+  ([aa079ae](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/aa079ae85cc6638a82e04fb40e97400abe16e47d))
+
+### Другое
+
+- **Accordion:** фикс тестов
+  ([1a15a97](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/1a15a979a0de853c10d860a7201498fbe3176ad1))
+- обновление снапшотов Accordion
+  ([9b60dfd](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/9b60dfd7de8c6710cad5f1b45a72b176f89926e3))
+
+### Рефакторинг
+
+- **Accordion:** еще правка замечаний по ревью
+  ([d459678](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/d45967819fd522856d034f5efa7ec5e366ccf50f))
+- **Accordion:** правки по замечаниям в ревью
+  ([6e81302](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/6e81302f006eb6303926e869546a204c5710a97f))
+
 ### [0.0.40](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.39...v0.0.40) (2025-05-26)
 
 ### Другое
