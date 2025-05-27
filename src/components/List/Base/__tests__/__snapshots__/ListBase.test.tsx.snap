@@ -247,6 +247,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
       style={
         [
           {
+            "flex": 1,
             "flexDirection": "row",
             "gap": 14,
             "justifyContent": "space-between",
@@ -260,6 +261,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
       <View
         style={
           {
+            "flex": 1,
             "gap": 7,
             "paddingVertical": 7,
           }
@@ -778,6 +780,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
       style={
         [
           {
+            "flex": 1,
             "flexDirection": "row",
             "gap": 14,
             "justifyContent": "space-between",
@@ -791,6 +794,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
       <View
         style={
           {
+            "flex": 1,
             "gap": 7,
             "paddingVertical": 7,
           }
@@ -1129,7 +1133,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
         meetOrSlice={0}
         minX={0}
         minY={0}
-        stroke="currentColor"
+        stroke="red"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
@@ -1164,7 +1168,8 @@ exports[`ListBase tests ListBase maximal config 1`] = `
           }
           stroke={
             {
-              "type": 2,
+              "payload": 4294901760,
+              "type": 0,
             }
           }
           strokeLinecap={1}
@@ -1185,7 +1190,8 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             }
             stroke={
               {
-                "type": 2,
+                "payload": 4294901760,
+                "type": 0,
               }
             }
             strokeLinecap={1}
@@ -1206,7 +1212,8 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             }
             stroke={
               {
-                "type": 2,
+                "payload": 4294901760,
+                "type": 0,
               }
             }
             strokeLinecap={1}
@@ -1227,7 +1234,8 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             }
             stroke={
               {
-                "type": 2,
+                "payload": 4294901760,
+                "type": 0,
               }
             }
             strokeLinecap={1}
@@ -1248,7 +1256,8 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             }
             stroke={
               {
-                "type": 2,
+                "payload": 4294901760,
+                "type": 0,
               }
             }
             strokeLinecap={1}
@@ -1269,7 +1278,8 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             }
             stroke={
               {
-                "type": 2,
+                "payload": 4294901760,
+                "type": 0,
               }
             }
             strokeLinecap={1}
@@ -1290,7 +1300,8 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             }
             stroke={
               {
-                "type": 2,
+                "payload": 4294901760,
+                "type": 0,
               }
             }
             strokeLinecap={1}
@@ -1304,6 +1315,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
       style={
         [
           {
+            "flex": 1,
             "flexDirection": "row",
             "gap": 14,
             "justifyContent": "space-between",
@@ -1320,6 +1332,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
       <View
         style={
           {
+            "flex": 1,
             "gap": 7,
             "paddingVertical": 7,
           }
@@ -1497,7 +1510,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
           meetOrSlice={0}
           minX={0}
           minY={0}
-          stroke="currentColor"
+          stroke="green"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
@@ -1532,7 +1545,8 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             }
             stroke={
               {
-                "type": 2,
+                "payload": 4278222848,
+                "type": 0,
               }
             }
             strokeLinecap={1}
@@ -1553,7 +1567,8 @@ exports[`ListBase tests ListBase maximal config 1`] = `
               }
               stroke={
                 {
-                  "type": 2,
+                  "payload": 4278222848,
+                  "type": 0,
                 }
               }
               strokeLinecap={1}
@@ -1574,7 +1589,8 @@ exports[`ListBase tests ListBase maximal config 1`] = `
               }
               stroke={
                 {
-                  "type": 2,
+                  "payload": 4278222848,
+                  "type": 0,
                 }
               }
               strokeLinecap={1}
@@ -1644,6 +1660,7 @@ exports[`ListBase tests ListBase minimal config 1`] = `
       style={
         [
           {
+            "flex": 1,
             "flexDirection": "row",
             "gap": 14,
             "justifyContent": "space-between",
@@ -1657,6 +1674,7 @@ exports[`ListBase tests ListBase minimal config 1`] = `
       <View
         style={
           {
+            "flex": 1,
             "gap": 7,
             "paddingVertical": 7,
           }

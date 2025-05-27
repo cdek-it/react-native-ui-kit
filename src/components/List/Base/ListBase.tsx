@@ -1,6 +1,12 @@
 import type { Icon } from '@tabler/icons-react-native'
 import React, { memo, useMemo } from 'react'
-import { View, type ViewStyle, type ViewProps, Pressable } from 'react-native'
+import {
+  View,
+  type ViewStyle,
+  type ViewProps,
+  Pressable,
+  type ColorValue,
+} from 'react-native'
 
 import { makeStyles } from '../../../utils/makeStyles'
 import { Subtitle, Body, Caption } from '../../Typography'
@@ -17,8 +23,10 @@ export interface ListBaseProps extends ViewProps {
   caption?: string
   /** Левая иконка (из набора Tabler) */
   LeftIcon?: Icon
+  leftIconColor?: ColorValue
   /** Правая иконка (из набора Tabler) */
   RightIcon?: Icon
+  rightIconColor?: ColorValue
   /** Дополнительный контент. Выводится между названием и правой иконкой */
   extra?: React.ReactNode
   /** Разделитель - наверху только контента, не захватывая левую иконку, либо наверху всего компонента*/
@@ -39,7 +47,9 @@ export const ListBase = memo<ListBaseProps>(
     title: subtitle,
     caption,
     LeftIcon,
+    leftIconColor,
     RightIcon,
+    rightIconColor,
     extra,
     divider,
     disabled = false,
@@ -87,7 +97,7 @@ export const ListBase = memo<ListBaseProps>(
           >
             {LeftIcon ? (
               <View style={leftIconStyle}>
-                <LeftIcon {...styles.icon} />
+                <LeftIcon {...styles.icon} color={leftIconColor} />
               </View>
             ) : null}
             <View style={[styles.content, contentDivider]}>
@@ -106,7 +116,9 @@ export const ListBase = memo<ListBaseProps>(
                 {extra ? (
                   <View style={styles.extraContainer}>{extra}</View>
                 ) : null}
-                {RightIcon ? <RightIcon {...styles.icon} /> : null}
+                {RightIcon ? (
+                  <RightIcon {...styles.icon} color={rightIconColor} />
+                ) : null}
               </View>
             </View>
           </View>
@@ -127,6 +139,7 @@ const useStyles = makeStyles(({ spacing, typography, theme, background }) => ({
   disabled: { opacity: 0.6 },
   leftIcon: { paddingVertical: spacing.Padding['p-4'] },
   content: {
+    flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingVertical: spacing.Padding['p-2'],
@@ -136,6 +149,7 @@ const useStyles = makeStyles(({ spacing, typography, theme, background }) => ({
   labelContainer: {
     paddingVertical: spacing.Padding['p-2'],
     gap: spacing.Gap['gap-2'],
+    flex: 1,
   },
   titleContainer: { gap: spacing.Gap['gap-1'] },
   extraContainer: { paddingVertical: spacing.Padding['p-2'] },
