@@ -1,5 +1,5 @@
 import { type Icon, IconChevronRight } from '@tabler/icons-react-native'
-import React, { useCallback } from 'react'
+import React, { useCallback, useState } from 'react'
 import { View, Text, Pressable, type LayoutChangeEvent } from 'react-native'
 import Animated, {
   interpolate,
@@ -31,11 +31,13 @@ export const Accordion: React.FC<AccordionProps> = ({
   extra,
   testID,
   children,
+  ...rest
 }) => {
   const styles = useStyles()
 
   const contentHeight = useSharedValue(0)
   const contentOpenRatio = useSharedValue(initiallyExpanded ? 1 : 0)
+  const [isExpanded, setIsExpanded] = useState(initiallyExpanded)
 
   const onLayout = useCallback(
     (event: LayoutChangeEvent) => {
@@ -46,6 +48,7 @@ export const Accordion: React.FC<AccordionProps> = ({
 
   const toggle = useCallback(() => {
     contentOpenRatio.value = withTiming(contentOpenRatio.value > 0 ? 0 : 1)
+    setIsExpanded((value) => !value)
   }, [contentOpenRatio])
 
   const arrowAnimatedStyle = useAnimatedStyle(() => ({
@@ -69,22 +72,21 @@ export const Accordion: React.FC<AccordionProps> = ({
     <View
       style={[styles.component, withSeparator ? styles.separator : {}]}
       testID={testID || AccordionTestids.component}
+      {...rest}
     >
       <Pressable
         accessible
         accessibilityLabel={title}
         accessibilityRole='button'
-        accessibilityState={{ expanded: contentOpenRatio.value > 0 }}
+        accessibilityState={isExpanded ? { expanded: true } : {}}
         disabled={disabled}
         style={[styles.header, disabled ? styles.disabled : {}]}
         testID={AccordionTestids.header}
         onPress={toggle}
       >
         <Animated.View
-          accessibilityElementsHidden={contentOpenRatio.value === 0}
-          importantForAccessibility={
-            contentOpenRatio.value === 0 ? 'no-hide-descendants' : 'yes'
-          }
+          accessibilityElementsHidden={isExpanded}
+          importantForAccessibility={isExpanded ? 'no-hide-descendants' : 'yes'}
           style={arrowAnimatedStyle}
           testID={AccordionTestids.arrow}
         >
@@ -146,6 +148,7 @@ const useStyles = makeStyles(({ theme }) => ({
   contentAnimated: { overflow: 'hidden' },
   contentWrapper: {
     position: 'absolute',
+    width: '100%',
     paddingLeft: theme.Panel.Accordion.accordionContentPaddingLeft,
     paddingTop: theme.Panel.Accordion.accordionContentPaddingTop,
     paddingRight: theme.Panel.Accordion.accordionContentPaddingRight,
