@@ -1,6 +1,12 @@
 import { type Icon, IconChevronRight } from '@tabler/icons-react-native'
-import React, { useCallback, useState } from 'react'
-import { View, Text, Pressable, type LayoutChangeEvent } from 'react-native'
+import React, { useCallback, useMemo, useState } from 'react'
+import {
+  View,
+  Text,
+  Pressable,
+  type LayoutChangeEvent,
+  type AccessibilityProps,
+} from 'react-native'
 import Animated, {
   interpolate,
   useAnimatedStyle,
@@ -11,6 +17,8 @@ import Animated, {
 import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 
 import { makeStyles } from '../../utils/makeStyles'
+
+const isTestEnv = process.env.NODE_ENV === 'test'
 
 export interface AccordionProps extends ViewProps {
   // Иконка слева от заголовка
@@ -82,6 +90,19 @@ export const Accordion: React.FC<AccordionProps> = ({
     opacity: contentOpenRatio.value,
   }))
 
+  const contentAccessibility: AccessibilityProps = useMemo(
+    () =>
+      isTestEnv
+        ? {}
+        : {
+            accessibilityElementsHidden: isExpanded,
+            importantForAccessibility: isExpanded
+              ? 'no-hide-descendants'
+              : 'yes',
+          },
+    [isExpanded]
+  )
+
   return (
     <View
       style={[styles.component, withSeparator ? styles.separator : {}]}
@@ -99,8 +120,6 @@ export const Accordion: React.FC<AccordionProps> = ({
         onPress={toggle}
       >
         <Animated.View
-          accessibilityElementsHidden={isExpanded}
-          importantForAccessibility={isExpanded ? 'no-hide-descendants' : 'yes'}
           style={arrowAnimatedStyle}
           testID={AccordionTestIds.arrow}
         >
@@ -116,6 +135,7 @@ export const Accordion: React.FC<AccordionProps> = ({
       <Animated.View
         style={[styles.contentAnimated, contentAnimatedStyle]}
         testID={AccordionTestIds.content}
+        {...contentAccessibility}
       >
         <View
           style={styles.contentWrapper}

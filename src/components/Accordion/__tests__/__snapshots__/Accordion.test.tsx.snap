@@ -22,8 +22,8 @@ exports[`Accordion Header elements maximal 1`] = `
       {
         "busy": undefined,
         "checked": undefined,
-        "disabled": undefined,
-        "expanded": false,
+        "disabled": false,
+        "expanded": undefined,
         "selected": undefined,
       }
     }
@@ -48,26 +48,27 @@ exports[`Accordion Header elements maximal 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      {
-        "alignItems": "center",
-        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-        "flexDirection": "row",
-        "gap": 7,
-        "paddingVertical": 14,
-      }
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "flexDirection": "row",
+          "gap": 7,
+          "paddingVertical": 14,
+        },
+        {},
+      ]
     }
     testID="Header"
   >
     <View
-      accessibilityElementsHidden={true}
       collapsable={false}
-      importantForAccessibility="no-hide-descendants"
       jestAnimatedStyle={
         {
           "value": {
             "transform": [
               {
-                "rotate": "0rad",
+                "rotate": "0deg",
               },
             ],
           },
@@ -77,7 +78,7 @@ exports[`Accordion Header elements maximal 1`] = `
         {
           "transform": [
             {
-              "rotate": "0rad",
+              "rotate": "0deg",
             },
           ],
         }
@@ -490,6 +491,7 @@ exports[`Accordion Header elements maximal 1`] = `
           "paddingRight": 0,
           "paddingTop": 0,
           "position": "absolute",
+          "width": "100%",
         }
       }
       testID="ContentWrapper"
@@ -521,8 +523,8 @@ exports[`Accordion Header elements minimal 1`] = `
       {
         "busy": undefined,
         "checked": undefined,
-        "disabled": undefined,
-        "expanded": false,
+        "disabled": false,
+        "expanded": undefined,
         "selected": undefined,
       }
     }
@@ -547,26 +549,27 @@ exports[`Accordion Header elements minimal 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      {
-        "alignItems": "center",
-        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-        "flexDirection": "row",
-        "gap": 7,
-        "paddingVertical": 14,
-      }
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "flexDirection": "row",
+          "gap": 7,
+          "paddingVertical": 14,
+        },
+        {},
+      ]
     }
     testID="Header"
   >
     <View
-      accessibilityElementsHidden={true}
       collapsable={false}
-      importantForAccessibility="no-hide-descendants"
       jestAnimatedStyle={
         {
           "value": {
             "transform": [
               {
-                "rotate": "0rad",
+                "rotate": "0deg",
               },
             ],
           },
@@ -576,7 +579,7 @@ exports[`Accordion Header elements minimal 1`] = `
         {
           "transform": [
             {
-              "rotate": "0rad",
+              "rotate": "0deg",
             },
           ],
         }
@@ -703,6 +706,7 @@ exports[`Accordion Header elements minimal 1`] = `
           "paddingRight": 0,
           "paddingTop": 0,
           "position": "absolute",
+          "width": "100%",
         }
       }
       testID="ContentWrapper"

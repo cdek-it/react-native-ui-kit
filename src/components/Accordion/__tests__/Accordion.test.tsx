@@ -64,7 +64,7 @@ describe('Accordion', () => {
     )
 
     expect(screen.getByTestId(AccordionTestIds.arrow)).toHaveAnimatedStyle({
-      transform: [{ rotate: `${Math.PI / 2}rad` }],
+      transform: [{ rotate: `90deg` }],
     })
 
     fireEvent.press(screen.getByText(title))
@@ -77,7 +77,7 @@ describe('Accordion', () => {
     )
 
     expect(screen.getByTestId(AccordionTestIds.arrow)).toHaveAnimatedStyle({
-      transform: [{ rotate: '0rad' }],
+      transform: [{ rotate: '0deg' }],
     })
   })
 })
