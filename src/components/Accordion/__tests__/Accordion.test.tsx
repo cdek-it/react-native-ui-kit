@@ -52,15 +52,18 @@ describe('Accordion', () => {
       </Accordion>
     )
 
-    fireEvent(screen.getByTestId(AccordionTestIds.contentWrapper), 'layout', {
-      nativeEvent: { layout: { height: 100, width: 200, x: 0, y: 0 } },
-    })
+    const includeHidden = { includeHiddenElements: true }
+
+    fireEvent(
+      screen.getByTestId(AccordionTestIds.contentWrapper, includeHidden),
+      'layout',
+      { nativeEvent: { layout: { height: 100, width: 200, x: 0, y: 0 } } }
+    )
 
     await waitFor(() =>
-      expect(screen.getByTestId(AccordionTestIds.content)).toHaveAnimatedStyle({
-        height: 100,
-        opacity: 1,
-      })
+      expect(
+        screen.getByTestId(AccordionTestIds.content, includeHidden)
+      ).toHaveAnimatedStyle({ height: 100, opacity: 1 })
     )
 
     expect(screen.getByTestId(AccordionTestIds.arrow)).toHaveAnimatedStyle({
@@ -70,10 +73,9 @@ describe('Accordion', () => {
     fireEvent.press(screen.getByText(title))
 
     await waitFor(() =>
-      expect(screen.getByTestId(AccordionTestIds.content)).toHaveAnimatedStyle({
-        height: 0,
-        opacity: 0,
-      })
+      expect(
+        screen.getByTestId(AccordionTestIds.content, includeHidden)
+      ).toHaveAnimatedStyle({ height: 0, opacity: 0 })
     )
 
     expect(screen.getByTestId(AccordionTestIds.arrow)).toHaveAnimatedStyle({

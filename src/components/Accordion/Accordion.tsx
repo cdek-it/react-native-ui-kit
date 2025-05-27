@@ -1,12 +1,6 @@
 import { type Icon, IconChevronRight } from '@tabler/icons-react-native'
-import React, { useCallback, useMemo, useState } from 'react'
-import {
-  View,
-  Text,
-  Pressable,
-  type LayoutChangeEvent,
-  type AccessibilityProps,
-} from 'react-native'
+import React, { useCallback, useState } from 'react'
+import { View, Text, Pressable, type LayoutChangeEvent } from 'react-native'
 import Animated, {
   interpolate,
   useAnimatedStyle,
@@ -17,8 +11,6 @@ import Animated, {
 import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 
 import { makeStyles } from '../../utils/makeStyles'
-
-const isTestEnv = process.env.NODE_ENV === 'test'
 
 export interface AccordionProps extends ViewProps {
   // Иконка слева от заголовка
@@ -60,7 +52,7 @@ export const Accordion: React.FC<AccordionProps> = ({
   const styles = useStyles()
 
   const contentHeight = useSharedValue(0)
-  const contentOpenRatio = useSharedValue(initiallyExpanded ? 1 : 0)
+  const contentOpenFraction = useSharedValue(initiallyExpanded ? 1 : 0)
   const [isExpanded, setIsExpanded] = useState(initiallyExpanded)
 
   const onLayout = useCallback(
@@ -71,37 +63,28 @@ export const Accordion: React.FC<AccordionProps> = ({
   )
 
   const toggle = useCallback(() => {
-    contentOpenRatio.value = withTiming(contentOpenRatio.value > 0 ? 0 : 1)
+    contentOpenFraction.value = withTiming(
+      contentOpenFraction.value > 0 ? 0 : 1
+    )
     setIsExpanded((value) => !value)
-  }, [contentOpenRatio])
+  }, [contentOpenFraction])
 
   const arrowAnimatedStyle = useAnimatedStyle(() => ({
     transform: [
-      { rotate: `${interpolate(contentOpenRatio.value, [0, 1], [0, 90])}deg` },
+      {
+        rotate: `${interpolate(contentOpenFraction.value, [0, 1], [0, 90])}deg`,
+      },
     ],
   }))
 
   const contentAnimatedStyle = useAnimatedStyle(() => ({
     height: interpolate(
-      contentOpenRatio.value,
+      contentOpenFraction.value,
       [0, 1],
       [0, contentHeight.value]
     ),
-    opacity: contentOpenRatio.value,
+    opacity: contentOpenFraction.value,
   }))
-
-  const contentAccessibility: AccessibilityProps = useMemo(
-    () =>
-      isTestEnv
-        ? {}
-        : {
-            accessibilityElementsHidden: isExpanded,
-            importantForAccessibility: isExpanded
-              ? 'no-hide-descendants'
-              : 'yes',
-          },
-    [isExpanded]
-  )
 
   return (
     <View
@@ -133,9 +116,10 @@ export const Accordion: React.FC<AccordionProps> = ({
       </Pressable>
 
       <Animated.View
+        accessibilityElementsHidden={isExpanded}
+        importantForAccessibility={isExpanded ? 'no-hide-descendants' : 'yes'}
         style={[styles.contentAnimated, contentAnimatedStyle]}
         testID={AccordionTestIds.content}
-        {...contentAccessibility}
       >
         <View
           style={styles.contentWrapper}

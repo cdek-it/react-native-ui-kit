@@ -464,7 +464,9 @@ exports[`Accordion Header elements maximal 1`] = `
     </View>
   </View>
   <View
+    accessibilityElementsHidden={false}
     collapsable={false}
+    importantForAccessibility="yes"
     jestAnimatedStyle={
       {
         "value": {
@@ -679,7 +681,9 @@ exports[`Accordion Header elements minimal 1`] = `
     </Text>
   </View>
   <View
+    accessibilityElementsHidden={false}
     collapsable={false}
+    importantForAccessibility="yes"
     jestAnimatedStyle={
       {
         "value": {
