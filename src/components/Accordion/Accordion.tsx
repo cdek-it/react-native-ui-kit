@@ -116,8 +116,8 @@ export const Accordion: React.FC<AccordionProps> = ({
       </Pressable>
 
       <Animated.View
-        accessibilityElementsHidden={isExpanded}
-        importantForAccessibility={isExpanded ? 'no-hide-descendants' : 'yes'}
+        accessibilityElementsHidden={!isExpanded}
+        importantForAccessibility={isExpanded ? 'yes' : 'no-hide-descendants'}
         style={[styles.contentAnimated, contentAnimatedStyle]}
         testID={AccordionTestIds.content}
       >
