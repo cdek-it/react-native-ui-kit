@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.42](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.41...v0.0.42) (2025-05-28)
+
+### Исправления багов
+
+- **Accordion:** фикс инверсии в свойствах доступности
+  ([f0cd5f6](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/f0cd5f6cca285ef7de1becf1f24834b2dd24ef9a))
+
 ### [0.0.41](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.40...v0.0.41) (2025-05-27)
 
 ### Новый функционал
