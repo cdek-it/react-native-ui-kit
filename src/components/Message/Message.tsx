@@ -124,19 +124,26 @@ export const Message = memo<MessageProps>(
       const buttonCommonProps: Omit<
         ComponentProps<typeof ButtonSeverity>,
         'iconOnly' | 'Icon' | 'iconPosition' | 'label'
-      > = {
-        severity,
-        size: 'small',
-        testID: TestId.CloseButton,
-        variant: 'outlined',
-        onPress: onClose,
-      }
+      > = { severity, size: 'small', variant: 'outlined', onPress: onClose }
 
       if (closeLabel) {
-        return <ButtonSeverity label={closeLabel} {...buttonCommonProps} />
+        return (
+          <ButtonSeverity
+            label={closeLabel}
+            {...buttonCommonProps}
+            testID={TestId.CloseButton}
+          />
+        )
       }
 
-      return <ButtonSeverity iconOnly Icon={IconX} {...buttonCommonProps} />
+      return (
+        <ButtonSeverity
+          iconOnly
+          Icon={IconX}
+          {...buttonCommonProps}
+          testID={TestId.CloseButton}
+        />
+      )
     }, [closeLabel, severity, onClose])
 
     return (
