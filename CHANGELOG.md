@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.43](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.42...v0.0.43) (2025-06-02)
+
+### Исправления багов
+
+- **Message:** поправлены testID для кнопки закрытия
+  ([ff7d91a](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/ff7d91a05b0478c0787b36db37550072ea3d6c67))
+
 ### [0.0.42](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.41...v0.0.42) (2025-05-28)
 
 ### Исправления багов
