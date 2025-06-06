@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.44](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.43...v0.0.44) (2025-06-06)
+
+### Новый функционал
+
+- **TextInputBase:** добавлено свойство для озвучки кнопки Очистить
+  ([b3cc708](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/b3cc7084813675487ab5ec103ff672bc0d8d45c1))
+
 ### [0.0.43](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.42...v0.0.43) (2025-06-02)
 
 ### Исправления багов
