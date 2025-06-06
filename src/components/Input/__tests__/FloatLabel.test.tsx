@@ -58,4 +58,17 @@ describe('FloatLabel interactions', () => {
     expect(mockedOnChangeText).toHaveBeenCalledTimes(4)
     expect(mockedOnChangeText).toHaveBeenLastCalledWith('text')
   })
+
+  test('should set clear button accessibility label', async () => {
+    const { getByTestId } = render(
+      <FloatLabel clearButtonAccessibilityLabel='Clear' placeholder='Label' />
+    )
+    const textInput = getByTestId('FloatLabel')
+    const user = userEvent.setup()
+    await user.type(textInput, 'text')
+
+    const clearButton = getByTestId('FloatLabelClearButton')
+
+    expect(clearButton.props.accessibilityLabel).toBe('Clear')
+  })
 })

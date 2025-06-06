@@ -38,6 +38,8 @@ export interface InputTextBaseProps
    * @default true
    */
   clearable?: boolean
+  /** Озвучка для кнопки очистки поля */
+  clearButtonAccessibilityLabel?: string
   /** Управление стилем контейнера поля ввода */
   containerStyle?: ViewStyle
   /** Управление доступностью поля */
@@ -75,6 +77,7 @@ export const InputTextBase = memo<
     inputStyle,
     loading,
     renderTextInput,
+    clearButtonAccessibilityLabel,
     ...otherProps
   }) => {
     const styles = useStyles()
@@ -257,6 +260,7 @@ export const InputTextBase = memo<
 
             {showClearButton && !disabled ? (
               <TouchableOpacity
+                accessibilityLabel={clearButtonAccessibilityLabel}
                 testID={makeTestId(InputTextBaseTestId.clearButton)}
                 onPress={clear}
               >

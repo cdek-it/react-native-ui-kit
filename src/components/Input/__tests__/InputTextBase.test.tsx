@@ -1,6 +1,8 @@
 import { fireEvent, render, userEvent } from '@testing-library/react-native'
 
-import { InputTextBase } from '../InputTextBase'
+import { TextInput } from 'react-native-gesture-handler'
+
+import { InputTextBase, type RenderTextInputArgs } from '../InputTextBase'
 
 describe('InputTextBase component functionality tests', () => {
   test('should render outline elements', () => {
@@ -128,5 +130,25 @@ describe('InputTextBase component functionality tests', () => {
 
     expect(renderTextInput).toHaveBeenCalled()
     expect(renderTextInput.mock.calls[0]).toMatchSnapshot()
+  })
+
+  test('should set clear button accessibility label', () => {
+    const renderTextInput = (props: RenderTextInputArgs) => (
+      <TextInput {...props} testID='MyTextInput' />
+    )
+
+    const { getByTestId } = render(
+      <InputTextBase
+        clearable
+        clearButtonAccessibilityLabel='Clear'
+        renderTextInput={renderTextInput}
+      />
+    )
+    const input = getByTestId('MyTextInput')
+    fireEvent.changeText(input, 'ку')
+
+    const clearButton = getByTestId('InputTextBaseClearButton')
+
+    expect(clearButton.props.accessibilityLabel).toBe('Clear')
   })
 })
