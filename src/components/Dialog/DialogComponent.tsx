@@ -19,16 +19,21 @@ export const DialogComponent: React.FC<DialogComponentProps> = ({
   onClose,
 }) => {
   const styles = useStyles()
+  const tids = DialogTestIDs
   const { width, height } = useWindowDimensions()
   const maxSize = { maxWidth: width - 40, maxHeight: height - 100 }
 
   return (
     <View style={[styles.root, maxSize]}>
       <View style={styles.header}>
-        <Title level='h3' style={styles.text}>
+        <Title level='h3' style={styles.text} testID={tids.title}>
           {title}
         </Title>
-        <TouchableOpacity style={styles.closeTouchable} onPress={onClose}>
+        <TouchableOpacity
+          style={styles.closeTouchable}
+          testID={tids.closeButton}
+          onPress={onClose}
+        >
           <IconX {...styles.closeIcon} />
         </TouchableOpacity>
       </View>
@@ -72,3 +77,5 @@ const useStyles = makeStyles(({ theme, spacing }) => ({
   },
   closeIcon: { width: 14, height: 14, color: theme.General.actionIconColor },
 }))
+
+const DialogTestIDs = { title: 'DialogTitle', closeButton: 'DialogCloseButton' }
