@@ -57,7 +57,7 @@ export const Dialog: React.FC<DialogProps> = ({
         SCALE_INIT_VALUE,
         { duration: ANIMATION_DURATION },
         (finished) => {
-          if (finished) {
+          if (finished && modalVisible) {
             runOnJS(handleAnimationComplete)()
           }
         }
