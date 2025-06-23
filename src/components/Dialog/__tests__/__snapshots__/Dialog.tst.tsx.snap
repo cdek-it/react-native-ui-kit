@@ -110,6 +110,7 @@ exports[`Dialog component tests basic dialog with title, body and footer 1`] = `
                 },
               ]
             }
+            testID="DialogTitle"
           >
             Dialog Title
           </Text>
@@ -147,6 +148,7 @@ exports[`Dialog component tests basic dialog with title, body and footer 1`] = `
                 "padding": 8,
               }
             }
+            testID="DialogCloseButton"
           >
             <RNSVGSvgView
               align="xMidYMid"
