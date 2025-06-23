@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.45](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.44...v0.0.45) (2025-06-23)
+
+### Новый функционал
+
+- **dialog:** dialog компонент
+  ([d213018](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/d213018dd42653d13f867c84489eb402b1ccbd89))
+
+### Исправления багов
+
+- **dialog:** fix test
+  ([0e3143e](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/0e3143e2c9dbc2723aefc3db61e513ca33298529))
+- **dialog:** тест айдишники
+  ([663144d](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/663144d3a0a0c2f1d0dddd267411644e9d6fdca7))
+- **dialog:** фикс логики
+  ([b0a4678](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/b0a4678359c9b2e224a841303adb2ac0500c5beb))
+- индекс
+  ([9995890](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/99958909abd5814f5fc67142ccd93efbbbd12915))
+
 ### [0.0.44](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.43...v0.0.44) (2025-06-06)
 
 ### Новый функционал
