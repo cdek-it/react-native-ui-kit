@@ -19,7 +19,7 @@ const SCALE_INIT_VALUE = 0.9
 
 export interface DialogProps extends DialogComponentProps {
   readonly isVisible: boolean
-  readonly onClose: () => void
+  readonly onClose?: () => void
   readonly onHideComplete?: () => void
 }
 
@@ -27,7 +27,7 @@ export const Dialog: React.FC<DialogProps> = ({
   isVisible,
   onClose,
   onHideComplete,
-  title,
+  header,
   footer,
   body,
 }) => {
@@ -86,12 +86,7 @@ export const Dialog: React.FC<DialogProps> = ({
       <View style={styles.container}>
         <Animated.View style={[styles.backdrop, backdropAnimatedStyle]} />
         <Animated.View style={dialogAnimatedStyle}>
-          <DialogComponent
-            body={body}
-            footer={footer}
-            title={title}
-            onClose={onClose}
-          />
+          <DialogComponent body={body} footer={footer} header={header} />
         </Animated.View>
       </View>
     </Modal>
@@ -108,5 +103,4 @@ const styles = StyleSheet.create({
     bottom: 0,
     backgroundColor: 'black',
   },
-  dialogContent: { alignItems: 'center' },
 })

@@ -2,28 +2,48 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { useCallback, useState } from 'react'
 import { Text, TouchableOpacity, View } from 'react-native'
 
-import { Dialog } from './Dialog'
+import { Dialog, type DialogProps } from './Dialog'
+import { DialogHeader, type DialogHeaderProps } from './DialogHeader'
 
-const meta: Meta<typeof Dialog> = {
-  title: 'Dialog',
-  component: Dialog,
-  render: () => Template(),
+const severityMap = {
+  info: 'info',
+  success: 'success',
+  warning: 'warning',
+  danger: 'danger',
+  help: 'help',
+  none: undefined,
 }
 
-const Template = () => {
+const meta: Meta<DialogProps & DialogHeaderProps> = {
+  title: 'Dialog',
+  component: Dialog,
+  render: (props) => Template(props),
+  argTypes: {
+    severity: {
+      control: 'radio',
+      options: Object.keys(severityMap),
+      mapping: severityMap,
+    },
+    onClose: { action: 'onClose' },
+    onHideComplete: { action: 'onHideComplete' },
+  },
+}
+
+const Template = ({
+  severity,
+  onHideComplete,
+  onClose,
+}: DialogProps & DialogHeaderProps) => {
   const [isVisible, setIsVisible] = useState(false)
 
   const showDialog = () => {
     setIsVisible(true)
   }
 
-  const hideDialog = () => {
+  const hideDialog = useCallback(() => {
     setIsVisible(false)
-  }
-
-  const handleHideComplete = () => {
-    console.log('Dialog hide animation completed')
-  }
+    onClose?.()
+  }, [onClose])
 
   const Body = useCallback(() => {
     return (
@@ -37,7 +57,7 @@ const Template = () => {
         <Text>Войти</Text>
       </TouchableOpacity>
     )
-  }, [])
+  }, [hideDialog])
 
   return (
     <View>
@@ -50,10 +70,16 @@ const Template = () => {
       <Dialog
         body={Body}
         footer={Footer}
+        header={
+          <DialogHeader
+            severity={severity}
+            title='Найденный заказ не сохранится'
+            onClose={hideDialog}
+          />
+        }
         isVisible={isVisible}
-        title='Найденный заказ не сохранится'
         onClose={hideDialog}
-        onHideComplete={handleHideComplete}
+        onHideComplete={onHideComplete}
       />
     </View>
   )

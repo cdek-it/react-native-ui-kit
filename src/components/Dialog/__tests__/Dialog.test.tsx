@@ -7,13 +7,14 @@ import { Dialog, type DialogProps } from '../Dialog'
 describe('Dialog component tests', () => {
   const MockBody = () => <Text>This is the dialog body content</Text>
   const MockFooter = () => <Text>This is the dialog footer</Text>
+  const header = <Text>This is custom dialog header</Text>
 
   const snapshotCases: Array<[string, DialogProps]> = [
     [
       'basic dialog with title, body and footer',
       {
         isVisible: true,
-        title: 'Dialog Title',
+        header,
         body: MockBody,
         footer: MockFooter,
         onClose: jest.fn(),
@@ -23,6 +24,7 @@ describe('Dialog component tests', () => {
 
   test.each(snapshotCases)('%s', (_, props) => {
     const renderedDialog = render(<Dialog {...props} />)
+
     expect(renderedDialog.toJSON()).toMatchSnapshot()
   })
 })
