@@ -7,6 +7,7 @@ import {
   IconInfoCircle,
   IconX,
 } from '@tabler/icons-react-native'
+import { useMemo } from 'react'
 import { TouchableOpacity, View } from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
@@ -35,14 +36,19 @@ export const DialogHeader = ({
 }: DialogHeaderProps) => {
   const styles = useStyles()
   const tids = DialogHeaderTestId
-  const Icon = severity ? iconsMap[severity] : undefined
+
+  const icon = useMemo(() => {
+    if (!severity) return null
+
+    const Icon = iconsMap[severity]
+
+    return <Icon {...styles.severityIcon} {...styles[severity]} />
+  }, [severity, styles])
 
   return (
     <>
       <View style={styles.header}>
-        {Icon && severity ? (
-          <Icon {...styles.severityIcon} {...styles[severity]} />
-        ) : null}
+        {icon}
         <Title level='h3' style={styles.text} testID={tids.title}>
           {title}
         </Title>
