@@ -21,9 +21,18 @@ export const DialogComponent: React.FC<DialogComponentProps> = ({
   return (
     <View style={[styles.root, maxSize]}>
       {header}
-      <View style={styles.body}>{Body ? <Body /> : null}</View>
 
-      <View style={styles.footer}>{Footer ? <Footer /> : null}</View>
+      {Body ? (
+        <View style={styles.body}>
+          <Body />
+        </View>
+      ) : null}
+
+      {Footer ? (
+        <View style={styles.footer}>
+          <Footer />
+        </View>
+      ) : null}
     </View>
   )
 }
