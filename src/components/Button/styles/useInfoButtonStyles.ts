@@ -2,7 +2,7 @@ import { makeStyles } from '../../../utils/makeStyles'
 
 export const useInfoButtonStyles = () => {
   const labelVariantStyles = useLabelVariantStyles()
-  const pressedVariantStyles = usePressedVarianttyles()
+  const pressedVariantStyles = usePressedVariantStyles()
   const containerVariantStyles = useContainerVariantStyles()
   const iconVariantStyles = useIconVariantStyles()
 
@@ -24,10 +24,10 @@ const useLabelVariantStyles = makeStyles(({ theme }) => ({
   text: { color: theme.Button.Severity.Info.Text.infoTextButtonTextColor },
 }))
 
-const usePressedVarianttyles = makeStyles(({ theme }) => ({
+const usePressedVariantStyles = makeStyles(({ theme }) => ({
   basic: {
     borderColor: theme.Button.Severity.Info.Basic.infoButtonBorderColor,
-    backgroundColor: theme.Button.Basic.buttonHoverBg,
+    backgroundColor: theme.Button.Severity.Info.Basic.infoButtonHoverBg,
   },
 
   outlined: {

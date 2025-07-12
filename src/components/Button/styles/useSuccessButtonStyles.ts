@@ -2,7 +2,7 @@ import { makeStyles } from '../../../utils/makeStyles'
 
 export const useSuccessButtonStyles = () => {
   const labelVariantStyles = useLabelVariantStyles()
-  const pressedVariantStyles = usePressedVarianttyles()
+  const pressedVariantStyles = usePressedVariantStyles()
   const containerVariantStyles = useContainerVariantStyles()
   const iconVariantStyles = useIconVariantStyles()
 
@@ -27,10 +27,10 @@ const useLabelVariantStyles = makeStyles(({ theme }) => ({
   },
 }))
 
-const usePressedVarianttyles = makeStyles(({ theme }) => ({
+const usePressedVariantStyles = makeStyles(({ theme }) => ({
   basic: {
     borderColor: theme.Button.Severity.Success.Basic.successButtonBorderColor,
-    backgroundColor: theme.Button.Basic.buttonHoverBg,
+    backgroundColor: theme.Button.Severity.Success.Basic.successButtonHoverBg,
   },
 
   outlined: {
