@@ -6,6 +6,7 @@ exports[`Dialog component tests basic dialog with title, body and footer 1`] = `
   hardwareAccelerated={false}
   onRequestClose={[MockFunction]}
   statusBarTranslucent={true}
+  testID="DialogModal"
   transparent={true}
   visible={true}
 >
@@ -38,6 +39,7 @@ exports[`Dialog component tests basic dialog with title, body and footer 1`] = `
           "top": 0,
         }
       }
+      testID="Backdrop"
     />
     <View
       collapsable={false}
@@ -63,6 +65,7 @@ exports[`Dialog component tests basic dialog with title, body and footer 1`] = `
           ],
         }
       }
+      testID="ContentContainer"
     >
       <View
         style={

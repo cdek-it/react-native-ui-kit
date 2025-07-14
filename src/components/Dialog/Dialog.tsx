@@ -21,6 +21,7 @@ export interface DialogProps extends DialogComponentProps {
   readonly isVisible: boolean
   readonly onClose?: () => void
   readonly onHideComplete?: () => void
+  readonly testID?: string
 }
 
 export const Dialog: React.FC<DialogProps> = ({
@@ -30,6 +31,7 @@ export const Dialog: React.FC<DialogProps> = ({
   header,
   footer,
   body,
+  testID,
 }) => {
   const [modalVisible, setModalVisible] = useState(false)
   const opacity = useSharedValue(0)
@@ -80,12 +82,19 @@ export const Dialog: React.FC<DialogProps> = ({
       statusBarTranslucent
       transparent
       animationType='none'
+      testID={testID ?? DialogTestId.root}
       visible={modalVisible}
       onRequestClose={onClose}
     >
       <View style={styles.container}>
-        <Animated.View style={[styles.backdrop, backdropAnimatedStyle]} />
-        <Animated.View style={dialogAnimatedStyle}>
+        <Animated.View
+          style={[styles.backdrop, backdropAnimatedStyle]}
+          testID={DialogTestId.backdrop}
+        />
+        <Animated.View
+          style={dialogAnimatedStyle}
+          testID={DialogTestId.contentContainer}
+        >
           <DialogComponent body={body} footer={footer} header={header} />
         </Animated.View>
       </View>
@@ -104,3 +113,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
   },
 })
+
+export const DialogTestId = {
+  root: 'DialogModal',
+  backdrop: 'Backdrop',
+  contentContainer: 'ContentContainer',
+}
