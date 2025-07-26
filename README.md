@@ -1,8 +1,8 @@
 # react-native-prime-ui-kit
 
-[![pipeline status](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/badges/develop/pipeline.svg)](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/-/commits/develop)
-[![coverage report](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/badges/develop/coverage.svg)](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/-/commits/develop)
-[![Latest Release](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/-/badges/release.svg)](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/-/releases)
+[![pipeline status](https://gitcode.cdek.ru/cdek-it/reactnative/ui-kit/react-native-prime-ui-kit/badges/develop/pipeline.svg)](https://gitcode.cdek.ru/cdek-it/reactnative/ui-kit/react-native-prime-ui-kit/-/commits/develop)
+[![coverage report](https://gitcode.cdek.ru/cdek-it/reactnative/ui-kit/react-native-prime-ui-kit/badges/develop/coverage.svg)](https://gitcode.cdek.ru/cdek-it/reactnative/ui-kit/react-native-prime-ui-kit/-/commits/develop)
+[![Latest Release](https://gitcode.cdek.ru/cdek-it/reactnative/ui-kit/react-native-prime-ui-kit/-/badges/release.svg)](https://gitcode.cdek.ru/cdek-it/reactnative/ui-kit/react-native-prime-ui-kit/-/releases)
 
 Репозиторий UI kit на основе Prime Faces, Prime Flex для React Native
 
