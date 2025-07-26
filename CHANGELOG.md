@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.48](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.47...v0.0.48) (2025-07-26)
+
 ### [0.0.47](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.45...v0.0.47) (2025-07-26)
 
 ### Рефакторинг
