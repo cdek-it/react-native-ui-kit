@@ -4,6 +4,37 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.47](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.45...v0.0.47) (2025-07-26)
+
+### Рефакторинг
+
+- **DialogHeader:** рефактор логики рендера иконки
+  ([13cceb6](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/13cceb64ce6ebf65ccae9f9573feb4ae577bae03))
+
+### Новый функционал
+
+- **Dialog:** добавлены testID и их экспорт
+  ([8cb307c](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/8cb307cc43ab2efb7fd46d7f4a811b1956c59b49))
+- **Dialog:** header вынесен в отдельный компонент, добавлен severity
+  ([6b36a94](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/6b36a9406d88706312071c5c4436beba17042d7c))
+
+### Исправления багов
+
+- **Button:** исправлены стили для нажатого состояния ButtonSeverity
+  ([2f47899](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/2f4789985181c3fa6f00d31ba2f194808128ca87))
+- **Dialog:** добавлен экспорт
+  ([ba3702e](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/ba3702e6ba1652bc51e8abcc64ddc00c836b8872))
+- **DialogComponent:** поправлен условный рендер body и footer во избежание
+  лишних отступов
+  ([e703b52](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/e703b52cfbaaed0f797c05118797b55ce9e8a967))
+
+### Другое
+
+- **README:** обновил ссылки на бейджи в README после переезда в новый Gitlab
+  ([1c8e48f](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/1c8e48ffdeca8f1a6dcd622d01ccb9759f54a801))
+- **release:** 0.0.46 [ci skip]
+  ([8a43448](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/8a434489f95858beca43f9207baa582d96ca7539))
+
 ### [0.0.46](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.45...v0.0.46) (2025-07-14)
 
 ### Рефакторинг
