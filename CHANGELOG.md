@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.49](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.48...v0.0.49) (2025-08-14)
+
+### Новый функционал
+
+- **Dialog:** замена реализации Dialog с Modal на Portal
+  ([dea479e](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/dea479eea37fe2678c5bb4b275f4c8db2167d47a))
+
+### Другое
+
+- **cocoapods:** обновление Podfile.lock
+  ([f5de187](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/f5de1875e04f6300c2465aaa4905078fe9f5f30e))
+- **yarn:** обновление yarn.lock
+  ([f42c226](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/commit/f42c2261485f6c42332ef98e07368e3c742a6d88))
+
 ### [0.0.48](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.47...v0.0.48) (2025-07-26)
 
 ### [0.0.47](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.45...v0.0.47) (2025-07-26)
