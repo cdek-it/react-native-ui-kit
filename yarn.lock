@@ -2310,6 +2310,7 @@ __metadata:
     typescript: "npm:5.8.2"
     typescript-eslint: "npm:8.27.0"
   peerDependencies:
+    "@gorhom/portal": 1.0.14
     "@tabler/icons-react-native": ">=3.x"
     expo-application: ">=6.x"
     react: ">=18.x"
