@@ -1,3 +1,4 @@
+import { PortalProvider } from '@gorhom/portal'
 import { render } from '@testing-library/react-native'
 
 import { Text } from 'react-native'
@@ -23,7 +24,11 @@ describe('Dialog component tests', () => {
   ]
 
   test.each(snapshotCases)('%s', (_, props) => {
-    const renderedDialog = render(<Dialog {...props} />)
+    const renderedDialog = render(
+      <PortalProvider>
+        <Dialog {...props} />
+      </PortalProvider>
+    )
 
     expect(renderedDialog.toJSON()).toMatchSnapshot()
   })

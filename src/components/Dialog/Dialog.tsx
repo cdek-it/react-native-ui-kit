@@ -1,5 +1,6 @@
-import React, { useCallback, useEffect, useState } from 'react'
-import { View, Modal, StyleSheet } from 'react-native'
+import { Portal } from '@gorhom/portal'
+import React, { useCallback, useEffect } from 'react'
+import { View, StyleSheet, BackHandler, Pressable } from 'react-native'
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -24,6 +25,9 @@ export interface DialogProps extends DialogComponentProps {
   readonly testID?: string
 }
 
+// eslint-disable-next-line import-x/no-deprecated
+const AnimatedPressable = Animated.createAnimatedComponent(Pressable)
+
 export const Dialog: React.FC<DialogProps> = ({
   isVisible,
   onClose,
@@ -33,13 +37,10 @@ export const Dialog: React.FC<DialogProps> = ({
   body,
   testID,
 }) => {
-  const [modalVisible, setModalVisible] = useState(false)
   const opacity = useSharedValue(0)
   const scale = useSharedValue(SCALE_INIT_VALUE)
 
   const handleAnimationComplete = useCallback(() => {
-    setModalVisible(false)
-
     if (onHideComplete) {
       onHideComplete()
     }
@@ -47,7 +48,6 @@ export const Dialog: React.FC<DialogProps> = ({
 
   useEffect(() => {
     if (isVisible) {
-      setModalVisible(true)
       opacity.value = withTiming(1, { duration: ANIMATION_DURATION })
       scale.value = withSpring(1, {
         damping: SCALE_DAMPING,
@@ -59,13 +59,13 @@ export const Dialog: React.FC<DialogProps> = ({
         SCALE_INIT_VALUE,
         { duration: ANIMATION_DURATION },
         (finished) => {
-          if (finished && modalVisible) {
+          if (finished) {
             runOnJS(handleAnimationComplete)()
           }
         }
       )
     }
-  }, [isVisible, modalVisible, opacity, scale, handleAnimationComplete])
+  }, [isVisible, opacity, scale, handleAnimationComplete])
 
   const backdropAnimatedStyle = useAnimatedStyle(() => {
     return {
@@ -77,19 +77,36 @@ export const Dialog: React.FC<DialogProps> = ({
     return { opacity: opacity.value, transform: [{ scale: scale.value }] }
   })
 
+  useEffect(() => {
+    const subscription = BackHandler.addEventListener(
+      'hardwareBackPress',
+      () => {
+        if (isVisible) {
+          onClose?.()
+
+          return true
+        }
+
+        return false
+      }
+    )
+
+    return subscription.remove
+  }, [isVisible, onClose])
+
   return (
-    <Modal
-      statusBarTranslucent
-      transparent
-      animationType='none'
-      testID={testID ?? DialogTestId.root}
-      visible={modalVisible}
-      onRequestClose={onClose}
-    >
-      <View style={styles.container}>
-        <Animated.View
+    <Portal>
+      <View
+        style={[
+          styles.container,
+          !isVisible && styles.containerNoPointerEvents,
+        ]}
+        testID={testID ?? DialogTestId.root}
+      >
+        <AnimatedPressable
           style={[styles.backdrop, backdropAnimatedStyle]}
           testID={DialogTestId.backdrop}
+          onPress={onClose}
         />
         <Animated.View
           style={dialogAnimatedStyle}
@@ -98,12 +115,25 @@ export const Dialog: React.FC<DialogProps> = ({
           <DialogComponent body={body} footer={footer} header={header} />
         </Animated.View>
       </View>
-    </Modal>
+    </Portal>
   )
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
+  container: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 9999,
+    elevation: 999,
+    pointerEvents: 'auto',
+  },
+  containerNoPointerEvents: { pointerEvents: 'none' },
   backdrop: {
     position: 'absolute',
     top: 0,
