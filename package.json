@@ -2,10 +2,10 @@
   "name": "@cdek/react-native-prime-ui-kit",
   "version": "0.0.49",
   "description": "UI kit на основе Prime Faces, Prime Flex для React Native",
-  "homepage": "https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit",
+  "homepage": "https://gitcode.cdek.ru/cdek-it/reactnative/ui-kit/react-native-prime-ui-kit",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit.git"
+    "url": "https://gitcode.cdek.ru/cdek-it/reactnative/ui-kit/react-native-prime-ui-kit.git"
   },
   "publishConfig": {
     "main": "./dist/index.js",

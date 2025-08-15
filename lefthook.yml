@@ -1,4 +1,4 @@
 remotes:
-  - git_url: git@gitlab.cdek.ru:react-native/lefthook-config.git
+  - git_url: git@gitcode.cdek.ru:cdek-it/reactnative/conventions/lefthook-config.git
     configs:
       - config.yml

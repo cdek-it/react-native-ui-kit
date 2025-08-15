@@ -34,8 +34,6 @@ Storybook проект создан с помощью Expo
 
 ### Ссылки
 
-- [Доска в Gitlab](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/-/boards)
-- [Задачи в Gtilab](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/-/issues)
 - [Доска DS в Redmine](https://project.cdek.ru/projects/innerdev)
 - [Прогресс разработки DS](https://cloud.cdek.ru/s/aokcGTsCAoEHiCg)
 - [Подключение токенов DS](https://axiomatic-lock-3b2.notion.site/2e49f2b4e58e46ebab98ea8f844bcfa9)

@@ -1,4 +1,4 @@
-git_url "git@gitlab.cdek.ru:react-native/fastlane-match-storage.git"
+git_url "git@gitcode.cdek.ru:cdek-it/reactnative/ci/fastlane-match-storage.git"
 git_branch "master"
 storage_mode "git"
 readonly true
