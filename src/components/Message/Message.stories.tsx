@@ -8,7 +8,7 @@ import { Body } from '../Typography'
 
 import { Message } from './Message'
 
-const icons = { IconUserCircle, none: undefined }
+const icons = { IconUserCircle, default: undefined }
 
 const Stub = ({ children }: { readonly children: string }) => (
   <View
@@ -30,6 +30,7 @@ const meta: Meta<typeof Message> = {
     caption: 'caption',
     severity: 'info',
     timerValue: undefined,
+    hiddenIcon: false,
   },
   argTypes: {
     severity: {

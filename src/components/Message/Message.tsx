@@ -73,6 +73,13 @@ export interface MessageProps
    * </pre>
    */
   Icon?: Icon
+
+  /**
+   * Скрыть иконку.
+   * Позволяет скрывать установленные или дефолтные иконки
+   * Дефолтное значение: false
+   */
+  hiddenIcon?: boolean
 }
 
 /**
@@ -89,6 +96,7 @@ export const Message = memo<MessageProps>(
     closeLabel,
     onTimerFinish,
     severity = 'info',
+    hiddenIcon = false,
     style,
     testID,
     timerValue,
@@ -146,6 +154,25 @@ export const Message = memo<MessageProps>(
       )
     }, [closeLabel, severity, onClose])
 
+    const LeftContent = useMemo(() => {
+      if (timerValue) {
+        return <Timer countFrom={timerValue} onFinish={onTimerFinish} />
+      }
+
+      if (!hiddenIcon) {
+        return (
+          <Icon
+            color={styles[severity].borderLeftColor}
+            height={styles.iconSize.height}
+            testID={TestId.Icon}
+            width={styles.iconSize.width}
+          />
+        )
+      }
+
+      return undefined
+    }, [timerValue, hiddenIcon, onTimerFinish, Icon, styles, severity])
+
     return (
       <View
         accessible
@@ -154,17 +181,7 @@ export const Message = memo<MessageProps>(
         {...rest}
       >
         <View style={styles.titleRow}>
-          {timerValue ? (
-            <Timer countFrom={timerValue} onFinish={onTimerFinish} />
-          ) : (
-            <Icon
-              color={styles[severity].borderLeftColor}
-              height={styles.iconSize.height}
-              testID={TestId.Icon}
-              width={styles.iconSize.width}
-            />
-          )}
-
+          {LeftContent}
           <View style={styles.titleTextContainer}>
             <Body base testID={TestId.Title} weight='bold'>
               {title}
@@ -175,7 +192,6 @@ export const Message = memo<MessageProps>(
               </Caption>
             ) : null}
           </View>
-
           {button}
         </View>
         {body ? <View testID={TestId.Body}>{body}</View> : null}

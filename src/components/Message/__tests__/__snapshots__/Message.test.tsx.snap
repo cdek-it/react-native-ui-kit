@@ -1144,6 +1144,186 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
 </View>
 `;
 
+exports[`Message {"hiddenIcon": false} 1`] = `
+<View
+  accessible={true}
+  style={
+    [
+      {
+        "borderLeftWidth": 3.5,
+        "borderRadius": 7,
+        "borderWidth": 1,
+        "gap": 14,
+        "overflow": "hidden",
+        "padding": 14,
+        "paddingLeft": 17,
+      },
+      {
+        "backgroundColor": "#f4f9fe",
+        "borderBottomColor": "#9ecdf6",
+        "borderLeftColor": "#49a2ef",
+        "borderRightColor": "#9ecdf6",
+        "borderTopColor": "#9ecdf6",
+      },
+      undefined,
+    ]
+  }
+  testID="MessageContainer"
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 14,
+      }
+    }
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={31.5}
+      bbWidth={31.5}
+      fill="none"
+      focusable={false}
+      height={31.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="#49a2ef"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 31,
+            "width": 31,
+          },
+        ]
+      }
+      testID="Icon"
+      vbHeight={24}
+      vbWidth={24}
+      width={31.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4283015919,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4283015919,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="Icon"
+        />
+        <RNSVGPath
+          d="M12 9h.01"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4283015919,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="Icon"
+        />
+        <RNSVGPath
+          d="M11 12h1v4h1"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4283015919,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="Icon"
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+    <View
+      style={
+        {
+          "alignSelf": "center",
+          "flex": 1,
+          "gap": 3.5,
+        }
+      }
+    >
+      <Body
+        base={true}
+        testID="Title"
+        weight="bold"
+      >
+        Message
+      </Body>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`Message {"onTimerFinish": [Function mockConstructor], "timerValue": 5} 1`] = `
 <View
   accessible={true}

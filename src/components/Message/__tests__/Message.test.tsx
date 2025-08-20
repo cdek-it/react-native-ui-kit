@@ -40,6 +40,7 @@ describe('Message', () => {
     { timerValue: 5, onTimerFinish: jest.fn() },
     { timerValue: 5, Icon: IconUser },
     { Icon: IconUser },
+    { hiddenIcon: false },
   ]
 
   test.each(snapshotCases)('%p', (props) => {
