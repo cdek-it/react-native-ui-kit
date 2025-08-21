@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.50](https://gitcode.cdek.ru/cdek-it/reactnative/ui-kit/react-native-prime-ui-kit/compare/v0.0.49...v0.0.50) (2025-08-21)
+
+### Другое
+
+- **repo:** замена URL ведущих на конфиги на новый гит
+  ([faea953](https://gitcode.cdek.ru/cdek-it/reactnative/ui-kit/react-native-prime-ui-kit/commit/faea953dfeb50cdf525ee81d8ca4ee1835b556bf))
+
+### Новый функционал
+
+- **message:** добавленно свойство для скрытия иконки
+  ([811a716](https://gitcode.cdek.ru/cdek-it/reactnative/ui-kit/react-native-prime-ui-kit/commit/811a7168fe839fc3b8e3810cbb35a66f2cf26007))
+
 ### [0.0.49](https://gitlab.cdek.ru/react-native/react-native-prime-ui-kit/compare/v0.0.48...v0.0.49) (2025-08-14)
 
 ### Новый функционал
