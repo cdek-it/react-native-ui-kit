@@ -5,10 +5,8 @@ import { makeStyles } from '../../utils/makeStyles'
 
 import { FloatLabel, type FloatLabelProps } from './FloatLabel'
 import { InputGroupAddon, type InputGroupAddonProps } from './InputGroupAddon'
-import {
-  InputTextBase,
-  type InputTextBaseProps,
-} from './InputTextBase/InputTextBase'
+import { InputTextBase } from './InputTextBase/InputTextBase'
+import type { InputTextBaseProps } from './InputTextBase/types'
 
 /** @see InputTextBaseProps */
 interface InputGroupBaseProps {

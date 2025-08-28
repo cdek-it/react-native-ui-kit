@@ -4,7 +4,9 @@ import { FloatLabel, FloatLabelTestId } from '../FloatLabel'
 
 import useFakeTimers = jest.useFakeTimers
 
-jest.mock('../InputTextBase', () => ({ InputTextBase: 'InputTextBase' }))
+jest.mock('../InputTextBase/InputTextBase', () => ({
+  InputTextBase: 'InputTextBase',
+}))
 
 describe('FloatLabel snapshots', () => {
   beforeEach(() => {
