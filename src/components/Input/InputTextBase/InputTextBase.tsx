@@ -1,5 +1,3 @@
-/* eslint-disable max-statements */
-/* eslint-disable max-lines-per-function */
 import {
   IconEye,
   IconEyeOff,
@@ -24,11 +22,12 @@ import {
   TouchableOpacity,
   type ViewStyle,
 } from 'react-native'
-import Animated, { useSharedValue, withTiming } from 'react-native-reanimated'
+import Animated from 'react-native-reanimated'
 
 import { useLoadingRotationAnimation } from '../../../hooks/useLoadingRotationAnimation'
 import { useMakeTestId } from '../../../hooks/useMakeTestId'
 
+import { Outlines, type OutlinesRef } from './Outlines'
 import { InputTextBaseTestId } from './testIds'
 import type { InputTextBaseProps, RenderTextInputArgs } from './types'
 import { useStyles } from './useStyles'
@@ -37,9 +36,6 @@ interface PrivateInputTextBaseProps {
   inputStyle?: ViewStyle
   loading?: boolean
 }
-
-const withOutlineAnimation = (toValue: number) =>
-  withTiming(toValue, { duration: 100 })
 
 /**
  * Базовое поле
@@ -64,27 +60,28 @@ export const InputTextBase = memo<
   }) => {
     const styles = useStyles()
     const inputRef = useRef<TextInput>(null)
-    const focusOutlineWidth = useSharedValue(0)
-    const dangerOutlineWidth = useSharedValue(0)
+    const outlineRef = useRef<OutlinesRef>(null)
     const [valueState, setValueState] = useState('')
 
     const onFocus = useCallback(
       (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
-        focusOutlineWidth.value = withOutlineAnimation(
-          -styles.outlineWidth.borderWidth
-        )
+        outlineRef.current?.focus()
         otherProps.onFocus?.(e)
       },
-      [focusOutlineWidth, otherProps, styles.outlineWidth.borderWidth]
+      [otherProps]
     )
 
     const onBlur = useCallback(
       (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
-        focusOutlineWidth.value = withOutlineAnimation(0)
+        outlineRef.current?.blur()
         otherProps.onBlur?.(e)
       },
-      [focusOutlineWidth, otherProps]
+      [otherProps]
     )
+
+    useEffect(() => {
+      outlineRef.current?.setDanger(state === 'danger')
+    }, [state])
 
     const onChangeText = useCallback(
       (nextValue: string) => {
@@ -109,51 +106,7 @@ export const InputTextBase = memo<
       [clearable, value.length]
     )
 
-    const focusOutlineAnimatedStyles = useMemo(() => {
-      return {
-        top: focusOutlineWidth,
-        right: focusOutlineWidth,
-        bottom: focusOutlineWidth,
-        left: focusOutlineWidth,
-      }
-    }, [focusOutlineWidth])
-
-    const dangerOutlineAnimatedStyles = useMemo(
-      () => ({
-        top: dangerOutlineWidth,
-        right: dangerOutlineWidth,
-        bottom: dangerOutlineWidth,
-        left: dangerOutlineWidth,
-      }),
-      [dangerOutlineWidth]
-    )
-
-    const outlineStyles = useMemo<ViewStyle>(
-      () => ({
-        borderRadius:
-          containerStyle?.borderRadius ?? styles.container.borderRadius,
-        borderTopRightRadius: containerStyle?.borderTopRightRadius,
-        borderBottomRightRadius: containerStyle?.borderBottomRightRadius,
-        borderBottomLeftRadius: containerStyle?.borderBottomLeftRadius,
-        borderTopLeftRadius: containerStyle?.borderTopLeftRadius,
-      }),
-      [
-        containerStyle?.borderBottomLeftRadius,
-        containerStyle?.borderBottomRightRadius,
-        containerStyle?.borderRadius,
-        containerStyle?.borderTopLeftRadius,
-        containerStyle?.borderTopRightRadius,
-        styles.container.borderRadius,
-      ]
-    )
-
     const loadingAnimatedStyle = useLoadingRotationAnimation(loading)
-
-    useEffect(() => {
-      dangerOutlineWidth.value = withOutlineAnimation(
-        state === 'danger' ? -styles.outlineWidth.borderWidth : 0
-      )
-    }, [dangerOutlineWidth, state, styles.outlineWidth.borderWidth])
 
     useImperativeHandle(propsInputRef, () => inputRef.current)
 
@@ -206,28 +159,13 @@ export const InputTextBase = memo<
 
     return (
       <>
-        {!disabled && (
-          <>
-            <Animated.View
-              style={[
-                styles.outline,
-                outlineStyles,
-                styles.focusOutline,
-                focusOutlineAnimatedStyles,
-              ]}
-              testID={makeTestId(InputTextBaseTestId.focusOutline)}
-            />
-            <Animated.View
-              style={[
-                styles.outline,
-                outlineStyles,
-                styles.dangerOutline,
-                dangerOutlineAnimatedStyles,
-              ]}
-              testID={makeTestId(InputTextBaseTestId.dangerOutline)}
-            />
-          </>
-        )}
+        <Outlines
+          baseBorderRadius={styles.container.borderRadius}
+          containerStyle={containerStyle}
+          disabled={disabled}
+          makeTestId={makeTestId}
+          ref={outlineRef}
+        />
         <View
           style={[
             styles.container,
