@@ -2,7 +2,8 @@ import { fireEvent, render, userEvent } from '@testing-library/react-native'
 
 import { TextInput } from 'react-native-gesture-handler'
 
-import { InputTextBase, type RenderTextInputArgs } from '../InputTextBase'
+import { InputTextBase } from '../InputTextBase/InputTextBase'
+import type { RenderTextInputArgs } from '../InputTextBase/types'
 
 describe('InputTextBase component functionality tests', () => {
   test('should render outline elements', () => {
@@ -150,5 +151,38 @@ describe('InputTextBase component functionality tests', () => {
     const clearButton = getByTestId('InputTextBaseClearButton')
 
     expect(clearButton.props.accessibilityLabel).toBe('Clear')
+  })
+
+  test('should render secured field when secureTextEntry=true', () => {
+    const { getByTestId } = render(<InputTextBase secureTextEntry />)
+
+    expect(getByTestId('InputTextBase')).toHaveProp('secureTextEntry', true)
+  })
+
+  test('should show eye icon when secureTextEntry=toggleable', () => {
+    const { queryByTestId, getByTestId, update } = render(<InputTextBase />)
+
+    // Проверяем что если secureTextEntry не задан, нет кнопки с глазом
+    expect(
+      queryByTestId('InputTextBaseSecureInputButton')
+    ).not.toBeOnTheScreen()
+
+    // Проверяем что если secureTextEntry='toggleable' кнопка с глазом выводится
+    update(<InputTextBase secureTextEntry='toggleable' />)
+
+    const secureInputButton = getByTestId('InputTextBaseSecureInputButton')
+
+    expect(secureInputButton).toBeOnTheScreen()
+
+    // Проверяем что у инпута secureTextEntry=true
+    const input = getByTestId('InputTextBase')
+
+    expect(input).toHaveProp('secureTextEntry', true)
+
+    // Нажимаем на кнопку с глазом
+    fireEvent.press(secureInputButton)
+
+    // Проверяем что у инпута secureTextEntry=false
+    expect(input).toHaveProp('secureTextEntry', false)
   })
 })

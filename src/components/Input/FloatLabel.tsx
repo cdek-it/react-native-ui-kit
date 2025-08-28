@@ -25,7 +25,8 @@ import Animated, {
 import { useMakeTestId } from '../../hooks/useMakeTestId'
 import { makeStyles } from '../../utils/makeStyles'
 
-import { InputTextBase, type InputTextBaseProps } from './InputTextBase'
+import { InputTextBase } from './InputTextBase/InputTextBase'
+import type { InputTextBaseProps } from './InputTextBase/types'
 
 export interface FloatLabelProps extends InputTextBaseProps {
   /** Текст плейсхолдера */

@@ -1,7 +1,10 @@
 import { memo } from 'react'
 import { View, type ViewStyle } from 'react-native'
 
-import { InputTextBase, type InputTextBaseProps } from './InputTextBase'
+import {
+  InputTextBase,
+  type InputTextBaseProps,
+} from './InputTextBase/InputTextBase'
 
 export interface InputTextProps extends InputTextBaseProps {
   /** Дополнительная стилизация для контейнера компонента */

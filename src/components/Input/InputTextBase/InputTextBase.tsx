@@ -1,8 +1,14 @@
-import { IconLoader2, IconLock, IconX } from '@tabler/icons-react-native'
+/* eslint-disable max-statements */
+/* eslint-disable max-lines-per-function */
+import {
+  IconEye,
+  IconEyeOff,
+  IconLoader2,
+  IconLock,
+  IconX,
+} from '@tabler/icons-react-native'
 import {
   memo,
-  type ReactNode,
-  type Ref,
   useCallback,
   useEffect,
   useImperativeHandle,
@@ -13,7 +19,6 @@ import {
 import {
   TextInput,
   View,
-  type TextInputProps,
   type TextInputFocusEventData,
   type NativeSyntheticEvent,
   TouchableOpacity,
@@ -21,41 +26,17 @@ import {
 } from 'react-native'
 import Animated, { useSharedValue, withTiming } from 'react-native-reanimated'
 
-import { useLoadingRotationAnimation } from '../../hooks/useLoadingRotationAnimation'
-import { useMakeTestId } from '../../hooks/useMakeTestId'
-import { makeStyles } from '../../utils/makeStyles'
+import { useLoadingRotationAnimation } from '../../../hooks/useLoadingRotationAnimation'
+import { useMakeTestId } from '../../../hooks/useMakeTestId'
+
+import { InputTextBaseTestId } from './testIds'
+import type { InputTextBaseProps, RenderTextInputArgs } from './types'
+import { useStyles } from './useStyles'
 
 interface PrivateInputTextBaseProps {
   inputStyle?: ViewStyle
   loading?: boolean
 }
-
-/** @see TextInputProps */
-export interface InputTextBaseProps
-  extends Omit<TextInputProps, 'style' | 'editable'> {
-  /**
-   * Управление отображения иконки очистки поля
-   * @default true
-   */
-  clearable?: boolean
-  /** Озвучка для кнопки очистки поля */
-  clearButtonAccessibilityLabel?: string
-  /** Управление стилем контейнера поля ввода */
-  containerStyle?: ViewStyle
-  /** Управление доступностью поля */
-  disabled?: boolean
-  /** Ref для управления полем ввода */
-  inputRef?: Ref<TextInput | null>
-  // Функция для рендера поля ввода.
-  // Используется, когда необходимо использовать отличный от стандартного компонент.
-  // Например, для реализации масок
-  //
-  renderTextInput?: (props: RenderTextInputArgs) => ReactNode
-  /** Управление состоянием компонента */
-  state?: 'default' | 'danger'
-}
-
-export type RenderTextInputArgs = TextInputProps & { inputRef: Ref<TextInput> }
 
 const withOutlineAnimation = (toValue: number) =>
   withTiming(toValue, { duration: 100 })
@@ -71,6 +52,7 @@ export const InputTextBase = memo<
   ({
     state,
     clearable = true,
+    secureTextEntry: secureTextEntryProp = false,
     inputRef: propsInputRef,
     disabled,
     containerStyle,
@@ -179,12 +161,27 @@ export const InputTextBase = memo<
       otherProps.testID || InputTextBaseTestId.default
     )
 
+    const [userDefinedSecureTextEntry, setUserDefinedSecureTextEntry] =
+      useState(true)
+    const secureTextEntry = useMemo(
+      () =>
+        secureTextEntryProp === 'toggleable'
+          ? userDefinedSecureTextEntry
+          : secureTextEntryProp,
+      [secureTextEntryProp, userDefinedSecureTextEntry]
+    )
+    const toggleUserDefinedSecureTextEntry = useCallback(
+      () => setUserDefinedSecureTextEntry((old) => !old),
+      []
+    )
+
     const texInputProps = useMemo<RenderTextInputArgs>(
       () => ({
         placeholderTextColor: styles.placeholderTextColor.color,
         ...otherProps,
         testID: makeTestId(),
         editable: !disabled,
+        secureTextEntry,
         style: [styles.input, inputStyle],
         inputRef,
         value,
@@ -194,6 +191,7 @@ export const InputTextBase = memo<
       }),
       [
         disabled,
+        secureTextEntry,
         inputStyle,
         makeTestId,
         onBlur,
@@ -272,6 +270,27 @@ export const InputTextBase = memo<
               </TouchableOpacity>
             ) : null}
 
+            {secureTextEntryProp === 'toggleable' ? (
+              <TouchableOpacity
+                testID={makeTestId(InputTextBaseTestId.secureInputButton)}
+                onPress={toggleUserDefinedSecureTextEntry}
+              >
+                {userDefinedSecureTextEntry ? (
+                  <IconEye
+                    color={styles.rightIcon.color}
+                    height={styles.iconSize.height}
+                    width={styles.iconSize.width}
+                  />
+                ) : (
+                  <IconEyeOff
+                    color={styles.rightIcon.color}
+                    height={styles.iconSize.height}
+                    width={styles.iconSize.width}
+                  />
+                )}
+              </TouchableOpacity>
+            ) : null}
+
             {disabled ? (
               <IconLock
                 color={styles.rightIcon.color}
@@ -286,57 +305,3 @@ export const InputTextBase = memo<
     )
   }
 )
-
-const useStyles = makeStyles(({ theme }) => ({
-  container: {
-    minHeight: 35,
-    flexDirection: 'row',
-    borderWidth: 1,
-    borderRadius: theme.General.borderRadius,
-    borderColor: theme.Form.InputText.inputBorderColor,
-    backgroundColor: theme.Form.InputText.inputBg,
-  },
-  danger: { borderColor: theme.Form.InputText.inputErrorBorderColor },
-  disabled: {
-    opacity: 0.6,
-    borderColor: theme.Form.InputText.inputBorderColor,
-    backgroundColor: theme.Button.Disabled.disabledButtonBg,
-  },
-  input: {
-    flex: 1,
-    paddingVertical: theme.Form.InputText.inputPaddingTopBottom,
-    paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
-    borderRadius: theme.General.borderRadius,
-    fontSize: 14,
-    color: theme.Form.InputText.inputTextColor,
-    overflow: 'hidden',
-    includeFontPadding: false,
-    verticalAlign: 'middle',
-  },
-  placeholderTextColor: {
-    color: theme.Form.InputText.inputPlaceholderTextColor,
-  },
-  outline: { position: 'absolute' },
-  outlineWidth: { borderWidth: theme.General.focusShadowWidth },
-  focusOutline: { backgroundColor: theme.General.focusOutlineColor },
-  dangerOutline: { backgroundColor: theme.General.focusOutlineErrorColor },
-  rightContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingRight: theme.Form.InputText.inputPaddingLeftRight,
-    maxHeight: 54,
-    gap: theme.Form.InputText.inputPaddingLeftRight,
-    overflow: 'hidden',
-  },
-  rightIcon: { color: theme.Form.InputText.inputIconColor },
-  iconSize: { width: 14, height: 14 },
-}))
-
-export const InputTextBaseTestId = {
-  default: 'InputTextBase',
-  focusOutline: 'FocusOutline',
-  dangerOutline: 'DangerOutline',
-  loading: 'Loading',
-  clearButton: 'ClearButton',
-  disabledIcon: 'DisabledIcon',
-}

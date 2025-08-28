@@ -8,13 +8,21 @@ const meta: Meta<typeof FloatLabel> = {
   title: 'Input/FloatLabel',
   args: {
     clearable: true,
+    secureTextEntry: false,
     disabled: false,
     state: 'default',
     placeholder: 'Placeholder',
     value: '',
     loading: false,
   },
-  argTypes: { state: { control: 'radio', options: ['default', 'danger'] } },
+  argTypes: {
+    state: { control: 'radio', options: ['default', 'danger'] },
+    secureTextEntry: {
+      control: 'radio',
+      options: ['off', 'on', 'toggleable'],
+      mapping: { off: false, on: true, toggleable: 'toggleable' },
+    },
+  },
   render: (args) => {
     const [, updateArgs] = useArgs()
 

@@ -11,6 +11,7 @@ exports[`InputTextBase component functionality tests should pass args to custom 
     "onChangeText": [Function],
     "onFocus": [Function],
     "placeholderTextColor": "rgba(0, 0, 0, 0.6000)",
+    "secureTextEntry": false,
     "style": [
       {
         "borderRadius": 7,
