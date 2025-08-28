@@ -1,4 +1,4 @@
-import { forwardRef, useImperativeHandle, useMemo } from 'react'
+import { memo, type RefObject, useImperativeHandle, useMemo } from 'react'
 import type { ViewStyle } from 'react-native'
 
 import Animated, { useSharedValue, withTiming } from 'react-native-reanimated'
@@ -7,24 +7,25 @@ import { makeStyles } from '../../../utils/makeStyles'
 
 import { InputTextBaseTestId } from './testIds'
 
-interface OutlinesProps {
-  readonly containerStyle?: ViewStyle
-  readonly baseBorderRadius?: number
-  readonly disabled?: boolean
-  readonly makeTestId: (name: string) => string
-}
-
 export interface OutlinesRef {
   focus: () => void
   blur: () => void
   setDanger: (on: boolean) => void
 }
 
+interface OutlinesProps {
+  readonly containerStyle?: ViewStyle
+  readonly baseBorderRadius?: number
+  readonly disabled?: boolean
+  readonly makeTestId: (name: string) => string
+  readonly outlinesRef: RefObject<OutlinesRef>
+}
+
 const withOutlineAnimation = (toValue: number) =>
   withTiming(toValue, { duration: 100 })
 
-export const Outlines = forwardRef<OutlinesRef, OutlinesProps>(
-  ({ disabled, makeTestId, containerStyle, baseBorderRadius }, ref) => {
+export const Outlines = memo<OutlinesProps>(
+  ({ disabled, makeTestId, containerStyle, baseBorderRadius, outlinesRef }) => {
     const styles = useStyles()
     const focusOutlineWidth = useSharedValue(0)
     const dangerOutlineWidth = useSharedValue(0)
@@ -45,7 +46,7 @@ export const Outlines = forwardRef<OutlinesRef, OutlinesProps>(
       )
     }
 
-    useImperativeHandle(ref, () => ({ focus, blur, setDanger }))
+    useImperativeHandle(outlinesRef, () => ({ focus, blur, setDanger }))
 
     const focusOutlineAnimatedStyles = useMemo(() => {
       return {

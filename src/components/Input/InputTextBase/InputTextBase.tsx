@@ -164,7 +164,7 @@ export const InputTextBase = memo<
           containerStyle={containerStyle}
           disabled={disabled}
           makeTestId={makeTestId}
-          ref={outlineRef}
+          outlinesRef={outlineRef}
         />
         <View
           style={[
