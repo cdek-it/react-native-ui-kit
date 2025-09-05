@@ -4,6 +4,25 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [0.0.51](https://gitcode.cdek.ru/cdek-it/reactnative/ui-kit/react-native-prime-ui-kit/compare/v0.0.50...v0.0.51) (2025-09-05)
+
+### Новый функционал
+
+- **TextInputBase:** добавлено свойство secureTextInput
+  ([2905904](https://gitcode.cdek.ru/cdek-it/reactnative/ui-kit/react-native-prime-ui-kit/commit/2905904d64b4d4edeb7608cb06e5c5b736722fc0))
+
+### Исправления багов
+
+- фиксы импортов и тестов
+  ([001345e](https://gitcode.cdek.ru/cdek-it/reactnative/ui-kit/react-native-prime-ui-kit/commit/001345e2724d5f053a7d16ed980745281f31462b))
+
+### Рефакторинг
+
+- правки по замечаниям в ревью
+  ([b997382](https://gitcode.cdek.ru/cdek-it/reactnative/ui-kit/react-native-prime-ui-kit/commit/b997382906331aee9d6d1d7de7882edb0a4a1da5))
+- **TextInputBase:** outlines вынесен в отдельный компонент
+  ([1c1f712](https://gitcode.cdek.ru/cdek-it/reactnative/ui-kit/react-native-prime-ui-kit/commit/1c1f7126739b95796d03407e0a1c18d92708f940))
+
 ### [0.0.50](https://gitcode.cdek.ru/cdek-it/reactnative/ui-kit/react-native-prime-ui-kit/compare/v0.0.49...v0.0.50) (2025-08-21)
 
 ### Другое
