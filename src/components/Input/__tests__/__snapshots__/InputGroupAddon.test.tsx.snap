@@ -1,0 +1,254 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputGroup component tests content: icon, position: right 1`] = `
+<Pressable
+  collapsable={false}
+  style={
+    [
+      {
+        "backgroundColor": "#ffffff",
+        "borderColor": "#dbdada",
+        "borderRadius": 7,
+        "borderWidth": 1,
+        "justifyContent": "center",
+        "paddingHorizontal": 10.5,
+        "paddingVertical": 0,
+      },
+      {
+        "borderBottomLeftRadius": 0,
+        "borderLeftWidth": 0,
+        "borderTopLeftRadius": 0,
+      },
+      undefined,
+    ]
+  }
+  testID="InputGroupAddon_Pressable"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={14}
+    bbWidth={14}
+    fill="none"
+    focusable={false}
+    height={14}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "color": "rgba(0, 0, 0, 0.6000)",
+          "height": 14,
+          "width": 14,
+        },
+        {
+          "flex": 0,
+          "height": 14,
+          "width": 14,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      color="rgba(0, 0, 0, 0.6000)"
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "type": 2,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        color="rgba(0, 0, 0, 0.6000)"
+        d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        color="rgba(0, 0, 0, 0.6000)"
+        d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</Pressable>
+`;
+
+exports[`InputGroup component tests content: string, position: left 1`] = `
+<Pressable
+  collapsable={false}
+  style={
+    [
+      {
+        "backgroundColor": "#ffffff",
+        "borderColor": "#dbdada",
+        "borderRadius": 7,
+        "borderWidth": 1,
+        "justifyContent": "center",
+        "paddingHorizontal": 10.5,
+        "paddingVertical": 0,
+      },
+      {
+        "borderBottomRightRadius": 0,
+        "borderRightWidth": 0,
+        "borderTopRightRadius": 0,
+      },
+      undefined,
+    ]
+  }
+  testID="InputGroupAddon_Pressable"
+>
+  <Text
+    style={
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+        "fontSize": 14,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
+      }
+    }
+  >
+    text
+  </Text>
+</Pressable>
+`;
+
+exports[`InputGroup component tests disabled: false 1`] = `
+<Pressable
+  collapsable={false}
+  disabled={false}
+  style={
+    [
+      {
+        "backgroundColor": "#ffffff",
+        "borderColor": "#dbdada",
+        "borderRadius": 7,
+        "borderWidth": 1,
+        "justifyContent": "center",
+        "paddingHorizontal": 10.5,
+        "paddingVertical": 0,
+      },
+      {
+        "borderBottomRightRadius": 0,
+        "borderRightWidth": 0,
+        "borderTopRightRadius": 0,
+      },
+      false,
+    ]
+  }
+  testID="InputGroupAddon_Pressable"
+>
+  <Text
+    style={
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+        "fontSize": 14,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
+      }
+    }
+  >
+    text
+  </Text>
+</Pressable>
+`;
+
+exports[`InputGroup component tests disabled: true 1`] = `
+<Pressable
+  collapsable={false}
+  disabled={true}
+  style={
+    [
+      {
+        "backgroundColor": "#ffffff",
+        "borderColor": "#dbdada",
+        "borderRadius": 7,
+        "borderWidth": 1,
+        "justifyContent": "center",
+        "paddingHorizontal": 10.5,
+        "paddingVertical": 0,
+      },
+      {
+        "borderBottomRightRadius": 0,
+        "borderRightWidth": 0,
+        "borderTopRightRadius": 0,
+      },
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "opacity": 0.6,
+      },
+    ]
+  }
+  testID="InputGroupAddon_Pressable"
+>
+  <Text
+    style={
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+        "fontSize": 14,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
+      }
+    }
+  >
+    text
+  </Text>
+</Pressable>
+`;

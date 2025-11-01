@@ -1,0 +1,1648 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 35,
+          "width": 35,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        {
+          "borderRadius": 100,
+        },
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={14}
+      bbWidth={14}
+      fill="none"
+      focusable={false}
+      height={14}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "color": "#ffffff",
+            "height": 14,
+            "width": 14,
+          },
+          {
+            "flex": 0,
+            "height": 14,
+            "width": 14,
+          },
+        ]
+      }
+      testID="Avatar.icon"
+      vbHeight={24}
+      vbWidth={24}
+      width={14}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        color="#ffffff"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          color="#ffffff"
+          d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="Avatar.icon"
+        />
+        <RNSVGPath
+          color="#ffffff"
+          d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="Avatar.icon"
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Size: large, shape: circle, type: image 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 35,
+          "width": 35,
+        },
+        false,
+        {
+          "borderRadius": 100,
+        },
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <Image
+      resizeMode="cover"
+      source={
+        {
+          "testUri": "../../../src/components/Avatar/__tests__/testImage.png",
+        }
+      }
+      style={
+        {
+          "height": 35,
+          "width": 35,
+        }
+      }
+      testID="Avatar.image"
+    />
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Size: large, shape: circle, type: label 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 35,
+          "width": 35,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        {
+          "borderRadius": 100,
+        },
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "textTransform": "uppercase",
+            "verticalAlign": "middle",
+          },
+          false,
+        ]
+      }
+      testID="Avatar.text"
+    >
+      A
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 35,
+          "width": 35,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        false,
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={14}
+      bbWidth={14}
+      fill="none"
+      focusable={false}
+      height={14}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "color": "#ffffff",
+            "height": 14,
+            "width": 14,
+          },
+          {
+            "flex": 0,
+            "height": 14,
+            "width": 14,
+          },
+        ]
+      }
+      testID="Avatar.icon"
+      vbHeight={24}
+      vbWidth={24}
+      width={14}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        color="#ffffff"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          color="#ffffff"
+          d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="Avatar.icon"
+        />
+        <RNSVGPath
+          color="#ffffff"
+          d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="Avatar.icon"
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Size: large, shape: square, type: image 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 35,
+          "width": 35,
+        },
+        false,
+        false,
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <Image
+      resizeMode="cover"
+      source={
+        {
+          "testUri": "../../../src/components/Avatar/__tests__/testImage.png",
+        }
+      }
+      style={
+        {
+          "height": 35,
+          "width": 35,
+        }
+      }
+      testID="Avatar.image"
+    />
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Size: large, shape: square, type: label 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 35,
+          "width": 35,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        false,
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "textTransform": "uppercase",
+            "verticalAlign": "middle",
+          },
+          false,
+        ]
+      }
+      testID="Avatar.text"
+    >
+      A
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 28,
+          "width": 28,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        {
+          "borderRadius": 100,
+        },
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={14}
+      bbWidth={14}
+      fill="none"
+      focusable={false}
+      height={14}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "color": "#ffffff",
+            "height": 14,
+            "width": 14,
+          },
+          {
+            "flex": 0,
+            "height": 14,
+            "width": 14,
+          },
+        ]
+      }
+      testID="Avatar.icon"
+      vbHeight={24}
+      vbWidth={24}
+      width={14}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        color="#ffffff"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          color="#ffffff"
+          d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="Avatar.icon"
+        />
+        <RNSVGPath
+          color="#ffffff"
+          d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="Avatar.icon"
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Size: normal, shape: circle, type: image 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 28,
+          "width": 28,
+        },
+        false,
+        {
+          "borderRadius": 100,
+        },
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <Image
+      resizeMode="cover"
+      source={
+        {
+          "testUri": "../../../src/components/Avatar/__tests__/testImage.png",
+        }
+      }
+      style={
+        {
+          "height": 28,
+          "width": 28,
+        }
+      }
+      testID="Avatar.image"
+    />
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Size: normal, shape: circle, type: label 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 28,
+          "width": 28,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        {
+          "borderRadius": 100,
+        },
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "textTransform": "uppercase",
+            "verticalAlign": "middle",
+          },
+          false,
+        ]
+      }
+      testID="Avatar.text"
+    >
+      A
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 28,
+          "width": 28,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        false,
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={14}
+      bbWidth={14}
+      fill="none"
+      focusable={false}
+      height={14}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "color": "#ffffff",
+            "height": 14,
+            "width": 14,
+          },
+          {
+            "flex": 0,
+            "height": 14,
+            "width": 14,
+          },
+        ]
+      }
+      testID="Avatar.icon"
+      vbHeight={24}
+      vbWidth={24}
+      width={14}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        color="#ffffff"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          color="#ffffff"
+          d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="Avatar.icon"
+        />
+        <RNSVGPath
+          color="#ffffff"
+          d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="Avatar.icon"
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Size: normal, shape: square, type: image 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 28,
+          "width": 28,
+        },
+        false,
+        false,
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <Image
+      resizeMode="cover"
+      source={
+        {
+          "testUri": "../../../src/components/Avatar/__tests__/testImage.png",
+        }
+      }
+      style={
+        {
+          "height": 28,
+          "width": 28,
+        }
+      }
+      testID="Avatar.image"
+    />
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Size: normal, shape: square, type: label 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 28,
+          "width": 28,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        false,
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "textTransform": "uppercase",
+            "verticalAlign": "middle",
+          },
+          false,
+        ]
+      }
+      testID="Avatar.text"
+    >
+      A
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 49,
+          "width": 49,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        {
+          "borderRadius": 100,
+        },
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={21}
+      bbWidth={21}
+      fill="none"
+      focusable={false}
+      height={21}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "color": "#ffffff",
+            "height": 21,
+            "width": 21,
+          },
+          {
+            "flex": 0,
+            "height": 21,
+            "width": 21,
+          },
+        ]
+      }
+      testID="Avatar.icon"
+      vbHeight={24}
+      vbWidth={24}
+      width={21}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        color="#ffffff"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          color="#ffffff"
+          d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="Avatar.icon"
+        />
+        <RNSVGPath
+          color="#ffffff"
+          d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="Avatar.icon"
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Size: xlarge, shape: circle, type: image 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 49,
+          "width": 49,
+        },
+        false,
+        {
+          "borderRadius": 100,
+        },
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <Image
+      resizeMode="cover"
+      source={
+        {
+          "testUri": "../../../src/components/Avatar/__tests__/testImage.png",
+        }
+      }
+      style={
+        {
+          "height": 49,
+          "width": 49,
+        }
+      }
+      testID="Avatar.image"
+    />
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Size: xlarge, shape: circle, type: label 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 49,
+          "width": 49,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        {
+          "borderRadius": 100,
+        },
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "textTransform": "uppercase",
+            "verticalAlign": "middle",
+          },
+          {
+            "fontSize": 21,
+          },
+        ]
+      }
+      testID="Avatar.text"
+    >
+      A
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 49,
+          "width": 49,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        false,
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={21}
+      bbWidth={21}
+      fill="none"
+      focusable={false}
+      height={21}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "color": "#ffffff",
+            "height": 21,
+            "width": 21,
+          },
+          {
+            "flex": 0,
+            "height": 21,
+            "width": 21,
+          },
+        ]
+      }
+      testID="Avatar.icon"
+      vbHeight={24}
+      vbWidth={24}
+      width={21}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        color="#ffffff"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          color="#ffffff"
+          d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="Avatar.icon"
+        />
+        <RNSVGPath
+          color="#ffffff"
+          d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="Avatar.icon"
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Size: xlarge, shape: square, type: image 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 49,
+          "width": 49,
+        },
+        false,
+        false,
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <Image
+      resizeMode="cover"
+      source={
+        {
+          "testUri": "../../../src/components/Avatar/__tests__/testImage.png",
+        }
+      }
+      style={
+        {
+          "height": 49,
+          "width": 49,
+        }
+      }
+      testID="Avatar.image"
+    />
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests Size: xlarge, shape: square, type: label 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 49,
+          "width": 49,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        false,
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "textTransform": "uppercase",
+            "verticalAlign": "middle",
+          },
+          {
+            "fontSize": 21,
+          },
+        ]
+      }
+      testID="Avatar.text"
+    >
+      A
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests With badge, showBadge: false 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 28,
+          "width": 28,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        {
+          "borderRadius": 100,
+        },
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "textTransform": "uppercase",
+            "verticalAlign": "middle",
+          },
+          false,
+        ]
+      }
+      testID="Avatar.text"
+    >
+      A
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Avatar component tests With badge, showBadge: true 1`] = `
+<View
+  collapsable={false}
+  testID="Avatar"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#188700",
+          "borderColor": "#dbdada",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 28,
+          "width": 28,
+        },
+        {
+          "backgroundColor": "#188700",
+        },
+        {
+          "borderRadius": 100,
+        },
+        undefined,
+      ]
+    }
+    testID="Avatar.container"
+  >
+    <Text
+      ellipsizeMode="clip"
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#ffffff",
+            "fontSize": 14,
+            "includeFontPadding": false,
+            "textTransform": "uppercase",
+            "verticalAlign": "middle",
+          },
+          false,
+        ]
+      }
+      testID="Avatar.text"
+    >
+      A
+    </Text>
+  </View>
+  <View
+    style={
+      [
+        {
+          "position": "absolute",
+          "right": 0,
+          "top": -7,
+        },
+        {
+          "height": 0,
+          "left": 0,
+          "width": 750,
+        },
+      ]
+    }
+    testID="Avatar.badgeContainer"
+  >
+    <View
+      onLayout={[Function]}
+      style={
+        {
+          "alignSelf": "flex-start",
+        }
+      }
+      testID="Avatar.badgeInnerContainer"
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "flex-start",
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "borderRadius": 100,
+                "height": 21,
+                "justifyContent": "center",
+                "paddingHorizontal": 7,
+                "paddingVertical": 0,
+              },
+              {
+                "backgroundColor": "#188700",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#ffffff",
+                "fontSize": 10.5,
+                "fontWeight": 700,
+                "includeFontPadding": false,
+                "verticalAlign": "middle",
+              }
+            }
+          >
+            12
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

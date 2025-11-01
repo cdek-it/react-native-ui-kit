@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "lib": ["es2018"],
+    "declaration": true,
+    "moduleResolution": "node",
+    "pretty": true,
+    "noEmitOnError": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "checkJs": true,
+    "jsx": "react-native",
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "artifacts",
+    "scripts",
+    "dist",
+    "metro.config.js",
+    "babel.config.js",
+    "app.config.js"
+  ],
+  "extends": "expo/tsconfig.base"
+}

@@ -1,0 +1,2298 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
+<View
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      {
+        "borderTopColor": "#dbdada",
+        "borderTopWidth": 1,
+        "paddingTop": 3.5,
+      },
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Menu Item"
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": true,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": "Caption",
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    testID="menuItemButton"
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "borderColor": "rgba(255, 255, 255, 0.0001)",
+            "borderRadius": 7,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "gap": 7,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 7,
+          },
+          false,
+          {
+            "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+            "borderColor": "#dbdada",
+            "borderWidth": 1,
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "gap": 7,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "justifyContent": "center",
+              "position": "relative",
+            }
+          }
+        >
+          <View>
+            <RNSVGSvgView
+              align="xMidYMid"
+              bbHeight={17.5}
+              bbWidth={17.5}
+              fill="none"
+              focusable={false}
+              height={17.5}
+              meetOrSlice={0}
+              minX={0}
+              minY={0}
+              stroke="rgba(0, 0, 0, 0.8000)"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              style={
+                [
+                  {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  {
+                    "flex": 0,
+                    "height": 17,
+                    "width": 17,
+                  },
+                ]
+              }
+              vbHeight={24}
+              vbWidth={24}
+              width={17.5}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <RNSVGGroup
+                fill={null}
+                propList={
+                  [
+                    "fill",
+                    "stroke",
+                    "strokeWidth",
+                    "strokeLinecap",
+                    "strokeLinejoin",
+                  ]
+                }
+                stroke={
+                  {
+                    "payload": 3422552064,
+                    "type": 0,
+                  }
+                }
+                strokeLinecap={1}
+                strokeLinejoin={1}
+                strokeWidth={2}
+              >
+                <RNSVGPath
+                  d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+                  fill={null}
+                  propList={
+                    [
+                      "fill",
+                      "stroke",
+                      "strokeWidth",
+                      "strokeLinecap",
+                      "strokeLinejoin",
+                    ]
+                  }
+                  stroke={
+                    {
+                      "payload": 3422552064,
+                      "type": 0,
+                    }
+                  }
+                  strokeLinecap={1}
+                  strokeLinejoin={1}
+                  strokeWidth={2}
+                />
+                <RNSVGPath
+                  d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+                  fill={null}
+                  propList={
+                    [
+                      "fill",
+                      "stroke",
+                      "strokeWidth",
+                      "strokeLinecap",
+                      "strokeLinejoin",
+                    ]
+                  }
+                  stroke={
+                    {
+                      "payload": 3422552064,
+                      "type": 0,
+                    }
+                  }
+                  strokeLinecap={1}
+                  strokeLinejoin={1}
+                  strokeWidth={2}
+                />
+              </RNSVGGroup>
+            </RNSVGSvgView>
+            <View
+              onLayout={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "flex-start",
+                  },
+                  {
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  },
+                ]
+              }
+              testID="MenuItemIconBadge"
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderRadius": 100,
+                      "height": 7,
+                      "width": 7,
+                    },
+                    {
+                      "backgroundColor": "#e26e63",
+                    },
+                  ]
+                }
+              />
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "flexDirection": "column",
+              "gap": 3.5,
+              "paddingBottom": 0,
+              "paddingTop": 0,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontSize": 14,
+                  "includeFontPadding": false,
+                  "textAlign": "left",
+                  "verticalAlign": "middle",
+                },
+                {
+                  "color": "rgba(0, 0, 0, 0.8000)",
+                },
+              ]
+            }
+          >
+            Menu Item
+          </Text>
+          <Text
+            style={
+              [
+                {
+                  "fontSize": 12,
+                  "includeFontPadding": false,
+                  "textAlign": "left",
+                  "verticalAlign": "middle",
+                },
+                {
+                  "color": "rgba(0, 0, 0, 0.8000)",
+                },
+              ]
+            }
+          >
+            Caption
+          </Text>
+        </View>
+      </View>
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight={24}
+        bbWidth={24}
+        fill="none"
+        focusable={false}
+        height={24}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            {
+              "flex": 0,
+              "height": 24,
+              "width": 24,
+            },
+          ]
+        }
+        vbHeight={24}
+        vbWidth={24}
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <RNSVGGroup
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        >
+          <RNSVGPath
+            d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+            fill={null}
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "type": 2,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth={2}
+          />
+          <RNSVGPath
+            d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+            fill={null}
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "type": 2,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth={2}
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+      <View
+        style={
+          {
+            "justifyContent": "center",
+          }
+        }
+      >
+        <RNSVGSvgView
+          align="xMidYMid"
+          bbHeight={17.5}
+          bbWidth={17.5}
+          fill="none"
+          focusable={false}
+          height={17.5}
+          meetOrSlice={0}
+          minX={0}
+          minY={0}
+          stroke="rgba(0, 0, 0, 0.8000)"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          style={
+            [
+              {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              {
+                "flex": 0,
+                "height": 17,
+                "width": 17,
+              },
+            ]
+          }
+          vbHeight={24}
+          vbWidth={24}
+          width={17.5}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <RNSVGGroup
+            fill={null}
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "payload": 3422552064,
+                "type": 0,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth={2}
+          >
+            <RNSVGPath
+              d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z"
+              fill={null}
+              propList={
+                [
+                  "fill",
+                  "stroke",
+                  "strokeWidth",
+                  "strokeLinecap",
+                  "strokeLinejoin",
+                ]
+              }
+              stroke={
+                {
+                  "payload": 3422552064,
+                  "type": 0,
+                }
+              }
+              strokeLinecap={1}
+              strokeLinejoin={1}
+              strokeWidth={2}
+            />
+            <RNSVGPath
+              d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"
+              fill={null}
+              propList={
+                [
+                  "fill",
+                  "stroke",
+                  "strokeWidth",
+                  "strokeLinecap",
+                  "strokeLinejoin",
+                ]
+              }
+              stroke={
+                {
+                  "payload": 3422552064,
+                  "type": 0,
+                }
+              }
+              strokeLinecap={1}
+              strokeLinejoin={1}
+              strokeWidth={2}
+            />
+            <RNSVGPath
+              d="M8 11v-4a4 4 0 1 1 8 0v4"
+              fill={null}
+              propList={
+                [
+                  "fill",
+                  "stroke",
+                  "strokeWidth",
+                  "strokeLinecap",
+                  "strokeLinejoin",
+                ]
+              }
+              stroke={
+                {
+                  "payload": 3422552064,
+                  "type": 0,
+                }
+              }
+              strokeLinecap={1}
+              strokeLinejoin={1}
+              strokeWidth={2}
+            />
+          </RNSVGGroup>
+        </RNSVGSvgView>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`MenuItemTemplate tests MenuItemTemplate minimal config 1`] = `
+<View
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      false,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Menu Item"
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    testID="menuItemButton"
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "borderColor": "rgba(255, 255, 255, 0.0001)",
+            "borderRadius": 7,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "gap": 7,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 7,
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "gap": 7,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "flexDirection": "column",
+              "gap": 3.5,
+              "paddingBottom": 0,
+              "paddingTop": 0,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontSize": 14,
+                  "includeFontPadding": false,
+                  "textAlign": "left",
+                  "verticalAlign": "middle",
+                },
+                {
+                  "color": "rgba(0, 0, 0, 0.8000)",
+                },
+              ]
+            }
+          >
+            Menu Item
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = down 1`] = `
+<View
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      false,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Menu Item"
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": "Caption",
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    testID="menuItemButton"
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "borderColor": "rgba(255, 255, 255, 0.0001)",
+            "borderRadius": 7,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "gap": 7,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 7,
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <View
+        style={
+          {
+            "justifyContent": "center",
+          }
+        }
+      >
+        <RNSVGSvgView
+          align="xMidYMid"
+          bbHeight={17.5}
+          bbWidth={17.5}
+          fill="none"
+          focusable={false}
+          height={17.5}
+          meetOrSlice={0}
+          minX={0}
+          minY={0}
+          stroke="rgba(0, 0, 0, 0.8000)"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          style={
+            [
+              {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              {
+                "flex": 0,
+                "height": 17,
+                "width": 17,
+              },
+            ]
+          }
+          vbHeight={24}
+          vbWidth={24}
+          width={17.5}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <RNSVGGroup
+            fill={null}
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "payload": 3422552064,
+                "type": 0,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth={2}
+          >
+            <RNSVGPath
+              d="M6 9l6 6l6 -6"
+              fill={null}
+              propList={
+                [
+                  "fill",
+                  "stroke",
+                  "strokeWidth",
+                  "strokeLinecap",
+                  "strokeLinejoin",
+                ]
+              }
+              stroke={
+                {
+                  "payload": 3422552064,
+                  "type": 0,
+                }
+              }
+              strokeLinecap={1}
+              strokeLinejoin={1}
+              strokeWidth={2}
+            />
+          </RNSVGGroup>
+        </RNSVGSvgView>
+      </View>
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "gap": 7,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "flexDirection": "column",
+              "gap": 3.5,
+              "paddingBottom": 0,
+              "paddingTop": 0,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontSize": 14,
+                  "includeFontPadding": false,
+                  "textAlign": "left",
+                  "verticalAlign": "middle",
+                },
+                {
+                  "color": "rgba(0, 0, 0, 0.8000)",
+                },
+              ]
+            }
+          >
+            Menu Item
+          </Text>
+          <Text
+            style={
+              [
+                {
+                  "fontSize": 12,
+                  "includeFontPadding": false,
+                  "textAlign": "left",
+                  "verticalAlign": "middle",
+                },
+                {
+                  "color": "rgba(0, 0, 0, 0.8000)",
+                },
+              ]
+            }
+          >
+            Caption
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "justifyContent": "center",
+          }
+        }
+      >
+        <RNSVGSvgView
+          align="xMidYMid"
+          bbHeight={17.5}
+          bbWidth={17.5}
+          fill="none"
+          focusable={false}
+          height={17.5}
+          meetOrSlice={0}
+          minX={0}
+          minY={0}
+          stroke="rgba(0, 0, 0, 0.8000)"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          style={
+            [
+              {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              {
+                "flex": 0,
+                "height": 17,
+                "width": 17,
+              },
+            ]
+          }
+          vbHeight={24}
+          vbWidth={24}
+          width={17.5}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <RNSVGGroup
+            fill={null}
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "payload": 3422552064,
+                "type": 0,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth={2}
+          >
+            <RNSVGPath
+              d="M6 9l6 6l6 -6"
+              fill={null}
+              propList={
+                [
+                  "fill",
+                  "stroke",
+                  "strokeWidth",
+                  "strokeLinecap",
+                  "strokeLinejoin",
+                ]
+              }
+              stroke={
+                {
+                  "payload": 3422552064,
+                  "type": 0,
+                }
+              }
+              strokeLinecap={1}
+              strokeLinejoin={1}
+              strokeWidth={2}
+            />
+          </RNSVGGroup>
+        </RNSVGSvgView>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
+<View
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      false,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Menu Item"
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": "Caption",
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    testID="menuItemButton"
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "borderColor": "rgba(255, 255, 255, 0.0001)",
+            "borderRadius": 7,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "gap": 7,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 7,
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <View
+        style={
+          {
+            "justifyContent": "center",
+          }
+        }
+      >
+        <RNSVGSvgView
+          align="xMidYMid"
+          bbHeight={17.5}
+          bbWidth={17.5}
+          fill="none"
+          focusable={false}
+          height={17.5}
+          meetOrSlice={0}
+          minX={0}
+          minY={0}
+          stroke="rgba(0, 0, 0, 0.8000)"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          style={
+            [
+              {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              {
+                "flex": 0,
+                "height": 17,
+                "width": 17,
+              },
+            ]
+          }
+          vbHeight={24}
+          vbWidth={24}
+          width={17.5}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <RNSVGGroup
+            fill={null}
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "payload": 3422552064,
+                "type": 0,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth={2}
+          >
+            <RNSVGPath
+              d="M9 6l6 6l-6 6"
+              fill={null}
+              propList={
+                [
+                  "fill",
+                  "stroke",
+                  "strokeWidth",
+                  "strokeLinecap",
+                  "strokeLinejoin",
+                ]
+              }
+              stroke={
+                {
+                  "payload": 3422552064,
+                  "type": 0,
+                }
+              }
+              strokeLinecap={1}
+              strokeLinejoin={1}
+              strokeWidth={2}
+            />
+          </RNSVGGroup>
+        </RNSVGSvgView>
+      </View>
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "gap": 7,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "flexDirection": "column",
+              "gap": 3.5,
+              "paddingBottom": 0,
+              "paddingTop": 0,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontSize": 14,
+                  "includeFontPadding": false,
+                  "textAlign": "left",
+                  "verticalAlign": "middle",
+                },
+                {
+                  "color": "rgba(0, 0, 0, 0.8000)",
+                },
+              ]
+            }
+          >
+            Menu Item
+          </Text>
+          <Text
+            style={
+              [
+                {
+                  "fontSize": 12,
+                  "includeFontPadding": false,
+                  "textAlign": "left",
+                  "verticalAlign": "middle",
+                },
+                {
+                  "color": "rgba(0, 0, 0, 0.8000)",
+                },
+              ]
+            }
+          >
+            Caption
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "justifyContent": "center",
+          }
+        }
+      >
+        <RNSVGSvgView
+          align="xMidYMid"
+          bbHeight={17.5}
+          bbWidth={17.5}
+          fill="none"
+          focusable={false}
+          height={17.5}
+          meetOrSlice={0}
+          minX={0}
+          minY={0}
+          stroke="rgba(0, 0, 0, 0.8000)"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          style={
+            [
+              {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              {
+                "flex": 0,
+                "height": 17,
+                "width": 17,
+              },
+            ]
+          }
+          vbHeight={24}
+          vbWidth={24}
+          width={17.5}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <RNSVGGroup
+            fill={null}
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "payload": 3422552064,
+                "type": 0,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth={2}
+          >
+            <RNSVGPath
+              d="M9 6l6 6l-6 6"
+              fill={null}
+              propList={
+                [
+                  "fill",
+                  "stroke",
+                  "strokeWidth",
+                  "strokeLinecap",
+                  "strokeLinejoin",
+                ]
+              }
+              stroke={
+                {
+                  "payload": 3422552064,
+                  "type": 0,
+                }
+              }
+              strokeLinecap={1}
+              strokeLinejoin={1}
+              strokeWidth={2}
+            />
+          </RNSVGGroup>
+        </RNSVGSvgView>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`MenuItemTemplate tests MenuItemTemplate with colored icon 1`] = `
+<View
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      false,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Menu Item"
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    testID="menuItemButton"
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "borderColor": "rgba(255, 255, 255, 0.0001)",
+            "borderRadius": 7,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "gap": 7,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 7,
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "gap": 7,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "justifyContent": "center",
+              "position": "relative",
+            }
+          }
+        >
+          <View>
+            <RNSVGSvgView
+              align="xMidYMid"
+              bbHeight={17.5}
+              bbWidth={17.5}
+              fill="none"
+              focusable={false}
+              height={17.5}
+              meetOrSlice={0}
+              minX={0}
+              minY={0}
+              stroke="red"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              style={
+                [
+                  {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  {
+                    "flex": 0,
+                    "height": 17,
+                    "width": 17,
+                  },
+                ]
+              }
+              vbHeight={24}
+              vbWidth={24}
+              width={17.5}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <RNSVGGroup
+                fill={null}
+                propList={
+                  [
+                    "fill",
+                    "stroke",
+                    "strokeWidth",
+                    "strokeLinecap",
+                    "strokeLinejoin",
+                  ]
+                }
+                stroke={
+                  {
+                    "payload": 4294901760,
+                    "type": 0,
+                  }
+                }
+                strokeLinecap={1}
+                strokeLinejoin={1}
+                strokeWidth={2}
+              >
+                <RNSVGPath
+                  d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+                  fill={null}
+                  propList={
+                    [
+                      "fill",
+                      "stroke",
+                      "strokeWidth",
+                      "strokeLinecap",
+                      "strokeLinejoin",
+                    ]
+                  }
+                  stroke={
+                    {
+                      "payload": 4294901760,
+                      "type": 0,
+                    }
+                  }
+                  strokeLinecap={1}
+                  strokeLinejoin={1}
+                  strokeWidth={2}
+                />
+                <RNSVGPath
+                  d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+                  fill={null}
+                  propList={
+                    [
+                      "fill",
+                      "stroke",
+                      "strokeWidth",
+                      "strokeLinecap",
+                      "strokeLinejoin",
+                    ]
+                  }
+                  stroke={
+                    {
+                      "payload": 4294901760,
+                      "type": 0,
+                    }
+                  }
+                  strokeLinecap={1}
+                  strokeLinejoin={1}
+                  strokeWidth={2}
+                />
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "flexDirection": "column",
+              "gap": 3.5,
+              "paddingBottom": 0,
+              "paddingTop": 0,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontSize": 14,
+                  "includeFontPadding": false,
+                  "textAlign": "left",
+                  "verticalAlign": "middle",
+                },
+                {
+                  "color": "rgba(0, 0, 0, 0.8000)",
+                },
+              ]
+            }
+          >
+            Menu Item
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`MenuItemTemplate tests MenuItemTemplate with extra 1`] = `
+<View
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      false,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Menu Item"
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    testID="menuItemButton"
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "borderColor": "rgba(255, 255, 255, 0.0001)",
+            "borderRadius": 7,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "gap": 7,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 7,
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "gap": 7,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "flexDirection": "column",
+              "gap": 3.5,
+              "paddingBottom": 0,
+              "paddingTop": 0,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontSize": 14,
+                  "includeFontPadding": false,
+                  "textAlign": "left",
+                  "verticalAlign": "middle",
+                },
+                {
+                  "color": "rgba(0, 0, 0, 0.8000)",
+                },
+              ]
+            }
+          >
+            Menu Item
+          </Text>
+        </View>
+      </View>
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight={24}
+        bbWidth={24}
+        fill="none"
+        focusable={false}
+        height={24}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            {
+              "flex": 0,
+              "height": 24,
+              "width": 24,
+            },
+          ]
+        }
+        vbHeight={24}
+        vbWidth={24}
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <RNSVGGroup
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        >
+          <RNSVGPath
+            d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+            fill={null}
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "type": 2,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth={2}
+          />
+          <RNSVGPath
+            d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+            fill={null}
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "type": 2,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth={2}
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
+<View
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      false,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Menu Item"
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    testID="menuItemButton"
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "borderColor": "rgba(255, 255, 255, 0.0001)",
+            "borderRadius": 7,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "gap": 7,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 7,
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "gap": 7,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "justifyContent": "center",
+              "position": "relative",
+            }
+          }
+        >
+          <View>
+            <RNSVGSvgView
+              align="xMidYMid"
+              bbHeight={17.5}
+              bbWidth={17.5}
+              fill="none"
+              focusable={false}
+              height={17.5}
+              meetOrSlice={0}
+              minX={0}
+              minY={0}
+              stroke="rgba(0, 0, 0, 0.8000)"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              style={
+                [
+                  {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  {
+                    "flex": 0,
+                    "height": 17,
+                    "width": 17,
+                  },
+                ]
+              }
+              vbHeight={24}
+              vbWidth={24}
+              width={17.5}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <RNSVGGroup
+                fill={null}
+                propList={
+                  [
+                    "fill",
+                    "stroke",
+                    "strokeWidth",
+                    "strokeLinecap",
+                    "strokeLinejoin",
+                  ]
+                }
+                stroke={
+                  {
+                    "payload": 3422552064,
+                    "type": 0,
+                  }
+                }
+                strokeLinecap={1}
+                strokeLinejoin={1}
+                strokeWidth={2}
+              >
+                <RNSVGPath
+                  d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+                  fill={null}
+                  propList={
+                    [
+                      "fill",
+                      "stroke",
+                      "strokeWidth",
+                      "strokeLinecap",
+                      "strokeLinejoin",
+                    ]
+                  }
+                  stroke={
+                    {
+                      "payload": 3422552064,
+                      "type": 0,
+                    }
+                  }
+                  strokeLinecap={1}
+                  strokeLinejoin={1}
+                  strokeWidth={2}
+                />
+                <RNSVGPath
+                  d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+                  fill={null}
+                  propList={
+                    [
+                      "fill",
+                      "stroke",
+                      "strokeWidth",
+                      "strokeLinecap",
+                      "strokeLinejoin",
+                    ]
+                  }
+                  stroke={
+                    {
+                      "payload": 3422552064,
+                      "type": 0,
+                    }
+                  }
+                  strokeLinecap={1}
+                  strokeLinejoin={1}
+                  strokeWidth={2}
+                />
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "flexDirection": "column",
+              "gap": 3.5,
+              "paddingBottom": 0,
+              "paddingTop": 0,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontSize": 14,
+                  "includeFontPadding": false,
+                  "textAlign": "left",
+                  "verticalAlign": "middle",
+                },
+                {
+                  "color": "rgba(0, 0, 0, 0.8000)",
+                },
+              ]
+            }
+          >
+            Menu Item
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
+<View
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      false,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Menu Item"
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    testID="menuItemButton"
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "borderColor": "rgba(255, 255, 255, 0.0001)",
+            "borderRadius": 7,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "gap": 7,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 7,
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "gap": 7,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "justifyContent": "center",
+              "position": "relative",
+            }
+          }
+        >
+          <View>
+            <RNSVGSvgView
+              align="xMidYMid"
+              bbHeight={17.5}
+              bbWidth={17.5}
+              fill="none"
+              focusable={false}
+              height={17.5}
+              meetOrSlice={0}
+              minX={0}
+              minY={0}
+              stroke="rgba(0, 0, 0, 0.8000)"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              style={
+                [
+                  {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  {
+                    "flex": 0,
+                    "height": 17,
+                    "width": 17,
+                  },
+                ]
+              }
+              vbHeight={24}
+              vbWidth={24}
+              width={17.5}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <RNSVGGroup
+                fill={null}
+                propList={
+                  [
+                    "fill",
+                    "stroke",
+                    "strokeWidth",
+                    "strokeLinecap",
+                    "strokeLinejoin",
+                  ]
+                }
+                stroke={
+                  {
+                    "payload": 3422552064,
+                    "type": 0,
+                  }
+                }
+                strokeLinecap={1}
+                strokeLinejoin={1}
+                strokeWidth={2}
+              >
+                <RNSVGPath
+                  d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+                  fill={null}
+                  propList={
+                    [
+                      "fill",
+                      "stroke",
+                      "strokeWidth",
+                      "strokeLinecap",
+                      "strokeLinejoin",
+                    ]
+                  }
+                  stroke={
+                    {
+                      "payload": 3422552064,
+                      "type": 0,
+                    }
+                  }
+                  strokeLinecap={1}
+                  strokeLinejoin={1}
+                  strokeWidth={2}
+                />
+                <RNSVGPath
+                  d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+                  fill={null}
+                  propList={
+                    [
+                      "fill",
+                      "stroke",
+                      "strokeWidth",
+                      "strokeLinecap",
+                      "strokeLinejoin",
+                    ]
+                  }
+                  stroke={
+                    {
+                      "payload": 3422552064,
+                      "type": 0,
+                    }
+                  }
+                  strokeLinecap={1}
+                  strokeLinejoin={1}
+                  strokeWidth={2}
+                />
+              </RNSVGGroup>
+            </RNSVGSvgView>
+            <View
+              onLayout={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "flex-start",
+                  },
+                  {
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  },
+                ]
+              }
+              testID="MenuItemIconBadge"
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderRadius": 100,
+                      "height": 7,
+                      "width": 7,
+                    },
+                    {
+                      "backgroundColor": "#ffb330",
+                    },
+                  ]
+                }
+              />
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "flexDirection": "column",
+              "gap": 3.5,
+              "paddingBottom": 0,
+              "paddingTop": 0,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontSize": 14,
+                  "includeFontPadding": false,
+                  "textAlign": "left",
+                  "verticalAlign": "middle",
+                },
+                {
+                  "color": "rgba(0, 0, 0, 0.8000)",
+                },
+              ]
+            }
+          >
+            Menu Item
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`MenuItemTemplate tests MenuItemTemplate with padding 1`] = `
+<View
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      false,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Menu Item"
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    testID="menuItemButton"
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "borderColor": "rgba(255, 255, 255, 0.0001)",
+            "borderRadius": 7,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "gap": 7,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 7,
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "gap": 7,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "flexDirection": "column",
+              "gap": 3.5,
+              "paddingBottom": 2,
+              "paddingTop": 2,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontSize": 14,
+                  "includeFontPadding": false,
+                  "textAlign": "left",
+                  "verticalAlign": "middle",
+                },
+                {
+                  "color": "rgba(0, 0, 0, 0.8000)",
+                },
+              ]
+            }
+          >
+            Menu Item
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`MenuItemTemplate tests MenuItemTemplate with separator 1`] = `
+<View
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      {
+        "borderTopColor": "#dbdada",
+        "borderTopWidth": 1,
+        "paddingTop": 3.5,
+      },
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Menu Item"
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    testID="menuItemButton"
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "borderColor": "rgba(255, 255, 255, 0.0001)",
+            "borderRadius": 7,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "gap": 7,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 7,
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "gap": 7,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "flexDirection": "column",
+              "gap": 3.5,
+              "paddingBottom": 0,
+              "paddingTop": 0,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontSize": 14,
+                  "includeFontPadding": false,
+                  "textAlign": "left",
+                  "verticalAlign": "middle",
+                },
+                {
+                  "color": "rgba(0, 0, 0, 0.8000)",
+                },
+              ]
+            }
+          >
+            Menu Item
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

@@ -1,0 +1,677 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider {"Icon": [Object], "align": "center", "layout": "vertical", "showContent": false, "text": "test"} 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "minHeight": 28,
+      },
+      {
+        "alignSelf": "flex-start",
+        "flexDirection": "column",
+        "flexGrow": 1,
+        "minWidth": 28,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexBasis": 14,
+        "flexGrow": 1,
+        "height": 1,
+        "overflow": "hidden",
+        "width": 1,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "borderColor": "#dbdada",
+            "borderWidth": 1,
+            "height": "100%",
+            "width": "100%",
+          },
+          false,
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Divider {"Icon": [Object], "align": "end", "layout": "horizontal", "showIcon": false, "text": "test"} 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "minHeight": 28,
+      },
+      false,
+      {
+        "flexDirection": "row-reverse",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "flexBasis": 14,
+          "flexGrow": 1,
+          "height": 1,
+          "overflow": "hidden",
+          "width": 1,
+        },
+        {
+          "flexGrow": 0,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "borderColor": "#dbdada",
+            "borderWidth": 1,
+            "height": "100%",
+            "width": "100%",
+          },
+          false,
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#ffffff",
+          "flexDirection": "row",
+          "flexShrink": 1,
+          "gap": 7,
+          "paddingHorizontal": 7,
+        },
+        false,
+      ]
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "fontSize": 12.25,
+            "fontWeight": 700,
+            "textTransform": "uppercase",
+          },
+          {
+            "color": "rgba(0, 0, 0, 0.6000)",
+          },
+          false,
+          {
+            "flexShrink": 1,
+          },
+        ]
+      }
+    >
+      test
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "flexBasis": 14,
+        "flexGrow": 1,
+        "height": 1,
+        "overflow": "hidden",
+        "width": 1,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "borderColor": "#dbdada",
+            "borderWidth": 1,
+            "height": "100%",
+            "width": "100%",
+          },
+          false,
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "showIcon": false, "type": "dash"} 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "minHeight": 28,
+      },
+      {
+        "alignSelf": "flex-start",
+        "flexDirection": "column",
+        "flexGrow": 1,
+        "minWidth": 28,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexBasis": 14,
+        "flexGrow": 1,
+        "height": 1,
+        "overflow": "hidden",
+        "width": 1,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "borderColor": "#dbdada",
+            "borderWidth": 1,
+            "height": "100%",
+            "width": "100%",
+          },
+          {
+            "borderStyle": "dashed",
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text": "test", "type": "solid"} 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "minHeight": 28,
+      },
+      {
+        "alignSelf": "flex-start",
+        "flexDirection": "column",
+        "flexGrow": 1,
+        "minWidth": 28,
+      },
+      {
+        "flexDirection": "column-reverse",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "flexBasis": 14,
+          "flexGrow": 1,
+          "height": 1,
+          "overflow": "hidden",
+          "width": 1,
+        },
+        {
+          "flexGrow": 0,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "borderColor": "#dbdada",
+            "borderWidth": 1,
+            "height": "100%",
+            "width": "100%",
+          },
+          false,
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#ffffff",
+          "flexDirection": "row",
+          "flexShrink": 1,
+          "gap": 7,
+          "paddingHorizontal": 7,
+        },
+        {
+          "paddingHorizontal": 0,
+          "paddingVertical": 7,
+        },
+      ]
+    }
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={14}
+      bbWidth={14}
+      fill="none"
+      focusable={false}
+      height={14}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "color": "rgba(0, 0, 0, 0.6000)",
+            "height": 14,
+            "width": 14,
+          },
+          {
+            "flex": 0,
+            "height": 14,
+            "width": 14,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={14}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        color="rgba(0, 0, 0, 0.6000)"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          color="rgba(0, 0, 0, 0.6000)"
+          d="M5 12l5 5l10 -10"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+    <Text
+      style={
+        [
+          {
+            "fontSize": 12.25,
+            "fontWeight": 700,
+            "textTransform": "uppercase",
+          },
+          {
+            "color": "rgba(0, 0, 0, 0.6000)",
+          },
+          false,
+          {
+            "flexShrink": 1,
+          },
+        ]
+      }
+    >
+      test
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "flexBasis": 14,
+        "flexGrow": 1,
+        "height": 1,
+        "overflow": "hidden",
+        "width": 1,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "borderColor": "#dbdada",
+            "borderWidth": 1,
+            "height": "100%",
+            "width": "100%",
+          },
+          false,
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Divider {"Icon": [Object], "align": "start", "layout": "horizontal", "style": [Object]} 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "minHeight": 28,
+      },
+      false,
+      false,
+      {
+        "margin": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "flexBasis": 14,
+          "flexGrow": 1,
+          "height": 1,
+          "overflow": "hidden",
+          "width": 1,
+        },
+        {
+          "flexGrow": 0,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "borderColor": "#dbdada",
+            "borderWidth": 1,
+            "height": "100%",
+            "width": "100%",
+          },
+          false,
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#ffffff",
+          "flexDirection": "row",
+          "flexShrink": 1,
+          "gap": 7,
+          "paddingHorizontal": 7,
+        },
+        false,
+      ]
+    }
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={14}
+      bbWidth={14}
+      fill="none"
+      focusable={false}
+      height={14}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "color": "rgba(0, 0, 0, 0.6000)",
+            "height": 14,
+            "width": 14,
+          },
+          {
+            "flex": 0,
+            "height": 14,
+            "width": 14,
+          },
+        ]
+      }
+      vbHeight={24}
+      vbWidth={24}
+      width={14}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        color="rgba(0, 0, 0, 0.6000)"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          color="rgba(0, 0, 0, 0.6000)"
+          d="M5 12l5 5l10 -10"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    style={
+      {
+        "flexBasis": 14,
+        "flexGrow": 1,
+        "height": 1,
+        "overflow": "hidden",
+        "width": 1,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "borderColor": "#dbdada",
+            "borderWidth": 1,
+            "height": "100%",
+            "width": "100%",
+          },
+          false,
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Divider {"align": "end", "layout": "horizontal", "showContent": false, "text": "test"} 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "minHeight": 28,
+      },
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexBasis": 14,
+        "flexGrow": 1,
+        "height": 1,
+        "overflow": "hidden",
+        "width": 1,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "borderColor": "#dbdada",
+            "borderWidth": 1,
+            "height": "100%",
+            "width": "100%",
+          },
+          false,
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Divider {} 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "minHeight": 28,
+      },
+      false,
+      false,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexBasis": 14,
+        "flexGrow": 1,
+        "height": 1,
+        "overflow": "hidden",
+        "width": 1,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "borderColor": "#dbdada",
+            "borderWidth": 1,
+            "height": "100%",
+            "width": "100%",
+          },
+          false,
+        ]
+      }
+    />
+  </View>
+</View>
+`;

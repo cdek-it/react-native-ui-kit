@@ -1,0 +1,537 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButton snapshots checked = false, disabled = false, state = danger 1`] = `
+[
+  <View
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    layout={
+      LinearTransition {
+        "build": [Function],
+        "durationV": 100,
+        "randomizeDelay": false,
+        "reduceMotionV": "system",
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#f6d4d1",
+        "borderRadius": 28,
+        "height": 28,
+        "position": "absolute",
+        "width": 28,
+      }
+    }
+  />,
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderColor": "#e26e63",
+        "borderRadius": 21,
+        "borderWidth": 1,
+        "height": 21,
+        "justifyContent": "center",
+        "marginLeft": 3.5,
+        "marginTop": 3.5,
+        "position": "absolute",
+        "width": 21,
+      }
+    }
+    testID="RadioButton_Pressable"
+  >
+    <View
+      style={
+        [
+          {
+            "borderRadius": 10.5,
+            "height": 10.5,
+            "width": 10.5,
+          },
+          [
+            {
+              "backgroundColor": "#ffffff",
+            },
+            false,
+          ],
+        ]
+      }
+    />
+  </View>,
+]
+`;
+
+exports[`RadioButton snapshots checked = false, disabled = false, state = default 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#ffffff",
+      "borderColor": "#dbdada",
+      "borderRadius": 21,
+      "borderWidth": 1,
+      "height": 21,
+      "justifyContent": "center",
+      "marginLeft": 3.5,
+      "marginTop": 3.5,
+      "position": "absolute",
+      "width": 21,
+    }
+  }
+  testID="RadioButton_Pressable"
+>
+  <View
+    style={
+      [
+        {
+          "borderRadius": 10.5,
+          "height": 10.5,
+          "width": 10.5,
+        },
+        [
+          {
+            "backgroundColor": "#ffffff",
+          },
+          false,
+        ],
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`RadioButton snapshots checked = false, disabled = true, state = default 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+      "borderColor": "#dbdada",
+      "borderRadius": 21,
+      "borderWidth": 1,
+      "height": 21,
+      "justifyContent": "center",
+      "marginLeft": 3.5,
+      "marginTop": 3.5,
+      "mixBlendMode": "luminosity",
+      "opacity": 0.6,
+      "position": "absolute",
+      "width": 21,
+    }
+  }
+  testID="RadioButton_Pressable"
+>
+  <View
+    style={
+      [
+        {
+          "borderRadius": 10.5,
+          "height": 10.5,
+          "width": 10.5,
+        },
+        [
+          {
+            "backgroundColor": "#ffffff",
+          },
+          {
+            "backgroundColor": "transparent",
+          },
+        ],
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`RadioButton snapshots checked = true, disabled = false, state = danger 1`] = `
+[
+  <View
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    layout={
+      LinearTransition {
+        "build": [Function],
+        "durationV": 100,
+        "randomizeDelay": false,
+        "reduceMotionV": "system",
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#f6d4d1",
+        "borderRadius": 28,
+        "height": 28,
+        "position": "absolute",
+        "width": 28,
+      }
+    }
+  />,
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#188700",
+        "borderColor": "#e26e63",
+        "borderRadius": 21,
+        "borderWidth": 1,
+        "height": 21,
+        "justifyContent": "center",
+        "marginLeft": 3.5,
+        "marginTop": 3.5,
+        "position": "absolute",
+        "width": 21,
+      }
+    }
+    testID="RadioButton_Pressable"
+  >
+    <View
+      style={
+        [
+          {
+            "borderRadius": 10.5,
+            "height": 10.5,
+            "width": 10.5,
+          },
+          [
+            {
+              "backgroundColor": "#ffffff",
+            },
+            false,
+          ],
+        ]
+      }
+    />
+  </View>,
+]
+`;
+
+exports[`RadioButton snapshots checked = true, disabled = false, state = default 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#188700",
+      "borderColor": "#188700",
+      "borderRadius": 21,
+      "borderWidth": 5,
+      "height": 21,
+      "justifyContent": "center",
+      "marginLeft": 3.5,
+      "marginTop": 3.5,
+      "position": "absolute",
+      "width": 21,
+    }
+  }
+  testID="RadioButton_Pressable"
+>
+  <View
+    style={
+      [
+        {
+          "borderRadius": 10.5,
+          "height": 10.5,
+          "width": 10.5,
+        },
+        [
+          {
+            "backgroundColor": "#ffffff",
+          },
+          false,
+        ],
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`RadioButton snapshots checked = true, disabled = true, state = default 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#188700",
+      "borderColor": "#188700",
+      "borderRadius": 21,
+      "borderWidth": 5,
+      "height": 21,
+      "justifyContent": "center",
+      "marginLeft": 3.5,
+      "marginTop": 3.5,
+      "mixBlendMode": "luminosity",
+      "opacity": 0.6,
+      "position": "absolute",
+      "width": 21,
+    }
+  }
+  testID="RadioButton_Pressable"
+>
+  <View
+    style={
+      [
+        {
+          "borderRadius": 10.5,
+          "height": 10.5,
+          "width": 10.5,
+        },
+        [
+          {
+            "backgroundColor": "#ffffff",
+          },
+          false,
+        ],
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`RadioButton snapshots default 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#ffffff",
+      "borderColor": "#dbdada",
+      "borderRadius": 21,
+      "borderWidth": 1,
+      "height": 21,
+      "justifyContent": "center",
+      "marginLeft": 3.5,
+      "marginTop": 3.5,
+      "position": "absolute",
+      "width": 21,
+    }
+  }
+  testID="RadioButton_Pressable"
+>
+  <View
+    style={
+      [
+        {
+          "borderRadius": 10.5,
+          "height": 10.5,
+          "width": 10.5,
+        },
+        [
+          {
+            "backgroundColor": "#ffffff",
+          },
+          false,
+        ],
+      ]
+    }
+  />
+</View>
+`;

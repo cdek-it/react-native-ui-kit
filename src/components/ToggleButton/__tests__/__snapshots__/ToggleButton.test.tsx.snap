@@ -1,0 +1,1053 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = false, size = small, with Icon, with label, iconPos = left 1`] = `
+<Pressable
+  disabled={false}
+  onPress={[Function]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+  style={
+    [
+      {
+        "alignSelf": "flex-start",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "overflow": "hidden",
+      },
+      undefined,
+      [
+        {
+          "borderColor": "rgba(255, 255, 255, 0.0001)",
+        },
+        false,
+        false,
+        false,
+        false,
+      ],
+    ]
+  }
+  testID="ToggleButton"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "borderRadius": 100,
+          "flexDirection": "row",
+          "gap": 10.5,
+          "paddingHorizontal": 21,
+          "paddingVertical": 0,
+        },
+        {
+          "gap": 7,
+          "minHeight": 28,
+          "paddingHorizontal": 10.5,
+        },
+        false,
+        [
+          {
+            "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+          },
+          false,
+          false,
+          false,
+          false,
+        ],
+      ]
+    }
+    testID="ToggleButton.container"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={14}
+      bbWidth={14}
+      fill="none"
+      focusable={false}
+      height={14}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          [
+            {
+              "color": "rgba(0, 0, 0, 0.6000)",
+            },
+            false,
+            false,
+            false,
+            false,
+          ],
+          {
+            "flex": 0,
+            "height": 14,
+            "width": 14,
+          },
+        ]
+      }
+      testID="ToggleButton.icon"
+      vbHeight={24}
+      vbWidth={24}
+      width={14}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        color="rgba(0, 0, 0, 0.6000)"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          color="rgba(0, 0, 0, 0.6000)"
+          d="M7 7l10 10"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="ToggleButton.icon"
+        />
+        <RNSVGPath
+          color="rgba(0, 0, 0, 0.6000)"
+          d="M17 8l0 9l-9 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="ToggleButton.icon"
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+    <Text
+      style={
+        [
+          {
+            "flexShrink": 1,
+          },
+          [
+            {
+              "fontWeight": "700",
+              "includeFontPadding": false,
+              "verticalAlign": "middle",
+            },
+            {
+              "fontSize": 12.25,
+            },
+          ],
+          [
+            {
+              "color": "rgba(0, 0, 0, 0.6000)",
+            },
+            false,
+            false,
+            false,
+            false,
+          ],
+        ]
+      }
+      testID="ToggleButton.text"
+    >
+      ButtonToggle
+    </Text>
+  </View>
+</Pressable>
+`;
+
+exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = false, size = small, with Icon, with label, iconPos = right 1`] = `
+<Pressable
+  disabled={false}
+  onPress={[Function]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+  style={
+    [
+      {
+        "alignSelf": "flex-start",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "overflow": "hidden",
+      },
+      undefined,
+      [
+        {
+          "borderColor": "rgba(255, 255, 255, 0.0001)",
+        },
+        false,
+        false,
+        false,
+        false,
+      ],
+    ]
+  }
+  testID="ToggleButton"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "borderRadius": 100,
+          "flexDirection": "row",
+          "gap": 10.5,
+          "paddingHorizontal": 21,
+          "paddingVertical": 0,
+        },
+        {
+          "gap": 7,
+          "minHeight": 28,
+          "paddingHorizontal": 10.5,
+        },
+        false,
+        [
+          {
+            "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+          },
+          false,
+          false,
+          false,
+          false,
+        ],
+      ]
+    }
+    testID="ToggleButton.container"
+  >
+    <Text
+      style={
+        [
+          {
+            "flexShrink": 1,
+          },
+          [
+            {
+              "fontWeight": "700",
+              "includeFontPadding": false,
+              "verticalAlign": "middle",
+            },
+            {
+              "fontSize": 12.25,
+            },
+          ],
+          [
+            {
+              "color": "rgba(0, 0, 0, 0.6000)",
+            },
+            false,
+            false,
+            false,
+            false,
+          ],
+        ]
+      }
+      testID="ToggleButton.text"
+    >
+      ButtonToggle
+    </Text>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={14}
+      bbWidth={14}
+      fill="none"
+      focusable={false}
+      height={14}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          [
+            {
+              "color": "rgba(0, 0, 0, 0.6000)",
+            },
+            false,
+            false,
+            false,
+            false,
+          ],
+          {
+            "flex": 0,
+            "height": 14,
+            "width": 14,
+          },
+        ]
+      }
+      testID="ToggleButton.icon"
+      vbHeight={24}
+      vbWidth={24}
+      width={14}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        color="rgba(0, 0, 0, 0.6000)"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          color="rgba(0, 0, 0, 0.6000)"
+          d="M7 7l10 10"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="ToggleButton.icon"
+        />
+        <RNSVGPath
+          color="rgba(0, 0, 0, 0.6000)"
+          d="M17 8l0 9l-9 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="ToggleButton.icon"
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+</Pressable>
+`;
+
+exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = true, size = base, with Icon, with label 1`] = `
+<Pressable
+  disabled={false}
+  onPress={[Function]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+  style={
+    [
+      {
+        "alignSelf": "flex-start",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "overflow": "hidden",
+      },
+      undefined,
+      [
+        {
+          "borderColor": "rgba(255, 255, 255, 0.0001)",
+        },
+        false,
+        false,
+        false,
+        false,
+      ],
+    ]
+  }
+  testID="ToggleButton"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "borderRadius": 100,
+          "flexDirection": "row",
+          "gap": 10.5,
+          "paddingHorizontal": 21,
+          "paddingVertical": 0,
+        },
+        {
+          "gap": 7,
+          "minHeight": 35,
+          "paddingHorizontal": 14,
+        },
+        {
+          "aspectRatio": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 0,
+          "paddingVertical": 0,
+        },
+        [
+          {
+            "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+          },
+          false,
+          false,
+          false,
+          false,
+        ],
+      ]
+    }
+    testID="ToggleButton.container"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={17.5}
+      bbWidth={17.5}
+      fill="none"
+      focusable={false}
+      height={17.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          [
+            {
+              "color": "rgba(0, 0, 0, 0.6000)",
+            },
+            false,
+            false,
+            false,
+            false,
+          ],
+          {
+            "flex": 0,
+            "height": 17,
+            "width": 17,
+          },
+        ]
+      }
+      testID="ToggleButton.icon"
+      vbHeight={24}
+      vbWidth={24}
+      width={17.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        color="rgba(0, 0, 0, 0.6000)"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          color="rgba(0, 0, 0, 0.6000)"
+          d="M7 7l10 10"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="ToggleButton.icon"
+        />
+        <RNSVGPath
+          color="rgba(0, 0, 0, 0.6000)"
+          d="M17 8l0 9l-9 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="ToggleButton.icon"
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+</Pressable>
+`;
+
+exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = false, size = large, with Icon, with label 1`] = `
+<Pressable
+  disabled={true}
+  onPress={[Function]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+  style={
+    [
+      {
+        "alignSelf": "flex-start",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "overflow": "hidden",
+      },
+      undefined,
+      [
+        {
+          "borderColor": "rgba(255, 255, 255, 0.0001)",
+        },
+        false,
+        false,
+        false,
+        {
+          "borderColor": "#dbdada",
+          "opacity": 0.6,
+        },
+      ],
+    ]
+  }
+  testID="ToggleButton"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "borderRadius": 100,
+          "flexDirection": "row",
+          "gap": 10.5,
+          "paddingHorizontal": 21,
+          "paddingVertical": 0,
+        },
+        {
+          "minHeight": 49,
+        },
+        false,
+        [
+          {
+            "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+          },
+          false,
+          false,
+          false,
+          {
+            "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+          },
+        ],
+      ]
+    }
+    testID="ToggleButton.container"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={21}
+      bbWidth={21}
+      fill="none"
+      focusable={false}
+      height={21}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          [
+            {
+              "color": "rgba(0, 0, 0, 0.6000)",
+            },
+            false,
+            false,
+            false,
+            {
+              "color": "rgba(0, 0, 0, 0.6000)",
+            },
+          ],
+          {
+            "flex": 0,
+            "height": 21,
+            "width": 21,
+          },
+        ]
+      }
+      testID="ToggleButton.icon"
+      vbHeight={24}
+      vbWidth={24}
+      width={21}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        color="rgba(0, 0, 0, 0.6000)"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          color="rgba(0, 0, 0, 0.6000)"
+          d="M7 7l10 10"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="ToggleButton.icon"
+        />
+        <RNSVGPath
+          color="rgba(0, 0, 0, 0.6000)"
+          d="M17 8l0 9l-9 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="ToggleButton.icon"
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+    <Text
+      style={
+        [
+          {
+            "flexShrink": 1,
+          },
+          [
+            {
+              "fontWeight": "700",
+              "includeFontPadding": false,
+              "verticalAlign": "middle",
+            },
+            {
+              "fontSize": 17.5,
+            },
+          ],
+          [
+            {
+              "color": "rgba(0, 0, 0, 0.6000)",
+            },
+            false,
+            false,
+            false,
+            {
+              "color": "rgba(0, 0, 0, 0.6000)",
+            },
+          ],
+        ]
+      }
+      testID="ToggleButton.text"
+    >
+      ButtonToggle
+    </Text>
+  </View>
+</Pressable>
+`;
+
+exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = false, size = xlarge, with style, with Icon 1`] = `
+<Pressable
+  disabled={false}
+  onPress={[Function]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+  style={
+    [
+      {
+        "alignSelf": "flex-start",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "overflow": "hidden",
+      },
+      {
+        "margin": 10,
+      },
+      [
+        {
+          "borderColor": "rgba(255, 255, 255, 0.0001)",
+        },
+        false,
+        {
+          "borderColor": "rgba(255, 255, 255, 0.0001)",
+        },
+        false,
+        false,
+      ],
+    ]
+  }
+  testID="ToggleButton"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "borderRadius": 100,
+          "flexDirection": "row",
+          "gap": 10.5,
+          "paddingHorizontal": 21,
+          "paddingVertical": 0,
+        },
+        {
+          "minHeight": 56,
+        },
+        {
+          "aspectRatio": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 0,
+          "paddingVertical": 0,
+        },
+        [
+          {
+            "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+          },
+          false,
+          {
+            "backgroundColor": "#188700",
+          },
+          false,
+          false,
+        ],
+      ]
+    }
+    testID="ToggleButton.container"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={31.5}
+      bbWidth={31.5}
+      fill="none"
+      focusable={false}
+      height={31.5}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          [
+            {
+              "color": "rgba(0, 0, 0, 0.6000)",
+            },
+            false,
+            {
+              "color": "#ffffff",
+            },
+            false,
+            false,
+          ],
+          {
+            "flex": 0,
+            "height": 31,
+            "width": 31,
+          },
+        ]
+      }
+      testID="ToggleButton.icon"
+      vbHeight={24}
+      vbWidth={24}
+      width={31.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        color="#ffffff"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      >
+        <RNSVGPath
+          color="#ffffff"
+          d="M7 7l10 10"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="ToggleButton.icon"
+        />
+        <RNSVGPath
+          color="#ffffff"
+          d="M17 8l0 9l-9 0"
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={
+            {
+              "type": 2,
+            }
+          }
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={2}
+          testID="ToggleButton.icon"
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+</Pressable>
+`;
+
+exports[`ToggleButton snapshots default 1`] = `
+<Pressable
+  onPress={[Function]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+  style={
+    [
+      {
+        "alignSelf": "flex-start",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "overflow": "hidden",
+      },
+      undefined,
+      [
+        {
+          "borderColor": "rgba(255, 255, 255, 0.0001)",
+        },
+        false,
+        false,
+        false,
+        false,
+      ],
+    ]
+  }
+  testID="ToggleButton"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "borderRadius": 100,
+          "flexDirection": "row",
+          "gap": 10.5,
+          "paddingHorizontal": 21,
+          "paddingVertical": 0,
+        },
+        {
+          "gap": 7,
+          "minHeight": 35,
+          "paddingHorizontal": 14,
+        },
+        {
+          "aspectRatio": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 0,
+          "paddingVertical": 0,
+        },
+        [
+          {
+            "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+          },
+          false,
+          false,
+          false,
+          false,
+        ],
+      ]
+    }
+    testID="ToggleButton.container"
+  />
+</Pressable>
+`;

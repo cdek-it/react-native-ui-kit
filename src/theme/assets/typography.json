@@ -1,0 +1,44 @@
+{
+  "Color": {
+    "Common": {
+      "text-primary": "#188700",
+      "text-color-primary": "#ffffff",
+      "text-color": "rgba(0, 0, 0, 0.8000)",
+      "text-color-secondary": "rgba(0, 0, 0, 0.6000)",
+      "text-white": "#ffffff"
+    },
+    "Surface": {
+      "text-surface-0": "#2f2f2f",
+      "text-surface-50": "#fbfbfb",
+      "text-surface-100": "#ebebea",
+      "text-surface-200": "#dbdada",
+      "text-surface-300": "#cbcaca",
+      "text-surface-400": "#bbbab9",
+      "text-surface-500": "#abaaa9",
+      "text-surface-600": "#919190",
+      "text-surface-700": "#787776",
+      "text-surface-800": "#5e5e5d",
+      "text-surface-900": "#444444"
+    },
+    "Service": {
+      "text-help": "#ab77df",
+      "text-info": "#49a2ef",
+      "text-success": "#68c170",
+      "text-warning": "#ffb330",
+      "text-danger": "#e26e63"
+    }
+  },
+  "Size": {
+    "text-xs": 10.5,
+    "text-base": 14,
+    "text-lg": 15.75,
+    "text-xl": 17.5,
+    "text-2xl": 21,
+    "text-3xl": 26.25,
+    "text-4xl": 31.5,
+    "text-5xl": 42,
+    "text-6xl": 52.5,
+    "text-7xl": 63,
+    "text-8xl": 84
+  }
+}

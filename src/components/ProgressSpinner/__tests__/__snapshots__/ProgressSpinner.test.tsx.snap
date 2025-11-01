@@ -1,0 +1,1366 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressSpinner {"fill": "primary", "size": "lg"} 1`] = `
+<RNSVGSvgView
+  bbHeight={42}
+  bbWidth={42}
+  collapsable={false}
+  focusable={false}
+  jestAnimatedStyle={
+    {
+      "value": {
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+      },
+    }
+  }
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      {
+        "height": 42,
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+        "width": 42,
+      },
+      {
+        "flex": 0,
+        "height": 42,
+        "width": 42,
+      },
+    ]
+  }
+  testID="ProgressSpinner"
+  transform={
+    [
+      {
+        "rotate": "0deg",
+      },
+    ]
+  }
+>
+  <RNSVGGroup
+    fill={
+      {
+        "payload": 4278190080,
+        "type": 0,
+      }
+    }
+  >
+    <RNSVGCircle
+      cx={21}
+      cy={21}
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeDasharray",
+          "strokeDashoffset",
+          "strokeLinecap",
+        ]
+      }
+      r={20}
+      stroke={
+        {
+          "payload": 4279797504,
+          "type": 0,
+        }
+      }
+      strokeDasharray={
+        [
+          1,
+          125.66370614359172,
+        ]
+      }
+      strokeDashoffset={null}
+      strokeLinecap={1}
+      strokeWidth={2}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`ProgressSpinner {"fill": "primary", "size": "md"} 1`] = `
+<RNSVGSvgView
+  bbHeight={28}
+  bbWidth={28}
+  collapsable={false}
+  focusable={false}
+  jestAnimatedStyle={
+    {
+      "value": {
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+      },
+    }
+  }
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      {
+        "height": 28,
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+        "width": 28,
+      },
+      {
+        "flex": 0,
+        "height": 28,
+        "width": 28,
+      },
+    ]
+  }
+  testID="ProgressSpinner"
+  transform={
+    [
+      {
+        "rotate": "0deg",
+      },
+    ]
+  }
+>
+  <RNSVGGroup
+    fill={
+      {
+        "payload": 4278190080,
+        "type": 0,
+      }
+    }
+  >
+    <RNSVGCircle
+      cx={14}
+      cy={14}
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeDasharray",
+          "strokeDashoffset",
+          "strokeLinecap",
+        ]
+      }
+      r={13}
+      stroke={
+        {
+          "payload": 4279797504,
+          "type": 0,
+        }
+      }
+      strokeDasharray={
+        [
+          1,
+          81.68140899333463,
+        ]
+      }
+      strokeDashoffset={null}
+      strokeLinecap={1}
+      strokeWidth={2}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`ProgressSpinner {"fill": "primary", "size": "sm"} 1`] = `
+<RNSVGSvgView
+  bbHeight={14}
+  bbWidth={14}
+  collapsable={false}
+  focusable={false}
+  jestAnimatedStyle={
+    {
+      "value": {
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+      },
+    }
+  }
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      {
+        "height": 14,
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+        "width": 14,
+      },
+      {
+        "flex": 0,
+        "height": 14,
+        "width": 14,
+      },
+    ]
+  }
+  testID="ProgressSpinner"
+  transform={
+    [
+      {
+        "rotate": "0deg",
+      },
+    ]
+  }
+>
+  <RNSVGGroup
+    fill={
+      {
+        "payload": 4278190080,
+        "type": 0,
+      }
+    }
+  >
+    <RNSVGCircle
+      cx={7}
+      cy={7}
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeDasharray",
+          "strokeDashoffset",
+          "strokeLinecap",
+        ]
+      }
+      r={6}
+      stroke={
+        {
+          "payload": 4279797504,
+          "type": 0,
+        }
+      }
+      strokeDasharray={
+        [
+          1,
+          37.69911184307752,
+        ]
+      }
+      strokeDashoffset={null}
+      strokeLinecap={1}
+      strokeWidth={2}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`ProgressSpinner {"fill": "primary", "size": "xl"} 1`] = `
+<RNSVGSvgView
+  bbHeight={56}
+  bbWidth={56}
+  collapsable={false}
+  focusable={false}
+  jestAnimatedStyle={
+    {
+      "value": {
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+      },
+    }
+  }
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      {
+        "height": 56,
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+        "width": 56,
+      },
+      {
+        "flex": 0,
+        "height": 56,
+        "width": 56,
+      },
+    ]
+  }
+  testID="ProgressSpinner"
+  transform={
+    [
+      {
+        "rotate": "0deg",
+      },
+    ]
+  }
+>
+  <RNSVGGroup
+    fill={
+      {
+        "payload": 4278190080,
+        "type": 0,
+      }
+    }
+  >
+    <RNSVGCircle
+      cx={28}
+      cy={28}
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeDasharray",
+          "strokeDashoffset",
+          "strokeLinecap",
+        ]
+      }
+      r={27}
+      stroke={
+        {
+          "payload": 4279797504,
+          "type": 0,
+        }
+      }
+      strokeDasharray={
+        [
+          1,
+          169.64600329384882,
+        ]
+      }
+      strokeDashoffset={null}
+      strokeLinecap={1}
+      strokeWidth={2}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`ProgressSpinner {"fill": "primary", "size": undefined} 1`] = `
+<RNSVGSvgView
+  bbHeight={28}
+  bbWidth={28}
+  collapsable={false}
+  focusable={false}
+  jestAnimatedStyle={
+    {
+      "value": {
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+      },
+    }
+  }
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      {
+        "height": 28,
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+        "width": 28,
+      },
+      {
+        "flex": 0,
+        "height": 28,
+        "width": 28,
+      },
+    ]
+  }
+  testID="ProgressSpinner"
+  transform={
+    [
+      {
+        "rotate": "0deg",
+      },
+    ]
+  }
+>
+  <RNSVGGroup
+    fill={
+      {
+        "payload": 4278190080,
+        "type": 0,
+      }
+    }
+  >
+    <RNSVGCircle
+      cx={14}
+      cy={14}
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeDasharray",
+          "strokeDashoffset",
+          "strokeLinecap",
+        ]
+      }
+      r={13}
+      stroke={
+        {
+          "payload": 4279797504,
+          "type": 0,
+        }
+      }
+      strokeDasharray={
+        [
+          1,
+          81.68140899333463,
+        ]
+      }
+      strokeDashoffset={null}
+      strokeLinecap={1}
+      strokeWidth={2}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`ProgressSpinner {"fill": "white", "size": "lg"} 1`] = `
+<RNSVGSvgView
+  bbHeight={42}
+  bbWidth={42}
+  collapsable={false}
+  focusable={false}
+  jestAnimatedStyle={
+    {
+      "value": {
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+      },
+    }
+  }
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      {
+        "height": 42,
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+        "width": 42,
+      },
+      {
+        "flex": 0,
+        "height": 42,
+        "width": 42,
+      },
+    ]
+  }
+  testID="ProgressSpinner"
+  transform={
+    [
+      {
+        "rotate": "0deg",
+      },
+    ]
+  }
+>
+  <RNSVGGroup
+    fill={
+      {
+        "payload": 4278190080,
+        "type": 0,
+      }
+    }
+  >
+    <RNSVGCircle
+      cx={21}
+      cy={21}
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeDasharray",
+          "strokeDashoffset",
+          "strokeLinecap",
+        ]
+      }
+      r={20}
+      stroke={
+        {
+          "payload": 4294967295,
+          "type": 0,
+        }
+      }
+      strokeDasharray={
+        [
+          1,
+          125.66370614359172,
+        ]
+      }
+      strokeDashoffset={null}
+      strokeLinecap={1}
+      strokeWidth={2}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`ProgressSpinner {"fill": "white", "size": "md"} 1`] = `
+<RNSVGSvgView
+  bbHeight={28}
+  bbWidth={28}
+  collapsable={false}
+  focusable={false}
+  jestAnimatedStyle={
+    {
+      "value": {
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+      },
+    }
+  }
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      {
+        "height": 28,
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+        "width": 28,
+      },
+      {
+        "flex": 0,
+        "height": 28,
+        "width": 28,
+      },
+    ]
+  }
+  testID="ProgressSpinner"
+  transform={
+    [
+      {
+        "rotate": "0deg",
+      },
+    ]
+  }
+>
+  <RNSVGGroup
+    fill={
+      {
+        "payload": 4278190080,
+        "type": 0,
+      }
+    }
+  >
+    <RNSVGCircle
+      cx={14}
+      cy={14}
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeDasharray",
+          "strokeDashoffset",
+          "strokeLinecap",
+        ]
+      }
+      r={13}
+      stroke={
+        {
+          "payload": 4294967295,
+          "type": 0,
+        }
+      }
+      strokeDasharray={
+        [
+          1,
+          81.68140899333463,
+        ]
+      }
+      strokeDashoffset={null}
+      strokeLinecap={1}
+      strokeWidth={2}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`ProgressSpinner {"fill": "white", "size": "sm"} 1`] = `
+<RNSVGSvgView
+  bbHeight={14}
+  bbWidth={14}
+  collapsable={false}
+  focusable={false}
+  jestAnimatedStyle={
+    {
+      "value": {
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+      },
+    }
+  }
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      {
+        "height": 14,
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+        "width": 14,
+      },
+      {
+        "flex": 0,
+        "height": 14,
+        "width": 14,
+      },
+    ]
+  }
+  testID="ProgressSpinner"
+  transform={
+    [
+      {
+        "rotate": "0deg",
+      },
+    ]
+  }
+>
+  <RNSVGGroup
+    fill={
+      {
+        "payload": 4278190080,
+        "type": 0,
+      }
+    }
+  >
+    <RNSVGCircle
+      cx={7}
+      cy={7}
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeDasharray",
+          "strokeDashoffset",
+          "strokeLinecap",
+        ]
+      }
+      r={6}
+      stroke={
+        {
+          "payload": 4294967295,
+          "type": 0,
+        }
+      }
+      strokeDasharray={
+        [
+          1,
+          37.69911184307752,
+        ]
+      }
+      strokeDashoffset={null}
+      strokeLinecap={1}
+      strokeWidth={2}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`ProgressSpinner {"fill": "white", "size": "xl"} 1`] = `
+<RNSVGSvgView
+  bbHeight={56}
+  bbWidth={56}
+  collapsable={false}
+  focusable={false}
+  jestAnimatedStyle={
+    {
+      "value": {
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+      },
+    }
+  }
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      {
+        "height": 56,
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+        "width": 56,
+      },
+      {
+        "flex": 0,
+        "height": 56,
+        "width": 56,
+      },
+    ]
+  }
+  testID="ProgressSpinner"
+  transform={
+    [
+      {
+        "rotate": "0deg",
+      },
+    ]
+  }
+>
+  <RNSVGGroup
+    fill={
+      {
+        "payload": 4278190080,
+        "type": 0,
+      }
+    }
+  >
+    <RNSVGCircle
+      cx={28}
+      cy={28}
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeDasharray",
+          "strokeDashoffset",
+          "strokeLinecap",
+        ]
+      }
+      r={27}
+      stroke={
+        {
+          "payload": 4294967295,
+          "type": 0,
+        }
+      }
+      strokeDasharray={
+        [
+          1,
+          169.64600329384882,
+        ]
+      }
+      strokeDashoffset={null}
+      strokeLinecap={1}
+      strokeWidth={2}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`ProgressSpinner {"fill": "white", "size": undefined} 1`] = `
+<RNSVGSvgView
+  bbHeight={28}
+  bbWidth={28}
+  collapsable={false}
+  focusable={false}
+  jestAnimatedStyle={
+    {
+      "value": {
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+      },
+    }
+  }
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      {
+        "height": 28,
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+        "width": 28,
+      },
+      {
+        "flex": 0,
+        "height": 28,
+        "width": 28,
+      },
+    ]
+  }
+  testID="ProgressSpinner"
+  transform={
+    [
+      {
+        "rotate": "0deg",
+      },
+    ]
+  }
+>
+  <RNSVGGroup
+    fill={
+      {
+        "payload": 4278190080,
+        "type": 0,
+      }
+    }
+  >
+    <RNSVGCircle
+      cx={14}
+      cy={14}
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeDasharray",
+          "strokeDashoffset",
+          "strokeLinecap",
+        ]
+      }
+      r={13}
+      stroke={
+        {
+          "payload": 4294967295,
+          "type": 0,
+        }
+      }
+      strokeDasharray={
+        [
+          1,
+          81.68140899333463,
+        ]
+      }
+      strokeDashoffset={null}
+      strokeLinecap={1}
+      strokeWidth={2}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`ProgressSpinner {"fill": undefined, "size": "lg"} 1`] = `
+<RNSVGSvgView
+  bbHeight={42}
+  bbWidth={42}
+  collapsable={false}
+  focusable={false}
+  jestAnimatedStyle={
+    {
+      "value": {
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+      },
+    }
+  }
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      {
+        "height": 42,
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+        "width": 42,
+      },
+      {
+        "flex": 0,
+        "height": 42,
+        "width": 42,
+      },
+    ]
+  }
+  testID="ProgressSpinner"
+  transform={
+    [
+      {
+        "rotate": "0deg",
+      },
+    ]
+  }
+>
+  <RNSVGGroup
+    fill={
+      {
+        "payload": 4278190080,
+        "type": 0,
+      }
+    }
+  >
+    <RNSVGCircle
+      cx={21}
+      cy={21}
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeDasharray",
+          "strokeDashoffset",
+          "strokeLinecap",
+        ]
+      }
+      r={20}
+      stroke={
+        {
+          "payload": 4279797504,
+          "type": 0,
+        }
+      }
+      strokeDasharray={
+        [
+          1,
+          125.66370614359172,
+        ]
+      }
+      strokeDashoffset={null}
+      strokeLinecap={1}
+      strokeWidth={2}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`ProgressSpinner {"fill": undefined, "size": "md"} 1`] = `
+<RNSVGSvgView
+  bbHeight={28}
+  bbWidth={28}
+  collapsable={false}
+  focusable={false}
+  jestAnimatedStyle={
+    {
+      "value": {
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+      },
+    }
+  }
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      {
+        "height": 28,
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+        "width": 28,
+      },
+      {
+        "flex": 0,
+        "height": 28,
+        "width": 28,
+      },
+    ]
+  }
+  testID="ProgressSpinner"
+  transform={
+    [
+      {
+        "rotate": "0deg",
+      },
+    ]
+  }
+>
+  <RNSVGGroup
+    fill={
+      {
+        "payload": 4278190080,
+        "type": 0,
+      }
+    }
+  >
+    <RNSVGCircle
+      cx={14}
+      cy={14}
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeDasharray",
+          "strokeDashoffset",
+          "strokeLinecap",
+        ]
+      }
+      r={13}
+      stroke={
+        {
+          "payload": 4279797504,
+          "type": 0,
+        }
+      }
+      strokeDasharray={
+        [
+          1,
+          81.68140899333463,
+        ]
+      }
+      strokeDashoffset={null}
+      strokeLinecap={1}
+      strokeWidth={2}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`ProgressSpinner {"fill": undefined, "size": "sm"} 1`] = `
+<RNSVGSvgView
+  bbHeight={14}
+  bbWidth={14}
+  collapsable={false}
+  focusable={false}
+  jestAnimatedStyle={
+    {
+      "value": {
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+      },
+    }
+  }
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      {
+        "height": 14,
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+        "width": 14,
+      },
+      {
+        "flex": 0,
+        "height": 14,
+        "width": 14,
+      },
+    ]
+  }
+  testID="ProgressSpinner"
+  transform={
+    [
+      {
+        "rotate": "0deg",
+      },
+    ]
+  }
+>
+  <RNSVGGroup
+    fill={
+      {
+        "payload": 4278190080,
+        "type": 0,
+      }
+    }
+  >
+    <RNSVGCircle
+      cx={7}
+      cy={7}
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeDasharray",
+          "strokeDashoffset",
+          "strokeLinecap",
+        ]
+      }
+      r={6}
+      stroke={
+        {
+          "payload": 4279797504,
+          "type": 0,
+        }
+      }
+      strokeDasharray={
+        [
+          1,
+          37.69911184307752,
+        ]
+      }
+      strokeDashoffset={null}
+      strokeLinecap={1}
+      strokeWidth={2}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`ProgressSpinner {"fill": undefined, "size": "xl"} 1`] = `
+<RNSVGSvgView
+  bbHeight={56}
+  bbWidth={56}
+  collapsable={false}
+  focusable={false}
+  jestAnimatedStyle={
+    {
+      "value": {
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+      },
+    }
+  }
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      {
+        "height": 56,
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+        "width": 56,
+      },
+      {
+        "flex": 0,
+        "height": 56,
+        "width": 56,
+      },
+    ]
+  }
+  testID="ProgressSpinner"
+  transform={
+    [
+      {
+        "rotate": "0deg",
+      },
+    ]
+  }
+>
+  <RNSVGGroup
+    fill={
+      {
+        "payload": 4278190080,
+        "type": 0,
+      }
+    }
+  >
+    <RNSVGCircle
+      cx={28}
+      cy={28}
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeDasharray",
+          "strokeDashoffset",
+          "strokeLinecap",
+        ]
+      }
+      r={27}
+      stroke={
+        {
+          "payload": 4279797504,
+          "type": 0,
+        }
+      }
+      strokeDasharray={
+        [
+          1,
+          169.64600329384882,
+        ]
+      }
+      strokeDashoffset={null}
+      strokeLinecap={1}
+      strokeWidth={2}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`ProgressSpinner {"fill": undefined, "size": undefined} 1`] = `
+<RNSVGSvgView
+  bbHeight={28}
+  bbWidth={28}
+  collapsable={false}
+  focusable={false}
+  jestAnimatedStyle={
+    {
+      "value": {
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+      },
+    }
+  }
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      {
+        "height": 28,
+        "transform": [
+          {
+            "rotate": "0deg",
+          },
+        ],
+        "width": 28,
+      },
+      {
+        "flex": 0,
+        "height": 28,
+        "width": 28,
+      },
+    ]
+  }
+  testID="ProgressSpinner"
+  transform={
+    [
+      {
+        "rotate": "0deg",
+      },
+    ]
+  }
+>
+  <RNSVGGroup
+    fill={
+      {
+        "payload": 4278190080,
+        "type": 0,
+      }
+    }
+  >
+    <RNSVGCircle
+      cx={14}
+      cy={14}
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeDasharray",
+          "strokeDashoffset",
+          "strokeLinecap",
+        ]
+      }
+      r={13}
+      stroke={
+        {
+          "payload": 4279797504,
+          "type": 0,
+        }
+      }
+      strokeDasharray={
+        [
+          1,
+          81.68140899333463,
+        ]
+      }
+      strokeDashoffset={null}
+      strokeLinecap={1}
+      strokeWidth={2}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;

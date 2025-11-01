@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonSeverity component tests badge - basic 1`] = `
+<View>
+  <View
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#188700",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
+        "borderRadius": 7,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "gap": 7,
+        "height": 35,
+        "justifyContent": "center",
+        "maxHeight": 35,
+        "minHeight": 35,
+        "paddingHorizontal": 14,
+        "paddingVertical": 0,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#ffffff",
+          "fontSize": 14,
+          "fontWeight": 700,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
+        }
+      }
+      testID="Button_Text"
+    >
+      Button
+    </Text>
+  </View>
+  <View
+    onLayout={[Function]}
+    style={
+      [
+        {
+          "alignItems": "flex-start",
+        },
+        {
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+    testID="buttonBadge"
+  >
+    <View
+      style={
+        [
+          {
+            "borderRadius": 100,
+            "height": 21,
+            "justifyContent": "center",
+            "paddingHorizontal": 7,
+            "paddingVertical": 0,
+          },
+          {
+            "backgroundColor": "#e26e63",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#ffffff",
+            "fontSize": 10.5,
+            "fontWeight": 700,
+            "includeFontPadding": false,
+            "verticalAlign": "middle",
+          }
+        }
+      >
+        Badge
+      </Text>
+    </View>
+  </View>
+</View>
+`;

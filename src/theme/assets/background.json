@@ -1,0 +1,41 @@
+{
+  "Common": {
+    "bg-surface-ground": "#ffffff",
+    "bg-surface-overlay": "rgba(0, 0, 0, 0.2000)",
+    "bg-surface-section": "rgba(171, 170, 169, 0.1000)",
+    "bg-surface-hover": "#ebebea"
+  },
+  "Primary": {
+    "bg-primary": "#188700",
+    "bg-primary-50": "#f4fcf2",
+    "bg-primary-100": "#caf0c2",
+    "bg-primary-200": "#a0e491",
+    "bg-primary-300": "#76d961",
+    "bg-primary-400": "#4ccd30",
+    "bg-primary-500": "#22c100",
+    "bg-primary-600": "#1da400",
+    "bg-primary-700": "#188700",
+    "bg-primary-800": "#136a00",
+    "bg-primary-900": "#0e4d00"
+  },
+  "Surface": {
+    "bg-surface-0": "#2f2f2f",
+    "bg-surface-50": "#fbfbfb",
+    "bg-surface-100": "#ebebea",
+    "bg-surface-200": "#dbdada",
+    "bg-surface-300": "#cbcaca",
+    "bg-surface-400": "#bbbab9",
+    "bg-surface-500": "#abaaa9",
+    "bg-surface-600": "#919190",
+    "bg-surface-700": "#787776",
+    "bg-surface-800": "#5e5e5d",
+    "bg-surface-900": "#444444"
+  },
+  "Service": {
+    "bg-info": "#49a2ef",
+    "bg-success": "#68c170",
+    "bg-warning": "#ffb330",
+    "bg-danger": "#e26e63",
+    "bg-help": "#ab77df"
+  }
+}

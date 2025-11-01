@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputText component tests snapshot 1`] = `
+<View
+  style={
+    {
+      "margin": 10,
+    }
+  }
+>
+  <InputTextBase
+    value="text"
+  />
+</View>
+`;

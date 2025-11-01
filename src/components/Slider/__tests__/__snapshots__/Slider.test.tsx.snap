@@ -1,0 +1,656 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slider snapshots default 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "borderRadius": 14,
+        "height": 3.5,
+        "justifyContent": "center",
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "left": 0,
+            "width": 8.75,
+          },
+        }
+      }
+      style={
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 14,
+          "height": 3.5,
+          "left": 0,
+          "position": "absolute",
+          "width": 8.75,
+        }
+      }
+    />
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
+      pointerEvents="auto"
+      style={
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+          ],
+          "width": 17.5,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Slider snapshots disabled = false, range = false 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "borderRadius": 14,
+        "height": 3.5,
+        "justifyContent": "center",
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "left": 0,
+            "width": 8.75,
+          },
+        }
+      }
+      style={
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 14,
+          "height": 3.5,
+          "left": 0,
+          "position": "absolute",
+          "width": 8.75,
+        }
+      }
+    />
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
+      pointerEvents="auto"
+      style={
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+          ],
+          "width": 17.5,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Slider snapshots disabled = false, range = true 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "borderRadius": 14,
+        "height": 3.5,
+        "justifyContent": "center",
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "left": 8.75,
+            "width": 0,
+          },
+        }
+      }
+      style={
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 14,
+          "height": 3.5,
+          "left": 8.75,
+          "position": "absolute",
+          "width": 0,
+        }
+      }
+    />
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
+      pointerEvents="auto"
+      style={
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+          ],
+          "width": 17.5,
+        }
+      }
+    />
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
+      pointerEvents="auto"
+      style={
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+          ],
+          "width": 17.5,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 80 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "borderRadius": 14,
+        "height": 3.5,
+        "justifyContent": "center",
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "left": 8.75,
+            "width": 0,
+          },
+        }
+      }
+      style={
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 14,
+          "height": 3.5,
+          "left": 8.75,
+          "position": "absolute",
+          "width": 0,
+        }
+      }
+    />
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
+      pointerEvents="auto"
+      style={
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+          ],
+          "width": 17.5,
+        }
+      }
+    />
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
+      pointerEvents="auto"
+      style={
+        {
+          "backgroundColor": "#188700",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+          ],
+          "width": 17.5,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Slider snapshots disabled = true, range = false 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "borderRadius": 14,
+        "height": 3.5,
+        "justifyContent": "center",
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "left": 0,
+            "width": 8.75,
+          },
+        }
+      }
+      style={
+        {
+          "backgroundColor": "grey",
+          "borderRadius": 14,
+          "height": 3.5,
+          "left": 0,
+          "position": "absolute",
+          "width": 8.75,
+        }
+      }
+    />
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
+      pointerEvents="none"
+      style={
+        {
+          "backgroundColor": "grey",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+          ],
+          "width": 17.5,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Slider snapshots disabled = true, range = true 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "borderRadius": 14,
+        "height": 3.5,
+        "justifyContent": "center",
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "left": 8.75,
+            "width": 0,
+          },
+        }
+      }
+      style={
+        {
+          "backgroundColor": "grey",
+          "borderRadius": 14,
+          "height": 3.5,
+          "left": 8.75,
+          "position": "absolute",
+          "width": 0,
+        }
+      }
+    />
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
+      pointerEvents="none"
+      style={
+        {
+          "backgroundColor": "grey",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+          ],
+          "width": 17.5,
+        }
+      }
+    />
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
+      pointerEvents="none"
+      style={
+        {
+          "backgroundColor": "grey",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+          ],
+          "width": 17.5,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 80 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "rgba(0, 0, 0, 0.1000)",
+        "borderRadius": 14,
+        "height": 3.5,
+        "justifyContent": "center",
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "left": 8.75,
+            "width": 0,
+          },
+        }
+      }
+      style={
+        {
+          "backgroundColor": "grey",
+          "borderRadius": 14,
+          "height": 3.5,
+          "left": 8.75,
+          "position": "absolute",
+          "width": 0,
+        }
+      }
+    />
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
+      pointerEvents="none"
+      style={
+        {
+          "backgroundColor": "grey",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+          ],
+          "width": 17.5,
+        }
+      }
+    />
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
+      pointerEvents="none"
+      style={
+        {
+          "backgroundColor": "grey",
+          "borderRadius": 8.75,
+          "height": 17.5,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+          ],
+          "width": 17.5,
+        }
+      }
+    />
+  </View>
+</View>
+`;

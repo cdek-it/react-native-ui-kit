@@ -1,0 +1,114 @@
+{
+  "Neutrals": {
+    "White": {
+      "white-100": "#ffffff",
+      "white-90": "rgba(255, 255, 255, 0.9000)",
+      "white-80": "rgba(255, 255, 255, 0.8000)",
+      "white-70": "rgba(255, 255, 255, 0.7000)",
+      "white-60": "rgba(255, 255, 255, 0.6000)",
+      "white-50": "rgba(255, 255, 255, 0.5000)",
+      "white-40": "rgba(255, 255, 255, 0.4000)",
+      "white-30": "rgba(255, 255, 255, 0.3000)",
+      "white-20": "rgba(255, 255, 255, 0.2000)",
+      "white-10": "rgba(255, 255, 255, 0.1000)"
+    },
+    "Black": {
+      "black-100": "#000000",
+      "black-90": "rgba(0, 0, 0, 0.9000)",
+      "black-80": "rgba(0, 0, 0, 0.8000)",
+      "black-70": "rgba(0, 0, 0, 0.7000)",
+      "black-60": "rgba(0, 0, 0, 0.6000)",
+      "black-50": "rgba(0, 0, 0, 0.5000)",
+      "black-40": "rgba(0, 0, 0, 0.4000)",
+      "black-30": "rgba(0, 0, 0, 0.3000)",
+      "black-20": "rgba(0, 0, 0, 0.2000)",
+      "black-10": "rgba(0, 0, 0, 0.1000)"
+    }
+  },
+  "Service": {
+    "Danger": {
+      "danger-0": "#312a2a",
+      "danger-900": "#581e19",
+      "danger-800": "#782a23",
+      "danger-700": "#9a352c",
+      "danger-600": "#ba4136",
+      "danger-500": "#db4c3f",
+      "danger-400": "#e26e63",
+      "danger-300": "#e99088",
+      "danger-200": "#efb2ac",
+      "danger-100": "#f6d4d1",
+      "danger-50": "#fdf6f5",
+      "danger-alpha": "rgba(219, 76, 63, 0.1000)"
+    },
+    "Warning": {
+      "warning-0": "#332e27",
+      "warning-900": "#664000",
+      "warning-800": "#8c5900",
+      "warning-700": "#b27100",
+      "warning-600": "#d98900",
+      "warning-500": "#ffa100",
+      "warning-400": "#ffb330",
+      "warning-300": "#ffc561",
+      "warning-200": "#ffd791",
+      "warning-100": "#ffe8c2",
+      "warning-50": "#fffaf2",
+      "warning-alpha": "rgba(255, 161, 0, 0.1000)"
+    },
+    "Success": {
+      "success-0": "#2a2f2b",
+      "success-900": "#1c471f",
+      "success-800": "#1c471f",
+      "success-700": "#307d37",
+      "success-600": "#3b9742",
+      "success-500": "#45b24e",
+      "success-400": "#68c170",
+      "success-300": "#8ccf91",
+      "success-200": "#afdeb3",
+      "success-100": "#d2edd5",
+      "success-50": "#f6fbf6",
+      "success-alpha": "rgba(69, 178, 78, 0.1000)"
+    },
+    "Info": {
+      "info-0": "#282d32",
+      "info-900": "#0c385e",
+      "info-800": "#114d81",
+      "info-700": "#1662a5",
+      "info-600": "#1a77c8",
+      "info-500": "#1f8ceb",
+      "info-400": "#49a2ef",
+      "info-300": "#74b8f3",
+      "info-200": "#9ecdf6",
+      "info-100": "#c9e3fa",
+      "info-50": "#f4f9fe",
+      "info-alpha": "rgba(31, 140, 235, 0.1000)"
+    },
+    "Help": {
+      "help-0": "#2e2b31",
+      "help-900": "#3c2356",
+      "help-800": "#533076",
+      "help-700": "#6a3d97",
+      "help-600": "#804ab7",
+      "help-500": "#9757d7",
+      "help-400": "#ab77df",
+      "help-300": "#bf97e6",
+      "help-200": "#d2b7ee",
+      "help-100": "#e6d7f5",
+      "help-50": "#faf6fd",
+      "help-alpha": "rgba(151, 87, 215, 0.1000)"
+    }
+  },
+  "Surface": {
+    "gray-0": "#2f2f2f",
+    "gray-900": "#444444",
+    "gray-800": "#5e5e5d",
+    "gray-700": "#787776",
+    "gray-600": "#919190",
+    "gray-500": "#abaaa9",
+    "gray-400": "#bbbab9",
+    "gray-300": "#cbcaca",
+    "gray-200": "#dbdada",
+    "gray-100": "#ebebea",
+    "gray-50": "#fbfbfb",
+    "gray-alpha": "rgba(171, 170, 169, 0.1000)"
+  }
+}

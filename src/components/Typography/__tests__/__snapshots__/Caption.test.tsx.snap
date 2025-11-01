@@ -1,0 +1,1091 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Caption component tests color = default, disabled = false 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      false,
+      undefined,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Caption component tests color = default, disabled = false 2`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+      "gap": 3.5,
+    }
+  }
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={14}
+    bbWidth={14}
+    fill="none"
+    focusable={false}
+    height={14}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="rgba(0, 0, 0, 0.8000)"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 14,
+          "width": 14,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "payload": 3422552064,
+          "type": 0,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 3422552064,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M12 9h.01"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 3422552064,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M11 12h1v4h1"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 3422552064,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <Text
+    style={
+      [
+        {
+          "fontSize": 12.25,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
+        },
+        {
+          "color": "rgba(0, 0, 0, 0.8000)",
+        },
+        false,
+        {
+          "flexShrink": 1,
+        },
+        undefined,
+      ]
+    }
+  >
+    Text
+  </Text>
+</View>
+`;
+
+exports[`Caption component tests color = default, disabled = true 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Caption component tests color = default, disabled = true 2`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+      "gap": 3.5,
+    }
+  }
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={14}
+    bbWidth={14}
+    fill="none"
+    focusable={false}
+    height={14}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="rgba(0, 0, 0, 0.8000)"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 14,
+          "width": 14,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "payload": 3422552064,
+          "type": 0,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 3422552064,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M12 9h.01"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 3422552064,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M11 12h1v4h1"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 3422552064,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <Text
+    style={
+      [
+        {
+          "fontSize": 12.25,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
+        },
+        {
+          "color": "rgba(0, 0, 0, 0.8000)",
+        },
+        {
+          "opacity": 0.6,
+        },
+        {
+          "flexShrink": 1,
+        },
+        undefined,
+      ]
+    }
+  >
+    Text
+  </Text>
+</View>
+`;
+
+exports[`Caption component tests color = primary, disabled = false 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
+      },
+      {
+        "color": "#188700",
+      },
+      false,
+      undefined,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Caption component tests color = primary, disabled = false 2`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+      "gap": 3.5,
+    }
+  }
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={14}
+    bbWidth={14}
+    fill="none"
+    focusable={false}
+    height={14}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="#188700"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 14,
+          "width": 14,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "payload": 4279797504,
+          "type": 0,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4279797504,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M12 9h.01"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4279797504,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M11 12h1v4h1"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4279797504,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <Text
+    style={
+      [
+        {
+          "fontSize": 12.25,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
+        },
+        {
+          "color": "#188700",
+        },
+        false,
+        {
+          "flexShrink": 1,
+        },
+        undefined,
+      ]
+    }
+  >
+    Text
+  </Text>
+</View>
+`;
+
+exports[`Caption component tests color = primary, disabled = true 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
+      },
+      {
+        "color": "#188700",
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Caption component tests color = primary, disabled = true 2`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+      "gap": 3.5,
+    }
+  }
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={14}
+    bbWidth={14}
+    fill="none"
+    focusable={false}
+    height={14}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="#188700"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 14,
+          "width": 14,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "payload": 4279797504,
+          "type": 0,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4279797504,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M12 9h.01"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4279797504,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M11 12h1v4h1"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 4279797504,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <Text
+    style={
+      [
+        {
+          "fontSize": 12.25,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
+        },
+        {
+          "color": "#188700",
+        },
+        {
+          "opacity": 0.6,
+        },
+        {
+          "flexShrink": 1,
+        },
+        undefined,
+      ]
+    }
+  >
+    Text
+  </Text>
+</View>
+`;
+
+exports[`Caption component tests color = secondary, disabled = false 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      false,
+      undefined,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Caption component tests color = secondary, disabled = false 2`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+      "gap": 3.5,
+    }
+  }
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={14}
+    bbWidth={14}
+    fill="none"
+    focusable={false}
+    height={14}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="rgba(0, 0, 0, 0.6000)"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 14,
+          "width": 14,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "payload": 2566914048,
+          "type": 0,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M12 9h.01"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M11 12h1v4h1"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <Text
+    style={
+      [
+        {
+          "fontSize": 12.25,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
+        },
+        {
+          "color": "rgba(0, 0, 0, 0.6000)",
+        },
+        false,
+        {
+          "flexShrink": 1,
+        },
+        undefined,
+      ]
+    }
+  >
+    Text
+  </Text>
+</View>
+`;
+
+exports[`Caption component tests color = secondary, disabled = true 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6000)",
+      },
+      {
+        "opacity": 0.6,
+      },
+      undefined,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
+
+exports[`Caption component tests color = secondary, disabled = true 2`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+      "gap": 3.5,
+    }
+  }
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={14}
+    bbWidth={14}
+    fill="none"
+    focusable={false}
+    height={14}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="rgba(0, 0, 0, 0.6000)"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 14,
+          "width": 14,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "payload": 2566914048,
+          "type": 0,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M12 9h.01"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+      <RNSVGPath
+        d="M11 12h1v4h1"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "payload": 2566914048,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <Text
+    style={
+      [
+        {
+          "fontSize": 12.25,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
+        },
+        {
+          "color": "rgba(0, 0, 0, 0.6000)",
+        },
+        {
+          "opacity": 0.6,
+        },
+        {
+          "flexShrink": 1,
+        },
+        undefined,
+      ]
+    }
+  >
+    Text
+  </Text>
+</View>
+`;
+
+exports[`Caption component tests default props 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 12.25,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.8000)",
+      },
+      undefined,
+      undefined,
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;

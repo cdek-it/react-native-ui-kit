@@ -1,0 +1,1030 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox snapshots checked = false, indeterminate = false, disabled = false, state = danger 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  hitSlop={10}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "borderRadius": 3.5,
+        "borderWidth": 1,
+        "height": 21,
+        "justifyContent": "center",
+        "marginLeft": 3.5,
+        "marginTop": 3.5,
+        "width": 21,
+      },
+      {
+        "backgroundColor": "#ffffff",
+        "borderColor": "#e26e63",
+        "outlineColor": "#f6d4d1",
+        "outlineStyle": "solid",
+        "outlineWidth": 3.5,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="CheckboxButton_Pressable"
+/>
+`;
+
+exports[`Checkbox snapshots checked = false, indeterminate = false, disabled = false, state = default 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  hitSlop={10}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "borderRadius": 3.5,
+        "borderWidth": 1,
+        "height": 21,
+        "justifyContent": "center",
+        "marginLeft": 3.5,
+        "marginTop": 3.5,
+        "width": 21,
+      },
+      {
+        "backgroundColor": "#ffffff",
+        "borderColor": "#dbdada",
+      },
+      false,
+      false,
+    ]
+  }
+  testID="CheckboxButton_Pressable"
+/>
+`;
+
+exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = false, state = danger 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  hitSlop={10}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "borderRadius": 3.5,
+        "borderWidth": 1,
+        "height": 21,
+        "justifyContent": "center",
+        "marginLeft": 3.5,
+        "marginTop": 3.5,
+        "width": 21,
+      },
+      {
+        "backgroundColor": "#188700",
+        "borderColor": "#e26e63",
+        "outlineColor": "#f6d4d1",
+        "outlineStyle": "solid",
+        "outlineWidth": 3.5,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="CheckboxButton_Pressable"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={14}
+    bbWidth={14}
+    fill="none"
+    focusable={false}
+    height={14}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "color": "#ffffff",
+          "height": 14,
+          "width": 14,
+        },
+        {
+          "flex": 0,
+          "height": 14,
+          "width": 14,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      color="#ffffff"
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "type": 2,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        color="#ffffff"
+        d="M5 12l5 5l10 -10"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = false, state = default 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  hitSlop={10}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "borderRadius": 3.5,
+        "borderWidth": 1,
+        "height": 21,
+        "justifyContent": "center",
+        "marginLeft": 3.5,
+        "marginTop": 3.5,
+        "width": 21,
+      },
+      {
+        "backgroundColor": "#188700",
+        "borderColor": "#188700",
+      },
+      false,
+      false,
+    ]
+  }
+  testID="CheckboxButton_Pressable"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={14}
+    bbWidth={14}
+    fill="none"
+    focusable={false}
+    height={14}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "color": "#ffffff",
+          "height": 14,
+          "width": 14,
+        },
+        {
+          "flex": 0,
+          "height": 14,
+          "width": 14,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      color="#ffffff"
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "type": 2,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        color="#ffffff"
+        d="M5 12l5 5l10 -10"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = false, state = danger 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  hitSlop={10}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "borderRadius": 3.5,
+        "borderWidth": 1,
+        "height": 21,
+        "justifyContent": "center",
+        "marginLeft": 3.5,
+        "marginTop": 3.5,
+        "width": 21,
+      },
+      {
+        "backgroundColor": "#188700",
+        "borderColor": "#e26e63",
+        "outlineColor": "#f6d4d1",
+        "outlineStyle": "solid",
+        "outlineWidth": 3.5,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="CheckboxButton_Pressable"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={14}
+    bbWidth={14}
+    fill="none"
+    focusable={false}
+    height={14}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "color": "#ffffff",
+          "height": 14,
+          "width": 14,
+        },
+        {
+          "flex": 0,
+          "height": 14,
+          "width": 14,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      color="#ffffff"
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "type": 2,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        color="#ffffff"
+        d="M5 12l14 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = false, state = default 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  hitSlop={10}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "borderRadius": 3.5,
+        "borderWidth": 1,
+        "height": 21,
+        "justifyContent": "center",
+        "marginLeft": 3.5,
+        "marginTop": 3.5,
+        "width": 21,
+      },
+      {
+        "backgroundColor": "#188700",
+        "borderColor": "#188700",
+      },
+      false,
+      false,
+    ]
+  }
+  testID="CheckboxButton_Pressable"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={14}
+    bbWidth={14}
+    fill="none"
+    focusable={false}
+    height={14}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "color": "#ffffff",
+          "height": 14,
+          "width": 14,
+        },
+        {
+          "flex": 0,
+          "height": 14,
+          "width": 14,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      color="#ffffff"
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "type": 2,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        color="#ffffff"
+        d="M5 12l14 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = true, state = danger 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  hitSlop={10}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "borderRadius": 3.5,
+        "borderWidth": 1,
+        "height": 21,
+        "justifyContent": "center",
+        "marginLeft": 3.5,
+        "marginTop": 3.5,
+        "width": 21,
+      },
+      {
+        "backgroundColor": "#188700",
+        "borderColor": "#e26e63",
+        "outlineColor": "#f6d4d1",
+        "outlineStyle": "solid",
+        "outlineWidth": 3.5,
+      },
+      {
+        "backgroundColor": "grey",
+        "borderColor": "grey",
+      },
+      false,
+    ]
+  }
+  testID="CheckboxButton_Pressable"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={14}
+    bbWidth={14}
+    fill="none"
+    focusable={false}
+    height={14}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "color": "#ffffff",
+          "height": 14,
+          "width": 14,
+        },
+        {
+          "flex": 0,
+          "height": 14,
+          "width": 14,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      color="#ffffff"
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "type": 2,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        color="#ffffff"
+        d="M5 12l14 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = true, state = default 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  hitSlop={10}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "borderRadius": 3.5,
+        "borderWidth": 1,
+        "height": 21,
+        "justifyContent": "center",
+        "marginLeft": 3.5,
+        "marginTop": 3.5,
+        "width": 21,
+      },
+      {
+        "backgroundColor": "#188700",
+        "borderColor": "#188700",
+      },
+      {
+        "backgroundColor": "grey",
+        "borderColor": "grey",
+      },
+      false,
+    ]
+  }
+  testID="CheckboxButton_Pressable"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={14}
+    bbWidth={14}
+    fill="none"
+    focusable={false}
+    height={14}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "color": "#ffffff",
+          "height": 14,
+          "width": 14,
+        },
+        {
+          "flex": 0,
+          "height": 14,
+          "width": 14,
+        },
+      ]
+    }
+    vbHeight={24}
+    vbWidth={24}
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      color="#ffffff"
+      fill={null}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeLinejoin",
+        ]
+      }
+      stroke={
+        {
+          "type": 2,
+        }
+      }
+      strokeLinecap={1}
+      strokeLinejoin={1}
+      strokeWidth={2}
+    >
+      <RNSVGPath
+        color="#ffffff"
+        d="M5 12l14 0"
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          {
+            "type": 2,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth={2}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`Checkbox snapshots default 1`] = `
+<View
+  accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  hitSlop={10}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "borderRadius": 3.5,
+        "borderWidth": 1,
+        "height": 21,
+        "justifyContent": "center",
+        "marginLeft": 3.5,
+        "marginTop": 3.5,
+        "width": 21,
+      },
+      {
+        "backgroundColor": "#ffffff",
+        "borderColor": "#dbdada",
+      },
+      false,
+      false,
+    ]
+  }
+  testID="CheckboxButton_Pressable"
+/>
+`;

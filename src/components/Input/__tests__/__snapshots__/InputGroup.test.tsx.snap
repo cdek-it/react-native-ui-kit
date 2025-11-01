@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputTextBase component functionality tests left & right 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+>
+  <InputGroupAddon
+    content="left text"
+    onPress={[Function]}
+    position="left"
+  />
+  <View
+    style={
+      {
+        "flexGrow": 1,
+        "zIndex": 10,
+      }
+    }
+  >
+    <InputTextBase
+      containerStyle={
+        {
+          "borderBottomLeftRadius": 0,
+          "borderBottomRightRadius": 0,
+          "borderTopLeftRadius": 0,
+          "borderTopRightRadius": 0,
+          "flexGrow": 1,
+        }
+      }
+      inputRef={
+        {
+          "current": null,
+        }
+      }
+    />
+  </View>
+  <InputGroupAddon
+    content="right text"
+    onPress={[Function]}
+    position="right"
+  />
+</View>
+`;
+
+exports[`InputTextBase component functionality tests left 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+>
+  <InputGroupAddon
+    content="left text"
+    onPress={[Function]}
+    position="left"
+  />
+  <View
+    style={
+      {
+        "flexGrow": 1,
+        "zIndex": 10,
+      }
+    }
+  >
+    <InputTextBase
+      containerStyle={
+        {
+          "borderBottomLeftRadius": 0,
+          "borderTopLeftRadius": 0,
+          "flexGrow": 1,
+        }
+      }
+      inputRef={
+        {
+          "current": null,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`InputTextBase component functionality tests no addons, style 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "row",
+      },
+      {
+        "margin": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexGrow": 1,
+        "zIndex": 10,
+      }
+    }
+  >
+    <InputTextBase
+      containerStyle={
+        {
+          "flexGrow": 1,
+        }
+      }
+      inputRef={
+        {
+          "current": null,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`InputTextBase component functionality tests right 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexGrow": 1,
+        "zIndex": 10,
+      }
+    }
+  >
+    <InputTextBase
+      containerStyle={
+        {
+          "borderBottomRightRadius": 0,
+          "borderTopRightRadius": 0,
+          "flexGrow": 1,
+        }
+      }
+      inputRef={
+        {
+          "current": null,
+        }
+      }
+    />
+  </View>
+  <InputGroupAddon
+    content="right text"
+    onPress={[Function]}
+    position="right"
+  />
+</View>
+`;
