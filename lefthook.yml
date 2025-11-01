@@ -1,0 +1,23 @@
+# Lefthook configuration for React Native Prime UI Kit
+# This configuration runs code quality checks before commits and validates commit messages
+
+pre-commit:
+  parallel: true
+  commands:
+    # Run ESLint on staged JavaScript/TypeScript files
+    lint:
+      glob: '*.{js,jsx,ts,tsx}'
+      run: npx eslint {staged_files}
+      stage_fixed: true
+
+    # Run Prettier on staged files
+    prettier:
+      glob: '*.{js,jsx,ts,tsx,json,md,yml,yaml}'
+      run: npx prettier --check {staged_files}
+      stage_fixed: true
+
+commit-msg:
+  commands:
+    # Validate commit message format using commitlint
+    commitlint:
+      run: npx commitlint --edit {1}
