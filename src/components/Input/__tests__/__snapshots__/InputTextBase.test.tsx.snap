@@ -23,6 +23,7 @@ exports[`InputTextBase component functionality tests should pass args to custom 
         "includeFontPadding": false,
         "overflow": "hidden",
         "paddingHorizontal": 10.5,
+        "paddingVertical": 0,
         "verticalAlign": "middle",
       },
       false,

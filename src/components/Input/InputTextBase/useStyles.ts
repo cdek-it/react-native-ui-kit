@@ -30,6 +30,7 @@ export const useStyles = makeStyles(
     input: {
       flex: 1,
       paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
+      paddingVertical: 0,
       fontSize: typography.Size['text-base'],
       borderRadius: border.Radius['rounded-xl'],
       color: theme.Form.InputText.inputTextColor,
