@@ -9,7 +9,7 @@ export const useStyles = makeStyles(
       borderRadius: border.Radius['rounded-xl'],
       borderColor: theme.Form.InputText.inputBorderColor,
       backgroundColor: theme.Form.InputText.inputBg,
-      justifyContent: 'center',
+      alignItems: 'center',
     },
     containerFocused: {
       outlineColor: theme.General.focusOutlineColor,
@@ -19,6 +19,7 @@ export const useStyles = makeStyles(
       minHeight: theme.Button.Common.buttonHeightXL,
       maxHeight: theme.Button.Common.buttonHeightXL,
       height: theme.Button.Common.buttonHeightXL,
+      alignItems: 'stretch',
     },
     danger: { borderColor: theme.Form.InputText.inputErrorBorderColor },
     dangerFocused: { outlineColor: theme.General.focusOutlineErrorColor },
@@ -27,19 +28,28 @@ export const useStyles = makeStyles(
       borderColor: theme.Form.InputText.inputBorderColor,
       backgroundColor: theme.Button.Disabled.disabledButtonBg,
     },
-    input: {
+    inputContainer: {
+      flex: 1,
+      marginHorizontal: theme.Form.InputText.inputPaddingLeftRight,
+      paddingLeft: 2, // отступ для курсора
+      justifyContent: 'center',
+    },
+    input: { padding: 0, position: 'absolute', left: 0, right: 0 },
+    floatLabelInput: {
       flex: 1,
       paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
-      paddingVertical: 0,
-      fontSize: typography.Size['text-base'],
+      paddingTop: 26,
+      paddingBottom: 12,
       borderRadius: border.Radius['rounded-xl'],
-      color: theme.Form.InputText.inputTextColor,
       overflow: 'hidden',
-      includeFontPadding: false,
-      verticalAlign: 'middle',
-      fontFamily: fonts.secondary,
     },
-    inputFloatLabel: { paddingTop: 26, paddingBottom: 12 },
+    inputFont: {
+      fontSize: typography.Size['text-base'],
+      color: theme.Form.InputText.inputTextColor,
+      includeFontPadding: false,
+      fontFamily: fonts.secondary,
+      verticalAlign: 'middle',
+    },
     placeholderTextColor: {
       color: theme.Form.InputText.inputPlaceholderTextColor,
     },
@@ -63,6 +73,7 @@ export const useStyles = makeStyles(
     label: {
       position: 'absolute',
       left: 7,
+      right: 7,
       top: 19,
       paddingVertical: 0,
       paddingLeft: spacing.Padding['p-1'],
@@ -79,5 +90,6 @@ export const useStyles = makeStyles(
       top: 7,
       fontFamily: fonts.primary,
     },
+    hidden: { opacity: 0 },
   })
 )

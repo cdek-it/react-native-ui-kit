@@ -3,6 +3,7 @@
 exports[`InputTextBase component functionality tests should pass args to custom render function correctly 1`] = `
 [
   {
+    "allowFontScaling": undefined,
     "editable": true,
     "inputRef": {
       "current": null,
@@ -10,24 +11,22 @@ exports[`InputTextBase component functionality tests should pass args to custom 
     "onBlur": [Function],
     "onChangeText": [Function],
     "onFocus": [Function],
-    "placeholder": undefined,
-    "placeholderTextColor": "#85888e",
+    "placeholder": "",
     "secureTextEntry": false,
     "style": [
       {
-        "borderRadius": 10.5,
         "color": "#181a1f",
-        "flex": 1,
         "fontFamily": "PT Sans",
         "fontSize": 14,
         "includeFontPadding": false,
-        "overflow": "hidden",
-        "paddingHorizontal": 10.5,
-        "paddingVertical": 0,
         "verticalAlign": "middle",
       },
-      false,
-      undefined,
+      {
+        "left": 0,
+        "padding": 0,
+        "position": "absolute",
+        "right": 0,
+      },
     ],
     "testID": "InputTextBase",
     "value": "",

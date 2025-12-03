@@ -17,10 +17,10 @@ import {
 import {
   TextInput,
   View,
+  Text,
   type TextInputFocusEventData,
   type NativeSyntheticEvent,
   TouchableOpacity,
-  type ViewStyle,
   Pressable,
 } from 'react-native'
 import Animated, {
@@ -38,7 +38,6 @@ import type { InputTextBaseProps, RenderTextInputArgs } from './types'
 import { useStyles } from './useStyles'
 
 interface PrivateInputTextBaseProps {
-  inputStyle?: ViewStyle
   loading?: boolean
 }
 
@@ -58,7 +57,6 @@ export const InputTextBase = memo<
     inputRef: propsInputRef,
     disabled,
     containerStyle,
-    inputStyle,
     loading,
     renderTextInput,
     clearButtonAccessibilityLabel,
@@ -177,13 +175,16 @@ export const InputTextBase = memo<
 
     const texInputProps = useMemo<RenderTextInputArgs>(
       () => ({
-        placeholderTextColor: styles.placeholderTextColor.color,
         ...otherProps,
-        placeholder: floatLabel ? '' : placeholder,
+        allowFontScaling: floatLabel ? false : otherProps.allowFontScaling,
+        placeholder: '',
         testID: makeTestId(),
         editable: !disabled,
         secureTextEntry,
-        style: [styles.input, floatLabel && styles.inputFloatLabel, inputStyle],
+        style: [
+          styles.inputFont,
+          floatLabel ? styles.floatLabelInput : styles.input,
+        ],
         inputRef,
         value,
         onBlur,
@@ -191,21 +192,29 @@ export const InputTextBase = memo<
         onFocus,
       }),
       [
-        styles.placeholderTextColor.color,
-        styles.input,
-        styles.inputFloatLabel,
         otherProps,
         floatLabel,
-        placeholder,
         makeTestId,
         disabled,
         secureTextEntry,
-        inputStyle,
+        styles.floatLabelInput,
+        styles.inputFont,
+        styles.input,
         value,
         onBlur,
         onChangeText,
         onFocus,
       ]
+    )
+
+    const input = useMemo(
+      () =>
+        renderTextInput ? (
+          renderTextInput(texInputProps)
+        ) : (
+          <TextInput {...texInputProps} ref={inputRef} />
+        ),
+      [renderTextInput, texInputProps]
     )
 
     return (
@@ -225,17 +234,36 @@ export const InputTextBase = memo<
         onPress={onContainerPress}
       >
         {floatLabel ? (
-          <Animated.Text
-            style={[styles.label, labelAnimatedStyle]}
-            testID={makeTestId(InputTextBaseTestId.floatingPlaceholder)}
-          >
-            {placeholder}
-          </Animated.Text>
-        ) : null}
-        {renderTextInput ? (
-          renderTextInput(texInputProps)
+          <>
+            <Animated.Text
+              allowFontScaling={false}
+              numberOfLines={1}
+              style={[styles.label, labelAnimatedStyle]}
+              testID={makeTestId(InputTextBaseTestId.floatingPlaceholder)}
+            >
+              {placeholder}
+            </Animated.Text>
+
+            {input}
+          </>
         ) : (
-          <TextInput {...texInputProps} ref={inputRef} />
+          <View style={styles.inputContainer}>
+            {input}
+
+            <Text
+              style={[
+                styles.inputFont,
+                styles.placeholderTextColor,
+                otherProps.placeholderTextColor && {
+                  color: otherProps.placeholderTextColor,
+                },
+                value && styles.hidden,
+              ]}
+              testID={makeTestId(InputTextBaseTestId.placeholder)}
+            >
+              {placeholder}
+            </Text>
+          </View>
         )}
 
         <View style={styles.rightContainer}>

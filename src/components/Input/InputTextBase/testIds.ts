@@ -7,5 +7,6 @@ export const InputTextBaseTestId = {
   secureInputButton: 'SecureInputButton',
   disabledIcon: 'DisabledIcon',
   floatingPlaceholder: 'FloatingPlaceholder',
+  placeholder: 'Placeholder',
   pressableContainer: 'PressableContainer',
 }
