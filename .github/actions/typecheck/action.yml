@@ -1,0 +1,11 @@
+name: Run Typecheck
+description: Run typecheck
+
+runs:
+  using: composite
+  steps:
+    - uses: ./.github/actions/setup-node
+
+    - name: Run Typecheck
+      shell: bash
+      run: yarn tsc --noEmit

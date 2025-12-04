@@ -1,0 +1,11 @@
+name: Run Tests
+description: Run tests
+
+runs:
+  using: composite
+  steps:
+    - uses: ./.github/actions/setup-node
+
+    - name: Run Tests
+      shell: bash
+      run: yarn test --ci

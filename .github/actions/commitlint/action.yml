@@ -1,0 +1,19 @@
+name: Commit Lint
+description: Validate current commit (last commit) or PR commits with commitlint
+
+runs:
+  using: composite
+  steps:
+    - uses: ./.github/actions/setup-node
+
+    - name: Validate current commit (last commit) with commitlint
+      shell: bash
+      if: github.event_name == 'push'
+      run: yarn commitlint --last --verbose
+
+    - name: Validate PR commits with commitlint
+      shell: bash
+      if: github.event_name == 'pull_request'
+      run:
+        yarn commitlint --from ${{ github.event.pull_request.base.sha }} --to
+        ${{ github.event.pull_request.head.sha }} --verbose

@@ -1,0 +1,11 @@
+name: Run Linters
+description: Run linter
+
+runs:
+  using: composite
+  steps:
+    - uses: ./.github/actions/setup-node
+
+    - name: Run Linters
+      shell: bash
+      run: yarn lint:check
