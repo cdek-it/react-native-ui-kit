@@ -4,9 +4,34 @@
 
 ## Installation
 
+**Yarn**
+
 ```shell
-yarn add --save-exact @cdek-it/react-native-ui-kit
-yarn add react react-native @tabler/icons-react-native react-native-svg react-native-reanimated
+yarn add \
+  react \
+  react-native \
+  @tabler/icons-react-native \
+  react-native-svg \
+  react-native-reanimated
+```
+
+```shell
+yarn add @cdek-it/react-native-ui-kit
+```
+
+**npm**
+
+```shell
+npm i \
+  react \
+  react-native \
+  @tabler/icons-react-native \
+  react-native-svg \
+  react-native-reanimated
+```
+
+```shell
+npm i @cdek-it/react-native-ui-kit
 ```
 
 ## Шрифты
@@ -137,15 +162,3 @@ UI kit использует следующие виды шрифтов.
 - @tabler/icons-react-native - начиная с 3 major версии(от 3.0.0)
 - react-native-svg - начиная с 15 major версии(от 15.0.0)
 - react-native-reanimated - начиная с 3 major версии(от 3.0.0)
-
-## Development
-
-`yarn install` - установка зависимостей `yarn start` - запуск Metro Bundler для
-Storybook `yarn ios` - запуск Storybook на iOS `yarn android` - запуск Storybook
-на Android
-
-Storybook проект создан с помощью Expo
-
-### Макеты
-
-[https://developer.cdek.ru/design-system](https://developer.cdek.ru/design-system)
