@@ -23,16 +23,12 @@ prepare-commit-msg:
           exit 0
         fi
 
-        if echo "$branch_name" | grep -Eq '^(main|master|develop)$'; then
+        if echo "$branch_name" | grep -Eq '^main$'; then
           echo "✅ Имя ветки корректно: $branch_name"
-        elif echo "$branch_name" | grep -Eq '^release/[0-9]+\.[0-9]+\.[0-9]+$'; then
+        elif echo "$branch_name" | grep -Eq '^(feature|chore|fix)/[^/]+$'; then
           echo "✅ Имя ветки корректно: $branch_name"
-        elif echo "$branch_name" | grep -Eq '^(feature|hotfix|fix)/[A-Z]+-[0-9]+'; then
-          echo "✅ Имя ветки корректно: $branch_name"
-        elif echo "$branch_name" | grep -Eq '^(feature|hotfix|fix)/[^/]+$'; then
-          echo "⚠️ Ветка $branch_name не содержит номера задачи. Если ветка имеет соответствующую задачу то следует указать её в названии ветки (например: feature/TASK-1-description)"
         else
-          echo "❌ Ошибка!\nНекорректное имя ветки: $branch_name\nВетка может иметь следующие названия:\n  - main\n  - master\n  - develop\n  - release/major.minor.patch (например: release/1.5.2)\n  - feature/название ветки\n  - fix/название ветки\n  - hotfix/название ветки"
+          echo "❌ Ошибка!\nНекорректное имя ветки: $branch_name\nВетка может иметь следующие названия:\n  - main\n  - feature/название ветки\n  - fix/название ветки\n  - chore/название ветки"
           exit 1
         fi
     commitizen:
@@ -65,16 +61,12 @@ pre-push:
           exit 0
         fi
 
-        if echo "$branch_name" | grep -Eq '^(main|master|develop)$'; then
+        if echo "$branch_name" | grep -Eq '^main$'; then
           echo "✅ Имя ветки корректно: $branch_name"
-        elif echo "$branch_name" | grep -Eq '^release/[0-9]+\.[0-9]+\.[0-9]+$'; then
+        elif echo "$branch_name" | grep -Eq '^(feature|chore|fix)/[^/]+$'; then
           echo "✅ Имя ветки корректно: $branch_name"
-        elif echo "$branch_name" | grep -Eq '^(feature|hotfix|fix)/[A-Z]+-[0-9]+'; then
-          echo "✅ Имя ветки корректно: $branch_name"
-        elif echo "$branch_name" | grep -Eq '^(feature|hotfix|fix)/[^/]+$'; then
-          echo "⚠️ Ветка $branch_name не содержит номера задачи. Если ветка имеет соответствующую задачу то следует указать её в названии ветки (например: feature/TASK-1-description)"
         else
-          echo "❌ Ошибка!\nНекорректное имя ветки: $branch_name\nВетка может иметь следующие названия:\n  - main\n  - master\n  - develop\n  - release/major.minor.patch (например: release/1.5.2)\n  - feature/название ветки\n  - fix/название ветки\n  - hotfix/название ветки"
+          echo "❌ Ошибка!\nНекорректное имя ветки: $branch_name\nВетка может иметь следующие названия:\n  - main\n  - feature/название ветки\n  - fix/название ветки\n  - chore/название ветки"
           exit 1
         fi
     eslint:

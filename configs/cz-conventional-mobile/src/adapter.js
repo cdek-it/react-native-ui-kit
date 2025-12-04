@@ -3,25 +3,6 @@ const map = require('lodash.map')
 const longest = require('longest')
 const wrap = require('word-wrap')
 const inquirer = require('inquirer')
-const childProcess = require('child_process')
-
-const taskRegex = /([A-Z]+-[0-9]+)/
-
-const getBranchName = () => {
-  try {
-    return childProcess
-      .execSync('git rev-parse --abbrev-ref HEAD', { stdio: 'pipe' })
-      .toString()
-      .trim()
-  } catch (e) {
-    return ''
-  }
-}
-
-const extractTaskNumber = (branchName) => {
-  const match = branchName.match(taskRegex)
-  return match ? match[1] : ''
-}
 
 const filter = function (array) {
   return array.filter(function (x) {
@@ -52,9 +33,6 @@ const filterSubject = function (subject) {
 
 module.exports = function (options) {
   inquirer.registerPrompt('search-list', require('inquirer-search-list'))
-
-  const branchName = getBranchName()
-  const defaultTaskNumber = extractTaskNumber(branchName)
 
   const types = options.types
   const length = longest(Object.keys(types)).length + 1
@@ -122,17 +100,6 @@ module.exports = function (options) {
           name: 'body',
           message: 'Описание изменений: (нажмите enter чтобы пропустить)\n',
         },
-        {
-          type: 'input',
-          name: 'ticketNumber',
-          default: defaultTaskNumber,
-          message: 'Номер задачи: (нажмите enter чтобы пропустить)',
-          validate(value) {
-            if (value !== '' && value.replace(taskRegex, '') !== '')
-              return 'Номер задачи должен иметь формат TASK-1, например MOBILE-1'
-            return true
-          },
-        },
       ]).then(function (answers) {
         const wrapOptions = {
           trim: true,
@@ -148,11 +115,7 @@ module.exports = function (options) {
 
         const body = answers.body ? wrap(answers.body, wrapOptions) : false
 
-        const ticket = answers.ticketNumber
-          ? `Задача: ${answers.ticketNumber.trim()}`
-          : false
-
-        commit(filter([head, body, ticket]).join('\n\n'))
+        commit(filter([head, body]).join('\n\n'))
       })
     },
   }
