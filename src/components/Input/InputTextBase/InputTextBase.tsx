@@ -248,8 +248,6 @@ export const InputTextBase = memo<
           </>
         ) : (
           <View style={styles.inputContainer}>
-            {input}
-
             <Text
               pointerEvents='none'
               style={[
@@ -265,6 +263,8 @@ export const InputTextBase = memo<
             >
               {placeholder}
             </Text>
+
+            {input}
           </View>
         )}
 
