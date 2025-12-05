@@ -251,8 +251,10 @@ export const InputTextBase = memo<
             {input}
 
             <Text
+              pointerEvents='none'
               style={[
                 styles.inputFont,
+                styles.placeholder,
                 styles.placeholderTextColor,
                 otherProps.placeholderTextColor && {
                   color: otherProps.placeholderTextColor,

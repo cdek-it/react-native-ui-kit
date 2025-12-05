@@ -9,7 +9,6 @@ export const useStyles = makeStyles(
       borderRadius: border.Radius['rounded-xl'],
       borderColor: theme.Form.InputText.inputBorderColor,
       backgroundColor: theme.Form.InputText.inputBg,
-      alignItems: 'center',
     },
     containerFocused: {
       outlineColor: theme.General.focusOutlineColor,
@@ -19,7 +18,6 @@ export const useStyles = makeStyles(
       minHeight: theme.Button.Common.buttonHeightXL,
       maxHeight: theme.Button.Common.buttonHeightXL,
       height: theme.Button.Common.buttonHeightXL,
-      alignItems: 'stretch',
     },
     danger: { borderColor: theme.Form.InputText.inputErrorBorderColor },
     dangerFocused: { outlineColor: theme.General.focusOutlineErrorColor },
@@ -30,11 +28,18 @@ export const useStyles = makeStyles(
     },
     inputContainer: {
       flex: 1,
-      marginHorizontal: theme.Form.InputText.inputPaddingLeftRight,
       paddingLeft: 2, // отступ для курсора
       justifyContent: 'center',
     },
-    input: { padding: 0, position: 'absolute', left: 0, right: 0 },
+    input: {
+      padding: 0,
+      paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
+      position: 'absolute',
+      left: 0,
+      right: 0,
+      top: 0,
+      bottom: 0,
+    },
     floatLabelInput: {
       flex: 1,
       paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
@@ -49,6 +54,9 @@ export const useStyles = makeStyles(
       includeFontPadding: false,
       fontFamily: fonts.secondary,
       verticalAlign: 'middle',
+    },
+    placeholder: {
+      paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
     },
     placeholderTextColor: {
       color: theme.Form.InputText.inputPlaceholderTextColor,
