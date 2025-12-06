@@ -156,7 +156,9 @@ export const InputTextBase = memo<
     useImperativeHandle(
       propsInputRef,
       () =>
-        (inputRef.current ? { ...inputRef.current, clear } : null) as TextInput,
+        (inputRef.current
+          ? Object.assign(inputRef.current, { clear })
+          : null) as TextInput,
       [inputRef, clear]
     )
 
