@@ -30,6 +30,7 @@ exports[`InputTextBase component functionality tests should pass args to custom 
         "right": 0,
         "top": 0,
       },
+      undefined,
     ],
     "testID": "InputTextBase",
     "value": "",

@@ -40,6 +40,7 @@ export const useStyles = makeStyles(
       top: 0,
       bottom: 0,
     },
+    inputWithRightContent: { paddingRight: 0 },
     floatLabelInput: {
       flex: 1,
       paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
@@ -63,11 +64,11 @@ export const useStyles = makeStyles(
     },
     rightContainer: {
       flexDirection: 'row',
-      alignItems: 'center',
-      paddingRight: theme.Form.InputText.inputPaddingLeftRight,
+      paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
       gap: theme.Form.InputText.inputPaddingLeftRight,
       overflow: 'hidden',
     },
+    rightButtonContainer: { justifyContent: 'center' },
     rightIcon: { color: theme.Form.InputText.inputIconColor },
     iconSize: {
       width: typography.Size['text-base'],

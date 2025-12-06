@@ -1,3 +1,5 @@
+/* eslint-disable max-lines */
+
 import {
   IconEye,
   IconEyeOff,
@@ -22,6 +24,7 @@ import {
   type NativeSyntheticEvent,
   TouchableOpacity,
   Pressable,
+  type Insets,
 } from 'react-native'
 import Animated, {
   interpolate,
@@ -63,6 +66,8 @@ export const InputTextBase = memo<
     floatLabel = false,
     placeholder,
     ...otherProps
+    // TODO: разделить float label и обычный инпут -> добавить во float label поддержку font scale
+    // eslint-disable-next-line complexity
   }) => {
     const styles = useStyles()
     const inputRef = useRef<TextInput>(null)
@@ -105,8 +110,8 @@ export const InputTextBase = memo<
     )
 
     const showClearButton = useMemo(
-      () => clearable && !!value.length,
-      [clearable, value.length]
+      () => clearable && !!value.length && !disabled,
+      [clearable, disabled, value.length]
     )
 
     const onContainerPress = useCallback(() => {
@@ -173,6 +178,20 @@ export const InputTextBase = memo<
       []
     )
 
+    const showSecureToggle = secureTextEntryProp === 'toggleable'
+    const hasRightContent =
+      loading || showClearButton || showSecureToggle || disabled
+
+    const rightButtonHitSlop = useMemo<Insets>(
+      () => ({
+        top: 0,
+        bottom: 0,
+        left: styles.rightContainer.gap / 2,
+        right: styles.rightContainer.gap / 2,
+      }),
+      [styles.rightContainer.gap]
+    )
+
     const texInputProps = useMemo<RenderTextInputArgs>(
       () => ({
         ...otherProps,
@@ -184,6 +203,7 @@ export const InputTextBase = memo<
         style: [
           styles.inputFont,
           floatLabel ? styles.floatLabelInput : styles.input,
+          hasRightContent && styles.inputWithRightContent,
         ],
         inputRef,
         value,
@@ -197,9 +217,11 @@ export const InputTextBase = memo<
         makeTestId,
         disabled,
         secureTextEntry,
-        styles.floatLabelInput,
         styles.inputFont,
+        styles.floatLabelInput,
         styles.input,
+        styles.inputWithRightContent,
+        hasRightContent,
         value,
         onBlur,
         onChangeText,
@@ -268,64 +290,70 @@ export const InputTextBase = memo<
           </View>
         )}
 
-        <View style={styles.rightContainer}>
-          {loading ? (
-            <Animated.View
-              style={loadingAnimatedStyle}
-              testID={makeTestId(InputTextBaseTestId.loading)}
-            >
-              <IconLoader2
-                color={styles.rightIcon.color}
-                height={iconSize.height}
-                width={iconSize.width}
-              />
-            </Animated.View>
-          ) : null}
-
-          {showClearButton && !disabled ? (
-            <TouchableOpacity
-              accessibilityLabel={clearButtonAccessibilityLabel}
-              testID={makeTestId(InputTextBaseTestId.clearButton)}
-              onPress={clear}
-            >
-              <IconX
-                color={styles.rightIcon.color}
-                height={iconSize.height}
-                width={iconSize.width}
-              />
-            </TouchableOpacity>
-          ) : null}
-
-          {secureTextEntryProp === 'toggleable' ? (
-            <TouchableOpacity
-              testID={makeTestId(InputTextBaseTestId.secureInputButton)}
-              onPress={toggleUserDefinedSecureTextEntry}
-            >
-              {userDefinedSecureTextEntry ? (
-                <IconEye
+        {hasRightContent ? (
+          <View style={styles.rightContainer}>
+            {loading ? (
+              <Animated.View
+                style={[styles.rightButtonContainer, loadingAnimatedStyle]}
+                testID={makeTestId(InputTextBaseTestId.loading)}
+              >
+                <IconLoader2
                   color={styles.rightIcon.color}
                   height={iconSize.height}
                   width={iconSize.width}
                 />
-              ) : (
-                <IconEyeOff
+              </Animated.View>
+            ) : null}
+
+            {showClearButton ? (
+              <TouchableOpacity
+                accessibilityLabel={clearButtonAccessibilityLabel}
+                hitSlop={rightButtonHitSlop}
+                style={styles.rightButtonContainer}
+                testID={makeTestId(InputTextBaseTestId.clearButton)}
+                onPress={clear}
+              >
+                <IconX
                   color={styles.rightIcon.color}
                   height={iconSize.height}
                   width={iconSize.width}
                 />
-              )}
-            </TouchableOpacity>
-          ) : null}
+              </TouchableOpacity>
+            ) : null}
 
-          {disabled ? (
-            <IconLock
-              color={styles.rightIcon.color}
-              height={iconSize.height}
-              testID={makeTestId(InputTextBaseTestId.disabledIcon)}
-              width={iconSize.width}
-            />
-          ) : null}
-        </View>
+            {showSecureToggle ? (
+              <TouchableOpacity
+                hitSlop={rightButtonHitSlop}
+                style={styles.rightButtonContainer}
+                testID={makeTestId(InputTextBaseTestId.secureInputButton)}
+                onPress={toggleUserDefinedSecureTextEntry}
+              >
+                {userDefinedSecureTextEntry ? (
+                  <IconEye
+                    color={styles.rightIcon.color}
+                    height={iconSize.height}
+                    width={iconSize.width}
+                  />
+                ) : (
+                  <IconEyeOff
+                    color={styles.rightIcon.color}
+                    height={iconSize.height}
+                    width={iconSize.width}
+                  />
+                )}
+              </TouchableOpacity>
+            ) : null}
+
+            {disabled ? (
+              <IconLock
+                color={styles.rightIcon.color}
+                height={iconSize.height}
+                testID={makeTestId(InputTextBaseTestId.disabledIcon)}
+                width={iconSize.width}
+              />
+            ) : null}
+          </View>
+        ) : null}
       </Pressable>
     )
   }
