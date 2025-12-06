@@ -96,7 +96,6 @@ export const InputTextBase = memo<
     )
 
     const clear = useCallback(() => {
-      inputRef.current?.clear()
       onChangeText('')
     }, [onChangeText])
 
@@ -151,8 +150,9 @@ export const InputTextBase = memo<
 
     useImperativeHandle(
       propsInputRef,
-      () => (inputRef.current ? inputRef.current : null) as TextInput,
-      [inputRef]
+      () =>
+        (inputRef.current ? { ...inputRef.current, clear } : null) as TextInput,
+      [inputRef, clear]
     )
 
     const { makeTestId } = useMakeTestId(
