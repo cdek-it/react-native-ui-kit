@@ -24,8 +24,26 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
+  check-permissions:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.ADD_TO_PROJECT_PAT }}
+    steps:
+      - name: Check Main Branch
+        if: github.ref != 'refs/heads/main'
+        run: |
+          echo "❌ Этот workflow может быть запущен только на основной ветке (main)"
+          exit 1
+
+      - name: Verify Release Team
+        run: |
+          if ! gh api "orgs/cdek-it/teams/react-native-release/memberships/$GITHUB_ACTOR" --silent 2>/dev/null; then
+            echo "❌ Этот workflow может быть запущен только участниками команды release"
+            exit 1
+          fi
   install:
     runs-on: ubuntu-latest
+    needs: check-permissions
     steps:
       - uses: actions/checkout@v6
       - uses: ./.github/actions/setup-node
