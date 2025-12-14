@@ -58,6 +58,14 @@
 yarn install
 ```
 
+```shell
+bundle install
+```
+
+```shell
+yarn pod-install
+```
+
 ### Запуск проекта
 
 **Storybook:**

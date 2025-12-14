@@ -10,7 +10,8 @@
   "npm": { "publish": true, "skipChecks": true },
   "hooks": {
     "after:bump": "yarn build",
-    "before:git:release": "yarn expo prebuild --no-install && git restore package.json && git add ."
+    "before:git:release": "yarn expo prebuild --no-install && git restore package.json && git add .",
+    "before:npm:release": "jq '. + {types: .publishConfig.types, main: .publishConfig.main}' package.json > package.json.tmp && mv package.json.tmp package.json"
   },
   "plugins": {
     "@release-it/conventional-changelog": {

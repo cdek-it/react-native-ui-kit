@@ -15,11 +15,11 @@
     "ui-kit",
     "uikit"
   ],
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
-    "access": "public"
+    "access": "public",
+    "types": "./dist/index.d.ts",
+    "main": "./dist/index.js"
   },
   "files": [
     "dist"
@@ -38,7 +38,8 @@
     "prettier:check": "prettier . --check",
     "prettier:fix": "prettier . --write",
     "prettier:watch": "onchange . -- prettier --write --ignore-unknown \"{{changed}}\"",
-    "release": "release-it"
+    "release": "release-it",
+    "pod-install": "bundle exec pod install --project-directory=ios"
   },
   "devDependencies": {
     "@babel/core": "7.28.3",
@@ -144,13 +145,6 @@
     }
   },
   "expo": {
-    "autolinking": {
-      "ios": {
-        "searchPaths": [
-          "./node_modules"
-        ]
-      }
-    },
     "doctor": {
       "appConfigFieldsNotSyncedCheck": {
         "enabled": false
