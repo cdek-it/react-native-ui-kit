@@ -20,9 +20,10 @@ jobs:
     env:
       MM_USERS_JSON: "${{ secrets.MM_USERS }}"
       PR_AUTHOR: "${{ github.event.pull_request.user.login }}"
-      REQUESTED_REVIEWERS_JSON: "${{ toJson(github.event.pull_request.requested_reviewers) }}"
       GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
     steps:
+      - name: Timeout
+        run: sleep 1m
       - name: Get Available Reviewers
         run: |
           AVAILABLE_REVIEWERS_ENTRIES=$(
@@ -33,7 +34,7 @@ jobs:
           echo "AVAILABLE_REVIEWERS_ENTRIES=$AVAILABLE_REVIEWERS_ENTRIES" >> $GITHUB_ENV
       - name: Check Requested Reviewers
         run: |
-          REQUESTED_REVIEWERS_LOGIN_LIST=$(echo "$REQUESTED_REVIEWERS_JSON" | jq 'map(.login)')
+          REQUESTED_REVIEWERS_LOGIN_LIST=$(gh pr view ${{ github.event.pull_request.number }} --repo ${{ github.repository }} --json reviewRequests --jq '.reviewRequests | map(select(.login)) | map(.login)')
           SELECTED_REVIEWER_ENTRY=$(
             echo "$AVAILABLE_REVIEWERS_ENTRIES" | 
               jq -c --argjson requested "$REQUESTED_REVIEWERS_LOGIN_LIST" 'first(.[] | select(.key as $gh_login | $requested | index($gh_login)))'
