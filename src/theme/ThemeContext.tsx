@@ -6,6 +6,8 @@ import {
   useState,
 } from 'react'
 
+import { SkeletonContextProvider } from '../utils/SkeletonContext'
+
 import { ThemeVariant, type FontsConfig } from './types'
 
 interface ThemeContextType {
@@ -47,7 +49,7 @@ export const ThemeContextProvider = ({
 
   return (
     <ThemeContext.Provider value={contextValue}>
-      {children}
+      <SkeletonContextProvider>{children}</SkeletonContextProvider>
     </ThemeContext.Provider>
   )
 }

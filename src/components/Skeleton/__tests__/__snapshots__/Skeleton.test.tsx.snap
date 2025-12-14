@@ -2,6 +2,7 @@
 
 exports[`Skeleton 50% animation 1`] = `
 <View
+  onLayout={[Function]}
   style={
     [
       {
@@ -26,7 +27,11 @@ exports[`Skeleton 50% animation 1`] = `
     jestAnimatedStyle={
       {
         "value": {
-          "left": "-36.92863748549213%",
+          "transform": [
+            {
+              "translateX": 100,
+            },
+          ],
         },
       }
     }
@@ -34,9 +39,10 @@ exports[`Skeleton 50% animation 1`] = `
       [
         {
           "height": "100%",
-          "left": "-100%",
           "position": "absolute",
-          "width": "100%",
+        },
+        {
+          "width": 500,
         },
       ]
     }
@@ -44,12 +50,17 @@ exports[`Skeleton 50% animation 1`] = `
       [
         {
           "height": "100%",
-          "left": "-100%",
           "position": "absolute",
-          "width": "100%",
         },
         {
-          "left": "-100%",
+          "width": 500,
+        },
+        {
+          "transform": [
+            {
+              "translateX": 100,
+            },
+          ],
         },
       ]
     }
@@ -128,6 +139,7 @@ exports[`Skeleton 50% animation 1`] = `
 
 exports[`Skeleton 100% animation 1`] = `
 <View
+  onLayout={[Function]}
   style={
     [
       {
@@ -152,7 +164,11 @@ exports[`Skeleton 100% animation 1`] = `
     jestAnimatedStyle={
       {
         "value": {
-          "left": "100%",
+          "transform": [
+            {
+              "translateX": 400,
+            },
+          ],
         },
       }
     }
@@ -160,9 +176,10 @@ exports[`Skeleton 100% animation 1`] = `
       [
         {
           "height": "100%",
-          "left": "-100%",
           "position": "absolute",
-          "width": "100%",
+        },
+        {
+          "width": 500,
         },
       ]
     }
@@ -170,12 +187,17 @@ exports[`Skeleton 100% animation 1`] = `
       [
         {
           "height": "100%",
-          "left": "-100%",
           "position": "absolute",
-          "width": "100%",
         },
         {
-          "left": "-100%",
+          "width": 500,
+        },
+        {
+          "transform": [
+            {
+              "translateX": 400,
+            },
+          ],
         },
       ]
     }
@@ -254,6 +276,7 @@ exports[`Skeleton 100% animation 1`] = `
 
 exports[`Skeleton before animation started: before animation started 1`] = `
 <View
+  onLayout={[Function]}
   style={
     [
       {
@@ -278,7 +301,11 @@ exports[`Skeleton before animation started: before animation started 1`] = `
     jestAnimatedStyle={
       {
         "value": {
-          "left": "-100%",
+          "transform": [
+            {
+              "translateX": -200,
+            },
+          ],
         },
       }
     }
@@ -286,9 +313,10 @@ exports[`Skeleton before animation started: before animation started 1`] = `
       [
         {
           "height": "100%",
-          "left": "-100%",
           "position": "absolute",
-          "width": "100%",
+        },
+        {
+          "width": 500,
         },
       ]
     }
@@ -296,12 +324,17 @@ exports[`Skeleton before animation started: before animation started 1`] = `
       [
         {
           "height": "100%",
-          "left": "-100%",
           "position": "absolute",
-          "width": "100%",
         },
         {
-          "left": "-100%",
+          "width": 500,
+        },
+        {
+          "transform": [
+            {
+              "translateX": -200,
+            },
+          ],
         },
       ]
     }

@@ -1,21 +1,16 @@
-import { memo, useEffect } from 'react'
+import { memo, useCallback, useContext, useEffect, useRef } from 'react'
 import { View } from 'react-native'
 import Animated, {
-  Easing,
-  interpolate,
   useAnimatedStyle,
   useSharedValue,
-  withRepeat,
-  withTiming,
 } from 'react-native-reanimated'
 import Svg, { Defs, LinearGradient, Rect, Stop } from 'react-native-svg'
 import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 
+import { SkeletonContext } from '../../utils/SkeletonContext'
 import { makeStyles } from '../../utils/makeStyles'
 
 interface SkeletonProps extends ViewProps {}
-
-export const ANIMATION_DURATION = 1200 // ms
 
 /**
  * Используется для отображения контента в момент загрузки
@@ -23,26 +18,46 @@ export const ANIMATION_DURATION = 1200 // ms
  */
 export const Skeleton = memo<SkeletonProps>(({ style, testID, ...rest }) => {
   const styles = useStyles()
-  const animation = useSharedValue(0)
-  const animatedStyles = useAnimatedStyle(() => ({
-    left: `${interpolate(animation.value, [0, 1], [-100, 100])}%`,
-  }))
+  const {
+    globalTranslateX,
+    registerSkeleton,
+    unregisterSkeleton,
+    skeletonWidth,
+  } = useContext(SkeletonContext)
+
+  const skeletonRef = useRef<View>(null)
+  const skeletonX = useSharedValue(0)
+
+  const onLayout = useCallback(() => {
+    skeletonRef.current?.measure((_x, _y, _width, _height, pageX) => {
+      skeletonX.value = pageX
+    })
+  }, [skeletonX])
 
   useEffect(() => {
-    animation.value = withRepeat(
-      withTiming(1, { duration: ANIMATION_DURATION, easing: Easing.ease }),
-      -1
-    )
-  }, [animation])
+    registerSkeleton()
+
+    return unregisterSkeleton
+  }, [registerSkeleton, unregisterSkeleton])
+
+  const animatedStyles = useAnimatedStyle(() => ({
+    transform: [{ translateX: globalTranslateX.value - skeletonX.value }],
+  }))
 
   return (
     <View
       {...rest}
+      ref={skeletonRef}
       style={[styles.container, style]}
       testID={testID ?? SkeletonTestId.root}
+      onLayout={onLayout}
     >
       <Animated.View
-        style={[styles.gradientContainer, animatedStyles]}
+        style={[
+          styles.gradientContainer,
+          { width: skeletonWidth },
+          animatedStyles,
+        ]}
         testID={SkeletonTestId.animatedView}
       >
         <Svg testID={SkeletonTestId.svg}>
@@ -78,12 +93,7 @@ const useStyles = makeStyles(({ border, theme }) => ({
     overflow: 'hidden',
     backgroundColor: theme.Misc.Skeleton.skeletonBg,
   },
-  gradientContainer: {
-    position: 'absolute',
-    width: '100%',
-    height: '100%',
-    left: '-100%',
-  },
+  gradientContainer: { position: 'absolute', height: '100%' },
   gradientColor: { backgroundColor: theme.Misc.Skeleton.skeletonAnimationBg },
 }))
 
