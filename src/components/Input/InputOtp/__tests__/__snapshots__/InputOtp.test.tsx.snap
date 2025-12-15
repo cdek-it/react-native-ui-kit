@@ -1,0 +1,5353 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputOtp component tests length - 2, error - false, disabled - false, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 2, error - false, disabled - false, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 2, error - false, disabled - true, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 2, error - false, disabled - true, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 2, error - true, disabled - false, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 2, error - true, disabled - false, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 2, error - true, disabled - true, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 2, error - true, disabled - true, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 4, error - false, disabled - false, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 4, error - false, disabled - false, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 4, error - false, disabled - true, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 4, error - false, disabled - true, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 4, error - true, disabled - false, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 4, error - true, disabled - false, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 4, error - true, disabled - true, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 4, error - true, disabled - true, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 8, error - false, disabled - false, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={8}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 8, error - false, disabled - false, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={8}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 8, error - false, disabled - true, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={8}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 8, error - false, disabled - true, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          false,
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={8}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 8, error - true, disabled - false, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={8}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 8, error - true, disabled - false, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={8}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 8, error - true, disabled - true, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          false,
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={8}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
+
+exports[`InputOtp component tests length - 8, error - true, disabled - true, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={{}}
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 7,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#cecfd2",
+            "justifyContent": "center",
+            "minHeight": 35,
+            "minWidth": 35,
+            "paddingHorizontal": 10.5,
+            "paddingVertical": 0,
+          },
+          {
+            "borderColor": "#db3424",
+          },
+          {
+            "borderColor": "#1dc831",
+          },
+          {
+            "mixBlendMode": "luminosity",
+            "opacity": 0.6,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#181a1f",
+            "fontFamily": "PT Sans",
+            "fontSize": 21,
+            "fontWeight": "400",
+          }
+        }
+        testID="undefinedItem"
+      />
+    </View>
+  </View>
+  <TextInput
+    keyboardType="number-pad"
+    maxLength={8}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    style={
+      {
+        "height": 1,
+        "opacity": 0,
+        "position": "absolute",
+        "width": 1,
+      }
+    }
+    testID="undefinedHiddenInput"
+    value=""
+  />
+</View>
+`;
