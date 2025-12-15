@@ -6,6 +6,8 @@ import {
   TextInput,
   type TextInputProps,
   type PressableProps,
+  type TextInputFocusEventData,
+  type NativeSyntheticEvent,
 } from 'react-native'
 
 import { makeStyles } from '../../../utils/makeStyles'
@@ -15,13 +17,7 @@ import { InputOtpItem } from './InputOtpItem'
 export interface InputOtpProps
   extends Omit<
       TextInputProps,
-      | 'onChangeText'
-      | 'onChange'
-      | 'onFocus'
-      | 'onBlur'
-      | 'ref'
-      | 'keyboardType'
-      | 'style'
+      'onChangeText' | 'onChange' | 'ref' | 'keyboardType' | 'style'
     >,
     Pick<PressableProps, 'testOnly_pressed'> {
   length: number
@@ -39,6 +35,8 @@ export const InputOtp = memo<InputOtpProps>(
     testOnly_pressed,
     testID,
     value = '',
+    onFocus,
+    onBlur,
     ...rest
   }) => {
     const styles = useStyles()
@@ -58,13 +56,21 @@ export const InputOtp = memo<InputOtpProps>(
       [onChange]
     )
 
-    const handleFocus = useCallback(() => {
-      setIsFocused(true)
-    }, [])
+    const handleFocus = useCallback(
+      (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
+        setIsFocused(true)
+        onFocus?.(e)
+      },
+      [onFocus]
+    )
 
-    const handleBlur = useCallback(() => {
-      setIsFocused(false)
-    }, [])
+    const handleBlur = useCallback(
+      (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
+        setIsFocused(false)
+        onBlur?.(e)
+      },
+      [onBlur]
+    )
 
     const activeIndex = useMemo(
       () => Math.min(value.length, length - 1),
