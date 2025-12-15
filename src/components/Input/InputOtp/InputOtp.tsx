@@ -1,4 +1,12 @@
-import { memo, useCallback, useMemo, useRef, useState } from 'react'
+import {
+  memo,
+  useCallback,
+  useImperativeHandle,
+  useMemo,
+  useRef,
+  useState,
+  type Ref,
+} from 'react'
 
 import {
   Pressable,
@@ -24,6 +32,7 @@ export interface InputOtpProps
   onChange: (value: string) => void
   disabled?: boolean
   error?: boolean
+  inputRef?: Ref<TextInput | null>
 }
 
 export const InputOtp = memo<InputOtpProps>(
@@ -33,6 +42,7 @@ export const InputOtp = memo<InputOtpProps>(
     disabled = false,
     error = false,
     testOnly_pressed,
+    inputRef: propsInputRef,
     testID,
     value = '',
     onFocus,
@@ -43,6 +53,8 @@ export const InputOtp = memo<InputOtpProps>(
     const [isFocused, setIsFocused] = useState(false)
 
     const inputRef = useRef<TextInput>(null)
+
+    useImperativeHandle(propsInputRef, () => inputRef.current as TextInput)
 
     const handlePress = useCallback(() => {
       inputRef.current?.focus()
