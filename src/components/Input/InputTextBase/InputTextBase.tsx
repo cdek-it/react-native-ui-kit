@@ -65,6 +65,7 @@ export const InputTextBase = memo<
     clearButtonAccessibilityLabel,
     floatLabel = false,
     placeholder,
+    editable = true,
     ...otherProps
     // TODO: разделить float label и обычный инпут -> добавить во float label поддержку font scale
     // eslint-disable-next-line complexity
@@ -200,7 +201,7 @@ export const InputTextBase = memo<
         allowFontScaling: floatLabel ? false : otherProps.allowFontScaling,
         placeholder: '',
         testID: makeTestId(),
-        editable: !disabled,
+        editable: disabled ? false : editable,
         secureTextEntry,
         style: [
           styles.inputFont,
@@ -218,6 +219,7 @@ export const InputTextBase = memo<
         floatLabel,
         makeTestId,
         disabled,
+        editable,
         secureTextEntry,
         styles.inputFont,
         styles.floatLabelInput,

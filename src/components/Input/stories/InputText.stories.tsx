@@ -3,8 +3,9 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { useCallback, useEffect, useState } from 'react'
 
 import { InputText } from '../InputText'
+import type { InputTextBase } from '../InputTextBase/InputTextBase'
 
-const meta: Meta<typeof InputText> = {
+const meta: Meta<typeof InputText & typeof InputTextBase> = {
   title: 'Form/InputText',
   args: {
     clearable: true,
@@ -13,8 +14,18 @@ const meta: Meta<typeof InputText> = {
     placeholder: 'Placeholder',
     value: '',
     floatLabel: false,
+    secureTextEntry: false,
+    loading: false,
+    editable: true,
   },
-  argTypes: { state: { control: 'radio', options: ['default', 'danger'] } },
+  argTypes: {
+    state: { control: 'radio', options: ['default', 'danger'] },
+    secureTextEntry: {
+      control: 'radio',
+      options: ['true', 'false', 'toggleable'],
+      mapping: { true: true, false: false, toggleable: 'toggleable' },
+    },
+  },
   render: (args) => {
     const [, updateArgs] = useArgs()
     const [value, setValue] = useState(args.value)

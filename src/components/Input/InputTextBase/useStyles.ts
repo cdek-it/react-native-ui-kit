@@ -67,6 +67,7 @@ export const useStyles = makeStyles(
       paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
       gap: theme.Form.InputText.inputPaddingLeftRight,
       overflow: 'hidden',
+      alignItems: 'center',
     },
     rightButtonContainer: { justifyContent: 'center' },
     rightIcon: { color: theme.Form.InputText.inputIconColor },

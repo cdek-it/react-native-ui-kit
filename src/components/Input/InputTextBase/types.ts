@@ -3,7 +3,7 @@ import type { TextInputProps, ViewStyle, TextInput } from 'react-native'
 
 /** @see TextInputProps */
 export interface InputTextBaseProps
-  extends Omit<TextInputProps, 'style' | 'editable' | 'secureTextEntry'> {
+  extends Omit<TextInputProps, 'style' | 'secureTextEntry'> {
   /**
    * Управление отображения иконки очистки поля
    * @default true
