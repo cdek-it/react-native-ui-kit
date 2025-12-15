@@ -15,8 +15,8 @@ import { InputOtpItem } from './InputOtpItem'
 export interface InputOtpProps
   extends Omit<
       TextInputProps,
-      | 'value'
       | 'onChangeText'
+      | 'onChange'
       | 'onFocus'
       | 'onBlur'
       | 'ref'
@@ -25,7 +25,7 @@ export interface InputOtpProps
     >,
     Pick<PressableProps, 'testOnly_pressed'> {
   length: number
-  onComplete?: (value: string) => void
+  onChange: (value: string) => void
   disabled?: boolean
   error?: boolean
 }
@@ -33,15 +33,15 @@ export interface InputOtpProps
 export const InputOtp = memo<InputOtpProps>(
   ({
     length,
-    onComplete,
+    onChange,
     disabled = false,
     error = false,
     testOnly_pressed,
     testID,
+    value = '',
     ...rest
   }) => {
     const styles = useStyles()
-    const [value, setValue] = useState('')
     const [isFocused, setIsFocused] = useState(false)
 
     const inputRef = useRef<TextInput>(null)
@@ -53,14 +53,9 @@ export const InputOtp = memo<InputOtpProps>(
     const handleChange = useCallback(
       (text: string) => {
         const sanitizedText = text.replace(/[^0-9]/g, '')
-        setValue(sanitizedText)
-
-        if (sanitizedText.length === length) {
-          onComplete?.(sanitizedText)
-          inputRef.current?.blur()
-        }
+        onChange(sanitizedText)
       },
-      [length, onComplete]
+      [onChange]
     )
 
     const handleFocus = useCallback(() => {
