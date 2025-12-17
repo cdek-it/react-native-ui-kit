@@ -17,6 +17,7 @@ const meta: Meta<typeof InputText & typeof InputTextBase> = {
     secureTextEntry: false,
     loading: false,
     editable: true,
+    size: 'base',
   },
   argTypes: {
     state: { control: 'radio', options: ['default', 'danger'] },
@@ -25,6 +26,7 @@ const meta: Meta<typeof InputText & typeof InputTextBase> = {
       options: ['true', 'false', 'toggleable'],
       mapping: { true: true, false: false, toggleable: 'toggleable' },
     },
+    size: { control: 'radio', options: ['base', 'large', 'xlarge'] },
   },
   render: (args) => {
     const [, updateArgs] = useArgs()

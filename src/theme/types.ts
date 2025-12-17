@@ -1,3 +1,4 @@
+import type { InputSize } from './assets/InputSize'
 import type background from './assets/background.json'
 import type border from './assets/border.json'
 import type { customCommon } from './assets/customCommon'
@@ -19,7 +20,10 @@ export interface ThemeType {
   global: typeof global
   sizing: typeof sizing
   spacing: typeof spacing
-  theme: typeof lightTheme & { custom: typeof customLight }
+  theme: typeof lightTheme & {
+    custom: typeof customLight
+    InputSize: typeof InputSize
+  }
   typography: typeof typography
   custom: typeof customCommon
   shadow: typeof shadow

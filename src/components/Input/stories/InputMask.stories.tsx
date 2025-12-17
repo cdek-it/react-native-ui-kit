@@ -81,9 +81,11 @@ const meta: Meta<typeof MaskedInput> = {
     placeholder: 'Placeholder',
     floatLabel: false,
     mask: '+7 ([000]) [000]-[00]-[00]',
+    size: 'base',
   },
   argTypes: {
     state: { control: 'radio', options: ['default', 'danger'] },
+    size: { control: 'radio', options: ['base', 'large', 'xlarge'] },
     mask: {
       control: 'radio',
       options: [

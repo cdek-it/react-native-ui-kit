@@ -1,9 +1,33 @@
+import { useMemo } from 'react'
+
 import { makeStyles } from '../../../utils/makeStyles'
 
-export const useStyles = makeStyles(
+import type { InputTextBaseProps } from './types'
+
+export const useInputStyle = (size: InputTextBaseProps['size'] = 'base') => {
+  const styles = useStyles()
+  const containerMinHeight = useContainerMinHeight()
+
+  const minHeight = useMemo(() => {
+    if (typeof size === 'number') {
+      return Math.max(size, containerMinHeight.base.minHeight)
+    }
+
+    return containerMinHeight[size].minHeight
+  }, [size, containerMinHeight])
+
+  return { ...styles, container: { ...styles.container, minHeight } }
+}
+
+const useContainerMinHeight = makeStyles(({ theme }) => ({
+  base: { minHeight: theme.InputSize.base['min-height'] },
+  large: { minHeight: theme.InputSize.large['min-height'] },
+  xlarge: { minHeight: theme.InputSize.xlarge['min-height'] },
+}))
+
+const useStyles = makeStyles(
   ({ theme, border, typography, spacing, fonts }) => ({
     container: {
-      minHeight: theme.Button.Common.buttonHeight,
       flexDirection: 'row',
       borderWidth: border.Width.border,
       borderRadius: border.Radius['rounded-xl'],

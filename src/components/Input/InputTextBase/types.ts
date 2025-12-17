@@ -37,6 +37,13 @@ export interface InputTextBaseProps
    * @default false
    */
   floatLabel?: boolean
+  /**
+   * Управление высотой поля ввода.
+   * Работает только если floatLabel = false.
+   * Можно передать число. Если переданное число меньше размера base, будет использован размер base.
+   * @default 'base'
+   */
+  size?: 'base' | 'large' | 'xlarge' | number
 }
 
 export type RenderTextInputArgs = TextInputProps & { inputRef: Ref<TextInput> }

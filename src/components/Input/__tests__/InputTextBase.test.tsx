@@ -2,6 +2,7 @@ import { fireEvent, render, userEvent } from '@testing-library/react-native'
 
 import { TextInput } from 'react-native-gesture-handler'
 
+import { lightTheme } from '../../../theme'
 import { InputTextBase } from '../InputTextBase/InputTextBase'
 import type { RenderTextInputArgs } from '../InputTextBase/types'
 
@@ -177,5 +178,56 @@ describe('InputTextBase component functionality tests', () => {
 
     // Проверяем что у инпута secureTextEntry=false
     expect(input).toHaveProp('secureTextEntry', false)
+  })
+
+  describe('при передачи свойства size', () => {
+    const containerTestId = 'InputTextBasePressableContainer'
+
+    test('при size=undefined используется размер base', () => {
+      const { getByTestId } = render(<InputTextBase />)
+
+      expect(getByTestId(containerTestId)).toHaveStyle({
+        minHeight: lightTheme.theme.InputSize.base['min-height'],
+      })
+    })
+
+    test('при size=base используется размер base', () => {
+      const { getByTestId } = render(<InputTextBase size='base' />)
+
+      expect(getByTestId(containerTestId)).toHaveStyle({
+        minHeight: lightTheme.theme.InputSize.base['min-height'],
+      })
+    })
+
+    test('при size=large используется размер large', () => {
+      const { getByTestId } = render(<InputTextBase size='large' />)
+
+      expect(getByTestId(containerTestId)).toHaveStyle({
+        minHeight: lightTheme.theme.InputSize.large['min-height'],
+      })
+    })
+
+    test('при size=xlarge используется размер xlarge', () => {
+      const { getByTestId } = render(<InputTextBase size='xlarge' />)
+
+      expect(getByTestId(containerTestId)).toHaveStyle({
+        minHeight: lightTheme.theme.InputSize.xlarge['min-height'],
+      })
+    })
+
+    test('при size < base используется размер base', () => {
+      const { getByTestId } = render(<InputTextBase size={1} />)
+
+      expect(getByTestId(containerTestId)).toHaveStyle({
+        minHeight: lightTheme.theme.InputSize.base['min-height'],
+      })
+    })
+
+    test('при size > base используется размер переданный в size', () => {
+      const size = 50
+      const { getByTestId } = render(<InputTextBase size={size} />)
+
+      expect(getByTestId(containerTestId)).toHaveStyle({ minHeight: size })
+    })
   })
 })

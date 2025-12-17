@@ -38,7 +38,7 @@ import { useMakeTestId } from '../../../hooks/useMakeTestId'
 
 import { InputTextBaseTestId } from './testIds'
 import type { InputTextBaseProps, RenderTextInputArgs } from './types'
-import { useStyles } from './useStyles'
+import { useInputStyle } from './useInputStyles'
 
 interface PrivateInputTextBaseProps {
   loading?: boolean
@@ -66,11 +66,12 @@ export const InputTextBase = memo<
     floatLabel = false,
     placeholder,
     editable = true,
+    size,
     ...otherProps
     // TODO: разделить float label и обычный инпут -> добавить во float label поддержку font scale
     // eslint-disable-next-line complexity
   }) => {
-    const styles = useStyles()
+    const styles = useInputStyle(size)
     const inputRef = useRef<TextInput>(null)
 
     const [valueState, setValueState] = useState('')
