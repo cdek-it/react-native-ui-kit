@@ -1,4 +1,5 @@
 import type { InputSize } from './assets/InputSize'
+import type { ModalSize } from './assets/ModalSize'
 import type background from './assets/background.json'
 import type border from './assets/border.json'
 import type { customCommon } from './assets/customCommon'
@@ -23,6 +24,7 @@ export interface ThemeType {
   theme: typeof lightTheme & {
     custom: typeof customLight
     InputSize: typeof InputSize
+    ModalSize: typeof ModalSize
   }
   typography: typeof typography
   custom: typeof customCommon
