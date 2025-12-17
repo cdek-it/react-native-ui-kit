@@ -25,5 +25,4 @@ const /** @type {import("prettier").Config} */ config = {
     ],
   }
 
-// eslint-disable-next-line import-x/no-default-export
 export default config

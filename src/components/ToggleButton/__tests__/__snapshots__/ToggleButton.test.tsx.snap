@@ -3,7 +3,7 @@
 exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = false, size = small, with Icon, with label, iconPos = left 1`] = `
 <Pressable
   disabled={false}
-  onPress={[Function]}
+  onPress={[MockFunction]}
   onPressIn={[Function]}
   onPressOut={[Function]}
   style={
@@ -209,7 +209,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
 exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = false, size = small, with Icon, with label, iconPos = right 1`] = `
 <Pressable
   disabled={false}
-  onPress={[Function]}
+  onPress={[MockFunction]}
   onPressIn={[Function]}
   onPressOut={[Function]}
   style={
@@ -415,7 +415,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
 exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = true, size = base, with Icon, with label 1`] = `
 <Pressable
   disabled={false}
-  onPress={[Function]}
+  onPress={[MockFunction]}
   onPressIn={[Function]}
   onPressOut={[Function]}
   style={
@@ -594,7 +594,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
 exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = false, size = large, with Icon, with label 1`] = `
 <Pressable
   disabled={true}
-  onPress={[Function]}
+  onPress={[MockFunction]}
   onPressIn={[Function]}
   onPressOut={[Function]}
   style={
@@ -807,7 +807,7 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
 exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = false, size = xlarge, with style, with Icon 1`] = `
 <Pressable
   disabled={false}
-  onPress={[Function]}
+  onPress={[MockFunction]}
   onPressIn={[Function]}
   onPressOut={[Function]}
   style={
@@ -991,7 +991,7 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
 
 exports[`ToggleButton snapshots default 1`] = `
 <Pressable
-  onPress={[Function]}
+  onPress={[MockFunction]}
   onPressIn={[Function]}
   onPressOut={[Function]}
   style={

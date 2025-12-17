@@ -3,11 +3,7 @@ import { render } from '@testing-library/react-native'
 import { Checkbox, type CheckboxProps } from '../Checkbox'
 
 describe('Checkbox', () => {
-  const defaultProps: CheckboxProps = {
-    // eslint-disable-next-line @typescript-eslint/no-empty-function
-    onPress: () => {},
-    state: 'default',
-  }
+  const defaultProps: CheckboxProps = { onPress: jest.fn(), state: 'default' }
 
   describe('snapshots', () => {
     const snapshotCases: Array<[string, Partial<CheckboxProps>]> = [

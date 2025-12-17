@@ -12,9 +12,7 @@ import Svg, { Circle } from 'react-native-svg'
 
 import { makeStyles } from '../../utils/makeStyles'
 
-// eslint-disable-next-line import-x/no-deprecated
 const AnimatedSvg = Animated.createAnimatedComponent(Svg)
-// eslint-disable-next-line import-x/no-deprecated
 const AnimatedCircle = Animated.createAnimatedComponent(Circle)
 
 const STROKE_WIDTH = 2

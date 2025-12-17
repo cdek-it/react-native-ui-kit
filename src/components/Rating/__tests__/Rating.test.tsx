@@ -46,7 +46,7 @@ describe('Rating component tests', () => {
     const clearButton = getByTestId('RatingClear')
     fireEvent.press(clearButton)
 
-    expect(mockOnClear).toHaveBeenCalled()
+    expect(mockOnClear).toHaveBeenCalledWith()
   })
 
   test('renders correctly with a different maxRating', () => {

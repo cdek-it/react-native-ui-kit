@@ -1,7 +1,6 @@
 import { defineConfig } from 'eslint/config'
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
 
-// eslint-disable-next-line import-x/no-named-as-default
 import importX, { createNodeResolver } from 'eslint-plugin-import-x'
 
 export const importConfig = defineConfig([
@@ -28,7 +27,7 @@ export const importConfig = defineConfig([
       'import-x/export': 'error',
 
       // https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-deprecated.md
-      'import-x/no-deprecated': 'warn',
+      'import-x/no-deprecated': 'off',
 
       // https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-empty-named-blocks.md
       'import-x/no-empty-named-blocks': 'error',
@@ -214,13 +213,17 @@ export const importConfig = defineConfig([
       '**/*.d.ts',
       'eslint/**',
       '*prettier.config*',
+      '.prettierrc*',
+      'configs/eslint/**/*',
     ],
     rules: {
       'import-x/no-namespace': 'off',
       'import-x/no-default-export': 'off',
+      'import-x/no-named-as-default': 'off',
       'import-x/no-named-as-default-member': 'off',
       'import-x/no-anonymous-default-export': 'off',
       'import-x/no-nodejs-modules': 'off',
     },
   },
+  { files: ['index.js'], rules: { 'import-x/namespace': 'off' } },
 ])

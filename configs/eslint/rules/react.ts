@@ -1,7 +1,6 @@
 import { defineConfig } from 'eslint/config'
 import react from 'eslint-plugin-react'
 
-// eslint-disable-next-line import-x/no-namespace
 import * as reactHooks from 'eslint-plugin-react-hooks'
 
 export const reactConfig = defineConfig([

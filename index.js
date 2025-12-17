@@ -1,5 +1,3 @@
-/* eslint-disable import-x/namespace */
-/* eslint-disable import-x/no-deprecated */
 import { registerRootComponent } from 'expo'
 
 import {

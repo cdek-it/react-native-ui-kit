@@ -119,6 +119,9 @@ export const typescriptConfig = defineConfig([
       // https://typescript-eslint.io/rules/no-confusing-non-null-assertion/
       '@typescript-eslint/no-confusing-non-null-assertion': 'error',
 
+      // https://typescript-eslint.io/rules/no-deprecated/
+      '@typescript-eslint/no-deprecated': 'warn',
+
       // https://typescript-eslint.io/rules/no-dupe-class-members/
       'no-dupe-class-members': 'off',
       '@typescript-eslint/no-dupe-class-members': 'off',
