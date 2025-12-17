@@ -3,10 +3,7 @@ import { render } from '@testing-library/react-native'
 import { RadioButton, type RadioButtonProps } from '../RadioButton'
 
 describe('RadioButton', () => {
-  const defaultProps: RadioButtonProps = {
-    // eslint-disable-next-line @typescript-eslint/no-empty-function
-    onPress: () => {},
-  }
+  const defaultProps: RadioButtonProps = { onPress: jest.fn() }
 
   describe('snapshots', () => {
     const snapshotCases: Array<[string, Partial<RadioButtonProps>]> = [

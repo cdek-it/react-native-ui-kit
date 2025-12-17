@@ -8,10 +8,7 @@ import {
 } from '../ToggleButton'
 
 describe('ToggleButton', () => {
-  const defaultProps: ToggleButtonProps = {
-    // eslint-disable-next-line @typescript-eslint/no-empty-function
-    onPress: () => {},
-  }
+  const defaultProps: ToggleButtonProps = { onPress: jest.fn() }
 
   describe('snapshots', () => {
     const snapshotCases: Array<[string, Partial<ToggleButtonProps>]> = [
@@ -101,7 +98,7 @@ describe('ToggleButton', () => {
 
     await user.press(pressable)
 
-    expect(mockedOnPress).toHaveBeenCalled()
+    expect(mockedOnPress).toHaveBeenCalledWith(expect.any(Object))
   })
 
   test('should NOT handle press', async () => {

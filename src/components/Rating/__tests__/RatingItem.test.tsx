@@ -32,6 +32,6 @@ describe('RatingItem component tests', () => {
 
     await user.press(pressableContainer)
 
-    expect(mockedOnPress).toHaveBeenCalled()
+    expect(mockedOnPress).toHaveBeenCalledWith(expect.any(Object))
   })
 })

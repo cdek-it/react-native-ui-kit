@@ -48,6 +48,7 @@ export const reactNativeConfig = defineConfig([
   {
     files: ['**/*.stories.{js,jsx,cjs,mjs,ts,tsx,mts,cts}'],
     rules: {
+      'react-native/no-color-literals': 'off',
       'react-native/no-inline-styles': 'off',
       'react-native/no-raw-text': 'off',
     },

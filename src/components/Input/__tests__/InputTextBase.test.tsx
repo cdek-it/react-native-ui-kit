@@ -4,6 +4,7 @@ import { TextInput } from 'react-native-gesture-handler'
 
 import { lightTheme } from '../../../theme'
 import { InputTextBase } from '../InputTextBase/InputTextBase'
+import { InputTextBaseTestId } from '../InputTextBase/testIds'
 import type { RenderTextInputArgs } from '../InputTextBase/types'
 
 describe('InputTextBase component functionality tests', () => {
@@ -31,7 +32,7 @@ describe('InputTextBase component functionality tests', () => {
 
     fireEvent(input, 'focus')
 
-    expect(onFocusMock).toHaveBeenCalled()
+    expect(onFocusMock).toHaveBeenCalledWith(undefined)
   })
 
   test('should handle blur event', () => {
@@ -41,7 +42,7 @@ describe('InputTextBase component functionality tests', () => {
 
     fireEvent(input, 'blur')
 
-    expect(onBlurMock).toHaveBeenCalled()
+    expect(onBlurMock).toHaveBeenCalledWith(undefined)
   })
 
   test('should handle text change', () => {
@@ -123,7 +124,9 @@ describe('InputTextBase component functionality tests', () => {
 
     render(<InputTextBase renderTextInput={renderTextInput} />)
 
-    expect(renderTextInput).toHaveBeenCalled()
+    expect(renderTextInput).toHaveBeenCalledWith(
+      expect.objectContaining({ testID: InputTextBaseTestId.default })
+    )
     expect(renderTextInput.mock.calls[0]).toMatchSnapshot()
   })
 

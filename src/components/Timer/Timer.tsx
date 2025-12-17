@@ -14,7 +14,6 @@ import { makeStyles } from '../../utils/makeStyles'
 import { TimerFlip } from './TimerFlip'
 import { COUNTER_SIZE } from './constants'
 
-// eslint-disable-next-line import-x/no-deprecated
 const AnimatedCircle = Animated.createAnimatedComponent(Circle)
 
 interface TimerProps {
@@ -43,6 +42,8 @@ export const Timer = memo<TimerProps>(({ countFrom, onFinish }) => {
 
   const circleAnimatedProps = useAnimatedProps(() => ({
     strokeDashoffset: -circleAnimation.value * circumferenceLength,
+    origin: [center, center],
+    rotation: -90,
   }))
 
   useEffect(() => {
@@ -83,9 +84,7 @@ export const Timer = memo<TimerProps>(({ countFrom, onFinish }) => {
           cx={center}
           cy={center}
           fill='none'
-          origin={[center, center]}
           r={circumferenceRadius}
-          rotation={-90}
           stroke={styles.circle.color}
           strokeDasharray={circumferenceLength}
           strokeLinecap='round'

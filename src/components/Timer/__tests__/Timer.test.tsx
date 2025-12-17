@@ -45,7 +45,7 @@ describe('Timer', () => {
       jest.runAllTimers()
     })
 
-    expect(mockedOnFinish).toHaveBeenCalled()
+    expect(mockedOnFinish).toHaveBeenCalledWith()
   })
 
   test('should NOT call onFinish until the timer expires', () => {

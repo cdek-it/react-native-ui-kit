@@ -198,6 +198,6 @@ describe('Tabs component tests', () => {
 
     await user.press(container)
 
-    expect(mockedOnTapTabItem).toHaveBeenCalled()
+    expect(mockedOnTapTabItem).toHaveBeenCalledWith(testableIndex)
   })
 })

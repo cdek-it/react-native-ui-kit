@@ -24,7 +24,6 @@ export interface DialogProps extends DialogComponentProps {
   readonly testID?: string
 }
 
-// eslint-disable-next-line import-x/no-deprecated
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable)
 
 export const Dialog: React.FC<DialogProps> = ({

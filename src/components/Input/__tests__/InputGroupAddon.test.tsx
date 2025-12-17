@@ -33,6 +33,6 @@ describe('InputGroup component tests', () => {
 
     fireEvent.press(pressable)
 
-    expect(onPress).toHaveBeenCalled()
+    expect(onPress).toHaveBeenCalledWith()
   })
 })

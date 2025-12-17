@@ -1,4 +1,4 @@
-import { memo, useCallback } from 'react'
+import { memo, useCallback, useMemo } from 'react'
 import { type AccessibilityProps, View, type ViewProps } from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
@@ -74,6 +74,11 @@ export const Rating = memo<RatingProps>(
       [onChange]
     )
 
+    const renderArray = useMemo(
+      () => Array.from({ length: maxRating }, (_, i) => `Rating-Item-${i}`),
+      [maxRating]
+    )
+
     return (
       <View style={styles.container}>
         <RatingClear
@@ -83,12 +88,10 @@ export const Rating = memo<RatingProps>(
           onPress={onClear}
           {...rest}
         />
-        {new Array(maxRating).fill(null).map((_, index) => (
+        {renderArray.map((key, index) => (
           <RatingItem
             checked={index < rating}
-            // Использовать индекс массива в качестве ключа - единственно возможное и правильное решение
-            // eslint-disable-next-line react/no-array-index-key
-            key={`RatingItem-${index}`}
+            key={key}
             paddings={paddings}
             testID={`RatingItem-${index + 1}`}
             onPress={handleItemPress(index)}
