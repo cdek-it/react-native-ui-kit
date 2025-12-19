@@ -14,8 +14,8 @@ import {
   TextInput,
   type TextInputProps,
   type PressableProps,
-  type TextInputFocusEventData,
-  type NativeSyntheticEvent,
+  type FocusEvent,
+  type BlurEvent,
 } from 'react-native'
 
 import { makeStyles } from '../../../utils/makeStyles'
@@ -23,7 +23,8 @@ import { makeStyles } from '../../../utils/makeStyles'
 import { InputOtpItem } from './InputOtpItem'
 
 export interface InputOtpProps
-  extends Omit<
+  extends
+    Omit<
       TextInputProps,
       'onChangeText' | 'onChange' | 'ref' | 'keyboardType' | 'style'
     >,
@@ -69,7 +70,7 @@ export const InputOtp = memo<InputOtpProps>(
     )
 
     const handleFocus = useCallback(
-      (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
+      (e: FocusEvent) => {
         setIsFocused(true)
         onFocus?.(e)
       },
@@ -77,7 +78,7 @@ export const InputOtp = memo<InputOtpProps>(
     )
 
     const handleBlur = useCallback(
-      (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
+      (e: BlurEvent) => {
         setIsFocused(false)
         onBlur?.(e)
       },

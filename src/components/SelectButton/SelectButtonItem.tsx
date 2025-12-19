@@ -11,8 +11,10 @@ import Animated, {
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
 import { makeStyles } from '../../utils/makeStyles'
 
-export interface SelectButtonItemProps
-  extends Pick<ViewProps, 'onLayout' | 'testID'> {
+export interface SelectButtonItemProps extends Pick<
+  ViewProps,
+  'onLayout' | 'testID'
+> {
   /** Индекс кнопки */
   index: number
 

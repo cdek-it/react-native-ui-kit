@@ -13,8 +13,10 @@ import {
  * @see RatingItemContainerProps - тип свойств компонента контейнера элемента от которого наследуется данный тип свойств
  * @see RatingItem - компонент элемента рейтинга с иконкой звёздочки
  */
-export interface RatingItemProps
-  extends Omit<RatingItemContainerProps, 'children'> {
+export interface RatingItemProps extends Omit<
+  RatingItemContainerProps,
+  'children'
+> {
   /**
    * Управление состоянием активности элемента
    */

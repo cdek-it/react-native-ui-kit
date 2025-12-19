@@ -18,7 +18,7 @@ export const importConfig = defineConfig([
       'import-x/resolver-next': [
         createTypeScriptImportResolver({
           alwaysTryTypes: true,
-          project: '<root>/tsconfig.json',
+          project: ['tsconfig.eslint.json'],
         }),
       ],
     },

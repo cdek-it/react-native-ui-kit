@@ -132,6 +132,7 @@ exports[`Timer should reset timer on changing countFrom prop: after 1 s 1`] = `
           },
         ]
       }
+      nativeID="8"
       style={
         [
           {
@@ -198,6 +199,7 @@ exports[`Timer should reset timer on changing countFrom prop: after 1 s 1`] = `
           },
         ]
       }
+      nativeID="7"
       style={
         [
           {
@@ -369,6 +371,7 @@ exports[`Timer should reset timer on changing countFrom prop: after reset 1`] = 
           },
         ]
       }
+      nativeID="8"
       style={
         [
           {
@@ -435,6 +438,7 @@ exports[`Timer should reset timer on changing countFrom prop: after reset 1`] = 
           },
         ]
       }
+      nativeID="7"
       style={
         [
           {
@@ -606,6 +610,7 @@ exports[`Timer snapshot: before start 1`] = `
           },
         ]
       }
+      nativeID="1"
       style={
         [
           {
@@ -672,6 +677,7 @@ exports[`Timer snapshot: before start 1`] = `
           },
         ]
       }
+      nativeID="2"
       style={
         [
           {
@@ -843,6 +849,7 @@ exports[`Timer snapshot: on finish 1`] = `
           },
         ]
       }
+      nativeID="4"
       style={
         [
           {
@@ -909,6 +916,7 @@ exports[`Timer snapshot: on finish 1`] = `
           },
         ]
       }
+      nativeID="2"
       style={
         [
           {

@@ -11,8 +11,7 @@ import { RatingItem } from './RatingItem'
  * @see Rating - компонент рейтинга
  */
 export interface RatingProps
-  extends AccessibilityProps,
-    Pick<ViewProps, 'testID'> {
+  extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /**
    * Управление состоянием включённости компонента для нажатий пользователем
    * @default false

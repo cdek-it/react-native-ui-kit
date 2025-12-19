@@ -13,8 +13,10 @@ import { makeStyles } from '../../utils/makeStyles'
 
 const WORD_JOINER = '\u2060' // символ невидимого пробела, чтобы избежать разрыва строки между текстом и иконкой
 
-export interface AnchorProps
-  extends Omit<TextProps, 'onPressIn' | 'onPressOut'> {
+export interface AnchorProps extends Omit<
+  TextProps,
+  'onPressIn' | 'onPressOut'
+> {
   readonly onPress: () => void
   /** true, если необходим базовый размер текста ссылки, равный 14 */
   readonly base?: boolean

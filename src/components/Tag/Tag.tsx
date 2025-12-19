@@ -12,8 +12,7 @@ import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
 import { makeStyles } from '../../utils/makeStyles'
 
 export interface TagProps
-  extends AccessibilityProps,
-    Pick<ViewProps, 'testID'> {
+  extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Текст */
   text: string
 

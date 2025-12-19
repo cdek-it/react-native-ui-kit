@@ -20,8 +20,8 @@ import {
   TextInput,
   View,
   Text,
-  type TextInputFocusEventData,
-  type NativeSyntheticEvent,
+  type FocusEvent,
+  type BlurEvent,
   TouchableOpacity,
   Pressable,
   type Insets,
@@ -79,7 +79,7 @@ export const InputTextBase = memo<
     const labelAnimation = useSharedValue(0)
 
     const onFocus = useCallback(
-      (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
+      (e: FocusEvent) => {
         setIsFocused(true)
         otherProps.onFocus?.(e)
       },
@@ -87,7 +87,7 @@ export const InputTextBase = memo<
     )
 
     const onBlur = useCallback(
-      (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
+      (e: BlurEvent) => {
         setIsFocused(false)
         otherProps.onBlur?.(e)
       },

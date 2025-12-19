@@ -2,8 +2,10 @@ import type { Ref, ReactNode } from 'react'
 import type { TextInputProps, ViewStyle, TextInput } from 'react-native'
 
 /** @see TextInputProps */
-export interface InputTextBaseProps
-  extends Omit<TextInputProps, 'style' | 'secureTextEntry'> {
+export interface InputTextBaseProps extends Omit<
+  TextInputProps,
+  'style' | 'secureTextEntry'
+> {
   /**
    * Управление отображения иконки очистки поля
    * @default true

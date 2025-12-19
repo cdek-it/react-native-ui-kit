@@ -186,6 +186,7 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
         },
       ]
     }
+    nativeID="3"
     numberOfLines={1}
     style={
       [
@@ -394,6 +395,7 @@ exports[`SelectButtonItem {"Icon": [Object], "index": 1, "label": "ButtonSelect"
         },
       ]
     }
+    nativeID="4"
     numberOfLines={1}
     style={
       [
@@ -493,6 +495,7 @@ exports[`SelectButtonItem {"Icon": [Object], "showIcon": false, "size": "base"} 
         },
       ]
     }
+    nativeID="2"
     numberOfLines={1}
     style={
       [
@@ -699,6 +702,7 @@ exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
         },
       ]
     }
+    nativeID="1"
     numberOfLines={1}
     style={
       [
@@ -796,6 +800,7 @@ exports[`SelectButtonItem {"label": "ButtonSelect"} 1`] = `
         },
       ]
     }
+    nativeID="0"
     numberOfLines={1}
     style={
       [

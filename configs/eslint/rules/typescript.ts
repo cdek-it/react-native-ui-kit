@@ -22,7 +22,6 @@ export const typescriptConfig = defineConfig([
   },
   {
     files: ['**/*.{ts,tsx,mts,cts}'],
-    // @ts-expect-error Типизация Plugin TypeScript ESLint не совпадает с типизацией которую ожидает ESLint
     plugins: { '@typescript-eslint': tseslint.plugin },
     languageOptions: {
       parser: tseslint.parser,
@@ -393,7 +392,6 @@ export const typescriptConfig = defineConfig([
   },
   {
     files: ['**/*.test.{ts,tsx,mts,cts}', '**/*.spec.{ts,tsx,mts,cts}'],
-    // @ts-expect-error Типизация Plugin TypeScript ESLint не совпадает с типизацией которую ожидает ESLint
     plugins: { '@typescript-eslint': tseslint.plugin },
     languageOptions: {
       parser: tseslint.parser,

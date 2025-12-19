@@ -16,8 +16,7 @@ import { useLabelSize } from './hooks/useLabelSize'
 import { useStateStyles } from './hooks/useStateStyles'
 
 export interface ToggleButtonProps
-  extends AccessibilityProps,
-    Pick<ViewProps, 'testID'> {
+  extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Обработчик нажатия на кнопку */
   onPress: () => void
   /**

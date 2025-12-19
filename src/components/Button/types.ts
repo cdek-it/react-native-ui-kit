@@ -28,8 +28,9 @@ export type ButtonIconPosition =
   | 'prefix'
   | 'postfix'
 
-export interface BaseButtonProps<Variant extends ButtonVariant>
-  extends PressableProps {
+export interface BaseButtonProps<
+  Variant extends ButtonVariant,
+> extends PressableProps {
   /**
    * Controls button size
    * @default 'base'
@@ -76,14 +77,16 @@ export interface BaseButtonProps<Variant extends ButtonVariant>
   pressableRef?: Ref<View>
 }
 
-export interface IconTextButton<Variant extends ButtonVariant>
-  extends BaseButtonProps<Variant> {
+export interface IconTextButton<
+  Variant extends ButtonVariant,
+> extends BaseButtonProps<Variant> {
   label: string
   iconOnly?: never
 }
 
-export interface IconOnlyButtonProps<Variant extends ButtonVariant>
-  extends BaseButtonProps<Variant> {
+export interface IconOnlyButtonProps<
+  Variant extends ButtonVariant,
+> extends BaseButtonProps<Variant> {
   Icon: SvgSource
   iconOnly: true
   iconPosition?: never

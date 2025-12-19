@@ -20,8 +20,7 @@ import { Timer } from '../Timer/Timer'
 import { Body, Caption } from '../Typography'
 
 export interface MessageProps
-  extends AccessibilityProps,
-    Pick<ViewProps, 'testID'> {
+  extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Текст заголовка */
   title: string
 

@@ -7,8 +7,10 @@ import { makeStyles } from '../../utils/makeStyles'
  * Свойста компонента контейнера для элемента в компоненте рейтинга
  * @see RatingItemContainer
  */
-export interface RatingItemContainerProps
-  extends Omit<PressableProps, 'style' | 'onPress' | 'children'> {
+export interface RatingItemContainerProps extends Omit<
+  PressableProps,
+  'style' | 'onPress' | 'children'
+> {
   /**
    * Отображение элемента с паддингами
    * @default false

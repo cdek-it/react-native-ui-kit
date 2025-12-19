@@ -80,6 +80,7 @@ exports[`Accordion Header elements maximal 1`] = `
         }
       }
       jestInlineStyle={{}}
+      nativeID="2"
       style={
         [
           {
@@ -496,6 +497,7 @@ exports[`Accordion Header elements maximal 1`] = `
         },
       ]
     }
+    nativeID="3"
     style={
       [
         {
@@ -608,6 +610,7 @@ exports[`Accordion Header elements minimal 1`] = `
         }
       }
       jestInlineStyle={{}}
+      nativeID="0"
       style={
         [
           {
@@ -738,6 +741,7 @@ exports[`Accordion Header elements minimal 1`] = `
         },
       ]
     }
+    nativeID="1"
     style={
       [
         {

@@ -46,6 +46,7 @@ exports[`Skeleton 50% animation 1`] = `
         },
       ]
     }
+    nativeID="1"
     style={
       [
         {
@@ -183,6 +184,7 @@ exports[`Skeleton 100% animation 1`] = `
         },
       ]
     }
+    nativeID="2"
     style={
       [
         {
@@ -320,6 +322,7 @@ exports[`Skeleton before animation started: before animation started 1`] = `
         },
       ]
     }
+    nativeID="0"
     style={
       [
         {

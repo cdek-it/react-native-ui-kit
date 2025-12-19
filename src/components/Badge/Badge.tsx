@@ -15,8 +15,7 @@ import { makeStyles } from '../../utils/makeStyles'
 export type BadgeSeverity = 'basic' | 'info' | 'success' | 'warning' | 'danger'
 
 export interface BadgeBase
-  extends AccessibilityProps,
-    Pick<ViewProps, 'onLayout' | 'testID'> {
+  extends AccessibilityProps, Pick<ViewProps, 'onLayout' | 'testID'> {
   /**
    * Выбор варианта стиля компонента
    * @default 'basic'
