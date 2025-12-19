@@ -17,8 +17,7 @@ import Animated, {
 import { makeStyles } from '../../utils/makeStyles'
 
 export interface SliderProps
-  extends AccessibilityProps,
-    Pick<ViewProps, 'testID'> {
+  extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /**
    * Управление доступностью компонента
    * @default false

@@ -10,7 +10,6 @@
 yarn add \
   react \
   react-native \
-  @tabler/icons-react-native \
   react-native-svg \
   react-native-reanimated
 ```
@@ -25,7 +24,6 @@ yarn add @cdek-it/react-native-ui-kit
 npm i \
   react \
   react-native \
-  @tabler/icons-react-native \
   react-native-svg \
   react-native-reanimated
 ```

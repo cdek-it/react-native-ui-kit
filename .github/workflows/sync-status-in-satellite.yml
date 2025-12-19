@@ -40,31 +40,31 @@ jobs:
               await syncCommentToHub(comment, issueForComment, hubIssueNumber, hubOwner, hubRepoName);
               return;
             }
-            
+
             // Проверяем что задача создана из Hub
             const isFromHub = issue.labels.some(label => label.name === 'state/from-hub');
             if (!isFromHub) {
               console.log('ℹ️ Not a Hub issue, skipping sync');
               return;
             }
-            
+
             // Ищем номер Hub issue в описании
             const hubIssueMatch = issue.body.match(/Hub Issue.*#(\d+)/);
             if (!hubIssueMatch) {
               console.log('❌ Hub issue reference not found');
               return;
             }
-            
+
             const hubIssueNumber = parseInt(hubIssueMatch[1]);
             const hubRepo = '${{ github.repository_owner }}/cdek-ui';
-            
+
             // Определяем тип события для синхронизации лейблов
             if (context.eventName === 'issues' && (context.payload.action === 'labeled' || context.payload.action === 'unlabeled')) {
               await syncLabelsToHub(issue, hubIssueNumber, hubRepo, label);
             }
-            
+
             await syncStatusToHub(issue, hubIssueNumber, hubRepo);
-            
+
             async function syncStatusToHub(satelliteIssue, hubIssueNumber, hubRepo) {
               let status = '';
               let statusMessage = '';
@@ -98,7 +98,7 @@ jobs:
               // Отправляем статус в Hub
               await updateHubStatus(hubIssueNumber, status, statusMessage, satelliteIssue, hubRepo, shouldReopen);
             }
-            
+
             async function syncLabelsToHub(satelliteIssue, hubIssueNumber, hubRepo, changedLabel) {
               try {
                 const syncPrefixes = ['status/', 'priority/', 'area/', 'type/'];
@@ -276,7 +276,7 @@ jobs:
                 console.log(`❌ Failed to sync comment to Hub: ${error.message}`);
               }
             }
-            
+
             async function updateHubStatus(hubIssueNumber, status, statusMessage, satelliteIssue, hubRepo, shouldReopen = false) {
               try {
                 // Обновляем комментарий в Hub используя PAT

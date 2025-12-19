@@ -18,8 +18,7 @@ import { makeStyles } from '../../utils/makeStyles'
 import { TabItem, type TabItemProps } from './TabItem/TabItem'
 
 export interface TabsProps
-  extends AccessibilityProps,
-    Pick<ViewProps, 'testID'> {
+  extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Список табов см. компонент TabItem */
   items: Array<Pick<TabItemProps, 'Icon' | 'label' | 'badge'> & { key: string }>
 

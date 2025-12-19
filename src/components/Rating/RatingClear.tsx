@@ -13,8 +13,10 @@ import {
  * @see RatingItemContainerProps - тип свойств компонента контейнера элемента от которого наследуется данный тип свойств
  * @see RatingClear = компонент элемента рейтинга для очистки рейтинга
  */
-export interface RatingClearProps
-  extends Omit<RatingItemContainerProps, 'children'> {}
+export interface RatingClearProps extends Omit<
+  RatingItemContainerProps,
+  'children'
+> {}
 
 /**
  * Компонент элемента рейтинга для очистки рейтинга

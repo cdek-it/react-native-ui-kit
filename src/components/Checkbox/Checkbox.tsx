@@ -15,8 +15,7 @@ import { usePressableStyles } from './hooks/usePressableStyles'
 type CheckboxState = 'default' | 'danger'
 
 export interface CheckboxProps
-  extends AccessibilityProps,
-    Pick<ViewProps, 'testID'> {
+  extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Обработчик нажатия на чекбокс */
   readonly onPress: () => void
   /**

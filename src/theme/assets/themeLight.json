@@ -388,11 +388,7 @@
     }
   },
   "Misc": {
-    "Tag": {
-      "tagHeight": 21,
-      "tagFontSize": 12.25,
-      "tagPadding": 7
-    },
+    "Tag": { "tagHeight": 21, "tagFontSize": 12.25, "tagPadding": 7 },
     "Skeleton": {
       "skeletonBg": "#e2e2e4",
       "skeletonAnimationBg": "rgba(255, 255, 255, 0.1)"
@@ -616,9 +612,7 @@
       "ratingStarIconOnColor": "#f5b83d",
       "ratingStarIconHoverColor": "#facb75"
     },
-    "InputOpt": {
-      "inputOptFontSize": 21
-    },
+    "InputOpt": { "inputOptFontSize": 21 },
     "ToggleButton": {
       "toggleButtonBg": "#e2e2e4",
       "toggleButtonBorderColor": "rgba(255, 255, 255, 0.0001)",

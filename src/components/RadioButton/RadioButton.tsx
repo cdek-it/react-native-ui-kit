@@ -12,8 +12,7 @@ import Animated, { LinearTransition } from 'react-native-reanimated'
 import { makeStyles } from '../../utils/makeStyles'
 
 export interface RadioButtonProps
-  extends AccessibilityProps,
-    Pick<ViewProps, 'testID'> {
+  extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Обработчик нажатия на кнопку */
   onPress: () => void
   /**

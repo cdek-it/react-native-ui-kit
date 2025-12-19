@@ -29,8 +29,7 @@ import {
 const DEFAULT_ANIMATION_DURATION = 200 // ms
 
 export interface SelectButtonProps
-  extends AccessibilityProps,
-    Pick<ViewProps, 'testID'> {
+  extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Массив кнопок. Должен содержать как минимум 2 кнопки. */
   buttons: Array<
     Pick<SelectButtonItemProps, 'label' | 'showIcon' | 'Icon'> & { key: string }

@@ -1,8 +1,7 @@
-import { action } from '@storybook/addon-actions'
 import type { Meta, StoryObj } from '@storybook/react'
 import { IconUserCircle } from '@tabler/icons-react-native'
-
 import { View } from 'react-native'
+import { action } from 'storybook/actions'
 
 import { Body } from '../Typography'
 

@@ -1,3 +1,4 @@
 ios/Pods
 .yarn
 android/app/.cxx
+CHANGELOG.md

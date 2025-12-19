@@ -54,6 +54,7 @@ exports[`Slider snapshots default 1`] = `
           ],
         ]
       }
+      nativeID="0"
       style={
         [
           {
@@ -104,6 +105,7 @@ exports[`Slider snapshots default 1`] = `
           ],
         ]
       }
+      nativeID="1"
       pointerEvents="auto"
       style={
         [
@@ -185,6 +187,7 @@ exports[`Slider snapshots disabled = false, range = false 1`] = `
           ],
         ]
       }
+      nativeID="2"
       style={
         [
           {
@@ -235,6 +238,7 @@ exports[`Slider snapshots disabled = false, range = false 1`] = `
           ],
         ]
       }
+      nativeID="3"
       pointerEvents="auto"
       style={
         [
@@ -316,6 +320,7 @@ exports[`Slider snapshots disabled = false, range = true 1`] = `
           ],
         ]
       }
+      nativeID="6"
       style={
         [
           {
@@ -366,6 +371,7 @@ exports[`Slider snapshots disabled = false, range = true 1`] = `
           ],
         ]
       }
+      nativeID="7"
       pointerEvents="auto"
       style={
         [
@@ -423,6 +429,7 @@ exports[`Slider snapshots disabled = false, range = true 1`] = `
           ],
         ]
       }
+      nativeID="8"
       pointerEvents="auto"
       style={
         [
@@ -504,6 +511,7 @@ exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 
           ],
         ]
       }
+      nativeID="12"
       style={
         [
           {
@@ -554,6 +562,7 @@ exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 
           ],
         ]
       }
+      nativeID="13"
       pointerEvents="auto"
       style={
         [
@@ -611,6 +620,7 @@ exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 
           ],
         ]
       }
+      nativeID="14"
       pointerEvents="auto"
       style={
         [
@@ -695,6 +705,7 @@ exports[`Slider snapshots disabled = true, range = false 1`] = `
           ],
         ]
       }
+      nativeID="4"
       style={
         [
           {
@@ -745,6 +756,7 @@ exports[`Slider snapshots disabled = true, range = false 1`] = `
           ],
         ]
       }
+      nativeID="5"
       pointerEvents="none"
       style={
         [
@@ -829,6 +841,7 @@ exports[`Slider snapshots disabled = true, range = true 1`] = `
           ],
         ]
       }
+      nativeID="9"
       style={
         [
           {
@@ -879,6 +892,7 @@ exports[`Slider snapshots disabled = true, range = true 1`] = `
           ],
         ]
       }
+      nativeID="10"
       pointerEvents="none"
       style={
         [
@@ -936,6 +950,7 @@ exports[`Slider snapshots disabled = true, range = true 1`] = `
           ],
         ]
       }
+      nativeID="11"
       pointerEvents="none"
       style={
         [
@@ -1020,6 +1035,7 @@ exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 8
           ],
         ]
       }
+      nativeID="15"
       style={
         [
           {
@@ -1070,6 +1086,7 @@ exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 8
           ],
         ]
       }
+      nativeID="16"
       pointerEvents="none"
       style={
         [
@@ -1127,6 +1144,7 @@ exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 8
           ],
         ]
       }
+      nativeID="17"
       pointerEvents="none"
       style={
         [
