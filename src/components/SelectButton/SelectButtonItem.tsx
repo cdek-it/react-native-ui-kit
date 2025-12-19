@@ -2,11 +2,12 @@ import { memo, useMemo, useState } from 'react'
 import { TouchableOpacity, type ViewProps, type ViewStyle } from 'react-native'
 import Animated, {
   interpolateColor,
-  runOnJS,
   type SharedValue,
   useAnimatedReaction,
   useAnimatedStyle,
 } from 'react-native-reanimated'
+
+import { scheduleOnRN } from 'react-native-worklets'
 
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
 import { makeStyles } from '../../utils/makeStyles'
@@ -131,7 +132,7 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
       () => position.value,
       (value, prevValue) => {
         if (value !== prevValue) {
-          runOnJS(setIsSelected)(value === index)
+          scheduleOnRN(setIsSelected, value === index)
         }
       }
     )

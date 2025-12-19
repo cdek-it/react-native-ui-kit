@@ -4,8 +4,9 @@ import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withTiming,
-  runOnJS,
 } from 'react-native-reanimated'
+
+import { scheduleOnRN } from 'react-native-worklets'
 
 import { makeStyles } from '../../utils/makeStyles'
 
@@ -46,7 +47,7 @@ export const TimerFlip = memo<TimerFlipProps>(({ value, duration = 300 }) => {
     setNextValue(value)
     progress.value = withTiming(1, { duration }, (finished) => {
       if (finished) {
-        runOnJS(setCurrentValue)(value)
+        scheduleOnRN(setCurrentValue, value)
       }
     })
   }, [value, currentValue, duration, progress, nextValue])

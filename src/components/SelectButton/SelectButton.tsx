@@ -11,13 +11,14 @@ import {
 import Animated, {
   Easing,
   interpolate,
-  runOnJS,
   type SharedValue,
   useAnimatedReaction,
   useAnimatedStyle,
   useSharedValue,
   withTiming,
 } from 'react-native-reanimated'
+
+import { scheduleOnRN } from 'react-native-worklets'
 
 import { makeStyles } from '../../utils/makeStyles'
 
@@ -104,7 +105,7 @@ export const SelectButton = memo<SelectButtonProps>(
       () => buttonsLayoutList.value,
       (layoutList, previous) => {
         if (layoutList !== previous) {
-          runOnJS(setFrameKey)(Date.now())
+          scheduleOnRN(setFrameKey, Date.now())
         }
       }
     )

@@ -11,8 +11,9 @@ import Animated, {
   useAnimatedStyle,
   interpolate,
   Extrapolation,
-  runOnJS,
 } from 'react-native-reanimated'
+
+import { scheduleOnRN } from 'react-native-worklets'
 
 import { makeStyles } from '../../utils/makeStyles'
 
@@ -159,7 +160,7 @@ export const Slider = memo<SliderProps>(
       .minDistance(1)
       .onBegin(() => {
         prevMinPointX.value = minPointX.value
-        runOnJS(setIsPressed)(true)
+        scheduleOnRN(setIsPressed, true)
       })
       .onUpdate((event) => {
         const maxTranslateX = trackWidth.value - pointerWidth
@@ -171,10 +172,10 @@ export const Slider = memo<SliderProps>(
         )
 
         minPointX.value = minPointPosition
-        runOnJS(returnMinVal)(minPointPosition)
+        scheduleOnRN(returnMinVal, minPointPosition)
       })
       .onFinalize(() => {
-        runOnJS(setIsPressed)(false)
+        scheduleOnRN(setIsPressed, false)
       })
 
     const minPointStyle = useAnimatedStyle(() => ({
@@ -185,7 +186,7 @@ export const Slider = memo<SliderProps>(
       .minDistance(1)
       .onBegin(() => {
         prevMaxPointX.value = maxPointX.value
-        runOnJS(setIsPressed)(true)
+        scheduleOnRN(setIsPressed, true)
       })
       .onUpdate((event) => {
         const maxTranslateX = trackWidth.value - pointerWidth
@@ -196,10 +197,10 @@ export const Slider = memo<SliderProps>(
           maxTranslateX
         )
         maxPointX.value = maxPointPosition
-        runOnJS(returnMaxVal)(maxPointPosition)
+        scheduleOnRN(returnMaxVal, maxPointPosition)
       })
       .onFinalize(() => {
-        runOnJS(setIsPressed)(false)
+        scheduleOnRN(setIsPressed, false)
       })
 
     const maxPointStyle = useAnimatedStyle(() => ({
