@@ -2,7 +2,7 @@ import { defineConfig } from 'eslint/config'
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
 
 // eslint-disable-next-line import-x/no-named-as-default
-import importX from 'eslint-plugin-import-x'
+import importX, { createNodeResolver } from 'eslint-plugin-import-x'
 
 export const importConfig = defineConfig([
   {
@@ -18,8 +18,9 @@ export const importConfig = defineConfig([
       'import-x/resolver-next': [
         createTypeScriptImportResolver({
           alwaysTryTypes: true,
-          project: ['tsconfig.eslint.json'],
+          project: ['tsconfig.json'],
         }),
+        createNodeResolver(),
       ],
     },
     rules: {
@@ -123,7 +124,7 @@ export const importConfig = defineConfig([
       'import-x/extensions': [
         'error',
         'never',
-        { json: 'always', png: 'always', jpg: 'always' },
+        { json: 'always', png: 'always', jpg: 'always', mjs: 'always' },
       ],
 
       // https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/first.md
