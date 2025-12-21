@@ -3,15 +3,15 @@ on:
   workflow_dispatch:
     inputs:
       noIncrement:
-        description: 'Создать релиз без увеличения версии и публикации в npm'
+        description: "Создать релиз без увеличения версии и публикации в npm"
         required: false
         default: false
         type: boolean
       bumpMode:
         description:
-          'Режим обновления версии. auto - автоматически на основе списка
+          "Режим обновления версии. auto - автоматически на основе списка
           изменений, major - увеличение мажорной версии, minor - увеличение
-          минорной версии, patch - выпуск патча'
+          минорной версии, patch - выпуск патча"
         required: false
         default: auto
         type: choice
@@ -20,6 +20,11 @@ on:
           - major
           - minor
           - patch
+      beta:
+        description: "Создать beta-релиз"
+        required: false
+        default: false
+        type: boolean
 permissions:
   contents: read
 
@@ -101,15 +106,30 @@ jobs:
 
       - name: Release with Increment and Publishing
         if: inputs.noIncrement == false && inputs.bumpMode == 'auto'
-        run: yarn release
+        run: |
+          if [ "${{ inputs.beta }}" == "true" ]; then
+            yarn release --preRelease=beta
+          else
+            yarn release
+          fi
 
       - name: Release with Increment as ${{ inputs.bumpMode }} and Publishing
         if: inputs.noIncrement == false && inputs.bumpMode != 'auto'
-        run: yarn release ${{ inputs.bumpMode }}
+        run: |
+          if [ "${{ inputs.beta }}" == "true" ]; then
+            yarn release ${{ inputs.bumpMode }} --preRelease=beta
+          else
+            yarn release ${{ inputs.bumpMode }}
+          fi
 
       - name: Release Without Increment and Publishing
         if: inputs.noIncrement == true
-        run: yarn release --no-increment --no-npm.publish
+        run: |
+          if [ "${{ inputs.beta }}" == "true" ]; then
+            yarn release --no-increment --no-npm.publish --preRelease=beta
+          else
+            yarn release --no-increment --no-npm.publish
+          fi
 
       - name: Send Notification
         run: |
