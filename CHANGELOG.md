@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.6.0-beta.0](https://github.com/cdek-it/react-native-ui-kit/compare/v0.5.0...v0.6.0-beta.0) (2025-12-22)
+
+### 🐛 Исправления багов
+
+* **Dialog:** исправлена логика открытия диалогов ([2607e2f](https://github.com/cdek-it/react-native-ui-kit/commit/2607e2f19c1e9c49eb26aae5ab233d1b8127965b))
+
+### ♻️ Рефакторинг
+
+* runOnJS заменен на scheduleOnRN ([8c3b6bd](https://github.com/cdek-it/react-native-ui-kit/commit/8c3b6bd7628265153e7ee5b55a8c3e96fcd30952))
+
 ## [0.5.0](https://github.com/cdek-it/react-native-ui-kit/compare/v0.4.2...v0.5.0) (2025-12-17)
 
 ### 🚀 Новый функционал
