@@ -16,7 +16,7 @@ interface ThemeContextType {
   changeTheme: (theme: ThemeVariant) => void
 }
 
-interface ThemeContextProviderProps {
+export interface ThemeContextProviderProps {
   readonly initialTheme?: ThemeVariant
   readonly fonts?: FontsConfig
   readonly children: ReactNode
