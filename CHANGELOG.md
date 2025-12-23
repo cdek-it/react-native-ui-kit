@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.6.1-beta.0](https://github.com/cdek-it/react-native-ui-kit/compare/v0.6.0-beta.0...v0.6.1-beta.0) (2025-12-23)
+
+### 🐛 Исправления багов
+
+* **ThemeContext:** добавлен экспорт ThemeContextProviderProps ([8c4648c](https://github.com/cdek-it/react-native-ui-kit/commit/8c4648c47fd57dc34d2c619d85d15f569b521eac))
+
 ## [0.6.0-beta.0](https://github.com/cdek-it/react-native-ui-kit/compare/v0.5.0...v0.6.0-beta.0) (2025-12-22)
 
 ### 🐛 Исправления багов
