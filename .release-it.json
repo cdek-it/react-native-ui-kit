@@ -4,7 +4,8 @@
     "commitMessage": "chore: release v${version}",
     "tagName": "v${version}",
     "requireCommits": true,
-    "requireBranch": "main"
+    "requireBranch": "main",
+    "tagExclude": "*[-]*"
   },
   "github": { "release": true },
   "npm": { "publish": true, "skipChecks": true },
@@ -31,7 +32,10 @@
           { "type": "revert", "section": "🧹 Другое", "hidden": false }
         ]
       },
-      "infile": "CHANGELOG.md"
+      "infile": "CHANGELOG.md",
+      "gitRawCommitsOpts": {
+        "ignore": "^chore: release"
+      }
     }
   }
 }
