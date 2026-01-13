@@ -42,7 +42,6 @@
     "pod-install": "bundle exec pod install --project-directory=ios"
   },
   "dependencies": {
-    "@gorhom/portal": "^1.0.14",
     "@tabler/icons-react-native": "^3.36.0"
   },
   "devDependencies": {
