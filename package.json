@@ -1,6 +1,6 @@
 {
   "name": "@cdek-it/react-native-ui-kit",
-  "version": "0.6.1-beta.0",
+  "version": "0.6.1",
   "description": "UI kit на основе Prime Faces, Prime Flex для React Native",
   "license": "MIT",
   "homepage": "https://developer.cdek.ru/design-system",
