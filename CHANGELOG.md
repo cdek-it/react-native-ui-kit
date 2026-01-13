@@ -1,5 +1,7 @@
 # Changelog
 
+## [0.6.2](https://github.com/cdek-it/react-native-ui-kit/compare/v0.6.1...v0.6.2) (2026-01-13)
+
 ## [0.6.1](https://github.com/cdek-it/react-native-ui-kit/compare/v0.5.0...v0.6.1) (2026-01-13)
 
 ### 🐛 Исправления багов
