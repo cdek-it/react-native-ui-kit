@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.6.3](https://github.com/cdek-it/react-native-ui-kit/compare/v0.6.2...v0.6.3) (2026-01-20)
+
+### 🐛 Исправления багов
+
+* **InputTextBase:** добавлена зеленая обводка при фокусе ([cd9cc5b](https://github.com/cdek-it/react-native-ui-kit/commit/cd9cc5b431a2ece46f5045704761e1fc901f5f0b))
+
 ## [0.6.2](https://github.com/cdek-it/react-native-ui-kit/compare/v0.6.1...v0.6.2) (2026-01-13)
 
 ## [0.6.1](https://github.com/cdek-it/react-native-ui-kit/compare/v0.5.0...v0.6.1) (2026-01-13)
