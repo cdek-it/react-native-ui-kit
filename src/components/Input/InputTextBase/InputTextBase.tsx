@@ -188,10 +188,10 @@ export const InputTextBase = memo<
 
     const rightButtonHitSlop = useMemo<Insets>(
       () => ({
-        top: 0,
-        bottom: 0,
-        left: styles.rightContainer.gap / 2,
-        right: styles.rightContainer.gap / 2,
+        top: 100,
+        bottom: 100,
+        left: styles.rightContainer.gap,
+        right: styles.rightContainer.gap,
       }),
       [styles.rightContainer.gap]
     )
