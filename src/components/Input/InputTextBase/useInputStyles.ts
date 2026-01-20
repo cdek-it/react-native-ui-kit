@@ -37,6 +37,7 @@ const useStyles = makeStyles(
     containerFocused: {
       outlineColor: theme.General.focusOutlineColor,
       outlineWidth: Math.round(theme.General.focusShadowWidth),
+      borderColor: theme.General.focusBorderColor,
     },
     containerFloatLabel: {
       minHeight: theme.Button.Common.buttonHeightXL,
