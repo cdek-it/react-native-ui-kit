@@ -188,9 +188,7 @@ export const InputTextBase = memo<
 
     const isOnlyButton = useMemo(() => {
       return (
-        [showClearButton, showSecureToggle].filter((val) => {
-          return val
-        }).length === 1
+        [showClearButton, showSecureToggle].filter((val) => val).length === 1
       )
     }, [showClearButton, showSecureToggle])
 
