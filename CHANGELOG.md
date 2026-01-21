@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.6.4](https://github.com/cdek-it/react-native-ui-kit/compare/v0.6.3...v0.6.4) (2026-01-21)
+
+### 🐛 Исправления багов
+
+* **input-text:** кейс для двух кнопок ([b225eac](https://github.com/cdek-it/react-native-ui-kit/commit/b225eac80434e46ead24940f9225c5095b577786))
+* **input-text:** увеличена область нажатия кнопки в InputText ([703f14b](https://github.com/cdek-it/react-native-ui-kit/commit/703f14b2bfa2e3d43c7e5ffa5c1966a1b17fa20d))
+
+### 🧹 Другое
+
+* **input-text:** добавил коммент ([9563445](https://github.com/cdek-it/react-native-ui-kit/commit/9563445694483cd848161607834ddb033f0c12bf))
+
+### ♻️ Рефакторинг
+
+* **input-text:** simplify ([3dff036](https://github.com/cdek-it/react-native-ui-kit/commit/3dff0365749b1e2ee0ad84e05b8b0296100ee99b))
+
 ## [0.6.3](https://github.com/cdek-it/react-native-ui-kit/compare/v0.6.2...v0.6.3) (2026-01-20)
 
 ### 🐛 Исправления багов
