@@ -186,14 +186,26 @@ export const InputTextBase = memo<
     const hasRightContent =
       loading || showClearButton || showSecureToggle || disabled
 
+    const isOnlyButton = useMemo(() => {
+      return (
+        [showClearButton, showSecureToggle].filter((val) => {
+          return val
+        }).length === 1
+      )
+    }, [showClearButton, showSecureToggle])
+
     const rightButtonHitSlop = useMemo<Insets>(
       () => ({
         top: 100,
         bottom: 100,
-        left: styles.rightContainer.gap,
-        right: styles.rightContainer.gap,
+        left: isOnlyButton
+          ? styles.rightContainer.gap
+          : styles.rightContainer.gap / 2,
+        right: isOnlyButton
+          ? styles.rightContainer.gap
+          : styles.rightContainer.gap / 2,
       }),
-      [styles.rightContainer.gap]
+      [styles.rightContainer.gap, isOnlyButton]
     )
 
     const texInputProps = useMemo<RenderTextInputArgs>(
