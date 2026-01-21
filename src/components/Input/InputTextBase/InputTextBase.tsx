@@ -194,6 +194,9 @@ export const InputTextBase = memo<
 
     const rightButtonHitSlop = useMemo<Insets>(
       () => ({
+        // Большие вертикальные отступы (100) - чтобы компенсировать возможное
+        // растягивание инпута по вертикали, при этом область тапа
+        // гарантированно не выйдет за пределы инпута
         top: 100,
         bottom: 100,
         left: isOnlyButton
