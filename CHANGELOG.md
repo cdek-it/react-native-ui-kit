@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.6.5](https://github.com/cdek-it/react-native-ui-kit/compare/v0.6.4...v0.6.5) (2026-01-22)
+
+### 🐛 Исправления багов
+
+* **input-otp:** фикс цвета курсора ([e42cd23](https://github.com/cdek-it/react-native-ui-kit/commit/e42cd239b290627160a5d4bf60183f37023ab8a5))
+
 ## [0.6.4](https://github.com/cdek-it/react-native-ui-kit/compare/v0.6.3...v0.6.4) (2026-01-21)
 
 ### 🐛 Исправления багов
