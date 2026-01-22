@@ -91,5 +91,5 @@ const useStyles = makeStyles(({ theme, border, fonts, typography }) => ({
 
   disabled: { mixBlendMode: 'luminosity', opacity: 0.6 },
 
-  cursor: { color: theme.Form.InputText.inputFocusBorderColor },
+  cursor: { color: theme.Form.InputText.inputTextColor },
 }))
