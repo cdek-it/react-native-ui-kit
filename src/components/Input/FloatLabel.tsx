@@ -1,5 +1,5 @@
 import { memo } from 'react'
-import { View, type ViewStyle } from 'react-native'
+import { View, type StyleProp, type ViewStyle } from 'react-native'
 
 import { InputTextBase } from './InputTextBase/InputTextBase'
 import type { InputTextBaseProps } from './InputTextBase/types'
@@ -10,7 +10,7 @@ export interface FloatLabelProps extends InputTextBaseProps {
   /** Показать индикатор загрузки в поле */
   loading?: boolean
   /** Дополнительная стилизация для контейнера компонента */
-  style?: ViewStyle
+  style?: StyleProp<ViewStyle>
 }
 
 /**

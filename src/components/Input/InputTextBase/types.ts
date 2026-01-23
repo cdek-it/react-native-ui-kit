@@ -1,5 +1,10 @@
 import type { Ref, ReactNode } from 'react'
-import type { TextInputProps, ViewStyle, TextInput } from 'react-native'
+import type {
+  TextInputProps,
+  ViewStyle,
+  TextInput,
+  StyleProp,
+} from 'react-native'
 
 /** @see TextInputProps */
 export interface InputTextBaseProps extends Omit<
@@ -21,7 +26,7 @@ export interface InputTextBaseProps extends Omit<
   /** Озвучка для кнопки очистки поля */
   clearButtonAccessibilityLabel?: string
   /** Управление стилем контейнера поля ввода */
-  containerStyle?: ViewStyle
+  containerStyle?: StyleProp<ViewStyle>
   /** Управление доступностью поля */
   disabled?: boolean
   /** Ref для управления полем ввода */
