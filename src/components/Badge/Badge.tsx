@@ -4,6 +4,7 @@ import {
   Dimensions,
   type LayoutChangeEvent,
   type LayoutRectangle,
+  type StyleProp,
   Text,
   View,
   type ViewStyle,
@@ -22,7 +23,7 @@ export interface BadgeBase
    */
   severity?: BadgeSeverity
   /** Дополнительная стилизация для контейнера компонента */
-  style?: ViewStyle
+  style?: StyleProp<ViewStyle>
 }
 
 interface BadgeText extends BadgeBase {

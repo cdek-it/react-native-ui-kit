@@ -8,6 +8,7 @@ import {
 import { type ComponentProps, memo, type ReactNode, useMemo } from 'react'
 import {
   type AccessibilityProps,
+  type StyleProp,
   View,
   type ViewProps,
   type ViewStyle,
@@ -56,7 +57,7 @@ export interface MessageProps
   severity?: 'info' | 'success' | 'warning' | 'danger'
 
   /** Дополнительная стилизация для контейнера компонента */
-  style?: ViewStyle
+  style?: StyleProp<ViewStyle>
 
   /** Значение таймера, если нужно отображать таймер вместо иконки */
   timerValue?: number

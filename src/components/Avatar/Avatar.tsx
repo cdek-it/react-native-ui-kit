@@ -14,6 +14,7 @@ import {
   type ImageSourcePropType,
   type LayoutChangeEvent,
   type LayoutRectangle,
+  type StyleProp,
   Text,
   useWindowDimensions,
   View,
@@ -38,7 +39,7 @@ interface AvatarBase extends AccessibilityProps {
    */
   shape?: 'square' | 'circle'
   /** Дополнительная стилизация для контейнера компонента */
-  style?: ViewStyle
+  style?: StyleProp<ViewStyle>
   testID?: string
   /** Callback функция при ошибке загрузки картинки */
   onError?: ComponentProps<typeof Image>['onError']

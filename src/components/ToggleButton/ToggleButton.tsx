@@ -2,6 +2,7 @@ import { memo, useCallback, useMemo, useState } from 'react'
 import {
   type AccessibilityProps,
   Pressable,
+  type StyleProp,
   Text,
   View,
   type ViewProps,
@@ -44,7 +45,7 @@ export interface ToggleButtonProps
    */
   size?: 'xlarge' | 'large' | 'base' | 'small'
   /** Дополнительная стилизация для контейнера компонента */
-  style?: ViewStyle
+  style?: StyleProp<ViewStyle>
   /** SVG-иконка */
   Icon?: SvgSource
 }

@@ -1,5 +1,11 @@
 import { memo, useCallback, useImperativeHandle, useMemo, useRef } from 'react'
-import { type TextInput, View, StyleSheet, type ViewStyle } from 'react-native'
+import {
+  type TextInput,
+  View,
+  StyleSheet,
+  type ViewStyle,
+  type StyleProp,
+} from 'react-native'
 
 import { makeStyles } from '../../utils/makeStyles'
 
@@ -14,7 +20,7 @@ interface InputGroupBaseProps {
   /** Содержимое правого аддона группы */
   right?: InputGroupAddonProps['content']
   /** Дополнительная стилизация для контейнера компонента */
-  style?: ViewStyle
+  style?: StyleProp<ViewStyle>
 }
 
 export type InputGroupProps = InputGroupBaseProps & InputTextBaseProps
