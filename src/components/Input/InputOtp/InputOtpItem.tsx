@@ -80,7 +80,7 @@ const useStyles = makeStyles(({ theme, border, fonts, typography }) => ({
 
   text: {
     fontSize: typography.Size['text-2xl'],
-    fontFamily: fonts.secondary,
+    fontFamily: fonts.primary,
     fontWeight: '400',
     color: theme.Form.InputText.inputTextColor,
   },
