@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.6](https://github.com/cdek-it/react-native-ui-kit/compare/v0.6.5...v0.6.6) (2026-01-26)
+
+### 🐛 Исправления багов
+
+* **otp:** замена шрифта в инпуте OTP ([631143b](https://github.com/cdek-it/react-native-ui-kit/commit/631143b1f34250781dc2c7250bff9287dc3dbe4c))
+* **types:** исправление типов для свойста style в компонентах ([3787992](https://github.com/cdek-it/react-native-ui-kit/commit/37879922c3c9f37ac81c37c87302541ced052dc4))
+
 * fix(input-otp): фикс цвета курсора (e42cd23)
 
 ## [0.6.5](https://github.com/cdek-it/react-native-ui-kit/compare/v0.6.4...v0.6.5) (2026-01-22)
