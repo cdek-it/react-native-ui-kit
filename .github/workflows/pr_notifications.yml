@@ -18,9 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.pull_request.draft != true
     env:
-      MM_USERS_JSON: '${{ secrets.MM_USERS }}'
-      PR_AUTHOR: '${{ github.event.pull_request.user.login }}'
-      GH_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+      MM_USERS_JSON: "${{ secrets.MM_USERS }}"
+      PR_AUTHOR: "${{ github.event.pull_request.user.login }}"
+      GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
     steps:
       - name: Timeout
         run: sleep 1m
@@ -41,6 +41,22 @@ jobs:
           )
           echo "::add-mask::$SELECTED_REVIEWER_ENTRY"
           echo "SELECTED_REVIEWER_ENTRY=$SELECTED_REVIEWER_ENTRY" >> $GITHUB_ENV
+      - name: Check Last Review
+        run: |
+          if [ -z "$SELECTED_REVIEWER_ENTRY" ]; then
+            LAST_REVIEW=$(gh pr view ${{ github.event.pull_request.number }} --repo ${{ github.repository }} --json reviews --jq '.reviews | last')
+            LAST_REVIEWER_LOGIN=$(echo "$LAST_REVIEW" | jq -r '.author.login')
+            SELECTED_REVIEWER_ENTRY=$(
+              echo $AVAILABLE_REVIEWERS_ENTRIES |
+                jq -c -e --arg lastReviewerLogin "$LAST_REVIEWER_LOGIN" 'map(select(.key == $lastReviewerLogin)) | first' > /dev/null
+            )
+            echo "::add-mask::$SELECTED_REVIEWER_ENTRY"
+            echo "LAST_REVIEW=$LAST_REVIEW" >> $GITHUB_ENV
+
+            if [[ "$SELECTED_REVIEWER_ENTRY" != "null" ]] then;
+              echo "SELECTED_REVIEWER_ENTRY=$SELECTED_REVIEWER_ENTRY" >> $GITHUB_ENV
+            fi
+          fi
 
       - name: Assign Reviewer
         run: |
@@ -60,18 +76,32 @@ jobs:
 
           echo "::add-mask::$REVIEWER_MM"
           echo "REVIEWER_MM=$REVIEWER_MM" >> $GITHUB_ENV
-      - name: 'Notify Reviewer'
+      - name: Check Notification Need
         run: |
-          BRANCH_URL="${{ github.event.pull_request.head.repo.html_url }}/tree/${{ github.event.pull_request.head.ref }}"
+          PR_STATE=$(echo "$LAST_REVIEW" | jq -r '.state')
+          REVIEWER_LOGIN=$(echo "$LAST_REVIEW" | jq -r '.author.login')
 
-          MESSAGE="MR [!${{ github.event.pull_request.number }}](${{ github.event.pull_request.html_url }})"
-          MESSAGE+=" от [${{ github.event.pull_request.user.login }} ${USER_NAME}]"
-          MESSAGE+="(${{ github.event.pull_request.user.html_url }})"
-          MESSAGE+="(ветка: [${{ github.event.pull_request.head.ref }}](${BRANCH_URL})) готов на ревью.\n"
-          MESSAGE+="Выбран ревьюер: @${REVIEWER_MM}.\n"
-          MESSAGE+="Ссылка на MR: ${{ github.event.pull_request.html_url }}"
+          if [[ "$PR_STATE" == "APPROVED" ]] && [[ "$REVIEWER_LOGIN" == "$REVIEWER_GH" ]]; then
+            NEED_NOTIFY=0
+          else
+            NEED_NOTIFY=1
+          fi
 
-          curl -X POST \
-            -H "Content-Type: application/json" \
-            -d "{\"text\": \"$MESSAGE\"}" \
-            "${{ secrets.REVIEW_CHAT_WEBHOOK }}"
+          echo "NEED_NOTIFY=$NEED_NOTIFY" >> $GITHUB_ENV
+      - name: "Notify Reviewer"
+        run: |
+          if [ "$NEED_NOTIFY" -ne 0 ] then;
+            BRANCH_URL="${{ github.event.pull_request.head.repo.html_url }}/tree/${{ github.event.pull_request.head.ref }}"
+
+            MESSAGE="MR [!${{ github.event.pull_request.number }}](${{ github.event.pull_request.html_url }})"
+            MESSAGE+=" от [${{ github.event.pull_request.user.login }} ${USER_NAME}]"
+            MESSAGE+="(${{ github.event.pull_request.user.html_url }})"
+            MESSAGE+="(ветка: [${{ github.event.pull_request.head.ref }}](${BRANCH_URL})) готов на ревью.\n"
+            MESSAGE+="Выбран ревьюер: @${REVIEWER_MM}.\n"
+            MESSAGE+="Ссылка на MR: ${{ github.event.pull_request.html_url }}"
+
+            curl -X POST \
+              -H "Content-Type: application/json" \
+              -d "{\"text\": \"$MESSAGE\"}" \
+              "${{ secrets.REVIEW_CHAT_WEBHOOK }}"
+          fi
