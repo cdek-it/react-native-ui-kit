@@ -48,14 +48,18 @@ jobs:
             LAST_REVIEWER_LOGIN=$(echo "$LAST_REVIEW" | jq -r '.author.login')
             SELECTED_REVIEWER_ENTRY=$(
               echo $AVAILABLE_REVIEWERS_ENTRIES |
-                jq -c -e --arg lastReviewerLogin "$LAST_REVIEWER_LOGIN" 'map(select(.key == $lastReviewerLogin)) | first' > /dev/null
+                jq -c --arg lastReviewerLogin "$LAST_REVIEWER_LOGIN" 'map(select(.key == $lastReviewerLogin)) | first'
             )
             echo "::add-mask::$SELECTED_REVIEWER_ENTRY"
             echo "LAST_REVIEW=$LAST_REVIEW" >> $GITHUB_ENV
 
             if [[ "$SELECTED_REVIEWER_ENTRY" != "null" ]]; then
               echo "SELECTED_REVIEWER_ENTRY=$SELECTED_REVIEWER_ENTRY" >> $GITHUB_ENV
+            else
+              echo "Last review check failed"
             fi
+          else
+            echo "The reviewer was selected on the previous steps. Skip checking last review"
           fi
 
       - name: Assign Reviewer
@@ -64,6 +68,8 @@ jobs:
             AVAILABLE_REVIEWERS_LENGTH=$(echo "$AVAILABLE_REVIEWERS_ENTRIES" | jq 'length')
             SELECTED_REVIEWER_INDEX=$((RANDOM % AVAILABLE_REVIEWERS_LENGTH))
             SELECTED_REVIEWER_ENTRY=$(echo "$AVAILABLE_REVIEWERS_ENTRIES" | jq -c --argjson index "$SELECTED_REVIEWER_INDEX" '.[$index]')
+          else
+            echo "The reviewer was selected on the previous steps. Skip assigning a reviewer"
           fi
 
           REVIEWER_GH=$(echo "$SELECTED_REVIEWER_ENTRY" | jq -r '.key')
@@ -104,4 +110,6 @@ jobs:
               -H "Content-Type: application/json" \
               -d "{\"text\": \"$MESSAGE\"}" \
               "${{ secrets.REVIEW_CHAT_WEBHOOK }}"
+          else
+            echo "Notification is not needed. Skip notification step"
           fi
