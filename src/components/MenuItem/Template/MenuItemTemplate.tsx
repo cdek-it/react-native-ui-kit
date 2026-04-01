@@ -170,5 +170,5 @@ const useStyles = makeStyles(({ theme, spacing, typography, border }) => ({
     height: typography.Size['text-xl'],
     color: theme.Menu.Item.menuitemIconColor,
   },
-  textContainer: { gap: spacing.Gap['gap-1'] },
+  textContainer: { gap: spacing.Gap['gap-1'], flex: 1 },
 }))
