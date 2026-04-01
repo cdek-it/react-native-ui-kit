@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.6.8](https://github.com/cdek-it/react-native-ui-kit/compare/v0.6.7...v0.6.8) (2026-04-01)
+
+### 🐛 Исправления багов
+
+* **MenuItemTemplate:** исправлен выход текста за пределы контейнера ([9c485f1](https://github.com/cdek-it/react-native-ui-kit/commit/9c485f14f92fd7c86ffe21c610507bef34d5bca5))
+
 ## [0.6.7](https://github.com/cdek-it/react-native-ui-kit/compare/v0.6.6...v0.6.7) (2026-04-01)
 
 ### 🐛 Исправления багов
