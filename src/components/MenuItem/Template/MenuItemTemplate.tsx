@@ -163,7 +163,7 @@ const useStyles = makeStyles(({ theme, spacing, typography, border }) => ({
   templateContainer: {
     flexDirection: 'row',
     gap: spacing.Gap['gap-2'],
-    flexGrow: 1,
+    flex: 1,
   },
   icon: {
     width: typography.Size['text-xl'],

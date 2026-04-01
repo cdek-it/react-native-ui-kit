@@ -75,8 +75,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
       <View
         style={
           {
+            "flex": 1,
             "flexDirection": "row",
-            "flexGrow": 1,
             "gap": 7,
           }
         }
@@ -579,8 +579,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate minimal config 1`] = `
       <View
         style={
           {
+            "flex": 1,
             "flexDirection": "row",
-            "flexGrow": 1,
             "gap": 7,
           }
         }
@@ -777,8 +777,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
       <View
         style={
           {
+            "flex": 1,
             "flexDirection": "row",
-            "flexGrow": 1,
             "gap": 7,
           }
         }
@@ -995,8 +995,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate with colored icon 1`] = `
       <View
         style={
           {
+            "flex": 1,
             "flexDirection": "row",
-            "flexGrow": 1,
             "gap": 7,
           }
         }
@@ -1219,8 +1219,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate with extra 1`] = `
       <View
         style={
           {
+            "flex": 1,
             "flexDirection": "row",
-            "flexGrow": 1,
             "gap": 7,
           }
         }
@@ -1426,8 +1426,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
       <View
         style={
           {
+            "flex": 1,
             "flexDirection": "row",
-            "flexGrow": 1,
             "gap": 7,
           }
         }
@@ -1650,8 +1650,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
       <View
         style={
           {
+            "flex": 1,
             "flexDirection": "row",
-            "flexGrow": 1,
             "gap": 7,
           }
         }
@@ -1908,8 +1908,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate with padding 1`] = `
       <View
         style={
           {
+            "flex": 1,
             "flexDirection": "row",
-            "flexGrow": 1,
             "gap": 7,
           }
         }
@@ -2025,8 +2025,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate with separator 1`] = `
       <View
         style={
           {
+            "flex": 1,
             "flexDirection": "row",
-            "flexGrow": 1,
             "gap": 7,
           }
         }
