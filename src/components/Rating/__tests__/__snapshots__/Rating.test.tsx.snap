@@ -107,7 +107,7 @@ exports[`Rating component tests renders correctly with default props 1`] = `
         strokeWidth={2}
       >
         <RNSVGPath
-          d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+          d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
           fill={null}
           propList={
             [
@@ -604,7 +604,7 @@ exports[`Rating component tests renders correctly with default props 1`] = `
         strokeWidth={2}
       >
         <RNSVGPath
-          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245"
           fill={
             {
               "payload": 4278190080,
@@ -737,7 +737,7 @@ exports[`Rating component tests renders correctly with default props 1`] = `
         strokeWidth={2}
       >
         <RNSVGPath
-          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245"
           fill={
             {
               "payload": 4278190080,
@@ -877,7 +877,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
         strokeWidth={2}
       >
         <RNSVGPath
-          d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+          d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
           fill={null}
           propList={
             [
@@ -1374,7 +1374,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
         strokeWidth={2}
       >
         <RNSVGPath
-          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245"
           fill={
             {
               "payload": 4278190080,
@@ -1507,7 +1507,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
         strokeWidth={2}
       >
         <RNSVGPath
-          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245"
           fill={
             {
               "payload": 4278190080,
@@ -1647,7 +1647,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
         strokeWidth={2}
       >
         <RNSVGPath
-          d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+          d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
           fill={null}
           propList={
             [
@@ -2260,7 +2260,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
         strokeWidth={2}
       >
         <RNSVGPath
-          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245"
           fill={
             {
               "payload": 4278190080,

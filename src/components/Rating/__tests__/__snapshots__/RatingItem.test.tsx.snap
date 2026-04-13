@@ -103,7 +103,7 @@ exports[`RatingItem component tests checked - false, disabled - false, pressed -
       strokeWidth={2}
     >
       <RNSVGPath
-        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245"
         fill={
           {
             "payload": 4278190080,
@@ -241,7 +241,7 @@ exports[`RatingItem component tests checked - false, disabled - false, pressed -
       strokeWidth={2}
     >
       <RNSVGPath
-        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245"
         fill={
           {
             "payload": 4278190080,
@@ -376,7 +376,7 @@ exports[`RatingItem component tests checked - false, disabled - false, pressed -
       strokeWidth={2}
     >
       <RNSVGPath
-        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245"
         fill={
           {
             "payload": 4278190080,
@@ -514,7 +514,7 @@ exports[`RatingItem component tests checked - false, disabled - false, pressed -
       strokeWidth={2}
     >
       <RNSVGPath
-        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245"
         fill={
           {
             "payload": 4278190080,
@@ -649,7 +649,7 @@ exports[`RatingItem component tests checked - false, disabled - true, pressed - 
       strokeWidth={2}
     >
       <RNSVGPath
-        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245"
         fill={
           {
             "payload": 4278190080,
@@ -787,7 +787,7 @@ exports[`RatingItem component tests checked - false, disabled - true, pressed - 
       strokeWidth={2}
     >
       <RNSVGPath
-        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245"
         fill={
           {
             "payload": 4278190080,
@@ -922,7 +922,7 @@ exports[`RatingItem component tests checked - false, disabled - true, pressed - 
       strokeWidth={2}
     >
       <RNSVGPath
-        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245"
         fill={
           {
             "payload": 4278190080,
@@ -1060,7 +1060,7 @@ exports[`RatingItem component tests checked - false, disabled - true, pressed - 
       strokeWidth={2}
     >
       <RNSVGPath
-        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245"
         fill={
           {
             "payload": 4278190080,
