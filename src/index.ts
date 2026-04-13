@@ -1,4 +1,5 @@
 export * from './components'
+/* eslint-disable @typescript-eslint/no-deprecated -- Deprecated API сохраняем в публичном интерфейсе для обратной совместимости. */
 export { useChangeTheme } from './hooks/useChangeTheme'
 export {
   ThemeVariant,
@@ -14,7 +15,6 @@ export {
   useUnistyles,
   withUnistyles,
 } from 'react-native-unistyles'
-/* eslint-disable @typescript-eslint/no-deprecated -- Deprecated API сохраняем в публичном интерфейсе для обратной совместимости. */
 export { useFonts } from './hooks/useFonts'
 export { makeStyles } from './utils/makeStyles'
 export { useTheme } from './hooks/useTheme'
