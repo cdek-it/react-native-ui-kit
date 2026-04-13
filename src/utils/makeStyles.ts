@@ -1,38 +1,23 @@
 import { useMemo } from 'react'
 import type { ImageStyle, TextStyle, ViewStyle } from 'react-native'
+import { useUnistyles } from 'react-native-unistyles'
 
-import { useFonts } from '../hooks/useFonts'
-import { useTheme } from '../hooks/useTheme'
-import {
-  type FontsConfigType,
-  type ThemeType,
-  darkTheme,
-  lightTheme,
-  ThemeVariant,
-} from '../theme'
+import type { ThemeType } from '../theme'
 
+/**
+ * @deprecated Используйте `StyleSheet.create(...)` из SDK.
+ *
+ * `makeStyles` использует `useUnistyles()`, что вызывает React-ререндеры при смене
+ * темы. `StyleSheet.create(...)` — нативный путь, обновляет стили **без** ререндеров.
+ *
+ * Будет удалён в следующей minor версии.
+ */
 export const makeStyles =
   <T extends StylesObject>(createStyles: CreateStyles<T>): (() => T) =>
-  () => {
-    const fonts = useFonts()
-    const theme = useTheme()
-    const themeValues = useMemo(() => {
-      switch (theme) {
-        case ThemeVariant.Light:
-          return lightTheme
+  (): T => {
+    const { theme } = useUnistyles()
 
-        case ThemeVariant.Dark:
-          return darkTheme
-
-        default:
-          return lightTheme
-      }
-    }, [theme])
-
-    return useMemo(
-      () => createStyles({ ...themeValues, fonts }) as T,
-      [fonts, themeValues]
-    )
+    return useMemo(() => createStyles(theme as ThemeType) as T, [theme])
   }
 
 type StylesItem = ViewStyle | ImageStyle | TextStyle
@@ -40,7 +25,7 @@ type StylesItem = ViewStyle | ImageStyle | TextStyle
 type StylesObject = Record<string, StylesItem>
 
 type CreateStyles<T extends StylesObject> = (
-  theme: ThemeType & FontsConfigType
+  theme: ThemeType
 ) => CheckInvalidProps<T> extends never
   ? T
   : 'TypeError. Invalid key of style property was used.'

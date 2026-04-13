@@ -1,29 +1,41 @@
-import { renderHook } from '@testing-library/react-native'
+/* eslint-disable @typescript-eslint/no-deprecated -- Проверяем deprecated API на обратную совместимость. */
+import { act, renderHook } from '@testing-library/react-native'
+import { UnistylesRuntime } from 'react-native-unistyles'
 
-import { ThemeContext, ThemeVariant } from '../../theme'
+import { ThemeVariant } from '../../theme'
 import { useChangeTheme } from '../useChangeTheme'
 
 describe('useChangeTheme', () => {
-  test('returns correct function', () => {
-    const mockedChangeTheme = jest.fn()
-    const { result } = renderHook(() => useChangeTheme(), {
-      wrapper: ({ children }) => (
-        <ThemeContext.Provider
-          value={{
-            changeTheme: mockedChangeTheme,
-            theme: ThemeVariant.Light,
-            fonts: { primary: 'Font Primary', secondary: 'Font Secondary' },
-          }}
-        >
-          {children}
-        </ThemeContext.Provider>
-      ),
+  beforeEach(() => {
+    jest.clearAllMocks()
+  })
+
+  test('вызывает UnistylesRuntime.setTheme с "light" для ThemeVariant.Light', () => {
+    const { result } = renderHook(() => useChangeTheme())
+
+    act(() => {
+      result.current(ThemeVariant.Light)
     })
 
-    expect(result.current).toStrictEqual(expect.any(Function))
+    expect(UnistylesRuntime.setTheme).toHaveBeenCalledWith('light')
+  })
 
-    result.current?.(ThemeVariant.Dark)
+  test('вызывает UnistylesRuntime.setTheme с "dark" для ThemeVariant.Dark', () => {
+    const { result } = renderHook(() => useChangeTheme())
 
-    expect(mockedChangeTheme).toHaveBeenCalledWith(ThemeVariant.Dark)
+    act(() => {
+      result.current(ThemeVariant.Dark)
+    })
+
+    expect(UnistylesRuntime.setTheme).toHaveBeenCalledWith('dark')
+  })
+
+  test('возвращает стабильную ссылку на callback', () => {
+    const { result, rerender } = renderHook(() => useChangeTheme())
+    const first = result.current
+
+    rerender({})
+
+    expect(result.current).toBe(first)
   })
 })
