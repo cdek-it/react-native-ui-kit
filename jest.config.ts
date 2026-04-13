@@ -14,7 +14,7 @@ const config: Config.InitialOptions = {
   coverageReporters: ['text', 'text-summary'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   testRunner: 'jest-circus',
-  maxWorkers: 4,
+  maxWorkers: '100%',
   rootDir: '.',
   moduleNameMapper: { '\\.svg': '<rootDir>/__mocks__/svgMock.js' },
   setupFiles: ['<rootDir>/jest.setup.ts'],
