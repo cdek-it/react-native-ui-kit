@@ -1701,17 +1701,13 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
       >
         <View
           style={
-            [
-              {
-                "borderRadius": 100,
-                "height": 21,
-                "justifyContent": "center",
-                "paddingHorizontal": 7,
-              },
-              {
-                "backgroundColor": "#44e858",
-              },
-            ]
+            {
+              "backgroundColor": "#44e858",
+              "borderRadius": 100,
+              "height": 21,
+              "justifyContent": "center",
+              "paddingHorizontal": 7,
+            }
           }
         >
           <Text

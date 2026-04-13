@@ -1,15 +1,16 @@
-import { useCallback, useEffect, useMemo } from 'react'
-import { type PressableStateCallbackType, StyleSheet } from 'react-native'
+import { useCallback, useEffect, useMemo, useState } from 'react'
+import { StyleSheet as RNStyleSheet } from 'react-native'
 import { useSharedValue, withTiming } from 'react-native-reanimated'
 
-import { makeStyles } from '../../../../utils/makeStyles'
+import { StyleSheet } from '../../../../utils'
 
 export const useSliderStyles = (
   checked: boolean,
   disabled: boolean,
   danger: boolean
 ) => {
-  const styles = useStyles()
+  const styles = switchStyles
+  const [pressed, setPressed] = useState(false)
 
   const calculateSliderBackground = useCallback(
     (checked: boolean, disabled: boolean, pressed: boolean) => {
@@ -66,39 +67,36 @@ export const useSliderStyles = (
   const sliderBorderColor = useSharedValue(calculateSliderBorderColor(danger))
 
   useEffect(() => {
+    sliderBackground.value = withTiming(
+      calculateSliderBackground(checked, disabled, pressed)
+    )
+  }, [calculateSliderBackground, checked, disabled, pressed, sliderBackground])
+
+  useEffect(() => {
     sliderBorderColor.value = withTiming(calculateSliderBorderColor(danger))
   }, [calculateSliderBorderColor, danger, sliderBorderColor])
 
   const sliderStyle = useMemo(
     () =>
-      StyleSheet.flatten([
+      RNStyleSheet.flatten([
         styles.slider,
         { backgroundColor: sliderBackground, borderColor: sliderBorderColor },
       ]),
     [sliderBackground, sliderBorderColor, styles.slider]
   )
 
-  const onPressedChange = useCallback(
-    ({ pressed }: PressableStateCallbackType) => {
-      sliderBackground.value = withTiming(
-        calculateSliderBackground(checked, disabled, pressed)
-      )
+  const onPressIn = useCallback(() => setPressed(true), [])
+  const onPressOut = useCallback(() => setPressed(false), [])
 
-      return styles.container
-    },
-    [
-      calculateSliderBackground,
-      checked,
-      disabled,
-      sliderBackground,
-      styles.container,
-    ]
-  )
-
-  return { sliderStyle, onPressedChange }
+  return {
+    containerStyle: styles.container,
+    sliderStyle,
+    onPressIn,
+    onPressOut,
+  }
 }
 
-const useStyles = makeStyles(({ theme, border }) => ({
+const switchStyles = StyleSheet.create(({ theme, border }) => ({
   container: {
     height: theme.Form.inputSwitch.inputSwitchHeight,
     width: theme.Form.inputSwitch.inputSwitchWidth,

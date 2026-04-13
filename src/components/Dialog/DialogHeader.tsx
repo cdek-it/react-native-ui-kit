@@ -10,7 +10,7 @@ import {
 import { useMemo } from 'react'
 import { TouchableOpacity, View } from 'react-native'
 
-import { makeStyles } from '../../utils/makeStyles'
+import { StyleSheet } from '../../utils'
 import { Title } from '../Typography'
 
 type Severity = 'danger' | 'warning' | 'info' | 'success' | 'help'
@@ -34,7 +34,6 @@ export const DialogHeader = ({
   onClose,
   severity,
 }: DialogHeaderProps) => {
-  const styles = useStyles()
   const tids = DialogHeaderTestId
 
   const icon = useMemo(() => {
@@ -43,7 +42,7 @@ export const DialogHeader = ({
     const Icon = iconsMap[severity]
 
     return <Icon {...styles.severityIcon} {...styles[severity]} />
-  }, [severity, styles])
+  }, [severity])
 
   return (
     <>
@@ -68,7 +67,7 @@ export const DialogHeader = ({
   )
 }
 
-const useStyles = makeStyles(({ theme, spacing, typography, border }) => ({
+const styles = StyleSheet.create(({ theme, spacing, typography, border }) => ({
   text: { flex: 1 },
   header: {
     flexDirection: 'row',

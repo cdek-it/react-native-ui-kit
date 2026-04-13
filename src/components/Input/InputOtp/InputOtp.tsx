@@ -18,7 +18,7 @@ import {
   type BlurEvent,
 } from 'react-native'
 
-import { makeStyles } from '../../../utils/makeStyles'
+import { StyleSheet } from '../../../utils'
 
 import { InputOtpItem } from './InputOtpItem'
 
@@ -50,7 +50,6 @@ export const InputOtp = memo<InputOtpProps>(
     onBlur,
     ...rest
   }) => {
-    const styles = useStyles()
     const [isFocused, setIsFocused] = useState(false)
 
     const inputRef = useRef<TextInput>(null)
@@ -137,7 +136,7 @@ export const InputOtp = memo<InputOtpProps>(
   }
 )
 
-const useStyles = makeStyles(({ spacing }) => ({
+const styles = StyleSheet.create(({ spacing }) => ({
   container: {},
 
   content: { flexDirection: 'row', gap: spacing.Gap['gap-2'] },

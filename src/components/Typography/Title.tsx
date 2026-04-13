@@ -1,24 +1,16 @@
 import { Text, type TextProps } from 'react-native'
 
-import { makeStyles } from '../../utils/makeStyles'
+import { StyleSheet } from '../../utils'
 
 export interface TitleProps extends TextProps {
   readonly level: 'd1' | 'd2' | 'd3' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 }
 
-export const Title = ({ level, style, ...other }: TitleProps) => {
-  const styles = useStyles()
+export const Title = ({ level, style, ...other }: TitleProps) => (
+  <Text style={[styles.text, styles[level], style]} testID='Title' {...other} />
+)
 
-  return (
-    <Text
-      style={[styles.text, styles[level], style]}
-      testID='Title'
-      {...other}
-    />
-  )
-}
-
-const useStyles = makeStyles(({ theme, typography, fonts }) => ({
+const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
   text: {
     color: theme.General.textColor,
     fontFamily: fonts.primary,

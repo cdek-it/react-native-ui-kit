@@ -20,7 +20,7 @@ import Animated, {
 
 import { scheduleOnRN } from 'react-native-worklets'
 
-import { makeStyles } from '../../utils/makeStyles'
+import { StyleSheet } from '../../utils'
 
 import {
   SelectButtonItem,
@@ -77,7 +77,6 @@ export const SelectButton = memo<SelectButtonProps>(
     position: positionProp,
     ...rest
   }) => {
-    const styles = useStyles()
     const buttonsLayoutListRef = useRef<LayoutRectangle[]>([])
     const buttonsLayoutList = useSharedValue<LayoutRectangle[]>([])
     const [frameKey, setFrameKey] = useState(Date.now())
@@ -189,7 +188,7 @@ export const SelectButton = memo<SelectButtonProps>(
   }
 )
 
-const useStyles = makeStyles(({ theme }) => ({
+const styles = StyleSheet.create(({ theme }) => ({
   container: {
     flexDirection: 'row',
     padding: theme.Form.SelectButton.selectButtonGroupPadding,

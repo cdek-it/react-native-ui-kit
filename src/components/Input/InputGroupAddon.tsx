@@ -1,8 +1,8 @@
 import { memo } from 'react'
 import { Pressable, Text } from 'react-native'
 
+import { StyleSheet } from '../../utils'
 import { SvgUniversal, type SvgSource } from '../../utils/SvgUniversal'
-import { makeStyles } from '../../utils/makeStyles'
 
 export interface InputGroupAddonProps {
   /** Содержимое аддона инпут группы, текст или SVG-иконка */
@@ -22,8 +22,6 @@ export interface InputGroupAddonProps {
  */
 export const InputGroupAddon = memo<InputGroupAddonProps>(
   ({ content, onPress, position, disabled }) => {
-    const styles = useStyles()
-
     return (
       <Pressable
         collapsable={false}
@@ -51,7 +49,7 @@ export const InputGroupAddon = memo<InputGroupAddonProps>(
   }
 )
 
-const useStyles = makeStyles(({ theme, typography, fonts }) => ({
+const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
   container: {
     paddingVertical: theme.Form.InputText.inputPaddingTopBottom,
     paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,

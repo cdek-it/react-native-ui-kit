@@ -1,7 +1,7 @@
 import React, { type ReactNode } from 'react'
 import { View, useWindowDimensions } from 'react-native'
 
-import { makeStyles } from '../../utils/makeStyles'
+import { StyleSheet } from '../../utils'
 
 export interface DialogComponentProps {
   readonly body?: React.ComponentType
@@ -14,7 +14,6 @@ export const DialogComponent: React.FC<DialogComponentProps> = ({
   footer: Footer,
   header = null,
 }) => {
-  const styles = useStyles()
   const { width, height } = useWindowDimensions()
   const maxSize = { maxWidth: width - 40, maxHeight: height - 100 }
 
@@ -37,7 +36,7 @@ export const DialogComponent: React.FC<DialogComponentProps> = ({
   )
 }
 
-const useStyles = makeStyles(({ theme }) => ({
+const styles = StyleSheet.create(({ theme }) => ({
   root: {
     backgroundColor: theme.Overlay.Dialog.Header.dialogHeaderBg,
     borderColor: theme.Overlay.Overlay.overlayContentBorderColor,

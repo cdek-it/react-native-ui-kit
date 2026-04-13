@@ -2,8 +2,8 @@ import { IconX } from '@tabler/icons-react-native'
 import { memo } from 'react'
 import { Text, Pressable, type PressableProps } from 'react-native'
 
+import { StyleSheet } from '../../utils'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
-import { makeStyles } from '../../utils/makeStyles'
 
 export interface ChipProps extends PressableProps {
   /** SVG-иконка */
@@ -40,8 +40,6 @@ export const Chip = memo<ChipProps>(
     showIcon = true,
     ...rest
   }) => {
-    const styles = useStyles()
-
     return (
       <Pressable
         {...rest}
@@ -86,7 +84,7 @@ export const Chip = memo<ChipProps>(
   }
 )
 
-const useStyles = makeStyles(({ theme, typography, border, fonts }) => ({
+const styles = StyleSheet.create(({ theme, typography, border, fonts }) => ({
   chip: {
     height: theme.Misc.Chip.chipHeight,
     alignSelf: 'flex-start',

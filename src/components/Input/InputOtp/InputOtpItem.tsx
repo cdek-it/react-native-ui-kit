@@ -9,7 +9,7 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated'
 
-import { makeStyles } from '../../../utils/makeStyles'
+import { StyleSheet } from '../../../utils'
 
 export interface InputOtpItemProps extends Pick<ViewProps, 'testID'> {
   value?: string
@@ -23,8 +23,6 @@ const CURSOR_ANIMATION_DURATION = 500
 
 export const InputOtpItem = memo<InputOtpItemProps>(
   ({ value, error, pressed, disabled, focused, testID }) => {
-    const styles = useStyles()
-
     const opacity = useSharedValue(1)
 
     useEffect(() => {
@@ -66,7 +64,7 @@ export const InputOtpItem = memo<InputOtpItemProps>(
   }
 )
 
-const useStyles = makeStyles(({ theme, border, fonts, typography }) => ({
+const styles = StyleSheet.create(({ theme, border, fonts, typography }) => ({
   container: {
     minHeight: theme.Button.Common.buttonHeight,
     minWidth: theme.Button.Common.buttonHeight,

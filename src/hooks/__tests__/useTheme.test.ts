@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-deprecated -- Проверяем deprecated API на обратную совместимость. */
 import { renderHook } from '@testing-library/react-native'
-import { UnistylesRuntime } from 'react-native-unistyles'
 
 import { ThemeVariant } from '../../theme'
+import { UnistylesRuntime } from '../../utils'
+
 import { useTheme } from '../useTheme'
 
 const setThemeName = (themeName: 'light' | 'dark') => {

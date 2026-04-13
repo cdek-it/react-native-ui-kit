@@ -6,13 +6,11 @@ exports[`Message {"Icon": [Object], "timerValue": 5} 1`] = `
   style={
     [
       {
+        "backgroundColor": "#fafdff",
+        "borderColor": "#d4ecfe",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "overflow": "hidden",
-      },
-      {
-        "backgroundColor": "#fafdff",
-        "borderColor": "#d4ecfe",
       },
       undefined,
     ]
@@ -21,18 +19,14 @@ exports[`Message {"Icon": [Object], "timerValue": 5} 1`] = `
 >
   <View
     style={
-      [
-        {
-          "borderLeftWidth": 2,
-          "flexGrow": 1,
-          "gap": 14,
-          "padding": 14,
-          "paddingLeft": 17.5,
-        },
-        {
-          "borderColor": "#4496e8",
-        },
-      ]
+      {
+        "borderColor": "#4496e8",
+        "borderLeftWidth": 2,
+        "flexGrow": 1,
+        "gap": 14,
+        "padding": 14,
+        "paddingLeft": 17.5,
+      }
     }
   >
     <View
@@ -74,13 +68,11 @@ exports[`Message {"Icon": [Object]} 1`] = `
   style={
     [
       {
+        "backgroundColor": "#fafdff",
+        "borderColor": "#d4ecfe",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "overflow": "hidden",
-      },
-      {
-        "backgroundColor": "#fafdff",
-        "borderColor": "#d4ecfe",
       },
       undefined,
     ]
@@ -89,18 +81,14 @@ exports[`Message {"Icon": [Object]} 1`] = `
 >
   <View
     style={
-      [
-        {
-          "borderLeftWidth": 2,
-          "flexGrow": 1,
-          "gap": 14,
-          "padding": 14,
-          "paddingLeft": 17.5,
-        },
-        {
-          "borderColor": "#4496e8",
-        },
-      ]
+      {
+        "borderColor": "#4496e8",
+        "borderLeftWidth": 2,
+        "flexGrow": 1,
+        "gap": 14,
+        "padding": 14,
+        "paddingLeft": 17.5,
+      }
     }
   >
     <View
@@ -241,13 +229,11 @@ exports[`Message {"body": [Object], "caption": "caption", "severity": "info", "s
   style={
     [
       {
+        "backgroundColor": "#fafdff",
+        "borderColor": "#d4ecfe",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "overflow": "hidden",
-      },
-      {
-        "backgroundColor": "#fafdff",
-        "borderColor": "#d4ecfe",
       },
       {
         "margin": 10,
@@ -258,18 +244,14 @@ exports[`Message {"body": [Object], "caption": "caption", "severity": "info", "s
 >
   <View
     style={
-      [
-        {
-          "borderLeftWidth": 2,
-          "flexGrow": 1,
-          "gap": 14,
-          "padding": 14,
-          "paddingLeft": 17.5,
-        },
-        {
-          "borderColor": "#4496e8",
-        },
-      ]
+      {
+        "borderColor": "#4496e8",
+        "borderLeftWidth": 2,
+        "flexGrow": 1,
+        "gap": 14,
+        "padding": 14,
+        "paddingLeft": 17.5,
+      }
     }
   >
     <View
@@ -445,13 +427,11 @@ exports[`Message {"body": [Object], "footer": [Object], "severity": "warning"} 1
   style={
     [
       {
+        "backgroundColor": "#fffdfa",
+        "borderColor": "#ffeed4",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "overflow": "hidden",
-      },
-      {
-        "backgroundColor": "#fffdfa",
-        "borderColor": "#ffeed4",
       },
       undefined,
     ]
@@ -460,18 +440,14 @@ exports[`Message {"body": [Object], "footer": [Object], "severity": "warning"} 1
 >
   <View
     style={
-      [
-        {
-          "borderLeftWidth": 2,
-          "flexGrow": 1,
-          "gap": 14,
-          "padding": 14,
-          "paddingLeft": 17.5,
-        },
-        {
-          "borderColor": "#f5b83d",
-        },
-      ]
+      {
+        "borderColor": "#f5b83d",
+        "borderLeftWidth": 2,
+        "flexGrow": 1,
+        "gap": 14,
+        "padding": 14,
+        "paddingLeft": 17.5,
+      }
     }
   >
     <View
@@ -645,13 +621,11 @@ exports[`Message {"closeLabel": "Close", "footer": [Object], "onClose": [Functio
   style={
     [
       {
+        "backgroundColor": "#fafffb",
+        "borderColor": "#d4fedc",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "overflow": "hidden",
-      },
-      {
-        "backgroundColor": "#fafffb",
-        "borderColor": "#d4fedc",
       },
       undefined,
     ]
@@ -660,18 +634,14 @@ exports[`Message {"closeLabel": "Close", "footer": [Object], "onClose": [Functio
 >
   <View
     style={
-      [
-        {
-          "borderLeftWidth": 2,
-          "flexGrow": 1,
-          "gap": 14,
-          "padding": 14,
-          "paddingLeft": 17.5,
-        },
-        {
-          "borderColor": "#44e858",
-        },
-      ]
+      {
+        "borderColor": "#44e858",
+        "borderLeftWidth": 2,
+        "flexGrow": 1,
+        "gap": 14,
+        "padding": 14,
+        "paddingLeft": 17.5,
+      }
     }
   >
     <View
@@ -833,21 +803,25 @@ exports[`Message {"closeLabel": "Close", "footer": [Object], "onClose": [Functio
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          {
-            "alignItems": "center",
-            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-            "borderColor": "#44e858",
-            "borderRadius": 10.5,
-            "borderWidth": 1,
-            "flexDirection": "row",
-            "gap": 7,
-            "height": 28,
-            "justifyContent": "center",
-            "maxHeight": 28,
-            "minHeight": 28,
-            "paddingHorizontal": 10.5,
-            "paddingVertical": 0,
-          }
+          [
+            {
+              "alignItems": "center",
+              "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+              "borderColor": "#44e858",
+              "borderRadius": 10.5,
+              "borderWidth": 1,
+              "flexDirection": "row",
+              "gap": 7,
+              "height": 28,
+              "justifyContent": "center",
+              "maxHeight": 28,
+              "minHeight": 28,
+              "paddingHorizontal": 10.5,
+              "paddingVertical": 0,
+            },
+            false,
+            undefined,
+          ]
         }
         testID="CloseButton"
       >
@@ -881,13 +855,11 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
   style={
     [
       {
+        "backgroundColor": "#fafffb",
+        "borderColor": "#d4fedc",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "overflow": "hidden",
-      },
-      {
-        "backgroundColor": "#fafffb",
-        "borderColor": "#d4fedc",
       },
       undefined,
     ]
@@ -896,18 +868,14 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
 >
   <View
     style={
-      [
-        {
-          "borderLeftWidth": 2,
-          "flexGrow": 1,
-          "gap": 14,
-          "padding": 14,
-          "paddingLeft": 17.5,
-        },
-        {
-          "borderColor": "#44e858",
-        },
-      ]
+      {
+        "borderColor": "#44e858",
+        "borderLeftWidth": 2,
+        "flexGrow": 1,
+        "gap": 14,
+        "padding": 14,
+        "paddingLeft": 17.5,
+      }
     }
   >
     <View
@@ -1069,22 +1037,27 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          {
-            "alignItems": "center",
-            "aspectRatio": 1,
-            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-            "borderColor": "#44e858",
-            "borderRadius": 10.5,
-            "borderWidth": 1,
-            "flexDirection": "row",
-            "gap": 7,
-            "height": 28,
-            "justifyContent": "center",
-            "maxHeight": 28,
-            "minHeight": 28,
-            "paddingHorizontal": 10.5,
-            "paddingVertical": 0,
-          }
+          [
+            {
+              "alignItems": "center",
+              "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+              "borderColor": "#44e858",
+              "borderRadius": 10.5,
+              "borderWidth": 1,
+              "flexDirection": "row",
+              "gap": 7,
+              "height": 28,
+              "justifyContent": "center",
+              "maxHeight": 28,
+              "minHeight": 28,
+              "paddingHorizontal": 10.5,
+              "paddingVertical": 0,
+            },
+            {
+              "aspectRatio": 1,
+            },
+            undefined,
+          ]
         }
         testID="CloseButton"
       >
@@ -1210,13 +1183,11 @@ exports[`Message {"hiddenIcon": false} 1`] = `
   style={
     [
       {
+        "backgroundColor": "#fafdff",
+        "borderColor": "#d4ecfe",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "overflow": "hidden",
-      },
-      {
-        "backgroundColor": "#fafdff",
-        "borderColor": "#d4ecfe",
       },
       undefined,
     ]
@@ -1225,18 +1196,14 @@ exports[`Message {"hiddenIcon": false} 1`] = `
 >
   <View
     style={
-      [
-        {
-          "borderLeftWidth": 2,
-          "flexGrow": 1,
-          "gap": 14,
-          "padding": 14,
-          "paddingLeft": 17.5,
-        },
-        {
-          "borderColor": "#4496e8",
-        },
-      ]
+      {
+        "borderColor": "#4496e8",
+        "borderLeftWidth": 2,
+        "flexGrow": 1,
+        "gap": 14,
+        "padding": 14,
+        "paddingLeft": 17.5,
+      }
     }
   >
     <View
@@ -1400,13 +1367,11 @@ exports[`Message {"onTimerFinish": [Function mockConstructor], "timerValue": 5} 
   style={
     [
       {
+        "backgroundColor": "#fafdff",
+        "borderColor": "#d4ecfe",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "overflow": "hidden",
-      },
-      {
-        "backgroundColor": "#fafdff",
-        "borderColor": "#d4ecfe",
       },
       undefined,
     ]
@@ -1415,18 +1380,14 @@ exports[`Message {"onTimerFinish": [Function mockConstructor], "timerValue": 5} 
 >
   <View
     style={
-      [
-        {
-          "borderLeftWidth": 2,
-          "flexGrow": 1,
-          "gap": 14,
-          "padding": 14,
-          "paddingLeft": 17.5,
-        },
-        {
-          "borderColor": "#4496e8",
-        },
-      ]
+      {
+        "borderColor": "#4496e8",
+        "borderLeftWidth": 2,
+        "flexGrow": 1,
+        "gap": 14,
+        "padding": 14,
+        "paddingLeft": 17.5,
+      }
     }
   >
     <View
@@ -1469,13 +1430,11 @@ exports[`Message {"severity": "danger"} 1`] = `
   style={
     [
       {
+        "backgroundColor": "#fffafa",
+        "borderColor": "#fed4d4",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "overflow": "hidden",
-      },
-      {
-        "backgroundColor": "#fffafa",
-        "borderColor": "#fed4d4",
       },
       undefined,
     ]
@@ -1484,18 +1443,14 @@ exports[`Message {"severity": "danger"} 1`] = `
 >
   <View
     style={
-      [
-        {
-          "borderLeftWidth": 2,
-          "flexGrow": 1,
-          "gap": 14,
-          "padding": 14,
-          "paddingLeft": 17.5,
-        },
-        {
-          "borderColor": "#e85244",
-        },
-      ]
+      {
+        "borderColor": "#e85244",
+        "borderLeftWidth": 2,
+        "flexGrow": 1,
+        "gap": 14,
+        "padding": 14,
+        "paddingLeft": 17.5,
+      }
     }
   >
     <View
@@ -1659,13 +1614,11 @@ exports[`Message {} 1`] = `
   style={
     [
       {
+        "backgroundColor": "#fafdff",
+        "borderColor": "#d4ecfe",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "overflow": "hidden",
-      },
-      {
-        "backgroundColor": "#fafdff",
-        "borderColor": "#d4ecfe",
       },
       undefined,
     ]
@@ -1674,18 +1627,14 @@ exports[`Message {} 1`] = `
 >
   <View
     style={
-      [
-        {
-          "borderLeftWidth": 2,
-          "flexGrow": 1,
-          "gap": 14,
-          "padding": 14,
-          "paddingLeft": 17.5,
-        },
-        {
-          "borderColor": "#4496e8",
-        },
-      ]
+      {
+        "borderColor": "#4496e8",
+        "borderLeftWidth": 2,
+        "flexGrow": 1,
+        "gap": 14,
+        "padding": 14,
+        "paddingLeft": 17.5,
+      }
     }
   >
     <View

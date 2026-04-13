@@ -1,6 +1,5 @@
-import { useUnistyles } from 'react-native-unistyles'
-
 import type { FontsConfig } from '../theme'
+import { useUnistyles } from '../utils'
 
 /**
  * Возвращает конфигурацию шрифтов.

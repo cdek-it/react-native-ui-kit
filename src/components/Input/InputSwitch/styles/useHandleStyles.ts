@@ -1,11 +1,11 @@
 import { useCallback, useEffect, useMemo } from 'react'
-import { StyleSheet } from 'react-native'
+import { StyleSheet as RNStyleSheet } from 'react-native'
 import { useSharedValue, withTiming } from 'react-native-reanimated'
 
-import { makeStyles } from '../../../../utils/makeStyles'
+import { StyleSheet } from '../../../../utils'
 
 export const useHandleStyles = (checked: boolean) => {
-  const styles = useStyles()
+  const styles = handleStyles
 
   const calculateHandleLeftPosition = useCallback(
     (checked: boolean) =>
@@ -37,7 +37,7 @@ export const useHandleStyles = (checked: boolean) => {
 
   const handleStyle = useMemo(
     () =>
-      StyleSheet.flatten([
+      RNStyleSheet.flatten([
         styles.handle,
         { left: handleLeftPosition, backgroundColor: handlerBackgrouind },
       ]),
@@ -47,7 +47,7 @@ export const useHandleStyles = (checked: boolean) => {
   return { handleStyle }
 }
 
-const useStyles = makeStyles(({ theme, border }) => ({
+const handleStyles = StyleSheet.create(({ theme, border }) => ({
   handle: {
     height: theme.Form.inputSwitch.inputSwitchHandleHeight,
     width: theme.Form.inputSwitch.inputSwitchHandleWidth,

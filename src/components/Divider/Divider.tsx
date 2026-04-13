@@ -1,8 +1,8 @@
 import { memo, useMemo } from 'react'
 import { View, type ViewStyle, type StyleProp } from 'react-native'
 
+import { StyleSheet } from '../../utils'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
-import { makeStyles } from '../../utils/makeStyles'
 import { Subtitle } from '../Typography'
 
 export interface DividerProps {
@@ -63,7 +63,6 @@ export const Divider = memo<DividerProps>(
     style,
     Icon,
   }) => {
-    const styles = useStyles()
     const isVertical = useMemo(() => layout === 'vertical', [layout])
     const showIcon = useMemo(
       () => !!(showIconProp && Icon),
@@ -77,7 +76,7 @@ export const Divider = memo<DividerProps>(
 
     const lineStyle = useMemo(
       () => [styles.line, type === 'dash' && styles.lineDash],
-      [styles.line, styles.lineDash, type]
+      [type]
     )
 
     return (
@@ -132,7 +131,7 @@ export const Divider = memo<DividerProps>(
   }
 )
 
-const useStyles = makeStyles(({ spacing, theme, sizing, typography }) => ({
+const styles = StyleSheet.create(({ spacing, theme, sizing, typography }) => ({
   container: {
     minHeight: sizing.Height['h-2'],
     flexDirection: 'row',

@@ -10,8 +10,8 @@ import Animated, {
 
 import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 
+import { StyleSheet } from '../../utils'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
-import { makeStyles } from '../../utils/makeStyles'
 
 export interface AccordionProps extends ViewProps {
   /** Иконка слева от заголовка */
@@ -50,8 +50,6 @@ export const Accordion: React.FC<AccordionProps> = ({
   children,
   ...rest
 }) => {
-  const styles = useStyles()
-
   const contentHeight = useSharedValue(0)
   const contentOpenFraction = useSharedValue(initiallyExpanded ? 1 : 0)
   const [isExpanded, setIsExpanded] = useState(initiallyExpanded)
@@ -151,7 +149,7 @@ export const AccordionTestIds = {
   separator: 'Separator',
 }
 
-const useStyles = makeStyles(({ theme, fonts }) => ({
+const styles = StyleSheet.create(({ theme, fonts }) => ({
   component: { width: '100%' },
   header: {
     paddingVertical: theme.Panel.Accordion.accordionHeaderPaddingTopBottom,

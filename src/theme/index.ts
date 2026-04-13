@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native-unistyles'
+import { StyleSheet } from '../utils'
 
 import { darkTheme } from './darkTheme'
 import { lightTheme } from './lightTheme'

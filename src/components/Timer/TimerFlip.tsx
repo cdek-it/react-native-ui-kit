@@ -8,7 +8,7 @@ import Animated, {
 
 import { scheduleOnRN } from 'react-native-worklets'
 
-import { makeStyles } from '../../utils/makeStyles'
+import { StyleSheet } from '../../utils'
 
 import { COUNTER_SIZE } from './constants'
 
@@ -18,7 +18,6 @@ interface TimerFlipProps {
 }
 
 export const TimerFlip = memo<TimerFlipProps>(({ value, duration = 300 }) => {
-  const styles = useStyles()
   const [currentValue, setCurrentValue] = useState(value)
   const [nextValue, setNextValue] = useState<number | null>(value)
   const progress = useSharedValue(0)
@@ -66,7 +65,7 @@ export const TimerFlip = memo<TimerFlipProps>(({ value, duration = 300 }) => {
   )
 })
 
-const useStyles = makeStyles(({ typography, fonts }) => ({
+const styles = StyleSheet.create(({ typography, fonts }) => ({
   container: {
     overflow: 'hidden',
     width: COUNTER_SIZE,

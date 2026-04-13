@@ -6,12 +6,12 @@ import {
   type ViewStyle,
 } from 'react-native'
 
-import { makeStyles } from '../../utils/makeStyles'
+import { StyleSheet } from '../../utils'
 import { Badge } from '../Badge'
 
 import { BaseButton } from './BaseButton'
-import { useBasicButtonStyles } from './styles'
 import type { ButtonBadgeProps, ButtonBaseVariant, ButtonProps } from './types'
+import { ButtonVariantContext } from './utils/ButtonVariantContext'
 
 /**
  * Button component with badge
@@ -29,59 +29,65 @@ import type { ButtonBadgeProps, ButtonBaseVariant, ButtonProps } from './types'
  * @param badgeLabel - text label inside badge
  * @see BaseButton
  */
-export const ButtonBadge = memo<
-  ButtonProps<ButtonBaseVariant> & ButtonBadgeProps
->(({ badgeLabel, badgeSeverity, variant = 'primary', ...props }) => {
-  const buttonStyles = useBasicButtonStyles()
-  const styles = useStyles()
-  const [badgeLayout, setBadgeLayout] = useState<LayoutRectangle>()
+export const ButtonBadge = memo(
+  ({
+    badgeLabel,
+    badgeSeverity,
+    variant = 'primary',
+    ...props
+  }: ButtonProps<ButtonBaseVariant> & ButtonBadgeProps) => {
+    const [badgeLayout, setBadgeLayout] = useState<LayoutRectangle>()
+    const variantContextValue = useMemo(() => ({ variant }), [variant])
 
-  const badgeContainerStyle = useMemo<ViewStyle>(
-    () => ({
-      position: 'absolute',
-      top: badgeLayout ? -Math.round(badgeLayout.height / 2) : 0,
-      right: badgeLayout ? -Math.round(badgeLayout.width / 2) : 0,
-    }),
-    [badgeLayout]
-  )
+    const badgeContainerStyle = useMemo<ViewStyle>(
+      () => ({
+        position: 'absolute',
+        top: badgeLayout ? -Math.round(badgeLayout.height / 2) : 0,
+        right: badgeLayout ? -Math.round(badgeLayout.width / 2) : 0,
+      }),
+      [badgeLayout]
+    )
 
-  const onLayout = useCallback(
-    (e: LayoutChangeEvent) => setBadgeLayout(e.nativeEvent.layout),
-    []
-  )
+    const onLayout = useCallback(
+      (e: LayoutChangeEvent) => setBadgeLayout(e.nativeEvent.layout),
+      []
+    )
 
-  const badgeCommonProps = useMemo(
-    () => ({ severity: badgeSeverity, testID: ButtonBadgeTestId.badge }),
-    [badgeSeverity]
-  )
+    const badgeCommonProps = useMemo(
+      () => ({ severity: badgeSeverity, testID: ButtonBadgeTestId.badge }),
+      [badgeSeverity]
+    )
 
-  return (
-    <View style={styles.root}>
-      <View
-        style={[
-          styles.contentContainer,
-          props.iconOnly && styles.iconOnlyContainer,
-        ]}
-      >
-        <BaseButton variant={variant} {...props} {...buttonStyles} />
-
-        {badgeLabel ? (
-          <Badge
-            {...badgeCommonProps}
-            style={badgeContainerStyle}
-            onLayout={onLayout}
+    return (
+      <ButtonVariantContext.Provider value={variantContextValue}>
+        <View style={styles.root}>
+          <View
+            style={[
+              styles.contentContainer,
+              props.iconOnly && styles.iconOnlyContainer,
+            ]}
           >
-            {badgeLabel}
-          </Badge>
-        ) : (
-          <Badge {...badgeCommonProps} dot style={styles.badgeDot} />
-        )}
-      </View>
-    </View>
-  )
-})
+            <BaseButton variant={variant} {...props} />
 
-const useStyles = makeStyles(() => ({
+            {badgeLabel ? (
+              <Badge
+                {...badgeCommonProps}
+                style={badgeContainerStyle}
+                onLayout={onLayout}
+              >
+                {badgeLabel}
+              </Badge>
+            ) : (
+              <Badge {...badgeCommonProps} dot style={styles.badgeDot} />
+            )}
+          </View>
+        </View>
+      </ButtonVariantContext.Provider>
+    )
+  }
+)
+
+const styles = StyleSheet.create(() => ({
   root: { flexDirection: 'row' },
   contentContainer: { flex: 1 },
   iconOnlyContainer: { flex: 0 },

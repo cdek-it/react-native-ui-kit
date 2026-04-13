@@ -1,38 +1,30 @@
 import { genericMemo } from '../../../utils/genericMemo'
-import type { BaseButtonProps, ButtonVariant, VariantStyles } from '../types'
+import type { BaseButtonProps, ButtonSize } from '../types'
 
 import { ButtonActivityIndicator } from './ButtonActivityIndicator'
 import { ButtonIcon } from './ButtonIcon'
 
-export type ButtonLeftAreaComponentProps<Variant extends ButtonVariant> = Pick<
-  BaseButtonProps<Variant>,
-  'iconPosition' | 'Icon'
-> &
-  Pick<
-    Required<BaseButtonProps<Variant>>,
-    'size' | 'variant' | 'loading' | 'disabled'
-  > &
-  Pick<VariantStyles<Variant>, 'iconVariantStyles'>
+export interface ButtonLeftAreaProps {
+  readonly size: ButtonSize
+  readonly iconPosition?: BaseButtonProps<never>['iconPosition']
+  readonly loading: boolean
+  readonly disabled: boolean
+  readonly Icon?: BaseButtonProps<never>['Icon']
+}
 
-export const ButtonLeftAreaComponent = <Variant extends ButtonVariant>({
+const ButtonLeftAreaComponent = ({
   size,
   iconPosition,
-  variant,
   Icon,
   loading,
   disabled,
-  iconVariantStyles,
-}: ButtonLeftAreaComponentProps<Variant>) => {
+}: ButtonLeftAreaProps) => {
   if (iconPosition === 'left' || iconPosition === 'prefix') {
     if (loading && !disabled) {
       return <ButtonActivityIndicator size={size} />
     }
 
-    return (
-      <ButtonIcon
-        {...{ size, variant, disabled, loading, Icon, iconVariantStyles }}
-      />
-    )
+    return <ButtonIcon {...{ size, disabled, loading, Icon }} />
   }
 
   return null

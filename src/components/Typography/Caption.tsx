@@ -1,7 +1,7 @@
 import { Text, type TextProps, View } from 'react-native'
 
+import { StyleSheet } from '../../utils'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
-import { makeStyles } from '../../utils/makeStyles'
 
 export interface CaptionProps extends TextProps {
   readonly color?: 'default' | 'secondary' | 'primary'
@@ -17,7 +17,6 @@ export const Caption = ({
   Icon,
   ...other
 }: CaptionProps) => {
-  const styles = useStyles()
   const text = (
     <Text
       style={[
@@ -51,7 +50,7 @@ export const Caption = ({
 
 const CaptionTestId = { text: 'CaptionText', icon: 'CaptionIcon' }
 
-const useStyles = makeStyles(({ theme, spacing, typography, fonts }) => ({
+const styles = StyleSheet.create(({ theme, spacing, typography, fonts }) => ({
   text: {
     fontSize: typography.Size['text-sm'],
     includeFontPadding: false,

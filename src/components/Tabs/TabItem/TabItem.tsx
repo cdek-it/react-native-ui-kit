@@ -1,8 +1,8 @@
 import { memo, useCallback, type ReactNode } from 'react'
 import { Text, Pressable, View, type ViewProps } from 'react-native'
 
+import { StyleSheet } from '../../../utils'
 import { type SvgSource, SvgUniversal } from '../../../utils/SvgUniversal'
-import { makeStyles } from '../../../utils/makeStyles'
 
 export interface TabItemProps {
   /** SVG-иконка */
@@ -34,8 +34,6 @@ export interface TabItemProps {
 //
 export const TabItem = memo<TabItemProps>(
   ({ Icon, label, badge, index, onPress, disabled, active, onLayout }) => {
-    const styles = useStyles()
-
     const getIconColor = useCallback(
       (pressed: boolean) => {
         if (disabled) {
@@ -52,7 +50,7 @@ export const TabItem = memo<TabItemProps>(
 
         return styles.icon.color
       },
-      [disabled, active, styles]
+      [disabled, active]
     )
 
     return (
@@ -99,7 +97,7 @@ export const TabItem = memo<TabItemProps>(
   }
 )
 
-const useStyles = makeStyles(({ theme, typography, fonts }) => ({
+const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
   container: {
     alignItems: 'center',
     flexDirection: 'row',

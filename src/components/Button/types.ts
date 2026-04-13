@@ -97,27 +97,33 @@ export type ButtonProps<Variant extends ButtonVariant> =
   | IconTextButton<Variant>
   | IconOnlyButtonProps<Variant>
 
+/** @deprecated */
 export type LabelVariantStyles<Variant extends ButtonVariant> = Record<
   Required<BaseButtonProps<Variant>>['variant'],
   TextStyle
 >
+/** @deprecated */
 export type PressedVariantStyles<Variant extends ButtonVariant> = Record<
   Required<BaseButtonProps<Variant>>['variant'],
   ViewStyle
 >
+/** @deprecated */
 export type ContainerVariantStyles<Variant extends ButtonVariant> = Record<
   Required<BaseButtonProps<Variant>>['variant'],
   ViewStyle
 >
+/** @deprecated */
 export type IconVariantStyles<Variant extends ButtonVariant> = Record<
   Required<BaseButtonProps<Variant>>['variant'],
   { color: ColorValue }
 >
+/** @deprecated */
 export type PressedLabelVariantStyles<Variant extends ButtonVariant> = Record<
   Required<BaseButtonProps<Variant>>['variant'],
   { color: ColorValue }
 >
 
+/** @deprecated */
 export interface VariantStyles<Variant extends ButtonVariant> {
   containerVariantStyles: ContainerVariantStyles<Variant>
   pressedVariantStyles: PressedVariantStyles<Variant>

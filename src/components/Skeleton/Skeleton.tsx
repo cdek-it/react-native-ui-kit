@@ -7,8 +7,8 @@ import Animated, {
 import Svg, { Defs, LinearGradient, Rect, Stop } from 'react-native-svg'
 import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 
+import { StyleSheet } from '../../utils'
 import { SkeletonContext } from '../../utils/SkeletonContext'
-import { makeStyles } from '../../utils/makeStyles'
 
 interface SkeletonProps extends ViewProps {}
 
@@ -17,7 +17,6 @@ interface SkeletonProps extends ViewProps {}
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=5241-3731
  */
 export const Skeleton = memo<SkeletonProps>(({ style, testID, ...rest }) => {
-  const styles = useStyles()
   const {
     globalTranslateX,
     registerSkeleton,
@@ -87,7 +86,7 @@ export const Skeleton = memo<SkeletonProps>(({ style, testID, ...rest }) => {
   )
 })
 
-const useStyles = makeStyles(({ border, theme }) => ({
+const styles = StyleSheet.create(({ border, theme }) => ({
   container: {
     borderRadius: border.Radius['rounded-lg'],
     overflow: 'hidden',

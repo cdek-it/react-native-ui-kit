@@ -9,7 +9,7 @@ import {
 } from 'react-native'
 import Animated, { useSharedValue, withTiming } from 'react-native-reanimated'
 
-import { makeStyles } from '../../utils/makeStyles'
+import { StyleSheet } from '../../utils'
 
 /**
  * Тип свойств компонента ProgressBar
@@ -40,8 +40,6 @@ export interface ProgressBarProps extends Pick<ViewProps, 'testID'> {
  */
 export const ProgressBar = memo<ProgressBarProps>(
   ({ value: propsValue, showValue = false, style }) => {
-    const styles = useStyles()
-
     const [containerWidth, setContainerWidth] = useState(0)
     const indicatorWidth = useSharedValue(0)
 
@@ -91,7 +89,7 @@ export const ProgressBar = memo<ProgressBarProps>(
   }
 )
 
-const useStyles = makeStyles(({ theme, typography, border, fonts }) => ({
+const styles = StyleSheet.create(({ theme, typography, border, fonts }) => ({
   container: {
     borderRadius: border.Radius['rounded-full'],
     backgroundColor: theme.Misc.ProgressBar.progressBarBg,

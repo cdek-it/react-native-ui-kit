@@ -1,7 +1,7 @@
 import { IconStar, IconStarFilled } from '@tabler/icons-react-native'
 import { memo, useMemo } from 'react'
 
-import { makeStyles } from '../../utils/makeStyles'
+import { StyleSheet } from '../../utils'
 
 import {
   RatingItemContainer,
@@ -30,8 +30,6 @@ export interface RatingItemProps extends Omit<
  * @see RatingItemContainer - компонент контейнер для элемента
  */
 export const RatingItem = memo<RatingItemProps>(({ checked, ...rest }) => {
-  const styles = useStyles()
-
   const Icon = useMemo(() => (checked ? IconStarFilled : IconStar), [checked])
 
   return (
@@ -67,7 +65,7 @@ export const RatingItem = memo<RatingItemProps>(({ checked, ...rest }) => {
   )
 })
 
-const useStyles = makeStyles(({ theme }) => ({
+const styles = StyleSheet.create(({ theme }) => ({
   icon: {
     height: theme.Form.Rating.ratingIconFontSize,
     width: theme.Form.Rating.ratingIconFontSize,

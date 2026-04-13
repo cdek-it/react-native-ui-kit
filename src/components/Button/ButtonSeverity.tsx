@@ -1,12 +1,12 @@
-import { memo } from 'react'
+import { memo, useMemo } from 'react'
 
 import { BaseButton } from './BaseButton'
-import { useSeverityButtonStyles } from './styles'
 import type {
   ButtonProps,
   ButtonSeverityProps,
   ButtonSeverityVariant,
 } from './types'
+import { ButtonVariantContext } from './utils/ButtonVariantContext'
 
 /**
  * Button component
@@ -23,10 +23,21 @@ import type {
  * @param severity - severity button styling variant
  * @see BaseButton
  */
-export const ButtonSeverity = memo<
-  ButtonProps<ButtonSeverityVariant> & ButtonSeverityProps
->(({ severity, variant = 'basic', ...props }) => {
-  const buttonStyles = useSeverityButtonStyles(severity)
+export const ButtonSeverity = memo(
+  ({
+    severity,
+    variant = 'basic',
+    ...props
+  }: ButtonProps<ButtonSeverityVariant> & ButtonSeverityProps) => {
+    const variantContextValue = useMemo(
+      () => ({ variant, severity }),
+      [severity, variant]
+    )
 
-  return <BaseButton variant={variant} {...props} {...buttonStyles} />
-})
+    return (
+      <ButtonVariantContext.Provider value={variantContextValue}>
+        <BaseButton variant={variant} {...props} />
+      </ButtonVariantContext.Provider>
+    )
+  }
+)

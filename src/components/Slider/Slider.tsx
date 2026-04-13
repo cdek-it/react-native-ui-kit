@@ -15,7 +15,7 @@ import Animated, {
 
 import { scheduleOnRN } from 'react-native-worklets'
 
-import { makeStyles } from '../../utils/makeStyles'
+import { StyleSheet } from '../../utils'
 
 export interface SliderProps
   extends AccessibilityProps, Pick<ViewProps, 'testID'> {
@@ -64,7 +64,7 @@ const clamp = (val: number, min: number, max: number) => {
  */
 export const Slider = memo<SliderProps>(
   // TODO: refactor component to fix max-statements
-  // eslint-disable-next-line max-statements
+
   ({
     disabled = false,
     range = false,
@@ -75,7 +75,6 @@ export const Slider = memo<SliderProps>(
     testID,
     ...rest
   }) => {
-    const styles = useStyles()
     const minPointX = useSharedValue(0)
     const maxPointX = useSharedValue(0)
 
@@ -89,12 +88,12 @@ export const Slider = memo<SliderProps>(
 
     const pointerStyle = useMemo(
       () => [styles.point, isPressed && styles.hovered],
-      [styles.point, isPressed, styles.hovered]
+      [isPressed]
     )
 
     const lineStyle = useMemo(
       () => [styles.line, isPressed && styles.hovered],
-      [styles.line, isPressed, styles.hovered]
+      [isPressed]
     )
 
     const interpolateInitVal = useCallback(
@@ -254,7 +253,7 @@ export const Slider = memo<SliderProps>(
   }
 )
 
-const useStyles = makeStyles(({ theme, border }) => {
+const styles = StyleSheet.create(({ theme, border }) => {
   return {
     container: {
       width: '100%',

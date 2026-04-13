@@ -9,8 +9,8 @@ import {
   type ViewStyle,
 } from 'react-native'
 
+import { StyleSheet } from '../../../utils'
 import type { SvgSource } from '../../../utils/SvgUniversal'
-import { makeStyles } from '../../../utils/makeStyles'
 import type { BadgeSeverity } from '../../Badge/Badge'
 import { Body, Caption } from '../../Typography'
 import { MenuItemAccessory } from '../MenuItemAccessory'
@@ -71,11 +71,9 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
     style,
     ...rest
   }) => {
-    const styles = useStyles()
-
     const iconStyle = useMemo(
       () => ({ ...styles.icon, color: iconColor || styles.icon.color }),
-      [iconColor, styles.icon]
+      [iconColor]
     )
 
     const pressableStyle = useCallback(
@@ -85,7 +83,7 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
         style,
         disabled && styles.containerDisabled,
       ],
-      [disabled, styles, style]
+      [disabled, style]
     )
 
     return (
@@ -130,7 +128,7 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
   }
 )
 
-const useStyles = makeStyles(({ theme, spacing, typography, border }) => ({
+const styles = StyleSheet.create(({ theme, spacing, typography, border }) => ({
   container: {
     borderColor: theme.Menu.Item.menuitemBorderColor,
     borderWidth: border.Width.border,

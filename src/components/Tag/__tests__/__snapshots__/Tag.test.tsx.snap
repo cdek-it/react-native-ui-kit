@@ -10,14 +10,12 @@ exports[`Tag snapshot: default 1`] = `
         {
           "alignItems": "center",
           "alignSelf": "flex-start",
+          "backgroundColor": "#44e858",
           "borderRadius": 7,
           "flexDirection": "row",
           "gap": 3.5,
           "height": 21,
           "paddingHorizontal": 7,
-        },
-        {
-          "backgroundColor": "#44e858",
         },
         undefined,
       ]
@@ -27,18 +25,14 @@ exports[`Tag snapshot: default 1`] = `
     <Text
       numberOfLines={1}
       style={
-        [
-          {
-            "flexShrink": 1,
-            "fontFamily": "TT Fellows",
-            "fontSize": 10.5,
-            "includeFontPadding": false,
-            "verticalAlign": "middle",
-          },
-          {
-            "color": "#000000",
-          },
-        ]
+        {
+          "color": "#000000",
+          "flexShrink": 1,
+          "fontFamily": "TT Fellows",
+          "fontSize": 10.5,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
+        }
       }
       testID="Tag.text"
     >
@@ -58,14 +52,12 @@ exports[`Tag snapshot: severity = basic, rounded = true, with Icon 1`] = `
         {
           "alignItems": "center",
           "alignSelf": "flex-start",
+          "backgroundColor": "#44e858",
           "borderRadius": 7,
           "flexDirection": "row",
           "gap": 3.5,
           "height": 21,
           "paddingHorizontal": 7,
-        },
-        {
-          "backgroundColor": "#44e858",
         },
         {
           "borderRadius": 100,
@@ -156,18 +148,14 @@ exports[`Tag snapshot: severity = basic, rounded = true, with Icon 1`] = `
     <Text
       numberOfLines={1}
       style={
-        [
-          {
-            "flexShrink": 1,
-            "fontFamily": "TT Fellows",
-            "fontSize": 10.5,
-            "includeFontPadding": false,
-            "verticalAlign": "middle",
-          },
-          {
-            "color": "#000000",
-          },
-        ]
+        {
+          "color": "#000000",
+          "flexShrink": 1,
+          "fontFamily": "TT Fellows",
+          "fontSize": 10.5,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
+        }
       }
       testID="Tag.text"
     >
@@ -187,14 +175,12 @@ exports[`Tag snapshot: severity = danger 1`] = `
         {
           "alignItems": "center",
           "alignSelf": "flex-start",
+          "backgroundColor": "#fbacaa",
           "borderRadius": 7,
           "flexDirection": "row",
           "gap": 3.5,
           "height": 21,
           "paddingHorizontal": 7,
-        },
-        {
-          "backgroundColor": "#fbacaa",
         },
         undefined,
       ]
@@ -204,18 +190,14 @@ exports[`Tag snapshot: severity = danger 1`] = `
     <Text
       numberOfLines={1}
       style={
-        [
-          {
-            "flexShrink": 1,
-            "fontFamily": "TT Fellows",
-            "fontSize": 10.5,
-            "includeFontPadding": false,
-            "verticalAlign": "middle",
-          },
-          {
-            "color": "#45120e",
-          },
-        ]
+        {
+          "color": "#45120e",
+          "flexShrink": 1,
+          "fontFamily": "TT Fellows",
+          "fontSize": 10.5,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
+        }
       }
       testID="Tag.text"
     >
@@ -235,14 +217,12 @@ exports[`Tag snapshot: severity = info, showIcon = false, with Icon 1`] = `
         {
           "alignItems": "center",
           "alignSelf": "flex-start",
+          "backgroundColor": "#aad7fb",
           "borderRadius": 7,
           "flexDirection": "row",
           "gap": 3.5,
           "height": 21,
           "paddingHorizontal": 7,
-        },
-        {
-          "backgroundColor": "#aad7fb",
         },
         undefined,
       ]
@@ -331,18 +311,14 @@ exports[`Tag snapshot: severity = info, showIcon = false, with Icon 1`] = `
     <Text
       numberOfLines={1}
       style={
-        [
-          {
-            "flexShrink": 1,
-            "fontFamily": "TT Fellows",
-            "fontSize": 10.5,
-            "includeFontPadding": false,
-            "verticalAlign": "middle",
-          },
-          {
-            "color": "#0e2a45",
-          },
-        ]
+        {
+          "color": "#0e2a45",
+          "flexShrink": 1,
+          "fontFamily": "TT Fellows",
+          "fontSize": 10.5,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
+        }
       }
       testID="Tag.text"
     >
@@ -362,14 +338,12 @@ exports[`Tag snapshot: severity = secondary, rounded = false, showIcon = true, w
         {
           "alignItems": "center",
           "alignSelf": "flex-start",
+          "backgroundColor": "#e2e2e4",
           "borderRadius": 7,
           "flexDirection": "row",
           "gap": 3.5,
           "height": 21,
           "paddingHorizontal": 7,
-        },
-        {
-          "backgroundColor": "#e2e2e4",
         },
         false,
       ]
@@ -458,18 +432,14 @@ exports[`Tag snapshot: severity = secondary, rounded = false, showIcon = true, w
     <Text
       numberOfLines={1}
       style={
-        [
-          {
-            "flexShrink": 1,
-            "fontFamily": "TT Fellows",
-            "fontSize": 10.5,
-            "includeFontPadding": false,
-            "verticalAlign": "middle",
-          },
-          {
-            "color": "#000000",
-          },
-        ]
+        {
+          "color": "#000000",
+          "flexShrink": 1,
+          "fontFamily": "TT Fellows",
+          "fontSize": 10.5,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
+        }
       }
       testID="Tag.text"
     >
@@ -494,14 +464,12 @@ exports[`Tag snapshot: severity = success, with custom styles 1`] = `
         {
           "alignItems": "center",
           "alignSelf": "flex-start",
+          "backgroundColor": "#aafbb7",
           "borderRadius": 7,
           "flexDirection": "row",
           "gap": 3.5,
           "height": 21,
           "paddingHorizontal": 7,
-        },
-        {
-          "backgroundColor": "#aafbb7",
         },
         undefined,
       ]
@@ -511,18 +479,14 @@ exports[`Tag snapshot: severity = success, with custom styles 1`] = `
     <Text
       numberOfLines={1}
       style={
-        [
-          {
-            "flexShrink": 1,
-            "fontFamily": "TT Fellows",
-            "fontSize": 10.5,
-            "includeFontPadding": false,
-            "verticalAlign": "middle",
-          },
-          {
-            "color": "#0e4514",
-          },
-        ]
+        {
+          "color": "#0e4514",
+          "flexShrink": 1,
+          "fontFamily": "TT Fellows",
+          "fontSize": 10.5,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
+        }
       }
       testID="Tag.text"
     >
@@ -542,14 +506,12 @@ exports[`Tag snapshot: severity = warning 1`] = `
         {
           "alignItems": "center",
           "alignSelf": "flex-start",
+          "backgroundColor": "#fddeaa",
           "borderRadius": 7,
           "flexDirection": "row",
           "gap": 3.5,
           "height": 21,
           "paddingHorizontal": 7,
-        },
-        {
-          "backgroundColor": "#fddeaa",
         },
         undefined,
       ]
@@ -559,18 +521,14 @@ exports[`Tag snapshot: severity = warning 1`] = `
     <Text
       numberOfLines={1}
       style={
-        [
-          {
-            "flexShrink": 1,
-            "fontFamily": "TT Fellows",
-            "fontSize": 10.5,
-            "includeFontPadding": false,
-            "verticalAlign": "middle",
-          },
-          {
-            "color": "#4f3709",
-          },
-        ]
+        {
+          "color": "#4f3709",
+          "flexShrink": 1,
+          "fontFamily": "TT Fellows",
+          "fontSize": 10.5,
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
+        }
       }
       testID="Tag.text"
     >

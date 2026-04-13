@@ -10,7 +10,7 @@ import Animated, {
 } from 'react-native-reanimated'
 import Svg, { Circle } from 'react-native-svg'
 
-import { makeStyles } from '../../utils/makeStyles'
+import { StyleSheet } from '../../utils'
 
 const AnimatedSvg = Animated.createAnimatedComponent(Svg)
 const AnimatedCircle = Animated.createAnimatedComponent(Circle)
@@ -37,7 +37,6 @@ export interface ProgressSpinnerProps {
  */
 export const ProgressSpinner = memo<ProgressSpinnerProps>(
   ({ size = 'md', fill = 'primary' }) => {
-    const styles = useStyles()
     const circleAnimation = useSharedValue(0)
     const containerAnimation = useSharedValue(0)
 
@@ -65,7 +64,7 @@ export const ProgressSpinner = memo<ProgressSpinnerProps>(
         case 'white':
           return styles.white.color
       }
-    }, [fill, styles.primary.color, styles.white.color])
+    }, [fill])
 
     const center = useMemo(() => sizeInDp / 2, [sizeInDp])
     const radius = useMemo(() => center - STROKE_WIDTH / 2, [center])
@@ -126,7 +125,7 @@ export const ProgressSpinner = memo<ProgressSpinnerProps>(
   }
 )
 
-const useStyles = makeStyles(({ theme, global }) => ({
+const styles = StyleSheet.create(({ theme, global }) => ({
   primary: { color: theme.General.primaryColor },
   white: { color: global.Neutrals.White['white-100'] },
 }))

@@ -9,8 +9,8 @@ import Animated, {
 
 import { scheduleOnRN } from 'react-native-worklets'
 
+import { StyleSheet } from '../../utils'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
-import { makeStyles } from '../../utils/makeStyles'
 
 export interface SelectButtonItemProps extends Pick<
   ViewProps,
@@ -66,8 +66,6 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
     showIcon = true,
     Icon,
   }) => {
-    const styles = useStyles()
-
     const iconSize = useMemo(() => {
       switch (size) {
         case 'small':
@@ -82,13 +80,7 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
         case 'xlarge':
           return styles.iconXLarge
       }
-    }, [
-      size,
-      styles.iconBase,
-      styles.iconLarge,
-      styles.iconSmall,
-      styles.iconXLarge,
-    ])
+    }, [size])
 
     const labelFontSize = useMemo(() => {
       switch (size) {
@@ -104,13 +96,7 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
         case 'xlarge':
           return styles.labelXLarge
       }
-    }, [
-      size,
-      styles.labelBase,
-      styles.labelLarge,
-      styles.labelSmall,
-      styles.labelXLarge,
-    ])
+    }, [size])
 
     const animatedColorStyle = useAnimatedStyle(() => {
       return {
@@ -181,7 +167,7 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
   }
 )
 
-const useStyles = makeStyles(
+const styles = StyleSheet.create(
   ({ theme, typography, border, spacing, fonts }) => ({
     container: {
       flex: 1,

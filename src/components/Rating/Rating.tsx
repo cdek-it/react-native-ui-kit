@@ -1,7 +1,7 @@
 import { memo, useCallback, useMemo } from 'react'
 import { type AccessibilityProps, View, type ViewProps } from 'react-native'
 
-import { makeStyles } from '../../utils/makeStyles'
+import { StyleSheet } from '../../utils'
 
 import { RatingClear } from './RatingClear'
 import { RatingItem } from './RatingItem'
@@ -65,8 +65,6 @@ export const Rating = memo<RatingProps>(
     testID,
     ...rest
   }) => {
-    const styles = useStyles()
-
     const handleItemPress = useCallback(
       (index: number) => () => {
         onChange(index + 1)
@@ -102,7 +100,7 @@ export const Rating = memo<RatingProps>(
   }
 )
 
-const useStyles = makeStyles(({ theme }) => ({
+const styles = StyleSheet.create(({ theme }) => ({
   container: {
     flexDirection: 'row',
     gap: theme.General.inlineSpacing,
