@@ -29,6 +29,7 @@ export interface ThemeType {
   typography: typeof typography
   custom: typeof customCommon
   shadow: typeof shadow
+  fonts: FontsConfig
 }
 
 export enum ThemeVariant {

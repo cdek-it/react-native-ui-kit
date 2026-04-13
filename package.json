@@ -42,7 +42,8 @@
     "pod-install": "bundle exec pod install --project-directory=ios"
   },
   "dependencies": {
-    "@tabler/icons-react-native": "^3.36.0"
+    "@tabler/icons-react-native": "3.36.1",
+    "react-native-unistyles": "3.2.3"
   },
   "devDependencies": {
     "@babel/core": "7.28.5",
@@ -106,6 +107,7 @@
     "react-native": "0.81.5",
     "react-native-advanced-input-mask": "1.4.6",
     "react-native-gesture-handler": "2.29.1",
+    "react-native-nitro-modules": "0.35.2",
     "react-native-reanimated": "4.1.1",
     "react-native-safe-area-context": "5.6.2",
     "react-native-svg": "15.15.1",
