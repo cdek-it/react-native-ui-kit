@@ -1,7 +1,7 @@
 import { memo } from 'react'
 import { Text, type TextProps } from 'react-native'
 
-import { makeStyles } from '../../utils/makeStyles'
+import { StyleSheet } from '../../utils'
 
 export interface SubtitleProps extends TextProps {
   /**
@@ -21,20 +21,16 @@ export interface SubtitleProps extends TextProps {
  * @see https://www.figma.com/design/2ZnL6XPKEpxAHvrlbRvnMu/Template-Tailwind-CSS-(DS)?node-id=1-245
  */
 export const Subtitle = memo<SubtitleProps>(
-  ({ base = false, color = 'default', style, ...other }) => {
-    const styles = useStyles()
-
-    return (
-      <Text
-        style={[styles.text, styles[color], base && styles.base, style]}
-        testID='Subtitle'
-        {...other}
-      />
-    )
-  }
+  ({ base = false, color = 'default', style, ...other }) => (
+    <Text
+      style={[styles.text, styles[color], base && styles.base, style]}
+      testID='Subtitle'
+      {...other}
+    />
+  )
 )
 
-const useStyles = makeStyles(({ theme, typography, fonts }) => ({
+const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
   text: {
     fontSize: typography.Size['text-sm'],
     fontWeight: 700,

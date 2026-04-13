@@ -8,8 +8,8 @@ import {
 import { useMemo } from 'react'
 import { Text, View, type TextProps } from 'react-native'
 
+import { StyleSheet } from '../../utils'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
-import { makeStyles } from '../../utils/makeStyles'
 
 export interface ServiceProps extends TextProps {
   /**
@@ -41,8 +41,6 @@ export const Service = ({
   Icon: IconFromProps,
   ...other
 }: ServiceProps) => {
-  const styles = useStyles()
-
   const { Icon, variantStyle, iconSize, textStyles, containerStyle } =
     useMemo(() => {
       const iconMap = {
@@ -64,7 +62,7 @@ export const Service = ({
         ],
         containerStyle: base ? styles.containerBase : styles.container,
       }
-    }, [variant, base, styles, IconFromProps])
+    }, [variant, base, IconFromProps])
 
   return (
     <View style={containerStyle}>
@@ -81,7 +79,7 @@ export const Service = ({
   )
 }
 
-const useStyles = makeStyles(({ typography, spacing, fonts }) => ({
+const styles = StyleSheet.create(({ typography, spacing, fonts }) => ({
   iconBase: {
     width: typography.Size['text-xl'],
     height: typography.Size['text-xl'],

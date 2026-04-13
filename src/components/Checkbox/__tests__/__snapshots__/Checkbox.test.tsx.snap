@@ -53,23 +53,15 @@ exports[`Checkbox snapshots checked = false, indeterminate = false, disabled = f
           "right": 0,
           "top": 0,
         },
-        [
-          {
-            "borderRadius": 7,
-            "borderWidth": 1,
-            "height": 21,
-            "width": 21,
-          },
-          {
-            "backgroundColor": "#ffffff",
-            "borderColor": "#db3424",
-            "outlineColor": "#fff0f0",
-            "outlineStyle": "solid",
-            "outlineWidth": 4,
-          },
-          false,
-          false,
-        ],
+        {
+          "backgroundColor": "#ffffff",
+          "borderColor": "#db3424",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "outlineColor": "#fff0f0",
+          "outlineStyle": "solid",
+          "outlineWidth": 4,
+        },
       ]
     }
   />
@@ -129,20 +121,12 @@ exports[`Checkbox snapshots checked = false, indeterminate = false, disabled = f
           "right": 0,
           "top": 0,
         },
-        [
-          {
-            "borderRadius": 7,
-            "borderWidth": 1,
-            "height": 21,
-            "width": 21,
-          },
-          {
-            "backgroundColor": "#ffffff",
-            "borderColor": "#cecfd2",
-          },
-          false,
-          false,
-        ],
+        {
+          "backgroundColor": "#ffffff",
+          "borderColor": "#cecfd2",
+          "borderRadius": 7,
+          "borderWidth": 1,
+        },
       ]
     }
   />
@@ -202,23 +186,15 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
           "right": 0,
           "top": 0,
         },
-        [
-          {
-            "borderRadius": 7,
-            "borderWidth": 1,
-            "height": 21,
-            "width": 21,
-          },
-          {
-            "backgroundColor": "#2b2e33",
-            "borderColor": "#db3424",
-            "outlineColor": "#fff0f0",
-            "outlineStyle": "solid",
-            "outlineWidth": 4,
-          },
-          false,
-          false,
-        ],
+        {
+          "backgroundColor": "#2b2e33",
+          "borderColor": "#db3424",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "outlineColor": "#fff0f0",
+          "outlineStyle": "solid",
+          "outlineWidth": 4,
+        },
       ]
     }
   />
@@ -360,20 +336,12 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
           "right": 0,
           "top": 0,
         },
-        [
-          {
-            "borderRadius": 7,
-            "borderWidth": 1,
-            "height": 21,
-            "width": 21,
-          },
-          {
-            "backgroundColor": "#2b2e33",
-            "borderColor": "#2b2e33",
-          },
-          false,
-          false,
-        ],
+        {
+          "backgroundColor": "#2b2e33",
+          "borderColor": "#2b2e33",
+          "borderRadius": 7,
+          "borderWidth": 1,
+        },
       ]
     }
   />
@@ -515,23 +483,15 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
           "right": 0,
           "top": 0,
         },
-        [
-          {
-            "borderRadius": 7,
-            "borderWidth": 1,
-            "height": 21,
-            "width": 21,
-          },
-          {
-            "backgroundColor": "#2b2e33",
-            "borderColor": "#db3424",
-            "outlineColor": "#fff0f0",
-            "outlineStyle": "solid",
-            "outlineWidth": 4,
-          },
-          false,
-          false,
-        ],
+        {
+          "backgroundColor": "#2b2e33",
+          "borderColor": "#db3424",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "outlineColor": "#fff0f0",
+          "outlineStyle": "solid",
+          "outlineWidth": 4,
+        },
       ]
     }
   />
@@ -673,20 +633,12 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
           "right": 0,
           "top": 0,
         },
-        [
-          {
-            "borderRadius": 7,
-            "borderWidth": 1,
-            "height": 21,
-            "width": 21,
-          },
-          {
-            "backgroundColor": "#2b2e33",
-            "borderColor": "#2b2e33",
-          },
-          false,
-          false,
-        ],
+        {
+          "backgroundColor": "#2b2e33",
+          "borderColor": "#2b2e33",
+          "borderRadius": 7,
+          "borderWidth": 1,
+        },
       ]
     }
   />
@@ -828,28 +780,17 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
           "right": 0,
           "top": 0,
         },
-        [
-          {
-            "borderRadius": 7,
-            "borderWidth": 1,
-            "height": 21,
-            "width": 21,
-          },
-          {
-            "backgroundColor": "#2b2e33",
-            "borderColor": "#db3424",
-            "outlineColor": "#fff0f0",
-            "outlineStyle": "solid",
-            "outlineWidth": 4,
-          },
-          {
-            "borderColor": "#2b2e33",
-            "mixBlendMode": "luminosity",
-            "opacity": 0.2,
-            "outlineWidth": 0,
-          },
-          false,
-        ],
+        {
+          "backgroundColor": "#2b2e33",
+          "borderColor": "#2b2e33",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "mixBlendMode": "luminosity",
+          "opacity": 0.2,
+          "outlineColor": "#fff0f0",
+          "outlineStyle": "solid",
+          "outlineWidth": 0,
+        },
       ]
     }
   />
@@ -991,25 +932,15 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
           "right": 0,
           "top": 0,
         },
-        [
-          {
-            "borderRadius": 7,
-            "borderWidth": 1,
-            "height": 21,
-            "width": 21,
-          },
-          {
-            "backgroundColor": "#2b2e33",
-            "borderColor": "#2b2e33",
-          },
-          {
-            "borderColor": "#2b2e33",
-            "mixBlendMode": "luminosity",
-            "opacity": 0.2,
-            "outlineWidth": 0,
-          },
-          false,
-        ],
+        {
+          "backgroundColor": "#2b2e33",
+          "borderColor": "#2b2e33",
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "mixBlendMode": "luminosity",
+          "opacity": 0.2,
+          "outlineWidth": 0,
+        },
       ]
     }
   />
@@ -1151,20 +1082,12 @@ exports[`Checkbox snapshots default 1`] = `
           "right": 0,
           "top": 0,
         },
-        [
-          {
-            "borderRadius": 7,
-            "borderWidth": 1,
-            "height": 21,
-            "width": 21,
-          },
-          {
-            "backgroundColor": "#ffffff",
-            "borderColor": "#cecfd2",
-          },
-          false,
-          false,
-        ],
+        {
+          "backgroundColor": "#ffffff",
+          "borderColor": "#cecfd2",
+          "borderRadius": 7,
+          "borderWidth": 1,
+        },
       ]
     }
   />

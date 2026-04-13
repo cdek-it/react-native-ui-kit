@@ -3,8 +3,8 @@ import { memo, useMemo } from 'react'
 
 import { View } from 'react-native'
 
+import { StyleSheet } from '../../utils'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
-import { makeStyles } from '../../utils/makeStyles'
 
 export interface MenuItemAccessoryProps {
   /** SVG-иконка */
@@ -18,8 +18,6 @@ export interface MenuItemAccessoryProps {
  */
 export const MenuItemAccessory = memo<MenuItemAccessoryProps>(
   ({ Icon, disabled }) => {
-    const styles = useStyles()
-
     const IconComponent = useMemo(
       () => (disabled ? IconLock : Icon),
       [Icon, disabled]
@@ -33,7 +31,7 @@ export const MenuItemAccessory = memo<MenuItemAccessoryProps>(
   }
 )
 
-const useStyles = makeStyles(({ theme }) => ({
+const styles = StyleSheet.create(({ theme }) => ({
   container: { justifyContent: 'center' },
   icon: {
     width: theme.Menu.Item.menuitemSubmenuIconFontSize,

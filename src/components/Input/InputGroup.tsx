@@ -2,12 +2,12 @@ import { memo, useCallback, useImperativeHandle, useMemo, useRef } from 'react'
 import {
   type TextInput,
   View,
-  StyleSheet,
+  StyleSheet as RNStyleSheet,
   type ViewStyle,
   type StyleProp,
 } from 'react-native'
 
-import { makeStyles } from '../../utils/makeStyles'
+import { StyleSheet } from '../../utils'
 
 import { InputGroupAddon, type InputGroupAddonProps } from './InputGroupAddon'
 import { InputTextBase } from './InputTextBase/InputTextBase'
@@ -40,7 +40,6 @@ export const InputGroup = memo<InputGroupProps>(
     inputRef: propsInputRef,
     ...otherProps
   }) => {
-    const styles = useStyles()
     const inputRef = useRef<TextInput>(null)
 
     const focus = useCallback(() => inputRef.current?.focus(), [inputRef])
@@ -51,18 +50,12 @@ export const InputGroup = memo<InputGroupProps>(
     )
 
     const containerStyle = useMemo(() => {
-      return StyleSheet.flatten([
+      return RNStyleSheet.flatten([
         styles.inputContainer,
         !!left && styles.inputContainerForLeftAddon,
         !!right && styles.inputContainerForRightAddon,
       ])
-    }, [
-      left,
-      right,
-      styles.inputContainer,
-      styles.inputContainerForLeftAddon,
-      styles.inputContainerForRightAddon,
-    ])
+    }, [left, right])
 
     return (
       <View style={[styles.container, style]}>
@@ -97,7 +90,7 @@ export const InputGroup = memo<InputGroupProps>(
   }
 )
 
-const useStyles = makeStyles(() => ({
+const styles = StyleSheet.create(() => ({
   container: { flexDirection: 'row' },
   inputWrapper: { flexGrow: 1, zIndex: 10 },
   inputContainer: { flexGrow: 1 },

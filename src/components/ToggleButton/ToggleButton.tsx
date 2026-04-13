@@ -9,56 +9,52 @@ import {
   type ViewStyle,
 } from 'react-native'
 
+import { StyleSheet } from '../../utils'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
-import { makeStyles } from '../../utils/makeStyles'
-
-import { useIconSize } from './hooks/useIconSize'
-import { useLabelSize } from './hooks/useLabelSize'
-import { useStateStyles } from './hooks/useStateStyles'
 
 export interface ToggleButtonProps
   extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Обработчик нажатия на кнопку */
-  onPress: () => void
+  readonly onPress: () => void
   /**
    * true, если необходим компонент в активном состоянии
    * @default false
    */
-  checked?: boolean
+  readonly checked?: boolean
   /**
    * Управление доступностью компонента
    * @default false
    */
-  disabled?: boolean
+  readonly disabled?: boolean
   /** Отображение только иконки без текста */
-  iconOnly?: boolean
+  readonly iconOnly?: boolean
   /**
    * Выбор позиции иконки. 'left' - иконка слева, 'right' - иконка справа, null - иконка скрыта
    * @default 'left'
    */
-  iconPos?: 'left' | 'right' | null
+  readonly iconPos?: 'left' | 'right' | null
   /** Текст на кнопке */
-  label?: string
+  readonly label?: string
   /**
    * Выбор размера элемента
    * @default 'base'
    */
-  size?: 'xlarge' | 'large' | 'base' | 'small'
+  readonly size?: 'xlarge' | 'large' | 'base' | 'small'
   /** Дополнительная стилизация для контейнера компонента */
-  style?: StyleProp<ViewStyle>
+  readonly style?: StyleProp<ViewStyle>
   /** SVG-иконка */
-  Icon?: SvgSource
+  readonly Icon?: SvgSource
 }
 
 /**
  * Используется для выбора нескольких значений с помощью кнопки
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4821
  */
-export const ToggleButton = memo<ToggleButtonProps>(
+export const ToggleButton = memo(
   ({
     onPress,
-    checked,
-    disabled,
+    checked = false,
+    disabled = false,
     iconOnly: iconOnlyProp,
     iconPos = 'left',
     label,
@@ -67,12 +63,15 @@ export const ToggleButton = memo<ToggleButtonProps>(
     Icon,
     testID,
     ...rest
-  }) => {
-    const styles = useStyles()
-    const labelSize = useLabelSize(size)
-    const iconSize = useIconSize(size)
+  }: ToggleButtonProps) => {
     const [pressed, setPressed] = useState(false)
-    const stateStyles = useStateStyles(checked, disabled, pressed)
+
+    toggleStyles.useVariants({
+      size,
+      checked: checked ? 'true' : 'false',
+      pressed: pressed ? 'true' : 'false',
+      disabled: disabled ? 'true' : 'false',
+    })
 
     const iconOnly = useMemo(
       () => iconOnlyProp || !label,
@@ -86,14 +85,14 @@ export const ToggleButton = memo<ToggleButtonProps>(
 
       return (
         <SvgUniversal
-          height={iconSize.height}
+          height={toggleStyles.icon.height}
           source={Icon}
-          style={stateStyles.label as unknown as ViewStyle}
+          style={toggleStyles.icon as unknown as ViewStyle}
           testID={ToggleButtonTestId.icon}
-          width={iconSize.width}
+          width={toggleStyles.icon.width}
         />
       )
-    }, [Icon, iconSize.height, iconSize.width, stateStyles.label])
+    }, [Icon])
 
     const onPressIn = useCallback(() => setPressed(true), [])
     const onPressOut = useCallback(() => setPressed(false), [])
@@ -101,7 +100,7 @@ export const ToggleButton = memo<ToggleButtonProps>(
     return (
       <Pressable
         disabled={disabled}
-        style={[styles.container, style, stateStyles.borderContainer]}
+        style={[toggleStyles.container, style]}
         testID={testID || ToggleButtonTestId.root}
         onPress={onPress}
         onPressIn={onPressIn}
@@ -110,10 +109,8 @@ export const ToggleButton = memo<ToggleButtonProps>(
       >
         <View
           style={[
-            styles.contentContainer,
-            styles[size],
-            iconOnly && styles.iconOnly,
-            stateStyles.contentContainer,
+            toggleStyles.contentContainer,
+            iconOnly && toggleStyles.iconOnly,
           ]}
           testID={ToggleButtonTestId.container}
         >
@@ -122,10 +119,7 @@ export const ToggleButton = memo<ToggleButtonProps>(
           ) : (
             <>
               {iconPos === 'left' && icon}
-              <Text
-                style={[styles.label, labelSize, stateStyles.label]}
-                testID={ToggleButtonTestId.text}
-              >
+              <Text style={toggleStyles.label} testID={ToggleButtonTestId.text}>
                 {label}
               </Text>
               {Icon && iconPos === 'right' ? icon : null}
@@ -137,42 +131,161 @@ export const ToggleButton = memo<ToggleButtonProps>(
   }
 )
 
-const useStyles = makeStyles(({ theme, spacing, border, fonts }) => ({
-  container: {
-    alignSelf: 'flex-start',
-    borderRadius: border.Radius['rounded-full'],
-    borderWidth: border.Width.border,
-    overflow: 'hidden',
-  },
-  contentContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    alignSelf: 'flex-start',
-    borderRadius: border.Radius['rounded-full'],
-    paddingVertical: theme.Button.Common.buttonPaddingTopBottom,
-    paddingHorizontal: spacing.Padding['p-6'],
-    gap: spacing.Gap['gap-3'],
-  },
-  xlarge: { minHeight: theme.Button.Common.buttonHeightXL },
-  large: { minHeight: theme.Button.Common.buttonHeightLG },
-  base: {
-    minHeight: theme.Button.Common.buttonHeight,
-    paddingHorizontal: theme.Button.Common.buttonPaddingLeftRight,
-    gap: theme.General.inlineSpacing,
-  },
-  small: {
-    minHeight: theme.Button.Common.buttonHeightSM,
-    paddingHorizontal: spacing.Padding['p-3'],
-    gap: theme.General.inlineSpacing,
-  },
-  iconOnly: {
-    aspectRatio: 1,
-    paddingHorizontal: 0,
-    paddingVertical: 0,
-    justifyContent: 'center',
-  },
-  label: { flexShrink: 1, fontFamily: fonts.primary },
-}))
+const toggleStyles = StyleSheet.create(
+  ({ theme, spacing, border, fonts, typography }) => ({
+    container: {
+      alignSelf: 'flex-start',
+      borderRadius: border.Radius['rounded-full'],
+      borderWidth: border.Width.border,
+      overflow: 'hidden',
+      variants: {
+        checked: {
+          true: {
+            borderColor: theme.Form.ToggleButton.toggleButtonActiveBorderColor,
+          },
+          false: {
+            borderColor: theme.Form.ToggleButton.toggleButtonBorderColor,
+          },
+        },
+        pressed: {
+          true: { borderColor: theme.Form.ToggleButton.toggleButtonHoverBg },
+          false: {},
+        },
+        disabled: {
+          true: {
+            borderColor: theme.Button.Disabled.disabledButtonBorderColor,
+            opacity: 0.6,
+          },
+          false: {},
+        },
+      },
+      compoundVariants: [
+        {
+          checked: 'true',
+          pressed: 'true',
+          styles: {
+            borderColor:
+              theme.Form.ToggleButton.toggleButtonActiveHoverBorderColor,
+          },
+        },
+      ],
+    },
+    contentContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      alignSelf: 'flex-start',
+      borderRadius: border.Radius['rounded-full'],
+      paddingVertical: theme.Button.Common.buttonPaddingTopBottom,
+      paddingHorizontal: spacing.Padding['p-6'],
+      gap: spacing.Gap['gap-3'],
+      variants: {
+        size: {
+          xlarge: { minHeight: theme.Button.Common.buttonHeightXL },
+          large: { minHeight: theme.Button.Common.buttonHeightLG },
+          base: {
+            minHeight: theme.Button.Common.buttonHeight,
+            paddingHorizontal: theme.Button.Common.buttonPaddingLeftRight,
+            gap: theme.General.inlineSpacing,
+          },
+          small: {
+            minHeight: theme.Button.Common.buttonHeightSM,
+            paddingHorizontal: spacing.Padding['p-3'],
+            gap: theme.General.inlineSpacing,
+          },
+        },
+        checked: {
+          true: {
+            backgroundColor: theme.Form.ToggleButton.toggleButtonActiveBg,
+          },
+          false: { backgroundColor: theme.Form.ToggleButton.toggleButtonBg },
+        },
+        pressed: {
+          true: {
+            backgroundColor: theme.Form.ToggleButton.toggleButtonHoverBg,
+          },
+          false: {},
+        },
+        disabled: {
+          true: { backgroundColor: theme.Button.Disabled.disabledButtonBg },
+          false: {},
+        },
+      },
+      compoundVariants: [
+        {
+          checked: 'true',
+          pressed: 'true',
+          styles: {
+            backgroundColor: theme.Form.ToggleButton.toggleButtonActiveHoverBg,
+          },
+        },
+      ],
+    },
+    iconOnly: {
+      aspectRatio: 1,
+      paddingHorizontal: 0,
+      paddingVertical: 0,
+      justifyContent: 'center',
+    },
+    icon: {
+      variants: {
+        size: {
+          xlarge: {
+            width: typography.Size['text-4xl'],
+            height: typography.Size['text-4xl'],
+          },
+          large: {
+            width: typography.Size['text-2xl'],
+            height: typography.Size['text-2xl'],
+          },
+          base: {
+            width: typography.Size['text-xl'],
+            height: typography.Size['text-xl'],
+          },
+          small: {
+            width: typography.Size['text-base'],
+            height: typography.Size['text-base'],
+          },
+        },
+      },
+    },
+    label: {
+      flexShrink: 1,
+      fontFamily: fonts.primary,
+      fontWeight: '600',
+      includeFontPadding: false,
+      verticalAlign: 'middle',
+      variants: {
+        size: {
+          xlarge: { fontSize: typography.Size['text-2xl'] },
+          large: { fontSize: typography.Size['text-xl'] },
+          base: { fontSize: typography.Size['text-base'] },
+          small: { fontSize: typography.Size['text-sm'] },
+        },
+        checked: {
+          true: { color: theme.Form.ToggleButton.toggleButtonActiveTextColor },
+          false: { color: theme.Form.ToggleButton.toggleButtonTextColor },
+        },
+        pressed: {
+          true: { color: theme.Form.ToggleButton.toggleButtonHoverTextColor },
+          false: {},
+        },
+        disabled: {
+          true: { color: theme.Button.Disabled.disabledButtonTextColor },
+          false: {},
+        },
+      },
+      compoundVariants: [
+        {
+          checked: 'true',
+          pressed: 'true',
+          styles: {
+            color: theme.Form.ToggleButton.toggleButtonTextActiveHoverColor,
+          },
+        },
+      ],
+    },
+  })
+)
 
 export const ToggleButtonTestId = {
   root: 'ToggleButton',

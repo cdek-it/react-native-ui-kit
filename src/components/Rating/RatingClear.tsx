@@ -1,7 +1,7 @@
 import { IconBan } from '@tabler/icons-react-native'
 import { memo } from 'react'
 
-import { makeStyles } from '../../utils/makeStyles'
+import { StyleSheet } from '../../utils'
 
 import {
   RatingItemContainer,
@@ -24,8 +24,6 @@ export interface RatingClearProps extends Omit<
  * @see RatingItemContainer - компонент контейнер для элемента
  */
 export const RatingClear = memo<RatingClearProps>(({ ...rest }) => {
-  const styles = useStyles()
-
   return (
     <RatingItemContainer {...rest}>
       {({ disabled, pressed }) => (
@@ -45,7 +43,7 @@ export const RatingClear = memo<RatingClearProps>(({ ...rest }) => {
   )
 })
 
-const useStyles = makeStyles(({ theme }) => ({
+const styles = StyleSheet.create(({ theme }) => ({
   icon: {
     height: theme.Form.Rating.ratingIconFontSize,
     width: theme.Form.Rating.ratingIconFontSize,

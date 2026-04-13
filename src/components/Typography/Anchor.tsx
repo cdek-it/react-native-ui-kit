@@ -8,8 +8,8 @@ import {
   View,
 } from 'react-native'
 
+import { StyleSheet } from '../../utils'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
-import { makeStyles } from '../../utils/makeStyles'
 
 const WORD_JOINER = '\u2060' // символ невидимого пробела, чтобы избежать разрыва строки между текстом и иконкой
 
@@ -50,8 +50,6 @@ export const Anchor = memo(
     style,
     ...other
   }: AnchorProps) => {
-    const styles = useStyles()
-
     const [pressed, setPressed] = useState(false)
     const onPressIn = useCallback(() => setPressed(true), [])
     const onPressOut = useCallback(() => setPressed(false), [])
@@ -63,11 +61,11 @@ export const Anchor = memo(
       }
 
       return { style: styles.container, testID: testID || AnchorTestId.root }
-    }, [noWrapper, styles.container, testID])
+    }, [noWrapper, testID])
 
     const iconColor = useMemo(
       () => (visited ? styles.visited.color : styles.text.color),
-      [styles.text.color, styles.visited.color, visited]
+      [visited]
     )
 
     return (
@@ -131,7 +129,7 @@ export const Anchor = memo(
   }
 )
 
-const useStyles = makeStyles(({ spacing, typography, fonts }) => ({
+const styles = StyleSheet.create(({ spacing, typography, fonts }) => ({
   container: { flexDirection: 'row', alignItems: 'center' },
   text: {
     flexShrink: 1,

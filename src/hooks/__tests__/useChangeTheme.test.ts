@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-deprecated -- Проверяем deprecated API на обратную совместимость. */
 import { act, renderHook } from '@testing-library/react-native'
-import { UnistylesRuntime } from 'react-native-unistyles'
 
 import { ThemeVariant } from '../../theme'
+import { UnistylesRuntime } from '../../utils'
+
 import { useChangeTheme } from '../useChangeTheme'
 
 describe('useChangeTheme', () => {

@@ -1,16 +1,14 @@
 import { IconCheck, IconMinus } from '@tabler/icons-react-native'
-import React, { memo, useCallback, useMemo, useState } from 'react'
+import { memo, useCallback, useMemo, useState } from 'react'
 import {
   type AccessibilityProps,
+  StyleSheet as RNStyleSheet,
   Pressable,
-  StyleSheet,
   View,
 } from 'react-native'
 import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 
-import { makeStyles } from '../../utils/makeStyles'
-
-import { usePressableStyles } from './hooks/usePressableStyles'
+import { StyleSheet } from '../../utils'
 
 type CheckboxState = 'default' | 'danger'
 
@@ -41,7 +39,7 @@ export interface CheckboxProps
  * Используется для множественного выбора элементов
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5316
  */
-export const Checkbox = memo<CheckboxProps>(
+export const Checkbox = memo(
   ({
     onPress,
     checked = false,
@@ -51,6 +49,15 @@ export const Checkbox = memo<CheckboxProps>(
     state,
   }: CheckboxProps) => {
     const [isPressed, setIsPressed] = useState(false)
+
+    const filled = checked || indeterminate
+
+    styles.useVariants({
+      filled: filled ? 'true' : 'false',
+      pressed: isPressed ? 'true' : 'false',
+      state: state === 'danger' ? 'danger' : undefined,
+      disabled: disabled ? 'true' : 'false',
+    })
 
     const Icon = useMemo(() => {
       if (indeterminate) {
@@ -64,15 +71,6 @@ export const Checkbox = memo<CheckboxProps>(
       return null
     }, [indeterminate, checked])
 
-    const getPressableStyles = usePressableStyles({
-      checked,
-      indeterminate,
-      disabled,
-      state,
-    })
-
-    const styles = useStyles()
-
     const onPressIn = useCallback(() => {
       setIsPressed(true)
     }, [])
@@ -80,10 +78,6 @@ export const Checkbox = memo<CheckboxProps>(
     const onPressOut = useCallback(() => {
       setIsPressed(false)
     }, [])
-
-    const pressableStyles = useMemo(() => {
-      return getPressableStyles(isPressed)
-    }, [getPressableStyles, isPressed])
 
     return (
       <Pressable
@@ -96,7 +90,7 @@ export const Checkbox = memo<CheckboxProps>(
         onPressIn={onPressIn}
         onPressOut={onPressOut}
       >
-        <View style={[styles.background, pressableStyles]} />
+        <View style={[styles.background, styles.backgroundState]} />
         {Icon ? (
           <Icon
             height={styles.icon.height}
@@ -109,14 +103,71 @@ export const Checkbox = memo<CheckboxProps>(
   }
 )
 
-const useStyles = makeStyles(({ theme, sizing }) => ({
+const styles = StyleSheet.create(({ theme, border, sizing }) => ({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
     width: theme.Form.Checkbox.checkboxWidth,
     height: theme.Form.Checkbox.checkboxHeight,
   },
-  background: { ...StyleSheet.absoluteFillObject },
+  background: { ...RNStyleSheet.absoluteFillObject },
+  backgroundState: {
+    borderRadius: border.Radius['rounded-lg'],
+    borderWidth: border.Width.border,
+    variants: {
+      filled: {
+        true: {
+          backgroundColor: theme.Form.Checkbox.checkboxActiveBg,
+          borderColor: theme.Form.Checkbox.checkboxActiveBorderColor,
+        },
+        false: {
+          backgroundColor: theme.Form.InputText.inputBg,
+          borderColor: theme.Form.InputText.inputBorderColor,
+        },
+      },
+      pressed: {
+        true: { borderColor: theme.Form.InputText.inputHoverBorderColor },
+        false: {},
+      },
+      state: {
+        danger: {
+          borderColor: theme.Form.InputText.inputErrorBorderColor,
+          outlineStyle: 'solid',
+          outlineColor: theme.General.focusOutlineErrorColor,
+          outlineWidth: Math.round(theme.General.focusShadowWidth),
+        },
+      },
+      disabled: { true: { outlineWidth: 0 }, false: {} },
+    },
+    compoundVariants: [
+      {
+        filled: 'true',
+        pressed: 'true',
+        styles: {
+          backgroundColor: theme.Form.Checkbox.checkboxActiveHoverBg,
+          borderColor: theme.Form.Checkbox.checkboxActiveHoverBorderColor,
+        },
+      },
+      {
+        filled: 'false',
+        disabled: 'true',
+        styles: {
+          backgroundColor: theme.Button.Disabled.disabledButtonBg,
+          borderColor: theme.Form.InputText.inputBorderColor,
+          mixBlendMode: 'luminosity',
+        },
+      },
+      {
+        filled: 'true',
+        disabled: 'true',
+        styles: {
+          borderColor: theme.Form.Checkbox.checkboxActiveBorderColor,
+          opacity: 0.2,
+          mixBlendMode: 'luminosity',
+        },
+      },
+    ],
+  },
   icon: {
     height: sizing.Height['h-1'],
     width: sizing.Width['w-1'],

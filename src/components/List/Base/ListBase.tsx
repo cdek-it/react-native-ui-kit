@@ -7,8 +7,8 @@ import {
   type ColorValue,
 } from 'react-native'
 
+import { StyleSheet } from '../../../utils'
 import { type SvgSource, SvgUniversal } from '../../../utils/SvgUniversal'
-import { makeStyles } from '../../../utils/makeStyles'
 import { Subtitle, Body, Caption } from '../../Typography'
 
 /** Свойства ListBase */
@@ -58,14 +58,12 @@ export const ListBase = memo<ListBaseProps>(
     testID,
     ...rest
   }) => {
-    const styles = useStyles()
-
     const leftIconStyle: ViewStyle = useMemo(() => {
       return {
         ...styles.leftIcon,
         alignSelf: iconAlignment === 'top' ? 'flex-start' : undefined,
       }
-    }, [styles.leftIcon, iconAlignment])
+    }, [iconAlignment])
 
     const fullDivider = divider === 'full' ? styles.divider : {}
     const contentDivider = divider === 'content' ? styles.divider : {}
@@ -145,43 +143,45 @@ const ListBaseTestId = {
   title: 'Title',
 }
 
-const useStyles = makeStyles(({ spacing, typography, theme, background }) => ({
-  container: {
-    flexDirection: 'row',
-    paddingLeft: spacing.Padding['p-4'],
-    gap: spacing.Padding['p-4'],
-    alignItems: 'center',
-  },
-  pressed: { backgroundColor: background.Common['bg-surface-ground-hover'] },
-  disabled: { opacity: 0.6 },
-  leftIcon: { paddingVertical: spacing.Padding['p-4'] },
-  content: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingVertical: spacing.Padding['p-2'],
-    paddingEnd: spacing.Padding['p-4'],
-    gap: spacing.Gap['gap-4'],
-  },
-  labelContainer: {
-    paddingVertical: spacing.Padding['p-2'],
-    gap: spacing.Gap['gap-2'],
-    flex: 1,
-  },
-  titleContainer: { gap: spacing.Gap['gap-1'] },
-  extraContainer: { paddingVertical: spacing.Padding['p-2'] },
-  icon: {
-    width: typography.Size['text-2xl'],
-    height: typography.Size['text-2xl'],
-  },
-  rightSection: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingVertical: spacing.Padding['p-2'],
-    gap: spacing.Gap['gap-4'],
-  },
-  divider: {
-    borderTopColor: theme.Surface['surface-border'],
-    borderTopWidth: 1,
-  },
-}))
+const styles = StyleSheet.create(
+  ({ spacing, typography, theme, background }) => ({
+    container: {
+      flexDirection: 'row',
+      paddingLeft: spacing.Padding['p-4'],
+      gap: spacing.Padding['p-4'],
+      alignItems: 'center',
+    },
+    pressed: { backgroundColor: background.Common['bg-surface-ground-hover'] },
+    disabled: { opacity: 0.6 },
+    leftIcon: { paddingVertical: spacing.Padding['p-4'] },
+    content: {
+      flex: 1,
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      paddingVertical: spacing.Padding['p-2'],
+      paddingEnd: spacing.Padding['p-4'],
+      gap: spacing.Gap['gap-4'],
+    },
+    labelContainer: {
+      paddingVertical: spacing.Padding['p-2'],
+      gap: spacing.Gap['gap-2'],
+      flex: 1,
+    },
+    titleContainer: { gap: spacing.Gap['gap-1'] },
+    extraContainer: { paddingVertical: spacing.Padding['p-2'] },
+    icon: {
+      width: typography.Size['text-2xl'],
+      height: typography.Size['text-2xl'],
+    },
+    rightSection: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      paddingVertical: spacing.Padding['p-2'],
+      gap: spacing.Gap['gap-4'],
+    },
+    divider: {
+      borderTopColor: theme.Surface['surface-border'],
+      borderTopWidth: 1,
+    },
+  })
+)

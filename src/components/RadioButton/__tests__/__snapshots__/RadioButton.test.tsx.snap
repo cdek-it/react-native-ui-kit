@@ -91,19 +91,12 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = danger
   >
     <View
       style={
-        [
-          {
-            "borderRadius": 10.5,
-            "height": 10.5,
-            "width": 10.5,
-          },
-          [
-            {
-              "backgroundColor": "#ffffff",
-            },
-            false,
-          ],
-        ]
+        {
+          "backgroundColor": "#ffffff",
+          "borderRadius": 10.5,
+          "height": 10.5,
+          "width": 10.5,
+        }
       }
     />
   </View>
@@ -159,19 +152,12 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = defaul
   >
     <View
       style={
-        [
-          {
-            "borderRadius": 10.5,
-            "height": 10.5,
-            "width": 10.5,
-          },
-          [
-            {
-              "backgroundColor": "#ffffff",
-            },
-            false,
-          ],
-        ]
+        {
+          "backgroundColor": "#ffffff",
+          "borderRadius": 10.5,
+          "height": 10.5,
+          "width": 10.5,
+        }
       }
     />
   </View>
@@ -220,7 +206,6 @@ exports[`RadioButton snapshots checked = false, disabled = true, state = default
         "height": 21,
         "justifyContent": "center",
         "margin": 3.5,
-        "mixBlendMode": "luminosity",
         "opacity": 0.6,
         "width": 21,
       }
@@ -229,21 +214,12 @@ exports[`RadioButton snapshots checked = false, disabled = true, state = default
   >
     <View
       style={
-        [
-          {
-            "borderRadius": 10.5,
-            "height": 10.5,
-            "width": 10.5,
-          },
-          [
-            {
-              "backgroundColor": "#ffffff",
-            },
-            {
-              "backgroundColor": "transparent",
-            },
-          ],
-        ]
+        {
+          "backgroundColor": "transparent",
+          "borderRadius": 10.5,
+          "height": 10.5,
+          "width": 10.5,
+        }
       }
     />
   </View>
@@ -341,19 +317,12 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = danger 
   >
     <View
       style={
-        [
-          {
-            "borderRadius": 10.5,
-            "height": 10.5,
-            "width": 10.5,
-          },
-          [
-            {
-              "backgroundColor": "#ffffff",
-            },
-            false,
-          ],
-        ]
+        {
+          "backgroundColor": "#ffffff",
+          "borderRadius": 10.5,
+          "height": 10.5,
+          "width": 10.5,
+        }
       }
     />
   </View>
@@ -409,19 +378,12 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = default
   >
     <View
       style={
-        [
-          {
-            "borderRadius": 10.5,
-            "height": 10.5,
-            "width": 10.5,
-          },
-          [
-            {
-              "backgroundColor": "#ffffff",
-            },
-            false,
-          ],
-        ]
+        {
+          "backgroundColor": "#ffffff",
+          "borderRadius": 10.5,
+          "height": 10.5,
+          "width": 10.5,
+        }
       }
     />
   </View>
@@ -470,7 +432,6 @@ exports[`RadioButton snapshots checked = true, disabled = true, state = default 
         "height": 21,
         "justifyContent": "center",
         "margin": 3.5,
-        "mixBlendMode": "luminosity",
         "opacity": 0.6,
         "width": 21,
       }
@@ -479,19 +440,12 @@ exports[`RadioButton snapshots checked = true, disabled = true, state = default 
   >
     <View
       style={
-        [
-          {
-            "borderRadius": 10.5,
-            "height": 10.5,
-            "width": 10.5,
-          },
-          [
-            {
-              "backgroundColor": "#ffffff",
-            },
-            false,
-          ],
-        ]
+        {
+          "backgroundColor": "#ffffff",
+          "borderRadius": 10.5,
+          "height": 10.5,
+          "width": 10.5,
+        }
       }
     />
   </View>
@@ -547,19 +501,12 @@ exports[`RadioButton snapshots default 1`] = `
   >
     <View
       style={
-        [
-          {
-            "borderRadius": 10.5,
-            "height": 10.5,
-            "width": 10.5,
-          },
-          [
-            {
-              "backgroundColor": "#ffffff",
-            },
-            false,
-          ],
-        ]
+        {
+          "backgroundColor": "#ffffff",
+          "borderRadius": 10.5,
+          "height": 10.5,
+          "width": 10.5,
+        }
       }
     />
   </View>

@@ -19,11 +19,8 @@ export const InputSwitch = memo<InputSwitchProps>(
     danger = false,
     ...props
   }) => {
-    const { sliderStyle, onPressedChange } = useSliderStyles(
-      checked,
-      disabled,
-      danger
-    )
+    const { containerStyle, sliderStyle, onPressIn, onPressOut } =
+      useSliderStyles(checked, disabled, danger)
     const { handleStyle } = useHandleStyles(checked)
 
     const handlePress = useCallback(() => {
@@ -33,8 +30,10 @@ export const InputSwitch = memo<InputSwitchProps>(
     return (
       <Pressable
         disabled={disabled}
-        style={onPressedChange}
+        style={containerStyle}
         onPress={handlePress}
+        onPressIn={onPressIn}
+        onPressOut={onPressOut}
         {...props}
       >
         <Animated.View style={sliderStyle}>

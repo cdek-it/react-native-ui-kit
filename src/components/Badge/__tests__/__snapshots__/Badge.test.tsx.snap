@@ -13,16 +13,12 @@ exports[`Badge component tests dot, severity: basic 1`] = `
 >
   <View
     style={
-      [
-        {
-          "borderRadius": 100,
-          "height": 7,
-          "width": 7,
-        },
-        {
-          "backgroundColor": "#44e858",
-        },
-      ]
+      {
+        "backgroundColor": "#44e858",
+        "borderRadius": 100,
+        "height": 7,
+        "width": 7,
+      }
     }
   />
 </View>
@@ -41,16 +37,12 @@ exports[`Badge component tests dot, severity: danger 1`] = `
 >
   <View
     style={
-      [
-        {
-          "borderRadius": 100,
-          "height": 7,
-          "width": 7,
-        },
-        {
-          "backgroundColor": "#fbacaa",
-        },
-      ]
+      {
+        "backgroundColor": "#fbacaa",
+        "borderRadius": 100,
+        "height": 7,
+        "width": 7,
+      }
     }
   />
 </View>
@@ -69,16 +61,12 @@ exports[`Badge component tests dot, severity: info 1`] = `
 >
   <View
     style={
-      [
-        {
-          "borderRadius": 100,
-          "height": 7,
-          "width": 7,
-        },
-        {
-          "backgroundColor": "#aad7fb",
-        },
-      ]
+      {
+        "backgroundColor": "#aad7fb",
+        "borderRadius": 100,
+        "height": 7,
+        "width": 7,
+      }
     }
   />
 </View>
@@ -97,16 +85,12 @@ exports[`Badge component tests dot, severity: success 1`] = `
 >
   <View
     style={
-      [
-        {
-          "borderRadius": 100,
-          "height": 7,
-          "width": 7,
-        },
-        {
-          "backgroundColor": "#aafbb7",
-        },
-      ]
+      {
+        "backgroundColor": "#aafbb7",
+        "borderRadius": 100,
+        "height": 7,
+        "width": 7,
+      }
     }
   />
 </View>
@@ -125,16 +109,12 @@ exports[`Badge component tests dot, severity: warning 1`] = `
 >
   <View
     style={
-      [
-        {
-          "borderRadius": 100,
-          "height": 7,
-          "width": 7,
-        },
-        {
-          "backgroundColor": "#fddeaa",
-        },
-      ]
+      {
+        "backgroundColor": "#fddeaa",
+        "borderRadius": 100,
+        "height": 7,
+        "width": 7,
+      }
     }
   />
 </View>
@@ -153,17 +133,13 @@ exports[`Badge component tests severity: basic 1`] = `
 >
   <View
     style={
-      [
-        {
-          "borderRadius": 100,
-          "height": 21,
-          "justifyContent": "center",
-          "paddingHorizontal": 7,
-        },
-        {
-          "backgroundColor": "#44e858",
-        },
-      ]
+      {
+        "backgroundColor": "#44e858",
+        "borderRadius": 100,
+        "height": 21,
+        "justifyContent": "center",
+        "paddingHorizontal": 7,
+      }
     }
   >
     <Text
@@ -234,17 +210,13 @@ exports[`Badge component tests severity: basic 2`] = `
 >
   <View
     style={
-      [
-        {
-          "borderRadius": 100,
-          "height": 21,
-          "justifyContent": "center",
-          "paddingHorizontal": 7,
-        },
-        {
-          "backgroundColor": "#aad7fb",
-        },
-      ]
+      {
+        "backgroundColor": "#aad7fb",
+        "borderRadius": 100,
+        "height": 21,
+        "justifyContent": "center",
+        "paddingHorizontal": 7,
+      }
     }
   >
     <Text
@@ -315,17 +287,13 @@ exports[`Badge component tests severity: basic 3`] = `
 >
   <View
     style={
-      [
-        {
-          "borderRadius": 100,
-          "height": 21,
-          "justifyContent": "center",
-          "paddingHorizontal": 7,
-        },
-        {
-          "backgroundColor": "#aafbb7",
-        },
-      ]
+      {
+        "backgroundColor": "#aafbb7",
+        "borderRadius": 100,
+        "height": 21,
+        "justifyContent": "center",
+        "paddingHorizontal": 7,
+      }
     }
   >
     <Text
@@ -396,17 +364,13 @@ exports[`Badge component tests severity: basic 4`] = `
 >
   <View
     style={
-      [
-        {
-          "borderRadius": 100,
-          "height": 21,
-          "justifyContent": "center",
-          "paddingHorizontal": 7,
-        },
-        {
-          "backgroundColor": "#fddeaa",
-        },
-      ]
+      {
+        "backgroundColor": "#fddeaa",
+        "borderRadius": 100,
+        "height": 21,
+        "justifyContent": "center",
+        "paddingHorizontal": 7,
+      }
     }
   >
     <Text
@@ -477,17 +441,13 @@ exports[`Badge component tests severity: basic 5`] = `
 >
   <View
     style={
-      [
-        {
-          "borderRadius": 100,
-          "height": 21,
-          "justifyContent": "center",
-          "paddingHorizontal": 7,
-        },
-        {
-          "backgroundColor": "#fbacaa",
-        },
-      ]
+      {
+        "backgroundColor": "#fbacaa",
+        "borderRadius": 100,
+        "height": 21,
+        "justifyContent": "center",
+        "paddingHorizontal": 7,
+      }
     }
   >
     <Text
@@ -558,17 +518,13 @@ exports[`Badge component tests severity: default 1`] = `
 >
   <View
     style={
-      [
-        {
-          "borderRadius": 100,
-          "height": 21,
-          "justifyContent": "center",
-          "paddingHorizontal": 7,
-        },
-        {
-          "backgroundColor": "#44e858",
-        },
-      ]
+      {
+        "backgroundColor": "#44e858",
+        "borderRadius": 100,
+        "height": 21,
+        "justifyContent": "center",
+        "paddingHorizontal": 7,
+      }
     }
   >
     <Text
@@ -641,16 +597,12 @@ exports[`Badge component tests with custom style 1`] = `
 >
   <View
     style={
-      [
-        {
-          "borderRadius": 100,
-          "height": 7,
-          "width": 7,
-        },
-        {
-          "backgroundColor": "#44e858",
-        },
-      ]
+      {
+        "backgroundColor": "#44e858",
+        "borderRadius": 100,
+        "height": 7,
+        "width": 7,
+      }
     }
   />
 </View>

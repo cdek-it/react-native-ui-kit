@@ -33,21 +33,25 @@ exports[`ButtonSeverity component tests severity - danger 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    {
-      "alignItems": "center",
-      "backgroundColor": "#fbacaa",
-      "borderColor": "rgba(255, 255, 255, 0.0001)",
-      "borderRadius": 10.5,
-      "borderWidth": 1,
-      "flexDirection": "row",
-      "gap": 7,
-      "height": 35,
-      "justifyContent": "center",
-      "maxHeight": 35,
-      "minHeight": 35,
-      "paddingHorizontal": 14,
-      "paddingVertical": 0,
-    }
+    [
+      {
+        "alignItems": "center",
+        "backgroundColor": "#fbacaa",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
+        "borderRadius": 10.5,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "gap": 7,
+        "height": 35,
+        "justifyContent": "center",
+        "maxHeight": 35,
+        "minHeight": 35,
+        "paddingHorizontal": 14,
+        "paddingVertical": 0,
+      },
+      false,
+      undefined,
+    ]
   }
 >
   <Text
@@ -101,21 +105,25 @@ exports[`ButtonSeverity component tests severity - info 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    {
-      "alignItems": "center",
-      "backgroundColor": "#aad7fb",
-      "borderColor": "rgba(255, 255, 255, 0.0001)",
-      "borderRadius": 10.5,
-      "borderWidth": 1,
-      "flexDirection": "row",
-      "gap": 7,
-      "height": 35,
-      "justifyContent": "center",
-      "maxHeight": 35,
-      "minHeight": 35,
-      "paddingHorizontal": 14,
-      "paddingVertical": 0,
-    }
+    [
+      {
+        "alignItems": "center",
+        "backgroundColor": "#aad7fb",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
+        "borderRadius": 10.5,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "gap": 7,
+        "height": 35,
+        "justifyContent": "center",
+        "maxHeight": 35,
+        "minHeight": 35,
+        "paddingHorizontal": 14,
+        "paddingVertical": 0,
+      },
+      false,
+      undefined,
+    ]
   }
 >
   <Text
@@ -169,21 +177,25 @@ exports[`ButtonSeverity component tests severity - success 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    {
-      "alignItems": "center",
-      "backgroundColor": "#aafbb7",
-      "borderColor": "rgba(255, 255, 255, 0.0001)",
-      "borderRadius": 10.5,
-      "borderWidth": 1,
-      "flexDirection": "row",
-      "gap": 7,
-      "height": 35,
-      "justifyContent": "center",
-      "maxHeight": 35,
-      "minHeight": 35,
-      "paddingHorizontal": 14,
-      "paddingVertical": 0,
-    }
+    [
+      {
+        "alignItems": "center",
+        "backgroundColor": "#aafbb7",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
+        "borderRadius": 10.5,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "gap": 7,
+        "height": 35,
+        "justifyContent": "center",
+        "maxHeight": 35,
+        "minHeight": 35,
+        "paddingHorizontal": 14,
+        "paddingVertical": 0,
+      },
+      false,
+      undefined,
+    ]
   }
 >
   <Text
@@ -237,21 +249,25 @@ exports[`ButtonSeverity component tests severity - warning 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    {
-      "alignItems": "center",
-      "backgroundColor": "#fddeaa",
-      "borderColor": "rgba(255, 255, 255, 0.0001)",
-      "borderRadius": 10.5,
-      "borderWidth": 1,
-      "flexDirection": "row",
-      "gap": 7,
-      "height": 35,
-      "justifyContent": "center",
-      "maxHeight": 35,
-      "minHeight": 35,
-      "paddingHorizontal": 14,
-      "paddingVertical": 0,
-    }
+    [
+      {
+        "alignItems": "center",
+        "backgroundColor": "#fddeaa",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
+        "borderRadius": 10.5,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "gap": 7,
+        "height": 35,
+        "justifyContent": "center",
+        "maxHeight": 35,
+        "minHeight": 35,
+        "paddingHorizontal": 14,
+        "paddingVertical": 0,
+      },
+      false,
+      undefined,
+    ]
   }
 >
   <Text

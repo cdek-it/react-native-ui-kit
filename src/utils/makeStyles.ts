@@ -1,8 +1,9 @@
 import { useMemo } from 'react'
 import type { ImageStyle, TextStyle, ViewStyle } from 'react-native'
-import { useUnistyles } from 'react-native-unistyles'
 
 import type { ThemeType } from '../theme'
+
+import { useUnistyles } from './index'
 
 /**
  * @deprecated Используйте `StyleSheet.create(...)` из SDK.

@@ -13,7 +13,7 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated'
 
-import { makeStyles } from '../../utils/makeStyles'
+import { StyleSheet } from '../../utils'
 
 import { TabItem, type TabItemProps } from './TabItem/TabItem'
 
@@ -37,8 +37,6 @@ export interface TabsProps
 //
 export const Tabs = memo<TabsProps>(
   ({ items, disabled = false, activeIndex, onChange, testID, ...rest }) => {
-    const styles = useStyles()
-
     const [tabsLayouts, setTabsLayouts] = useState<
       Record<string, LayoutRectangle>
     >({})
@@ -93,7 +91,7 @@ export const Tabs = memo<TabsProps>(
   }
 )
 
-const useStyles = makeStyles(({ theme, border }) => ({
+const styles = StyleSheet.create(({ theme, border }) => ({
   container: {
     flexDirection: 'row',
     gap: theme.Panel.TabView.tabviewHeaderSpacing,

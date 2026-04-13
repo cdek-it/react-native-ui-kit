@@ -1,6 +1,5 @@
-import { UnistylesRuntime } from 'react-native-unistyles'
-
 import { ThemeVariant } from '../theme'
+import { UnistylesRuntime } from '../utils'
 
 /**
  * Возвращает текущую тему.

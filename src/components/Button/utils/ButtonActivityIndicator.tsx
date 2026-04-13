@@ -1,44 +1,47 @@
 import { ActivityIndicator } from 'react-native'
 
+import { StyleSheet } from '../../../utils'
 import { genericMemo } from '../../../utils/genericMemo'
-import { makeStyles } from '../../../utils/makeStyles'
-import type { BaseButtonProps, ButtonVariant } from '../types'
+import type { BaseButtonProps, ButtonSize } from '../types'
 
-import { useTypeBasedStyle } from './useTypeBasedStyle'
-
-export type ButtonActivityIndicatorProps<Variant extends ButtonVariant> = Pick<
-  Required<BaseButtonProps<Variant>>,
+export type ButtonActivityIndicatorProps = Pick<
+  Required<BaseButtonProps<never>>,
   'size'
->
+> & { readonly size: ButtonSize }
 
-const ButtonActivityIndicatorComponent = <Variant extends ButtonVariant>({
+const ButtonActivityIndicatorComponent = ({
   size,
-}: ButtonActivityIndicatorProps<Variant>) => {
-  const styles = useStyles()
-
-  const sizeBasedStyle = useTypeBasedStyle(size, styles) as { height: number }
+}: ButtonActivityIndicatorProps) => {
+  buttonActivityIndicatorStyles.useVariants({ size })
 
   return (
     <ActivityIndicator
-      color={styles.activityIndicator.color}
-      size={sizeBasedStyle.height ?? 'small'}
+      color={buttonActivityIndicatorStyles.indicator.color}
+      size={
+        buttonActivityIndicatorStyles.indicator.height as
+          | number
+          | 'small'
+          | 'large'
+      }
       testID='Button_ActivityIndicator'
     />
   )
 }
 
-const useStyles = makeStyles(({ theme }) => ({
-  xlarge: { height: 21 },
-
-  large: { height: 21 },
-
-  base: { height: 17.5 },
-
-  small: { height: 14 },
-
-  activityIndicator: { color: theme.Button.Disabled.disabledButtonTextColor },
-}))
-
 export const ButtonActivityIndicator = genericMemo(
   ButtonActivityIndicatorComponent
 )
+
+const buttonActivityIndicatorStyles = StyleSheet.create(({ theme }) => ({
+  indicator: {
+    color: theme.Button.Disabled.disabledButtonTextColor,
+    variants: {
+      size: {
+        xlarge: { height: 21 },
+        large: { height: 21 },
+        base: { height: 17.5 },
+        small: { height: 14 },
+      },
+    },
+  },
+}))

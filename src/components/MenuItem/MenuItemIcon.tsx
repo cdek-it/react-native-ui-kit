@@ -4,11 +4,10 @@ import {
   type DimensionValue,
   type LayoutChangeEvent,
   View,
-  StyleSheet,
 } from 'react-native'
 
+import { StyleSheet } from '../../utils'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
-import { makeStyles } from '../../utils/makeStyles'
 import { Badge, type BadgeSeverity } from '../Badge/Badge'
 
 interface MenuItemIconStyle {
@@ -49,8 +48,6 @@ export const MenuItemIcon = ({
   style,
   badgeSeverity,
 }: MenuItemIconProps) => {
-  const styles = useStyles()
-
   const [badgePosition, setBadgePosition] = useState<{
     top: DimensionValue
     right: DimensionValue
@@ -67,7 +64,7 @@ export const MenuItemIcon = ({
         styles.badge,
         { top: badgePosition.top, right: badgePosition.right },
       ]),
-    [badgePosition.right, badgePosition.top, styles.badge]
+    [badgePosition.right, badgePosition.top]
   )
 
   return (
@@ -88,7 +85,7 @@ export const MenuItemIcon = ({
   )
 }
 
-const useStyles = makeStyles(() => ({
+const styles = StyleSheet.create(() => ({
   container: { justifyContent: 'center', position: 'relative' },
 
   badge: { position: 'absolute' },

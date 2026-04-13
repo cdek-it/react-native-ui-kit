@@ -21,8 +21,8 @@ import {
   type ViewStyle,
 } from 'react-native'
 
+import { StyleSheet } from '../../utils'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
-import { makeStyles } from '../../utils/makeStyles'
 
 export type AvatarSize = 'xlarge' | 'large' | 'normal'
 
@@ -137,7 +137,6 @@ export const Avatar = memo<AvatarProps>(
     onError,
     iconColor,
   }) => {
-    const styles = useStyles()
     const window = useWindowDimensions()
     const [badgeLayout, setBadgeLayout] = useState<LayoutRectangle>()
 
@@ -192,7 +191,7 @@ export const Avatar = memo<AvatarProps>(
           width={iconSize}
         />
       )
-    }, [Icon, calculatedSize, iconColor, size, styles, type])
+    }, [Icon, calculatedSize, iconColor, size, type])
 
     useEffect(() => {
       if (badge) {
@@ -255,7 +254,7 @@ export const Avatar = memo<AvatarProps>(
   }
 )
 
-const useStyles = makeStyles(({ theme, border, typography, fonts }) => ({
+const styles = StyleSheet.create(({ theme, border, typography, fonts }) => ({
   container: {
     justifyContent: 'center',
     alignItems: 'center',

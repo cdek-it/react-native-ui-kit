@@ -170,7 +170,7 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
     }
     jestInlineStyle={
       {
-        "backgroundColor": ""rgba(133, 136, 142, 1)"",
+        "backgroundColor": ""#85888e"",
         "borderColor": ""transparent"",
         "borderRadius": 100,
         "borderWidth": 1,
@@ -183,7 +183,7 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
     style={
       [
         {
-          "backgroundColor": "rgba(133, 136, 142, 1)",
+          "backgroundColor": "#85888e",
           "borderColor": "transparent",
           "borderRadius": 100,
           "borderWidth": 1,
@@ -642,7 +642,7 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
     }
     jestInlineStyle={
       {
-        "backgroundColor": ""rgba(133, 136, 142, 1)"",
+        "backgroundColor": ""#85888e"",
         "borderColor": ""#db3424"",
         "borderRadius": 100,
         "borderWidth": 1,
@@ -655,7 +655,7 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
     style={
       [
         {
-          "backgroundColor": "rgba(133, 136, 142, 1)",
+          "backgroundColor": "#85888e",
           "borderColor": "#db3424",
           "borderRadius": 100,
           "borderWidth": 1,
@@ -1114,7 +1114,7 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
     }
     jestInlineStyle={
       {
-        "backgroundColor": ""rgba(43, 46, 51, 1)"",
+        "backgroundColor": ""#2b2e33"",
         "borderColor": ""transparent"",
         "borderRadius": 100,
         "borderWidth": 1,
@@ -1127,7 +1127,7 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
     style={
       [
         {
-          "backgroundColor": "rgba(43, 46, 51, 1)",
+          "backgroundColor": "#2b2e33",
           "borderColor": "transparent",
           "borderRadius": 100,
           "borderWidth": 1,
@@ -1586,7 +1586,7 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - f
     }
     jestInlineStyle={
       {
-        "backgroundColor": ""rgba(43, 46, 51, 1)"",
+        "backgroundColor": ""#2b2e33"",
         "borderColor": ""#db3424"",
         "borderRadius": 100,
         "borderWidth": 1,
@@ -1599,7 +1599,7 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - f
     style={
       [
         {
-          "backgroundColor": "rgba(43, 46, 51, 1)",
+          "backgroundColor": "#2b2e33",
           "borderColor": "#db3424",
           "borderRadius": 100,
           "borderWidth": 1,

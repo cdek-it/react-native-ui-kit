@@ -27,7 +27,6 @@ const unistyles = jest.requireMock(
 const getTheme = (themeName: ThemeName | undefined) =>
   themeName === 'dark' ? darkTheme : lightTheme
 
-const originalStyleSheetCreate = unistyles.StyleSheet.create
 const runtime = unistyles.UnistylesRuntime
 
 runtime.themeName = 'light'
@@ -40,13 +39,101 @@ unistyles.useUnistyles = jest.fn(() => ({
   rt: runtime,
 }))
 
-unistyles.StyleSheet.create = jest.fn(
-  (stylesheet: Parameters<typeof originalStyleSheetCreate>[0]) =>
-    typeof stylesheet === 'function'
-      ? originalStyleSheetCreate(() =>
-          stylesheet(getTheme(runtime.themeName), runtime.miniRuntime)
+const normalizeVariantValue = (value: unknown) => {
+  if (typeof value === 'boolean') {
+    return value ? 'true' : 'false'
+  }
+
+  return value
+}
+
+const resolveStyle = (
+  style: Record<string, unknown>,
+  activeVariants: Record<string, unknown>
+) => {
+  const { variants, compoundVariants, ...baseStyle } = style as {
+    variants?: Record<string, Record<string, Record<string, unknown>>>
+    compoundVariants?: Array<Record<string, unknown>>
+  }
+
+  const resolvedStyle: Record<string, unknown> = { ...baseStyle }
+
+  if (variants) {
+    for (const [variantName, variantMap] of Object.entries(variants)) {
+      const activeValue = normalizeVariantValue(activeVariants[variantName])
+
+      if (
+        activeValue !== undefined &&
+        variantMap[activeValue as keyof typeof variantMap]
+      ) {
+        Object.assign(
+          resolvedStyle,
+          variantMap[activeValue as keyof typeof variantMap]
         )
-      : originalStyleSheetCreate(stylesheet)
+      }
+    }
+  }
+
+  if (compoundVariants) {
+    for (const compoundVariant of compoundVariants) {
+      const { styles, ...conditions } = compoundVariant
+      const matches = Object.entries(conditions).every(
+        ([variantName, expectedValue]) =>
+          normalizeVariantValue(activeVariants[variantName]) ===
+          normalizeVariantValue(expectedValue)
+      )
+
+      if (matches && styles && typeof styles === 'object') {
+        Object.assign(resolvedStyle, styles)
+      }
+    }
+  }
+
+  return resolvedStyle
+}
+
+unistyles.StyleSheet.create = jest.fn(
+  (stylesheet: ((theme: ReturnType<typeof getTheme>) => unknown) | unknown) => {
+    const styleDefinitions =
+      typeof stylesheet === 'function'
+        ? stylesheet(getTheme(runtime.themeName))
+        : stylesheet
+
+    const activeVariants: Record<string, unknown> = {}
+    const resolvedStyles: Record<string, unknown> = {
+      useVariants: (variants: Record<string, unknown>) => {
+        Object.keys(activeVariants).forEach((key) => {
+          activeVariants[key] = undefined
+        })
+
+        Object.assign(activeVariants, variants)
+      },
+    }
+
+    for (const [styleName, styleValue] of Object.entries(
+      styleDefinitions as Record<string, unknown>
+    )) {
+      Object.defineProperty(resolvedStyles, styleName, {
+        enumerable: true,
+        get() {
+          if (
+            styleValue &&
+            typeof styleValue === 'object' &&
+            !Array.isArray(styleValue)
+          ) {
+            return resolveStyle(
+              styleValue as Record<string, unknown>,
+              activeVariants
+            )
+          }
+
+          return styleValue
+        },
+      })
+    }
+
+    return resolvedStyles
+  }
 )
 
 unistyles.withUnistyles = jest.fn(<T>(Component: T) => Component)

@@ -5,7 +5,7 @@ import {
   IconInfoCircle,
   IconX,
 } from '@tabler/icons-react-native'
-import { type ComponentProps, memo, type ReactNode, useMemo } from 'react'
+import { memo, type ComponentProps, type ReactNode, useMemo } from 'react'
 import {
   type AccessibilityProps,
   type StyleProp,
@@ -14,8 +14,8 @@ import {
   type ViewStyle,
 } from 'react-native'
 
+import { StyleSheet } from '../../utils'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
-import { makeStyles } from '../../utils/makeStyles'
 import { ButtonSeverity } from '../Button/ButtonSeverity'
 import { Timer } from '../Timer/Timer'
 import { Body, Caption } from '../Typography'
@@ -23,44 +23,44 @@ import { Body, Caption } from '../Typography'
 export interface MessageProps
   extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Текст заголовка */
-  title: string
+  readonly title: string
 
   /** Тело сообщения */
-  body?: ReactNode
+  readonly body?: ReactNode
 
   /** Текст подписи */
-  caption?: string
+  readonly caption?: string
 
   /** Футер сообщения */
-  footer?: ReactNode
+  readonly footer?: ReactNode
 
   /**
    * Обработчик нажатия на кнопку закрытия.
    * Кнопка не отображается, если обработчик не передан.
    */
-  onClose?: () => void
+  readonly onClose?: () => void
 
   /**
    * Текст на кнопке закрытия тоста
    * Если не указан, в кнопке отображается иконка "крестик"
    * Это свойство игнорируется если onClose = undefined
    */
-  closeLabel?: string
+  readonly closeLabel?: string
 
   /** Срабатывает при истечении таймера */
-  onTimerFinish?: () => void
+  readonly onTimerFinish?: () => void
 
   /**
    * Выбор варианта стиля компонента
    * @default 'info'
    */
-  severity?: 'info' | 'success' | 'warning' | 'danger'
+  readonly severity?: 'info' | 'success' | 'warning' | 'danger'
 
   /** Дополнительная стилизация для контейнера компонента */
-  style?: StyleProp<ViewStyle>
+  readonly style?: StyleProp<ViewStyle>
 
   /** Значение таймера, если нужно отображать таймер вместо иконки */
-  timerValue?: number
+  readonly timerValue?: number
 
   /**
    * SVG-иконка.
@@ -72,21 +72,21 @@ export interface MessageProps
    * IconCircleX для severity='danger'
    * </pre>
    */
-  Icon?: SvgSource
+  readonly Icon?: SvgSource
 
   /**
    * Скрыть иконку.
    * Позволяет скрывать установленные или дефолтные иконки
    * Дефолтное значение: false
    */
-  hiddenIcon?: boolean
+  readonly hiddenIcon?: boolean
 }
 
 /**
  * Унифицированный компонент, который используется для отображения информационных сообщений
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=562-2947
  */
-export const Message = memo<MessageProps>(
+export const Message = memo(
   ({
     title,
     body,
@@ -102,8 +102,9 @@ export const Message = memo<MessageProps>(
     timerValue,
     Icon: IconProp,
     ...rest
-  }) => {
-    const styles = useStyles()
+  }: MessageProps) => {
+    messageStyles.useVariants({ severity })
+
     const Icon = useMemo(() => {
       if (IconProp) {
         return IconProp
@@ -152,7 +153,7 @@ export const Message = memo<MessageProps>(
           testID={TestId.CloseButton}
         />
       )
-    }, [closeLabel, severity, onClose])
+    }, [closeLabel, onClose, severity])
 
     const LeftContent = useMemo(() => {
       if (timerValue) {
@@ -162,29 +163,29 @@ export const Message = memo<MessageProps>(
       if (!hiddenIcon) {
         return (
           <SvgUniversal
-            color={styles[`content${severity}`].borderColor}
-            height={styles.iconSize.height}
+            color={messageStyles.content.borderColor}
+            height={messageStyles.iconSize.height}
             source={Icon}
             testID={TestId.Icon}
-            width={styles.iconSize.width}
+            width={messageStyles.iconSize.width}
           />
         )
       }
 
       return undefined
-    }, [timerValue, hiddenIcon, onTimerFinish, Icon, styles, severity])
+    }, [hiddenIcon, Icon, onTimerFinish, timerValue])
 
     return (
       <View
         accessible
-        style={[styles.container, styles[severity], style]}
+        style={[messageStyles.container, style]}
         testID={testID || TestId.Container}
         {...rest}
       >
-        <View style={[styles.content, styles[`content${severity}`]]}>
-          <View style={styles.titleRow}>
+        <View style={messageStyles.content}>
+          <View style={messageStyles.titleRow}>
             {LeftContent}
-            <View style={styles.titleTextContainer}>
+            <View style={messageStyles.titleTextContainer}>
               <Body base testID={TestId.Title} weight='bold'>
                 {title}
               </Body>
@@ -202,58 +203,73 @@ export const Message = memo<MessageProps>(
   }
 )
 
-const useStyles = makeStyles(({ theme, typography, spacing, border }) => ({
-  container: {
-    borderRadius: theme.General.borderRadiusXL,
-    borderWidth: border.Width.border,
-    overflow: 'hidden',
-  },
-  content: {
-    flexGrow: 1,
-    borderLeftWidth: border.Width['border-3'] - border.Width.border,
-    padding: spacing.Padding['p-4'],
-    paddingLeft: spacing.Padding['p-5'],
-    gap: spacing.Gap['gap-4'],
-  },
-  info: {
-    borderColor: theme.Message.Severities.Info.infoMessageBorderColor,
-    backgroundColor: theme.Message.Severities.Info.infoMessageBg,
-  },
-  contentinfo: {
-    borderColor: theme.Message.Severities.Info.infoMessageIconColor,
-  },
-  success: {
-    borderColor: theme.Message.Severities.Success.successMessageBorderColor,
-    backgroundColor: theme.Message.Severities.Success.successMessageBg,
-  },
-  contentsuccess: {
-    borderColor: theme.Message.Severities.Success.successMessageIconColor,
-  },
-  warning: {
-    borderColor: theme.Message.Severities.Warning.warningMessageBorderColor,
-    backgroundColor: theme.Message.Severities.Warning.warningMessageBg,
-  },
-  contentwarning: {
-    borderColor: theme.Message.Severities.Warning.warningMessageIconColor,
-  },
-  danger: {
-    borderColor: theme.Message.Severities.Danger.dangerMessageBorderColor,
-    backgroundColor: theme.Message.Severities.Danger.dangerMessageBg,
-  },
-  contentdanger: {
-    borderColor: theme.Message.Severities.Danger.dangerMessageIconColor,
-  },
-  titleRow: { flexDirection: 'row', gap: spacing.Gap['gap-4'] },
-  titleTextContainer: {
-    flex: 1,
-    alignSelf: 'center',
-    gap: spacing.Gap['gap-1'],
-  },
-  iconSize: {
-    width: typography.Size['text-4xl'],
-    height: typography.Size['text-4xl'],
-  },
-}))
+const messageStyles = StyleSheet.create(
+  ({ theme, typography, spacing, border }) => ({
+    container: {
+      borderRadius: theme.General.borderRadiusXL,
+      borderWidth: border.Width.border,
+      overflow: 'hidden',
+      variants: {
+        severity: {
+          info: {
+            borderColor: theme.Message.Severities.Info.infoMessageBorderColor,
+            backgroundColor: theme.Message.Severities.Info.infoMessageBg,
+          },
+          success: {
+            borderColor:
+              theme.Message.Severities.Success.successMessageBorderColor,
+            backgroundColor: theme.Message.Severities.Success.successMessageBg,
+          },
+          warning: {
+            borderColor:
+              theme.Message.Severities.Warning.warningMessageBorderColor,
+            backgroundColor: theme.Message.Severities.Warning.warningMessageBg,
+          },
+          danger: {
+            borderColor:
+              theme.Message.Severities.Danger.dangerMessageBorderColor,
+            backgroundColor: theme.Message.Severities.Danger.dangerMessageBg,
+          },
+        },
+      },
+    },
+    content: {
+      flexGrow: 1,
+      borderLeftWidth: border.Width['border-3'] - border.Width.border,
+      padding: spacing.Padding['p-4'],
+      paddingLeft: spacing.Padding['p-5'],
+      gap: spacing.Gap['gap-4'],
+      variants: {
+        severity: {
+          info: {
+            borderColor: theme.Message.Severities.Info.infoMessageIconColor,
+          },
+          success: {
+            borderColor:
+              theme.Message.Severities.Success.successMessageIconColor,
+          },
+          warning: {
+            borderColor:
+              theme.Message.Severities.Warning.warningMessageIconColor,
+          },
+          danger: {
+            borderColor: theme.Message.Severities.Danger.dangerMessageIconColor,
+          },
+        },
+      },
+    },
+    titleRow: { flexDirection: 'row', gap: spacing.Gap['gap-4'] },
+    titleTextContainer: {
+      flex: 1,
+      alignSelf: 'center',
+      gap: spacing.Gap['gap-1'],
+    },
+    iconSize: {
+      width: typography.Size['text-4xl'],
+      height: typography.Size['text-4xl'],
+    },
+  })
+)
 
 export enum TestId {
   Container = 'MessageContainer',

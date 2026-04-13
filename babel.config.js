@@ -3,6 +3,20 @@ module.exports = (api) => {
 
   return {
     presets: ['babel-preset-expo'],
-    plugins: ['@babel/plugin-transform-class-static-block'],
+    plugins: [
+      [
+        'react-native-unistyles/plugin',
+        {
+          root: 'src',
+          autoProcessImports: [
+            '../utils',
+            '../../utils',
+            '../../../utils',
+            '../../../../utils',
+          ],
+        },
+      ],
+      '@babel/plugin-transform-class-static-block',
+    ],
   }
 }

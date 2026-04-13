@@ -1,8 +1,8 @@
-import { memo } from 'react'
+import { memo, useMemo } from 'react'
 
 import { BaseButton } from './BaseButton'
-import { useBasicButtonStyles } from './styles'
 import type { ButtonBaseVariant, ButtonProps } from './types'
+import { ButtonVariantContext } from './utils/ButtonVariantContext'
 
 /**
  * Button component
@@ -18,10 +18,14 @@ import type { ButtonBaseVariant, ButtonProps } from './types'
  * @param style - external style control for component
  * @see BaseButton
  */
-export const Button = memo<ButtonProps<ButtonBaseVariant>>(
-  ({ variant = 'primary', ...props }) => {
-    const buttonStyles = useBasicButtonStyles()
+export const Button = memo(
+  ({ variant = 'primary', ...props }: ButtonProps<ButtonBaseVariant>) => {
+    const variantContextValue = useMemo(() => ({ variant }), [variant])
 
-    return <BaseButton variant={variant} {...props} {...buttonStyles} />
+    return (
+      <ButtonVariantContext.Provider value={variantContextValue}>
+        <BaseButton variant={variant} {...props} />
+      </ButtonVariantContext.Provider>
+    )
   }
 )

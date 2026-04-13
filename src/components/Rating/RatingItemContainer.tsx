@@ -1,7 +1,7 @@
 import { memo, type ReactNode } from 'react'
 import { Pressable, type PressableProps } from 'react-native'
 
-import { makeStyles } from '../../utils/makeStyles'
+import { StyleSheet } from '../../utils'
 
 /**
  * Свойста компонента контейнера для элемента в компоненте рейтинга
@@ -43,8 +43,6 @@ export interface RatingItemContainerProps extends Omit<
  */
 export const RatingItemContainer = memo<RatingItemContainerProps>(
   ({ disabled = false, paddings = false, children, ...rest }) => {
-    const styles = useStyles()
-
     return (
       <Pressable
         disabled={disabled}
@@ -57,7 +55,7 @@ export const RatingItemContainer = memo<RatingItemContainerProps>(
   }
 )
 
-const useStyles = makeStyles(({ theme, sizing }) => ({
+const styles = StyleSheet.create(({ theme, sizing }) => ({
   container: {
     alignItems: 'center',
     justifyContent: 'center',

@@ -9,7 +9,7 @@ import Animated, {
 } from 'react-native-reanimated'
 import Svg, { Circle } from 'react-native-svg'
 
-import { makeStyles } from '../../utils/makeStyles'
+import { StyleSheet } from '../../utils'
 
 import { TimerFlip } from './TimerFlip'
 import { COUNTER_SIZE } from './constants'
@@ -33,7 +33,6 @@ const BORDER_WIDTH = 2
  * @see https://www.figma.com/design/2ZnL6XPKEpxAHvrlbRvnMu/Template-Tailwind-CSS-(DS)?node-id=270-1514
  */
 export const Timer = memo<TimerProps>(({ countFrom, onFinish }) => {
-  const styles = useStyles()
   const circleAnimation = useSharedValue(0)
   const [currentTimerValue, setCurrentTimerValue] = useState(countFrom)
   const circumferenceRadius = COUNTER_SIZE / 2 - BORDER_WIDTH
@@ -97,7 +96,7 @@ export const Timer = memo<TimerProps>(({ countFrom, onFinish }) => {
   )
 })
 
-const useStyles = makeStyles(({ typography }) => ({
+const styles = StyleSheet.create(({ typography }) => ({
   container: {
     overflow: 'hidden',
     width: COUNTER_SIZE,

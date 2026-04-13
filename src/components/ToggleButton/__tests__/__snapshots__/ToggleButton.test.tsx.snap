@@ -10,20 +10,12 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
     [
       {
         "alignSelf": "flex-start",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "overflow": "hidden",
       },
       undefined,
-      [
-        {
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
-        },
-        false,
-        false,
-        false,
-        false,
-      ],
     ]
   }
   testID="ToggleButton"
@@ -34,27 +26,15 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
         {
           "alignItems": "center",
           "alignSelf": "flex-start",
+          "backgroundColor": "#e2e2e4",
           "borderRadius": 100,
           "flexDirection": "row",
-          "gap": 10.5,
-          "paddingHorizontal": 21,
-          "paddingVertical": 0,
-        },
-        {
           "gap": 7,
           "minHeight": 28,
           "paddingHorizontal": 10.5,
+          "paddingVertical": 0,
         },
         false,
-        [
-          {
-            "backgroundColor": "#e2e2e4",
-          },
-          false,
-          false,
-          false,
-          false,
-        ],
       ]
     }
     testID="ToggleButton.container"
@@ -79,15 +59,10 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          [
-            {
-              "color": "#181a1f",
-            },
-            false,
-            false,
-            false,
-            false,
-          ],
+          {
+            "height": 14,
+            "width": 14,
+          },
           {
             "flex": 0,
             "height": 14,
@@ -102,7 +77,6 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
-        color="#181a1f"
         fill={null}
         propList={
           [
@@ -123,7 +97,6 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
         strokeWidth={2}
       >
         <RNSVGPath
-          color="#181a1f"
           d="M7 7l10 10"
           fill={null}
           propList={
@@ -146,7 +119,6 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           testID="ToggleButton.icon"
         />
         <RNSVGPath
-          color="#181a1f"
           d="M17 8l0 9l-9 0"
           fill={null}
           propList={
@@ -172,31 +144,15 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
     </RNSVGSvgView>
     <Text
       style={
-        [
-          {
-            "flexShrink": 1,
-            "fontFamily": "TT Fellows",
-          },
-          [
-            {
-              "fontWeight": "600",
-              "includeFontPadding": false,
-              "verticalAlign": "middle",
-            },
-            {
-              "fontSize": 12.25,
-            },
-          ],
-          [
-            {
-              "color": "#181a1f",
-            },
-            false,
-            false,
-            false,
-            false,
-          ],
-        ]
+        {
+          "color": "#181a1f",
+          "flexShrink": 1,
+          "fontFamily": "TT Fellows",
+          "fontSize": 12.25,
+          "fontWeight": "600",
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
+        }
       }
       testID="ToggleButton.text"
     >
@@ -216,20 +172,12 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
     [
       {
         "alignSelf": "flex-start",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "overflow": "hidden",
       },
       undefined,
-      [
-        {
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
-        },
-        false,
-        false,
-        false,
-        false,
-      ],
     ]
   }
   testID="ToggleButton"
@@ -240,58 +188,30 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
         {
           "alignItems": "center",
           "alignSelf": "flex-start",
+          "backgroundColor": "#e2e2e4",
           "borderRadius": 100,
           "flexDirection": "row",
-          "gap": 10.5,
-          "paddingHorizontal": 21,
-          "paddingVertical": 0,
-        },
-        {
           "gap": 7,
           "minHeight": 28,
           "paddingHorizontal": 10.5,
+          "paddingVertical": 0,
         },
         false,
-        [
-          {
-            "backgroundColor": "#e2e2e4",
-          },
-          false,
-          false,
-          false,
-          false,
-        ],
       ]
     }
     testID="ToggleButton.container"
   >
     <Text
       style={
-        [
-          {
-            "flexShrink": 1,
-            "fontFamily": "TT Fellows",
-          },
-          [
-            {
-              "fontWeight": "600",
-              "includeFontPadding": false,
-              "verticalAlign": "middle",
-            },
-            {
-              "fontSize": 12.25,
-            },
-          ],
-          [
-            {
-              "color": "#181a1f",
-            },
-            false,
-            false,
-            false,
-            false,
-          ],
-        ]
+        {
+          "color": "#181a1f",
+          "flexShrink": 1,
+          "fontFamily": "TT Fellows",
+          "fontSize": 12.25,
+          "fontWeight": "600",
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
+        }
       }
       testID="ToggleButton.text"
     >
@@ -317,15 +237,10 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          [
-            {
-              "color": "#181a1f",
-            },
-            false,
-            false,
-            false,
-            false,
-          ],
+          {
+            "height": 14,
+            "width": 14,
+          },
           {
             "flex": 0,
             "height": 14,
@@ -340,7 +255,6 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
-        color="#181a1f"
         fill={null}
         propList={
           [
@@ -361,7 +275,6 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
         strokeWidth={2}
       >
         <RNSVGPath
-          color="#181a1f"
           d="M7 7l10 10"
           fill={null}
           propList={
@@ -384,7 +297,6 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           testID="ToggleButton.icon"
         />
         <RNSVGPath
-          color="#181a1f"
           d="M17 8l0 9l-9 0"
           fill={null}
           propList={
@@ -422,20 +334,12 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
     [
       {
         "alignSelf": "flex-start",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "overflow": "hidden",
       },
       undefined,
-      [
-        {
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
-        },
-        false,
-        false,
-        false,
-        false,
-      ],
     ]
   }
   testID="ToggleButton"
@@ -446,16 +350,13 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
         {
           "alignItems": "center",
           "alignSelf": "flex-start",
+          "backgroundColor": "#e2e2e4",
           "borderRadius": 100,
           "flexDirection": "row",
-          "gap": 10.5,
-          "paddingHorizontal": 21,
-          "paddingVertical": 0,
-        },
-        {
           "gap": 7,
           "minHeight": 35,
           "paddingHorizontal": 14,
+          "paddingVertical": 0,
         },
         {
           "aspectRatio": 1,
@@ -463,15 +364,6 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
           "paddingHorizontal": 0,
           "paddingVertical": 0,
         },
-        [
-          {
-            "backgroundColor": "#e2e2e4",
-          },
-          false,
-          false,
-          false,
-          false,
-        ],
       ]
     }
     testID="ToggleButton.container"
@@ -496,15 +388,10 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          [
-            {
-              "color": "#181a1f",
-            },
-            false,
-            false,
-            false,
-            false,
-          ],
+          {
+            "height": 17.5,
+            "width": 17.5,
+          },
           {
             "flex": 0,
             "height": 17,
@@ -519,7 +406,6 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
-        color="#181a1f"
         fill={null}
         propList={
           [
@@ -540,7 +426,6 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
         strokeWidth={2}
       >
         <RNSVGPath
-          color="#181a1f"
           d="M7 7l10 10"
           fill={null}
           propList={
@@ -563,7 +448,6 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
           testID="ToggleButton.icon"
         />
         <RNSVGPath
-          color="#181a1f"
           d="M17 8l0 9l-9 0"
           fill={null}
           propList={
@@ -601,23 +485,13 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
     [
       {
         "alignSelf": "flex-start",
+        "borderColor": "#a2a5a9",
         "borderRadius": 100,
         "borderWidth": 1,
+        "opacity": 0.6,
         "overflow": "hidden",
       },
       undefined,
-      [
-        {
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
-        },
-        false,
-        false,
-        false,
-        {
-          "borderColor": "#a2a5a9",
-          "opacity": 0.6,
-        },
-      ],
     ]
   }
   testID="ToggleButton"
@@ -628,27 +502,15 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
         {
           "alignItems": "center",
           "alignSelf": "flex-start",
+          "backgroundColor": "#e2e2e4",
           "borderRadius": 100,
           "flexDirection": "row",
           "gap": 10.5,
+          "minHeight": 49,
           "paddingHorizontal": 21,
           "paddingVertical": 0,
         },
-        {
-          "minHeight": 49,
-        },
         false,
-        [
-          {
-            "backgroundColor": "#e2e2e4",
-          },
-          false,
-          false,
-          false,
-          {
-            "backgroundColor": "#e2e2e4",
-          },
-        ],
       ]
     }
     testID="ToggleButton.container"
@@ -673,17 +535,10 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          [
-            {
-              "color": "#181a1f",
-            },
-            false,
-            false,
-            false,
-            {
-              "color": "#85888e",
-            },
-          ],
+          {
+            "height": 21,
+            "width": 21,
+          },
           {
             "flex": 0,
             "height": 21,
@@ -698,7 +553,6 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
-        color="#85888e"
         fill={null}
         propList={
           [
@@ -719,7 +573,6 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
         strokeWidth={2}
       >
         <RNSVGPath
-          color="#85888e"
           d="M7 7l10 10"
           fill={null}
           propList={
@@ -742,7 +595,6 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
           testID="ToggleButton.icon"
         />
         <RNSVGPath
-          color="#85888e"
           d="M17 8l0 9l-9 0"
           fill={null}
           propList={
@@ -768,33 +620,15 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
     </RNSVGSvgView>
     <Text
       style={
-        [
-          {
-            "flexShrink": 1,
-            "fontFamily": "TT Fellows",
-          },
-          [
-            {
-              "fontWeight": "600",
-              "includeFontPadding": false,
-              "verticalAlign": "middle",
-            },
-            {
-              "fontSize": 17.5,
-            },
-          ],
-          [
-            {
-              "color": "#181a1f",
-            },
-            false,
-            false,
-            false,
-            {
-              "color": "#85888e",
-            },
-          ],
-        ]
+        {
+          "color": "#85888e",
+          "flexShrink": 1,
+          "fontFamily": "TT Fellows",
+          "fontSize": 17.5,
+          "fontWeight": "600",
+          "includeFontPadding": false,
+          "verticalAlign": "middle",
+        }
       }
       testID="ToggleButton.text"
     >
@@ -814,6 +648,7 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
     [
       {
         "alignSelf": "flex-start",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "overflow": "hidden",
@@ -821,17 +656,6 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
       {
         "margin": 10,
       },
-      [
-        {
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
-        },
-        false,
-        {
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
-        },
-        false,
-        false,
-      ],
     ]
   }
   testID="ToggleButton"
@@ -842,14 +666,13 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
         {
           "alignItems": "center",
           "alignSelf": "flex-start",
+          "backgroundColor": "#2b2e33",
           "borderRadius": 100,
           "flexDirection": "row",
           "gap": 10.5,
+          "minHeight": 56,
           "paddingHorizontal": 21,
           "paddingVertical": 0,
-        },
-        {
-          "minHeight": 56,
         },
         {
           "aspectRatio": 1,
@@ -857,17 +680,6 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
           "paddingHorizontal": 0,
           "paddingVertical": 0,
         },
-        [
-          {
-            "backgroundColor": "#e2e2e4",
-          },
-          false,
-          {
-            "backgroundColor": "#2b2e33",
-          },
-          false,
-          false,
-        ],
       ]
     }
     testID="ToggleButton.container"
@@ -892,17 +704,10 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          [
-            {
-              "color": "#181a1f",
-            },
-            false,
-            {
-              "color": "#ffffff",
-            },
-            false,
-            false,
-          ],
+          {
+            "height": 31.5,
+            "width": 31.5,
+          },
           {
             "flex": 0,
             "height": 31,
@@ -917,7 +722,6 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
-        color="#ffffff"
         fill={null}
         propList={
           [
@@ -938,7 +742,6 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
         strokeWidth={2}
       >
         <RNSVGPath
-          color="#ffffff"
           d="M7 7l10 10"
           fill={null}
           propList={
@@ -961,7 +764,6 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
           testID="ToggleButton.icon"
         />
         <RNSVGPath
-          color="#ffffff"
           d="M17 8l0 9l-9 0"
           fill={null}
           propList={
@@ -991,6 +793,7 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
 
 exports[`ToggleButton snapshots default 1`] = `
 <Pressable
+  disabled={false}
   onPress={[MockFunction]}
   onPressIn={[Function]}
   onPressOut={[Function]}
@@ -998,20 +801,12 @@ exports[`ToggleButton snapshots default 1`] = `
     [
       {
         "alignSelf": "flex-start",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "overflow": "hidden",
       },
       undefined,
-      [
-        {
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
-        },
-        false,
-        false,
-        false,
-        false,
-      ],
     ]
   }
   testID="ToggleButton"
@@ -1022,16 +817,13 @@ exports[`ToggleButton snapshots default 1`] = `
         {
           "alignItems": "center",
           "alignSelf": "flex-start",
+          "backgroundColor": "#e2e2e4",
           "borderRadius": 100,
           "flexDirection": "row",
-          "gap": 10.5,
-          "paddingHorizontal": 21,
-          "paddingVertical": 0,
-        },
-        {
           "gap": 7,
           "minHeight": 35,
           "paddingHorizontal": 14,
+          "paddingVertical": 0,
         },
         {
           "aspectRatio": 1,
@@ -1039,15 +831,6 @@ exports[`ToggleButton snapshots default 1`] = `
           "paddingHorizontal": 0,
           "paddingVertical": 0,
         },
-        [
-          {
-            "backgroundColor": "#e2e2e4",
-          },
-          false,
-          false,
-          false,
-          false,
-        ],
       ]
     }
     testID="ToggleButton.container"

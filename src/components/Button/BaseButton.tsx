@@ -1,21 +1,21 @@
 import { useCallback, useState } from 'react'
-
 import type { GestureResponderEvent } from 'react-native'
 
 import { genericMemo } from '../../utils/genericMemo'
 
-import type { ButtonProps, ButtonVariant, VariantStyles } from './types'
+import type { ButtonProps, ButtonVariant } from './types'
 import {
   ButtonLeftArea,
   ButtonRightArea,
   ButtonLabel,
   ButtonContainer,
 } from './utils'
+import { ButtonPressedContext } from './utils/ButtonPressedContext'
 
 export type BaseButtonComponentProps<Variant extends ButtonVariant> = Omit<
   ButtonProps<Variant>,
   'variant'
-> & { readonly variant: Variant } & VariantStyles<Variant>
+> & { readonly variant: Variant }
 
 const BaseButtonComponent = <Variant extends ButtonVariant>({
   size = 'base',
@@ -28,15 +28,11 @@ const BaseButtonComponent = <Variant extends ButtonVariant>({
   Icon,
   label,
   style,
-  containerVariantStyles,
-  labelVariantStyles,
-  pressedVariantStyles,
-  iconVariantStyles,
-  pressedLabelVariantStyles,
   onPressIn: onPressInProp,
   onPressOut: onPressOutProp,
   ...props
 }: BaseButtonComponentProps<Variant>) => {
+  const isDisabled = !!disabled
   const [pressed, setPressed] = useState(false)
 
   const onPressIn = useCallback(
@@ -56,62 +52,31 @@ const BaseButtonComponent = <Variant extends ButtonVariant>({
   )
 
   return (
-    <ButtonContainer
-      {...{
-        size,
-        variant,
-        shape,
-        disabled,
-        loading,
-        iconOnly,
-        style,
-        containerVariantStyles,
-        pressedVariantStyles,
-        onPressIn,
-        onPressOut,
-      }}
-      {...props}
-    >
-      <ButtonLeftArea
+    <ButtonPressedContext.Provider value={pressed}>
+      <ButtonContainer
         {...{
           size,
-          variant,
+          shape,
+          disabled: isDisabled,
           loading,
-          disabled,
-          Icon,
-          iconPosition,
-          iconVariantStyles: pressed
-            ? pressedLabelVariantStyles
-            : iconVariantStyles,
+          isIconOnly: !!iconOnly,
+          style,
+          onPressIn,
+          onPressOut,
         }}
-      />
-      <ButtonLabel
-        {...{
-          size,
-          variant,
-          loading,
-          disabled,
-          iconOnly,
-          label,
-          labelVariantStyles: pressed
-            ? pressedLabelVariantStyles
-            : labelVariantStyles,
-        }}
-      />
-      <ButtonRightArea
-        {...{
-          size,
-          variant,
-          loading,
-          disabled,
-          Icon,
-          iconPosition,
-          iconVariantStyles: pressed
-            ? pressedLabelVariantStyles
-            : iconVariantStyles,
-        }}
-      />
-    </ButtonContainer>
+        {...props}
+      >
+        <ButtonLeftArea
+          {...{ size, loading, disabled: isDisabled, Icon, iconPosition }}
+        />
+        <ButtonLabel
+          {...{ size, loading, disabled: isDisabled, iconOnly, label }}
+        />
+        <ButtonRightArea
+          {...{ size, loading, disabled: isDisabled, Icon, iconPosition }}
+        />
+      </ButtonContainer>
+    </ButtonPressedContext.Provider>
   )
 }
 

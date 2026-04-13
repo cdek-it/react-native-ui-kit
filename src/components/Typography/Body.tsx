@@ -1,6 +1,6 @@
 import { Text, type TextProps } from 'react-native'
 
-import { makeStyles } from '../../utils/makeStyles'
+import { StyleSheet } from '../../utils'
 
 export interface BodyProps extends TextProps {
   readonly base?: boolean
@@ -19,8 +19,6 @@ export const Body = ({
   style,
   ...other
 }: BodyProps) => {
-  const styles = useStyles()
-
   return (
     <Text
       style={[
@@ -38,7 +36,7 @@ export const Body = ({
   )
 }
 
-const useStyles = makeStyles(({ theme, typography, fonts }) => ({
+const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
   text: {
     fontSize: typography.Size['text-lg'],
     includeFontPadding: false,
