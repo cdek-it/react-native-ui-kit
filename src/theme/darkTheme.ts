@@ -8,4 +8,5 @@ import type { ThemeType } from './types'
 export const darkTheme: ThemeType = {
   theme: { ...darkThemeAssets, InputSize, ModalSize, custom: customDark },
   ...commonTheme,
+  fonts: { primary: 'TT Fellows', secondary: 'PT Sans' },
 }

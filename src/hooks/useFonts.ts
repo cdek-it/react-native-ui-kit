@@ -1,7 +1,16 @@
-import { useContext } from 'react'
+import { useUnistyles } from 'react-native-unistyles'
 
-import { ThemeContext } from '../theme'
+import type { FontsConfig } from '../theme'
 
-export const useFonts = () => {
-  return useContext(ThemeContext).fonts
+/**
+ * Возвращает конфигурацию шрифтов.
+ *
+ * @deprecated Используйте `useUnistyles().theme.fonts` или `StyleSheet.create(...)`
+ * из SDK.
+ * Будет удалён в следующей minor версии.
+ */
+export const useFonts = (): FontsConfig => {
+  const { theme } = useUnistyles()
+
+  return theme.fonts
 }

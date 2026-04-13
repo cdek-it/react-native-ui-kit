@@ -1,16 +1,32 @@
+/* eslint-disable @typescript-eslint/no-deprecated -- Проверяем deprecated API на обратную совместимость. */
 import { renderHook } from '@testing-library/react-native'
+import { UnistylesRuntime } from 'react-native-unistyles'
 
-import { ThemeContextProvider, ThemeVariant } from '../../theme'
+import { ThemeVariant } from '../../theme'
 import { useTheme } from '../useTheme'
 
-describe('useTheme', () => {
-  test('returns correct function', () => {
-    const { result } = renderHook(() => useTheme(), {
-      wrapper: ({ children }) => (
-        <ThemeContextProvider>{children}</ThemeContextProvider>
-      ),
-    })
+const setThemeName = (themeName: 'light' | 'dark') => {
+  Object.assign(UnistylesRuntime, { themeName })
+}
 
-    expect(Object.values(ThemeVariant)).toContain(result.current)
+describe('useTheme', () => {
+  afterEach(() => {
+    setThemeName('light')
+  })
+
+  test('возвращает ThemeVariant.Light, когда активна светлая тема', () => {
+    setThemeName('light')
+
+    const { result } = renderHook(() => useTheme())
+
+    expect(result.current).toBe(ThemeVariant.Light)
+  })
+
+  test('возвращает ThemeVariant.Dark, когда активна тёмная тема', () => {
+    setThemeName('dark')
+
+    const { result } = renderHook(() => useTheme())
+
+    expect(result.current).toBe(ThemeVariant.Dark)
   })
 })
