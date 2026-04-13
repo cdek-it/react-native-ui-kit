@@ -97,7 +97,7 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
       strokeWidth={2}
     >
       <RNSVGPath
-        d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+        d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
         fill={null}
         propList={
           [
@@ -245,7 +245,7 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
       strokeWidth={2}
     >
       <RNSVGPath
-        d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+        d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
         fill={null}
         propList={
           [
@@ -390,7 +390,7 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
       strokeWidth={2}
     >
       <RNSVGPath
-        d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+        d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
         fill={null}
         propList={
           [
@@ -538,7 +538,7 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
       strokeWidth={2}
     >
       <RNSVGPath
-        d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+        d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
         fill={null}
         propList={
           [
@@ -683,7 +683,7 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
       strokeWidth={2}
     >
       <RNSVGPath
-        d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+        d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
         fill={null}
         propList={
           [
@@ -831,7 +831,7 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
       strokeWidth={2}
     >
       <RNSVGPath
-        d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+        d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
         fill={null}
         propList={
           [
@@ -976,7 +976,7 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
       strokeWidth={2}
     >
       <RNSVGPath
-        d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+        d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
         fill={null}
         propList={
           [
@@ -1124,7 +1124,7 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
       strokeWidth={2}
     >
       <RNSVGPath
-        d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+        d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
         fill={null}
         propList={
           [
