@@ -1,4 +1,8 @@
 ios/Pods
+ios
+.github/workflows
 .yarn
 android/app/.cxx
+android/app/build
+android/build
 CHANGELOG.md
