@@ -820,7 +820,6 @@ exports[`Message {"closeLabel": "Close", "footer": [Object], "onClose": [Functio
               "paddingVertical": 0,
             },
             false,
-            undefined,
           ]
         }
         testID="CloseButton"
@@ -1056,7 +1055,6 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
             {
               "aspectRatio": 1,
             },
-            undefined,
           ]
         }
         testID="CloseButton"
@@ -1071,7 +1069,7 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
           meetOrSlice={0}
           minX={0}
           minY={0}
-          stroke="currentColor"
+          stroke="#44e858"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
@@ -1080,11 +1078,6 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
               {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
-              },
-              {
-                "color": "#44e858",
-                "height": 14,
-                "width": 14,
               },
               {
                 "flex": 0,
@@ -1100,7 +1093,6 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
           xmlns="http://www.w3.org/2000/svg"
         >
           <RNSVGGroup
-            color="#44e858"
             fill={null}
             propList={
               [
@@ -1113,7 +1105,8 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
             }
             stroke={
               {
-                "type": 2,
+                "payload": 4282706008,
+                "type": 0,
               }
             }
             strokeLinecap={1}
@@ -1121,7 +1114,6 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
             strokeWidth={2}
           >
             <RNSVGPath
-              color="#44e858"
               d="M18 6l-12 12"
               fill={null}
               propList={
@@ -1135,7 +1127,8 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
               }
               stroke={
                 {
-                  "type": 2,
+                  "payload": 4282706008,
+                  "type": 0,
                 }
               }
               strokeLinecap={1}
@@ -1144,7 +1137,6 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
               testID="Button_Icon"
             />
             <RNSVGPath
-              color="#44e858"
               d="M6 6l12 12"
               fill={null}
               propList={
@@ -1158,7 +1150,8 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
               }
               stroke={
                 {
-                  "type": 2,
+                  "payload": 4282706008,
+                  "type": 0,
                 }
               }
               strokeLinecap={1}

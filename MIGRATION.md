@@ -71,7 +71,8 @@ UnistylesRuntime.setTheme('dark')
 
 ### ⛔ `unistyles/no-spread-unistyles` (error)
 
-**Проблема**: Spread оператор теряет скрытый payload unistyles, что приводит к потере темы и реактивности при её смене.
+**Проблема**: Spread оператор теряет скрытый payload unistyles, что приводит к
+потере темы и реактивности при её смене.
 
 ```typescript
 // ❌ Неправильно — payload теряется
@@ -88,13 +89,13 @@ style={[styles.button, isActive && styles.buttonActive]}
 
 ### ⛔ `unistyles/no-unistyles-in-worklet` (error)
 
-**Проблема**: Worklet функции (`useAnimatedStyle`, `runOnJS`, `withSpring`) передаются в native код и не могут захватить весь unistyles объект. Нужно вытащить примитивы.
+**Проблема**: Worklet функции (`useAnimatedStyle`, `runOnJS`, `withSpring`)
+передаются в native код и не могут захватить весь unistyles объект. Нужно
+вытащить примитивы.
 
 ```typescript
 // ❌ Неправильно — styles целиком в worklet
-const animStyle = useAnimatedStyle(() => ({
-  color: styles.text.color,
-}))
+const animStyle = useAnimatedStyle(() => ({ color: styles.text.color }))
 
 // ✅ Правильно — примитив вытащен перед worklet
 const color = styles.text.color
@@ -119,18 +120,21 @@ const width = styles.icon.width
 
 ### Почему это важно
 
-`react-native-unistyles` добавляет скрытый payload в каждый объект из `StyleSheet.create()`. Этот payload содержит информацию о:
+`react-native-unistyles` добавляет скрытый payload в каждый объект из
+`StyleSheet.create()`. Этот payload содержит информацию о:
 
 - **Активной теме** (light/dark)
 - **Responsive breakpoint** (размер экрана)
 - **Unistyles runtime configuration**
 
 Если потерять payload, нативная часть больше не сможет:
+
 - Применить правильную тему
 - Обновить стиль при смене темы/breakpoint
 - Корректно интерпретировать значения
 
-Подробнее: [ESLint Rules for Unistyles](./configs/eslint/rules/unistyles/README.md)
+Подробнее:
+[ESLint Rules for Unistyles](./configs/eslint/rules/unistyles/README.md)
 
 ## Babel конфигурация
 

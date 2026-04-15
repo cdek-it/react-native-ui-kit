@@ -80,6 +80,7 @@ exports[`Rating component tests renders correctly with default props 1`] = `
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -127,6 +128,7 @@ exports[`Rating component tests renders correctly with default props 1`] = `
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M5.7 5.7l12.6 12.6"
@@ -149,6 +151,7 @@ exports[`Rating component tests renders correctly with default props 1`] = `
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -222,6 +225,7 @@ exports[`Rating component tests renders correctly with default props 1`] = `
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -265,6 +269,7 @@ exports[`Rating component tests renders correctly with default props 1`] = `
           }
           stroke={null}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -338,6 +343,7 @@ exports[`Rating component tests renders correctly with default props 1`] = `
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -381,6 +387,7 @@ exports[`Rating component tests renders correctly with default props 1`] = `
           }
           stroke={null}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -454,6 +461,7 @@ exports[`Rating component tests renders correctly with default props 1`] = `
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -497,6 +505,7 @@ exports[`Rating component tests renders correctly with default props 1`] = `
           }
           stroke={null}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -571,6 +580,7 @@ exports[`Rating component tests renders correctly with default props 1`] = `
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -630,6 +640,7 @@ exports[`Rating component tests renders correctly with default props 1`] = `
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -704,6 +715,7 @@ exports[`Rating component tests renders correctly with default props 1`] = `
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -763,6 +775,7 @@ exports[`Rating component tests renders correctly with default props 1`] = `
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -850,6 +863,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -897,6 +911,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M5.7 5.7l12.6 12.6"
@@ -919,6 +934,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -992,6 +1008,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -1035,6 +1052,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           }
           stroke={null}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -1108,6 +1126,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -1151,6 +1170,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           }
           stroke={null}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -1224,6 +1244,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -1267,6 +1288,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           }
           stroke={null}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -1341,6 +1363,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -1400,6 +1423,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -1474,6 +1498,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -1533,6 +1558,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -1620,6 +1646,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -1667,6 +1694,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M5.7 5.7l12.6 12.6"
@@ -1689,6 +1717,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -1762,6 +1791,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -1805,6 +1835,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           }
           stroke={null}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -1878,6 +1909,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -1921,6 +1953,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           }
           stroke={null}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -1994,6 +2027,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -2037,6 +2071,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           }
           stroke={null}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -2110,6 +2145,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -2153,6 +2189,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           }
           stroke={null}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -2227,6 +2264,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={17.5}
@@ -2286,6 +2324,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>

@@ -7,16 +7,13 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
   onPressIn={[Function]}
   onPressOut={[Function]}
   style={
-    [
-      {
-        "alignSelf": "flex-start",
-        "borderColor": "rgba(255, 255, 255, 0.0001)",
-        "borderRadius": 100,
-        "borderWidth": 1,
-        "overflow": "hidden",
-      },
-      undefined,
-    ]
+    {
+      "alignSelf": "flex-start",
+      "borderColor": "rgba(255, 255, 255, 0.0001)",
+      "borderRadius": 100,
+      "borderWidth": 1,
+      "overflow": "hidden",
+    }
   }
   testID="ToggleButton"
 >
@@ -34,7 +31,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           "paddingHorizontal": 10.5,
           "paddingVertical": 0,
         },
-        false,
+        {},
       ]
     }
     testID="ToggleButton.container"
@@ -49,7 +46,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="currentColor"
+      stroke="#181a1f"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -58,10 +55,6 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           {
             "backgroundColor": "transparent",
             "borderWidth": 0,
-          },
-          {
-            "height": 14,
-            "width": 14,
           },
           {
             "flex": 0,
@@ -89,7 +82,8 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4279769631,
+            "type": 0,
           }
         }
         strokeLinecap={1}
@@ -110,7 +104,8 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           }
           stroke={
             {
-              "type": 2,
+              "payload": 4279769631,
+              "type": 0,
             }
           }
           strokeLinecap={1}
@@ -132,7 +127,8 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           }
           stroke={
             {
-              "type": 2,
+              "payload": 4279769631,
+              "type": 0,
             }
           }
           strokeLinecap={1}
@@ -169,16 +165,13 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
   onPressIn={[Function]}
   onPressOut={[Function]}
   style={
-    [
-      {
-        "alignSelf": "flex-start",
-        "borderColor": "rgba(255, 255, 255, 0.0001)",
-        "borderRadius": 100,
-        "borderWidth": 1,
-        "overflow": "hidden",
-      },
-      undefined,
-    ]
+    {
+      "alignSelf": "flex-start",
+      "borderColor": "rgba(255, 255, 255, 0.0001)",
+      "borderRadius": 100,
+      "borderWidth": 1,
+      "overflow": "hidden",
+    }
   }
   testID="ToggleButton"
 >
@@ -196,7 +189,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           "paddingHorizontal": 10.5,
           "paddingVertical": 0,
         },
-        false,
+        {},
       ]
     }
     testID="ToggleButton.container"
@@ -227,7 +220,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="currentColor"
+      stroke="#181a1f"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -236,10 +229,6 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           {
             "backgroundColor": "transparent",
             "borderWidth": 0,
-          },
-          {
-            "height": 14,
-            "width": 14,
           },
           {
             "flex": 0,
@@ -267,7 +256,8 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4279769631,
+            "type": 0,
           }
         }
         strokeLinecap={1}
@@ -288,7 +278,8 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           }
           stroke={
             {
-              "type": 2,
+              "payload": 4279769631,
+              "type": 0,
             }
           }
           strokeLinecap={1}
@@ -310,7 +301,8 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           }
           stroke={
             {
-              "type": 2,
+              "payload": 4279769631,
+              "type": 0,
             }
           }
           strokeLinecap={1}
@@ -331,16 +323,13 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
   onPressIn={[Function]}
   onPressOut={[Function]}
   style={
-    [
-      {
-        "alignSelf": "flex-start",
-        "borderColor": "rgba(255, 255, 255, 0.0001)",
-        "borderRadius": 100,
-        "borderWidth": 1,
-        "overflow": "hidden",
-      },
-      undefined,
-    ]
+    {
+      "alignSelf": "flex-start",
+      "borderColor": "rgba(255, 255, 255, 0.0001)",
+      "borderRadius": 100,
+      "borderWidth": 1,
+      "overflow": "hidden",
+    }
   }
   testID="ToggleButton"
 >
@@ -378,7 +367,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="currentColor"
+      stroke="#181a1f"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -387,10 +376,6 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
           {
             "backgroundColor": "transparent",
             "borderWidth": 0,
-          },
-          {
-            "height": 17.5,
-            "width": 17.5,
           },
           {
             "flex": 0,
@@ -418,7 +403,8 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4279769631,
+            "type": 0,
           }
         }
         strokeLinecap={1}
@@ -439,7 +425,8 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
           }
           stroke={
             {
-              "type": 2,
+              "payload": 4279769631,
+              "type": 0,
             }
           }
           strokeLinecap={1}
@@ -461,7 +448,8 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
           }
           stroke={
             {
-              "type": 2,
+              "payload": 4279769631,
+              "type": 0,
             }
           }
           strokeLinecap={1}
@@ -482,17 +470,14 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
   onPressIn={[Function]}
   onPressOut={[Function]}
   style={
-    [
-      {
-        "alignSelf": "flex-start",
-        "borderColor": "#a2a5a9",
-        "borderRadius": 100,
-        "borderWidth": 1,
-        "opacity": 0.6,
-        "overflow": "hidden",
-      },
-      undefined,
-    ]
+    {
+      "alignSelf": "flex-start",
+      "borderColor": "#a2a5a9",
+      "borderRadius": 100,
+      "borderWidth": 1,
+      "opacity": 0.6,
+      "overflow": "hidden",
+    }
   }
   testID="ToggleButton"
 >
@@ -510,7 +495,7 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
           "paddingHorizontal": 21,
           "paddingVertical": 0,
         },
-        false,
+        {},
       ]
     }
     testID="ToggleButton.container"
@@ -525,7 +510,7 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="currentColor"
+      stroke="#85888e"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -534,10 +519,6 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
           {
             "backgroundColor": "transparent",
             "borderWidth": 0,
-          },
-          {
-            "height": 21,
-            "width": 21,
           },
           {
             "flex": 0,
@@ -565,7 +546,8 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4286941326,
+            "type": 0,
           }
         }
         strokeLinecap={1}
@@ -586,7 +568,8 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
           }
           stroke={
             {
-              "type": 2,
+              "payload": 4286941326,
+              "type": 0,
             }
           }
           strokeLinecap={1}
@@ -608,7 +591,8 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
           }
           stroke={
             {
-              "type": 2,
+              "payload": 4286941326,
+              "type": 0,
             }
           }
           strokeLinecap={1}
@@ -645,18 +629,13 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
   onPressIn={[Function]}
   onPressOut={[Function]}
   style={
-    [
-      {
-        "alignSelf": "flex-start",
-        "borderColor": "rgba(255, 255, 255, 0.0001)",
-        "borderRadius": 100,
-        "borderWidth": 1,
-        "overflow": "hidden",
-      },
-      {
-        "margin": 10,
-      },
-    ]
+    {
+      "alignSelf": "flex-start",
+      "borderColor": "rgba(255, 255, 255, 0.0001)",
+      "borderRadius": 100,
+      "borderWidth": 1,
+      "overflow": "hidden",
+    }
   }
   testID="ToggleButton"
 >
@@ -694,7 +673,7 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="currentColor"
+      stroke="#ffffff"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -703,10 +682,6 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
           {
             "backgroundColor": "transparent",
             "borderWidth": 0,
-          },
-          {
-            "height": 31.5,
-            "width": 31.5,
           },
           {
             "flex": 0,
@@ -734,7 +709,8 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4294967295,
+            "type": 0,
           }
         }
         strokeLinecap={1}
@@ -755,7 +731,8 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
           }
           stroke={
             {
-              "type": 2,
+              "payload": 4294967295,
+              "type": 0,
             }
           }
           strokeLinecap={1}
@@ -777,7 +754,8 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
           }
           stroke={
             {
-              "type": 2,
+              "payload": 4294967295,
+              "type": 0,
             }
           }
           strokeLinecap={1}
@@ -798,16 +776,13 @@ exports[`ToggleButton snapshots default 1`] = `
   onPressIn={[Function]}
   onPressOut={[Function]}
   style={
-    [
-      {
-        "alignSelf": "flex-start",
-        "borderColor": "rgba(255, 255, 255, 0.0001)",
-        "borderRadius": 100,
-        "borderWidth": 1,
-        "overflow": "hidden",
-      },
-      undefined,
-    ]
+    {
+      "alignSelf": "flex-start",
+      "borderColor": "rgba(255, 255, 255, 0.0001)",
+      "borderRadius": 100,
+      "borderWidth": 1,
+      "overflow": "hidden",
+    }
   }
   testID="ToggleButton"
 >

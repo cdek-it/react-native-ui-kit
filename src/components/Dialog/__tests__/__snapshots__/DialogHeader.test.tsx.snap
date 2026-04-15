@@ -40,6 +40,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={21}
@@ -87,6 +88,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M10 10l4 4m0 -4l-4 4"
@@ -109,6 +111,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -197,6 +200,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
             },
           ]
         }
+        testID="SvgUniversalComponent"
         vbHeight={24}
         vbWidth={24}
         width={14}
@@ -244,6 +248,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
+            testID="SvgUniversalComponent"
           />
           <RNSVGPath
             d="M6 6l12 12"
@@ -266,6 +271,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
+            testID="SvgUniversalComponent"
           />
         </RNSVGGroup>
       </RNSVGSvgView>
@@ -322,6 +328,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={21}
@@ -369,6 +376,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M12 16v.01"
@@ -391,6 +399,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M12 13a2 2 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483"
@@ -413,6 +422,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -501,6 +511,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
             },
           ]
         }
+        testID="SvgUniversalComponent"
         vbHeight={24}
         vbWidth={24}
         width={14}
@@ -548,6 +559,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
+            testID="SvgUniversalComponent"
           />
           <RNSVGPath
             d="M6 6l12 12"
@@ -570,6 +582,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
+            testID="SvgUniversalComponent"
           />
         </RNSVGGroup>
       </RNSVGSvgView>
@@ -626,6 +639,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={21}
@@ -673,6 +687,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M12 9h.01"
@@ -695,6 +710,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M11 12h1v4h1"
@@ -717,6 +733,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -805,6 +822,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
             },
           ]
         }
+        testID="SvgUniversalComponent"
         vbHeight={24}
         vbWidth={24}
         width={14}
@@ -852,6 +870,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
+            testID="SvgUniversalComponent"
           />
           <RNSVGPath
             d="M6 6l12 12"
@@ -874,6 +893,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
+            testID="SvgUniversalComponent"
           />
         </RNSVGGroup>
       </RNSVGSvgView>
@@ -930,6 +950,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={21}
@@ -977,6 +998,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M9 12l2 2l4 -4"
@@ -999,6 +1021,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -1087,6 +1110,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
             },
           ]
         }
+        testID="SvgUniversalComponent"
         vbHeight={24}
         vbWidth={24}
         width={14}
@@ -1134,6 +1158,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
+            testID="SvgUniversalComponent"
           />
           <RNSVGPath
             d="M6 6l12 12"
@@ -1156,6 +1181,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
+            testID="SvgUniversalComponent"
           />
         </RNSVGGroup>
       </RNSVGSvgView>
@@ -1212,6 +1238,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={21}
@@ -1259,6 +1286,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0"
@@ -1281,6 +1309,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M12 16h.01"
@@ -1303,6 +1332,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -1391,6 +1421,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
             },
           ]
         }
+        testID="SvgUniversalComponent"
         vbHeight={24}
         vbWidth={24}
         width={14}
@@ -1438,6 +1469,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
+            testID="SvgUniversalComponent"
           />
           <RNSVGPath
             d="M6 6l12 12"
@@ -1460,6 +1492,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
+            testID="SvgUniversalComponent"
           />
         </RNSVGGroup>
       </RNSVGSvgView>
@@ -1574,6 +1607,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": undefi
             },
           ]
         }
+        testID="SvgUniversalComponent"
         vbHeight={24}
         vbWidth={24}
         width={14}
@@ -1621,6 +1655,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": undefi
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
+            testID="SvgUniversalComponent"
           />
           <RNSVGPath
             d="M6 6l12 12"
@@ -1643,6 +1678,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": undefi
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
+            testID="SvgUniversalComponent"
           />
         </RNSVGGroup>
       </RNSVGSvgView>
@@ -1699,6 +1735,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "danger", "title": "Dia
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={21}
@@ -1746,6 +1783,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "danger", "title": "Dia
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M10 10l4 4m0 -4l-4 4"
@@ -1768,6 +1806,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "danger", "title": "Dia
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -1845,6 +1884,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "help", "title": "Dialo
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={21}
@@ -1892,6 +1932,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "help", "title": "Dialo
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M12 16v.01"
@@ -1914,6 +1955,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "help", "title": "Dialo
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M12 13a2 2 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483"
@@ -1936,6 +1978,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "help", "title": "Dialo
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -2013,6 +2056,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "info", "title": "Dialo
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={21}
@@ -2060,6 +2104,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "info", "title": "Dialo
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M12 9h.01"
@@ -2082,6 +2127,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "info", "title": "Dialo
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M11 12h1v4h1"
@@ -2104,6 +2150,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "info", "title": "Dialo
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -2181,6 +2228,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "success", "title": "Di
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={21}
@@ -2228,6 +2276,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "success", "title": "Di
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M9 12l2 2l4 -4"
@@ -2250,6 +2299,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "success", "title": "Di
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -2327,6 +2377,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "warning", "title": "Di
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={21}
@@ -2374,6 +2425,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "warning", "title": "Di
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0"
@@ -2396,6 +2448,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "warning", "title": "Di
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M12 16h.01"
@@ -2418,6 +2471,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "warning", "title": "Di
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>

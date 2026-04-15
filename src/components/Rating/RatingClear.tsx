@@ -1,7 +1,7 @@
 import { IconBan } from '@tabler/icons-react-native'
 import { memo } from 'react'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet, SvgUniversal } from '../../utils'
 
 import {
   RatingItemContainer,
@@ -27,7 +27,7 @@ export const RatingClear = memo<RatingClearProps>(({ ...rest }) => {
   return (
     <RatingItemContainer {...rest}>
       {({ disabled, pressed }) => (
-        <IconBan
+        <SvgUniversal
           color={
             disabled
               ? styles.iconDisabled.color
@@ -36,6 +36,7 @@ export const RatingClear = memo<RatingClearProps>(({ ...rest }) => {
                 : styles.icon.color
           }
           height={styles.icon.height}
+          source={IconBan}
           width={styles.icon.width}
         />
       )}

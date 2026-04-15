@@ -4,6 +4,10 @@ import { render } from '@testing-library/react-native'
 import { SvgUniversal, SvgUniversalTestId } from '../SvgUniversal'
 
 describe('SvgUniversal', () => {
+  afterEach(() => {
+    jest.restoreAllMocks()
+  })
+
   describe('при передаче компонента в качестве источника', () => {
     test('должен отрендерить компонент', () => {
       const { getAllByTestId } = render(<SvgUniversal source={IconUser} />)
@@ -15,12 +19,18 @@ describe('SvgUniversal', () => {
   })
 
   describe('при передаче uri в качестве источника', () => {
-    test('рендерит компонент SvgUri', () => {
-      const { getByTestId } = render(
+    test('рендерит компонент SvgUri', async () => {
+      jest.spyOn(global, 'fetch').mockImplementation().mockResolvedValue({
+        ok: true,
+        text: async () =>
+          '<svg viewBox="0 0 1 1"><path d="M1 1h1v1H1z" /></svg>',
+      })
+
+      const { findByTestId } = render(
         <SvgUniversal source={{ uri: 'https://google.com' }} />
       )
 
-      expect(getByTestId(SvgUniversalTestId.uri)).toBeOnTheScreen()
+      await findByTestId(SvgUniversalTestId.uri)
     })
   })
 
@@ -34,9 +44,3 @@ describe('SvgUniversal', () => {
     })
   })
 })
-
-jest.mock('react-native-svg', () => ({
-  ...jest.requireActual('react-native-svg'),
-  SvgXml: 'SvgXml',
-  SvgUri: 'SvgUri',
-}))

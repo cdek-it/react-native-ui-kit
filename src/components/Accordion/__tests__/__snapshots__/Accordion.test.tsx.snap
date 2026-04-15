@@ -121,6 +121,7 @@ exports[`Accordion Header elements maximal 1`] = `
             },
           ]
         }
+        testID="SvgUniversalComponent"
         vbHeight={24}
         vbWidth={24}
         width={17.5}
@@ -168,6 +169,7 @@ exports[`Accordion Header elements maximal 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
+            testID="SvgUniversalComponent"
           />
         </RNSVGGroup>
       </RNSVGSvgView>
@@ -651,6 +653,7 @@ exports[`Accordion Header elements minimal 1`] = `
             },
           ]
         }
+        testID="SvgUniversalComponent"
         vbHeight={24}
         vbWidth={24}
         width={17.5}
@@ -698,6 +701,7 @@ exports[`Accordion Header elements minimal 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
+            testID="SvgUniversalComponent"
           />
         </RNSVGGroup>
       </RNSVGSvgView>

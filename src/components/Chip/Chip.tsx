@@ -70,9 +70,10 @@ export const Chip = memo<ChipProps>(
             onPress={onClose}
           >
             {({ pressed }) => (
-              <IconX
+              <SvgUniversal
                 color={disabled ? styles.disabledIcon.color : styles.icon.color}
                 height={styles.icon.height}
+                source={IconX}
                 style={pressed ? styles.pressedClose : null}
                 width={styles.icon.width}
               />

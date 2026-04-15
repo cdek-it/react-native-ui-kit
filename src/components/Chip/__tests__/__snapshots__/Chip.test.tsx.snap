@@ -392,6 +392,7 @@ exports[`Chip component tests {
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -439,6 +440,7 @@ exports[`Chip component tests {
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M6 6l12 12"
@@ -461,6 +463,7 @@ exports[`Chip component tests {
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -704,6 +707,7 @@ exports[`Chip component tests {
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -751,6 +755,7 @@ exports[`Chip component tests {
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M6 6l12 12"
@@ -773,6 +778,7 @@ exports[`Chip component tests {
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -1070,6 +1076,7 @@ exports[`Chip component tests {
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -1117,6 +1124,7 @@ exports[`Chip component tests {
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M6 6l12 12"
@@ -1139,6 +1147,7 @@ exports[`Chip component tests {
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -1280,6 +1289,7 @@ exports[`Chip component tests {
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -1327,6 +1337,7 @@ exports[`Chip component tests {
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M6 6l12 12"
@@ -1349,6 +1360,7 @@ exports[`Chip component tests {
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -1748,6 +1760,7 @@ exports[`Chip component tests {
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -1795,6 +1808,7 @@ exports[`Chip component tests {
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M6 6l12 12"
@@ -1817,6 +1831,7 @@ exports[`Chip component tests {
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -2060,6 +2075,7 @@ exports[`Chip component tests {
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -2107,6 +2123,7 @@ exports[`Chip component tests {
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M6 6l12 12"
@@ -2129,6 +2146,7 @@ exports[`Chip component tests {
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -2426,6 +2444,7 @@ exports[`Chip component tests {
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -2473,6 +2492,7 @@ exports[`Chip component tests {
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M6 6l12 12"
@@ -2495,6 +2515,7 @@ exports[`Chip component tests {
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -2636,6 +2657,7 @@ exports[`Chip component tests {
           },
         ]
       }
+      testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
       width={14}
@@ -2683,6 +2705,7 @@ exports[`Chip component tests {
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
         <RNSVGPath
           d="M6 6l12 12"
@@ -2705,6 +2728,7 @@ exports[`Chip component tests {
           strokeLinecap={1}
           strokeLinejoin={1}
           strokeWidth={2}
+          testID="SvgUniversalComponent"
         />
       </RNSVGGroup>
     </RNSVGSvgView>

@@ -56,10 +56,12 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
   >
     <View
       style={
-        {
-          "alignSelf": undefined,
-          "paddingVertical": 14,
-        }
+        [
+          {
+            "paddingVertical": 14,
+          },
+          null,
+        ]
       }
     >
       <RNSVGSvgView
@@ -605,10 +607,12 @@ exports[`ListBase tests ListBase full disabled 1`] = `
   >
     <View
       style={
-        {
-          "alignSelf": undefined,
-          "paddingVertical": 14,
-        }
+        [
+          {
+            "paddingVertical": 14,
+          },
+          null,
+        ]
       }
     >
       <RNSVGSvgView
@@ -1149,10 +1153,14 @@ exports[`ListBase tests ListBase maximal config 1`] = `
   >
     <View
       style={
-        {
-          "alignSelf": "flex-start",
-          "paddingVertical": 14,
-        }
+        [
+          {
+            "paddingVertical": 14,
+          },
+          {
+            "alignSelf": "flex-start",
+          },
+        ]
       }
     >
       <RNSVGSvgView

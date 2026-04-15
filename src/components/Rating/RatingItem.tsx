@@ -1,7 +1,7 @@
 import { IconStar, IconStarFilled } from '@tabler/icons-react-native'
 import { memo, useMemo } from 'react'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet, SvgUniversal } from '../../utils'
 
 import {
   RatingItemContainer,
@@ -35,7 +35,7 @@ export const RatingItem = memo<RatingItemProps>(({ checked, ...rest }) => {
   return (
     <RatingItemContainer {...rest}>
       {({ pressed, disabled }) => (
-        <Icon
+        <SvgUniversal
           color={
             disabled
               ? checked
@@ -58,6 +58,7 @@ export const RatingItem = memo<RatingItemProps>(({ checked, ...rest }) => {
           }
           fillOpacity={checked ? 1 : 0}
           height={styles.icon.height}
+          source={Icon}
           width={styles.icon.width}
         />
       )}

@@ -105,9 +105,10 @@ export const Accordion: React.FC<AccordionProps> = ({
           style={arrowAnimatedStyle}
           testID={AccordionTestIds.arrow}
         >
-          <IconChevronRight
+          <SvgUniversal
             color={styles.icon.color}
             height={styles.icon.height}
+            source={IconChevronRight}
             width={styles.icon.width}
           />
         </Animated.View>

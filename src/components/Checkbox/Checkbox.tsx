@@ -8,7 +8,7 @@ import {
 } from 'react-native'
 import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet, SvgUniversal } from '../../utils'
 
 type CheckboxState = 'default' | 'danger'
 
@@ -92,8 +92,9 @@ export const Checkbox = memo(
       >
         <View style={[styles.background, styles.backgroundState]} />
         {Icon ? (
-          <Icon
+          <SvgUniversal
             height={styles.icon.height}
+            source={Icon}
             style={styles.icon}
             width={styles.icon.width}
           />

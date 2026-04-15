@@ -16,7 +16,10 @@ const config: Config.InitialOptions = {
   testRunner: 'jest-circus',
   maxWorkers: '100%',
   rootDir: '.',
-  moduleNameMapper: { '\\.svg': '<rootDir>/__mocks__/svgMock.js' },
+  moduleNameMapper: {
+    '\\.svg': '<rootDir>/__mocks__/svgMock.js',
+    '^react-native-worklets$': 'react-native-worklets/lib/module/mock',
+  },
   setupFiles: ['<rootDir>/jest.setup.ts'],
   setupFilesAfterEnv: ['jest-extended/all'],
 }

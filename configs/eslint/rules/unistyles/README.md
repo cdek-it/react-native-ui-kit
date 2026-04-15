@@ -150,7 +150,7 @@ const width = styles.icon.width
 
 ```typescript
 const styles = StyleSheet.create({
-  text: useColorScheme() === 'dark' 
+  text: useColorScheme() === 'dark'
     ? { color: '#fff' }
     : { color: '#000' }
 })
@@ -194,7 +194,7 @@ useAnimatedStyle(() => ({ color }))
 // ❌ Было
 <Icon {...styles.icon} />
 
-// ✅ Стало  
+// ✅ Стало
 <Icon width={24} height={24} color="#000" />
 ```
 
@@ -259,3 +259,4 @@ configs/eslint/rules/unistyles/
 
 - [Unistyles Documentation](https://www.unistyl.es)
 - [ESLint Custom Rules Guide](https://eslint.org/docs/developer-guide/working-with-rules)
+- [Unistyles with Reanimated](https://www.unistyl.es/v3/guides/reanimated/)

@@ -35,6 +35,7 @@ import Animated, {
 
 import { useLoadingRotationAnimation } from '../../../hooks/useLoadingRotationAnimation'
 import { useMakeTestId } from '../../../hooks/useMakeTestId'
+import { SvgUniversal } from '../../../utils/SvgUniversal'
 
 import { InputTextBaseTestId } from './testIds'
 import type { InputTextBaseProps, RenderTextInputArgs } from './types'
@@ -254,6 +255,10 @@ export const InputTextBase = memo<
         onBlur,
         onChangeText,
         onFocus,
+        styles.inputFont,
+        styles.floatLabelInput,
+        styles.input,
+        styles.inputWithRightContent,
       ]
     )
 
@@ -326,9 +331,10 @@ export const InputTextBase = memo<
                 style={[styles.rightButtonContainer, loadingAnimatedStyle]}
                 testID={makeTestId(InputTextBaseTestId.loading)}
               >
-                <IconLoader2
+                <SvgUniversal
                   color={styles.rightIcon.color}
                   height={iconSize.height}
+                  source={IconLoader2}
                   width={iconSize.width}
                 />
               </Animated.View>
@@ -342,9 +348,10 @@ export const InputTextBase = memo<
                 testID={makeTestId(InputTextBaseTestId.clearButton)}
                 onPress={clear}
               >
-                <IconX
+                <SvgUniversal
                   color={styles.rightIcon.color}
                   height={iconSize.height}
+                  source={IconX}
                   width={iconSize.width}
                 />
               </TouchableOpacity>
@@ -357,26 +364,20 @@ export const InputTextBase = memo<
                 testID={makeTestId(InputTextBaseTestId.secureInputButton)}
                 onPress={toggleUserDefinedSecureTextEntry}
               >
-                {userDefinedSecureTextEntry ? (
-                  <IconEye
-                    color={styles.rightIcon.color}
-                    height={iconSize.height}
-                    width={iconSize.width}
-                  />
-                ) : (
-                  <IconEyeOff
-                    color={styles.rightIcon.color}
-                    height={iconSize.height}
-                    width={iconSize.width}
-                  />
-                )}
+                <SvgUniversal
+                  color={styles.rightIcon.color}
+                  height={iconSize.height}
+                  source={userDefinedSecureTextEntry ? IconEye : IconEyeOff}
+                  width={iconSize.width}
+                />
               </TouchableOpacity>
             ) : null}
 
             {disabled ? (
-              <IconLock
+              <SvgUniversal
                 color={styles.rightIcon.color}
                 height={iconSize.height}
+                source={IconLock}
                 testID={makeTestId(InputTextBaseTestId.disabledIcon)}
                 width={iconSize.width}
               />
