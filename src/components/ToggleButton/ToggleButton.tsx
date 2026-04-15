@@ -78,21 +78,15 @@ export const ToggleButton = memo(
       [iconOnlyProp, label]
     )
 
-    const icon = useMemo(() => {
-      if (!Icon) {
-        return null
-      }
-
-      return (
-        <SvgUniversal
-          height={toggleStyles.icon.height}
-          source={Icon}
-          style={toggleStyles.icon as unknown as ViewStyle}
-          testID={ToggleButtonTestId.icon}
-          width={toggleStyles.icon.width}
-        />
-      )
-    }, [Icon])
+    const icon = Icon ? (
+      <SvgUniversal
+        color={toggleStyles.icon.color}
+        height={toggleStyles.icon.height}
+        source={Icon}
+        testID={ToggleButtonTestId.icon}
+        width={toggleStyles.icon.width}
+      />
+    ) : null
 
     const onPressIn = useCallback(() => setPressed(true), [])
     const onPressOut = useCallback(() => setPressed(false), [])
@@ -100,7 +94,7 @@ export const ToggleButton = memo(
     return (
       <Pressable
         disabled={disabled}
-        style={[toggleStyles.container, style]}
+        style={toggleStyles.container}
         testID={testID || ToggleButtonTestId.root}
         onPress={onPress}
         onPressIn={onPressIn}
@@ -110,7 +104,7 @@ export const ToggleButton = memo(
         <View
           style={[
             toggleStyles.contentContainer,
-            iconOnly && toggleStyles.iconOnly,
+            iconOnly ? toggleStyles.iconOnly : {},
           ]}
           testID={ToggleButtonTestId.container}
         >
@@ -246,7 +240,28 @@ const toggleStyles = StyleSheet.create(
             height: typography.Size['text-base'],
           },
         },
+        checked: {
+          true: { color: theme.Form.ToggleButton.toggleButtonActiveTextColor },
+          false: { color: theme.Form.ToggleButton.toggleButtonTextColor },
+        },
+        pressed: {
+          true: { color: theme.Form.ToggleButton.toggleButtonHoverTextColor },
+          false: {},
+        },
+        disabled: {
+          true: { color: theme.Button.Disabled.disabledButtonTextColor },
+          false: {},
+        },
       },
+      compoundVariants: [
+        {
+          checked: 'true',
+          pressed: 'true',
+          styles: {
+            color: theme.Form.ToggleButton.toggleButtonTextActiveHoverColor,
+          },
+        },
+      ],
     },
     label: {
       flexShrink: 1,

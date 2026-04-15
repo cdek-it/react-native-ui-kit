@@ -1,11 +1,5 @@
 import React, { memo, useMemo } from 'react'
-import {
-  View,
-  type ViewStyle,
-  type ViewProps,
-  Pressable,
-  type ColorValue,
-} from 'react-native'
+import { View, type ViewProps, Pressable, type ColorValue } from 'react-native'
 
 import { StyleSheet } from '../../../utils'
 import { type SvgSource, SvgUniversal } from '../../../utils/SvgUniversal'
@@ -58,12 +52,13 @@ export const ListBase = memo<ListBaseProps>(
     testID,
     ...rest
   }) => {
-    const leftIconStyle: ViewStyle = useMemo(() => {
-      return {
-        ...styles.leftIcon,
-        alignSelf: iconAlignment === 'top' ? 'flex-start' : undefined,
-      }
-    }, [iconAlignment])
+    const leftIconStyle = useMemo(
+      () => [
+        styles.leftIcon,
+        iconAlignment === 'top' ? { alignSelf: 'flex-start' as const } : null,
+      ],
+      [iconAlignment]
+    )
 
     const fullDivider = divider === 'full' ? styles.divider : {}
     const contentDivider = divider === 'content' ? styles.divider : {}
@@ -96,10 +91,11 @@ export const ListBase = memo<ListBaseProps>(
             {LeftIcon ? (
               <View style={leftIconStyle}>
                 <SvgUniversal
+                  color={leftIconColor}
+                  height={styles.icon.height}
                   source={LeftIcon}
                   testID={ListBaseTestId.leftIcon}
-                  {...styles.icon}
-                  color={leftIconColor}
+                  width={styles.icon.width}
                 />
               </View>
             ) : null}
@@ -121,10 +117,11 @@ export const ListBase = memo<ListBaseProps>(
                 ) : null}
                 {RightIcon ? (
                   <SvgUniversal
+                    color={rightIconColor}
+                    height={styles.icon.height}
                     source={RightIcon}
                     testID={ListBaseTestId.rightIcon}
-                    {...styles.icon}
-                    color={rightIconColor}
+                    width={styles.icon.width}
                   />
                 ) : null}
               </View>

@@ -6,11 +6,12 @@ import { StyleSheet } from '../../../../utils'
 
 export const useHandleStyles = (checked: boolean) => {
   const styles = handleStyles
+  const handleOnLeft = styles.handleOn.left
+  const handleOffLeft = styles.handleOff.left
 
   const calculateHandleLeftPosition = useCallback(
-    (checked: boolean) =>
-      checked ? styles.handleOn.left : styles.handleOff.left,
-    [styles.handleOff.left, styles.handleOn.left]
+    (checked: boolean) => (checked ? handleOnLeft : handleOffLeft),
+    [handleOffLeft, handleOnLeft]
   )
 
   const calculateHandleBackground = useCallback(
@@ -22,26 +23,26 @@ export const useHandleStyles = (checked: boolean) => {
   const handleLeftPosition = useSharedValue(
     calculateHandleLeftPosition(checked)
   )
-  const handlerBackgrouind = useSharedValue(calculateHandleBackground(checked))
+  const handleBackground = useSharedValue(calculateHandleBackground(checked))
 
   useEffect(() => {
     handleLeftPosition.value = withTiming(calculateHandleLeftPosition(checked))
-    handlerBackgrouind.value = withTiming(calculateHandleBackground(checked))
+    handleBackground.value = withTiming(calculateHandleBackground(checked))
   }, [
     calculateHandleBackground,
     calculateHandleLeftPosition,
     checked,
     handleLeftPosition,
-    handlerBackgrouind,
+    handleBackground,
   ])
 
   const handleStyle = useMemo(
     () =>
       RNStyleSheet.flatten([
         styles.handle,
-        { left: handleLeftPosition, backgroundColor: handlerBackgrouind },
+        { left: handleLeftPosition, backgroundColor: handleBackground },
       ]),
-    [handleLeftPosition, handlerBackgrouind, styles.handle]
+    [handleLeftPosition, handleBackground, styles.handle]
   )
 
   return { handleStyle }

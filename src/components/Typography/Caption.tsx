@@ -35,10 +35,11 @@ export const Caption = ({
     return (
       <View style={styles.withIconContainer}>
         <SvgUniversal
+          color={styles[color].color}
+          height={styles.icon.height}
           source={Icon}
           testID={CaptionTestId.icon}
-          {...styles[color]}
-          {...styles.icon}
+          width={styles.icon.width}
         />
         {text}
       </View>

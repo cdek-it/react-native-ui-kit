@@ -12,38 +12,37 @@ export const useSliderStyles = (
   const styles = switchStyles
   const [pressed, setPressed] = useState(false)
 
+  const sliderDisabledBg = styles.sliderDisabled.backgroundColor
+  const sliderOffBg = styles.sliderOff.backgroundColor
+  const sliderOnBg = styles.sliderOn.backgroundColor
+  const sliderOnDisabledBg = styles.sliderOnDisabled.backgroundColor
+  const sliderOnPressedBg = styles.sliderOnPressed.backgroundColor
+  const sliderPressedBg = styles.sliderPressed.backgroundColor
   const calculateSliderBackground = useCallback(
-    (checked: boolean, disabled: boolean, pressed: boolean) => {
+    (checked: boolean, disabled: boolean, pressed: boolean): string => {
       if (disabled) {
         if (checked) {
-          return styles.sliderOnDisabled.backgroundColor
+          return sliderOnDisabledBg
         }
 
-        return styles.sliderDisabled.backgroundColor
+        return sliderDisabledBg
       }
 
       if (pressed) {
         if (checked) {
-          return styles.sliderOnPressed.backgroundColor
+          return sliderOnPressedBg
         }
 
-        return styles.sliderPressed.backgroundColor
+        return sliderPressedBg
       }
 
       if (checked) {
-        return styles.sliderOn.backgroundColor
+        return sliderOnBg
       }
 
-      return styles.sliderOff.backgroundColor
+      return sliderOffBg
     },
-    [
-      styles.sliderDisabled.backgroundColor,
-      styles.sliderOff.backgroundColor,
-      styles.sliderOn.backgroundColor,
-      styles.sliderOnDisabled.backgroundColor,
-      styles.sliderOnPressed.backgroundColor,
-      styles.sliderPressed.backgroundColor,
-    ]
+    []
   )
 
   const calculateSliderBorderColor = useCallback(
