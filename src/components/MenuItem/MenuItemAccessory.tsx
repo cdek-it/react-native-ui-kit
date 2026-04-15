@@ -25,7 +25,12 @@ export const MenuItemAccessory = memo<MenuItemAccessoryProps>(
 
     return (
       <View style={styles.container}>
-        <SvgUniversal source={IconComponent} {...styles.icon} />
+        <SvgUniversal
+          color={styles.icon.color}
+          height={styles.icon.height}
+          source={IconComponent}
+          width={styles.icon.width}
+        />
       </View>
     )
   }

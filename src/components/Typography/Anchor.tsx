@@ -67,6 +67,8 @@ export const Anchor = memo(
       () => (visited ? styles.visited.color : styles.text.color),
       [visited]
     )
+    const iconWidth = base ? styles.iconBase.width : styles.icon.width
+    const iconHeight = base ? styles.iconBase.height : styles.icon.height
 
     return (
       <Wrapper {...containerProps}>
@@ -79,11 +81,11 @@ export const Anchor = memo(
             onPressOut={onPressOut}
           >
             <SvgUniversal
+              color={iconColor}
+              height={iconHeight}
               source={LeftIcon}
               testID={AnchorTestId.leftIcon}
-              {...styles.icon}
-              {...(base ? styles.iconBase : {})}
-              color={iconColor}
+              width={iconWidth}
             />
           </Pressable>
         ) : null}
@@ -116,11 +118,11 @@ export const Anchor = memo(
             onPressOut={onPressOut}
           >
             <SvgUniversal
-              source={RightIcon}
-              {...styles.icon}
-              {...(base ? styles.iconBase : {})}
               color={iconColor}
+              height={iconHeight}
+              source={RightIcon}
               testID={AnchorTestId.rightIcon}
+              width={iconWidth}
             />
           </Pressable>
         ) : null}

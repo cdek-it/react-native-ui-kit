@@ -38,7 +38,7 @@ import { useMakeTestId } from '../../../hooks/useMakeTestId'
 
 import { InputTextBaseTestId } from './testIds'
 import type { InputTextBaseProps, RenderTextInputArgs } from './types'
-import { useInputStyle } from './useInputStyles'
+import { inputStyles, useInputContainerMinHeight } from './useInputStyles'
 
 interface PrivateInputTextBaseProps {
   loading?: boolean
@@ -71,35 +71,40 @@ export const InputTextBase = memo<
     // TODO: разделить float label и обычный инпут -> добавить во float label поддержку font scale
     // eslint-disable-next-line complexity
   }) => {
-    const styles = useInputStyle(size)
+    const styles = inputStyles
+    const containerMinHeightStyle = useInputContainerMinHeight(size)
     const inputRef = useRef<TextInput>(null)
 
     const [valueState, setValueState] = useState('')
     const [isFocused, setIsFocused] = useState(otherProps.autoFocus || false)
     const labelAnimation = useSharedValue(0)
 
+    const propsOnFocus = otherProps.onFocus
+    const propsOnBlur = otherProps.onBlur
+    const propsOnChangeText = otherProps.onChangeText
+
     const onFocus = useCallback(
       (e: FocusEvent) => {
         setIsFocused(true)
-        otherProps.onFocus?.(e)
+        propsOnFocus?.(e)
       },
-      [otherProps]
+      [propsOnFocus]
     )
 
     const onBlur = useCallback(
       (e: BlurEvent) => {
         setIsFocused(false)
-        otherProps.onBlur?.(e)
+        propsOnBlur?.(e)
       },
-      [otherProps]
+      [propsOnBlur]
     )
 
     const onChangeText = useCallback(
       (nextValue: string) => {
-        otherProps.onChangeText?.(nextValue)
+        propsOnChangeText?.(nextValue)
         setValueState(nextValue)
       },
-      [otherProps]
+      [propsOnChangeText]
     )
 
     const clear = useCallback(() => {
@@ -122,26 +127,35 @@ export const InputTextBase = memo<
 
     const loadingAnimatedStyle = useLoadingRotationAnimation(loading)
 
+    // Extract primitive values before the worklet closure to avoid
+    // capturing the unistyles HostObject (non-serializable) in the worklet.
+    const labelTop = styles.label.top
+    const labelReducedTop = styles.labelReducedSize.top
+    const labelPaddingVertical = styles.label.paddingVertical
+    const labelReducedPaddingVertical = styles.labelReducedSize.paddingVertical
+    const labelFontSize = styles.label.fontSize
+    const labelReducedFontSize = styles.labelReducedSize.fontSize
+    const labelFontFamily = styles.label.fontFamily
+    const labelReducedFontFamily = styles.labelReducedSize.fontFamily
+
     const labelAnimatedStyle = useAnimatedStyle(() => ({
       top: interpolate(
         labelAnimation.value,
         [0, 1],
-        [styles.label.top, styles.labelReducedSize.top]
+        [labelTop, labelReducedTop]
       ),
       paddingVertical: interpolate(
         labelAnimation.value,
         [0, 1],
-        [styles.label.paddingVertical, styles.labelReducedSize.paddingVertical]
+        [labelPaddingVertical, labelReducedPaddingVertical]
       ),
       fontSize: interpolate(
         labelAnimation.value,
         [0, 1],
-        [styles.label.fontSize, styles.labelReducedSize.fontSize]
+        [labelFontSize, labelReducedFontSize]
       ),
       fontFamily:
-        labelAnimation.value > 0.5
-          ? styles.labelReducedSize.fontFamily
-          : styles.label.fontFamily,
+        labelAnimation.value > 0.5 ? labelReducedFontFamily : labelFontFamily,
     }))
 
     useEffect(() => {
@@ -235,10 +249,6 @@ export const InputTextBase = memo<
         disabled,
         editable,
         secureTextEntry,
-        styles.inputFont,
-        styles.floatLabelInput,
-        styles.input,
-        styles.inputWithRightContent,
         hasRightContent,
         value,
         onBlur,
@@ -263,6 +273,7 @@ export const InputTextBase = memo<
         disabled={disabled}
         style={[
           styles.container,
+          containerMinHeightStyle,
           floatLabel && styles.containerFloatLabel,
           isFocused && styles.containerFocused,
           containerStyle,

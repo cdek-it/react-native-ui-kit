@@ -66,48 +66,30 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
     showIcon = true,
     Icon,
   }) => {
-    const iconSize = useMemo(() => {
-      switch (size) {
-        case 'small':
-          return styles.iconSmall
+    const sizeMap = useMemo(
+      () => ({
+        small: { icon: styles.iconSmall, label: styles.labelSmall },
+        base: { icon: styles.iconBase, label: styles.labelBase },
+        large: { icon: styles.iconLarge, label: styles.labelLarge },
+        xlarge: { icon: styles.iconXLarge, label: styles.labelXLarge },
+      }),
+      []
+    )
 
-        case 'base':
-          return styles.iconBase
+    const iconSize = sizeMap[size].icon
+    const labelFontSize = sizeMap[size].label
 
-        case 'large':
-          return styles.iconLarge
-
-        case 'xlarge':
-          return styles.iconXLarge
-      }
-    }, [size])
-
-    const labelFontSize = useMemo(() => {
-      switch (size) {
-        case 'small':
-          return styles.labelSmall
-
-        case 'base':
-          return styles.labelBase
-
-        case 'large':
-          return styles.labelLarge
-
-        case 'xlarge':
-          return styles.labelXLarge
-      }
-    }, [size])
+    // Extract primitive color values before the worklet closure to avoid
+    // capturing the unistyles HostObject (non-serializable) in the worklet.
+    const textColor = styles.textColor.color
+    const checkedTextColor = styles.checkedTextColor.color
 
     const animatedColorStyle = useAnimatedStyle(() => {
       return {
         color: interpolateColor(
           position.value,
           [index - 1, index, index + 1],
-          [
-            styles.textColor.color,
-            styles.checkedTextColor.color,
-            styles.textColor.color,
-          ]
+          [textColor, checkedTextColor, textColor]
         ),
       }
     })

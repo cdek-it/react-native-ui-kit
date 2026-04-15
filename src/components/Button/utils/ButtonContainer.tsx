@@ -61,7 +61,7 @@ const ButtonContainerComponent = ({
       : [
           buttonContainerStyles.container,
           isIconOnly && buttonContainerStyles.iconOnly,
-          style,
+          ...(style ? [style] : []),
         ]
 
   return (

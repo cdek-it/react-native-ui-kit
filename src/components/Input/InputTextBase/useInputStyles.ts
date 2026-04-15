@@ -4,7 +4,9 @@ import { StyleSheet } from '../../../utils'
 
 import type { InputTextBaseProps } from './types'
 
-export const useInputStyle = (size: InputTextBaseProps['size'] = 'base') => {
+export const useInputContainerMinHeight = (
+  size: InputTextBaseProps['size'] = 'base'
+) => {
   const minHeight = useMemo(() => {
     if (typeof size === 'number') {
       return Math.max(size, containerMinHeight.base.minHeight)
@@ -13,7 +15,7 @@ export const useInputStyle = (size: InputTextBaseProps['size'] = 'base') => {
     return containerMinHeight[size].minHeight
   }, [size])
 
-  return { ...inputStyles, container: { ...inputStyles.container, minHeight } }
+  return { minHeight }
 }
 
 const containerMinHeight = StyleSheet.create(({ theme }) => ({
@@ -22,7 +24,7 @@ const containerMinHeight = StyleSheet.create(({ theme }) => ({
   xlarge: { minHeight: theme.InputSize.xlarge['min-height'] },
 }))
 
-const inputStyles = StyleSheet.create(
+export const inputStyles = StyleSheet.create(
   ({ theme, border, typography, spacing, fonts }) => ({
     container: {
       flexDirection: 'row',

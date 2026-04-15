@@ -41,7 +41,13 @@ export const DialogHeader = ({
 
     const Icon = iconsMap[severity]
 
-    return <Icon {...styles.severityIcon} {...styles[severity]} />
+    return (
+      <Icon
+        color={styles[severity].color}
+        height={styles.severityIcon.height}
+        width={styles.severityIcon.width}
+      />
+    )
   }, [severity])
 
   return (
@@ -57,7 +63,11 @@ export const DialogHeader = ({
             testID={tids.closeButton}
             onPress={onClose}
           >
-            <IconX {...styles.closeIcon} />
+            <IconX
+              color={styles.closeIcon.color}
+              height={styles.closeIcon.height}
+              width={styles.closeIcon.width}
+            />
           </TouchableOpacity>
         ) : null}
       </View>

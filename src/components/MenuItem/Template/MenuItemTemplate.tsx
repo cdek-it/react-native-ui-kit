@@ -72,7 +72,11 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
     ...rest
   }) => {
     const iconStyle = useMemo(
-      () => ({ ...styles.icon, color: iconColor || styles.icon.color }),
+      () => ({
+        width: styles.icon.width,
+        height: styles.icon.height,
+        color: iconColor || styles.icon.color,
+      }),
       [iconColor]
     )
 

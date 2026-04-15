@@ -65,6 +65,73 @@ import { UnistylesRuntime } from '@cdek-it/react-native-ui-kit'
 UnistylesRuntime.setTheme('dark')
 ```
 
+## ESLint Правила для Unistyles
+
+Три обязательных ESLint правила защищают от потери скрытого `unistyles` payload:
+
+### ⛔ `unistyles/no-spread-unistyles` (error)
+
+**Проблема**: Spread оператор теряет скрытый payload unistyles, что приводит к потере темы и реактивности при её смене.
+
+```typescript
+// ❌ Неправильно — payload теряется
+const myStyle = { ...styles.button }
+const btn = { ...styles.button, marginTop: 10 }
+Object.assign({}, styles.button)
+const { button, text } = styles
+
+// ✅ Правильно — payload сохранится
+const myStyle = styles.button
+style={[styles.button, { marginTop: 10 }]}
+style={[styles.button, isActive && styles.buttonActive]}
+```
+
+### ⛔ `unistyles/no-unistyles-in-worklet` (error)
+
+**Проблема**: Worklet функции (`useAnimatedStyle`, `runOnJS`, `withSpring`) передаются в native код и не могут захватить весь unistyles объект. Нужно вытащить примитивы.
+
+```typescript
+// ❌ Неправильно — styles целиком в worklet
+const animStyle = useAnimatedStyle(() => ({
+  color: styles.text.color,
+}))
+
+// ✅ Правильно — примитив вытащен перед worklet
+const color = styles.text.color
+const animStyle = useAnimatedStyle(() => ({
+  color, // Теперь это просто строка
+}))
+```
+
+### ⚠️ `unistyles/no-spread-icon-styles` (warn)
+
+Рекомендуется передавать явные props для Icon компонентов вместо spread.
+
+```typescript
+// ❌ Не рекомендуется
+<Icon {...styles.icon} />
+
+// ✅ Рекомендуется
+const color = styles.icon.color
+const width = styles.icon.width
+<Icon width={width} height={24} color={color} />
+```
+
+### Почему это важно
+
+`react-native-unistyles` добавляет скрытый payload в каждый объект из `StyleSheet.create()`. Этот payload содержит информацию о:
+
+- **Активной теме** (light/dark)
+- **Responsive breakpoint** (размер экрана)
+- **Unistyles runtime configuration**
+
+Если потерять payload, нативная часть больше не сможет:
+- Применить правильную тему
+- Обновить стиль при смене темы/breakpoint
+- Корректно интерпретировать значения
+
+Подробнее: [ESLint Rules for Unistyles](./configs/eslint/rules/unistyles/README.md)
+
 ## Babel конфигурация
 
 Для получения нативного обновления стилей без React-ререндеров:
