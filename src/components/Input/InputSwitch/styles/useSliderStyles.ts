@@ -42,7 +42,14 @@ export const useSliderStyles = (
 
       return sliderOffBg
     },
-    []
+    [
+      sliderDisabledBg,
+      sliderOffBg,
+      sliderOnBg,
+      sliderOnDisabledBg,
+      sliderOnPressedBg,
+      sliderPressedBg,
+    ]
   )
 
   const calculateSliderBorderColor = useCallback(

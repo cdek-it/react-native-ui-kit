@@ -4,6 +4,8 @@ import { render } from '@testing-library/react-native'
 import { SvgUniversal, SvgUniversalTestId } from '../SvgUniversal'
 
 describe('SvgUniversal', () => {
+  const svgXmlMock = '<svg viewBox="0 0 1 1"><path d="M1 1h1v1H1z" /></svg>'
+
   afterEach(() => {
     jest.restoreAllMocks()
   })
@@ -20,17 +22,17 @@ describe('SvgUniversal', () => {
 
   describe('при передаче uri в качестве источника', () => {
     test('рендерит компонент SvgUri', async () => {
-      jest.spyOn(global, 'fetch').mockImplementation().mockResolvedValue({
-        ok: true,
-        text: async () =>
-          '<svg viewBox="0 0 1 1"><path d="M1 1h1v1H1z" /></svg>',
-      })
+      jest
+        .spyOn(global, 'fetch')
+        .mockResolvedValue(new Response(svgXmlMock, { status: 200 }))
 
       const { findByTestId } = render(
         <SvgUniversal source={{ uri: 'https://google.com' }} />
       )
 
-      await findByTestId(SvgUniversalTestId.uri)
+      const svgUri = await findByTestId(SvgUniversalTestId.uri)
+
+      expect(svgUri).toBeOnTheScreen()
     })
   })
 
