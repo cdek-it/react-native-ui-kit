@@ -7,7 +7,7 @@ import Animated, {
 import Svg, { Defs, LinearGradient, Rect, Stop } from 'react-native-svg'
 import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet, useUnistyles } from '../../utils'
 import { SkeletonContext } from '../../utils/SkeletonContext'
 
 interface SkeletonProps extends ViewProps {}
@@ -23,6 +23,11 @@ export const Skeleton = memo<SkeletonProps>(({ style, testID, ...rest }) => {
     unregisterSkeleton,
     skeletonWidth,
   } = useContext(SkeletonContext)
+  const {
+    theme: {
+      theme: { Misc },
+    },
+  } = useUnistyles()
 
   const skeletonRef = useRef<View>(null)
   const skeletonX = useSharedValue(0)
@@ -64,17 +69,17 @@ export const Skeleton = memo<SkeletonProps>(({ style, testID, ...rest }) => {
             <LinearGradient id='gradient' x1='0' x2='1' y1='1' y2='1'>
               <Stop
                 offset='0'
-                stopColor={styles.container.backgroundColor}
+                stopColor={Misc.Skeleton.skeletonBg}
                 stopOpacity='0.4'
               />
               <Stop
                 offset='0.5'
-                stopColor={styles.gradientColor.backgroundColor}
+                stopColor={Misc.Skeleton.skeletonAnimationBg}
                 stopOpacity='0.4'
               />
               <Stop
                 offset='1'
-                stopColor={styles.container.backgroundColor}
+                stopColor={Misc.Skeleton.skeletonBg}
                 stopOpacity='0.4'
               />
             </LinearGradient>
@@ -93,7 +98,6 @@ const styles = StyleSheet.create(({ border, theme }) => ({
     backgroundColor: theme.Misc.Skeleton.skeletonBg,
   },
   gradientContainer: { position: 'absolute', height: '100%' },
-  gradientColor: { backgroundColor: theme.Misc.Skeleton.skeletonAnimationBg },
 }))
 
 export const SkeletonTestId = {
