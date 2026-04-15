@@ -1,5 +1,4 @@
 import {
-  type Icon,
   IconAlertTriangle,
   IconCircleCheck,
   IconCircleX,
@@ -10,7 +9,7 @@ import {
 import { useMemo } from 'react'
 import { TouchableOpacity, View } from 'react-native'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet, SvgUniversal, type SvgSource } from '../../utils'
 import { Title } from '../Typography'
 
 type Severity = 'danger' | 'warning' | 'info' | 'success' | 'help'
@@ -21,7 +20,7 @@ export interface DialogHeaderProps {
   readonly severity?: Severity
 }
 
-const iconsMap: Record<Severity, Icon> = {
+const iconsMap: Record<Severity, SvgSource> = {
   danger: IconCircleX,
   warning: IconAlertTriangle,
   info: IconInfoCircle,
@@ -39,12 +38,13 @@ export const DialogHeader = ({
   const icon = useMemo(() => {
     if (!severity) return null
 
-    const Icon = iconsMap[severity]
+    const source = iconsMap[severity]
 
     return (
-      <Icon
+      <SvgUniversal
         color={styles[severity].color}
         height={styles.severityIcon.height}
+        source={source}
         width={styles.severityIcon.width}
       />
     )
@@ -63,9 +63,10 @@ export const DialogHeader = ({
             testID={tids.closeButton}
             onPress={onClose}
           >
-            <IconX
+            <SvgUniversal
               color={styles.closeIcon.color}
               height={styles.closeIcon.height}
+              source={IconX}
               width={styles.closeIcon.width}
             />
           </TouchableOpacity>

@@ -230,6 +230,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -277,6 +278,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -377,6 +379,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -424,6 +427,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -527,6 +531,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -574,6 +579,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -674,6 +680,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -721,6 +728,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -826,6 +834,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -873,6 +882,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -976,6 +986,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -1023,6 +1034,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>

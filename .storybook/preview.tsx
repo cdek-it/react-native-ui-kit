@@ -1,9 +1,5 @@
 import type { Preview } from '@storybook/react'
-import {
-  makeStyles,
-  ThemeVariant,
-  useChangeTheme,
-} from '../src'
+import { makeStyles, ThemeVariant, useChangeTheme } from '../src'
 import { View } from 'react-native'
 import React, { type FunctionComponent, type ReactNode, useEffect } from 'react'
 

@@ -70,6 +70,7 @@ exports[`RatingItem component tests checked - false, disabled - false, pressed -
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -129,6 +130,7 @@ exports[`RatingItem component tests checked - false, disabled - false, pressed -
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -208,6 +210,7 @@ exports[`RatingItem component tests checked - false, disabled - false, pressed -
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -267,6 +270,7 @@ exports[`RatingItem component tests checked - false, disabled - false, pressed -
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -343,6 +347,7 @@ exports[`RatingItem component tests checked - false, disabled - false, pressed -
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -402,6 +407,7 @@ exports[`RatingItem component tests checked - false, disabled - false, pressed -
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -481,6 +487,7 @@ exports[`RatingItem component tests checked - false, disabled - false, pressed -
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -540,6 +547,7 @@ exports[`RatingItem component tests checked - false, disabled - false, pressed -
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -616,6 +624,7 @@ exports[`RatingItem component tests checked - false, disabled - true, pressed - 
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -675,6 +684,7 @@ exports[`RatingItem component tests checked - false, disabled - true, pressed - 
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -754,6 +764,7 @@ exports[`RatingItem component tests checked - false, disabled - true, pressed - 
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -813,6 +824,7 @@ exports[`RatingItem component tests checked - false, disabled - true, pressed - 
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -889,6 +901,7 @@ exports[`RatingItem component tests checked - false, disabled - true, pressed - 
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -948,6 +961,7 @@ exports[`RatingItem component tests checked - false, disabled - true, pressed - 
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -1027,6 +1041,7 @@ exports[`RatingItem component tests checked - false, disabled - true, pressed - 
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -1086,6 +1101,7 @@ exports[`RatingItem component tests checked - false, disabled - true, pressed - 
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -1161,6 +1177,7 @@ exports[`RatingItem component tests checked - true, disabled - false, pressed - 
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -1204,6 +1221,7 @@ exports[`RatingItem component tests checked - true, disabled - false, pressed - 
         }
         stroke={null}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -1282,6 +1300,7 @@ exports[`RatingItem component tests checked - true, disabled - false, pressed - 
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -1325,6 +1344,7 @@ exports[`RatingItem component tests checked - true, disabled - false, pressed - 
         }
         stroke={null}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -1400,6 +1420,7 @@ exports[`RatingItem component tests checked - true, disabled - false, pressed - 
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -1443,6 +1464,7 @@ exports[`RatingItem component tests checked - true, disabled - false, pressed - 
         }
         stroke={null}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -1521,6 +1543,7 @@ exports[`RatingItem component tests checked - true, disabled - false, pressed - 
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -1564,6 +1587,7 @@ exports[`RatingItem component tests checked - true, disabled - false, pressed - 
         }
         stroke={null}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -1639,6 +1663,7 @@ exports[`RatingItem component tests checked - true, disabled - true, pressed - f
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -1682,6 +1707,7 @@ exports[`RatingItem component tests checked - true, disabled - true, pressed - f
         }
         stroke={null}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -1760,6 +1786,7 @@ exports[`RatingItem component tests checked - true, disabled - true, pressed - f
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -1803,6 +1830,7 @@ exports[`RatingItem component tests checked - true, disabled - true, pressed - f
         }
         stroke={null}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -1878,6 +1906,7 @@ exports[`RatingItem component tests checked - true, disabled - true, pressed - t
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -1921,6 +1950,7 @@ exports[`RatingItem component tests checked - true, disabled - true, pressed - t
         }
         stroke={null}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -1999,6 +2029,7 @@ exports[`RatingItem component tests checked - true, disabled - true, pressed - t
         },
       ]
     }
+    testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
     width={17.5}
@@ -2042,6 +2073,7 @@ exports[`RatingItem component tests checked - true, disabled - true, pressed - t
         }
         stroke={null}
         strokeWidth={2}
+        testID="SvgUniversalComponent"
       />
     </RNSVGGroup>
   </RNSVGSvgView>

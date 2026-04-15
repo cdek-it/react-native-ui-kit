@@ -67,7 +67,6 @@ exports[`ButtonSeverity component tests badge - basic 1`] = `
             "paddingVertical": 0,
           },
           false,
-          undefined,
         ]
       }
     >
@@ -238,7 +237,6 @@ exports[`ButtonSeverity component tests badge - dot 1`] = `
             "paddingVertical": 0,
           },
           false,
-          undefined,
         ]
       }
     >
