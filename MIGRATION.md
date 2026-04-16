@@ -59,8 +59,8 @@ context. Он только конфигурирует `react-native-unistyles`.
 
 - `useTheme()` читает `UnistylesRuntime.themeName`
 - `useFonts()` читает `useUnistyles().theme.fonts`
-- `useChangeTheme()` использует `ThemeContextProvider`, если он есть, и меняет
-  тему через него; без провайдера вызывает `UnistylesRuntime.setTheme(...)`
+- `ThemeContext` остается пустым и имеет значение `null`
+- `useChangeTheme()` всегда вызывает `UnistylesRuntime.setTheme(...)`
 
 ### `makeStyles` — deprecated
 

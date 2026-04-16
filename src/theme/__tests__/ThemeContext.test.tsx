@@ -34,22 +34,13 @@ describe('ThemeContextProvider', () => {
     })
   })
 
-  test('useChangeTheme переключает тему через ThemeContextProvider', () => {
-    const configureSpy = jest.spyOn(StyleSheet, 'configure')
-    const { result } = renderHook(() => useChangeTheme(), {
-      wrapper: ({ children }) => (
-        <ThemeContextProvider>{children}</ThemeContextProvider>
-      ),
-    })
+  test('useChangeTheme переключает тему через UnistylesRuntime', () => {
+    const { result } = renderHook(() => useChangeTheme())
 
     act(() => {
       result.current(ThemeVariant.Dark)
     })
 
     expect(UnistylesRuntime.setTheme).toHaveBeenCalledWith('dark')
-    expect(configureSpy).toHaveBeenLastCalledWith({
-      settings: { initialTheme: 'dark' },
-      themes: { light: lightTheme, dark: darkTheme },
-    })
   })
 })

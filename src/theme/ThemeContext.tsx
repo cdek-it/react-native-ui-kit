@@ -1,6 +1,5 @@
 import {
   createContext,
-  useCallback,
   useEffect,
   useLayoutEffect,
   useMemo,
@@ -20,10 +19,6 @@ const THEME_NAME_MAP: Record<ThemeVariant, 'light' | 'dark'> = {
   [ThemeVariant.Dark]: 'dark',
 }
 
-export interface ThemeContextType {
-  changeTheme: (theme: ThemeVariant) => void
-}
-
 export interface ThemeContextProviderProps {
   readonly initialTheme?: ThemeVariant
   readonly fonts?: FontsConfig
@@ -35,7 +30,7 @@ export interface ThemeContextProviderProps {
 const withFonts = (theme: ThemeType, fonts?: FontsConfig): ThemeType =>
   fonts ? { ...theme, fonts } : theme
 
-export const ThemeContext = createContext<ThemeContextType | null>(null)
+export const ThemeContext = createContext<null>(null)
 
 export const ThemeContextProvider = ({
   children,
@@ -68,17 +63,8 @@ export const ThemeContextProvider = ({
     UnistylesRuntime.setTheme(THEME_NAME_MAP[theme])
   }, [configuredDarkTheme, configuredLightTheme, theme])
 
-  const changeTheme = useCallback((nextTheme: ThemeVariant) => {
-    setTheme(nextTheme)
-  }, [])
-
-  const contextValue = useMemo<ThemeContextType>(
-    () => ({ changeTheme }),
-    [changeTheme]
-  )
-
   return (
-    <ThemeContext.Provider value={contextValue}>
+    <ThemeContext.Provider value={null}>
       <SkeletonContextProvider>{children}</SkeletonContextProvider>
     </ThemeContext.Provider>
   )
