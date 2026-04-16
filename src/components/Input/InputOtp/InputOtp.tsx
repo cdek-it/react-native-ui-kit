@@ -54,7 +54,10 @@ export const InputOtp = memo<InputOtpProps>(
 
     const inputRef = useRef<TextInput>(null)
 
-    useImperativeHandle(propsInputRef, () => inputRef.current as TextInput)
+    useImperativeHandle<TextInput | null, TextInput | null>(
+      propsInputRef,
+      () => inputRef.current
+    )
 
     const handlePress = useCallback(() => {
       inputRef.current?.focus()

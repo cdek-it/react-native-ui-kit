@@ -17,12 +17,7 @@ const ButtonActivityIndicatorComponent = ({
   return (
     <ActivityIndicator
       color={buttonActivityIndicatorStyles.indicator.color}
-      size={
-        buttonActivityIndicatorStyles.indicator.height as
-          | number
-          | 'small'
-          | 'large'
-      }
+      size={buttonActivityIndicatorStyles.indicator.height}
       testID='Button_ActivityIndicator'
     />
   )

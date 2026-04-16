@@ -1,6 +1,6 @@
-import { useCallback } from 'react'
+import { useCallback, useContext } from 'react'
 
-import { ThemeVariant } from '../theme'
+import { ThemeContext, ThemeVariant } from '../theme'
 import { UnistylesRuntime } from '../utils'
 
 const THEME_MAP: Record<ThemeVariant, 'light' | 'dark'> = {
@@ -8,14 +8,11 @@ const THEME_MAP: Record<ThemeVariant, 'light' | 'dark'> = {
   [ThemeVariant.Dark]: 'dark',
 }
 
-/**
- * Возвращает callback для переключения темы.
- *
- * @deprecated Используйте `UnistylesRuntime.setTheme` из SDK напрямую.
- * Будет удалён в следующей minor версии.
- */
 export const useChangeTheme = () => {
-  return useCallback((theme: ThemeVariant) => {
+  const themeContext = useContext(ThemeContext)
+  const fallbackChangeTheme = useCallback((theme: ThemeVariant) => {
     UnistylesRuntime.setTheme(THEME_MAP[theme])
   }, [])
+
+  return themeContext?.changeTheme ?? fallbackChangeTheme
 }

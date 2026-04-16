@@ -18,7 +18,7 @@ export const makeStyles =
   (): T => {
     const { theme } = useUnistyles()
 
-    return useMemo(() => createStyles(theme as ThemeType) as T, [theme])
+    return useMemo(() => createStyles(theme) as T, [theme])
   }
 
 type StylesItem = ViewStyle | ImageStyle | TextStyle

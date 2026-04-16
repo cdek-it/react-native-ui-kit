@@ -1,11 +1,5 @@
 import type { Ref } from 'react'
-import type {
-  ColorValue,
-  PressableProps,
-  TextStyle,
-  View,
-  ViewStyle,
-} from 'react-native'
+import type { PressableProps, View } from 'react-native'
 
 import type { SvgSource } from '../../utils/SvgUniversal'
 import type { BadgeSeverity } from '../Badge/Badge'
@@ -96,41 +90,6 @@ export interface IconOnlyButtonProps<
 export type ButtonProps<Variant extends ButtonVariant> =
   | IconTextButton<Variant>
   | IconOnlyButtonProps<Variant>
-
-/** @deprecated */
-export type LabelVariantStyles<Variant extends ButtonVariant> = Record<
-  Required<BaseButtonProps<Variant>>['variant'],
-  TextStyle
->
-/** @deprecated */
-export type PressedVariantStyles<Variant extends ButtonVariant> = Record<
-  Required<BaseButtonProps<Variant>>['variant'],
-  ViewStyle
->
-/** @deprecated */
-export type ContainerVariantStyles<Variant extends ButtonVariant> = Record<
-  Required<BaseButtonProps<Variant>>['variant'],
-  ViewStyle
->
-/** @deprecated */
-export type IconVariantStyles<Variant extends ButtonVariant> = Record<
-  Required<BaseButtonProps<Variant>>['variant'],
-  { color: ColorValue }
->
-/** @deprecated */
-export type PressedLabelVariantStyles<Variant extends ButtonVariant> = Record<
-  Required<BaseButtonProps<Variant>>['variant'],
-  { color: ColorValue }
->
-
-/** @deprecated */
-export interface VariantStyles<Variant extends ButtonVariant> {
-  containerVariantStyles: ContainerVariantStyles<Variant>
-  pressedVariantStyles: PressedVariantStyles<Variant>
-  labelVariantStyles: LabelVariantStyles<Variant>
-  iconVariantStyles: IconVariantStyles<Variant>
-  pressedLabelVariantStyles: PressedLabelVariantStyles<Variant>
-}
 
 export type ButtonSeverity = 'info' | 'success' | 'warning' | 'danger'
 

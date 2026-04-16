@@ -5,5 +5,4 @@ export type {
   ButtonProps,
   ButtonBadgeProps,
   ButtonSeverityProps,
-  VariantStyles,
 } from './types'

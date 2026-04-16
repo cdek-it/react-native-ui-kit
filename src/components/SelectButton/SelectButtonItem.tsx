@@ -1,5 +1,5 @@
 import { memo, useMemo, useState } from 'react'
-import { TouchableOpacity, type ViewProps, type ViewStyle } from 'react-native'
+import { TouchableOpacity, type ViewProps } from 'react-native'
 import Animated, {
   interpolateColor,
   type SharedValue,
@@ -95,6 +95,17 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
     })
 
     const [isSelected, setIsSelected] = useState(false)
+    const iconColor = useMemo(() => {
+      if (disabled) {
+        return styles.disabledTextColor.color
+      }
+
+      if (isSelected) {
+        return checkedTextColor
+      }
+
+      return textColor
+    }, [checkedTextColor, disabled, isSelected, textColor])
 
     useAnimatedReaction(
       () => position.value,
@@ -119,15 +130,9 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
       >
         {Icon && showIcon ? (
           <SvgUniversal
+            color={iconColor}
             height={iconSize.height}
             source={Icon}
-            style={
-              [
-                styles.textColor,
-                isSelected && styles.checkedTextColor,
-                disabled && styles.disabledTextColor,
-              ] as ViewStyle[]
-            }
             testID='SelectButtonItem_Icon'
             width={iconSize.width}
           />

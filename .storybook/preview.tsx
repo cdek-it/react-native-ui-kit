@@ -1,7 +1,7 @@
 import type { Preview } from '@storybook/react'
-import { makeStyles, ThemeVariant, useChangeTheme } from '../src'
+import { StyleSheet, ThemeContextProvider, ThemeVariant } from '../src'
 import { View } from 'react-native'
-import React, { type FunctionComponent, type ReactNode, useEffect } from 'react'
+import React, { type FunctionComponent, type ReactNode } from 'react'
 
 const preview: Preview = {
   decorators: [
@@ -34,20 +34,17 @@ const Container: FunctionComponent<{
   children: ReactNode
   theme: ThemeVariant
 }> = ({ children, theme }) => {
-  const styles = useStyles()
-  const changeTheme = useChangeTheme()
-
-  useEffect(() => {
-    changeTheme(theme)
-  }, [theme, changeTheme])
-
-  return <View style={styles.container}>{children}</View>
+  return (
+    <ThemeContextProvider initialTheme={theme}>
+      <View style={styles.container}>{children}</View>
+    </ThemeContextProvider>
+  )
 }
 
-const useStyles = makeStyles((theme) => ({
+const styles = StyleSheet.create(({ theme }) => ({
   container: {
     width: '100%',
     height: '100%',
-    backgroundColor: theme.theme.Surface['surface-card'],
+    backgroundColor: theme.Surface['surface-card'],
   },
 }))

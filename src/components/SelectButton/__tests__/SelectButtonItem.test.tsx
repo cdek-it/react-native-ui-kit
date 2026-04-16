@@ -108,13 +108,13 @@ describe('SelectButtonItem', () => {
     const pressable = queryAllByTestId('ChangePosition')
     let icons = queryAllByTestId('SelectButtonItem_Icon')
 
-    await waitFor(() => expect(icons[0]).toHaveStyle({ color: '#181a1f' }))
+    await waitFor(() => expect(icons[0]).toHaveProp('stroke', '#181a1f'))
 
     await user.press(pressable[0])
     jest.advanceTimersByTime(600)
 
     icons = queryAllByTestId('SelectButtonItem_Icon')
 
-    expect(icons[0]).toHaveStyle({ color: '#56595f' })
+    expect(icons[0]).toHaveProp('stroke', '#56595f')
   })
 })

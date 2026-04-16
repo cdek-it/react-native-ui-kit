@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-deprecated -- Проверяем deprecated API на обратную совместимость. */
 import { act, renderHook } from '@testing-library/react-native'
 
 import { ThemeVariant } from '../../theme'

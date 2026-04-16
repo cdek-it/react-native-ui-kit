@@ -55,7 +55,7 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="currentColor"
+    stroke="#a2a5a9"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -65,15 +65,6 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
           "backgroundColor": "transparent",
           "borderWidth": 0,
         },
-        [
-          {
-            "color": "#56595f",
-          },
-          false,
-          {
-            "color": "#a2a5a9",
-          },
-        ],
         {
           "flex": 0,
           "height": 21,
@@ -88,7 +79,6 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
-      color="#a2a5a9"
       fill={null}
       propList={
         [
@@ -101,7 +91,8 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
       }
       stroke={
         {
-          "type": 2,
+          "payload": 4288849321,
+          "type": 0,
         }
       }
       strokeLinecap={1}
@@ -109,7 +100,6 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
       strokeWidth={2}
     >
       <RNSVGPath
-        color="#a2a5a9"
         d="M7 7l10 10"
         fill={null}
         propList={
@@ -123,7 +113,8 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4288849321,
+            "type": 0,
           }
         }
         strokeLinecap={1}
@@ -132,7 +123,6 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
         testID="SelectButtonItem_Icon"
       />
       <RNSVGPath
-        color="#a2a5a9"
         d="M17 8l0 9l-9 0"
         fill={null}
         propList={
@@ -146,7 +136,8 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4288849321,
+            "type": 0,
           }
         }
         strokeLinecap={1}
@@ -267,7 +258,7 @@ exports[`SelectButtonItem {"Icon": [Object], "index": 1, "label": "ButtonSelect"
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="currentColor"
+    stroke="#56595f"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -277,13 +268,6 @@ exports[`SelectButtonItem {"Icon": [Object], "index": 1, "label": "ButtonSelect"
           "backgroundColor": "transparent",
           "borderWidth": 0,
         },
-        [
-          {
-            "color": "#56595f",
-          },
-          false,
-          undefined,
-        ],
         {
           "flex": 0,
           "height": 28,
@@ -298,7 +282,6 @@ exports[`SelectButtonItem {"Icon": [Object], "index": 1, "label": "ButtonSelect"
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
-      color="#56595f"
       fill={null}
       propList={
         [
@@ -311,7 +294,8 @@ exports[`SelectButtonItem {"Icon": [Object], "index": 1, "label": "ButtonSelect"
       }
       stroke={
         {
-          "type": 2,
+          "payload": 4283849055,
+          "type": 0,
         }
       }
       strokeLinecap={1}
@@ -319,7 +303,6 @@ exports[`SelectButtonItem {"Icon": [Object], "index": 1, "label": "ButtonSelect"
       strokeWidth={2}
     >
       <RNSVGPath
-        color="#56595f"
         d="M7 7l10 10"
         fill={null}
         propList={
@@ -333,7 +316,8 @@ exports[`SelectButtonItem {"Icon": [Object], "index": 1, "label": "ButtonSelect"
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4283849055,
+            "type": 0,
           }
         }
         strokeLinecap={1}
@@ -342,7 +326,6 @@ exports[`SelectButtonItem {"Icon": [Object], "index": 1, "label": "ButtonSelect"
         testID="SelectButtonItem_Icon"
       />
       <RNSVGPath
-        color="#56595f"
         d="M17 8l0 9l-9 0"
         fill={null}
         propList={
@@ -356,7 +339,8 @@ exports[`SelectButtonItem {"Icon": [Object], "index": 1, "label": "ButtonSelect"
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4283849055,
+            "type": 0,
           }
         }
         strokeLinecap={1}
@@ -574,7 +558,7 @@ exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="currentColor"
+    stroke="#56595f"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -584,13 +568,6 @@ exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
           "backgroundColor": "transparent",
           "borderWidth": 0,
         },
-        [
-          {
-            "color": "#56595f",
-          },
-          false,
-          undefined,
-        ],
         {
           "flex": 0,
           "height": 14,
@@ -605,7 +582,6 @@ exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
-      color="#56595f"
       fill={null}
       propList={
         [
@@ -618,7 +594,8 @@ exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
       }
       stroke={
         {
-          "type": 2,
+          "payload": 4283849055,
+          "type": 0,
         }
       }
       strokeLinecap={1}
@@ -626,7 +603,6 @@ exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
       strokeWidth={2}
     >
       <RNSVGPath
-        color="#56595f"
         d="M7 7l10 10"
         fill={null}
         propList={
@@ -640,7 +616,8 @@ exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4283849055,
+            "type": 0,
           }
         }
         strokeLinecap={1}
@@ -649,7 +626,6 @@ exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
         testID="SelectButtonItem_Icon"
       />
       <RNSVGPath
-        color="#56595f"
         d="M17 8l0 9l-9 0"
         fill={null}
         propList={
@@ -663,7 +639,8 @@ exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4283849055,
+            "type": 0,
           }
         }
         strokeLinecap={1}
