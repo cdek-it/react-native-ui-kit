@@ -54,8 +54,8 @@ UI kit использует следующие виды шрифтов.
 После этого шрифты доступны через `useUnistyles().theme.fonts` или прямо в
 `StyleSheet.create(({ fonts }) => ...)`.
 
-`ThemeContextProvider` только настраивает темы и шрифты для `unistyles` и не
-используется как источник чтения `theme/fonts` через React context.
+`ThemeContextProvider` только настраивает темы и шрифты для `unistyles`.
+`ThemeContext` остается пустым и всегда имеет значение `null`.
 
 Провайдер также принимает `lightTheme` и `darkTheme`, если нужно переопределить
 темы целиком.

@@ -1,6 +1,6 @@
-import { useCallback, useContext } from 'react'
+import { useCallback } from 'react'
 
-import { ThemeContext, ThemeVariant } from '../theme'
+import { ThemeVariant } from '../theme'
 import { UnistylesRuntime } from '../utils'
 
 const THEME_MAP: Record<ThemeVariant, 'light' | 'dark'> = {
@@ -9,10 +9,7 @@ const THEME_MAP: Record<ThemeVariant, 'light' | 'dark'> = {
 }
 
 export const useChangeTheme = () => {
-  const themeContext = useContext(ThemeContext)
-  const fallbackChangeTheme = useCallback((theme: ThemeVariant) => {
+  return useCallback((theme: ThemeVariant) => {
     UnistylesRuntime.setTheme(THEME_MAP[theme])
   }, [])
-
-  return themeContext?.changeTheme ?? fallbackChangeTheme
 }
