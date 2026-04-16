@@ -43,9 +43,9 @@ export const InputGroup = memo<InputGroupProps>(
     const inputRef = useRef<TextInput>(null)
 
     const focus = useCallback(() => inputRef.current?.focus(), [inputRef])
-    useImperativeHandle(
+    useImperativeHandle<TextInput | null, TextInput | null>(
       propsInputRef,
-      () => (inputRef.current ? inputRef.current : null) as TextInput,
+      () => inputRef.current,
       [inputRef]
     )
 

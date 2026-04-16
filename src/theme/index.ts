@@ -1,14 +1,17 @@
 import { StyleSheet } from '../utils'
 
-import { darkTheme } from './darkTheme'
-import { lightTheme } from './lightTheme'
+import { ThemeContext, ThemeContextProvider } from './ThemeContext'
+import { darkTheme as defaultDarkTheme } from './darkTheme'
+import { lightTheme as defaultLightTheme } from './lightTheme'
 
 StyleSheet.configure({
   settings: { initialTheme: 'light' },
-  themes: { light: lightTheme, dark: darkTheme },
+  themes: { light: defaultLightTheme, dark: defaultDarkTheme },
 })
 
-export { darkTheme, lightTheme }
+export { defaultDarkTheme as darkTheme, defaultLightTheme as lightTheme }
+export { ThemeContext, ThemeContextProvider }
+export type { ThemeContextProviderProps } from './ThemeContext'
 export {
   type ThemeType,
   ThemeVariant,
@@ -18,7 +21,7 @@ export {
 
 declare module 'react-native-unistyles' {
   export interface UnistylesThemes {
-    light: typeof lightTheme
-    dark: typeof darkTheme
+    light: typeof defaultLightTheme
+    dark: typeof defaultDarkTheme
   }
 }

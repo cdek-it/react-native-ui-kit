@@ -170,12 +170,10 @@ export const InputTextBase = memo<
       [floatLabel, styles.iconSize, styles.iconSizeFloatLabel]
     )
 
-    useImperativeHandle(
+    useImperativeHandle<TextInput | null, TextInput | null>(
       propsInputRef,
       () =>
-        (inputRef.current
-          ? Object.assign(inputRef.current, { clear })
-          : null) as TextInput,
+        inputRef.current ? Object.assign(inputRef.current, { clear }) : null,
       [inputRef, clear]
     )
 

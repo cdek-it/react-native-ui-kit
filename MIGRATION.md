@@ -1,15 +1,39 @@
 # Миграция на Unistyles V3
 
-Стили переведены на `react-native-unistyles`. Удален собственный `React Context`
-и провайдер.
+Стили переведены на `react-native-unistyles`. `ThemeContextProvider` доступен
+как внешний конфигуратор тем и шрифтов, но чтение темы и шрифтов теперь идет
+через API `unistyles`.
 
 ## Изменения
 
-### `ThemeContextProvider` — удалён
+### `ThemeContextProvider` — доступен
 
-Темы регистрируются автоматически. Обёртка больше не нужна.
+UI kit по-прежнему использует `react-native-unistyles` внутри, но для внешнего
+потребителя снова доступен `ThemeContextProvider` как единая точка конфигурации
+тем и шрифтов.
 
-### `useFonts` — deprecated
+Если приложению нужны кастомные шрифты, настройте их через провайдер:
+
+```tsx
+import {
+  ThemeContextProvider,
+  ThemeVariant,
+} from '@cdek-it/react-native-ui-kit'
+
+export const Root = () => (
+  <ThemeContextProvider
+    fonts={{ primary: 'MyFont', secondary: 'MySecondaryFont' }}
+    initialTheme={ThemeVariant.Light}
+  >
+    <App />
+  </ThemeContextProvider>
+)
+```
+
+Провайдер также принимает `lightTheme` и `darkTheme`, если нужно передать
+полностью кастомные темы.
+
+### `useFonts`
 
 Используйте `useUnistyles`:
 
@@ -20,7 +44,23 @@ const { theme } = useUnistyles()
 theme.fonts
 ```
 
-Или прямо в стилях через `StyleSheet.create(...)`.
+Или прямо в стилях через `StyleSheet.create(...)`:
+
+```tsx
+const styles = StyleSheet.create(({ fonts }) => ({
+  title: { fontFamily: fonts.primary },
+}))
+```
+
+### `useTheme()` / `useChangeTheme()`
+
+`ThemeContextProvider` больше не является источником `theme/fonts` через React
+context. Он только конфигурирует `react-native-unistyles`.
+
+- `useTheme()` читает `UnistylesRuntime.themeName`
+- `useFonts()` читает `useUnistyles().theme.fonts`
+- `useChangeTheme()` использует `ThemeContextProvider`, если он есть, и меняет
+  тему через него; без провайдера вызывает `UnistylesRuntime.setTheme(...)`
 
 ### `makeStyles` — deprecated
 
@@ -142,6 +182,30 @@ const width = styles.icon.width
 
 1. Используйте `StyleSheet.create(...)`.
 2. Добавьте `autoProcessPaths` в Babel-конфиг вашего приложения.
+
+Это нужно потому, что UI kit подключается из `node_modules`, а `unistyles` по
+умолчанию не обрабатывает такие файлы.
+
+Пример для приложения-потребителя:
+
+```js
+module.exports = function (api) {
+  api.cache(true)
+
+  return {
+    presets: ['babel-preset-expo'],
+    plugins: [
+      [
+        'react-native-unistyles/plugin',
+        { root: 'src', autoProcessPaths: ['@cdek-it/react-native-ui-kit'] },
+      ],
+    ],
+  }
+}
+```
+
+Если Babel plugin у вас уже настроен, достаточно добавить путь
+`@cdek-it/react-native-ui-kit` в существующий `autoProcessPaths`.
 
 Документация:
 

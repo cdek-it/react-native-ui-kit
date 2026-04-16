@@ -68,10 +68,10 @@ const ButtonContainerComponent = ({
     <Pressable
       accessibilityRole='button'
       disabled={disabled || loading}
-      ref={pressableRef as never}
+      ref={pressableRef}
       style={resolvedStyle}
-      onPressIn={onPressIn as never}
-      onPressOut={onPressOut as never}
+      onPressIn={onPressIn}
+      onPressOut={onPressOut}
       {...props}
     >
       {children}
