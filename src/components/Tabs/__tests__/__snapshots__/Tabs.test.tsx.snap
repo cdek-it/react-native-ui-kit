@@ -166,13 +166,17 @@ exports[`TabItem component tests active: label, badge 1`] = `
     >
       <View
         style={
-          {
-            "backgroundColor": "#44e858",
-            "borderRadius": 100,
-            "height": 21,
-            "justifyContent": "center",
-            "paddingHorizontal": 7,
-          }
+          [
+            {
+              "backgroundColor": "#44e858",
+            },
+            {
+              "borderRadius": 100,
+              "height": 21,
+              "justifyContent": "center",
+              "paddingHorizontal": 7,
+            },
+          ]
         }
       >
         <Text
@@ -602,13 +606,17 @@ exports[`TabItem component tests active: label, icon, badge 1`] = `
     >
       <View
         style={
-          {
-            "backgroundColor": "#44e858",
-            "borderRadius": 100,
-            "height": 21,
-            "justifyContent": "center",
-            "paddingHorizontal": 7,
-          }
+          [
+            {
+              "backgroundColor": "#44e858",
+            },
+            {
+              "borderRadius": 100,
+              "height": 21,
+              "justifyContent": "center",
+              "paddingHorizontal": 7,
+            },
+          ]
         }
       >
         <Text
@@ -920,13 +928,17 @@ exports[`TabItem component tests disabled: label, badge 1`] = `
     >
       <View
         style={
-          {
-            "backgroundColor": "#44e858",
-            "borderRadius": 100,
-            "height": 21,
-            "justifyContent": "center",
-            "paddingHorizontal": 7,
-          }
+          [
+            {
+              "backgroundColor": "#44e858",
+            },
+            {
+              "borderRadius": 100,
+              "height": 21,
+              "justifyContent": "center",
+              "paddingHorizontal": 7,
+            },
+          ]
         }
       >
         <Text
@@ -1358,13 +1370,17 @@ exports[`TabItem component tests disabled: label, icon, badge 1`] = `
     >
       <View
         style={
-          {
-            "backgroundColor": "#44e858",
-            "borderRadius": 100,
-            "height": 21,
-            "justifyContent": "center",
-            "paddingHorizontal": 7,
-          }
+          [
+            {
+              "backgroundColor": "#44e858",
+            },
+            {
+              "borderRadius": 100,
+              "height": 21,
+              "justifyContent": "center",
+              "paddingHorizontal": 7,
+            },
+          ]
         }
       >
         <Text
@@ -1582,13 +1598,17 @@ exports[`TabItem component tests label, badge 1`] = `
     >
       <View
         style={
-          {
-            "backgroundColor": "#44e858",
-            "borderRadius": 100,
-            "height": 21,
-            "justifyContent": "center",
-            "paddingHorizontal": 7,
-          }
+          [
+            {
+              "backgroundColor": "#44e858",
+            },
+            {
+              "borderRadius": 100,
+              "height": 21,
+              "justifyContent": "center",
+              "paddingHorizontal": 7,
+            },
+          ]
         }
       >
         <Text
@@ -2010,13 +2030,17 @@ exports[`TabItem component tests label, icon, badge 1`] = `
     >
       <View
         style={
-          {
-            "backgroundColor": "#44e858",
-            "borderRadius": 100,
-            "height": 21,
-            "justifyContent": "center",
-            "paddingHorizontal": 7,
-          }
+          [
+            {
+              "backgroundColor": "#44e858",
+            },
+            {
+              "borderRadius": 100,
+              "height": 21,
+              "justifyContent": "center",
+              "paddingHorizontal": 7,
+            },
+          ]
         }
       >
         <Text
@@ -2447,13 +2471,17 @@ exports[`Tabs component tests disabled 1`] = `
       >
         <View
           style={
-            {
-              "backgroundColor": "#fbacaa",
-              "borderRadius": 100,
-              "height": 21,
-              "justifyContent": "center",
-              "paddingHorizontal": 7,
-            }
+            [
+              {
+                "backgroundColor": "#fbacaa",
+              },
+              {
+                "borderRadius": 100,
+                "height": 21,
+                "justifyContent": "center",
+                "paddingHorizontal": 7,
+              },
+            ]
           }
         >
           <Text
@@ -2901,13 +2929,17 @@ exports[`Tabs component tests normal 1`] = `
       >
         <View
           style={
-            {
-              "backgroundColor": "#fbacaa",
-              "borderRadius": 100,
-              "height": 21,
-              "justifyContent": "center",
-              "paddingHorizontal": 7,
-            }
+            [
+              {
+                "backgroundColor": "#fbacaa",
+              },
+              {
+                "borderRadius": 100,
+                "height": 21,
+                "justifyContent": "center",
+                "paddingHorizontal": 7,
+              },
+            ]
           }
         >
           <Text

@@ -51,7 +51,9 @@ const SvgUniversalRaw = memo<SvgUniversalProps>(({ source, ...rest }) => {
   return <Component testID={SvgUniversalTestId.component} {...rest} />
 })
 
-type SvgUniversalType = ForwardRefExoticComponent<
+// Аннотация нужна только чтобы `tsc --declaration` не тянул внутренние типы unistyles
+// (Mappings/UnistylesTheme) — они не экспортируются публично и ломают .d.ts.
+type SvgUniversalComponent = ForwardRefExoticComponent<
   PropsWithoutRef<
     Partial<SvgUniversalProps> & {
       uniProps?: (
@@ -62,12 +64,12 @@ type SvgUniversalType = ForwardRefExoticComponent<
       > & { key?: string }
     }
   > &
-    RefAttributes<never>
+    RefAttributes<unknown>
 >
 
-export const SvgUniversal: SvgUniversalType = withUnistyles(
+export const SvgUniversal = withUnistyles(
   SvgUniversalRaw
-) as SvgUniversalType
+) as unknown as SvgUniversalComponent
 
 export const SvgUniversalTestId = {
   component: 'SvgUniversalComponent',

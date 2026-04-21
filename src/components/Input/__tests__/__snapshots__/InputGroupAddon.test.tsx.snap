@@ -34,7 +34,7 @@ exports[`InputGroup component tests content: icon, position: right 1`] = `
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="currentColor"
+    stroke="#85888e"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -43,11 +43,6 @@ exports[`InputGroup component tests content: icon, position: right 1`] = `
         {
           "backgroundColor": "transparent",
           "borderWidth": 0,
-        },
-        {
-          "color": "#85888e",
-          "height": 14,
-          "width": 14,
         },
         {
           "flex": 0,
@@ -63,7 +58,6 @@ exports[`InputGroup component tests content: icon, position: right 1`] = `
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
-      color="#85888e"
       fill={null}
       propList={
         [
@@ -76,7 +70,8 @@ exports[`InputGroup component tests content: icon, position: right 1`] = `
       }
       stroke={
         {
-          "type": 2,
+          "payload": 4286941326,
+          "type": 0,
         }
       }
       strokeLinecap={1}
@@ -84,7 +79,6 @@ exports[`InputGroup component tests content: icon, position: right 1`] = `
       strokeWidth={2}
     >
       <RNSVGPath
-        color="#85888e"
         d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
         fill={null}
         propList={
@@ -98,7 +92,8 @@ exports[`InputGroup component tests content: icon, position: right 1`] = `
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4286941326,
+            "type": 0,
           }
         }
         strokeLinecap={1}
@@ -107,7 +102,6 @@ exports[`InputGroup component tests content: icon, position: right 1`] = `
         testID="SvgUniversalComponent"
       />
       <RNSVGPath
-        color="#85888e"
         d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
         fill={null}
         propList={
@@ -121,7 +115,8 @@ exports[`InputGroup component tests content: icon, position: right 1`] = `
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4286941326,
+            "type": 0,
           }
         }
         strokeLinecap={1}

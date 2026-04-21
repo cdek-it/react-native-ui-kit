@@ -295,7 +295,7 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="currentColor"
+      stroke="#85888e"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -304,11 +304,6 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
           {
             "backgroundColor": "transparent",
             "borderWidth": 0,
-          },
-          {
-            "color": "#85888e",
-            "height": 14,
-            "width": 14,
           },
           {
             "flex": 0,
@@ -324,7 +319,6 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
-        color="#85888e"
         fill={null}
         propList={
           [
@@ -337,7 +331,8 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4286941326,
+            "type": 0,
           }
         }
         strokeLinecap={1}
@@ -345,7 +340,6 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
         strokeWidth={2}
       >
         <RNSVGPath
-          color="#85888e"
           d="M5 12l5 5l10 -10"
           fill={null}
           propList={
@@ -359,7 +353,8 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
           }
           stroke={
             {
-              "type": 2,
+              "payload": 4286941326,
+              "type": 0,
             }
           }
           strokeLinecap={1}
@@ -493,7 +488,7 @@ exports[`Divider {"Icon": [Object], "align": "start", "layout": "horizontal", "s
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="currentColor"
+      stroke="#85888e"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -502,11 +497,6 @@ exports[`Divider {"Icon": [Object], "align": "start", "layout": "horizontal", "s
           {
             "backgroundColor": "transparent",
             "borderWidth": 0,
-          },
-          {
-            "color": "#85888e",
-            "height": 14,
-            "width": 14,
           },
           {
             "flex": 0,
@@ -522,7 +512,6 @@ exports[`Divider {"Icon": [Object], "align": "start", "layout": "horizontal", "s
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
-        color="#85888e"
         fill={null}
         propList={
           [
@@ -535,7 +524,8 @@ exports[`Divider {"Icon": [Object], "align": "start", "layout": "horizontal", "s
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4286941326,
+            "type": 0,
           }
         }
         strokeLinecap={1}
@@ -543,7 +533,6 @@ exports[`Divider {"Icon": [Object], "align": "start", "layout": "horizontal", "s
         strokeWidth={2}
       >
         <RNSVGPath
-          color="#85888e"
           d="M5 12l5 5l10 -10"
           fill={null}
           propList={
@@ -557,7 +546,8 @@ exports[`Divider {"Icon": [Object], "align": "start", "layout": "horizontal", "s
           }
           stroke={
             {
-              "type": 2,
+              "payload": 4286941326,
+              "type": 0,
             }
           }
           strokeLinecap={1}
