@@ -50,15 +50,8 @@ export type BadgeProps = BadgeText | BadgeDot
  * @param style - Дополнительная стилизация для контейнера компонента
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4871&m=dev
  */
-export const Badge = memo(
-  ({
-    children,
-    dot,
-    severity = 'basic',
-    style,
-    testID,
-    ...rest
-  }: BadgeProps) => {
+export const Badge = memo<BadgeProps>(
+  ({ children, dot, severity = 'basic', style, testID, ...rest }) => {
     badgeStyles.useVariants({ severity })
     const [textLayout, setTextLayout] = useState<LayoutRectangle>()
 

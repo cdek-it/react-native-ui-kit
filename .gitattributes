@@ -3,3 +3,7 @@
 /.yarn/plugins/**/*  binary
 /.pnp.*              binary linguist-generated
 *.pbxproj -text
+
+**/*.snap              linguist-generated
+yarn.lock              linguist-generated
+ios/Podfile.lock       linguist-generated

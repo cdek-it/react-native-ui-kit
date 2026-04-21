@@ -15,34 +15,28 @@ import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
 export interface TagProps
   extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Текст */
-  readonly text: string
+  text: string
 
   /** true, если необходимо полное скругление углов компонента */
-  readonly rounded?: boolean
+  rounded?: boolean
 
   /**
    *  Выбор варианта стиля компонента
    *  @default 'basic'
    */
-  readonly severity?:
-    | 'basic'
-    | 'info'
-    | 'success'
-    | 'warning'
-    | 'danger'
-    | 'secondary'
+  severity?: 'basic' | 'info' | 'success' | 'warning' | 'danger' | 'secondary'
 
   /**
    * Показать или скрыть иконку внутри компонента
    * @default true
    */
-  readonly showIcon?: boolean
+  showIcon?: boolean
 
   /** Дополнительная стилизация для контейнера компонента */
-  readonly style?: StyleProp<ViewStyle>
+  style?: StyleProp<ViewStyle>
 
   /** SVG-иконка */
-  readonly Icon?: SvgSource
+  Icon?: SvgSource
 }
 
 type TagSeverity = NonNullable<TagProps['severity']>
@@ -60,7 +54,7 @@ const tagIconColor: Record<TagSeverity, (t: ThemeType['theme']) => string> = {
  * Используется для маркировки элементов интерфейса
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4921
  */
-export const Tag = memo(
+export const Tag = memo<TagProps>(
   ({
     text,
     rounded,
@@ -70,7 +64,7 @@ export const Tag = memo(
     Icon,
     testID,
     ...rest
-  }: TagProps) => {
+  }) => {
     tagStyles.useVariants({ severity })
 
     return (

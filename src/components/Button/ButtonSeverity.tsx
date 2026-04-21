@@ -23,21 +23,17 @@ import { ButtonVariantContext } from './utils/ButtonVariantContext'
  * @param severity - severity button styling variant
  * @see BaseButton
  */
-export const ButtonSeverity = memo(
-  ({
-    severity,
-    variant = 'basic',
-    ...props
-  }: ButtonProps<ButtonSeverityVariant> & ButtonSeverityProps) => {
-    const variantContextValue = useMemo(
-      () => ({ variant, severity }),
-      [severity, variant]
-    )
+export const ButtonSeverity = memo<
+  ButtonProps<ButtonSeverityVariant> & ButtonSeverityProps
+>(({ severity, variant = 'basic', ...props }) => {
+  const variantContextValue = useMemo(
+    () => ({ variant, severity }),
+    [severity, variant]
+  )
 
-    return (
-      <ButtonVariantContext.Provider value={variantContextValue}>
-        <BaseButton variant={variant} {...props} />
-      </ButtonVariantContext.Provider>
-    )
-  }
-)
+  return (
+    <ButtonVariantContext.Provider value={variantContextValue}>
+      <BaseButton variant={variant} {...props} />
+    </ButtonVariantContext.Provider>
+  )
+})

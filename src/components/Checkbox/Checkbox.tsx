@@ -15,31 +15,31 @@ type CheckboxState = 'default' | 'danger'
 export interface CheckboxProps
   extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Обработчик нажатия на чекбокс */
-  readonly onPress: () => void
+  onPress: () => void
   /**
    * true, если необходим компонент в активном состоянии
    * @default false
    */
-  readonly checked?: boolean
+  checked?: boolean
   /**
    * true, если необходим компонент в неопределенном состоянии
    * @default false
    */
-  readonly indeterminate?: boolean
+  indeterminate?: boolean
   /**
    * Управление доступностью компонента
    * @default false
    */
-  readonly disabled?: boolean
+  disabled?: boolean
   /** Выбор состояния компонента */
-  readonly state: CheckboxState
+  state: CheckboxState
 }
 
 /**
  * Используется для множественного выбора элементов
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5316
  */
-export const Checkbox = memo(
+export const Checkbox = memo<CheckboxProps>(
   ({
     onPress,
     checked = false,
@@ -47,7 +47,7 @@ export const Checkbox = memo(
     indeterminate = false,
     testID,
     state,
-  }: CheckboxProps) => {
+  }) => {
     const [isPressed, setIsPressed] = useState(false)
 
     const filled = checked || indeterminate

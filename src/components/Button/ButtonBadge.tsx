@@ -29,63 +29,58 @@ import { ButtonVariantContext } from './utils/ButtonVariantContext'
  * @param badgeLabel - text label inside badge
  * @see BaseButton
  */
-export const ButtonBadge = memo(
-  ({
-    badgeLabel,
-    badgeSeverity,
-    variant = 'primary',
-    ...props
-  }: ButtonProps<ButtonBaseVariant> & ButtonBadgeProps) => {
-    const [badgeLayout, setBadgeLayout] = useState<LayoutRectangle>()
-    const variantContextValue = useMemo(() => ({ variant }), [variant])
+export const ButtonBadge = memo<
+  ButtonProps<ButtonBaseVariant> & ButtonBadgeProps
+>(({ badgeLabel, badgeSeverity, variant = 'primary', ...props }) => {
+  const [badgeLayout, setBadgeLayout] = useState<LayoutRectangle>()
+  const variantContextValue = useMemo(() => ({ variant }), [variant])
 
-    const badgeContainerStyle = useMemo<ViewStyle>(
-      () => ({
-        position: 'absolute',
-        top: badgeLayout ? -Math.round(badgeLayout.height / 2) : 0,
-        right: badgeLayout ? -Math.round(badgeLayout.width / 2) : 0,
-      }),
-      [badgeLayout]
-    )
+  const badgeContainerStyle = useMemo<ViewStyle>(
+    () => ({
+      position: 'absolute',
+      top: badgeLayout ? -Math.round(badgeLayout.height / 2) : 0,
+      right: badgeLayout ? -Math.round(badgeLayout.width / 2) : 0,
+    }),
+    [badgeLayout]
+  )
 
-    const onLayout = useCallback(
-      (e: LayoutChangeEvent) => setBadgeLayout(e.nativeEvent.layout),
-      []
-    )
+  const onLayout = useCallback(
+    (e: LayoutChangeEvent) => setBadgeLayout(e.nativeEvent.layout),
+    []
+  )
 
-    const badgeCommonProps = useMemo(
-      () => ({ severity: badgeSeverity, testID: ButtonBadgeTestId.badge }),
-      [badgeSeverity]
-    )
+  const badgeCommonProps = useMemo(
+    () => ({ severity: badgeSeverity, testID: ButtonBadgeTestId.badge }),
+    [badgeSeverity]
+  )
 
-    return (
-      <ButtonVariantContext.Provider value={variantContextValue}>
-        <View style={styles.root}>
-          <View
-            style={[
-              styles.contentContainer,
-              props.iconOnly && styles.iconOnlyContainer,
-            ]}
-          >
-            <BaseButton variant={variant} {...props} />
+  return (
+    <ButtonVariantContext.Provider value={variantContextValue}>
+      <View style={styles.root}>
+        <View
+          style={[
+            styles.contentContainer,
+            props.iconOnly && styles.iconOnlyContainer,
+          ]}
+        >
+          <BaseButton variant={variant} {...props} />
 
-            {badgeLabel ? (
-              <Badge
-                {...badgeCommonProps}
-                style={badgeContainerStyle}
-                onLayout={onLayout}
-              >
-                {badgeLabel}
-              </Badge>
-            ) : (
-              <Badge {...badgeCommonProps} dot style={styles.badgeDot} />
-            )}
-          </View>
+          {badgeLabel ? (
+            <Badge
+              {...badgeCommonProps}
+              style={badgeContainerStyle}
+              onLayout={onLayout}
+            >
+              {badgeLabel}
+            </Badge>
+          ) : (
+            <Badge {...badgeCommonProps} dot style={styles.badgeDot} />
+          )}
         </View>
-      </ButtonVariantContext.Provider>
-    )
-  }
-)
+      </View>
+    </ButtonVariantContext.Provider>
+  )
+})
 
 const styles = StyleSheet.create(() => ({
   root: { flexDirection: 'row' },

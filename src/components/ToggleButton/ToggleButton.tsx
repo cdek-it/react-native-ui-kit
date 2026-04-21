@@ -15,42 +15,42 @@ import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
 export interface ToggleButtonProps
   extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Обработчик нажатия на кнопку */
-  readonly onPress: () => void
+  onPress: () => void
   /**
    * true, если необходим компонент в активном состоянии
    * @default false
    */
-  readonly checked?: boolean
+  checked?: boolean
   /**
    * Управление доступностью компонента
    * @default false
    */
-  readonly disabled?: boolean
+  disabled?: boolean
   /** Отображение только иконки без текста */
-  readonly iconOnly?: boolean
+  iconOnly?: boolean
   /**
    * Выбор позиции иконки. 'left' - иконка слева, 'right' - иконка справа, null - иконка скрыта
    * @default 'left'
    */
-  readonly iconPos?: 'left' | 'right' | null
+  iconPos?: 'left' | 'right' | null
   /** Текст на кнопке */
-  readonly label?: string
+  label?: string
   /**
    * Выбор размера элемента
    * @default 'base'
    */
-  readonly size?: 'xlarge' | 'large' | 'base' | 'small'
+  size?: 'xlarge' | 'large' | 'base' | 'small'
   /** Дополнительная стилизация для контейнера компонента */
-  readonly style?: StyleProp<ViewStyle>
+  style?: StyleProp<ViewStyle>
   /** SVG-иконка */
-  readonly Icon?: SvgSource
+  Icon?: SvgSource
 }
 
 /**
  * Используется для выбора нескольких значений с помощью кнопки
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4821
  */
-export const ToggleButton = memo(
+export const ToggleButton = memo<ToggleButtonProps>(
   ({
     onPress,
     checked = false,
@@ -63,7 +63,7 @@ export const ToggleButton = memo(
     Icon,
     testID,
     ...rest
-  }: ToggleButtonProps) => {
+  }) => {
     const [pressed, setPressed] = useState(false)
 
     toggleStyles.useVariants({

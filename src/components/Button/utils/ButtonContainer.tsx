@@ -1,6 +1,3 @@
-/* eslint-disable max-lines */
-/* eslint-disable max-lines-per-function */
-
 import { type ReactNode, useContext } from 'react'
 import { Pressable, type PressableStateCallbackType } from 'react-native'
 
@@ -11,7 +8,7 @@ import type { BaseButtonProps, ButtonShape, ButtonSize } from '../types'
 import { ButtonPressedContext } from './ButtonPressedContext'
 import { ButtonVariantContext } from './ButtonVariantContext'
 
-export interface ButtonContainerProps {
+export interface ButtonContainerComponentProps {
   readonly size: ButtonSize
   readonly shape: ButtonShape
   readonly disabled: boolean
@@ -37,7 +34,7 @@ const ButtonContainerComponent = ({
   onPressIn,
   onPressOut,
   ...props
-}: ButtonContainerProps) => {
+}: ButtonContainerComponentProps) => {
   const pressed = useContext(ButtonPressedContext)
   const { variant, severity } = useContext(ButtonVariantContext)
 
