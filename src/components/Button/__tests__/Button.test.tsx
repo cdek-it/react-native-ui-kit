@@ -34,7 +34,7 @@ describe('Button component tests', () => {
     'Button with icon on left, size - $size, shape - $shape, variant - $variant, loading - $loading, disabled - $disabled',
     (props) => {
       const renderedButton = render(
-        <Button Icon={IconArrowDownRight} iconPosition='left' {...props} />
+        <Button Icon={IconArrowDownRight} iconPosition='prefix' {...props} />
       )
 
       expect(renderedButton.toJSON()).toMatchSnapshot()
@@ -45,7 +45,7 @@ describe('Button component tests', () => {
     'Button with icon on right, size - $size, shape - $shape, variant - $variant, loading - $loading, disabled - $disabled',
     (props) => {
       const renderedButton = render(
-        <Button Icon={IconArrowDownRight} iconPosition='right' {...props} />
+        <Button Icon={IconArrowDownRight} iconPosition='postfix' {...props} />
       )
 
       expect(renderedButton.toJSON()).toMatchSnapshot()

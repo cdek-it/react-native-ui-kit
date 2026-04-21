@@ -1,8 +1,8 @@
 /**
  * ESLint правила для unistyles
  *
- * Этот файл переиспортирует конфиг из папки unistyles/.
+ * Этот файл реэкспортирует конфиг из папки unistyles/.
  * Полная документация и реализация в configs/eslint/rules/unistyles/
  */
 
-export { unistylesConfig } from './unistyles/index'
+export { unistylesPlugin, unistylesConfig } from './unistyles/index'

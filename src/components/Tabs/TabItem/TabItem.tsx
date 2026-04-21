@@ -1,4 +1,4 @@
-import { memo, useCallback, type ReactNode } from 'react'
+import { memo, type ReactNode } from 'react'
 import { Text, Pressable, View, type ViewProps } from 'react-native'
 
 import { StyleSheet } from '../../../utils'
@@ -34,25 +34,6 @@ export interface TabItemProps {
 //
 export const TabItem = memo<TabItemProps>(
   ({ Icon, label, badge, index, onPress, disabled, active, onLayout }) => {
-    const getIconColor = useCallback(
-      (pressed: boolean) => {
-        if (disabled) {
-          return styles.disabledIcon.color
-        }
-
-        if (pressed) {
-          return styles.pressedIcon.color
-        }
-
-        if (active) {
-          return styles.activeIcon.color
-        }
-
-        return styles.icon.color
-      },
-      [disabled, active]
-    )
-
     return (
       <Pressable
         accessibilityRole='button'
@@ -72,10 +53,17 @@ export const TabItem = memo<TabItemProps>(
           >
             {Icon ? (
               <SvgUniversal
-                color={getIconColor(pressed)}
-                height={styles.icon.height}
+                {...styles.icon}
                 source={Icon}
-                width={styles.icon.width}
+                uniProps={({ theme }) => ({
+                  color: disabled
+                    ? theme.Button.Disabled.disabledButtonTextColor
+                    : pressed
+                      ? theme.Panel.TabView.tabviewHeaderHoverTextColor
+                      : active
+                        ? theme.Panel.TabView.tabviewHeaderActiveTextColor
+                        : theme.Panel.TabView.tabviewHeaderTextColor,
+                })}
               />
             ) : null}
             <Text
@@ -121,11 +109,7 @@ const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
   icon: {
     width: theme.Menu.Item.menuitemSubmenuIconFontSize,
     height: theme.Menu.Item.menuitemSubmenuIconFontSize,
-    color: theme.Panel.TabView.tabviewHeaderTextColor,
   },
-  pressedIcon: { color: theme.Panel.TabView.tabviewHeaderHoverTextColor },
-  activeIcon: { color: theme.Panel.TabView.tabviewHeaderActiveTextColor },
-  disabledIcon: { color: theme.Button.Disabled.disabledButtonTextColor },
   text: {
     fontFamily: fonts.primary,
     fontSize: typography.Size['text-base'],

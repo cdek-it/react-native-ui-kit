@@ -19,7 +19,7 @@ const ButtonLeftAreaComponent = ({
   loading,
   disabled,
 }: ButtonLeftAreaProps) => {
-  if (iconPosition === 'left' || iconPosition === 'prefix') {
+  if (iconPosition === 'prefix') {
     if (loading && !disabled) {
       return <ButtonActivityIndicator size={size} />
     }

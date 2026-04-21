@@ -1,6 +1,9 @@
 import { IconX } from '@tabler/icons-react-native'
 import { memo } from 'react'
+
 import { Text, Pressable, type PressableProps } from 'react-native'
+
+import type { ThemeType } from '../../theme/types'
 
 import { StyleSheet } from '../../utils'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
@@ -40,6 +43,12 @@ export const Chip = memo<ChipProps>(
     showIcon = true,
     ...rest
   }) => {
+    const iconUniProps = ({ theme }: ThemeType) => ({
+      color: disabled
+        ? theme.Button.Disabled.disabledButtonTextColor
+        : theme.Misc.Chip.chipTextColor,
+    })
+
     return (
       <Pressable
         {...rest}
@@ -49,10 +58,9 @@ export const Chip = memo<ChipProps>(
       >
         {showIcon && Icon ? (
           <SvgUniversal
-            color={disabled ? styles.disabledIcon.color : styles.icon.color}
-            height={styles.icon.height}
+            {...styles.icon}
             source={Icon}
-            width={styles.icon.width}
+            uniProps={iconUniProps}
           />
         ) : null}
 
@@ -71,11 +79,14 @@ export const Chip = memo<ChipProps>(
           >
             {({ pressed }) => (
               <SvgUniversal
-                color={disabled ? styles.disabledIcon.color : styles.icon.color}
-                height={styles.icon.height}
+                {...styles.icon}
                 source={IconX}
                 style={pressed ? styles.pressedClose : null}
-                width={styles.icon.width}
+                uniProps={({ theme }) => ({
+                  color: disabled
+                    ? theme.Button.Disabled.disabledButtonTextColor
+                    : theme.Misc.Chip.chipTextColor,
+                })}
               />
             )}
           </Pressable>
@@ -112,9 +123,7 @@ const styles = StyleSheet.create(({ theme, typography, border, fonts }) => ({
   icon: {
     width: typography.Size['text-base'],
     height: typography.Size['text-base'],
-    color: theme.Misc.Chip.chipTextColor,
   },
-  disabledIcon: { color: theme.Button.Disabled.disabledButtonTextColor },
   text: {
     fontSize: typography.Size['text-base'],
     verticalAlign: 'middle',

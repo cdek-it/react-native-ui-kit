@@ -8,6 +8,8 @@ import {
 import { SvgUri, SvgXml, type SvgProps } from 'react-native-svg'
 import { withUnistyles } from 'react-native-unistyles'
 
+import type { ThemeType } from '../theme/types'
+
 export type SvgSource =
   | { uri: string }
   | { xml: string }
@@ -49,11 +51,11 @@ const SvgUniversalRaw = memo<SvgUniversalProps>(({ source, ...rest }) => {
   return <Component testID={SvgUniversalTestId.component} {...rest} />
 })
 
-type SvgUniversalWithUnistyles = ForwardRefExoticComponent<
+type SvgUniversalType = ForwardRefExoticComponent<
   PropsWithoutRef<
     Partial<SvgUniversalProps> & {
       uniProps?: (
-        ...args: unknown[]
+        theme: ThemeType
       ) => Omit<
         Partial<SvgUniversalProps>,
         'style' | 'contentContainerStyle'
@@ -63,8 +65,9 @@ type SvgUniversalWithUnistyles = ForwardRefExoticComponent<
     RefAttributes<never>
 >
 
-export const SvgUniversal: SvgUniversalWithUnistyles =
-  withUnistyles(SvgUniversalRaw)
+export const SvgUniversal: SvgUniversalType = withUnistyles(
+  SvgUniversalRaw
+) as SvgUniversalType
 
 export const SvgUniversalTestId = {
   component: 'SvgUniversalComponent',

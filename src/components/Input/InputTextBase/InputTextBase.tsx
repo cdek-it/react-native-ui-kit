@@ -7,6 +7,7 @@ import {
   IconLock,
   IconX,
 } from '@tabler/icons-react-native'
+
 import {
   memo,
   useCallback,
@@ -35,6 +36,7 @@ import Animated, {
 
 import { useLoadingRotationAnimation } from '../../../hooks/useLoadingRotationAnimation'
 import { useMakeTestId } from '../../../hooks/useMakeTestId'
+import type { ThemeType } from '../../../theme/types'
 import { SvgUniversal } from '../../../utils/SvgUniversal'
 
 import { InputTextBaseTestId } from './testIds'
@@ -50,10 +52,14 @@ interface PrivateInputTextBaseProps {
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5470&m=dev
  * @see InputText
  */
+const inputIconUniProps = ({ theme }: ThemeType) => ({
+  color: theme.Form.InputText.inputIconColor,
+})
+
 export const InputTextBase = memo<
   InputTextBaseProps & PrivateInputTextBaseProps
 >(
-  // eslint-disable-next-line max-lines-per-function
+  // eslint-disable-next-line max-lines-per-function, max-statements
   ({
     state,
     clearable = true,
@@ -330,10 +336,9 @@ export const InputTextBase = memo<
                 testID={makeTestId(InputTextBaseTestId.loading)}
               >
                 <SvgUniversal
-                  color={styles.rightIcon.color}
-                  height={iconSize.height}
+                  {...iconSize}
                   source={IconLoader2}
-                  width={iconSize.width}
+                  uniProps={inputIconUniProps}
                 />
               </Animated.View>
             ) : null}
@@ -347,10 +352,9 @@ export const InputTextBase = memo<
                 onPress={clear}
               >
                 <SvgUniversal
-                  color={styles.rightIcon.color}
-                  height={iconSize.height}
+                  {...iconSize}
                   source={IconX}
-                  width={iconSize.width}
+                  uniProps={inputIconUniProps}
                 />
               </TouchableOpacity>
             ) : null}
@@ -363,21 +367,19 @@ export const InputTextBase = memo<
                 onPress={toggleUserDefinedSecureTextEntry}
               >
                 <SvgUniversal
-                  color={styles.rightIcon.color}
-                  height={iconSize.height}
+                  {...iconSize}
                   source={userDefinedSecureTextEntry ? IconEye : IconEyeOff}
-                  width={iconSize.width}
+                  uniProps={inputIconUniProps}
                 />
               </TouchableOpacity>
             ) : null}
 
             {disabled ? (
               <SvgUniversal
-                color={styles.rightIcon.color}
-                height={iconSize.height}
+                {...iconSize}
                 source={IconLock}
                 testID={makeTestId(InputTextBaseTestId.disabledIcon)}
-                width={iconSize.width}
+                uniProps={inputIconUniProps}
               />
             ) : null}
           </View>

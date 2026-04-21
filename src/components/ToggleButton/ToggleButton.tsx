@@ -80,11 +80,9 @@ export const ToggleButton = memo(
 
     const icon = Icon ? (
       <SvgUniversal
-        color={toggleStyles.icon.color}
-        height={toggleStyles.icon.height}
+        {...toggleStyles.icon}
         source={Icon}
         testID={ToggleButtonTestId.icon}
-        width={toggleStyles.icon.width}
       />
     ) : null
 

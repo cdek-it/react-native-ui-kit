@@ -36,30 +36,31 @@ export const RatingItem = memo<RatingItemProps>(({ checked, ...rest }) => {
     <RatingItemContainer {...rest}>
       {({ pressed, disabled }) => (
         <SvgUniversal
-          color={
-            disabled
-              ? checked
-                ? styles.iconCheckedDisabled.color
-                : styles.iconDisabled.color
-              : pressed
-                ? styles.iconPressed.color
-                : checked
-                  ? styles.iconChecked.color
-                  : styles.icon.color
-          }
-          fill={
-            checked
-              ? disabled
-                ? styles.iconCheckedDisabled.color
-                : pressed
-                  ? styles.iconPressed.color
-                  : styles.iconChecked.color
-              : undefined
-          }
+          {...styles.icon}
           fillOpacity={checked ? 1 : 0}
-          height={styles.icon.height}
           source={Icon}
-          width={styles.icon.width}
+          uniProps={({ theme }) => {
+            const color = disabled
+              ? checked
+                ? theme.custom.rating.ratingStarIconOnDisabledColor
+                : theme.custom.rating.ratingStarIconOffDisabledColor
+              : pressed
+                ? theme.Form.Rating.ratingStarIconHoverColor
+                : checked
+                  ? theme.Form.Rating.ratingStarIconOnColor
+                  : theme.Form.Rating.ratingStarIconOffColor
+
+            return {
+              color,
+              fill: checked
+                ? disabled
+                  ? theme.custom.rating.ratingStarIconOnDisabledColor
+                  : pressed
+                    ? theme.Form.Rating.ratingStarIconHoverColor
+                    : theme.Form.Rating.ratingStarIconOnColor
+                : undefined,
+            }
+          }}
         />
       )}
     </RatingItemContainer>
@@ -70,16 +71,5 @@ const styles = StyleSheet.create(({ theme }) => ({
   icon: {
     height: theme.Form.Rating.ratingIconFontSize,
     width: theme.Form.Rating.ratingIconFontSize,
-    color: theme.Form.Rating.ratingStarIconOffColor,
-  },
-
-  iconPressed: { color: theme.Form.Rating.ratingStarIconHoverColor },
-
-  iconChecked: { color: theme.Form.Rating.ratingStarIconOnColor },
-
-  iconDisabled: { color: theme.custom.rating.ratingStarIconOffDisabledColor },
-
-  iconCheckedDisabled: {
-    color: theme.custom.rating.ratingStarIconOnDisabledColor,
   },
 }))

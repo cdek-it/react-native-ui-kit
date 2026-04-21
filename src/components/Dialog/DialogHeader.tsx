@@ -42,10 +42,17 @@ export const DialogHeader = ({
 
     return (
       <SvgUniversal
-        color={styles[severity].color}
-        height={styles.severityIcon.height}
+        {...styles.severityIcon}
         source={source}
-        width={styles.severityIcon.width}
+        uniProps={({ typography: t }) => ({
+          color: {
+            danger: t.Color.Service['text-danger'],
+            warning: t.Color.Service['text-warning'],
+            info: t.Color.Service['text-info'],
+            success: t.Color.Service['text-success'],
+            help: t.Color.Service['text-help'],
+          }[severity],
+        })}
       />
     )
   }, [severity])
@@ -64,10 +71,11 @@ export const DialogHeader = ({
             onPress={onClose}
           >
             <SvgUniversal
-              color={styles.closeIcon.color}
-              height={styles.closeIcon.height}
+              {...styles.closeIcon}
               source={IconX}
-              width={styles.closeIcon.width}
+              uniProps={({ theme }) => ({
+                color: theme.General.actionIconColor,
+              })}
             />
           </TouchableOpacity>
         ) : null}
@@ -95,17 +103,11 @@ const styles = StyleSheet.create(({ theme, spacing, typography, border }) => ({
   closeIcon: {
     width: typography.Size['text-base'],
     height: typography.Size['text-base'],
-    color: theme.General.actionIconColor,
   },
   severityIcon: {
     width: typography.Size['text-2xl'],
     height: typography.Size['text-2xl'],
   },
-  danger: { color: typography.Color.Service['text-danger'] },
-  warning: { color: typography.Color.Service['text-warning'] },
-  info: { color: typography.Color.Service['text-info'] },
-  success: { color: typography.Color.Service['text-success'] },
-  help: { color: typography.Color.Service['text-help'] },
 }))
 
 export const DialogHeaderTestId = {

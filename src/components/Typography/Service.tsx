@@ -41,37 +41,42 @@ export const Service = ({
   Icon: IconFromProps,
   ...other
 }: ServiceProps) => {
-  const { Icon, variantStyle, iconSize, textStyles, containerStyle } =
-    useMemo(() => {
-      const iconMap = {
-        danger: { Icon: IconCircleX, style: styles.danger },
-        warning: { Icon: IconAlertTriangle, style: styles.warning },
-        success: { Icon: IconCircleCheck, style: styles.success },
-        info: { Icon: IconInfoCircle, style: styles.info },
-        help: { Icon: IconHelpCircle, style: styles.help },
-      }
+  const { Icon, iconSize, textStyles, containerStyle } = useMemo(() => {
+    const iconMap = {
+      danger: { Icon: IconCircleX, style: styles.danger },
+      warning: { Icon: IconAlertTriangle, style: styles.warning },
+      success: { Icon: IconCircleCheck, style: styles.success },
+      info: { Icon: IconInfoCircle, style: styles.info },
+      help: { Icon: IconHelpCircle, style: styles.help },
+    }
 
-      return {
-        Icon: IconFromProps || iconMap[variant]?.Icon || IconInfoCircle,
-        variantStyle: iconMap[variant]?.style || styles.info,
-        iconSize: base ? styles.iconBase : styles.icon,
-        textStyles: [
-          styles.textCommon,
-          base ? styles.textBase : styles.text,
-          iconMap[variant]?.style || styles.info,
-        ],
-        containerStyle: base ? styles.containerBase : styles.container,
-      }
-    }, [variant, base, IconFromProps])
+    return {
+      Icon: IconFromProps || iconMap[variant]?.Icon || IconInfoCircle,
+      iconSize: base ? styles.iconBase : styles.icon,
+      textStyles: [
+        styles.textCommon,
+        base ? styles.textBase : styles.text,
+        iconMap[variant]?.style || styles.info,
+      ],
+      containerStyle: base ? styles.containerBase : styles.container,
+    }
+  }, [variant, base, IconFromProps])
 
   return (
     <View style={containerStyle}>
       {showIcon ? (
         <SvgUniversal
-          color={variantStyle.color}
-          height={iconSize.height}
+          {...iconSize}
           source={Icon}
-          width={iconSize.width}
+          uniProps={({ typography: t }) => ({
+            color: {
+              danger: t.Color.Service['text-danger'],
+              warning: t.Color.Service['text-warning'],
+              success: t.Color.Service['text-success'],
+              info: t.Color.Service['text-info'],
+              help: t.Color.Service['text-help'],
+            }[variant],
+          })}
         />
       ) : null}
       <Text style={textStyles} {...other} />

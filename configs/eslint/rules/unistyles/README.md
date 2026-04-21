@@ -200,7 +200,58 @@ useAnimatedStyle(() => ({ color }))
 
 ---
 
-## Использование
+## Подключение в проекте-потребителе
+
+Правила экспортируются из пакета через subpath `@cdek-it/react-native-ui-kit/eslint`.
+Требуется ESLint ≥ 9 (flat config).
+
+### 1. Подключи плагин в `eslint.config.mjs`
+
+```js
+// eslint.config.mjs
+import { unistylesPlugin } from '@cdek-it/react-native-ui-kit/eslint'
+
+export default [
+  {
+    files: ['src/**/*.{ts,tsx}'],  // ← укажи свои пути
+    plugins: { unistyles: unistylesPlugin },
+    rules: {
+      'unistyles/no-spread-unistyles': 'error',
+      'unistyles/no-unistyles-in-worklet': 'error',
+      'unistyles/no-spread-icon-styles': 'warn',
+    },
+  },
+]
+```
+
+Если уже используешь `defineConfig`:
+
+```js
+import { defineConfig } from 'eslint/config'
+import { unistylesPlugin } from '@cdek-it/react-native-ui-kit/eslint'
+
+export default defineConfig([
+  {
+    files: ['src/**/*.{ts,tsx}'],
+    plugins: { unistyles: unistylesPlugin },
+    rules: {
+      'unistyles/no-spread-unistyles': 'error',
+      'unistyles/no-unistyles-in-worklet': 'error',
+      'unistyles/no-spread-icon-styles': 'warn',
+    },
+  },
+])
+```
+
+### 2. Проверь, что всё работает
+
+```bash
+npx eslint src/
+```
+
+---
+
+## Использование (внутри репозитория UI kit)
 
 Правила автоматически включены в конфиг ESLint для всех файлов в
 `src/**/*.{ts,tsx}`.

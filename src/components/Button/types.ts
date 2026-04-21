@@ -14,13 +14,7 @@ export type ButtonSeverityVariant = 'basic' | 'outlined' | 'text'
 export type ButtonVariant = ButtonBaseVariant | ButtonSeverityVariant
 export type ButtonSize = 'xlarge' | 'large' | 'base' | 'small'
 export type ButtonShape = 'square' | 'circle'
-export type ButtonIconPosition =
-  /** @deprecated */
-  | 'left'
-  /** @deprecated */
-  | 'right'
-  | 'prefix'
-  | 'postfix'
+export type ButtonIconPosition = 'prefix' | 'postfix'
 
 export interface BaseButtonProps<
   Variant extends ButtonVariant,
@@ -46,9 +40,6 @@ export interface BaseButtonProps<
   variant?: Variant
   /**
    * Icon position
-   *
-   * Важно: значения left и right - deprecated!!! Используйте prefix и postfix
-   *
    * @default 'prefix'
    */
   iconPosition?: ButtonIconPosition

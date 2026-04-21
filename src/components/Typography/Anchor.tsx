@@ -1,4 +1,5 @@
 import { Fragment, memo, useCallback, useMemo, useState } from 'react'
+
 import {
   Pressable,
   type StyleProp,
@@ -7,6 +8,8 @@ import {
   type TextStyle,
   View,
 } from 'react-native'
+
+import type { ThemeType } from '../../theme/types'
 
 import { StyleSheet } from '../../utils'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
@@ -63,12 +66,12 @@ export const Anchor = memo(
       return { style: styles.container, testID: testID || AnchorTestId.root }
     }, [noWrapper, testID])
 
-    const iconColor = useMemo(
-      () => (visited ? styles.visited.color : styles.text.color),
-      [visited]
-    )
-    const iconWidth = base ? styles.iconBase.width : styles.icon.width
-    const iconHeight = base ? styles.iconBase.height : styles.icon.height
+    const iconSize = base ? styles.iconBase : styles.icon
+    const iconUniProps = ({ typography: t }: ThemeType) => ({
+      color: visited
+        ? t.Color.Service['text-help']
+        : t.Color.Service['text-info'],
+    })
 
     return (
       <Wrapper {...containerProps}>
@@ -81,11 +84,10 @@ export const Anchor = memo(
             onPressOut={onPressOut}
           >
             <SvgUniversal
-              color={iconColor}
-              height={iconHeight}
+              {...iconSize}
               source={LeftIcon}
               testID={AnchorTestId.leftIcon}
-              width={iconWidth}
+              uniProps={iconUniProps}
             />
           </Pressable>
         ) : null}
@@ -118,11 +120,10 @@ export const Anchor = memo(
             onPressOut={onPressOut}
           >
             <SvgUniversal
-              color={iconColor}
-              height={iconHeight}
+              {...iconSize}
               source={RightIcon}
               testID={AnchorTestId.rightIcon}
-              width={iconWidth}
+              uniProps={iconUniProps}
             />
           </Pressable>
         ) : null}

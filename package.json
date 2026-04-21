@@ -24,8 +24,18 @@
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./eslint": {
+      "types": "./dist/eslint/plugin.d.ts",
+      "default": "./dist/eslint/plugin.js"
+    }
+  },
   "scripts": {
-    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json && tsc -p tsconfig.eslint.json",
     "test": "jest",
     "start": "expo start --dev-client --clear",
     "android": "expo run:android",
@@ -42,7 +52,7 @@
     "pod-install": "bundle exec pod install --project-directory=ios"
   },
   "dependencies": {
-    "@tabler/icons-react-native": "3.36.1"
+    "@tabler/icons-react-native": "^3.36.0"
   },
   "devDependencies": {
     "@babel/core": "7.28.5",

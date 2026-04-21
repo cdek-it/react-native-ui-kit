@@ -47,6 +47,8 @@ theme.fonts
 Или прямо в стилях через `StyleSheet.create(...)`:
 
 ```tsx
+import { StyleSheet } from 'react-native-unistyles'
+
 const styles = StyleSheet.create(({ fonts }) => ({
   title: { fontFamily: fonts.primary },
 }))

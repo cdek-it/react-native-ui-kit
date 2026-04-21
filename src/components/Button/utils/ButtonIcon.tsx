@@ -38,11 +38,9 @@ const ButtonIconComponent = ({
 
   return (
     <SvgUniversal
-      color={buttonIconStyles.icon.color}
-      height={buttonIconStyles.icon.height}
+      {...buttonIconStyles.icon}
       source={Icon}
       testID='Button_Icon'
-      width={buttonIconStyles.icon.width}
     />
   )
 }

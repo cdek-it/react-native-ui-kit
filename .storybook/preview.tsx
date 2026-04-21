@@ -1,5 +1,6 @@
 import type { Preview } from '@storybook/react'
-import { StyleSheet, ThemeContextProvider, ThemeVariant } from '../src'
+import { StyleSheet } from 'react-native-unistyles'
+import { ThemeContextProvider, ThemeVariant } from '../src'
 import { View } from 'react-native'
 import React, { type FunctionComponent, type ReactNode } from 'react'
 

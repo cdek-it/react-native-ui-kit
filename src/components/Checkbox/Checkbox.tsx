@@ -93,10 +93,11 @@ export const Checkbox = memo(
         <View style={[styles.background, styles.backgroundState]} />
         {Icon ? (
           <SvgUniversal
-            height={styles.icon.height}
+            {...styles.icon}
             source={Icon}
-            style={styles.icon}
-            width={styles.icon.width}
+            uniProps={({ theme }) => ({
+              color: theme.Form.Checkbox.checkboxIconActiveColor,
+            })}
           />
         ) : null}
       </Pressable>
@@ -169,9 +170,5 @@ const styles = StyleSheet.create(({ theme, border, sizing }) => ({
       },
     ],
   },
-  icon: {
-    height: sizing.Height['h-1'],
-    width: sizing.Width['w-1'],
-    color: theme.Form.Checkbox.checkboxIconActiveColor,
-  },
+  icon: { height: sizing.Height['h-1'], width: sizing.Width['w-1'] },
 }))

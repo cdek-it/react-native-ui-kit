@@ -38,10 +38,11 @@ export const InputGroupAddon = memo<InputGroupAddonProps>(
           <Text style={styles.text}>{content}</Text>
         ) : (
           <SvgUniversal
-            height={styles.icon.height}
+            {...styles.icon}
             source={content}
-            style={styles.icon}
-            width={styles.icon.width}
+            uniProps={({ theme }) => ({
+              color: theme.Form.InputGroup.inputGroupTextColor,
+            })}
           />
         )}
       </Pressable>
@@ -84,6 +85,5 @@ const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
   icon: {
     width: typography.Size['text-base'],
     height: typography.Size['text-base'],
-    color: theme.Form.InputGroup.inputGroupTextColor,
   },
 }))

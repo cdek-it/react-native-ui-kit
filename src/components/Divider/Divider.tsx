@@ -108,10 +108,11 @@ export const Divider = memo<DividerProps>(
             >
               {showIcon && Icon ? (
                 <SvgUniversal
-                  height={styles.icon.height}
+                  {...styles.icon}
                   source={Icon}
-                  style={styles.icon}
-                  width={styles.icon.width}
+                  uniProps={({ theme }) => ({
+                    color: theme.General.textSecondaryColor,
+                  })}
                 />
               ) : null}
               {text ? (
@@ -176,7 +177,6 @@ const styles = StyleSheet.create(({ spacing, theme, sizing, typography }) => ({
   icon: {
     width: typography.Size['text-base'],
     height: typography.Size['text-base'],
-    color: theme.General.textSecondaryColor,
   },
   text: { flexShrink: 1 },
 }))
