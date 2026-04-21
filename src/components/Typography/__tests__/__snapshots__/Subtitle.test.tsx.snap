@@ -19,6 +19,7 @@ exports[`Subtitle component tests base = false, color = default 1`] = `
       },
     ]
   }
+  testID="Subtitle"
 >
   Text
 </Text>
@@ -43,6 +44,7 @@ exports[`Subtitle component tests base = false, color = primary 1`] = `
       },
     ]
   }
+  testID="Subtitle"
 >
   Text
 </Text>
@@ -67,6 +69,7 @@ exports[`Subtitle component tests base = false, color = secondary 1`] = `
       },
     ]
   }
+  testID="Subtitle"
 >
   Text
 </Text>
@@ -91,6 +94,7 @@ exports[`Subtitle component tests base = false, color = undefined 1`] = `
       },
     ]
   }
+  testID="Subtitle"
 >
   Text
 </Text>
@@ -118,6 +122,7 @@ exports[`Subtitle component tests base = true, color = default 1`] = `
       },
     ]
   }
+  testID="Subtitle"
 >
   Text
 </Text>
@@ -145,6 +150,7 @@ exports[`Subtitle component tests base = true, color = primary 1`] = `
       },
     ]
   }
+  testID="Subtitle"
 >
   Text
 </Text>
@@ -172,6 +178,7 @@ exports[`Subtitle component tests base = true, color = secondary 1`] = `
       },
     ]
   }
+  testID="Subtitle"
 >
   Text
 </Text>
@@ -199,6 +206,7 @@ exports[`Subtitle component tests base = true, color = undefined 1`] = `
       },
     ]
   }
+  testID="Subtitle"
 >
   Text
 </Text>
@@ -223,6 +231,7 @@ exports[`Subtitle component tests base = undefined, color = default 1`] = `
       },
     ]
   }
+  testID="Subtitle"
 >
   Text
 </Text>
@@ -247,6 +256,7 @@ exports[`Subtitle component tests base = undefined, color = primary 1`] = `
       },
     ]
   }
+  testID="Subtitle"
 >
   Text
 </Text>
@@ -271,6 +281,7 @@ exports[`Subtitle component tests base = undefined, color = secondary 1`] = `
       },
     ]
   }
+  testID="Subtitle"
 >
   Text
 </Text>
@@ -295,6 +306,7 @@ exports[`Subtitle component tests base = undefined, color = undefined 1`] = `
       },
     ]
   }
+  testID="Subtitle"
 >
   Text
 </Text>

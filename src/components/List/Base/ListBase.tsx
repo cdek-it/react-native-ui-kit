@@ -80,7 +80,7 @@ export const ListBase = memo<ListBaseProps>(
         accessibilityRole='button'
         accessibilityValue={{ text: caption }}
         disabled={disabled}
-        testID={testID || 'ListBase'}
+        testID={testID || ListBaseTestId.root}
         onPress={onPress}
         {...rest}
       >
@@ -99,6 +99,7 @@ export const ListBase = memo<ListBaseProps>(
               <View style={leftIconStyle}>
                 <SvgUniversal
                   source={LeftIcon}
+                  testID={ListBaseTestId.leftIcon}
                   {...styles.icon}
                   color={leftIconColor}
                 />
@@ -110,7 +111,7 @@ export const ListBase = memo<ListBaseProps>(
                   <Subtitle color='primary'>{subtitle}</Subtitle>
                 ) : null}
                 <View style={styles.titleContainer}>
-                  <Body>{title}</Body>
+                  <Body testID={ListBaseTestId.title}>{title}</Body>
                   {caption ? (
                     <Caption color='secondary'>{caption}</Caption>
                   ) : null}
@@ -123,6 +124,7 @@ export const ListBase = memo<ListBaseProps>(
                 {RightIcon ? (
                   <SvgUniversal
                     source={RightIcon}
+                    testID={ListBaseTestId.rightIcon}
                     {...styles.icon}
                     color={rightIconColor}
                   />
@@ -135,6 +137,13 @@ export const ListBase = memo<ListBaseProps>(
     )
   }
 )
+
+const ListBaseTestId = {
+  root: 'ListBase',
+  leftIcon: 'LeftIcon',
+  rightIcon: 'RightIcon',
+  title: 'Title',
+}
 
 const useStyles = makeStyles(({ spacing, typography, theme, background }) => ({
   container: {

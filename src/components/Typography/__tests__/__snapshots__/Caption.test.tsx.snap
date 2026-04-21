@@ -18,6 +18,7 @@ exports[`Caption component tests color = default, disabled = false 1`] = `
       undefined,
     ]
   }
+  testID="CaptionText"
 >
   Text
 </Text>
@@ -59,7 +60,7 @@ exports[`Caption component tests color = default, disabled = false 2`] = `
         },
       ]
     }
-    testID="SvgUniversalComponent"
+    testID="CaptionIcon"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -107,7 +108,7 @@ exports[`Caption component tests color = default, disabled = false 2`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-        testID="SvgUniversalComponent"
+        testID="CaptionIcon"
       />
       <RNSVGPath
         d="M12 9h.01"
@@ -130,7 +131,7 @@ exports[`Caption component tests color = default, disabled = false 2`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-        testID="SvgUniversalComponent"
+        testID="CaptionIcon"
       />
       <RNSVGPath
         d="M11 12h1v4h1"
@@ -153,7 +154,7 @@ exports[`Caption component tests color = default, disabled = false 2`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-        testID="SvgUniversalComponent"
+        testID="CaptionIcon"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -176,6 +177,7 @@ exports[`Caption component tests color = default, disabled = false 2`] = `
         undefined,
       ]
     }
+    testID="CaptionText"
   >
     Text
   </Text>
@@ -202,6 +204,7 @@ exports[`Caption component tests color = default, disabled = true 1`] = `
       undefined,
     ]
   }
+  testID="CaptionText"
 >
   Text
 </Text>
@@ -243,7 +246,7 @@ exports[`Caption component tests color = default, disabled = true 2`] = `
         },
       ]
     }
-    testID="SvgUniversalComponent"
+    testID="CaptionIcon"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -291,7 +294,7 @@ exports[`Caption component tests color = default, disabled = true 2`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-        testID="SvgUniversalComponent"
+        testID="CaptionIcon"
       />
       <RNSVGPath
         d="M12 9h.01"
@@ -314,7 +317,7 @@ exports[`Caption component tests color = default, disabled = true 2`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-        testID="SvgUniversalComponent"
+        testID="CaptionIcon"
       />
       <RNSVGPath
         d="M11 12h1v4h1"
@@ -337,7 +340,7 @@ exports[`Caption component tests color = default, disabled = true 2`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-        testID="SvgUniversalComponent"
+        testID="CaptionIcon"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -362,6 +365,7 @@ exports[`Caption component tests color = default, disabled = true 2`] = `
         undefined,
       ]
     }
+    testID="CaptionText"
   >
     Text
   </Text>
@@ -386,6 +390,7 @@ exports[`Caption component tests color = primary, disabled = false 1`] = `
       undefined,
     ]
   }
+  testID="CaptionText"
 >
   Text
 </Text>
@@ -427,7 +432,7 @@ exports[`Caption component tests color = primary, disabled = false 2`] = `
         },
       ]
     }
-    testID="SvgUniversalComponent"
+    testID="CaptionIcon"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -475,7 +480,7 @@ exports[`Caption component tests color = primary, disabled = false 2`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-        testID="SvgUniversalComponent"
+        testID="CaptionIcon"
       />
       <RNSVGPath
         d="M12 9h.01"
@@ -498,7 +503,7 @@ exports[`Caption component tests color = primary, disabled = false 2`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-        testID="SvgUniversalComponent"
+        testID="CaptionIcon"
       />
       <RNSVGPath
         d="M11 12h1v4h1"
@@ -521,7 +526,7 @@ exports[`Caption component tests color = primary, disabled = false 2`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-        testID="SvgUniversalComponent"
+        testID="CaptionIcon"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -544,6 +549,7 @@ exports[`Caption component tests color = primary, disabled = false 2`] = `
         undefined,
       ]
     }
+    testID="CaptionText"
   >
     Text
   </Text>
@@ -570,6 +576,7 @@ exports[`Caption component tests color = primary, disabled = true 1`] = `
       undefined,
     ]
   }
+  testID="CaptionText"
 >
   Text
 </Text>
@@ -611,7 +618,7 @@ exports[`Caption component tests color = primary, disabled = true 2`] = `
         },
       ]
     }
-    testID="SvgUniversalComponent"
+    testID="CaptionIcon"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -659,7 +666,7 @@ exports[`Caption component tests color = primary, disabled = true 2`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-        testID="SvgUniversalComponent"
+        testID="CaptionIcon"
       />
       <RNSVGPath
         d="M12 9h.01"
@@ -682,7 +689,7 @@ exports[`Caption component tests color = primary, disabled = true 2`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-        testID="SvgUniversalComponent"
+        testID="CaptionIcon"
       />
       <RNSVGPath
         d="M11 12h1v4h1"
@@ -705,7 +712,7 @@ exports[`Caption component tests color = primary, disabled = true 2`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-        testID="SvgUniversalComponent"
+        testID="CaptionIcon"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -730,6 +737,7 @@ exports[`Caption component tests color = primary, disabled = true 2`] = `
         undefined,
       ]
     }
+    testID="CaptionText"
   >
     Text
   </Text>
@@ -754,6 +762,7 @@ exports[`Caption component tests color = secondary, disabled = false 1`] = `
       undefined,
     ]
   }
+  testID="CaptionText"
 >
   Text
 </Text>
@@ -795,7 +804,7 @@ exports[`Caption component tests color = secondary, disabled = false 2`] = `
         },
       ]
     }
-    testID="SvgUniversalComponent"
+    testID="CaptionIcon"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -843,7 +852,7 @@ exports[`Caption component tests color = secondary, disabled = false 2`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-        testID="SvgUniversalComponent"
+        testID="CaptionIcon"
       />
       <RNSVGPath
         d="M12 9h.01"
@@ -866,7 +875,7 @@ exports[`Caption component tests color = secondary, disabled = false 2`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-        testID="SvgUniversalComponent"
+        testID="CaptionIcon"
       />
       <RNSVGPath
         d="M11 12h1v4h1"
@@ -889,7 +898,7 @@ exports[`Caption component tests color = secondary, disabled = false 2`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-        testID="SvgUniversalComponent"
+        testID="CaptionIcon"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -912,6 +921,7 @@ exports[`Caption component tests color = secondary, disabled = false 2`] = `
         undefined,
       ]
     }
+    testID="CaptionText"
   >
     Text
   </Text>
@@ -938,6 +948,7 @@ exports[`Caption component tests color = secondary, disabled = true 1`] = `
       undefined,
     ]
   }
+  testID="CaptionText"
 >
   Text
 </Text>
@@ -979,7 +990,7 @@ exports[`Caption component tests color = secondary, disabled = true 2`] = `
         },
       ]
     }
-    testID="SvgUniversalComponent"
+    testID="CaptionIcon"
     vbHeight={24}
     vbWidth={24}
     width={14}
@@ -1027,7 +1038,7 @@ exports[`Caption component tests color = secondary, disabled = true 2`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-        testID="SvgUniversalComponent"
+        testID="CaptionIcon"
       />
       <RNSVGPath
         d="M12 9h.01"
@@ -1050,7 +1061,7 @@ exports[`Caption component tests color = secondary, disabled = true 2`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-        testID="SvgUniversalComponent"
+        testID="CaptionIcon"
       />
       <RNSVGPath
         d="M11 12h1v4h1"
@@ -1073,7 +1084,7 @@ exports[`Caption component tests color = secondary, disabled = true 2`] = `
         strokeLinecap={1}
         strokeLinejoin={1}
         strokeWidth={2}
-        testID="SvgUniversalComponent"
+        testID="CaptionIcon"
       />
     </RNSVGGroup>
   </RNSVGSvgView>
@@ -1098,6 +1109,7 @@ exports[`Caption component tests color = secondary, disabled = true 2`] = `
         undefined,
       ]
     }
+    testID="CaptionText"
   >
     Text
   </Text>
@@ -1122,6 +1134,7 @@ exports[`Caption component tests default props 1`] = `
       undefined,
     ]
   }
+  testID="CaptionText"
 >
   Text
 </Text>

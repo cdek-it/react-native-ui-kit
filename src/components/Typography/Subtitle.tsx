@@ -27,6 +27,7 @@ export const Subtitle = memo<SubtitleProps>(
     return (
       <Text
         style={[styles.text, styles[color], base && styles.base, style]}
+        testID='Subtitle'
         {...other}
       />
     )
