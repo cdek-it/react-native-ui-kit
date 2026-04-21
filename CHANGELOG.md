@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.6.9](https://github.com/cdek-it/react-native-ui-kit/compare/v0.6.8...v0.6.9) (2026-04-21)
+
+### ♻️ Рефакторинг
+
+* добавлены testID ([b37b556](https://github.com/cdek-it/react-native-ui-kit/commit/b37b55614fc7229d274584708bce53c546d3127f))
+
 ## [0.6.8](https://github.com/cdek-it/react-native-ui-kit/compare/v0.6.7...v0.6.8) (2026-04-01)
 
 ### 🐛 Исправления багов
