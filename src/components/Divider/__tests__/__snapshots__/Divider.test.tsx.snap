@@ -130,6 +130,7 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "horizontal", "sho
           },
         ]
       }
+      testID="Subtitle"
     >
       test
     </Text>
@@ -386,6 +387,7 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
           },
         ]
       }
+      testID="Subtitle"
     >
       test
     </Text>

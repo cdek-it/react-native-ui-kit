@@ -27,6 +27,7 @@ export const Caption = ({
         Icon && styles.textWithIcon,
         style,
       ]}
+      testID={CaptionTestId.text}
       {...other}
     />
   )
@@ -34,7 +35,12 @@ export const Caption = ({
   if (Icon) {
     return (
       <View style={styles.withIconContainer}>
-        <SvgUniversal source={Icon} {...styles[color]} {...styles.icon} />
+        <SvgUniversal
+          source={Icon}
+          testID={CaptionTestId.icon}
+          {...styles[color]}
+          {...styles.icon}
+        />
         {text}
       </View>
     )
@@ -42,6 +48,8 @@ export const Caption = ({
 
   return text
 }
+
+const CaptionTestId = { text: 'CaptionText', icon: 'CaptionIcon' }
 
 const useStyles = makeStyles(({ theme, spacing, typography, fonts }) => ({
   text: {

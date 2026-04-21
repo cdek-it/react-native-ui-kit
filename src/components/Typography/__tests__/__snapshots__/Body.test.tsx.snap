@@ -22,6 +22,7 @@ exports[`Body component tests base = false, color = default, disabled = false, p
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -49,6 +50,7 @@ exports[`Body component tests base = false, color = default, disabled = false, p
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -76,6 +78,7 @@ exports[`Body component tests base = false, color = default, disabled = false, p
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -105,6 +108,7 @@ exports[`Body component tests base = false, color = default, disabled = false, p
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -134,6 +138,7 @@ exports[`Body component tests base = false, color = default, disabled = false, p
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -163,6 +168,7 @@ exports[`Body component tests base = false, color = default, disabled = false, p
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -192,6 +198,7 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -221,6 +228,7 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -250,6 +258,7 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -281,6 +290,7 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -312,6 +322,7 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -343,6 +354,7 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -370,6 +382,7 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -397,6 +410,7 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -424,6 +438,7 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -453,6 +468,7 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -482,6 +498,7 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -511,6 +528,7 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -540,6 +558,7 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -569,6 +588,7 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -598,6 +618,7 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -629,6 +650,7 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -660,6 +682,7 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -691,6 +714,7 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -718,6 +742,7 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -745,6 +770,7 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -772,6 +798,7 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -801,6 +828,7 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -830,6 +858,7 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -859,6 +888,7 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -888,6 +918,7 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -917,6 +948,7 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -946,6 +978,7 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -977,6 +1010,7 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1008,6 +1042,7 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1039,6 +1074,7 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1068,6 +1104,7 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1097,6 +1134,7 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1126,6 +1164,7 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1157,6 +1196,7 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1188,6 +1228,7 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1219,6 +1260,7 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1250,6 +1292,7 @@ exports[`Body component tests base = true, color = default, disabled = true, par
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1281,6 +1324,7 @@ exports[`Body component tests base = true, color = default, disabled = true, par
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1312,6 +1356,7 @@ exports[`Body component tests base = true, color = default, disabled = true, par
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1345,6 +1390,7 @@ exports[`Body component tests base = true, color = default, disabled = true, par
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1378,6 +1424,7 @@ exports[`Body component tests base = true, color = default, disabled = true, par
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1411,6 +1458,7 @@ exports[`Body component tests base = true, color = default, disabled = true, par
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1440,6 +1488,7 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1469,6 +1518,7 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1498,6 +1548,7 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1529,6 +1580,7 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1560,6 +1612,7 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1591,6 +1644,7 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1622,6 +1676,7 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1653,6 +1708,7 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1684,6 +1740,7 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1717,6 +1774,7 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1750,6 +1808,7 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1783,6 +1842,7 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1812,6 +1872,7 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1841,6 +1902,7 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1870,6 +1932,7 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1901,6 +1964,7 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1932,6 +1996,7 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1963,6 +2028,7 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -1994,6 +2060,7 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -2025,6 +2092,7 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -2056,6 +2124,7 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -2089,6 +2158,7 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -2122,6 +2192,7 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -2155,6 +2226,7 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>
@@ -2182,6 +2254,7 @@ exports[`Body component tests default props 1`] = `
       undefined,
     ]
   }
+  testID="Body"
 >
   Text
 </Text>

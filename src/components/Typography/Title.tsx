@@ -9,7 +9,13 @@ export interface TitleProps extends TextProps {
 export const Title = ({ level, style, ...other }: TitleProps) => {
   const styles = useStyles()
 
-  return <Text style={[styles.text, styles[level], style]} {...other} />
+  return (
+    <Text
+      style={[styles.text, styles[level], style]}
+      testID='Title'
+      {...other}
+    />
+  )
 }
 
 const useStyles = makeStyles(({ theme, typography, fonts }) => ({

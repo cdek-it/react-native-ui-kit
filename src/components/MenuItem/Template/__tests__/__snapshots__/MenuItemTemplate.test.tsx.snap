@@ -256,6 +256,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
                 undefined,
               ]
             }
+            testID="Body"
           >
             Menu Item
           </Text>
@@ -276,6 +277,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
                 undefined,
               ]
             }
+            testID="CaptionText"
           >
             Caption
           </Text>
@@ -617,6 +619,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate minimal config 1`] = `
                 undefined,
               ]
             }
+            testID="Body"
           >
             Menu Item
           </Text>
@@ -816,6 +819,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
                 undefined,
               ]
             }
+            testID="Body"
           >
             Menu Item
           </Text>
@@ -836,6 +840,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
                 undefined,
               ]
             }
+            testID="CaptionText"
           >
             Caption
           </Text>
@@ -1148,6 +1153,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with colored icon 1`] = `
                 undefined,
               ]
             }
+            testID="Body"
           >
             Menu Item
           </Text>
@@ -1260,6 +1266,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with extra 1`] = `
                 undefined,
               ]
             }
+            testID="Body"
           >
             Menu Item
           </Text>
@@ -1581,6 +1588,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
                 undefined,
               ]
             }
+            testID="Body"
           >
             Menu Item
           </Text>
@@ -1837,6 +1845,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
                 undefined,
               ]
             }
+            testID="Body"
           >
             Menu Item
           </Text>
@@ -1952,6 +1961,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with padding 1`] = `
                 undefined,
               ]
             }
+            testID="Body"
           >
             Menu Item
           </Text>
@@ -2070,6 +2080,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with separator 1`] = `
                 undefined,
               ]
             }
+            testID="Body"
           >
             Menu Item
           </Text>

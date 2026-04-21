@@ -89,7 +89,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
             },
           ]
         }
-        testID="SvgUniversalComponent"
+        testID="LeftIcon"
         vbHeight={24}
         vbWidth={24}
         width={21}
@@ -135,7 +135,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
-            testID="SvgUniversalComponent"
+            testID="LeftIcon"
           />
           <RNSVGPath
             d="M9 12l11 0"
@@ -157,7 +157,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
-            testID="SvgUniversalComponent"
+            testID="LeftIcon"
           />
           <RNSVGPath
             d="M9 18l11 0"
@@ -179,7 +179,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
-            testID="SvgUniversalComponent"
+            testID="LeftIcon"
           />
           <RNSVGPath
             d="M5 6l0 .01"
@@ -201,7 +201,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
-            testID="SvgUniversalComponent"
+            testID="LeftIcon"
           />
           <RNSVGPath
             d="M5 12l0 .01"
@@ -223,7 +223,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
-            testID="SvgUniversalComponent"
+            testID="LeftIcon"
           />
           <RNSVGPath
             d="M5 18l0 .01"
@@ -245,7 +245,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
-            testID="SvgUniversalComponent"
+            testID="LeftIcon"
           />
         </RNSVGGroup>
       </RNSVGSvgView>
@@ -290,6 +290,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
               undefined,
             ]
           }
+          testID="Subtitle"
         >
           Subtitle
         </Text>
@@ -321,6 +322,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
                 undefined,
               ]
             }
+            testID="Title"
           >
             Title
           </Text>
@@ -341,6 +343,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
                 undefined,
               ]
             }
+            testID="CaptionText"
           >
             Caption
           </Text>
@@ -466,7 +469,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
               },
             ]
           }
-          testID="SvgUniversalComponent"
+          testID="RightIcon"
           vbHeight={24}
           vbWidth={24}
           width={21}
@@ -512,7 +515,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
               strokeLinecap={1}
               strokeLinejoin={1}
               strokeWidth={2}
-              testID="SvgUniversalComponent"
+              testID="RightIcon"
             />
             <RNSVGPath
               d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
@@ -534,7 +537,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
               strokeLinecap={1}
               strokeLinejoin={1}
               strokeWidth={2}
-              testID="SvgUniversalComponent"
+              testID="RightIcon"
             />
           </RNSVGGroup>
         </RNSVGSvgView>
@@ -635,7 +638,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
             },
           ]
         }
-        testID="SvgUniversalComponent"
+        testID="LeftIcon"
         vbHeight={24}
         vbWidth={24}
         width={21}
@@ -681,7 +684,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
-            testID="SvgUniversalComponent"
+            testID="LeftIcon"
           />
           <RNSVGPath
             d="M9 12l11 0"
@@ -703,7 +706,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
-            testID="SvgUniversalComponent"
+            testID="LeftIcon"
           />
           <RNSVGPath
             d="M9 18l11 0"
@@ -725,7 +728,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
-            testID="SvgUniversalComponent"
+            testID="LeftIcon"
           />
           <RNSVGPath
             d="M5 6l0 .01"
@@ -747,7 +750,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
-            testID="SvgUniversalComponent"
+            testID="LeftIcon"
           />
           <RNSVGPath
             d="M5 12l0 .01"
@@ -769,7 +772,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
-            testID="SvgUniversalComponent"
+            testID="LeftIcon"
           />
           <RNSVGPath
             d="M5 18l0 .01"
@@ -791,7 +794,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
-            testID="SvgUniversalComponent"
+            testID="LeftIcon"
           />
         </RNSVGGroup>
       </RNSVGSvgView>
@@ -836,6 +839,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
               undefined,
             ]
           }
+          testID="Subtitle"
         >
           Subtitle
         </Text>
@@ -867,6 +871,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
                 undefined,
               ]
             }
+            testID="Title"
           >
             Title
           </Text>
@@ -887,6 +892,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
                 undefined,
               ]
             }
+            testID="CaptionText"
           >
             Caption
           </Text>
@@ -1012,7 +1018,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
               },
             ]
           }
-          testID="SvgUniversalComponent"
+          testID="RightIcon"
           vbHeight={24}
           vbWidth={24}
           width={21}
@@ -1058,7 +1064,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
               strokeLinecap={1}
               strokeLinejoin={1}
               strokeWidth={2}
-              testID="SvgUniversalComponent"
+              testID="RightIcon"
             />
             <RNSVGPath
               d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
@@ -1080,7 +1086,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
               strokeLinecap={1}
               strokeLinejoin={1}
               strokeWidth={2}
-              testID="SvgUniversalComponent"
+              testID="RightIcon"
             />
           </RNSVGGroup>
         </RNSVGSvgView>
@@ -1176,7 +1182,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             },
           ]
         }
-        testID="SvgUniversalComponent"
+        testID="LeftIcon"
         vbHeight={24}
         vbWidth={24}
         width={21}
@@ -1224,7 +1230,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
-            testID="SvgUniversalComponent"
+            testID="LeftIcon"
           />
           <RNSVGPath
             d="M9 12l11 0"
@@ -1247,7 +1253,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
-            testID="SvgUniversalComponent"
+            testID="LeftIcon"
           />
           <RNSVGPath
             d="M9 18l11 0"
@@ -1270,7 +1276,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
-            testID="SvgUniversalComponent"
+            testID="LeftIcon"
           />
           <RNSVGPath
             d="M5 6l0 .01"
@@ -1293,7 +1299,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
-            testID="SvgUniversalComponent"
+            testID="LeftIcon"
           />
           <RNSVGPath
             d="M5 12l0 .01"
@@ -1316,7 +1322,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
-            testID="SvgUniversalComponent"
+            testID="LeftIcon"
           />
           <RNSVGPath
             d="M5 18l0 .01"
@@ -1339,7 +1345,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             strokeLinecap={1}
             strokeLinejoin={1}
             strokeWidth={2}
-            testID="SvgUniversalComponent"
+            testID="LeftIcon"
           />
         </RNSVGGroup>
       </RNSVGSvgView>
@@ -1387,6 +1393,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
               undefined,
             ]
           }
+          testID="Subtitle"
         >
           Subtitle
         </Text>
@@ -1418,6 +1425,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
                 undefined,
               ]
             }
+            testID="Title"
           >
             Title
           </Text>
@@ -1438,6 +1446,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
                 undefined,
               ]
             }
+            testID="CaptionText"
           >
             Caption
           </Text>
@@ -1563,7 +1572,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
               },
             ]
           }
-          testID="SvgUniversalComponent"
+          testID="RightIcon"
           vbHeight={24}
           vbWidth={24}
           width={21}
@@ -1611,7 +1620,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
               strokeLinecap={1}
               strokeLinejoin={1}
               strokeWidth={2}
-              testID="SvgUniversalComponent"
+              testID="RightIcon"
             />
             <RNSVGPath
               d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
@@ -1634,7 +1643,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
               strokeLinecap={1}
               strokeLinejoin={1}
               strokeWidth={2}
-              testID="SvgUniversalComponent"
+              testID="RightIcon"
             />
           </RNSVGGroup>
         </RNSVGSvgView>
@@ -1747,6 +1756,7 @@ exports[`ListBase tests ListBase minimal config 1`] = `
                 undefined,
               ]
             }
+            testID="Title"
           >
             Menu Item
           </Text>

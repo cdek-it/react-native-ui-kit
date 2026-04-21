@@ -32,6 +32,7 @@ export const Body = ({
         disabled && styles.disabled,
         style,
       ]}
+      testID='Body'
       {...other}
     />
   )
