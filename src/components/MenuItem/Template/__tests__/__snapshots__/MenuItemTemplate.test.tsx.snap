@@ -213,12 +213,16 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
             >
               <View
                 style={
-                  {
-                    "backgroundColor": "#fbacaa",
-                    "borderRadius": 100,
-                    "height": 7,
-                    "width": 7,
-                  }
+                  [
+                    {
+                      "backgroundColor": "#fbacaa",
+                    },
+                    {
+                      "borderRadius": 100,
+                      "height": 7,
+                      "width": 7,
+                    },
+                  ]
                 }
                 testID="MenuItemIconBadge"
               />
@@ -1802,12 +1806,16 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
             >
               <View
                 style={
-                  {
-                    "backgroundColor": "#fddeaa",
-                    "borderRadius": 100,
-                    "height": 7,
-                    "width": 7,
-                  }
+                  [
+                    {
+                      "backgroundColor": "#fddeaa",
+                    },
+                    {
+                      "borderRadius": 100,
+                      "height": 7,
+                      "width": 7,
+                    },
+                  ]
                 }
                 testID="MenuItemIconBadge"
               />

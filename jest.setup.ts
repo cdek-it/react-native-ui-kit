@@ -1,4 +1,5 @@
 import 'jest-extended'
+import { createElement } from 'react'
 import 'react-native-gesture-handler/jestSetup'
 import { setUpTests } from 'react-native-reanimated'
 import 'react-native-unistyles/mocks'
@@ -16,20 +17,29 @@ interface MockedUnistylesModule {
   UnistylesRuntime: {
     miniRuntime: unknown
     setTheme: jest.Mock<void, [ThemeName]>
+    updateTheme: jest.Mock<void, [ThemeName, (theme: unknown) => unknown]>
     themeName: ThemeName | undefined
   }
   useUnistyles: jest.Mock
   withUnistyles: jest.Mock
 }
 
-const { darkTheme, lightTheme } = require('./src/theme')
-
 const unistyles = jest.requireMock(
   'react-native-unistyles'
 ) as MockedUnistylesModule
 
+// Late-bound holder: темы подгружаются ПОСЛЕ установки моков, чтобы к моменту
+// загрузки src/theme (и как следствие — src/utils/SvgUniversal с
+// `withUnistyles(...)` на top-level) в модуле уже стояли наши моки, а не
+// исходные identity-заглушки.
+const themeRef: {
+  current: { darkTheme: unknown; lightTheme: unknown } | null
+} = { current: null }
+
 const getTheme = (themeName: ThemeName | undefined) =>
-  themeName === 'dark' ? darkTheme : lightTheme
+  themeName === 'dark'
+    ? themeRef.current?.darkTheme
+    : themeRef.current?.lightTheme
 
 const runtime = unistyles.UnistylesRuntime
 
@@ -37,6 +47,7 @@ runtime.themeName = 'light'
 runtime.setTheme = jest.fn((themeName: ThemeName) => {
   runtime.themeName = themeName
 })
+runtime.updateTheme = jest.fn()
 
 unistyles.useUnistyles = jest.fn(() => ({
   theme: getTheme(runtime.themeName),
@@ -140,7 +151,33 @@ unistyles.StyleSheet.create = jest.fn(
   }
 )
 
-unistyles.withUnistyles = jest.fn(<T>(Component: T) => Component)
+unistyles.withUnistyles = jest.fn(
+  <P extends Record<string, unknown>>(
+    Component: React.ComponentType<P>
+  ): React.ComponentType<
+    P & { uniProps?: (theme: unknown, rt: unknown) => Partial<P> }
+  > => {
+    const Wrapped = (
+      props: P & {
+        readonly uniProps?: (theme: unknown, rt: unknown) => Partial<P>
+      }
+    ) => {
+      const { uniProps, ...rest } = props
+      const themeProps = uniProps
+        ? uniProps(getTheme(runtime.themeName), runtime)
+        : {}
+
+      return createElement(Component, { ...(rest as P), ...themeProps })
+    }
+
+    return Wrapped
+  }
+)
+
+themeRef.current = require('./src/theme') as {
+  darkTheme: unknown
+  lightTheme: unknown
+}
 
 generatePropsCombinations = <T>(properties: PropertyCombinations<T>): T[] => {
   const keys = Object.keys(properties) as Array<keyof T>

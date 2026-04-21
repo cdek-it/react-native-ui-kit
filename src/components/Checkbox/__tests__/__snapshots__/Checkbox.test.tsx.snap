@@ -208,7 +208,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="currentColor"
+    stroke="#ffffff"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -217,11 +217,6 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
         {
           "backgroundColor": "transparent",
           "borderWidth": 0,
-        },
-        {
-          "color": "#ffffff",
-          "height": 14,
-          "width": 14,
         },
         {
           "flex": 0,
@@ -237,7 +232,6 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
-      color="#ffffff"
       fill={null}
       propList={
         [
@@ -250,7 +244,8 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
       }
       stroke={
         {
-          "type": 2,
+          "payload": 4294967295,
+          "type": 0,
         }
       }
       strokeLinecap={1}
@@ -258,7 +253,6 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
       strokeWidth={2}
     >
       <RNSVGPath
-        color="#ffffff"
         d="M5 12l5 5l10 -10"
         fill={null}
         propList={
@@ -272,7 +266,8 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4294967295,
+            "type": 0,
           }
         }
         strokeLinecap={1}
@@ -357,7 +352,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="currentColor"
+    stroke="#ffffff"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -366,11 +361,6 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
         {
           "backgroundColor": "transparent",
           "borderWidth": 0,
-        },
-        {
-          "color": "#ffffff",
-          "height": 14,
-          "width": 14,
         },
         {
           "flex": 0,
@@ -386,7 +376,6 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
-      color="#ffffff"
       fill={null}
       propList={
         [
@@ -399,7 +388,8 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
       }
       stroke={
         {
-          "type": 2,
+          "payload": 4294967295,
+          "type": 0,
         }
       }
       strokeLinecap={1}
@@ -407,7 +397,6 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
       strokeWidth={2}
     >
       <RNSVGPath
-        color="#ffffff"
         d="M5 12l5 5l10 -10"
         fill={null}
         propList={
@@ -421,7 +410,8 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4294967295,
+            "type": 0,
           }
         }
         strokeLinecap={1}
@@ -509,7 +499,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="currentColor"
+    stroke="#ffffff"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -518,11 +508,6 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
         {
           "backgroundColor": "transparent",
           "borderWidth": 0,
-        },
-        {
-          "color": "#ffffff",
-          "height": 14,
-          "width": 14,
         },
         {
           "flex": 0,
@@ -538,7 +523,6 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
-      color="#ffffff"
       fill={null}
       propList={
         [
@@ -551,7 +535,8 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
       }
       stroke={
         {
-          "type": 2,
+          "payload": 4294967295,
+          "type": 0,
         }
       }
       strokeLinecap={1}
@@ -559,7 +544,6 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
       strokeWidth={2}
     >
       <RNSVGPath
-        color="#ffffff"
         d="M5 12l14 0"
         fill={null}
         propList={
@@ -573,7 +557,8 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4294967295,
+            "type": 0,
           }
         }
         strokeLinecap={1}
@@ -658,7 +643,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="currentColor"
+    stroke="#ffffff"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -667,11 +652,6 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
         {
           "backgroundColor": "transparent",
           "borderWidth": 0,
-        },
-        {
-          "color": "#ffffff",
-          "height": 14,
-          "width": 14,
         },
         {
           "flex": 0,
@@ -687,7 +667,6 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
-      color="#ffffff"
       fill={null}
       propList={
         [
@@ -700,7 +679,8 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
       }
       stroke={
         {
-          "type": 2,
+          "payload": 4294967295,
+          "type": 0,
         }
       }
       strokeLinecap={1}
@@ -708,7 +688,6 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
       strokeWidth={2}
     >
       <RNSVGPath
-        color="#ffffff"
         d="M5 12l14 0"
         fill={null}
         propList={
@@ -722,7 +701,8 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4294967295,
+            "type": 0,
           }
         }
         strokeLinecap={1}
@@ -812,7 +792,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="currentColor"
+    stroke="#ffffff"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -821,11 +801,6 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
         {
           "backgroundColor": "transparent",
           "borderWidth": 0,
-        },
-        {
-          "color": "#ffffff",
-          "height": 14,
-          "width": 14,
         },
         {
           "flex": 0,
@@ -841,7 +816,6 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
-      color="#ffffff"
       fill={null}
       propList={
         [
@@ -854,7 +828,8 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
       }
       stroke={
         {
-          "type": 2,
+          "payload": 4294967295,
+          "type": 0,
         }
       }
       strokeLinecap={1}
@@ -862,7 +837,6 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
       strokeWidth={2}
     >
       <RNSVGPath
-        color="#ffffff"
         d="M5 12l14 0"
         fill={null}
         propList={
@@ -876,7 +850,8 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4294967295,
+            "type": 0,
           }
         }
         strokeLinecap={1}
@@ -964,7 +939,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="currentColor"
+    stroke="#ffffff"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -973,11 +948,6 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
         {
           "backgroundColor": "transparent",
           "borderWidth": 0,
-        },
-        {
-          "color": "#ffffff",
-          "height": 14,
-          "width": 14,
         },
         {
           "flex": 0,
@@ -993,7 +963,6 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
-      color="#ffffff"
       fill={null}
       propList={
         [
@@ -1006,7 +975,8 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
       }
       stroke={
         {
-          "type": 2,
+          "payload": 4294967295,
+          "type": 0,
         }
       }
       strokeLinecap={1}
@@ -1014,7 +984,6 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
       strokeWidth={2}
     >
       <RNSVGPath
-        color="#ffffff"
         d="M5 12l14 0"
         fill={null}
         propList={
@@ -1028,7 +997,8 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
         }
         stroke={
           {
-            "type": 2,
+            "payload": 4294967295,
+            "type": 0,
           }
         }
         strokeLinecap={1}

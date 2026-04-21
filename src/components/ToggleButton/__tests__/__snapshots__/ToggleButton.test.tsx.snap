@@ -7,13 +7,16 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
   onPressIn={[Function]}
   onPressOut={[Function]}
   style={
-    {
-      "alignSelf": "flex-start",
-      "borderColor": "rgba(255, 255, 255, 0.0001)",
-      "borderRadius": 100,
-      "borderWidth": 1,
-      "overflow": "hidden",
-    }
+    [
+      {
+        "alignSelf": "flex-start",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "overflow": "hidden",
+      },
+      undefined,
+    ]
   }
   testID="ToggleButton"
 >
@@ -31,7 +34,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           "paddingHorizontal": 10.5,
           "paddingVertical": 0,
         },
-        {},
+        false,
       ]
     }
     testID="ToggleButton.container"
@@ -165,13 +168,16 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
   onPressIn={[Function]}
   onPressOut={[Function]}
   style={
-    {
-      "alignSelf": "flex-start",
-      "borderColor": "rgba(255, 255, 255, 0.0001)",
-      "borderRadius": 100,
-      "borderWidth": 1,
-      "overflow": "hidden",
-    }
+    [
+      {
+        "alignSelf": "flex-start",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "overflow": "hidden",
+      },
+      undefined,
+    ]
   }
   testID="ToggleButton"
 >
@@ -189,7 +195,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           "paddingHorizontal": 10.5,
           "paddingVertical": 0,
         },
-        {},
+        false,
       ]
     }
     testID="ToggleButton.container"
@@ -323,13 +329,16 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
   onPressIn={[Function]}
   onPressOut={[Function]}
   style={
-    {
-      "alignSelf": "flex-start",
-      "borderColor": "rgba(255, 255, 255, 0.0001)",
-      "borderRadius": 100,
-      "borderWidth": 1,
-      "overflow": "hidden",
-    }
+    [
+      {
+        "alignSelf": "flex-start",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "overflow": "hidden",
+      },
+      undefined,
+    ]
   }
   testID="ToggleButton"
 >
@@ -470,14 +479,17 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
   onPressIn={[Function]}
   onPressOut={[Function]}
   style={
-    {
-      "alignSelf": "flex-start",
-      "borderColor": "#a2a5a9",
-      "borderRadius": 100,
-      "borderWidth": 1,
-      "opacity": 0.6,
-      "overflow": "hidden",
-    }
+    [
+      {
+        "alignSelf": "flex-start",
+        "borderColor": "#a2a5a9",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "opacity": 0.6,
+        "overflow": "hidden",
+      },
+      undefined,
+    ]
   }
   testID="ToggleButton"
 >
@@ -495,7 +507,7 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
           "paddingHorizontal": 21,
           "paddingVertical": 0,
         },
-        {},
+        false,
       ]
     }
     testID="ToggleButton.container"
@@ -629,13 +641,18 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
   onPressIn={[Function]}
   onPressOut={[Function]}
   style={
-    {
-      "alignSelf": "flex-start",
-      "borderColor": "rgba(255, 255, 255, 0.0001)",
-      "borderRadius": 100,
-      "borderWidth": 1,
-      "overflow": "hidden",
-    }
+    [
+      {
+        "alignSelf": "flex-start",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "overflow": "hidden",
+      },
+      {
+        "margin": 10,
+      },
+    ]
   }
   testID="ToggleButton"
 >
@@ -776,13 +793,16 @@ exports[`ToggleButton snapshots default 1`] = `
   onPressIn={[Function]}
   onPressOut={[Function]}
   style={
-    {
-      "alignSelf": "flex-start",
-      "borderColor": "rgba(255, 255, 255, 0.0001)",
-      "borderRadius": 100,
-      "borderWidth": 1,
-      "overflow": "hidden",
-    }
+    [
+      {
+        "alignSelf": "flex-start",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "overflow": "hidden",
+      },
+      undefined,
+    ]
   }
   testID="ToggleButton"
 >

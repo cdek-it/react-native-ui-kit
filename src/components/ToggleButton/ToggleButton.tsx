@@ -66,12 +66,7 @@ export const ToggleButton = memo<ToggleButtonProps>(
   }) => {
     const [pressed, setPressed] = useState(false)
 
-    toggleStyles.useVariants({
-      size,
-      checked: checked ? 'true' : 'false',
-      pressed: pressed ? 'true' : 'false',
-      disabled: disabled ? 'true' : 'false',
-    })
+    toggleStyles.useVariants({ size, checked, pressed, disabled })
 
     const iconOnly = useMemo(
       () => iconOnlyProp || !label,
@@ -92,7 +87,7 @@ export const ToggleButton = memo<ToggleButtonProps>(
     return (
       <Pressable
         disabled={disabled}
-        style={toggleStyles.container}
+        style={[toggleStyles.container, style]}
         testID={testID || ToggleButtonTestId.root}
         onPress={onPress}
         onPressIn={onPressIn}
@@ -102,7 +97,7 @@ export const ToggleButton = memo<ToggleButtonProps>(
         <View
           style={[
             toggleStyles.contentContainer,
-            iconOnly ? toggleStyles.iconOnly : {},
+            iconOnly && toggleStyles.iconOnly,
           ]}
           testID={ToggleButtonTestId.container}
         >
