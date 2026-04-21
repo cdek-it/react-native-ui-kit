@@ -2,12 +2,12 @@ import { ActivityIndicator } from 'react-native'
 
 import { StyleSheet } from '../../../utils'
 import { genericMemo } from '../../../utils/genericMemo'
-import type { BaseButtonProps, ButtonSize } from '../types'
+import type { BaseButtonProps } from '../types'
 
 export type ButtonActivityIndicatorProps = Pick<
   Required<BaseButtonProps<never>>,
   'size'
-> & { readonly size: ButtonSize }
+>
 
 const ButtonActivityIndicatorComponent = ({
   size,

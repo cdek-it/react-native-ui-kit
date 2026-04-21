@@ -18,8 +18,8 @@ import { ButtonVariantContext } from './utils/ButtonVariantContext'
  * @param style - external style control for component
  * @see BaseButton
  */
-export const Button = memo(
-  ({ variant = 'primary', ...props }: ButtonProps<ButtonBaseVariant>) => {
+export const Button = memo<ButtonProps<ButtonBaseVariant>>(
+  ({ variant = 'primary', ...props }) => {
     const variantContextValue = useMemo(() => ({ variant }), [variant])
 
     return (

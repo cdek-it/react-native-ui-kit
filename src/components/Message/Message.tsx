@@ -24,44 +24,44 @@ import { Body, Caption } from '../Typography'
 export interface MessageProps
   extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Текст заголовка */
-  readonly title: string
+  title: string
 
   /** Тело сообщения */
-  readonly body?: ReactNode
+  body?: ReactNode
 
   /** Текст подписи */
-  readonly caption?: string
+  caption?: string
 
   /** Футер сообщения */
-  readonly footer?: ReactNode
+  footer?: ReactNode
 
   /**
    * Обработчик нажатия на кнопку закрытия.
    * Кнопка не отображается, если обработчик не передан.
    */
-  readonly onClose?: () => void
+  onClose?: () => void
 
   /**
    * Текст на кнопке закрытия тоста
    * Если не указан, в кнопке отображается иконка "крестик"
    * Это свойство игнорируется если onClose = undefined
    */
-  readonly closeLabel?: string
+  closeLabel?: string
 
   /** Срабатывает при истечении таймера */
-  readonly onTimerFinish?: () => void
+  onTimerFinish?: () => void
 
   /**
    * Выбор варианта стиля компонента
    * @default 'info'
    */
-  readonly severity?: 'info' | 'success' | 'warning' | 'danger'
+  severity?: 'info' | 'success' | 'warning' | 'danger'
 
   /** Дополнительная стилизация для контейнера компонента */
-  readonly style?: StyleProp<ViewStyle>
+  style?: StyleProp<ViewStyle>
 
   /** Значение таймера, если нужно отображать таймер вместо иконки */
-  readonly timerValue?: number
+  timerValue?: number
 
   /**
    * SVG-иконка.
@@ -73,14 +73,14 @@ export interface MessageProps
    * IconCircleX для severity='danger'
    * </pre>
    */
-  readonly Icon?: SvgSource
+  Icon?: SvgSource
 
   /**
    * Скрыть иконку.
    * Позволяет скрывать установленные или дефолтные иконки
    * Дефолтное значение: false
    */
-  readonly hiddenIcon?: boolean
+  hiddenIcon?: boolean
 }
 
 type MessageSeverityKey = NonNullable<MessageProps['severity']>
@@ -99,7 +99,7 @@ const messageIconColor: Record<
  * Унифицированный компонент, который используется для отображения информационных сообщений
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=562-2947
  */
-export const Message = memo(
+export const Message = memo<MessageProps>(
   ({
     title,
     body,
@@ -115,7 +115,7 @@ export const Message = memo(
     timerValue,
     Icon: IconProp,
     ...rest
-  }: MessageProps) => {
+  }) => {
     messageStyles.useVariants({ severity })
 
     const Icon = useMemo(() => {

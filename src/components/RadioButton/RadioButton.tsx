@@ -12,22 +12,22 @@ import { StyleSheet } from '../../utils'
 export interface RadioButtonProps
   extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Обработчик нажатия на кнопку */
-  readonly onPress: () => void
+  onPress: () => void
   /**
    * true, если необходим компонент в активном состоянии
    * @default false
    */
-  readonly checked?: boolean
+  checked?: boolean
   /**
    * Управление доступностью компонента
    * @default false
    */
-  readonly disabled?: boolean
+  disabled?: boolean
   /** Выбор состояния компонента */
-  readonly state?: 'default' | 'danger'
+  state?: 'default' | 'danger'
 }
 
-export const RadioButton = memo(
+export const RadioButton = memo<RadioButtonProps>(
   ({
     onPress,
     checked = false,
@@ -35,7 +35,7 @@ export const RadioButton = memo(
     state = 'default',
     testID,
     ...rest
-  }: RadioButtonProps) => {
+  }) => {
     const [pressed, setPressed] = useState(false)
 
     radioStyles.useVariants({
