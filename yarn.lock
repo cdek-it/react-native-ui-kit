@@ -2869,7 +2869,7 @@ __metadata:
     "@storybook/preview-api": "npm:8.6.14"
     "@storybook/react-native": "npm:10.1.1"
     "@stylistic/eslint-plugin": "npm:5.6.1"
-    "@tabler/icons-react-native": "npm:3.36.1"
+    "@tabler/icons-react-native": "npm:^3.36.0"
     "@testing-library/react-native": "npm:13.3.3"
     "@types/jest": "npm:29.5.14"
     "@types/lodash.map": "npm:4.6.13"
@@ -5673,18 +5673,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tabler/icons-react-native@npm:3.36.1":
-  version: 3.36.1
-  resolution: "@tabler/icons-react-native@npm:3.36.1"
+"@tabler/icons-react-native@npm:^3.36.0":
+  version: 3.41.1
+  resolution: "@tabler/icons-react-native@npm:3.41.1"
   dependencies:
-    "@tabler/icons": "npm:"
+    "@tabler/icons": "npm:3.41.1"
   peerDependencies:
     react: ">= 16.5.1"
-  checksum: 10/34e944ebd0376bdbe5c7e1a845ec19e34423ecbf8390eea1c1ef6b47ace09bbd9831c51b7bbec00e0e96c1468be302f4fe67a001137ad31ee151d3939f2e1dcd
+    react-native-svg: ">= 13.0.0"
+  checksum: 10/2bc4f05c73a71bab94cb79aa482903e60ced62908b1ba4a4053a996bc4e28b266e69ec3b50d048e39b0418546971e494110b887031ae704f5f553658dc424060
   languageName: node
   linkType: hard
 
-"@tabler/icons@npm:":
+"@tabler/icons@npm:3.41.1":
   version: 3.41.1
   resolution: "@tabler/icons@npm:3.41.1"
   checksum: 10/9a1af1a659c9e997a37e83acfd408fc32486687107b1a71e8fe03472274490c92c4512a1e62fd68d23e8d2d5f2c57feea2d22245605a07c8eeed67fcc683c544

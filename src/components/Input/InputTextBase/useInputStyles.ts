@@ -94,7 +94,6 @@ export const inputStyles = StyleSheet.create(
       alignItems: 'center',
     },
     rightButtonContainer: { justifyContent: 'center' },
-    rightIcon: { color: theme.Form.InputText.inputIconColor },
     iconSize: {
       width: typography.Size['text-base'],
       height: typography.Size['text-base'],

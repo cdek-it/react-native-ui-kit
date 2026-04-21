@@ -106,19 +106,21 @@ export const Accordion: React.FC<AccordionProps> = ({
           testID={AccordionTestIds.arrow}
         >
           <SvgUniversal
-            color={styles.icon.color}
-            height={styles.icon.height}
+            {...styles.icon}
             source={IconChevronRight}
-            width={styles.icon.width}
+            uniProps={({ theme }) => ({
+              color: theme.Panel.Accordion.accordionHeaderTextColor,
+            })}
           />
         </Animated.View>
         {Icon ? (
           <SvgUniversal
-            color={styles.icon.color}
-            height={styles.icon.height}
+            {...styles.icon}
             source={Icon}
             testID={AccordionTestIds.icon}
-            width={styles.icon.width}
+            uniProps={({ theme }) => ({
+              color: theme.Panel.Accordion.accordionHeaderTextColor,
+            })}
           />
         ) : null}
         <Text style={styles.title}>{title}</Text>
@@ -165,11 +167,7 @@ const styles = StyleSheet.create(({ theme, fonts }) => ({
     alignItems: 'center',
     backgroundColor: theme.Panel.Accordion.accordionHeaderBg,
   },
-  icon: {
-    width: 17.5,
-    height: 17.5,
-    color: theme.Panel.Accordion.accordionHeaderTextColor,
-  },
+  icon: { width: 17.5, height: 17.5 },
   title: {
     fontSize: 15.75,
     includeFontPadding: false,

@@ -8,6 +8,7 @@ import {
   type ViewProps,
 } from 'react-native'
 
+import type { ThemeType } from '../../theme/types'
 import { StyleSheet } from '../../utils'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
 
@@ -44,6 +45,17 @@ export interface TagProps
   readonly Icon?: SvgSource
 }
 
+type TagSeverity = NonNullable<TagProps['severity']>
+
+const tagIconColor: Record<TagSeverity, (t: ThemeType['theme']) => string> = {
+  basic: (t) => t.Misc.Badge.badgeTextColor,
+  info: (t) => t.Misc.Badge.badgeInfoTextColor,
+  success: (t) => t.Misc.Badge.badgeSuccessTextColor,
+  warning: (t) => t.Misc.Badge.badgeWarningTextColor,
+  danger: (t) => t.Misc.Badge.badgeDangerTextColor,
+  secondary: (t) => t.Misc.Badge.badgeTextColor,
+}
+
 /**
  * Используется для маркировки элементов интерфейса
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4921
@@ -69,11 +81,12 @@ export const Tag = memo(
         >
           {showIcon && Icon ? (
             <SvgUniversal
-              color={tagStyles.text.color}
-              height={tagStyles.icon.height}
+              {...tagStyles.icon}
               source={Icon}
               testID={TagTestId.icon}
-              width={tagStyles.icon.width}
+              uniProps={({ theme }) => ({
+                color: tagIconColor[severity](theme),
+              })}
             />
           ) : null}
           <Text

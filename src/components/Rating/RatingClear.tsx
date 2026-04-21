@@ -28,16 +28,15 @@ export const RatingClear = memo<RatingClearProps>(({ ...rest }) => {
     <RatingItemContainer {...rest}>
       {({ disabled, pressed }) => (
         <SvgUniversal
-          color={
-            disabled
-              ? styles.iconDisabled.color
-              : pressed
-                ? styles.iconPressed.color
-                : styles.icon.color
-          }
-          height={styles.icon.height}
+          {...styles.icon}
           source={IconBan}
-          width={styles.icon.width}
+          uniProps={({ theme }) => ({
+            color: disabled
+              ? theme.custom.rating.ratingCancelIconDisabledColor
+              : pressed
+                ? theme.Form.Rating.ratingCancelIconHoverColor
+                : theme.Form.Rating.ratingCancelIconColor,
+          })}
         />
       )}
     </RatingItemContainer>
@@ -48,10 +47,5 @@ const styles = StyleSheet.create(({ theme }) => ({
   icon: {
     height: theme.Form.Rating.ratingIconFontSize,
     width: theme.Form.Rating.ratingIconFontSize,
-    color: theme.Form.Rating.ratingCancelIconColor,
   },
-
-  iconPressed: { color: theme.Form.Rating.ratingCancelIconHoverColor },
-
-  iconDisabled: { color: theme.custom.rating.ratingCancelIconDisabledColor },
 }))

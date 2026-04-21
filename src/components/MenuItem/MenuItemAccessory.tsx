@@ -26,10 +26,11 @@ export const MenuItemAccessory = memo<MenuItemAccessoryProps>(
     return (
       <View style={styles.container}>
         <SvgUniversal
-          color={styles.icon.color}
-          height={styles.icon.height}
+          {...styles.icon}
           source={IconComponent}
-          width={styles.icon.width}
+          uniProps={({ theme }) => ({
+            color: theme.Menu.Item.menuitemIconColor,
+          })}
         />
       </View>
     )
@@ -41,6 +42,5 @@ const styles = StyleSheet.create(({ theme }) => ({
   icon: {
     width: theme.Menu.Item.menuitemSubmenuIconFontSize,
     height: theme.Menu.Item.menuitemSubmenuIconFontSize,
-    color: theme.Menu.Item.menuitemIconColor,
   },
 }))

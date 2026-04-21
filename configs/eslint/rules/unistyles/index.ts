@@ -194,21 +194,18 @@ const noSpreadIconStyles = {
   },
 }
 
-/**
- * Интегрируем все правила в конфиг
- */
+export const unistylesPlugin = {
+  rules: {
+    'no-spread-unistyles': noSpreadUnistyles,
+    'no-unistyles-in-worklet': noUnistylesInWorklet,
+    'no-spread-icon-styles': noSpreadIconStyles,
+  },
+}
+
 export const unistylesConfig = defineConfig([
   {
     files: ['src/**/*.{ts,tsx}'],
-    plugins: {
-      unistyles: {
-        rules: {
-          'no-spread-unistyles': noSpreadUnistyles,
-          'no-unistyles-in-worklet': noUnistylesInWorklet,
-          'no-spread-icon-styles': noSpreadIconStyles,
-        },
-      },
-    },
+    plugins: { unistyles: unistylesPlugin },
     rules: {
       'unistyles/no-spread-unistyles': 'error',
       'unistyles/no-unistyles-in-worklet': 'error',

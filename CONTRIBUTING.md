@@ -203,6 +203,8 @@ yarn test -u
 
 **Важные правила:**
 
+- `StyleSheet`, `useUnistyles` и `UnistylesRuntime` **не реэкспортируются** из
+  кита — импортируй их напрямую из `react-native-unistyles`
 - Все компоненты должны быть типизированы
 - `testID` должен быть в формате `UpperPascalCase` (например: `ButtonPrimary`,
   `InputText`)

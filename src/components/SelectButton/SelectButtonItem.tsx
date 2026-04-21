@@ -95,17 +95,6 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
     })
 
     const [isSelected, setIsSelected] = useState(false)
-    const iconColor = useMemo(() => {
-      if (disabled) {
-        return styles.disabledTextColor.color
-      }
-
-      if (isSelected) {
-        return checkedTextColor
-      }
-
-      return textColor
-    }, [checkedTextColor, disabled, isSelected, textColor])
 
     useAnimatedReaction(
       () => position.value,
@@ -130,11 +119,16 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
       >
         {Icon && showIcon ? (
           <SvgUniversal
-            color={iconColor}
-            height={iconSize.height}
+            {...iconSize}
             source={Icon}
             testID='SelectButtonItem_Icon'
-            width={iconSize.width}
+            uniProps={({ theme }) => ({
+              color: disabled
+                ? theme.Button.Disabled.disabledButtonBorderColor
+                : isSelected
+                  ? theme.Form.SelectButton.selectButtonIconActiveColor
+                  : theme.Form.SelectButton.selectButtonTextColor,
+            })}
           />
         ) : null}
         <Animated.Text

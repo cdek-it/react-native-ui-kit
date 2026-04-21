@@ -14,6 +14,7 @@ import {
   type ViewStyle,
 } from 'react-native'
 
+import type { ThemeType } from '../../theme/types'
 import { StyleSheet } from '../../utils'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
 import { ButtonSeverity } from '../Button/ButtonSeverity'
@@ -80,6 +81,18 @@ export interface MessageProps
    * Дефолтное значение: false
    */
   readonly hiddenIcon?: boolean
+}
+
+type MessageSeverityKey = NonNullable<MessageProps['severity']>
+
+const messageIconColor: Record<
+  MessageSeverityKey,
+  (t: ThemeType['theme']) => string
+> = {
+  info: (t) => t.Message.Severities.Info.infoMessageIconColor,
+  success: (t) => t.Message.Severities.Success.successMessageIconColor,
+  warning: (t) => t.Message.Severities.Warning.warningMessageIconColor,
+  danger: (t) => t.Message.Severities.Danger.dangerMessageIconColor,
 }
 
 /**
@@ -163,17 +176,18 @@ export const Message = memo(
       if (!hiddenIcon) {
         return (
           <SvgUniversal
-            color={messageStyles.content.borderColor}
-            height={messageStyles.iconSize.height}
+            {...messageStyles.iconSize}
             source={Icon}
             testID={TestId.Icon}
-            width={messageStyles.iconSize.width}
+            uniProps={({ theme }) => ({
+              color: messageIconColor[severity](theme),
+            })}
           />
         )
       }
 
       return undefined
-    }, [hiddenIcon, Icon, onTimerFinish, timerValue])
+    }, [hiddenIcon, Icon, onTimerFinish, severity, timerValue])
 
     return (
       <View

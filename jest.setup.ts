@@ -7,6 +7,10 @@ setUpTests()
 
 type ThemeName = 'light' | 'dark'
 
+jest.mock('react-native-worklets', () =>
+  require('react-native-worklets/src/mock')
+)
+
 interface MockedUnistylesModule {
   StyleSheet: { create: (...args: unknown[]) => unknown }
   UnistylesRuntime: {

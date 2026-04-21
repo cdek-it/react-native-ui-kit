@@ -184,10 +184,12 @@ export const Avatar = memo<AvatarProps>(
 
       return (
         <SvgUniversal
-          color={iconColor || styles.icon.color}
           height={iconSize}
           source={Icon}
           testID={AvatarTestId.icon}
+          uniProps={({ theme }) => ({
+            color: iconColor ?? theme.Misc.Avatar.avatarTextColor,
+          })}
           width={iconSize}
         />
       )
@@ -276,10 +278,7 @@ const styles = StyleSheet.create(({ theme, border, typography, fonts }) => ({
   },
   badgeContainer: { position: 'absolute', right: 0, top: -7 },
   badgeMeasureContainer: { alignSelf: 'flex-start' },
-  icon: {
-    width: typography.Size['text-base'],
-    color: theme.Misc.Avatar.avatarTextColor,
-  },
+  icon: { width: typography.Size['text-base'] },
   iconXLarge: { width: typography.Size['text-2xl'] },
 }))
 

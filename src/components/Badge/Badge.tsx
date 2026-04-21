@@ -29,12 +29,12 @@ export interface BadgeBase
 interface BadgeText extends BadgeBase {
   /** Текст внутри бейджа **/
   children: string
-  /** Отображать бейджа в форме точки **/
+  /** Отображать бейдж в форме точки **/
   dot?: false
 }
 
 interface BadgeDot extends BadgeBase {
-  /** Отображать бейджа в форме точки **/
+  /** Отображать бейдж в форме точки **/
   dot: true
   /** Текст внутри бейджа **/
   children?: never
@@ -69,10 +69,16 @@ export const Badge = memo(
     return (
       <View style={[badgeStyles.container, style]} {...rest}>
         {dot ? (
-          <View style={badgeStyles.dot} testID={testID} />
+          <View
+            style={[badgeStyles.dot, badgeStyles.dotShape]}
+            testID={testID}
+          />
         ) : (
           <>
-            <View style={badgeStyles.textBadgeContainer} testID={testID}>
+            <View
+              style={[badgeStyles.dot, badgeStyles.textBadgeContainer]}
+              testID={testID}
+            >
               <Text
                 numberOfLines={1}
                 style={[badgeStyles.textBadge, { minWidth: textLayout?.width }]}
@@ -108,9 +114,6 @@ const badgeStyles = StyleSheet.create(
   ({ theme, border, typography, fonts }) => ({
     container: { alignItems: 'flex-start' },
     dot: {
-      width: theme.Misc.Badge.badgeDotSize,
-      height: theme.Misc.Badge.badgeDotSize,
-      borderRadius: border.Radius['rounded-full'],
       variants: {
         severity: {
           basic: { backgroundColor: theme.Misc.Badge.badgeBg },
@@ -131,30 +134,16 @@ const badgeStyles = StyleSheet.create(
         },
       },
     },
+    dotShape: {
+      width: theme.Misc.Badge.badgeDotSize,
+      height: theme.Misc.Badge.badgeDotSize,
+      borderRadius: border.Radius['rounded-full'],
+    },
     textBadgeContainer: {
       height: theme.Misc.Badge.badgeHeight,
       paddingHorizontal: theme.Misc.Tag.tagPadding,
       justifyContent: 'center',
       borderRadius: border.Radius['rounded-full'],
-      variants: {
-        severity: {
-          basic: { backgroundColor: theme.Misc.Badge.badgeBg },
-          info: {
-            backgroundColor: theme.Button.Severity.Info.Basic.infoButtonBg,
-          },
-          success: {
-            backgroundColor:
-              theme.Button.Severity.Success.Basic.successButtonBg,
-          },
-          warning: {
-            backgroundColor:
-              theme.Button.Severity.Warning.Basic.warningButtonBg,
-          },
-          danger: {
-            backgroundColor: theme.Button.Severity.Danger.Basic.dangerButtonBg,
-          },
-        },
-      },
     },
     textBadge: {
       color: theme.Misc.Badge.badgeTextColor,

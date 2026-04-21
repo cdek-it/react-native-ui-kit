@@ -35,11 +35,16 @@ export const Caption = ({
     return (
       <View style={styles.withIconContainer}>
         <SvgUniversal
-          color={styles[color].color}
-          height={styles.icon.height}
+          {...styles.icon}
           source={Icon}
           testID={CaptionTestId.icon}
-          width={styles.icon.width}
+          uniProps={({ theme }) => ({
+            color: {
+              default: theme.General.textColor,
+              primary: theme.General.primaryColor,
+              secondary: theme.General.textSecondaryColor,
+            }[color],
+          })}
         />
         {text}
       </View>
