@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import { StyleSheet as RNStyleSheet } from 'react-native'
 import { useSharedValue, withTiming } from 'react-native-reanimated'
 
-import { StyleSheet } from '../../../../utils'
+import { StyleSheet } from 'react-native-unistyles'
 
 export const useSliderStyles = (
   checked: boolean,

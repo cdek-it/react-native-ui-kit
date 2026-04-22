@@ -1,7 +1,8 @@
 import { memo, useMemo } from 'react'
 import { View, type ViewStyle, type StyleProp } from 'react-native'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
+
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
 import { Subtitle } from '../Typography'
 

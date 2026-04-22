@@ -1,5 +1,6 @@
+import { UnistylesRuntime } from 'react-native-unistyles'
+
 import { ThemeVariant } from '../theme'
-import { UnistylesRuntime } from '../utils'
 
 const THEME_VARIANT_MAP: Record<'light' | 'dark', ThemeVariant> = {
   light: ThemeVariant.Light,

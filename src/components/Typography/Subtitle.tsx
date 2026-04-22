@@ -1,7 +1,7 @@
 import { memo } from 'react'
 import { Text, type TextProps } from 'react-native'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
 
 export interface SubtitleProps extends TextProps {
   /**

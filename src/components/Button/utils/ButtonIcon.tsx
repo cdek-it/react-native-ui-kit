@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 
-import { StyleSheet } from '../../../utils'
+import { StyleSheet } from 'react-native-unistyles'
+
 import { SvgUniversal } from '../../../utils/SvgUniversal'
 import { genericMemo } from '../../../utils/genericMemo'
 import type { BaseButtonProps, ButtonSize } from '../types'

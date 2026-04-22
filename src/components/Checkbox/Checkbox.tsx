@@ -8,7 +8,9 @@ import {
 } from 'react-native'
 import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 
-import { StyleSheet, SvgUniversal } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
+
+import { SvgUniversal } from '../../utils'
 
 type CheckboxState = 'default' | 'danger'
 

@@ -9,7 +9,8 @@ import {
   type ViewStyle,
 } from 'react-native'
 
-import { StyleSheet } from '../../../utils'
+import { StyleSheet } from 'react-native-unistyles'
+
 import type { SvgSource } from '../../../utils/SvgUniversal'
 import type { BadgeSeverity } from '../../Badge/Badge'
 import { Body, Caption } from '../../Typography'

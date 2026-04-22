@@ -1,6 +1,6 @@
 import { Text, type TextProps } from 'react-native'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
 
 export interface TitleProps extends TextProps {
   readonly level: 'd1' | 'd2' | 'd3' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'

@@ -9,7 +9,7 @@ import {
 } from 'react-native'
 import Animated, { useSharedValue, withTiming } from 'react-native-reanimated'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
 
 /**
  * Тип свойств компонента ProgressBar

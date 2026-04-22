@@ -1,7 +1,8 @@
 import { type ReactNode, useContext } from 'react'
 import { Pressable, type PressableStateCallbackType } from 'react-native'
 
-import { StyleSheet } from '../../../utils'
+import { StyleSheet } from 'react-native-unistyles'
+
 import { genericMemo } from '../../../utils/genericMemo'
 import type { BaseButtonProps, ButtonShape, ButtonSize } from '../types'
 

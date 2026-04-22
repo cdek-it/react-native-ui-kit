@@ -28,14 +28,10 @@
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
-    },
-    "./eslint": {
-      "types": "./dist/eslint/plugin.d.ts",
-      "default": "./dist/eslint/plugin.js"
     }
   },
   "scripts": {
-    "build": "rm -rf dist && tsc -p tsconfig.build.json && tsc -p tsconfig.eslint.json",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
     "test": "jest",
     "start": "expo start --dev-client --clear",
     "android": "expo run:android",

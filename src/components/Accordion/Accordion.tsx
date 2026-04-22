@@ -10,7 +10,8 @@ import Animated, {
 
 import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
+
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
 
 export interface AccordionProps extends ViewProps {

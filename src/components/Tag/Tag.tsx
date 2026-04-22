@@ -8,8 +8,9 @@ import {
   type ViewProps,
 } from 'react-native'
 
+import { StyleSheet } from 'react-native-unistyles'
+
 import type { ThemeType } from '../../theme/types'
-import { StyleSheet } from '../../utils'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
 
 export interface TagProps

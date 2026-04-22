@@ -1,7 +1,8 @@
 import { useContext } from 'react'
 import { Text } from 'react-native'
 
-import { StyleSheet } from '../../../utils'
+import { StyleSheet } from 'react-native-unistyles'
+
 import { genericMemo } from '../../../utils/genericMemo'
 import type { BaseButtonProps, ButtonSize } from '../types'
 

@@ -13,9 +13,8 @@ import Animated, {
   Extrapolation,
 } from 'react-native-reanimated'
 
+import { StyleSheet } from 'react-native-unistyles'
 import { scheduleOnRN } from 'react-native-worklets'
-
-import { StyleSheet } from '../../utils'
 
 export interface SliderProps
   extends AccessibilityProps, Pick<ViewProps, 'testID'> {
