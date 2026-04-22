@@ -64,7 +64,7 @@ context. Он только конфигурирует `react-native-unistyles`.
 - `ThemeContext` остается пустым и имеет значение `null`
 - `useChangeTheme()` всегда вызывает `UnistylesRuntime.setTheme(...)`
 
-### `makeStyles` — deprecated
+### `makeStyles` — removed
 
 Используйте `StyleSheet.create(...)`:
 
@@ -84,7 +84,7 @@ SDK реэкспортирует `StyleSheet`, `useUnistyles`, `UnistylesRuntime
 `withUnistyles`, поэтому потребителям не нужно импортировать
 `react-native-unistyles` напрямую.
 
-### `useTheme()` — deprecated
+### `useTheme()` — removed
 
 ```tsx
 import { UnistylesRuntime, useUnistyles } from '@cdek-it/react-native-ui-kit'
@@ -99,7 +99,7 @@ const { rt } = useUnistyles()
 rt.themeName
 ```
 
-### `useChangeTheme()` — deprecated
+### `useChangeTheme()` — removed
 
 ```tsx
 import { UnistylesRuntime } from '@cdek-it/react-native-ui-kit'
