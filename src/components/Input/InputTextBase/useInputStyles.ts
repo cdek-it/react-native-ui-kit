@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 
-import { StyleSheet } from '../../../utils'
+import { StyleSheet } from 'react-native-unistyles'
 
 import type { InputTextBaseProps } from './types'
 

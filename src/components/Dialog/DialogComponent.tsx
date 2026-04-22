@@ -1,7 +1,7 @@
 import React, { type ReactNode } from 'react'
 import { View, useWindowDimensions } from 'react-native'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
 
 export interface DialogComponentProps {
   readonly body?: React.ComponentType

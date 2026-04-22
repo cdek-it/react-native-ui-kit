@@ -9,7 +9,9 @@ import {
 import { useMemo } from 'react'
 import { TouchableOpacity, View } from 'react-native'
 
-import { StyleSheet, SvgUniversal, type SvgSource } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
+
+import { SvgUniversal, type SvgSource } from '../../utils'
 import { Title } from '../Typography'
 
 type Severity = 'danger' | 'warning' | 'info' | 'success' | 'help'

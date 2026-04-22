@@ -9,9 +9,10 @@ import {
   View,
 } from 'react-native'
 
+import { StyleSheet } from 'react-native-unistyles'
+
 import type { ThemeType } from '../../theme/types'
 
-import { StyleSheet } from '../../utils'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
 
 const WORD_JOINER = '\u2060' // символ невидимого пробела, чтобы избежать разрыва строки между текстом и иконкой

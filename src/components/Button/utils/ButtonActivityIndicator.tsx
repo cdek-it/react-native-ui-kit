@@ -1,6 +1,7 @@
 import { ActivityIndicator } from 'react-native'
 
-import { StyleSheet } from '../../../utils'
+import { StyleSheet } from 'react-native-unistyles'
+
 import { genericMemo } from '../../../utils/genericMemo'
 import type { BaseButtonProps } from '../types'
 

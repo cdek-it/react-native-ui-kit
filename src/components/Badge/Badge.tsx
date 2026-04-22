@@ -11,7 +11,7 @@ import {
 } from 'react-native'
 import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
 
 export type BadgeSeverity = 'basic' | 'info' | 'success' | 'warning' | 'danger'
 

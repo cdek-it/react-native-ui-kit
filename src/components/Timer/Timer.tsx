@@ -9,7 +9,7 @@ import Animated, {
 } from 'react-native-reanimated'
 import Svg, { Circle } from 'react-native-svg'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
 
 import { TimerFlip } from './TimerFlip'
 import { COUNTER_SIZE } from './constants'

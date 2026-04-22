@@ -6,7 +6,8 @@ import {
   type ViewStyle,
 } from 'react-native'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
+
 import { Badge } from '../Badge'
 
 import { BaseButton } from './BaseButton'

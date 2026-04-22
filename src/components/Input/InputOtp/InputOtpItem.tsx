@@ -9,7 +9,7 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated'
 
-import { StyleSheet } from '../../../utils'
+import { StyleSheet } from 'react-native-unistyles'
 
 export interface InputOtpItemProps extends Pick<ViewProps, 'testID'> {
   value?: string

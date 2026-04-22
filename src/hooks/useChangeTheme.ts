@@ -1,7 +1,8 @@
 import { useCallback } from 'react'
 
+import { UnistylesRuntime } from 'react-native-unistyles'
+
 import { ThemeVariant } from '../theme'
-import { UnistylesRuntime } from '../utils'
 
 const THEME_MAP: Record<ThemeVariant, 'light' | 'dark'> = {
   [ThemeVariant.Light]: 'light',

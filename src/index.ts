@@ -13,7 +13,6 @@ export {
   type FontsConfigType,
   type ThemeContextProviderProps,
 } from './theme'
-export { withUnistyles } from './utils'
 export { useFonts } from './hooks/useFonts'
 export { useTheme } from './hooks/useTheme'
 export { SvgUniversal, type SvgSource } from './utils/SvgUniversal'

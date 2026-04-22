@@ -6,7 +6,8 @@ import {
   View,
 } from 'react-native'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
+
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
 import { Badge, type BadgeSeverity } from '../Badge/Badge'
 

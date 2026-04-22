@@ -1,6 +1,7 @@
 import { createContext, useLayoutEffect, type ReactNode } from 'react'
 
-import { StyleSheet, UnistylesRuntime } from '../utils'
+import { StyleSheet, UnistylesRuntime } from 'react-native-unistyles'
+
 import { SkeletonContextProvider } from '../utils/SkeletonContext'
 
 import { darkTheme } from './darkTheme'

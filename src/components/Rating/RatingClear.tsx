@@ -1,7 +1,9 @@
 import { IconBan } from '@tabler/icons-react-native'
 import { memo } from 'react'
 
-import { StyleSheet, SvgUniversal } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
+
+import { SvgUniversal } from '../../utils'
 
 import {
   RatingItemContainer,

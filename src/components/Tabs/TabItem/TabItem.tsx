@@ -1,7 +1,8 @@
 import { memo, type ReactNode } from 'react'
 import { Text, Pressable, View, type ViewProps } from 'react-native'
 
-import { StyleSheet } from '../../../utils'
+import { StyleSheet } from 'react-native-unistyles'
+
 import { type SvgSource, SvgUniversal } from '../../../utils/SvgUniversal'
 
 export interface TabItemProps {

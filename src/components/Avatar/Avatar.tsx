@@ -21,7 +21,8 @@ import {
   type ViewStyle,
 } from 'react-native'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
+
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
 
 export type AvatarSize = 'xlarge' | 'large' | 'normal'

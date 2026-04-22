@@ -1,7 +1,7 @@
 import { memo, useCallback, useMemo } from 'react'
 import { type AccessibilityProps, View, type ViewProps } from 'react-native'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
 
 import { RatingClear } from './RatingClear'
 import { RatingItem } from './RatingItem'

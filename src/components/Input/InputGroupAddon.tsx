@@ -1,7 +1,8 @@
 import { memo } from 'react'
 import { Pressable, Text } from 'react-native'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
+
 import { SvgUniversal, type SvgSource } from '../../utils/SvgUniversal'
 
 export interface InputGroupAddonProps {

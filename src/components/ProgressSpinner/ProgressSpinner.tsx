@@ -10,7 +10,7 @@ import Animated, {
 } from 'react-native-reanimated'
 import Svg, { Circle } from 'react-native-svg'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
 
 const AnimatedSvg = Animated.createAnimatedComponent(Svg)
 const AnimatedCircle = Animated.createAnimatedComponent(Circle)

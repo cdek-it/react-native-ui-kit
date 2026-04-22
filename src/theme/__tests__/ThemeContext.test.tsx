@@ -1,7 +1,8 @@
 import { render } from '@testing-library/react-native'
 import { Text } from 'react-native'
 
-import { UnistylesRuntime } from '../../utils'
+import { UnistylesRuntime } from 'react-native-unistyles'
+
 import { ThemeContextProvider } from '../ThemeContext'
 import { lightTheme } from '../lightTheme'
 import { ThemeVariant } from '../types'

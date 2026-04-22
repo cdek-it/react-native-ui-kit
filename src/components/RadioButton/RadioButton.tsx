@@ -7,7 +7,7 @@ import {
 } from 'react-native'
 import Animated, { LinearTransition } from 'react-native-reanimated'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
 
 export interface RadioButtonProps
   extends AccessibilityProps, Pick<ViewProps, 'testID'> {

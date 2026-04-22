@@ -18,7 +18,7 @@ import {
   type BlurEvent,
 } from 'react-native'
 
-import { StyleSheet } from '../../../utils'
+import { StyleSheet } from 'react-native-unistyles'
 
 import { InputOtpItem } from './InputOtpItem'
 

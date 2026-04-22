@@ -1,7 +1,7 @@
 import { memo, type ReactNode } from 'react'
 import { Pressable, type PressableProps } from 'react-native'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
 
 /**
  * Свойста компонента контейнера для элемента в компоненте рейтинга

@@ -1,6 +1,6 @@
 import { Text, type TextProps } from 'react-native'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
 
 export interface BodyProps extends TextProps {
   readonly base?: boolean

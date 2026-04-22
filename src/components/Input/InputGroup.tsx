@@ -7,7 +7,7 @@ import {
   type StyleProp,
 } from 'react-native'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
 
 import { InputGroupAddon, type InputGroupAddonProps } from './InputGroupAddon'
 import { InputTextBase } from './InputTextBase/InputTextBase'

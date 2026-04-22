@@ -7,7 +7,8 @@ import Animated, {
 import Svg, { Defs, LinearGradient, Rect, Stop } from 'react-native-svg'
 import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 
-import { StyleSheet } from '../../utils'
+import { StyleSheet } from 'react-native-unistyles'
+
 import { SkeletonContext } from '../../utils/SkeletonContext'
 
 interface SkeletonProps extends ViewProps {}

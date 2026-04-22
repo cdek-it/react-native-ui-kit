@@ -1,7 +1,8 @@
 import { renderHook } from '@testing-library/react-native'
 
+import { UnistylesRuntime } from 'react-native-unistyles'
+
 import { ThemeVariant } from '../../theme'
-import { UnistylesRuntime } from '../../utils'
 
 import { useTheme } from '../useTheme'
 
