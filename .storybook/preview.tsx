@@ -1,14 +1,28 @@
 import type { Preview } from '@storybook/react'
-import { StyleSheet } from 'react-native-unistyles'
-import { ThemeContextProvider, ThemeVariant } from '../src'
-import { View } from 'react-native'
-import React, { type FunctionComponent, type ReactNode } from 'react'
+import { useArgs } from '@storybook/preview-api'
+import { StyleSheet, UnistylesRuntime } from 'react-native-unistyles'
+import { ThemeContextProvider, ThemeVariant } from '../src/theme'
+import { View, Appearance } from 'react-native'
+import React, {
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  type FunctionComponent,
+  type ReactNode,
+} from 'react'
+
+let currentTheme =
+  Appearance.getColorScheme() === 'dark'
+    ? ThemeVariant.Dark
+    : ThemeVariant.Light
 
 const preview: Preview = {
   decorators: [
-    (Story, { args }) => {
+    (Story, context) => {
+      const [args, updateArgs] = useArgs<StorybookThemeArgs>()
+
       return (
-        <Container theme={args.theme}>
+        <Container theme={args.theme} updateArgs={updateArgs}>
           <View style={{ padding: 16, flex: 1 }}>
             <Story />
           </View>
@@ -26,17 +40,45 @@ const preview: Preview = {
       control: { type: 'radio' },
     },
   },
-  args: { theme: ThemeVariant.Light },
+  args: { theme: currentTheme },
 }
 
 export default preview
 
+interface StorybookThemeArgs {
+  theme: ThemeVariant
+}
+
+const THEME_NAME_MAP: Record<ThemeVariant, 'light' | 'dark'> = {
+  [ThemeVariant.Light]: 'light',
+  [ThemeVariant.Dark]: 'dark',
+}
+
 const Container: FunctionComponent<{
   children: ReactNode
   theme: ThemeVariant
-}> = ({ children, theme }) => {
+  updateArgs: (args: StorybookThemeArgs) => void
+}> = ({ children, theme, updateArgs }) => {
+  const themeSynchronized = useRef(false)
+
+  useEffect(() => {
+    if (!themeSynchronized.current) {
+      themeSynchronized.current = true
+      updateArgs({ theme: currentTheme })
+    }
+  }, [updateArgs])
+
+  useLayoutEffect(() => {
+    if (themeSynchronized.current) {
+      const nextTheme = THEME_NAME_MAP[theme]
+      Appearance.setColorScheme(nextTheme)
+      UnistylesRuntime.setTheme(nextTheme)
+      currentTheme = theme
+    }
+  }, [theme])
+
   return (
-    <ThemeContextProvider initialTheme={theme}>
+    <ThemeContextProvider initialTheme={currentTheme}>
       <View style={styles.container}>{children}</View>
     </ThemeContextProvider>
   )
