@@ -61,7 +61,6 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
         "width": 35,
       }
     }
-    nativeID="30"
     style={
       [
         {
@@ -99,7 +98,6 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
           "width": 14,
         }
       }
-      nativeID="31"
       style={
         [
           {
@@ -179,7 +177,6 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
         "width": 35,
       }
     }
-    nativeID="28"
     style={
       [
         {
@@ -217,7 +214,6 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
           "width": 14,
         }
       }
-      nativeID="29"
       style={
         [
           {
@@ -297,7 +293,6 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
         "width": 35,
       }
     }
-    nativeID="14"
     style={
       [
         {
@@ -335,7 +330,6 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
           "width": 14,
         }
       }
-      nativeID="15"
       style={
         [
           {
@@ -415,7 +409,6 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
         "width": 35,
       }
     }
-    nativeID="12"
     style={
       [
         {
@@ -453,7 +446,6 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
           "width": 14,
         }
       }
-      nativeID="13"
       style={
         [
           {
@@ -533,7 +525,6 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
         "width": 35,
       }
     }
-    nativeID="22"
     style={
       [
         {
@@ -571,7 +562,6 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
           "width": 14,
         }
       }
-      nativeID="23"
       style={
         [
           {
@@ -651,7 +641,6 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
         "width": 35,
       }
     }
-    nativeID="20"
     style={
       [
         {
@@ -689,7 +678,6 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
           "width": 14,
         }
       }
-      nativeID="21"
       style={
         [
           {
@@ -769,7 +757,6 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
         "width": 35,
       }
     }
-    nativeID="6"
     style={
       [
         {
@@ -807,7 +794,6 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
           "width": 14,
         }
       }
-      nativeID="7"
       style={
         [
           {
@@ -887,7 +873,6 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
         "width": 35,
       }
     }
-    nativeID="4"
     style={
       [
         {
@@ -925,7 +910,6 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
           "width": 14,
         }
       }
-      nativeID="5"
       style={
         [
           {
@@ -1005,7 +989,6 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
         "width": 35,
       }
     }
-    nativeID="26"
     style={
       [
         {
@@ -1043,7 +1026,6 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
           "width": 14,
         }
       }
-      nativeID="27"
       style={
         [
           {
@@ -1123,7 +1105,6 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
         "width": 35,
       }
     }
-    nativeID="24"
     style={
       [
         {
@@ -1161,7 +1142,6 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
           "width": 14,
         }
       }
-      nativeID="25"
       style={
         [
           {
@@ -1241,7 +1221,6 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
         "width": 35,
       }
     }
-    nativeID="10"
     style={
       [
         {
@@ -1279,7 +1258,6 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
           "width": 14,
         }
       }
-      nativeID="11"
       style={
         [
           {
@@ -1359,7 +1337,6 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
         "width": 35,
       }
     }
-    nativeID="8"
     style={
       [
         {
@@ -1397,7 +1374,6 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
           "width": 14,
         }
       }
-      nativeID="9"
       style={
         [
           {
@@ -1477,7 +1453,6 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - f
         "width": 35,
       }
     }
-    nativeID="18"
     style={
       [
         {
@@ -1515,7 +1490,6 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - f
           "width": 14,
         }
       }
-      nativeID="19"
       style={
         [
           {
@@ -1595,7 +1569,6 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - f
         "width": 35,
       }
     }
-    nativeID="16"
     style={
       [
         {
@@ -1633,7 +1606,6 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - f
           "width": 14,
         }
       }
-      nativeID="17"
       style={
         [
           {
@@ -1713,7 +1685,6 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - t
         "width": 35,
       }
     }
-    nativeID="2"
     style={
       [
         {
@@ -1751,7 +1722,6 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - t
           "width": 14,
         }
       }
-      nativeID="3"
       style={
         [
           {
@@ -1831,7 +1801,6 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - t
         "width": 35,
       }
     }
-    nativeID="0"
     style={
       [
         {
@@ -1869,7 +1838,6 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - t
           "width": 14,
         }
       }
-      nativeID="1"
       style={
         [
           {

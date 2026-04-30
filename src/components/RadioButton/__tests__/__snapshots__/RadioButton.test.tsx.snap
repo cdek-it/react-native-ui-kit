@@ -31,7 +31,6 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = danger
         "reduceMotionV": "system",
       }
     }
-    nativeID="1"
     style={
       [
         {
@@ -257,7 +256,6 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = danger 
         "reduceMotionV": "system",
       }
     }
-    nativeID="0"
     style={
       [
         {

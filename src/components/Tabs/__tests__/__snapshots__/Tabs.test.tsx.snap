@@ -2564,7 +2564,6 @@ exports[`Tabs component tests disabled 1`] = `
         },
       ]
     }
-    nativeID="1"
     style={
       [
         {
@@ -3022,7 +3021,6 @@ exports[`Tabs component tests normal 1`] = `
         },
       ]
     }
-    nativeID="0"
     style={
       [
         {

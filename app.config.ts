@@ -20,8 +20,10 @@ export default {
     },
     icon: './icon.png',
     updates: { fallbackToCacheTimeout: 0 },
-    plugins: ['./expo/plugins/withEnsureBundler.js'],
-    newArchEnabled: true,
+    plugins: [
+      './expo/plugins/withEnsureBundler.js',
+      '@react-native-async-storage/expo-with-async-storage',
+    ],
     assetBundlePatterns: ['**/*'],
   } satisfies ExpoConfig,
 }
