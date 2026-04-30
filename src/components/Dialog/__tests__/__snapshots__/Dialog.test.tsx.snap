@@ -62,7 +62,6 @@ exports[`Dialog component tests basic dialog with title, body and footer 1`] = `
           },
         ]
       }
-      nativeID="0"
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -109,7 +108,6 @@ exports[`Dialog component tests basic dialog with title, body and footer 1`] = `
         }
       }
       jestInlineStyle={{}}
-      nativeID="1"
       style={
         [
           {

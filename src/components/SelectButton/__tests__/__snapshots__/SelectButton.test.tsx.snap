@@ -129,7 +129,6 @@ exports[`SelectButtonItem {"initialIndex": 1, "size": "xlarge"} 1`] = `
         },
       ]
     }
-    nativeID="3"
     style={
       [
         {
@@ -227,7 +226,6 @@ exports[`SelectButtonItem {"initialIndex": 2, "size": "base"} 1`] = `
         },
       ]
     }
-    nativeID="1"
     style={
       [
         {
@@ -325,7 +323,6 @@ exports[`SelectButtonItem {"size": "large"} 1`] = `
         },
       ]
     }
-    nativeID="2"
     style={
       [
         {
@@ -421,7 +418,6 @@ exports[`SelectButtonItem {} 1`] = `
         },
       ]
     }
-    nativeID="0"
     style={
       [
         {

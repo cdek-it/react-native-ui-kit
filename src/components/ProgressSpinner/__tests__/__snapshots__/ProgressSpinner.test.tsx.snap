@@ -30,7 +30,6 @@ exports[`ProgressSpinner {"fill": "primary", "size": "lg"} 1`] = `
       },
     ]
   }
-  nativeID="6"
   style={
     [
       {
@@ -139,7 +138,6 @@ exports[`ProgressSpinner {"fill": "primary", "size": "md"} 1`] = `
       },
     ]
   }
-  nativeID="12"
   style={
     [
       {
@@ -248,7 +246,6 @@ exports[`ProgressSpinner {"fill": "primary", "size": "sm"} 1`] = `
       },
     ]
   }
-  nativeID="18"
   style={
     [
       {
@@ -357,7 +354,6 @@ exports[`ProgressSpinner {"fill": "primary", "size": "xl"} 1`] = `
       },
     ]
   }
-  nativeID="0"
   style={
     [
       {
@@ -466,7 +462,6 @@ exports[`ProgressSpinner {"fill": "primary", "size": undefined} 1`] = `
       },
     ]
   }
-  nativeID="24"
   style={
     [
       {
@@ -575,7 +570,6 @@ exports[`ProgressSpinner {"fill": "white", "size": "lg"} 1`] = `
       },
     ]
   }
-  nativeID="8"
   style={
     [
       {
@@ -684,7 +678,6 @@ exports[`ProgressSpinner {"fill": "white", "size": "md"} 1`] = `
       },
     ]
   }
-  nativeID="14"
   style={
     [
       {
@@ -793,7 +786,6 @@ exports[`ProgressSpinner {"fill": "white", "size": "sm"} 1`] = `
       },
     ]
   }
-  nativeID="20"
   style={
     [
       {
@@ -902,7 +894,6 @@ exports[`ProgressSpinner {"fill": "white", "size": "xl"} 1`] = `
       },
     ]
   }
-  nativeID="2"
   style={
     [
       {
@@ -1011,7 +1002,6 @@ exports[`ProgressSpinner {"fill": "white", "size": undefined} 1`] = `
       },
     ]
   }
-  nativeID="26"
   style={
     [
       {
@@ -1120,7 +1110,6 @@ exports[`ProgressSpinner {"fill": undefined, "size": "lg"} 1`] = `
       },
     ]
   }
-  nativeID="10"
   style={
     [
       {
@@ -1229,7 +1218,6 @@ exports[`ProgressSpinner {"fill": undefined, "size": "md"} 1`] = `
       },
     ]
   }
-  nativeID="16"
   style={
     [
       {
@@ -1338,7 +1326,6 @@ exports[`ProgressSpinner {"fill": undefined, "size": "sm"} 1`] = `
       },
     ]
   }
-  nativeID="22"
   style={
     [
       {
@@ -1447,7 +1434,6 @@ exports[`ProgressSpinner {"fill": undefined, "size": "xl"} 1`] = `
       },
     ]
   }
-  nativeID="4"
   style={
     [
       {
@@ -1556,7 +1542,6 @@ exports[`ProgressSpinner {"fill": undefined, "size": undefined} 1`] = `
       },
     ]
   }
-  nativeID="28"
   style={
     [
       {
