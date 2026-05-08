@@ -5,30 +5,7 @@ exports[`Title component tests level = h1 1`] = `
   style={
     [
       {
-        "color": "#181a1f",
-        "fontFamily": "TT Fellows",
-        "fontWeight": 700,
-        "includeFontPadding": false,
-        "verticalAlign": "middle",
-      },
-      {
-        "fontSize": 26.25,
-      },
-      undefined,
-    ]
-  }
-  testID="Title"
->
-  Text
-</Text>
-`;
-
-exports[`Title component tests level = h2 1`] = `
-<Text
-  style={
-    [
-      {
-        "color": "#181a1f",
+        "color": "#2b2e33",
         "fontFamily": "TT Fellows",
         "fontWeight": 700,
         "includeFontPadding": false,
@@ -46,12 +23,12 @@ exports[`Title component tests level = h2 1`] = `
 </Text>
 `;
 
-exports[`Title component tests level = h3 1`] = `
+exports[`Title component tests level = h2 1`] = `
 <Text
   style={
     [
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
         "fontFamily": "TT Fellows",
         "fontWeight": 700,
         "includeFontPadding": false,
@@ -69,12 +46,12 @@ exports[`Title component tests level = h3 1`] = `
 </Text>
 `;
 
-exports[`Title component tests level = h4 1`] = `
+exports[`Title component tests level = h3 1`] = `
 <Text
   style={
     [
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
         "fontFamily": "TT Fellows",
         "fontWeight": 700,
         "includeFontPadding": false,
@@ -92,12 +69,12 @@ exports[`Title component tests level = h4 1`] = `
 </Text>
 `;
 
-exports[`Title component tests level = h5 1`] = `
+exports[`Title component tests level = h4 1`] = `
 <Text
   style={
     [
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
         "fontFamily": "TT Fellows",
         "fontWeight": 700,
         "includeFontPadding": false,
@@ -115,12 +92,12 @@ exports[`Title component tests level = h5 1`] = `
 </Text>
 `;
 
-exports[`Title component tests level = h6 1`] = `
+exports[`Title component tests level = h5 1`] = `
 <Text
   style={
     [
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
         "fontFamily": "TT Fellows",
         "fontWeight": 700,
         "includeFontPadding": false,
@@ -128,6 +105,30 @@ exports[`Title component tests level = h6 1`] = `
       },
       {
         "fontSize": 12.25,
+      },
+      undefined,
+    ]
+  }
+  testID="Title"
+>
+  Text
+</Text>
+`;
+
+exports[`Title component tests level = h6 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#2b2e33",
+        "fontFamily": "TT Fellows",
+        "fontWeight": 700,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
+      },
+      {
+        "fontSize": 10.5,
+        "lineHeight": 12,
       },
       undefined,
     ]

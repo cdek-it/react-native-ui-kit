@@ -64,7 +64,7 @@ exports[`Chip component tests {
       [
         {
           "color": "#181a1f",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -244,7 +244,7 @@ exports[`Chip component tests {
       [
         {
           "color": "#181a1f",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -322,7 +322,7 @@ exports[`Chip component tests {
       [
         {
           "color": "#181a1f",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -637,7 +637,7 @@ exports[`Chip component tests {
       [
         {
           "color": "#181a1f",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -850,7 +850,7 @@ exports[`Chip component tests {
       [
         {
           "color": "#181a1f",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -928,7 +928,7 @@ exports[`Chip component tests {
       [
         {
           "color": "#181a1f",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -1006,7 +1006,7 @@ exports[`Chip component tests {
       [
         {
           "color": "#181a1f",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -1219,7 +1219,7 @@ exports[`Chip component tests {
       [
         {
           "color": "#181a1f",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -1432,7 +1432,7 @@ exports[`Chip component tests {
       [
         {
           "color": "#181a1f",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -1612,7 +1612,7 @@ exports[`Chip component tests {
       [
         {
           "color": "#181a1f",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -1690,7 +1690,7 @@ exports[`Chip component tests {
       [
         {
           "color": "#181a1f",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -2005,7 +2005,7 @@ exports[`Chip component tests {
       [
         {
           "color": "#181a1f",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -2218,7 +2218,7 @@ exports[`Chip component tests {
       [
         {
           "color": "#181a1f",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -2296,7 +2296,7 @@ exports[`Chip component tests {
       [
         {
           "color": "#181a1f",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -2374,7 +2374,7 @@ exports[`Chip component tests {
       [
         {
           "color": "#181a1f",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -2587,7 +2587,7 @@ exports[`Chip component tests {
       [
         {
           "color": "#181a1f",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "verticalAlign": "middle",
