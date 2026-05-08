@@ -38,8 +38,8 @@ UI kit использует следующие виды шрифтов.
 
 | Тип шрифта  | Используемые начертания                        | Рекомендуемый шрифт | Рекомендуемый аналог |
 | ----------- | ---------------------------------------------- | ------------------- | -------------------- |
-| `primary`   | – regular<br/>– demibold<br/>– demibold italic | TT Fellows          | PT Sans              |
-| `secondary` | – regular<br/>– bold                           | PT Sans             | —                    |
+| `primary`   | – regular<br/>– demibold<br/>– demibold italic | TT Fellows          | Noto Sans            |
+| `secondary` | – regular<br/>– medium<br/>– bold              | Noto Sans           | —                    |
 
 Исходники шрифтов не поставляются вместе с пакетом, их требуется подключать
 отдельно. После подключения шрифтов в проект, необходимо указать их в
@@ -84,10 +84,11 @@ UI kit использует следующие виды шрифтов.
           ],
         },
         {
-          fontFamily: 'PT Sans',
+          fontFamily: 'Noto Sans',
           fontDefinitions: [
-            { path: './assets/fonts/PTSans-Bold.ttf', weight: 700 },
-            { path: './assets/fonts/PTSans-Regular.ttf', weight: 400 },
+            { path: './assets/NotoSans-Bold.ttf', weight: 700 },
+            { path: './assets/NotoSans-Medium.ttf', weight: 500 },
+            { path: './assets/NotoSans-Regular.ttf', weight: 400 },
           ],
         },
       ],
@@ -130,7 +131,7 @@ UI kit использует следующие виды шрифтов.
 
       //подключение шрифтов
       ReactFontManager.getInstance().addCustomFont(this, "TT Fellows", R.font.xml_tt_fellows)
-      ReactFontManager.getInstance().addCustomFont(this, "PT Sans", R.font.xml_pt_sans)
+      ReactFontManager.getInstance().addCustomFont(this, "Noto Sans", R.font.xml_noto_sans)
 
       // остальной код...
     }

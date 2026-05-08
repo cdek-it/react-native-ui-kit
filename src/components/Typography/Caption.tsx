@@ -59,7 +59,7 @@ const CaptionTestId = { text: 'CaptionText', icon: 'CaptionIcon' }
 
 const styles = StyleSheet.create(({ theme, spacing, typography, fonts }) => ({
   text: {
-    fontSize: typography.Size['text-sm'],
+    fontSize: typography.Size['text-xs'],
     includeFontPadding: false,
     verticalAlign: 'middle',
     fontFamily: fonts.primary,

@@ -137,7 +137,7 @@ const styles = StyleSheet.create(({ spacing, typography, fonts }) => ({
   container: { flexDirection: 'row', alignItems: 'center' },
   text: {
     flexShrink: 1,
-    fontSize: typography.Size['text-sm'],
+    fontSize: typography.Size['text-xs'],
     includeFontPadding: false,
     verticalAlign: 'middle',
     color: typography.Color.Service['text-info'],

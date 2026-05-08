@@ -6,7 +6,7 @@ exports[`Caption component tests color = default, disabled = false 1`] = `
     [
       {
         "fontFamily": "TT Fellows",
-        "fontSize": 12.25,
+        "fontSize": 10.5,
         "includeFontPadding": false,
         "verticalAlign": "middle",
       },
@@ -163,7 +163,7 @@ exports[`Caption component tests color = default, disabled = false 2`] = `
       [
         {
           "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
+          "fontSize": 10.5,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -190,7 +190,7 @@ exports[`Caption component tests color = default, disabled = true 1`] = `
     [
       {
         "fontFamily": "TT Fellows",
-        "fontSize": 12.25,
+        "fontSize": 10.5,
         "includeFontPadding": false,
         "verticalAlign": "middle",
       },
@@ -349,7 +349,7 @@ exports[`Caption component tests color = default, disabled = true 2`] = `
       [
         {
           "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
+          "fontSize": 10.5,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -378,7 +378,7 @@ exports[`Caption component tests color = primary, disabled = false 1`] = `
     [
       {
         "fontFamily": "TT Fellows",
-        "fontSize": 12.25,
+        "fontSize": 10.5,
         "includeFontPadding": false,
         "verticalAlign": "middle",
       },
@@ -535,7 +535,7 @@ exports[`Caption component tests color = primary, disabled = false 2`] = `
       [
         {
           "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
+          "fontSize": 10.5,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -562,7 +562,7 @@ exports[`Caption component tests color = primary, disabled = true 1`] = `
     [
       {
         "fontFamily": "TT Fellows",
-        "fontSize": 12.25,
+        "fontSize": 10.5,
         "includeFontPadding": false,
         "verticalAlign": "middle",
       },
@@ -721,7 +721,7 @@ exports[`Caption component tests color = primary, disabled = true 2`] = `
       [
         {
           "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
+          "fontSize": 10.5,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -750,7 +750,7 @@ exports[`Caption component tests color = secondary, disabled = false 1`] = `
     [
       {
         "fontFamily": "TT Fellows",
-        "fontSize": 12.25,
+        "fontSize": 10.5,
         "includeFontPadding": false,
         "verticalAlign": "middle",
       },
@@ -907,7 +907,7 @@ exports[`Caption component tests color = secondary, disabled = false 2`] = `
       [
         {
           "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
+          "fontSize": 10.5,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -934,7 +934,7 @@ exports[`Caption component tests color = secondary, disabled = true 1`] = `
     [
       {
         "fontFamily": "TT Fellows",
-        "fontSize": 12.25,
+        "fontSize": 10.5,
         "includeFontPadding": false,
         "verticalAlign": "middle",
       },
@@ -1093,7 +1093,7 @@ exports[`Caption component tests color = secondary, disabled = true 2`] = `
       [
         {
           "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
+          "fontSize": 10.5,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -1122,7 +1122,7 @@ exports[`Caption component tests default props 1`] = `
     [
       {
         "fontFamily": "TT Fellows",
-        "fontSize": 12.25,
+        "fontSize": 10.5,
         "includeFontPadding": false,
         "verticalAlign": "middle",
       },
