@@ -1,5 +1,34 @@
 # Changelog
 
+## [1.0.0-beta.1](https://github.com/cdek-it/react-native-ui-kit/compare/v0.6.9...v1.0.0-beta.1) (2026-05-18)
+
+### 🚀 Новый функционал
+
+* **unistyles:** миграция стилей на unistyles ([d9ae606](https://github.com/cdek-it/react-native-ui-kit/commit/d9ae606dbf564f728b5ddd3615c9e4b88f9157b1))
+* **unistyles:** перевод ui kit на unistyles ([7cfd52e](https://github.com/cdek-it/react-native-ui-kit/commit/7cfd52e1e8bdb270f86d8f5199412605186b2c09))
+
+### 🐛 Исправления багов
+
+* code review ([6932522](https://github.com/cdek-it/react-native-ui-kit/commit/6932522d6595ae20a63e81ae717716456b167d4e))
+* code review ([723ceef](https://github.com/cdek-it/react-native-ui-kit/commit/723ceef416ec6f1177ddad1fe682ea4ff70ec4b9))
+* eslint ([0e9d2f1](https://github.com/cdek-it/react-native-ui-kit/commit/0e9d2f181c25a4313a8dc0c749b54ad73c01fdac))
+* eslint ([f9eed03](https://github.com/cdek-it/react-native-ui-kit/commit/f9eed0304450e090f0a78d95c54e9fad0af9b0af))
+* **storybook:** исправлено переключение темы ([e939957](https://github.com/cdek-it/react-native-ui-kit/commit/e9399578bcdb909473b654c6d404274d3170b067))
+* themecontext стал тупым в целях безопасности ([ccc5738](https://github.com/cdek-it/react-native-ui-kit/commit/ccc57385c275c309f8b20e71e81f78f55e0313d1))
+* анимация skeleton ([f31fece](https://github.com/cdek-it/react-native-ui-kit/commit/f31fece3551e43caba3da2472e8acf538e896ed7))
+* зачистка diff ([193d77c](https://github.com/cdek-it/react-native-ui-kit/commit/193d77c23923e59471244a53509f086178eef91e))
+* исправлено нереактивное поведение Svg ассетов ([19fa401](https://github.com/cdek-it/react-native-ui-kit/commit/19fa401ca754c89ab0d2b68b67be7e4c5d516e25))
+* исправлены замечания по code review ([192c70f](https://github.com/cdek-it/react-native-ui-kit/commit/192c70f76a5168b228b668ec40362093498579a7))
+* исправлены проблемы после локального тестирования ([b96616f](https://github.com/cdek-it/react-native-ui-kit/commit/b96616f498f7b72aafcffae6a9c820b3701362ff))
+* локальный код ревью ([1f7a2cc](https://github.com/cdek-it/react-native-ui-kit/commit/1f7a2cc91759dd692c37960c6aa02d316a7eb5db))
+* небольшое изменение нейминга ([057a3b0](https://github.com/cdek-it/react-native-ui-kit/commit/057a3b08aaef4aae9d766034d7dd6628c4f75ea9))
+
+### 🧹 Другое
+
+* визуальное уменьшение diff в pr ([a8e7522](https://github.com/cdek-it/react-native-ui-kit/commit/a8e75223fe3e5ba280a45a7b4e016c84b82bf5bd))
+* ускорение eslint ([b57ee77](https://github.com/cdek-it/react-native-ui-kit/commit/b57ee770e06356bcadd13c803af03fff4af38463))
+* ускорение jest ([4bc989f](https://github.com/cdek-it/react-native-ui-kit/commit/4bc989f7500afda01c08c9e7ad4ac9f63fdad80b))
+
 ## [1.0.0-beta.0](https://github.com/cdek-it/react-native-ui-kit/compare/v0.6.9...v1.0.0-beta.0) (2026-04-22)
 
 ### 🚀 Новый функционал
