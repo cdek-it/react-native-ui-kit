@@ -5,7 +5,7 @@ exports[`Title component tests level = h1 1`] = `
   style={
     [
       {
-        "color": "#2b2e33",
+        "color": "#181a1f",
         "fontFamily": "TT Fellows",
         "fontWeight": 700,
         "includeFontPadding": false,
@@ -28,7 +28,7 @@ exports[`Title component tests level = h2 1`] = `
   style={
     [
       {
-        "color": "#2b2e33",
+        "color": "#181a1f",
         "fontFamily": "TT Fellows",
         "fontWeight": 700,
         "includeFontPadding": false,
@@ -51,7 +51,7 @@ exports[`Title component tests level = h3 1`] = `
   style={
     [
       {
-        "color": "#2b2e33",
+        "color": "#181a1f",
         "fontFamily": "TT Fellows",
         "fontWeight": 700,
         "includeFontPadding": false,
@@ -74,7 +74,7 @@ exports[`Title component tests level = h4 1`] = `
   style={
     [
       {
-        "color": "#2b2e33",
+        "color": "#181a1f",
         "fontFamily": "TT Fellows",
         "fontWeight": 700,
         "includeFontPadding": false,
@@ -97,7 +97,7 @@ exports[`Title component tests level = h5 1`] = `
   style={
     [
       {
-        "color": "#2b2e33",
+        "color": "#181a1f",
         "fontFamily": "TT Fellows",
         "fontWeight": 700,
         "includeFontPadding": false,
@@ -120,7 +120,7 @@ exports[`Title component tests level = h6 1`] = `
   style={
     [
       {
-        "color": "#2b2e33",
+        "color": "#181a1f",
         "fontFamily": "TT Fellows",
         "fontWeight": 700,
         "includeFontPadding": false,

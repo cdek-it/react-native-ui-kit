@@ -119,7 +119,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
       style={
         [
           {
-            "color": "#2b2e33",
+            "color": "#181a1f",
             "fontFamily": "TT Fellows",
             "fontWeight": 700,
             "includeFontPadding": false,
@@ -430,7 +430,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
       style={
         [
           {
-            "color": "#2b2e33",
+            "color": "#181a1f",
             "fontFamily": "TT Fellows",
             "fontWeight": 700,
             "includeFontPadding": false,
@@ -741,7 +741,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
       style={
         [
           {
-            "color": "#2b2e33",
+            "color": "#181a1f",
             "fontFamily": "TT Fellows",
             "fontWeight": 700,
             "includeFontPadding": false,
@@ -1029,7 +1029,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
       style={
         [
           {
-            "color": "#2b2e33",
+            "color": "#181a1f",
             "fontFamily": "TT Fellows",
             "fontWeight": 700,
             "includeFontPadding": false,
@@ -1340,7 +1340,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
       style={
         [
           {
-            "color": "#2b2e33",
+            "color": "#181a1f",
             "fontFamily": "TT Fellows",
             "fontWeight": 700,
             "includeFontPadding": false,
@@ -1526,7 +1526,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": undefi
       style={
         [
           {
-            "color": "#2b2e33",
+            "color": "#181a1f",
             "fontFamily": "TT Fellows",
             "fontWeight": 700,
             "includeFontPadding": false,
@@ -1814,7 +1814,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "danger", "title": "Dia
       style={
         [
           {
-            "color": "#2b2e33",
+            "color": "#181a1f",
             "fontFamily": "TT Fellows",
             "fontWeight": 700,
             "includeFontPadding": false,
@@ -1986,7 +1986,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "help", "title": "Dialo
       style={
         [
           {
-            "color": "#2b2e33",
+            "color": "#181a1f",
             "fontFamily": "TT Fellows",
             "fontWeight": 700,
             "includeFontPadding": false,
@@ -2158,7 +2158,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "info", "title": "Dialo
       style={
         [
           {
-            "color": "#2b2e33",
+            "color": "#181a1f",
             "fontFamily": "TT Fellows",
             "fontWeight": 700,
             "includeFontPadding": false,
@@ -2307,7 +2307,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "success", "title": "Di
       style={
         [
           {
-            "color": "#2b2e33",
+            "color": "#181a1f",
             "fontFamily": "TT Fellows",
             "fontWeight": 700,
             "includeFontPadding": false,
@@ -2479,7 +2479,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "warning", "title": "Di
       style={
         [
           {
-            "color": "#2b2e33",
+            "color": "#181a1f",
             "fontFamily": "TT Fellows",
             "fontWeight": 700,
             "includeFontPadding": false,
@@ -2526,7 +2526,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": undefined, "title": "Di
       style={
         [
           {
-            "color": "#2b2e33",
+            "color": "#181a1f",
             "fontFamily": "TT Fellows",
             "fontWeight": 700,
             "includeFontPadding": false,
