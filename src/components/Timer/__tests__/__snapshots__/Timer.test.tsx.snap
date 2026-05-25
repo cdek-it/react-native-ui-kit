@@ -157,7 +157,7 @@ exports[`Timer should reset timer on changing countFrom prop: after 1 s 1`] = `
         style={
           {
             "color": "#181a1f",
-            "fontFamily": "Noto Sans",
+            "fontFamily": "PT Sans",
             "fontSize": 14,
             "fontWeight": 700,
             "includeFontPadding": false,
@@ -222,7 +222,7 @@ exports[`Timer should reset timer on changing countFrom prop: after 1 s 1`] = `
         style={
           {
             "color": "#181a1f",
-            "fontFamily": "Noto Sans",
+            "fontFamily": "PT Sans",
             "fontSize": 14,
             "fontWeight": 700,
             "includeFontPadding": false,
@@ -394,7 +394,7 @@ exports[`Timer should reset timer on changing countFrom prop: after reset 1`] = 
         style={
           {
             "color": "#181a1f",
-            "fontFamily": "Noto Sans",
+            "fontFamily": "PT Sans",
             "fontSize": 14,
             "fontWeight": 700,
             "includeFontPadding": false,
@@ -459,7 +459,7 @@ exports[`Timer should reset timer on changing countFrom prop: after reset 1`] = 
         style={
           {
             "color": "#181a1f",
-            "fontFamily": "Noto Sans",
+            "fontFamily": "PT Sans",
             "fontSize": 14,
             "fontWeight": 700,
             "includeFontPadding": false,
@@ -631,7 +631,7 @@ exports[`Timer snapshot: before start 1`] = `
         style={
           {
             "color": "#181a1f",
-            "fontFamily": "Noto Sans",
+            "fontFamily": "PT Sans",
             "fontSize": 14,
             "fontWeight": 700,
             "includeFontPadding": false,
@@ -696,7 +696,7 @@ exports[`Timer snapshot: before start 1`] = `
         style={
           {
             "color": "#181a1f",
-            "fontFamily": "Noto Sans",
+            "fontFamily": "PT Sans",
             "fontSize": 14,
             "fontWeight": 700,
             "includeFontPadding": false,
@@ -868,7 +868,7 @@ exports[`Timer snapshot: on finish 1`] = `
         style={
           {
             "color": "#181a1f",
-            "fontFamily": "Noto Sans",
+            "fontFamily": "PT Sans",
             "fontSize": 14,
             "fontWeight": 700,
             "includeFontPadding": false,
@@ -933,7 +933,7 @@ exports[`Timer snapshot: on finish 1`] = `
         style={
           {
             "color": "#181a1f",
-            "fontFamily": "Noto Sans",
+            "fontFamily": "PT Sans",
             "fontSize": 14,
             "fontWeight": 700,
             "includeFontPadding": false,

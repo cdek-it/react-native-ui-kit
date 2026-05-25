@@ -157,7 +157,7 @@ exports[`InputGroup component tests content: string, position: left 1`] = `
     style={
       {
         "color": "#85888e",
-        "fontFamily": "Noto Sans",
+        "fontFamily": "PT Sans",
         "fontSize": 14,
         "includeFontPadding": false,
         "verticalAlign": "middle",
@@ -198,7 +198,7 @@ exports[`InputGroup component tests disabled: false 1`] = `
     style={
       {
         "color": "#85888e",
-        "fontFamily": "Noto Sans",
+        "fontFamily": "PT Sans",
         "fontSize": 14,
         "includeFontPadding": false,
         "verticalAlign": "middle",
@@ -242,7 +242,7 @@ exports[`InputGroup component tests disabled: true 1`] = `
     style={
       {
         "color": "#85888e",
-        "fontFamily": "Noto Sans",
+        "fontFamily": "PT Sans",
         "fontSize": 14,
         "includeFontPadding": false,
         "verticalAlign": "middle",

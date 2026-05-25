@@ -38,7 +38,7 @@ export const Body = ({
 
 const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
   text: {
-    fontSize: typography.Size['text-base'],
+    fontSize: typography.Size['text-lg'],
     includeFontPadding: false,
     verticalAlign: 'middle',
     fontFamily: fonts.secondary,
@@ -49,8 +49,8 @@ const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
   default: { color: theme.General.textColor },
   primary: { color: theme.General.primaryColor },
   secondary: { color: theme.General.textSecondaryColor },
-  base: { fontSize: typography.Size['text-sm'] },
-  paragraph: { lineHeight: 24 },
-  paragraphBase: { lineHeight: 21 },
+  base: { fontSize: typography.Size['text-base'] },
+  paragraph: { fontSize: typography.Size['text-lg'] },
+  paragraphBase: { fontSize: typography.Size['text-base'] },
   disabled: { opacity: 0.6 },
 }))

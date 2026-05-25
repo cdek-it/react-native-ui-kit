@@ -241,8 +241,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
             style={
               [
                 {
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontFamily": "PT Sans",
+                  "fontSize": 15.75,
                   "includeFontPadding": false,
                   "verticalAlign": "middle",
                 },
@@ -253,7 +253,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
                   "color": "#181a1f",
                 },
                 {
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                 },
                 undefined,
                 undefined,
@@ -269,7 +269,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
               [
                 {
                   "fontFamily": "TT Fellows",
-                  "fontSize": 10.5,
+                  "fontSize": 12.25,
                   "includeFontPadding": false,
                   "verticalAlign": "middle",
                 },
@@ -604,8 +604,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate minimal config 1`] = `
             style={
               [
                 {
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontFamily": "PT Sans",
+                  "fontSize": 15.75,
                   "includeFontPadding": false,
                   "verticalAlign": "middle",
                 },
@@ -616,7 +616,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate minimal config 1`] = `
                   "color": "#181a1f",
                 },
                 {
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                 },
                 undefined,
                 undefined,
@@ -804,8 +804,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
             style={
               [
                 {
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontFamily": "PT Sans",
+                  "fontSize": 15.75,
                   "includeFontPadding": false,
                   "verticalAlign": "middle",
                 },
@@ -816,7 +816,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
                   "color": "#181a1f",
                 },
                 {
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                 },
                 undefined,
                 undefined,
@@ -832,7 +832,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
               [
                 {
                   "fontFamily": "TT Fellows",
-                  "fontSize": 10.5,
+                  "fontSize": 12.25,
                   "includeFontPadding": false,
                   "verticalAlign": "middle",
                 },
@@ -1138,8 +1138,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate with colored icon 1`] = `
             style={
               [
                 {
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontFamily": "PT Sans",
+                  "fontSize": 15.75,
                   "includeFontPadding": false,
                   "verticalAlign": "middle",
                 },
@@ -1150,7 +1150,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with colored icon 1`] = `
                   "color": "#181a1f",
                 },
                 {
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                 },
                 undefined,
                 undefined,
@@ -1251,8 +1251,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate with extra 1`] = `
             style={
               [
                 {
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontFamily": "PT Sans",
+                  "fontSize": 15.75,
                   "includeFontPadding": false,
                   "verticalAlign": "middle",
                 },
@@ -1263,7 +1263,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with extra 1`] = `
                   "color": "#181a1f",
                 },
                 {
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                 },
                 undefined,
                 undefined,
@@ -1573,8 +1573,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
             style={
               [
                 {
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontFamily": "PT Sans",
+                  "fontSize": 15.75,
                   "includeFontPadding": false,
                   "verticalAlign": "middle",
                 },
@@ -1585,7 +1585,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
                   "color": "#181a1f",
                 },
                 {
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                 },
                 undefined,
                 undefined,
@@ -1834,8 +1834,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
             style={
               [
                 {
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontFamily": "PT Sans",
+                  "fontSize": 15.75,
                   "includeFontPadding": false,
                   "verticalAlign": "middle",
                 },
@@ -1846,7 +1846,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
                   "color": "#181a1f",
                 },
                 {
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                 },
                 undefined,
                 undefined,
@@ -1950,8 +1950,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate with padding 1`] = `
             style={
               [
                 {
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontFamily": "PT Sans",
+                  "fontSize": 15.75,
                   "includeFontPadding": false,
                   "verticalAlign": "middle",
                 },
@@ -1962,7 +1962,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with padding 1`] = `
                   "color": "#181a1f",
                 },
                 {
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                 },
                 undefined,
                 undefined,
@@ -2069,8 +2069,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate with separator 1`] = `
             style={
               [
                 {
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontFamily": "PT Sans",
+                  "fontSize": 15.75,
                   "includeFontPadding": false,
                   "verticalAlign": "middle",
                 },
@@ -2081,7 +2081,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with separator 1`] = `
                   "color": "#181a1f",
                 },
                 {
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                 },
                 undefined,
                 undefined,

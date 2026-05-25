@@ -2343,7 +2343,7 @@ exports[`Service component tests base = true, showIcon = false, variant = danger
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
@@ -2376,7 +2376,7 @@ exports[`Service component tests base = true, showIcon = false, variant = danger
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
@@ -2409,7 +2409,7 @@ exports[`Service component tests base = true, showIcon = false, variant = help 1
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
@@ -2442,7 +2442,7 @@ exports[`Service component tests base = true, showIcon = false, variant = help 2
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
@@ -2475,7 +2475,7 @@ exports[`Service component tests base = true, showIcon = false, variant = info 1
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
@@ -2508,7 +2508,7 @@ exports[`Service component tests base = true, showIcon = false, variant = info 2
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
@@ -2541,7 +2541,7 @@ exports[`Service component tests base = true, showIcon = false, variant = succes
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
@@ -2574,7 +2574,7 @@ exports[`Service component tests base = true, showIcon = false, variant = succes
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
@@ -2607,7 +2607,7 @@ exports[`Service component tests base = true, showIcon = false, variant = warnin
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
@@ -2640,7 +2640,7 @@ exports[`Service component tests base = true, showIcon = false, variant = warnin
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
@@ -2775,7 +2775,7 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
@@ -3025,7 +3025,7 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
@@ -3183,7 +3183,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 1`
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
@@ -3433,7 +3433,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 2`
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
@@ -3591,7 +3591,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 1`
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
@@ -3841,7 +3841,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 2`
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
@@ -3976,7 +3976,7 @@ exports[`Service component tests base = true, showIcon = true, variant = success
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
@@ -4226,7 +4226,7 @@ exports[`Service component tests base = true, showIcon = true, variant = success
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
@@ -4384,7 +4384,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
@@ -4634,7 +4634,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 14,
         },
         {
