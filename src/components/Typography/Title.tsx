@@ -12,7 +12,7 @@ export const Title = ({ level, style, ...other }: TitleProps) => (
 
 const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
   text: {
-    color: theme.General.textColor,
+    color: theme.General.secondaryColor,
     fontFamily: fonts.primary,
     fontWeight: 700,
     includeFontPadding: false,
