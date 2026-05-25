@@ -118,7 +118,7 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "horizontal", "sho
           {
             "fontFamily": "TT Fellows",
             "fontSize": 12.25,
-            "fontWeight": 500,
+            "fontWeight": 700,
             "textTransform": "uppercase",
           },
           {
@@ -370,7 +370,7 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
           {
             "fontFamily": "TT Fellows",
             "fontSize": 12.25,
-            "fontWeight": 500,
+            "fontWeight": 700,
             "textTransform": "uppercase",
           },
           {

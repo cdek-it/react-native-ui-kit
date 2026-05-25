@@ -33,7 +33,7 @@ export const Subtitle = memo<SubtitleProps>(
 const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
   text: {
     fontSize: typography.Size['text-sm'],
-    fontWeight: 500,
+    fontWeight: 700,
     textTransform: 'uppercase',
     fontFamily: fonts.primary,
   },

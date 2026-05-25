@@ -279,7 +279,7 @@ exports[`Accordion Header elements maximal 1`] = `
       style={
         {
           "color": "#181a1f",
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 15.75,
           "fontWeight": 700,
           "includeFontPadding": false,
@@ -707,7 +707,7 @@ exports[`Accordion Header elements minimal 1`] = `
       style={
         {
           "color": "#181a1f",
-          "fontFamily": "Noto Sans",
+          "fontFamily": "PT Sans",
           "fontSize": 15.75,
           "fontWeight": 700,
           "includeFontPadding": false,

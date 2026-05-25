@@ -8,5 +8,5 @@ import type { ThemeType } from './types'
 export const lightTheme: ThemeType = {
   theme: { ...lightThemeAssets, InputSize, ModalSize, custom: customLight },
   ...commonTheme,
-  fonts: { primary: 'TT Fellows', secondary: 'Noto Sans' },
+  fonts: { primary: 'TT Fellows', secondary: 'PT Sans' },
 }
