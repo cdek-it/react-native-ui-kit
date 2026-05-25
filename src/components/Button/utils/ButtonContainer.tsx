@@ -1,3 +1,4 @@
+/* eslint-disable max-lines, max-lines-per-function */
 import { type ReactNode, useContext } from 'react'
 import { Pressable, type PressableStateCallbackType } from 'react-native'
 
@@ -206,6 +207,14 @@ const buttonContainerStyles = StyleSheet.create(
           styles: {
             borderColor: theme.Button.Brand.buttonBorderColor,
             backgroundColor: theme.Button.Text.textButtonHoverBg,
+          },
+        },
+        {
+          variant: 'link',
+          disabled: 'true',
+          styles: {
+            borderColor: theme.Button.Brand.buttonBorderColor,
+            backgroundColor: theme.Button.Text.textButtonBg,
           },
         },
 
