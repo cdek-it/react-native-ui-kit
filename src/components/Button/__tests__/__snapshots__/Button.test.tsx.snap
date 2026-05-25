@@ -601,8 +601,8 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -774,8 +774,8 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -947,8 +947,8 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -1023,8 +1023,8 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -1099,8 +1099,8 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -1272,8 +1272,8 @@ exports[`Button component tests Button with icon on left, size - base, shape - c
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -6551,8 +6551,8 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -6724,8 +6724,8 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -6897,8 +6897,8 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -6973,8 +6973,8 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -7049,8 +7049,8 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -7222,8 +7222,8 @@ exports[`Button component tests Button with icon on left, size - base, shape - s
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -12501,8 +12501,8 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -12674,8 +12674,8 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -12847,8 +12847,8 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -12923,8 +12923,8 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -12999,8 +12999,8 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -13172,8 +13172,8 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -18451,8 +18451,8 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -18624,8 +18624,8 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -18797,8 +18797,8 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -18873,8 +18873,8 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -18949,8 +18949,8 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -19122,8 +19122,8 @@ exports[`Button component tests Button with icon on left, size - large, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -24401,8 +24401,8 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -24574,8 +24574,8 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -24747,8 +24747,8 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -24823,8 +24823,8 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -24899,8 +24899,8 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -25072,8 +25072,8 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -30351,8 +30351,8 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -30524,8 +30524,8 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -30697,8 +30697,8 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -30773,8 +30773,8 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -30849,8 +30849,8 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -31022,8 +31022,8 @@ exports[`Button component tests Button with icon on left, size - small, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -36301,8 +36301,8 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -36474,8 +36474,8 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -36647,8 +36647,8 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -36723,8 +36723,8 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -36799,8 +36799,8 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -36972,8 +36972,8 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -42251,8 +42251,8 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -42424,8 +42424,8 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -42597,8 +42597,8 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -42673,8 +42673,8 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -42749,8 +42749,8 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -42922,8 +42922,8 @@ exports[`Button component tests Button with icon on left, size - xlarge, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -48201,8 +48201,8 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -48374,8 +48374,8 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -48547,8 +48547,8 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -48623,8 +48623,8 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -48699,8 +48699,8 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -48872,8 +48872,8 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -54151,8 +54151,8 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -54324,8 +54324,8 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -54497,8 +54497,8 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -54573,8 +54573,8 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -54649,8 +54649,8 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -54822,8 +54822,8 @@ exports[`Button component tests Button with icon on right, size - base, shape - 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -60101,8 +60101,8 @@ exports[`Button component tests Button with icon on right, size - large, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -60274,8 +60274,8 @@ exports[`Button component tests Button with icon on right, size - large, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -60447,8 +60447,8 @@ exports[`Button component tests Button with icon on right, size - large, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -60523,8 +60523,8 @@ exports[`Button component tests Button with icon on right, size - large, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -60599,8 +60599,8 @@ exports[`Button component tests Button with icon on right, size - large, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -60772,8 +60772,8 @@ exports[`Button component tests Button with icon on right, size - large, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -66051,8 +66051,8 @@ exports[`Button component tests Button with icon on right, size - large, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -66224,8 +66224,8 @@ exports[`Button component tests Button with icon on right, size - large, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -66397,8 +66397,8 @@ exports[`Button component tests Button with icon on right, size - large, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -66473,8 +66473,8 @@ exports[`Button component tests Button with icon on right, size - large, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -66549,8 +66549,8 @@ exports[`Button component tests Button with icon on right, size - large, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -66722,8 +66722,8 @@ exports[`Button component tests Button with icon on right, size - large, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -72001,8 +72001,8 @@ exports[`Button component tests Button with icon on right, size - small, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -72174,8 +72174,8 @@ exports[`Button component tests Button with icon on right, size - small, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -72347,8 +72347,8 @@ exports[`Button component tests Button with icon on right, size - small, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -72423,8 +72423,8 @@ exports[`Button component tests Button with icon on right, size - small, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -72499,8 +72499,8 @@ exports[`Button component tests Button with icon on right, size - small, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -72672,8 +72672,8 @@ exports[`Button component tests Button with icon on right, size - small, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -77951,8 +77951,8 @@ exports[`Button component tests Button with icon on right, size - small, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -78124,8 +78124,8 @@ exports[`Button component tests Button with icon on right, size - small, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -78297,8 +78297,8 @@ exports[`Button component tests Button with icon on right, size - small, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -78373,8 +78373,8 @@ exports[`Button component tests Button with icon on right, size - small, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -78449,8 +78449,8 @@ exports[`Button component tests Button with icon on right, size - small, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -78622,8 +78622,8 @@ exports[`Button component tests Button with icon on right, size - small, shape -
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -83901,8 +83901,8 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -84074,8 +84074,8 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -84247,8 +84247,8 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -84323,8 +84323,8 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -84399,8 +84399,8 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -84572,8 +84572,8 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -89851,8 +89851,8 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -90024,8 +90024,8 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -90197,8 +90197,8 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -90273,8 +90273,8 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -90349,8 +90349,8 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -90522,8 +90522,8 @@ exports[`Button component tests Button with icon on right, size - xlarge, shape 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -95615,8 +95615,8 @@ exports[`Button component tests Button with only icon, size - base, shape - circ
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -95775,8 +95775,8 @@ exports[`Button component tests Button with only icon, size - base, shape - circ
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -95838,8 +95838,8 @@ exports[`Button component tests Button with only icon, size - base, shape - circ
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -98330,8 +98330,8 @@ exports[`Button component tests Button with only icon, size - base, shape - squa
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -98490,8 +98490,8 @@ exports[`Button component tests Button with only icon, size - base, shape - squa
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -98553,8 +98553,8 @@ exports[`Button component tests Button with only icon, size - base, shape - squa
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -101045,8 +101045,8 @@ exports[`Button component tests Button with only icon, size - large, shape - cir
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -101205,8 +101205,8 @@ exports[`Button component tests Button with only icon, size - large, shape - cir
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -101268,8 +101268,8 @@ exports[`Button component tests Button with only icon, size - large, shape - cir
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -103760,8 +103760,8 @@ exports[`Button component tests Button with only icon, size - large, shape - squ
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -103920,8 +103920,8 @@ exports[`Button component tests Button with only icon, size - large, shape - squ
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -103983,8 +103983,8 @@ exports[`Button component tests Button with only icon, size - large, shape - squ
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -106475,8 +106475,8 @@ exports[`Button component tests Button with only icon, size - small, shape - cir
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -106635,8 +106635,8 @@ exports[`Button component tests Button with only icon, size - small, shape - cir
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -106698,8 +106698,8 @@ exports[`Button component tests Button with only icon, size - small, shape - cir
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -109190,8 +109190,8 @@ exports[`Button component tests Button with only icon, size - small, shape - squ
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -109350,8 +109350,8 @@ exports[`Button component tests Button with only icon, size - small, shape - squ
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -109413,8 +109413,8 @@ exports[`Button component tests Button with only icon, size - small, shape - squ
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -111905,8 +111905,8 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - ci
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -112065,8 +112065,8 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - ci
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -112128,8 +112128,8 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - ci
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -114620,8 +114620,8 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - sq
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -114780,8 +114780,8 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - sq
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -114843,8 +114843,8 @@ exports[`Button component tests Button with only icon, size - xlarge, shape - sq
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -117317,8 +117317,8 @@ exports[`Button component tests Button with text, size - base, shape - circle, v
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -117388,8 +117388,8 @@ exports[`Button component tests Button with text, size - base, shape - circle, v
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -117459,8 +117459,8 @@ exports[`Button component tests Button with text, size - base, shape - circle, v
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -117535,8 +117535,8 @@ exports[`Button component tests Button with text, size - base, shape - circle, v
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -117611,8 +117611,8 @@ exports[`Button component tests Button with text, size - base, shape - circle, v
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -117682,8 +117682,8 @@ exports[`Button component tests Button with text, size - base, shape - circle, v
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -120207,8 +120207,8 @@ exports[`Button component tests Button with text, size - base, shape - square, v
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -120278,8 +120278,8 @@ exports[`Button component tests Button with text, size - base, shape - square, v
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -120349,8 +120349,8 @@ exports[`Button component tests Button with text, size - base, shape - square, v
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -120425,8 +120425,8 @@ exports[`Button component tests Button with text, size - base, shape - square, v
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -120501,8 +120501,8 @@ exports[`Button component tests Button with text, size - base, shape - square, v
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -120572,8 +120572,8 @@ exports[`Button component tests Button with text, size - base, shape - square, v
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -123097,8 +123097,8 @@ exports[`Button component tests Button with text, size - large, shape - circle, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -123168,8 +123168,8 @@ exports[`Button component tests Button with text, size - large, shape - circle, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -123239,8 +123239,8 @@ exports[`Button component tests Button with text, size - large, shape - circle, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -123315,8 +123315,8 @@ exports[`Button component tests Button with text, size - large, shape - circle, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -123391,8 +123391,8 @@ exports[`Button component tests Button with text, size - large, shape - circle, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -123462,8 +123462,8 @@ exports[`Button component tests Button with text, size - large, shape - circle, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -125987,8 +125987,8 @@ exports[`Button component tests Button with text, size - large, shape - square, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -126058,8 +126058,8 @@ exports[`Button component tests Button with text, size - large, shape - square, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -126129,8 +126129,8 @@ exports[`Button component tests Button with text, size - large, shape - square, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -126205,8 +126205,8 @@ exports[`Button component tests Button with text, size - large, shape - square, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -126281,8 +126281,8 @@ exports[`Button component tests Button with text, size - large, shape - square, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -126352,8 +126352,8 @@ exports[`Button component tests Button with text, size - large, shape - square, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -128877,8 +128877,8 @@ exports[`Button component tests Button with text, size - small, shape - circle, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -128948,8 +128948,8 @@ exports[`Button component tests Button with text, size - small, shape - circle, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -129019,8 +129019,8 @@ exports[`Button component tests Button with text, size - small, shape - circle, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -129095,8 +129095,8 @@ exports[`Button component tests Button with text, size - small, shape - circle, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -129171,8 +129171,8 @@ exports[`Button component tests Button with text, size - small, shape - circle, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -129242,8 +129242,8 @@ exports[`Button component tests Button with text, size - small, shape - circle, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -131767,8 +131767,8 @@ exports[`Button component tests Button with text, size - small, shape - square, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -131838,8 +131838,8 @@ exports[`Button component tests Button with text, size - small, shape - square, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -131909,8 +131909,8 @@ exports[`Button component tests Button with text, size - small, shape - square, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -131985,8 +131985,8 @@ exports[`Button component tests Button with text, size - small, shape - square, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -132061,8 +132061,8 @@ exports[`Button component tests Button with text, size - small, shape - square, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -132132,8 +132132,8 @@ exports[`Button component tests Button with text, size - small, shape - square, 
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 10.5,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -134657,8 +134657,8 @@ exports[`Button component tests Button with text, size - xlarge, shape - circle,
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -134728,8 +134728,8 @@ exports[`Button component tests Button with text, size - xlarge, shape - circle,
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -134799,8 +134799,8 @@ exports[`Button component tests Button with text, size - xlarge, shape - circle,
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -134875,8 +134875,8 @@ exports[`Button component tests Button with text, size - xlarge, shape - circle,
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -134951,8 +134951,8 @@ exports[`Button component tests Button with text, size - xlarge, shape - circle,
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -135022,8 +135022,8 @@ exports[`Button component tests Button with text, size - xlarge, shape - circle,
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 100,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -137547,8 +137547,8 @@ exports[`Button component tests Button with text, size - xlarge, shape - square,
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -137618,8 +137618,8 @@ exports[`Button component tests Button with text, size - xlarge, shape - square,
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -137689,8 +137689,8 @@ exports[`Button component tests Button with text, size - xlarge, shape - square,
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -137765,8 +137765,8 @@ exports[`Button component tests Button with text, size - xlarge, shape - square,
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -137841,8 +137841,8 @@ exports[`Button component tests Button with text, size - xlarge, shape - square,
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -137912,8 +137912,8 @@ exports[`Button component tests Button with text, size - xlarge, shape - square,
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#a2a5a9",
+        "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
         "borderRadius": 14,
         "borderWidth": 1,
         "flexDirection": "row",
