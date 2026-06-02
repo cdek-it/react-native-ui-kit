@@ -363,7 +363,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: label 1`] = `
       style={
         {
           "color": "#000000",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "textTransform": "uppercase",
@@ -597,7 +597,7 @@ exports[`Avatar component tests Size: large, shape: square, type: label 1`] = `
       style={
         {
           "color": "#000000",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "textTransform": "uppercase",
@@ -837,7 +837,7 @@ exports[`Avatar component tests Size: normal, shape: circle, type: label 1`] = `
       style={
         {
           "color": "#000000",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "textTransform": "uppercase",
@@ -1071,7 +1071,7 @@ exports[`Avatar component tests Size: normal, shape: square, type: label 1`] = `
       style={
         {
           "color": "#000000",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "textTransform": "uppercase",
@@ -1311,7 +1311,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: label 1`] = `
       style={
         {
           "color": "#000000",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "textTransform": "uppercase",
@@ -1545,7 +1545,7 @@ exports[`Avatar component tests Size: xlarge, shape: square, type: label 1`] = `
       style={
         {
           "color": "#000000",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "textTransform": "uppercase",
@@ -1598,7 +1598,7 @@ exports[`Avatar component tests With badge, showBadge: false 1`] = `
       style={
         {
           "color": "#000000",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "textTransform": "uppercase",
@@ -1651,7 +1651,7 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
       style={
         {
           "color": "#000000",
-          "fontFamily": "PT Sans",
+          "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
           "textTransform": "uppercase",

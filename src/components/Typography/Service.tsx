@@ -56,7 +56,7 @@ export const Service = ({
       iconSize: base ? styles.iconBase : styles.icon,
       textStyles: [
         styles.textCommon,
-        base ? styles.textBase : styles.text,
+        base && styles.textBase,
         iconMap[variant]?.style || styles.info,
       ],
       containerStyle: base ? styles.containerBase : styles.container,
@@ -103,12 +103,12 @@ const styles = StyleSheet.create(({ typography, spacing, fonts }) => ({
     verticalAlign: 'middle',
     flexShrink: 1,
     fontWeight: 400,
-  },
-  textBase: {
-    fontSize: typography.Size['text-base'],
+    fontSize: typography.Size['text-sm'],
     fontFamily: fonts.secondary,
+    lineHeight: 15,
+    letterSpacing: -0.25,
   },
-  text: { fontSize: typography.Size['text-sm'], fontFamily: fonts.primary },
+  textBase: { lineHeight: 18 },
 
   warning: { color: typography.Color.Service['text-warning'] },
   success: { color: typography.Color.Service['text-success'] },

@@ -5,9 +5,11 @@ exports[`Caption component tests color = default, disabled = false 1`] = `
   style={
     [
       {
-        "fontFamily": "TT Fellows",
+        "fontFamily": "Noto Sans",
         "fontSize": 12.25,
         "includeFontPadding": false,
+        "letterSpacing": -0.25,
+        "lineHeight": 15,
         "verticalAlign": "middle",
       },
       {
@@ -162,9 +164,11 @@ exports[`Caption component tests color = default, disabled = false 2`] = `
     style={
       [
         {
-          "fontFamily": "TT Fellows",
+          "fontFamily": "Noto Sans",
           "fontSize": 12.25,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
@@ -189,9 +193,11 @@ exports[`Caption component tests color = default, disabled = true 1`] = `
   style={
     [
       {
-        "fontFamily": "TT Fellows",
+        "fontFamily": "Noto Sans",
         "fontSize": 12.25,
         "includeFontPadding": false,
+        "letterSpacing": -0.25,
+        "lineHeight": 15,
         "verticalAlign": "middle",
       },
       {
@@ -348,9 +354,11 @@ exports[`Caption component tests color = default, disabled = true 2`] = `
     style={
       [
         {
-          "fontFamily": "TT Fellows",
+          "fontFamily": "Noto Sans",
           "fontSize": 12.25,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
@@ -377,9 +385,11 @@ exports[`Caption component tests color = primary, disabled = false 1`] = `
   style={
     [
       {
-        "fontFamily": "TT Fellows",
+        "fontFamily": "Noto Sans",
         "fontSize": 12.25,
         "includeFontPadding": false,
+        "letterSpacing": -0.25,
+        "lineHeight": 15,
         "verticalAlign": "middle",
       },
       {
@@ -534,9 +544,11 @@ exports[`Caption component tests color = primary, disabled = false 2`] = `
     style={
       [
         {
-          "fontFamily": "TT Fellows",
+          "fontFamily": "Noto Sans",
           "fontSize": 12.25,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
@@ -561,9 +573,11 @@ exports[`Caption component tests color = primary, disabled = true 1`] = `
   style={
     [
       {
-        "fontFamily": "TT Fellows",
+        "fontFamily": "Noto Sans",
         "fontSize": 12.25,
         "includeFontPadding": false,
+        "letterSpacing": -0.25,
+        "lineHeight": 15,
         "verticalAlign": "middle",
       },
       {
@@ -720,9 +734,11 @@ exports[`Caption component tests color = primary, disabled = true 2`] = `
     style={
       [
         {
-          "fontFamily": "TT Fellows",
+          "fontFamily": "Noto Sans",
           "fontSize": 12.25,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
@@ -749,9 +765,11 @@ exports[`Caption component tests color = secondary, disabled = false 1`] = `
   style={
     [
       {
-        "fontFamily": "TT Fellows",
+        "fontFamily": "Noto Sans",
         "fontSize": 12.25,
         "includeFontPadding": false,
+        "letterSpacing": -0.25,
+        "lineHeight": 15,
         "verticalAlign": "middle",
       },
       {
@@ -906,9 +924,11 @@ exports[`Caption component tests color = secondary, disabled = false 2`] = `
     style={
       [
         {
-          "fontFamily": "TT Fellows",
+          "fontFamily": "Noto Sans",
           "fontSize": 12.25,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
@@ -933,9 +953,11 @@ exports[`Caption component tests color = secondary, disabled = true 1`] = `
   style={
     [
       {
-        "fontFamily": "TT Fellows",
+        "fontFamily": "Noto Sans",
         "fontSize": 12.25,
         "includeFontPadding": false,
+        "letterSpacing": -0.25,
+        "lineHeight": 15,
         "verticalAlign": "middle",
       },
       {
@@ -1092,9 +1114,11 @@ exports[`Caption component tests color = secondary, disabled = true 2`] = `
     style={
       [
         {
-          "fontFamily": "TT Fellows",
+          "fontFamily": "Noto Sans",
           "fontSize": 12.25,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
@@ -1121,9 +1145,11 @@ exports[`Caption component tests default props 1`] = `
   style={
     [
       {
-        "fontFamily": "TT Fellows",
+        "fontFamily": "Noto Sans",
         "fontSize": 12.25,
         "includeFontPadding": false,
+        "letterSpacing": -0.25,
+        "lineHeight": 15,
         "verticalAlign": "middle",
       },
       {
