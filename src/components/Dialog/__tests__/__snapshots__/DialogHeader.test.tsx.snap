@@ -126,7 +126,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 17.5,
+            "fontSize": 15.75,
           },
           {
             "flex": 1,
@@ -437,7 +437,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 17.5,
+            "fontSize": 15.75,
           },
           {
             "flex": 1,
@@ -748,7 +748,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 17.5,
+            "fontSize": 15.75,
           },
           {
             "flex": 1,
@@ -1036,7 +1036,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 17.5,
+            "fontSize": 15.75,
           },
           {
             "flex": 1,
@@ -1347,7 +1347,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 17.5,
+            "fontSize": 15.75,
           },
           {
             "flex": 1,
@@ -1533,7 +1533,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": undefi
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 17.5,
+            "fontSize": 15.75,
           },
           {
             "flex": 1,
@@ -1821,7 +1821,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "danger", "title": "Dia
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 17.5,
+            "fontSize": 15.75,
           },
           {
             "flex": 1,
@@ -1993,7 +1993,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "help", "title": "Dialo
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 17.5,
+            "fontSize": 15.75,
           },
           {
             "flex": 1,
@@ -2165,7 +2165,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "info", "title": "Dialo
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 17.5,
+            "fontSize": 15.75,
           },
           {
             "flex": 1,
@@ -2314,7 +2314,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "success", "title": "Di
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 17.5,
+            "fontSize": 15.75,
           },
           {
             "flex": 1,
@@ -2486,7 +2486,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "warning", "title": "Di
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 17.5,
+            "fontSize": 15.75,
           },
           {
             "flex": 1,
@@ -2533,7 +2533,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": undefined, "title": "Di
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 17.5,
+            "fontSize": 15.75,
           },
           {
             "flex": 1,

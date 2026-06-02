@@ -5,9 +5,10 @@ exports[`Subtitle component tests base = false, color = default 1`] = `
   style={
     [
       {
-        "fontFamily": "TT Fellows",
-        "fontSize": 12.25,
+        "fontFamily": "Noto Sans",
+        "fontSize": 10.5,
         "fontWeight": 700,
+        "lineHeight": 15,
         "textTransform": "uppercase",
       },
       {
@@ -30,9 +31,10 @@ exports[`Subtitle component tests base = false, color = primary 1`] = `
   style={
     [
       {
-        "fontFamily": "TT Fellows",
-        "fontSize": 12.25,
+        "fontFamily": "Noto Sans",
+        "fontSize": 10.5,
         "fontWeight": 700,
+        "lineHeight": 15,
         "textTransform": "uppercase",
       },
       {
@@ -55,9 +57,10 @@ exports[`Subtitle component tests base = false, color = secondary 1`] = `
   style={
     [
       {
-        "fontFamily": "TT Fellows",
-        "fontSize": 12.25,
+        "fontFamily": "Noto Sans",
+        "fontSize": 10.5,
         "fontWeight": 700,
+        "lineHeight": 15,
         "textTransform": "uppercase",
       },
       {
@@ -80,9 +83,10 @@ exports[`Subtitle component tests base = false, color = undefined 1`] = `
   style={
     [
       {
-        "fontFamily": "TT Fellows",
-        "fontSize": 12.25,
+        "fontFamily": "Noto Sans",
+        "fontSize": 10.5,
         "fontWeight": 700,
+        "lineHeight": 15,
         "textTransform": "uppercase",
       },
       {
@@ -105,17 +109,18 @@ exports[`Subtitle component tests base = true, color = default 1`] = `
   style={
     [
       {
-        "fontFamily": "TT Fellows",
-        "fontSize": 12.25,
+        "fontFamily": "Noto Sans",
+        "fontSize": 10.5,
         "fontWeight": 700,
+        "lineHeight": 15,
         "textTransform": "uppercase",
       },
       {
         "color": "#181a1f",
       },
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
         "margin": 10,
@@ -133,17 +138,18 @@ exports[`Subtitle component tests base = true, color = primary 1`] = `
   style={
     [
       {
-        "fontFamily": "TT Fellows",
-        "fontSize": 12.25,
+        "fontFamily": "Noto Sans",
+        "fontSize": 10.5,
         "fontWeight": 700,
+        "lineHeight": 15,
         "textTransform": "uppercase",
       },
       {
         "color": "#44e858",
       },
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
         "margin": 10,
@@ -161,17 +167,18 @@ exports[`Subtitle component tests base = true, color = secondary 1`] = `
   style={
     [
       {
-        "fontFamily": "TT Fellows",
-        "fontSize": 12.25,
+        "fontFamily": "Noto Sans",
+        "fontSize": 10.5,
         "fontWeight": 700,
+        "lineHeight": 15,
         "textTransform": "uppercase",
       },
       {
         "color": "#85888e",
       },
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
         "margin": 10,
@@ -189,17 +196,18 @@ exports[`Subtitle component tests base = true, color = undefined 1`] = `
   style={
     [
       {
-        "fontFamily": "TT Fellows",
-        "fontSize": 12.25,
+        "fontFamily": "Noto Sans",
+        "fontSize": 10.5,
         "fontWeight": 700,
+        "lineHeight": 15,
         "textTransform": "uppercase",
       },
       {
         "color": "#181a1f",
       },
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
         "margin": 10,
@@ -217,9 +225,10 @@ exports[`Subtitle component tests base = undefined, color = default 1`] = `
   style={
     [
       {
-        "fontFamily": "TT Fellows",
-        "fontSize": 12.25,
+        "fontFamily": "Noto Sans",
+        "fontSize": 10.5,
         "fontWeight": 700,
+        "lineHeight": 15,
         "textTransform": "uppercase",
       },
       {
@@ -242,9 +251,10 @@ exports[`Subtitle component tests base = undefined, color = primary 1`] = `
   style={
     [
       {
-        "fontFamily": "TT Fellows",
-        "fontSize": 12.25,
+        "fontFamily": "Noto Sans",
+        "fontSize": 10.5,
         "fontWeight": 700,
+        "lineHeight": 15,
         "textTransform": "uppercase",
       },
       {
@@ -267,9 +277,10 @@ exports[`Subtitle component tests base = undefined, color = secondary 1`] = `
   style={
     [
       {
-        "fontFamily": "TT Fellows",
-        "fontSize": 12.25,
+        "fontFamily": "Noto Sans",
+        "fontSize": 10.5,
         "fontWeight": 700,
+        "lineHeight": 15,
         "textTransform": "uppercase",
       },
       {
@@ -292,9 +303,10 @@ exports[`Subtitle component tests base = undefined, color = undefined 1`] = `
   style={
     [
       {
-        "fontFamily": "TT Fellows",
-        "fontSize": 12.25,
+        "fontFamily": "Noto Sans",
+        "fontSize": 10.5,
         "fontWeight": 700,
+        "lineHeight": 15,
         "textTransform": "uppercase",
       },
       {

@@ -5,9 +5,11 @@ exports[`Body component tests base = false, color = default, disabled = false, p
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -33,9 +35,11 @@ exports[`Body component tests base = false, color = default, disabled = false, p
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -61,9 +65,11 @@ exports[`Body component tests base = false, color = default, disabled = false, p
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -89,9 +95,11 @@ exports[`Body component tests base = false, color = default, disabled = false, p
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -102,7 +110,7 @@ exports[`Body component tests base = false, color = default, disabled = false, p
       },
       false,
       {
-        "fontSize": 15.75,
+        "lineHeight": 24,
       },
       false,
       undefined,
@@ -119,9 +127,11 @@ exports[`Body component tests base = false, color = default, disabled = false, p
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -132,7 +142,7 @@ exports[`Body component tests base = false, color = default, disabled = false, p
       },
       false,
       {
-        "fontSize": 15.75,
+        "lineHeight": 24,
       },
       false,
       undefined,
@@ -149,9 +159,11 @@ exports[`Body component tests base = false, color = default, disabled = false, p
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -162,7 +174,7 @@ exports[`Body component tests base = false, color = default, disabled = false, p
       },
       false,
       {
-        "fontSize": 15.75,
+        "lineHeight": 24,
       },
       false,
       undefined,
@@ -179,9 +191,11 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -209,9 +223,11 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -239,9 +255,11 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -269,9 +287,11 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -282,7 +302,7 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
       },
       false,
       {
-        "fontSize": 15.75,
+        "lineHeight": 24,
       },
       {
         "opacity": 0.6,
@@ -301,9 +321,11 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -314,7 +336,7 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
       },
       false,
       {
-        "fontSize": 15.75,
+        "lineHeight": 24,
       },
       {
         "opacity": 0.6,
@@ -333,9 +355,11 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -346,7 +370,7 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
       },
       false,
       {
-        "fontSize": 15.75,
+        "lineHeight": 24,
       },
       {
         "opacity": 0.6,
@@ -365,9 +389,11 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -393,9 +419,11 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -421,9 +449,11 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -449,9 +479,11 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -462,7 +494,7 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
       },
       false,
       {
-        "fontSize": 15.75,
+        "lineHeight": 24,
       },
       false,
       undefined,
@@ -479,9 +511,11 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -492,7 +526,7 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
       },
       false,
       {
-        "fontSize": 15.75,
+        "lineHeight": 24,
       },
       false,
       undefined,
@@ -509,9 +543,11 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -522,7 +558,7 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
       },
       false,
       {
-        "fontSize": 15.75,
+        "lineHeight": 24,
       },
       false,
       undefined,
@@ -539,9 +575,11 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -569,9 +607,11 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -599,9 +639,11 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -629,9 +671,11 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -642,7 +686,7 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
       },
       false,
       {
-        "fontSize": 15.75,
+        "lineHeight": 24,
       },
       {
         "opacity": 0.6,
@@ -661,9 +705,11 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -674,7 +720,7 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
       },
       false,
       {
-        "fontSize": 15.75,
+        "lineHeight": 24,
       },
       {
         "opacity": 0.6,
@@ -693,9 +739,11 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -706,7 +754,7 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
       },
       false,
       {
-        "fontSize": 15.75,
+        "lineHeight": 24,
       },
       {
         "opacity": 0.6,
@@ -725,9 +773,11 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -753,9 +803,11 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -781,9 +833,11 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -809,9 +863,11 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -822,7 +878,7 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
       },
       false,
       {
-        "fontSize": 15.75,
+        "lineHeight": 24,
       },
       false,
       undefined,
@@ -839,9 +895,11 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -852,7 +910,7 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
       },
       false,
       {
-        "fontSize": 15.75,
+        "lineHeight": 24,
       },
       false,
       undefined,
@@ -869,9 +927,11 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -882,7 +942,7 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
       },
       false,
       {
-        "fontSize": 15.75,
+        "lineHeight": 24,
       },
       false,
       undefined,
@@ -899,9 +959,11 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -929,9 +991,11 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -959,9 +1023,11 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -989,9 +1055,11 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1002,7 +1070,7 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
       },
       false,
       {
-        "fontSize": 15.75,
+        "lineHeight": 24,
       },
       {
         "opacity": 0.6,
@@ -1021,9 +1089,11 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1034,7 +1104,7 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
       },
       false,
       {
-        "fontSize": 15.75,
+        "lineHeight": 24,
       },
       {
         "opacity": 0.6,
@@ -1053,9 +1123,11 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1066,7 +1138,7 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
       },
       false,
       {
-        "fontSize": 15.75,
+        "lineHeight": 24,
       },
       {
         "opacity": 0.6,
@@ -1085,9 +1157,11 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1097,7 +1171,8 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
         "color": "#181a1f",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       false,
       false,
@@ -1115,9 +1190,11 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1127,7 +1204,8 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
         "color": "#181a1f",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       false,
       false,
@@ -1145,9 +1223,11 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1157,7 +1237,8 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
         "color": "#181a1f",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       false,
       false,
@@ -1175,9 +1256,11 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1187,10 +1270,11 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
         "color": "#181a1f",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
-        "fontSize": 14,
+        "lineHeight": 21,
       },
       false,
       undefined,
@@ -1207,9 +1291,11 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1219,10 +1305,11 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
         "color": "#181a1f",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
-        "fontSize": 14,
+        "lineHeight": 21,
       },
       false,
       undefined,
@@ -1239,9 +1326,11 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1251,10 +1340,11 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
         "color": "#181a1f",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
-        "fontSize": 14,
+        "lineHeight": 21,
       },
       false,
       undefined,
@@ -1271,9 +1361,11 @@ exports[`Body component tests base = true, color = default, disabled = true, par
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1283,7 +1375,8 @@ exports[`Body component tests base = true, color = default, disabled = true, par
         "color": "#181a1f",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       false,
       {
@@ -1303,9 +1396,11 @@ exports[`Body component tests base = true, color = default, disabled = true, par
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1315,7 +1410,8 @@ exports[`Body component tests base = true, color = default, disabled = true, par
         "color": "#181a1f",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       false,
       {
@@ -1335,9 +1431,11 @@ exports[`Body component tests base = true, color = default, disabled = true, par
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1347,7 +1445,8 @@ exports[`Body component tests base = true, color = default, disabled = true, par
         "color": "#181a1f",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       false,
       {
@@ -1367,9 +1466,11 @@ exports[`Body component tests base = true, color = default, disabled = true, par
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1379,10 +1480,11 @@ exports[`Body component tests base = true, color = default, disabled = true, par
         "color": "#181a1f",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
-        "fontSize": 14,
+        "lineHeight": 21,
       },
       {
         "opacity": 0.6,
@@ -1401,9 +1503,11 @@ exports[`Body component tests base = true, color = default, disabled = true, par
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1413,10 +1517,11 @@ exports[`Body component tests base = true, color = default, disabled = true, par
         "color": "#181a1f",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
-        "fontSize": 14,
+        "lineHeight": 21,
       },
       {
         "opacity": 0.6,
@@ -1435,9 +1540,11 @@ exports[`Body component tests base = true, color = default, disabled = true, par
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1447,10 +1554,11 @@ exports[`Body component tests base = true, color = default, disabled = true, par
         "color": "#181a1f",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
-        "fontSize": 14,
+        "lineHeight": 21,
       },
       {
         "opacity": 0.6,
@@ -1469,9 +1577,11 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1481,7 +1591,8 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
         "color": "#44e858",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       false,
       false,
@@ -1499,9 +1610,11 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1511,7 +1624,8 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
         "color": "#44e858",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       false,
       false,
@@ -1529,9 +1643,11 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1541,7 +1657,8 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
         "color": "#44e858",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       false,
       false,
@@ -1559,9 +1676,11 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1571,10 +1690,11 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
         "color": "#44e858",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
-        "fontSize": 14,
+        "lineHeight": 21,
       },
       false,
       undefined,
@@ -1591,9 +1711,11 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1603,10 +1725,11 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
         "color": "#44e858",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
-        "fontSize": 14,
+        "lineHeight": 21,
       },
       false,
       undefined,
@@ -1623,9 +1746,11 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1635,10 +1760,11 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
         "color": "#44e858",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
-        "fontSize": 14,
+        "lineHeight": 21,
       },
       false,
       undefined,
@@ -1655,9 +1781,11 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1667,7 +1795,8 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
         "color": "#44e858",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       false,
       {
@@ -1687,9 +1816,11 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1699,7 +1830,8 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
         "color": "#44e858",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       false,
       {
@@ -1719,9 +1851,11 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1731,7 +1865,8 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
         "color": "#44e858",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       false,
       {
@@ -1751,9 +1886,11 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1763,10 +1900,11 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
         "color": "#44e858",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
-        "fontSize": 14,
+        "lineHeight": 21,
       },
       {
         "opacity": 0.6,
@@ -1785,9 +1923,11 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1797,10 +1937,11 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
         "color": "#44e858",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
-        "fontSize": 14,
+        "lineHeight": 21,
       },
       {
         "opacity": 0.6,
@@ -1819,9 +1960,11 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1831,10 +1974,11 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
         "color": "#44e858",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
-        "fontSize": 14,
+        "lineHeight": 21,
       },
       {
         "opacity": 0.6,
@@ -1853,9 +1997,11 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1865,7 +2011,8 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
         "color": "#85888e",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       false,
       false,
@@ -1883,9 +2030,11 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1895,7 +2044,8 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
         "color": "#85888e",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       false,
       false,
@@ -1913,9 +2063,11 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1925,7 +2077,8 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
         "color": "#85888e",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       false,
       false,
@@ -1943,9 +2096,11 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1955,10 +2110,11 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
         "color": "#85888e",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
-        "fontSize": 14,
+        "lineHeight": 21,
       },
       false,
       undefined,
@@ -1975,9 +2131,11 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -1987,10 +2145,11 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
         "color": "#85888e",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
-        "fontSize": 14,
+        "lineHeight": 21,
       },
       false,
       undefined,
@@ -2007,9 +2166,11 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -2019,10 +2180,11 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
         "color": "#85888e",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
-        "fontSize": 14,
+        "lineHeight": 21,
       },
       false,
       undefined,
@@ -2039,9 +2201,11 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -2051,7 +2215,8 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
         "color": "#85888e",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       false,
       {
@@ -2071,9 +2236,11 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -2083,7 +2250,8 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
         "color": "#85888e",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       false,
       {
@@ -2103,9 +2271,11 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -2115,7 +2285,8 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
         "color": "#85888e",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       false,
       {
@@ -2135,9 +2306,11 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -2147,10 +2320,11 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
         "color": "#85888e",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
-        "fontSize": 14,
+        "lineHeight": 21,
       },
       {
         "opacity": 0.6,
@@ -2169,9 +2343,11 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -2181,10 +2357,11 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
         "color": "#85888e",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
-        "fontSize": 14,
+        "lineHeight": 21,
       },
       {
         "opacity": 0.6,
@@ -2203,9 +2380,11 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {
@@ -2215,10 +2394,11 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
         "color": "#85888e",
       },
       {
-        "fontSize": 14,
+        "fontSize": 12.25,
+        "lineHeight": 18,
       },
       {
-        "fontSize": 14,
+        "lineHeight": 21,
       },
       {
         "opacity": 0.6,
@@ -2237,9 +2417,11 @@ exports[`Body component tests default props 1`] = `
   style={
     [
       {
-        "fontFamily": "PT Sans",
-        "fontSize": 15.75,
+        "fontFamily": "Noto Sans",
+        "fontSize": 14,
         "includeFontPadding": false,
+        "letterSpacing": -0.5,
+        "lineHeight": 20,
         "verticalAlign": "middle",
       },
       {

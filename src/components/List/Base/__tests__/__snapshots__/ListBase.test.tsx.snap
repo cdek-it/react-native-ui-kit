@@ -280,9 +280,10 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
           style={
             [
               {
-                "fontFamily": "TT Fellows",
-                "fontSize": 12.25,
+                "fontFamily": "Noto Sans",
+                "fontSize": 10.5,
                 "fontWeight": 700,
+                "lineHeight": 15,
                 "textTransform": "uppercase",
               },
               {
@@ -307,9 +308,11 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
             style={
               [
                 {
-                  "fontFamily": "PT Sans",
-                  "fontSize": 15.75,
+                  "fontFamily": "Noto Sans",
+                  "fontSize": 14,
                   "includeFontPadding": false,
+                  "letterSpacing": -0.5,
+                  "lineHeight": 20,
                   "verticalAlign": "middle",
                 },
                 {
@@ -332,9 +335,11 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
             style={
               [
                 {
-                  "fontFamily": "TT Fellows",
+                  "fontFamily": "Noto Sans",
                   "fontSize": 12.25,
                   "includeFontPadding": false,
+                  "letterSpacing": -0.25,
+                  "lineHeight": 15,
                   "verticalAlign": "middle",
                 },
                 {
@@ -831,9 +836,10 @@ exports[`ListBase tests ListBase full disabled 1`] = `
           style={
             [
               {
-                "fontFamily": "TT Fellows",
-                "fontSize": 12.25,
+                "fontFamily": "Noto Sans",
+                "fontSize": 10.5,
                 "fontWeight": 700,
+                "lineHeight": 15,
                 "textTransform": "uppercase",
               },
               {
@@ -858,9 +864,11 @@ exports[`ListBase tests ListBase full disabled 1`] = `
             style={
               [
                 {
-                  "fontFamily": "PT Sans",
-                  "fontSize": 15.75,
+                  "fontFamily": "Noto Sans",
+                  "fontSize": 14,
                   "includeFontPadding": false,
+                  "letterSpacing": -0.5,
+                  "lineHeight": 20,
                   "verticalAlign": "middle",
                 },
                 {
@@ -883,9 +891,11 @@ exports[`ListBase tests ListBase full disabled 1`] = `
             style={
               [
                 {
-                  "fontFamily": "TT Fellows",
+                  "fontFamily": "Noto Sans",
                   "fontSize": 12.25,
                   "includeFontPadding": false,
+                  "letterSpacing": -0.25,
+                  "lineHeight": 15,
                   "verticalAlign": "middle",
                 },
                 {
@@ -1389,9 +1399,10 @@ exports[`ListBase tests ListBase maximal config 1`] = `
           style={
             [
               {
-                "fontFamily": "TT Fellows",
-                "fontSize": 12.25,
+                "fontFamily": "Noto Sans",
+                "fontSize": 10.5,
                 "fontWeight": 700,
+                "lineHeight": 15,
                 "textTransform": "uppercase",
               },
               {
@@ -1416,9 +1427,11 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             style={
               [
                 {
-                  "fontFamily": "PT Sans",
-                  "fontSize": 15.75,
+                  "fontFamily": "Noto Sans",
+                  "fontSize": 14,
                   "includeFontPadding": false,
+                  "letterSpacing": -0.5,
+                  "lineHeight": 20,
                   "verticalAlign": "middle",
                 },
                 {
@@ -1441,9 +1454,11 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             style={
               [
                 {
-                  "fontFamily": "TT Fellows",
+                  "fontFamily": "Noto Sans",
                   "fontSize": 12.25,
                   "includeFontPadding": false,
+                  "letterSpacing": -0.25,
+                  "lineHeight": 15,
                   "verticalAlign": "middle",
                 },
                 {
@@ -1747,9 +1762,11 @@ exports[`ListBase tests ListBase minimal config 1`] = `
             style={
               [
                 {
-                  "fontFamily": "PT Sans",
-                  "fontSize": 15.75,
+                  "fontFamily": "Noto Sans",
+                  "fontSize": 14,
                   "includeFontPadding": false,
+                  "letterSpacing": -0.5,
+                  "lineHeight": 20,
                   "verticalAlign": "middle",
                 },
                 {

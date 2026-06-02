@@ -38,8 +38,8 @@ UI kit использует следующие виды шрифтов.
 
 | Тип шрифта  | Используемые начертания                        | Рекомендуемый шрифт | Рекомендуемый аналог |
 | ----------- | ---------------------------------------------- | ------------------- | -------------------- |
-| `primary`   | – regular<br/>– demibold<br/>– demibold italic | TT Fellows          | PT Sans              |
-| `secondary` | – regular<br/>– bold                           | PT Sans             | —                    |
+| `primary`   | – regular<br/>– demibold<br/>– demibold italic | TT Fellows          | Noto Sans            |
+| `secondary` | – regular<br/>– medium<br/>– bold              | Noto Sans           | —                    |
 
 Исходники шрифтов не поставляются вместе с пакетом, их требуется подключать
 отдельно. После подключения шрифтов в проект, необходимо указать их в
@@ -84,10 +84,11 @@ UI kit использует следующие виды шрифтов.
           ],
         },
         {
-          fontFamily: 'PT Sans',
+          fontFamily: 'Noto Sans',
           fontDefinitions: [
-            { path: './assets/fonts/PTSans-Bold.ttf', weight: 700 },
-            { path: './assets/fonts/PTSans-Regular.ttf', weight: 400 },
+            { path: './assets/NotoSans-Bold.ttf', weight: 700 },
+            { path: './assets/NotoSans-Medium.ttf', weight: 500 },
+            { path: './assets/NotoSans-Regular.ttf', weight: 400 },
           ],
         },
       ],
@@ -104,19 +105,20 @@ UI kit использует следующие виды шрифтов.
 2. Создать XML-ресурс для каждого шрифта
 
    ```xml
-    <!-- xml_pt_sans.xml -->
+    <!-- xml_noto_sans.xml -->
    <font-family xmlns:app="http://schemas.android.com/apk/res-auto">
-     <font app:font="@font/pt_sans_bold" app:fontStyle="normal" app:fontWeight="700"/>
-     <font app:font="@font/pt_sans_regular" app:fontStyle="normal" app:fontWeight="400"/>
+    <font app:font="@font/noto_sans_bold" app:fontStyle="normal" app:fontWeight="700"/>
+    <font app:font="@font/noto_sans_medium" app:fontStyle="normal" app:fontWeight="500"/>
+    <font app:font="@font/noto_sans_regular" app:fontStyle="normal" app:fontWeight="400"/>
    </font-family>
    ```
 
    ```xml
    <!-- xml_tt_fellows.xml -->
    <font-family xmlns:app="http://schemas.android.com/apk/res-auto">
-   <font app:font="@font/tt_fellows_demi_bold_italic" app:fontStyle="italic" app:fontWeight="600"/>
-   <font app:font="@font/tt_fellows_demi_bold" app:fontStyle="normal" app:fontWeight="600"/>
-   <font app:font="@font/tt_fellows_regular" app:fontStyle="normal" app:fontWeight="400"/>
+    <font app:font="@font/tt_fellows_demi_bold_italic" app:fontStyle="italic" app:fontWeight="600"/>
+    <font app:font="@font/tt_fellows_demi_bold" app:fontStyle="normal" app:fontWeight="600"/>
+    <font app:font="@font/tt_fellows_regular" app:fontStyle="normal" app:fontWeight="400"/>
    </font-family>
    ```
 
@@ -130,7 +132,7 @@ UI kit использует следующие виды шрифтов.
 
       //подключение шрифтов
       ReactFontManager.getInstance().addCustomFont(this, "TT Fellows", R.font.xml_tt_fellows)
-      ReactFontManager.getInstance().addCustomFont(this, "PT Sans", R.font.xml_pt_sans)
+      ReactFontManager.getInstance().addCustomFont(this, "Noto Sans", R.font.xml_noto_sans)
 
       // остальной код...
     }
@@ -152,11 +154,12 @@ UI kit использует следующие виды шрифтов.
    ```xml
    <key>UIAppFonts</key>
    <array>
-   <string>TTFellows-DemiBold.ttf</string>
-   <string>TTFellows-DemiBoldItalic.ttf</string>
-   <string>TTFellows-Regular.ttf</string>
-   <string>PTSans-Bold.ttf</string>
-   <string>PTSans-Regular.ttf</string>
+    <string>TTFellows-DemiBold.ttf</string>
+    <string>TTFellows-DemiBoldItalic.ttf</string>
+    <string>TTFellows-Regular.ttf</string>
+    <string>NotoSans-Regular.ttf</string>
+    <string>NotoSans-Medium.ttf</string>
+    <string>NotoSans-Bold.ttf</string>
    </array>
    ```
 

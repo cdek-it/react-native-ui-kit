@@ -14,14 +14,15 @@ exports[`Service component tests base = false, showIcon = false, variant = dange
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#db3424",
         },
@@ -47,14 +48,15 @@ exports[`Service component tests base = false, showIcon = false, variant = dange
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#db3424",
         },
@@ -80,14 +82,15 @@ exports[`Service component tests base = false, showIcon = false, variant = help 
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#9457ea",
         },
@@ -113,14 +116,15 @@ exports[`Service component tests base = false, showIcon = false, variant = help 
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#9457ea",
         },
@@ -146,14 +150,15 @@ exports[`Service component tests base = false, showIcon = false, variant = info 
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#1e76cd",
         },
@@ -179,14 +184,15 @@ exports[`Service component tests base = false, showIcon = false, variant = info 
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#1e76cd",
         },
@@ -212,14 +218,15 @@ exports[`Service component tests base = false, showIcon = false, variant = succe
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#168322",
         },
@@ -245,14 +252,15 @@ exports[`Service component tests base = false, showIcon = false, variant = succe
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#168322",
         },
@@ -278,14 +286,15 @@ exports[`Service component tests base = false, showIcon = false, variant = warni
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#dc9710",
         },
@@ -311,14 +320,15 @@ exports[`Service component tests base = false, showIcon = false, variant = warni
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#dc9710",
         },
@@ -446,14 +456,15 @@ exports[`Service component tests base = false, showIcon = true, variant = danger
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#db3424",
         },
@@ -696,14 +707,15 @@ exports[`Service component tests base = false, showIcon = true, variant = danger
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#db3424",
         },
@@ -854,14 +866,15 @@ exports[`Service component tests base = false, showIcon = true, variant = help 1
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#9457ea",
         },
@@ -1104,14 +1117,15 @@ exports[`Service component tests base = false, showIcon = true, variant = help 2
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#9457ea",
         },
@@ -1262,14 +1276,15 @@ exports[`Service component tests base = false, showIcon = true, variant = info 1
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#1e76cd",
         },
@@ -1512,14 +1527,15 @@ exports[`Service component tests base = false, showIcon = true, variant = info 2
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#1e76cd",
         },
@@ -1647,14 +1663,15 @@ exports[`Service component tests base = false, showIcon = true, variant = succes
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#168322",
         },
@@ -1897,14 +1914,15 @@ exports[`Service component tests base = false, showIcon = true, variant = succes
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#168322",
         },
@@ -2055,14 +2073,15 @@ exports[`Service component tests base = false, showIcon = true, variant = warnin
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#dc9710",
         },
@@ -2305,14 +2324,15 @@ exports[`Service component tests base = false, showIcon = true, variant = warnin
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
-        {
-          "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-        },
+        false,
         {
           "color": "#dc9710",
         },
@@ -2338,13 +2358,16 @@ exports[`Service component tests base = true, showIcon = false, variant = danger
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#db3424",
@@ -2371,13 +2394,16 @@ exports[`Service component tests base = true, showIcon = false, variant = danger
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#db3424",
@@ -2404,13 +2430,16 @@ exports[`Service component tests base = true, showIcon = false, variant = help 1
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#9457ea",
@@ -2437,13 +2466,16 @@ exports[`Service component tests base = true, showIcon = false, variant = help 2
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#9457ea",
@@ -2470,13 +2502,16 @@ exports[`Service component tests base = true, showIcon = false, variant = info 1
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#1e76cd",
@@ -2503,13 +2538,16 @@ exports[`Service component tests base = true, showIcon = false, variant = info 2
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#1e76cd",
@@ -2536,13 +2574,16 @@ exports[`Service component tests base = true, showIcon = false, variant = succes
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#168322",
@@ -2569,13 +2610,16 @@ exports[`Service component tests base = true, showIcon = false, variant = succes
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#168322",
@@ -2602,13 +2646,16 @@ exports[`Service component tests base = true, showIcon = false, variant = warnin
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#dc9710",
@@ -2635,13 +2682,16 @@ exports[`Service component tests base = true, showIcon = false, variant = warnin
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#dc9710",
@@ -2770,13 +2820,16 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#db3424",
@@ -3020,13 +3073,16 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#db3424",
@@ -3178,13 +3234,16 @@ exports[`Service component tests base = true, showIcon = true, variant = help 1`
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#9457ea",
@@ -3428,13 +3487,16 @@ exports[`Service component tests base = true, showIcon = true, variant = help 2`
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#9457ea",
@@ -3586,13 +3648,16 @@ exports[`Service component tests base = true, showIcon = true, variant = info 1`
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#1e76cd",
@@ -3836,13 +3901,16 @@ exports[`Service component tests base = true, showIcon = true, variant = info 2`
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#1e76cd",
@@ -3971,13 +4039,16 @@ exports[`Service component tests base = true, showIcon = true, variant = success
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#168322",
@@ -4221,13 +4292,16 @@ exports[`Service component tests base = true, showIcon = true, variant = success
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#168322",
@@ -4379,13 +4453,16 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#dc9710",
@@ -4629,13 +4706,16 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
       [
         {
           "flexShrink": 1,
+          "fontFamily": "Noto Sans",
+          "fontSize": 12.25,
           "fontWeight": 400,
           "includeFontPadding": false,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
           "verticalAlign": "middle",
         },
         {
-          "fontFamily": "PT Sans",
-          "fontSize": 14,
+          "lineHeight": 18,
         },
         {
           "color": "#dc9710",

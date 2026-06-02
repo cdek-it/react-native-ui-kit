@@ -116,9 +116,10 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "horizontal", "sho
       style={
         [
           {
-            "fontFamily": "TT Fellows",
-            "fontSize": 12.25,
+            "fontFamily": "Noto Sans",
+            "fontSize": 10.5,
             "fontWeight": 700,
+            "lineHeight": 15,
             "textTransform": "uppercase",
           },
           {
@@ -368,9 +369,10 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
       style={
         [
           {
-            "fontFamily": "TT Fellows",
-            "fontSize": 12.25,
+            "fontFamily": "Noto Sans",
+            "fontSize": 10.5,
             "fontWeight": 700,
+            "lineHeight": 15,
             "textTransform": "uppercase",
           },
           {
