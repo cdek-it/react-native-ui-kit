@@ -2367,7 +2367,8 @@ exports[`Service component tests base = true, showIcon = false, variant = danger
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#db3424",
@@ -2403,7 +2404,8 @@ exports[`Service component tests base = true, showIcon = false, variant = danger
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#db3424",
@@ -2439,7 +2441,8 @@ exports[`Service component tests base = true, showIcon = false, variant = help 1
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#9457ea",
@@ -2475,7 +2478,8 @@ exports[`Service component tests base = true, showIcon = false, variant = help 2
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#9457ea",
@@ -2511,7 +2515,8 @@ exports[`Service component tests base = true, showIcon = false, variant = info 1
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#1e76cd",
@@ -2547,7 +2552,8 @@ exports[`Service component tests base = true, showIcon = false, variant = info 2
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#1e76cd",
@@ -2583,7 +2589,8 @@ exports[`Service component tests base = true, showIcon = false, variant = succes
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#168322",
@@ -2619,7 +2626,8 @@ exports[`Service component tests base = true, showIcon = false, variant = succes
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#168322",
@@ -2655,7 +2663,8 @@ exports[`Service component tests base = true, showIcon = false, variant = warnin
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#dc9710",
@@ -2691,7 +2700,8 @@ exports[`Service component tests base = true, showIcon = false, variant = warnin
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#dc9710",
@@ -2829,7 +2839,8 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#db3424",
@@ -3082,7 +3093,8 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#db3424",
@@ -3243,7 +3255,8 @@ exports[`Service component tests base = true, showIcon = true, variant = help 1`
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#9457ea",
@@ -3496,7 +3509,8 @@ exports[`Service component tests base = true, showIcon = true, variant = help 2`
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#9457ea",
@@ -3657,7 +3671,8 @@ exports[`Service component tests base = true, showIcon = true, variant = info 1`
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#1e76cd",
@@ -3910,7 +3925,8 @@ exports[`Service component tests base = true, showIcon = true, variant = info 2`
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#1e76cd",
@@ -4048,7 +4064,8 @@ exports[`Service component tests base = true, showIcon = true, variant = success
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#168322",
@@ -4301,7 +4318,8 @@ exports[`Service component tests base = true, showIcon = true, variant = success
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#168322",
@@ -4462,7 +4480,8 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#dc9710",
@@ -4715,7 +4734,8 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
           "verticalAlign": "middle",
         },
         {
-          "lineHeight": 18,
+          "fontSize": 14,
+          "lineHeight": undefined,
         },
         {
           "color": "#dc9710",

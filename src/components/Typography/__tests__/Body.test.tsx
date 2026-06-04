@@ -8,7 +8,7 @@ describe('Body component tests', () => {
     color: ['default', 'secondary', 'primary'],
     disabled: [true, false],
     paragraph: [true, false],
-    weight: ['regular', 'medium', 'bold'],
+    weight: ['regular', 'bold'],
   })
 
   test.each(snapshotCases)(

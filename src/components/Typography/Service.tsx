@@ -108,7 +108,7 @@ const styles = StyleSheet.create(({ typography, spacing, fonts }) => ({
     lineHeight: 15,
     letterSpacing: -0.25,
   },
-  textBase: { lineHeight: 18 },
+  textBase: { lineHeight: undefined, fontSize: typography.Size['text-base'] },
 
   warning: { color: typography.Color.Service['text-warning'] },
   success: { color: typography.Color.Service['text-success'] },
