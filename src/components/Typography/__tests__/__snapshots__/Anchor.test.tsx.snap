@@ -231,8 +231,9 @@ exports[`Body component tests левая иконка, base, visited, testID = C
         },
         false,
         {
+          "fontSize": 14,
           "letterSpacing": 0,
-          "lineHeight": 18,
+          "lineHeight": undefined,
         },
         {
           "color": "#9457ea",

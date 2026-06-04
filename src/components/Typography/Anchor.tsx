@@ -146,7 +146,11 @@ const styles = StyleSheet.create(({ spacing, typography, fonts }) => ({
     letterSpacing: -0.25,
   },
   underlined: { textDecorationLine: 'underline' },
-  base: { lineHeight: 18, letterSpacing: 0 },
+  base: {
+    fontSize: typography.Size['text-base'],
+    lineHeight: undefined,
+    letterSpacing: 0,
+  },
   visited: { color: typography.Color.Service['text-help'] },
   icon: {
     width: typography.Size['text-base'],

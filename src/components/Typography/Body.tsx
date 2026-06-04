@@ -7,7 +7,7 @@ export interface BodyProps extends TextProps {
   readonly color?: 'default' | 'secondary' | 'primary'
   readonly disabled?: boolean
   readonly paragraph?: boolean
-  readonly weight?: 'regular' | 'medium' | 'bold'
+  readonly weight?: 'regular' | 'bold'
 }
 
 export const Body = ({
@@ -43,11 +43,9 @@ const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
     verticalAlign: 'middle',
     fontFamily: fonts.secondary,
     lineHeight: 20,
-    letterSpacing: -0.5,
   },
   regular: { fontWeight: 400 },
-  medium: { fontWeight: 500 },
-  bold: { fontWeight: 700 },
+  bold: { fontWeight: 700, letterSpacing: -0.5 },
   default: { color: theme.General.textColor },
   primary: { color: theme.General.primaryColor },
   secondary: { color: theme.General.textSecondaryColor },
