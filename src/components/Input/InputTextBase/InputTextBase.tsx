@@ -176,11 +176,30 @@ export const InputTextBase = memo<
       [floatLabel, styles.iconSize, styles.iconSizeFloatLabel]
     )
 
+    const imperativeHandle = useMemo(
+      () =>
+        new Proxy(
+          {},
+          {
+            get(_, prop) {
+              if (prop === 'clear') {
+                return clear
+              }
+
+              const input = inputRef.current
+              const value = input?.[prop as keyof TextInput]
+
+              return typeof value === 'function' ? value.bind(input) : value
+            },
+          }
+        ) as TextInput,
+      [clear]
+    )
+
     useImperativeHandle<TextInput | null, TextInput | null>(
       propsInputRef,
-      () =>
-        inputRef.current ? Object.assign(inputRef.current, { clear }) : null,
-      [inputRef, clear]
+      () => (inputRef.current ? imperativeHandle : null),
+      [imperativeHandle]
     )
 
     const { makeTestId } = useMakeTestId(
