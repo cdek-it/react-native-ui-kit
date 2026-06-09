@@ -105,6 +105,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -231,6 +232,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -359,6 +361,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -487,6 +490,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -617,6 +621,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -749,6 +754,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -879,6 +885,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -1011,6 +1018,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -1145,6 +1153,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -1279,6 +1288,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -1415,6 +1425,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -1553,6 +1564,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -1681,6 +1693,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -1811,6 +1824,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -1943,6 +1957,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -2075,6 +2090,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -2209,6 +2225,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -2345,6 +2362,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -2479,6 +2497,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -2615,6 +2634,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -2753,6 +2773,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -2891,6 +2912,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -3031,6 +3053,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -3173,6 +3196,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={2}
     onBlur={[Function]}
@@ -3359,6 +3383,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -3547,6 +3572,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -3737,6 +3763,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -3931,6 +3958,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -4127,6 +4155,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -4325,6 +4354,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -4523,6 +4553,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -4723,6 +4754,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -4925,6 +4957,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -5131,6 +5164,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -5339,6 +5373,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -5549,6 +5584,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -5743,6 +5779,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -5939,6 +5976,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -6137,6 +6175,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -6339,6 +6378,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -6543,6 +6583,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -6749,6 +6790,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -6955,6 +6997,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -7163,6 +7206,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -7373,6 +7417,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -7587,6 +7632,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -7803,6 +7849,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -8021,6 +8068,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={4}
     onBlur={[Function]}
@@ -8331,6 +8379,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -8643,6 +8692,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -8957,6 +9007,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -9283,6 +9334,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -9611,6 +9663,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -9941,6 +9994,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -10275,6 +10329,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -10611,6 +10666,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -10949,6 +11005,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -11299,6 +11356,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -11651,6 +11709,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -12005,6 +12064,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -12331,6 +12391,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -12659,6 +12720,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -12989,6 +13051,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -13331,6 +13394,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -13675,6 +13739,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -14021,6 +14086,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
     </View>
   </View>
   <TextInput
+    editable={true}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -14371,6 +14437,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -14723,6 +14790,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -15077,6 +15145,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -15443,6 +15512,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -15811,6 +15881,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}
@@ -16181,6 +16252,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
     </View>
   </View>
   <TextInput
+    editable={false}
     keyboardType="number-pad"
     maxLength={8}
     onBlur={[Function]}

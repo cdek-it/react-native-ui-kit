@@ -1,6 +1,7 @@
 import {
   memo,
   useCallback,
+  useEffect,
   useImperativeHandle,
   useMemo,
   useRef,
@@ -48,20 +49,34 @@ export const InputOtp = memo<InputOtpProps>(
     value = '',
     onFocus,
     onBlur,
+    editable,
     ...rest
   }) => {
     const [isFocused, setIsFocused] = useState(false)
 
     const inputRef = useRef<TextInput>(null)
+    const isInputEditable = !disabled && editable !== false
 
     useImperativeHandle<TextInput | null, TextInput | null>(
       propsInputRef,
       () => inputRef.current
     )
 
+    useEffect(() => {
+      if (!isInputEditable) {
+        setIsFocused(false)
+
+        if (inputRef.current?.isFocused()) {
+          inputRef.current.blur()
+        }
+      }
+    }, [isInputEditable])
+
     const handlePress = useCallback(() => {
-      inputRef.current?.focus()
-    }, [])
+      if (isInputEditable) {
+        inputRef.current?.focus()
+      }
+    }, [isInputEditable])
 
     const handleChange = useCallback(
       (text: string) => {
@@ -121,6 +136,7 @@ export const InputOtp = memo<InputOtpProps>(
               ))}
             </View>
             <TextInput
+              editable={isInputEditable}
               keyboardType='number-pad'
               maxLength={length}
               ref={inputRef}
