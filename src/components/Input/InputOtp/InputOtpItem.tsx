@@ -1,13 +1,7 @@
-import { memo, useEffect } from 'react'
-import { View, type ViewProps, Text } from 'react-native'
+import { memo } from 'react'
+import { View, Text, type TextStyle, type ViewProps } from 'react-native'
 
-import Animated, {
-  Easing,
-  useAnimatedStyle,
-  useSharedValue,
-  withRepeat,
-  withTiming,
-} from 'react-native-reanimated'
+import Animated, { type AnimatedStyle } from 'react-native-reanimated'
 
 import { StyleSheet } from 'react-native-unistyles'
 
@@ -21,27 +15,16 @@ export interface InputOtpItemProps extends Pick<ViewProps, 'testID'> {
 
 const CURSOR_ANIMATION_DURATION = 500
 
+const cursorAnimationStyle = {
+  animationName: { from: { opacity: 1 }, to: { opacity: 0.2 } },
+  animationDuration: CURSOR_ANIMATION_DURATION,
+  animationDirection: 'alternate',
+  animationIterationCount: 'infinite',
+  animationTimingFunction: 'ease',
+} satisfies AnimatedStyle<TextStyle>
+
 export const InputOtpItem = memo<InputOtpItemProps>(
   ({ value, error, pressed, disabled, focused, testID }) => {
-    const opacity = useSharedValue(1)
-
-    useEffect(() => {
-      if (focused) {
-        opacity.value = withRepeat(
-          withTiming(0.2, {
-            duration: CURSOR_ANIMATION_DURATION,
-            easing: Easing.ease,
-          }),
-          -1,
-          true
-        )
-      } else {
-        opacity.value = 1
-      }
-    }, [focused, opacity])
-
-    const cursorBlinking = useAnimatedStyle(() => ({ opacity: opacity.value }))
-
     return (
       <View
         style={[
@@ -51,14 +34,23 @@ export const InputOtpItem = memo<InputOtpItemProps>(
           disabled && styles.disabled,
         ]}
       >
-        <Text style={styles.text} testID={testID}>
-          {value}
-          {focused ? (
-            <Animated.Text style={[styles.cursor, cursorBlinking]}>
+        {focused ? (
+          <View style={styles.textRow} testID={`${testID}CursorRow`}>
+            <Text style={styles.text} testID={testID}>
+              {value}
+            </Text>
+            <Animated.Text
+              style={[styles.text, styles.cursor, cursorAnimationStyle]}
+              testID={`${testID}Cursor`}
+            >
               |
             </Animated.Text>
-          ) : null}
-        </Text>
+          </View>
+        ) : (
+          <Text style={styles.text} testID={testID}>
+            {value}
+          </Text>
+        )}
       </View>
     )
   }
@@ -76,11 +68,14 @@ const styles = StyleSheet.create(({ theme, border, fonts, typography }) => ({
     justifyContent: 'center',
   },
 
+  textRow: { flexDirection: 'row', alignItems: 'center' },
+
   text: {
     fontSize: typography.Size['text-2xl'],
     fontFamily: fonts.primary,
     fontWeight: '400',
     color: theme.Form.InputText.inputTextColor,
+    includeFontPadding: false,
   },
 
   pressed: { borderColor: theme.Form.InputText.inputHoverBorderColor },
@@ -89,5 +84,5 @@ const styles = StyleSheet.create(({ theme, border, fonts, typography }) => ({
 
   disabled: { mixBlendMode: 'luminosity', opacity: 0.6 },
 
-  cursor: { color: theme.Form.InputText.inputTextColor },
+  cursor: { color: theme.Form.InputText.inputTextColor, marginBottom: 3 },
 }))
