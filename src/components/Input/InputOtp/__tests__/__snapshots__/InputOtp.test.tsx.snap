@@ -67,6 +67,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -98,6 +99,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -192,6 +194,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -225,6 +228,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -319,6 +323,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -352,6 +357,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -450,6 +456,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -483,6 +490,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -579,6 +587,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -614,6 +623,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -710,6 +720,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -745,6 +756,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -844,6 +856,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -878,6 +891,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -975,6 +989,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -1011,6 +1026,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -1108,6 +1124,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -1144,6 +1161,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -1245,6 +1263,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -1281,6 +1300,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -1380,6 +1400,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -1418,6 +1439,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -1517,6 +1539,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -1555,6 +1578,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -1653,6 +1677,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -1686,6 +1711,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -1782,6 +1808,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -1817,6 +1844,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -1913,6 +1941,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -1948,6 +1977,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -2048,6 +2078,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -2083,6 +2114,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -2181,6 +2213,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -2218,6 +2251,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -2316,6 +2350,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -2353,6 +2388,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -2454,6 +2490,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -2490,6 +2527,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -2589,6 +2627,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -2627,6 +2666,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -2726,6 +2766,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -2764,6 +2805,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -2867,6 +2909,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -2905,6 +2948,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3006,6 +3050,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3046,6 +3091,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3147,6 +3193,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3187,6 +3234,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3283,6 +3331,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3314,6 +3363,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3345,6 +3395,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3376,6 +3427,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3470,6 +3522,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3503,6 +3556,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3534,6 +3588,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3565,6 +3620,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3659,6 +3715,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3692,6 +3749,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3725,6 +3783,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3756,6 +3815,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3852,6 +3912,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3885,6 +3946,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3918,6 +3980,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -3951,6 +4014,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4047,6 +4111,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4082,6 +4147,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4115,6 +4181,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4148,6 +4215,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4244,6 +4312,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4279,6 +4348,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4314,6 +4384,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4347,6 +4418,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4444,6 +4516,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4478,6 +4551,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4512,6 +4586,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4546,6 +4621,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4643,6 +4719,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4679,6 +4756,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4713,6 +4791,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4747,6 +4826,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4844,6 +4924,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4880,6 +4961,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4916,6 +4998,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -4950,6 +5033,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5049,6 +5133,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5085,6 +5170,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5121,6 +5207,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5157,6 +5244,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5256,6 +5344,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5294,6 +5383,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5330,6 +5420,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5366,6 +5457,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5465,6 +5557,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5503,6 +5596,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5541,6 +5635,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5577,6 +5672,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5673,6 +5769,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5706,6 +5803,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5739,6 +5837,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5772,6 +5871,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5868,6 +5968,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5903,6 +6004,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5936,6 +6038,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -5969,6 +6072,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6065,6 +6169,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6100,6 +6205,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6135,6 +6241,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6168,6 +6275,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6266,6 +6374,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6301,6 +6410,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6336,6 +6446,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6371,6 +6482,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6469,6 +6581,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6506,6 +6619,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6541,6 +6655,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6576,6 +6691,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6674,6 +6790,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6711,6 +6828,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6748,6 +6866,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6783,6 +6902,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6882,6 +7002,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6918,6 +7039,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6954,6 +7076,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -6990,6 +7113,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -7089,6 +7213,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -7127,6 +7252,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -7163,6 +7289,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -7199,6 +7326,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -7298,6 +7426,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -7336,6 +7465,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -7374,6 +7504,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -7410,6 +7541,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -7511,6 +7643,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -7549,6 +7682,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -7587,6 +7721,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -7625,6 +7760,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -7726,6 +7862,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -7766,6 +7903,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -7804,6 +7942,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -7842,6 +7981,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -7943,6 +8083,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -7983,6 +8124,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8023,6 +8165,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8061,6 +8204,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8155,6 +8299,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8186,6 +8331,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8217,6 +8363,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8248,6 +8395,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8279,6 +8427,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8310,6 +8459,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8341,6 +8491,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8372,6 +8523,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8466,6 +8618,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8499,6 +8652,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8530,6 +8684,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8561,6 +8716,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8592,6 +8748,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8623,6 +8780,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8654,6 +8812,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8685,6 +8844,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8779,6 +8939,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8812,6 +8973,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8845,6 +9007,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8876,6 +9039,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8907,6 +9071,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8938,6 +9103,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -8969,6 +9135,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9000,6 +9167,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9096,6 +9264,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9129,6 +9298,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9162,6 +9332,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9195,6 +9366,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9228,6 +9400,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9261,6 +9434,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9294,6 +9468,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9327,6 +9502,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9423,6 +9599,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9458,6 +9635,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9491,6 +9669,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9524,6 +9703,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9557,6 +9737,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9590,6 +9771,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9623,6 +9805,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9656,6 +9839,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9752,6 +9936,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9787,6 +9972,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9822,6 +10008,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9855,6 +10042,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9888,6 +10076,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9921,6 +10110,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9954,6 +10144,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -9987,6 +10178,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10084,6 +10276,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10118,6 +10311,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10152,6 +10346,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10186,6 +10381,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10220,6 +10416,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10254,6 +10451,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10288,6 +10486,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10322,6 +10521,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10419,6 +10619,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10455,6 +10656,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10489,6 +10691,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10523,6 +10726,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10557,6 +10761,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10591,6 +10796,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10625,6 +10831,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10659,6 +10866,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10756,6 +10964,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10792,6 +11001,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10828,6 +11038,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10862,6 +11073,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10896,6 +11108,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10930,6 +11143,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10964,6 +11178,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -10998,6 +11213,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11097,6 +11313,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11133,6 +11350,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11169,6 +11387,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11205,6 +11424,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11241,6 +11461,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11277,6 +11498,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11313,6 +11535,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11349,6 +11572,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11448,6 +11672,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11486,6 +11711,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11522,6 +11748,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11558,6 +11785,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11594,6 +11822,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11630,6 +11859,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11666,6 +11896,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11702,6 +11933,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11801,6 +12033,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11839,6 +12072,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11877,6 +12111,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11913,6 +12148,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11949,6 +12185,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -11985,6 +12222,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12021,6 +12259,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12057,6 +12296,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12153,6 +12393,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12186,6 +12427,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12219,6 +12461,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12252,6 +12495,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12285,6 +12529,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12318,6 +12563,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12351,6 +12597,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12384,6 +12631,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12480,6 +12728,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12515,6 +12764,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12548,6 +12798,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12581,6 +12832,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12614,6 +12866,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12647,6 +12900,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12680,6 +12934,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12713,6 +12968,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12809,6 +13065,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12844,6 +13101,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12879,6 +13137,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12912,6 +13171,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12945,6 +13205,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -12978,6 +13239,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13011,6 +13273,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13044,6 +13307,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13142,6 +13406,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13177,6 +13442,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13212,6 +13478,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13247,6 +13514,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13282,6 +13550,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13317,6 +13586,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13352,6 +13622,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13387,6 +13658,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13485,6 +13757,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13522,6 +13795,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13557,6 +13831,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13592,6 +13867,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13627,6 +13903,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13662,6 +13939,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13697,6 +13975,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13732,6 +14011,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13830,6 +14110,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13867,6 +14148,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13904,6 +14186,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13939,6 +14222,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -13974,6 +14258,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14009,6 +14294,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14044,6 +14330,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14079,6 +14366,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14178,6 +14466,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14214,6 +14503,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14250,6 +14540,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14286,6 +14577,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14322,6 +14614,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14358,6 +14651,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14394,6 +14688,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14430,6 +14725,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14529,6 +14825,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14567,6 +14864,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14603,6 +14901,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14639,6 +14938,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14675,6 +14975,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14711,6 +15012,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14747,6 +15049,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14783,6 +15086,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14882,6 +15186,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14920,6 +15225,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14958,6 +15264,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -14994,6 +15301,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15030,6 +15338,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15066,6 +15375,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15102,6 +15412,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15138,6 +15449,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15239,6 +15551,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15277,6 +15590,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15315,6 +15629,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15353,6 +15668,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15391,6 +15707,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15429,6 +15746,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15467,6 +15785,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15505,6 +15824,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15606,6 +15926,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15646,6 +15967,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15684,6 +16006,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15722,6 +16045,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15760,6 +16084,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15798,6 +16123,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15836,6 +16162,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15874,6 +16201,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -15975,6 +16303,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -16015,6 +16344,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -16055,6 +16385,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -16093,6 +16424,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -16131,6 +16463,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -16169,6 +16502,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -16207,6 +16541,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
@@ -16245,6 +16580,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
             "fontFamily": "TT Fellows",
             "fontSize": 21,
             "fontWeight": "400",
+            "includeFontPadding": false,
           }
         }
         testID="undefinedItem"
