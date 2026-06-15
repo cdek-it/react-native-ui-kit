@@ -17,27 +17,28 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = danger
     jestInlineStyle={
       {
         "backgroundColor": "#fff0f0",
-        "borderRadius": 28,
+        "borderRadius": 100,
         "height": 28,
+        "left": -3.5,
+        "opacity": 1,
         "position": "absolute",
+        "top": -3.5,
+        "transitionDuration": 100,
+        "transitionProperty": "opacity",
         "width": 28,
       }
     }
-    layout={
-      LinearTransition {
-        "build": [Function],
-        "durationV": 100,
-        "randomizeDelay": false,
-        "reduceMotionV": "system",
-      }
-    }
+    pointerEvents="none"
     style={
       [
         {
           "backgroundColor": "#fff0f0",
-          "borderRadius": 28,
+          "borderRadius": 100,
           "height": 28,
+          "left": -3.5,
+          "opacity": 1,
           "position": "absolute",
+          "top": -3.5,
           "width": 28,
         },
       ]
@@ -64,6 +65,33 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = danger
     accessible={true}
     collapsable={false}
     focusable={true}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderColor": "#db3424",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "height": 21,
+        "justifyContent": "center",
+        "transitionDuration": 100,
+        "transitionProperty": [
+          "borderColor",
+          "backgroundColor",
+        ],
+        "width": 21,
+      }
+    }
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -74,28 +102,56 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = danger
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      {
-        "alignItems": "center",
-        "backgroundColor": "#ffffff",
-        "borderColor": "#db3424",
-        "borderRadius": 21,
-        "borderWidth": 1,
-        "height": 21,
-        "justifyContent": "center",
-        "margin": 3.5,
-        "width": 21,
-      }
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#ffffff",
+          "borderColor": "#db3424",
+          "borderRadius": 100,
+          "borderWidth": 1,
+          "height": 21,
+          "justifyContent": "center",
+          "width": 21,
+        },
+      ]
     }
     testID="RadioButton_Pressable"
   >
     <View
-      style={
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 10.5,
+          "borderRadius": 100,
           "height": 10.5,
+          "opacity": 0,
+          "transitionDuration": 100,
+          "transitionProperty": [
+            "opacity",
+          ],
           "width": 10.5,
         }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 100,
+            "height": 10.5,
+            "opacity": 0,
+            "width": 10.5,
+          },
+        ]
       }
     />
   </View>
@@ -104,6 +160,46 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = danger
 
 exports[`RadioButton snapshots checked = false, disabled = false, state = default 1`] = `
 <View>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": "#fff0f0",
+        "borderRadius": 100,
+        "height": 28,
+        "left": -3.5,
+        "position": "absolute",
+        "top": -3.5,
+        "transitionDuration": 100,
+        "transitionProperty": "opacity",
+        "width": 28,
+      }
+    }
+    pointerEvents="none"
+    style={
+      [
+        {
+          "backgroundColor": "#fff0f0",
+          "borderRadius": 100,
+          "height": 28,
+          "left": -3.5,
+          "position": "absolute",
+          "top": -3.5,
+          "width": 28,
+        },
+      ]
+    }
+  />
   <View
     accessibilityState={
       {
@@ -125,6 +221,33 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = defaul
     accessible={true}
     collapsable={false}
     focusable={true}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderColor": "#cecfd2",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "height": 21,
+        "justifyContent": "center",
+        "transitionDuration": 100,
+        "transitionProperty": [
+          "borderColor",
+          "backgroundColor",
+        ],
+        "width": 21,
+      }
+    }
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -135,28 +258,56 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = defaul
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      {
-        "alignItems": "center",
-        "backgroundColor": "#ffffff",
-        "borderColor": "#cecfd2",
-        "borderRadius": 21,
-        "borderWidth": 1,
-        "height": 21,
-        "justifyContent": "center",
-        "margin": 3.5,
-        "width": 21,
-      }
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#ffffff",
+          "borderColor": "#cecfd2",
+          "borderRadius": 100,
+          "borderWidth": 1,
+          "height": 21,
+          "justifyContent": "center",
+          "width": 21,
+        },
+      ]
     }
     testID="RadioButton_Pressable"
   >
     <View
-      style={
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 10.5,
+          "borderRadius": 100,
           "height": 10.5,
+          "opacity": 0,
+          "transitionDuration": 100,
+          "transitionProperty": [
+            "opacity",
+          ],
           "width": 10.5,
         }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 100,
+            "height": 10.5,
+            "opacity": 0,
+            "width": 10.5,
+          },
+        ]
       }
     />
   </View>
@@ -165,6 +316,48 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = defaul
 
 exports[`RadioButton snapshots checked = false, disabled = true, state = default 1`] = `
 <View>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": "#fff0f0",
+        "borderRadius": 100,
+        "height": 28,
+        "left": -3.5,
+        "opacity": 0,
+        "position": "absolute",
+        "top": -3.5,
+        "transitionDuration": 100,
+        "transitionProperty": "opacity",
+        "width": 28,
+      }
+    }
+    pointerEvents="none"
+    style={
+      [
+        {
+          "backgroundColor": "#fff0f0",
+          "borderRadius": 100,
+          "height": 28,
+          "left": -3.5,
+          "opacity": 0,
+          "position": "absolute",
+          "top": -3.5,
+          "width": 28,
+        },
+      ]
+    }
+  />
   <View
     accessibilityState={
       {
@@ -186,6 +379,34 @@ exports[`RadioButton snapshots checked = false, disabled = true, state = default
     accessible={true}
     collapsable={false}
     focusable={true}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#e2e2e4",
+        "borderColor": "#cecfd2",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "height": 21,
+        "justifyContent": "center",
+        "opacity": 0.6,
+        "transitionDuration": 100,
+        "transitionProperty": [
+          "borderColor",
+          "backgroundColor",
+        ],
+        "width": 21,
+      }
+    }
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -196,29 +417,57 @@ exports[`RadioButton snapshots checked = false, disabled = true, state = default
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      {
-        "alignItems": "center",
-        "backgroundColor": "#e2e2e4",
-        "borderColor": "#cecfd2",
-        "borderRadius": 21,
-        "borderWidth": 1,
-        "height": 21,
-        "justifyContent": "center",
-        "margin": 3.5,
-        "opacity": 0.6,
-        "width": 21,
-      }
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#e2e2e4",
+          "borderColor": "#cecfd2",
+          "borderRadius": 100,
+          "borderWidth": 1,
+          "height": 21,
+          "justifyContent": "center",
+          "opacity": 0.6,
+          "width": 21,
+        },
+      ]
     }
     testID="RadioButton_Pressable"
   >
     <View
-      style={
+      collapsable={false}
+      jestAnimatedProps={
         {
-          "backgroundColor": "transparent",
-          "borderRadius": 10.5,
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        {
+          "backgroundColor": "#ffffff",
+          "borderRadius": 100,
           "height": 10.5,
+          "opacity": 0,
+          "transitionDuration": 100,
+          "transitionProperty": [
+            "opacity",
+          ],
           "width": 10.5,
         }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 100,
+            "height": 10.5,
+            "opacity": 0,
+            "width": 10.5,
+          },
+        ]
       }
     />
   </View>
@@ -242,27 +491,28 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = danger 
     jestInlineStyle={
       {
         "backgroundColor": "#fff0f0",
-        "borderRadius": 28,
+        "borderRadius": 100,
         "height": 28,
+        "left": -3.5,
+        "opacity": 1,
         "position": "absolute",
+        "top": -3.5,
+        "transitionDuration": 100,
+        "transitionProperty": "opacity",
         "width": 28,
       }
     }
-    layout={
-      LinearTransition {
-        "build": [Function],
-        "durationV": 100,
-        "randomizeDelay": false,
-        "reduceMotionV": "system",
-      }
-    }
+    pointerEvents="none"
     style={
       [
         {
           "backgroundColor": "#fff0f0",
-          "borderRadius": 28,
+          "borderRadius": 100,
           "height": 28,
+          "left": -3.5,
+          "opacity": 1,
           "position": "absolute",
+          "top": -3.5,
           "width": 28,
         },
       ]
@@ -289,6 +539,33 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = danger 
     accessible={true}
     collapsable={false}
     focusable={true}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#2b2e33",
+        "borderColor": "#2b2e33",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "height": 21,
+        "justifyContent": "center",
+        "transitionDuration": 100,
+        "transitionProperty": [
+          "borderColor",
+          "backgroundColor",
+        ],
+        "width": 21,
+      }
+    }
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -299,28 +576,56 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = danger 
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      {
-        "alignItems": "center",
-        "backgroundColor": "#2b2e33",
-        "borderColor": "#db3424",
-        "borderRadius": 21,
-        "borderWidth": 1,
-        "height": 21,
-        "justifyContent": "center",
-        "margin": 3.5,
-        "width": 21,
-      }
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#2b2e33",
+          "borderColor": "#2b2e33",
+          "borderRadius": 100,
+          "borderWidth": 1,
+          "height": 21,
+          "justifyContent": "center",
+          "width": 21,
+        },
+      ]
     }
     testID="RadioButton_Pressable"
   >
     <View
-      style={
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 10.5,
+          "borderRadius": 100,
           "height": 10.5,
+          "opacity": 1,
+          "transitionDuration": 100,
+          "transitionProperty": [
+            "opacity",
+          ],
           "width": 10.5,
         }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 100,
+            "height": 10.5,
+            "opacity": 1,
+            "width": 10.5,
+          },
+        ]
       }
     />
   </View>
@@ -329,6 +634,46 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = danger 
 
 exports[`RadioButton snapshots checked = true, disabled = false, state = default 1`] = `
 <View>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": "#fff0f0",
+        "borderRadius": 100,
+        "height": 28,
+        "left": -3.5,
+        "position": "absolute",
+        "top": -3.5,
+        "transitionDuration": 100,
+        "transitionProperty": "opacity",
+        "width": 28,
+      }
+    }
+    pointerEvents="none"
+    style={
+      [
+        {
+          "backgroundColor": "#fff0f0",
+          "borderRadius": 100,
+          "height": 28,
+          "left": -3.5,
+          "position": "absolute",
+          "top": -3.5,
+          "width": 28,
+        },
+      ]
+    }
+  />
   <View
     accessibilityState={
       {
@@ -350,6 +695,33 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = default
     accessible={true}
     collapsable={false}
     focusable={true}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#2b2e33",
+        "borderColor": "#2b2e33",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "height": 21,
+        "justifyContent": "center",
+        "transitionDuration": 100,
+        "transitionProperty": [
+          "borderColor",
+          "backgroundColor",
+        ],
+        "width": 21,
+      }
+    }
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -360,28 +732,56 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = default
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      {
-        "alignItems": "center",
-        "backgroundColor": "#2b2e33",
-        "borderColor": "#2b2e33",
-        "borderRadius": 21,
-        "borderWidth": 5,
-        "height": 21,
-        "justifyContent": "center",
-        "margin": 3.5,
-        "width": 21,
-      }
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#2b2e33",
+          "borderColor": "#2b2e33",
+          "borderRadius": 100,
+          "borderWidth": 1,
+          "height": 21,
+          "justifyContent": "center",
+          "width": 21,
+        },
+      ]
     }
     testID="RadioButton_Pressable"
   >
     <View
-      style={
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 10.5,
+          "borderRadius": 100,
           "height": 10.5,
+          "opacity": 1,
+          "transitionDuration": 100,
+          "transitionProperty": [
+            "opacity",
+          ],
           "width": 10.5,
         }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 100,
+            "height": 10.5,
+            "opacity": 1,
+            "width": 10.5,
+          },
+        ]
       }
     />
   </View>
@@ -390,6 +790,48 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = default
 
 exports[`RadioButton snapshots checked = true, disabled = true, state = default 1`] = `
 <View>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": "#fff0f0",
+        "borderRadius": 100,
+        "height": 28,
+        "left": -3.5,
+        "opacity": 0,
+        "position": "absolute",
+        "top": -3.5,
+        "transitionDuration": 100,
+        "transitionProperty": "opacity",
+        "width": 28,
+      }
+    }
+    pointerEvents="none"
+    style={
+      [
+        {
+          "backgroundColor": "#fff0f0",
+          "borderRadius": 100,
+          "height": 28,
+          "left": -3.5,
+          "opacity": 0,
+          "position": "absolute",
+          "top": -3.5,
+          "width": 28,
+        },
+      ]
+    }
+  />
   <View
     accessibilityState={
       {
@@ -411,6 +853,34 @@ exports[`RadioButton snapshots checked = true, disabled = true, state = default 
     accessible={true}
     collapsable={false}
     focusable={true}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#2b2e33",
+        "borderColor": "#2b2e33",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "height": 21,
+        "justifyContent": "center",
+        "opacity": 0.6,
+        "transitionDuration": 100,
+        "transitionProperty": [
+          "borderColor",
+          "backgroundColor",
+        ],
+        "width": 21,
+      }
+    }
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -421,29 +891,57 @@ exports[`RadioButton snapshots checked = true, disabled = true, state = default 
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      {
-        "alignItems": "center",
-        "backgroundColor": "#2b2e33",
-        "borderColor": "#2b2e33",
-        "borderRadius": 21,
-        "borderWidth": 5,
-        "height": 21,
-        "justifyContent": "center",
-        "margin": 3.5,
-        "opacity": 0.6,
-        "width": 21,
-      }
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#2b2e33",
+          "borderColor": "#2b2e33",
+          "borderRadius": 100,
+          "borderWidth": 1,
+          "height": 21,
+          "justifyContent": "center",
+          "opacity": 0.6,
+          "width": 21,
+        },
+      ]
     }
     testID="RadioButton_Pressable"
   >
     <View
-      style={
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 10.5,
+          "borderRadius": 100,
           "height": 10.5,
+          "opacity": 1,
+          "transitionDuration": 100,
+          "transitionProperty": [
+            "opacity",
+          ],
           "width": 10.5,
         }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 100,
+            "height": 10.5,
+            "opacity": 1,
+            "width": 10.5,
+          },
+        ]
       }
     />
   </View>
@@ -452,6 +950,46 @@ exports[`RadioButton snapshots checked = true, disabled = true, state = default 
 
 exports[`RadioButton snapshots default 1`] = `
 <View>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": "#fff0f0",
+        "borderRadius": 100,
+        "height": 28,
+        "left": -3.5,
+        "position": "absolute",
+        "top": -3.5,
+        "transitionDuration": 100,
+        "transitionProperty": "opacity",
+        "width": 28,
+      }
+    }
+    pointerEvents="none"
+    style={
+      [
+        {
+          "backgroundColor": "#fff0f0",
+          "borderRadius": 100,
+          "height": 28,
+          "left": -3.5,
+          "position": "absolute",
+          "top": -3.5,
+          "width": 28,
+        },
+      ]
+    }
+  />
   <View
     accessibilityState={
       {
@@ -473,6 +1011,33 @@ exports[`RadioButton snapshots default 1`] = `
     accessible={true}
     collapsable={false}
     focusable={true}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderColor": "#cecfd2",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "height": 21,
+        "justifyContent": "center",
+        "transitionDuration": 100,
+        "transitionProperty": [
+          "borderColor",
+          "backgroundColor",
+        ],
+        "width": 21,
+      }
+    }
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -483,28 +1048,56 @@ exports[`RadioButton snapshots default 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      {
-        "alignItems": "center",
-        "backgroundColor": "#ffffff",
-        "borderColor": "#cecfd2",
-        "borderRadius": 21,
-        "borderWidth": 1,
-        "height": 21,
-        "justifyContent": "center",
-        "margin": 3.5,
-        "width": 21,
-      }
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#ffffff",
+          "borderColor": "#cecfd2",
+          "borderRadius": 100,
+          "borderWidth": 1,
+          "height": 21,
+          "justifyContent": "center",
+          "width": 21,
+        },
+      ]
     }
     testID="RadioButton_Pressable"
   >
     <View
-      style={
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 10.5,
+          "borderRadius": 100,
           "height": 10.5,
+          "opacity": 0,
+          "transitionDuration": 100,
+          "transitionProperty": [
+            "opacity",
+          ],
           "width": 10.5,
         }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 100,
+            "height": 10.5,
+            "opacity": 0,
+            "width": 10.5,
+          },
+        ]
       }
     />
   </View>

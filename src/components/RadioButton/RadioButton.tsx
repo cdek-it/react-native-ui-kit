@@ -5,9 +5,11 @@ import {
   View,
   type ViewProps,
 } from 'react-native'
-import Animated, { LinearTransition } from 'react-native-reanimated'
+import Animated from 'react-native-reanimated'
 
 import { StyleSheet } from 'react-native-unistyles'
+
+const AnimatedPressable = Animated.createAnimatedComponent(Pressable)
 
 export interface RadioButtonProps
   extends AccessibilityProps, Pick<ViewProps, 'testID'> {
@@ -50,13 +52,8 @@ export const RadioButton = memo<RadioButtonProps>(
 
     return (
       <View>
-        {!disabled && state === 'danger' && (
-          <Animated.View
-            layout={LinearTransition.duration(100)}
-            style={radioStyles.outline}
-          />
-        )}
-        <Pressable
+        <Animated.View pointerEvents='none' style={radioStyles.outline} />
+        <AnimatedPressable
           disabled={disabled}
           style={radioStyles.container}
           testID={testID || 'RadioButton_Pressable'}
@@ -65,50 +62,44 @@ export const RadioButton = memo<RadioButtonProps>(
           onPressOut={onPressOut}
           {...rest}
         >
-          <View style={radioStyles.center} />
-        </Pressable>
+          <Animated.View style={radioStyles.center} />
+        </AnimatedPressable>
       </View>
     )
   }
 )
 
-const radioStyles = StyleSheet.create(({ theme }) => ({
+const radioStyles = StyleSheet.create(({ theme, border }) => ({
   container: {
     width: theme.Form.RadioButton.radiobuttonWidth,
     height: theme.Form.RadioButton.radiobuttonHeight,
-    borderRadius: theme.Form.RadioButton.radiobuttonWidth,
+    borderRadius: border.Radius['rounded-full'],
+    borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    margin: theme.General.focusShadowWidth,
+    transitionProperty: ['borderColor', 'backgroundColor'],
+    transitionDuration: 100,
     variants: {
       checked: {
         true: {
           borderColor: theme.Form.RadioButton.radiobuttonActiveBorderColor,
           backgroundColor: theme.Form.RadioButton.radiobuttonActiveBorderColor,
-          borderWidth: 5,
         },
         false: {
           borderColor: theme.Form.InputText.inputBorderColor,
-          borderWidth: 1,
           backgroundColor: theme.Form.InputText.inputBg,
         },
       },
-      pressed: {
-        true: { borderColor: theme.Form.InputText.inputHoverBorderColor },
-        false: {},
-      },
-      state: {
-        danger: { borderColor: theme.Form.InputText.inputErrorBorderColor },
-      },
+      pressed: { true: {}, false: {} },
       disabled: {
         true: {
           borderColor: theme.Form.InputText.inputBorderColor,
           backgroundColor: theme.Button.Disabled.disabledButtonBg,
           opacity: 0.6,
-          borderWidth: 1,
         },
         false: {},
       },
+      state: { danger: {}, default: {} },
     },
     compoundVariants: [
       {
@@ -116,18 +107,7 @@ const radioStyles = StyleSheet.create(({ theme }) => ({
         pressed: 'true',
         styles: {
           borderColor: theme.Form.RadioButton.radiobuttonActiveHoverBorderColor,
-          backgroundColor:
-            theme.Form.RadioButton.radiobuttonActiveHoverBorderColor,
-          borderWidth: 5,
-        },
-      },
-      {
-        state: 'danger',
-        checked: 'true',
-        styles: {
-          borderColor: theme.Form.InputText.inputErrorBorderColor,
-          backgroundColor: theme.Form.RadioButton.radiobuttonActiveBorderColor,
-          borderWidth: 1,
+          backgroundColor: theme.Form.RadioButton.radiobuttonActiveHoverBg,
         },
       },
       {
@@ -136,7 +116,19 @@ const radioStyles = StyleSheet.create(({ theme }) => ({
         styles: {
           borderColor: theme.Form.RadioButton.radiobuttonActiveBorderColor,
           backgroundColor: theme.Form.RadioButton.radiobuttonActiveBorderColor,
-          borderWidth: 5,
+        },
+      },
+      {
+        state: 'danger',
+        disabled: 'false',
+        checked: 'false',
+        styles: { borderColor: theme.Form.InputText.inputErrorBorderColor },
+      },
+      {
+        checked: 'false',
+        pressed: 'true',
+        styles: {
+          borderColor: theme.Form.RadioButton.radiobuttonActiveHoverBorderColor,
         },
       },
     ],
@@ -144,31 +136,29 @@ const radioStyles = StyleSheet.create(({ theme }) => ({
   center: {
     width: theme.Form.RadioButton.radiobuttonIconSize,
     height: theme.Form.RadioButton.radiobuttonIconSize,
-    borderRadius: theme.Form.RadioButton.radiobuttonIconSize,
+    borderRadius: border.Radius['rounded-full'],
     backgroundColor: theme.Form.InputText.inputBg,
-    variants: {
-      checked: { true: {}, false: {} },
-      disabled: { true: {}, false: {} },
-    },
-    compoundVariants: [
-      {
-        disabled: 'true',
-        checked: 'false',
-        styles: { backgroundColor: 'transparent' },
-      },
-    ],
+    transitionProperty: ['opacity'],
+    transitionDuration: 100,
+    variants: { checked: { false: { opacity: 0 }, true: { opacity: 1 } } },
   },
   outline: {
     position: 'absolute',
+    top: -theme.General.focusShadowWidth,
+    left: -theme.General.focusShadowWidth,
     width:
       theme.Form.RadioButton.radiobuttonWidth +
       theme.General.focusShadowWidth * 2,
     height:
       theme.Form.RadioButton.radiobuttonHeight +
       theme.General.focusShadowWidth * 2,
-    borderRadius:
-      theme.Form.RadioButton.radiobuttonHeight +
-      theme.General.focusShadowWidth * 2,
+    borderRadius: border.Radius['rounded-full'],
     backgroundColor: theme.General.focusOutlineErrorColor,
+    transitionProperty: 'opacity',
+    transitionDuration: 100,
+    variants: {
+      state: { danger: { opacity: 1 }, default: { opacity: 0 } },
+      disabled: { true: { opacity: 0 } },
+    },
   },
 }))
