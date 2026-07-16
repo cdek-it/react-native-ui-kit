@@ -175,7 +175,7 @@ exports[`Tag snapshot: severity = danger 1`] = `
         {
           "alignItems": "center",
           "alignSelf": "flex-start",
-          "backgroundColor": "#fbacaa",
+          "backgroundColor": "#fff0f0",
           "borderRadius": 7,
           "flexDirection": "row",
           "gap": 3.5,
@@ -217,7 +217,7 @@ exports[`Tag snapshot: severity = info, showIcon = false, with Icon 1`] = `
         {
           "alignItems": "center",
           "alignSelf": "flex-start",
-          "backgroundColor": "#aad7fb",
+          "backgroundColor": "#f0f9ff",
           "borderRadius": 7,
           "flexDirection": "row",
           "gap": 3.5,
@@ -464,7 +464,7 @@ exports[`Tag snapshot: severity = success, with custom styles 1`] = `
         {
           "alignItems": "center",
           "alignSelf": "flex-start",
-          "backgroundColor": "#aafbb7",
+          "backgroundColor": "#f0fff3",
           "borderRadius": 7,
           "flexDirection": "row",
           "gap": 3.5,
@@ -506,7 +506,7 @@ exports[`Tag snapshot: severity = warning 1`] = `
         {
           "alignItems": "center",
           "alignSelf": "flex-start",
-          "backgroundColor": "#fddeaa",
+          "backgroundColor": "#fff9f0",
           "borderRadius": 7,
           "flexDirection": "row",
           "gap": 3.5,

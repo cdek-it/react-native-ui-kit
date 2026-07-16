@@ -70,20 +70,17 @@ const buttonIconStyles = StyleSheet.create(({ theme, typography }) => ({
         },
       },
       variant: {
-        primary: { color: theme.Button.Brand.buttonTextColor },
-        secondary: { color: theme.Button.Primary.secondaryButtonTextColor },
-        tertiary: { color: theme.Button.Secondary.helpButtonTextColor },
-        text: { color: theme.Button.Text.textButtonTextColor },
-        link: { color: theme.Button.Text.textButtonTextColor },
-        basic: { color: theme.Button.Brand.buttonTextColor },
-        outlined: { color: theme.Button.Brand.buttonTextColor },
+        primary: { color: theme.Button.root.primary.color },
+        secondary: { color: theme.Button.root.secondary.color },
+        tertiary: { color: theme.Button.root.contrast.color },
+        text: { color: theme.Button.text.primary.color },
+        link: { color: theme.Button.link.color },
+        basic: { color: theme.Button.root.primary.color },
+        outlined: { color: theme.Button.outlined.primary.color },
       },
       severity: { info: {}, success: {}, warning: {}, danger: {} },
       pressed: { true: {}, false: {} },
-      disabled: {
-        true: { color: theme.Button.Disabled.disabledButtonTextColor },
-        false: {},
-      },
+      disabled: { true: { color: theme.Button.disabledColor }, false: {} },
     },
     compoundVariants: [
       // link pressed
@@ -97,90 +94,62 @@ const buttonIconStyles = StyleSheet.create(({ theme, typography }) => ({
       {
         variant: 'basic',
         severity: 'info',
-        styles: { color: theme.Button.Severity.Info.Basic.infoButtonTextColor },
+        styles: { color: theme.Button.root.info.color },
       },
       {
         variant: 'outlined',
         severity: 'info',
-        styles: {
-          color:
-            theme.Button.Severity.Info.Outlined.infoOutlinedButtonTextColor,
-        },
+        styles: { color: theme.Button.outlined.info.color },
       },
       {
         variant: 'text',
         severity: 'info',
-        styles: {
-          color: theme.Button.Severity.Info.Text.infoTextButtonTextColor,
-        },
+        styles: { color: theme.Button.text.info.color },
       },
       {
         variant: 'basic',
         severity: 'success',
-        styles: {
-          color: theme.Button.Severity.Success.Basic.successButtonTextColor,
-        },
+        styles: { color: theme.Button.root.success.color },
       },
       {
         variant: 'outlined',
         severity: 'success',
-        styles: {
-          color:
-            theme.Button.Severity.Success.Outlined
-              .successOutlinedButtonTextColor,
-        },
+        styles: { color: theme.Button.outlined.success.color },
       },
       {
         variant: 'text',
         severity: 'success',
-        styles: {
-          color: theme.Button.Severity.Success.Text.successTextButtonTextColor,
-        },
+        styles: { color: theme.Button.text.success.color },
       },
       {
         variant: 'basic',
         severity: 'warning',
-        styles: {
-          color: theme.Button.Severity.Warning.Basic.warningButtonTextColor,
-        },
+        styles: { color: theme.Button.root.warn.color },
       },
       {
         variant: 'outlined',
         severity: 'warning',
-        styles: {
-          color:
-            theme.Button.Severity.Warning.Outlined
-              .warningOutlinedButtonTextColor,
-        },
+        styles: { color: theme.Button.outlined.warn.color },
       },
       {
         variant: 'text',
         severity: 'warning',
-        styles: {
-          color: theme.Button.Severity.Warning.Text.warningTextButtonTextColor,
-        },
+        styles: { color: theme.Button.text.warn.color },
       },
       {
         variant: 'basic',
         severity: 'danger',
-        styles: {
-          color: theme.Button.Severity.Danger.Basic.dangerButtonTextColor,
-        },
+        styles: { color: theme.Button.root.danger.color },
       },
       {
         variant: 'outlined',
         severity: 'danger',
-        styles: {
-          color:
-            theme.Button.Severity.Danger.Outlined.dangerOutlinedButtonTextColor,
-        },
+        styles: { color: theme.Button.outlined.danger.color },
       },
       {
         variant: 'text',
         severity: 'danger',
-        styles: {
-          color: theme.Button.Severity.Danger.Text.dangerTextButtonTextColor,
-        },
+        styles: { color: theme.Button.text.danger.color },
       },
     ],
   },

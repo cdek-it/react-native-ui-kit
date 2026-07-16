@@ -32,7 +32,7 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
   style={
     {
       "alignItems": "center",
-      "borderColor": "#a2a5a9",
+      "borderColor": "transparent",
       "borderRadius": 7,
       "borderWidth": 1,
       "flex": 1,
@@ -55,7 +55,7 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#a2a5a9"
+    stroke="transparent"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -91,7 +91,7 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
       }
       stroke={
         {
-          "payload": 4288849321,
+          "payload": 0,
           "type": 0,
         }
       }
@@ -113,7 +113,7 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
         }
         stroke={
           {
-            "payload": 4288849321,
+            "payload": 0,
             "type": 0,
           }
         }
@@ -136,7 +136,7 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
         }
         stroke={
           {
-            "payload": 4288849321,
+            "payload": 0,
             "type": 0,
           }
         }
@@ -173,7 +173,7 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
           "color": "#56595f",
         },
         {
-          "color": "#a2a5a9",
+          "color": "transparent",
         },
       ]
     }
@@ -192,7 +192,7 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
           "color": "#56595f",
         },
         {
-          "color": "#a2a5a9",
+          "color": "transparent",
         },
       ]
     }

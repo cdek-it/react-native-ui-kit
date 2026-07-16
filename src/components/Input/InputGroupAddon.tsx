@@ -72,10 +72,7 @@ const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
     borderTopLeftRadius: 0,
     borderBottomLeftRadius: 0,
   },
-  disabled: {
-    opacity: 0.6,
-    backgroundColor: theme.Button.Disabled.disabledButtonBg,
-  },
+  disabled: { opacity: 0.6, backgroundColor: theme.Button.disabledBackground },
   text: {
     fontSize: typography.Size['text-base'],
     color: theme.Form.InputGroup.inputGroupTextColor,

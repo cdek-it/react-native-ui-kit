@@ -32,7 +32,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           "gap": 7,
           "minHeight": 28,
           "paddingHorizontal": 10.5,
-          "paddingVertical": 0,
+          "paddingVertical": 8,
         },
         false,
       ]
@@ -193,7 +193,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           "gap": 7,
           "minHeight": 28,
           "paddingHorizontal": 10.5,
-          "paddingVertical": 0,
+          "paddingVertical": 8,
         },
         false,
       ]
@@ -353,8 +353,8 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
           "flexDirection": "row",
           "gap": 7,
           "minHeight": 35,
-          "paddingHorizontal": 14,
-          "paddingVertical": 0,
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
         },
         {
           "aspectRatio": 1,
@@ -482,7 +482,7 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
     [
       {
         "alignSelf": "flex-start",
-        "borderColor": "#a2a5a9",
+        "borderColor": "transparent",
         "borderRadius": 100,
         "borderWidth": 1,
         "opacity": 0.6,
@@ -505,7 +505,7 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
           "gap": 10.5,
           "minHeight": 49,
           "paddingHorizontal": 21,
-          "paddingVertical": 0,
+          "paddingVertical": 8,
         },
         false,
       ]
@@ -668,7 +668,7 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
           "gap": 10.5,
           "minHeight": 56,
           "paddingHorizontal": 21,
-          "paddingVertical": 0,
+          "paddingVertical": 8,
         },
         {
           "aspectRatio": 1,
@@ -817,8 +817,8 @@ exports[`ToggleButton snapshots default 1`] = `
           "flexDirection": "row",
           "gap": 7,
           "minHeight": 35,
-          "paddingHorizontal": 14,
-          "paddingVertical": 0,
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
         },
         {
           "aspectRatio": 1,

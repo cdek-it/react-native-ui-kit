@@ -30,7 +30,7 @@ export const ButtonActivityIndicator = genericMemo(
 
 const buttonActivityIndicatorStyles = StyleSheet.create(({ theme }) => ({
   indicator: {
-    color: theme.Button.Disabled.disabledButtonTextColor,
+    color: theme.Button.disabledColor,
     variants: {
       size: {
         xlarge: { height: 21 },

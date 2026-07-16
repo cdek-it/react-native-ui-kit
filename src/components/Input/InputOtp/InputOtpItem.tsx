@@ -58,8 +58,8 @@ export const InputOtpItem = memo<InputOtpItemProps>(
 
 const styles = StyleSheet.create(({ theme, border, fonts, typography }) => ({
   container: {
-    minHeight: theme.Button.Common.buttonHeight,
-    minWidth: theme.Button.Common.buttonHeight,
+    minHeight: 35,
+    minWidth: 35,
     paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
     paddingVertical: theme.Form.InputText.inputPaddingTopBottom,
     borderBottomWidth: border.Width.border,

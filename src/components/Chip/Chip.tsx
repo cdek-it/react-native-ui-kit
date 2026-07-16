@@ -46,7 +46,7 @@ export const Chip = memo<ChipProps>(
   }) => {
     const iconUniProps = ({ theme }: ThemeType) => ({
       color: disabled
-        ? theme.Button.Disabled.disabledButtonTextColor
+        ? theme.Button.disabledColor
         : theme.Misc.Chip.chipTextColor,
     })
 
@@ -85,7 +85,7 @@ export const Chip = memo<ChipProps>(
                 style={pressed ? styles.pressedClose : null}
                 uniProps={({ theme }) => ({
                   color: disabled
-                    ? theme.Button.Disabled.disabledButtonTextColor
+                    ? theme.Button.disabledColor
                     : theme.Misc.Chip.chipTextColor,
                 })}
               />
@@ -116,8 +116,8 @@ const styles = StyleSheet.create(({ theme, typography, border, fonts }) => ({
     borderColor: theme.Misc.Chip.chipBorderColor,
   },
   disabledChip: {
-    backgroundColor: theme.Button.Disabled.disabledButtonBg,
-    borderColor: theme.Button.Disabled.disabledButtonBorderColor,
+    backgroundColor: theme.Button.disabledBackground,
+    borderColor: 'transparent',
     opacity: 0.6,
     mixBlendMode: 'luminosity',
   },

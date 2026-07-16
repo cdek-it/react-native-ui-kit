@@ -198,193 +198,282 @@
     "actionIconBorderRadius": 10.5
   },
   "Button": {
-    "Common": {
-      "buttonHoverShadowColor": "#85888e",
-      "buttonHeight": 35,
-      "buttonHeightSM": 28,
-      "buttonHeightLG": 49,
-      "buttonHeightXL": 56,
-      "buttonPaddingTopBottom": 0,
-      "buttonPaddingLeftRight": 14,
-      "buttonPadding": "$buttonPaddingTopBottom $buttonPaddingLeftRight",
-      "buttonIconOnlyWidth": 35,
-      "buttonHoverShadow": "0 .25rem .25rem 0 $buttonHoverShadowColor",
-      "roundedButtonBorderRadius": "100px"
+    "borderRadius": 12,
+    "roundedBorderRadius": 1141.714,
+    "gap": 8,
+    "fontSize": 14,
+    "paddingX": 16,
+    "paddingY": 8,
+    "iconOnlyWidth": 40,
+    "raisedShadow": "none",
+    "badgeSize": 16,
+    "transitionDuration": 180,
+    "focusRing": { "width": 4, "style": "none", "offset": 0 },
+    "sm": {
+      "fontSize": 14,
+      "iconOnlyWidth": 32,
+      "paddingX": 12,
+      "paddingY": 8
     },
-    "Brand": {
-      "buttonBg": "#44e858",
-      "buttonTextColor": "#000000",
-      "buttonBorderColor": "rgba(0, 0, 0, 0.0001)",
-      "buttonBorder": "1px solid $buttonBorderColor",
-      "buttonHoverBg": "#77f48a",
-      "buttonHoverTextColor": "#000000",
-      "buttonActiveBg": "#44e858",
-      "buttonActiveTextColor": "#000000"
+    "lg": {
+      "fontSize": 20,
+      "iconOnlyWidth": 56,
+      "paddingX": 24,
+      "paddingY": 16
     },
-    "Primary": {
-      "secondaryButtonBg": "#f0f0f1",
-      "secondaryButtonTextColor": "#000000",
-      "secondaryButtonBorderColor": "rgba(0, 0, 0, 0.0001)",
-      "secondaryButtonHoverBg": "#e2e2e4",
-      "secondaryButtonHoverTextColor": "#000000",
-      "secondaryButtonHoverBorderColor": "rgba(0, 0, 0, 0.0001)",
-      "secondaryButtonActiveBg": "#f0f0f1",
-      "secondaryButtonActiveTextColor": "#000000",
-      "secondaryButtonActiveBorderColor": "rgba(0, 0, 0, 0.0001)"
+    "label": { "fontWeight": 700 },
+    "disabledBackground": "#404348",
+    "extOutlined": {
+      "danger": { "focusBackground": "transparent" },
+      "warn": { "focusBackground": "transparent" },
+      "info": { "focusBackground": "transparent" },
+      "help": { "focusBackground": "transparent" },
+      "success": { "focusBackground": "transparent" }
     },
-    "Secondary": {
-      "helpButtonBg": "#404348",
-      "helpButtonTextColor": "#ffffff",
-      "helpButtonBorderColor": "rgba(0, 0, 0, 0.0001)",
-      "helpButtonHoverBg": "#56595f",
-      "helpButtonHoverTextColor": "#ffffff",
-      "helpButtonHoverBorderColor": "rgba(0, 0, 0, 0.0001)",
-      "helpButtonActiveBg": "#404348",
-      "helpButtonActiveTextColor": "#ffffff",
-      "helpButtonActiveBorderColor": "rgba(0, 0, 0, 0.0001)"
+    "disabledColor": "#85888e",
+    "extText": {
+      "danger": { "focusBackground": "transparent" },
+      "warn": { "focusBackground": "transparent" },
+      "info": { "focusBackground": "transparent" },
+      "help": { "focusBackground": "transparent" },
+      "success": { "focusBackground": "transparent" }
     },
-    "Disabled": {
-      "disabledButtonBg": "#404348",
-      "disabledButtonTextColor": "#f0f0f1",
-      "disabledButtonBorderColor": "#56595f"
+    "extLink": {
+      "background": "transparent",
+      "colorHover": "#cecfd2",
+      "paddingX": 0,
+      "paddingY": 4,
+      "sm": { "iconOnlyWidth": 16 },
+      "base": { "iconOnlyWidth": 24 },
+      "lg": { "iconOnlyWidth": 28 },
+      "xlg": { "iconOnlyWidth": 32 }
     },
-    "Text": {
-      "textButtonBg": "rgba(0, 0, 0, 0.0001)",
-      "textButtonTextColor": "#ffffff",
-      "textButtonHoverBg": "#404348",
-      "textButtonHoverTextColor": "#ffffff",
-      "textButtonActiveBg": "rgba(0, 0, 0, 0.0001)",
-      "textButtonActiveTextColor": "#ffffff"
+    "extSm": { "borderRadius": 12, "gap": 8 },
+    "extLg": { "borderRadius": 16, "gap": 12, "height": 56 },
+    "extXlg": {
+      "borderRadius": 16,
+      "gap": 12,
+      "iconOnlyWidth": 64,
+      "paddingX": 24,
+      "paddingY": 20,
+      "height": 64
     },
-    "Severity": {
-      "Danger": {
-        "Basic": {
-          "dangerButtonBg": "#f47f77",
-          "dangerButtonTextColor": "#000000",
-          "dangerButtonBorderColor": "rgba(0, 0, 0, 0.0001)",
-          "dangerButtonHoverBg": "#fbacaa",
-          "dangerButtonHoverTextColor": "#000000",
-          "dangerButtonHoverBorderColor": "rgba(0, 0, 0, 0.0001)",
-          "dangerButtonActiveBg": "#f47f77",
-          "dangerButtonActiveTextColor": "#000000",
-          "dangerButtonActiveBorderColor": "rgba(0, 0, 0, 0.0001)"
-        },
-        "Outlined": {
-          "dangerOutlinedButtonBg": "rgba(0, 0, 0, 0.0001)",
-          "dangerOutlinedButtonTextColor": "#f47f77",
-          "dangerOutlinedButtonBorderColor": "#f47f77",
-          "dangerOutlinedButtonHoverBg": "rgba(0, 0, 0, 0.0001)",
-          "dangerOutlinedButtonHoverTextColor": "#fbacaa",
-          "dangerOutlinedButtonHoverBorderColor": "#fbacaa",
-          "dangerOutlinedButtonActiveBg": "rgba(0, 0, 0, 0.0001)",
-          "dangerOutlinedButtonActiveTextColor": "#f47f77",
-          "dangerOutlinedButtonActiveBorderColor": "#f47f77"
-        },
-        "Text": {
-          "dangerTextButtonBg": "rgba(0, 0, 0, 0.0001)",
-          "dangerTextButtonTextColor": "#e85244",
-          "dangerTextButtonHoverBg": "#45120e",
-          "dangerTextButtonHoverTextColor": "#f47f77",
-          "dangerTextButtonActiveBg": "rgba(0, 0, 0, 0.0001)",
-          "dangerTextButtonActiveTextColor": "#e85244"
+    "borderWidth": 1.142,
+    "iconSize": { "sm": 16, "md": 20, "lg": 24 },
+    "root": {
+      "primary": {
+        "background": "#44e858",
+        "hoverBackground": "#77f48a",
+        "activeBackground": "#aafbb7",
+        "borderColor": "transparent",
+        "hoverBorderColor": "transparent",
+        "activeBorderColor": "transparent",
+        "color": "#2b2e33",
+        "hoverColor": "#2b2e33",
+        "activeColor": "#2b2e33",
+        "focusRing": {
+          "color": "#0e4514",
+          "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
         }
       },
-      "Warning": {
-        "Basic": {
-          "warningButtonBg": "#facb75",
-          "warningButtonTextColor": "#000000",
-          "warningButtonBorderColor": "rgba(0, 0, 0, 0.0001)",
-          "warningButtonHoverBg": "#fddeaa",
-          "warningButtonHoverTextColor": "#000000",
-          "warningButtonHoverBorderColor": "rgba(0, 0, 0, 0.0001)",
-          "warningButtonActiveBg": "#facb75",
-          "warningButtonActiveTextColor": "#000000",
-          "warningButtonActiveBorderColor": "rgba(0, 0, 0, 0.0001)"
-        },
-        "Outlined": {
-          "warningOutlinedButtonBg": "rgba(0, 0, 0, 0.0001)",
-          "warningOutlinedButtonTextColor": "#facb75",
-          "warningOutlinedButtonBorderColor": "#facb75",
-          "warningOutlinedButtonHoverBg": "rgba(0, 0, 0, 0.0001)",
-          "warningOutlinedButtonHoverTextColor": "#fddeaa",
-          "warningOutlinedButtonHoverBorderColor": "#fddeaa",
-          "warningOutlinedButtonActiveBg": "rgba(0, 0, 0, 0.0001)",
-          "warningOutlinedButtonActiveTextColor": "#facb75",
-          "warningOutlinedButtonActiveBorderColor": "#facb75"
-        },
-        "Text": {
-          "warningTextButtonBg": "rgba(0, 0, 0, 0.0001)",
-          "warningTextButtonTextColor": "#f5b83d",
-          "warningTextButtonHoverBg": "#4f3709",
-          "warningTextButtonHoverTextColor": "#facb75",
-          "warningTextButtonActiveBg": "rgba(0, 0, 0, 0.0001)",
-          "warningTextButtonActiveTextColor": "#f5b83d"
+      "secondary": {
+        "background": "#404348",
+        "hoverBackground": "#56595f",
+        "activeBackground": "#6d7076",
+        "borderColor": "transparent",
+        "hoverBorderColor": "transparent",
+        "activeBorderColor": "transparent",
+        "color": "#fafafa",
+        "hoverColor": "#fafafa",
+        "activeColor": "#fafafa",
+        "focusRing": {
+          "color": "#0e4514",
+          "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
         }
       },
-      "Success": {
-        "Basic": {
-          "successButtonBg": "#77f48a",
-          "successButtonTextColor": "#000000",
-          "successButtonBorderColor": "rgba(0, 0, 0, 0.0001)",
-          "successButtonHoverBg": "#aafbb7",
-          "successButtonHoverTextColor": "#000000",
-          "successButtonHoverBorderColor": "rgba(0, 0, 0, 0.0001)",
-          "successButtonActiveBg": "#77f48a",
-          "successButtonActiveTextColor": "#000000",
-          "successButtonActiveBorderColor": "rgba(0, 0, 0, 0.0001)"
-        },
-        "Outlined": {
-          "successOutlinedButtonBg": "rgba(0, 0, 0, 0.0001)",
-          "successOutlinedButtonTextColor": "#77f48a",
-          "successOutlinedButtonBorderColor": "#77f48a",
-          "successOutlinedButtonHoverBg": "rgba(0, 0, 0, 0.0001)",
-          "successOutlinedButtonHoverTextColor": "#aafbb7",
-          "successOutlinedButtonHoverBorderColor": "#aafbb7",
-          "successOutlinedButtonActiveBg": "rgba(0, 0, 0, 0.0001)",
-          "successOutlinedButtonActiveTextColor": "#77f48a",
-          "successOutlinedButtonActiveBorderColor": "#77f48a"
-        },
-        "Text": {
-          "successTextButtonBg": "rgba(0, 0, 0, 0.0001)",
-          "successTextButtonTextColor": "#44e858",
-          "successTextButtonHoverBg": "#0e4514",
-          "successTextButtonHoverTextColor": "#77f48a",
-          "successTextButtonActiveBg": "rgba(0, 0, 0, 0.0001)",
-          "successTextButtonActiveTextColor": "#44e858"
+      "contrast": {
+        "background": "#fafafa",
+        "hoverBackground": "#f0f0f1",
+        "activeBackground": "#e2e2e4",
+        "borderColor": "transparent",
+        "hoverBorderColor": "transparent",
+        "activeBorderColor": "transparent",
+        "color": "#000000",
+        "hoverColor": "#000000",
+        "activeColor": "#000000",
+        "focusRing": {
+          "color": "#0e4514",
+          "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
         }
       },
-      "Info": {
-        "Basic": {
-          "infoButtonBg": "#77baf4",
-          "infoButtonTextColor": "#000000",
-          "infoButtonBorderColor": "rgba(0, 0, 0, 0.0001)",
-          "infoButtonHoverBg": "#aad7fb",
-          "infoButtonHoverTextColor": "#000000",
-          "infoButtonHoverBorderColor": "rgba(0, 0, 0, 0.0001)",
-          "infoButtonActiveBg": "#77baf4",
-          "infoButtonActiveTextColor": "#000000",
-          "infoButtonActiveBorderColor": "rgba(0, 0, 0, 0.0001)"
-        },
-        "Outlined": {
-          "infoOutlinedButtonBg": "rgba(0, 0, 0, 0.0001)",
-          "infoOutlinedButtonTextColor": "#77baf4",
-          "infoOutlinedButtonBorderColor": "#77baf4",
-          "infoOutlinedButtonHoverBg": "rgba(0, 0, 0, 0.0001)",
-          "infoOutlinedButtonHoverTextColor": "#aad7fb",
-          "infoOutlinedButtonHoverBorderColor": "#aad7fb",
-          "infoOutlinedButtonActiveBg": "rgba(0, 0, 0, 0.0001)",
-          "infoOutlinedButtonActiveTextColor": "#77baf4",
-          "infoOutlinedButtonActiveBorderColor": "#77baf4"
-        },
-        "Text": {
-          "infoTextButtonBg": "rgba(0, 0, 0, 0.0001)",
-          "infoTextButtonTextColor": "#4496e8",
-          "infoTextButtonHoverBg": "#0e2a45",
-          "infoTextButtonHoverTextColor": "#77baf4",
-          "infoTextButtonActiveBg": "rgba(0, 0, 0, 0.0001)",
-          "infoTextButtonActiveTextColor": "#4496e8"
-        }
+      "info": {
+        "background": "#4496e8",
+        "hoverBackground": "#4496e8",
+        "activeBackground": "#0e2a45",
+        "borderColor": "transparent",
+        "hoverBorderColor": "transparent",
+        "activeBorderColor": "transparent",
+        "color": "#2b2e33",
+        "hoverColor": "#2b2e33",
+        "activeColor": "#2b2e33",
+        "focusRing": { "color": "#123a61", "shadow": "none" }
+      },
+      "success": {
+        "background": "#44e858",
+        "hoverBackground": "#44e858",
+        "activeBackground": "#0e4514",
+        "borderColor": "transparent",
+        "hoverBorderColor": "transparent",
+        "activeBorderColor": "transparent",
+        "color": "#2b2e33",
+        "hoverColor": "#2b2e33",
+        "activeColor": "#2b2e33",
+        "focusRing": { "color": "#12611b", "shadow": "none" }
+      },
+      "warn": {
+        "background": "#f5b83d",
+        "hoverBackground": "#f5b83d",
+        "activeBackground": "#4f3709",
+        "borderColor": "transparent",
+        "hoverBorderColor": "transparent",
+        "activeBorderColor": "transparent",
+        "color": "#2b2e33",
+        "hoverColor": "#2b2e33",
+        "activeColor": "#2b2e33",
+        "focusRing": { "color": "#6d4c0b", "shadow": "none" }
+      },
+      "help": {
+        "background": "#a855f7",
+        "hoverBackground": "#a855f7",
+        "activeBackground": "#581c87",
+        "borderColor": "transparent",
+        "hoverBorderColor": "transparent",
+        "activeBorderColor": "transparent",
+        "color": "#2b2e33",
+        "hoverColor": "#2b2e33",
+        "activeColor": "#2b2e33",
+        "focusRing": { "color": "#6b21a8", "shadow": "none" }
+      },
+      "danger": {
+        "background": "#e85244",
+        "hoverBackground": "#e85244",
+        "activeBackground": "#45120e",
+        "borderColor": "transparent",
+        "hoverBorderColor": "transparent",
+        "activeBorderColor": "transparent",
+        "color": "#2b2e33",
+        "hoverColor": "#2b2e33",
+        "activeColor": "#2b2e33",
+        "focusRing": { "color": "#611912", "shadow": "none" }
       }
+    },
+    "outlined": {
+      "primary": {
+        "hoverBackground": "#0c3b11",
+        "activeBackground": "#0e4514",
+        "borderColor": "#1dc831",
+        "color": "#77f48a"
+      },
+      "success": {
+        "hoverBackground": "#77f48a",
+        "activeBackground": "#44e858",
+        "borderColor": "#44e858",
+        "color": "#77f48a"
+      },
+      "info": {
+        "hoverBackground": "#77baf4",
+        "activeBackground": "#4496e8",
+        "borderColor": "#1e76cd",
+        "color": "#77baf4"
+      },
+      "warn": {
+        "hoverBackground": "#facb75",
+        "activeBackground": "#f5b83d",
+        "borderColor": "#dc9710",
+        "color": "#facb75"
+      },
+      "help": {
+        "hoverBackground": "#c084fc",
+        "activeBackground": "#a855f7",
+        "borderColor": "#9333ea",
+        "color": "#c084fc"
+      },
+      "danger": {
+        "hoverBackground": "#f47f77",
+        "activeBackground": "#e85244",
+        "borderColor": "#db3424",
+        "color": "#f47f77"
+      },
+      "secondary": {
+        "hoverBackground": "rgba(255, 255, 255, 0.1000)",
+        "activeBackground": "rgba(255, 255, 255, 0.2000)",
+        "borderColor": "#56595f",
+        "color": "#6d7076"
+      },
+      "contrast": {
+        "hoverBackground": "#e2e2e4",
+        "activeBackground": "#cecfd2",
+        "borderColor": "#6d7076",
+        "color": "#2b2e33"
+      },
+      "plain": {
+        "hoverBackground": "#e2e2e4",
+        "activeBackground": "#cecfd2",
+        "borderColor": "#6d7076",
+        "color": "#2b2e33"
+      }
+    },
+    "text": {
+      "primary": {
+        "hoverBackground": "#e2e2e4",
+        "activeBackground": "#cecfd2",
+        "color": "#ffffff"
+      },
+      "success": {
+        "hoverBackground": "#77f48a",
+        "activeBackground": "#44e858",
+        "color": "#77f48a"
+      },
+      "info": {
+        "hoverBackground": "#77baf4",
+        "activeBackground": "#4496e8",
+        "color": "#77baf4"
+      },
+      "warn": {
+        "hoverBackground": "#facb75",
+        "activeBackground": "#f5b83d",
+        "color": "#facb75"
+      },
+      "help": {
+        "hoverBackground": "#c084fc",
+        "activeBackground": "#a855f7",
+        "color": "#c084fc"
+      },
+      "danger": {
+        "hoverBackground": "#f47f77",
+        "activeBackground": "#e85244",
+        "color": "#f47f77"
+      },
+      "secondary": {
+        "hoverBackground": "#e2e2e4",
+        "activeBackground": "#cecfd2",
+        "color": "#6d7076"
+      },
+      "contrast": {
+        "hoverBackground": "#e2e2e4",
+        "activeBackground": "#cecfd2",
+        "color": "#2b2e33"
+      },
+      "plain": {
+        "hoverBackground": "#e2e2e4",
+        "activeBackground": "#cecfd2",
+        "color": "#2b2e33"
+      }
+    },
+    "link": {
+      "color": "#ffffff",
+      "hoverColor": "#cecfd2",
+      "activeColor": "#85888e"
     }
   },
   "Misc": {

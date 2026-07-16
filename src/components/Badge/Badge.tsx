@@ -110,20 +110,10 @@ const badgeStyles = StyleSheet.create(
       variants: {
         severity: {
           basic: { backgroundColor: theme.Misc.Badge.badgeBg },
-          info: {
-            backgroundColor: theme.Button.Severity.Info.Basic.infoButtonBg,
-          },
-          success: {
-            backgroundColor:
-              theme.Button.Severity.Success.Basic.successButtonBg,
-          },
-          warning: {
-            backgroundColor:
-              theme.Button.Severity.Warning.Basic.warningButtonBg,
-          },
-          danger: {
-            backgroundColor: theme.Button.Severity.Danger.Basic.dangerButtonBg,
-          },
+          info: { backgroundColor: theme.Button.root.info.background },
+          success: { backgroundColor: theme.Button.root.success.background },
+          warning: { backgroundColor: theme.Button.root.warn.background },
+          danger: { backgroundColor: theme.Button.root.danger.background },
         },
       },
     },

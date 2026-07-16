@@ -124,7 +124,7 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
             testID='SelectButtonItem_Icon'
             uniProps={({ theme }) => ({
               color: disabled
-                ? theme.Button.Disabled.disabledButtonBorderColor
+                ? 'transparent'
                 : isSelected
                   ? theme.Form.SelectButton.selectButtonIconActiveColor
                   : theme.Form.SelectButton.selectButtonTextColor,
@@ -159,20 +159,14 @@ const styles = StyleSheet.create(
       borderWidth: border.Width.border,
       borderColor: 'transparent',
     },
-    small: { height: theme.Button.Common.buttonHeightSM },
-    base: { height: theme.Button.Common.buttonHeight },
-    large: {
-      height: theme.Button.Common.buttonHeightLG,
-      gap: spacing.Gap['gap-3'],
-    },
-    xlarge: {
-      height: theme.Button.Common.buttonHeightXL,
-      gap: spacing.Gap['gap-3'],
-    },
+    small: { height: 28 },
+    base: { height: 35 },
+    large: { height: 49, gap: spacing.Gap['gap-3'] },
+    xlarge: { height: 56, gap: spacing.Gap['gap-3'] },
     disabledContainer: {
       borderRadius: theme.Form.SelectButton.selectButtonBorderRadius,
       borderWidth: 1,
-      borderColor: theme.Button.Disabled.disabledButtonBorderColor,
+      borderColor: 'transparent',
     },
     iconSmall: {
       width: typography.Size['text-base'],
@@ -196,8 +190,6 @@ const styles = StyleSheet.create(
     checkedTextColor: {
       color: theme.Form.SelectButton.selectButtonIconActiveColor,
     },
-    disabledTextColor: {
-      color: theme.Button.Disabled.disabledButtonBorderColor,
-    },
+    disabledTextColor: { color: 'transparent' },
   })
 )

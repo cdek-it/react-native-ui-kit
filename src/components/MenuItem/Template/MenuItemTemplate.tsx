@@ -142,8 +142,8 @@ const styles = StyleSheet.create(({ theme, spacing, typography, border }) => ({
   },
   containerPressed: { backgroundColor: theme.Menu.Item.menuitemHoverBg },
   containerDisabled: {
-    borderColor: theme.Button.Disabled.disabledButtonBorderColor,
-    backgroundColor: theme.Button.Disabled.disabledButtonBg,
+    borderColor: 'transparent',
+    backgroundColor: theme.Button.disabledBackground,
     opacity: 0.6,
   },
   separator: {

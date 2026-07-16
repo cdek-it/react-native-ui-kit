@@ -90,40 +90,37 @@ const buttonContainerStyles = StyleSheet.create(
       variants: {
         size: {
           xlarge: {
-            paddingHorizontal: spacing.Padding['p-6'],
-            paddingVertical: theme.Button.Common.buttonPaddingTopBottom,
-            height: theme.Button.Common.buttonHeightXL,
-            minHeight: theme.Button.Common.buttonHeightXL,
-            maxHeight: theme.Button.Common.buttonHeightXL,
-            gap: spacing.Gap['gap-3'],
-            borderRadius: theme.General.borderRadius2XL,
+            paddingHorizontal: theme.Button.extXlg.paddingX,
+            paddingVertical: theme.Button.extXlg.paddingY,
+            height: theme.Button.extXlg.height,
+            minHeight: theme.Button.extXlg.height,
+            maxHeight: theme.Button.extXlg.height,
+            gap: theme.Button.extXlg.gap,
+            borderRadius: theme.Button.extXlg.borderRadius,
           },
           large: {
-            paddingHorizontal: spacing.Padding['p-6'],
-            paddingVertical: theme.Button.Common.buttonPaddingTopBottom,
-            height: theme.Button.Common.buttonHeightLG,
-            minHeight: theme.Button.Common.buttonHeightLG,
-            maxHeight: theme.Button.Common.buttonHeightLG,
-            gap: spacing.Gap['gap-3'],
-            borderRadius: theme.General.borderRadius2XL,
+            paddingHorizontal: theme.Button.lg.paddingX,
+            paddingVertical: theme.Button.lg.paddingY,
+            height: theme.Button.extLg.height,
+            minHeight: theme.Button.extLg.height,
+            maxHeight: theme.Button.extLg.height,
+            gap: theme.Button.extLg.gap,
+            borderRadius: theme.Button.extLg.borderRadius,
           },
+          // base/sm — padding-driven: высота растёт от paddingY + fontSize + borderWidth
           base: {
-            paddingHorizontal: theme.Button.Common.buttonPaddingLeftRight,
-            paddingVertical: theme.Button.Common.buttonPaddingTopBottom,
-            height: theme.Button.Common.buttonHeight,
-            minHeight: theme.Button.Common.buttonHeight,
-            maxHeight: theme.Button.Common.buttonHeight,
-            gap: theme.General.inlineSpacing,
-            borderRadius: theme.General.borderRadiusXL,
+            paddingHorizontal: theme.Button.paddingX,
+            paddingVertical: theme.Button.paddingY,
+            height: 'auto',
+            gap: theme.Button.gap,
+            borderRadius: theme.Button.borderRadius,
           },
           small: {
-            paddingHorizontal: spacing.Padding['p-3'],
-            paddingVertical: theme.Button.Common.buttonPaddingTopBottom,
-            height: theme.Button.Common.buttonHeightSM,
-            minHeight: theme.Button.Common.buttonHeightSM,
-            maxHeight: theme.Button.Common.buttonHeightSM,
-            gap: theme.General.inlineSpacing,
-            borderRadius: theme.General.borderRadiusXL,
+            paddingHorizontal: theme.Button.sm.paddingX,
+            paddingVertical: theme.Button.sm.paddingY,
+            height: 'auto',
+            gap: theme.Button.extSm.gap,
+            borderRadius: theme.Button.extSm.borderRadius,
           },
         },
         shape: {
@@ -132,44 +129,41 @@ const buttonContainerStyles = StyleSheet.create(
         },
         variant: {
           primary: {
-            borderColor: theme.Button.Brand.buttonBorderColor,
-            backgroundColor: theme.Button.Brand.buttonBg,
+            borderColor: theme.Button.root.primary.borderColor,
+            backgroundColor: theme.Button.root.primary.background,
           },
           secondary: {
-            borderColor: theme.Button.Primary.secondaryButtonBorderColor,
-            backgroundColor: theme.Button.Primary.secondaryButtonBg,
+            borderColor: theme.Button.root.secondary.borderColor,
+            backgroundColor: theme.Button.root.secondary.background,
           },
           tertiary: {
-            borderColor: theme.Button.Secondary.helpButtonBorderColor,
-            backgroundColor: theme.Button.Secondary.helpButtonBg,
+            borderColor: theme.Button.root.contrast.borderColor,
+            backgroundColor: theme.Button.root.contrast.background,
           },
-          text: {
-            borderColor: theme.Button.Brand.buttonBorderColor,
-            backgroundColor: theme.Button.Text.textButtonBg,
-          },
+          text: { borderColor: 'transparent', backgroundColor: 'transparent' },
           link: {
             paddingHorizontal: 0,
             paddingVertical: spacing.Padding['p-1'],
             height: 'auto',
             minHeight: 'auto',
-            borderColor: theme.Button.Brand.buttonBorderColor,
-            backgroundColor: theme.Button.Text.textButtonBg,
+            borderColor: 'transparent',
+            backgroundColor: 'transparent',
           },
           basic: {
-            borderColor: theme.Button.Brand.buttonBorderColor,
-            backgroundColor: theme.Button.Brand.buttonBg,
+            borderColor: theme.Button.root.primary.borderColor,
+            backgroundColor: theme.Button.root.primary.background,
           },
           outlined: {
-            borderColor: theme.Button.Brand.buttonBorderColor,
-            backgroundColor: theme.Button.Text.textButtonBg,
+            borderColor: theme.Button.outlined.primary.borderColor,
+            backgroundColor: 'transparent',
           },
         },
         severity: { info: {}, success: {}, warning: {}, danger: {} },
         pressed: { true: {}, false: {} },
         disabled: {
           true: {
-            backgroundColor: theme.Button.Disabled.disabledButtonBg,
-            borderColor: theme.Button.Disabled.disabledButtonBorderColor,
+            backgroundColor: theme.Button.disabledBackground,
+            borderColor: 'transparent',
           },
           false: {},
         },
@@ -181,40 +175,40 @@ const buttonContainerStyles = StyleSheet.create(
           variant: 'primary',
           pressed: 'true',
           styles: {
-            borderColor: theme.Button.Brand.buttonBorderColor,
-            backgroundColor: theme.Button.Brand.buttonHoverBg,
+            borderColor: theme.Button.root.primary.hoverBorderColor,
+            backgroundColor: theme.Button.root.primary.hoverBackground,
           },
         },
         {
           variant: 'secondary',
           pressed: 'true',
           styles: {
-            borderColor: theme.Button.Primary.secondaryButtonHoverBorderColor,
-            backgroundColor: theme.Button.Primary.secondaryButtonHoverBg,
+            borderColor: theme.Button.root.secondary.hoverBorderColor,
+            backgroundColor: theme.Button.root.secondary.hoverBackground,
           },
         },
         {
           variant: 'tertiary',
           pressed: 'true',
           styles: {
-            borderColor: theme.Button.Secondary.helpButtonHoverBorderColor,
-            backgroundColor: theme.Button.Secondary.helpButtonHoverBg,
+            borderColor: theme.Button.root.contrast.hoverBorderColor,
+            backgroundColor: theme.Button.root.contrast.hoverBackground,
           },
         },
         {
           variant: 'text',
           pressed: 'true',
           styles: {
-            borderColor: theme.Button.Brand.buttonBorderColor,
-            backgroundColor: theme.Button.Text.textButtonHoverBg,
+            borderColor: 'transparent',
+            backgroundColor: theme.Button.text.primary.hoverBackground,
           },
         },
         {
           variant: 'link',
           disabled: 'true',
           styles: {
-            borderColor: theme.Button.Brand.buttonBorderColor,
-            backgroundColor: theme.Button.Text.textButtonBg,
+            borderColor: 'transparent',
+            backgroundColor: 'transparent',
           },
         },
 
@@ -223,118 +217,96 @@ const buttonContainerStyles = StyleSheet.create(
           variant: 'basic',
           severity: 'info',
           styles: {
-            borderColor: theme.Button.Severity.Info.Basic.infoButtonBorderColor,
-            backgroundColor: theme.Button.Severity.Info.Basic.infoButtonBg,
+            borderColor: theme.Button.root.info.borderColor,
+            backgroundColor: theme.Button.root.info.background,
           },
         },
         {
           variant: 'outlined',
           severity: 'info',
           styles: {
-            borderColor:
-              theme.Button.Severity.Info.Outlined.infoOutlinedButtonBorderColor,
-            backgroundColor:
-              theme.Button.Severity.Info.Outlined.infoOutlinedButtonBg,
+            borderColor: theme.Button.outlined.info.borderColor,
+            backgroundColor: 'transparent',
           },
         },
         {
           variant: 'text',
           severity: 'info',
           styles: {
-            borderColor: theme.Button.Severity.Info.Basic.infoButtonBorderColor,
-            backgroundColor: theme.Button.Severity.Info.Text.infoTextButtonBg,
+            borderColor: 'transparent',
+            backgroundColor: 'transparent',
           },
         },
         {
           variant: 'basic',
           severity: 'success',
           styles: {
-            borderColor:
-              theme.Button.Severity.Success.Basic.successButtonBorderColor,
-            backgroundColor:
-              theme.Button.Severity.Success.Basic.successButtonBg,
+            borderColor: theme.Button.root.success.borderColor,
+            backgroundColor: theme.Button.root.success.background,
           },
         },
         {
           variant: 'outlined',
           severity: 'success',
           styles: {
-            borderColor:
-              theme.Button.Severity.Success.Outlined
-                .successOutlinedButtonBorderColor,
-            backgroundColor:
-              theme.Button.Severity.Success.Outlined.successOutlinedButtonBg,
+            borderColor: theme.Button.outlined.success.borderColor,
+            backgroundColor: 'transparent',
           },
         },
         {
           variant: 'text',
           severity: 'success',
           styles: {
-            borderColor:
-              theme.Button.Severity.Success.Basic.successButtonBorderColor,
-            backgroundColor:
-              theme.Button.Severity.Success.Text.successTextButtonBg,
+            borderColor: 'transparent',
+            backgroundColor: 'transparent',
           },
         },
         {
           variant: 'basic',
           severity: 'warning',
           styles: {
-            borderColor:
-              theme.Button.Severity.Warning.Basic.warningButtonBorderColor,
-            backgroundColor:
-              theme.Button.Severity.Warning.Basic.warningButtonBg,
+            borderColor: theme.Button.root.warn.borderColor,
+            backgroundColor: theme.Button.root.warn.background,
           },
         },
         {
           variant: 'outlined',
           severity: 'warning',
           styles: {
-            borderColor:
-              theme.Button.Severity.Warning.Outlined
-                .warningOutlinedButtonBorderColor,
-            backgroundColor:
-              theme.Button.Severity.Warning.Outlined.warningOutlinedButtonBg,
+            borderColor: theme.Button.outlined.warn.borderColor,
+            backgroundColor: 'transparent',
           },
         },
         {
           variant: 'text',
           severity: 'warning',
           styles: {
-            borderColor:
-              theme.Button.Severity.Warning.Basic.warningButtonBorderColor,
-            backgroundColor:
-              theme.Button.Severity.Warning.Text.warningTextButtonBg,
+            borderColor: 'transparent',
+            backgroundColor: 'transparent',
           },
         },
         {
           variant: 'basic',
           severity: 'danger',
           styles: {
-            borderColor:
-              theme.Button.Severity.Danger.Basic.dangerButtonBorderColor,
-            backgroundColor: theme.Button.Severity.Danger.Basic.dangerButtonBg,
+            borderColor: theme.Button.root.danger.borderColor,
+            backgroundColor: theme.Button.root.danger.background,
           },
         },
         {
           variant: 'outlined',
           severity: 'danger',
           styles: {
-            borderColor:
-              theme.Button.Severity.Danger.Outlined
-                .dangerOutlinedButtonBorderColor,
-            backgroundColor:
-              theme.Button.Severity.Danger.Outlined.dangerOutlinedButtonBg,
+            borderColor: theme.Button.outlined.danger.borderColor,
+            backgroundColor: 'transparent',
           },
         },
         {
           variant: 'text',
           severity: 'danger',
           styles: {
-            borderColor:
-              theme.Button.Severity.Danger.Basic.dangerButtonBorderColor,
-            backgroundColor:
-              theme.Button.Severity.Danger.Text.dangerTextButtonBg,
+            borderColor: 'transparent',
+            backgroundColor: 'transparent',
           },
         },
 
@@ -344,8 +316,8 @@ const buttonContainerStyles = StyleSheet.create(
           severity: 'info',
           pressed: 'true',
           styles: {
-            borderColor: theme.Button.Severity.Info.Basic.infoButtonBorderColor,
-            backgroundColor: theme.Button.Severity.Info.Basic.infoButtonHoverBg,
+            borderColor: theme.Button.root.info.hoverBorderColor,
+            backgroundColor: theme.Button.root.info.hoverBackground,
           },
         },
         {
@@ -353,11 +325,8 @@ const buttonContainerStyles = StyleSheet.create(
           severity: 'info',
           pressed: 'true',
           styles: {
-            borderColor:
-              theme.Button.Severity.Info.Outlined
-                .infoOutlinedButtonHoverBorderColor,
-            backgroundColor:
-              theme.Button.Severity.Info.Outlined.infoOutlinedButtonHoverBg,
+            borderColor: theme.Button.outlined.info.borderColor,
+            backgroundColor: theme.Button.outlined.info.hoverBackground,
           },
         },
         {
@@ -365,9 +334,8 @@ const buttonContainerStyles = StyleSheet.create(
           severity: 'info',
           pressed: 'true',
           styles: {
-            borderColor: theme.Surface['surface-transparent'],
-            backgroundColor:
-              theme.Button.Severity.Info.Text.infoTextButtonHoverBg,
+            borderColor: 'transparent',
+            backgroundColor: theme.Button.text.info.hoverBackground,
           },
         },
         {
@@ -375,10 +343,8 @@ const buttonContainerStyles = StyleSheet.create(
           severity: 'success',
           pressed: 'true',
           styles: {
-            borderColor:
-              theme.Button.Severity.Success.Basic.successButtonBorderColor,
-            backgroundColor:
-              theme.Button.Severity.Success.Basic.successButtonHoverBg,
+            borderColor: theme.Button.root.success.hoverBorderColor,
+            backgroundColor: theme.Button.root.success.hoverBackground,
           },
         },
         {
@@ -386,12 +352,8 @@ const buttonContainerStyles = StyleSheet.create(
           severity: 'success',
           pressed: 'true',
           styles: {
-            borderColor:
-              theme.Button.Severity.Success.Outlined
-                .successOutlinedButtonHoverBorderColor,
-            backgroundColor:
-              theme.Button.Severity.Success.Outlined
-                .successOutlinedButtonHoverBg,
+            borderColor: theme.Button.outlined.success.borderColor,
+            backgroundColor: theme.Button.outlined.success.hoverBackground,
           },
         },
         {
@@ -399,9 +361,8 @@ const buttonContainerStyles = StyleSheet.create(
           severity: 'success',
           pressed: 'true',
           styles: {
-            borderColor: theme.Surface['surface-transparent'],
-            backgroundColor:
-              theme.Button.Severity.Success.Text.successTextButtonHoverBg,
+            borderColor: 'transparent',
+            backgroundColor: theme.Button.text.success.hoverBackground,
           },
         },
         {
@@ -409,10 +370,8 @@ const buttonContainerStyles = StyleSheet.create(
           severity: 'warning',
           pressed: 'true',
           styles: {
-            borderColor:
-              theme.Button.Severity.Warning.Basic.warningButtonBorderColor,
-            backgroundColor:
-              theme.Button.Severity.Warning.Basic.warningButtonHoverBg,
+            borderColor: theme.Button.root.warn.hoverBorderColor,
+            backgroundColor: theme.Button.root.warn.hoverBackground,
           },
         },
         {
@@ -420,12 +379,8 @@ const buttonContainerStyles = StyleSheet.create(
           severity: 'warning',
           pressed: 'true',
           styles: {
-            borderColor:
-              theme.Button.Severity.Warning.Outlined
-                .warningOutlinedButtonHoverBorderColor,
-            backgroundColor:
-              theme.Button.Severity.Warning.Outlined
-                .warningOutlinedButtonHoverBg,
+            borderColor: theme.Button.outlined.warn.borderColor,
+            backgroundColor: theme.Button.outlined.warn.hoverBackground,
           },
         },
         {
@@ -433,9 +388,8 @@ const buttonContainerStyles = StyleSheet.create(
           severity: 'warning',
           pressed: 'true',
           styles: {
-            borderColor: theme.Surface['surface-transparent'],
-            backgroundColor:
-              theme.Button.Severity.Warning.Text.warningTextButtonHoverBg,
+            borderColor: 'transparent',
+            backgroundColor: theme.Button.text.warn.hoverBackground,
           },
         },
         {
@@ -443,10 +397,8 @@ const buttonContainerStyles = StyleSheet.create(
           severity: 'danger',
           pressed: 'true',
           styles: {
-            borderColor:
-              theme.Button.Severity.Danger.Basic.dangerButtonBorderColor,
-            backgroundColor:
-              theme.Button.Severity.Danger.Basic.dangerButtonHoverBg,
+            borderColor: theme.Button.root.danger.hoverBorderColor,
+            backgroundColor: theme.Button.root.danger.hoverBackground,
           },
         },
         {
@@ -454,11 +406,8 @@ const buttonContainerStyles = StyleSheet.create(
           severity: 'danger',
           pressed: 'true',
           styles: {
-            borderColor:
-              theme.Button.Severity.Danger.Outlined
-                .dangerOutlinedButtonHoverBorderColor,
-            backgroundColor:
-              theme.Button.Severity.Danger.Outlined.dangerOutlinedButtonHoverBg,
+            borderColor: theme.Button.outlined.danger.borderColor,
+            backgroundColor: theme.Button.outlined.danger.hoverBackground,
           },
         },
         {
@@ -466,9 +415,8 @@ const buttonContainerStyles = StyleSheet.create(
           severity: 'danger',
           pressed: 'true',
           styles: {
-            borderColor: theme.Surface['surface-transparent'],
-            backgroundColor:
-              theme.Button.Severity.Danger.Text.dangerTextButtonHoverBg,
+            borderColor: 'transparent',
+            backgroundColor: theme.Button.text.danger.hoverBackground,
           },
         },
 

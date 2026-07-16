@@ -140,10 +140,7 @@ const toggleStyles = StyleSheet.create(
           false: {},
         },
         disabled: {
-          true: {
-            borderColor: theme.Button.Disabled.disabledButtonBorderColor,
-            opacity: 0.6,
-          },
+          true: { borderColor: 'transparent', opacity: 0.6 },
           false: {},
         },
       },
@@ -163,20 +160,20 @@ const toggleStyles = StyleSheet.create(
       alignItems: 'center',
       alignSelf: 'flex-start',
       borderRadius: border.Radius['rounded-full'],
-      paddingVertical: theme.Button.Common.buttonPaddingTopBottom,
+      paddingVertical: theme.Button.paddingY,
       paddingHorizontal: spacing.Padding['p-6'],
       gap: spacing.Gap['gap-3'],
       variants: {
         size: {
-          xlarge: { minHeight: theme.Button.Common.buttonHeightXL },
-          large: { minHeight: theme.Button.Common.buttonHeightLG },
+          xlarge: { minHeight: 56 },
+          large: { minHeight: 49 },
           base: {
-            minHeight: theme.Button.Common.buttonHeight,
-            paddingHorizontal: theme.Button.Common.buttonPaddingLeftRight,
+            minHeight: 35,
+            paddingHorizontal: theme.Button.paddingX,
             gap: theme.General.inlineSpacing,
           },
           small: {
-            minHeight: theme.Button.Common.buttonHeightSM,
+            minHeight: 28,
             paddingHorizontal: spacing.Padding['p-3'],
             gap: theme.General.inlineSpacing,
           },
@@ -194,7 +191,7 @@ const toggleStyles = StyleSheet.create(
           false: {},
         },
         disabled: {
-          true: { backgroundColor: theme.Button.Disabled.disabledButtonBg },
+          true: { backgroundColor: theme.Button.disabledBackground },
           false: {},
         },
       },
@@ -242,10 +239,7 @@ const toggleStyles = StyleSheet.create(
           true: { color: theme.Form.ToggleButton.toggleButtonHoverTextColor },
           false: {},
         },
-        disabled: {
-          true: { color: theme.Button.Disabled.disabledButtonTextColor },
-          false: {},
-        },
+        disabled: { true: { color: theme.Button.disabledColor }, false: {} },
       },
       compoundVariants: [
         {
@@ -278,10 +272,7 @@ const toggleStyles = StyleSheet.create(
           true: { color: theme.Form.ToggleButton.toggleButtonHoverTextColor },
           false: {},
         },
-        disabled: {
-          true: { color: theme.Button.Disabled.disabledButtonTextColor },
-          false: {},
-        },
+        disabled: { true: { color: theme.Button.disabledColor }, false: {} },
       },
       compoundVariants: [
         {

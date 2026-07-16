@@ -58,7 +58,7 @@ export const TabItem = memo<TabItemProps>(
                 source={Icon}
                 uniProps={({ theme }) => ({
                   color: disabled
-                    ? theme.Button.Disabled.disabledButtonTextColor
+                    ? theme.Button.disabledColor
                     : pressed
                       ? theme.Panel.TabView.tabviewHeaderHoverTextColor
                       : active
@@ -121,7 +121,7 @@ const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
   },
   pressedText: { color: theme.Panel.TabView.tabviewHeaderHoverTextColor },
   activeText: { color: theme.Panel.TabView.tabviewHeaderActiveTextColor },
-  disabledText: { color: theme.Button.Disabled.disabledButtonTextColor },
+  disabledText: { color: theme.Button.disabledColor },
 }))
 
 export enum TestId {

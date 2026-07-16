@@ -38,17 +38,13 @@ export const inputStyles = StyleSheet.create(
       outlineWidth: Math.round(theme.General.focusShadowWidth),
       borderColor: theme.General.focusBorderColor,
     },
-    containerFloatLabel: {
-      minHeight: theme.Button.Common.buttonHeightXL,
-      maxHeight: theme.Button.Common.buttonHeightXL,
-      height: theme.Button.Common.buttonHeightXL,
-    },
+    containerFloatLabel: { minHeight: 56, maxHeight: 56, height: 56 },
     danger: { borderColor: theme.Form.InputText.inputErrorBorderColor },
     dangerFocused: { outlineColor: theme.General.focusOutlineErrorColor },
     disabled: {
       opacity: 0.6,
       borderColor: theme.Form.InputText.inputBorderColor,
-      backgroundColor: theme.Button.Disabled.disabledButtonBg,
+      backgroundColor: theme.Button.disabledBackground,
     },
     inputContainer: {
       flex: 1,

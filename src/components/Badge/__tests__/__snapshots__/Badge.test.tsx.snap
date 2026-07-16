@@ -43,7 +43,7 @@ exports[`Badge component tests dot, severity: danger 1`] = `
     style={
       [
         {
-          "backgroundColor": "#fbacaa",
+          "backgroundColor": "#fff0f0",
         },
         {
           "borderRadius": 100,
@@ -71,7 +71,7 @@ exports[`Badge component tests dot, severity: info 1`] = `
     style={
       [
         {
-          "backgroundColor": "#aad7fb",
+          "backgroundColor": "#f0f9ff",
         },
         {
           "borderRadius": 100,
@@ -99,7 +99,7 @@ exports[`Badge component tests dot, severity: success 1`] = `
     style={
       [
         {
-          "backgroundColor": "#aafbb7",
+          "backgroundColor": "#f0fff3",
         },
         {
           "borderRadius": 100,
@@ -127,7 +127,7 @@ exports[`Badge component tests dot, severity: warning 1`] = `
     style={
       [
         {
-          "backgroundColor": "#fddeaa",
+          "backgroundColor": "#fff9f0",
         },
         {
           "borderRadius": 100,
@@ -236,7 +236,7 @@ exports[`Badge component tests severity: basic 2`] = `
     style={
       [
         {
-          "backgroundColor": "#aad7fb",
+          "backgroundColor": "#f0f9ff",
         },
         {
           "borderRadius": 100,
@@ -317,7 +317,7 @@ exports[`Badge component tests severity: basic 3`] = `
     style={
       [
         {
-          "backgroundColor": "#aafbb7",
+          "backgroundColor": "#f0fff3",
         },
         {
           "borderRadius": 100,
@@ -398,7 +398,7 @@ exports[`Badge component tests severity: basic 4`] = `
     style={
       [
         {
-          "backgroundColor": "#fddeaa",
+          "backgroundColor": "#fff9f0",
         },
         {
           "borderRadius": 100,
@@ -479,7 +479,7 @@ exports[`Badge component tests severity: basic 5`] = `
     style={
       [
         {
-          "backgroundColor": "#fbacaa",
+          "backgroundColor": "#fff0f0",
         },
         {
           "borderRadius": 100,

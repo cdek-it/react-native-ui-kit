@@ -54,7 +54,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
         undefined,
         {
           "backgroundColor": "#e2e2e4",
-          "borderColor": "#a2a5a9",
+          "borderColor": "transparent",
           "opacity": 0.6,
         },
       ]
@@ -215,7 +215,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
                 style={
                   [
                     {
-                      "backgroundColor": "#fbacaa",
+                      "backgroundColor": "#fff0f0",
                     },
                     {
                       "borderRadius": 100,
@@ -1824,7 +1824,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
                 style={
                   [
                     {
-                      "backgroundColor": "#fddeaa",
+                      "backgroundColor": "#fff9f0",
                     },
                     {
                       "borderRadius": 100,

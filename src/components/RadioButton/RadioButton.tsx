@@ -94,7 +94,7 @@ const radioStyles = StyleSheet.create(({ theme, border }) => ({
       disabled: {
         true: {
           borderColor: theme.Form.InputText.inputBorderColor,
-          backgroundColor: theme.Button.Disabled.disabledButtonBg,
+          backgroundColor: theme.Button.disabledBackground,
           opacity: 0.6,
         },
         false: {},

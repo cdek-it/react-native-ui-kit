@@ -156,7 +156,7 @@ const styles = StyleSheet.create(({ theme, border, sizing }) => ({
         filled: 'false',
         disabled: 'true',
         styles: {
-          backgroundColor: theme.Button.Disabled.disabledButtonBg,
+          backgroundColor: theme.Button.disabledBackground,
           borderColor: theme.Form.InputText.inputBorderColor,
           mixBlendMode: 'luminosity',
         },
