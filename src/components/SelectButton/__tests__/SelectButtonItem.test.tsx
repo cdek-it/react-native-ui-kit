@@ -4,6 +4,7 @@ import { act, render, userEvent, waitFor } from '@testing-library/react-native'
 import { Pressable } from 'react-native'
 import { useSharedValue } from 'react-native-reanimated'
 
+import { lightTheme } from '../../../theme'
 import {
   type SelectButtonItemProps,
   SelectButtonItem,
@@ -11,13 +12,23 @@ import {
 
 type SelectButtonItemTestProps = Partial<
   Omit<SelectButtonItemProps, 'position'>
-> & { readonly position?: number; readonly withButton?: boolean }
+> & { readonly position?: number; readonly withPositionControl?: boolean }
+
+type SelectButtonSize = NonNullable<SelectButtonItemProps['size']>
+
+const toRgba = (color: string) => {
+  const red = Number.parseInt(color.slice(1, 3), 16)
+  const green = Number.parseInt(color.slice(3, 5), 16)
+  const blue = Number.parseInt(color.slice(5, 7), 16)
+
+  return `rgba(${red}, ${green}, ${blue}, 1)`
+}
 
 const TestComponent = ({
   position: positionProp = 0,
   onPress = jest.fn(),
   index = 0,
-  withButton,
+  withPositionControl,
   ...rest
 }: SelectButtonItemTestProps) => {
   const position = useSharedValue(positionProp)
@@ -30,7 +41,7 @@ const TestComponent = ({
         onPress={onPress}
         {...rest}
       />
-      {withButton ? (
+      {withPositionControl ? (
         <Pressable
           testID='ChangePosition'
           onPress={() => {
@@ -42,79 +53,168 @@ const TestComponent = ({
   )
 }
 
+const sizeCases: Array<{
+  name: string
+  size: SelectButtonSize
+  height: number
+  iconSize: number
+  fontSize: number
+}> = [
+  {
+    name: 'маленький',
+    size: 'small',
+    height: lightTheme.theme.Button.Common.buttonHeightSM,
+    iconSize: lightTheme.typography.Size['text-base'],
+    fontSize: lightTheme.typography.Size['text-sm'],
+  },
+  {
+    name: 'базовый',
+    size: 'base',
+    height: lightTheme.theme.Button.Common.buttonHeight,
+    iconSize: lightTheme.typography.Size['text-xl'],
+    fontSize: lightTheme.typography.Size['text-base'],
+  },
+  {
+    name: 'большой',
+    size: 'large',
+    height: lightTheme.theme.Button.Common.buttonHeightLG,
+    iconSize: lightTheme.typography.Size['text-2xl'],
+    fontSize: lightTheme.typography.Size['text-xl'],
+  },
+  {
+    name: 'самый большой',
+    size: 'xlarge',
+    height: lightTheme.theme.Button.Common.buttonHeightXL,
+    iconSize: 28,
+    fontSize: lightTheme.typography.Size['text-2xl'],
+  },
+]
+
 describe('SelectButtonItem', () => {
   beforeEach(() => {
     jest.useFakeTimers()
   })
 
   afterEach(() => {
-    jest.runOnlyPendingTimers()
+    act(() => jest.runOnlyPendingTimers())
     jest.useRealTimers()
   })
 
-  const snapshotCases: Array<[SelectButtonItemTestProps]> = [
-    [{ label: 'ButtonSelect' }],
-    [{ size: 'small', Icon: IconArrowDownRight }],
-    [{ size: 'base', Icon: IconArrowDownRight, showIcon: false }],
-    [
-      {
-        size: 'large',
-        Icon: IconArrowDownRight,
-        showIcon: true,
-        label: 'ButtonSelect',
-        disabled: true,
-      },
-    ],
-    [
-      {
-        size: 'xlarge',
-        label: 'ButtonSelect',
-        Icon: IconArrowDownRight,
-        index: 1,
-      },
-    ],
-  ]
+  test('отображает текст кнопки', () => {
+    const { getByText } = render(<TestComponent label='Текст кнопки' />)
 
-  test.each(snapshotCases)('%p', async (props) => {
-    const { toJSON } = render(<TestComponent {...props} />)
-    await act(async () => {
-      jest.advanceTimersByTime(600)
-
-      expect(toJSON()).toMatchSnapshot()
-    })
+    expect(getByText('Текст кнопки')).toBeDefined()
   })
 
-  test('handle press', async () => {
+  test.each([
+    {
+      name: 'показывает переданную иконку по умолчанию',
+      props: { Icon: IconArrowDownRight },
+      isVisible: true,
+    },
+    {
+      name: 'скрывает иконку при showIcon=false',
+      props: { Icon: IconArrowDownRight, showIcon: false },
+      isVisible: false,
+    },
+    {
+      name: 'не отображает отсутствующую иконку',
+      props: { showIcon: true },
+      isVisible: false,
+    },
+  ])('$name', ({ props, isVisible }) => {
+    const { queryAllByTestId } = render(<TestComponent {...props} />)
+
+    expect(queryAllByTestId('SelectButtonItem_Icon').length > 0).toBe(isVisible)
+  })
+
+  test.each(sizeCases)(
+    'применяет $name размер',
+    ({ size, height, iconSize, fontSize }) => {
+      const { getAllByTestId, getByTestId } = render(
+        <TestComponent Icon={IconArrowDownRight} label='Текст' size={size} />
+      )
+      const icon = getAllByTestId('SelectButtonItem_Icon')[0]
+
+      expect(getByTestId('SelectButtonItem_TouchableOpacity')).toHaveStyle({
+        height,
+      })
+      expect(getByTestId('SelectButtonItem_Text')).toHaveStyle({ fontSize })
+      expect(icon).toHaveProp('width', iconSize)
+      expect(icon).toHaveProp('height', iconSize)
+    }
+  )
+
+  test('использует переданный testID', () => {
+    const { getByTestId } = render(<TestComponent testID='CustomTestId' />)
+
+    expect(getByTestId('CustomTestId')).toBeDefined()
+  })
+
+  test('вызывает onPress при нажатии', async () => {
     const mockedOnPress = jest.fn()
-    const { queryByTestId } = render(<TestComponent onPress={mockedOnPress} />)
+    const { getByTestId } = render(<TestComponent onPress={mockedOnPress} />)
     const user = userEvent.setup()
 
-    const touchableOpacity = queryByTestId('SelectButtonItem_TouchableOpacity')
-    await user.press(touchableOpacity)
+    await user.press(getByTestId('SelectButtonItem_TouchableOpacity'))
 
-    expect(mockedOnPress).toHaveBeenCalledWith(expect.any(Object))
+    expect(mockedOnPress).toHaveBeenCalledOnce()
   })
 
-  test('position change', async () => {
+  test('не вызывает onPress, если кнопка недоступна', async () => {
     const mockedOnPress = jest.fn()
-    const { queryAllByTestId } = render(
-      <TestComponent
-        withButton
-        Icon={IconArrowDownRight}
-        onPress={mockedOnPress}
-      />
+    const { getByTestId } = render(
+      <TestComponent disabled onPress={mockedOnPress} />
     )
     const user = userEvent.setup()
-    const pressable = queryAllByTestId('ChangePosition')
-    let icons = queryAllByTestId('SelectButtonItem_Icon')
+    const button = getByTestId('SelectButtonItem_TouchableOpacity')
 
-    await waitFor(() => expect(icons[0]).toHaveProp('stroke', '#181a1f'))
+    expect(button).toBeDisabled()
 
-    await user.press(pressable[0])
-    jest.advanceTimersByTime(600)
+    await user.press(button)
 
-    icons = queryAllByTestId('SelectButtonItem_Icon')
+    expect(mockedOnPress).not.toHaveBeenCalled()
+  })
 
-    expect(icons[0]).toHaveProp('stroke', '#56595f')
+  describe('изменение позиции', () => {
+    test('обновляет цвет текста и иконки', async () => {
+      const { getAllByTestId, getByTestId } = render(
+        <TestComponent
+          withPositionControl
+          Icon={IconArrowDownRight}
+          label='Текст'
+        />
+      )
+      const user = userEvent.setup()
+      const icon = getAllByTestId('SelectButtonItem_Icon')[0]
+      const text = getByTestId('SelectButtonItem_Text')
+
+      await waitFor(() => {
+        expect(icon).toHaveProp(
+          'stroke',
+          lightTheme.theme.Form.SelectButton.selectButtonIconActiveColor
+        )
+        expect(text).toHaveAnimatedStyle({
+          color: toRgba(
+            lightTheme.theme.Form.SelectButton.selectButtonIconActiveColor
+          ),
+        })
+      })
+
+      await user.press(getByTestId('ChangePosition'))
+      act(() => jest.advanceTimersByTime(600))
+
+      await waitFor(() => {
+        expect(icon).toHaveProp(
+          'stroke',
+          lightTheme.theme.Form.SelectButton.selectButtonTextColor
+        )
+        expect(text).toHaveAnimatedStyle({
+          color: toRgba(
+            lightTheme.theme.Form.SelectButton.selectButtonTextColor
+          ),
+        })
+      })
+    })
   })
 })

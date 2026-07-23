@@ -14,7 +14,7 @@ import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
 
 export interface SelectButtonItemProps extends Pick<
   ViewProps,
-  'onLayout' | 'testID'
+  'accessibilityLabel' | 'onLayout' | 'testID'
 > {
   /** Индекс кнопки */
   index: number
@@ -31,7 +31,7 @@ export interface SelectButtonItemProps extends Pick<
   /** true - если кнопка недоступна для нажатия */
   disabled?: boolean
 
-  /** Текст на кнопке */
+  /** Текст на кнопке. Может быть опущен для сегмента только с иконкой. */
   label?: string
 
   /**
@@ -56,12 +56,14 @@ export interface SelectButtonItemProps extends Pick<
  */
 export const SelectButtonItem = memo<SelectButtonItemProps>(
   ({
+    accessibilityLabel,
     index,
     position,
     onPress,
     disabled,
     label,
     onLayout,
+    testID,
     size = 'base',
     showIcon = true,
     Icon,
@@ -107,13 +109,16 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
 
     return (
       <TouchableOpacity
+        accessibilityLabel={accessibilityLabel}
+        accessibilityRole='button'
+        accessibilityState={{ disabled, selected: isSelected }}
         disabled={disabled}
         style={[
           styles.container,
           styles[size],
           disabled && styles.disabledContainer,
         ]}
-        testID='SelectButtonItem_TouchableOpacity'
+        testID={testID || 'SelectButtonItem_TouchableOpacity'}
         onLayout={onLayout}
         onPress={onPress}
       >
