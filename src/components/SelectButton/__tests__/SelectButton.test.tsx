@@ -1,5 +1,6 @@
 import { IconArrowDownRight } from '@tabler/icons-react-native'
 import {
+  act,
   fireEvent,
   render,
   userEvent,
@@ -11,154 +12,253 @@ import { useSharedValue } from 'react-native-reanimated'
 
 import { SelectButton, type SelectButtonProps } from '../SelectButton'
 
-jest.mock('../SelectButtonItem', () => ({
-  SelectButtonItem: 'SelectButtonItem',
-}))
+type SelectButtonTestProps = Omit<SelectButtonProps, 'buttons'>
 
-type SelectButtonTestProps = Omit<SelectButtonProps, 'buttons'> & {
-  readonly controlled?: boolean
-}
+type AnimatedTestComponentProps = Omit<
+  SelectButtonTestProps,
+  'selectedIndex' | 'position'
+>
+
+type GetByTestId = ReturnType<typeof render>['getByTestId']
 
 const buttons = [
-  { label: 'ButtonSelect', Icon: IconArrowDownRight, key: 'button1' },
+  { label: 'Первая кнопка', Icon: IconArrowDownRight, key: 'button1' },
   {
-    label: 'ButtonSelect',
+    label: 'Вторая кнопка',
     Icon: IconArrowDownRight,
     key: 'button2',
     showIcon: false,
   },
 ]
 
-const TestComponent = ({ controlled, ...rest }: SelectButtonTestProps) => {
+const layoutButtons = (getByTestId: GetByTestId) => {
+  buttons.forEach((_, index) => {
+    fireEvent(getByTestId(`SelectButton_SelectButtonItem_${index}`), 'layout', {
+      nativeEvent: { layout: { width: 100, x: 100 * index } },
+    })
+  })
+}
+
+const TestComponent = (props: SelectButtonTestProps) => (
+  <SelectButton buttons={buttons} {...props} />
+)
+
+const AnimatedTestComponent = (props: AnimatedTestComponentProps) => {
   const position = useSharedValue(0)
 
   return (
     <>
-      <SelectButton
-        buttons={buttons}
-        position={controlled ? position : undefined}
-        {...rest}
+      <SelectButton buttons={buttons} position={position} {...props} />
+      <Pressable
+        testID='ChangePosition'
+        onPress={() => {
+          position.value += 0.5
+        }}
       />
-      {controlled ? (
-        <Pressable
-          testID='ChangePosition'
-          onPress={() => {
-            position.value += 0.5
-          }}
-        />
-      ) : null}
     </>
   )
 }
 
-describe('SelectButtonItem', () => {
+describe('SelectButton', () => {
   beforeEach(() => {
     jest.useFakeTimers()
   })
 
   afterEach(() => {
-    jest.runOnlyPendingTimers()
+    act(() => jest.runOnlyPendingTimers())
     jest.useRealTimers()
   })
 
-  const snapshotCases: Array<[SelectButtonTestProps]> = [
-    [{}],
-    [{ size: 'small', disabled: true, initialIndex: 1, style: { margin: 10 } }],
-    [{ size: 'base', initialIndex: 2 }],
-    [{ size: 'large' }],
-    [{ size: 'xlarge', initialIndex: 1 }],
-  ]
+  describe('общие состояния', () => {
+    test('отображает рамку, если компонент доступен', () => {
+      const { getByTestId } = render(<TestComponent disabled={false} />)
 
-  test.each(snapshotCases)('%p', (props) => {
-    const { toJSON, getByTestId } = render(<TestComponent {...props} />)
+      expect(getByTestId('SelectButton_AnimatedFrame')).toBeDefined()
+    })
 
-    buttons.forEach((_, index) => {
-      fireEvent(
-        getByTestId(`SelectButton_SelectButtonItem_${index}`),
-        'layout',
-        { nativeEvent: { layout: { width: 100, x: 100 * index } } }
+    test('не отображает рамку, если компонент недоступен', () => {
+      const { queryByTestId } = render(<TestComponent disabled />)
+
+      expect(queryByTestId('SelectButton_AnimatedFrame')).toBeNull()
+    })
+
+    test('не вызывает onPress, если компонент недоступен', async () => {
+      const mockedOnPress = jest.fn()
+      const { getByRole } = render(
+        <TestComponent disabled onPress={mockedOnPress} />
+      )
+      const user = userEvent.setup()
+      const button = getByRole('button', {
+        disabled: true,
+        name: 'Вторая кнопка',
+      })
+
+      await user.press(button)
+
+      expect(mockedOnPress).not.toHaveBeenCalled()
+    })
+
+    test('передает доступное имя кнопке без текста', () => {
+      const { getByRole } = render(
+        <SelectButton
+          buttons={[
+            {
+              accessibilityLabel: 'Первая кнопка',
+              Icon: IconArrowDownRight,
+              key: 'icon-only',
+            },
+            { label: 'Вторая кнопка', key: 'with-label' },
+          ]}
+        />
+      )
+
+      expect(getByRole('button', { name: 'Первая кнопка' })).toBeDefined()
+    })
+  })
+
+  describe('неконтролируемый режим', () => {
+    test('устанавливает начальную позицию из initialIndex', async () => {
+      const { getByTestId } = render(<TestComponent initialIndex={1} />)
+
+      layoutButtons(getByTestId)
+
+      await waitFor(() =>
+        expect(getByTestId('SelectButton_AnimatedFrame')).toHaveAnimatedStyle({
+          left: 100,
+          width: 100,
+        })
       )
     })
 
-    expect(toJSON()).toMatchSnapshot()
-  })
-
-  test('animated frame should be when disabled = true', async () => {
-    const { findByTestId } = render(<TestComponent disabled={false} />)
-
-    await expect(
-      findByTestId('SelectButton_AnimatedFrame')
-    ).resolves.toBeDefined()
-  })
-
-  test('animated frame should not be when disabled = false', async () => {
-    const { findByTestId } = render(<TestComponent disabled />)
-
-    await expect(
-      findByTestId('SelectButton_AnimatedFrame')
-    ).rejects.toBeDefined()
-  })
-
-  test('handle press on uncontrolled component', async () => {
-    const mockedOnPress = jest.fn()
-    const { getByTestId } = render(<TestComponent onPress={mockedOnPress} />)
-    const selectButtonItem = getByTestId('SelectButton_SelectButtonItem_1')
-
-    buttons.forEach((_, index) => {
-      fireEvent(
-        getByTestId(`SelectButton_SelectButtonItem_${index}`),
-        'layout',
-        { nativeEvent: { layout: { width: 100, x: 100 * index } } }
+    test('не изменяет позицию при обновлении initialIndex', async () => {
+      const { getByTestId, rerender } = render(
+        <TestComponent initialIndex={0} />
       )
-    })
 
-    let animatedFrame = getByTestId('SelectButton_AnimatedFrame')
-    await waitFor(() =>
+      layoutButtons(getByTestId)
+
+      const animatedFrame = getByTestId('SelectButton_AnimatedFrame')
+      await waitFor(() =>
+        expect(animatedFrame).toHaveAnimatedStyle({ left: 0, width: 100 })
+      )
+
+      rerender(<TestComponent initialIndex={1} />)
+
       expect(animatedFrame).toHaveAnimatedStyle({ left: 0, width: 100 })
-    )
+    })
 
-    selectButtonItem.props.onPress()
-    animatedFrame = getByTestId('SelectButton_AnimatedFrame')
+    test('меняет выбранный индекс при нажатии', async () => {
+      const mockedOnPress = jest.fn()
+      const { getByTestId, getByText } = render(
+        <TestComponent onPress={mockedOnPress} />
+      )
+      const user = userEvent.setup()
 
-    expect(mockedOnPress).toHaveBeenCalledWith(1)
+      layoutButtons(getByTestId)
 
-    await waitFor(() =>
-      expect(animatedFrame).toHaveAnimatedStyle({ left: 100, width: 100 })
-    )
+      const animatedFrame = getByTestId('SelectButton_AnimatedFrame')
+      await waitFor(() =>
+        expect(animatedFrame).toHaveAnimatedStyle({ left: 0, width: 100 })
+      )
+
+      await user.press(getByText('Вторая кнопка'))
+
+      expect(mockedOnPress).toHaveBeenCalledWith(1)
+
+      await waitFor(() =>
+        expect(animatedFrame).toHaveAnimatedStyle({ left: 100, width: 100 })
+      )
+    })
   })
 
-  test('handle press on controlled component', async () => {
-    const mockedOnPress = jest.fn()
-    const { getByTestId } = render(
-      <TestComponent controlled onPress={mockedOnPress} />
-    )
-    const selectButtonItem = getByTestId('SelectButton_SelectButtonItem_1')
+  describe('управляемый режим', () => {
+    test('ожидает обновления selectedIndex после нажатия', async () => {
+      const mockedOnPress = jest.fn()
+      const { getByRole, getByTestId, rerender } = render(
+        <TestComponent selectedIndex={0} onPress={mockedOnPress} />
+      )
+      const user = userEvent.setup()
 
-    buttons.forEach((_, index) => {
-      fireEvent(
-        getByTestId(`SelectButton_SelectButtonItem_${index}`),
-        'layout',
-        { nativeEvent: { layout: { width: 100, x: 100 * index } } }
+      layoutButtons(getByTestId)
+
+      const animatedFrame = getByTestId('SelectButton_AnimatedFrame')
+      await waitFor(() =>
+        expect(animatedFrame).toHaveAnimatedStyle({ left: 0, width: 100 })
+      )
+      await waitFor(() => {
+        expect(
+          getByRole('button', { name: 'Первая кнопка', selected: true })
+        ).toBeDefined()
+        expect(
+          getByRole('button', { name: 'Вторая кнопка', selected: false })
+        ).toBeDefined()
+      })
+
+      const secondButton = getByRole('button', { name: 'Вторая кнопка' })
+
+      await user.press(secondButton)
+
+      expect(mockedOnPress).toHaveBeenCalledWith(1)
+      expect(animatedFrame).toHaveAnimatedStyle({ left: 0, width: 100 })
+      expect(
+        getByRole('button', { name: 'Первая кнопка', selected: true })
+      ).toBeDefined()
+      expect(
+        getByRole('button', { name: 'Вторая кнопка', selected: false })
+      ).toBeDefined()
+
+      rerender(<TestComponent selectedIndex={1} onPress={mockedOnPress} />)
+
+      await waitFor(() => {
+        expect(animatedFrame).toHaveAnimatedStyle({ left: 100, width: 100 })
+        expect(
+          getByRole('button', { name: 'Первая кнопка', selected: false })
+        ).toBeDefined()
+        expect(
+          getByRole('button', { name: 'Вторая кнопка', selected: true })
+        ).toBeDefined()
+      })
+    })
+  })
+
+  describe('анимированный режим', () => {
+    test('сохраняет приоритет position над initialIndex из старого API', async () => {
+      const { getByTestId } = render(<AnimatedTestComponent initialIndex={1} />)
+
+      layoutButtons(getByTestId)
+
+      await waitFor(() =>
+        expect(getByTestId('SelectButton_AnimatedFrame')).toHaveAnimatedStyle({
+          left: 0,
+          width: 100,
+        })
       )
     })
 
-    selectButtonItem.props.onPress()
+    test('изменяет позицию только через внешний SharedValue', async () => {
+      const mockedOnPress = jest.fn()
+      const { getByTestId, getByText } = render(
+        <AnimatedTestComponent onPress={mockedOnPress} />
+      )
+      const user = userEvent.setup()
 
-    let animatedFrame = getByTestId('SelectButton_AnimatedFrame')
-    await waitFor(() =>
-      expect(animatedFrame).toHaveAnimatedStyle({ left: 0, width: 100 })
-    )
+      layoutButtons(getByTestId)
 
-    const testButton = getByTestId('ChangePosition')
-    const user = userEvent.setup()
+      const animatedFrame = getByTestId('SelectButton_AnimatedFrame')
 
-    await user.press(testButton)
-    animatedFrame = getByTestId('SelectButton_AnimatedFrame')
+      await user.press(getByText('Вторая кнопка'))
 
-    expect(mockedOnPress).toHaveBeenCalledWith(1)
+      expect(mockedOnPress).toHaveBeenCalledWith(1)
 
-    await waitFor(() =>
-      expect(animatedFrame).toHaveAnimatedStyle({ left: 50, width: 100 })
-    )
+      await waitFor(() =>
+        expect(animatedFrame).toHaveAnimatedStyle({ left: 0, width: 100 })
+      )
+
+      await user.press(getByTestId('ChangePosition'))
+
+      await waitFor(() =>
+        expect(animatedFrame).toHaveAnimatedStyle({ left: 50, width: 100 })
+      )
+    })
   })
 })

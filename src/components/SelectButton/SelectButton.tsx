@@ -1,4 +1,4 @@
-import { memo, useCallback, useMemo, useRef, useState } from 'react'
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
   type AccessibilityProps,
   type LayoutChangeEvent,
@@ -28,27 +28,21 @@ import {
 
 const DEFAULT_ANIMATION_DURATION = 200 // ms
 
-export interface SelectButtonProps
+interface SelectButtonBaseProps
   extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Массив кнопок. Должен содержать как минимум 2 кнопки. */
   buttons: Array<
-    Pick<SelectButtonItemProps, 'label' | 'showIcon' | 'Icon'> & { key: string }
+    Pick<
+      SelectButtonItemProps,
+      'accessibilityLabel' | 'label' | 'showIcon' | 'Icon'
+    > & { key: string }
   >
 
   /** true - если кнопки недоступны для нажатия */
   disabled?: boolean
 
-  /** Индекс выбранной кнопки при первом рендере */
-  initialIndex?: number
-
   /** Вызывается при нажатии на кнопку */
   onPress?: (index: number) => void
-
-  /**
-   * Анимированное значение 0...n-1, где n - это количество кнопок.
-   * Используется для контроля элемента извне. Если передано, то компонент становится управляемым.
-   */
-  position?: SharedValue<number>
 
   /**
    * Выбор размера элемента
@@ -61,15 +55,81 @@ export interface SelectButtonProps
 }
 
 /**
- * Используется для маркировки элементов интерфейса
- * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4921
+ * `position` имеет приоритет над `selectedIndex`, а `selectedIndex` — над
+ * `initialIndex`. Одновременная передача сохранена для обратной совместимости.
  */
-export const SelectButton = memo<SelectButtonProps>(
+export interface SelectButtonProps extends SelectButtonBaseProps {
+  /** Индекс выбранной кнопки при первом рендере */
+  initialIndex?: number
+
+  /** Индекс выбранной кнопки в контролируемом режиме */
+  selectedIndex?: number
+
+  /** Значение позиции для синхронизации с внешней анимацией */
+  position?: SharedValue<number>
+}
+
+interface UncontrolledSelectButtonModeProps {
+  /** Индекс выбранной кнопки при первом рендере */
+  initialIndex?: number
+  selectedIndex?: never
+  position?: never
+}
+
+interface ControlledSelectButtonModeProps {
+  initialIndex?: never
+
+  /**
+   * Индекс выбранной кнопки 0...n-1, где n — количество кнопок.
+   * При изменении анимирует внутреннее значение позиции.
+   */
+  selectedIndex: number
+  position?: never
+}
+
+interface AnimatedSelectButtonModeProps {
+  initialIndex?: never
+  selectedIndex?: never
+
+  /**
+   * Анимированное значение 0...n-1, где n - это количество кнопок.
+   * Используется для синхронизации с внешней анимацией.
+   */
+  position: SharedValue<number>
+}
+
+type StrictSelectButtonProps = SelectButtonBaseProps &
+  (
+    | UncontrolledSelectButtonModeProps
+    | ControlledSelectButtonModeProps
+    | AnimatedSelectButtonModeProps
+  )
+
+// TODO(next major): экспортировать StrictSelectButtonProps как SelectButtonProps, после миграции удалить адаптер и тесты
+const normalizeSelectButtonProps = ({
+  initialIndex,
+  position,
+  selectedIndex,
+  ...baseProps
+}: SelectButtonProps): StrictSelectButtonProps => {
+  if (position !== undefined) {
+    return { ...baseProps, position }
+  }
+
+  if (selectedIndex !== undefined) {
+    return { ...baseProps, selectedIndex }
+  }
+
+  return { ...baseProps, initialIndex }
+}
+
+const SelectButtonStrict = memo<StrictSelectButtonProps>(
   ({
     buttons,
     disabled,
     initialIndex: initialIndexProp,
     onPress: onPressProp,
+    selectedIndex,
     size,
     style,
     testID,
@@ -108,11 +168,23 @@ export const SelectButton = memo<SelectButtonProps>(
       }
     )
 
-    const positionInner = useSharedValue(initialIndex)
+    const positionInner = useSharedValue(selectedIndex ?? initialIndex)
     const position = useMemo(
       () => positionProp || positionInner,
       [positionInner, positionProp]
     )
+
+    useEffect(() => {
+      if (selectedIndex === undefined) {
+        return
+      }
+
+      positionInner.value = withTiming(selectedIndex, {
+        duration: DEFAULT_ANIMATION_DURATION,
+        easing: Easing.linear,
+      })
+    }, [positionInner, selectedIndex])
+
     const animationInputRange = useMemo(
       () => buttons.map((_, index) => index),
       [buttons]
@@ -137,7 +209,8 @@ export const SelectButton = memo<SelectButtonProps>(
       return { left, width }
     })
 
-    const isUncontrolledComponent = useMemo(() => !positionProp, [positionProp])
+    const isUncontrolledComponent =
+      positionProp === undefined && selectedIndex === undefined
     const onPress = useCallback(
       (index: number) => {
         if (isUncontrolledComponent) {
@@ -159,21 +232,24 @@ export const SelectButton = memo<SelectButtonProps>(
         testID={testID}
         {...rest}
       >
-        {buttons.map(({ label, Icon, key, showIcon }, index) => (
-          <SelectButtonItem
-            Icon={Icon}
-            disabled={disabled}
-            index={index}
-            key={key}
-            label={label}
-            position={position}
-            showIcon={showIcon}
-            size={size}
-            testID={`SelectButton_SelectButtonItem_${index}`}
-            onLayout={(event) => onButtonLayout(index, event)}
-            onPress={() => onPress(index)}
-          />
-        ))}
+        {buttons.map(
+          ({ accessibilityLabel, label, Icon, key, showIcon }, index) => (
+            <SelectButtonItem
+              Icon={Icon}
+              accessibilityLabel={accessibilityLabel}
+              disabled={disabled}
+              index={index}
+              key={key}
+              label={label}
+              position={position}
+              showIcon={showIcon}
+              size={size}
+              testID={`SelectButton_SelectButtonItem_${index}`}
+              onLayout={(event) => onButtonLayout(index, event)}
+              onPress={() => onPress(index)}
+            />
+          )
+        )}
 
         {!disabled && (
           <Animated.View
@@ -186,6 +262,14 @@ export const SelectButton = memo<SelectButtonProps>(
     )
   }
 )
+
+/**
+ * Используется для маркировки элементов интерфейса
+ * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4921
+ */
+export const SelectButton = memo<SelectButtonProps>((props) => (
+  <SelectButtonStrict {...normalizeSelectButtonProps(props)} />
+))
 
 const styles = StyleSheet.create(({ theme }) => ({
   container: {
