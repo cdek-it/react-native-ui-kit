@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.1](https://github.com/cdek-it/react-native-ui-kit/compare/v1.0.0...v1.0.1) (2026-07-23)
+
+### 🚀 Новый функционал
+
+* добавлен компонент SelectButton ([a4c966c](https://github.com/cdek-it/react-native-ui-kit/commit/a4c966cdc5a213447db60c70d36b2aed30eff6fe))
+
 ## [1.0.0](https://github.com/cdek-it/react-native-ui-kit/compare/v0.6.9...v1.0.0) (2026-07-09)
 
 ### 🚀 Новый функционал
