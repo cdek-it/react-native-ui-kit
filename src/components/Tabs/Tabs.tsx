@@ -94,16 +94,16 @@ export const Tabs = memo<TabsProps>(
 const styles = StyleSheet.create(({ theme, border }) => ({
   container: {
     flexDirection: 'row',
-    gap: theme.Panel.TabView.tabviewHeaderSpacing,
+    gap: theme.Tabs.tab.margin,
 
     borderBottomWidth: border.Width.border,
-    borderColor: theme.Panel.TabView.tabviewNavBorderColor,
+    borderColor: theme.Tabs.tablist.borderColor,
   },
   line: {
     position: 'absolute',
     bottom: 0,
     height: border.Width['border-2'],
 
-    backgroundColor: theme.Panel.TabView.tabviewHeaderActiveBorderColor,
+    backgroundColor: theme.Tabs.activeBar.background,
   },
 }))

@@ -60,10 +60,10 @@ export const TabItem = memo<TabItemProps>(
                   color: disabled
                     ? theme.Button.disabledColor
                     : pressed
-                      ? theme.Panel.TabView.tabviewHeaderHoverTextColor
+                      ? theme.Tabs.tab.hoverColor
                       : active
-                        ? theme.Panel.TabView.tabviewHeaderActiveTextColor
-                        : theme.Panel.TabView.tabviewHeaderTextColor,
+                        ? theme.Tabs.tab.activeColor
+                        : theme.Tabs.tab.color,
                 })}
               />
             ) : null}
@@ -91,25 +91,19 @@ const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
     alignItems: 'center',
     flexDirection: 'row',
 
-    height:
-      theme.Misc.Badge.badgeHeight +
-      theme.Panel.TabView.tabviewHeaderPaddingTopBottom * 2,
-    gap: theme.General.inlineSpacing,
-    paddingHorizontal: theme.Panel.TabView.tabviewHeaderPaddingLeftRight,
-    paddingVertical: theme.Panel.TabView.tabviewHeaderPaddingTopBottom,
+    height: theme.Badge.height + theme.Tabs.tab.padding * 2,
+    gap: theme.Tabs.tab.gap,
+    paddingHorizontal: theme.Tabs.tab.padding,
+    paddingVertical: theme.Tabs.tab.padding,
 
-    backgroundColor: theme.Panel.TabView.tabviewHeaderBg,
+    backgroundColor: theme.Tabs.tab.background,
   },
-  pressedContainer: {
-    backgroundColor: theme.Panel.TabView.tabviewHeaderHoverBg,
-  },
-  activeContainer: {
-    backgroundColor: theme.Panel.TabView.tabviewHeaderActiveBg,
-  },
+  pressedContainer: { backgroundColor: theme.Tabs.tab.hoverBackground },
+  activeContainer: { backgroundColor: theme.Tabs.tab.activeBackground },
   disabledContainer: { opacity: 0.6, mixBlendMode: 'luminosity' },
   icon: {
-    width: theme.Menu.Item.menuitemSubmenuIconFontSize,
-    height: theme.Menu.Item.menuitemSubmenuIconFontSize,
+    width: typography.Size['text-xl'],
+    height: typography.Size['text-xl'],
   },
   text: {
     fontFamily: fonts.primary,
@@ -117,10 +111,10 @@ const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
     verticalAlign: 'middle',
     includeFontPadding: false,
 
-    color: theme.Panel.TabView.tabviewHeaderTextColor,
+    color: theme.Tabs.tab.color,
   },
-  pressedText: { color: theme.Panel.TabView.tabviewHeaderHoverTextColor },
-  activeText: { color: theme.Panel.TabView.tabviewHeaderActiveTextColor },
+  pressedText: { color: theme.Tabs.tab.hoverColor },
+  activeText: { color: theme.Tabs.tab.activeColor },
   disabledText: { color: theme.Button.disabledColor },
 }))
 

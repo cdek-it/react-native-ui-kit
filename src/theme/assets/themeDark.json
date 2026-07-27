@@ -1554,5 +1554,63 @@
       "sm": { "size": 8 },
       "lg": { "size": 16 }
     }
+  },
+  "Tabs": {
+    "transitionDuration": 180,
+    "tablist": {
+      "borderWidth": "0 0 1 0",
+      "background": "transparent",
+      "borderColor": "#404348"
+    },
+    "tab": {
+      "borderWidth": 0,
+      "borderColor": "#404348",
+      "hoverBorderColor": "#404348",
+      "activeBorderColor": "#e2e2e4",
+      "color": "#a2a5a9",
+      "hoverColor": "#ffffff",
+      "activeColor": "#ffffff",
+      "padding": 14,
+      "fontWeight": "600",
+      "margin": 0,
+      "gap": 8,
+      "focusRing": {
+        "width": 4,
+        "style": "none",
+        "color": "#d4fedc",
+        "offset": 0,
+        "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
+      },
+      "activeBackground": "transparent",
+      "background": "transparent",
+      "hoverBackground": "transparent"
+    },
+    "tabpanel": {
+      "background": "transparent",
+      "color": "#ffffff",
+      "padding": 14,
+      "focusRing": {
+        "width": 4,
+        "style": "none",
+        "color": "#d4fedc",
+        "offset": 0,
+        "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
+      }
+    },
+    "navButton": {
+      "background": "#56595f",
+      "color": "#ffffff",
+      "hoverColor": "#cecfd2",
+      "width": 24,
+      "focusRing": {
+        "width": 4,
+        "style": "none",
+        "color": "#d4fedc",
+        "offset": 0,
+        "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
+      },
+      "shadow": "none"
+    },
+    "activeBar": { "height": 2, "bottom": -2, "background": "#f0f0f1" }
   }
 }
