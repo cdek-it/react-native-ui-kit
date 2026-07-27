@@ -47,7 +47,7 @@ exports[`Chip component tests {
         "borderRadius": 8,
         "borderWidth": 1,
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
         "justifyContent": "center",
         "paddingHorizontal": 8,
         "paddingVertical": 4,
@@ -64,7 +64,7 @@ exports[`Chip component tests {
         {
           "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -124,7 +124,7 @@ exports[`Chip component tests {
         "borderRadius": 8,
         "borderWidth": 1,
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
         "justifyContent": "center",
         "paddingHorizontal": 8,
         "paddingVertical": 4,
@@ -136,11 +136,11 @@ exports[`Chip component tests {
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={14}
-    bbWidth={14}
+    bbHeight={16}
+    bbWidth={16}
     fill="none"
     focusable={false}
-    height={14}
+    height={16}
     meetOrSlice={0}
     minX={0}
     minY={0}
@@ -156,15 +156,15 @@ exports[`Chip component tests {
         },
         {
           "flex": 0,
-          "height": 14,
-          "width": 14,
+          "height": 16,
+          "width": 16,
         },
       ]
     }
     testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
-    width={14}
+    width={16}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -243,7 +243,7 @@ exports[`Chip component tests {
         {
           "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -303,7 +303,7 @@ exports[`Chip component tests {
         "borderRadius": 8,
         "borderWidth": 1,
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
         "justifyContent": "center",
         "paddingHorizontal": 8,
         "paddingVertical": 4,
@@ -320,7 +320,7 @@ exports[`Chip component tests {
         {
           "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -364,11 +364,11 @@ exports[`Chip component tests {
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -384,15 +384,15 @@ exports[`Chip component tests {
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -515,7 +515,7 @@ exports[`Chip component tests {
         "borderRadius": 8,
         "borderWidth": 1,
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
         "justifyContent": "center",
         "paddingHorizontal": 8,
         "paddingVertical": 4,
@@ -527,11 +527,11 @@ exports[`Chip component tests {
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={14}
-    bbWidth={14}
+    bbHeight={16}
+    bbWidth={16}
     fill="none"
     focusable={false}
-    height={14}
+    height={16}
     meetOrSlice={0}
     minX={0}
     minY={0}
@@ -547,15 +547,15 @@ exports[`Chip component tests {
         },
         {
           "flex": 0,
-          "height": 14,
-          "width": 14,
+          "height": 16,
+          "width": 16,
         },
       ]
     }
     testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
-    width={14}
+    width={16}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -634,7 +634,7 @@ exports[`Chip component tests {
         {
           "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -678,11 +678,11 @@ exports[`Chip component tests {
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -698,15 +698,15 @@ exports[`Chip component tests {
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -829,7 +829,7 @@ exports[`Chip component tests {
         "borderRadius": 8,
         "borderWidth": 1,
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
         "justifyContent": "center",
         "paddingHorizontal": 8,
         "paddingVertical": 4,
@@ -846,7 +846,7 @@ exports[`Chip component tests {
         {
           "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -906,7 +906,7 @@ exports[`Chip component tests {
         "borderRadius": 8,
         "borderWidth": 1,
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
         "justifyContent": "center",
         "paddingHorizontal": 8,
         "paddingVertical": 4,
@@ -923,7 +923,7 @@ exports[`Chip component tests {
         {
           "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -983,7 +983,7 @@ exports[`Chip component tests {
         "borderRadius": 8,
         "borderWidth": 1,
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
         "justifyContent": "center",
         "paddingHorizontal": 8,
         "paddingVertical": 4,
@@ -1000,7 +1000,7 @@ exports[`Chip component tests {
         {
           "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -1044,11 +1044,11 @@ exports[`Chip component tests {
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -1064,15 +1064,15 @@ exports[`Chip component tests {
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -1195,7 +1195,7 @@ exports[`Chip component tests {
         "borderRadius": 8,
         "borderWidth": 1,
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
         "justifyContent": "center",
         "paddingHorizontal": 8,
         "paddingVertical": 4,
@@ -1212,7 +1212,7 @@ exports[`Chip component tests {
         {
           "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -1256,11 +1256,11 @@ exports[`Chip component tests {
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -1276,15 +1276,15 @@ exports[`Chip component tests {
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -1407,7 +1407,7 @@ exports[`Chip component tests {
         "borderRadius": 8,
         "borderWidth": 1,
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
         "justifyContent": "center",
         "paddingHorizontal": 8,
         "paddingVertical": 4,
@@ -1424,7 +1424,7 @@ exports[`Chip component tests {
         {
           "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -1484,7 +1484,7 @@ exports[`Chip component tests {
         "borderRadius": 8,
         "borderWidth": 1,
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
         "justifyContent": "center",
         "paddingHorizontal": 8,
         "paddingVertical": 4,
@@ -1496,11 +1496,11 @@ exports[`Chip component tests {
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={14}
-    bbWidth={14}
+    bbHeight={16}
+    bbWidth={16}
     fill="none"
     focusable={false}
-    height={14}
+    height={16}
     meetOrSlice={0}
     minX={0}
     minY={0}
@@ -1516,15 +1516,15 @@ exports[`Chip component tests {
         },
         {
           "flex": 0,
-          "height": 14,
-          "width": 14,
+          "height": 16,
+          "width": 16,
         },
       ]
     }
     testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
-    width={14}
+    width={16}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -1603,7 +1603,7 @@ exports[`Chip component tests {
         {
           "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -1663,7 +1663,7 @@ exports[`Chip component tests {
         "borderRadius": 8,
         "borderWidth": 1,
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
         "justifyContent": "center",
         "paddingHorizontal": 8,
         "paddingVertical": 4,
@@ -1680,7 +1680,7 @@ exports[`Chip component tests {
         {
           "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -1724,11 +1724,11 @@ exports[`Chip component tests {
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -1744,15 +1744,15 @@ exports[`Chip component tests {
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -1875,7 +1875,7 @@ exports[`Chip component tests {
         "borderRadius": 8,
         "borderWidth": 1,
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
         "justifyContent": "center",
         "paddingHorizontal": 8,
         "paddingVertical": 4,
@@ -1887,11 +1887,11 @@ exports[`Chip component tests {
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={14}
-    bbWidth={14}
+    bbHeight={16}
+    bbWidth={16}
     fill="none"
     focusable={false}
-    height={14}
+    height={16}
     meetOrSlice={0}
     minX={0}
     minY={0}
@@ -1907,15 +1907,15 @@ exports[`Chip component tests {
         },
         {
           "flex": 0,
-          "height": 14,
-          "width": 14,
+          "height": 16,
+          "width": 16,
         },
       ]
     }
     testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
-    width={14}
+    width={16}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -1994,7 +1994,7 @@ exports[`Chip component tests {
         {
           "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -2038,11 +2038,11 @@ exports[`Chip component tests {
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -2058,15 +2058,15 @@ exports[`Chip component tests {
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -2189,7 +2189,7 @@ exports[`Chip component tests {
         "borderRadius": 8,
         "borderWidth": 1,
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
         "justifyContent": "center",
         "paddingHorizontal": 8,
         "paddingVertical": 4,
@@ -2206,7 +2206,7 @@ exports[`Chip component tests {
         {
           "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -2266,7 +2266,7 @@ exports[`Chip component tests {
         "borderRadius": 8,
         "borderWidth": 1,
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
         "justifyContent": "center",
         "paddingHorizontal": 8,
         "paddingVertical": 4,
@@ -2283,7 +2283,7 @@ exports[`Chip component tests {
         {
           "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -2343,7 +2343,7 @@ exports[`Chip component tests {
         "borderRadius": 8,
         "borderWidth": 1,
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
         "justifyContent": "center",
         "paddingHorizontal": 8,
         "paddingVertical": 4,
@@ -2360,7 +2360,7 @@ exports[`Chip component tests {
         {
           "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -2404,11 +2404,11 @@ exports[`Chip component tests {
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -2424,15 +2424,15 @@ exports[`Chip component tests {
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -2555,7 +2555,7 @@ exports[`Chip component tests {
         "borderRadius": 8,
         "borderWidth": 1,
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
         "justifyContent": "center",
         "paddingHorizontal": 8,
         "paddingVertical": 4,
@@ -2572,7 +2572,7 @@ exports[`Chip component tests {
         {
           "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         },
@@ -2616,11 +2616,11 @@ exports[`Chip component tests {
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -2636,15 +2636,15 @@ exports[`Chip component tests {
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup

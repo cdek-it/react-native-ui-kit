@@ -16,11 +16,11 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={21}
-      bbWidth={21}
+      bbHeight={24}
+      bbWidth={24}
       fill="none"
       focusable={false}
-      height={21}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -36,15 +36,15 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
           },
           {
             "flex": 0,
-            "height": 21,
-            "width": 21,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={21}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -127,7 +127,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 15.75,
+            "fontSize": 18,
           },
           {
             "flex": 1,
@@ -176,11 +176,11 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={14}
-        bbWidth={14}
+        bbHeight={16}
+        bbWidth={16}
         fill="none"
         focusable={false}
-        height={14}
+        height={16}
         meetOrSlice={0}
         minX={0}
         minY={0}
@@ -196,15 +196,15 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
             },
             {
               "flex": 0,
-              "height": 14,
-              "width": 14,
+              "height": 16,
+              "width": 16,
             },
           ]
         }
         testID="SvgUniversalComponent"
         vbHeight={24}
         vbWidth={24}
-        width={14}
+        width={16}
         xmlns="http://www.w3.org/2000/svg"
       >
         <RNSVGGroup
@@ -305,11 +305,11 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={21}
-      bbWidth={21}
+      bbHeight={24}
+      bbWidth={24}
       fill="none"
       focusable={false}
-      height={21}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -325,15 +325,15 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
           },
           {
             "flex": 0,
-            "height": 21,
-            "width": 21,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={21}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -439,7 +439,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 15.75,
+            "fontSize": 18,
           },
           {
             "flex": 1,
@@ -488,11 +488,11 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={14}
-        bbWidth={14}
+        bbHeight={16}
+        bbWidth={16}
         fill="none"
         focusable={false}
-        height={14}
+        height={16}
         meetOrSlice={0}
         minX={0}
         minY={0}
@@ -508,15 +508,15 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
             },
             {
               "flex": 0,
-              "height": 14,
-              "width": 14,
+              "height": 16,
+              "width": 16,
             },
           ]
         }
         testID="SvgUniversalComponent"
         vbHeight={24}
         vbWidth={24}
-        width={14}
+        width={16}
         xmlns="http://www.w3.org/2000/svg"
       >
         <RNSVGGroup
@@ -617,11 +617,11 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={21}
-      bbWidth={21}
+      bbHeight={24}
+      bbWidth={24}
       fill="none"
       focusable={false}
-      height={21}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -637,15 +637,15 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
           },
           {
             "flex": 0,
-            "height": 21,
-            "width": 21,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={21}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -751,7 +751,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 15.75,
+            "fontSize": 18,
           },
           {
             "flex": 1,
@@ -800,11 +800,11 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={14}
-        bbWidth={14}
+        bbHeight={16}
+        bbWidth={16}
         fill="none"
         focusable={false}
-        height={14}
+        height={16}
         meetOrSlice={0}
         minX={0}
         minY={0}
@@ -820,15 +820,15 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
             },
             {
               "flex": 0,
-              "height": 14,
-              "width": 14,
+              "height": 16,
+              "width": 16,
             },
           ]
         }
         testID="SvgUniversalComponent"
         vbHeight={24}
         vbWidth={24}
-        width={14}
+        width={16}
         xmlns="http://www.w3.org/2000/svg"
       >
         <RNSVGGroup
@@ -929,11 +929,11 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={21}
-      bbWidth={21}
+      bbHeight={24}
+      bbWidth={24}
       fill="none"
       focusable={false}
-      height={21}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -949,15 +949,15 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
           },
           {
             "flex": 0,
-            "height": 21,
-            "width": 21,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={21}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -1040,7 +1040,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 15.75,
+            "fontSize": 18,
           },
           {
             "flex": 1,
@@ -1089,11 +1089,11 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={14}
-        bbWidth={14}
+        bbHeight={16}
+        bbWidth={16}
         fill="none"
         focusable={false}
-        height={14}
+        height={16}
         meetOrSlice={0}
         minX={0}
         minY={0}
@@ -1109,15 +1109,15 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
             },
             {
               "flex": 0,
-              "height": 14,
-              "width": 14,
+              "height": 16,
+              "width": 16,
             },
           ]
         }
         testID="SvgUniversalComponent"
         vbHeight={24}
         vbWidth={24}
-        width={14}
+        width={16}
         xmlns="http://www.w3.org/2000/svg"
       >
         <RNSVGGroup
@@ -1218,11 +1218,11 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={21}
-      bbWidth={21}
+      bbHeight={24}
+      bbWidth={24}
       fill="none"
       focusable={false}
-      height={21}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -1238,15 +1238,15 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
           },
           {
             "flex": 0,
-            "height": 21,
-            "width": 21,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={21}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -1352,7 +1352,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 15.75,
+            "fontSize": 18,
           },
           {
             "flex": 1,
@@ -1401,11 +1401,11 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={14}
-        bbWidth={14}
+        bbHeight={16}
+        bbWidth={16}
         fill="none"
         focusable={false}
-        height={14}
+        height={16}
         meetOrSlice={0}
         minX={0}
         minY={0}
@@ -1421,15 +1421,15 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
             },
             {
               "flex": 0,
-              "height": 14,
-              "width": 14,
+              "height": 16,
+              "width": 16,
             },
           ]
         }
         testID="SvgUniversalComponent"
         vbHeight={24}
         vbWidth={24}
-        width={14}
+        width={16}
         xmlns="http://www.w3.org/2000/svg"
       >
         <RNSVGGroup
@@ -1539,7 +1539,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": undefi
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 15.75,
+            "fontSize": 18,
           },
           {
             "flex": 1,
@@ -1588,11 +1588,11 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": undefi
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={14}
-        bbWidth={14}
+        bbHeight={16}
+        bbWidth={16}
         fill="none"
         focusable={false}
-        height={14}
+        height={16}
         meetOrSlice={0}
         minX={0}
         minY={0}
@@ -1608,15 +1608,15 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": undefi
             },
             {
               "flex": 0,
-              "height": 14,
-              "width": 14,
+              "height": 16,
+              "width": 16,
             },
           ]
         }
         testID="SvgUniversalComponent"
         vbHeight={24}
         vbWidth={24}
-        width={14}
+        width={16}
         xmlns="http://www.w3.org/2000/svg"
       >
         <RNSVGGroup
@@ -1717,11 +1717,11 @@ exports[`DialogHeader {"onClose": undefined, "severity": "danger", "title": "Dia
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={21}
-      bbWidth={21}
+      bbHeight={24}
+      bbWidth={24}
       fill="none"
       focusable={false}
-      height={21}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -1737,15 +1737,15 @@ exports[`DialogHeader {"onClose": undefined, "severity": "danger", "title": "Dia
           },
           {
             "flex": 0,
-            "height": 21,
-            "width": 21,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={21}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -1828,7 +1828,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "danger", "title": "Dia
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 15.75,
+            "fontSize": 18,
           },
           {
             "flex": 1,
@@ -1867,11 +1867,11 @@ exports[`DialogHeader {"onClose": undefined, "severity": "help", "title": "Dialo
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={21}
-      bbWidth={21}
+      bbHeight={24}
+      bbWidth={24}
       fill="none"
       focusable={false}
-      height={21}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -1887,15 +1887,15 @@ exports[`DialogHeader {"onClose": undefined, "severity": "help", "title": "Dialo
           },
           {
             "flex": 0,
-            "height": 21,
-            "width": 21,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={21}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -2001,7 +2001,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "help", "title": "Dialo
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 15.75,
+            "fontSize": 18,
           },
           {
             "flex": 1,
@@ -2040,11 +2040,11 @@ exports[`DialogHeader {"onClose": undefined, "severity": "info", "title": "Dialo
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={21}
-      bbWidth={21}
+      bbHeight={24}
+      bbWidth={24}
       fill="none"
       focusable={false}
-      height={21}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -2060,15 +2060,15 @@ exports[`DialogHeader {"onClose": undefined, "severity": "info", "title": "Dialo
           },
           {
             "flex": 0,
-            "height": 21,
-            "width": 21,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={21}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -2174,7 +2174,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "info", "title": "Dialo
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 15.75,
+            "fontSize": 18,
           },
           {
             "flex": 1,
@@ -2213,11 +2213,11 @@ exports[`DialogHeader {"onClose": undefined, "severity": "success", "title": "Di
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={21}
-      bbWidth={21}
+      bbHeight={24}
+      bbWidth={24}
       fill="none"
       focusable={false}
-      height={21}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -2233,15 +2233,15 @@ exports[`DialogHeader {"onClose": undefined, "severity": "success", "title": "Di
           },
           {
             "flex": 0,
-            "height": 21,
-            "width": 21,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={21}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -2324,7 +2324,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "success", "title": "Di
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 15.75,
+            "fontSize": 18,
           },
           {
             "flex": 1,
@@ -2363,11 +2363,11 @@ exports[`DialogHeader {"onClose": undefined, "severity": "warning", "title": "Di
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={21}
-      bbWidth={21}
+      bbHeight={24}
+      bbWidth={24}
       fill="none"
       focusable={false}
-      height={21}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -2383,15 +2383,15 @@ exports[`DialogHeader {"onClose": undefined, "severity": "warning", "title": "Di
           },
           {
             "flex": 0,
-            "height": 21,
-            "width": 21,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={21}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -2497,7 +2497,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "warning", "title": "Di
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 15.75,
+            "fontSize": 18,
           },
           {
             "flex": 1,
@@ -2545,7 +2545,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": undefined, "title": "Di
             "verticalAlign": "middle",
           },
           {
-            "fontSize": 15.75,
+            "fontSize": 18,
           },
           {
             "flex": 1,

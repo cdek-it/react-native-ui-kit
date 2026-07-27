@@ -21,11 +21,11 @@ exports[`Message {"Icon": [Object], "timerValue": 5} 1`] = `
     style={
       {
         "borderColor": "#4496e8",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 18,
       }
     }
   >
@@ -45,7 +45,7 @@ exports[`Message {"Icon": [Object], "timerValue": 5} 1`] = `
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >
@@ -83,11 +83,11 @@ exports[`Message {"Icon": [Object]} 1`] = `
     style={
       {
         "borderColor": "#4496e8",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 18,
       }
     }
   >
@@ -101,11 +101,11 @@ exports[`Message {"Icon": [Object]} 1`] = `
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={31.5}
-        bbWidth={31.5}
+        bbHeight={36}
+        bbWidth={36}
         fill="none"
         focusable={false}
-        height={31.5}
+        height={36}
         meetOrSlice={0}
         minX={0}
         minY={0}
@@ -121,15 +121,15 @@ exports[`Message {"Icon": [Object]} 1`] = `
             },
             {
               "flex": 0,
-              "height": 31,
-              "width": 31,
+              "height": 36,
+              "width": 36,
             },
           ]
         }
         testID="Icon"
         vbHeight={24}
         vbWidth={24}
-        width={31.5}
+        width={36}
         xmlns="http://www.w3.org/2000/svg"
       >
         <RNSVGGroup
@@ -206,7 +206,7 @@ exports[`Message {"Icon": [Object]} 1`] = `
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >
@@ -246,11 +246,11 @@ exports[`Message {"body": [Object], "caption": "caption", "severity": "info", "s
     style={
       {
         "borderColor": "#4496e8",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 18,
       }
     }
   >
@@ -264,11 +264,11 @@ exports[`Message {"body": [Object], "caption": "caption", "severity": "info", "s
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={31.5}
-        bbWidth={31.5}
+        bbHeight={36}
+        bbWidth={36}
         fill="none"
         focusable={false}
-        height={31.5}
+        height={36}
         meetOrSlice={0}
         minX={0}
         minY={0}
@@ -284,15 +284,15 @@ exports[`Message {"body": [Object], "caption": "caption", "severity": "info", "s
             },
             {
               "flex": 0,
-              "height": 31,
-              "width": 31,
+              "height": 36,
+              "width": 36,
             },
           ]
         }
         testID="Icon"
         vbHeight={24}
         vbWidth={24}
-        width={31.5}
+        width={36}
         xmlns="http://www.w3.org/2000/svg"
       >
         <RNSVGGroup
@@ -392,7 +392,7 @@ exports[`Message {"body": [Object], "caption": "caption", "severity": "info", "s
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >
@@ -442,11 +442,11 @@ exports[`Message {"body": [Object], "footer": [Object], "severity": "warning"} 1
     style={
       {
         "borderColor": "#f5b83d",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 18,
       }
     }
   >
@@ -460,11 +460,11 @@ exports[`Message {"body": [Object], "footer": [Object], "severity": "warning"} 1
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={31.5}
-        bbWidth={31.5}
+        bbHeight={36}
+        bbWidth={36}
         fill="none"
         focusable={false}
-        height={31.5}
+        height={36}
         meetOrSlice={0}
         minX={0}
         minY={0}
@@ -480,15 +480,15 @@ exports[`Message {"body": [Object], "footer": [Object], "severity": "warning"} 1
             },
             {
               "flex": 0,
-              "height": 31,
-              "width": 31,
+              "height": 36,
+              "width": 36,
             },
           ]
         }
         testID="Icon"
         vbHeight={24}
         vbWidth={24}
-        width={31.5}
+        width={36}
         xmlns="http://www.w3.org/2000/svg"
       >
         <RNSVGGroup
@@ -588,7 +588,7 @@ exports[`Message {"body": [Object], "footer": [Object], "severity": "warning"} 1
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >
@@ -636,11 +636,11 @@ exports[`Message {"closeLabel": "Close", "footer": [Object], "onClose": [Functio
     style={
       {
         "borderColor": "#44e858",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 18,
       }
     }
   >
@@ -654,11 +654,11 @@ exports[`Message {"closeLabel": "Close", "footer": [Object], "onClose": [Functio
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={31.5}
-        bbWidth={31.5}
+        bbHeight={36}
+        bbWidth={36}
         fill="none"
         focusable={false}
-        height={31.5}
+        height={36}
         meetOrSlice={0}
         minX={0}
         minY={0}
@@ -674,15 +674,15 @@ exports[`Message {"closeLabel": "Close", "footer": [Object], "onClose": [Functio
             },
             {
               "flex": 0,
-              "height": 31,
-              "width": 31,
+              "height": 36,
+              "width": 36,
             },
           ]
         }
         testID="Icon"
         vbHeight={24}
         vbWidth={24}
-        width={31.5}
+        width={36}
         xmlns="http://www.w3.org/2000/svg"
       >
         <RNSVGGroup
@@ -759,7 +759,7 @@ exports[`Message {"closeLabel": "Close", "footer": [Object], "onClose": [Functio
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >
@@ -827,7 +827,7 @@ exports[`Message {"closeLabel": "Close", "footer": [Object], "onClose": [Functio
             {
               "color": "#1dc831",
               "fontFamily": "TT Fellows",
-              "fontSize": 12.25,
+              "fontSize": 14,
               "fontWeight": 600,
               "includeFontPadding": false,
               "verticalAlign": "middle",
@@ -867,11 +867,11 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
     style={
       {
         "borderColor": "#44e858",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 18,
       }
     }
   >
@@ -885,11 +885,11 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={31.5}
-        bbWidth={31.5}
+        bbHeight={36}
+        bbWidth={36}
         fill="none"
         focusable={false}
-        height={31.5}
+        height={36}
         meetOrSlice={0}
         minX={0}
         minY={0}
@@ -905,15 +905,15 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
             },
             {
               "flex": 0,
-              "height": 31,
-              "width": 31,
+              "height": 36,
+              "width": 36,
             },
           ]
         }
         testID="Icon"
         vbHeight={24}
         vbWidth={24}
-        width={31.5}
+        width={36}
         xmlns="http://www.w3.org/2000/svg"
       >
         <RNSVGGroup
@@ -990,7 +990,7 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >
@@ -1057,11 +1057,11 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
       >
         <RNSVGSvgView
           align="xMidYMid"
-          bbHeight={14}
-          bbWidth={14}
+          bbHeight={16}
+          bbWidth={16}
           fill="none"
           focusable={false}
-          height={14}
+          height={16}
           meetOrSlice={0}
           minX={0}
           minY={0}
@@ -1077,15 +1077,15 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
               },
               {
                 "flex": 0,
-                "height": 14,
-                "width": 14,
+                "height": 16,
+                "width": 16,
               },
             ]
           }
           testID="Button_Icon"
           vbHeight={24}
           vbWidth={24}
-          width={14}
+          width={16}
           xmlns="http://www.w3.org/2000/svg"
         >
           <RNSVGGroup
@@ -1187,11 +1187,11 @@ exports[`Message {"hiddenIcon": false} 1`] = `
     style={
       {
         "borderColor": "#4496e8",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 18,
       }
     }
   >
@@ -1205,11 +1205,11 @@ exports[`Message {"hiddenIcon": false} 1`] = `
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={31.5}
-        bbWidth={31.5}
+        bbHeight={36}
+        bbWidth={36}
         fill="none"
         focusable={false}
-        height={31.5}
+        height={36}
         meetOrSlice={0}
         minX={0}
         minY={0}
@@ -1225,15 +1225,15 @@ exports[`Message {"hiddenIcon": false} 1`] = `
             },
             {
               "flex": 0,
-              "height": 31,
-              "width": 31,
+              "height": 36,
+              "width": 36,
             },
           ]
         }
         testID="Icon"
         vbHeight={24}
         vbWidth={24}
-        width={31.5}
+        width={36}
         xmlns="http://www.w3.org/2000/svg"
       >
         <RNSVGGroup
@@ -1333,7 +1333,7 @@ exports[`Message {"hiddenIcon": false} 1`] = `
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >
@@ -1371,11 +1371,11 @@ exports[`Message {"onTimerFinish": [Function mockConstructor], "timerValue": 5} 
     style={
       {
         "borderColor": "#4496e8",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 18,
       }
     }
   >
@@ -1396,7 +1396,7 @@ exports[`Message {"onTimerFinish": [Function mockConstructor], "timerValue": 5} 
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >
@@ -1434,11 +1434,11 @@ exports[`Message {"severity": "danger"} 1`] = `
     style={
       {
         "borderColor": "#e85244",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 18,
       }
     }
   >
@@ -1452,11 +1452,11 @@ exports[`Message {"severity": "danger"} 1`] = `
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={31.5}
-        bbWidth={31.5}
+        bbHeight={36}
+        bbWidth={36}
         fill="none"
         focusable={false}
-        height={31.5}
+        height={36}
         meetOrSlice={0}
         minX={0}
         minY={0}
@@ -1472,15 +1472,15 @@ exports[`Message {"severity": "danger"} 1`] = `
             },
             {
               "flex": 0,
-              "height": 31,
-              "width": 31,
+              "height": 36,
+              "width": 36,
             },
           ]
         }
         testID="Icon"
         vbHeight={24}
         vbWidth={24}
-        width={31.5}
+        width={36}
         xmlns="http://www.w3.org/2000/svg"
       >
         <RNSVGGroup
@@ -1580,7 +1580,7 @@ exports[`Message {"severity": "danger"} 1`] = `
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >
@@ -1618,11 +1618,11 @@ exports[`Message {} 1`] = `
     style={
       {
         "borderColor": "#4496e8",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 18,
       }
     }
   >
@@ -1636,11 +1636,11 @@ exports[`Message {} 1`] = `
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={31.5}
-        bbWidth={31.5}
+        bbHeight={36}
+        bbWidth={36}
         fill="none"
         focusable={false}
-        height={31.5}
+        height={36}
         meetOrSlice={0}
         minX={0}
         minY={0}
@@ -1656,15 +1656,15 @@ exports[`Message {} 1`] = `
             },
             {
               "flex": 0,
-              "height": 31,
-              "width": 31,
+              "height": 36,
+              "width": 36,
             },
           ]
         }
         testID="Icon"
         vbHeight={24}
         vbWidth={24}
-        width={31.5}
+        width={36}
         xmlns="http://www.w3.org/2000/svg"
       >
         <RNSVGGroup
@@ -1764,7 +1764,7 @@ exports[`Message {} 1`] = `
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >

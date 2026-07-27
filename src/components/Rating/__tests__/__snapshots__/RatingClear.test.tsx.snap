@@ -188,8 +188,8 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
         "width": 24,
       },
       {
-        "height": 42,
-        "width": 42,
+        "height": 40,
+        "width": 40,
       },
     ]
   }
@@ -487,8 +487,8 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
         "width": 24,
       },
       {
-        "height": 42,
-        "width": 42,
+        "height": 40,
+        "width": 40,
       },
     ]
   }
@@ -786,8 +786,8 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
         "width": 24,
       },
       {
-        "height": 42,
-        "width": 42,
+        "height": 40,
+        "width": 40,
       },
     ]
   }
@@ -1085,8 +1085,8 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
         "width": 24,
       },
       {
-        "height": 42,
-        "width": 42,
+        "height": 40,
+        "width": 40,
       },
     ]
   }

@@ -25,11 +25,11 @@ exports[`InputGroup component tests content: icon, position: right 1`] = `
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={14}
-    bbWidth={14}
+    bbHeight={16}
+    bbWidth={16}
     fill="none"
     focusable={false}
-    height={14}
+    height={16}
     meetOrSlice={0}
     minX={0}
     minY={0}
@@ -45,15 +45,15 @@ exports[`InputGroup component tests content: icon, position: right 1`] = `
         },
         {
           "flex": 0,
-          "height": 14,
-          "width": 14,
+          "height": 16,
+          "width": 16,
         },
       ]
     }
     testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
-    width={14}
+    width={16}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -156,7 +156,7 @@ exports[`InputGroup component tests content: string, position: left 1`] = `
       {
         "color": "#85888e",
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "verticalAlign": "middle",
       }
@@ -196,7 +196,7 @@ exports[`InputGroup component tests disabled: false 1`] = `
       {
         "color": "#85888e",
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "verticalAlign": "middle",
       }
@@ -239,7 +239,7 @@ exports[`InputGroup component tests disabled: true 1`] = `
       {
         "color": "#85888e",
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "verticalAlign": "middle",
       }

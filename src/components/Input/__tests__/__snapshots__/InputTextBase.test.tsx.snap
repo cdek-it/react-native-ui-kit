@@ -17,7 +17,7 @@ exports[`InputTextBase component functionality tests should pass args to custom 
       {
         "color": "#2b2e33",
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "verticalAlign": "middle",
       },

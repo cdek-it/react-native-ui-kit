@@ -53,7 +53,7 @@ exports[`Accordion Header elements maximal 1`] = `
           "alignItems": "center",
           "backgroundColor": "transparent",
           "flexDirection": "row",
-          "gap": 7,
+          "gap": 8,
           "paddingVertical": 14,
         },
         {},
@@ -516,7 +516,7 @@ exports[`Accordion Header elements maximal 1`] = `
       style={
         {
           "paddingBottom": 14,
-          "paddingLeft": 24.5,
+          "paddingLeft": 24,
           "paddingRight": 0,
           "paddingTop": 0,
           "position": "absolute",
@@ -583,7 +583,7 @@ exports[`Accordion Header elements minimal 1`] = `
           "alignItems": "center",
           "backgroundColor": "transparent",
           "flexDirection": "row",
-          "gap": 7,
+          "gap": 8,
           "paddingVertical": 14,
         },
         {},
@@ -760,7 +760,7 @@ exports[`Accordion Header elements minimal 1`] = `
       style={
         {
           "paddingBottom": 14,
-          "paddingLeft": 24.5,
+          "paddingLeft": 24,
           "paddingRight": 0,
           "paddingTop": 0,
           "position": "absolute",

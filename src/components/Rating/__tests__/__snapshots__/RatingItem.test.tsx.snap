@@ -177,8 +177,8 @@ exports[`RatingItem component tests checked - false, disabled - false, pressed -
         "width": 24,
       },
       {
-        "height": 42,
-        "width": 42,
+        "height": 40,
+        "width": 40,
       },
     ]
   }
@@ -454,8 +454,8 @@ exports[`RatingItem component tests checked - false, disabled - false, pressed -
         "width": 24,
       },
       {
-        "height": 42,
-        "width": 42,
+        "height": 40,
+        "width": 40,
       },
     ]
   }
@@ -731,8 +731,8 @@ exports[`RatingItem component tests checked - false, disabled - true, pressed - 
         "width": 24,
       },
       {
-        "height": 42,
-        "width": 42,
+        "height": 40,
+        "width": 40,
       },
     ]
   }
@@ -1008,8 +1008,8 @@ exports[`RatingItem component tests checked - false, disabled - true, pressed - 
         "width": 24,
       },
       {
-        "height": 42,
-        "width": 42,
+        "height": 40,
+        "width": 40,
       },
     ]
   }
@@ -1268,8 +1268,8 @@ exports[`RatingItem component tests checked - true, disabled - false, pressed - 
         "width": 24,
       },
       {
-        "height": 42,
-        "width": 42,
+        "height": 40,
+        "width": 40,
       },
     ]
   }
@@ -1511,8 +1511,8 @@ exports[`RatingItem component tests checked - true, disabled - false, pressed - 
         "width": 24,
       },
       {
-        "height": 42,
-        "width": 42,
+        "height": 40,
+        "width": 40,
       },
     ]
   }
@@ -1754,8 +1754,8 @@ exports[`RatingItem component tests checked - true, disabled - true, pressed - f
         "width": 24,
       },
       {
-        "height": 42,
-        "width": 42,
+        "height": 40,
+        "width": 40,
       },
     ]
   }
@@ -1997,8 +1997,8 @@ exports[`RatingItem component tests checked - true, disabled - true, pressed - t
         "width": 24,
       },
       {
-        "height": 42,
-        "width": 42,
+        "height": 40,
+        "width": 40,
       },
     ]
   }

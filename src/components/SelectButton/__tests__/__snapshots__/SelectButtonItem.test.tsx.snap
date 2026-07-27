@@ -37,7 +37,7 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
       "borderWidth": 1,
       "flex": 1,
       "flexDirection": "row",
-      "gap": 10.5,
+      "gap": 10,
       "height": 49,
       "justifyContent": "center",
       "opacity": 1,
@@ -47,11 +47,11 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={21}
-    bbWidth={21}
+    bbHeight={24}
+    bbWidth={24}
     fill="none"
     focusable={false}
-    height={21}
+    height={24}
     meetOrSlice={0}
     minX={0}
     minY={0}
@@ -67,15 +67,15 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
         },
         {
           "flex": 0,
-          "height": 21,
-          "width": 21,
+          "height": 24,
+          "width": 24,
         },
       ]
     }
     testID="SelectButtonItem_Icon"
     vbHeight={24}
     vbWidth={24}
-    width={21}
+    width={24}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -167,7 +167,7 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
           "fontWeight": 600,
         },
         {
-          "fontSize": 17.5,
+          "fontSize": 20,
         },
         {
           "color": "#85888e",
@@ -186,7 +186,7 @@ exports[`SelectButtonItem {"Icon": [Object], "disabled": true, "label": "ButtonS
           "fontWeight": 600,
         },
         {
-          "fontSize": 17.5,
+          "fontSize": 20,
         },
         {
           "color": "#85888e",
@@ -239,7 +239,7 @@ exports[`SelectButtonItem {"Icon": [Object], "index": 1, "label": "ButtonSelect"
       "borderWidth": 1,
       "flex": 1,
       "flexDirection": "row",
-      "gap": 10.5,
+      "gap": 10,
       "height": 56,
       "justifyContent": "center",
       "opacity": 1,
@@ -371,7 +371,7 @@ exports[`SelectButtonItem {"Icon": [Object], "index": 1, "label": "ButtonSelect"
           "fontWeight": 600,
         },
         {
-          "fontSize": 21,
+          "fontSize": 24,
         },
         {
           "color": "#85888e",
@@ -387,7 +387,7 @@ exports[`SelectButtonItem {"Icon": [Object], "index": 1, "label": "ButtonSelect"
           "fontWeight": 600,
         },
         {
-          "fontSize": 21,
+          "fontSize": 24,
         },
         {
           "color": "#85888e",
@@ -440,7 +440,7 @@ exports[`SelectButtonItem {"Icon": [Object], "showIcon": false, "size": "base"} 
       "borderWidth": 1,
       "flex": 1,
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
       "height": 35,
       "justifyContent": "center",
       "opacity": 1,
@@ -470,7 +470,7 @@ exports[`SelectButtonItem {"Icon": [Object], "showIcon": false, "size": "base"} 
           "fontWeight": 600,
         },
         {
-          "fontSize": 14,
+          "fontSize": 16,
         },
         {
           "color": "#85888e",
@@ -486,7 +486,7 @@ exports[`SelectButtonItem {"Icon": [Object], "showIcon": false, "size": "base"} 
           "fontWeight": 600,
         },
         {
-          "fontSize": 14,
+          "fontSize": 16,
         },
         {
           "color": "#85888e",
@@ -537,7 +537,7 @@ exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
       "borderWidth": 1,
       "flex": 1,
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
       "height": 28,
       "justifyContent": "center",
       "opacity": 1,
@@ -547,11 +547,11 @@ exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={14}
-    bbWidth={14}
+    bbHeight={16}
+    bbWidth={16}
     fill="none"
     focusable={false}
-    height={14}
+    height={16}
     meetOrSlice={0}
     minX={0}
     minY={0}
@@ -567,15 +567,15 @@ exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
         },
         {
           "flex": 0,
-          "height": 14,
-          "width": 14,
+          "height": 16,
+          "width": 16,
         },
       ]
     }
     testID="SelectButtonItem_Icon"
     vbHeight={24}
     vbWidth={24}
-    width={14}
+    width={16}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -669,7 +669,7 @@ exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
           "fontWeight": 600,
         },
         {
-          "fontSize": 12.25,
+          "fontSize": 14,
         },
         {
           "color": "#85888e",
@@ -685,7 +685,7 @@ exports[`SelectButtonItem {"Icon": [Object], "size": "small"} 1`] = `
           "fontWeight": 600,
         },
         {
-          "fontSize": 12.25,
+          "fontSize": 14,
         },
         {
           "color": "#85888e",
@@ -736,7 +736,7 @@ exports[`SelectButtonItem {"label": "ButtonSelect"} 1`] = `
       "borderWidth": 1,
       "flex": 1,
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
       "height": 35,
       "justifyContent": "center",
       "opacity": 1,
@@ -766,7 +766,7 @@ exports[`SelectButtonItem {"label": "ButtonSelect"} 1`] = `
           "fontWeight": 600,
         },
         {
-          "fontSize": 14,
+          "fontSize": 16,
         },
         {
           "color": "#85888e",
@@ -782,7 +782,7 @@ exports[`SelectButtonItem {"label": "ButtonSelect"} 1`] = `
           "fontWeight": 600,
         },
         {
-          "fontSize": 14,
+          "fontSize": 16,
         },
         {
           "color": "#85888e",

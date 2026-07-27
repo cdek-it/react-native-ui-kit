@@ -6,7 +6,7 @@ exports[`Caption component tests color = default, disabled = false 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 12.25,
+        "fontSize": 14,
         "includeFontPadding": false,
         "letterSpacing": -0.25,
         "lineHeight": 15,
@@ -31,17 +31,17 @@ exports[`Caption component tests color = default, disabled = false 2`] = `
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={14}
-    bbWidth={14}
+    bbHeight={16}
+    bbWidth={16}
     fill="none"
     focusable={false}
-    height={14}
+    height={16}
     meetOrSlice={0}
     minX={0}
     minY={0}
@@ -57,15 +57,15 @@ exports[`Caption component tests color = default, disabled = false 2`] = `
         },
         {
           "flex": 0,
-          "height": 14,
-          "width": 14,
+          "height": 16,
+          "width": 16,
         },
       ]
     }
     testID="CaptionIcon"
     vbHeight={24}
     vbWidth={24}
-    width={14}
+    width={16}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -165,7 +165,7 @@ exports[`Caption component tests color = default, disabled = false 2`] = `
       [
         {
           "fontFamily": "Noto Sans",
-          "fontSize": 12.25,
+          "fontSize": 14,
           "includeFontPadding": false,
           "letterSpacing": -0.25,
           "lineHeight": 15,
@@ -194,7 +194,7 @@ exports[`Caption component tests color = default, disabled = true 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 12.25,
+        "fontSize": 14,
         "includeFontPadding": false,
         "letterSpacing": -0.25,
         "lineHeight": 15,
@@ -221,17 +221,17 @@ exports[`Caption component tests color = default, disabled = true 2`] = `
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={14}
-    bbWidth={14}
+    bbHeight={16}
+    bbWidth={16}
     fill="none"
     focusable={false}
-    height={14}
+    height={16}
     meetOrSlice={0}
     minX={0}
     minY={0}
@@ -247,15 +247,15 @@ exports[`Caption component tests color = default, disabled = true 2`] = `
         },
         {
           "flex": 0,
-          "height": 14,
-          "width": 14,
+          "height": 16,
+          "width": 16,
         },
       ]
     }
     testID="CaptionIcon"
     vbHeight={24}
     vbWidth={24}
-    width={14}
+    width={16}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -355,7 +355,7 @@ exports[`Caption component tests color = default, disabled = true 2`] = `
       [
         {
           "fontFamily": "Noto Sans",
-          "fontSize": 12.25,
+          "fontSize": 14,
           "includeFontPadding": false,
           "letterSpacing": -0.25,
           "lineHeight": 15,
@@ -386,7 +386,7 @@ exports[`Caption component tests color = primary, disabled = false 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 12.25,
+        "fontSize": 14,
         "includeFontPadding": false,
         "letterSpacing": -0.25,
         "lineHeight": 15,
@@ -411,17 +411,17 @@ exports[`Caption component tests color = primary, disabled = false 2`] = `
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={14}
-    bbWidth={14}
+    bbHeight={16}
+    bbWidth={16}
     fill="none"
     focusable={false}
-    height={14}
+    height={16}
     meetOrSlice={0}
     minX={0}
     minY={0}
@@ -437,15 +437,15 @@ exports[`Caption component tests color = primary, disabled = false 2`] = `
         },
         {
           "flex": 0,
-          "height": 14,
-          "width": 14,
+          "height": 16,
+          "width": 16,
         },
       ]
     }
     testID="CaptionIcon"
     vbHeight={24}
     vbWidth={24}
-    width={14}
+    width={16}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -545,7 +545,7 @@ exports[`Caption component tests color = primary, disabled = false 2`] = `
       [
         {
           "fontFamily": "Noto Sans",
-          "fontSize": 12.25,
+          "fontSize": 14,
           "includeFontPadding": false,
           "letterSpacing": -0.25,
           "lineHeight": 15,
@@ -574,7 +574,7 @@ exports[`Caption component tests color = primary, disabled = true 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 12.25,
+        "fontSize": 14,
         "includeFontPadding": false,
         "letterSpacing": -0.25,
         "lineHeight": 15,
@@ -601,17 +601,17 @@ exports[`Caption component tests color = primary, disabled = true 2`] = `
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={14}
-    bbWidth={14}
+    bbHeight={16}
+    bbWidth={16}
     fill="none"
     focusable={false}
-    height={14}
+    height={16}
     meetOrSlice={0}
     minX={0}
     minY={0}
@@ -627,15 +627,15 @@ exports[`Caption component tests color = primary, disabled = true 2`] = `
         },
         {
           "flex": 0,
-          "height": 14,
-          "width": 14,
+          "height": 16,
+          "width": 16,
         },
       ]
     }
     testID="CaptionIcon"
     vbHeight={24}
     vbWidth={24}
-    width={14}
+    width={16}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -735,7 +735,7 @@ exports[`Caption component tests color = primary, disabled = true 2`] = `
       [
         {
           "fontFamily": "Noto Sans",
-          "fontSize": 12.25,
+          "fontSize": 14,
           "includeFontPadding": false,
           "letterSpacing": -0.25,
           "lineHeight": 15,
@@ -766,7 +766,7 @@ exports[`Caption component tests color = secondary, disabled = false 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 12.25,
+        "fontSize": 14,
         "includeFontPadding": false,
         "letterSpacing": -0.25,
         "lineHeight": 15,
@@ -791,17 +791,17 @@ exports[`Caption component tests color = secondary, disabled = false 2`] = `
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={14}
-    bbWidth={14}
+    bbHeight={16}
+    bbWidth={16}
     fill="none"
     focusable={false}
-    height={14}
+    height={16}
     meetOrSlice={0}
     minX={0}
     minY={0}
@@ -817,15 +817,15 @@ exports[`Caption component tests color = secondary, disabled = false 2`] = `
         },
         {
           "flex": 0,
-          "height": 14,
-          "width": 14,
+          "height": 16,
+          "width": 16,
         },
       ]
     }
     testID="CaptionIcon"
     vbHeight={24}
     vbWidth={24}
-    width={14}
+    width={16}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -925,7 +925,7 @@ exports[`Caption component tests color = secondary, disabled = false 2`] = `
       [
         {
           "fontFamily": "Noto Sans",
-          "fontSize": 12.25,
+          "fontSize": 14,
           "includeFontPadding": false,
           "letterSpacing": -0.25,
           "lineHeight": 15,
@@ -954,7 +954,7 @@ exports[`Caption component tests color = secondary, disabled = true 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 12.25,
+        "fontSize": 14,
         "includeFontPadding": false,
         "letterSpacing": -0.25,
         "lineHeight": 15,
@@ -981,17 +981,17 @@ exports[`Caption component tests color = secondary, disabled = true 2`] = `
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={14}
-    bbWidth={14}
+    bbHeight={16}
+    bbWidth={16}
     fill="none"
     focusable={false}
-    height={14}
+    height={16}
     meetOrSlice={0}
     minX={0}
     minY={0}
@@ -1007,15 +1007,15 @@ exports[`Caption component tests color = secondary, disabled = true 2`] = `
         },
         {
           "flex": 0,
-          "height": 14,
-          "width": 14,
+          "height": 16,
+          "width": 16,
         },
       ]
     }
     testID="CaptionIcon"
     vbHeight={24}
     vbWidth={24}
-    width={14}
+    width={16}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -1115,7 +1115,7 @@ exports[`Caption component tests color = secondary, disabled = true 2`] = `
       [
         {
           "fontFamily": "Noto Sans",
-          "fontSize": 12.25,
+          "fontSize": 14,
           "includeFontPadding": false,
           "letterSpacing": -0.25,
           "lineHeight": 15,
@@ -1146,7 +1146,7 @@ exports[`Caption component tests default props 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 12.25,
+        "fontSize": 14,
         "includeFontPadding": false,
         "letterSpacing": -0.25,
         "lineHeight": 15,

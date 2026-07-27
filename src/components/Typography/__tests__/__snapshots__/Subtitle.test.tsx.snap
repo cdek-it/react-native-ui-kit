@@ -6,7 +6,7 @@ exports[`Subtitle component tests base = false, color = default 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 10.5,
+        "fontSize": 12,
         "fontWeight": 700,
         "lineHeight": 15,
         "textTransform": "uppercase",
@@ -32,7 +32,7 @@ exports[`Subtitle component tests base = false, color = primary 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 10.5,
+        "fontSize": 12,
         "fontWeight": 700,
         "lineHeight": 15,
         "textTransform": "uppercase",
@@ -58,7 +58,7 @@ exports[`Subtitle component tests base = false, color = secondary 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 10.5,
+        "fontSize": 12,
         "fontWeight": 700,
         "lineHeight": 15,
         "textTransform": "uppercase",
@@ -84,7 +84,7 @@ exports[`Subtitle component tests base = false, color = undefined 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 10.5,
+        "fontSize": 12,
         "fontWeight": 700,
         "lineHeight": 15,
         "textTransform": "uppercase",
@@ -110,7 +110,7 @@ exports[`Subtitle component tests base = true, color = default 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 10.5,
+        "fontSize": 12,
         "fontWeight": 700,
         "lineHeight": 15,
         "textTransform": "uppercase",
@@ -119,7 +119,7 @@ exports[`Subtitle component tests base = true, color = default 1`] = `
         "color": "#2b2e33",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       {
@@ -139,7 +139,7 @@ exports[`Subtitle component tests base = true, color = primary 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 10.5,
+        "fontSize": 12,
         "fontWeight": 700,
         "lineHeight": 15,
         "textTransform": "uppercase",
@@ -148,7 +148,7 @@ exports[`Subtitle component tests base = true, color = primary 1`] = `
         "color": "#44e858",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       {
@@ -168,7 +168,7 @@ exports[`Subtitle component tests base = true, color = secondary 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 10.5,
+        "fontSize": 12,
         "fontWeight": 700,
         "lineHeight": 15,
         "textTransform": "uppercase",
@@ -177,7 +177,7 @@ exports[`Subtitle component tests base = true, color = secondary 1`] = `
         "color": "#85888e",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       {
@@ -197,7 +197,7 @@ exports[`Subtitle component tests base = true, color = undefined 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 10.5,
+        "fontSize": 12,
         "fontWeight": 700,
         "lineHeight": 15,
         "textTransform": "uppercase",
@@ -206,7 +206,7 @@ exports[`Subtitle component tests base = true, color = undefined 1`] = `
         "color": "#2b2e33",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       {
@@ -226,7 +226,7 @@ exports[`Subtitle component tests base = undefined, color = default 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 10.5,
+        "fontSize": 12,
         "fontWeight": 700,
         "lineHeight": 15,
         "textTransform": "uppercase",
@@ -252,7 +252,7 @@ exports[`Subtitle component tests base = undefined, color = primary 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 10.5,
+        "fontSize": 12,
         "fontWeight": 700,
         "lineHeight": 15,
         "textTransform": "uppercase",
@@ -278,7 +278,7 @@ exports[`Subtitle component tests base = undefined, color = secondary 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 10.5,
+        "fontSize": 12,
         "fontWeight": 700,
         "lineHeight": 15,
         "textTransform": "uppercase",
@@ -304,7 +304,7 @@ exports[`Subtitle component tests base = undefined, color = undefined 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 10.5,
+        "fontSize": 12,
         "fontWeight": 700,
         "lineHeight": 15,
         "textTransform": "uppercase",
