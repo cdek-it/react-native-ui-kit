@@ -1451,5 +1451,45 @@
     "title": { "fontSize": 20, "fontWeight": "600" },
     "content": { "padding": 24 },
     "footer": { "padding": "0 24 24 24", "gap": 8 }
+  },
+  "Checkbox": {
+    "borderRadius": 8,
+    "extend": { "borderWidth": 1 },
+    "width": 24,
+    "height": 24,
+    "background": "#404348",
+    "checkedBackground": "#f0f0f1",
+    "checkedHoverBackground": "#e2e2e4",
+    "disabledBackground": "#404348",
+    "filledBackground": "#404348",
+    "borderColor": "#56595f",
+    "hoverBorderColor": "#f0f0f1",
+    "focusBorderColor": "#f0f0f1",
+    "checkedBorderColor": "#f0f0f1",
+    "checkedHoverBorderColor": "#e2e2e4",
+    "checkedFocusBorderColor": "#44e858",
+    "checkedDisabledBorderColor": "#56595f",
+    "invalidBorderColor": "#db3424",
+    "shadow": "none",
+    "focusRing": {
+      "focusRing": 4,
+      "style": "none",
+      "color": "#d4fedc",
+      "offset": 0,
+      "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)",
+      "width": 4
+    },
+    "sm": { "width": 8, "height": 8 },
+    "lg": { "width": 20, "height": 20 },
+    "transitionDuration": 180,
+    "icon": {
+      "size": 16,
+      "color": "#f0f0f1",
+      "checkedColor": "#ffffff",
+      "checkedHoverColor": "#ffffff",
+      "disabledColor": "#a2a5a9",
+      "sm": { "size": 12 },
+      "lg": { "size": 20 }
+    }
   }
 }

@@ -1451,5 +1451,45 @@
     "title": { "fontSize": 20, "fontWeight": "600" },
     "content": { "padding": 24 },
     "footer": { "padding": "0 24 24 24", "gap": 8 }
+  },
+  "Checkbox": {
+    "borderRadius": 8,
+    "extend": { "borderWidth": 1 },
+    "width": 24,
+    "height": 24,
+    "background": "#ffffff",
+    "checkedBackground": "#2b2e33",
+    "checkedHoverBackground": "#404348",
+    "disabledBackground": "#e2e2e4",
+    "filledBackground": "#ffffff",
+    "borderColor": "#cecfd2",
+    "hoverBorderColor": "#2b2e33",
+    "focusBorderColor": "#2b2e33",
+    "checkedBorderColor": "#2b2e33",
+    "checkedHoverBorderColor": "#404348",
+    "checkedFocusBorderColor": "#44e858",
+    "checkedDisabledBorderColor": "#cecfd2",
+    "invalidBorderColor": "#f47f77",
+    "shadow": "none",
+    "focusRing": {
+      "focusRing": 4,
+      "style": "none",
+      "color": "#d4fedc",
+      "offset": 0,
+      "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)",
+      "width": 4
+    },
+    "sm": { "width": 8, "height": 8 },
+    "lg": { "width": 20, "height": 20 },
+    "transitionDuration": 180,
+    "icon": {
+      "size": 16,
+      "color": "#181a1f",
+      "checkedColor": "#ffffff",
+      "checkedHoverColor": "#ffffff",
+      "disabledColor": "#85888e",
+      "sm": { "size": 12 },
+      "lg": { "size": 20 }
+    }
   }
 }
