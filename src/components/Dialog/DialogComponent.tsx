@@ -3,6 +3,8 @@ import { View, useWindowDimensions } from 'react-native'
 
 import { StyleSheet } from 'react-native-unistyles'
 
+import { parseEdgeInsets } from './parseEdgeInsets'
+
 export interface DialogComponentProps {
   readonly body?: React.ComponentType
   readonly footer?: React.ComponentType
@@ -36,18 +38,20 @@ export const DialogComponent: React.FC<DialogComponentProps> = ({
   )
 }
 
-const styles = StyleSheet.create(({ theme }) => ({
-  root: {
-    backgroundColor: theme.Overlay.Dialog.Header.dialogHeaderBg,
-    borderColor: theme.Overlay.Overlay.overlayContentBorderColor,
-    borderRadius: theme.General.borderRadius2XL,
-  },
-  body: {
-    paddingVertical: theme.Overlay.Dialog.Body.dialogContentPaddingTopBottom,
-    paddingHorizontal: theme.Overlay.Dialog.Body.dialogContentPaddingLeftRight,
-  },
-  footer: {
-    paddingBottom: theme.Overlay.Dialog.Footer.dialogFooterPaddingLeftRight,
-    paddingHorizontal: theme.Overlay.Dialog.Footer.dialogFooterPaddingLeftRight,
-  },
-}))
+const styles = StyleSheet.create(({ theme }) => {
+  const footerPadding = parseEdgeInsets(theme.Dialog.footer.padding)
+
+  return {
+    root: {
+      backgroundColor: theme.Dialog.background,
+      borderColor: theme.Dialog.borderColor,
+      borderRadius: theme.Dialog.borderRadius,
+    },
+    body: { padding: theme.Dialog.content.padding },
+    footer: {
+      paddingTop: footerPadding.top,
+      paddingBottom: footerPadding.bottom,
+      paddingHorizontal: footerPadding.left,
+    },
+  }
+})

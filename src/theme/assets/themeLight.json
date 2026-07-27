@@ -1438,5 +1438,18 @@
     "warn": { "background": "#fddeaa", "color": "#4f3709" },
     "danger": { "background": "#fbacaa", "color": "#45120e" },
     "contrast": { "background": "#2b2e33", "color": "#ffffff" }
+  },
+  "Dialog": {
+    "borderWidth": 1,
+    "backdrop": "rgba(0, 0, 0, 0.4000)",
+    "background": "#ffffff",
+    "borderColor": "#e2e2e4",
+    "color": "#2b2e33",
+    "borderRadius": 1600,
+    "shadow": "0 4px 8px rgba(0, 0, 0, 0.2000)",
+    "header": { "padding": "24 24 14 24", "gap": 8 },
+    "title": { "fontSize": 20, "fontWeight": "600" },
+    "content": { "padding": 24 },
+    "footer": { "padding": "0 24 24 24", "gap": 8 }
   }
 }

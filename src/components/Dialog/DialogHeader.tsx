@@ -14,6 +14,8 @@ import { StyleSheet } from 'react-native-unistyles'
 import { SvgUniversal, type SvgSource } from '../../utils'
 import { Title } from '../Typography'
 
+import { parseEdgeInsets } from './parseEdgeInsets'
+
 type Severity = 'danger' | 'warning' | 'info' | 'success' | 'help'
 
 export interface DialogHeaderProps {
@@ -75,9 +77,7 @@ export const DialogHeader = ({
             <SvgUniversal
               {...styles.closeIcon}
               source={IconX}
-              uniProps={({ theme }) => ({
-                color: theme.General.actionIconColor,
-              })}
+              uniProps={({ theme }) => ({ color: theme.Dialog.color })}
             />
           </TouchableOpacity>
         ) : null}
@@ -88,29 +88,34 @@ export const DialogHeader = ({
   )
 }
 
-const styles = StyleSheet.create(({ theme, spacing, typography, border }) => ({
-  text: { flex: 1 },
-  header: {
-    flexDirection: 'row',
-    gap: spacing.Gap['gap-4'],
-    alignItems: 'center',
-    paddingBottom: theme.Overlay.Dialog.Header.dialogHeaderPaddingTopBottom,
-    padding: theme.Overlay.Dialog.Header.dialogHeaderPaddingLeftRight,
-  },
-  closeTouchable: { padding: 8 },
-  separator: {
-    height: border.Width.border,
-    backgroundColor: theme.Overlay.Overlay.overlayContentBorderColor,
-  },
-  closeIcon: {
-    width: typography.Size['text-base'],
-    height: typography.Size['text-base'],
-  },
-  severityIcon: {
-    width: typography.Size['text-2xl'],
-    height: typography.Size['text-2xl'],
-  },
-}))
+const styles = StyleSheet.create(({ theme, typography, border }) => {
+  const headerPadding = parseEdgeInsets(theme.Dialog.header.padding)
+
+  return {
+    text: { flex: 1 },
+    header: {
+      flexDirection: 'row',
+      gap: theme.Dialog.header.gap,
+      alignItems: 'center',
+      paddingTop: headerPadding.top,
+      paddingBottom: headerPadding.bottom,
+      paddingHorizontal: headerPadding.left,
+    },
+    closeTouchable: { padding: 8 },
+    separator: {
+      height: border.Width.border,
+      backgroundColor: theme.Dialog.borderColor,
+    },
+    closeIcon: {
+      width: typography.Size['text-base'],
+      height: typography.Size['text-base'],
+    },
+    severityIcon: {
+      width: typography.Size['text-2xl'],
+      height: typography.Size['text-2xl'],
+    },
+  }
+})
 
 export const DialogHeaderTestId = {
   title: 'DialogTitle',

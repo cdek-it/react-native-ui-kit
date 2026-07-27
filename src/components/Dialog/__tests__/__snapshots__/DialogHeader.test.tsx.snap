@@ -7,9 +7,10 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
       {
         "alignItems": "center",
         "flexDirection": "row",
-        "gap": 14,
-        "padding": 21,
+        "gap": 8,
         "paddingBottom": 14,
+        "paddingHorizontal": 24,
+        "paddingTop": 24,
       }
     }
   >
@@ -183,7 +184,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
         meetOrSlice={0}
         minX={0}
         minY={0}
-        stroke="rgba(0, 0, 0, 0.6000)"
+        stroke="#2b2e33"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
@@ -219,7 +220,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
           }
           stroke={
             {
-              "payload": 2566914048,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -241,7 +242,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
             }
             stroke={
               {
-                "payload": 2566914048,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -264,7 +265,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
             }
             stroke={
               {
-                "payload": 2566914048,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -295,9 +296,10 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
       {
         "alignItems": "center",
         "flexDirection": "row",
-        "gap": 14,
-        "padding": 21,
+        "gap": 8,
         "paddingBottom": 14,
+        "paddingHorizontal": 24,
+        "paddingTop": 24,
       }
     }
   >
@@ -494,7 +496,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
         meetOrSlice={0}
         minX={0}
         minY={0}
-        stroke="rgba(0, 0, 0, 0.6000)"
+        stroke="#2b2e33"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
@@ -530,7 +532,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
           }
           stroke={
             {
-              "payload": 2566914048,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -552,7 +554,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
             }
             stroke={
               {
-                "payload": 2566914048,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -575,7 +577,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
             }
             stroke={
               {
-                "payload": 2566914048,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -606,9 +608,10 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
       {
         "alignItems": "center",
         "flexDirection": "row",
-        "gap": 14,
-        "padding": 21,
+        "gap": 8,
         "paddingBottom": 14,
+        "paddingHorizontal": 24,
+        "paddingTop": 24,
       }
     }
   >
@@ -805,7 +808,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
         meetOrSlice={0}
         minX={0}
         minY={0}
-        stroke="rgba(0, 0, 0, 0.6000)"
+        stroke="#2b2e33"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
@@ -841,7 +844,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
           }
           stroke={
             {
-              "payload": 2566914048,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -863,7 +866,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
             }
             stroke={
               {
-                "payload": 2566914048,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -886,7 +889,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
             }
             stroke={
               {
-                "payload": 2566914048,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -917,9 +920,10 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
       {
         "alignItems": "center",
         "flexDirection": "row",
-        "gap": 14,
-        "padding": 21,
+        "gap": 8,
         "paddingBottom": 14,
+        "paddingHorizontal": 24,
+        "paddingTop": 24,
       }
     }
   >
@@ -1093,7 +1097,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
         meetOrSlice={0}
         minX={0}
         minY={0}
-        stroke="rgba(0, 0, 0, 0.6000)"
+        stroke="#2b2e33"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
@@ -1129,7 +1133,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
           }
           stroke={
             {
-              "payload": 2566914048,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -1151,7 +1155,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
             }
             stroke={
               {
-                "payload": 2566914048,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -1174,7 +1178,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
             }
             stroke={
               {
-                "payload": 2566914048,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -1205,9 +1209,10 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
       {
         "alignItems": "center",
         "flexDirection": "row",
-        "gap": 14,
-        "padding": 21,
+        "gap": 8,
         "paddingBottom": 14,
+        "paddingHorizontal": 24,
+        "paddingTop": 24,
       }
     }
   >
@@ -1404,7 +1409,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
         meetOrSlice={0}
         minX={0}
         minY={0}
-        stroke="rgba(0, 0, 0, 0.6000)"
+        stroke="#2b2e33"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
@@ -1440,7 +1445,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
           }
           stroke={
             {
-              "payload": 2566914048,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -1462,7 +1467,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
             }
             stroke={
               {
-                "payload": 2566914048,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -1485,7 +1490,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
             }
             stroke={
               {
-                "payload": 2566914048,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -1516,9 +1521,10 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": undefi
       {
         "alignItems": "center",
         "flexDirection": "row",
-        "gap": 14,
-        "padding": 21,
+        "gap": 8,
         "paddingBottom": 14,
+        "paddingHorizontal": 24,
+        "paddingTop": 24,
       }
     }
   >
@@ -1590,7 +1596,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": undefi
         meetOrSlice={0}
         minX={0}
         minY={0}
-        stroke="rgba(0, 0, 0, 0.6000)"
+        stroke="#2b2e33"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
@@ -1626,7 +1632,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": undefi
           }
           stroke={
             {
-              "payload": 2566914048,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -1648,7 +1654,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": undefi
             }
             stroke={
               {
-                "payload": 2566914048,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -1671,7 +1677,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": undefi
             }
             stroke={
               {
-                "payload": 2566914048,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -1702,9 +1708,10 @@ exports[`DialogHeader {"onClose": undefined, "severity": "danger", "title": "Dia
       {
         "alignItems": "center",
         "flexDirection": "row",
-        "gap": 14,
-        "padding": 21,
+        "gap": 8,
         "paddingBottom": 14,
+        "paddingHorizontal": 24,
+        "paddingTop": 24,
       }
     }
   >
@@ -1851,9 +1858,10 @@ exports[`DialogHeader {"onClose": undefined, "severity": "help", "title": "Dialo
       {
         "alignItems": "center",
         "flexDirection": "row",
-        "gap": 14,
-        "padding": 21,
+        "gap": 8,
         "paddingBottom": 14,
+        "paddingHorizontal": 24,
+        "paddingTop": 24,
       }
     }
   >
@@ -2023,9 +2031,10 @@ exports[`DialogHeader {"onClose": undefined, "severity": "info", "title": "Dialo
       {
         "alignItems": "center",
         "flexDirection": "row",
-        "gap": 14,
-        "padding": 21,
+        "gap": 8,
         "paddingBottom": 14,
+        "paddingHorizontal": 24,
+        "paddingTop": 24,
       }
     }
   >
@@ -2195,9 +2204,10 @@ exports[`DialogHeader {"onClose": undefined, "severity": "success", "title": "Di
       {
         "alignItems": "center",
         "flexDirection": "row",
-        "gap": 14,
-        "padding": 21,
+        "gap": 8,
         "paddingBottom": 14,
+        "paddingHorizontal": 24,
+        "paddingTop": 24,
       }
     }
   >
@@ -2344,9 +2354,10 @@ exports[`DialogHeader {"onClose": undefined, "severity": "warning", "title": "Di
       {
         "alignItems": "center",
         "flexDirection": "row",
-        "gap": 14,
-        "padding": 21,
+        "gap": 8,
         "paddingBottom": 14,
+        "paddingHorizontal": 24,
+        "paddingTop": 24,
       }
     }
   >
@@ -2516,9 +2527,10 @@ exports[`DialogHeader {"onClose": undefined, "severity": undefined, "title": "Di
       {
         "alignItems": "center",
         "flexDirection": "row",
-        "gap": 14,
-        "padding": 21,
+        "gap": 8,
         "paddingBottom": 14,
+        "paddingHorizontal": 24,
+        "paddingTop": 24,
       }
     }
   >
