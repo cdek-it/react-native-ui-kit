@@ -1422,5 +1422,21 @@
       "color": "#2b2e33"
     },
     "root": { "background": "#e2e2e4", "color": "#2b2e33" }
+  },
+  "Tag": {
+    "fontSize": 12,
+    "fontWeight": "400",
+    "padding": "4 8",
+    "gap": 4,
+    "borderRadius": 8,
+    "roundedBorderRadius": 1600,
+    "icon": { "size": 16 },
+    "contrast": { "background": "#2b2e33", "color": "#ffffff" },
+    "danger": { "background": "#8d2218", "color": "#fff0f0" },
+    "info": { "background": "#18538d", "color": "#f0f9ff" },
+    "primary": { "background": "#44e858", "color": "#2b2e33" },
+    "secondary": { "background": "#e2e2e4", "color": "#2b2e33" },
+    "success": { "background": "#77f48a", "color": "#f0fff3" },
+    "warn": { "background": "#9d6d0e", "color": "#fff9f0" }
   }
 }

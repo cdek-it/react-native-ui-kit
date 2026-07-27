@@ -43,12 +43,12 @@ export interface TagProps
 type TagSeverity = NonNullable<TagProps['severity']>
 
 const tagIconColor: Record<TagSeverity, (t: ThemeType['theme']) => string> = {
-  basic: (t) => t.Misc.Badge.badgeTextColor,
-  info: (t) => t.Misc.Badge.badgeInfoTextColor,
-  success: (t) => t.Misc.Badge.badgeSuccessTextColor,
-  warning: (t) => t.Misc.Badge.badgeWarningTextColor,
-  danger: (t) => t.Misc.Badge.badgeDangerTextColor,
-  secondary: (t) => t.Misc.Badge.badgeTextColor,
+  basic: (t) => t.Tag.primary.color,
+  info: (t) => t.Tag.info.color,
+  success: (t) => t.Tag.success.color,
+  warning: (t) => t.Tag.warn.color,
+  danger: (t) => t.Tag.danger.color,
+  secondary: (t) => t.Tag.secondary.color,
 }
 
 /**
@@ -104,25 +104,22 @@ const tagStyles = StyleSheet.create(
       flexDirection: 'row',
       alignItems: 'center',
       gap: spacing.Gap['gap-1'],
-      paddingHorizontal: theme.Misc.Tag.tagPadding,
-      height: theme.Misc.Tag.tagHeight,
+      paddingHorizontal: spacing.Padding['p-2'],
+      paddingVertical: spacing.Padding['p-1'],
       borderRadius: border.Radius['rounded-lg'],
       variants: {
         severity: {
-          basic: { backgroundColor: theme.Misc.Badge.badgeBg },
-          info: { backgroundColor: theme.Button.root.info.background },
-          success: { backgroundColor: theme.Button.root.success.background },
-          warning: { backgroundColor: theme.Button.root.warn.background },
-          danger: { backgroundColor: theme.Button.root.danger.background },
-          secondary: { backgroundColor: theme.Surface['surface-border'] },
+          basic: { backgroundColor: theme.Tag.primary.background },
+          info: { backgroundColor: theme.Tag.info.background },
+          success: { backgroundColor: theme.Tag.success.background },
+          warning: { backgroundColor: theme.Tag.warn.background },
+          danger: { backgroundColor: theme.Tag.danger.background },
+          secondary: { backgroundColor: theme.Tag.secondary.background },
         },
       },
     },
     roundedContainer: { borderRadius: border.Radius['rounded-full'] },
-    icon: {
-      width: theme.Misc.Tag.tagFontSize,
-      height: theme.Misc.Tag.tagFontSize,
-    },
+    icon: { width: theme.Tag.icon.size, height: theme.Tag.icon.size },
     text: {
       flexShrink: 1,
       fontSize: typography.Size['text-xs'],
@@ -131,12 +128,12 @@ const tagStyles = StyleSheet.create(
       fontFamily: fonts.primary,
       variants: {
         severity: {
-          basic: { color: theme.Misc.Badge.badgeTextColor },
-          info: { color: theme.Misc.Badge.badgeInfoTextColor },
-          success: { color: theme.Misc.Badge.badgeSuccessTextColor },
-          warning: { color: theme.Misc.Badge.badgeWarningTextColor },
-          danger: { color: theme.Misc.Badge.badgeDangerTextColor },
-          secondary: { color: theme.Misc.Badge.badgeTextColor },
+          basic: { color: theme.Tag.primary.color },
+          info: { color: theme.Tag.info.color },
+          success: { color: theme.Tag.success.color },
+          warning: { color: theme.Tag.warn.color },
+          danger: { color: theme.Tag.danger.color },
+          secondary: { color: theme.Tag.secondary.color },
         },
       },
     },
