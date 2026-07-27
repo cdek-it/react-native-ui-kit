@@ -1281,5 +1281,12 @@
     "height": 32,
     "borderRadius": 14,
     "root": { "background": "#56595f", "animationBackground": "#6d7076" }
+  },
+  "ProgressBar": {
+    "background": "#404348",
+    "borderRadius": 14,
+    "height": 16,
+    "label": { "color": "#ffffff", "fontSize": 12, "fontWeight": "400" },
+    "value": { "background": "#44e858" }
   }
 }

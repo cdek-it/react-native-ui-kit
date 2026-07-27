@@ -92,24 +92,24 @@ export const ProgressBar = memo<ProgressBarProps>(
 const styles = StyleSheet.create(({ theme, typography, border, fonts }) => ({
   container: {
     borderRadius: border.Radius['rounded-full'],
-    backgroundColor: theme.Misc.ProgressBar.progressBarBg,
+    backgroundColor: theme.ProgressBar.background,
     overflow: 'hidden',
   },
 
   indicator: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: theme.Misc.ProgressBar.progressBarValueBg,
+    backgroundColor: theme.ProgressBar.value.background,
     height: '100%',
     overflow: 'hidden',
   },
 
-  containerShowValue: { height: theme.Misc.ProgressBar.progressBarHeight },
+  containerShowValue: { height: theme.ProgressBar.height },
 
   indicatorText: {
     fontSize: typography.Size['text-xs'],
     textAlign: 'center',
-    color: theme.Misc.ProgressBar.progressBarValueTextColor,
+    color: theme.ProgressBar.label.color,
     fontFamily: fonts.primary,
   },
 }))
