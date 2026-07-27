@@ -90,10 +90,10 @@ const messageIconColor: Record<
   MessageSeverityKey,
   (t: ThemeType['theme']) => string
 > = {
-  info: (t) => t.Message.Severities.Info.infoMessageIconColor,
-  success: (t) => t.Message.Severities.Success.successMessageIconColor,
-  warning: (t) => t.Message.Severities.Warning.warningMessageIconColor,
-  danger: (t) => t.Message.Severities.Danger.dangerMessageIconColor,
+  info: (t) => t.Message.extInfo.color,
+  success: (t) => t.Message.extSuccess.color,
+  warning: (t) => t.Message.extWarn.color,
+  danger: (t) => t.Message.extError.color,
 }
 
 /**
@@ -221,29 +221,26 @@ export const Message = memo<MessageProps>(
 const messageStyles = StyleSheet.create(
   ({ theme, typography, spacing, border }) => ({
     container: {
-      borderRadius: theme.General.borderRadiusXL,
+      borderRadius: theme.Message.borderRadius,
       borderWidth: border.Width.border,
       overflow: 'hidden',
       variants: {
         severity: {
           info: {
-            borderColor: theme.Message.Severities.Info.infoMessageBorderColor,
-            backgroundColor: theme.Message.Severities.Info.infoMessageBg,
+            borderColor: theme.Message.info.borderColor,
+            backgroundColor: theme.Message.info.background,
           },
           success: {
-            borderColor:
-              theme.Message.Severities.Success.successMessageBorderColor,
-            backgroundColor: theme.Message.Severities.Success.successMessageBg,
+            borderColor: theme.Message.success.borderColor,
+            backgroundColor: theme.Message.success.background,
           },
           warning: {
-            borderColor:
-              theme.Message.Severities.Warning.warningMessageBorderColor,
-            backgroundColor: theme.Message.Severities.Warning.warningMessageBg,
+            borderColor: theme.Message.warn.borderColor,
+            backgroundColor: theme.Message.warn.background,
           },
           danger: {
-            borderColor:
-              theme.Message.Severities.Danger.dangerMessageBorderColor,
-            backgroundColor: theme.Message.Severities.Danger.dangerMessageBg,
+            borderColor: theme.Message.error.borderColor,
+            backgroundColor: theme.Message.error.background,
           },
         },
       },
@@ -256,20 +253,10 @@ const messageStyles = StyleSheet.create(
       gap: spacing.Gap['gap-4'],
       variants: {
         severity: {
-          info: {
-            borderColor: theme.Message.Severities.Info.infoMessageIconColor,
-          },
-          success: {
-            borderColor:
-              theme.Message.Severities.Success.successMessageIconColor,
-          },
-          warning: {
-            borderColor:
-              theme.Message.Severities.Warning.warningMessageIconColor,
-          },
-          danger: {
-            borderColor: theme.Message.Severities.Danger.dangerMessageIconColor,
-          },
+          info: { borderColor: theme.Message.info.borderColor },
+          success: { borderColor: theme.Message.success.borderColor },
+          warning: { borderColor: theme.Message.warn.borderColor },
+          danger: { borderColor: theme.Message.error.borderColor },
         },
       },
     },

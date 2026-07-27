@@ -7,8 +7,8 @@ exports[`Message {"Icon": [Object], "timerValue": 5} 1`] = `
     [
       {
         "backgroundColor": "#fafdff",
-        "borderColor": "#d4ecfe",
-        "borderRadius": 10.5,
+        "borderColor": "#4496e8",
+        "borderRadius": 14,
         "borderWidth": 1,
         "overflow": "hidden",
       },
@@ -69,8 +69,8 @@ exports[`Message {"Icon": [Object]} 1`] = `
     [
       {
         "backgroundColor": "#fafdff",
-        "borderColor": "#d4ecfe",
-        "borderRadius": 10.5,
+        "borderColor": "#4496e8",
+        "borderRadius": 14,
         "borderWidth": 1,
         "overflow": "hidden",
       },
@@ -230,8 +230,8 @@ exports[`Message {"body": [Object], "caption": "caption", "severity": "info", "s
     [
       {
         "backgroundColor": "#fafdff",
-        "borderColor": "#d4ecfe",
-        "borderRadius": 10.5,
+        "borderColor": "#4496e8",
+        "borderRadius": 14,
         "borderWidth": 1,
         "overflow": "hidden",
       },
@@ -428,8 +428,8 @@ exports[`Message {"body": [Object], "footer": [Object], "severity": "warning"} 1
     [
       {
         "backgroundColor": "#fffdfa",
-        "borderColor": "#ffeed4",
-        "borderRadius": 10.5,
+        "borderColor": "#f5b83d",
+        "borderRadius": 14,
         "borderWidth": 1,
         "overflow": "hidden",
       },
@@ -622,8 +622,8 @@ exports[`Message {"closeLabel": "Close", "footer": [Object], "onClose": [Functio
     [
       {
         "backgroundColor": "#fafffb",
-        "borderColor": "#d4fedc",
-        "borderRadius": 10.5,
+        "borderColor": "#44e858",
+        "borderRadius": 14,
         "borderWidth": 1,
         "overflow": "hidden",
       },
@@ -853,8 +853,8 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
     [
       {
         "backgroundColor": "#fafffb",
-        "borderColor": "#d4fedc",
-        "borderRadius": 10.5,
+        "borderColor": "#44e858",
+        "borderRadius": 14,
         "borderWidth": 1,
         "overflow": "hidden",
       },
@@ -1173,8 +1173,8 @@ exports[`Message {"hiddenIcon": false} 1`] = `
     [
       {
         "backgroundColor": "#fafdff",
-        "borderColor": "#d4ecfe",
-        "borderRadius": 10.5,
+        "borderColor": "#4496e8",
+        "borderRadius": 14,
         "borderWidth": 1,
         "overflow": "hidden",
       },
@@ -1357,8 +1357,8 @@ exports[`Message {"onTimerFinish": [Function mockConstructor], "timerValue": 5} 
     [
       {
         "backgroundColor": "#fafdff",
-        "borderColor": "#d4ecfe",
-        "borderRadius": 10.5,
+        "borderColor": "#4496e8",
+        "borderRadius": 14,
         "borderWidth": 1,
         "overflow": "hidden",
       },
@@ -1420,8 +1420,8 @@ exports[`Message {"severity": "danger"} 1`] = `
     [
       {
         "backgroundColor": "#fffafa",
-        "borderColor": "#fed4d4",
-        "borderRadius": 10.5,
+        "borderColor": "#e85244",
+        "borderRadius": 14,
         "borderWidth": 1,
         "overflow": "hidden",
       },
@@ -1604,8 +1604,8 @@ exports[`Message {} 1`] = `
     [
       {
         "backgroundColor": "#fafdff",
-        "borderColor": "#d4ecfe",
-        "borderRadius": 10.5,
+        "borderColor": "#4496e8",
+        "borderRadius": 14,
         "borderWidth": 1,
         "overflow": "hidden",
       },

@@ -975,64 +975,155 @@
     }
   },
   "Message": {
-    "Toast": {
-      "toastIconFontSize": 28,
-      "toastMessageTextMargin": 0,
-      "toastMargin": 3.5,
-      "toastPadding": 14,
-      "toastBorderWidth": 3.5,
-      "toastShadow": "0 0.25rem 0.438rem 0 $overlayContainerShadowColor",
-      "toastOpacity": "1",
-      "toastTitleFontWeight": "bold",
-      "toastDetailMargin": 0
+    "width": 400,
+    "extText": { "gap": 4 },
+    "extInfo": {
+      "color": "#77baf4",
+      "closeButton": { "color": "#77baf4", "borderColor": "#4496e8" },
+      "caption": { "color": "#ffffff" }
     },
-    "Messages": {
-      "messageMargin": 0,
-      "messagePadding": 14,
-      "messageBorderWidth": 3.5,
-      "messageIconFontSize": 28,
-      "messageTextFontSize": 14,
-      "messageTextFontWeight": "normal",
-      "messageTextColor": "#ffffff",
-      "messageTextSummaryFontSize": 14,
-      "messageTextSummaryFontWeight": "bold",
-      "messageTextSummaryColor": "#ffffff",
-      "messageTextDetailFontSize": 12.25,
-      "messageTextDetailFontWeight": "normal",
-      "messageTextDetailColor": "#f0f0f1"
+    "extAccentLine": { "width": 4 },
+    "extCloseButton": { "width": 1 },
+    "extSuccess": {
+      "color": "#77f48a",
+      "closeButton": { "color": "#77f48a", "borderColor": "#44e858" },
+      "caption": { "color": "#ffffff" }
     },
-    "InlineMessage": {
-      "inlineMessagePadding": 14,
-      "inlineMessageMargin": 0,
-      "inlineMessageIconFontSize": 28,
-      "inlineMessageTextFontSize": 14,
-      "inlineMessageBorderWidth": 3.5
+    "extWarn": {
+      "color": "#facb75",
+      "closeButton": { "color": "#facb75", "borderColor": "#f5b83d" },
+      "caption": { "color": "#ffffff" }
     },
-    "Severities": {
-      "Info": {
-        "infoMessageBg": "#0c243b",
-        "infoMessageBorderColor": "#123a61",
-        "infoMessageBorder": "1px solid $infoMessageBorderColor",
-        "infoMessageIconColor": "#77baf4"
+    "extError": {
+      "color": "#f47f77",
+      "closeButton": { "color": "#f47f77", "borderColor": "#e85244" },
+      "caption": { "color": "#ffffff" }
+    },
+    "borderRadius": 14,
+    "borderWidth": 1,
+    "transitionDuration": 180,
+    "content": {
+      "padding": 14,
+      "gap": 14,
+      "sm": { "padding": 14 },
+      "lg": { "padding": 14 }
+    },
+    "text": {
+      "fontSize": 16,
+      "fontWeight": "700",
+      "sm": { "fontSize": 16 },
+      "lg": { "fontSize": 16 }
+    },
+    "icon": { "size": 36, "sm": { "size": 36 }, "lg": { "size": 36 } },
+    "closeButton": {
+      "width": 32,
+      "height": 32,
+      "borderRadius": 14,
+      "focusRing": { "width": 4, "style": "none", "offset": 0 }
+    },
+    "closeIcon": { "size": 16, "sm": { "size": 16 }, "lg": { "size": 16 } },
+    "outlined": {
+      "root": { "borderWidth": 0 },
+      "closeButton": {
+        "hoverBackground": "transparent",
+        "focusRing": {
+          "color": "#d4fedc",
+          "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
+        }
       },
-      "Success": {
-        "successMessageBg": "#0c3b11",
-        "successMessageBorderColor": "#12611b",
-        "successMessageBorder": "1px solid $successMessageBorderColor",
-        "successMessageIconColor": "#77f48a"
+      "outlined": { "color": "transparent", "borderColor": "transparent" },
+      "simple": { "color": "transparent" }
+    },
+    "simple": { "content": { "padding": 0 } },
+    "contrast": {
+      "background": "#2b2e33",
+      "borderColor": "transparent",
+      "closeButton": {
+        "focusRing": {
+          "color": "#d4fedc",
+          "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
+        },
+        "hoverBackground": "transparent"
       },
-      "Warning": {
-        "warningMessageBg": "#453008",
-        "warningMessageBorderColor": "#6d4c0b",
-        "warningMessageBorder": "1px solid $warningMessageBorderColor",
-        "warningMessageIconColor": "#facb75"
+      "color": "#ffffff",
+      "outlined": { "borderColor": "transparent", "color": "transparent" },
+      "shadow": "none",
+      "simple": { "color": "transparent" }
+    },
+    "error": {
+      "background": "#3b100c",
+      "borderColor": "#e85244",
+      "closeButton": {
+        "focusRing": {
+          "color": "#d4fedc",
+          "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
+        },
+        "hoverBackground": "#611912"
       },
-      "Danger": {
-        "dangerMessageBg": "#3b100c",
-        "dangerMessageBorderColor": "#611912",
-        "dangerMessageBorder": "1px solid $dangerMessageBorderColor",
-        "dangerMessageIconColor": "#f47f77"
-      }
+      "color": "#2b2e33",
+      "outlined": { "borderColor": "#e85244", "color": "#2b2e33" },
+      "shadow": "none",
+      "simple": { "color": "#2b2e33" }
+    },
+    "info": {
+      "background": "#0c243b",
+      "borderColor": "#4496e8",
+      "closeButton": {
+        "focusRing": {
+          "color": "#d4fedc",
+          "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
+        },
+        "hoverBackground": "#123a61"
+      },
+      "color": "#2b2e33",
+      "outlined": { "borderColor": "#4496e8", "color": "#2b2e33" },
+      "shadow": "none",
+      "simple": { "color": "#2b2e33" }
+    },
+    "secondary": {
+      "background": "#f0f0f1",
+      "borderColor": "transparent",
+      "closeButton": {
+        "focusRing": {
+          "color": "#d4fedc",
+          "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
+        },
+        "hoverBackground": "transparent"
+      },
+      "color": "#2b2e33",
+      "outlined": { "borderColor": "transparent", "color": "transparent" },
+      "shadow": "none",
+      "simple": { "color": "transparent" }
+    },
+    "success": {
+      "background": "#0c3b11",
+      "borderColor": "#44e858",
+      "closeButton": {
+        "focusRing": {
+          "color": "#d4fedc",
+          "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
+        },
+        "hoverBackground": "#12611b"
+      },
+      "color": "#2b2e33",
+      "outlined": { "borderColor": "#44e858", "color": "#2b2e33" },
+      "shadow": "none",
+      "simple": { "color": "#2b2e33" }
+    },
+    "warn": {
+      "background": "#453008",
+      "borderColor": "#f5b83d",
+      "closeButton": {
+        "focusRing": {
+          "color": "#d4fedc",
+          "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
+        },
+        "hoverBackground": "#6d4c0b"
+      },
+      "color": "#2b2e33",
+      "outlined": { "borderColor": "#f5b83d", "color": "#2b2e33" },
+      "shadow": "none",
+      "simple": { "color": "#2b2e33" }
     }
   },
   "Data": {
