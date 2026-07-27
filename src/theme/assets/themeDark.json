@@ -1824,5 +1824,70 @@
     "borderRadius": 14,
     "root": { "invalidBorderColor": "#f47f77" },
     "extend": { "background": "#e2e2e4" }
+  },
+  "ToggleButton": {
+    "ext": { "gap": 14 },
+    "iconSize": { "sm": 16, "md": 20, "lg": 24 },
+    "iconOnlyWidth": 40,
+    "hoverBorderColor": "#56595f",
+    "checkedHoverColor": "#ffffff",
+    "checkedHoverBackground": "#e2e2e4",
+    "checkedHoverBorderColor": "#e2e2e4",
+    "extXlg": { "padding": "20 20", "iconOnlyWidth": 64 },
+    "extSm": { "iconOnlyWidth": 32 },
+    "extLg": { "iconOnlyWidth": 56 },
+    "padding": "8 14",
+    "borderRadius": 1600,
+    "gap": 8,
+    "fontWeight": "600",
+    "focusRing": {
+      "width": 4,
+      "style": "none",
+      "color": "#d4fedc",
+      "offset": 0,
+      "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
+    },
+    "sm": { "fontSize": 14, "padding": "4 14" },
+    "lg": { "fontSize": 20, "padding": "14 24" },
+    "transitionDuration": 180,
+    "background": "#404348",
+    "borderColor": "#404348",
+    "checkedBackground": "#404348",
+    "checkedBorderColor": "#404348",
+    "checkedColor": "#ffffff",
+    "color": "#ffffff",
+    "disabledBackground": "#404348",
+    "disabledBorderColor": "#404348",
+    "disabledColor": "#a2a5a9",
+    "hoverColor": "#cecfd2",
+    "invalidBorderColor": "#db3424",
+    "content": {
+      "checkedShadow": "none",
+      "padding": 0,
+      "borderRadius": 0,
+      "sm": { "padding": 0 },
+      "lg": { "padding": 0 },
+      "checkedBackground": "transparent"
+    },
+    "icon": {
+      "checkedColor": "#ffffff",
+      "color": "#2b2e33",
+      "disabledColor": "#85888e",
+      "hoverColor": "#2b2e33"
+    },
+    "root": {
+      "hoverBackground": "#cecfd2",
+      "background": "#e2e2e4",
+      "borderColor": "#e2e2e4",
+      "color": "#2b2e33",
+      "hoverColor": "#2b2e33",
+      "checkedBackground": "#2b2e33",
+      "checkedColor": "#ffffff",
+      "checkedBorderColor": "#2b2e33",
+      "disabledBackground": "#e2e2e4",
+      "disabledBorderColor": "#e2e2e4",
+      "disabledColor": "#85888e",
+      "invalidBorderColor": "#f47f77"
+    }
   }
 }

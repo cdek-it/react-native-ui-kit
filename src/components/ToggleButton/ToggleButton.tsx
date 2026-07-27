@@ -128,15 +128,11 @@ const toggleStyles = StyleSheet.create(
       overflow: 'hidden',
       variants: {
         checked: {
-          true: {
-            borderColor: theme.Form.ToggleButton.toggleButtonActiveBorderColor,
-          },
-          false: {
-            borderColor: theme.Form.ToggleButton.toggleButtonBorderColor,
-          },
+          true: { borderColor: theme.ToggleButton.root.checkedBorderColor },
+          false: { borderColor: theme.ToggleButton.root.borderColor },
         },
         pressed: {
-          true: { borderColor: theme.Form.ToggleButton.toggleButtonHoverBg },
+          true: { borderColor: theme.ToggleButton.hoverBorderColor },
           false: {},
         },
         disabled: {
@@ -148,10 +144,7 @@ const toggleStyles = StyleSheet.create(
         {
           checked: 'true',
           pressed: 'true',
-          styles: {
-            borderColor:
-              theme.Form.ToggleButton.toggleButtonActiveHoverBorderColor,
-          },
+          styles: { borderColor: theme.ToggleButton.checkedHoverBorderColor },
         },
       ],
     },
@@ -170,24 +163,20 @@ const toggleStyles = StyleSheet.create(
           base: {
             minHeight: 35,
             paddingHorizontal: theme.Button.paddingX,
-            gap: theme.General.inlineSpacing,
+            gap: spacing.Gap['gap-2'],
           },
           small: {
             minHeight: 28,
             paddingHorizontal: spacing.Padding['p-3'],
-            gap: theme.General.inlineSpacing,
+            gap: spacing.Gap['gap-2'],
           },
         },
         checked: {
-          true: {
-            backgroundColor: theme.Form.ToggleButton.toggleButtonActiveBg,
-          },
-          false: { backgroundColor: theme.Form.ToggleButton.toggleButtonBg },
+          true: { backgroundColor: theme.ToggleButton.root.checkedBackground },
+          false: { backgroundColor: theme.ToggleButton.root.background },
         },
         pressed: {
-          true: {
-            backgroundColor: theme.Form.ToggleButton.toggleButtonHoverBg,
-          },
+          true: { backgroundColor: theme.ToggleButton.root.hoverBackground },
           false: {},
         },
         disabled: {
@@ -200,7 +189,7 @@ const toggleStyles = StyleSheet.create(
           checked: 'true',
           pressed: 'true',
           styles: {
-            backgroundColor: theme.Form.ToggleButton.toggleButtonActiveHoverBg,
+            backgroundColor: theme.ToggleButton.checkedHoverBackground,
           },
         },
       ],
@@ -232,11 +221,11 @@ const toggleStyles = StyleSheet.create(
           },
         },
         checked: {
-          true: { color: theme.Form.ToggleButton.toggleButtonActiveTextColor },
-          false: { color: theme.Form.ToggleButton.toggleButtonTextColor },
+          true: { color: theme.ToggleButton.root.checkedColor },
+          false: { color: theme.ToggleButton.root.color },
         },
         pressed: {
-          true: { color: theme.Form.ToggleButton.toggleButtonHoverTextColor },
+          true: { color: theme.ToggleButton.root.hoverColor },
           false: {},
         },
         disabled: { true: { color: theme.Button.disabledColor }, false: {} },
@@ -245,9 +234,7 @@ const toggleStyles = StyleSheet.create(
         {
           checked: 'true',
           pressed: 'true',
-          styles: {
-            color: theme.Form.ToggleButton.toggleButtonTextActiveHoverColor,
-          },
+          styles: { color: theme.ToggleButton.checkedHoverColor },
         },
       ],
     },
@@ -265,11 +252,11 @@ const toggleStyles = StyleSheet.create(
           small: { fontSize: typography.Size['text-sm'] },
         },
         checked: {
-          true: { color: theme.Form.ToggleButton.toggleButtonActiveTextColor },
-          false: { color: theme.Form.ToggleButton.toggleButtonTextColor },
+          true: { color: theme.ToggleButton.root.checkedColor },
+          false: { color: theme.ToggleButton.root.color },
         },
         pressed: {
-          true: { color: theme.Form.ToggleButton.toggleButtonHoverTextColor },
+          true: { color: theme.ToggleButton.root.hoverColor },
           false: {},
         },
         disabled: { true: { color: theme.Button.disabledColor }, false: {} },
@@ -278,9 +265,7 @@ const toggleStyles = StyleSheet.create(
         {
           checked: 'true',
           pressed: 'true',
-          styles: {
-            color: theme.Form.ToggleButton.toggleButtonTextActiveHoverColor,
-          },
+          styles: { color: theme.ToggleButton.checkedHoverColor },
         },
       ],
     },
