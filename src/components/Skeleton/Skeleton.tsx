@@ -91,10 +91,10 @@ const styles = StyleSheet.create(({ border, theme }) => ({
   container: {
     borderRadius: border.Radius['rounded-lg'],
     overflow: 'hidden',
-    backgroundColor: theme.Misc.Skeleton.skeletonBg,
+    backgroundColor: theme.Skeleton.root.background,
   },
   gradientContainer: { position: 'absolute', height: '100%' },
-  gradientColor: { backgroundColor: theme.Misc.Skeleton.skeletonAnimationBg },
+  gradientColor: { backgroundColor: theme.Skeleton.root.animationBackground },
 }))
 
 export const SkeletonTestId = {

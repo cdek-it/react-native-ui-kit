@@ -1275,5 +1275,11 @@
       "colorThree": "#e85244",
       "colorTwo": "#4496e8"
     }
+  },
+  "Skeleton": {
+    "minWidth": 32,
+    "height": 32,
+    "borderRadius": 14,
+    "root": { "background": "#56595f", "animationBackground": "#6d7076" }
   }
 }
