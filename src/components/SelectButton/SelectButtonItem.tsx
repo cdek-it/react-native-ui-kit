@@ -126,8 +126,8 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
               color: disabled
                 ? 'transparent'
                 : isSelected
-                  ? theme.Form.SelectButton.selectButtonIconActiveColor
-                  : theme.Form.SelectButton.selectButtonTextColor,
+                  ? theme.SelectButton.checkedColor
+                  : theme.Typography.secondary,
             })}
           />
         ) : null}
@@ -155,7 +155,7 @@ const styles = StyleSheet.create(
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'center',
-      gap: theme.General.inlineSpacing,
+      gap: spacing.Gap['gap-2'],
       borderWidth: border.Width.border,
       borderColor: 'transparent',
     },
@@ -164,7 +164,7 @@ const styles = StyleSheet.create(
     large: { height: 49, gap: spacing.Gap['gap-3'] },
     xlarge: { height: 56, gap: spacing.Gap['gap-3'] },
     disabledContainer: {
-      borderRadius: theme.Form.SelectButton.selectButtonBorderRadius,
+      borderRadius: theme.SelectButton.ext.borderRadius,
       borderWidth: 1,
       borderColor: 'transparent',
     },
@@ -186,10 +186,8 @@ const styles = StyleSheet.create(
     labelBase: { fontSize: typography.Size['text-base'] },
     labelLarge: { fontSize: typography.Size['text-xl'] },
     labelXLarge: { fontSize: typography.Size['text-2xl'] },
-    textColor: { color: theme.Form.SelectButton.selectButtonTextColor },
-    checkedTextColor: {
-      color: theme.Form.SelectButton.selectButtonIconActiveColor,
-    },
+    textColor: { color: theme.Typography.secondary },
+    checkedTextColor: { color: theme.SelectButton.checkedColor },
     disabledTextColor: { color: 'transparent' },
   })
 )

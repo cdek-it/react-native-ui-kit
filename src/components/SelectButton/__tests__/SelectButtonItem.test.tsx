@@ -115,6 +115,6 @@ describe('SelectButtonItem', () => {
 
     icons = queryAllByTestId('SelectButtonItem_Icon')
 
-    expect(icons[0]).toHaveProp('stroke', '#56595f')
+    expect(icons[0]).toHaveProp('stroke', '#85888e')
   })
 })

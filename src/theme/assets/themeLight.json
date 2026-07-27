@@ -1811,5 +1811,18 @@
       "focusColor": "#56595f",
       "icon": { "color": "#2b2e33", "focusColor": "#56595f" }
     }
+  },
+  "SelectButton": {
+    "gap": 4,
+    "paddingX": 4,
+    "paddingY": 4,
+    "iconSize": { "sm": 16, "md": 20, "lg": 24, "xlg": 28 },
+    "checkedBackground": "#ffffff",
+    "checkedBorderColor": "#ffffff",
+    "checkedColor": "#181a1f",
+    "ext": { "borderRadius": 8 },
+    "borderRadius": 14,
+    "root": { "invalidBorderColor": "#f47f77" },
+    "extend": { "background": "#e2e2e4" }
   }
 }

@@ -7,10 +7,10 @@ exports[`SelectButtonItem {"disabled": true, "initialIndex": 1, "size": "small",
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 10.5,
+        "borderRadius": 14,
         "flexDirection": "row",
-        "gap": 3.5,
-        "padding": 3.5,
+        "gap": 4,
+        "padding": 4,
       },
       {
         "margin": 10,
@@ -61,10 +61,10 @@ exports[`SelectButtonItem {"initialIndex": 1, "size": "xlarge"} 1`] = `
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 10.5,
+        "borderRadius": 14,
         "flexDirection": "row",
-        "gap": 3.5,
-        "padding": 3.5,
+        "gap": 4,
+        "padding": 4,
       },
       undefined,
     ]
@@ -120,11 +120,11 @@ exports[`SelectButtonItem {"initialIndex": 1, "size": "xlarge"} 1`] = `
       [
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 7,
-          "bottom": 3.5,
-          "left": 3.5,
+          "borderRadius": 8,
+          "bottom": 4,
+          "left": 4,
           "position": "absolute",
-          "top": 3.5,
+          "top": 4,
           "zIndex": -1,
         },
       ]
@@ -133,11 +133,11 @@ exports[`SelectButtonItem {"initialIndex": 1, "size": "xlarge"} 1`] = `
       [
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 7,
-          "bottom": 3.5,
-          "left": 3.5,
+          "borderRadius": 8,
+          "bottom": 4,
+          "left": 4,
           "position": "absolute",
-          "top": 3.5,
+          "top": 4,
           "zIndex": -1,
         },
         {
@@ -158,10 +158,10 @@ exports[`SelectButtonItem {"initialIndex": 2, "size": "base"} 1`] = `
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 10.5,
+        "borderRadius": 14,
         "flexDirection": "row",
-        "gap": 3.5,
-        "padding": 3.5,
+        "gap": 4,
+        "padding": 4,
       },
       undefined,
     ]
@@ -217,11 +217,11 @@ exports[`SelectButtonItem {"initialIndex": 2, "size": "base"} 1`] = `
       [
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 7,
-          "bottom": 3.5,
-          "left": 3.5,
+          "borderRadius": 8,
+          "bottom": 4,
+          "left": 4,
           "position": "absolute",
-          "top": 3.5,
+          "top": 4,
           "zIndex": -1,
         },
       ]
@@ -230,11 +230,11 @@ exports[`SelectButtonItem {"initialIndex": 2, "size": "base"} 1`] = `
       [
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 7,
-          "bottom": 3.5,
-          "left": 3.5,
+          "borderRadius": 8,
+          "bottom": 4,
+          "left": 4,
           "position": "absolute",
-          "top": 3.5,
+          "top": 4,
           "zIndex": -1,
         },
         {
@@ -255,10 +255,10 @@ exports[`SelectButtonItem {"size": "large"} 1`] = `
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 10.5,
+        "borderRadius": 14,
         "flexDirection": "row",
-        "gap": 3.5,
-        "padding": 3.5,
+        "gap": 4,
+        "padding": 4,
       },
       undefined,
     ]
@@ -314,11 +314,11 @@ exports[`SelectButtonItem {"size": "large"} 1`] = `
       [
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 7,
-          "bottom": 3.5,
-          "left": 3.5,
+          "borderRadius": 8,
+          "bottom": 4,
+          "left": 4,
           "position": "absolute",
-          "top": 3.5,
+          "top": 4,
           "zIndex": -1,
         },
       ]
@@ -327,11 +327,11 @@ exports[`SelectButtonItem {"size": "large"} 1`] = `
       [
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 7,
-          "bottom": 3.5,
-          "left": 3.5,
+          "borderRadius": 8,
+          "bottom": 4,
+          "left": 4,
           "position": "absolute",
-          "top": 3.5,
+          "top": 4,
           "zIndex": -1,
         },
         {
@@ -352,10 +352,10 @@ exports[`SelectButtonItem {} 1`] = `
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 10.5,
+        "borderRadius": 14,
         "flexDirection": "row",
-        "gap": 3.5,
-        "padding": 3.5,
+        "gap": 4,
+        "padding": 4,
       },
       undefined,
     ]
@@ -409,11 +409,11 @@ exports[`SelectButtonItem {} 1`] = `
       [
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 7,
-          "bottom": 3.5,
-          "left": 3.5,
+          "borderRadius": 8,
+          "bottom": 4,
+          "left": 4,
           "position": "absolute",
-          "top": 3.5,
+          "top": 4,
           "zIndex": -1,
         },
       ]
@@ -422,11 +422,11 @@ exports[`SelectButtonItem {} 1`] = `
       [
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 7,
-          "bottom": 3.5,
-          "left": 3.5,
+          "borderRadius": 8,
+          "bottom": 4,
+          "left": 4,
           "position": "absolute",
-          "top": 3.5,
+          "top": 4,
           "zIndex": -1,
         },
         {

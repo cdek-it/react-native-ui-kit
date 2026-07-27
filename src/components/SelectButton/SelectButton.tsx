@@ -190,22 +190,20 @@ export const SelectButton = memo<SelectButtonProps>(
 const styles = StyleSheet.create(({ theme }) => ({
   container: {
     flexDirection: 'row',
-    padding: theme.Form.SelectButton.selectButtonGroupPadding,
-    gap: theme.Form.SelectButton.selectButtonGroupPadding,
-    borderRadius: theme.General.borderRadiusXL,
-    backgroundColor: theme.Form.SelectButton.selectButtonGroupBg,
+    padding: theme.SelectButton.paddingX,
+    gap: theme.SelectButton.paddingX,
+    borderRadius: theme.SelectButton.borderRadius,
+    backgroundColor: theme.SelectButton.extend.background,
   },
   frame: {
     position: 'absolute',
-    top: theme.Form.SelectButton.selectButtonGroupPadding,
-    bottom: theme.Form.SelectButton.selectButtonGroupPadding,
-    left: theme.Form.SelectButton.selectButtonGroupPadding,
-    borderRadius: theme.Form.SelectButton.selectButtonBorderRadius,
-    backgroundColor: theme.Form.SelectButton.selectButtonActiveBg,
+    top: theme.SelectButton.paddingY,
+    bottom: theme.SelectButton.paddingY,
+    left: theme.SelectButton.paddingX,
+    borderRadius: theme.SelectButton.ext.borderRadius,
+    backgroundColor: theme.SelectButton.checkedBackground,
     zIndex: -1,
   },
-  textColor: { color: theme.Form.SelectButton.selectButtonTextColor },
-  checkedTextColor: {
-    color: theme.Form.SelectButton.selectButtonIconActiveColor,
-  },
+  textColor: { color: theme.Typography.secondary },
+  checkedTextColor: { color: theme.SelectButton.checkedColor },
 }))
