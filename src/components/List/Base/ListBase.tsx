@@ -177,9 +177,6 @@ const styles = StyleSheet.create(
       paddingVertical: spacing.Padding['p-2'],
       gap: spacing.Gap['gap-4'],
     },
-    divider: {
-      borderTopColor: theme.Surface['surface-border'],
-      borderTopWidth: 1,
-    },
+    divider: { borderTopColor: theme.Divider.borderColor, borderTopWidth: 1 },
   })
 )
