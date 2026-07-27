@@ -13,6 +13,7 @@ import { StyleSheet } from 'react-native-unistyles'
 
 import type { SvgSource } from '../../../utils/SvgUniversal'
 import type { BadgeSeverity } from '../../Badge/Badge'
+import { parseEdgeInsets } from '../../Dialog/parseEdgeInsets'
 import { Body, Caption } from '../../Typography'
 import { MenuItemAccessory } from '../MenuItemAccessory'
 import { MenuItemIcon } from '../MenuItemIcon'
@@ -133,45 +134,49 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, spacing, typography, border }) => ({
-  container: {
-    borderColor: theme.Menu.Item.menuitemBorderColor,
-    borderWidth: border.Width.border,
-    borderRadius: theme.Menu.Item.menuitemBorderRadius,
-    backgroundColor: theme.Menu.Item.menuitemBg,
-  },
-  containerPressed: { backgroundColor: theme.Menu.Item.menuitemHoverBg },
-  containerDisabled: {
-    borderColor: 'transparent',
-    backgroundColor: theme.Button.disabledBackground,
-    opacity: 0.6,
-  },
-  separator: {
-    borderTopWidth: 1,
-    borderTopColor: theme.Menu.Overlay.overlayMenuBorderColor,
-    paddingTop: theme.Menu.Common.menuSeparatorMarginTopBottom,
-  },
-  contentContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: theme.General.inlineSpacing,
-    paddingHorizontal: theme.Menu.Item.menuitemPaddingLeftRight,
-    paddingVertical: theme.Menu.Item.menuitemPaddingTopBottom,
-  },
-  accessory: {
-    color: theme.Menu.Item.menuitemIconColor,
-    width: theme.Menu.Item.menuitemSubmenuIconFontSize,
-    height: theme.Menu.Item.menuitemSubmenuIconFontSize,
-  },
-  templateContainer: {
-    flexDirection: 'row',
-    gap: spacing.Gap['gap-2'],
-    flex: 1,
-  },
-  icon: {
-    width: typography.Size['text-xl'],
-    height: typography.Size['text-xl'],
-    color: theme.Menu.Item.menuitemIconColor,
-  },
-  textContainer: { gap: spacing.Gap['gap-1'], flex: 1 },
-}))
+const styles = StyleSheet.create(({ theme, spacing, typography, border }) => {
+  const itemPadding = parseEdgeInsets(theme.MenuItem.item.padding)
+
+  return {
+    container: {
+      borderColor: 'transparent',
+      borderWidth: border.Width.border,
+      borderRadius: theme.MenuItem.item.borderRadius,
+      backgroundColor: 'transparent',
+    },
+    containerPressed: { backgroundColor: theme.MenuItem.item.focusBackground },
+    containerDisabled: {
+      borderColor: 'transparent',
+      backgroundColor: theme.Button.disabledBackground,
+      opacity: 0.6,
+    },
+    separator: {
+      borderTopWidth: 1,
+      borderTopColor: theme.MenuItem.separator.borderColor,
+      paddingTop: spacing.Gap['gap-1'],
+    },
+    contentContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: spacing.Gap['gap-2'],
+      paddingHorizontal: itemPadding.left,
+      paddingVertical: itemPadding.top,
+    },
+    accessory: {
+      color: theme.MenuItem.item.icon.color,
+      width: theme.MenuItem.iconSize,
+      height: theme.MenuItem.iconSize,
+    },
+    templateContainer: {
+      flexDirection: 'row',
+      gap: spacing.Gap['gap-2'],
+      flex: 1,
+    },
+    icon: {
+      width: typography.Size['text-xl'],
+      height: typography.Size['text-xl'],
+      color: theme.MenuItem.item.icon.color,
+    },
+    textContainer: { gap: spacing.Gap['gap-1'], flex: 1 },
+  }
+})

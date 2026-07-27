@@ -1686,5 +1686,39 @@
       "hoverColor": "#facb75",
       "activeColor": "#facb75"
     }
+  },
+  "MenuItem": {
+    "paddingX": 4,
+    "iconSize": 20,
+    "paddingY": 4,
+    "extItem": {
+      "caption": { "gap": 4, "color": "#a2a5a9" },
+      "activeBackground": "#f0f0f1",
+      "activeColor": "#181a1f",
+      "icon": { "activeColor": "#181a1f" }
+    },
+    "borderRadius": 14,
+    "shadow": "0 4px 8px rgba(0, 0, 0, 0.2000)",
+    "transitionDuration": 180,
+    "background": "#404348",
+    "borderColor": "#404348",
+    "color": "#ffffff",
+    "list": { "padding": 4, "gap": 4 },
+    "submenuLabel": {
+      "padding": "8 14",
+      "fontWeight": "600",
+      "background": "transparent",
+      "color": "#a2a5a9"
+    },
+    "separator": { "borderColor": "#404348" },
+    "item": {
+      "padding": "8 14",
+      "borderRadius": 8,
+      "gap": 8,
+      "color": "#ffffff",
+      "focusBackground": "#2b2e33",
+      "focusColor": "#cecfd2",
+      "icon": { "color": "#ffffff", "focusColor": "#cecfd2" }
+    }
   }
 }
