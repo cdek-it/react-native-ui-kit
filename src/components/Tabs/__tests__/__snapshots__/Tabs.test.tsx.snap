@@ -172,9 +172,9 @@ exports[`TabItem component tests active: label, badge 1`] = `
             },
             {
               "borderRadius": 100,
-              "height": 21,
+              "height": 24,
               "justifyContent": "center",
-              "paddingHorizontal": 7,
+              "paddingHorizontal": 8,
             },
           ]
         }
@@ -184,7 +184,7 @@ exports[`TabItem component tests active: label, badge 1`] = `
           style={
             [
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -219,7 +219,7 @@ exports[`TabItem component tests active: label, badge 1`] = `
             onLayout={[Function]}
             style={
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -612,9 +612,9 @@ exports[`TabItem component tests active: label, icon, badge 1`] = `
             },
             {
               "borderRadius": 100,
-              "height": 21,
+              "height": 24,
               "justifyContent": "center",
-              "paddingHorizontal": 7,
+              "paddingHorizontal": 8,
             },
           ]
         }
@@ -624,7 +624,7 @@ exports[`TabItem component tests active: label, icon, badge 1`] = `
           style={
             [
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -659,7 +659,7 @@ exports[`TabItem component tests active: label, icon, badge 1`] = `
             onLayout={[Function]}
             style={
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -934,9 +934,9 @@ exports[`TabItem component tests disabled: label, badge 1`] = `
             },
             {
               "borderRadius": 100,
-              "height": 21,
+              "height": 24,
               "justifyContent": "center",
-              "paddingHorizontal": 7,
+              "paddingHorizontal": 8,
             },
           ]
         }
@@ -946,7 +946,7 @@ exports[`TabItem component tests disabled: label, badge 1`] = `
           style={
             [
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -981,7 +981,7 @@ exports[`TabItem component tests disabled: label, badge 1`] = `
             onLayout={[Function]}
             style={
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -1376,9 +1376,9 @@ exports[`TabItem component tests disabled: label, icon, badge 1`] = `
             },
             {
               "borderRadius": 100,
-              "height": 21,
+              "height": 24,
               "justifyContent": "center",
-              "paddingHorizontal": 7,
+              "paddingHorizontal": 8,
             },
           ]
         }
@@ -1388,7 +1388,7 @@ exports[`TabItem component tests disabled: label, icon, badge 1`] = `
           style={
             [
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -1423,7 +1423,7 @@ exports[`TabItem component tests disabled: label, icon, badge 1`] = `
             onLayout={[Function]}
             style={
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -1604,9 +1604,9 @@ exports[`TabItem component tests label, badge 1`] = `
             },
             {
               "borderRadius": 100,
-              "height": 21,
+              "height": 24,
               "justifyContent": "center",
-              "paddingHorizontal": 7,
+              "paddingHorizontal": 8,
             },
           ]
         }
@@ -1616,7 +1616,7 @@ exports[`TabItem component tests label, badge 1`] = `
           style={
             [
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -1651,7 +1651,7 @@ exports[`TabItem component tests label, badge 1`] = `
             onLayout={[Function]}
             style={
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -2036,9 +2036,9 @@ exports[`TabItem component tests label, icon, badge 1`] = `
             },
             {
               "borderRadius": 100,
-              "height": 21,
+              "height": 24,
               "justifyContent": "center",
-              "paddingHorizontal": 7,
+              "paddingHorizontal": 8,
             },
           ]
         }
@@ -2048,7 +2048,7 @@ exports[`TabItem component tests label, icon, badge 1`] = `
           style={
             [
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -2083,7 +2083,7 @@ exports[`TabItem component tests label, icon, badge 1`] = `
             onLayout={[Function]}
             style={
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -2477,9 +2477,9 @@ exports[`Tabs component tests disabled 1`] = `
               },
               {
                 "borderRadius": 100,
-                "height": 21,
+                "height": 24,
                 "justifyContent": "center",
-                "paddingHorizontal": 7,
+                "paddingHorizontal": 8,
               },
             ]
           }
@@ -2489,7 +2489,7 @@ exports[`Tabs component tests disabled 1`] = `
             style={
               [
                 {
-                  "color": "#000000",
+                  "color": "#2b2e33",
                   "fontFamily": "TT Fellows",
                   "fontSize": 10.5,
                   "includeFontPadding": false,
@@ -2524,7 +2524,7 @@ exports[`Tabs component tests disabled 1`] = `
               onLayout={[Function]}
               style={
                 {
-                  "color": "#000000",
+                  "color": "#2b2e33",
                   "fontFamily": "TT Fellows",
                   "fontSize": 10.5,
                   "includeFontPadding": false,
@@ -2934,9 +2934,9 @@ exports[`Tabs component tests normal 1`] = `
               },
               {
                 "borderRadius": 100,
-                "height": 21,
+                "height": 24,
                 "justifyContent": "center",
-                "paddingHorizontal": 7,
+                "paddingHorizontal": 8,
               },
             ]
           }
@@ -2946,7 +2946,7 @@ exports[`Tabs component tests normal 1`] = `
             style={
               [
                 {
-                  "color": "#000000",
+                  "color": "#2b2e33",
                   "fontFamily": "TT Fellows",
                   "fontSize": 10.5,
                   "includeFontPadding": false,
@@ -2981,7 +2981,7 @@ exports[`Tabs component tests normal 1`] = `
               onLayout={[Function]}
               style={
                 {
-                  "color": "#000000",
+                  "color": "#2b2e33",
                   "fontFamily": "TT Fellows",
                   "fontSize": 10.5,
                   "includeFontPadding": false,

@@ -1707,9 +1707,9 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
               },
               {
                 "borderRadius": 100,
-                "height": 21,
+                "height": 24,
                 "justifyContent": "center",
-                "paddingHorizontal": 7,
+                "paddingHorizontal": 8,
               },
             ]
           }
@@ -1719,7 +1719,7 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
             style={
               [
                 {
-                  "color": "#000000",
+                  "color": "#2b2e33",
                   "fontFamily": "TT Fellows",
                   "fontSize": 10.5,
                   "includeFontPadding": false,
@@ -1754,7 +1754,7 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
               onLayout={[Function]}
               style={
                 {
-                  "color": "#000000",
+                  "color": "#2b2e33",
                   "fontFamily": "TT Fellows",
                   "fontSize": 10.5,
                   "includeFontPadding": false,

@@ -1329,5 +1329,33 @@
       "group": { "offset": -24 },
       "fontSize": 16
     }
+  },
+  "Badge": {
+    "extDot": {
+      "success": { "background": "#1dc831" },
+      "info": { "background": "#1e76cd" },
+      "warn": { "background": "#dc9710" },
+      "danger": { "background": "#db3424" },
+      "lg": { "size": 12 },
+      "xlg": { "size": 16 }
+    },
+    "ext": { "padding": 0 },
+    "borderRadius": 8,
+    "padding": 8,
+    "fontSize": 12,
+    "fontWeight": "400",
+    "minWidth": 24,
+    "height": 24,
+    "dot": { "size": 8 },
+    "sm": { "fontSize": 12, "minWidth": 0, "height": 0 },
+    "lg": { "fontSize": 12, "minWidth": 28, "height": 28 },
+    "xl": { "fontSize": 12, "minWidth": 32, "height": 32 },
+    "contrast": { "background": "#2b2e33", "color": "#ffffff" },
+    "danger": { "background": "#8d2218", "color": "#fff0f0" },
+    "info": { "background": "#18538d", "color": "#f0f9ff" },
+    "primary": { "background": "#44e858", "color": "#2b2e33" },
+    "secondary": { "background": "#2b2e33", "color": "#ffffff" },
+    "success": { "background": "#aafbb7", "color": "#f0fff3" },
+    "warn": { "background": "#9d6d0e", "color": "#fff9f0" }
   }
 }

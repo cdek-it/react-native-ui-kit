@@ -109,7 +109,7 @@ const badgeStyles = StyleSheet.create(
     dot: {
       variants: {
         severity: {
-          basic: { backgroundColor: theme.Misc.Badge.badgeBg },
+          basic: { backgroundColor: theme.Badge.primary.background },
           info: { backgroundColor: theme.Button.root.info.background },
           success: { backgroundColor: theme.Button.root.success.background },
           warning: { backgroundColor: theme.Button.root.warn.background },
@@ -118,18 +118,18 @@ const badgeStyles = StyleSheet.create(
       },
     },
     dotShape: {
-      width: theme.Misc.Badge.badgeDotSize,
-      height: theme.Misc.Badge.badgeDotSize,
+      width: theme.Badge.dot.size,
+      height: theme.Badge.dot.size,
       borderRadius: border.Radius['rounded-full'],
     },
     textBadgeContainer: {
-      height: theme.Misc.Badge.badgeHeight,
-      paddingHorizontal: theme.Misc.Tag.tagPadding,
+      height: theme.Badge.height,
+      paddingHorizontal: theme.Badge.padding,
       justifyContent: 'center',
       borderRadius: border.Radius['rounded-full'],
     },
     textBadge: {
-      color: theme.Misc.Badge.badgeTextColor,
+      color: theme.Badge.primary.color,
       fontSize: typography.Size['text-xs'],
       includeFontPadding: false,
       verticalAlign: 'middle',
