@@ -55,13 +55,13 @@ exports[`ButtonSeverity component tests badge - basic 1`] = `
             "alignItems": "center",
             "backgroundColor": "#44e858",
             "borderColor": "transparent",
-            "borderRadius": 12,
+            "borderRadius": 14,
             "borderWidth": 1,
             "flexDirection": "row",
             "gap": 8,
             "height": "auto",
             "justifyContent": "center",
-            "paddingHorizontal": 16,
+            "paddingHorizontal": 14,
             "paddingVertical": 8,
           },
           false,
@@ -103,7 +103,7 @@ exports[`ButtonSeverity component tests badge - basic 1`] = `
         style={
           [
             {
-              "backgroundColor": "#fff0f0",
+              "backgroundColor": "#fbacaa",
             },
             {
               "borderRadius": 100,
@@ -227,13 +227,13 @@ exports[`ButtonSeverity component tests badge - dot 1`] = `
             "alignItems": "center",
             "backgroundColor": "#44e858",
             "borderColor": "transparent",
-            "borderRadius": 12,
+            "borderRadius": 14,
             "borderWidth": 1,
             "flexDirection": "row",
             "gap": 8,
             "height": "auto",
             "justifyContent": "center",
-            "paddingHorizontal": 16,
+            "paddingHorizontal": 14,
             "paddingVertical": 8,
           },
           false,
@@ -274,7 +274,7 @@ exports[`ButtonSeverity component tests badge - dot 1`] = `
         style={
           [
             {
-              "backgroundColor": "#f0f9ff",
+              "backgroundColor": "#aad7fb",
             },
             {
               "borderRadius": 100,

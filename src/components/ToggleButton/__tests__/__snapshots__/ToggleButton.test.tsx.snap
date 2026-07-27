@@ -353,7 +353,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
           "flexDirection": "row",
           "gap": 7,
           "minHeight": 35,
-          "paddingHorizontal": 16,
+          "paddingHorizontal": 14,
           "paddingVertical": 8,
         },
         {
@@ -817,7 +817,7 @@ exports[`ToggleButton snapshots default 1`] = `
           "flexDirection": "row",
           "gap": 7,
           "minHeight": 35,
-          "paddingHorizontal": 16,
+          "paddingHorizontal": 14,
           "paddingVertical": 8,
         },
         {

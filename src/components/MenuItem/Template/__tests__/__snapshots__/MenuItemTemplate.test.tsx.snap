@@ -215,7 +215,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
                 style={
                   [
                     {
-                      "backgroundColor": "#fff0f0",
+                      "backgroundColor": "#fbacaa",
                     },
                     {
                       "borderRadius": 100,
@@ -1824,7 +1824,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
                 style={
                   [
                     {
-                      "backgroundColor": "#fff9f0",
+                      "backgroundColor": "#fddeaa",
                     },
                     {
                       "borderRadius": 100,

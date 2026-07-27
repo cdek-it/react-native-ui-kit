@@ -2473,7 +2473,7 @@ exports[`Tabs component tests disabled 1`] = `
           style={
             [
               {
-                "backgroundColor": "#fff0f0",
+                "backgroundColor": "#fbacaa",
               },
               {
                 "borderRadius": 100,
@@ -2930,7 +2930,7 @@ exports[`Tabs component tests normal 1`] = `
           style={
             [
               {
-                "backgroundColor": "#fff0f0",
+                "backgroundColor": "#fbacaa",
               },
               {
                 "borderRadius": 100,
