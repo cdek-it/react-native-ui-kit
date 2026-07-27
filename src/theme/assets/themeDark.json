@@ -1303,5 +1303,31 @@
       "padding": "14 0",
       "content": { "padding": "8 0" }
     }
+  },
+  "Avatar": {
+    "borderColor": "#56595f",
+    "circle": { "borderRadius": 1600 },
+    "width": 32,
+    "height": 32,
+    "fontSize": 16,
+    "color": "#ffffff",
+    "background": "#44e858",
+    "borderRadius": 14,
+    "icon": { "size": 16 },
+    "group": { "borderColor": "#2b2e33", "offset": -12 },
+    "lg": {
+      "width": 40,
+      "height": 40,
+      "fontSize": 16,
+      "icon": { "size": 16 },
+      "group": { "offset": -12 }
+    },
+    "xl": {
+      "width": 56,
+      "height": 56,
+      "icon": { "size": 24 },
+      "group": { "offset": -24 },
+      "fontSize": 16
+    }
   }
 }

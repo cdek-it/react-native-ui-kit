@@ -188,9 +188,7 @@ export const Avatar = memo<AvatarProps>(
           height={iconSize}
           source={Icon}
           testID={AvatarTestId.icon}
-          uniProps={({ theme }) => ({
-            color: iconColor ?? theme.Misc.Avatar.avatarTextColor,
-          })}
+          uniProps={({ theme }) => ({ color: iconColor ?? theme.Avatar.color })}
           width={iconSize}
         />
       )
@@ -261,18 +259,18 @@ const styles = StyleSheet.create(({ theme, border, typography, fonts }) => ({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: theme.General.borderRadiusXL,
+    borderRadius: theme.Avatar.borderRadius,
     borderWidth: 1,
-    borderColor: theme.Misc.Avatar.avatarBorderColor,
-    backgroundColor: theme.Misc.Avatar.avatarBg,
+    borderColor: theme.Avatar.borderColor,
+    backgroundColor: theme.Avatar.background,
     overflow: 'hidden',
   },
-  backgroundFill: { backgroundColor: theme.Misc.Avatar.avatarBg },
+  backgroundFill: { backgroundColor: theme.Avatar.background },
   circle: { borderRadius: border.Radius['rounded-full'] },
   text: {
     fontSize: typography.Size['text-base'],
     textTransform: 'uppercase',
-    color: theme.Misc.Avatar.avatarTextColor,
+    color: theme.Avatar.color,
     includeFontPadding: false,
     verticalAlign: 'middle',
     fontFamily: fonts.secondary,

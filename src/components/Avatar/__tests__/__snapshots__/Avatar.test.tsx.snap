@@ -11,8 +11,8 @@ exports[`Avatar component tests Size: custom, shape: circle, type: icon, with cu
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -149,8 +149,8 @@ exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -180,7 +180,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#000000"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -216,7 +216,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
         }
         stroke={
           {
-            "payload": 4278190080,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -238,7 +238,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -261,7 +261,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -287,8 +287,8 @@ exports[`Avatar component tests Size: large, shape: circle, type: image 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -336,8 +336,8 @@ exports[`Avatar component tests Size: large, shape: circle, type: label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -362,7 +362,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: label 1`] = `
       numberOfLines={1}
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
@@ -389,8 +389,8 @@ exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -418,7 +418,7 @@ exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#000000"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -454,7 +454,7 @@ exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
         }
         stroke={
           {
-            "payload": 4278190080,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -476,7 +476,7 @@ exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -499,7 +499,7 @@ exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -525,8 +525,8 @@ exports[`Avatar component tests Size: large, shape: square, type: image 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -572,8 +572,8 @@ exports[`Avatar component tests Size: large, shape: square, type: label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -596,7 +596,7 @@ exports[`Avatar component tests Size: large, shape: square, type: label 1`] = `
       numberOfLines={1}
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
@@ -623,8 +623,8 @@ exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -654,7 +654,7 @@ exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#000000"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -690,7 +690,7 @@ exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
         }
         stroke={
           {
-            "payload": 4278190080,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -712,7 +712,7 @@ exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -735,7 +735,7 @@ exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -761,8 +761,8 @@ exports[`Avatar component tests Size: normal, shape: circle, type: image 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -810,8 +810,8 @@ exports[`Avatar component tests Size: normal, shape: circle, type: label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -836,7 +836,7 @@ exports[`Avatar component tests Size: normal, shape: circle, type: label 1`] = `
       numberOfLines={1}
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
@@ -863,8 +863,8 @@ exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -892,7 +892,7 @@ exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#000000"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -928,7 +928,7 @@ exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
         }
         stroke={
           {
-            "payload": 4278190080,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -950,7 +950,7 @@ exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -973,7 +973,7 @@ exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -999,8 +999,8 @@ exports[`Avatar component tests Size: normal, shape: square, type: image 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1046,8 +1046,8 @@ exports[`Avatar component tests Size: normal, shape: square, type: label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1070,7 +1070,7 @@ exports[`Avatar component tests Size: normal, shape: square, type: label 1`] = `
       numberOfLines={1}
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
@@ -1097,8 +1097,8 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1128,7 +1128,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#000000"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -1164,7 +1164,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
         }
         stroke={
           {
-            "payload": 4278190080,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -1186,7 +1186,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -1209,7 +1209,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -1235,8 +1235,8 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: image 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1284,8 +1284,8 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1310,7 +1310,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: label 1`] = `
       numberOfLines={1}
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
@@ -1337,8 +1337,8 @@ exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1366,7 +1366,7 @@ exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#000000"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -1402,7 +1402,7 @@ exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
         }
         stroke={
           {
-            "payload": 4278190080,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -1424,7 +1424,7 @@ exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -1447,7 +1447,7 @@ exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -1473,8 +1473,8 @@ exports[`Avatar component tests Size: xlarge, shape: square, type: image 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1520,8 +1520,8 @@ exports[`Avatar component tests Size: xlarge, shape: square, type: label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1544,7 +1544,7 @@ exports[`Avatar component tests Size: xlarge, shape: square, type: label 1`] = `
       numberOfLines={1}
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
@@ -1571,8 +1571,8 @@ exports[`Avatar component tests With badge, showBadge: false 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1597,7 +1597,7 @@ exports[`Avatar component tests With badge, showBadge: false 1`] = `
       numberOfLines={1}
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
@@ -1624,8 +1624,8 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1650,7 +1650,7 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
       numberOfLines={1}
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
           "fontSize": 14,
           "includeFontPadding": false,
