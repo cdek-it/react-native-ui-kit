@@ -102,45 +102,42 @@ export const useSliderStyles = (
   }
 }
 
-const switchStyles = StyleSheet.create(({ theme, border }) => ({
+const switchStyles = StyleSheet.create(({ theme }) => ({
   container: {
-    height: theme.Form.inputSwitch.inputSwitchHeight,
-    width: theme.Form.inputSwitch.inputSwitchWidth,
+    height: theme.InputSwitch.height,
+    width: theme.InputSwitch.width,
   },
 
   slider: {
-    padding: theme.Form.inputSwitch.inputSwitchSliderPadding,
-    height: theme.Form.inputSwitch.inputSwitchHeight,
-    width: theme.Form.inputSwitch.inputSwitchWidth,
-    borderRadius: border.Radius['rounded-full'],
-    borderWidth: border.Width.border,
+    padding: theme.InputSwitch.gap,
+    height: theme.InputSwitch.height,
+    width: theme.InputSwitch.width,
+    borderRadius: theme.InputSwitch.borderRadius,
+    borderWidth: theme.InputSwitch.borderWidth,
   },
 
-  sliderOff: { backgroundColor: theme.Form.inputSwitch.inputSwitchSliderOffBg },
+  sliderOff: { backgroundColor: theme.InputSwitch.root.background },
 
-  sliderOn: { backgroundColor: theme.Form.inputSwitch.inputSwitchSliderOnBg },
+  sliderOn: { backgroundColor: theme.InputSwitch.root.checkedBackground },
 
-  sliderPressed: {
-    backgroundColor: theme.Form.inputSwitch.inputSwitchSliderOffHoverBg,
-  },
+  sliderPressed: { backgroundColor: theme.InputSwitch.root.hoverBackground },
 
   sliderOnPressed: {
-    backgroundColor: theme.Form.inputSwitch.inputSwitchSliderOnHoverBg,
+    backgroundColor: theme.InputSwitch.root.checkedHoverBackground,
   },
 
+  // v2 задаёт единый root.disabledBackground — off/on-disabled совпадают.
   sliderDisabled: {
-    backgroundColor: theme.custom.inputSwitch.inputSwitchSliderOffDisabledBg,
+    backgroundColor: theme.InputSwitch.root.disabledBackground,
   },
 
   sliderOnDisabled: {
-    backgroundColor: theme.custom.inputSwitch.inputSwitchSliderOnDisabledBg,
+    backgroundColor: theme.InputSwitch.root.disabledBackground,
   },
 
-  sliderNoDanger: { borderColor: 'transparent' },
+  sliderNoDanger: { borderColor: theme.InputSwitch.borderColor },
 
-  sliderDanger: {
-    borderColor: theme.Form.InputText.inputErrorBorderColor,
-    outlineColor: theme.General.focusOutlineErrorColor,
-    outlineWidth: Math.round(theme.General.focusShadowWidth),
-  },
+  // v2 не содержит error-outline токена для toggleswitch — danger сводится к
+  // смене цвета рамки на invalidBorderColor (web-only outline не переносим).
+  sliderDanger: { borderColor: theme.InputSwitch.invalidBorderColor },
 }))

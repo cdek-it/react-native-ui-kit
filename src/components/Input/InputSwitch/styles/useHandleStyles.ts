@@ -48,27 +48,27 @@ export const useHandleStyles = (checked: boolean) => {
   return { handleStyle }
 }
 
-const handleStyles = StyleSheet.create(({ theme, border }) => ({
+const handleStyles = StyleSheet.create(({ theme }) => ({
   handle: {
-    height: theme.Form.inputSwitch.inputSwitchHandleHeight,
-    width: theme.Form.inputSwitch.inputSwitchHandleWidth,
-    borderRadius: border.Radius['rounded-full'],
-    backgroundColor: theme.Form.inputSwitch.inputSwitchHandleOffBg,
+    height: theme.InputSwitch.handle.size,
+    width: theme.InputSwitch.handle.size,
+    borderRadius: theme.InputSwitch.handle.borderRadius,
+    backgroundColor: theme.InputSwitch.handle.background,
     position: 'absolute',
-    top: theme.Form.inputSwitch.inputSwitchSliderPadding - border.Width.border,
+    top: theme.InputSwitch.gap - theme.InputSwitch.borderWidth,
   },
 
   handleOff: {
-    backgroundColor: theme.Form.inputSwitch.inputSwitchHandleOffBg,
-    left: theme.Form.inputSwitch.inputSwitchSliderPadding - border.Width.border,
+    backgroundColor: theme.InputSwitch.handle.background,
+    left: theme.InputSwitch.gap - theme.InputSwitch.borderWidth,
   },
 
   handleOn: {
-    backgroundColor: theme.Form.inputSwitch.inputSwitchHandleOnBg,
+    backgroundColor: theme.InputSwitch.handle.checkedBackground,
     left:
-      theme.Form.inputSwitch.inputSwitchWidth -
-      theme.Form.inputSwitch.inputSwitchSliderPadding -
-      theme.Form.inputSwitch.inputSwitchHandleWidth -
-      1,
+      theme.InputSwitch.width -
+      theme.InputSwitch.gap -
+      theme.InputSwitch.handle.size -
+      theme.InputSwitch.borderWidth,
   },
 }))

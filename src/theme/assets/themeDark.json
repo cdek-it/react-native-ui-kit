@@ -1220,5 +1220,47 @@
         "galleriaThumbnailNavigatorHeight": 28
       }
     }
+  },
+  "InputSwitch": {
+    "width": 40,
+    "height": 24,
+    "borderRadius": 1600,
+    "gap": 4,
+    "borderWidth": 1,
+    "shadow": "none",
+    "focusRing": {
+      "width": 4,
+      "style": "none",
+      "color": "#d4fedc",
+      "offset": 0,
+      "shadow": "none"
+    },
+    "borderColor": "transparent",
+    "hoverBorderColor": "transparent",
+    "checkedBorderColor": "transparent",
+    "checkedHoverBorderColor": "transparent",
+    "invalidBorderColor": "#db3424",
+    "transitionDuration": 180,
+    "slideDuration": 180,
+    "handle": {
+      "borderRadius": 1600,
+      "size": 16,
+      "background": "#56595f",
+      "checkedBackground": "#56595f",
+      "checkedColor": "#2b2e33",
+      "checkedHoverBackground": "#56595f",
+      "checkedHoverColor": "#2b2e33",
+      "color": "#2b2e33",
+      "disabledBackground": "#85888e",
+      "hoverBackground": "#56595f",
+      "hoverColor": "#2b2e33"
+    },
+    "root": {
+      "background": "#6d7076",
+      "checkedBackground": "#2b2e33",
+      "checkedHoverBackground": "#404348",
+      "disabledBackground": "#e2e2e4",
+      "hoverBackground": "#85888e"
+    }
   }
 }

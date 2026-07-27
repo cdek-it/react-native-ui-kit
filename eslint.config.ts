@@ -24,6 +24,7 @@ export default defineConfig([
       '.gemini/**/*',
       '.storybook/**/*',
       'configs/cz-conventional-mobile/**/*',
+      'scripts/**/*',
     ],
   },
 ])
