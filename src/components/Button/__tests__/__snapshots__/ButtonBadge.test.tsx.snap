@@ -87,7 +87,6 @@ exports[`ButtonSeverity component tests badge - basic 1`] = `
       </Text>
     </View>
     <View
-      onLayout={[Function]}
       style={
         [
           {
@@ -97,6 +96,14 @@ exports[`ButtonSeverity component tests badge - basic 1`] = `
             "position": "absolute",
             "right": 0,
             "top": 0,
+            "transform": [
+              {
+                "translateX": "50%",
+              },
+              {
+                "translateY": "-50%",
+              },
+            ],
           },
         ]
       }
