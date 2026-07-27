@@ -102,7 +102,7 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "horizontal", "sho
       [
         {
           "alignItems": "center",
-          "backgroundColor": "#f0f0f1",
+          "backgroundColor": "#ffffff",
           "flexDirection": "row",
           "flexShrink": 1,
           "gap": 7,
@@ -273,7 +273,7 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
       [
         {
           "alignItems": "center",
-          "backgroundColor": "#f0f0f1",
+          "backgroundColor": "#ffffff",
           "flexDirection": "row",
           "flexShrink": 1,
           "gap": 7,
@@ -296,7 +296,7 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#85888e"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -332,7 +332,7 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
         }
         stroke={
           {
-            "payload": 4286941326,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -354,7 +354,7 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
           }
           stroke={
             {
-              "payload": 4286941326,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -470,7 +470,7 @@ exports[`Divider {"Icon": [Object], "align": "start", "layout": "horizontal", "s
       [
         {
           "alignItems": "center",
-          "backgroundColor": "#f0f0f1",
+          "backgroundColor": "#ffffff",
           "flexDirection": "row",
           "flexShrink": 1,
           "gap": 7,
@@ -490,7 +490,7 @@ exports[`Divider {"Icon": [Object], "align": "start", "layout": "horizontal", "s
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#85888e"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -526,7 +526,7 @@ exports[`Divider {"Icon": [Object], "align": "start", "layout": "horizontal", "s
         }
         stroke={
           {
-            "payload": 4286941326,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -548,7 +548,7 @@ exports[`Divider {"Icon": [Object], "align": "start", "layout": "horizontal", "s
           }
           stroke={
             {
-              "payload": 4286941326,
+              "payload": 4281019955,
               "type": 0,
             }
           }

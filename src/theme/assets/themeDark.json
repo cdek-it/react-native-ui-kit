@@ -1288,5 +1288,20 @@
     "height": 16,
     "label": { "color": "#ffffff", "fontSize": 12, "fontWeight": "400" },
     "value": { "background": "#44e858" }
+  },
+  "Divider": {
+    "content": { "gap": 8, "background": "#404348", "color": "#ffffff" },
+    "iconSize": 16,
+    "borderColor": "#404348",
+    "horizontal": {
+      "margin": "14 0",
+      "padding": "0 14",
+      "content": { "padding": "0 8" }
+    },
+    "vertical": {
+      "margin": "0 14",
+      "padding": "14 0",
+      "content": { "padding": "8 0" }
+    }
   }
 }

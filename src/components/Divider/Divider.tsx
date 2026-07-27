@@ -112,7 +112,7 @@ export const Divider = memo<DividerProps>(
                   {...styles.icon}
                   source={Icon}
                   uniProps={({ theme }) => ({
-                    color: theme.General.textSecondaryColor,
+                    color: theme.Divider.content.color,
                   })}
                 />
               ) : null}
@@ -160,20 +160,20 @@ const styles = StyleSheet.create(({ spacing, theme, sizing, typography }) => ({
     width: '100%',
     height: '100%',
     borderWidth: 1,
-    borderColor: theme.General.dividerColor,
+    borderColor: theme.Divider.borderColor,
   },
   lineDash: { borderStyle: 'dashed' },
   content: {
     flexShrink: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: theme.General.inlineSpacing,
+    paddingHorizontal: spacing.Padding['p-2'],
     gap: spacing.Gap['gap-2'],
-    backgroundColor: theme.Panel.Panel.Body.panelContentBg,
+    backgroundColor: theme.Divider.content.background,
   },
   contentVertical: {
     paddingHorizontal: 0,
-    paddingVertical: theme.General.inlineSpacing,
+    paddingVertical: spacing.Padding['p-2'],
   },
   icon: {
     width: typography.Size['text-base'],
