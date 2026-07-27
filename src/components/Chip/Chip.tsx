@@ -45,9 +45,7 @@ export const Chip = memo<ChipProps>(
     ...rest
   }) => {
     const iconUniProps = ({ theme }: ThemeType) => ({
-      color: disabled
-        ? theme.Button.disabledColor
-        : theme.Misc.Chip.chipTextColor,
+      color: disabled ? theme.Button.disabledColor : theme.Chip.root.color,
     })
 
     return (
@@ -86,7 +84,7 @@ export const Chip = memo<ChipProps>(
                 uniProps={({ theme }) => ({
                   color: disabled
                     ? theme.Button.disabledColor
-                    : theme.Misc.Chip.chipTextColor,
+                    : theme.Chip.root.color,
                 })}
               />
             )}
@@ -97,48 +95,49 @@ export const Chip = memo<ChipProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, typography, border, fonts }) => ({
-  chip: {
-    height: theme.Misc.Chip.chipHeight,
-    alignSelf: 'flex-start',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'row',
-    gap: theme.General.inlineSpacing,
+const styles = StyleSheet.create(
+  ({ theme, typography, spacing, border, fonts }) => ({
+    chip: {
+      alignSelf: 'flex-start',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexDirection: 'row',
+      gap: spacing.Gap['gap-2'],
 
-    paddingHorizontal: theme.Misc.Chip.chipPaddingLeftRight,
-    paddingVertical: theme.Misc.Chip.chipPaddingTopBottom,
+      paddingHorizontal: theme.Chip.paddingX,
+      paddingVertical: theme.Chip.paddingY,
 
-    borderRadius: theme.Misc.Chip.chipBorderRadius,
-    borderWidth: border.Width.border,
+      borderRadius: theme.Chip.borderRadius,
+      borderWidth: theme.Chip.borderWidth,
 
-    backgroundColor: theme.Misc.Chip.chipBg,
-    borderColor: theme.Misc.Chip.chipBorderColor,
-  },
-  disabledChip: {
-    backgroundColor: theme.Button.disabledBackground,
-    borderColor: 'transparent',
-    opacity: 0.6,
-    mixBlendMode: 'luminosity',
-  },
-  icon: {
-    width: typography.Size['text-base'],
-    height: typography.Size['text-base'],
-  },
-  text: {
-    fontSize: typography.Size['text-base'],
-    verticalAlign: 'middle',
-    color: theme.Misc.Chip.chipTextColor,
-    includeFontPadding: false,
-    fontFamily: fonts.secondary,
-  },
-  disabledText: { color: theme.General.textSecondaryColor },
-  pressedClose: {
-    borderWidth: border.Width['border-3'],
-    borderColor: border.Color.Service['border-success'][400],
-    borderRadius: border.Radius['rounded-full'],
-  },
-}))
+      backgroundColor: theme.Chip.root.background,
+      borderColor: theme.Chip.borderColor,
+    },
+    disabledChip: {
+      backgroundColor: theme.Button.disabledBackground,
+      borderColor: 'transparent',
+      opacity: 0.6,
+      mixBlendMode: 'luminosity',
+    },
+    icon: {
+      width: typography.Size['text-base'],
+      height: typography.Size['text-base'],
+    },
+    text: {
+      fontSize: typography.Size['text-base'],
+      verticalAlign: 'middle',
+      color: theme.Chip.root.color,
+      includeFontPadding: false,
+      fontFamily: fonts.secondary,
+    },
+    disabledText: { color: theme.Button.disabledColor },
+    pressedClose: {
+      borderWidth: border.Width['border-3'],
+      borderColor: border.Color.Service['border-success'][400],
+      borderRadius: border.Radius['rounded-full'],
+    },
+  })
+)
 
 export enum TestId {
   Container = 'Chip_Container',

@@ -1399,5 +1399,28 @@
       "color": "#2b2e33",
       "padding": "0 24 14 24"
     }
+  },
+  "Chip": {
+    "borderColor": "transparent",
+    "borderWidth": 1,
+    "borderRadius": 8,
+    "paddingX": 8,
+    "paddingY": 4,
+    "gap": 8,
+    "transitionDuration": 180,
+    "image": { "width": 0, "height": 0 },
+    "icon": { "size": 16, "color": "#2b2e33" },
+    "removeIcon": {
+      "size": 16,
+      "focusRing": {
+        "width": 4,
+        "style": "none",
+        "color": "#d4fedc",
+        "offset": 0,
+        "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
+      },
+      "color": "#2b2e33"
+    },
+    "root": { "background": "#e2e2e4", "color": "#2b2e33" }
   }
 }
