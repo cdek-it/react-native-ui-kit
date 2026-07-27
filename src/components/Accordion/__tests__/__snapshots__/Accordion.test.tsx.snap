@@ -8,7 +8,7 @@ exports[`Accordion Header elements maximal 1`] = `
         "width": "100%",
       },
       {
-        "borderTopColor": "#e2e2e4",
+        "borderTopColor": "#cecfd2",
         "borderTopWidth": 1,
       },
     ]
@@ -51,7 +51,7 @@ exports[`Accordion Header elements maximal 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
           "flexDirection": "row",
           "gap": 7,
           "paddingVertical": 14,
@@ -103,7 +103,7 @@ exports[`Accordion Header elements maximal 1`] = `
         meetOrSlice={0}
         minX={0}
         minY={0}
-        stroke="#181a1f"
+        stroke="#2b2e33"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
@@ -139,7 +139,7 @@ exports[`Accordion Header elements maximal 1`] = `
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -161,7 +161,7 @@ exports[`Accordion Header elements maximal 1`] = `
             }
             stroke={
               {
-                "payload": 4279769631,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -183,7 +183,7 @@ exports[`Accordion Header elements maximal 1`] = `
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#181a1f"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -219,7 +219,7 @@ exports[`Accordion Header elements maximal 1`] = `
         }
         stroke={
           {
-            "payload": 4279769631,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -241,7 +241,7 @@ exports[`Accordion Header elements maximal 1`] = `
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -264,7 +264,7 @@ exports[`Accordion Header elements maximal 1`] = `
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -278,7 +278,7 @@ exports[`Accordion Header elements maximal 1`] = `
     <Text
       style={
         {
-          "color": "#181a1f",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
           "fontSize": 15.75,
           "fontWeight": 700,
@@ -581,7 +581,7 @@ exports[`Accordion Header elements minimal 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
           "flexDirection": "row",
           "gap": 7,
           "paddingVertical": 14,
@@ -633,7 +633,7 @@ exports[`Accordion Header elements minimal 1`] = `
         meetOrSlice={0}
         minX={0}
         minY={0}
-        stroke="#181a1f"
+        stroke="#2b2e33"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
@@ -669,7 +669,7 @@ exports[`Accordion Header elements minimal 1`] = `
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -691,7 +691,7 @@ exports[`Accordion Header elements minimal 1`] = `
             }
             stroke={
               {
-                "payload": 4279769631,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -706,7 +706,7 @@ exports[`Accordion Header elements minimal 1`] = `
     <Text
       style={
         {
-          "color": "#181a1f",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
           "fontSize": 15.75,
           "fontWeight": 700,

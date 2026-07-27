@@ -109,9 +109,7 @@ export const Accordion: React.FC<AccordionProps> = ({
           <SvgUniversal
             {...styles.icon}
             source={IconChevronRight}
-            uniProps={({ theme }) => ({
-              color: theme.Panel.Accordion.accordionHeaderTextColor,
-            })}
+            uniProps={({ theme }) => ({ color: theme.Accordion.header.color })}
           />
         </Animated.View>
         {Icon ? (
@@ -119,9 +117,7 @@ export const Accordion: React.FC<AccordionProps> = ({
             {...styles.icon}
             source={Icon}
             testID={AccordionTestIds.icon}
-            uniProps={({ theme }) => ({
-              color: theme.Panel.Accordion.accordionHeaderTextColor,
-            })}
+            uniProps={({ theme }) => ({ color: theme.Accordion.header.color })}
           />
         ) : null}
         <Text style={styles.title}>{title}</Text>
@@ -159,14 +155,14 @@ export const AccordionTestIds = {
   separator: 'Separator',
 }
 
-const styles = StyleSheet.create(({ theme, fonts }) => ({
+const styles = StyleSheet.create(({ theme, spacing, fonts }) => ({
   component: { width: '100%' },
   header: {
-    paddingVertical: theme.Panel.Accordion.accordionHeaderPaddingTopBottom,
-    gap: 7,
+    paddingVertical: spacing.Padding['p-4'],
+    gap: spacing.Gap['gap-2'],
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: theme.Panel.Accordion.accordionHeaderBg,
+    backgroundColor: theme.Accordion.header.background,
   },
   icon: { width: 17.5, height: 17.5 },
   title: {
@@ -174,20 +170,20 @@ const styles = StyleSheet.create(({ theme, fonts }) => ({
     includeFontPadding: false,
     verticalAlign: 'middle',
     fontWeight: 700,
-    color: theme.Panel.Accordion.accordionHeaderTextColor,
+    color: theme.Accordion.header.color,
     fontFamily: fonts.secondary,
   },
   contentAnimated: { overflow: 'hidden' },
   contentWrapper: {
     position: 'absolute',
     width: '100%',
-    paddingLeft: theme.Panel.Accordion.accordionContentPaddingLeft,
-    paddingTop: theme.Panel.Accordion.accordionContentPaddingTop,
-    paddingRight: theme.Panel.Accordion.accordionContentPaddingRight,
-    paddingBottom: theme.Panel.Accordion.accordionContentPaddingBottom,
+    paddingLeft: spacing.Padding['p-7'],
+    paddingTop: spacing.Padding['p-0'],
+    paddingRight: spacing.Padding['p-0'],
+    paddingBottom: spacing.Padding['p-4'],
   },
   separator: {
-    borderTopColor: theme.Panel.Accordion.accordionHeaderBorderColor,
+    borderTopColor: theme.Accordion.panel.borderColor,
     borderTopWidth: 1,
   },
   disabled: { mixBlendMode: 'luminosity', opacity: 0.6 },

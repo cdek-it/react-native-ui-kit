@@ -1357,5 +1357,47 @@
     "warn": { "color": "#4f3709", "background": "#fddeaa" },
     "danger": { "color": "#45120e", "background": "#fbacaa" },
     "contrast": { "background": "#2b2e33", "color": "#ffffff" }
+  },
+  "Accordion": {
+    "extHeader": { "iconSize": 20, "gap": 8 },
+    "transitionDuration": 180,
+    "header": {
+      "color": "#2b2e33",
+      "hoverColor": "#56595f",
+      "activeColor": "#2b2e33",
+      "activeHoverColor": "#56595f",
+      "borderColor": "transparent",
+      "padding": "14 0 14 0",
+      "fontWeight": "700",
+      "borderRadius": 0,
+      "borderWidth": 0,
+      "focusRing": {
+        "width": 4,
+        "style": "none",
+        "color": "#d4fedc",
+        "offset": 0,
+        "shadow": "inset 0 0 0 0.25rem #d4fedc"
+      },
+      "toggleIcon": {
+        "color": "#2b2e33",
+        "hoverColor": "#56595f",
+        "activeColor": "#2b2e33",
+        "activeHoverColor": "#56595f"
+      },
+      "last": { "bottomBorderRadius": 0, "activeBottomBorderRadius": 0 },
+      "first": { "borderWidth": 0, "topBorderRadius": 0 },
+      "background": "transparent",
+      "hoverBackground": "transparent",
+      "activeBackground": "transparent",
+      "activeHoverBackground": "transparent"
+    },
+    "panel": { "borderWidth": "0 0 4 0", "borderColor": "#cecfd2" },
+    "content": {
+      "borderWidth": "1 0 0 0",
+      "borderColor": "transparent",
+      "background": "transparent",
+      "color": "#2b2e33",
+      "padding": "0 24 14 24"
+    }
   }
 }
