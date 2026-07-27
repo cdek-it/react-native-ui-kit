@@ -52,7 +52,6 @@ export const RadioButton = memo<RadioButtonProps>(
 
     return (
       <View>
-        <Animated.View pointerEvents='none' style={radioStyles.outline} />
         <AnimatedPressable
           disabled={disabled}
           style={radioStyles.container}
@@ -71,8 +70,8 @@ export const RadioButton = memo<RadioButtonProps>(
 
 const radioStyles = StyleSheet.create(({ theme, border }) => ({
   container: {
-    width: theme.Form.RadioButton.radiobuttonWidth,
-    height: theme.Form.RadioButton.radiobuttonHeight,
+    width: theme.RadioButton.width,
+    height: theme.RadioButton.height,
     borderRadius: border.Radius['rounded-full'],
     borderWidth: 1,
     alignItems: 'center',
@@ -82,23 +81,25 @@ const radioStyles = StyleSheet.create(({ theme, border }) => ({
     variants: {
       checked: {
         true: {
-          borderColor: theme.Form.RadioButton.radiobuttonActiveBorderColor,
-          backgroundColor: theme.Form.RadioButton.radiobuttonActiveBorderColor,
+          borderColor: theme.RadioButton.checkedBorderColor,
+          backgroundColor: theme.RadioButton.checkedBackground,
         },
         false: {
-          borderColor: theme.Form.InputText.inputBorderColor,
-          backgroundColor: theme.Form.InputText.inputBg,
+          borderColor: theme.RadioButton.borderColor,
+          backgroundColor: theme.RadioButton.background,
         },
       },
       pressed: { true: {}, false: {} },
       disabled: {
         true: {
-          borderColor: theme.Form.InputText.inputBorderColor,
-          backgroundColor: theme.Button.disabledBackground,
+          borderColor: theme.RadioButton.borderColor,
+          backgroundColor: theme.RadioButton.disabledBackground,
           opacity: 0.6,
         },
         false: {},
       },
+      // v2 не содержит error-outline токена для radiobutton — danger сводится к
+      // смене цвета рамки на invalidBorderColor (web-only outline не переносим).
       state: { danger: {}, default: {} },
     },
     compoundVariants: [
@@ -106,59 +107,38 @@ const radioStyles = StyleSheet.create(({ theme, border }) => ({
         checked: 'true',
         pressed: 'true',
         styles: {
-          borderColor: theme.Form.RadioButton.radiobuttonActiveHoverBorderColor,
-          backgroundColor: theme.Form.RadioButton.radiobuttonActiveHoverBg,
+          borderColor: theme.RadioButton.checkedHoverBorderColor,
+          backgroundColor: theme.RadioButton.checkedHoverBackground,
         },
       },
       {
         checked: 'true',
         disabled: 'true',
         styles: {
-          borderColor: theme.Form.RadioButton.radiobuttonActiveBorderColor,
-          backgroundColor: theme.Form.RadioButton.radiobuttonActiveBorderColor,
+          borderColor: theme.RadioButton.checkedBorderColor,
+          backgroundColor: theme.RadioButton.checkedBackground,
         },
       },
       {
         state: 'danger',
         disabled: 'false',
         checked: 'false',
-        styles: { borderColor: theme.Form.InputText.inputErrorBorderColor },
+        styles: { borderColor: theme.RadioButton.invalidBorderColor },
       },
       {
         checked: 'false',
         pressed: 'true',
-        styles: {
-          borderColor: theme.Form.RadioButton.radiobuttonActiveHoverBorderColor,
-        },
+        styles: { borderColor: theme.RadioButton.hoverBorderColor },
       },
     ],
   },
   center: {
-    width: theme.Form.RadioButton.radiobuttonIconSize,
-    height: theme.Form.RadioButton.radiobuttonIconSize,
+    width: theme.RadioButton.icon.size,
+    height: theme.RadioButton.icon.size,
     borderRadius: border.Radius['rounded-full'],
-    backgroundColor: theme.Form.InputText.inputBg,
+    backgroundColor: theme.RadioButton.background,
     transitionProperty: ['opacity'],
     transitionDuration: 100,
     variants: { checked: { false: { opacity: 0 }, true: { opacity: 1 } } },
-  },
-  outline: {
-    position: 'absolute',
-    top: -theme.General.focusShadowWidth,
-    left: -theme.General.focusShadowWidth,
-    width:
-      theme.Form.RadioButton.radiobuttonWidth +
-      theme.General.focusShadowWidth * 2,
-    height:
-      theme.Form.RadioButton.radiobuttonHeight +
-      theme.General.focusShadowWidth * 2,
-    borderRadius: border.Radius['rounded-full'],
-    backgroundColor: theme.General.focusOutlineErrorColor,
-    transitionProperty: 'opacity',
-    transitionDuration: 100,
-    variants: {
-      state: { danger: { opacity: 1 }, default: { opacity: 0 } },
-      disabled: { true: { opacity: 0 } },
-    },
   },
 }))

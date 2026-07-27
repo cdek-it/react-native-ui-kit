@@ -1518,5 +1518,41 @@
         "background": "#2b2e33"
       }
     }
+  },
+  "RadioButton": {
+    "width": 24,
+    "height": 24,
+    "background": "#404348",
+    "checkedBackground": "#f0f0f1",
+    "checkedHoverBackground": "#e2e2e4",
+    "disabledBackground": "#404348",
+    "filledBackground": "#404348",
+    "borderColor": "#56595f",
+    "hoverBorderColor": "#f0f0f1",
+    "focusBorderColor": "#56595f",
+    "checkedBorderColor": "#f0f0f1",
+    "checkedHoverBorderColor": "#f0f0f1",
+    "checkedFocusBorderColor": "#f0f0f1",
+    "checkedDisabledBorderColor": "#56595f",
+    "invalidBorderColor": "#db3424",
+    "shadow": "none",
+    "transitionDuration": 180,
+    "focusRing": {
+      "color": "#d4fedc",
+      "offset": 0,
+      "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)",
+      "style": "none",
+      "width": 4
+    },
+    "lg": { "height": 20, "width": 20 },
+    "sm": { "height": 16, "width": 16 },
+    "icon": {
+      "size": 12,
+      "checkedColor": "#ffffff",
+      "checkedHoverColor": "#ffffff",
+      "disabledColor": "#a2a5a9",
+      "sm": { "size": 8 },
+      "lg": { "size": 16 }
+    }
   }
 }
