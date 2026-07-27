@@ -260,33 +260,33 @@ const styles = StyleSheet.create(({ theme, border }) => {
       alignItems: 'center',
     },
     track: {
-      height: theme.Form.Slider.sliderHorizontalHeight,
-      backgroundColor: theme.Form.Slider.sliderBg,
-      borderRadius: theme.Form.Slider.sliderHandleBorderRadius,
+      height: theme.Slider.track.size,
+      backgroundColor: theme.Slider.track.background,
+      borderRadius: theme.Slider.track.borderRadius,
       position: 'relative',
       width: '100%',
       justifyContent: 'center',
     },
 
     line: {
-      height: theme.Form.Slider.sliderHorizontalHeight,
-      borderRadius: theme.Form.Slider.sliderHandleBorderRadius,
+      height: theme.Slider.track.size,
+      borderRadius: theme.Slider.track.borderRadius,
       position: 'absolute',
-      backgroundColor: theme.Form.Slider.sliderRangeBg,
+      backgroundColor: theme.Slider.range.background,
     },
 
     point: {
-      width: theme.Form.Slider.sliderHandleWidth,
-      height: theme.Form.Slider.sliderHandleHeight,
-      borderRadius: theme.Form.Slider.sliderHandleHeight / 2,
+      width: theme.Slider.handle.width,
+      height: theme.Slider.handle.height,
+      borderRadius: theme.Slider.handle.borderRadius,
       position: 'absolute',
-      backgroundColor: theme.Form.Slider.sliderHandleBg,
+      backgroundColor: theme.Slider.handle.content.background,
       borderWidth: border.Width['border-3'],
-      borderColor: theme.Form.Slider.sliderHandleBorder,
+      borderColor: theme.Slider.handle.background,
     },
 
     disabled: { opacity: 0.6, mixBlendMode: 'luminosity' },
 
-    hovered: { backgroundColor: theme.Form.Slider.sliderHandleHoverBg },
+    hovered: { backgroundColor: theme.Slider.handle.hoverBackground },
   }
 })

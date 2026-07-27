@@ -1491,5 +1491,32 @@
       "sm": { "size": 12 },
       "lg": { "size": 20 }
     }
+  },
+  "Slider": {
+    "transitionDuration": 180,
+    "track": { "background": "#e2e2e4", "borderRadius": 14, "size": 4 },
+    "range": { "background": "#2b2e33" },
+    "handle": {
+      "width": 20,
+      "height": 20,
+      "borderRadius": 1600,
+      "background": "#2b2e33",
+      "hoverBackground": "#2b2e33",
+      "focusRing": {
+        "width": 4,
+        "style": "none",
+        "color": "#d4fedc",
+        "offset": 0,
+        "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
+      },
+      "content": {
+        "borderRadius": 1600,
+        "hoverBackground": "#2b2e33",
+        "width": 12,
+        "height": 12,
+        "shadow": "none",
+        "background": "#ffffff"
+      }
+    }
   }
 }
