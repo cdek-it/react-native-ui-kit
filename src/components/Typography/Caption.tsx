@@ -41,9 +41,9 @@ export const Caption = ({
           testID={CaptionTestId.icon}
           uniProps={({ theme }) => ({
             color: {
-              default: theme.General.textColor,
-              primary: theme.General.primaryColor,
-              secondary: theme.General.textSecondaryColor,
+              default: theme.Typography.default,
+              primary: theme.Typography.primary,
+              secondary: theme.Typography.secondary,
             }[color],
           })}
         />
@@ -67,9 +67,9 @@ const styles = StyleSheet.create(({ theme, spacing, typography, fonts }) => ({
     letterSpacing: -0.25,
   },
   textWithIcon: { flexShrink: 1 },
-  default: { color: theme.General.textColor },
-  primary: { color: theme.General.primaryColor },
-  secondary: { color: theme.General.textSecondaryColor },
+  default: { color: theme.Typography.default },
+  primary: { color: theme.Typography.primary },
+  secondary: { color: theme.Typography.secondary },
   disabled: { opacity: 0.6 },
   withIconContainer: { flexDirection: 'row', gap: spacing.Gap['gap-1'] },
   icon: {

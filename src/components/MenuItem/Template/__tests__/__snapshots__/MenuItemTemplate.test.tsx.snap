@@ -251,7 +251,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
                   "fontWeight": 400,
                 },
                 {
-                  "color": "#181a1f",
+                  "color": "#2b2e33",
                 },
                 {
                   "fontSize": 12.25,
@@ -618,7 +618,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate minimal config 1`] = `
                   "fontWeight": 400,
                 },
                 {
-                  "color": "#181a1f",
+                  "color": "#2b2e33",
                 },
                 {
                   "fontSize": 12.25,
@@ -820,7 +820,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
                   "fontWeight": 400,
                 },
                 {
-                  "color": "#181a1f",
+                  "color": "#2b2e33",
                 },
                 {
                   "fontSize": 12.25,
@@ -1158,7 +1158,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with colored icon 1`] = `
                   "fontWeight": 400,
                 },
                 {
-                  "color": "#181a1f",
+                  "color": "#2b2e33",
                 },
                 {
                   "fontSize": 12.25,
@@ -1273,7 +1273,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with extra 1`] = `
                   "fontWeight": 400,
                 },
                 {
-                  "color": "#181a1f",
+                  "color": "#2b2e33",
                 },
                 {
                   "fontSize": 12.25,
@@ -1597,7 +1597,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
                   "fontWeight": 400,
                 },
                 {
-                  "color": "#181a1f",
+                  "color": "#2b2e33",
                 },
                 {
                   "fontSize": 12.25,
@@ -1860,7 +1860,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
                   "fontWeight": 400,
                 },
                 {
-                  "color": "#181a1f",
+                  "color": "#2b2e33",
                 },
                 {
                   "fontSize": 12.25,
@@ -1978,7 +1978,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with padding 1`] = `
                   "fontWeight": 400,
                 },
                 {
-                  "color": "#181a1f",
+                  "color": "#2b2e33",
                 },
                 {
                   "fontSize": 12.25,
@@ -2099,7 +2099,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with separator 1`] = `
                   "fontWeight": 400,
                 },
                 {
-                  "color": "#181a1f",
+                  "color": "#2b2e33",
                 },
                 {
                   "fontSize": 12.25,

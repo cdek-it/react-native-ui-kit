@@ -39,7 +39,7 @@ const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
     lineHeight: 15,
   },
   base: { lineHeight: 18, fontSize: typography.Size['text-sm'] },
-  default: { color: theme.General.textColor },
-  primary: { color: theme.General.primaryColor },
-  secondary: { color: theme.General.textSecondaryColor },
+  default: { color: theme.Typography.default },
+  primary: { color: theme.Typography.primary },
+  secondary: { color: theme.Typography.secondary },
 }))
