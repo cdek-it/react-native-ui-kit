@@ -41,9 +41,7 @@ export const InputGroupAddon = memo<InputGroupAddonProps>(
           <SvgUniversal
             {...styles.icon}
             source={content}
-            uniProps={({ theme }) => ({
-              color: theme.Form.InputGroup.inputGroupTextColor,
-            })}
+            uniProps={({ theme }) => ({ color: theme.InputGroup.addon.color })}
           />
         )}
       </Pressable>
@@ -53,13 +51,12 @@ export const InputGroupAddon = memo<InputGroupAddonProps>(
 
 const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
   container: {
-    paddingVertical: theme.Form.InputText.inputPaddingTopBottom,
-    paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
+    padding: theme.InputGroup.addon.padding,
     justifyContent: 'center',
-    borderRadius: theme.General.borderRadiusXL,
-    borderWidth: 1,
-    borderColor: theme.Form.InputText.inputBorderColor,
-    backgroundColor: theme.Form.InputGroup.inputGroupBg,
+    borderRadius: theme.InputGroup.addon.borderRadius,
+    borderWidth: theme.InputGroup.borderWidth,
+    borderColor: theme.InputGroup.addon.borderColor,
+    backgroundColor: theme.InputGroup.addon.background,
   },
   left: {
     borderRightWidth: 0,
@@ -75,7 +72,7 @@ const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
   disabled: { opacity: 0.6, backgroundColor: theme.Button.disabledBackground },
   text: {
     fontSize: typography.Size['text-base'],
-    color: theme.Form.InputGroup.inputGroupTextColor,
+    color: theme.InputGroup.addon.color,
     includeFontPadding: false,
     verticalAlign: 'middle',
     fontFamily: fonts.secondary,

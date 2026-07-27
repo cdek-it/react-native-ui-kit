@@ -53,7 +53,7 @@ interface PrivateInputTextBaseProps {
  * @see InputText
  */
 const inputIconUniProps = ({ theme }: ThemeType) => ({
-  color: theme.Form.InputText.inputIconColor,
+  color: theme.Input.color,
 })
 
 export const InputTextBase = memo<
@@ -306,7 +306,6 @@ export const InputTextBase = memo<
           isFocused && styles.containerFocused,
           containerStyle,
           state === 'danger' && styles.danger,
-          state === 'danger' && isFocused && styles.dangerFocused,
           disabled && styles.disabled,
         ]}
         testID={makeTestId(InputTextBaseTestId.pressableContainer)}

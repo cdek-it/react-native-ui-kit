@@ -56,14 +56,13 @@ export const InputOtpItem = memo<InputOtpItemProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, border, fonts, typography }) => ({
+const styles = StyleSheet.create(({ theme, fonts, typography }) => ({
   container: {
     minHeight: 35,
     minWidth: 35,
-    paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
-    paddingVertical: theme.Form.InputText.inputPaddingTopBottom,
-    borderBottomWidth: border.Width.border,
-    borderColor: theme.Form.InputText.inputBorderColor,
+    paddingHorizontal: theme.Input.paddingX,
+    borderBottomWidth: theme.InputOtp.borderWidth,
+    borderColor: theme.Input.borderColor,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -74,15 +73,15 @@ const styles = StyleSheet.create(({ theme, border, fonts, typography }) => ({
     fontSize: typography.Size['text-2xl'],
     fontFamily: fonts.primary,
     fontWeight: '400',
-    color: theme.Form.InputText.inputTextColor,
+    color: theme.Input.color,
     includeFontPadding: false,
   },
 
-  pressed: { borderColor: theme.Form.InputText.inputHoverBorderColor },
+  pressed: { borderColor: theme.Input.hoverBorderColor },
 
-  error: { borderColor: theme.Form.InputText.inputErrorBorderColor },
+  error: { borderColor: theme.Input.invalidBorderColor },
 
   disabled: { mixBlendMode: 'luminosity', opacity: 0.6 },
 
-  cursor: { color: theme.Form.InputText.inputTextColor, marginBottom: 3 },
+  cursor: { color: theme.Input.color, marginBottom: 3 },
 }))
