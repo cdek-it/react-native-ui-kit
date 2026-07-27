@@ -103,7 +103,7 @@ export const Rating = memo<RatingProps>(
 const styles = StyleSheet.create(({ theme }) => ({
   container: {
     flexDirection: 'row',
-    gap: theme.General.inlineSpacing,
+    gap: theme.Rating.gap,
     alignItems: 'center',
   },
 }))

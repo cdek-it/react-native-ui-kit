@@ -1669,5 +1669,22 @@
     "default": "#ffffff",
     "primary": "#77f48a",
     "secondary": "#a2a5a9"
+  },
+  "Rating": {
+    "gap": 8,
+    "transitionDuration": 180,
+    "focusRing": {
+      "color": "#d4fedc",
+      "offset": 0,
+      "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)",
+      "style": "none",
+      "width": 4
+    },
+    "icon": {
+      "size": 24,
+      "color": "#a2a5a9",
+      "hoverColor": "#facb75",
+      "activeColor": "#facb75"
+    }
   }
 }

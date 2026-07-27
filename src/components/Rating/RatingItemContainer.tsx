@@ -59,8 +59,8 @@ const styles = StyleSheet.create(({ theme, sizing }) => ({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
-    width: theme.Form.Rating.ratingIconFontSize,
-    height: theme.Form.Rating.ratingIconFontSize,
+    width: theme.Rating.icon.size,
+    height: theme.Rating.icon.size,
   },
 
   containerWithPaddings: {

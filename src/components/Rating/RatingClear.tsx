@@ -34,10 +34,10 @@ export const RatingClear = memo<RatingClearProps>(({ ...rest }) => {
           source={IconBan}
           uniProps={({ theme }) => ({
             color: disabled
-              ? theme.custom.rating.ratingCancelIconDisabledColor
+              ? theme.Rating.icon.color
               : pressed
-                ? theme.Form.Rating.ratingCancelIconHoverColor
-                : theme.Form.Rating.ratingCancelIconColor,
+                ? theme.Rating.icon.hoverColor
+                : theme.Rating.icon.color,
           })}
         />
       )}
@@ -46,8 +46,5 @@ export const RatingClear = memo<RatingClearProps>(({ ...rest }) => {
 })
 
 const styles = StyleSheet.create(({ theme }) => ({
-  icon: {
-    height: theme.Form.Rating.ratingIconFontSize,
-    width: theme.Form.Rating.ratingIconFontSize,
-  },
+  icon: { height: theme.Rating.icon.size, width: theme.Rating.icon.size },
 }))
