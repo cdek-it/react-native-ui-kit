@@ -1,10 +1,5 @@
-import { memo, useCallback, useMemo, useState } from 'react'
-import {
-  type LayoutChangeEvent,
-  type LayoutRectangle,
-  View,
-  type ViewStyle,
-} from 'react-native'
+import { memo, useMemo } from 'react'
+import { View } from 'react-native'
 
 import { StyleSheet } from 'react-native-unistyles'
 
@@ -33,22 +28,7 @@ import { ButtonVariantContext } from './utils/ButtonVariantContext'
 export const ButtonBadge = memo<
   ButtonProps<ButtonBaseVariant> & ButtonBadgeProps
 >(({ badgeLabel, badgeSeverity, variant = 'primary', ...props }) => {
-  const [badgeLayout, setBadgeLayout] = useState<LayoutRectangle>()
   const variantContextValue = useMemo(() => ({ variant }), [variant])
-
-  const badgeContainerStyle = useMemo<ViewStyle>(
-    () => ({
-      position: 'absolute',
-      top: badgeLayout ? -Math.round(badgeLayout.height / 2) : 0,
-      right: badgeLayout ? -Math.round(badgeLayout.width / 2) : 0,
-    }),
-    [badgeLayout]
-  )
-
-  const onLayout = useCallback(
-    (e: LayoutChangeEvent) => setBadgeLayout(e.nativeEvent.layout),
-    []
-  )
 
   const badgeCommonProps = useMemo(
     () => ({ severity: badgeSeverity, testID: ButtonBadgeTestId.badge }),
@@ -67,11 +47,7 @@ export const ButtonBadge = memo<
           <BaseButton variant={variant} {...props} />
 
           {badgeLabel ? (
-            <Badge
-              {...badgeCommonProps}
-              style={badgeContainerStyle}
-              onLayout={onLayout}
-            >
+            <Badge {...badgeCommonProps} style={styles.badge}>
               {badgeLabel}
             </Badge>
           ) : (
@@ -88,6 +64,12 @@ const styles = StyleSheet.create(() => ({
   contentContainer: { flex: 1 },
   iconOnlyContainer: { flex: 0 },
   badgeDot: { position: 'absolute', top: 0, right: -0.5 },
+  badge: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    transform: [{ translateX: '50%' }, { translateY: '-50%' }],
+  },
 }))
 
 export const ButtonBadgeTestId = { badge: 'Badge' }
