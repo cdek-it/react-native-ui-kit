@@ -1262,5 +1262,18 @@
       "checkedBackground": "#2b2e33",
       "checkedHoverBackground": "#404348"
     }
+  },
+  "ProgressSpinner": {
+    "small": 16,
+    "medium": 32,
+    "large": 48,
+    "xlarge": 56,
+    "borderWidth": 4,
+    "root": {
+      "colorOne": "#44e858",
+      "colorTwo": "#4496e8",
+      "colorThree": "#e85244",
+      "colorFour": "#f5b83d"
+    }
   }
 }

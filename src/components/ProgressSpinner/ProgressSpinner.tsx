@@ -126,7 +126,7 @@ export const ProgressSpinner = memo<ProgressSpinnerProps>(
 )
 
 const styles = StyleSheet.create(({ theme, global }) => ({
-  primary: { color: theme.General.primaryColor },
+  primary: { color: theme.ProgressSpinner.root.colorOne },
   white: { color: global.Neutrals.White['white-100'] },
 }))
 
