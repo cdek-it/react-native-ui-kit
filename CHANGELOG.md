@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.2](https://github.com/cdek-it/react-native-ui-kit/compare/v1.0.1...v1.0.2) (2026-07-27)
+
+### 🐛 Исправления багов
+
+* **ButtonBadge:** исправлено дрожание иконки в шопинге ([d9d98c6](https://github.com/cdek-it/react-native-ui-kit/commit/d9d98c6fecf4bc10f5200a0b97553330cc4a9f98))
+
 ## [1.0.1](https://github.com/cdek-it/react-native-ui-kit/compare/v1.0.0...v1.0.1) (2026-07-23)
 
 ### 🚀 Новый функционал
