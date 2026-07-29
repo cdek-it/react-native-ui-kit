@@ -78,6 +78,7 @@ describe('InputOtp component tests', () => {
 
   test('should blur and reset focus when input becomes disabled', () => {
     const mockedOnChange = jest.fn()
+    const includeHiddenElements = { includeHiddenElements: true }
     let inputRef: TextInput | null = null
     const handleInputRef = (ref: TextInput | null) => {
       inputRef = ref
@@ -93,7 +94,8 @@ describe('InputOtp component tests', () => {
 
     fireEvent(getByTestId('InputOtpHiddenInput'), 'focus')
 
-    expect(getByText('|')).toBeOnTheScreen()
+    expect(getByText('|', includeHiddenElements)).toBeOnTheScreen()
+    expect(queryByText('|')).not.toBeOnTheScreen()
 
     if (!inputRef) {
       throw new Error('Input ref was not set')
@@ -114,7 +116,7 @@ describe('InputOtp component tests', () => {
     )
 
     expect(blur).toHaveBeenCalledOnce()
-    expect(queryByText('|')).not.toBeOnTheScreen()
+    expect(queryByText('|', includeHiddenElements)).not.toBeOnTheScreen()
   })
 
   test('should not focus hidden input on press when input is not editable', () => {
