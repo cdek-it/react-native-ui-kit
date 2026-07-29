@@ -36,10 +36,14 @@ export const InputOtpItem = memo<InputOtpItemProps>(
       >
         {focused ? (
           <View style={styles.textRow} testID={`${testID}CursorRow`}>
-            <Text style={styles.text} testID={testID}>
-              {value}
-            </Text>
+            {value ? (
+              <Text style={styles.text} testID={testID}>
+                {value}
+              </Text>
+            ) : null}
             <Animated.Text
+              accessibilityElementsHidden
+              importantForAccessibility='no-hide-descendants'
               style={[styles.text, styles.cursor, cursorAnimationStyle]}
               testID={`${testID}Cursor`}
             >
