@@ -4,7 +4,12 @@ import { Text } from 'react-native'
 import { UnistylesRuntime } from 'react-native-unistyles'
 
 import { ThemeContextProvider } from '../ThemeContext'
+import { darkTheme } from '../darkTheme'
 import { lightTheme } from '../lightTheme'
+import darkComponentTokens from '../tokens/components/dark.json'
+import lightComponentTokens from '../tokens/components/light.json'
+import darkSemanticTokens from '../tokens/semantic/dark.json'
+import lightSemanticTokens from '../tokens/semantic/light.json'
 import { ThemeVariant } from '../types'
 
 describe('ThemeContextProvider', () => {
@@ -65,5 +70,15 @@ describe('ThemeContextProvider', () => {
     )
 
     expect(UnistylesRuntime.updateTheme).not.toHaveBeenCalled()
+  })
+
+  test('каждая тема содержит соответствующие semantic-токены', () => {
+    expect(lightTheme.semantic).toBe(lightSemanticTokens)
+    expect(darkTheme.semantic).toBe(darkSemanticTokens)
+  })
+
+  test('каждая тема содержит соответствующие component-токены', () => {
+    expect(lightTheme.components).toBe(lightComponentTokens)
+    expect(darkTheme.components).toBe(darkComponentTokens)
   })
 })
