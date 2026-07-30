@@ -125,10 +125,13 @@ export const ProgressSpinner = memo<ProgressSpinnerProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, global }) => ({
-  primary: { color: theme.General.primaryColor },
-  white: { color: global.Neutrals.White['white-100'] },
-}))
+// TODO(tokens-migration): reason=missing; legacy=global.Neutrals.White.white-100; value=#ffffff
+const styles = StyleSheet.create(
+  ({ components: { progressspinner }, global }) => ({
+    primary: { color: progressspinner.colorScheme.root.colorOne },
+    white: { color: global.Neutrals.White['white-100'] },
+  })
+)
 
 enum TestId {
   ProgressSpinner = 'ProgressSpinner',
