@@ -9,7 +9,11 @@ import {
   parseArgs,
 } from '../build'
 import { compileTokens } from '../core/compiler'
-import { convertUnit, parseBoxShorthand } from '../core/normalization'
+import {
+  convertUnit,
+  normalizeTree,
+  parseBoxShorthand,
+} from '../core/normalization'
 import { resolveReferences } from '../core/resolution'
 import {
   isTokenTree,
@@ -118,6 +122,22 @@ describe('token compiler', () => {
       },
     ])('$name отклоняется', ({ value, message }) => {
       expect(() => parseBoxShorthand(value)).toThrow(message)
+    })
+  })
+
+  describe('normalizeTree', () => {
+    test('одинаковые радиусы сворачивает в одно значение', () => {
+      expect(
+        normalizeTree({ borderRadius: '0rem 0rem 0rem 0rem' })
+      ).toStrictEqual({ borderRadius: 0 })
+    })
+
+    test('разные радиусы сохраняет отдельными значениями', () => {
+      expect(
+        normalizeTree({ borderRadius: '0.25rem 0.5rem 0.75rem 1rem' })
+      ).toStrictEqual({
+        borderRadius: { left: 16, top: 4, right: 8, bottom: 12 },
+      })
     })
   })
 
@@ -302,6 +322,14 @@ describe('production input tokens', () => {
     )
     expect(compiled.components.dark.accordion).toHaveProperty(
       'colorScheme.header.background'
+    )
+    expect(compiled.components.light.dataview).toHaveProperty(
+      'header.borderRadius',
+      0
+    )
+    expect(compiled.components.dark.dataview).toHaveProperty(
+      'footer.borderRadius',
+      0
     )
   })
 
