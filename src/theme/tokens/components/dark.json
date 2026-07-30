@@ -894,7 +894,7 @@
       "paddingRight": 14,
       "paddingBottom": 8,
       "paddingLeft": 14,
-      "borderRadius": "0px 0px 0px 0px",
+      "borderRadius": 0,
       "color": "#ffffff",
       "borderColor": "#404348"
     },
@@ -917,7 +917,7 @@
       "paddingRight": 14,
       "paddingBottom": 8,
       "paddingLeft": 14,
-      "borderRadius": "0px 0px 0px 0px",
+      "borderRadius": 0,
       "borderColor": "#404348"
     },
     "paginatorTop": {

@@ -19,7 +19,8 @@ export const assertValidOutput = (
   if (isTokenTree(node)) {
     for (const [key, value] of Object.entries(node)) {
       if (
-        BOX_PROPERTIES.includes(key as BoxProperty) &&
+        (BOX_PROPERTIES.includes(key as BoxProperty) ||
+          key === 'borderRadius') &&
         typeof value === 'string'
       ) {
         throw new Error(`Unconverted box shorthand at "${tokenPath}.${key}"`)
