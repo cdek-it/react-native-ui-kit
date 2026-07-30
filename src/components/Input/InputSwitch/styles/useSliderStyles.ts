@@ -102,45 +102,43 @@ export const useSliderStyles = (
   }
 }
 
-const switchStyles = StyleSheet.create(({ theme, border }) => ({
+const switchStyles = StyleSheet.create(({ components: { toggleswitch } }) => ({
   container: {
-    height: theme.Form.inputSwitch.inputSwitchHeight,
-    width: theme.Form.inputSwitch.inputSwitchWidth,
+    height: toggleswitch.root.height,
+    width: toggleswitch.root.width,
   },
 
   slider: {
-    padding: theme.Form.inputSwitch.inputSwitchSliderPadding,
-    height: theme.Form.inputSwitch.inputSwitchHeight,
-    width: theme.Form.inputSwitch.inputSwitchWidth,
-    borderRadius: border.Radius['rounded-full'],
-    borderWidth: border.Width.border,
+    padding: toggleswitch.root.gap,
+    height: toggleswitch.root.height,
+    width: toggleswitch.root.width,
+    borderRadius: toggleswitch.root.borderRadius,
+    borderWidth: toggleswitch.root.borderWidth,
   },
 
-  sliderOff: { backgroundColor: theme.Form.inputSwitch.inputSwitchSliderOffBg },
+  sliderOff: { backgroundColor: toggleswitch.colorScheme.root.background },
 
-  sliderOn: { backgroundColor: theme.Form.inputSwitch.inputSwitchSliderOnBg },
+  sliderOn: {
+    backgroundColor: toggleswitch.colorScheme.root.checkedBackground,
+  },
 
   sliderPressed: {
-    backgroundColor: theme.Form.inputSwitch.inputSwitchSliderOffHoverBg,
+    backgroundColor: toggleswitch.colorScheme.root.hoverBackground,
   },
 
   sliderOnPressed: {
-    backgroundColor: theme.Form.inputSwitch.inputSwitchSliderOnHoverBg,
+    backgroundColor: toggleswitch.colorScheme.root.checkedHoverBackground,
   },
 
   sliderDisabled: {
-    backgroundColor: theme.custom.inputSwitch.inputSwitchSliderOffDisabledBg,
+    backgroundColor: toggleswitch.colorScheme.root.disabledBackground,
   },
 
   sliderOnDisabled: {
-    backgroundColor: theme.custom.inputSwitch.inputSwitchSliderOnDisabledBg,
+    backgroundColor: toggleswitch.colorScheme.root.disabledBackground,
   },
 
-  sliderNoDanger: { borderColor: 'transparent' },
+  sliderNoDanger: { borderColor: toggleswitch.root.borderColor },
 
-  sliderDanger: {
-    borderColor: theme.Form.InputText.inputErrorBorderColor,
-    outlineColor: theme.General.focusOutlineErrorColor,
-    outlineWidth: Math.round(theme.General.focusShadowWidth),
-  },
+  sliderDanger: { borderColor: toggleswitch.root.invalidBorderColor },
 }))
