@@ -85,6 +85,17 @@ padding: "8 14"
 -> paddingLeft: 14
 ```
 
+Для `borderRadius` одинаковые значения сворачиваются в число. Разные значения
+сохраняются в объекте в порядке углов CSS:
+
+```text
+borderRadius: "0 0 0 0"
+-> borderRadius: 0
+
+borderRadius: "4 8 12 16"
+-> borderRadius: { left: 16, top: 4, right: 8, bottom: 12 }
+```
+
 Генерация завершается с ошибкой при отсутствующей или циклической ссылке,
 неподдерживаемом shorthand, оставшихся `rem`/`ms`, `NaN` или `Infinity`.
 
