@@ -2841,6 +2841,7 @@ __metadata:
     "@testing-library/react-native": "npm:13.3.3"
     "@types/jest": "npm:29.5.14"
     "@types/lodash.map": "npm:4.6.13"
+    "@types/node": "npm:22.7.7"
     "@types/react": "npm:19.2.14"
     babel-loader: "npm:8.2.3"
     chalk: "npm:4.1.2"
@@ -6087,7 +6088,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
+"@types/node@npm:*, @types/node@npm:22.7.7":
   version: 22.7.7
   resolution: "@types/node@npm:22.7.7"
   dependencies:
