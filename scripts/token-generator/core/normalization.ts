@@ -78,6 +78,25 @@ export const parseBoxShorthand = (
   return { top, right, bottom, left }
 }
 
+const normalizeBorderRadius = (
+  value: string | number,
+  tokenPath: string
+): number | TokenTree => {
+  const corners = parseBoxShorthand(value, tokenPath)
+  const values = Object.values(corners)
+
+  if (values.every((corner) => corner === corners.top)) {
+    return corners.top
+  }
+
+  return {
+    left: corners.left,
+    top: corners.top,
+    right: corners.right,
+    bottom: corners.bottom,
+  }
+}
+
 const edgePropertyName = (
   property: BoxProperty,
   edge: keyof BoxEdges
@@ -128,6 +147,11 @@ export const normalizeTree = (
     const boxProperty = BOX_PROPERTIES.find((property) => property === key)
 
     if (
+      key === 'borderRadius' &&
+      (typeof value === 'string' || typeof value === 'number')
+    ) {
+      normalized[key] = normalizeBorderRadius(value, currentPath)
+    } else if (
       boxProperty &&
       (typeof value === 'string' || typeof value === 'number')
     ) {
