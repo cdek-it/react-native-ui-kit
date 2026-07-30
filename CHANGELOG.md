@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.3](https://github.com/cdek-it/react-native-ui-kit/compare/v1.0.2...v1.0.3) (2026-07-30)
+
+### 🐛 Исправления багов
+
+* **InputOtp:** исправлено центрирование каретки ([be4222d](https://github.com/cdek-it/react-native-ui-kit/commit/be4222d121021044913af08b81ecfc59721bf834))
+
 ## [1.0.2](https://github.com/cdek-it/react-native-ui-kit/compare/v1.0.1...v1.0.2) (2026-07-27)
 
 ### 🐛 Исправления багов
