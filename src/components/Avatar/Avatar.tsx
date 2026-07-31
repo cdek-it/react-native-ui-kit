@@ -188,8 +188,8 @@ export const Avatar = memo<AvatarProps>(
           height={iconSize}
           source={Icon}
           testID={AvatarTestId.icon}
-          uniProps={({ theme }) => ({
-            color: iconColor ?? theme.Misc.Avatar.avatarTextColor,
+          uniProps={({ components }) => ({
+            color: iconColor ?? components.avatar.root.color,
           })}
           width={iconSize}
         />
@@ -257,31 +257,36 @@ export const Avatar = memo<AvatarProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, border, typography, fonts }) => ({
-  container: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: theme.General.borderRadiusXL,
-    borderWidth: 1,
-    borderColor: theme.Misc.Avatar.avatarBorderColor,
-    backgroundColor: theme.Misc.Avatar.avatarBg,
-    overflow: 'hidden',
-  },
-  backgroundFill: { backgroundColor: theme.Misc.Avatar.avatarBg },
-  circle: { borderRadius: border.Radius['rounded-full'] },
-  text: {
-    fontSize: typography.Size['text-base'],
-    textTransform: 'uppercase',
-    color: theme.Misc.Avatar.avatarTextColor,
-    includeFontPadding: false,
-    verticalAlign: 'middle',
-    fontFamily: fonts.secondary,
-  },
-  badgeContainer: { position: 'absolute', right: 0, top: -7 },
-  badgeMeasureContainer: { alignSelf: 'flex-start' },
-  icon: { width: typography.Size['text-base'] },
-  iconXLarge: { width: typography.Size['text-2xl'] },
-}))
+const styles = StyleSheet.create(
+  ({ components, border, typography, fonts }) => ({
+    container: {
+      justifyContent: 'center',
+      alignItems: 'center',
+      borderRadius: components.avatar.root.borderRadius,
+      borderWidth: 1,
+      borderColor: components.avatar.extend.borderColor,
+      backgroundColor: components.avatar.root.background,
+      overflow: 'hidden',
+    },
+    backgroundFill: { backgroundColor: components.avatar.root.background },
+    // TODO(tokens-migration): reason=value-mismatch; legacy=border.Radius.rounded-full; value=100; target=components.avatar.extend.circle.borderRadius; targetValue=1600
+    circle: { borderRadius: border.Radius['rounded-full'] },
+    text: {
+      // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-base; value=14; target=components.avatar.root.fontSize; targetValue=16
+      fontSize: typography.Size['text-base'],
+      textTransform: 'uppercase',
+      color: components.avatar.root.color,
+      includeFontPadding: false,
+      verticalAlign: 'middle',
+      fontFamily: fonts.secondary,
+    },
+    badgeContainer: { position: 'absolute', right: 0, top: -7 },
+    badgeMeasureContainer: { alignSelf: 'flex-start' },
+    icon: { width: typography.Size['text-base'] },
+    // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-2xl; value=21; target=components.avatar.xl.icon.size; targetValue=24
+    iconXLarge: { width: typography.Size['text-2xl'] },
+  })
+)
 
 export const AvatarTestId = {
   root: 'Avatar',
