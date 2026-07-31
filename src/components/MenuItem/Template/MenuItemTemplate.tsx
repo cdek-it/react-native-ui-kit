@@ -133,45 +133,50 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, spacing, typography, border }) => ({
-  container: {
-    borderColor: theme.Menu.Item.menuitemBorderColor,
-    borderWidth: border.Width.border,
-    borderRadius: theme.Menu.Item.menuitemBorderRadius,
-    backgroundColor: theme.Menu.Item.menuitemBg,
-  },
-  containerPressed: { backgroundColor: theme.Menu.Item.menuitemHoverBg },
-  containerDisabled: {
-    borderColor: theme.Button.Disabled.disabledButtonBorderColor,
-    backgroundColor: theme.Button.Disabled.disabledButtonBg,
-    opacity: 0.6,
-  },
-  separator: {
-    borderTopWidth: 1,
-    borderTopColor: theme.Menu.Overlay.overlayMenuBorderColor,
-    paddingTop: theme.Menu.Common.menuSeparatorMarginTopBottom,
-  },
-  contentContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: theme.General.inlineSpacing,
-    paddingHorizontal: theme.Menu.Item.menuitemPaddingLeftRight,
-    paddingVertical: theme.Menu.Item.menuitemPaddingTopBottom,
-  },
-  accessory: {
-    color: theme.Menu.Item.menuitemIconColor,
-    width: theme.Menu.Item.menuitemSubmenuIconFontSize,
-    height: theme.Menu.Item.menuitemSubmenuIconFontSize,
-  },
-  templateContainer: {
-    flexDirection: 'row',
-    gap: spacing.Gap['gap-2'],
-    flex: 1,
-  },
-  icon: {
-    width: typography.Size['text-xl'],
-    height: typography.Size['text-xl'],
-    color: theme.Menu.Item.menuitemIconColor,
-  },
-  textContainer: { gap: spacing.Gap['gap-1'], flex: 1 },
-}))
+const styles = StyleSheet.create(
+  ({ components, spacing, typography, border }) => ({
+    container: {
+      borderColor: 'transparent',
+      borderWidth: border.Width.border,
+      borderRadius: components.menu.item.borderRadius,
+      backgroundColor: 'transparent',
+    },
+    containerPressed: { backgroundColor: components.menu.item.focusBackground },
+    containerDisabled: {
+      borderColor: 'transparent',
+      backgroundColor: components.button.extend.disabledBackground,
+      opacity: 0.6,
+    },
+    separator: {
+      borderTopWidth: 1,
+      borderTopColor: components.menu.separator.borderColor,
+      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-1; value=3.5; target=components.menu.extend.extItem.caption.gap; targetValue=4
+      paddingTop: spacing.Gap['gap-1'],
+    },
+    contentContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-2; value=7; target=components.menu.item.gap; targetValue=8
+      gap: spacing.Gap['gap-2'],
+      paddingHorizontal: components.menu.item.paddingLeft,
+      paddingVertical: components.menu.item.paddingTop,
+    },
+    accessory: {
+      color: components.menu.item.icon.color,
+      width: components.menu.extend.iconSize,
+      height: components.menu.extend.iconSize,
+    },
+    templateContainer: {
+      flexDirection: 'row',
+      gap: spacing.Gap['gap-2'],
+      flex: 1,
+    },
+    icon: {
+      // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-xl; value=17.5; target=components.menu.extend.iconSize; targetValue=20
+      width: typography.Size['text-xl'],
+      height: typography.Size['text-xl'],
+      color: components.menu.item.icon.color,
+    },
+    textContainer: { gap: spacing.Gap['gap-1'], flex: 1 },
+  })
+)
