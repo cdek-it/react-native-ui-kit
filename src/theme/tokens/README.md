@@ -7,3 +7,7 @@
 `design-tokens/input/tokens.json` и не редактируется вручную.
 
 Подробности: [генератор токенов](../../../scripts/token-generator/README.md).
+
+`focusRing` сохраняет структуру входных токенов. При `style: "none"` компонент
+не применяет `width`, `color` и `offset` как outline-свойства, но может
+использовать независимый `shadow` как `boxShadow`.
