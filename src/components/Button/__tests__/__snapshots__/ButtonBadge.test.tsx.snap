@@ -110,13 +110,13 @@ exports[`ButtonSeverity component tests badge - basic 1`] = `
         style={
           [
             {
-              "backgroundColor": "#fbacaa",
+              "backgroundColor": "#f47f77",
             },
             {
               "borderRadius": 100,
-              "height": 21,
+              "height": 24,
               "justifyContent": "center",
-              "paddingHorizontal": 7,
+              "paddingHorizontal": 8,
             },
           ]
         }
@@ -127,7 +127,7 @@ exports[`ButtonSeverity component tests badge - basic 1`] = `
           style={
             [
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -162,7 +162,7 @@ exports[`ButtonSeverity component tests badge - basic 1`] = `
             onLayout={[Function]}
             style={
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -281,12 +281,12 @@ exports[`ButtonSeverity component tests badge - dot 1`] = `
         style={
           [
             {
-              "backgroundColor": "#aad7fb",
+              "backgroundColor": "#77baf4",
             },
             {
               "borderRadius": 100,
-              "height": 7,
-              "width": 7,
+              "height": 8,
+              "width": 8,
             },
           ]
         }
