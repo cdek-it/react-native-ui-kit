@@ -5,6 +5,7 @@ import {
   writeFileSync,
   renameSync,
   existsSync,
+  unlinkSync,
 } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { isDeepStrictEqual } from 'node:util'
@@ -56,6 +57,16 @@ export const writeGeneratedTokens = (
 ): void => {
   mkdirSync(outputDirectory, { recursive: true })
 
+  const expectedFiles = new Set(
+    outputEntries(compiled).map(([fileName]) => fileName)
+  )
+
+  for (const fileName of findJsonFiles(outputDirectory)) {
+    if (!expectedFiles.has(fileName)) {
+      unlinkSync(join(outputDirectory, fileName))
+    }
+  }
+
   for (const [fileName, value] of outputEntries(compiled)) {
     const outputPath = join(outputDirectory, fileName)
     const temporaryPath = `${outputPath}.tmp`
@@ -84,26 +95,40 @@ const findJsonFiles = (directory: string, prefix = ''): string[] => {
     .sort()
 }
 
-export const findStaleGeneratedTokens = (
+export interface GeneratedTokenIssues {
+  missing: string[]
+  changed: string[]
+  unexpected: string[]
+}
+
+export const findGeneratedTokenIssues = (
   compiled: CompiledTokens,
   outputDirectory: string
-): string[] => {
+): GeneratedTokenIssues => {
   const entries = outputEntries(compiled)
   const expectedFiles = new Set(entries.map(([fileName]) => fileName))
-  const staleFiles = entries
-    .filter(([fileName, value]) => {
-      const outputPath = join(outputDirectory, fileName)
+  const missing: string[] = []
+  const changed: string[] = []
 
-      return (
-        !existsSync(outputPath) ||
-        !isDeepStrictEqual(loadTokenTree(outputPath), value)
-      )
-    })
-    .map(([fileName]) => fileName)
+  for (const [fileName, value] of entries) {
+    const outputPath = join(outputDirectory, fileName)
 
-  const unexpectedFiles = findJsonFiles(outputDirectory).filter(
+    if (existsSync(outputPath)) {
+      try {
+        if (!isDeepStrictEqual(loadTokenTree(outputPath), value)) {
+          changed.push(fileName)
+        }
+      } catch {
+        changed.push(fileName)
+      }
+    } else {
+      missing.push(fileName)
+    }
+  }
+
+  const unexpected = findJsonFiles(outputDirectory).filter(
     (fileName) => !expectedFiles.has(fileName)
   )
 
-  return [...staleFiles, ...unexpectedFiles]
+  return { missing, changed, unexpected }
 }
