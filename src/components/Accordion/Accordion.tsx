@@ -109,8 +109,8 @@ export const Accordion: React.FC<AccordionProps> = ({
           <SvgUniversal
             {...styles.icon}
             source={IconChevronRight}
-            uniProps={({ theme }) => ({
-              color: theme.Panel.Accordion.accordionHeaderTextColor,
+            uniProps={({ components }) => ({
+              color: components.accordion.header.color,
             })}
           />
         </Animated.View>
@@ -119,8 +119,8 @@ export const Accordion: React.FC<AccordionProps> = ({
             {...styles.icon}
             source={Icon}
             testID={AccordionTestIds.icon}
-            uniProps={({ theme }) => ({
-              color: theme.Panel.Accordion.accordionHeaderTextColor,
+            uniProps={({ components }) => ({
+              color: components.accordion.header.color,
             })}
           />
         ) : null}
@@ -159,14 +159,15 @@ export const AccordionTestIds = {
   separator: 'Separator',
 }
 
-const styles = StyleSheet.create(({ theme, fonts }) => ({
+const styles = StyleSheet.create(({ components, spacing, fonts }) => ({
   component: { width: '100%' },
   header: {
-    paddingVertical: theme.Panel.Accordion.accordionHeaderPaddingTopBottom,
-    gap: 7,
+    paddingVertical: spacing.Padding['p-4'],
+    // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-2; value=7; target=components.accordion.extend.extHeader.gap; targetValue=8
+    gap: spacing.Gap['gap-2'],
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: theme.Panel.Accordion.accordionHeaderBg,
+    backgroundColor: components.accordion.colorScheme.header.background,
   },
   icon: { width: 17.5, height: 17.5 },
   title: {
@@ -174,20 +175,22 @@ const styles = StyleSheet.create(({ theme, fonts }) => ({
     includeFontPadding: false,
     verticalAlign: 'middle',
     fontWeight: 700,
-    color: theme.Panel.Accordion.accordionHeaderTextColor,
+    color: components.accordion.header.color,
     fontFamily: fonts.secondary,
   },
   contentAnimated: { overflow: 'hidden' },
   contentWrapper: {
     position: 'absolute',
     width: '100%',
-    paddingLeft: theme.Panel.Accordion.accordionContentPaddingLeft,
-    paddingTop: theme.Panel.Accordion.accordionContentPaddingTop,
-    paddingRight: theme.Panel.Accordion.accordionContentPaddingRight,
-    paddingBottom: theme.Panel.Accordion.accordionContentPaddingBottom,
+    // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Padding.p-7; value=24.5; target=components.accordion.content.paddingLeft; targetValue=24
+    paddingLeft: spacing.Padding['p-7'],
+    paddingTop: spacing.Padding['p-0'],
+    // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Padding.p-0; value=0; target=components.accordion.content.paddingRight; targetValue=24
+    paddingRight: spacing.Padding['p-0'],
+    paddingBottom: spacing.Padding['p-4'],
   },
   separator: {
-    borderTopColor: theme.Panel.Accordion.accordionHeaderBorderColor,
+    borderTopColor: components.accordion.panel.borderColor,
     borderTopWidth: 1,
   },
   disabled: { mixBlendMode: 'luminosity', opacity: 0.6 },
