@@ -89,30 +89,34 @@ export const ProgressBar = memo<ProgressBarProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, typography, border, fonts }) => ({
-  container: {
-    borderRadius: border.Radius['rounded-full'],
-    backgroundColor: theme.Misc.ProgressBar.progressBarBg,
-    overflow: 'hidden',
-  },
+const styles = StyleSheet.create(
+  ({ components, typography, border, fonts }) => ({
+    container: {
+      // TODO(tokens-migration): reason=value-mismatch; legacy=border.Radius.rounded-full; value=100; target=components.progressbar.root.borderRadius; targetValue=14
+      borderRadius: border.Radius['rounded-full'],
+      backgroundColor: components.progressbar.root.background,
+      overflow: 'hidden',
+    },
 
-  indicator: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: theme.Misc.ProgressBar.progressBarValueBg,
-    height: '100%',
-    overflow: 'hidden',
-  },
+    indicator: {
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: components.progressbar.value.background,
+      height: '100%',
+      overflow: 'hidden',
+    },
 
-  containerShowValue: { height: theme.Misc.ProgressBar.progressBarHeight },
+    containerShowValue: { height: components.progressbar.root.height },
 
-  indicatorText: {
-    fontSize: typography.Size['text-xs'],
-    textAlign: 'center',
-    color: theme.Misc.ProgressBar.progressBarValueTextColor,
-    fontFamily: fonts.primary,
-  },
-}))
+    indicatorText: {
+      // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-xs; value=10.5; target=components.progressbar.label.fontSize; targetValue=12
+      fontSize: typography.Size['text-xs'],
+      textAlign: 'center',
+      color: components.progressbar.label.color,
+      fontFamily: fonts.primary,
+    },
+  })
+)
 
 /**
  * Стиль компонента ProgressBar
