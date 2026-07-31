@@ -86,6 +86,8 @@ export const TabItem = memo<TabItemProps>(
   }
 )
 
+// TODO(tokens-migration): reason=missing; legacy=components.button.extend.disabledColor; light=#85888e; dark=#a2a5a9
+// TODO(tokens-migration): reason=missing; legacy=components.badge.root.height; value=24
 const styles = StyleSheet.create(({ components, typography, fonts }) => ({
   container: {
     alignItems: 'center',

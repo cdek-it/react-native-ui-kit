@@ -98,6 +98,8 @@ export const Chip = memo<ChipProps>(
 )
 
 // TODO(tokens-migration): reason=missing; legacy=hardcode.transparent; value=transparent
+// TODO(tokens-migration): reason=missing; legacy=components.button.extend.disabledColor; light=#85888e; dark=#a2a5a9
+// TODO(tokens-migration): reason=missing; legacy=components.button.extend.disabledBackground; light=#e2e2e4; dark=#404348
 const styles = StyleSheet.create(
   ({ components, typography, spacing, border, fonts }) => ({
     chip: {

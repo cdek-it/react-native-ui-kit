@@ -24,6 +24,7 @@ const containerMinHeight = StyleSheet.create(({ theme }) => ({
   xlarge: { minHeight: theme.InputSize.xlarge['min-height'] },
 }))
 
+// TODO(tokens-migration): reason=missing; legacy=components.button.extend.disabledBackground; light=#e2e2e4; dark=#404348
 export const inputStyles = StyleSheet.create(
   ({ components, border, typography, spacing, fonts }) => ({
     container: {

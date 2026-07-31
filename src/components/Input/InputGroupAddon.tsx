@@ -51,6 +51,7 @@ export const InputGroupAddon = memo<InputGroupAddonProps>(
   }
 )
 
+// TODO(tokens-migration): reason=missing; legacy=components.button.extend.disabledBackground; light=#e2e2e4; dark=#404348
 const styles = StyleSheet.create(({ components, typography, fonts }) => ({
   container: {
     padding: components.inputgroup.addon.padding,
