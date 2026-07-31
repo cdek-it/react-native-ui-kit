@@ -3,48 +3,6 @@
 exports[`RadioButton snapshots checked = false, disabled = false, state = danger 1`] = `
 <View>
   <View
-    collapsable={false}
-    jestAnimatedProps={
-      {
-        "value": {},
-      }
-    }
-    jestAnimatedStyle={
-      {
-        "value": {},
-      }
-    }
-    jestInlineStyle={
-      {
-        "backgroundColor": "#fff0f0",
-        "borderRadius": 100,
-        "height": 28,
-        "left": -3.5,
-        "opacity": 1,
-        "position": "absolute",
-        "top": -3.5,
-        "transitionDuration": 100,
-        "transitionProperty": "opacity",
-        "width": 28,
-      }
-    }
-    pointerEvents="none"
-    style={
-      [
-        {
-          "backgroundColor": "#fff0f0",
-          "borderRadius": 100,
-          "height": 28,
-          "left": -3.5,
-          "opacity": 1,
-          "position": "absolute",
-          "top": -3.5,
-          "width": 28,
-        },
-      ]
-    }
-  />
-  <View
     accessibilityState={
       {
         "busy": undefined,
@@ -79,17 +37,17 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = danger
       {
         "alignItems": "center",
         "backgroundColor": "#ffffff",
-        "borderColor": "#db3424",
+        "borderColor": "#f47f77",
         "borderRadius": 100,
         "borderWidth": 1,
-        "height": 21,
+        "height": 24,
         "justifyContent": "center",
         "transitionDuration": 100,
         "transitionProperty": [
           "borderColor",
           "backgroundColor",
         ],
-        "width": 21,
+        "width": 24,
       }
     }
     onBlur={[Function]}
@@ -106,12 +64,12 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = danger
         {
           "alignItems": "center",
           "backgroundColor": "#ffffff",
-          "borderColor": "#db3424",
+          "borderColor": "#f47f77",
           "borderRadius": 100,
           "borderWidth": 1,
-          "height": 21,
+          "height": 24,
           "justifyContent": "center",
-          "width": 21,
+          "width": 24,
         },
       ]
     }
@@ -133,13 +91,13 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = danger
         {
           "backgroundColor": "#ffffff",
           "borderRadius": 100,
-          "height": 10.5,
+          "height": 12,
           "opacity": 0,
           "transitionDuration": 100,
           "transitionProperty": [
             "opacity",
           ],
-          "width": 10.5,
+          "width": 12,
         }
       }
       style={
@@ -147,9 +105,9 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = danger
           {
             "backgroundColor": "#ffffff",
             "borderRadius": 100,
-            "height": 10.5,
+            "height": 12,
             "opacity": 0,
-            "width": 10.5,
+            "width": 12,
           },
         ]
       }
@@ -160,46 +118,6 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = danger
 
 exports[`RadioButton snapshots checked = false, disabled = false, state = default 1`] = `
 <View>
-  <View
-    collapsable={false}
-    jestAnimatedProps={
-      {
-        "value": {},
-      }
-    }
-    jestAnimatedStyle={
-      {
-        "value": {},
-      }
-    }
-    jestInlineStyle={
-      {
-        "backgroundColor": "#fff0f0",
-        "borderRadius": 100,
-        "height": 28,
-        "left": -3.5,
-        "position": "absolute",
-        "top": -3.5,
-        "transitionDuration": 100,
-        "transitionProperty": "opacity",
-        "width": 28,
-      }
-    }
-    pointerEvents="none"
-    style={
-      [
-        {
-          "backgroundColor": "#fff0f0",
-          "borderRadius": 100,
-          "height": 28,
-          "left": -3.5,
-          "position": "absolute",
-          "top": -3.5,
-          "width": 28,
-        },
-      ]
-    }
-  />
   <View
     accessibilityState={
       {
@@ -238,14 +156,14 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = defaul
         "borderColor": "#cecfd2",
         "borderRadius": 100,
         "borderWidth": 1,
-        "height": 21,
+        "height": 24,
         "justifyContent": "center",
         "transitionDuration": 100,
         "transitionProperty": [
           "borderColor",
           "backgroundColor",
         ],
-        "width": 21,
+        "width": 24,
       }
     }
     onBlur={[Function]}
@@ -265,9 +183,9 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = defaul
           "borderColor": "#cecfd2",
           "borderRadius": 100,
           "borderWidth": 1,
-          "height": 21,
+          "height": 24,
           "justifyContent": "center",
-          "width": 21,
+          "width": 24,
         },
       ]
     }
@@ -289,13 +207,13 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = defaul
         {
           "backgroundColor": "#ffffff",
           "borderRadius": 100,
-          "height": 10.5,
+          "height": 12,
           "opacity": 0,
           "transitionDuration": 100,
           "transitionProperty": [
             "opacity",
           ],
-          "width": 10.5,
+          "width": 12,
         }
       }
       style={
@@ -303,9 +221,9 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = defaul
           {
             "backgroundColor": "#ffffff",
             "borderRadius": 100,
-            "height": 10.5,
+            "height": 12,
             "opacity": 0,
-            "width": 10.5,
+            "width": 12,
           },
         ]
       }
@@ -316,48 +234,6 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = defaul
 
 exports[`RadioButton snapshots checked = false, disabled = true, state = default 1`] = `
 <View>
-  <View
-    collapsable={false}
-    jestAnimatedProps={
-      {
-        "value": {},
-      }
-    }
-    jestAnimatedStyle={
-      {
-        "value": {},
-      }
-    }
-    jestInlineStyle={
-      {
-        "backgroundColor": "#fff0f0",
-        "borderRadius": 100,
-        "height": 28,
-        "left": -3.5,
-        "opacity": 0,
-        "position": "absolute",
-        "top": -3.5,
-        "transitionDuration": 100,
-        "transitionProperty": "opacity",
-        "width": 28,
-      }
-    }
-    pointerEvents="none"
-    style={
-      [
-        {
-          "backgroundColor": "#fff0f0",
-          "borderRadius": 100,
-          "height": 28,
-          "left": -3.5,
-          "opacity": 0,
-          "position": "absolute",
-          "top": -3.5,
-          "width": 28,
-        },
-      ]
-    }
-  />
   <View
     accessibilityState={
       {
@@ -396,7 +272,7 @@ exports[`RadioButton snapshots checked = false, disabled = true, state = default
         "borderColor": "#cecfd2",
         "borderRadius": 100,
         "borderWidth": 1,
-        "height": 21,
+        "height": 24,
         "justifyContent": "center",
         "opacity": 0.6,
         "transitionDuration": 100,
@@ -404,7 +280,7 @@ exports[`RadioButton snapshots checked = false, disabled = true, state = default
           "borderColor",
           "backgroundColor",
         ],
-        "width": 21,
+        "width": 24,
       }
     }
     onBlur={[Function]}
@@ -424,10 +300,10 @@ exports[`RadioButton snapshots checked = false, disabled = true, state = default
           "borderColor": "#cecfd2",
           "borderRadius": 100,
           "borderWidth": 1,
-          "height": 21,
+          "height": 24,
           "justifyContent": "center",
           "opacity": 0.6,
-          "width": 21,
+          "width": 24,
         },
       ]
     }
@@ -449,13 +325,13 @@ exports[`RadioButton snapshots checked = false, disabled = true, state = default
         {
           "backgroundColor": "#ffffff",
           "borderRadius": 100,
-          "height": 10.5,
+          "height": 12,
           "opacity": 0,
           "transitionDuration": 100,
           "transitionProperty": [
             "opacity",
           ],
-          "width": 10.5,
+          "width": 12,
         }
       }
       style={
@@ -463,9 +339,9 @@ exports[`RadioButton snapshots checked = false, disabled = true, state = default
           {
             "backgroundColor": "#ffffff",
             "borderRadius": 100,
-            "height": 10.5,
+            "height": 12,
             "opacity": 0,
-            "width": 10.5,
+            "width": 12,
           },
         ]
       }
@@ -477,48 +353,6 @@ exports[`RadioButton snapshots checked = false, disabled = true, state = default
 exports[`RadioButton snapshots checked = true, disabled = false, state = danger 1`] = `
 <View>
   <View
-    collapsable={false}
-    jestAnimatedProps={
-      {
-        "value": {},
-      }
-    }
-    jestAnimatedStyle={
-      {
-        "value": {},
-      }
-    }
-    jestInlineStyle={
-      {
-        "backgroundColor": "#fff0f0",
-        "borderRadius": 100,
-        "height": 28,
-        "left": -3.5,
-        "opacity": 1,
-        "position": "absolute",
-        "top": -3.5,
-        "transitionDuration": 100,
-        "transitionProperty": "opacity",
-        "width": 28,
-      }
-    }
-    pointerEvents="none"
-    style={
-      [
-        {
-          "backgroundColor": "#fff0f0",
-          "borderRadius": 100,
-          "height": 28,
-          "left": -3.5,
-          "opacity": 1,
-          "position": "absolute",
-          "top": -3.5,
-          "width": 28,
-        },
-      ]
-    }
-  />
-  <View
     accessibilityState={
       {
         "busy": undefined,
@@ -556,14 +390,14 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = danger 
         "borderColor": "#2b2e33",
         "borderRadius": 100,
         "borderWidth": 1,
-        "height": 21,
+        "height": 24,
         "justifyContent": "center",
         "transitionDuration": 100,
         "transitionProperty": [
           "borderColor",
           "backgroundColor",
         ],
-        "width": 21,
+        "width": 24,
       }
     }
     onBlur={[Function]}
@@ -583,9 +417,9 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = danger 
           "borderColor": "#2b2e33",
           "borderRadius": 100,
           "borderWidth": 1,
-          "height": 21,
+          "height": 24,
           "justifyContent": "center",
-          "width": 21,
+          "width": 24,
         },
       ]
     }
@@ -607,13 +441,13 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = danger 
         {
           "backgroundColor": "#ffffff",
           "borderRadius": 100,
-          "height": 10.5,
+          "height": 12,
           "opacity": 1,
           "transitionDuration": 100,
           "transitionProperty": [
             "opacity",
           ],
-          "width": 10.5,
+          "width": 12,
         }
       }
       style={
@@ -621,9 +455,9 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = danger 
           {
             "backgroundColor": "#ffffff",
             "borderRadius": 100,
-            "height": 10.5,
+            "height": 12,
             "opacity": 1,
-            "width": 10.5,
+            "width": 12,
           },
         ]
       }
@@ -635,46 +469,6 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = danger 
 exports[`RadioButton snapshots checked = true, disabled = false, state = default 1`] = `
 <View>
   <View
-    collapsable={false}
-    jestAnimatedProps={
-      {
-        "value": {},
-      }
-    }
-    jestAnimatedStyle={
-      {
-        "value": {},
-      }
-    }
-    jestInlineStyle={
-      {
-        "backgroundColor": "#fff0f0",
-        "borderRadius": 100,
-        "height": 28,
-        "left": -3.5,
-        "position": "absolute",
-        "top": -3.5,
-        "transitionDuration": 100,
-        "transitionProperty": "opacity",
-        "width": 28,
-      }
-    }
-    pointerEvents="none"
-    style={
-      [
-        {
-          "backgroundColor": "#fff0f0",
-          "borderRadius": 100,
-          "height": 28,
-          "left": -3.5,
-          "position": "absolute",
-          "top": -3.5,
-          "width": 28,
-        },
-      ]
-    }
-  />
-  <View
     accessibilityState={
       {
         "busy": undefined,
@@ -712,14 +506,14 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = default
         "borderColor": "#2b2e33",
         "borderRadius": 100,
         "borderWidth": 1,
-        "height": 21,
+        "height": 24,
         "justifyContent": "center",
         "transitionDuration": 100,
         "transitionProperty": [
           "borderColor",
           "backgroundColor",
         ],
-        "width": 21,
+        "width": 24,
       }
     }
     onBlur={[Function]}
@@ -739,9 +533,9 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = default
           "borderColor": "#2b2e33",
           "borderRadius": 100,
           "borderWidth": 1,
-          "height": 21,
+          "height": 24,
           "justifyContent": "center",
-          "width": 21,
+          "width": 24,
         },
       ]
     }
@@ -763,13 +557,13 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = default
         {
           "backgroundColor": "#ffffff",
           "borderRadius": 100,
-          "height": 10.5,
+          "height": 12,
           "opacity": 1,
           "transitionDuration": 100,
           "transitionProperty": [
             "opacity",
           ],
-          "width": 10.5,
+          "width": 12,
         }
       }
       style={
@@ -777,9 +571,9 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = default
           {
             "backgroundColor": "#ffffff",
             "borderRadius": 100,
-            "height": 10.5,
+            "height": 12,
             "opacity": 1,
-            "width": 10.5,
+            "width": 12,
           },
         ]
       }
@@ -790,48 +584,6 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = default
 
 exports[`RadioButton snapshots checked = true, disabled = true, state = default 1`] = `
 <View>
-  <View
-    collapsable={false}
-    jestAnimatedProps={
-      {
-        "value": {},
-      }
-    }
-    jestAnimatedStyle={
-      {
-        "value": {},
-      }
-    }
-    jestInlineStyle={
-      {
-        "backgroundColor": "#fff0f0",
-        "borderRadius": 100,
-        "height": 28,
-        "left": -3.5,
-        "opacity": 0,
-        "position": "absolute",
-        "top": -3.5,
-        "transitionDuration": 100,
-        "transitionProperty": "opacity",
-        "width": 28,
-      }
-    }
-    pointerEvents="none"
-    style={
-      [
-        {
-          "backgroundColor": "#fff0f0",
-          "borderRadius": 100,
-          "height": 28,
-          "left": -3.5,
-          "opacity": 0,
-          "position": "absolute",
-          "top": -3.5,
-          "width": 28,
-        },
-      ]
-    }
-  />
   <View
     accessibilityState={
       {
@@ -870,7 +622,7 @@ exports[`RadioButton snapshots checked = true, disabled = true, state = default 
         "borderColor": "#2b2e33",
         "borderRadius": 100,
         "borderWidth": 1,
-        "height": 21,
+        "height": 24,
         "justifyContent": "center",
         "opacity": 0.6,
         "transitionDuration": 100,
@@ -878,7 +630,7 @@ exports[`RadioButton snapshots checked = true, disabled = true, state = default 
           "borderColor",
           "backgroundColor",
         ],
-        "width": 21,
+        "width": 24,
       }
     }
     onBlur={[Function]}
@@ -898,10 +650,10 @@ exports[`RadioButton snapshots checked = true, disabled = true, state = default 
           "borderColor": "#2b2e33",
           "borderRadius": 100,
           "borderWidth": 1,
-          "height": 21,
+          "height": 24,
           "justifyContent": "center",
           "opacity": 0.6,
-          "width": 21,
+          "width": 24,
         },
       ]
     }
@@ -923,13 +675,13 @@ exports[`RadioButton snapshots checked = true, disabled = true, state = default 
         {
           "backgroundColor": "#ffffff",
           "borderRadius": 100,
-          "height": 10.5,
+          "height": 12,
           "opacity": 1,
           "transitionDuration": 100,
           "transitionProperty": [
             "opacity",
           ],
-          "width": 10.5,
+          "width": 12,
         }
       }
       style={
@@ -937,9 +689,9 @@ exports[`RadioButton snapshots checked = true, disabled = true, state = default 
           {
             "backgroundColor": "#ffffff",
             "borderRadius": 100,
-            "height": 10.5,
+            "height": 12,
             "opacity": 1,
-            "width": 10.5,
+            "width": 12,
           },
         ]
       }
@@ -950,46 +702,6 @@ exports[`RadioButton snapshots checked = true, disabled = true, state = default 
 
 exports[`RadioButton snapshots default 1`] = `
 <View>
-  <View
-    collapsable={false}
-    jestAnimatedProps={
-      {
-        "value": {},
-      }
-    }
-    jestAnimatedStyle={
-      {
-        "value": {},
-      }
-    }
-    jestInlineStyle={
-      {
-        "backgroundColor": "#fff0f0",
-        "borderRadius": 100,
-        "height": 28,
-        "left": -3.5,
-        "position": "absolute",
-        "top": -3.5,
-        "transitionDuration": 100,
-        "transitionProperty": "opacity",
-        "width": 28,
-      }
-    }
-    pointerEvents="none"
-    style={
-      [
-        {
-          "backgroundColor": "#fff0f0",
-          "borderRadius": 100,
-          "height": 28,
-          "left": -3.5,
-          "position": "absolute",
-          "top": -3.5,
-          "width": 28,
-        },
-      ]
-    }
-  />
   <View
     accessibilityState={
       {
@@ -1028,14 +740,14 @@ exports[`RadioButton snapshots default 1`] = `
         "borderColor": "#cecfd2",
         "borderRadius": 100,
         "borderWidth": 1,
-        "height": 21,
+        "height": 24,
         "justifyContent": "center",
         "transitionDuration": 100,
         "transitionProperty": [
           "borderColor",
           "backgroundColor",
         ],
-        "width": 21,
+        "width": 24,
       }
     }
     onBlur={[Function]}
@@ -1055,9 +767,9 @@ exports[`RadioButton snapshots default 1`] = `
           "borderColor": "#cecfd2",
           "borderRadius": 100,
           "borderWidth": 1,
-          "height": 21,
+          "height": 24,
           "justifyContent": "center",
-          "width": 21,
+          "width": 24,
         },
       ]
     }
@@ -1079,13 +791,13 @@ exports[`RadioButton snapshots default 1`] = `
         {
           "backgroundColor": "#ffffff",
           "borderRadius": 100,
-          "height": 10.5,
+          "height": 12,
           "opacity": 0,
           "transitionDuration": 100,
           "transitionProperty": [
             "opacity",
           ],
-          "width": 10.5,
+          "width": 12,
         }
       }
       style={
@@ -1093,9 +805,9 @@ exports[`RadioButton snapshots default 1`] = `
           {
             "backgroundColor": "#ffffff",
             "borderRadius": 100,
-            "height": 10.5,
+            "height": 12,
             "opacity": 0,
-            "width": 10.5,
+            "width": 12,
           },
         ]
       }
