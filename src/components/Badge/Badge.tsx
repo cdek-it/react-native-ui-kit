@@ -104,42 +104,44 @@ export const Badge = memo<BadgeProps>(
 )
 
 const badgeStyles = StyleSheet.create(
-  ({ theme, border, typography, fonts }) => ({
+  ({ components, border, typography, fonts }) => ({
     container: { alignItems: 'flex-start' },
     dot: {
       variants: {
         severity: {
-          basic: { backgroundColor: theme.Misc.Badge.badgeBg },
+          basic: {
+            backgroundColor: components.badge.colorScheme.primary.background,
+          },
           info: {
-            backgroundColor: theme.Button.Severity.Info.Basic.infoButtonBg,
+            backgroundColor: components.badge.extend.extDot.info.background,
           },
           success: {
-            backgroundColor:
-              theme.Button.Severity.Success.Basic.successButtonBg,
+            backgroundColor: components.badge.extend.extDot.success.background,
           },
           warning: {
-            backgroundColor:
-              theme.Button.Severity.Warning.Basic.warningButtonBg,
+            backgroundColor: components.badge.extend.extDot.warn.background,
           },
           danger: {
-            backgroundColor: theme.Button.Severity.Danger.Basic.dangerButtonBg,
+            backgroundColor: components.badge.extend.extDot.danger.background,
           },
         },
       },
     },
     dotShape: {
-      width: theme.Misc.Badge.badgeDotSize,
-      height: theme.Misc.Badge.badgeDotSize,
+      width: components.badge.dot.size,
+      height: components.badge.dot.size,
+      // TODO(tokens-migration): reason=value-mismatch; legacy=border.Radius.rounded-full; value=100; target=components.badge.root.borderRadius; targetValue=8
       borderRadius: border.Radius['rounded-full'],
     },
     textBadgeContainer: {
-      height: theme.Misc.Badge.badgeHeight,
-      paddingHorizontal: theme.Misc.Tag.tagPadding,
+      height: components.badge.root.height,
+      paddingHorizontal: components.badge.root.padding,
       justifyContent: 'center',
       borderRadius: border.Radius['rounded-full'],
     },
     textBadge: {
-      color: theme.Misc.Badge.badgeTextColor,
+      color: components.badge.colorScheme.primary.color,
+      // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-xs; value=10.5; target=components.badge.root.fontSize; targetValue=12
       fontSize: typography.Size['text-xs'],
       includeFontPadding: false,
       verticalAlign: 'middle',
