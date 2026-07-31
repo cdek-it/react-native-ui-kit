@@ -17,6 +17,7 @@ import {
 import { compileTokens } from '../core/compiler'
 import {
   convertUnit,
+  normalizeEasing,
   normalizeTree,
   parseBoxShorthand,
 } from '../core/normalization'
@@ -67,6 +68,56 @@ const containsColorSchemeThemeBranch = (node: TokenValue): boolean => {
 }
 
 describe('token compiler', () => {
+  describe('normalizeEasing', () => {
+    test.each([
+      {
+        name: 'linear',
+        value: 'linear',
+        expected: { x1: 0, y1: 0, x2: 1, y2: 1 },
+      },
+      {
+        name: 'cubic-bezier',
+        value: 'cubic-bezier(0.2, 0, 0, 1)',
+        expected: { x1: 0.2, y1: 0, x2: 0, y2: 1 },
+      },
+      {
+        name: 'spring с y больше единицы',
+        value: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
+        expected: { x1: 0.34, y1: 1.56, x2: 0.64, y2: 1 },
+      },
+    ])('$name преобразуется в коэффициенты', ({ value, expected }) => {
+      expect(normalizeEasing(value)).toStrictEqual(expected)
+    })
+
+    test('отклоняет неподдерживаемый формат', () => {
+      expect(() => normalizeEasing('ease-in')).toThrow('Unsupported easing')
+    })
+
+    test('отклоняет объект вместо easing-строки при нормализации дерева', () => {
+      expect(() =>
+        normalizeTree(
+          {
+            effects: {
+              transition: { easing: { standard: { unexpected: 'value' } } },
+            },
+          },
+          'semantic'
+        )
+      ).toThrow(
+        'Expected easing string at "semantic.effects.transition.easing.standard"'
+      )
+    })
+
+    test.each([
+      { name: 'x1 меньше нуля', value: 'cubic-bezier(-0.1, 0, 1, 1)' },
+      { name: 'x2 больше единицы', value: 'cubic-bezier(0, 0, 1.1, 1)' },
+    ])('$name отклоняется', ({ value }) => {
+      expect(() => normalizeEasing(value)).toThrow(
+        'Easing x coordinates must be between 0 and 1'
+      )
+    })
+  })
+
   describe('convertUnit', () => {
     test.each([
       { name: 'положительный rem', value: '1.5rem', expected: 24 },
@@ -403,6 +454,30 @@ describe('production input tokens', () => {
 
     expect(serialized).not.toMatch(/\{[a-z][^}]*\}/i)
     expect(serialized).not.toMatch(/-?\d*\.?\d+(?:rem|ms)\b/)
+  })
+
+  test('преобразует animation-токены в runtime-формат', () => {
+    expect(compiled.semantic.light).toHaveProperty(
+      'effects.transition.easing.linear',
+      { x1: 0, y1: 0, x2: 1, y2: 1 }
+    )
+    expect(compiled.semantic.dark).toHaveProperty(
+      'effects.transition.easing.spring',
+      { x1: 0.34, y1: 1.56, x2: 0.64, y2: 1 }
+    )
+    expect(compiled.semantic.light).toHaveProperty(
+      'effects.transition.duration.200',
+      180
+    )
+    expect(compiled.components.light).toHaveProperty(
+      'button.root.transitionDuration',
+      180
+    )
+    expect(compiled.components.dark).toHaveProperty(
+      'toggleswitch.root.slideDuration',
+      180
+    )
+    expect(JSON.stringify(compiled)).not.toMatch(/cubic-bezier\s*\(/)
   })
 
   test('экспортирует focusRing без изменения его структуры', () => {
