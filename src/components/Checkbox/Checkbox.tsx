@@ -97,8 +97,8 @@ export const Checkbox = memo<CheckboxProps>(
           <SvgUniversal
             {...styles.icon}
             source={Icon}
-            uniProps={({ theme }) => ({
-              color: theme.Form.Checkbox.checkboxIconActiveColor,
+            uniProps={({ components }) => ({
+              color: components.checkbox.icon.checkedColor,
             })}
           />
         ) : null}
@@ -107,57 +107,52 @@ export const Checkbox = memo<CheckboxProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, border, sizing }) => ({
+const styles = StyleSheet.create(({ components }) => ({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
-    width: theme.Form.Checkbox.checkboxWidth,
-    height: theme.Form.Checkbox.checkboxHeight,
+    width: components.checkbox.root.width,
+    height: components.checkbox.root.height,
   },
   background: { ...RNStyleSheet.absoluteFillObject },
   backgroundState: {
-    borderRadius: border.Radius['rounded-lg'],
-    borderWidth: border.Width.border,
+    borderRadius: components.checkbox.root.borderRadius,
+    borderWidth: components.checkbox.root.extend.borderWidth,
     variants: {
       filled: {
         true: {
-          backgroundColor: theme.Form.Checkbox.checkboxActiveBg,
-          borderColor: theme.Form.Checkbox.checkboxActiveBorderColor,
+          backgroundColor: components.checkbox.root.checkedBackground,
+          borderColor: components.checkbox.root.checkedBorderColor,
         },
         false: {
-          backgroundColor: theme.Form.InputText.inputBg,
-          borderColor: theme.Form.InputText.inputBorderColor,
+          backgroundColor: components.checkbox.root.background,
+          borderColor: components.checkbox.root.borderColor,
         },
       },
       pressed: {
-        true: { borderColor: theme.Form.InputText.inputHoverBorderColor },
+        true: { borderColor: components.checkbox.root.hoverBorderColor },
         false: {},
       },
       state: {
-        danger: {
-          borderColor: theme.Form.InputText.inputErrorBorderColor,
-          outlineStyle: 'solid',
-          outlineColor: theme.General.focusOutlineErrorColor,
-          outlineWidth: Math.round(theme.General.focusShadowWidth),
-        },
+        danger: { borderColor: components.checkbox.root.invalidBorderColor },
       },
-      disabled: { true: { outlineWidth: 0 }, false: {} },
+      disabled: { true: {}, false: {} },
     },
     compoundVariants: [
       {
         filled: 'true',
         pressed: 'true',
         styles: {
-          backgroundColor: theme.Form.Checkbox.checkboxActiveHoverBg,
-          borderColor: theme.Form.Checkbox.checkboxActiveHoverBorderColor,
+          backgroundColor: components.checkbox.root.checkedHoverBackground,
+          borderColor: components.checkbox.root.checkedHoverBorderColor,
         },
       },
       {
         filled: 'false',
         disabled: 'true',
         styles: {
-          backgroundColor: theme.Button.Disabled.disabledButtonBg,
-          borderColor: theme.Form.InputText.inputBorderColor,
+          backgroundColor: components.checkbox.root.disabledBackground,
+          borderColor: components.checkbox.root.borderColor,
           mixBlendMode: 'luminosity',
         },
       },
@@ -165,12 +160,12 @@ const styles = StyleSheet.create(({ theme, border, sizing }) => ({
         filled: 'true',
         disabled: 'true',
         styles: {
-          borderColor: theme.Form.Checkbox.checkboxActiveBorderColor,
+          borderColor: components.checkbox.root.checkedBorderColor,
           opacity: 0.2,
           mixBlendMode: 'luminosity',
         },
       },
     ],
   },
-  icon: { height: sizing.Height['h-1'], width: sizing.Width['w-1'] },
+  icon: { height: 14, width: 14 },
 }))
