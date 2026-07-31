@@ -42,13 +42,16 @@ export interface TagProps
 
 type TagSeverity = NonNullable<TagProps['severity']>
 
-const tagIconColor: Record<TagSeverity, (t: ThemeType['theme']) => string> = {
-  basic: (t) => t.Misc.Badge.badgeTextColor,
-  info: (t) => t.Misc.Badge.badgeInfoTextColor,
-  success: (t) => t.Misc.Badge.badgeSuccessTextColor,
-  warning: (t) => t.Misc.Badge.badgeWarningTextColor,
-  danger: (t) => t.Misc.Badge.badgeDangerTextColor,
-  secondary: (t) => t.Misc.Badge.badgeTextColor,
+const tagIconColor: Record<
+  TagSeverity,
+  (t: ThemeType['components']) => string
+> = {
+  basic: (t) => t.tag.colorScheme.primary.color,
+  info: (t) => t.tag.colorScheme.info.color,
+  success: (t) => t.tag.colorScheme.success.color,
+  warning: (t) => t.tag.colorScheme.warn.color,
+  danger: (t) => t.tag.colorScheme.danger.color,
+  secondary: (t) => t.tag.colorScheme.secondary.color,
 }
 
 /**
@@ -79,8 +82,8 @@ export const Tag = memo<TagProps>(
               {...tagStyles.icon}
               source={Icon}
               testID={TagTestId.icon}
-              uniProps={({ theme }) => ({
-                color: tagIconColor[severity](theme),
+              uniProps={({ components }) => ({
+                color: tagIconColor[severity](components),
               })}
             />
           ) : null}
@@ -98,55 +101,58 @@ export const Tag = memo<TagProps>(
 )
 
 const tagStyles = StyleSheet.create(
-  ({ theme, border, spacing, typography, fonts }) => ({
+  ({ components, border, spacing, typography, fonts }) => ({
     container: {
       alignSelf: 'flex-start',
       flexDirection: 'row',
       alignItems: 'center',
+      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-1; value=3.5; target=components.tag.root.gap; targetValue=4
       gap: spacing.Gap['gap-1'],
-      paddingHorizontal: theme.Misc.Tag.tagPadding,
-      height: theme.Misc.Tag.tagHeight,
+      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Padding.p-2; value=7; target=components.tag.root.paddingLeft; targetValue=8
+      paddingHorizontal: spacing.Padding['p-2'],
+      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Padding.p-1; value=3.5; target=components.tag.root.paddingTop; targetValue=4
+      paddingVertical: spacing.Padding['p-1'],
+      // TODO(tokens-migration): reason=value-mismatch; legacy=border.Radius.rounded-lg; value=7; target=components.tag.root.borderRadius; targetValue=8
       borderRadius: border.Radius['rounded-lg'],
       variants: {
         severity: {
-          basic: { backgroundColor: theme.Misc.Badge.badgeBg },
-          info: {
-            backgroundColor: theme.Button.Severity.Info.Basic.infoButtonBg,
+          basic: {
+            backgroundColor: components.tag.colorScheme.primary.background,
           },
+          info: { backgroundColor: components.tag.colorScheme.info.background },
           success: {
-            backgroundColor:
-              theme.Button.Severity.Success.Basic.successButtonBg,
+            backgroundColor: components.tag.colorScheme.success.background,
           },
           warning: {
-            backgroundColor:
-              theme.Button.Severity.Warning.Basic.warningButtonBg,
+            backgroundColor: components.tag.colorScheme.warn.background,
           },
           danger: {
-            backgroundColor: theme.Button.Severity.Danger.Basic.dangerButtonBg,
+            backgroundColor: components.tag.colorScheme.danger.background,
           },
-          secondary: { backgroundColor: theme.Surface['surface-border'] },
+          secondary: {
+            backgroundColor: components.tag.colorScheme.secondary.background,
+          },
         },
       },
     },
+    // TODO(tokens-migration): reason=value-mismatch; legacy=border.Radius.rounded-full; value=100; target=components.tag.root.roundedBorderRadius; targetValue=1600
     roundedContainer: { borderRadius: border.Radius['rounded-full'] },
-    icon: {
-      width: theme.Misc.Tag.tagFontSize,
-      height: theme.Misc.Tag.tagFontSize,
-    },
+    icon: { width: components.tag.icon.size, height: components.tag.icon.size },
     text: {
       flexShrink: 1,
+      // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-xs; value=10.5; target=components.tag.root.fontSize; targetValue=12
       fontSize: typography.Size['text-xs'],
       includeFontPadding: false,
       verticalAlign: 'middle',
       fontFamily: fonts.primary,
       variants: {
         severity: {
-          basic: { color: theme.Misc.Badge.badgeTextColor },
-          info: { color: theme.Misc.Badge.badgeInfoTextColor },
-          success: { color: theme.Misc.Badge.badgeSuccessTextColor },
-          warning: { color: theme.Misc.Badge.badgeWarningTextColor },
-          danger: { color: theme.Misc.Badge.badgeDangerTextColor },
-          secondary: { color: theme.Misc.Badge.badgeTextColor },
+          basic: { color: components.tag.colorScheme.primary.color },
+          info: { color: components.tag.colorScheme.info.color },
+          success: { color: components.tag.colorScheme.success.color },
+          warning: { color: components.tag.colorScheme.warn.color },
+          danger: { color: components.tag.colorScheme.danger.color },
+          secondary: { color: components.tag.colorScheme.secondary.color },
         },
       },
     },

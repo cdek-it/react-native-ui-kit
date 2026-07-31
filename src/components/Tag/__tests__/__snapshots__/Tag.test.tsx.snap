@@ -14,8 +14,8 @@ exports[`Tag snapshot: default 1`] = `
           "borderRadius": 7,
           "flexDirection": "row",
           "gap": 3.5,
-          "height": 21,
           "paddingHorizontal": 7,
+          "paddingVertical": 3.5,
         },
         undefined,
       ]
@@ -26,7 +26,7 @@ exports[`Tag snapshot: default 1`] = `
       numberOfLines={1}
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "flexShrink": 1,
           "fontFamily": "TT Fellows",
           "fontSize": 10.5,
@@ -56,8 +56,8 @@ exports[`Tag snapshot: severity = basic, rounded = true, with Icon 1`] = `
           "borderRadius": 7,
           "flexDirection": "row",
           "gap": 3.5,
-          "height": 21,
           "paddingHorizontal": 7,
+          "paddingVertical": 3.5,
         },
         {
           "borderRadius": 100,
@@ -68,15 +68,15 @@ exports[`Tag snapshot: severity = basic, rounded = true, with Icon 1`] = `
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={12.25}
-      bbWidth={12.25}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={12.25}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#000000"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -88,15 +88,15 @@ exports[`Tag snapshot: severity = basic, rounded = true, with Icon 1`] = `
           },
           {
             "flex": 0,
-            "height": 12,
-            "width": 12,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="Tag.icon"
       vbHeight={24}
       vbWidth={24}
-      width={12.25}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -112,7 +112,7 @@ exports[`Tag snapshot: severity = basic, rounded = true, with Icon 1`] = `
         }
         stroke={
           {
-            "payload": 4278190080,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -134,7 +134,7 @@ exports[`Tag snapshot: severity = basic, rounded = true, with Icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -149,7 +149,7 @@ exports[`Tag snapshot: severity = basic, rounded = true, with Icon 1`] = `
       numberOfLines={1}
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "flexShrink": 1,
           "fontFamily": "TT Fellows",
           "fontSize": 10.5,
@@ -179,8 +179,8 @@ exports[`Tag snapshot: severity = danger 1`] = `
           "borderRadius": 7,
           "flexDirection": "row",
           "gap": 3.5,
-          "height": 21,
           "paddingHorizontal": 7,
+          "paddingVertical": 3.5,
         },
         undefined,
       ]
@@ -221,8 +221,8 @@ exports[`Tag snapshot: severity = info, showIcon = false, with Icon 1`] = `
           "borderRadius": 7,
           "flexDirection": "row",
           "gap": 3.5,
-          "height": 21,
           "paddingHorizontal": 7,
+          "paddingVertical": 3.5,
         },
         undefined,
       ]
@@ -231,11 +231,11 @@ exports[`Tag snapshot: severity = info, showIcon = false, with Icon 1`] = `
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={12.25}
-      bbWidth={12.25}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={12.25}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -251,15 +251,15 @@ exports[`Tag snapshot: severity = info, showIcon = false, with Icon 1`] = `
           },
           {
             "flex": 0,
-            "height": 12,
-            "width": 12,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="Tag.icon"
       vbHeight={24}
       vbWidth={24}
-      width={12.25}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -342,8 +342,8 @@ exports[`Tag snapshot: severity = secondary, rounded = false, showIcon = true, w
           "borderRadius": 7,
           "flexDirection": "row",
           "gap": 3.5,
-          "height": 21,
           "paddingHorizontal": 7,
+          "paddingVertical": 3.5,
         },
         false,
       ]
@@ -352,15 +352,15 @@ exports[`Tag snapshot: severity = secondary, rounded = false, showIcon = true, w
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={12.25}
-      bbWidth={12.25}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={12.25}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#000000"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -372,15 +372,15 @@ exports[`Tag snapshot: severity = secondary, rounded = false, showIcon = true, w
           },
           {
             "flex": 0,
-            "height": 12,
-            "width": 12,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="Tag.icon"
       vbHeight={24}
       vbWidth={24}
-      width={12.25}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -396,7 +396,7 @@ exports[`Tag snapshot: severity = secondary, rounded = false, showIcon = true, w
         }
         stroke={
           {
-            "payload": 4278190080,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -418,7 +418,7 @@ exports[`Tag snapshot: severity = secondary, rounded = false, showIcon = true, w
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -433,7 +433,7 @@ exports[`Tag snapshot: severity = secondary, rounded = false, showIcon = true, w
       numberOfLines={1}
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "flexShrink": 1,
           "fontFamily": "TT Fellows",
           "fontSize": 10.5,
@@ -464,12 +464,12 @@ exports[`Tag snapshot: severity = success, with custom styles 1`] = `
         {
           "alignItems": "center",
           "alignSelf": "flex-start",
-          "backgroundColor": "#aafbb7",
+          "backgroundColor": "#77f48a",
           "borderRadius": 7,
           "flexDirection": "row",
           "gap": 3.5,
-          "height": 21,
           "paddingHorizontal": 7,
+          "paddingVertical": 3.5,
         },
         undefined,
       ]
@@ -510,8 +510,8 @@ exports[`Tag snapshot: severity = warning 1`] = `
           "borderRadius": 7,
           "flexDirection": "row",
           "gap": 3.5,
-          "height": 21,
           "paddingHorizontal": 7,
+          "paddingVertical": 3.5,
         },
         undefined,
       ]
