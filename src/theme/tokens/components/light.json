@@ -19,7 +19,7 @@
       "paddingRight": 0,
       "paddingBottom": 14,
       "paddingLeft": 0,
-      "fontWeight": "700",
+      "fontWeight": 700,
       "borderRadius": 0,
       "borderWidth": 0,
       "focusRing": {
@@ -125,7 +125,7 @@
     "optionGroup": {
       "background": "#ffffff",
       "color": "#85888e",
-      "fontWeight": "600",
+      "fontWeight": 600,
       "paddingTop": 8,
       "paddingRight": 14,
       "paddingBottom": 8,
@@ -207,7 +207,7 @@
       "borderRadius": 8,
       "padding": 8,
       "fontSize": 12,
-      "fontWeight": "400",
+      "fontWeight": 400,
       "minWidth": 24,
       "height": 24
     },
@@ -532,7 +532,7 @@
         "paddingX": 24,
         "paddingY": 14
       },
-      "label": { "fontWeight": "600" }
+      "label": { "fontWeight": 600 }
     }
   },
   "card": {
@@ -545,7 +545,7 @@
     },
     "body": { "padding": 14, "gap": 14 },
     "caption": { "gap": 4 },
-    "title": { "fontSize": 18, "fontWeight": "600" },
+    "title": { "fontSize": 18, "fontWeight": 600 },
     "subtitle": { "color": "#85888e" }
   },
   "carousel": {
@@ -767,7 +767,7 @@
       "sm": { "padding": 8 },
       "lg": { "padding": 20 }
     },
-    "columnTitle": { "fontWeight": "700" },
+    "columnTitle": { "fontWeight": 700 },
     "row": {
       "background": "#ffffff",
       "hoverBackground": "#f0f0f1",
@@ -795,7 +795,7 @@
       "sm": { "padding": 8 },
       "lg": { "padding": 20 }
     },
-    "columnFooter": { "fontWeight": "700" },
+    "columnFooter": { "fontWeight": 700 },
     "dropPoint": { "color": "#2b2e33" },
     "footer": {
       "borderColor": "#e2e2e4",
@@ -968,7 +968,7 @@
       "color": "#2b2e33",
       "padding": 14
     },
-    "title": { "gap": 8, "fontWeight": "700" },
+    "title": { "gap": 8, "fontWeight": 700 },
     "selectMonth": {
       "hoverBackground": "#f0f0f1",
       "color": "#2b2e33",
@@ -1002,7 +1002,7 @@
       "padding": 4
     },
     "dayView": { "margin": 14 },
-    "weekDay": { "padding": 4, "fontWeight": "700", "color": "#2b2e33" },
+    "weekDay": { "padding": 4, "fontWeight": 700, "color": "#2b2e33" },
     "date": {
       "hoverBackground": "#f0f0f1",
       "selectedBackground": "#2b2e33",
@@ -1062,7 +1062,7 @@
       "paddingLeft": 24,
       "gap": 8
     },
-    "title": { "fontSize": 20, "fontWeight": "600" },
+    "title": { "fontSize": 20, "fontWeight": 600 },
     "content": { "padding": 24 },
     "footer": {
       "paddingTop": 0,
@@ -1131,7 +1131,7 @@
       "paddingBottom": 14,
       "paddingLeft": 24
     },
-    "title": { "fontSize": 20, "fontWeight": "600" },
+    "title": { "fontSize": 20, "fontWeight": 600 },
     "content": { "padding": 24 },
     "footer": {
       "paddingTop": 0,
@@ -1190,8 +1190,8 @@
       "transitionDuration": 180,
       "positionX": 14,
       "positionY": 14,
-      "fontWeight": "400",
-      "active": { "fontSize": 12, "fontWeight": "400" }
+      "fontWeight": 400,
+      "active": { "fontSize": 12, "fontWeight": 400 }
     },
     "over": { "active": { "top": 14 } },
     "inside": {
@@ -1425,7 +1425,7 @@
     "optionGroup": {
       "background": "#ffffff",
       "color": "#85888e",
-      "fontWeight": "600",
+      "fontWeight": 600,
       "paddingTop": 8,
       "paddingRight": 14,
       "paddingBottom": 8,
@@ -1496,7 +1496,7 @@
       "paddingLeft": 14,
       "background": "transparent",
       "color": "#85888e",
-      "fontWeight": "600"
+      "fontWeight": 600
     },
     "submenuIcon": {
       "size": 20,
@@ -1546,7 +1546,7 @@
       "paddingRight": 14,
       "paddingBottom": 8,
       "paddingLeft": 14,
-      "fontWeight": "600",
+      "fontWeight": 600,
       "background": "transparent",
       "color": "#85888e"
     },
@@ -1573,7 +1573,7 @@
         "paddingRight": 14,
         "paddingBottom": 8,
         "paddingLeft": 14,
-        "fontWeight": "600",
+        "fontWeight": 600,
         "background": "transparent",
         "color": "#85888e"
       }
@@ -1784,7 +1784,7 @@
     },
     "text": {
       "fontSize": 16,
-      "fontWeight": "700",
+      "fontWeight": 700,
       "sm": { "fontSize": 16 },
       "lg": { "fontSize": 16 }
     },
@@ -1881,7 +1881,7 @@
       "selectedFocusColor": "#ffffff"
     },
     "optionGroup": {
-      "fontWeight": "600",
+      "fontWeight": 600,
       "paddingTop": 8,
       "paddingRight": 14,
       "paddingBottom": 8,
@@ -2017,7 +2017,7 @@
     "content": { "padding": 14 }
   },
   "progressbar": {
-    "label": { "color": "#2b2e33", "fontSize": 12, "fontWeight": "400" },
+    "label": { "color": "#2b2e33", "fontSize": 12, "fontWeight": 400 },
     "root": { "background": "#e2e2e4", "borderRadius": 14, "height": 16 },
     "value": { "background": "#44e858" }
   },
@@ -2194,7 +2194,7 @@
     "optionGroup": {
       "background": "#ffffff",
       "color": "#85888e",
-      "fontWeight": "600",
+      "fontWeight": 600,
       "paddingTop": 8,
       "paddingRight": 14,
       "paddingBottom": 8,
@@ -2318,7 +2318,7 @@
     "stepTitle": {
       "color": "#2b2e33",
       "activeColor": "#2b2e33",
-      "fontWeight": "400"
+      "fontWeight": 400
     },
     "stepNumber": {
       "background": "#ffffff",
@@ -2329,7 +2329,7 @@
       "activeColor": "#2b2e33",
       "size": 24,
       "fontSize": 16,
-      "fontWeight": "700",
+      "fontWeight": 700,
       "borderRadius": 1600,
       "shadow": "none"
     },
@@ -2354,7 +2354,7 @@
       }
     },
     "itemLabel": {
-      "fontWeight": "400",
+      "fontWeight": 400,
       "activeColor": "#56595f",
       "color": "#2b2e33"
     },
@@ -2362,7 +2362,7 @@
       "background": "#ffffff",
       "size": 32,
       "fontSize": 16,
-      "fontWeight": "700",
+      "fontWeight": 700,
       "borderRadius": 1600,
       "shadow": "none",
       "activeBackground": "#ffffff",
@@ -2401,7 +2401,7 @@
       "hoverColor": "#2b2e33",
       "activeColor": "#2b2e33",
       "padding": 14,
-      "fontWeight": "600",
+      "fontWeight": 600,
       "margin": 0,
       "gap": 8,
       "focusRing": {
@@ -2551,8 +2551,8 @@
     "icon": { "size": 36 },
     "content": { "padding": 14, "gap": 14 },
     "text": { "gap": 4 },
-    "summary": { "fontWeight": "700", "fontSize": 16 },
-    "detail": { "fontWeight": "400", "fontSize": 14 },
+    "summary": { "fontWeight": 700, "fontSize": 16 },
+    "detail": { "fontWeight": 400, "fontSize": 14 },
     "closeButton": {
       "width": 32,
       "height": 32,
@@ -2573,7 +2573,7 @@
     },
     "root": {
       "fontSize": 12,
-      "fontWeight": "400",
+      "fontWeight": 400,
       "paddingTop": 4,
       "paddingRight": 8,
       "paddingBottom": 4,
@@ -2748,7 +2748,7 @@
       "paddingLeft": 14,
       "borderRadius": 1600,
       "gap": 8,
-      "fontWeight": "600",
+      "fontWeight": 600,
       "focusRing": {
         "width": 4,
         "style": "none",

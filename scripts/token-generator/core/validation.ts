@@ -1,8 +1,14 @@
-import { BOX_PROPERTIES, type BoxProperty } from './normalization'
+import {
+  BOX_PROPERTIES,
+  isBoxShadowValue,
+  type BoxProperty,
+} from './normalization'
 import { isTokenTree, type TokenTree, type TokenValue } from './types'
 
 const REFERENCE_PATTERN = /\{[^}]+\}/
 const UNCONVERTED_UNIT_PATTERN = /-?\d*\.?\d+(?:rem|ms)\b/
+const PIXEL_PATTERN = /-?\d*\.?\d+px\b/
+const NUMERIC_STRING_PATTERN = /^-?\d*\.?\d+$/
 
 export const assertValidOutput = (
   node: TokenValue,
@@ -36,11 +42,16 @@ export const assertValidOutput = (
     throw new Error(`Non-finite number at "${tokenPath}"`)
   }
 
-  if (
-    typeof node === 'string' &&
-    (REFERENCE_PATTERN.test(node) || UNCONVERTED_UNIT_PATTERN.test(node))
-  ) {
-    throw new Error(`Unconverted token "${node}" at "${tokenPath}"`)
+  if (typeof node === 'string') {
+    const hasUnconvertedValue =
+      REFERENCE_PATTERN.test(node) ||
+      UNCONVERTED_UNIT_PATTERN.test(node) ||
+      (PIXEL_PATTERN.test(node) && !isBoxShadowValue(node)) ||
+      NUMERIC_STRING_PATTERN.test(node)
+
+    if (hasUnconvertedValue) {
+      throw new Error(`Unconverted token "${node}" at "${tokenPath}"`)
+    }
   }
 }
 

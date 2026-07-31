@@ -7,11 +7,46 @@ import {
 } from './types'
 
 const REM_BASE = 16
+const NUMBER_PATTERN = /^-?\d*\.?\d+$/
+const PIXEL_PATTERN = /^-?\d*\.?\d+px$/
+const SHADOW_LENGTH_PATTERN = /^(?:0|-?\d*\.?\d+(?:rem|px))$/
 export const BOX_PROPERTIES = ['padding', 'margin', 'borderWidth'] as const
 
 export type BoxProperty = (typeof BOX_PROPERTIES)[number]
 
-export const convertUnit = (value: TokenPrimitive): TokenPrimitive => {
+export const isBoxShadowValue = (value: string): boolean => {
+  const parts = value
+    .trim()
+    .split(/\s+(?![^(]*\))/)
+    .filter(Boolean)
+  const insetIndex = parts.indexOf('inset')
+
+  if (insetIndex > 0 && insetIndex < parts.length - 1) return false
+
+  const shadowParts = parts.filter((_, index) => index !== insetIndex)
+  const colorIndexes = shadowParts
+    .map((part, index) => (SHADOW_LENGTH_PATTERN.test(part) ? -1 : index))
+    .filter((index) => index !== -1)
+
+  if (colorIndexes.length !== 1) return false
+
+  const [colorIndex] = colorIndexes
+
+  if (colorIndex !== 0 && colorIndex !== shadowParts.length - 1) return false
+
+  const lengths = shadowParts.filter((_, index) => index !== colorIndex)
+
+  return (
+    lengths.length >= 2 &&
+    lengths.length <= 4 &&
+    lengths.every((part) => SHADOW_LENGTH_PATTERN.test(part))
+  )
+}
+
+export const convertUnit = (
+  value: TokenPrimitive,
+  tokenPath = 'root'
+): TokenPrimitive => {
   if (typeof value !== 'string') return value
 
   const isRem = /^-?\d*\.?\d+rem$/.test(value)
@@ -22,22 +57,33 @@ export const convertUnit = (value: TokenPrimitive): TokenPrimitive => {
 
   if (isMilliseconds) return Number(value.slice(0, -2))
 
-  if (value === '0') return 0
+  if (PIXEL_PATTERN.test(value)) return Number(value.slice(0, -2))
 
-  return value.replace(/-?\d*\.?\d+rem\b/g, (token) => {
+  if (NUMBER_PATTERN.test(value)) return Number(value)
+
+  const converted = value.replace(/-?\d*\.?\d+rem\b/g, (token) => {
     const pixels = Number(token.slice(0, -3)) * REM_BASE
 
     return `${pixels}px`
   })
+
+  if (converted !== value && !isBoxShadowValue(converted)) {
+    throw new Error(
+      `Unsupported composite unit value "${value}" at "${tokenPath}"`
+    )
+  }
+
+  return converted
 }
 
 const parseBoxPart = (part: string, tokenPath: string): number => {
-  if (!/^-?\d*\.?\d+(?:rem)?$/.test(part)) {
+  if (!/^-?\d*\.?\d+(?:rem|px)?$/.test(part)) {
     throw new Error(`Invalid box value "${part}" at "${tokenPath}"`)
   }
 
-  const isRem = part.endsWith('rem')
-  const value = Number(isRem ? part.slice(0, -3) : part)
+  const unit = part.endsWith('rem') ? 'rem' : part.endsWith('px') ? 'px' : ''
+  const value = Number(unit ? part.slice(0, -unit.length) : part)
+  const isRem = unit === 'rem'
   const normalized = isRem ? value * REM_BASE : value
 
   if (!Number.isFinite(normalized)) {
@@ -138,7 +184,7 @@ export const normalizeTree = (
     )
   }
 
-  if (!isTokenTree(node)) return convertUnit(node)
+  if (!isTokenTree(node)) return convertUnit(node, tokenPath)
 
   const normalized: TokenTree = {}
 
