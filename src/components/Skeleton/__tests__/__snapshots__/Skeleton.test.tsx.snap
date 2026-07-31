@@ -100,7 +100,7 @@ exports[`Skeleton 50% animation 1`] = `
                 0,
                 1726145252,
                 0.5,
-                1728053247,
+                1727066353,
                 1,
                 1726145252,
               ]
@@ -237,7 +237,7 @@ exports[`Skeleton 100% animation 1`] = `
                 0,
                 1726145252,
                 0.5,
-                1728053247,
+                1727066353,
                 1,
                 1726145252,
               ]
@@ -374,7 +374,7 @@ exports[`Skeleton before animation started: before animation started 1`] = `
                 0,
                 1726145252,
                 0.5,
-                1728053247,
+                1727066353,
                 1,
                 1726145252,
               ]
