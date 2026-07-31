@@ -88,12 +88,12 @@ type MessageSeverityKey = NonNullable<MessageProps['severity']>
 
 const messageIconColor: Record<
   MessageSeverityKey,
-  (t: ThemeType['theme']) => string
+  (t: ThemeType['components']) => string
 > = {
-  info: (t) => t.Message.Severities.Info.infoMessageIconColor,
-  success: (t) => t.Message.Severities.Success.successMessageIconColor,
-  warning: (t) => t.Message.Severities.Warning.warningMessageIconColor,
-  danger: (t) => t.Message.Severities.Danger.dangerMessageIconColor,
+  info: (t) => t.message.extend.extInfo.color,
+  success: (t) => t.message.extend.extSuccess.color,
+  warning: (t) => t.message.extend.extWarn.color,
+  danger: (t) => t.message.extend.extError.color,
 }
 
 /**
@@ -180,8 +180,8 @@ export const Message = memo<MessageProps>(
             {...messageStyles.iconSize}
             source={Icon}
             testID={TestId.Icon}
-            uniProps={({ theme }) => ({
-              color: messageIconColor[severity](theme),
+            uniProps={({ components }) => ({
+              color: messageIconColor[severity](components),
             })}
           />
         )
@@ -218,32 +218,33 @@ export const Message = memo<MessageProps>(
   }
 )
 
+// TODO(tokens-migration): reason=value-mismatch; legacy=border.Width.border-3; value=3; target=components.message.extend.extAccentLine.width; targetValue=4
+// TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Padding.p-5; value=17.5; target=components.message.content.padding; targetValue=14
+// TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-1; value=3.5; target=components.message.extend.extText.gap; targetValue=4
+// TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-4xl; value=31.5; target=components.message.icon.size; targetValue=36
 const messageStyles = StyleSheet.create(
-  ({ theme, typography, spacing, border }) => ({
+  ({ components, typography, spacing, border }) => ({
     container: {
-      borderRadius: theme.General.borderRadiusXL,
+      borderRadius: components.message.root.borderRadius,
       borderWidth: border.Width.border,
       overflow: 'hidden',
       variants: {
         severity: {
           info: {
-            borderColor: theme.Message.Severities.Info.infoMessageBorderColor,
-            backgroundColor: theme.Message.Severities.Info.infoMessageBg,
+            borderColor: components.message.colorScheme.info.borderColor,
+            backgroundColor: components.message.colorScheme.info.background,
           },
           success: {
-            borderColor:
-              theme.Message.Severities.Success.successMessageBorderColor,
-            backgroundColor: theme.Message.Severities.Success.successMessageBg,
+            borderColor: components.message.colorScheme.success.borderColor,
+            backgroundColor: components.message.colorScheme.success.background,
           },
           warning: {
-            borderColor:
-              theme.Message.Severities.Warning.warningMessageBorderColor,
-            backgroundColor: theme.Message.Severities.Warning.warningMessageBg,
+            borderColor: components.message.colorScheme.warn.borderColor,
+            backgroundColor: components.message.colorScheme.warn.background,
           },
           danger: {
-            borderColor:
-              theme.Message.Severities.Danger.dangerMessageBorderColor,
-            backgroundColor: theme.Message.Severities.Danger.dangerMessageBg,
+            borderColor: components.message.colorScheme.error.borderColor,
+            backgroundColor: components.message.colorScheme.error.background,
           },
         },
       },
@@ -257,18 +258,16 @@ const messageStyles = StyleSheet.create(
       variants: {
         severity: {
           info: {
-            borderColor: theme.Message.Severities.Info.infoMessageIconColor,
+            borderColor: components.message.colorScheme.info.borderColor,
           },
           success: {
-            borderColor:
-              theme.Message.Severities.Success.successMessageIconColor,
+            borderColor: components.message.colorScheme.success.borderColor,
           },
           warning: {
-            borderColor:
-              theme.Message.Severities.Warning.warningMessageIconColor,
+            borderColor: components.message.colorScheme.warn.borderColor,
           },
           danger: {
-            borderColor: theme.Message.Severities.Danger.dangerMessageIconColor,
+            borderColor: components.message.colorScheme.error.borderColor,
           },
         },
       },
