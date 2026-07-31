@@ -127,12 +127,12 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
             {...iconSize}
             source={Icon}
             testID='SelectButtonItem_Icon'
-            uniProps={({ theme }) => ({
+            uniProps={({ components, semantic, theme }) => ({
               color: disabled
                 ? theme.Button.Disabled.disabledButtonBorderColor
                 : isSelected
-                  ? theme.Form.SelectButton.selectButtonIconActiveColor
-                  : theme.Form.SelectButton.selectButtonTextColor,
+                  ? components.selectbutton.extend.checkedColor
+                  : semantic.colorScheme.color.fg.muted,
             })}
           />
         ) : null}
@@ -153,29 +153,31 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
   }
 )
 
+// TODO(tokens-migration): reason=missing; legacy=theme.Button.Disabled.disabledButtonBorderColor; light=#a2a5a9; dark=#56595f
+// TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
+// TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-3; value=10.5; target=components.selectbutton.extend.gap; targetValue=4
+// TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-base; value=14; target=components.selectbutton.extend.iconSize.sm; targetValue=16
+// TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-xl; value=17.5; target=components.selectbutton.extend.iconSize.md; targetValue=20
+// TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-2xl; value=21; target=components.selectbutton.extend.iconSize.lg; targetValue=24
+// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-sm; value=12.25
 const styles = StyleSheet.create(
-  ({ theme, typography, border, spacing, fonts }) => ({
+  ({ components, semantic, theme, typography, border, spacing, fonts }) => ({
     container: {
       flex: 1,
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'center',
-      gap: theme.General.inlineSpacing,
+      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-2; value=7; target=components.selectbutton.extend.gap; targetValue=4
+      gap: spacing.Gap['gap-2'],
       borderWidth: border.Width.border,
       borderColor: 'transparent',
     },
-    small: { height: theme.Button.Common.buttonHeightSM },
-    base: { height: theme.Button.Common.buttonHeight },
-    large: {
-      height: theme.Button.Common.buttonHeightLG,
-      gap: spacing.Gap['gap-3'],
-    },
-    xlarge: {
-      height: theme.Button.Common.buttonHeightXL,
-      gap: spacing.Gap['gap-3'],
-    },
+    small: { height: 28 },
+    base: { height: 35 },
+    large: { height: 49, gap: spacing.Gap['gap-3'] },
+    xlarge: { height: 56, gap: spacing.Gap['gap-3'] },
     disabledContainer: {
-      borderRadius: theme.Form.SelectButton.selectButtonBorderRadius,
+      borderRadius: components.selectbutton.extend.ext.borderRadius,
       borderWidth: 1,
       borderColor: theme.Button.Disabled.disabledButtonBorderColor,
     },
@@ -197,10 +199,8 @@ const styles = StyleSheet.create(
     labelBase: { fontSize: typography.Size['text-base'] },
     labelLarge: { fontSize: typography.Size['text-xl'] },
     labelXLarge: { fontSize: typography.Size['text-2xl'] },
-    textColor: { color: theme.Form.SelectButton.selectButtonTextColor },
-    checkedTextColor: {
-      color: theme.Form.SelectButton.selectButtonIconActiveColor,
-    },
+    textColor: { color: semantic.colorScheme.color.fg.muted },
+    checkedTextColor: { color: components.selectbutton.extend.checkedColor },
     disabledTextColor: {
       color: theme.Button.Disabled.disabledButtonBorderColor,
     },

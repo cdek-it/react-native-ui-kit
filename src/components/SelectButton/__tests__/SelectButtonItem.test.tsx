@@ -192,12 +192,10 @@ describe('SelectButtonItem', () => {
       await waitFor(() => {
         expect(icon).toHaveProp(
           'stroke',
-          lightTheme.theme.Form.SelectButton.selectButtonIconActiveColor
+          lightTheme.components.selectbutton.extend.checkedColor
         )
         expect(text).toHaveAnimatedStyle({
-          color: toRgba(
-            lightTheme.theme.Form.SelectButton.selectButtonIconActiveColor
-          ),
+          color: toRgba(lightTheme.components.selectbutton.extend.checkedColor),
         })
       })
 
@@ -207,12 +205,10 @@ describe('SelectButtonItem', () => {
       await waitFor(() => {
         expect(icon).toHaveProp(
           'stroke',
-          lightTheme.theme.Form.SelectButton.selectButtonTextColor
+          lightTheme.semantic.colorScheme.color.fg.muted
         )
         expect(text).toHaveAnimatedStyle({
-          color: toRgba(
-            lightTheme.theme.Form.SelectButton.selectButtonTextColor
-          ),
+          color: toRgba(lightTheme.semantic.colorScheme.color.fg.muted),
         })
       })
     })
