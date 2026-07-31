@@ -83,6 +83,7 @@ export const ButtonContainer = genericMemo(ButtonContainerComponent)
 // TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-1; value=3.5
 // TODO(tokens-migration): reason=missing; legacy=spacing.Gap.gap-0; value=0
 // TODO(tokens-migration): reason=missing; legacy=spacing.Gap.gap-1; value=3.5
+// TODO(tokens-migration): reason=missing; legacy=hardcode.transparent; value=transparent
 const buttonContainerStyles = StyleSheet.create(
   ({ components: { button }, spacing }) => ({
     container: {

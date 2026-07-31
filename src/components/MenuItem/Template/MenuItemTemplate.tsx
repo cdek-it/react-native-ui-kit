@@ -133,6 +133,7 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
   }
 )
 
+// TODO(tokens-migration): reason=missing; legacy=hardcode.transparent; value=transparent
 const styles = StyleSheet.create(
   ({ components, spacing, typography, border }) => ({
     container: {

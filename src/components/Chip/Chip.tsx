@@ -97,6 +97,7 @@ export const Chip = memo<ChipProps>(
   }
 )
 
+// TODO(tokens-migration): reason=missing; legacy=hardcode.transparent; value=transparent
 const styles = StyleSheet.create(
   ({ components, typography, spacing, border, fonts }) => ({
     chip: {
