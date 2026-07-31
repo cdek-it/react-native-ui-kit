@@ -11,3 +11,11 @@
 `focusRing` сохраняет структуру входных токенов. При `style: "none"` компонент
 не применяет `width`, `color` и `offset` как outline-свойства, но может
 использовать независимый `shadow` как `boxShadow`.
+
+Для передачи easing в Reanimated используйте адаптер:
+
+```ts
+import { toEasing } from '@cdek-it/react-native-ui-kit'
+
+const easing = toEasing(theme.semantic.effects.transition.easing.standard)
+```
