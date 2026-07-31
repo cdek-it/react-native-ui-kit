@@ -8,11 +8,10 @@ exports[`InputGroup component tests content: icon, position: right 1`] = `
       {
         "backgroundColor": "#ffffff",
         "borderColor": "#cecfd2",
-        "borderRadius": 10.5,
+        "borderRadius": 14,
         "borderWidth": 1,
         "justifyContent": "center",
-        "paddingHorizontal": 10.5,
-        "paddingVertical": 0,
+        "padding": 14,
       },
       {
         "borderBottomLeftRadius": 0,
@@ -137,11 +136,10 @@ exports[`InputGroup component tests content: string, position: left 1`] = `
       {
         "backgroundColor": "#ffffff",
         "borderColor": "#cecfd2",
-        "borderRadius": 10.5,
+        "borderRadius": 14,
         "borderWidth": 1,
         "justifyContent": "center",
-        "paddingHorizontal": 10.5,
-        "paddingVertical": 0,
+        "padding": 14,
       },
       {
         "borderBottomRightRadius": 0.2,
@@ -178,11 +176,10 @@ exports[`InputGroup component tests disabled: false 1`] = `
       {
         "backgroundColor": "#ffffff",
         "borderColor": "#cecfd2",
-        "borderRadius": 10.5,
+        "borderRadius": 14,
         "borderWidth": 1,
         "justifyContent": "center",
-        "paddingHorizontal": 10.5,
-        "paddingVertical": 0,
+        "padding": 14,
       },
       {
         "borderBottomRightRadius": 0.2,
@@ -219,11 +216,10 @@ exports[`InputGroup component tests disabled: true 1`] = `
       {
         "backgroundColor": "#ffffff",
         "borderColor": "#cecfd2",
-        "borderRadius": 10.5,
+        "borderRadius": 14,
         "borderWidth": 1,
         "justifyContent": "center",
-        "paddingHorizontal": 10.5,
-        "paddingVertical": 0,
+        "padding": 14,
       },
       {
         "borderBottomRightRadius": 0.2,

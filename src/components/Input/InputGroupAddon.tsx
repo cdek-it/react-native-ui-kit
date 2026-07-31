@@ -41,8 +41,8 @@ export const InputGroupAddon = memo<InputGroupAddonProps>(
           <SvgUniversal
             {...styles.icon}
             source={content}
-            uniProps={({ theme }) => ({
-              color: theme.Form.InputGroup.inputGroupTextColor,
+            uniProps={({ components }) => ({
+              color: components.inputgroup.colorScheme.addon.color,
             })}
           />
         )}
@@ -51,15 +51,14 @@ export const InputGroupAddon = memo<InputGroupAddonProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
+const styles = StyleSheet.create(({ components, typography, fonts }) => ({
   container: {
-    paddingVertical: theme.Form.InputText.inputPaddingTopBottom,
-    paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
+    padding: components.inputgroup.addon.padding,
     justifyContent: 'center',
-    borderRadius: theme.General.borderRadiusXL,
-    borderWidth: 1,
-    borderColor: theme.Form.InputText.inputBorderColor,
-    backgroundColor: theme.Form.InputGroup.inputGroupBg,
+    borderRadius: components.inputgroup.addon.borderRadius,
+    borderWidth: components.inputgroup.extend.borderWidth,
+    borderColor: components.inputgroup.colorScheme.addon.borderColor,
+    backgroundColor: components.inputgroup.colorScheme.addon.background,
   },
   left: {
     borderRightWidth: 0,
@@ -74,16 +73,17 @@ const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
   },
   disabled: {
     opacity: 0.6,
-    backgroundColor: theme.Button.Disabled.disabledButtonBg,
+    backgroundColor: components.button.extend.disabledBackground,
   },
   text: {
     fontSize: typography.Size['text-base'],
-    color: theme.Form.InputGroup.inputGroupTextColor,
+    color: components.inputgroup.colorScheme.addon.color,
     includeFontPadding: false,
     verticalAlign: 'middle',
     fontFamily: fonts.secondary,
   },
   icon: {
+    // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-base; value=14; target=components.inputgroup.extend.iconSize; targetValue=16
     width: typography.Size['text-base'],
     height: typography.Size['text-base'],
   },

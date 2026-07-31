@@ -60,14 +60,13 @@ export const InputOtpItem = memo<InputOtpItemProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, border, fonts, typography }) => ({
+const styles = StyleSheet.create(({ components, fonts, typography }) => ({
   container: {
-    minHeight: theme.Button.Common.buttonHeight,
-    minWidth: theme.Button.Common.buttonHeight,
-    paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
-    paddingVertical: theme.Form.InputText.inputPaddingTopBottom,
-    borderBottomWidth: border.Width.border,
-    borderColor: theme.Form.InputText.inputBorderColor,
+    minHeight: 35,
+    minWidth: 35,
+    paddingHorizontal: components.inputtext.root.paddingX,
+    borderBottomWidth: components.inputotp.extend.borderWidth,
+    borderColor: components.inputtext.root.borderColor,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -78,15 +77,15 @@ const styles = StyleSheet.create(({ theme, border, fonts, typography }) => ({
     fontSize: typography.Size['text-2xl'],
     fontFamily: fonts.primary,
     fontWeight: '400',
-    color: theme.Form.InputText.inputTextColor,
+    color: components.inputtext.root.color,
     includeFontPadding: false,
   },
 
-  pressed: { borderColor: theme.Form.InputText.inputHoverBorderColor },
+  pressed: { borderColor: components.inputtext.root.hoverBorderColor },
 
-  error: { borderColor: theme.Form.InputText.inputErrorBorderColor },
+  error: { borderColor: components.inputtext.root.invalidBorderColor },
 
   disabled: { mixBlendMode: 'luminosity', opacity: 0.6 },
 
-  cursor: { color: theme.Form.InputText.inputTextColor, marginBottom: 3 },
+  cursor: { color: components.inputtext.root.color, marginBottom: 3 },
 }))

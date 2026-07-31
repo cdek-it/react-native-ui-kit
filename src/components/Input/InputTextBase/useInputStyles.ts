@@ -25,30 +25,26 @@ const containerMinHeight = StyleSheet.create(({ theme }) => ({
 }))
 
 export const inputStyles = StyleSheet.create(
-  ({ theme, border, typography, spacing, fonts }) => ({
+  ({ components, border, typography, spacing, fonts }) => ({
     container: {
       flexDirection: 'row',
       borderWidth: border.Width.border,
+      // TODO(tokens-migration): reason=value-mismatch; legacy=border.Radius.rounded-xl; value=10.5; target=components.inputtext.root.borderRadius; targetValue=14
       borderRadius: border.Radius['rounded-xl'],
-      borderColor: theme.Form.InputText.inputBorderColor,
-      backgroundColor: theme.Form.InputText.inputBg,
+      borderColor: components.inputtext.root.borderColor,
+      backgroundColor: components.inputtext.root.background,
     },
     containerFocused: {
-      outlineColor: theme.General.focusOutlineColor,
-      outlineWidth: Math.round(theme.General.focusShadowWidth),
-      borderColor: theme.General.focusBorderColor,
+      outlineColor: components.inputtext.root.focusRing.color,
+      outlineWidth: components.inputtext.root.focusRing.width,
+      borderColor: components.inputtext.root.focusBorderColor,
     },
-    containerFloatLabel: {
-      minHeight: theme.Button.Common.buttonHeightXL,
-      maxHeight: theme.Button.Common.buttonHeightXL,
-      height: theme.Button.Common.buttonHeightXL,
-    },
-    danger: { borderColor: theme.Form.InputText.inputErrorBorderColor },
-    dangerFocused: { outlineColor: theme.General.focusOutlineErrorColor },
+    containerFloatLabel: { minHeight: 56, maxHeight: 56, height: 56 },
+    danger: { borderColor: components.inputtext.root.invalidBorderColor },
     disabled: {
       opacity: 0.6,
-      borderColor: theme.Form.InputText.inputBorderColor,
-      backgroundColor: theme.Button.Disabled.disabledButtonBg,
+      borderColor: components.inputtext.root.borderColor,
+      backgroundColor: components.button.extend.disabledBackground,
     },
     inputContainer: {
       flex: 1,
@@ -57,7 +53,7 @@ export const inputStyles = StyleSheet.create(
     },
     input: {
       padding: 0,
-      paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
+      paddingHorizontal: components.inputtext.root.paddingX,
       position: 'absolute',
       left: 0,
       right: 0,
@@ -67,7 +63,7 @@ export const inputStyles = StyleSheet.create(
     inputWithRightContent: { paddingRight: 0 },
     floatLabelInput: {
       flex: 1,
-      paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
+      paddingHorizontal: components.inputtext.root.paddingX,
       paddingTop: 26,
       paddingBottom: 12,
       borderRadius: border.Radius['rounded-xl'],
@@ -75,30 +71,28 @@ export const inputStyles = StyleSheet.create(
     },
     inputFont: {
       fontSize: typography.Size['text-base'],
-      color: theme.Form.InputText.inputTextColor,
+      color: components.inputtext.root.color,
       includeFontPadding: false,
       fontFamily: fonts.secondary,
       verticalAlign: 'middle',
     },
-    placeholder: {
-      paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
-    },
-    placeholderTextColor: {
-      color: theme.Form.InputText.inputPlaceholderTextColor,
-    },
+    placeholder: { paddingHorizontal: components.inputtext.root.paddingX },
+    placeholderTextColor: { color: components.inputtext.root.placeholderColor },
     rightContainer: {
       flexDirection: 'row',
-      paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
-      gap: theme.Form.InputText.inputPaddingLeftRight,
+      paddingHorizontal: components.inputtext.root.paddingX,
+      gap: components.inputtext.root.paddingX,
       overflow: 'hidden',
       alignItems: 'center',
     },
     rightButtonContainer: { justifyContent: 'center' },
     iconSize: {
+      // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-base; value=14; target=components.inputtext.extend.iconSize; targetValue=16
       width: typography.Size['text-base'],
       height: typography.Size['text-base'],
     },
     iconSizeFloatLabel: {
+      // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-xl; value=17.5; target=components.inputtext.extend.iconSize; targetValue=16
       width: typography.Size['text-xl'],
       height: typography.Size['text-xl'],
     },

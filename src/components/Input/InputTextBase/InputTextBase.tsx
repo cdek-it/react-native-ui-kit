@@ -52,8 +52,8 @@ interface PrivateInputTextBaseProps {
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5470&m=dev
  * @see InputText
  */
-const inputIconUniProps = ({ theme }: ThemeType) => ({
-  color: theme.Form.InputText.inputIconColor,
+const inputIconUniProps = ({ components }: ThemeType) => ({
+  color: components.inputtext.root.color,
 })
 
 export const InputTextBase = memo<
@@ -306,7 +306,6 @@ export const InputTextBase = memo<
           isFocused && styles.containerFocused,
           containerStyle,
           state === 'danger' && styles.danger,
-          state === 'danger' && isFocused && styles.dangerFocused,
           disabled && styles.disabled,
         ]}
         testID={makeTestId(InputTextBaseTestId.pressableContainer)}
