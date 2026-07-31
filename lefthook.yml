@@ -70,8 +70,8 @@ pre-push:
           exit 1
         fi
     eslint:
-      run: npx yarn eslint .
+      run: yarn eslint .
     type-check:
-      run: npx yarn tsc --noEmit
+      run: yarn tsc --noEmit
     tokens-validate:
-      run: npx yarn tokens:validate
+      run: yarn tokens:validate
