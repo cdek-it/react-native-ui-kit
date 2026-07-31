@@ -10,9 +10,9 @@ export const Title = ({ level, style, ...other }: TitleProps) => (
   <Text style={[styles.text, styles[level], style]} testID='Title' {...other} />
 )
 
-const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
+const styles = StyleSheet.create(({ semantic, typography, fonts }) => ({
   text: {
-    color: theme.General.textColor,
+    color: semantic.colorScheme.color.fg.default,
     fontFamily: fonts.primary,
     fontWeight: 700,
     includeFontPadding: false,

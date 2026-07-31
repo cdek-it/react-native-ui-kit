@@ -39,11 +39,11 @@ export const Caption = ({
           {...styles.icon}
           source={Icon}
           testID={CaptionTestId.icon}
-          uniProps={({ theme }) => ({
+          uniProps={({ semantic }) => ({
             color: {
-              default: theme.General.textColor,
-              primary: theme.General.primaryColor,
-              secondary: theme.General.textSecondaryColor,
+              default: semantic.colorScheme.color.fg.default,
+              primary: semantic.colorScheme.color.fg.brand.default,
+              secondary: semantic.colorScheme.color.fg.muted,
             }[color],
           })}
         />
@@ -57,23 +57,25 @@ export const Caption = ({
 
 const CaptionTestId = { text: 'CaptionText', icon: 'CaptionIcon' }
 
-const styles = StyleSheet.create(({ theme, spacing, typography, fonts }) => ({
-  text: {
-    fontSize: typography.Size['text-sm'],
-    includeFontPadding: false,
-    verticalAlign: 'middle',
-    fontFamily: fonts.secondary,
-    lineHeight: 15,
-    letterSpacing: -0.25,
-  },
-  textWithIcon: { flexShrink: 1 },
-  default: { color: theme.General.textColor },
-  primary: { color: theme.General.primaryColor },
-  secondary: { color: theme.General.textSecondaryColor },
-  disabled: { opacity: 0.6 },
-  withIconContainer: { flexDirection: 'row', gap: spacing.Gap['gap-1'] },
-  icon: {
-    width: typography.Size['text-base'],
-    height: typography.Size['text-base'],
-  },
-}))
+const styles = StyleSheet.create(
+  ({ semantic, spacing, typography, fonts }) => ({
+    text: {
+      fontSize: typography.Size['text-sm'],
+      includeFontPadding: false,
+      verticalAlign: 'middle',
+      fontFamily: fonts.secondary,
+      lineHeight: 15,
+      letterSpacing: -0.25,
+    },
+    textWithIcon: { flexShrink: 1 },
+    default: { color: semantic.colorScheme.color.fg.default },
+    primary: { color: semantic.colorScheme.color.fg.brand.default },
+    secondary: { color: semantic.colorScheme.color.fg.muted },
+    disabled: { opacity: 0.6 },
+    withIconContainer: { flexDirection: 'row', gap: spacing.Gap['gap-1'] },
+    icon: {
+      width: typography.Size['text-base'],
+      height: typography.Size['text-base'],
+    },
+  })
+)

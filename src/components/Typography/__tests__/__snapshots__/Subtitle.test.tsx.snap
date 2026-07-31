@@ -12,7 +12,7 @@ exports[`Subtitle component tests base = false, color = default 1`] = `
         "textTransform": "uppercase",
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       false,
       {
@@ -90,7 +90,7 @@ exports[`Subtitle component tests base = false, color = undefined 1`] = `
         "textTransform": "uppercase",
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       false,
       {
@@ -116,7 +116,7 @@ exports[`Subtitle component tests base = true, color = default 1`] = `
         "textTransform": "uppercase",
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       {
         "fontSize": 12.25,
@@ -203,7 +203,7 @@ exports[`Subtitle component tests base = true, color = undefined 1`] = `
         "textTransform": "uppercase",
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       {
         "fontSize": 12.25,
@@ -232,7 +232,7 @@ exports[`Subtitle component tests base = undefined, color = default 1`] = `
         "textTransform": "uppercase",
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       false,
       {
@@ -310,7 +310,7 @@ exports[`Subtitle component tests base = undefined, color = undefined 1`] = `
         "textTransform": "uppercase",
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       false,
       {

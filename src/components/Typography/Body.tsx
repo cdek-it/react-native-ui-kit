@@ -36,7 +36,7 @@ export const Body = ({
   )
 }
 
-const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
+const styles = StyleSheet.create(({ semantic, typography, fonts }) => ({
   text: {
     fontSize: typography.Size['text-base'],
     includeFontPadding: false,
@@ -46,9 +46,9 @@ const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
   },
   regular: { fontWeight: 400 },
   bold: { fontWeight: 700, letterSpacing: -0.5 },
-  default: { color: theme.General.textColor },
-  primary: { color: theme.General.primaryColor },
-  secondary: { color: theme.General.textSecondaryColor },
+  default: { color: semantic.colorScheme.color.fg.default },
+  primary: { color: semantic.colorScheme.color.fg.brand.default },
+  secondary: { color: semantic.colorScheme.color.fg.muted },
   base: { fontSize: typography.Size['text-sm'], lineHeight: 18 },
   paragraph: { lineHeight: 24 },
   paragraphBase: { lineHeight: 21 },

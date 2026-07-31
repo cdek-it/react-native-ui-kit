@@ -30,7 +30,7 @@ export const Subtitle = memo<SubtitleProps>(
   )
 )
 
-const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
+const styles = StyleSheet.create(({ semantic, typography, fonts }) => ({
   text: {
     fontSize: typography.Size['text-xs'],
     fontWeight: 700,
@@ -39,7 +39,7 @@ const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
     lineHeight: 15,
   },
   base: { lineHeight: 18, fontSize: typography.Size['text-sm'] },
-  default: { color: theme.General.textColor },
-  primary: { color: theme.General.primaryColor },
-  secondary: { color: theme.General.textSecondaryColor },
+  default: { color: semantic.colorScheme.color.fg.default },
+  primary: { color: semantic.colorScheme.color.fg.brand.default },
+  secondary: { color: semantic.colorScheme.color.fg.muted },
 }))

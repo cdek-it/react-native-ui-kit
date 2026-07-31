@@ -16,7 +16,7 @@ exports[`Body component tests base = false, color = default, disabled = false, p
         "letterSpacing": -0.5,
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       false,
       false,
@@ -45,7 +45,7 @@ exports[`Body component tests base = false, color = default, disabled = false, p
         "fontWeight": 400,
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       false,
       false,
@@ -75,7 +75,7 @@ exports[`Body component tests base = false, color = default, disabled = false, p
         "letterSpacing": -0.5,
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       false,
       {
@@ -106,7 +106,7 @@ exports[`Body component tests base = false, color = default, disabled = false, p
         "fontWeight": 400,
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       false,
       {
@@ -138,7 +138,7 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
         "letterSpacing": -0.5,
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       false,
       false,
@@ -169,7 +169,7 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
         "fontWeight": 400,
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       false,
       false,
@@ -201,7 +201,7 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
         "letterSpacing": -0.5,
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       false,
       {
@@ -234,7 +234,7 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
         "fontWeight": 400,
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       false,
       {
@@ -772,7 +772,7 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
         "letterSpacing": -0.5,
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       {
         "fontSize": 12.25,
@@ -804,7 +804,7 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
         "fontWeight": 400,
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       {
         "fontSize": 12.25,
@@ -837,7 +837,7 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
         "letterSpacing": -0.5,
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       {
         "fontSize": 12.25,
@@ -871,7 +871,7 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
         "fontWeight": 400,
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       {
         "fontSize": 12.25,
@@ -906,7 +906,7 @@ exports[`Body component tests base = true, color = default, disabled = true, par
         "letterSpacing": -0.5,
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       {
         "fontSize": 12.25,
@@ -940,7 +940,7 @@ exports[`Body component tests base = true, color = default, disabled = true, par
         "fontWeight": 400,
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       {
         "fontSize": 12.25,
@@ -975,7 +975,7 @@ exports[`Body component tests base = true, color = default, disabled = true, par
         "letterSpacing": -0.5,
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       {
         "fontSize": 12.25,
@@ -1011,7 +1011,7 @@ exports[`Body component tests base = true, color = default, disabled = true, par
         "fontWeight": 400,
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       {
         "fontSize": 12.25,
@@ -1599,7 +1599,7 @@ exports[`Body component tests default props 1`] = `
         "fontWeight": 400,
       },
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
       },
       undefined,
       undefined,
