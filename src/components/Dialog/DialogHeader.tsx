@@ -88,6 +88,9 @@ export const DialogHeader = ({
   )
 }
 
+// TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
+// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-base; value=14
+// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-2xl; value=21
 const styles = StyleSheet.create(({ components, typography, border }) => ({
   text: { flex: 1 },
   header: {

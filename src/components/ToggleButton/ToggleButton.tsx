@@ -134,6 +134,8 @@ export const ToggleButton = memo<ToggleButtonProps>(
 // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-base; value=14; target=components.togglebutton.extend.iconSize.sm; targetValue=16
 // TODO(tokens-migration): reason=value-mismatch; legacy=theme.Button.Disabled.disabledButtonTextColor; light=#85888e; dark=#f0f0f1; target=components.togglebutton.colorScheme.root.disabledColor; targetValue=#85888e
 // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-sm; value=12.25; target=components.togglebutton.root.sm.fontSize; targetValue=14
+// TODO(tokens-migration): reason=missing; legacy=fonts.primary; value=TT Fellows
+// TODO(tokens-migration): reason=missing; legacy=theme.Button.Common.buttonPaddingLeftRight; value=14
 const toggleStyles = StyleSheet.create(
   ({ components, theme, spacing, border, fonts, typography }) => ({
     container: {

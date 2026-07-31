@@ -10,6 +10,17 @@ export const Title = ({ level, style, ...other }: TitleProps) => (
   <Text style={[styles.text, styles[level], style]} testID='Title' {...other} />
 )
 
+// TODO(tokens-migration): reason=missing; legacy=fonts.primary; value=TT Fellows
+// TODO(tokens-migration): reason=missing; legacy=semantic.colorScheme.color.fg.default; light=#2b2e33; dark=#ffffff
+// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-2xl; value=21
+// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-3xl; value=26.25
+// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-4xl; value=31.5
+// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-5xl; value=42
+// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-base; value=14
+// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-lg; value=15.75
+// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-sm; value=12.25
+// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-xl; value=17.5
+// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-xs; value=10.5
 const styles = StyleSheet.create(({ semantic, typography, fonts }) => ({
   text: {
     color: semantic.colorScheme.color.fg.default,

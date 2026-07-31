@@ -271,6 +271,7 @@ export const SelectButton = memo<SelectButtonProps>((props) => (
   <SelectButtonStrict {...normalizeSelectButtonProps(props)} />
 ))
 
+// TODO(tokens-migration): reason=missing; legacy=semantic.colorScheme.color.fg.muted; light=#85888e; dark=#a2a5a9
 const styles = StyleSheet.create(({ components, semantic }) => ({
   container: {
     flexDirection: 'row',

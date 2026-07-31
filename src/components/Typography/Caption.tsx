@@ -57,6 +57,13 @@ export const Caption = ({
 
 const CaptionTestId = { text: 'CaptionText', icon: 'CaptionIcon' }
 
+// TODO(tokens-migration): reason=missing; legacy=fonts.secondary; value=Noto Sans
+// TODO(tokens-migration): reason=missing; legacy=semantic.colorScheme.color.fg.default; light=#2b2e33; dark=#ffffff
+// TODO(tokens-migration): reason=missing; legacy=semantic.colorScheme.color.fg.brand.default; light=#44e858; dark=#77f48a
+// TODO(tokens-migration): reason=missing; legacy=semantic.colorScheme.color.fg.muted; light=#85888e; dark=#a2a5a9
+// TODO(tokens-migration): reason=missing; legacy=spacing.Gap.gap-1; value=3.5
+// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-base; value=14
+// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-sm; value=12.25
 const styles = StyleSheet.create(
   ({ semantic, spacing, typography, fonts }) => ({
     text: {

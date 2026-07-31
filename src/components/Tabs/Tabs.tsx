@@ -91,6 +91,8 @@ export const Tabs = memo<TabsProps>(
   }
 )
 
+// TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
+// TODO(tokens-migration): reason=missing; legacy=border.Width.border-2; value=2
 const styles = StyleSheet.create(({ components, border }) => ({
   container: {
     flexDirection: 'row',

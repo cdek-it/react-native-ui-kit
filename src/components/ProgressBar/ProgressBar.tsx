@@ -89,6 +89,7 @@ export const ProgressBar = memo<ProgressBarProps>(
   }
 )
 
+// TODO(tokens-migration): reason=missing; legacy=fonts.primary; value=TT Fellows
 const styles = StyleSheet.create(
   ({ components, typography, border, fonts }) => ({
     container: {

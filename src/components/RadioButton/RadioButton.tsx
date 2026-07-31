@@ -68,6 +68,7 @@ export const RadioButton = memo<RadioButtonProps>(
   }
 )
 
+// TODO(tokens-migration): reason=missing; legacy=border.Radius.rounded-full; value=100
 const radioStyles = StyleSheet.create(({ components, border }) => ({
   container: {
     width: components.radiobutton.root.width,

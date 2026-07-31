@@ -100,6 +100,10 @@ export const Chip = memo<ChipProps>(
 // TODO(tokens-migration): reason=missing; legacy=hardcode.transparent; value=transparent
 // TODO(tokens-migration): reason=missing; legacy=components.button.extend.disabledColor; light=#85888e; dark=#a2a5a9
 // TODO(tokens-migration): reason=missing; legacy=components.button.extend.disabledBackground; light=#e2e2e4; dark=#404348
+// TODO(tokens-migration): reason=missing; legacy=border.Color.Service.border-success.400; value=#77f48a
+// TODO(tokens-migration): reason=missing; legacy=border.Radius.rounded-full; value=100
+// TODO(tokens-migration): reason=missing; legacy=border.Width.border-3; value=3
+// TODO(tokens-migration): reason=missing; legacy=fonts.secondary; value=Noto Sans
 const styles = StyleSheet.create(
   ({ components, typography, spacing, border, fonts }) => ({
     chip: {

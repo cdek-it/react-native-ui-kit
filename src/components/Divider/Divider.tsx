@@ -133,6 +133,8 @@ export const Divider = memo<DividerProps>(
   }
 )
 
+// TODO(tokens-migration): reason=missing; legacy=spacing.Gap.gap-4; value=14
+// TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-2; value=7
 const styles = StyleSheet.create(({ spacing, components, typography }) => ({
   container: {
     minHeight: 28,

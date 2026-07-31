@@ -100,6 +100,7 @@ export const Tag = memo<TagProps>(
   }
 )
 
+// TODO(tokens-migration): reason=missing; legacy=fonts.primary; value=TT Fellows
 const tagStyles = StyleSheet.create(
   ({ components, border, spacing, typography, fonts }) => ({
     container: {

@@ -135,6 +135,7 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
 
 // TODO(tokens-migration): reason=missing; legacy=hardcode.transparent; value=transparent
 // TODO(tokens-migration): reason=missing; legacy=components.button.extend.disabledBackground; light=#e2e2e4; dark=#404348
+// TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
 const styles = StyleSheet.create(
   ({ components, spacing, typography, border }) => ({
     container: {

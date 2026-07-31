@@ -257,6 +257,7 @@ export const Avatar = memo<AvatarProps>(
   }
 )
 
+// TODO(tokens-migration): reason=missing; legacy=fonts.secondary; value=Noto Sans
 const styles = StyleSheet.create(
   ({ components, border, typography, fonts }) => ({
     container: {

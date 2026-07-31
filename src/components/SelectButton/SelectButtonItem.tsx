@@ -160,6 +160,8 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
 // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-xl; value=17.5; target=components.selectbutton.extend.iconSize.md; targetValue=20
 // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-2xl; value=21; target=components.selectbutton.extend.iconSize.lg; targetValue=24
 // TODO(tokens-migration): reason=missing; legacy=typography.Size.text-sm; value=12.25
+// TODO(tokens-migration): reason=missing; legacy=fonts.primary; value=TT Fellows
+// TODO(tokens-migration): reason=missing; legacy=semantic.colorScheme.color.fg.muted; light=#85888e; dark=#a2a5a9
 const styles = StyleSheet.create(
   ({ components, semantic, theme, typography, border, spacing, fonts }) => ({
     container: {
