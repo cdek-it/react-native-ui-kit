@@ -39,16 +39,16 @@ exports[`TabItem component tests active: label 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
           "flexDirection": "row",
-          "gap": 7,
-          "height": 49,
-          "paddingHorizontal": 0,
+          "gap": 8,
+          "height": 52,
+          "paddingHorizontal": 14,
           "paddingVertical": 14,
         },
         false,
         {
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
         },
         undefined,
       ]
@@ -66,7 +66,7 @@ exports[`TabItem component tests active: label 1`] = `
             "verticalAlign": "middle",
           },
           {
-            "color": "#000000",
+            "color": "#2b2e33",
           },
           false,
           undefined,
@@ -118,16 +118,16 @@ exports[`TabItem component tests active: label, badge 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
           "flexDirection": "row",
-          "gap": 7,
-          "height": 49,
-          "paddingHorizontal": 0,
+          "gap": 8,
+          "height": 52,
+          "paddingHorizontal": 14,
           "paddingVertical": 14,
         },
         false,
         {
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
         },
         undefined,
       ]
@@ -145,7 +145,7 @@ exports[`TabItem component tests active: label, badge 1`] = `
             "verticalAlign": "middle",
           },
           {
-            "color": "#000000",
+            "color": "#2b2e33",
           },
           false,
           undefined,
@@ -172,9 +172,9 @@ exports[`TabItem component tests active: label, badge 1`] = `
             },
             {
               "borderRadius": 100,
-              "height": 21,
+              "height": 24,
               "justifyContent": "center",
-              "paddingHorizontal": 7,
+              "paddingHorizontal": 8,
             },
           ]
         }
@@ -184,7 +184,7 @@ exports[`TabItem component tests active: label, badge 1`] = `
           style={
             [
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -219,7 +219,7 @@ exports[`TabItem component tests active: label, badge 1`] = `
             onLayout={[Function]}
             style={
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -275,16 +275,16 @@ exports[`TabItem component tests active: label, icon 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
           "flexDirection": "row",
-          "gap": 7,
-          "height": 49,
-          "paddingHorizontal": 0,
+          "gap": 8,
+          "height": 52,
+          "paddingHorizontal": 14,
           "paddingVertical": 14,
         },
         false,
         {
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
         },
         undefined,
       ]
@@ -300,7 +300,7 @@ exports[`TabItem component tests active: label, icon 1`] = `
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#000000"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -336,7 +336,7 @@ exports[`TabItem component tests active: label, icon 1`] = `
         }
         stroke={
           {
-            "payload": 4278190080,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -358,7 +358,7 @@ exports[`TabItem component tests active: label, icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -381,7 +381,7 @@ exports[`TabItem component tests active: label, icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -404,7 +404,7 @@ exports[`TabItem component tests active: label, icon 1`] = `
             "verticalAlign": "middle",
           },
           {
-            "color": "#000000",
+            "color": "#2b2e33",
           },
           false,
           undefined,
@@ -456,16 +456,16 @@ exports[`TabItem component tests active: label, icon, badge 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
           "flexDirection": "row",
-          "gap": 7,
-          "height": 49,
-          "paddingHorizontal": 0,
+          "gap": 8,
+          "height": 52,
+          "paddingHorizontal": 14,
           "paddingVertical": 14,
         },
         false,
         {
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
         },
         undefined,
       ]
@@ -481,7 +481,7 @@ exports[`TabItem component tests active: label, icon, badge 1`] = `
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#000000"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -517,7 +517,7 @@ exports[`TabItem component tests active: label, icon, badge 1`] = `
         }
         stroke={
           {
-            "payload": 4278190080,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -539,7 +539,7 @@ exports[`TabItem component tests active: label, icon, badge 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -562,7 +562,7 @@ exports[`TabItem component tests active: label, icon, badge 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -585,7 +585,7 @@ exports[`TabItem component tests active: label, icon, badge 1`] = `
             "verticalAlign": "middle",
           },
           {
-            "color": "#000000",
+            "color": "#2b2e33",
           },
           false,
           undefined,
@@ -612,9 +612,9 @@ exports[`TabItem component tests active: label, icon, badge 1`] = `
             },
             {
               "borderRadius": 100,
-              "height": 21,
+              "height": 24,
               "justifyContent": "center",
-              "paddingHorizontal": 7,
+              "paddingHorizontal": 8,
             },
           ]
         }
@@ -624,7 +624,7 @@ exports[`TabItem component tests active: label, icon, badge 1`] = `
           style={
             [
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -659,7 +659,7 @@ exports[`TabItem component tests active: label, icon, badge 1`] = `
             onLayout={[Function]}
             style={
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -715,16 +715,16 @@ exports[`TabItem component tests disabled + active : label 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
           "flexDirection": "row",
-          "gap": 7,
-          "height": 49,
-          "paddingHorizontal": 0,
+          "gap": 8,
+          "height": 52,
+          "paddingHorizontal": 14,
           "paddingVertical": 14,
         },
         false,
         {
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
         },
         {
           "mixBlendMode": "luminosity",
@@ -745,7 +745,7 @@ exports[`TabItem component tests disabled + active : label 1`] = `
             "verticalAlign": "middle",
           },
           {
-            "color": "#000000",
+            "color": "#2b2e33",
           },
           false,
           {
@@ -799,11 +799,11 @@ exports[`TabItem component tests disabled: label 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
           "flexDirection": "row",
-          "gap": 7,
-          "height": 49,
-          "paddingHorizontal": 0,
+          "gap": 8,
+          "height": 52,
+          "paddingHorizontal": 14,
           "paddingVertical": 14,
         },
         false,
@@ -879,11 +879,11 @@ exports[`TabItem component tests disabled: label, badge 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
           "flexDirection": "row",
-          "gap": 7,
-          "height": 49,
-          "paddingHorizontal": 0,
+          "gap": 8,
+          "height": 52,
+          "paddingHorizontal": 14,
           "paddingVertical": 14,
         },
         false,
@@ -934,9 +934,9 @@ exports[`TabItem component tests disabled: label, badge 1`] = `
             },
             {
               "borderRadius": 100,
-              "height": 21,
+              "height": 24,
               "justifyContent": "center",
-              "paddingHorizontal": 7,
+              "paddingHorizontal": 8,
             },
           ]
         }
@@ -946,7 +946,7 @@ exports[`TabItem component tests disabled: label, badge 1`] = `
           style={
             [
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -981,7 +981,7 @@ exports[`TabItem component tests disabled: label, badge 1`] = `
             onLayout={[Function]}
             style={
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -1037,11 +1037,11 @@ exports[`TabItem component tests disabled: label, icon 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
           "flexDirection": "row",
-          "gap": 7,
-          "height": 49,
-          "paddingHorizontal": 0,
+          "gap": 8,
+          "height": 52,
+          "paddingHorizontal": 14,
           "paddingVertical": 14,
         },
         false,
@@ -1219,11 +1219,11 @@ exports[`TabItem component tests disabled: label, icon, badge 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
           "flexDirection": "row",
-          "gap": 7,
-          "height": 49,
-          "paddingHorizontal": 0,
+          "gap": 8,
+          "height": 52,
+          "paddingHorizontal": 14,
           "paddingVertical": 14,
         },
         false,
@@ -1376,9 +1376,9 @@ exports[`TabItem component tests disabled: label, icon, badge 1`] = `
             },
             {
               "borderRadius": 100,
-              "height": 21,
+              "height": 24,
               "justifyContent": "center",
-              "paddingHorizontal": 7,
+              "paddingHorizontal": 8,
             },
           ]
         }
@@ -1388,7 +1388,7 @@ exports[`TabItem component tests disabled: label, icon, badge 1`] = `
           style={
             [
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -1423,7 +1423,7 @@ exports[`TabItem component tests disabled: label, icon, badge 1`] = `
             onLayout={[Function]}
             style={
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -1479,11 +1479,11 @@ exports[`TabItem component tests label 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
           "flexDirection": "row",
-          "gap": 7,
-          "height": 49,
-          "paddingHorizontal": 0,
+          "gap": 8,
+          "height": 52,
+          "paddingHorizontal": 14,
           "paddingVertical": 14,
         },
         false,
@@ -1554,11 +1554,11 @@ exports[`TabItem component tests label, badge 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
           "flexDirection": "row",
-          "gap": 7,
-          "height": 49,
-          "paddingHorizontal": 0,
+          "gap": 8,
+          "height": 52,
+          "paddingHorizontal": 14,
           "paddingVertical": 14,
         },
         false,
@@ -1604,9 +1604,9 @@ exports[`TabItem component tests label, badge 1`] = `
             },
             {
               "borderRadius": 100,
-              "height": 21,
+              "height": 24,
               "justifyContent": "center",
-              "paddingHorizontal": 7,
+              "paddingHorizontal": 8,
             },
           ]
         }
@@ -1616,7 +1616,7 @@ exports[`TabItem component tests label, badge 1`] = `
           style={
             [
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -1651,7 +1651,7 @@ exports[`TabItem component tests label, badge 1`] = `
             onLayout={[Function]}
             style={
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -1707,11 +1707,11 @@ exports[`TabItem component tests label, icon 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
           "flexDirection": "row",
-          "gap": 7,
-          "height": 49,
-          "paddingHorizontal": 0,
+          "gap": 8,
+          "height": 52,
+          "paddingHorizontal": 14,
           "paddingVertical": 14,
         },
         false,
@@ -1884,11 +1884,11 @@ exports[`TabItem component tests label, icon, badge 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
           "flexDirection": "row",
-          "gap": 7,
-          "height": 49,
-          "paddingHorizontal": 0,
+          "gap": 8,
+          "height": 52,
+          "paddingHorizontal": 14,
           "paddingVertical": 14,
         },
         false,
@@ -2036,9 +2036,9 @@ exports[`TabItem component tests label, icon, badge 1`] = `
             },
             {
               "borderRadius": 100,
-              "height": 21,
+              "height": 24,
               "justifyContent": "center",
-              "paddingHorizontal": 7,
+              "paddingHorizontal": 8,
             },
           ]
         }
@@ -2048,7 +2048,7 @@ exports[`TabItem component tests label, icon, badge 1`] = `
           style={
             [
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -2083,7 +2083,7 @@ exports[`TabItem component tests label, icon, badge 1`] = `
             onLayout={[Function]}
             style={
               {
-                "color": "#000000",
+                "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 10.5,
                 "includeFontPadding": false,
@@ -2117,7 +2117,7 @@ exports[`Tabs component tests disabled 1`] = `
       "borderBottomWidth": 1,
       "borderColor": "#e2e2e4",
       "flexDirection": "row",
-      "gap": 21,
+      "gap": 0,
     }
   }
 >
@@ -2160,16 +2160,16 @@ exports[`Tabs component tests disabled 1`] = `
         [
           {
             "alignItems": "center",
-            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "backgroundColor": "transparent",
             "flexDirection": "row",
-            "gap": 7,
-            "height": 49,
-            "paddingHorizontal": 0,
+            "gap": 8,
+            "height": 52,
+            "paddingHorizontal": 14,
             "paddingVertical": 14,
           },
           false,
           {
-            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "backgroundColor": "transparent",
           },
           {
             "mixBlendMode": "luminosity",
@@ -2292,7 +2292,7 @@ exports[`Tabs component tests disabled 1`] = `
               "verticalAlign": "middle",
             },
             {
-              "color": "#000000",
+              "color": "#2b2e33",
             },
             false,
             {
@@ -2344,11 +2344,11 @@ exports[`Tabs component tests disabled 1`] = `
         [
           {
             "alignItems": "center",
-            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "backgroundColor": "transparent",
             "flexDirection": "row",
-            "gap": 7,
-            "height": 49,
-            "paddingHorizontal": 0,
+            "gap": 8,
+            "height": 52,
+            "paddingHorizontal": 14,
             "paddingVertical": 14,
           },
           false,
@@ -2422,11 +2422,11 @@ exports[`Tabs component tests disabled 1`] = `
         [
           {
             "alignItems": "center",
-            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "backgroundColor": "transparent",
             "flexDirection": "row",
-            "gap": 7,
-            "height": 49,
-            "paddingHorizontal": 0,
+            "gap": 8,
+            "height": 52,
+            "paddingHorizontal": 14,
             "paddingVertical": 14,
           },
           false,
@@ -2473,13 +2473,13 @@ exports[`Tabs component tests disabled 1`] = `
           style={
             [
               {
-                "backgroundColor": "#fbacaa",
+                "backgroundColor": "#f47f77",
               },
               {
                 "borderRadius": 100,
-                "height": 21,
+                "height": 24,
                 "justifyContent": "center",
-                "paddingHorizontal": 7,
+                "paddingHorizontal": 8,
               },
             ]
           }
@@ -2489,7 +2489,7 @@ exports[`Tabs component tests disabled 1`] = `
             style={
               [
                 {
-                  "color": "#000000",
+                  "color": "#2b2e33",
                   "fontFamily": "TT Fellows",
                   "fontSize": 10.5,
                   "includeFontPadding": false,
@@ -2524,7 +2524,7 @@ exports[`Tabs component tests disabled 1`] = `
               onLayout={[Function]}
               style={
                 {
-                  "color": "#000000",
+                  "color": "#2b2e33",
                   "fontFamily": "TT Fellows",
                   "fontSize": 10.5,
                   "includeFontPadding": false,
@@ -2557,7 +2557,7 @@ exports[`Tabs component tests disabled 1`] = `
     jestInlineStyle={
       [
         {
-          "backgroundColor": "#181a1f",
+          "backgroundColor": "#2b2e33",
           "bottom": 0,
           "height": 2,
           "position": "absolute",
@@ -2567,7 +2567,7 @@ exports[`Tabs component tests disabled 1`] = `
     style={
       [
         {
-          "backgroundColor": "#181a1f",
+          "backgroundColor": "#2b2e33",
           "bottom": 0,
           "height": 2,
           "position": "absolute",
@@ -2589,7 +2589,7 @@ exports[`Tabs component tests normal 1`] = `
       "borderBottomWidth": 1,
       "borderColor": "#e2e2e4",
       "flexDirection": "row",
-      "gap": 21,
+      "gap": 0,
     }
   }
 >
@@ -2632,16 +2632,16 @@ exports[`Tabs component tests normal 1`] = `
         [
           {
             "alignItems": "center",
-            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "backgroundColor": "transparent",
             "flexDirection": "row",
-            "gap": 7,
-            "height": 49,
-            "paddingHorizontal": 0,
+            "gap": 8,
+            "height": 52,
+            "paddingHorizontal": 14,
             "paddingVertical": 14,
           },
           false,
           {
-            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "backgroundColor": "transparent",
           },
           false,
         ]
@@ -2657,7 +2657,7 @@ exports[`Tabs component tests normal 1`] = `
         meetOrSlice={0}
         minX={0}
         minY={0}
-        stroke="#000000"
+        stroke="#2b2e33"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
@@ -2693,7 +2693,7 @@ exports[`Tabs component tests normal 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -2715,7 +2715,7 @@ exports[`Tabs component tests normal 1`] = `
             }
             stroke={
               {
-                "payload": 4278190080,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -2738,7 +2738,7 @@ exports[`Tabs component tests normal 1`] = `
             }
             stroke={
               {
-                "payload": 4278190080,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -2761,7 +2761,7 @@ exports[`Tabs component tests normal 1`] = `
               "verticalAlign": "middle",
             },
             {
-              "color": "#000000",
+              "color": "#2b2e33",
             },
             false,
             false,
@@ -2811,11 +2811,11 @@ exports[`Tabs component tests normal 1`] = `
         [
           {
             "alignItems": "center",
-            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "backgroundColor": "transparent",
             "flexDirection": "row",
-            "gap": 7,
-            "height": 49,
-            "paddingHorizontal": 0,
+            "gap": 8,
+            "height": 52,
+            "paddingHorizontal": 14,
             "paddingVertical": 14,
           },
           false,
@@ -2884,11 +2884,11 @@ exports[`Tabs component tests normal 1`] = `
         [
           {
             "alignItems": "center",
-            "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+            "backgroundColor": "transparent",
             "flexDirection": "row",
-            "gap": 7,
-            "height": 49,
-            "paddingHorizontal": 0,
+            "gap": 8,
+            "height": 52,
+            "paddingHorizontal": 14,
             "paddingVertical": 14,
           },
           false,
@@ -2930,13 +2930,13 @@ exports[`Tabs component tests normal 1`] = `
           style={
             [
               {
-                "backgroundColor": "#fbacaa",
+                "backgroundColor": "#f47f77",
               },
               {
                 "borderRadius": 100,
-                "height": 21,
+                "height": 24,
                 "justifyContent": "center",
-                "paddingHorizontal": 7,
+                "paddingHorizontal": 8,
               },
             ]
           }
@@ -2946,7 +2946,7 @@ exports[`Tabs component tests normal 1`] = `
             style={
               [
                 {
-                  "color": "#000000",
+                  "color": "#2b2e33",
                   "fontFamily": "TT Fellows",
                   "fontSize": 10.5,
                   "includeFontPadding": false,
@@ -2981,7 +2981,7 @@ exports[`Tabs component tests normal 1`] = `
               onLayout={[Function]}
               style={
                 {
-                  "color": "#000000",
+                  "color": "#2b2e33",
                   "fontFamily": "TT Fellows",
                   "fontSize": 10.5,
                   "includeFontPadding": false,
@@ -3014,7 +3014,7 @@ exports[`Tabs component tests normal 1`] = `
     jestInlineStyle={
       [
         {
-          "backgroundColor": "#181a1f",
+          "backgroundColor": "#2b2e33",
           "bottom": 0,
           "height": 2,
           "position": "absolute",
@@ -3024,7 +3024,7 @@ exports[`Tabs component tests normal 1`] = `
     style={
       [
         {
-          "backgroundColor": "#181a1f",
+          "backgroundColor": "#2b2e33",
           "bottom": 0,
           "height": 2,
           "position": "absolute",
