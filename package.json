@@ -39,7 +39,7 @@
     "storybook-generate": "sb-rn-get-stories --config-path .storybook && sed -i -e 's/export const view = global.view/export const view: ReturnType<typeof start> = global.view/' .storybook/storybook.requires.ts && prettier .storybook --write",
     "tokens:generate": "ts-node --project scripts/token-generator/tsconfig.json scripts/token-generator/build.ts && yarn tokens:format",
     "tokens:format": "prettier 'design-tokens/input/*.json' 'src/theme/tokens/**/*.json' --write",
-    "tokens:check": "ts-node --project scripts/token-generator/tsconfig.json scripts/token-generator/build.ts --check",
+    "tokens:check": "ts-node --transpile-only --project scripts/token-generator/tsconfig.json scripts/token-generator/build.ts --check",
     "tokens:typecheck": "tsc --noEmit -p scripts/token-generator/tsconfig.json",
     "tokens:validate": "yarn tokens:typecheck && yarn tokens:check",
     "doctor": "expo-doctor",
