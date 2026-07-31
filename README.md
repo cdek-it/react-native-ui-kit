@@ -160,6 +160,17 @@ UI kit использует следующие виды шрифтов.
    </array>
    ```
 
+## Токены анимации
+
+Длительность анимации хранится в теме числом в миллисекундах. Easing-токен
+нужно передать в Reanimated через публичный адаптер:
+
+```ts
+import { toEasing } from '@cdek-it/react-native-ui-kit'
+
+const easing = toEasing(theme.semantic.effects.transition.easing.standard)
+```
+
 ## Dependencies
 
 Для использования данной библиотеки необходимо:

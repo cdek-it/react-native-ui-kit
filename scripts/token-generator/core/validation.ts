@@ -1,5 +1,6 @@
 import {
   BOX_PROPERTIES,
+  isEasingTokenPath,
   isBoxShadowValue,
   type BoxProperty,
 } from './normalization'
@@ -9,6 +10,7 @@ const REFERENCE_PATTERN = /\{[^}]+\}/
 const UNCONVERTED_UNIT_PATTERN = /-?\d*\.?\d+(?:rem|ms)\b/
 const PIXEL_PATTERN = /-?\d*\.?\d+px\b/
 const NUMERIC_STRING_PATTERN = /^-?\d*\.?\d+$/
+const CUBIC_BEZIER_PATTERN = /cubic-bezier\s*\(/
 
 export const assertValidOutput = (
   node: TokenValue,
@@ -47,7 +49,9 @@ export const assertValidOutput = (
       REFERENCE_PATTERN.test(node) ||
       UNCONVERTED_UNIT_PATTERN.test(node) ||
       (PIXEL_PATTERN.test(node) && !isBoxShadowValue(node)) ||
-      NUMERIC_STRING_PATTERN.test(node)
+      NUMERIC_STRING_PATTERN.test(node) ||
+      CUBIC_BEZIER_PATTERN.test(node) ||
+      (node === 'linear' && isEasingTokenPath(tokenPath))
 
     if (hasUnconvertedValue) {
       throw new Error(`Unconverted token "${node}" at "${tokenPath}"`)
