@@ -252,7 +252,7 @@ export const Slider = memo<SliderProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, border }) => {
+const styles = StyleSheet.create(({ components, border }) => {
   return {
     container: {
       width: '100%',
@@ -260,33 +260,33 @@ const styles = StyleSheet.create(({ theme, border }) => {
       alignItems: 'center',
     },
     track: {
-      height: theme.Form.Slider.sliderHorizontalHeight,
-      backgroundColor: theme.Form.Slider.sliderBg,
-      borderRadius: theme.Form.Slider.sliderHandleBorderRadius,
+      height: components.slider.track.size,
+      backgroundColor: components.slider.track.background,
+      borderRadius: components.slider.track.borderRadius,
       position: 'relative',
       width: '100%',
       justifyContent: 'center',
     },
 
     line: {
-      height: theme.Form.Slider.sliderHorizontalHeight,
-      borderRadius: theme.Form.Slider.sliderHandleBorderRadius,
+      height: components.slider.track.size,
+      borderRadius: components.slider.track.borderRadius,
       position: 'absolute',
-      backgroundColor: theme.Form.Slider.sliderRangeBg,
+      backgroundColor: components.slider.range.background,
     },
 
     point: {
-      width: theme.Form.Slider.sliderHandleWidth,
-      height: theme.Form.Slider.sliderHandleHeight,
-      borderRadius: theme.Form.Slider.sliderHandleHeight / 2,
+      width: components.slider.handle.width,
+      height: components.slider.handle.height,
+      borderRadius: components.slider.handle.borderRadius,
       position: 'absolute',
-      backgroundColor: theme.Form.Slider.sliderHandleBg,
+      backgroundColor: components.slider.colorScheme.handle.content.background,
       borderWidth: border.Width['border-3'],
-      borderColor: theme.Form.Slider.sliderHandleBorder,
+      borderColor: components.slider.handle.background,
     },
 
     disabled: { opacity: 0.6, mixBlendMode: 'luminosity' },
 
-    hovered: { backgroundColor: theme.Form.Slider.sliderHandleHoverBg },
+    hovered: { backgroundColor: components.slider.handle.hoverBackground },
   }
 })
