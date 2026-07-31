@@ -3,7 +3,8 @@ import { resolve, join } from 'node:path'
 import { compileTokens } from './core/compiler'
 import type { CompiledTokens } from './core/types'
 import {
-  findStaleGeneratedTokens,
+  findGeneratedTokenIssues,
+  type GeneratedTokenIssues,
   loadTokenTree,
   writeGeneratedTokens,
 } from './io'
@@ -43,6 +44,19 @@ export const parseArgs = (arguments_: string[]): CliOptions => {
 export const compileInputTokens = (): CompiledTokens =>
   compileTokens(loadTokenTree(INPUT_FILE))
 
+const formatTokenIssues = (issues: GeneratedTokenIssues): string =>
+  [
+    issues.missing.length > 0
+      ? `Отсутствуют: ${issues.missing.join(', ')}`
+      : '',
+    issues.changed.length > 0 ? `Изменены: ${issues.changed.join(', ')}` : '',
+    issues.unexpected.length > 0
+      ? `Лишние: ${issues.unexpected.join(', ')}`
+      : '',
+  ]
+    .filter(Boolean)
+    .join('\n')
+
 export const run = (arguments_: string[]): void => {
   const options = parseArgs(arguments_)
 
@@ -55,11 +69,12 @@ export const run = (arguments_: string[]): void => {
   const compiled = compileInputTokens()
 
   if (options.check) {
-    const staleFiles = findStaleGeneratedTokens(compiled, TOKENS_DIRECTORY)
+    const issues = findGeneratedTokenIssues(compiled, TOKENS_DIRECTORY)
+    const issueDescription = formatTokenIssues(issues)
 
-    if (staleFiles.length > 0) {
+    if (issueDescription) {
       throw new Error(
-        `Сгенерированные токены устарели: ${staleFiles.join(', ')}. ` +
+        `Сгенерированные токены неактуальны:\n${issueDescription}\n` +
           'Запустите yarn tokens:generate.'
       )
     }
