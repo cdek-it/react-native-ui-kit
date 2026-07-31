@@ -264,6 +264,60 @@ describe('token compiler', () => {
     expect(compiled.components.dark.demo).not.toHaveProperty('colorScheme.dark')
   })
 
+  test('сохраняет focusRing и нормализует его значения', () => {
+    const source: TokenTree = {
+      primitive: {
+        sizing: { focusRing: '0.25rem' },
+        colors: { focus: '#d4fedc' },
+      },
+      semantic: {
+        dimension: {
+          focusRing: { width: '{sizing.focusRing}', offset: '0px' },
+        },
+        effects: {
+          focusRing: {
+            shadow: 'inset 0 0 0 {dimension.focusRing.width} {colors.focus}',
+          },
+        },
+        colorScheme: { light: {}, dark: {} },
+      },
+      components: {
+        demo: {
+          root: {
+            focusRing: {
+              width: '{dimension.focusRing.width}',
+              style: 'none',
+              color: '{colors.focus}',
+              offset: '{dimension.focusRing.offset}',
+              shadow: '{effects.focusRing.shadow}',
+            },
+          },
+        },
+      },
+    }
+
+    const compiled = compileTokens(source)
+
+    expect(compiled.semantic.light).toStrictEqual({
+      dimension: { focusRing: { width: 4, offset: 0 } },
+      effects: { focusRing: { shadow: 'inset 0 0 0 4px #d4fedc' } },
+      colorScheme: {},
+    })
+    expect(compiled.semantic.dark).toStrictEqual(compiled.semantic.light)
+    expect(compiled.components.light.demo).toStrictEqual({
+      root: {
+        focusRing: {
+          width: 4,
+          style: 'none',
+          color: '#d4fedc',
+          offset: 0,
+          shadow: 'inset 0 0 0 4px #d4fedc',
+        },
+      },
+    })
+    expect(compiled.components.dark).toStrictEqual(compiled.components.light)
+  })
+
   test('отклоняет источник без одной из цветовых схем semantic', () => {
     const source: TokenTree = {
       primitive: {},
@@ -349,6 +403,23 @@ describe('production input tokens', () => {
 
     expect(serialized).not.toMatch(/\{[a-z][^}]*\}/i)
     expect(serialized).not.toMatch(/-?\d*\.?\d+(?:rem|ms)\b/)
+  })
+
+  test('экспортирует focusRing без изменения его структуры', () => {
+    expect(compiled.semantic.light).toHaveProperty(
+      'effects.focusRing.shadow',
+      'inset 0 0 0 4px #d4fedc'
+    )
+    expect(compiled.components.light).toHaveProperty(
+      'accordion.header.focusRing',
+      {
+        width: 4,
+        style: 'none',
+        color: '#d4fedc',
+        offset: 0,
+        shadow: 'inset 0 0 0 4px #d4fedc',
+      }
+    )
   })
 
   test('совпадает с закоммиченными сгенерированными токенами', () => {
