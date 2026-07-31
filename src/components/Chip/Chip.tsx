@@ -44,10 +44,10 @@ export const Chip = memo<ChipProps>(
     showIcon = true,
     ...rest
   }) => {
-    const iconUniProps = ({ theme }: ThemeType) => ({
+    const iconUniProps = ({ components }: ThemeType) => ({
       color: disabled
-        ? theme.Button.Disabled.disabledButtonTextColor
-        : theme.Misc.Chip.chipTextColor,
+        ? components.button.extend.disabledColor
+        : components.chip.colorScheme.root.color,
     })
 
     return (
@@ -83,10 +83,10 @@ export const Chip = memo<ChipProps>(
                 {...styles.icon}
                 source={IconX}
                 style={pressed ? styles.pressedClose : null}
-                uniProps={({ theme }) => ({
+                uniProps={({ components }) => ({
                   color: disabled
-                    ? theme.Button.Disabled.disabledButtonTextColor
-                    : theme.Misc.Chip.chipTextColor,
+                    ? components.button.extend.disabledColor
+                    : components.chip.colorScheme.root.color,
                 })}
               />
             )}
@@ -97,48 +97,51 @@ export const Chip = memo<ChipProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, typography, border, fonts }) => ({
-  chip: {
-    height: theme.Misc.Chip.chipHeight,
-    alignSelf: 'flex-start',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'row',
-    gap: theme.General.inlineSpacing,
+const styles = StyleSheet.create(
+  ({ components, typography, spacing, border, fonts }) => ({
+    chip: {
+      alignSelf: 'flex-start',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexDirection: 'row',
+      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-2; value=7; target=components.chip.root.gap; targetValue=8
+      gap: spacing.Gap['gap-2'],
 
-    paddingHorizontal: theme.Misc.Chip.chipPaddingLeftRight,
-    paddingVertical: theme.Misc.Chip.chipPaddingTopBottom,
+      paddingHorizontal: components.chip.root.paddingX,
+      paddingVertical: components.chip.root.paddingY,
 
-    borderRadius: theme.Misc.Chip.chipBorderRadius,
-    borderWidth: border.Width.border,
+      borderRadius: components.chip.root.borderRadius,
+      borderWidth: components.chip.extend.borderWidth,
 
-    backgroundColor: theme.Misc.Chip.chipBg,
-    borderColor: theme.Misc.Chip.chipBorderColor,
-  },
-  disabledChip: {
-    backgroundColor: theme.Button.Disabled.disabledButtonBg,
-    borderColor: theme.Button.Disabled.disabledButtonBorderColor,
-    opacity: 0.6,
-    mixBlendMode: 'luminosity',
-  },
-  icon: {
-    width: typography.Size['text-base'],
-    height: typography.Size['text-base'],
-  },
-  text: {
-    fontSize: typography.Size['text-base'],
-    verticalAlign: 'middle',
-    color: theme.Misc.Chip.chipTextColor,
-    includeFontPadding: false,
-    fontFamily: fonts.secondary,
-  },
-  disabledText: { color: theme.General.textSecondaryColor },
-  pressedClose: {
-    borderWidth: border.Width['border-3'],
-    borderColor: border.Color.Service['border-success'][400],
-    borderRadius: border.Radius['rounded-full'],
-  },
-}))
+      backgroundColor: components.chip.colorScheme.root.background,
+      borderColor: components.chip.extend.borderColor,
+    },
+    disabledChip: {
+      backgroundColor: components.button.extend.disabledBackground,
+      borderColor: 'transparent',
+      opacity: 0.6,
+      mixBlendMode: 'luminosity',
+    },
+    icon: {
+      // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-base; value=14; target=components.chip.icon.size; targetValue=16
+      width: typography.Size['text-base'],
+      height: typography.Size['text-base'],
+    },
+    text: {
+      fontSize: typography.Size['text-base'],
+      verticalAlign: 'middle',
+      color: components.chip.colorScheme.root.color,
+      includeFontPadding: false,
+      fontFamily: fonts.secondary,
+    },
+    disabledText: { color: components.button.extend.disabledColor },
+    pressedClose: {
+      borderWidth: border.Width['border-3'],
+      borderColor: border.Color.Service['border-success'][400],
+      borderRadius: border.Radius['rounded-full'],
+    },
+  })
+)
 
 export enum TestId {
   Container = 'Chip_Container',
