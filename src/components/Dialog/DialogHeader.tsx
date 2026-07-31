@@ -75,8 +75,8 @@ export const DialogHeader = ({
             <SvgUniversal
               {...styles.closeIcon}
               source={IconX}
-              uniProps={({ theme }) => ({
-                color: theme.General.actionIconColor,
+              uniProps={({ components }) => ({
+                color: components.dialog.root.color,
               })}
             />
           </TouchableOpacity>
@@ -88,19 +88,20 @@ export const DialogHeader = ({
   )
 }
 
-const styles = StyleSheet.create(({ theme, spacing, typography, border }) => ({
+const styles = StyleSheet.create(({ components, typography, border }) => ({
   text: { flex: 1 },
   header: {
     flexDirection: 'row',
-    gap: spacing.Gap['gap-4'],
+    gap: components.dialog.header.gap,
     alignItems: 'center',
-    paddingBottom: theme.Overlay.Dialog.Header.dialogHeaderPaddingTopBottom,
-    padding: theme.Overlay.Dialog.Header.dialogHeaderPaddingLeftRight,
+    paddingTop: components.dialog.header.paddingTop,
+    paddingBottom: components.dialog.header.paddingBottom,
+    paddingHorizontal: components.dialog.header.paddingLeft,
   },
   closeTouchable: { padding: 8 },
   separator: {
     height: border.Width.border,
-    backgroundColor: theme.Overlay.Overlay.overlayContentBorderColor,
+    backgroundColor: components.dialog.root.borderColor,
   },
   closeIcon: {
     width: typography.Size['text-base'],
