@@ -10,7 +10,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
     [
       {
         "alignSelf": "flex-start",
-        "borderColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "#e2e2e4",
         "borderRadius": 100,
         "borderWidth": 1,
         "overflow": "hidden",
@@ -49,7 +49,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#181a1f"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -85,7 +85,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
         }
         stroke={
           {
-            "payload": 4279769631,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -107,7 +107,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -130,7 +130,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -144,7 +144,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
     <Text
       style={
         {
-          "color": "#181a1f",
+          "color": "#2b2e33",
           "flexShrink": 1,
           "fontFamily": "TT Fellows",
           "fontSize": 12.25,
@@ -171,7 +171,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
     [
       {
         "alignSelf": "flex-start",
-        "borderColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "#e2e2e4",
         "borderRadius": 100,
         "borderWidth": 1,
         "overflow": "hidden",
@@ -203,7 +203,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
     <Text
       style={
         {
-          "color": "#181a1f",
+          "color": "#2b2e33",
           "flexShrink": 1,
           "fontFamily": "TT Fellows",
           "fontSize": 12.25,
@@ -226,7 +226,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#181a1f"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -262,7 +262,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
         }
         stroke={
           {
-            "payload": 4279769631,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -284,7 +284,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -307,7 +307,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -332,7 +332,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
     [
       {
         "alignSelf": "flex-start",
-        "borderColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "#e2e2e4",
         "borderRadius": 100,
         "borderWidth": 1,
         "overflow": "hidden",
@@ -376,7 +376,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#181a1f"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -412,7 +412,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
         }
         stroke={
           {
-            "payload": 4279769631,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -434,7 +434,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -457,7 +457,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -644,7 +644,7 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
     [
       {
         "alignSelf": "flex-start",
-        "borderColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "#2b2e33",
         "borderRadius": 100,
         "borderWidth": 1,
         "overflow": "hidden",
@@ -796,7 +796,7 @@ exports[`ToggleButton snapshots default 1`] = `
     [
       {
         "alignSelf": "flex-start",
-        "borderColor": "rgba(255, 255, 255, 0.0001)",
+        "borderColor": "#e2e2e4",
         "borderRadius": 100,
         "borderWidth": 1,
         "overflow": "hidden",
