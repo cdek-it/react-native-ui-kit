@@ -111,8 +111,8 @@ export const Divider = memo<DividerProps>(
                 <SvgUniversal
                   {...styles.icon}
                   source={Icon}
-                  uniProps={({ theme }) => ({
-                    color: theme.General.textSecondaryColor,
+                  uniProps={({ components }) => ({
+                    color: components.divider.content.color,
                   })}
                 />
               ) : null}
@@ -133,15 +133,15 @@ export const Divider = memo<DividerProps>(
   }
 )
 
-const styles = StyleSheet.create(({ spacing, theme, sizing, typography }) => ({
+const styles = StyleSheet.create(({ spacing, components, typography }) => ({
   container: {
-    minHeight: sizing.Height['h-2'],
+    minHeight: 28,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
   },
   containerVertical: {
-    minWidth: sizing.Width['w-2'],
+    minWidth: 28,
     flexDirection: 'column',
     flexGrow: 1,
     alignSelf: 'flex-start',
@@ -160,22 +160,24 @@ const styles = StyleSheet.create(({ spacing, theme, sizing, typography }) => ({
     width: '100%',
     height: '100%',
     borderWidth: 1,
-    borderColor: theme.General.dividerColor,
+    borderColor: components.divider.root.borderColor,
   },
   lineDash: { borderStyle: 'dashed' },
   content: {
     flexShrink: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: theme.General.inlineSpacing,
+    paddingHorizontal: spacing.Padding['p-2'],
+    // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-2; value=7; target=components.divider.extend.content.gap; targetValue=8
     gap: spacing.Gap['gap-2'],
-    backgroundColor: theme.Panel.Panel.Body.panelContentBg,
+    backgroundColor: components.divider.content.background,
   },
   contentVertical: {
     paddingHorizontal: 0,
-    paddingVertical: theme.General.inlineSpacing,
+    paddingVertical: spacing.Padding['p-2'],
   },
   icon: {
+    // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-base; value=14; target=components.divider.extend.iconSize; targetValue=16
     width: typography.Size['text-base'],
     height: typography.Size['text-base'],
   },
