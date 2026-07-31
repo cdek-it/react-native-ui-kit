@@ -7,12 +7,60 @@ import {
 } from './types'
 
 const REM_BASE = 16
+const NUMBER_SOURCE = '[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)'
 const NUMBER_PATTERN = /^-?\d*\.?\d+$/
 const PIXEL_PATTERN = /^-?\d*\.?\d+px$/
 const SHADOW_LENGTH_PATTERN = /^(?:0|-?\d*\.?\d+(?:rem|px))$/
+const CUBIC_BEZIER_PATTERN = new RegExp(
+  `^cubic-bezier\\(\\s*(${NUMBER_SOURCE})\\s*,\\s*(${NUMBER_SOURCE})\\s*,\\s*(${NUMBER_SOURCE})\\s*,\\s*(${NUMBER_SOURCE})\\s*\\)$`
+)
 export const BOX_PROPERTIES = ['padding', 'margin', 'borderWidth'] as const
 
 export type BoxProperty = (typeof BOX_PROPERTIES)[number]
+
+export const isEasingTokenPath = (tokenPath: string): boolean =>
+  /\.effects\.transition\.easing\.[^.]+$/.test(tokenPath)
+
+export const normalizeEasing = (
+  value: TokenValue,
+  tokenPath = 'semantic.effects.transition.easing'
+): TokenTree => {
+  if (typeof value !== 'string') {
+    throw new Error(`Expected easing string at "${tokenPath}"`)
+  }
+
+  const easing = value.trim()
+
+  if (easing === 'linear') return { x1: 0, y1: 0, x2: 1, y2: 1 }
+
+  const match = CUBIC_BEZIER_PATTERN.exec(easing)
+
+  if (!match) {
+    throw new Error(`Unsupported easing "${value}" at "${tokenPath}"`)
+  }
+
+  const [, x1Source, y1Source, x2Source, y2Source] = match
+  const coordinates = [x1Source, y1Source, x2Source, y2Source].map(Number)
+  const [x1, y1, x2, y2] = coordinates
+
+  if (
+    coordinates.some((coordinate) => !Number.isFinite(coordinate)) ||
+    x1 === undefined ||
+    y1 === undefined ||
+    x2 === undefined ||
+    y2 === undefined
+  ) {
+    throw new Error(`Invalid easing "${value}" at "${tokenPath}"`)
+  }
+
+  if (x1 < 0 || x1 > 1 || x2 < 0 || x2 > 1) {
+    throw new Error(
+      `Easing x coordinates must be between 0 and 1 at "${tokenPath}"`
+    )
+  }
+
+  return { x1, y1, x2, y2 }
+}
 
 export const isBoxShadowValue = (value: string): boolean => {
   const parts = value
@@ -178,6 +226,10 @@ export const normalizeTree = (
   node: TokenValue,
   tokenPath = 'root'
 ): TokenValue => {
+  if (isEasingTokenPath(tokenPath)) {
+    return normalizeEasing(node, tokenPath)
+  }
+
   if (Array.isArray(node)) {
     return node.map((item, index) =>
       normalizeTree(item, `${tokenPath}.${index}`)
