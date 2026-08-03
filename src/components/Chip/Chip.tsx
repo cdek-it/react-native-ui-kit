@@ -108,7 +108,6 @@ const styles = StyleSheet.create(
     components,
     semantic,
 
-    spacing,
     border,
     fonts,
   }) => ({
@@ -117,8 +116,7 @@ const styles = StyleSheet.create(
       justifyContent: 'center',
       alignItems: 'center',
       flexDirection: 'row',
-      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-2; value=7; target=components.chip.root.gap; targetValue=8
-      gap: spacing.Gap['gap-2'],
+      gap: components.chip.root.gap,
 
       paddingHorizontal: components.chip.root.paddingX,
       paddingVertical: components.chip.root.paddingY,
@@ -136,9 +134,8 @@ const styles = StyleSheet.create(
       mixBlendMode: 'luminosity',
     },
     icon: {
-      // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-base; value=14; target=components.chip.icon.size; targetValue=16
-      width: primitive.fonts.fontSize[300],
-      height: primitive.fonts.fontSize[300],
+      width: components.chip.icon.size,
+      height: components.chip.icon.size,
     },
     text: {
       fontSize: primitive.fonts.fontSize[300],

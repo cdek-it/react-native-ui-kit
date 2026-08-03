@@ -137,7 +137,7 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
 // у menu.item нет background и borderColor, прозрачность не выражена semantic-токеном.
 // TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
 const styles = StyleSheet.create(
-  ({ primitive, components, semantic, spacing, border }) => ({
+  ({ components, semantic, spacing, border }) => ({
     container: {
       borderColor: 'transparent',
       borderWidth: border.Width.border,
@@ -153,14 +153,12 @@ const styles = StyleSheet.create(
     separator: {
       borderTopWidth: 1,
       borderTopColor: components.menu.separator.borderColor,
-      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-1; value=3.5; target=components.menu.extend.extItem.caption.gap; targetValue=4
-      paddingTop: spacing.Gap['gap-1'],
+      paddingTop: components.menu.extend.extItem.caption.gap,
     },
     contentContainer: {
       flexDirection: 'row',
       alignItems: 'center',
-      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-2; value=7; target=components.menu.item.gap; targetValue=8
-      gap: spacing.Gap['gap-2'],
+      gap: components.menu.item.gap,
       paddingHorizontal: components.menu.item.paddingLeft,
       paddingVertical: components.menu.item.paddingTop,
     },
@@ -175,9 +173,8 @@ const styles = StyleSheet.create(
       flex: 1,
     },
     icon: {
-      // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-xl; value=17.5; target=components.menu.extend.iconSize; targetValue=20
-      width: primitive.fonts.fontSize[500],
-      height: primitive.fonts.fontSize[500],
+      width: components.menu.extend.iconSize,
+      height: components.menu.extend.iconSize,
       color: components.menu.item.icon.color,
     },
     textContainer: { gap: spacing.Gap['gap-1'], flex: 1 },

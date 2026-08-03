@@ -165,8 +165,7 @@ const styles = StyleSheet.create(
     component: { width: '100%' },
     header: {
       paddingVertical: spacing.Padding['p-4'],
-      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-2; value=7; target=components.accordion.extend.extHeader.gap; targetValue=8
-      gap: spacing.Gap['gap-2'],
+      gap: components.accordion.extend.extHeader.gap,
       flexDirection: 'row',
       alignItems: 'center',
       backgroundColor: components.accordion.colorScheme.header.background,
@@ -184,11 +183,9 @@ const styles = StyleSheet.create(
     contentWrapper: {
       position: 'absolute',
       width: '100%',
-      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Padding.p-7; value=24.5; target=components.accordion.content.paddingLeft; targetValue=24
-      paddingLeft: spacing.Padding['p-7'],
+      paddingLeft: components.accordion.content.paddingLeft,
       paddingTop: spacing.Padding['p-0'],
-      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Padding.p-0; value=0; target=components.accordion.content.paddingRight; targetValue=24
-      paddingRight: spacing.Padding['p-0'],
+      paddingRight: components.accordion.content.paddingRight,
       paddingBottom: spacing.Padding['p-4'],
     },
     separator: {

@@ -119,22 +119,14 @@ export const ToggleButton = memo<ToggleButtonProps>(
   }
 )
 
-// TODO(tokens-migration): reason=value-mismatch; legacy=border.Radius.rounded-full; value=100; target=components.togglebutton.root.borderRadius; targetValue=1600
 // TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
-// TODO(tokens-migration): reason=value-mismatch; legacy=theme.Button.Disabled.disabledButtonBorderColor; light=#a2a5a9; dark=#56595f; target=components.togglebutton.colorScheme.root.disabledBorderColor; targetValue=#e2e2e4
-// TODO(tokens-migration): reason=value-mismatch; legacy=theme.Button.Common.buttonPaddingTopBottom; value=0; target=components.togglebutton.root.paddingTop; targetValue=8
 // TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-6; value=21
-// TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-3; value=10.5; target=components.togglebutton.extend.ext.gap; targetValue=14
-// TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-2; value=7; target=components.togglebutton.root.gap; targetValue=8
-// TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Padding.p-3; value=10.5; target=components.togglebutton.root.sm.paddingRight; targetValue=14
-// TODO(tokens-migration): reason=value-mismatch; legacy=theme.Button.Disabled.disabledButtonBg; light=#e2e2e4; dark=#404348; target=components.togglebutton.colorScheme.root.disabledBackground; targetValue=#e2e2e4
-// TODO(tokens-migration): reason=value-mismatch; legacy=theme.Button.Disabled.disabledButtonTextColor; light=#85888e; dark=#f0f0f1; target=components.togglebutton.colorScheme.root.disabledColor; targetValue=#85888e
 // TODO(tokens-migration): reason=missing; legacy=theme.Button.Common.buttonPaddingLeftRight; value=14
 const toggleStyles = StyleSheet.create(
   ({ primitive, components, theme, spacing, border, fonts }) => ({
     container: {
       alignSelf: 'flex-start',
-      borderRadius: border.Radius['rounded-full'],
+      borderRadius: components.togglebutton.root.borderRadius,
       borderWidth: border.Width.border,
       overflow: 'hidden',
       variants: {
@@ -155,7 +147,8 @@ const toggleStyles = StyleSheet.create(
         },
         disabled: {
           true: {
-            borderColor: theme.Button.Disabled.disabledButtonBorderColor,
+            borderColor:
+              components.togglebutton.colorScheme.root.disabledBorderColor,
             opacity: 0.6,
           },
           false: {},
@@ -175,10 +168,10 @@ const toggleStyles = StyleSheet.create(
       flexDirection: 'row',
       alignItems: 'center',
       alignSelf: 'flex-start',
-      borderRadius: border.Radius['rounded-full'],
-      paddingVertical: theme.Button.Common.buttonPaddingTopBottom,
+      borderRadius: components.togglebutton.root.borderRadius,
+      paddingVertical: components.togglebutton.root.paddingTop,
       paddingHorizontal: spacing.Padding['p-6'],
-      gap: spacing.Gap['gap-3'],
+      gap: components.togglebutton.extend.ext.gap,
       variants: {
         size: {
           xlarge: { minHeight: 56 },
@@ -186,12 +179,12 @@ const toggleStyles = StyleSheet.create(
           base: {
             minHeight: 35,
             paddingHorizontal: theme.Button.Common.buttonPaddingLeftRight,
-            gap: spacing.Gap['gap-2'],
+            gap: components.togglebutton.root.gap,
           },
           small: {
             minHeight: 28,
-            paddingHorizontal: spacing.Padding['p-3'],
-            gap: spacing.Gap['gap-2'],
+            paddingHorizontal: components.togglebutton.root.sm.paddingRight,
+            gap: components.togglebutton.root.gap,
           },
         },
         checked: {
@@ -212,7 +205,10 @@ const toggleStyles = StyleSheet.create(
           false: {},
         },
         disabled: {
-          true: { backgroundColor: theme.Button.Disabled.disabledButtonBg },
+          true: {
+            backgroundColor:
+              components.togglebutton.colorScheme.root.disabledBackground,
+          },
           false: {},
         },
       },
@@ -264,7 +260,9 @@ const toggleStyles = StyleSheet.create(
           false: {},
         },
         disabled: {
-          true: { color: theme.Button.Disabled.disabledButtonTextColor },
+          true: {
+            color: components.togglebutton.colorScheme.root.disabledColor,
+          },
           false: {},
         },
       },
@@ -300,7 +298,9 @@ const toggleStyles = StyleSheet.create(
           false: {},
         },
         disabled: {
-          true: { color: theme.Button.Disabled.disabledButtonTextColor },
+          true: {
+            color: components.togglebutton.colorScheme.root.disabledColor,
+          },
           false: {},
         },
       },

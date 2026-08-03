@@ -89,34 +89,30 @@ export const ProgressBar = memo<ProgressBarProps>(
   }
 )
 
-const styles = StyleSheet.create(
-  ({ primitive, components, border, fonts }) => ({
-    container: {
-      // TODO(tokens-migration): reason=value-mismatch; legacy=border.Radius.rounded-full; value=100; target=components.progressbar.root.borderRadius; targetValue=14
-      borderRadius: border.Radius['rounded-full'],
-      backgroundColor: components.progressbar.root.background,
-      overflow: 'hidden',
-    },
+const styles = StyleSheet.create(({ components, fonts }) => ({
+  container: {
+    borderRadius: components.progressbar.root.borderRadius,
+    backgroundColor: components.progressbar.root.background,
+    overflow: 'hidden',
+  },
 
-    indicator: {
-      alignItems: 'center',
-      justifyContent: 'center',
-      backgroundColor: components.progressbar.value.background,
-      height: '100%',
-      overflow: 'hidden',
-    },
+  indicator: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: components.progressbar.value.background,
+    height: '100%',
+    overflow: 'hidden',
+  },
 
-    containerShowValue: { height: components.progressbar.root.height },
+  containerShowValue: { height: components.progressbar.root.height },
 
-    indicatorText: {
-      // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-xs; value=10.5; target=components.progressbar.label.fontSize; targetValue=12
-      fontSize: primitive.fonts.fontSize[100],
-      textAlign: 'center',
-      color: components.progressbar.label.color,
-      fontFamily: fonts.primary,
-    },
-  })
-)
+  indicatorText: {
+    fontSize: components.progressbar.label.fontSize,
+    textAlign: 'center',
+    color: components.progressbar.label.color,
+    fontFamily: fonts.primary,
+  },
+}))
 
 /**
  * Стиль компонента ProgressBar

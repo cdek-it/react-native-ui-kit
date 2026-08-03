@@ -18,7 +18,7 @@ exports[`Badge component tests dot, severity: basic 1`] = `
           "backgroundColor": "#44e858",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 8,
           "height": 8,
           "width": 8,
         },
@@ -46,7 +46,7 @@ exports[`Badge component tests dot, severity: danger 1`] = `
           "backgroundColor": "#f47f77",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 8,
           "height": 8,
           "width": 8,
         },
@@ -74,7 +74,7 @@ exports[`Badge component tests dot, severity: info 1`] = `
           "backgroundColor": "#77baf4",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 8,
           "height": 8,
           "width": 8,
         },
@@ -102,7 +102,7 @@ exports[`Badge component tests dot, severity: success 1`] = `
           "backgroundColor": "#77f48a",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 8,
           "height": 8,
           "width": 8,
         },
@@ -130,7 +130,7 @@ exports[`Badge component tests dot, severity: warning 1`] = `
           "backgroundColor": "#facb75",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 8,
           "height": 8,
           "width": 8,
         },
@@ -646,7 +646,7 @@ exports[`Badge component tests with custom style 1`] = `
           "backgroundColor": "#44e858",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 8,
           "height": 8,
           "width": 8,
         },

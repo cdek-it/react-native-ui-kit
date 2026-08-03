@@ -21,11 +21,11 @@ exports[`Message {"Icon": [Object], "timerValue": 5} 1`] = `
     style={
       {
         "borderColor": "#4496e8",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 14,
       }
     }
   >
@@ -45,7 +45,7 @@ exports[`Message {"Icon": [Object], "timerValue": 5} 1`] = `
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >
@@ -83,11 +83,11 @@ exports[`Message {"Icon": [Object]} 1`] = `
     style={
       {
         "borderColor": "#4496e8",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 14,
       }
     }
   >
@@ -206,7 +206,7 @@ exports[`Message {"Icon": [Object]} 1`] = `
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >
@@ -246,11 +246,11 @@ exports[`Message {"body": [Object], "caption": "caption", "severity": "info", "s
     style={
       {
         "borderColor": "#4496e8",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 14,
       }
     }
   >
@@ -392,7 +392,7 @@ exports[`Message {"body": [Object], "caption": "caption", "severity": "info", "s
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >
@@ -442,11 +442,11 @@ exports[`Message {"body": [Object], "footer": [Object], "severity": "warning"} 1
     style={
       {
         "borderColor": "#f5b83d",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 14,
       }
     }
   >
@@ -588,7 +588,7 @@ exports[`Message {"body": [Object], "footer": [Object], "severity": "warning"} 1
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >
@@ -636,11 +636,11 @@ exports[`Message {"closeLabel": "Close", "footer": [Object], "onClose": [Functio
     style={
       {
         "borderColor": "#44e858",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 14,
       }
     }
   >
@@ -759,7 +759,7 @@ exports[`Message {"closeLabel": "Close", "footer": [Object], "onClose": [Functio
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >
@@ -867,11 +867,11 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
     style={
       {
         "borderColor": "#44e858",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 14,
       }
     }
   >
@@ -990,7 +990,7 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >
@@ -1187,11 +1187,11 @@ exports[`Message {"hiddenIcon": false} 1`] = `
     style={
       {
         "borderColor": "#4496e8",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 14,
       }
     }
   >
@@ -1333,7 +1333,7 @@ exports[`Message {"hiddenIcon": false} 1`] = `
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >
@@ -1371,11 +1371,11 @@ exports[`Message {"onTimerFinish": [Function mockConstructor], "timerValue": 5} 
     style={
       {
         "borderColor": "#4496e8",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 14,
       }
     }
   >
@@ -1396,7 +1396,7 @@ exports[`Message {"onTimerFinish": [Function mockConstructor], "timerValue": 5} 
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >
@@ -1434,11 +1434,11 @@ exports[`Message {"severity": "danger"} 1`] = `
     style={
       {
         "borderColor": "#e85244",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 14,
       }
     }
   >
@@ -1580,7 +1580,7 @@ exports[`Message {"severity": "danger"} 1`] = `
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >
@@ -1618,11 +1618,11 @@ exports[`Message {} 1`] = `
     style={
       {
         "borderColor": "#4496e8",
-        "borderLeftWidth": 2,
+        "borderLeftWidth": 3,
         "flexGrow": 1,
         "gap": 14,
         "padding": 14,
-        "paddingLeft": 17.5,
+        "paddingLeft": 14,
       }
     }
   >
@@ -1764,7 +1764,7 @@ exports[`Message {} 1`] = `
           {
             "alignSelf": "center",
             "flex": 1,
-            "gap": 3.5,
+            "gap": 4,
           }
         }
       >

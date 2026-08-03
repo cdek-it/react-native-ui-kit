@@ -103,55 +103,51 @@ export const Badge = memo<BadgeProps>(
   }
 )
 
-const badgeStyles = StyleSheet.create(
-  ({ primitive, components, border, fonts }) => ({
-    container: { alignItems: 'flex-start' },
-    dot: {
-      variants: {
-        severity: {
-          basic: {
-            backgroundColor: components.badge.colorScheme.primary.background,
-          },
-          info: {
-            backgroundColor: components.badge.extend.extDot.info.background,
-          },
-          success: {
-            backgroundColor: components.badge.extend.extDot.success.background,
-          },
-          warning: {
-            backgroundColor: components.badge.extend.extDot.warn.background,
-          },
-          danger: {
-            backgroundColor: components.badge.extend.extDot.danger.background,
-          },
+const badgeStyles = StyleSheet.create(({ components, border, fonts }) => ({
+  container: { alignItems: 'flex-start' },
+  dot: {
+    variants: {
+      severity: {
+        basic: {
+          backgroundColor: components.badge.colorScheme.primary.background,
+        },
+        info: {
+          backgroundColor: components.badge.extend.extDot.info.background,
+        },
+        success: {
+          backgroundColor: components.badge.extend.extDot.success.background,
+        },
+        warning: {
+          backgroundColor: components.badge.extend.extDot.warn.background,
+        },
+        danger: {
+          backgroundColor: components.badge.extend.extDot.danger.background,
         },
       },
     },
-    dotShape: {
-      width: components.badge.dot.size,
-      height: components.badge.dot.size,
-      // TODO(tokens-migration): reason=value-mismatch; legacy=border.Radius.rounded-full; value=100; target=components.badge.root.borderRadius; targetValue=8
-      borderRadius: border.Radius['rounded-full'],
-    },
-    textBadgeContainer: {
-      height: components.badge.root.height,
-      paddingHorizontal: components.badge.root.padding,
-      justifyContent: 'center',
-      borderRadius: border.Radius['rounded-full'],
-    },
-    textBadge: {
-      color: components.badge.colorScheme.primary.color,
-      // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-xs; value=10.5; target=components.badge.root.fontSize; targetValue=12
-      fontSize: primitive.fonts.fontSize[100],
-      includeFontPadding: false,
-      verticalAlign: 'middle',
-      fontFamily: fonts.primary,
-    },
-    hiddenContainer: {
-      width: Dimensions.get('window').width,
-      height: 0,
-      flexDirection: 'row',
-      position: 'absolute',
-    },
-  })
-)
+  },
+  dotShape: {
+    width: components.badge.dot.size,
+    height: components.badge.dot.size,
+    borderRadius: components.badge.root.borderRadius,
+  },
+  textBadgeContainer: {
+    height: components.badge.root.height,
+    paddingHorizontal: components.badge.root.padding,
+    justifyContent: 'center',
+    borderRadius: border.Radius['rounded-full'],
+  },
+  textBadge: {
+    color: components.badge.colorScheme.primary.color,
+    fontSize: components.badge.root.fontSize,
+    includeFontPadding: false,
+    verticalAlign: 'middle',
+    fontFamily: fonts.primary,
+  },
+  hiddenContainer: {
+    width: Dimensions.get('window').width,
+    height: 0,
+    flexDirection: 'row',
+    position: 'absolute',
+  },
+}))

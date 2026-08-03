@@ -284,7 +284,7 @@ exports[`ButtonSeverity component tests badge - dot 1`] = `
               "backgroundColor": "#77baf4",
             },
             {
-              "borderRadius": 100,
+              "borderRadius": 8,
               "height": 8,
               "width": 8,
             },

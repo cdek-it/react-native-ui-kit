@@ -100,64 +100,56 @@ export const Tag = memo<TagProps>(
   }
 )
 
-const tagStyles = StyleSheet.create(
-  ({ primitive, components, border, spacing, fonts }) => ({
-    container: {
-      alignSelf: 'flex-start',
-      flexDirection: 'row',
-      alignItems: 'center',
-      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-1; value=3.5; target=components.tag.root.gap; targetValue=4
-      gap: spacing.Gap['gap-1'],
-      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Padding.p-2; value=7; target=components.tag.root.paddingLeft; targetValue=8
-      paddingHorizontal: spacing.Padding['p-2'],
-      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Padding.p-1; value=3.5; target=components.tag.root.paddingTop; targetValue=4
-      paddingVertical: spacing.Padding['p-1'],
-      // TODO(tokens-migration): reason=value-mismatch; legacy=border.Radius.rounded-lg; value=7; target=components.tag.root.borderRadius; targetValue=8
-      borderRadius: border.Radius['rounded-lg'],
-      variants: {
-        severity: {
-          basic: {
-            backgroundColor: components.tag.colorScheme.primary.background,
-          },
-          info: { backgroundColor: components.tag.colorScheme.info.background },
-          success: {
-            backgroundColor: components.tag.colorScheme.success.background,
-          },
-          warning: {
-            backgroundColor: components.tag.colorScheme.warn.background,
-          },
-          danger: {
-            backgroundColor: components.tag.colorScheme.danger.background,
-          },
-          secondary: {
-            backgroundColor: components.tag.colorScheme.secondary.background,
-          },
+const tagStyles = StyleSheet.create(({ components, fonts }) => ({
+  container: {
+    alignSelf: 'flex-start',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: components.tag.root.gap,
+    paddingHorizontal: components.tag.root.paddingLeft,
+    paddingVertical: components.tag.root.paddingTop,
+    borderRadius: components.tag.root.borderRadius,
+    variants: {
+      severity: {
+        basic: {
+          backgroundColor: components.tag.colorScheme.primary.background,
+        },
+        info: { backgroundColor: components.tag.colorScheme.info.background },
+        success: {
+          backgroundColor: components.tag.colorScheme.success.background,
+        },
+        warning: {
+          backgroundColor: components.tag.colorScheme.warn.background,
+        },
+        danger: {
+          backgroundColor: components.tag.colorScheme.danger.background,
+        },
+        secondary: {
+          backgroundColor: components.tag.colorScheme.secondary.background,
         },
       },
     },
-    // TODO(tokens-migration): reason=value-mismatch; legacy=border.Radius.rounded-full; value=100; target=components.tag.root.roundedBorderRadius; targetValue=1600
-    roundedContainer: { borderRadius: border.Radius['rounded-full'] },
-    icon: { width: components.tag.icon.size, height: components.tag.icon.size },
-    text: {
-      flexShrink: 1,
-      // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-xs; value=10.5; target=components.tag.root.fontSize; targetValue=12
-      fontSize: primitive.fonts.fontSize[100],
-      includeFontPadding: false,
-      verticalAlign: 'middle',
-      fontFamily: fonts.primary,
-      variants: {
-        severity: {
-          basic: { color: components.tag.colorScheme.primary.color },
-          info: { color: components.tag.colorScheme.info.color },
-          success: { color: components.tag.colorScheme.success.color },
-          warning: { color: components.tag.colorScheme.warn.color },
-          danger: { color: components.tag.colorScheme.danger.color },
-          secondary: { color: components.tag.colorScheme.secondary.color },
-        },
+  },
+  roundedContainer: { borderRadius: components.tag.root.roundedBorderRadius },
+  icon: { width: components.tag.icon.size, height: components.tag.icon.size },
+  text: {
+    flexShrink: 1,
+    fontSize: components.tag.root.fontSize,
+    includeFontPadding: false,
+    verticalAlign: 'middle',
+    fontFamily: fonts.primary,
+    variants: {
+      severity: {
+        basic: { color: components.tag.colorScheme.primary.color },
+        info: { color: components.tag.colorScheme.info.color },
+        success: { color: components.tag.colorScheme.success.color },
+        warning: { color: components.tag.colorScheme.warn.color },
+        danger: { color: components.tag.colorScheme.danger.color },
+        secondary: { color: components.tag.colorScheme.secondary.color },
       },
     },
-  })
-)
+  },
+}))
 
 export const TagTestId = {
   root: 'Tag',

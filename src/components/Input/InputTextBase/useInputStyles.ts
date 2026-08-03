@@ -44,8 +44,7 @@ export const inputStyles = StyleSheet.create(
     container: {
       flexDirection: 'row',
       borderWidth: border.Width.border,
-      // TODO(tokens-migration): reason=value-mismatch; legacy=border.Radius.rounded-xl; value=10.5; target=components.inputtext.root.borderRadius; targetValue=14
-      borderRadius: border.Radius['rounded-xl'],
+      borderRadius: components.inputtext.root.borderRadius,
       borderColor: components.inputtext.root.borderColor,
       backgroundColor: components.inputtext.root.background,
     },
@@ -102,14 +101,12 @@ export const inputStyles = StyleSheet.create(
     },
     rightButtonContainer: { justifyContent: 'center' },
     iconSize: {
-      // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-base; value=14; target=components.inputtext.extend.iconSize; targetValue=16
-      width: primitive.fonts.fontSize[300],
-      height: primitive.fonts.fontSize[300],
+      width: components.inputtext.extend.iconSize,
+      height: components.inputtext.extend.iconSize,
     },
     iconSizeFloatLabel: {
-      // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-xl; value=17.5; target=components.inputtext.extend.iconSize; targetValue=16
-      width: primitive.fonts.fontSize[500],
-      height: primitive.fonts.fontSize[500],
+      width: components.inputtext.extend.iconSize,
+      height: components.inputtext.extend.iconSize,
     },
 
     label: {

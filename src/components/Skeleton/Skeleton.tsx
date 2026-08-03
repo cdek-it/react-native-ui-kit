@@ -87,10 +87,9 @@ export const Skeleton = memo<SkeletonProps>(({ style, testID, ...rest }) => {
   )
 })
 
-const styles = StyleSheet.create(({ border, components: { skeleton } }) => ({
+const styles = StyleSheet.create(({ components: { skeleton } }) => ({
   container: {
-    // TODO(tokens-migration): reason=value-mismatch; legacy=border.Radius.rounded-lg; value=7; target=components.skeleton.root.borderRadius; targetValue=14
-    borderRadius: border.Radius['rounded-lg'],
+    borderRadius: skeleton.root.borderRadius,
     overflow: 'hidden',
     backgroundColor: skeleton.colorScheme.root.background,
   },

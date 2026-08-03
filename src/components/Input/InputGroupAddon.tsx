@@ -84,9 +84,8 @@ const styles = StyleSheet.create(
       fontFamily: fonts.secondary,
     },
     icon: {
-      // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-base; value=14; target=components.inputgroup.extend.iconSize; targetValue=16
-      width: primitive.fonts.fontSize[300],
-      height: primitive.fonts.fontSize[300],
+      width: components.inputgroup.extend.iconSize,
+      height: components.inputgroup.extend.iconSize,
     },
   })
 )

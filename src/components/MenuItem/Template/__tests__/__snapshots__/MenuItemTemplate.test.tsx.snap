@@ -6,7 +6,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
     {
       "borderTopColor": "#e2e2e4",
       "borderTopWidth": 1,
-      "paddingTop": 3.5,
+      "paddingTop": 4,
     }
   }
 >
@@ -66,7 +66,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
         {
           "alignItems": "center",
           "flexDirection": "row",
-          "gap": 7,
+          "gap": 8,
           "paddingHorizontal": 14,
           "paddingVertical": 8,
         }
@@ -218,7 +218,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
                       "backgroundColor": "#f47f77",
                     },
                     {
-                      "borderRadius": 100,
+                      "borderRadius": 8,
                       "height": 8,
                       "width": 8,
                     },
@@ -581,7 +581,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate minimal config 1`] = `
         {
           "alignItems": "center",
           "flexDirection": "row",
-          "gap": 7,
+          "gap": 8,
           "paddingHorizontal": 14,
           "paddingVertical": 8,
         }
@@ -696,7 +696,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
         {
           "alignItems": "center",
           "flexDirection": "row",
-          "gap": 7,
+          "gap": 8,
           "paddingHorizontal": 14,
           "paddingVertical": 8,
         }
@@ -1008,7 +1008,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with colored icon 1`] = `
         {
           "alignItems": "center",
           "flexDirection": "row",
-          "gap": 7,
+          "gap": 8,
           "paddingHorizontal": 14,
           "paddingVertical": 8,
         }
@@ -1236,7 +1236,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with extra 1`] = `
         {
           "alignItems": "center",
           "flexDirection": "row",
-          "gap": 7,
+          "gap": 8,
           "paddingHorizontal": 14,
           "paddingVertical": 8,
         }
@@ -1447,7 +1447,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
         {
           "alignItems": "center",
           "flexDirection": "row",
-          "gap": 7,
+          "gap": 8,
           "paddingHorizontal": 14,
           "paddingVertical": 8,
         }
@@ -1675,7 +1675,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
         {
           "alignItems": "center",
           "flexDirection": "row",
-          "gap": 7,
+          "gap": 8,
           "paddingHorizontal": 14,
           "paddingVertical": 8,
         }
@@ -1827,7 +1827,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
                       "backgroundColor": "#facb75",
                     },
                     {
-                      "borderRadius": 100,
+                      "borderRadius": 8,
                       "height": 8,
                       "width": 8,
                     },
@@ -1941,7 +1941,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with padding 1`] = `
         {
           "alignItems": "center",
           "flexDirection": "row",
-          "gap": 7,
+          "gap": 8,
           "paddingHorizontal": 14,
           "paddingVertical": 8,
         }
@@ -2006,7 +2006,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with separator 1`] = `
     {
       "borderTopColor": "#e2e2e4",
       "borderTopWidth": 1,
-      "paddingTop": 3.5,
+      "paddingTop": 4,
     }
   }
 >
@@ -2062,7 +2062,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with separator 1`] = `
         {
           "alignItems": "center",
           "flexDirection": "row",
-          "gap": 7,
+          "gap": 8,
           "paddingHorizontal": 14,
           "paddingVertical": 8,
         }

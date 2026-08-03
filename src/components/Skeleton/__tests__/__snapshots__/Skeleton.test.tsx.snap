@@ -7,7 +7,7 @@ exports[`Skeleton 50% animation 1`] = `
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 7,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -144,7 +144,7 @@ exports[`Skeleton 100% animation 1`] = `
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 7,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -281,7 +281,7 @@ exports[`Skeleton before animation started: before animation started 1`] = `
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 7,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {

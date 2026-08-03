@@ -155,7 +155,6 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
 
 // TODO(tokens-migration): reason=missing; legacy=theme.Button.Disabled.disabledButtonBorderColor; light=#a2a5a9; dark=#56595f
 // TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
-// TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-3; value=10.5; target=components.selectbutton.extend.gap; targetValue=4
 // TODO(tokens-migration): reason=missing; legacy=semantic.colorScheme.color.fg.muted; light=#85888e; dark=#a2a5a9
 const styles = StyleSheet.create(
   ({
@@ -165,7 +164,7 @@ const styles = StyleSheet.create(
     theme,
 
     border,
-    spacing,
+
     fonts,
   }) => ({
     container: {
@@ -173,15 +172,14 @@ const styles = StyleSheet.create(
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'center',
-      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-2; value=7; target=components.selectbutton.extend.gap; targetValue=4
-      gap: spacing.Gap['gap-2'],
+      gap: components.selectbutton.extend.gap,
       borderWidth: border.Width.border,
       borderColor: 'transparent',
     },
     small: { height: 28 },
     base: { height: 35 },
-    large: { height: 49, gap: spacing.Gap['gap-3'] },
-    xlarge: { height: 56, gap: spacing.Gap['gap-3'] },
+    large: { height: 49, gap: components.selectbutton.extend.gap },
+    xlarge: { height: 56, gap: components.selectbutton.extend.gap },
     disabledContainer: {
       borderRadius: components.selectbutton.extend.ext.borderRadius,
       borderWidth: 1,
