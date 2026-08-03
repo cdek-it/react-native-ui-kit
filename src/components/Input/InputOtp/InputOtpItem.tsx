@@ -79,7 +79,7 @@ const styles = StyleSheet.create(({ primitive, components, fonts }) => ({
   text: {
     fontSize: primitive.fonts.fontSize[600],
     fontFamily: fonts.primary,
-    fontWeight: '400',
+    fontWeight: primitive.fonts.fontWeight.regular,
     color: components.inputtext.root.color,
     includeFontPadding: false,
   },

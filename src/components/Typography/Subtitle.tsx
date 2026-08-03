@@ -35,12 +35,15 @@ export const Subtitle = memo<SubtitleProps>(
 const styles = StyleSheet.create(({ primitive, semantic, fonts }) => ({
   text: {
     fontSize: primitive.fonts.fontSize[100],
-    fontWeight: 700,
+    fontWeight: primitive.fonts.fontWeight.bold,
     textTransform: 'uppercase',
     fontFamily: fonts.secondary,
-    lineHeight: 15,
+    lineHeight: primitive.fonts.lineHeight[300],
   },
-  base: { lineHeight: 18, fontSize: primitive.fonts.fontSize[200] },
+  base: {
+    lineHeight: primitive.fonts.lineHeight[400],
+    fontSize: primitive.fonts.fontSize[200],
+  },
   default: { color: semantic.colorScheme.color.fg.default },
   primary: { color: semantic.colorScheme.color.fg.brand.default },
   secondary: { color: semantic.colorScheme.color.fg.muted },

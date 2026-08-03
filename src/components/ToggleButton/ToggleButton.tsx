@@ -279,7 +279,7 @@ const toggleStyles = StyleSheet.create(
     label: {
       flexShrink: 1,
       fontFamily: fonts.primary,
-      fontWeight: '600',
+      fontWeight: primitive.fonts.fontWeight.demibold,
       includeFontPadding: false,
       verticalAlign: 'middle',
       variants: {

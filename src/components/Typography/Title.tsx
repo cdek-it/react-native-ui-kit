@@ -16,7 +16,7 @@ const styles = StyleSheet.create(({ primitive, semantic, fonts }) => ({
   text: {
     color: semantic.colorScheme.color.fg.default,
     fontFamily: fonts.primary,
-    fontWeight: 700,
+    fontWeight: primitive.fonts.fontWeight.bold,
     includeFontPadding: false,
     verticalAlign: 'middle',
   },

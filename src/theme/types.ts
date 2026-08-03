@@ -1,3 +1,5 @@
+import type { TextStyle } from 'react-native'
+
 import type { InputSize } from './assets/InputSize'
 import type { ModalSize } from './assets/ModalSize'
 import type background from './assets/background.json'
@@ -18,7 +20,7 @@ import type lightSemanticTokens from './tokens/semantic/light.json'
 
 export interface ThemeType {
   /** Шрифтовые примитивы из tokens.json: размеры, интерлиньяж, начертания. */
-  primitive: { fonts: typeof fontTokens }
+  primitive: { fonts: FontPrimitives }
   background: typeof background
   colors: { primary: typeof primaryColors }
   border: typeof border
@@ -42,6 +44,17 @@ export interface ThemeType {
 export enum ThemeVariant {
   Light = 'Light',
   Dark = 'Dark',
+}
+
+/**
+ * Начертания в токенах — числа, а TextStyle требует литеральный тип,
+ * поэтому fontWeight переопределяется типом React Native.
+ */
+export type FontPrimitives = Omit<typeof fontTokens, 'fontWeight'> & {
+  fontWeight: Record<
+    keyof typeof fontTokens.fontWeight,
+    TextStyle['fontWeight']
+  >
 }
 
 export interface FontsConfig {

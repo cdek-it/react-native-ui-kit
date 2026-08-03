@@ -160,39 +160,41 @@ export const AccordionTestIds = {
 }
 
 // TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-4; value=14
-const styles = StyleSheet.create(({ components, spacing, fonts }) => ({
-  component: { width: '100%' },
-  header: {
-    paddingVertical: spacing.Padding['p-4'],
-    // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-2; value=7; target=components.accordion.extend.extHeader.gap; targetValue=8
-    gap: spacing.Gap['gap-2'],
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: components.accordion.colorScheme.header.background,
-  },
-  icon: { width: 17.5, height: 17.5 },
-  title: {
-    fontSize: 15.75,
-    includeFontPadding: false,
-    verticalAlign: 'middle',
-    fontWeight: 700,
-    color: components.accordion.header.color,
-    fontFamily: fonts.secondary,
-  },
-  contentAnimated: { overflow: 'hidden' },
-  contentWrapper: {
-    position: 'absolute',
-    width: '100%',
-    // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Padding.p-7; value=24.5; target=components.accordion.content.paddingLeft; targetValue=24
-    paddingLeft: spacing.Padding['p-7'],
-    paddingTop: spacing.Padding['p-0'],
-    // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Padding.p-0; value=0; target=components.accordion.content.paddingRight; targetValue=24
-    paddingRight: spacing.Padding['p-0'],
-    paddingBottom: spacing.Padding['p-4'],
-  },
-  separator: {
-    borderTopColor: components.accordion.panel.borderColor,
-    borderTopWidth: 1,
-  },
-  disabled: { mixBlendMode: 'luminosity', opacity: 0.6 },
-}))
+const styles = StyleSheet.create(
+  ({ primitive, components, spacing, fonts }) => ({
+    component: { width: '100%' },
+    header: {
+      paddingVertical: spacing.Padding['p-4'],
+      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-2; value=7; target=components.accordion.extend.extHeader.gap; targetValue=8
+      gap: spacing.Gap['gap-2'],
+      flexDirection: 'row',
+      alignItems: 'center',
+      backgroundColor: components.accordion.colorScheme.header.background,
+    },
+    icon: { width: 17.5, height: 17.5 },
+    title: {
+      fontSize: 15.75,
+      includeFontPadding: false,
+      verticalAlign: 'middle',
+      fontWeight: primitive.fonts.fontWeight.bold,
+      color: components.accordion.header.color,
+      fontFamily: fonts.secondary,
+    },
+    contentAnimated: { overflow: 'hidden' },
+    contentWrapper: {
+      position: 'absolute',
+      width: '100%',
+      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Padding.p-7; value=24.5; target=components.accordion.content.paddingLeft; targetValue=24
+      paddingLeft: spacing.Padding['p-7'],
+      paddingTop: spacing.Padding['p-0'],
+      // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Padding.p-0; value=0; target=components.accordion.content.paddingRight; targetValue=24
+      paddingRight: spacing.Padding['p-0'],
+      paddingBottom: spacing.Padding['p-4'],
+    },
+    separator: {
+      borderTopColor: components.accordion.panel.borderColor,
+      borderTopWidth: 1,
+    },
+    disabled: { mixBlendMode: 'luminosity', opacity: 0.6 },
+  })
+)

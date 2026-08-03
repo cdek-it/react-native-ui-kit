@@ -200,7 +200,11 @@ const styles = StyleSheet.create(
       height: primitive.fonts.fontSize[600],
     },
     iconXLarge: { width: 28, height: 28 },
-    label: { flexShrink: 1, fontWeight: 600, fontFamily: fonts.primary },
+    label: {
+      flexShrink: 1,
+      fontWeight: primitive.fonts.fontWeight.demibold,
+      fontFamily: fonts.primary,
+    },
     labelSmall: { fontSize: primitive.fonts.fontSize[100] },
     labelBase: { fontSize: primitive.fonts.fontSize[300] },
     labelLarge: { fontSize: primitive.fonts.fontSize[500] },

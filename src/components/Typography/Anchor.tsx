@@ -143,14 +143,14 @@ const styles = StyleSheet.create(
       verticalAlign: 'middle',
       color: typography.Color.Service['text-info'],
       fontFamily: fonts.secondary,
-      lineHeight: 15,
-      letterSpacing: -0.25,
+      lineHeight: primitive.fonts.lineHeight[300],
+      letterSpacing: primitive.fonts.letterSpacing[200],
     },
     underlined: { textDecorationLine: 'underline' },
     base: {
       fontSize: primitive.fonts.fontSize[300],
       lineHeight: undefined,
-      letterSpacing: 0,
+      letterSpacing: primitive.fonts.letterSpacing[500],
     },
     visited: { color: typography.Color.Service['text-help'] },
     icon: {

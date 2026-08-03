@@ -9,6 +9,11 @@ import sizing from './assets/sizing.json'
 import spacing from './assets/spacing.json'
 import typography from './assets/typography.json'
 import fontTokens from './tokens/fonts.json'
+import type { FontPrimitives } from './types'
+
+// JSON отдаёт fontWeight как number, а TextStyle требует литеральный тип.
+// Значения совпадают, различается только их представление в типах.
+const fonts = fontTokens as FontPrimitives
 
 export const commonTheme = {
   background,
@@ -21,10 +26,10 @@ export const commonTheme = {
   typography,
   custom: customCommon,
   shadow,
-  primitive: { fonts: fontTokens },
+  primitive: { fonts },
   // Публичный FontsConfig оперирует ролями primary/secondary, токены — base/heading.
   fonts: {
-    primary: fontTokens.fontFamily.heading,
-    secondary: fontTokens.fontFamily.base,
+    primary: fonts.fontFamily.heading,
+    secondary: fonts.fontFamily.base,
   },
 }

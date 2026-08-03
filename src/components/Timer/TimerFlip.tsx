@@ -82,7 +82,7 @@ const styles = StyleSheet.create(({ primitive, typography, fonts }) => ({
   },
   text: {
     fontSize: primitive.fonts.fontSize[300],
-    fontWeight: 700,
+    fontWeight: primitive.fonts.fontWeight.bold,
     includeFontPadding: false,
     verticalAlign: 'middle',
     color: typography.Color.Surface['text-surface-0'],

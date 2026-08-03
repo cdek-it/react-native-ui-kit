@@ -244,7 +244,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
                   "fontFamily": "Noto Sans",
                   "fontSize": 16,
                   "includeFontPadding": false,
-                  "lineHeight": 20,
+                  "lineHeight": 22,
                   "verticalAlign": "middle",
                 },
                 {
@@ -255,7 +255,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
                 },
                 {
                   "fontSize": 14,
-                  "lineHeight": 18,
+                  "lineHeight": 20,
                 },
                 undefined,
                 undefined,
@@ -273,8 +273,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
                   "fontFamily": "Noto Sans",
                   "fontSize": 14,
                   "includeFontPadding": false,
-                  "letterSpacing": -0.25,
-                  "lineHeight": 15,
+                  "letterSpacing": -0.32,
+                  "lineHeight": 18,
                   "verticalAlign": "middle",
                 },
                 {
@@ -611,7 +611,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate minimal config 1`] = `
                   "fontFamily": "Noto Sans",
                   "fontSize": 16,
                   "includeFontPadding": false,
-                  "lineHeight": 20,
+                  "lineHeight": 22,
                   "verticalAlign": "middle",
                 },
                 {
@@ -622,7 +622,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate minimal config 1`] = `
                 },
                 {
                   "fontSize": 14,
-                  "lineHeight": 18,
+                  "lineHeight": 20,
                 },
                 undefined,
                 undefined,
@@ -813,7 +813,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
                   "fontFamily": "Noto Sans",
                   "fontSize": 16,
                   "includeFontPadding": false,
-                  "lineHeight": 20,
+                  "lineHeight": 22,
                   "verticalAlign": "middle",
                 },
                 {
@@ -824,7 +824,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
                 },
                 {
                   "fontSize": 14,
-                  "lineHeight": 18,
+                  "lineHeight": 20,
                 },
                 undefined,
                 undefined,
@@ -842,8 +842,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
                   "fontFamily": "Noto Sans",
                   "fontSize": 14,
                   "includeFontPadding": false,
-                  "letterSpacing": -0.25,
-                  "lineHeight": 15,
+                  "letterSpacing": -0.32,
+                  "lineHeight": 18,
                   "verticalAlign": "middle",
                 },
                 {
@@ -1151,7 +1151,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with colored icon 1`] = `
                   "fontFamily": "Noto Sans",
                   "fontSize": 16,
                   "includeFontPadding": false,
-                  "lineHeight": 20,
+                  "lineHeight": 22,
                   "verticalAlign": "middle",
                 },
                 {
@@ -1162,7 +1162,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with colored icon 1`] = `
                 },
                 {
                   "fontSize": 14,
-                  "lineHeight": 18,
+                  "lineHeight": 20,
                 },
                 undefined,
                 undefined,
@@ -1266,7 +1266,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with extra 1`] = `
                   "fontFamily": "Noto Sans",
                   "fontSize": 16,
                   "includeFontPadding": false,
-                  "lineHeight": 20,
+                  "lineHeight": 22,
                   "verticalAlign": "middle",
                 },
                 {
@@ -1277,7 +1277,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with extra 1`] = `
                 },
                 {
                   "fontSize": 14,
-                  "lineHeight": 18,
+                  "lineHeight": 20,
                 },
                 undefined,
                 undefined,
@@ -1590,7 +1590,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
                   "fontFamily": "Noto Sans",
                   "fontSize": 16,
                   "includeFontPadding": false,
-                  "lineHeight": 20,
+                  "lineHeight": 22,
                   "verticalAlign": "middle",
                 },
                 {
@@ -1601,7 +1601,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
                 },
                 {
                   "fontSize": 14,
-                  "lineHeight": 18,
+                  "lineHeight": 20,
                 },
                 undefined,
                 undefined,
@@ -1853,7 +1853,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
                   "fontFamily": "Noto Sans",
                   "fontSize": 16,
                   "includeFontPadding": false,
-                  "lineHeight": 20,
+                  "lineHeight": 22,
                   "verticalAlign": "middle",
                 },
                 {
@@ -1864,7 +1864,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
                 },
                 {
                   "fontSize": 14,
-                  "lineHeight": 18,
+                  "lineHeight": 20,
                 },
                 undefined,
                 undefined,
@@ -1971,7 +1971,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with padding 1`] = `
                   "fontFamily": "Noto Sans",
                   "fontSize": 16,
                   "includeFontPadding": false,
-                  "lineHeight": 20,
+                  "lineHeight": 22,
                   "verticalAlign": "middle",
                 },
                 {
@@ -1982,7 +1982,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with padding 1`] = `
                 },
                 {
                   "fontSize": 14,
-                  "lineHeight": 18,
+                  "lineHeight": 20,
                 },
                 undefined,
                 undefined,
@@ -2092,7 +2092,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with separator 1`] = `
                   "fontFamily": "Noto Sans",
                   "fontSize": 16,
                   "includeFontPadding": false,
-                  "lineHeight": 20,
+                  "lineHeight": 22,
                   "verticalAlign": "middle",
                 },
                 {
@@ -2103,7 +2103,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with separator 1`] = `
                 },
                 {
                   "fontSize": 14,
-                  "lineHeight": 18,
+                  "lineHeight": 20,
                 },
                 undefined,
                 undefined,

@@ -52,7 +52,7 @@ export const ButtonLabel = genericMemo(ButtonLabelComponent)
 const buttonLabelStyles = StyleSheet.create(
   ({ primitive, components: { button }, typography, fonts }) => ({
     label: {
-      fontWeight: 600,
+      fontWeight: primitive.fonts.fontWeight.demibold,
       includeFontPadding: false,
       verticalAlign: 'middle',
       fontFamily: fonts.primary,

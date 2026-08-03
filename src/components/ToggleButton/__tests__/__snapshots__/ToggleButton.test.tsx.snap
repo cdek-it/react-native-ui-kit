@@ -148,7 +148,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           "flexShrink": 1,
           "fontFamily": "TT Fellows",
           "fontSize": 12,
-          "fontWeight": "600",
+          "fontWeight": 600,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         }
@@ -207,7 +207,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           "flexShrink": 1,
           "fontFamily": "TT Fellows",
           "fontSize": 12,
-          "fontWeight": "600",
+          "fontWeight": 600,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         }
@@ -621,7 +621,7 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
           "flexShrink": 1,
           "fontFamily": "TT Fellows",
           "fontSize": 20,
-          "fontWeight": "600",
+          "fontWeight": 600,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         }

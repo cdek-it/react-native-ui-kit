@@ -283,7 +283,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
                 "fontFamily": "Noto Sans",
                 "fontSize": 12,
                 "fontWeight": 700,
-                "lineHeight": 15,
+                "lineHeight": 18,
                 "textTransform": "uppercase",
               },
               {
@@ -311,7 +311,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
                   "fontFamily": "Noto Sans",
                   "fontSize": 16,
                   "includeFontPadding": false,
-                  "lineHeight": 20,
+                  "lineHeight": 22,
                   "verticalAlign": "middle",
                 },
                 {
@@ -337,8 +337,8 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
                   "fontFamily": "Noto Sans",
                   "fontSize": 14,
                   "includeFontPadding": false,
-                  "letterSpacing": -0.25,
-                  "lineHeight": 15,
+                  "letterSpacing": -0.32,
+                  "lineHeight": 18,
                   "verticalAlign": "middle",
                 },
                 {
@@ -838,7 +838,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
                 "fontFamily": "Noto Sans",
                 "fontSize": 12,
                 "fontWeight": 700,
-                "lineHeight": 15,
+                "lineHeight": 18,
                 "textTransform": "uppercase",
               },
               {
@@ -866,7 +866,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
                   "fontFamily": "Noto Sans",
                   "fontSize": 16,
                   "includeFontPadding": false,
-                  "lineHeight": 20,
+                  "lineHeight": 22,
                   "verticalAlign": "middle",
                 },
                 {
@@ -892,8 +892,8 @@ exports[`ListBase tests ListBase full disabled 1`] = `
                   "fontFamily": "Noto Sans",
                   "fontSize": 14,
                   "includeFontPadding": false,
-                  "letterSpacing": -0.25,
-                  "lineHeight": 15,
+                  "letterSpacing": -0.32,
+                  "lineHeight": 18,
                   "verticalAlign": "middle",
                 },
                 {
@@ -1400,7 +1400,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
                 "fontFamily": "Noto Sans",
                 "fontSize": 12,
                 "fontWeight": 700,
-                "lineHeight": 15,
+                "lineHeight": 18,
                 "textTransform": "uppercase",
               },
               {
@@ -1428,7 +1428,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
                   "fontFamily": "Noto Sans",
                   "fontSize": 16,
                   "includeFontPadding": false,
-                  "lineHeight": 20,
+                  "lineHeight": 22,
                   "verticalAlign": "middle",
                 },
                 {
@@ -1454,8 +1454,8 @@ exports[`ListBase tests ListBase maximal config 1`] = `
                   "fontFamily": "Noto Sans",
                   "fontSize": 14,
                   "includeFontPadding": false,
-                  "letterSpacing": -0.25,
-                  "lineHeight": 15,
+                  "letterSpacing": -0.32,
+                  "lineHeight": 18,
                   "verticalAlign": "middle",
                 },
                 {
@@ -1762,7 +1762,7 @@ exports[`ListBase tests ListBase minimal config 1`] = `
                   "fontFamily": "Noto Sans",
                   "fontSize": 16,
                   "includeFontPadding": false,
-                  "lineHeight": 20,
+                  "lineHeight": 22,
                   "verticalAlign": "middle",
                 },
                 {

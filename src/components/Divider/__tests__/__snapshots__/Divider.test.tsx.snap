@@ -119,7 +119,7 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "horizontal", "sho
             "fontFamily": "Noto Sans",
             "fontSize": 12,
             "fontWeight": 700,
-            "lineHeight": 15,
+            "lineHeight": 18,
             "textTransform": "uppercase",
           },
           {
@@ -372,7 +372,7 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
             "fontFamily": "Noto Sans",
             "fontSize": 12,
             "fontWeight": 700,
-            "lineHeight": 15,
+            "lineHeight": 18,
             "textTransform": "uppercase",
           },
           {
