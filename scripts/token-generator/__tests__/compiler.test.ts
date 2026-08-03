@@ -49,6 +49,12 @@ const listJsonFiles = (directory: string, prefix = ''): string[] =>
     })
     .sort()
 
+const expectedOutputFiles = [
+  OUTPUT_FILES.fonts,
+  ...Object.values(OUTPUT_FILES.semantic),
+  ...Object.values(OUTPUT_FILES.components),
+].sort()
+
 const containsColorSchemeThemeBranch = (node: TokenValue): boolean => {
   if (Array.isArray(node)) return node.some(containsColorSchemeThemeBranch)
 
@@ -238,6 +244,11 @@ describe('token compiler', () => {
   test('разделяет один источник на темы, разрешает ссылки и нормализует значения', () => {
     const source: TokenTree = {
       primitive: {
+        fonts: {
+          fontFamily: { base: 'Noto Sans' },
+          fontWeight: { regular: '400' },
+          fontSize: { base: '1rem' },
+        },
         sizing: { small: '0.5rem', base: '1rem' },
         motion: { fast: '150ms' },
       },
@@ -273,6 +284,11 @@ describe('token compiler', () => {
     const compiled = compileTokens(source)
 
     expect(compiled).not.toHaveProperty('primitive')
+    expect(compiled.fonts).toStrictEqual({
+      fontFamily: { base: 'Noto Sans' },
+      fontWeight: { regular: 400 },
+      fontSize: { base: 16 },
+    })
     expect(compiled.semantic).toStrictEqual({
       light: {
         colorScheme: { color: { text: '#111111' } },
@@ -318,6 +334,7 @@ describe('token compiler', () => {
   test('сохраняет focusRing и нормализует его значения', () => {
     const source: TokenTree = {
       primitive: {
+        fonts: {},
         sizing: { focusRing: '0.25rem' },
         colors: { focus: '#d4fedc' },
       },
@@ -371,7 +388,7 @@ describe('token compiler', () => {
 
   test('отклоняет источник без одной из цветовых схем semantic', () => {
     const source: TokenTree = {
-      primitive: {},
+      primitive: { fonts: {} },
       semantic: { colorScheme: { light: {} } },
       components: {},
     }
@@ -402,8 +419,12 @@ describe('production input tokens', () => {
     expect(tokenFiles).toStrictEqual(['tokens.json'])
   })
 
-  test('не экспортирует primitive и убирает разделение тем из colorScheme', () => {
-    expect(Object.keys(compiled)).toStrictEqual(['semantic', 'components'])
+  test('экспортирует fonts без primitive и убирает темы из colorScheme', () => {
+    expect(Object.keys(compiled)).toStrictEqual([
+      'fonts',
+      'semantic',
+      'components',
+    ])
     expect(compiled).not.toHaveProperty('primitive')
 
     const inputComponents = source.components
@@ -440,13 +461,18 @@ describe('production input tokens', () => {
     ).toHaveLength(0)
   })
 
+  test('собирает и нормализует primitive.fonts без цветовой схемы', () => {
+    expect(compiled.fonts).toHaveProperty('fontFamily.base', 'Noto Sans')
+    expect(compiled.fonts).toHaveProperty('fontWeight.demibold', 600)
+    expect(compiled.fonts).toHaveProperty('fontSize.300', 16)
+    expect(compiled.fonts).toHaveProperty('lineHeight.auto', 'auto')
+    expect(compiled.fonts).toHaveProperty('letterSpacing.400', -0.48)
+  })
+
   test('содержит только целевые файлы', () => {
     const tokenFiles = listJsonFiles(TOKENS_DIRECTORY)
-    const expectedFiles = Object.values(OUTPUT_FILES)
-      .flatMap((group) => Object.values(group))
-      .sort()
 
-    expect(tokenFiles).toStrictEqual(expectedFiles)
+    expect(tokenFiles).toStrictEqual(expectedOutputFiles)
   })
 
   test('не содержит неразрешённых ссылок и CSS-единиц', () => {
@@ -545,9 +571,7 @@ describe('production input tokens', () => {
       writeGeneratedTokens(compiled, temporaryDirectory)
 
       expect(listJsonFiles(temporaryDirectory)).toStrictEqual(
-        Object.values(OUTPUT_FILES)
-          .flatMap((group) => Object.values(group))
-          .sort()
+        expectedOutputFiles
       )
       expect(
         findGeneratedTokenIssues(compiled, temporaryDirectory)
