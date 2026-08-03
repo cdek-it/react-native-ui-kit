@@ -133,9 +133,7 @@ export const Divider = memo<DividerProps>(
   }
 )
 
-// TODO(tokens-migration): reason=missing; legacy=spacing.Gap.gap-4; value=14
-// TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-2; value=7
-const styles = StyleSheet.create(({ spacing, components }) => ({
+const styles = StyleSheet.create(({ semantic, components }) => ({
   container: {
     minHeight: 28,
     flexDirection: 'row',
@@ -152,7 +150,7 @@ const styles = StyleSheet.create(({ spacing, components }) => ({
   containerColumnReverse: { flexDirection: 'column-reverse' },
   lineContainer: {
     flexGrow: 1,
-    flexBasis: spacing.Gap['gap-4'],
+    flexBasis: semantic.dimension.space[400],
     width: 1,
     height: 1,
     overflow: 'hidden',
@@ -169,13 +167,13 @@ const styles = StyleSheet.create(({ spacing, components }) => ({
     flexShrink: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: spacing.Padding['p-2'],
+    paddingHorizontal: semantic.dimension.space[200],
     gap: components.divider.extend.content.gap,
     backgroundColor: components.divider.content.background,
   },
   contentVertical: {
     paddingHorizontal: 0,
-    paddingVertical: spacing.Padding['p-2'],
+    paddingVertical: semantic.dimension.space[200],
   },
   icon: {
     width: components.divider.extend.iconSize,

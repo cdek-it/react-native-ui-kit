@@ -48,9 +48,8 @@ const ButtonLabelComponent = ({
 
 export const ButtonLabel = genericMemo(ButtonLabelComponent)
 
-// TODO(tokens-migration): reason=missing; legacy=typography.Color.Common.text-color-secondary; value=#85888e
 const buttonLabelStyles = StyleSheet.create(
-  ({ primitive, components: { button }, typography, fonts }) => ({
+  ({ semantic, primitive, components: { button }, fonts }) => ({
     label: {
       fontWeight: primitive.fonts.fontWeight.demibold,
       includeFontPadding: false,
@@ -81,7 +80,7 @@ const buttonLabelStyles = StyleSheet.create(
         {
           variant: 'link',
           pressed: 'true',
-          styles: { color: typography.Color.Common['text-color-secondary'] },
+          styles: { color: semantic.colorScheme.color.fg.muted },
         },
 
         // severity label colors

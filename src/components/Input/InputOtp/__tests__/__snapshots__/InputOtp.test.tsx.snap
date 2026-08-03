@@ -37,7 +37,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -162,7 +162,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -289,7 +289,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -418,7 +418,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -547,7 +547,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -678,7 +678,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - false, p
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -811,7 +811,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -942,7 +942,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -1075,7 +1075,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -1210,7 +1210,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -1345,7 +1345,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -1482,7 +1482,7 @@ exports[`InputOtp component tests length - 2, error - false, disabled - true, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -1621,7 +1621,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -1750,7 +1750,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -1881,7 +1881,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -2014,7 +2014,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -2147,7 +2147,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -2282,7 +2282,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - false, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -2419,7 +2419,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -2554,7 +2554,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -2691,7 +2691,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -2830,7 +2830,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -2969,7 +2969,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -3110,7 +3110,7 @@ exports[`InputOtp component tests length - 2, error - true, disabled - true, pre
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -3253,7 +3253,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -3440,7 +3440,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -3629,7 +3629,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -3820,7 +3820,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -4015,7 +4015,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -4212,7 +4212,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - false, p
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -4411,7 +4411,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -4610,7 +4610,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -4811,7 +4811,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -5014,7 +5014,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -5221,7 +5221,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -5430,7 +5430,7 @@ exports[`InputOtp component tests length - 4, error - false, disabled - true, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -5641,7 +5641,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -5836,7 +5836,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -6033,7 +6033,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -6232,7 +6232,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -6435,7 +6435,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -6640,7 +6640,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - false, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -6847,7 +6847,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -7054,7 +7054,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -7263,7 +7263,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -7474,7 +7474,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -7689,7 +7689,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -7906,7 +7906,7 @@ exports[`InputOtp component tests length - 4, error - true, disabled - true, pre
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -8125,7 +8125,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -8436,7 +8436,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -8749,7 +8749,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -9064,7 +9064,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -9391,7 +9391,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -9720,7 +9720,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - false, p
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -10051,7 +10051,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -10386,7 +10386,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -10723,7 +10723,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -11062,7 +11062,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -11413,7 +11413,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -11766,7 +11766,7 @@ exports[`InputOtp component tests length - 8, error - false, disabled - true, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -12121,7 +12121,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -12448,7 +12448,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -12777,7 +12777,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -13108,7 +13108,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -13451,7 +13451,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -13796,7 +13796,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - false, pr
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -14143,7 +14143,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -14494,7 +14494,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -14847,7 +14847,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -15202,7 +15202,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -15569,7 +15569,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >
@@ -15938,7 +15938,7 @@ exports[`InputOtp component tests length - 8, error - true, disabled - true, pre
     style={
       {
         "flexDirection": "row",
-        "gap": 7,
+        "gap": 8,
       }
     }
   >

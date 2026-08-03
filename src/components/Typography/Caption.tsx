@@ -57,10 +57,9 @@ export const Caption = ({
 
 const CaptionTestId = { text: 'CaptionText', icon: 'CaptionIcon' }
 
-// TODO(tokens-migration): reason=missing; legacy=spacing.Gap.gap-1; value=3.5
 // Осознанный обход слоя components: цвет текста — семантическая роль, и своего
 // токена у Typography нет (компонент отсутствует в tokens.json).
-const styles = StyleSheet.create(({ primitive, semantic, spacing, fonts }) => ({
+const styles = StyleSheet.create(({ primitive, semantic, fonts }) => ({
   text: {
     fontSize: primitive.fonts.fontSize[200],
     includeFontPadding: false,
@@ -74,7 +73,10 @@ const styles = StyleSheet.create(({ primitive, semantic, spacing, fonts }) => ({
   primary: { color: semantic.colorScheme.color.fg.brand.default },
   secondary: { color: semantic.colorScheme.color.fg.muted },
   disabled: { opacity: 0.6 },
-  withIconContainer: { flexDirection: 'row', gap: spacing.Gap['gap-1'] },
+  withIconContainer: {
+    flexDirection: 'row',
+    gap: semantic.dimension.space[100],
+  },
   icon: {
     width: primitive.fonts.fontSize[300],
     height: primitive.fonts.fontSize[300],

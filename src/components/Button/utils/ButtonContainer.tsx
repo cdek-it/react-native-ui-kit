@@ -80,13 +80,10 @@ const ButtonContainerComponent = ({
 
 export const ButtonContainer = genericMemo(ButtonContainerComponent)
 
-// TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-1; value=3.5
-// TODO(tokens-migration): reason=missing; legacy=spacing.Gap.gap-0; value=0
-// TODO(tokens-migration): reason=missing; legacy=spacing.Gap.gap-1; value=3.5
 // `transparent` здесь — отсутствие фона или границы, а не цвет дизайн-системы:
 // прозрачность не выражена ни semantic-токеном, ни свойствами button.extend.extText.
 const buttonContainerStyles = StyleSheet.create(
-  ({ components: { button }, spacing }) => ({
+  ({ semantic, components: { button } }) => ({
     container: {
       flexDirection: 'row',
       justifyContent: 'center',
@@ -147,7 +144,7 @@ const buttonContainerStyles = StyleSheet.create(
           text: { borderColor: 'transparent', backgroundColor: 'transparent' },
           link: {
             paddingHorizontal: 0,
-            paddingVertical: spacing.Padding['p-1'],
+            paddingVertical: semantic.dimension.space[100],
             height: 'auto',
             minHeight: 'auto',
             borderColor: 'transparent',
@@ -431,8 +428,8 @@ const buttonContainerStyles = StyleSheet.create(
           iconOnly: 'true',
           size: 'xlarge',
           styles: {
-            paddingHorizontal: spacing.Gap['gap-1'],
-            paddingVertical: spacing.Gap['gap-1'],
+            paddingHorizontal: semantic.dimension.space[100],
+            paddingVertical: semantic.dimension.space[100],
             height: 28,
             minHeight: 28,
             maxHeight: 28,
@@ -443,8 +440,8 @@ const buttonContainerStyles = StyleSheet.create(
           iconOnly: 'true',
           size: 'large',
           styles: {
-            paddingHorizontal: spacing.Gap['gap-0'],
-            paddingVertical: spacing.Gap['gap-0'],
+            paddingHorizontal: semantic.dimension.space.none,
+            paddingVertical: semantic.dimension.space.none,
             height: 24.5,
             minHeight: 24.5,
             maxHeight: 24.5,
@@ -455,8 +452,8 @@ const buttonContainerStyles = StyleSheet.create(
           iconOnly: 'true',
           size: 'base',
           styles: {
-            paddingHorizontal: spacing.Gap['gap-1'],
-            paddingVertical: spacing.Gap['gap-1'],
+            paddingHorizontal: semantic.dimension.space[100],
+            paddingVertical: semantic.dimension.space[100],
             height: 21.5,
             minHeight: 21.5,
             maxHeight: 21.5,
@@ -467,8 +464,8 @@ const buttonContainerStyles = StyleSheet.create(
           iconOnly: 'true',
           size: 'small',
           styles: {
-            paddingHorizontal: spacing.Gap['gap-1'],
-            paddingVertical: spacing.Gap['gap-1'],
+            paddingHorizontal: semantic.dimension.space[100],
+            paddingVertical: semantic.dimension.space[100],
             height: 14,
             minHeight: 28,
             maxHeight: 28,

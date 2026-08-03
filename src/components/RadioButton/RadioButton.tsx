@@ -68,12 +68,11 @@ export const RadioButton = memo<RadioButtonProps>(
   }
 )
 
-// TODO(tokens-migration): reason=missing; legacy=border.Radius.rounded-full; value=100
-const radioStyles = StyleSheet.create(({ components, border }) => ({
+const radioStyles = StyleSheet.create(({ semantic, components }) => ({
   container: {
     width: components.radiobutton.root.width,
     height: components.radiobutton.root.height,
-    borderRadius: border.Radius['rounded-full'],
+    borderRadius: semantic.dimension.borderRadius.max,
     borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',
@@ -134,7 +133,7 @@ const radioStyles = StyleSheet.create(({ components, border }) => ({
   center: {
     width: components.radiobutton.icon.size,
     height: components.radiobutton.icon.size,
-    borderRadius: border.Radius['rounded-full'],
+    borderRadius: semantic.dimension.borderRadius.max,
     backgroundColor: components.radiobutton.root.background,
     transitionProperty: ['opacity'],
     transitionDuration: 100,

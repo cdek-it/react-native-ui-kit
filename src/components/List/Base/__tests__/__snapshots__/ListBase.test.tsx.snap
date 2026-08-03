@@ -261,7 +261,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
             "gap": 14,
             "justifyContent": "space-between",
             "paddingEnd": 14,
-            "paddingVertical": 7,
+            "paddingVertical": 8,
           },
           {},
         ]
@@ -271,8 +271,8 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
         style={
           {
             "flex": 1,
-            "gap": 7,
-            "paddingVertical": 7,
+            "gap": 8,
+            "paddingVertical": 8,
           }
         }
       >
@@ -300,7 +300,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
         <View
           style={
             {
-              "gap": 3.5,
+              "gap": 4,
             }
           }
         >
@@ -361,14 +361,14 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
             "alignItems": "center",
             "flexDirection": "row",
             "gap": 14,
-            "paddingVertical": 7,
+            "paddingVertical": 8,
           }
         }
       >
         <View
           style={
             {
-              "paddingVertical": 7,
+              "paddingVertical": 8,
             }
           }
         >
@@ -816,7 +816,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
             "gap": 14,
             "justifyContent": "space-between",
             "paddingEnd": 14,
-            "paddingVertical": 7,
+            "paddingVertical": 8,
           },
           {},
         ]
@@ -826,8 +826,8 @@ exports[`ListBase tests ListBase full disabled 1`] = `
         style={
           {
             "flex": 1,
-            "gap": 7,
-            "paddingVertical": 7,
+            "gap": 8,
+            "paddingVertical": 8,
           }
         }
       >
@@ -855,7 +855,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
         <View
           style={
             {
-              "gap": 3.5,
+              "gap": 4,
             }
           }
         >
@@ -916,14 +916,14 @@ exports[`ListBase tests ListBase full disabled 1`] = `
             "alignItems": "center",
             "flexDirection": "row",
             "gap": 14,
-            "paddingVertical": 7,
+            "paddingVertical": 8,
           }
         }
       >
         <View
           style={
             {
-              "paddingVertical": 7,
+              "paddingVertical": 8,
             }
           }
         >
@@ -1375,7 +1375,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             "gap": 14,
             "justifyContent": "space-between",
             "paddingEnd": 14,
-            "paddingVertical": 7,
+            "paddingVertical": 8,
           },
           {
             "borderTopColor": "#e2e2e4",
@@ -1388,8 +1388,8 @@ exports[`ListBase tests ListBase maximal config 1`] = `
         style={
           {
             "flex": 1,
-            "gap": 7,
-            "paddingVertical": 7,
+            "gap": 8,
+            "paddingVertical": 8,
           }
         }
       >
@@ -1417,7 +1417,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
         <View
           style={
             {
-              "gap": 3.5,
+              "gap": 4,
             }
           }
         >
@@ -1478,14 +1478,14 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             "alignItems": "center",
             "flexDirection": "row",
             "gap": 14,
-            "paddingVertical": 7,
+            "paddingVertical": 8,
           }
         }
       >
         <View
           style={
             {
-              "paddingVertical": 7,
+              "paddingVertical": 8,
             }
           }
         >
@@ -1733,7 +1733,7 @@ exports[`ListBase tests ListBase minimal config 1`] = `
             "gap": 14,
             "justifyContent": "space-between",
             "paddingEnd": 14,
-            "paddingVertical": 7,
+            "paddingVertical": 8,
           },
           {},
         ]
@@ -1743,15 +1743,15 @@ exports[`ListBase tests ListBase minimal config 1`] = `
         style={
           {
             "flex": 1,
-            "gap": 7,
-            "paddingVertical": 7,
+            "gap": 8,
+            "paddingVertical": 8,
           }
         }
       >
         <View
           style={
             {
-              "gap": 3.5,
+              "gap": 4,
             }
           }
         >
@@ -1789,7 +1789,7 @@ exports[`ListBase tests ListBase minimal config 1`] = `
             "alignItems": "center",
             "flexDirection": "row",
             "gap": 14,
-            "paddingVertical": 7,
+            "paddingVertical": 8,
           }
         }
       />

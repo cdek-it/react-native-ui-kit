@@ -159,12 +159,11 @@ export const AccordionTestIds = {
   separator: 'Separator',
 }
 
-// TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-4; value=14
 const styles = StyleSheet.create(
-  ({ primitive, components, spacing, fonts }) => ({
+  ({ semantic, primitive, components, fonts }) => ({
     component: { width: '100%' },
     header: {
-      paddingVertical: spacing.Padding['p-4'],
+      paddingVertical: semantic.dimension.space[400],
       gap: components.accordion.extend.extHeader.gap,
       flexDirection: 'row',
       alignItems: 'center',
@@ -184,9 +183,9 @@ const styles = StyleSheet.create(
       position: 'absolute',
       width: '100%',
       paddingLeft: components.accordion.content.paddingLeft,
-      paddingTop: spacing.Padding['p-0'],
+      paddingTop: semantic.dimension.space.none,
       paddingRight: components.accordion.content.paddingRight,
-      paddingBottom: spacing.Padding['p-4'],
+      paddingBottom: semantic.dimension.space[400],
     },
     separator: {
       borderTopColor: components.accordion.panel.borderColor,

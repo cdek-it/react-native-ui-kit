@@ -103,7 +103,7 @@ export const Badge = memo<BadgeProps>(
   }
 )
 
-const badgeStyles = StyleSheet.create(({ components, border, fonts }) => ({
+const badgeStyles = StyleSheet.create(({ semantic, components, fonts }) => ({
   container: { alignItems: 'flex-start' },
   dot: {
     variants: {
@@ -135,7 +135,7 @@ const badgeStyles = StyleSheet.create(({ components, border, fonts }) => ({
     height: components.badge.root.height,
     paddingHorizontal: components.badge.root.padding,
     justifyContent: 'center',
-    borderRadius: border.Radius['rounded-full'],
+    borderRadius: semantic.dimension.borderRadius.max,
   },
   textBadge: {
     color: components.badge.colorScheme.primary.color,

@@ -31,7 +31,7 @@ exports[`Caption component tests color = default, disabled = false 2`] = `
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -221,7 +221,7 @@ exports[`Caption component tests color = default, disabled = true 2`] = `
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -411,7 +411,7 @@ exports[`Caption component tests color = primary, disabled = false 2`] = `
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -601,7 +601,7 @@ exports[`Caption component tests color = primary, disabled = true 2`] = `
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -791,7 +791,7 @@ exports[`Caption component tests color = secondary, disabled = false 2`] = `
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -981,7 +981,7 @@ exports[`Caption component tests color = secondary, disabled = true 2`] = `
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >

@@ -82,7 +82,7 @@ exports[`Body component tests левая иконка, base, visited, testID = C
     onStartShouldSetResponder={[Function]}
     style={
       {
-        "paddingRight": 7,
+        "paddingRight": 8,
       }
     }
     testID="AnchorLeftPressable"
@@ -292,7 +292,7 @@ exports[`Body component tests левая иконка, правая иконка
     onStartShouldSetResponder={[Function]}
     style={
       {
-        "paddingRight": 7,
+        "paddingRight": 8,
       }
     }
     testID="AnchorLeftPressable"
@@ -484,7 +484,7 @@ exports[`Body component tests левая иконка, правая иконка
     onStartShouldSetResponder={[Function]}
     style={
       {
-        "paddingLeft": 7,
+        "paddingLeft": 8,
       }
     }
     testID="AnchorRightPressable"
@@ -680,7 +680,7 @@ exports[`Body component tests правая иконка, noWrapper 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       {
-        "paddingLeft": 7,
+        "paddingLeft": 8,
       }
     }
     testID="AnchorRightPressable"

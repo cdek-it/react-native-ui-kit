@@ -5,7 +5,7 @@ exports[`Service component tests base = false, showIcon = false, variant = dange
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -39,7 +39,7 @@ exports[`Service component tests base = false, showIcon = false, variant = dange
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -73,7 +73,7 @@ exports[`Service component tests base = false, showIcon = false, variant = help 
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -107,7 +107,7 @@ exports[`Service component tests base = false, showIcon = false, variant = help 
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -141,7 +141,7 @@ exports[`Service component tests base = false, showIcon = false, variant = info 
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -175,7 +175,7 @@ exports[`Service component tests base = false, showIcon = false, variant = info 
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -209,7 +209,7 @@ exports[`Service component tests base = false, showIcon = false, variant = succe
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -243,7 +243,7 @@ exports[`Service component tests base = false, showIcon = false, variant = succe
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -277,7 +277,7 @@ exports[`Service component tests base = false, showIcon = false, variant = warni
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -311,7 +311,7 @@ exports[`Service component tests base = false, showIcon = false, variant = warni
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -345,7 +345,7 @@ exports[`Service component tests base = false, showIcon = true, variant = danger
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -481,7 +481,7 @@ exports[`Service component tests base = false, showIcon = true, variant = danger
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -732,7 +732,7 @@ exports[`Service component tests base = false, showIcon = true, variant = help 1
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -891,7 +891,7 @@ exports[`Service component tests base = false, showIcon = true, variant = help 2
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -1142,7 +1142,7 @@ exports[`Service component tests base = false, showIcon = true, variant = info 1
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -1301,7 +1301,7 @@ exports[`Service component tests base = false, showIcon = true, variant = info 2
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -1552,7 +1552,7 @@ exports[`Service component tests base = false, showIcon = true, variant = succes
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -1688,7 +1688,7 @@ exports[`Service component tests base = false, showIcon = true, variant = succes
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -1939,7 +1939,7 @@ exports[`Service component tests base = false, showIcon = true, variant = warnin
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -2098,7 +2098,7 @@ exports[`Service component tests base = false, showIcon = true, variant = warnin
   style={
     {
       "flexDirection": "row",
-      "gap": 3.5,
+      "gap": 4,
     }
   }
 >
@@ -2349,7 +2349,7 @@ exports[`Service component tests base = true, showIcon = false, variant = danger
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -2386,7 +2386,7 @@ exports[`Service component tests base = true, showIcon = false, variant = danger
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -2423,7 +2423,7 @@ exports[`Service component tests base = true, showIcon = false, variant = help 1
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -2460,7 +2460,7 @@ exports[`Service component tests base = true, showIcon = false, variant = help 2
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -2497,7 +2497,7 @@ exports[`Service component tests base = true, showIcon = false, variant = info 1
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -2534,7 +2534,7 @@ exports[`Service component tests base = true, showIcon = false, variant = info 2
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -2571,7 +2571,7 @@ exports[`Service component tests base = true, showIcon = false, variant = succes
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -2608,7 +2608,7 @@ exports[`Service component tests base = true, showIcon = false, variant = succes
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -2645,7 +2645,7 @@ exports[`Service component tests base = true, showIcon = false, variant = warnin
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -2682,7 +2682,7 @@ exports[`Service component tests base = true, showIcon = false, variant = warnin
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -2719,7 +2719,7 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -2858,7 +2858,7 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -3112,7 +3112,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 1`
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -3274,7 +3274,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 2`
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -3528,7 +3528,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 1`
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -3690,7 +3690,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 2`
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -3944,7 +3944,7 @@ exports[`Service component tests base = true, showIcon = true, variant = success
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -4083,7 +4083,7 @@ exports[`Service component tests base = true, showIcon = true, variant = success
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -4337,7 +4337,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -4499,7 +4499,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
   style={
     {
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >

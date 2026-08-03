@@ -88,8 +88,7 @@ export const DialogHeader = ({
   )
 }
 
-// TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
-const styles = StyleSheet.create(({ primitive, components, border }) => ({
+const styles = StyleSheet.create(({ semantic, primitive, components }) => ({
   text: { flex: 1 },
   header: {
     flexDirection: 'row',
@@ -101,7 +100,7 @@ const styles = StyleSheet.create(({ primitive, components, border }) => ({
   },
   closeTouchable: { padding: 8 },
   separator: {
-    height: border.Width.border,
+    height: semantic.dimension.borderWidth[100],
     backgroundColor: components.dialog.root.borderColor,
   },
   closeIcon: {

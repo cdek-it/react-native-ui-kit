@@ -158,7 +158,7 @@ exports[`Badge component tests severity: basic 1`] = `
           "backgroundColor": "#44e858",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "height": 24,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -239,7 +239,7 @@ exports[`Badge component tests severity: basic 2`] = `
           "backgroundColor": "#77baf4",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "height": 24,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -320,7 +320,7 @@ exports[`Badge component tests severity: basic 3`] = `
           "backgroundColor": "#77f48a",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "height": 24,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -401,7 +401,7 @@ exports[`Badge component tests severity: basic 4`] = `
           "backgroundColor": "#facb75",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "height": 24,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -482,7 +482,7 @@ exports[`Badge component tests severity: basic 5`] = `
           "backgroundColor": "#f47f77",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "height": 24,
           "justifyContent": "center",
           "paddingHorizontal": 8,
@@ -563,7 +563,7 @@ exports[`Badge component tests severity: default 1`] = `
           "backgroundColor": "#44e858",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "height": 24,
           "justifyContent": "center",
           "paddingHorizontal": 8,

@@ -77,7 +77,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
           {
             "flex": 1,
             "flexDirection": "row",
-            "gap": 7,
+            "gap": 8,
           }
         }
       >
@@ -233,7 +233,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
           style={
             {
               "flex": 1,
-              "gap": 3.5,
+              "gap": 4,
             }
           }
         >
@@ -592,7 +592,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate minimal config 1`] = `
           {
             "flex": 1,
             "flexDirection": "row",
-            "gap": 7,
+            "gap": 8,
           }
         }
       >
@@ -600,7 +600,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate minimal config 1`] = `
           style={
             {
               "flex": 1,
-              "gap": 3.5,
+              "gap": 4,
             }
           }
         >
@@ -794,7 +794,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
           {
             "flex": 1,
             "flexDirection": "row",
-            "gap": 7,
+            "gap": 8,
           }
         }
       >
@@ -802,7 +802,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
           style={
             {
               "flex": 1,
-              "gap": 3.5,
+              "gap": 4,
             }
           }
         >
@@ -1019,7 +1019,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with colored icon 1`] = `
           {
             "flex": 1,
             "flexDirection": "row",
-            "gap": 7,
+            "gap": 8,
           }
         }
       >
@@ -1140,7 +1140,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with colored icon 1`] = `
           style={
             {
               "flex": 1,
-              "gap": 3.5,
+              "gap": 4,
             }
           }
         >
@@ -1247,7 +1247,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with extra 1`] = `
           {
             "flex": 1,
             "flexDirection": "row",
-            "gap": 7,
+            "gap": 8,
           }
         }
       >
@@ -1255,7 +1255,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with extra 1`] = `
           style={
             {
               "flex": 1,
-              "gap": 3.5,
+              "gap": 4,
             }
           }
         >
@@ -1458,7 +1458,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
           {
             "flex": 1,
             "flexDirection": "row",
-            "gap": 7,
+            "gap": 8,
           }
         }
       >
@@ -1579,7 +1579,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
           style={
             {
               "flex": 1,
-              "gap": 3.5,
+              "gap": 4,
             }
           }
         >
@@ -1686,7 +1686,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
           {
             "flex": 1,
             "flexDirection": "row",
-            "gap": 7,
+            "gap": 8,
           }
         }
       >
@@ -1842,7 +1842,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
           style={
             {
               "flex": 1,
-              "gap": 3.5,
+              "gap": 4,
             }
           }
         >
@@ -1952,7 +1952,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with padding 1`] = `
           {
             "flex": 1,
             "flexDirection": "row",
-            "gap": 7,
+            "gap": 8,
           }
         }
       >
@@ -1960,7 +1960,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with padding 1`] = `
           style={
             {
               "flex": 1,
-              "gap": 3.5,
+              "gap": 4,
             }
           }
         >
@@ -2073,7 +2073,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with separator 1`] = `
           {
             "flex": 1,
             "flexDirection": "row",
-            "gap": 7,
+            "gap": 8,
           }
         }
       >
@@ -2081,7 +2081,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with separator 1`] = `
           style={
             {
               "flex": 1,
-              "gap": 3.5,
+              "gap": 4,
             }
           }
         >

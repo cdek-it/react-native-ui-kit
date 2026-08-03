@@ -218,14 +218,11 @@ export const Message = memo<MessageProps>(
   }
 )
 
-// TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
-// TODO(tokens-migration): reason=missing; legacy=spacing.Gap.gap-4; value=14
-// TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-4; value=14
 const messageStyles = StyleSheet.create(
-  ({ primitive, components, spacing, border }) => ({
+  ({ semantic, primitive, components }) => ({
     container: {
       borderRadius: components.message.root.borderRadius,
-      borderWidth: border.Width.border,
+      borderWidth: semantic.dimension.borderWidth[100],
       overflow: 'hidden',
       variants: {
         severity: {
@@ -251,10 +248,11 @@ const messageStyles = StyleSheet.create(
     content: {
       flexGrow: 1,
       borderLeftWidth:
-        components.message.extend.extAccentLine.width - border.Width.border,
-      padding: spacing.Padding['p-4'],
+        components.message.extend.extAccentLine.width -
+        semantic.dimension.borderWidth[100],
+      padding: semantic.dimension.space[400],
       paddingLeft: components.message.content.padding,
-      gap: spacing.Gap['gap-4'],
+      gap: semantic.dimension.space[400],
       variants: {
         severity: {
           info: {
@@ -272,7 +270,7 @@ const messageStyles = StyleSheet.create(
         },
       },
     },
-    titleRow: { flexDirection: 'row', gap: spacing.Gap['gap-4'] },
+    titleRow: { flexDirection: 'row', gap: semantic.dimension.space[400] },
     titleTextContainer: {
       flex: 1,
       alignSelf: 'center',

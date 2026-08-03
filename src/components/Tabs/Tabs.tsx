@@ -91,20 +91,18 @@ export const Tabs = memo<TabsProps>(
   }
 )
 
-// TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
-// TODO(tokens-migration): reason=missing; legacy=border.Width.border-2; value=2
-const styles = StyleSheet.create(({ components, border }) => ({
+const styles = StyleSheet.create(({ semantic, components }) => ({
   container: {
     flexDirection: 'row',
     gap: components.tabs.tab.margin,
 
-    borderBottomWidth: border.Width.border,
+    borderBottomWidth: semantic.dimension.borderWidth[100],
     borderColor: components.tabs.tablist.borderColor,
   },
   line: {
     position: 'absolute',
     bottom: 0,
-    height: border.Width['border-2'],
+    height: semantic.dimension.borderWidth[200],
 
     backgroundColor: components.tabs.activeBar.background,
   },

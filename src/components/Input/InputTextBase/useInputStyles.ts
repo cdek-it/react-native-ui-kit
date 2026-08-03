@@ -27,23 +27,17 @@ const containerMinHeight = StyleSheet.create(({ theme }) => ({
   xlarge: { minHeight: theme.InputSize.xlarge['min-height'] },
 }))
 
-// TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
-// TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-1; value=3.5
-// TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-2; value=7
-// TODO(tokens-migration): reason=missing; legacy=typography.Color.Common.text-color-secondary; value=#85888e
 export const inputStyles = StyleSheet.create(
   ({
     primitive,
     components,
     semantic,
-    border,
-    typography,
-    spacing,
+
     fonts,
   }) => ({
     container: {
       flexDirection: 'row',
-      borderWidth: border.Width.border,
+      borderWidth: semantic.dimension.borderWidth[100],
       borderRadius: components.inputtext.root.borderRadius,
       borderColor: components.inputtext.root.borderColor,
       backgroundColor: components.inputtext.root.background,
@@ -80,7 +74,7 @@ export const inputStyles = StyleSheet.create(
       paddingHorizontal: components.inputtext.root.paddingX,
       paddingTop: 26,
       paddingBottom: 12,
-      borderRadius: border.Radius['rounded-xl'],
+      borderRadius: semantic.dimension.borderRadius[300],
       overflow: 'hidden',
     },
     inputFont: {
@@ -115,9 +109,9 @@ export const inputStyles = StyleSheet.create(
       right: 7,
       top: 19,
       paddingVertical: 0,
-      paddingLeft: spacing.Padding['p-1'],
-      paddingRight: spacing.Padding['p-2'],
-      color: typography.Color.Common['text-color-secondary'],
+      paddingLeft: semantic.dimension.space[100],
+      paddingRight: semantic.dimension.space[200],
+      color: semantic.colorScheme.color.fg.muted,
       includeFontPadding: false,
       verticalAlign: 'middle',
       fontSize: primitive.fonts.fontSize[300],
@@ -125,7 +119,7 @@ export const inputStyles = StyleSheet.create(
     },
     labelReducedSize: {
       fontSize: primitive.fonts.fontSize[100],
-      paddingVertical: spacing.Padding['p-1'],
+      paddingVertical: semantic.dimension.space[100],
       top: 7,
       fontFamily: fonts.primary,
     },

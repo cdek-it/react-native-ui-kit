@@ -252,8 +252,7 @@ export const Slider = memo<SliderProps>(
   }
 )
 
-// TODO(tokens-migration): reason=missing; legacy=border.Width.border-3; value=3
-const styles = StyleSheet.create(({ components, border }) => {
+const styles = StyleSheet.create(({ semantic, components }) => {
   return {
     container: {
       width: '100%',
@@ -282,7 +281,7 @@ const styles = StyleSheet.create(({ components, border }) => {
       borderRadius: components.slider.handle.borderRadius,
       position: 'absolute',
       backgroundColor: components.slider.colorScheme.handle.content.background,
-      borderWidth: border.Width['border-3'],
+      borderWidth: semantic.dimension.borderWidth[300],
       borderColor: components.slider.handle.background,
     },
 

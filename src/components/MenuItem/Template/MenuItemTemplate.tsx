@@ -135,48 +135,45 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
 
 // `transparent` здесь — отсутствие фона и границы, а не цвет дизайн-системы:
 // у menu.item нет background и borderColor, прозрачность не выражена semantic-токеном.
-// TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
-const styles = StyleSheet.create(
-  ({ components, semantic, spacing, border }) => ({
-    container: {
-      borderColor: 'transparent',
-      borderWidth: border.Width.border,
-      borderRadius: components.menu.item.borderRadius,
-      backgroundColor: 'transparent',
-    },
-    containerPressed: { backgroundColor: components.menu.item.focusBackground },
-    containerDisabled: {
-      borderColor: 'transparent',
-      backgroundColor: semantic.colorScheme.color.bg.neutral.weak.disabled,
-      opacity: 0.6,
-    },
-    separator: {
-      borderTopWidth: 1,
-      borderTopColor: components.menu.separator.borderColor,
-      paddingTop: components.menu.extend.extItem.caption.gap,
-    },
-    contentContainer: {
-      flexDirection: 'row',
-      alignItems: 'center',
-      gap: components.menu.item.gap,
-      paddingHorizontal: components.menu.item.paddingLeft,
-      paddingVertical: components.menu.item.paddingTop,
-    },
-    accessory: {
-      color: components.menu.item.icon.color,
-      width: components.menu.extend.iconSize,
-      height: components.menu.extend.iconSize,
-    },
-    templateContainer: {
-      flexDirection: 'row',
-      gap: spacing.Gap['gap-2'],
-      flex: 1,
-    },
-    icon: {
-      width: components.menu.extend.iconSize,
-      height: components.menu.extend.iconSize,
-      color: components.menu.item.icon.color,
-    },
-    textContainer: { gap: spacing.Gap['gap-1'], flex: 1 },
-  })
-)
+const styles = StyleSheet.create(({ components, semantic }) => ({
+  container: {
+    borderColor: 'transparent',
+    borderWidth: semantic.dimension.borderWidth[100],
+    borderRadius: components.menu.item.borderRadius,
+    backgroundColor: 'transparent',
+  },
+  containerPressed: { backgroundColor: components.menu.item.focusBackground },
+  containerDisabled: {
+    borderColor: 'transparent',
+    backgroundColor: semantic.colorScheme.color.bg.neutral.weak.disabled,
+    opacity: 0.6,
+  },
+  separator: {
+    borderTopWidth: 1,
+    borderTopColor: components.menu.separator.borderColor,
+    paddingTop: components.menu.extend.extItem.caption.gap,
+  },
+  contentContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: components.menu.item.gap,
+    paddingHorizontal: components.menu.item.paddingLeft,
+    paddingVertical: components.menu.item.paddingTop,
+  },
+  accessory: {
+    color: components.menu.item.icon.color,
+    width: components.menu.extend.iconSize,
+    height: components.menu.extend.iconSize,
+  },
+  templateContainer: {
+    flexDirection: 'row',
+    gap: semantic.dimension.space[200],
+    flex: 1,
+  },
+  icon: {
+    width: components.menu.extend.iconSize,
+    height: components.menu.extend.iconSize,
+    color: components.menu.item.icon.color,
+  },
+  textContainer: { gap: semantic.dimension.space[100], flex: 1 },
+}))

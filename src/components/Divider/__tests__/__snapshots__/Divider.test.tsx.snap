@@ -106,7 +106,7 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "horizontal", "sho
           "flexDirection": "row",
           "flexShrink": 1,
           "gap": 8,
-          "paddingHorizontal": 7,
+          "paddingHorizontal": 8,
         },
         false,
       ]
@@ -277,11 +277,11 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
           "flexDirection": "row",
           "flexShrink": 1,
           "gap": 8,
-          "paddingHorizontal": 7,
+          "paddingHorizontal": 8,
         },
         {
           "paddingHorizontal": 0,
-          "paddingVertical": 7,
+          "paddingVertical": 8,
         },
       ]
     }
@@ -474,7 +474,7 @@ exports[`Divider {"Icon": [Object], "align": "start", "layout": "horizontal", "s
           "flexDirection": "row",
           "flexShrink": 1,
           "gap": 8,
-          "paddingHorizontal": 7,
+          "paddingHorizontal": 8,
         },
         false,
       ]

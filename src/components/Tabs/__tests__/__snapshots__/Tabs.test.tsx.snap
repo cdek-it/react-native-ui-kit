@@ -171,7 +171,7 @@ exports[`TabItem component tests active: label, badge 1`] = `
               "backgroundColor": "#44e858",
             },
             {
-              "borderRadius": 100,
+              "borderRadius": 1600,
               "height": 24,
               "justifyContent": "center",
               "paddingHorizontal": 8,
@@ -611,7 +611,7 @@ exports[`TabItem component tests active: label, icon, badge 1`] = `
               "backgroundColor": "#44e858",
             },
             {
-              "borderRadius": 100,
+              "borderRadius": 1600,
               "height": 24,
               "justifyContent": "center",
               "paddingHorizontal": 8,
@@ -933,7 +933,7 @@ exports[`TabItem component tests disabled: label, badge 1`] = `
               "backgroundColor": "#44e858",
             },
             {
-              "borderRadius": 100,
+              "borderRadius": 1600,
               "height": 24,
               "justifyContent": "center",
               "paddingHorizontal": 8,
@@ -1375,7 +1375,7 @@ exports[`TabItem component tests disabled: label, icon, badge 1`] = `
               "backgroundColor": "#44e858",
             },
             {
-              "borderRadius": 100,
+              "borderRadius": 1600,
               "height": 24,
               "justifyContent": "center",
               "paddingHorizontal": 8,
@@ -1603,7 +1603,7 @@ exports[`TabItem component tests label, badge 1`] = `
               "backgroundColor": "#44e858",
             },
             {
-              "borderRadius": 100,
+              "borderRadius": 1600,
               "height": 24,
               "justifyContent": "center",
               "paddingHorizontal": 8,
@@ -2035,7 +2035,7 @@ exports[`TabItem component tests label, icon, badge 1`] = `
               "backgroundColor": "#44e858",
             },
             {
-              "borderRadius": 100,
+              "borderRadius": 1600,
               "height": 24,
               "justifyContent": "center",
               "paddingHorizontal": 8,
@@ -2476,7 +2476,7 @@ exports[`Tabs component tests disabled 1`] = `
                 "backgroundColor": "#f47f77",
               },
               {
-                "borderRadius": 100,
+                "borderRadius": 1600,
                 "height": 24,
                 "justifyContent": "center",
                 "paddingHorizontal": 8,
@@ -2933,7 +2933,7 @@ exports[`Tabs component tests normal 1`] = `
                 "backgroundColor": "#f47f77",
               },
               {
-                "borderRadius": 100,
+                "borderRadius": 1600,
                 "height": 24,
                 "justifyContent": "center",
                 "paddingHorizontal": 8,

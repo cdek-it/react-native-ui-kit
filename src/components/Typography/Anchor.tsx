@@ -134,7 +134,7 @@ export const Anchor = memo(
 )
 
 const styles = StyleSheet.create(
-  ({ primitive, spacing, typography, fonts }) => ({
+  ({ semantic, primitive, typography, fonts }) => ({
     container: { flexDirection: 'row', alignItems: 'center' },
     text: {
       flexShrink: 1,
@@ -161,8 +161,8 @@ const styles = StyleSheet.create(
       width: primitive.fonts.fontSize[500],
       height: primitive.fonts.fontSize[500],
     },
-    leftIconContainer: { paddingRight: spacing.Padding['p-2'] },
-    rightIconContainer: { paddingLeft: spacing.Padding['p-2'] },
+    leftIconContainer: { paddingRight: semantic.dimension.space[200] },
+    rightIconContainer: { paddingLeft: semantic.dimension.space[200] },
   })
 )
 

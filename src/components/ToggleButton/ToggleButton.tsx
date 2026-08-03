@@ -119,15 +119,13 @@ export const ToggleButton = memo<ToggleButtonProps>(
   }
 )
 
-// TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
-// TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-6; value=21
 // TODO(tokens-migration): reason=missing; legacy=theme.Button.Common.buttonPaddingLeftRight; value=14
 const toggleStyles = StyleSheet.create(
-  ({ primitive, components, theme, spacing, border, fonts }) => ({
+  ({ semantic, primitive, components, theme, fonts }) => ({
     container: {
       alignSelf: 'flex-start',
       borderRadius: components.togglebutton.root.borderRadius,
-      borderWidth: border.Width.border,
+      borderWidth: semantic.dimension.borderWidth[100],
       overflow: 'hidden',
       variants: {
         checked: {
@@ -170,7 +168,7 @@ const toggleStyles = StyleSheet.create(
       alignSelf: 'flex-start',
       borderRadius: components.togglebutton.root.borderRadius,
       paddingVertical: components.togglebutton.root.paddingTop,
-      paddingHorizontal: spacing.Padding['p-6'],
+      paddingHorizontal: semantic.dimension.space[600],
       gap: components.togglebutton.extend.ext.gap,
       variants: {
         size: {

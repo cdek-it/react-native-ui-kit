@@ -38,7 +38,7 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = danger
         "alignItems": "center",
         "backgroundColor": "#ffffff",
         "borderColor": "#f47f77",
-        "borderRadius": 100,
+        "borderRadius": 1600,
         "borderWidth": 1,
         "height": 24,
         "justifyContent": "center",
@@ -65,7 +65,7 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = danger
           "alignItems": "center",
           "backgroundColor": "#ffffff",
           "borderColor": "#f47f77",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "borderWidth": 1,
           "height": 24,
           "justifyContent": "center",
@@ -90,7 +90,7 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = danger
       jestInlineStyle={
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "height": 12,
           "opacity": 0,
           "transitionDuration": 100,
@@ -104,7 +104,7 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = danger
         [
           {
             "backgroundColor": "#ffffff",
-            "borderRadius": 100,
+            "borderRadius": 1600,
             "height": 12,
             "opacity": 0,
             "width": 12,
@@ -154,7 +154,7 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = defaul
         "alignItems": "center",
         "backgroundColor": "#ffffff",
         "borderColor": "#cecfd2",
-        "borderRadius": 100,
+        "borderRadius": 1600,
         "borderWidth": 1,
         "height": 24,
         "justifyContent": "center",
@@ -181,7 +181,7 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = defaul
           "alignItems": "center",
           "backgroundColor": "#ffffff",
           "borderColor": "#cecfd2",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "borderWidth": 1,
           "height": 24,
           "justifyContent": "center",
@@ -206,7 +206,7 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = defaul
       jestInlineStyle={
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "height": 12,
           "opacity": 0,
           "transitionDuration": 100,
@@ -220,7 +220,7 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = defaul
         [
           {
             "backgroundColor": "#ffffff",
-            "borderRadius": 100,
+            "borderRadius": 1600,
             "height": 12,
             "opacity": 0,
             "width": 12,
@@ -270,7 +270,7 @@ exports[`RadioButton snapshots checked = false, disabled = true, state = default
         "alignItems": "center",
         "backgroundColor": "#e2e2e4",
         "borderColor": "#cecfd2",
-        "borderRadius": 100,
+        "borderRadius": 1600,
         "borderWidth": 1,
         "height": 24,
         "justifyContent": "center",
@@ -298,7 +298,7 @@ exports[`RadioButton snapshots checked = false, disabled = true, state = default
           "alignItems": "center",
           "backgroundColor": "#e2e2e4",
           "borderColor": "#cecfd2",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "borderWidth": 1,
           "height": 24,
           "justifyContent": "center",
@@ -324,7 +324,7 @@ exports[`RadioButton snapshots checked = false, disabled = true, state = default
       jestInlineStyle={
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "height": 12,
           "opacity": 0,
           "transitionDuration": 100,
@@ -338,7 +338,7 @@ exports[`RadioButton snapshots checked = false, disabled = true, state = default
         [
           {
             "backgroundColor": "#ffffff",
-            "borderRadius": 100,
+            "borderRadius": 1600,
             "height": 12,
             "opacity": 0,
             "width": 12,
@@ -388,7 +388,7 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = danger 
         "alignItems": "center",
         "backgroundColor": "#2b2e33",
         "borderColor": "#2b2e33",
-        "borderRadius": 100,
+        "borderRadius": 1600,
         "borderWidth": 1,
         "height": 24,
         "justifyContent": "center",
@@ -415,7 +415,7 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = danger 
           "alignItems": "center",
           "backgroundColor": "#2b2e33",
           "borderColor": "#2b2e33",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "borderWidth": 1,
           "height": 24,
           "justifyContent": "center",
@@ -440,7 +440,7 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = danger 
       jestInlineStyle={
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "height": 12,
           "opacity": 1,
           "transitionDuration": 100,
@@ -454,7 +454,7 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = danger 
         [
           {
             "backgroundColor": "#ffffff",
-            "borderRadius": 100,
+            "borderRadius": 1600,
             "height": 12,
             "opacity": 1,
             "width": 12,
@@ -504,7 +504,7 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = default
         "alignItems": "center",
         "backgroundColor": "#2b2e33",
         "borderColor": "#2b2e33",
-        "borderRadius": 100,
+        "borderRadius": 1600,
         "borderWidth": 1,
         "height": 24,
         "justifyContent": "center",
@@ -531,7 +531,7 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = default
           "alignItems": "center",
           "backgroundColor": "#2b2e33",
           "borderColor": "#2b2e33",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "borderWidth": 1,
           "height": 24,
           "justifyContent": "center",
@@ -556,7 +556,7 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = default
       jestInlineStyle={
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "height": 12,
           "opacity": 1,
           "transitionDuration": 100,
@@ -570,7 +570,7 @@ exports[`RadioButton snapshots checked = true, disabled = false, state = default
         [
           {
             "backgroundColor": "#ffffff",
-            "borderRadius": 100,
+            "borderRadius": 1600,
             "height": 12,
             "opacity": 1,
             "width": 12,
@@ -620,7 +620,7 @@ exports[`RadioButton snapshots checked = true, disabled = true, state = default 
         "alignItems": "center",
         "backgroundColor": "#2b2e33",
         "borderColor": "#2b2e33",
-        "borderRadius": 100,
+        "borderRadius": 1600,
         "borderWidth": 1,
         "height": 24,
         "justifyContent": "center",
@@ -648,7 +648,7 @@ exports[`RadioButton snapshots checked = true, disabled = true, state = default 
           "alignItems": "center",
           "backgroundColor": "#2b2e33",
           "borderColor": "#2b2e33",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "borderWidth": 1,
           "height": 24,
           "justifyContent": "center",
@@ -674,7 +674,7 @@ exports[`RadioButton snapshots checked = true, disabled = true, state = default 
       jestInlineStyle={
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "height": 12,
           "opacity": 1,
           "transitionDuration": 100,
@@ -688,7 +688,7 @@ exports[`RadioButton snapshots checked = true, disabled = true, state = default 
         [
           {
             "backgroundColor": "#ffffff",
-            "borderRadius": 100,
+            "borderRadius": 1600,
             "height": 12,
             "opacity": 1,
             "width": 12,
@@ -738,7 +738,7 @@ exports[`RadioButton snapshots default 1`] = `
         "alignItems": "center",
         "backgroundColor": "#ffffff",
         "borderColor": "#cecfd2",
-        "borderRadius": 100,
+        "borderRadius": 1600,
         "borderWidth": 1,
         "height": 24,
         "justifyContent": "center",
@@ -765,7 +765,7 @@ exports[`RadioButton snapshots default 1`] = `
           "alignItems": "center",
           "backgroundColor": "#ffffff",
           "borderColor": "#cecfd2",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "borderWidth": 1,
           "height": 24,
           "justifyContent": "center",
@@ -790,7 +790,7 @@ exports[`RadioButton snapshots default 1`] = `
       jestInlineStyle={
         {
           "backgroundColor": "#ffffff",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "height": 12,
           "opacity": 0,
           "transitionDuration": 100,
@@ -804,7 +804,7 @@ exports[`RadioButton snapshots default 1`] = `
         [
           {
             "backgroundColor": "#ffffff",
-            "borderRadius": 100,
+            "borderRadius": 1600,
             "height": 12,
             "opacity": 0,
             "width": 12,

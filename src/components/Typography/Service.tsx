@@ -86,7 +86,7 @@ export const Service = ({
 }
 
 const styles = StyleSheet.create(
-  ({ primitive, typography, spacing, fonts }) => ({
+  ({ semantic, primitive, typography, fonts }) => ({
     iconBase: {
       width: primitive.fonts.fontSize[500],
       height: primitive.fonts.fontSize[500],
@@ -96,8 +96,8 @@ const styles = StyleSheet.create(
       height: primitive.fonts.fontSize[300],
     },
 
-    containerBase: { flexDirection: 'row', gap: spacing.Gap['gap-2'] },
-    container: { flexDirection: 'row', gap: spacing.Gap['gap-1'] },
+    containerBase: { flexDirection: 'row', gap: semantic.dimension.space[200] },
+    container: { flexDirection: 'row', gap: semantic.dimension.space[100] },
 
     textCommon: {
       includeFontPadding: false,

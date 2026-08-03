@@ -48,9 +48,8 @@ const ButtonIconComponent = ({
 
 export const ButtonIcon = genericMemo(ButtonIconComponent)
 
-// TODO(tokens-migration): reason=missing; legacy=typography.Color.Common.text-color-secondary; value=#85888e
 const buttonIconStyles = StyleSheet.create(
-  ({ primitive, components: { button }, typography }) => ({
+  ({ semantic, primitive, components: { button } }) => ({
     icon: {
       variants: {
         size: {
@@ -89,7 +88,7 @@ const buttonIconStyles = StyleSheet.create(
         {
           variant: 'link',
           pressed: 'true',
-          styles: { color: typography.Color.Common['text-color-secondary'] },
+          styles: { color: semantic.colorScheme.color.fg.muted },
         },
 
         // severity icon colors

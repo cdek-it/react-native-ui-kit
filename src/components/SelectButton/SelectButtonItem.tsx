@@ -154,7 +154,6 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
 )
 
 // TODO(tokens-migration): reason=missing; legacy=theme.Button.Disabled.disabledButtonBorderColor; light=#a2a5a9; dark=#56595f
-// TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
 // TODO(tokens-migration): reason=missing; legacy=semantic.colorScheme.color.fg.muted; light=#85888e; dark=#a2a5a9
 const styles = StyleSheet.create(
   ({
@@ -162,8 +161,6 @@ const styles = StyleSheet.create(
     components,
     semantic,
     theme,
-
-    border,
 
     fonts,
   }) => ({
@@ -173,7 +170,7 @@ const styles = StyleSheet.create(
       alignItems: 'center',
       justifyContent: 'center',
       gap: components.selectbutton.extend.gap,
-      borderWidth: border.Width.border,
+      borderWidth: semantic.dimension.borderWidth[100],
       borderColor: 'transparent',
     },
     small: { height: 28 },
