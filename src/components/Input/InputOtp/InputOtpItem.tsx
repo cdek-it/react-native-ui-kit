@@ -60,11 +60,9 @@ export const InputOtpItem = memo<InputOtpItemProps>(
   }
 )
 
-// TODO(tokens-migration): reason=missing; legacy=components.inputtext.root.paddingX; value=14
-// TODO(tokens-migration): reason=missing; legacy=components.inputtext.root.borderColor; light=#cecfd2; dark=#56595f
-// TODO(tokens-migration): reason=missing; legacy=components.inputtext.root.color; light=#2b2e33; dark=#ffffff
-// TODO(tokens-migration): reason=missing; legacy=components.inputtext.root.hoverBorderColor; light=#1dc831; dark=#77f48a
-// TODO(tokens-migration): reason=missing; legacy=components.inputtext.root.invalidBorderColor; light=#f47f77; dark=#db3424
+// Рамка, цвет и отступы намеренно берутся у inputtext: поле OTP должно выглядеть
+// как обычное поле ввода. Собственные токены inputotp описывают только отличия —
+// тот же приём, что в пресете PrimeUIX lara, где inputotp задаёт лишь gap и width.
 // TODO(tokens-migration): reason=missing; legacy=typography.Size.text-2xl; value=21
 const styles = StyleSheet.create(({ components, fonts, typography }) => ({
   container: {

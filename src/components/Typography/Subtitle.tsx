@@ -30,11 +30,10 @@ export const Subtitle = memo<SubtitleProps>(
   )
 )
 
-// TODO(tokens-migration): reason=missing; legacy=semantic.colorScheme.color.fg.default; light=#2b2e33; dark=#ffffff
-// TODO(tokens-migration): reason=missing; legacy=semantic.colorScheme.color.fg.brand.default; light=#44e858; dark=#77f48a
-// TODO(tokens-migration): reason=missing; legacy=semantic.colorScheme.color.fg.muted; light=#85888e; dark=#a2a5a9
 // TODO(tokens-migration): reason=missing; legacy=typography.Size.text-sm; value=12.25
 // TODO(tokens-migration): reason=missing; legacy=typography.Size.text-xs; value=10.5
+// Осознанный обход слоя components: цвет текста — семантическая роль, и своего
+// токена у Typography нет (компонент отсутствует в tokens.json).
 const styles = StyleSheet.create(({ semantic, typography, fonts }) => ({
   text: {
     fontSize: typography.Size['text-xs'],
