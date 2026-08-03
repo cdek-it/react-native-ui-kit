@@ -86,14 +86,13 @@ export const TabItem = memo<TabItemProps>(
   }
 )
 
-// TODO(tokens-migration): reason=missing; legacy=components.badge.root.height; value=24
 const styles = StyleSheet.create(
   ({ primitive, components, semantic, fonts }) => ({
     container: {
       alignItems: 'center',
       flexDirection: 'row',
 
-      height: components.badge.root.height + components.tabs.tab.padding * 2,
+      height: semantic.dimension.size[700] + components.tabs.tab.padding * 2,
       gap: components.tabs.tab.gap,
       paddingHorizontal: components.tabs.tab.padding,
       paddingVertical: components.tabs.tab.padding,

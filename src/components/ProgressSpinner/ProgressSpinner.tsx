@@ -125,11 +125,10 @@ export const ProgressSpinner = memo<ProgressSpinnerProps>(
   }
 )
 
-// TODO(tokens-migration): reason=missing; legacy=global.Neutrals.White.white-100; value=#ffffff
 const styles = StyleSheet.create(
-  ({ components: { progressspinner }, global }) => ({
+  ({ semantic, components: { progressspinner } }) => ({
     primary: { color: progressspinner.colorScheme.root.colorOne },
-    white: { color: global.Neutrals.White['white-100'] },
+    white: { color: semantic.colorScheme.color.fg.on.fill.default },
   })
 )
 

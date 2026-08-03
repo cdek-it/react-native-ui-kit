@@ -18,13 +18,10 @@ export const useInputContainerMinHeight = (
   return { minHeight }
 }
 
-// TODO(tokens-migration): reason=missing; legacy=theme.InputSize.base.min-height; value=35
-// TODO(tokens-migration): reason=missing; legacy=theme.InputSize.large.min-height; value=49
-// TODO(tokens-migration): reason=missing; legacy=theme.InputSize.xlarge.min-height; value=56
-const containerMinHeight = StyleSheet.create(({ theme }) => ({
-  base: { minHeight: theme.InputSize.base['min-height'] },
-  large: { minHeight: theme.InputSize.large['min-height'] },
-  xlarge: { minHeight: theme.InputSize.xlarge['min-height'] },
+const containerMinHeight = StyleSheet.create(({ semantic }) => ({
+  base: { minHeight: semantic.dimension.size[1100] },
+  large: { minHeight: semantic.dimension.size[1300] },
+  xlarge: { minHeight: semantic.dimension.size[1400] },
 }))
 
 export const inputStyles = StyleSheet.create(

@@ -99,14 +99,12 @@ export const Chip = memo<ChipProps>(
 
 // `transparent` здесь — отсутствие границы, а не цвет дизайн-системы:
 // у chip.root нет borderColor, прозрачность не выражена semantic-токеном.
-// TODO(tokens-migration): reason=missing; legacy=border.Color.Service.border-success.400; value=#77f48a
 const styles = StyleSheet.create(
   ({
     primitive,
     components,
     semantic,
 
-    border,
     fonts,
   }) => ({
     chip: {
@@ -145,7 +143,7 @@ const styles = StyleSheet.create(
     disabledText: { color: semantic.colorScheme.color.fg.muted },
     pressedClose: {
       borderWidth: semantic.dimension.borderWidth[300],
-      borderColor: border.Color.Service['border-success'][400],
+      borderColor: semantic.colorScheme.color.border.status.success.strong,
       borderRadius: semantic.dimension.borderRadius.max,
     },
   })

@@ -119,9 +119,8 @@ export const ToggleButton = memo<ToggleButtonProps>(
   }
 )
 
-// TODO(tokens-migration): reason=missing; legacy=theme.Button.Common.buttonPaddingLeftRight; value=14
 const toggleStyles = StyleSheet.create(
-  ({ semantic, primitive, components, theme, fonts }) => ({
+  ({ semantic, primitive, components, fonts }) => ({
     container: {
       alignSelf: 'flex-start',
       borderRadius: components.togglebutton.root.borderRadius,
@@ -172,15 +171,15 @@ const toggleStyles = StyleSheet.create(
       gap: components.togglebutton.extend.ext.gap,
       variants: {
         size: {
-          xlarge: { minHeight: 56 },
-          large: { minHeight: 49 },
+          xlarge: { minHeight: semantic.dimension.size[1400] },
+          large: { minHeight: semantic.dimension.size[1300] },
           base: {
-            minHeight: 35,
-            paddingHorizontal: theme.Button.Common.buttonPaddingLeftRight,
+            minHeight: semantic.dimension.size[1100],
+            paddingHorizontal: components.togglebutton.root.paddingLeft,
             gap: components.togglebutton.root.gap,
           },
           small: {
-            minHeight: 28,
+            minHeight: semantic.dimension.size[800],
             paddingHorizontal: components.togglebutton.root.sm.paddingRight,
             gap: components.togglebutton.root.gap,
           },

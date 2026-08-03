@@ -77,14 +77,14 @@ const sizeCases: Array<{
   {
     name: 'большой',
     size: 'large',
-    height: lightTheme.theme.Button.Common.buttonHeightLG,
+    height: lightTheme.semantic.dimension.size[1300],
     iconSize: lightTheme.primitive.fonts.fontSize[600],
     fontSize: lightTheme.primitive.fonts.fontSize[500],
   },
   {
     name: 'самый большой',
     size: 'xlarge',
-    height: lightTheme.theme.Button.Common.buttonHeightXL,
+    height: lightTheme.semantic.dimension.size[1400],
     iconSize: 28,
     fontSize: lightTheme.primitive.fonts.fontSize[600],
   },

@@ -127,9 +127,9 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
             {...iconSize}
             source={Icon}
             testID='SelectButtonItem_Icon'
-            uniProps={({ components, semantic, theme }) => ({
+            uniProps={({ components, semantic }) => ({
               color: disabled
-                ? theme.Button.Disabled.disabledButtonBorderColor
+                ? semantic.colorScheme.color.border.neutral.strong
                 : isSelected
                   ? components.selectbutton.extend.checkedColor
                   : semantic.colorScheme.color.fg.muted,
@@ -153,14 +153,12 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
   }
 )
 
-// TODO(tokens-migration): reason=missing; legacy=theme.Button.Disabled.disabledButtonBorderColor; light=#a2a5a9; dark=#56595f
 // TODO(tokens-migration): reason=missing; legacy=semantic.colorScheme.color.fg.muted; light=#85888e; dark=#a2a5a9
 const styles = StyleSheet.create(
   ({
     primitive,
     components,
     semantic,
-    theme,
 
     fonts,
   }) => ({
@@ -175,12 +173,18 @@ const styles = StyleSheet.create(
     },
     small: { height: 28 },
     base: { height: 35 },
-    large: { height: 49, gap: components.selectbutton.extend.gap },
-    xlarge: { height: 56, gap: components.selectbutton.extend.gap },
+    large: {
+      height: semantic.dimension.size[1300],
+      gap: components.selectbutton.extend.gap,
+    },
+    xlarge: {
+      height: semantic.dimension.size[1400],
+      gap: components.selectbutton.extend.gap,
+    },
     disabledContainer: {
       borderRadius: components.selectbutton.extend.ext.borderRadius,
       borderWidth: 1,
-      borderColor: theme.Button.Disabled.disabledButtonBorderColor,
+      borderColor: semantic.colorScheme.color.border.neutral.strong,
     },
     iconSmall: {
       width: primitive.fonts.fontSize[300],
@@ -207,7 +211,7 @@ const styles = StyleSheet.create(
     textColor: { color: semantic.colorScheme.color.fg.muted },
     checkedTextColor: { color: components.selectbutton.extend.checkedColor },
     disabledTextColor: {
-      color: theme.Button.Disabled.disabledButtonBorderColor,
+      color: semantic.colorScheme.color.border.neutral.strong,
     },
   })
 )
