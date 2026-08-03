@@ -13,6 +13,7 @@ export interface BoxEdges {
 }
 
 export interface CompiledTokens {
+  fonts: TokenTree
   semantic: ThemeTokens
   components: ThemeTokens
 }
