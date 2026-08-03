@@ -31,10 +31,11 @@ Semantic-токены доступны потребителям библиоте
 
 ## Результат генерации
 
-Из `design-tokens/input/tokens.json` создаются четыре файла:
+Из `design-tokens/input/tokens.json` создаются пять файлов:
 
 ```text
 src/theme/tokens
+├── fonts.json
 ├── semantic
 │   ├── light.json
 │   └── dark.json
@@ -55,8 +56,12 @@ components.button.colorScheme.light.outlined
 → components/light.json: button.colorScheme.outlined
 ```
 
-`primitive` нужен только для подстановки ссылок и не записывается в результат.
-Light- и dark-файлы должны иметь одинаковую структуру и типы значений.
+`fonts.json` собирается из `primitive.fonts`, нормализуется по общим правилам и
+не разделяется по цветовым схемам. Пока файл не экспортируется из библиотеки.
+
+Остальная часть `primitive` нужна только для подстановки ссылок и не
+записывается в результат. Light- и dark-файлы должны иметь одинаковую структуру
+и типы значений.
 
 ## Преобразование значений
 

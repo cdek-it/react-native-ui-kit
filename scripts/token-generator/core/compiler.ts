@@ -43,6 +43,25 @@ const getGroup = (
   return value
 }
 
+const compileFonts = (primitive: TokenTree): TokenTree => {
+  const fonts = resolvePath(primitive, 'fonts')
+
+  if (!isTokenTree(fonts)) {
+    throw new Error('Expected an object at "primitive.fonts" in input tokens')
+  }
+
+  const resolvedFonts = resolveReferences(fonts, primitive, 'fonts')
+  const normalizedFonts = normalizeTree(resolvedFonts, 'fonts')
+
+  if (!isTokenTree(normalizedFonts)) {
+    throw new Error('Expected an object at "fonts" in output tokens')
+  }
+
+  assertValidOutput(normalizedFonts, 'fonts')
+
+  return normalizedFonts
+}
+
 const selectColorScheme = (
   group: TokenTree,
   scheme: ColorScheme,
@@ -184,6 +203,7 @@ export const compileTokens = (source: TokenTree): CompiledTokens => {
   const primitive = getGroup(source, 'primitive')
   const semanticSource = getGroup(source, 'semantic')
   const componentsSource = getGroup(source, 'components')
+  const fonts = compileFonts(primitive)
   const light = compileScheme(
     primitive,
     semanticSource,
@@ -202,5 +222,5 @@ export const compileTokens = (source: TokenTree): CompiledTokens => {
   assertSameShape(semantic.light, semantic.dark)
   assertSameShape(components.light, components.dark)
 
-  return { semantic, components }
+  return { fonts, semantic, components }
 }
