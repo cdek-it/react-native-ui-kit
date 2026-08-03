@@ -44,9 +44,9 @@ export const Chip = memo<ChipProps>(
     showIcon = true,
     ...rest
   }) => {
-    const iconUniProps = ({ components }: ThemeType) => ({
+    const iconUniProps = ({ components, semantic }: ThemeType) => ({
       color: disabled
-        ? components.button.extend.disabledColor
+        ? semantic.colorScheme.color.fg.muted
         : components.chip.colorScheme.root.color,
     })
 
@@ -83,9 +83,9 @@ export const Chip = memo<ChipProps>(
                 {...styles.icon}
                 source={IconX}
                 style={pressed ? styles.pressedClose : null}
-                uniProps={({ components }) => ({
+                uniProps={({ components, semantic }) => ({
                   color: disabled
-                    ? components.button.extend.disabledColor
+                    ? semantic.colorScheme.color.fg.muted
                     : components.chip.colorScheme.root.color,
                 })}
               />
@@ -99,13 +99,11 @@ export const Chip = memo<ChipProps>(
 
 // `transparent` здесь — отсутствие границы, а не цвет дизайн-системы:
 // у chip.root нет borderColor, прозрачность не выражена semantic-токеном.
-// TODO(tokens-migration): reason=missing; legacy=components.button.extend.disabledColor; light=#85888e; dark=#a2a5a9
-// TODO(tokens-migration): reason=missing; legacy=components.button.extend.disabledBackground; light=#e2e2e4; dark=#404348
 // TODO(tokens-migration): reason=missing; legacy=border.Color.Service.border-success.400; value=#77f48a
 // TODO(tokens-migration): reason=missing; legacy=border.Radius.rounded-full; value=100
 // TODO(tokens-migration): reason=missing; legacy=border.Width.border-3; value=3
 const styles = StyleSheet.create(
-  ({ components, typography, spacing, border, fonts }) => ({
+  ({ components, semantic, typography, spacing, border, fonts }) => ({
     chip: {
       alignSelf: 'flex-start',
       justifyContent: 'center',
@@ -124,7 +122,7 @@ const styles = StyleSheet.create(
       borderColor: components.chip.extend.borderColor,
     },
     disabledChip: {
-      backgroundColor: components.button.extend.disabledBackground,
+      backgroundColor: semantic.colorScheme.color.bg.neutral.weak.disabled,
       borderColor: 'transparent',
       opacity: 0.6,
       mixBlendMode: 'luminosity',
@@ -141,7 +139,7 @@ const styles = StyleSheet.create(
       includeFontPadding: false,
       fontFamily: fonts.secondary,
     },
-    disabledText: { color: components.button.extend.disabledColor },
+    disabledText: { color: semantic.colorScheme.color.fg.muted },
     pressedClose: {
       borderWidth: border.Width['border-3'],
       borderColor: border.Color.Service['border-success'][400],

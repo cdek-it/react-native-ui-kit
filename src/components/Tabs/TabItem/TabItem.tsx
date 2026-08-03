@@ -56,9 +56,9 @@ export const TabItem = memo<TabItemProps>(
               <SvgUniversal
                 {...styles.icon}
                 source={Icon}
-                uniProps={({ components }) => ({
+                uniProps={({ components, semantic }) => ({
                   color: disabled
-                    ? components.button.extend.disabledColor
+                    ? semantic.colorScheme.color.fg.muted
                     : pressed
                       ? components.tabs.tab.hoverColor
                       : active
@@ -86,45 +86,46 @@ export const TabItem = memo<TabItemProps>(
   }
 )
 
-// TODO(tokens-migration): reason=missing; legacy=components.button.extend.disabledColor; light=#85888e; dark=#a2a5a9
 // TODO(tokens-migration): reason=missing; legacy=components.badge.root.height; value=24
 // TODO(tokens-migration): reason=missing; legacy=typography.Size.text-base; value=14
 // TODO(tokens-migration): reason=missing; legacy=typography.Size.text-xl; value=17.5
-const styles = StyleSheet.create(({ components, typography, fonts }) => ({
-  container: {
-    alignItems: 'center',
-    flexDirection: 'row',
+const styles = StyleSheet.create(
+  ({ components, semantic, typography, fonts }) => ({
+    container: {
+      alignItems: 'center',
+      flexDirection: 'row',
 
-    height: components.badge.root.height + components.tabs.tab.padding * 2,
-    gap: components.tabs.tab.gap,
-    paddingHorizontal: components.tabs.tab.padding,
-    paddingVertical: components.tabs.tab.padding,
+      height: components.badge.root.height + components.tabs.tab.padding * 2,
+      gap: components.tabs.tab.gap,
+      paddingHorizontal: components.tabs.tab.padding,
+      paddingVertical: components.tabs.tab.padding,
 
-    backgroundColor: components.tabs.colorScheme.tab.background,
-  },
-  pressedContainer: {
-    backgroundColor: components.tabs.colorScheme.tab.hoverBackground,
-  },
-  activeContainer: {
-    backgroundColor: components.tabs.colorScheme.tab.activeBackground,
-  },
-  disabledContainer: { opacity: 0.6, mixBlendMode: 'luminosity' },
-  icon: {
-    width: typography.Size['text-xl'],
-    height: typography.Size['text-xl'],
-  },
-  text: {
-    fontFamily: fonts.primary,
-    fontSize: typography.Size['text-base'],
-    verticalAlign: 'middle',
-    includeFontPadding: false,
+      backgroundColor: components.tabs.colorScheme.tab.background,
+    },
+    pressedContainer: {
+      backgroundColor: components.tabs.colorScheme.tab.hoverBackground,
+    },
+    activeContainer: {
+      backgroundColor: components.tabs.colorScheme.tab.activeBackground,
+    },
+    disabledContainer: { opacity: 0.6, mixBlendMode: 'luminosity' },
+    icon: {
+      width: typography.Size['text-xl'],
+      height: typography.Size['text-xl'],
+    },
+    text: {
+      fontFamily: fonts.primary,
+      fontSize: typography.Size['text-base'],
+      verticalAlign: 'middle',
+      includeFontPadding: false,
 
-    color: components.tabs.tab.color,
-  },
-  pressedText: { color: components.tabs.tab.hoverColor },
-  activeText: { color: components.tabs.tab.activeColor },
-  disabledText: { color: components.button.extend.disabledColor },
-}))
+      color: components.tabs.tab.color,
+    },
+    pressedText: { color: components.tabs.tab.hoverColor },
+    activeText: { color: components.tabs.tab.activeColor },
+    disabledText: { color: semantic.colorScheme.color.fg.muted },
+  })
+)
 
 export enum TestId {
   Container = 'TabItem_Container',

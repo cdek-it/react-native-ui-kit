@@ -135,10 +135,9 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
 
 // `transparent` здесь — отсутствие фона и границы, а не цвет дизайн-системы:
 // у menu.item нет background и borderColor, прозрачность не выражена semantic-токеном.
-// TODO(tokens-migration): reason=missing; legacy=components.button.extend.disabledBackground; light=#e2e2e4; dark=#404348
 // TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
 const styles = StyleSheet.create(
-  ({ components, spacing, typography, border }) => ({
+  ({ components, semantic, spacing, typography, border }) => ({
     container: {
       borderColor: 'transparent',
       borderWidth: border.Width.border,
@@ -148,7 +147,7 @@ const styles = StyleSheet.create(
     containerPressed: { backgroundColor: components.menu.item.focusBackground },
     containerDisabled: {
       borderColor: 'transparent',
-      backgroundColor: components.button.extend.disabledBackground,
+      backgroundColor: semantic.colorScheme.color.bg.neutral.weak.disabled,
       opacity: 0.6,
     },
     separator: {

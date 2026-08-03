@@ -51,41 +51,42 @@ export const InputGroupAddon = memo<InputGroupAddonProps>(
   }
 )
 
-// TODO(tokens-migration): reason=missing; legacy=components.button.extend.disabledBackground; light=#e2e2e4; dark=#404348
-const styles = StyleSheet.create(({ components, typography, fonts }) => ({
-  container: {
-    padding: components.inputgroup.addon.padding,
-    justifyContent: 'center',
-    borderRadius: components.inputgroup.addon.borderRadius,
-    borderWidth: components.inputgroup.extend.borderWidth,
-    borderColor: components.inputgroup.colorScheme.addon.borderColor,
-    backgroundColor: components.inputgroup.colorScheme.addon.background,
-  },
-  left: {
-    borderRightWidth: 0,
-    // При меньших значениях возникает баг рендера
-    borderTopRightRadius: 0.2,
-    borderBottomRightRadius: 0.2,
-  },
-  right: {
-    borderLeftWidth: 0,
-    borderTopLeftRadius: 0,
-    borderBottomLeftRadius: 0,
-  },
-  disabled: {
-    opacity: 0.6,
-    backgroundColor: components.button.extend.disabledBackground,
-  },
-  text: {
-    fontSize: typography.Size['text-base'],
-    color: components.inputgroup.colorScheme.addon.color,
-    includeFontPadding: false,
-    verticalAlign: 'middle',
-    fontFamily: fonts.secondary,
-  },
-  icon: {
-    // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-base; value=14; target=components.inputgroup.extend.iconSize; targetValue=16
-    width: typography.Size['text-base'],
-    height: typography.Size['text-base'],
-  },
-}))
+const styles = StyleSheet.create(
+  ({ components, semantic, typography, fonts }) => ({
+    container: {
+      padding: components.inputgroup.addon.padding,
+      justifyContent: 'center',
+      borderRadius: components.inputgroup.addon.borderRadius,
+      borderWidth: components.inputgroup.extend.borderWidth,
+      borderColor: components.inputgroup.colorScheme.addon.borderColor,
+      backgroundColor: components.inputgroup.colorScheme.addon.background,
+    },
+    left: {
+      borderRightWidth: 0,
+      // При меньших значениях возникает баг рендера
+      borderTopRightRadius: 0.2,
+      borderBottomRightRadius: 0.2,
+    },
+    right: {
+      borderLeftWidth: 0,
+      borderTopLeftRadius: 0,
+      borderBottomLeftRadius: 0,
+    },
+    disabled: {
+      opacity: 0.6,
+      backgroundColor: semantic.colorScheme.color.bg.neutral.weak.disabled,
+    },
+    text: {
+      fontSize: typography.Size['text-base'],
+      color: components.inputgroup.colorScheme.addon.color,
+      includeFontPadding: false,
+      verticalAlign: 'middle',
+      fontFamily: fonts.secondary,
+    },
+    icon: {
+      // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-base; value=14; target=components.inputgroup.extend.iconSize; targetValue=16
+      width: typography.Size['text-base'],
+      height: typography.Size['text-base'],
+    },
+  })
+)

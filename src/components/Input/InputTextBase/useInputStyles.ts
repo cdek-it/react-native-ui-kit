@@ -27,14 +27,13 @@ const containerMinHeight = StyleSheet.create(({ theme }) => ({
   xlarge: { minHeight: theme.InputSize.xlarge['min-height'] },
 }))
 
-// TODO(tokens-migration): reason=missing; legacy=components.button.extend.disabledBackground; light=#e2e2e4; dark=#404348
 // TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
 // TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-1; value=3.5
 // TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-2; value=7
 // TODO(tokens-migration): reason=missing; legacy=typography.Color.Common.text-color-secondary; value=#85888e
 // TODO(tokens-migration): reason=missing; legacy=typography.Size.text-sm; value=12.25
 export const inputStyles = StyleSheet.create(
-  ({ components, border, typography, spacing, fonts }) => ({
+  ({ components, semantic, border, typography, spacing, fonts }) => ({
     container: {
       flexDirection: 'row',
       borderWidth: border.Width.border,
@@ -53,7 +52,7 @@ export const inputStyles = StyleSheet.create(
     disabled: {
       opacity: 0.6,
       borderColor: components.inputtext.root.borderColor,
-      backgroundColor: components.button.extend.disabledBackground,
+      backgroundColor: semantic.colorScheme.color.bg.neutral.weak.disabled,
     },
     inputContainer: {
       flex: 1,
