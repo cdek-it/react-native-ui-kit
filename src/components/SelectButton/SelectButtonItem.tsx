@@ -153,7 +153,9 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
   }
 )
 
-// TODO(tokens-migration): reason=missing; legacy=semantic.colorScheme.color.fg.muted; light=#85888e; dark=#a2a5a9
+// Осознанный обход слоя components: цвет невыбранного пункта — семантическая
+// роль «приглушённый текст». Собственного токена у selectbutton нет, а то же
+// значение приходит в tabs.tab.color и menu.item.color.
 const styles = StyleSheet.create(
   ({
     primitive,

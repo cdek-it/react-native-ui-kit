@@ -1,3 +1,7 @@
+import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
+
 import {
   auditTodos,
   collectTodos,
@@ -109,10 +113,37 @@ describe('auditTodos', () => {
 })
 
 describe('collectTodos', () => {
-  test('находит комментарии в исходниках компонентов', () => {
-    const todos = collectTodos(`${__dirname}/../../../src/components`)
+  test('обходит вложенные каталоги и собирает комментарии', () => {
+    const directory = mkdtempSync(join(tmpdir(), 'tokens-audit-'))
 
-    expect(todos.length).toBeGreaterThan(0)
-    expect(todos.filter((todo) => todo.legacy.length === 0)).toHaveLength(0)
+    try {
+      mkdirSync(join(directory, 'nested'))
+      writeFileSync(
+        join(directory, 'Component.tsx'),
+        '// TODO(tokens-migration): reason=missing; legacy=spacing.Gap.gap-2; value=7\nconst gap = 7\n'
+      )
+      writeFileSync(
+        join(directory, 'nested', 'useStyles.ts'),
+        'const size = 1\n// TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1\n'
+      )
+      writeFileSync(join(directory, 'readme.md'), 'TODO(tokens-migration): x')
+
+      const todos = collectTodos(directory)
+
+      expect(todos).toHaveLength(2)
+      expect(todos.map((todo) => todo.legacy).sort()).toStrictEqual([
+        'border.Width.border',
+        'spacing.Gap.gap-2',
+      ])
+      expect(todos.map((todo) => todo.line).sort()).toStrictEqual([1, 2])
+    } finally {
+      rmSync(directory, { recursive: true, force: true })
+    }
+  })
+
+  test('в исходниках компонентов не осталось неразобранных комментариев', () => {
+    expect(collectTodos(`${__dirname}/../../../src/components`)).toStrictEqual(
+      []
+    )
   })
 })
