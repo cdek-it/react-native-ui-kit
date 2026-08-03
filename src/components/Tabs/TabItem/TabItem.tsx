@@ -105,7 +105,10 @@ const styles = StyleSheet.create(
     activeContainer: {
       backgroundColor: components.tabs.colorScheme.tab.activeBackground,
     },
-    disabledContainer: { opacity: 0.6, mixBlendMode: 'luminosity' },
+    disabledContainer: {
+      opacity: semantic.effects.opacity[60],
+      mixBlendMode: 'luminosity',
+    },
     icon: {
       width: primitive.fonts.fontSize[500],
       height: primitive.fonts.fontSize[500],

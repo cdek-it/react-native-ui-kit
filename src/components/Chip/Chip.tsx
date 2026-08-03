@@ -126,7 +126,7 @@ const styles = StyleSheet.create(
     disabledChip: {
       backgroundColor: semantic.colorScheme.color.bg.neutral.weak.disabled,
       borderColor: 'transparent',
-      opacity: 0.6,
+      opacity: semantic.effects.opacity[60],
       mixBlendMode: 'luminosity',
     },
     icon: {

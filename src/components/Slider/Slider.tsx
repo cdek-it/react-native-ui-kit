@@ -285,7 +285,10 @@ const styles = StyleSheet.create(({ semantic, components }) => {
       borderColor: components.slider.handle.background,
     },
 
-    disabled: { opacity: 0.6, mixBlendMode: 'luminosity' },
+    disabled: {
+      opacity: semantic.effects.opacity[60],
+      mixBlendMode: 'luminosity',
+    },
 
     hovered: { backgroundColor: components.slider.handle.hoverBackground },
   }

@@ -146,7 +146,7 @@ const styles = StyleSheet.create(({ components, semantic }) => ({
   containerDisabled: {
     borderColor: 'transparent',
     backgroundColor: semantic.colorScheme.color.bg.neutral.weak.disabled,
-    opacity: 0.6,
+    opacity: semantic.effects.opacity[60],
   },
   separator: {
     borderTopWidth: 1,

@@ -191,6 +191,9 @@ const styles = StyleSheet.create(
       borderTopColor: components.accordion.panel.borderColor,
       borderTopWidth: 1,
     },
-    disabled: { mixBlendMode: 'luminosity', opacity: 0.6 },
+    disabled: {
+      mixBlendMode: 'luminosity',
+      opacity: semantic.effects.opacity[60],
+    },
   })
 )

@@ -107,7 +107,7 @@ export const Checkbox = memo<CheckboxProps>(
   }
 )
 
-const styles = StyleSheet.create(({ components }) => ({
+const styles = StyleSheet.create(({ semantic, components }) => ({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
@@ -161,7 +161,7 @@ const styles = StyleSheet.create(({ components }) => ({
         disabled: 'true',
         styles: {
           borderColor: components.checkbox.root.checkedBorderColor,
-          opacity: 0.2,
+          opacity: semantic.effects.opacity[20],
           mixBlendMode: 'luminosity',
         },
       },

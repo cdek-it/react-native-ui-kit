@@ -94,7 +94,7 @@ const radioStyles = StyleSheet.create(({ semantic, components }) => ({
         true: {
           borderColor: components.radiobutton.root.borderColor,
           backgroundColor: components.radiobutton.root.disabledBackground,
-          opacity: 0.6,
+          opacity: semantic.effects.opacity[60],
         },
         false: {},
       },

@@ -60,5 +60,5 @@ const styles = StyleSheet.create(({ primitive, semantic, fonts }) => ({
   },
   paragraph: { lineHeight: primitive.fonts.lineHeight[600] },
   paragraphBase: { lineHeight: primitive.fonts.lineHeight[500] },
-  disabled: { opacity: 0.6 },
+  disabled: { opacity: semantic.effects.opacity[60] },
 }))

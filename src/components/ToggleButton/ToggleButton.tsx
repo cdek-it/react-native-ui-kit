@@ -146,7 +146,7 @@ const toggleStyles = StyleSheet.create(
           true: {
             borderColor:
               components.togglebutton.colorScheme.root.disabledBorderColor,
-            opacity: 0.6,
+            opacity: semantic.effects.opacity[60],
           },
           false: {},
         },

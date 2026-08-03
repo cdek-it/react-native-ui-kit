@@ -72,7 +72,7 @@ const styles = StyleSheet.create(({ primitive, semantic, fonts }) => ({
   default: { color: semantic.colorScheme.color.fg.default },
   primary: { color: semantic.colorScheme.color.fg.brand.default },
   secondary: { color: semantic.colorScheme.color.fg.muted },
-  disabled: { opacity: 0.6 },
+  disabled: { opacity: semantic.effects.opacity[60] },
   withIconContainer: {
     flexDirection: 'row',
     gap: semantic.dimension.space[100],

@@ -73,7 +73,7 @@ const styles = StyleSheet.create(
       borderBottomLeftRadius: 0,
     },
     disabled: {
-      opacity: 0.6,
+      opacity: semantic.effects.opacity[60],
       backgroundColor: semantic.colorScheme.color.bg.neutral.weak.disabled,
     },
     text: {

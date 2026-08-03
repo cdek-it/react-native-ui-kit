@@ -47,7 +47,7 @@ export const inputStyles = StyleSheet.create(
     containerFloatLabel: { minHeight: 56, maxHeight: 56, height: 56 },
     danger: { borderColor: components.inputtext.root.invalidBorderColor },
     disabled: {
-      opacity: 0.6,
+      opacity: semantic.effects.opacity[60],
       borderColor: components.inputtext.root.borderColor,
       backgroundColor: semantic.colorScheme.color.bg.neutral.weak.disabled,
     },

@@ -15,6 +15,8 @@ export interface InputOtpItemProps extends Pick<ViewProps, 'testID'> {
 
 const CURSOR_ANIMATION_DURATION = 500
 
+// Объект вне StyleSheet.create, доступа к теме нет — значение продублировано
+// из semantic.effects.opacity[20].
 const cursorAnimationStyle = {
   animationName: { from: { opacity: 1 }, to: { opacity: 0.2 } },
   animationDuration: CURSOR_ANIMATION_DURATION,
@@ -63,32 +65,37 @@ export const InputOtpItem = memo<InputOtpItemProps>(
 // Рамка, цвет и отступы намеренно берутся у inputtext: поле OTP должно выглядеть
 // как обычное поле ввода. Собственные токены inputotp описывают только отличия —
 // тот же приём, что в пресете PrimeUIX lara, где inputotp задаёт лишь gap и width.
-const styles = StyleSheet.create(({ primitive, components, fonts }) => ({
-  container: {
-    minHeight: 35,
-    minWidth: 35,
-    paddingHorizontal: components.inputtext.root.paddingX,
-    borderBottomWidth: components.inputotp.extend.borderWidth,
-    borderColor: components.inputtext.root.borderColor,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+const styles = StyleSheet.create(
+  ({ semantic, primitive, components, fonts }) => ({
+    container: {
+      minHeight: 35,
+      minWidth: 35,
+      paddingHorizontal: components.inputtext.root.paddingX,
+      borderBottomWidth: components.inputotp.extend.borderWidth,
+      borderColor: components.inputtext.root.borderColor,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
 
-  textRow: { flexDirection: 'row', alignItems: 'center' },
+    textRow: { flexDirection: 'row', alignItems: 'center' },
 
-  text: {
-    fontSize: primitive.fonts.fontSize[600],
-    fontFamily: fonts.primary,
-    fontWeight: primitive.fonts.fontWeight.regular,
-    color: components.inputtext.root.color,
-    includeFontPadding: false,
-  },
+    text: {
+      fontSize: primitive.fonts.fontSize[600],
+      fontFamily: fonts.primary,
+      fontWeight: primitive.fonts.fontWeight.regular,
+      color: components.inputtext.root.color,
+      includeFontPadding: false,
+    },
 
-  pressed: { borderColor: components.inputtext.root.hoverBorderColor },
+    pressed: { borderColor: components.inputtext.root.hoverBorderColor },
 
-  error: { borderColor: components.inputtext.root.invalidBorderColor },
+    error: { borderColor: components.inputtext.root.invalidBorderColor },
 
-  disabled: { mixBlendMode: 'luminosity', opacity: 0.6 },
+    disabled: {
+      mixBlendMode: 'luminosity',
+      opacity: semantic.effects.opacity[60],
+    },
 
-  cursor: { color: components.inputtext.root.color, marginBottom: 3 },
-}))
+    cursor: { color: components.inputtext.root.color, marginBottom: 3 },
+  })
+)
