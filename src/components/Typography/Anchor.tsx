@@ -133,38 +133,36 @@ export const Anchor = memo(
   }
 )
 
-const styles = StyleSheet.create(
-  ({ semantic, primitive, typography, fonts }) => ({
-    container: { flexDirection: 'row', alignItems: 'center' },
-    text: {
-      flexShrink: 1,
-      fontSize: primitive.fonts.fontSize[200],
-      includeFontPadding: false,
-      verticalAlign: 'middle',
-      color: typography.Color.Service['text-info'],
-      fontFamily: fonts.secondary,
-      lineHeight: primitive.fonts.lineHeight[300],
-      letterSpacing: primitive.fonts.letterSpacing[200],
-    },
-    underlined: { textDecorationLine: 'underline' },
-    base: {
-      fontSize: primitive.fonts.fontSize[300],
-      lineHeight: undefined,
-      letterSpacing: primitive.fonts.letterSpacing[500],
-    },
-    visited: { color: typography.Color.Service['text-help'] },
-    icon: {
-      width: primitive.fonts.fontSize[300],
-      height: primitive.fonts.fontSize[300],
-    },
-    iconBase: {
-      width: primitive.fonts.fontSize[500],
-      height: primitive.fonts.fontSize[500],
-    },
-    leftIconContainer: { paddingRight: semantic.dimension.space[200] },
-    rightIconContainer: { paddingLeft: semantic.dimension.space[200] },
-  })
-)
+const styles = StyleSheet.create(({ semantic, primitive, fonts }) => ({
+  container: { flexDirection: 'row', alignItems: 'center' },
+  text: {
+    flexShrink: 1,
+    fontSize: primitive.fonts.fontSize[200],
+    includeFontPadding: false,
+    verticalAlign: 'middle',
+    color: semantic.colorScheme.color.fg.status.info.default,
+    fontFamily: fonts.secondary,
+    lineHeight: primitive.fonts.lineHeight[300],
+    letterSpacing: primitive.fonts.letterSpacing[200],
+  },
+  underlined: { textDecorationLine: 'underline' },
+  base: {
+    fontSize: primitive.fonts.fontSize[300],
+    lineHeight: undefined,
+    letterSpacing: primitive.fonts.letterSpacing[500],
+  },
+  visited: { color: semantic.colorScheme.color.fg.status.help.default },
+  icon: {
+    width: primitive.fonts.fontSize[300],
+    height: primitive.fonts.fontSize[300],
+  },
+  iconBase: {
+    width: primitive.fonts.fontSize[500],
+    height: primitive.fonts.fontSize[500],
+  },
+  leftIconContainer: { paddingRight: semantic.dimension.space[200] },
+  rightIconContainer: { paddingLeft: semantic.dimension.space[200] },
+}))
 
 export const AnchorTestId = {
   root: 'Anchor',

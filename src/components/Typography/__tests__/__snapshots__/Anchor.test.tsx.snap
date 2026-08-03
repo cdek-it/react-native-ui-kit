@@ -17,7 +17,7 @@ exports[`Body component tests default props 1`] = `
     style={
       [
         {
-          "color": "#1e76cd",
+          "color": "#4496e8",
           "flexShrink": 1,
           "fontFamily": "Noto Sans",
           "fontSize": 14,
@@ -220,7 +220,7 @@ exports[`Body component tests левая иконка, base, visited, testID = C
     style={
       [
         {
-          "color": "#1e76cd",
+          "color": "#4496e8",
           "flexShrink": 1,
           "fontFamily": "Noto Sans",
           "fontSize": 14,
@@ -236,7 +236,7 @@ exports[`Body component tests левая иконка, base, visited, testID = C
           "lineHeight": undefined,
         },
         {
-          "color": "#9457ea",
+          "color": "#a855f7",
         },
         undefined,
       ]
@@ -430,7 +430,7 @@ exports[`Body component tests левая иконка, правая иконка
     style={
       [
         {
-          "color": "#1e76cd",
+          "color": "#4496e8",
           "flexShrink": 1,
           "fontFamily": "Noto Sans",
           "fontSize": 14,
@@ -627,7 +627,7 @@ exports[`Body component tests правая иконка, noWrapper 1`] = `
     style={
       [
         {
-          "color": "#1e76cd",
+          "color": "#4496e8",
           "flexShrink": 1,
           "fontFamily": "Noto Sans",
           "fontSize": 14,

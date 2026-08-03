@@ -85,39 +85,34 @@ export const Service = ({
   )
 }
 
-const styles = StyleSheet.create(
-  ({ semantic, primitive, typography, fonts }) => ({
-    iconBase: {
-      width: primitive.fonts.fontSize[500],
-      height: primitive.fonts.fontSize[500],
-    },
-    icon: {
-      width: primitive.fonts.fontSize[300],
-      height: primitive.fonts.fontSize[300],
-    },
+const styles = StyleSheet.create(({ semantic, primitive, fonts }) => ({
+  iconBase: {
+    width: primitive.fonts.fontSize[500],
+    height: primitive.fonts.fontSize[500],
+  },
+  icon: {
+    width: primitive.fonts.fontSize[300],
+    height: primitive.fonts.fontSize[300],
+  },
 
-    containerBase: { flexDirection: 'row', gap: semantic.dimension.space[200] },
-    container: { flexDirection: 'row', gap: semantic.dimension.space[100] },
+  containerBase: { flexDirection: 'row', gap: semantic.dimension.space[200] },
+  container: { flexDirection: 'row', gap: semantic.dimension.space[100] },
 
-    textCommon: {
-      includeFontPadding: false,
-      verticalAlign: 'middle',
-      flexShrink: 1,
-      fontWeight: primitive.fonts.fontWeight.regular,
-      fontSize: primitive.fonts.fontSize[200],
-      fontFamily: fonts.secondary,
-      lineHeight: primitive.fonts.lineHeight[300],
-      letterSpacing: primitive.fonts.letterSpacing[200],
-    },
-    textBase: {
-      lineHeight: undefined,
-      fontSize: primitive.fonts.fontSize[300],
-    },
+  textCommon: {
+    includeFontPadding: false,
+    verticalAlign: 'middle',
+    flexShrink: 1,
+    fontWeight: primitive.fonts.fontWeight.regular,
+    fontSize: primitive.fonts.fontSize[200],
+    fontFamily: fonts.secondary,
+    lineHeight: primitive.fonts.lineHeight[300],
+    letterSpacing: primitive.fonts.letterSpacing[200],
+  },
+  textBase: { lineHeight: undefined, fontSize: primitive.fonts.fontSize[300] },
 
-    warning: { color: typography.Color.Service['text-warning'] },
-    success: { color: typography.Color.Service['text-success'] },
-    info: { color: typography.Color.Service['text-info'] },
-    help: { color: typography.Color.Service['text-help'] },
-    danger: { color: typography.Color.Service['text-danger'] },
-  })
-)
+  warning: { color: semantic.colorScheme.color.fg.status.warning.default },
+  success: { color: semantic.colorScheme.color.fg.status.success.default },
+  info: { color: semantic.colorScheme.color.fg.status.info.default },
+  help: { color: semantic.colorScheme.color.fg.status.help.default },
+  danger: { color: semantic.colorScheme.color.fg.status.danger.default },
+}))
