@@ -180,14 +180,27 @@ const compileScheme = (
   }
 }
 
-const getFontFamilies = (primitive: TokenTree): TokenTree => {
-  const fontFamily = resolvePath(primitive, 'fonts.fontFamily')
+/**
+ * Шрифтовые примитивы — единственная часть primitive, попадающая в результат:
+ * семейства, размеры, интерлиньяж и начертания нужны компонентам напрямую,
+ * потому что отдельного component-токена типографики в источнике нет.
+ */
+const compileFonts = (primitive: TokenTree): TokenTree => {
+  const fonts = resolvePath(primitive, 'fonts')
 
-  if (!isTokenTree(fontFamily)) {
-    throw new Error('Expected an object at "primitive.fonts.fontFamily"')
+  if (!isTokenTree(fonts)) {
+    throw new Error('Expected an object at "primitive.fonts"')
   }
 
-  return mergeTrees({}, fontFamily)
+  const normalized = normalizeTree(mergeTrees({}, fonts), 'fonts')
+
+  if (!isTokenTree(normalized)) {
+    throw new Error('Expected normalized font primitives')
+  }
+
+  assertValidOutput(normalized, 'fonts')
+
+  return normalized
 }
 
 export const compileTokens = (source: TokenTree): CompiledTokens => {
@@ -212,5 +225,5 @@ export const compileTokens = (source: TokenTree): CompiledTokens => {
   assertSameShape(semantic.light, semantic.dark)
   assertSameShape(components.light, components.dark)
 
-  return { semantic, components, fonts: getFontFamilies(primitive) }
+  return { semantic, components, fonts: compileFonts(primitive) }
 }

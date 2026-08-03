@@ -405,14 +405,20 @@ describe('production input tokens', () => {
     expect(tokenFiles).toStrictEqual(['tokens.json'])
   })
 
-  test('выводит семейства шрифтов из primitive.fonts.fontFamily', () => {
+  test('выводит шрифтовые примитивы с нормализованными значениями', () => {
     const primitive = source.primitive
 
     if (!isTokenTree(primitive)) throw new Error('Expected primitive tokens')
 
-    expect(compiled.fonts).toStrictEqual(
-      resolvePath(primitive, 'fonts.fontFamily')
-    )
+    const input = resolvePath(primitive, 'fonts')
+
+    if (!isTokenTree(input)) throw new Error('Expected font primitives')
+
+    expect(Object.keys(compiled.fonts)).toStrictEqual(Object.keys(input))
+    expect(compiled.fonts.fontFamily).toStrictEqual(input.fontFamily)
+    // rem пересчитан в px: "1rem" -> 16
+    expect(resolvePath(compiled.fonts, 'fontSize.300')).toBe(16)
+    expect(JSON.stringify(compiled.fonts)).not.toMatch(/rem/)
   })
 
   test('не экспортирует primitive и убирает разделение тем из colorScheme', () => {

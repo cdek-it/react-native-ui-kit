@@ -13,9 +13,12 @@ import type spacing from './assets/spacing.json'
 import type lightTheme from './assets/themeLight.json'
 import type typography from './assets/typography.json'
 import type lightComponentTokens from './tokens/components/light.json'
+import type fontTokens from './tokens/fonts.json'
 import type lightSemanticTokens from './tokens/semantic/light.json'
 
 export interface ThemeType {
+  /** Шрифтовые примитивы из tokens.json: размеры, интерлиньяж, начертания. */
+  primitive: { fonts: typeof fontTokens }
   background: typeof background
   colors: { primary: typeof primaryColors }
   border: typeof border
