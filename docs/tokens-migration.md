@@ -12,7 +12,7 @@
 PR #56 перевёл компоненты на неймспейс `components.*` и оставил в коде 157
 комментариев `TODO(tokens-migration)` — мест, где компонент не получил нужного
 токена либо получил значение, расходящееся с новой базой. Эта ветка разбирает
-их: **157 → 10**.
+их: **157 → 2**.
 
 Формат комментария:
 
@@ -173,18 +173,38 @@ disabled-палитру у кнопки (`components.button.extend.disabled*`). 
   semantic-токеном. У кнопки для варианта `link` токен нашёлся —
   `button.extend.extLink.background`.
 
-## Осталось: 10 позиций
+### Размеры полей и последние цветовые роли
 
-Кодом не закрываются, требуют новых токенов в `tokens.json`:
+Высоты `InputSize` заданы целыми `rem`: `35 = 2.5rem`, `49 = 3.5rem`,
+`56 = 4rem` при базе 14. При базе 16 это `40 / 56 / 64`, и все три значения есть
+в `dimension.size`:
 
-| Что                                           |  Шт | Чего не хватает                        |
-| --------------------------------------------- | --: | -------------------------------------- |
-| `theme.InputSize.*.min-height` (35 / 49 / 56) |   3 | токена высоты поля ввода               |
-| `theme.Button.*` (padding, disabled border)   |   2 | токенов `togglebutton`                 |
-| `semantic.fg.muted` в `SelectButton`          |   2 | собственного токена неактивного пункта |
-| `components.badge.root.height` в `Tabs`       |   1 | `components.tabs.tab.height`           |
-| `border.Color.Service.border-success.400`     |   1 | цветовой роли                          |
-| `global.Neutrals.White.white-100`             |   1 | цветовой роли                          |
+| Место                              |                Было | Стало | Токен                           |
+| ---------------------------------- | ------------------: | ----: | ------------------------------- |
+| `useInputStyles` `base`            |                  35 |    40 | `dimension.size[1100]`          |
+| `useInputStyles` `large`           |                  49 |    56 | `size[1300]`                    |
+| `useInputStyles` `xlarge`          |                  56 |    64 | `size[1400]`                    |
+| `Tabs/TabItem` высота              | `badge.root.height` |    24 | `size[700]`                     |
+| `ToggleButton` `paddingHorizontal` | `theme.Button.*` 14 |    14 | `togglebutton.root.paddingLeft` |
+
+Те же высоты были продублированы числами в `ToggleButton` и `SelectButtonItem` —
+переведены вместе с полями, иначе компоненты разъехались бы.
+
+| Место                           | Было                    | Стало (light / dark) | Токен                          |
+| ------------------------------- | ----------------------- | -------------------- | ------------------------------ |
+| `ProgressSpinner`               | `global.Neutrals.White` | `#ffffff / #ffffff`  | `fg.on.fill.default`           |
+| `Chip` граница success          | `#77f48a` фиксированный | `#1dc831 / #77f48a`  | `border.status.success.strong` |
+| `SelectButton` disabled-граница | `#a2a5a9 / #56595f`     | `#cecfd2 / #56595f`  | `border.neutral.strong`        |
+
+Для `SelectButton` точной пары в semantic не нашлось: тёмная тема совпадает,
+светлая стала светлее.
+
+## Осталось: 2 позиции
+
+`SelectButtonItem.tsx`, строки 156 и 163 — цвет неактивного пункта берётся из
+`semantic.colorScheme.color.fg.muted`. Токен рабочий и тема-зависимый; вопрос
+только в том, заводить ли `components.selectbutton.colorScheme.root.color`.
+Кодом не закрывается.
 
 ## Не тронуто намеренно
 
@@ -199,9 +219,15 @@ disabled-палитру у кнопки (`components.button.extend.disabled*`). 
 `text-info` `#1e76cd` совпадает не с `status.info.default` (`#4496e8`), а с
 `status.info.hover`. Выбор оттенка — решение дизайнера.
 
-**45 числовых литералов в стилях** (`lineHeight: 20`, `minHeight: 35`,
-`width`/`height` иконок) — на них не было комментариев `TODO`, в счётчик 157 они
-не входили. Реальный объём «не на токенах» больше, чем показывает счётчик.
+**`ListBase`** — `theme.Surface['surface-border']` и
+`background.Common['bg-surface-ground-hover']`, по одному обращению.
+
+**57 числовых литералов в стилях** — на них не было комментариев `TODO`, в
+счётчик 157 они не входили. Реальный объём «не на токенах» больше, чем
+показывает счётчик. Часть закрывается существующими токенами: `opacity: 0.6` в
+семи местах (`Chip`, `RadioButton`, `MenuItem`, `ToggleButton`,
+`InputGroupAddon` и др.) — это `semantic.effects.opacity[60]`, `opacity: 0.2` —
+`[20]`.
 
 **Размеры иконок на шрифтовой шкале.** `typography.Size` местами задавал не
 шрифт, а размер иконки. Где в `tokens.json` есть `iconSize`, обращение
@@ -218,6 +244,11 @@ disabled-палитру у кнопки (`components.button.extend.disabled*`). 
 `src/theme/assets/DEPRECATED_TOKENS.md` фиксирует, что `theme.Button.*`,
 `theme.Form.inputSwitch.*` и `theme.General.primaryColor` входят в публичный
 `ThemeType`, поэтому их удаление — breaking change.
+
+Отдельно: даже там, где UI Kit больше не использует legacy-неймспейс, он
+остаётся в публичном `ThemeType` и доступен потребителям библиотеки —
+`background`, `colors`, `border`, `effects`, `global`, `sizing`, `spacing`,
+`typography`, `theme`, `custom`, `shadow`. Внутренняя миграция их не убирает.
 
 ## Проверка
 
@@ -238,4 +269,4 @@ yarn jest
 перегенерированы автором. При обновлении они перезаписаны вместе со всеми, то
 есть тот долг не разобран, а зафиксирован.
 
-Изменения затронули 47 файлов кода и 29 файлов снапшотов.
+Изменения затронули 50 файлов кода и 30 файлов снапшотов.
