@@ -88,7 +88,6 @@ export const TabItem = memo<TabItemProps>(
 
 // TODO(tokens-migration): reason=missing; legacy=components.button.extend.disabledColor; light=#85888e; dark=#a2a5a9
 // TODO(tokens-migration): reason=missing; legacy=components.badge.root.height; value=24
-// TODO(tokens-migration): reason=missing; legacy=fonts.primary; value=TT Fellows
 // TODO(tokens-migration): reason=missing; legacy=typography.Size.text-base; value=14
 // TODO(tokens-migration): reason=missing; legacy=typography.Size.text-xl; value=17.5
 const styles = StyleSheet.create(({ components, typography, fonts }) => ({

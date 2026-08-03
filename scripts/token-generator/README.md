@@ -31,10 +31,11 @@ Semantic-токены доступны потребителям библиоте
 
 ## Результат генерации
 
-Из `design-tokens/input/tokens.json` создаются четыре файла:
+Из `design-tokens/input/tokens.json` создаются пять файлов:
 
 ```text
 src/theme/tokens
+├── fonts.json
 ├── semantic
 │   ├── light.json
 │   └── dark.json
@@ -42,6 +43,12 @@ src/theme/tokens
     ├── light.json
     └── dark.json
 ```
+
+`fonts.json` собирается из `primitive.fonts.fontFamily` и не зависит от цветовой
+схемы, поэтому файл один на обе темы. Публичный `FontsConfig` оперирует ролями
+`primary` и `secondary`, поэтому `commonTheme` отображает `heading` в `primary`,
+а `base` — в `secondary`. Отсутствие `primitive.fonts.fontFamily` во входных
+токенах — ошибка генерации.
 
 Для каждого выходного файла выбирается соответствующая ветка `colorScheme.light`
 или `colorScheme.dark`. Ключ `colorScheme` сохраняется, а уровень `light`/`dark`
@@ -55,8 +62,9 @@ components.button.colorScheme.light.outlined
 → components/light.json: button.colorScheme.outlined
 ```
 
-`primitive` нужен только для подстановки ссылок и не записывается в результат.
-Light- и dark-файлы должны иметь одинаковую структуру и типы значений.
+`primitive` нужен для подстановки ссылок и в результат не записывается —
+единственное исключение `fonts.fontFamily`, попадающий в `fonts.json`. Light- и
+dark-файлы должны иметь одинаковую структуру и типы значений.
 
 ## Преобразование значений
 

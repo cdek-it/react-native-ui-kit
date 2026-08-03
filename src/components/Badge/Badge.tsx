@@ -103,7 +103,6 @@ export const Badge = memo<BadgeProps>(
   }
 )
 
-// TODO(tokens-migration): reason=missing; legacy=fonts.primary; value=TT Fellows
 const badgeStyles = StyleSheet.create(
   ({ components, border, typography, fonts }) => ({
     container: { alignItems: 'flex-start' },

@@ -15,6 +15,8 @@ export interface BoxEdges {
 export interface CompiledTokens {
   semantic: ThemeTokens
   components: ThemeTokens
+  /** Семейства шрифтов: не зависят от цветовой схемы, файл один на обе темы. */
+  fonts: TokenTree
 }
 
 export interface ThemeTokens {

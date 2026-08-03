@@ -29,8 +29,6 @@ const containerMinHeight = StyleSheet.create(({ theme }) => ({
 
 // TODO(tokens-migration): reason=missing; legacy=components.button.extend.disabledBackground; light=#e2e2e4; dark=#404348
 // TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
-// TODO(tokens-migration): reason=missing; legacy=fonts.primary; value=TT Fellows
-// TODO(tokens-migration): reason=missing; legacy=fonts.secondary; value=Noto Sans
 // TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-1; value=3.5
 // TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-2; value=7
 // TODO(tokens-migration): reason=missing; legacy=typography.Color.Common.text-color-secondary; value=#85888e

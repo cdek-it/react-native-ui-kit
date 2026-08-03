@@ -10,7 +10,6 @@ export const Title = ({ level, style, ...other }: TitleProps) => (
   <Text style={[styles.text, styles[level], style]} testID='Title' {...other} />
 )
 
-// TODO(tokens-migration): reason=missing; legacy=fonts.primary; value=TT Fellows
 // TODO(tokens-migration): reason=missing; legacy=semantic.colorScheme.color.fg.default; light=#2b2e33; dark=#ffffff
 // TODO(tokens-migration): reason=missing; legacy=typography.Size.text-2xl; value=21
 // TODO(tokens-migration): reason=missing; legacy=typography.Size.text-3xl; value=26.25

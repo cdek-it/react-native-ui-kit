@@ -180,6 +180,16 @@ const compileScheme = (
   }
 }
 
+const getFontFamilies = (primitive: TokenTree): TokenTree => {
+  const fontFamily = resolvePath(primitive, 'fonts.fontFamily')
+
+  if (!isTokenTree(fontFamily)) {
+    throw new Error('Expected an object at "primitive.fonts.fontFamily"')
+  }
+
+  return mergeTrees({}, fontFamily)
+}
+
 export const compileTokens = (source: TokenTree): CompiledTokens => {
   const primitive = getGroup(source, 'primitive')
   const semanticSource = getGroup(source, 'semantic')
@@ -202,5 +212,5 @@ export const compileTokens = (source: TokenTree): CompiledTokens => {
   assertSameShape(semantic.light, semantic.dark)
   assertSameShape(components.light, components.dark)
 
-  return { semantic, components }
+  return { semantic, components, fonts: getFontFamilies(primitive) }
 }

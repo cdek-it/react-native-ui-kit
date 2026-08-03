@@ -52,7 +52,6 @@ export const ButtonLabel = genericMemo(ButtonLabelComponent)
 // TODO(tokens-migration): reason=missing; legacy=typography.Size.text-base; value=14
 // TODO(tokens-migration): reason=missing; legacy=typography.Size.text-sm; value=12.25
 // TODO(tokens-migration): reason=missing; legacy=typography.Color.Common.text-color-secondary; value=#85888e
-// TODO(tokens-migration): reason=missing; legacy=fonts.primary; value=TT Fellows
 const buttonLabelStyles = StyleSheet.create(
   ({ components: { button }, typography, fonts }) => ({
     label: {

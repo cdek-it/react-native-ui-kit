@@ -159,7 +159,6 @@ export const AccordionTestIds = {
   separator: 'Separator',
 }
 
-// TODO(tokens-migration): reason=missing; legacy=fonts.secondary; value=Noto Sans
 // TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-4; value=14
 const styles = StyleSheet.create(({ components, spacing, fonts }) => ({
   component: { width: '100%' },

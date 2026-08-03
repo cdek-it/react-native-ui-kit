@@ -8,6 +8,7 @@ import { darkTheme } from '../darkTheme'
 import { lightTheme } from '../lightTheme'
 import darkComponentTokens from '../tokens/components/dark.json'
 import lightComponentTokens from '../tokens/components/light.json'
+import fontFamilyTokens from '../tokens/fonts.json'
 import darkSemanticTokens from '../tokens/semantic/dark.json'
 import lightSemanticTokens from '../tokens/semantic/light.json'
 import { ThemeVariant } from '../types'
@@ -80,5 +81,17 @@ describe('ThemeContextProvider', () => {
   test('каждая тема содержит соответствующие component-токены', () => {
     expect(lightTheme.components).toBe(lightComponentTokens)
     expect(darkTheme.components).toBe(darkComponentTokens)
+  })
+
+  test('шрифты берутся из токенов: primary — heading, secondary — base', () => {
+    const expected = {
+      primary: fontFamilyTokens.heading,
+      secondary: fontFamilyTokens.base,
+    }
+
+    expect(lightTheme.fonts).toStrictEqual(expected)
+    expect(darkTheme.fonts).toStrictEqual(expected)
+    expect(lightTheme.fonts.primary).toBe('TT Fellows')
+    expect(lightTheme.fonts.secondary).toBe('Noto Sans')
   })
 })

@@ -8,6 +8,7 @@ import { shadow } from './assets/shadow'
 import sizing from './assets/sizing.json'
 import spacing from './assets/spacing.json'
 import typography from './assets/typography.json'
+import fontFamily from './tokens/fonts.json'
 
 export const commonTheme = {
   background,
@@ -20,4 +21,6 @@ export const commonTheme = {
   typography,
   custom: customCommon,
   shadow,
+  // Публичный FontsConfig оперирует ролями primary/secondary, токены — base/heading.
+  fonts: { primary: fontFamily.heading, secondary: fontFamily.base },
 }

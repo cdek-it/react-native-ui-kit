@@ -113,6 +113,6 @@ describe('collectTodos', () => {
     const todos = collectTodos(`${__dirname}/../../../src/components`)
 
     expect(todos.length).toBeGreaterThan(0)
-    expect(todos.every((todo) => todo.legacy.length > 0)).toBeTrue()
+    expect(todos.filter((todo) => todo.legacy.length === 0)).toHaveLength(0)
   })
 })

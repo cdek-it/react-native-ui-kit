@@ -12,5 +12,4 @@ export const lightTheme: ThemeType = {
   components: lightComponentTokens,
   theme: { ...lightThemeAssets, InputSize, ModalSize, custom: customLight },
   ...commonTheme,
-  fonts: { primary: 'TT Fellows', secondary: 'Noto Sans' },
 }

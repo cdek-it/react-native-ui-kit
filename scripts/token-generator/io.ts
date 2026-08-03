@@ -21,6 +21,7 @@ export const OUTPUT_FILES = {
     light: join('components', 'light.json'),
     dark: join('components', 'dark.json'),
   },
+  fonts: 'fonts.json',
 } as const
 
 export const parseTokenTree = (
@@ -49,6 +50,7 @@ const outputEntries = (
   [OUTPUT_FILES.semantic.dark, compiled.semantic.dark],
   [OUTPUT_FILES.components.light, compiled.components.light],
   [OUTPUT_FILES.components.dark, compiled.components.dark],
+  [OUTPUT_FILES.fonts, compiled.fonts],
 ]
 
 export const writeGeneratedTokens = (

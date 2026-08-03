@@ -12,5 +12,4 @@ export const darkTheme: ThemeType = {
   components: darkComponentTokens,
   theme: { ...darkThemeAssets, InputSize, ModalSize, custom: customDark },
   ...commonTheme,
-  fonts: { primary: 'TT Fellows', secondary: 'Noto Sans' },
 }

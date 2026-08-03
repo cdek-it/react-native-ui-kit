@@ -22,6 +22,7 @@ import {
   parseBoxShorthand,
 } from '../core/normalization'
 import { resolveReferences } from '../core/resolution'
+import { resolvePath } from '../core/tree'
 import {
   isTokenTree,
   type CompiledTokens,
@@ -240,6 +241,7 @@ describe('token compiler', () => {
       primitive: {
         sizing: { small: '0.5rem', base: '1rem' },
         motion: { fast: '150ms' },
+        fonts: { fontFamily: { base: 'Noto Sans', heading: 'TT Fellows' } },
       },
       semantic: {
         dimension: {
@@ -320,6 +322,7 @@ describe('token compiler', () => {
       primitive: {
         sizing: { focusRing: '0.25rem' },
         colors: { focus: '#d4fedc' },
+        fonts: { fontFamily: { base: 'Noto Sans', heading: 'TT Fellows' } },
       },
       semantic: {
         dimension: {
@@ -402,8 +405,22 @@ describe('production input tokens', () => {
     expect(tokenFiles).toStrictEqual(['tokens.json'])
   })
 
+  test('выводит семейства шрифтов из primitive.fonts.fontFamily', () => {
+    const primitive = source.primitive
+
+    if (!isTokenTree(primitive)) throw new Error('Expected primitive tokens')
+
+    expect(compiled.fonts).toStrictEqual(
+      resolvePath(primitive, 'fonts.fontFamily')
+    )
+  })
+
   test('не экспортирует primitive и убирает разделение тем из colorScheme', () => {
-    expect(Object.keys(compiled)).toStrictEqual(['semantic', 'components'])
+    expect(Object.keys(compiled)).toStrictEqual([
+      'semantic',
+      'components',
+      'fonts',
+    ])
     expect(compiled).not.toHaveProperty('primitive')
 
     const inputComponents = source.components
@@ -443,7 +460,9 @@ describe('production input tokens', () => {
   test('содержит только целевые файлы', () => {
     const tokenFiles = listJsonFiles(TOKENS_DIRECTORY)
     const expectedFiles = Object.values(OUTPUT_FILES)
-      .flatMap((group) => Object.values(group))
+      .flatMap((group) =>
+        typeof group === 'string' ? [group] : Object.values(group)
+      )
       .sort()
 
     expect(tokenFiles).toStrictEqual(expectedFiles)
@@ -546,7 +565,9 @@ describe('production input tokens', () => {
 
       expect(listJsonFiles(temporaryDirectory)).toStrictEqual(
         Object.values(OUTPUT_FILES)
-          .flatMap((group) => Object.values(group))
+          .flatMap((group) =>
+            typeof group === 'string' ? [group] : Object.values(group)
+          )
           .sort()
       )
       expect(
