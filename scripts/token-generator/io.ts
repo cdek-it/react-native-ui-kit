@@ -13,6 +13,7 @@ import { isDeepStrictEqual } from 'node:util'
 import { isTokenTree, type CompiledTokens, type TokenTree } from './core/types'
 
 export const OUTPUT_FILES = {
+  fonts: 'fonts.json',
   semantic: {
     light: join('semantic', 'light.json'),
     dark: join('semantic', 'dark.json'),
@@ -45,6 +46,7 @@ export const renderJson = (value: TokenTree): string =>
 const outputEntries = (
   compiled: CompiledTokens
 ): Array<[string, TokenTree]> => [
+  [OUTPUT_FILES.fonts, compiled.fonts],
   [OUTPUT_FILES.semantic.light, compiled.semantic.light],
   [OUTPUT_FILES.semantic.dark, compiled.semantic.dark],
   [OUTPUT_FILES.components.light, compiled.components.light],
