@@ -97,7 +97,7 @@ exports[`Body component tests левая иконка, base, visited, testID = C
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#9457ea"
+      stroke="#a855f7"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -133,7 +133,7 @@ exports[`Body component tests левая иконка, base, visited, testID = C
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -155,7 +155,7 @@ exports[`Body component tests левая иконка, base, visited, testID = C
           }
           stroke={
             {
-              "payload": 4287911914,
+              "payload": 4289222135,
               "type": 0,
             }
           }
@@ -178,7 +178,7 @@ exports[`Body component tests левая иконка, base, visited, testID = C
           }
           stroke={
             {
-              "payload": 4287911914,
+              "payload": 4289222135,
               "type": 0,
             }
           }
@@ -201,7 +201,7 @@ exports[`Body component tests левая иконка, base, visited, testID = C
           }
           stroke={
             {
-              "payload": 4287911914,
+              "payload": 4289222135,
               "type": 0,
             }
           }
@@ -307,7 +307,7 @@ exports[`Body component tests левая иконка, правая иконка
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#1e76cd"
+      stroke="#4496e8"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -343,7 +343,7 @@ exports[`Body component tests левая иконка, правая иконка
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -365,7 +365,7 @@ exports[`Body component tests левая иконка, правая иконка
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -388,7 +388,7 @@ exports[`Body component tests левая иконка, правая иконка
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -411,7 +411,7 @@ exports[`Body component tests левая иконка, правая иконка
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -499,7 +499,7 @@ exports[`Body component tests левая иконка, правая иконка
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#1e76cd"
+      stroke="#4496e8"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -535,7 +535,7 @@ exports[`Body component tests левая иконка, правая иконка
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -557,7 +557,7 @@ exports[`Body component tests левая иконка, правая иконка
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -580,7 +580,7 @@ exports[`Body component tests левая иконка, правая иконка
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -603,7 +603,7 @@ exports[`Body component tests левая иконка, правая иконка
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -695,7 +695,7 @@ exports[`Body component tests правая иконка, noWrapper 1`] = `
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#1e76cd"
+      stroke="#4496e8"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -731,7 +731,7 @@ exports[`Body component tests правая иконка, noWrapper 1`] = `
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -753,7 +753,7 @@ exports[`Body component tests правая иконка, noWrapper 1`] = `
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -776,7 +776,7 @@ exports[`Body component tests правая иконка, noWrapper 1`] = `
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -799,7 +799,7 @@ exports[`Body component tests правая иконка, noWrapper 1`] = `
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }

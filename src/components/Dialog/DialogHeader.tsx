@@ -46,13 +46,13 @@ export const DialogHeader = ({
       <SvgUniversal
         {...styles.severityIcon}
         source={source}
-        uniProps={({ typography: t }) => ({
+        uniProps={({ semantic }) => ({
           color: {
-            danger: t.Color.Service['text-danger'],
-            warning: t.Color.Service['text-warning'],
-            info: t.Color.Service['text-info'],
-            success: t.Color.Service['text-success'],
-            help: t.Color.Service['text-help'],
+            danger: semantic.colorScheme.color.fg.status.danger.default,
+            warning: semantic.colorScheme.color.fg.status.warning.default,
+            info: semantic.colorScheme.color.fg.status.info.default,
+            success: semantic.colorScheme.color.fg.status.success.default,
+            help: semantic.colorScheme.color.fg.status.help.default,
           }[severity],
         })}
       />

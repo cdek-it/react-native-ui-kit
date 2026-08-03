@@ -68,10 +68,10 @@ export const Anchor = memo(
     }, [noWrapper, testID])
 
     const iconSize = base ? styles.iconBase : styles.icon
-    const iconUniProps = ({ typography: t }: ThemeType) => ({
+    const iconUniProps = ({ semantic }: ThemeType) => ({
       color: visited
-        ? t.Color.Service['text-help']
-        : t.Color.Service['text-info'],
+        ? semantic.colorScheme.color.fg.status.help.default
+        : semantic.colorScheme.color.fg.status.info.default,
     })
 
     return (

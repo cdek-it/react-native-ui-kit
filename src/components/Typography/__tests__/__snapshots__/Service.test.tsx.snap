@@ -359,7 +359,7 @@ exports[`Service component tests base = false, showIcon = true, variant = danger
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#db3424"
+    stroke="#e85244"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -395,7 +395,7 @@ exports[`Service component tests base = false, showIcon = true, variant = danger
       }
       stroke={
         {
-          "payload": 4292555812,
+          "payload": 4293415492,
           "type": 0,
         }
       }
@@ -417,7 +417,7 @@ exports[`Service component tests base = false, showIcon = true, variant = danger
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -440,7 +440,7 @@ exports[`Service component tests base = false, showIcon = true, variant = danger
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -495,7 +495,7 @@ exports[`Service component tests base = false, showIcon = true, variant = danger
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#db3424"
+    stroke="#e85244"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -531,7 +531,7 @@ exports[`Service component tests base = false, showIcon = true, variant = danger
       }
       stroke={
         {
-          "payload": 4292555812,
+          "payload": 4293415492,
           "type": 0,
         }
       }
@@ -553,7 +553,7 @@ exports[`Service component tests base = false, showIcon = true, variant = danger
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -576,7 +576,7 @@ exports[`Service component tests base = false, showIcon = true, variant = danger
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -599,7 +599,7 @@ exports[`Service component tests base = false, showIcon = true, variant = danger
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -622,7 +622,7 @@ exports[`Service component tests base = false, showIcon = true, variant = danger
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -645,7 +645,7 @@ exports[`Service component tests base = false, showIcon = true, variant = danger
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -668,7 +668,7 @@ exports[`Service component tests base = false, showIcon = true, variant = danger
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -691,7 +691,7 @@ exports[`Service component tests base = false, showIcon = true, variant = danger
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -746,7 +746,7 @@ exports[`Service component tests base = false, showIcon = true, variant = help 1
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#9457ea"
+    stroke="#a855f7"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -782,7 +782,7 @@ exports[`Service component tests base = false, showIcon = true, variant = help 1
       }
       stroke={
         {
-          "payload": 4287911914,
+          "payload": 4289222135,
           "type": 0,
         }
       }
@@ -804,7 +804,7 @@ exports[`Service component tests base = false, showIcon = true, variant = help 1
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -827,7 +827,7 @@ exports[`Service component tests base = false, showIcon = true, variant = help 1
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -850,7 +850,7 @@ exports[`Service component tests base = false, showIcon = true, variant = help 1
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -905,7 +905,7 @@ exports[`Service component tests base = false, showIcon = true, variant = help 2
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#9457ea"
+    stroke="#a855f7"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -941,7 +941,7 @@ exports[`Service component tests base = false, showIcon = true, variant = help 2
       }
       stroke={
         {
-          "payload": 4287911914,
+          "payload": 4289222135,
           "type": 0,
         }
       }
@@ -963,7 +963,7 @@ exports[`Service component tests base = false, showIcon = true, variant = help 2
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -986,7 +986,7 @@ exports[`Service component tests base = false, showIcon = true, variant = help 2
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -1009,7 +1009,7 @@ exports[`Service component tests base = false, showIcon = true, variant = help 2
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -1032,7 +1032,7 @@ exports[`Service component tests base = false, showIcon = true, variant = help 2
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -1055,7 +1055,7 @@ exports[`Service component tests base = false, showIcon = true, variant = help 2
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -1078,7 +1078,7 @@ exports[`Service component tests base = false, showIcon = true, variant = help 2
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -1101,7 +1101,7 @@ exports[`Service component tests base = false, showIcon = true, variant = help 2
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -1156,7 +1156,7 @@ exports[`Service component tests base = false, showIcon = true, variant = info 1
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#1e76cd"
+    stroke="#4496e8"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -1192,7 +1192,7 @@ exports[`Service component tests base = false, showIcon = true, variant = info 1
       }
       stroke={
         {
-          "payload": 4280186573,
+          "payload": 4282685160,
           "type": 0,
         }
       }
@@ -1214,7 +1214,7 @@ exports[`Service component tests base = false, showIcon = true, variant = info 1
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -1237,7 +1237,7 @@ exports[`Service component tests base = false, showIcon = true, variant = info 1
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -1260,7 +1260,7 @@ exports[`Service component tests base = false, showIcon = true, variant = info 1
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -1315,7 +1315,7 @@ exports[`Service component tests base = false, showIcon = true, variant = info 2
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#1e76cd"
+    stroke="#4496e8"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -1351,7 +1351,7 @@ exports[`Service component tests base = false, showIcon = true, variant = info 2
       }
       stroke={
         {
-          "payload": 4280186573,
+          "payload": 4282685160,
           "type": 0,
         }
       }
@@ -1373,7 +1373,7 @@ exports[`Service component tests base = false, showIcon = true, variant = info 2
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -1396,7 +1396,7 @@ exports[`Service component tests base = false, showIcon = true, variant = info 2
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -1419,7 +1419,7 @@ exports[`Service component tests base = false, showIcon = true, variant = info 2
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -1442,7 +1442,7 @@ exports[`Service component tests base = false, showIcon = true, variant = info 2
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -1465,7 +1465,7 @@ exports[`Service component tests base = false, showIcon = true, variant = info 2
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -1488,7 +1488,7 @@ exports[`Service component tests base = false, showIcon = true, variant = info 2
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -1511,7 +1511,7 @@ exports[`Service component tests base = false, showIcon = true, variant = info 2
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -1566,7 +1566,7 @@ exports[`Service component tests base = false, showIcon = true, variant = succes
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#168322"
+    stroke="#44e858"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -1602,7 +1602,7 @@ exports[`Service component tests base = false, showIcon = true, variant = succes
       }
       stroke={
         {
-          "payload": 4279665442,
+          "payload": 4282706008,
           "type": 0,
         }
       }
@@ -1624,7 +1624,7 @@ exports[`Service component tests base = false, showIcon = true, variant = succes
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -1647,7 +1647,7 @@ exports[`Service component tests base = false, showIcon = true, variant = succes
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -1702,7 +1702,7 @@ exports[`Service component tests base = false, showIcon = true, variant = succes
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#168322"
+    stroke="#44e858"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -1738,7 +1738,7 @@ exports[`Service component tests base = false, showIcon = true, variant = succes
       }
       stroke={
         {
-          "payload": 4279665442,
+          "payload": 4282706008,
           "type": 0,
         }
       }
@@ -1760,7 +1760,7 @@ exports[`Service component tests base = false, showIcon = true, variant = succes
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -1783,7 +1783,7 @@ exports[`Service component tests base = false, showIcon = true, variant = succes
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -1806,7 +1806,7 @@ exports[`Service component tests base = false, showIcon = true, variant = succes
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -1829,7 +1829,7 @@ exports[`Service component tests base = false, showIcon = true, variant = succes
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -1852,7 +1852,7 @@ exports[`Service component tests base = false, showIcon = true, variant = succes
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -1875,7 +1875,7 @@ exports[`Service component tests base = false, showIcon = true, variant = succes
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -1898,7 +1898,7 @@ exports[`Service component tests base = false, showIcon = true, variant = succes
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -1953,7 +1953,7 @@ exports[`Service component tests base = false, showIcon = true, variant = warnin
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#dc9710"
+    stroke="#f5b83d"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -1989,7 +1989,7 @@ exports[`Service component tests base = false, showIcon = true, variant = warnin
       }
       stroke={
         {
-          "payload": 4292646672,
+          "payload": 4294293565,
           "type": 0,
         }
       }
@@ -2011,7 +2011,7 @@ exports[`Service component tests base = false, showIcon = true, variant = warnin
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -2034,7 +2034,7 @@ exports[`Service component tests base = false, showIcon = true, variant = warnin
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -2057,7 +2057,7 @@ exports[`Service component tests base = false, showIcon = true, variant = warnin
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -2112,7 +2112,7 @@ exports[`Service component tests base = false, showIcon = true, variant = warnin
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#dc9710"
+    stroke="#f5b83d"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -2148,7 +2148,7 @@ exports[`Service component tests base = false, showIcon = true, variant = warnin
       }
       stroke={
         {
-          "payload": 4292646672,
+          "payload": 4294293565,
           "type": 0,
         }
       }
@@ -2170,7 +2170,7 @@ exports[`Service component tests base = false, showIcon = true, variant = warnin
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -2193,7 +2193,7 @@ exports[`Service component tests base = false, showIcon = true, variant = warnin
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -2216,7 +2216,7 @@ exports[`Service component tests base = false, showIcon = true, variant = warnin
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -2239,7 +2239,7 @@ exports[`Service component tests base = false, showIcon = true, variant = warnin
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -2262,7 +2262,7 @@ exports[`Service component tests base = false, showIcon = true, variant = warnin
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -2285,7 +2285,7 @@ exports[`Service component tests base = false, showIcon = true, variant = warnin
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -2308,7 +2308,7 @@ exports[`Service component tests base = false, showIcon = true, variant = warnin
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -2733,7 +2733,7 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#db3424"
+    stroke="#e85244"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -2769,7 +2769,7 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
       }
       stroke={
         {
-          "payload": 4292555812,
+          "payload": 4293415492,
           "type": 0,
         }
       }
@@ -2791,7 +2791,7 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -2814,7 +2814,7 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -2872,7 +2872,7 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#db3424"
+    stroke="#e85244"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -2908,7 +2908,7 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
       }
       stroke={
         {
-          "payload": 4292555812,
+          "payload": 4293415492,
           "type": 0,
         }
       }
@@ -2930,7 +2930,7 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -2953,7 +2953,7 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -2976,7 +2976,7 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -2999,7 +2999,7 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -3022,7 +3022,7 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -3045,7 +3045,7 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -3068,7 +3068,7 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -3126,7 +3126,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 1`
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#9457ea"
+    stroke="#a855f7"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -3162,7 +3162,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 1`
       }
       stroke={
         {
-          "payload": 4287911914,
+          "payload": 4289222135,
           "type": 0,
         }
       }
@@ -3184,7 +3184,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 1`
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -3207,7 +3207,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 1`
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -3230,7 +3230,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 1`
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -3288,7 +3288,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 2`
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#9457ea"
+    stroke="#a855f7"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -3324,7 +3324,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 2`
       }
       stroke={
         {
-          "payload": 4287911914,
+          "payload": 4289222135,
           "type": 0,
         }
       }
@@ -3346,7 +3346,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 2`
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -3369,7 +3369,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 2`
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -3392,7 +3392,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 2`
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -3415,7 +3415,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 2`
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -3438,7 +3438,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 2`
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -3461,7 +3461,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 2`
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -3484,7 +3484,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 2`
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -3542,7 +3542,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 1`
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#1e76cd"
+    stroke="#4496e8"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -3578,7 +3578,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 1`
       }
       stroke={
         {
-          "payload": 4280186573,
+          "payload": 4282685160,
           "type": 0,
         }
       }
@@ -3600,7 +3600,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 1`
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -3623,7 +3623,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 1`
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -3646,7 +3646,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 1`
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -3704,7 +3704,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 2`
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#1e76cd"
+    stroke="#4496e8"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -3740,7 +3740,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 2`
       }
       stroke={
         {
-          "payload": 4280186573,
+          "payload": 4282685160,
           "type": 0,
         }
       }
@@ -3762,7 +3762,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 2`
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -3785,7 +3785,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 2`
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -3808,7 +3808,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 2`
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -3831,7 +3831,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 2`
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -3854,7 +3854,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 2`
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -3877,7 +3877,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 2`
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -3900,7 +3900,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 2`
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -3958,7 +3958,7 @@ exports[`Service component tests base = true, showIcon = true, variant = success
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#168322"
+    stroke="#44e858"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -3994,7 +3994,7 @@ exports[`Service component tests base = true, showIcon = true, variant = success
       }
       stroke={
         {
-          "payload": 4279665442,
+          "payload": 4282706008,
           "type": 0,
         }
       }
@@ -4016,7 +4016,7 @@ exports[`Service component tests base = true, showIcon = true, variant = success
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -4039,7 +4039,7 @@ exports[`Service component tests base = true, showIcon = true, variant = success
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -4097,7 +4097,7 @@ exports[`Service component tests base = true, showIcon = true, variant = success
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#168322"
+    stroke="#44e858"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -4133,7 +4133,7 @@ exports[`Service component tests base = true, showIcon = true, variant = success
       }
       stroke={
         {
-          "payload": 4279665442,
+          "payload": 4282706008,
           "type": 0,
         }
       }
@@ -4155,7 +4155,7 @@ exports[`Service component tests base = true, showIcon = true, variant = success
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -4178,7 +4178,7 @@ exports[`Service component tests base = true, showIcon = true, variant = success
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -4201,7 +4201,7 @@ exports[`Service component tests base = true, showIcon = true, variant = success
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -4224,7 +4224,7 @@ exports[`Service component tests base = true, showIcon = true, variant = success
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -4247,7 +4247,7 @@ exports[`Service component tests base = true, showIcon = true, variant = success
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -4270,7 +4270,7 @@ exports[`Service component tests base = true, showIcon = true, variant = success
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -4293,7 +4293,7 @@ exports[`Service component tests base = true, showIcon = true, variant = success
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -4351,7 +4351,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#dc9710"
+    stroke="#f5b83d"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -4387,7 +4387,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
       }
       stroke={
         {
-          "payload": 4292646672,
+          "payload": 4294293565,
           "type": 0,
         }
       }
@@ -4409,7 +4409,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -4432,7 +4432,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -4455,7 +4455,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -4513,7 +4513,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#dc9710"
+    stroke="#f5b83d"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -4549,7 +4549,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
       }
       stroke={
         {
-          "payload": 4292646672,
+          "payload": 4294293565,
           "type": 0,
         }
       }
@@ -4571,7 +4571,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -4594,7 +4594,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -4617,7 +4617,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -4640,7 +4640,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -4663,7 +4663,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -4686,7 +4686,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -4709,7 +4709,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }

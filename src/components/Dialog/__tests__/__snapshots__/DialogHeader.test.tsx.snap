@@ -24,7 +24,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#db3424"
+      stroke="#e85244"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -60,7 +60,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -82,7 +82,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
           }
           stroke={
             {
-              "payload": 4292555812,
+              "payload": 4293415492,
               "type": 0,
             }
           }
@@ -105,7 +105,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "dange
           }
           stroke={
             {
-              "payload": 4292555812,
+              "payload": 4293415492,
               "type": 0,
             }
           }
@@ -313,7 +313,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#9457ea"
+      stroke="#a855f7"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -349,7 +349,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -371,7 +371,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
           }
           stroke={
             {
-              "payload": 4287911914,
+              "payload": 4289222135,
               "type": 0,
             }
           }
@@ -394,7 +394,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
           }
           stroke={
             {
-              "payload": 4287911914,
+              "payload": 4289222135,
               "type": 0,
             }
           }
@@ -417,7 +417,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "help"
           }
           stroke={
             {
-              "payload": 4287911914,
+              "payload": 4289222135,
               "type": 0,
             }
           }
@@ -625,7 +625,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#1e76cd"
+      stroke="#4496e8"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -661,7 +661,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -683,7 +683,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -706,7 +706,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -729,7 +729,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "info"
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -937,7 +937,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#168322"
+      stroke="#44e858"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -973,7 +973,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -995,7 +995,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
           }
           stroke={
             {
-              "payload": 4279665442,
+              "payload": 4282706008,
               "type": 0,
             }
           }
@@ -1018,7 +1018,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "succe
           }
           stroke={
             {
-              "payload": 4279665442,
+              "payload": 4282706008,
               "type": 0,
             }
           }
@@ -1226,7 +1226,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#dc9710"
+      stroke="#f5b83d"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -1262,7 +1262,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -1284,7 +1284,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
           }
           stroke={
             {
-              "payload": 4292646672,
+              "payload": 4294293565,
               "type": 0,
             }
           }
@@ -1307,7 +1307,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
           }
           stroke={
             {
-              "payload": 4292646672,
+              "payload": 4294293565,
               "type": 0,
             }
           }
@@ -1330,7 +1330,7 @@ exports[`DialogHeader {"onClose": [Function mockConstructor], "severity": "warni
           }
           stroke={
             {
-              "payload": 4292646672,
+              "payload": 4294293565,
               "type": 0,
             }
           }
@@ -1725,7 +1725,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "danger", "title": "Dia
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#db3424"
+      stroke="#e85244"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -1761,7 +1761,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "danger", "title": "Dia
         }
         stroke={
           {
-            "payload": 4292555812,
+            "payload": 4293415492,
             "type": 0,
           }
         }
@@ -1783,7 +1783,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "danger", "title": "Dia
           }
           stroke={
             {
-              "payload": 4292555812,
+              "payload": 4293415492,
               "type": 0,
             }
           }
@@ -1806,7 +1806,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "danger", "title": "Dia
           }
           stroke={
             {
-              "payload": 4292555812,
+              "payload": 4293415492,
               "type": 0,
             }
           }
@@ -1875,7 +1875,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "help", "title": "Dialo
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#9457ea"
+      stroke="#a855f7"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -1911,7 +1911,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "help", "title": "Dialo
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -1933,7 +1933,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "help", "title": "Dialo
           }
           stroke={
             {
-              "payload": 4287911914,
+              "payload": 4289222135,
               "type": 0,
             }
           }
@@ -1956,7 +1956,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "help", "title": "Dialo
           }
           stroke={
             {
-              "payload": 4287911914,
+              "payload": 4289222135,
               "type": 0,
             }
           }
@@ -1979,7 +1979,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "help", "title": "Dialo
           }
           stroke={
             {
-              "payload": 4287911914,
+              "payload": 4289222135,
               "type": 0,
             }
           }
@@ -2048,7 +2048,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "info", "title": "Dialo
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#1e76cd"
+      stroke="#4496e8"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -2084,7 +2084,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "info", "title": "Dialo
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -2106,7 +2106,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "info", "title": "Dialo
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -2129,7 +2129,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "info", "title": "Dialo
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -2152,7 +2152,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "info", "title": "Dialo
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -2221,7 +2221,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "success", "title": "Di
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#168322"
+      stroke="#44e858"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -2257,7 +2257,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "success", "title": "Di
         }
         stroke={
           {
-            "payload": 4279665442,
+            "payload": 4282706008,
             "type": 0,
           }
         }
@@ -2279,7 +2279,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "success", "title": "Di
           }
           stroke={
             {
-              "payload": 4279665442,
+              "payload": 4282706008,
               "type": 0,
             }
           }
@@ -2302,7 +2302,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "success", "title": "Di
           }
           stroke={
             {
-              "payload": 4279665442,
+              "payload": 4282706008,
               "type": 0,
             }
           }
@@ -2371,7 +2371,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "warning", "title": "Di
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#dc9710"
+      stroke="#f5b83d"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -2407,7 +2407,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "warning", "title": "Di
         }
         stroke={
           {
-            "payload": 4292646672,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -2429,7 +2429,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "warning", "title": "Di
           }
           stroke={
             {
-              "payload": 4292646672,
+              "payload": 4294293565,
               "type": 0,
             }
           }
@@ -2452,7 +2452,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "warning", "title": "Di
           }
           stroke={
             {
-              "payload": 4292646672,
+              "payload": 4294293565,
               "type": 0,
             }
           }
@@ -2475,7 +2475,7 @@ exports[`DialogHeader {"onClose": undefined, "severity": "warning", "title": "Di
           }
           stroke={
             {
-              "payload": 4292646672,
+              "payload": 4294293565,
               "type": 0,
             }
           }

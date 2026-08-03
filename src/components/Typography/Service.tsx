@@ -69,13 +69,13 @@ export const Service = ({
         <SvgUniversal
           {...iconSize}
           source={Icon}
-          uniProps={({ typography: t }) => ({
+          uniProps={({ semantic }) => ({
             color: {
-              danger: t.Color.Service['text-danger'],
-              warning: t.Color.Service['text-warning'],
-              success: t.Color.Service['text-success'],
-              info: t.Color.Service['text-info'],
-              help: t.Color.Service['text-help'],
+              danger: semantic.colorScheme.color.fg.status.danger.default,
+              warning: semantic.colorScheme.color.fg.status.warning.default,
+              success: semantic.colorScheme.color.fg.status.success.default,
+              info: semantic.colorScheme.color.fg.status.info.default,
+              help: semantic.colorScheme.color.fg.status.help.default,
             }[variant],
           })}
         />
