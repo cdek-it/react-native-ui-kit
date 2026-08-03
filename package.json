@@ -42,6 +42,7 @@
     "tokens:check": "ts-node --transpile-only --project scripts/token-generator/tsconfig.json scripts/token-generator/build.ts --check",
     "tokens:typecheck": "tsc --noEmit -p scripts/token-generator/tsconfig.json",
     "tokens:validate": "yarn tokens:typecheck && yarn tokens:check",
+    "tokens:audit": "ts-node --transpile-only --project scripts/token-generator/tsconfig.json scripts/token-generator/audit.ts",
     "doctor": "expo-doctor",
     "check": "expo install --check",
     "lint:check": "eslint --cache .",
