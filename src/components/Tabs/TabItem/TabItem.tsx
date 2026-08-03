@@ -87,10 +87,8 @@ export const TabItem = memo<TabItemProps>(
 )
 
 // TODO(tokens-migration): reason=missing; legacy=components.badge.root.height; value=24
-// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-base; value=14
-// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-xl; value=17.5
 const styles = StyleSheet.create(
-  ({ components, semantic, typography, fonts }) => ({
+  ({ primitive, components, semantic, fonts }) => ({
     container: {
       alignItems: 'center',
       flexDirection: 'row',
@@ -110,12 +108,12 @@ const styles = StyleSheet.create(
     },
     disabledContainer: { opacity: 0.6, mixBlendMode: 'luminosity' },
     icon: {
-      width: typography.Size['text-xl'],
-      height: typography.Size['text-xl'],
+      width: primitive.fonts.fontSize[500],
+      height: primitive.fonts.fontSize[500],
     },
     text: {
       fontFamily: fonts.primary,
-      fontSize: typography.Size['text-base'],
+      fontSize: primitive.fonts.fontSize[300],
       verticalAlign: 'middle',
       includeFontPadding: false,
 

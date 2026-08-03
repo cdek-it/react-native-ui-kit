@@ -258,7 +258,7 @@ export const Avatar = memo<AvatarProps>(
 )
 
 const styles = StyleSheet.create(
-  ({ components, border, typography, fonts }) => ({
+  ({ primitive, components, border, fonts }) => ({
     container: {
       justifyContent: 'center',
       alignItems: 'center',
@@ -273,7 +273,7 @@ const styles = StyleSheet.create(
     circle: { borderRadius: border.Radius['rounded-full'] },
     text: {
       // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-base; value=14; target=components.avatar.root.fontSize; targetValue=16
-      fontSize: typography.Size['text-base'],
+      fontSize: primitive.fonts.fontSize[300],
       textTransform: 'uppercase',
       color: components.avatar.root.color,
       includeFontPadding: false,
@@ -282,9 +282,9 @@ const styles = StyleSheet.create(
     },
     badgeContainer: { position: 'absolute', right: 0, top: -7 },
     badgeMeasureContainer: { alignSelf: 'flex-start' },
-    icon: { width: typography.Size['text-base'] },
+    icon: { width: primitive.fonts.fontSize[300] },
     // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-2xl; value=21; target=components.avatar.xl.icon.size; targetValue=24
-    iconXLarge: { width: typography.Size['text-2xl'] },
+    iconXLarge: { width: primitive.fonts.fontSize[600] },
   })
 )
 

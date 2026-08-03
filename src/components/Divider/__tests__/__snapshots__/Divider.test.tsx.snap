@@ -117,7 +117,7 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "horizontal", "sho
         [
           {
             "fontFamily": "Noto Sans",
-            "fontSize": 10.5,
+            "fontSize": 12,
             "fontWeight": 700,
             "lineHeight": 15,
             "textTransform": "uppercase",
@@ -288,11 +288,11 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -308,15 +308,15 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -370,7 +370,7 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
         [
           {
             "fontFamily": "Noto Sans",
-            "fontSize": 10.5,
+            "fontSize": 12,
             "fontWeight": 700,
             "lineHeight": 15,
             "textTransform": "uppercase",
@@ -482,11 +482,11 @@ exports[`Divider {"Icon": [Object], "align": "start", "layout": "horizontal", "s
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -502,15 +502,15 @@ exports[`Divider {"Icon": [Object], "align": "start", "layout": "horizontal", "s
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup

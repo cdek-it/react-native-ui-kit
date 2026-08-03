@@ -64,7 +64,7 @@ export const TimerFlip = memo<TimerFlipProps>(({ value, duration = 300 }) => {
   )
 })
 
-const styles = StyleSheet.create(({ typography, fonts }) => ({
+const styles = StyleSheet.create(({ primitive, typography, fonts }) => ({
   container: {
     overflow: 'hidden',
     width: COUNTER_SIZE,
@@ -81,7 +81,7 @@ const styles = StyleSheet.create(({ typography, fonts }) => ({
     position: 'absolute',
   },
   text: {
-    fontSize: typography.Size['text-base'],
+    fontSize: primitive.fonts.fontSize[300],
     fontWeight: 700,
     includeFontPadding: false,
     verticalAlign: 'middle',

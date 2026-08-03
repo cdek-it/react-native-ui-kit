@@ -48,12 +48,9 @@ const ButtonLabelComponent = ({
 
 export const ButtonLabel = genericMemo(ButtonLabelComponent)
 
-// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-xl; value=17.5
-// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-base; value=14
-// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-sm; value=12.25
 // TODO(tokens-migration): reason=missing; legacy=typography.Color.Common.text-color-secondary; value=#85888e
 const buttonLabelStyles = StyleSheet.create(
-  ({ components: { button }, typography, fonts }) => ({
+  ({ primitive, components: { button }, typography, fonts }) => ({
     label: {
       fontWeight: 600,
       includeFontPadding: false,
@@ -61,10 +58,10 @@ const buttonLabelStyles = StyleSheet.create(
       fontFamily: fonts.primary,
       variants: {
         size: {
-          xlarge: { fontSize: typography.Size['text-xl'] },
-          large: { fontSize: typography.Size['text-xl'] },
-          base: { fontSize: typography.Size['text-base'] },
-          small: { fontSize: typography.Size['text-sm'] },
+          xlarge: { fontSize: primitive.fonts.fontSize[500] },
+          large: { fontSize: primitive.fonts.fontSize[500] },
+          base: { fontSize: primitive.fonts.fontSize[300] },
+          small: { fontSize: primitive.fonts.fontSize[100] },
         },
         variant: {
           primary: { color: button.colorScheme.root.primary.color },

@@ -6,7 +6,7 @@ exports[`Body component tests base = false, color = default, disabled = false, p
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -36,7 +36,7 @@ exports[`Body component tests base = false, color = default, disabled = false, p
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -65,7 +65,7 @@ exports[`Body component tests base = false, color = default, disabled = false, p
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -97,7 +97,7 @@ exports[`Body component tests base = false, color = default, disabled = false, p
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -128,7 +128,7 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -160,7 +160,7 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -191,7 +191,7 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -225,7 +225,7 @@ exports[`Body component tests base = false, color = default, disabled = true, pa
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -258,7 +258,7 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -288,7 +288,7 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -317,7 +317,7 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -349,7 +349,7 @@ exports[`Body component tests base = false, color = primary, disabled = false, p
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -380,7 +380,7 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -412,7 +412,7 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -443,7 +443,7 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -477,7 +477,7 @@ exports[`Body component tests base = false, color = primary, disabled = true, pa
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -510,7 +510,7 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -540,7 +540,7 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -569,7 +569,7 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -601,7 +601,7 @@ exports[`Body component tests base = false, color = secondary, disabled = false,
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -632,7 +632,7 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -664,7 +664,7 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -695,7 +695,7 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -729,7 +729,7 @@ exports[`Body component tests base = false, color = secondary, disabled = true, 
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -762,7 +762,7 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -775,7 +775,7 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
         "color": "#2b2e33",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       false,
@@ -795,7 +795,7 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -807,7 +807,7 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
         "color": "#2b2e33",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       false,
@@ -827,7 +827,7 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -840,7 +840,7 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
         "color": "#2b2e33",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       {
@@ -862,7 +862,7 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -874,7 +874,7 @@ exports[`Body component tests base = true, color = default, disabled = false, pa
         "color": "#2b2e33",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       {
@@ -896,7 +896,7 @@ exports[`Body component tests base = true, color = default, disabled = true, par
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -909,7 +909,7 @@ exports[`Body component tests base = true, color = default, disabled = true, par
         "color": "#2b2e33",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       false,
@@ -931,7 +931,7 @@ exports[`Body component tests base = true, color = default, disabled = true, par
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -943,7 +943,7 @@ exports[`Body component tests base = true, color = default, disabled = true, par
         "color": "#2b2e33",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       false,
@@ -965,7 +965,7 @@ exports[`Body component tests base = true, color = default, disabled = true, par
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -978,7 +978,7 @@ exports[`Body component tests base = true, color = default, disabled = true, par
         "color": "#2b2e33",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       {
@@ -1002,7 +1002,7 @@ exports[`Body component tests base = true, color = default, disabled = true, par
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -1014,7 +1014,7 @@ exports[`Body component tests base = true, color = default, disabled = true, par
         "color": "#2b2e33",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       {
@@ -1038,7 +1038,7 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -1051,7 +1051,7 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
         "color": "#44e858",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       false,
@@ -1071,7 +1071,7 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -1083,7 +1083,7 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
         "color": "#44e858",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       false,
@@ -1103,7 +1103,7 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -1116,7 +1116,7 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
         "color": "#44e858",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       {
@@ -1138,7 +1138,7 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -1150,7 +1150,7 @@ exports[`Body component tests base = true, color = primary, disabled = false, pa
         "color": "#44e858",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       {
@@ -1172,7 +1172,7 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -1185,7 +1185,7 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
         "color": "#44e858",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       false,
@@ -1207,7 +1207,7 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -1219,7 +1219,7 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
         "color": "#44e858",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       false,
@@ -1241,7 +1241,7 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -1254,7 +1254,7 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
         "color": "#44e858",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       {
@@ -1278,7 +1278,7 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -1290,7 +1290,7 @@ exports[`Body component tests base = true, color = primary, disabled = true, par
         "color": "#44e858",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       {
@@ -1314,7 +1314,7 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -1327,7 +1327,7 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
         "color": "#85888e",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       false,
@@ -1347,7 +1347,7 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -1359,7 +1359,7 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
         "color": "#85888e",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       false,
@@ -1379,7 +1379,7 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -1392,7 +1392,7 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
         "color": "#85888e",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       {
@@ -1414,7 +1414,7 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -1426,7 +1426,7 @@ exports[`Body component tests base = true, color = secondary, disabled = false, 
         "color": "#85888e",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       {
@@ -1448,7 +1448,7 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -1461,7 +1461,7 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
         "color": "#85888e",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       false,
@@ -1483,7 +1483,7 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -1495,7 +1495,7 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
         "color": "#85888e",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       false,
@@ -1517,7 +1517,7 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -1530,7 +1530,7 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
         "color": "#85888e",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       {
@@ -1554,7 +1554,7 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",
@@ -1566,7 +1566,7 @@ exports[`Body component tests base = true, color = secondary, disabled = true, p
         "color": "#85888e",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 14,
         "lineHeight": 18,
       },
       {
@@ -1590,7 +1590,7 @@ exports[`Body component tests default props 1`] = `
     [
       {
         "fontFamily": "Noto Sans",
-        "fontSize": 14,
+        "fontSize": 16,
         "includeFontPadding": false,
         "lineHeight": 20,
         "verticalAlign": "middle",

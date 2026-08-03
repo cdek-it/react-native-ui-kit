@@ -101,7 +101,7 @@ export const Tag = memo<TagProps>(
 )
 
 const tagStyles = StyleSheet.create(
-  ({ components, border, spacing, typography, fonts }) => ({
+  ({ primitive, components, border, spacing, fonts }) => ({
     container: {
       alignSelf: 'flex-start',
       flexDirection: 'row',
@@ -141,7 +141,7 @@ const tagStyles = StyleSheet.create(
     text: {
       flexShrink: 1,
       // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-xs; value=10.5; target=components.tag.root.fontSize; targetValue=12
-      fontSize: typography.Size['text-xs'],
+      fontSize: primitive.fonts.fontSize[100],
       includeFontPadding: false,
       verticalAlign: 'middle',
       fontFamily: fonts.primary,

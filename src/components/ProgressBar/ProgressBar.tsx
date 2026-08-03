@@ -90,7 +90,7 @@ export const ProgressBar = memo<ProgressBarProps>(
 )
 
 const styles = StyleSheet.create(
-  ({ components, typography, border, fonts }) => ({
+  ({ primitive, components, border, fonts }) => ({
     container: {
       // TODO(tokens-migration): reason=value-mismatch; legacy=border.Radius.rounded-full; value=100; target=components.progressbar.root.borderRadius; targetValue=14
       borderRadius: border.Radius['rounded-full'],
@@ -110,7 +110,7 @@ const styles = StyleSheet.create(
 
     indicatorText: {
       // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-xs; value=10.5; target=components.progressbar.label.fontSize; targetValue=12
-      fontSize: typography.Size['text-xs'],
+      fontSize: primitive.fonts.fontSize[100],
       textAlign: 'center',
       color: components.progressbar.label.color,
       fontFamily: fonts.primary,

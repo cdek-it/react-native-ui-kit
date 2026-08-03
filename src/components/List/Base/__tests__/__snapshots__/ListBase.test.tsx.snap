@@ -66,11 +66,11 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={21}
-        bbWidth={21}
+        bbHeight={24}
+        bbWidth={24}
         fill="none"
         focusable={false}
-        height={21}
+        height={24}
         meetOrSlice={0}
         minX={0}
         minY={0}
@@ -86,15 +86,15 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
             },
             {
               "flex": 0,
-              "height": 21,
-              "width": 21,
+              "height": 24,
+              "width": 24,
             },
           ]
         }
         testID="LeftIcon"
         vbHeight={24}
         vbWidth={24}
-        width={21}
+        width={24}
         xmlns="http://www.w3.org/2000/svg"
       >
         <RNSVGGroup
@@ -281,7 +281,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
             [
               {
                 "fontFamily": "Noto Sans",
-                "fontSize": 10.5,
+                "fontSize": 12,
                 "fontWeight": 700,
                 "lineHeight": 15,
                 "textTransform": "uppercase",
@@ -309,7 +309,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontSize": 16,
                   "includeFontPadding": false,
                   "lineHeight": 20,
                   "verticalAlign": "middle",
@@ -318,7 +318,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
                   "fontWeight": 400,
                 },
                 {
-                  "color": "#181a1f",
+                  "color": "#2b2e33",
                 },
                 undefined,
                 undefined,
@@ -335,7 +335,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                   "includeFontPadding": false,
                   "letterSpacing": -0.25,
                   "lineHeight": 15,
@@ -450,11 +450,11 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
         </View>
         <RNSVGSvgView
           align="xMidYMid"
-          bbHeight={21}
-          bbWidth={21}
+          bbHeight={24}
+          bbWidth={24}
           fill="none"
           focusable={false}
-          height={21}
+          height={24}
           meetOrSlice={0}
           minX={0}
           minY={0}
@@ -470,15 +470,15 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
               },
               {
                 "flex": 0,
-                "height": 21,
-                "width": 21,
+                "height": 24,
+                "width": 24,
               },
             ]
           }
           testID="RightIcon"
           vbHeight={24}
           vbWidth={24}
-          width={21}
+          width={24}
           xmlns="http://www.w3.org/2000/svg"
         >
           <RNSVGGroup
@@ -621,11 +621,11 @@ exports[`ListBase tests ListBase full disabled 1`] = `
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={21}
-        bbWidth={21}
+        bbHeight={24}
+        bbWidth={24}
         fill="none"
         focusable={false}
-        height={21}
+        height={24}
         meetOrSlice={0}
         minX={0}
         minY={0}
@@ -641,15 +641,15 @@ exports[`ListBase tests ListBase full disabled 1`] = `
             },
             {
               "flex": 0,
-              "height": 21,
-              "width": 21,
+              "height": 24,
+              "width": 24,
             },
           ]
         }
         testID="LeftIcon"
         vbHeight={24}
         vbWidth={24}
-        width={21}
+        width={24}
         xmlns="http://www.w3.org/2000/svg"
       >
         <RNSVGGroup
@@ -836,7 +836,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
             [
               {
                 "fontFamily": "Noto Sans",
-                "fontSize": 10.5,
+                "fontSize": 12,
                 "fontWeight": 700,
                 "lineHeight": 15,
                 "textTransform": "uppercase",
@@ -864,7 +864,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontSize": 16,
                   "includeFontPadding": false,
                   "lineHeight": 20,
                   "verticalAlign": "middle",
@@ -873,7 +873,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
                   "fontWeight": 400,
                 },
                 {
-                  "color": "#181a1f",
+                  "color": "#2b2e33",
                 },
                 undefined,
                 undefined,
@@ -890,7 +890,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                   "includeFontPadding": false,
                   "letterSpacing": -0.25,
                   "lineHeight": 15,
@@ -1005,11 +1005,11 @@ exports[`ListBase tests ListBase full disabled 1`] = `
         </View>
         <RNSVGSvgView
           align="xMidYMid"
-          bbHeight={21}
-          bbWidth={21}
+          bbHeight={24}
+          bbWidth={24}
           fill="none"
           focusable={false}
-          height={21}
+          height={24}
           meetOrSlice={0}
           minX={0}
           minY={0}
@@ -1025,15 +1025,15 @@ exports[`ListBase tests ListBase full disabled 1`] = `
               },
               {
                 "flex": 0,
-                "height": 21,
-                "width": 21,
+                "height": 24,
+                "width": 24,
               },
             ]
           }
           testID="RightIcon"
           vbHeight={24}
           vbWidth={24}
-          width={21}
+          width={24}
           xmlns="http://www.w3.org/2000/svg"
         >
           <RNSVGGroup
@@ -1173,11 +1173,11 @@ exports[`ListBase tests ListBase maximal config 1`] = `
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={21}
-        bbWidth={21}
+        bbHeight={24}
+        bbWidth={24}
         fill="none"
         focusable={false}
-        height={21}
+        height={24}
         meetOrSlice={0}
         minX={0}
         minY={0}
@@ -1193,15 +1193,15 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             },
             {
               "flex": 0,
-              "height": 21,
-              "width": 21,
+              "height": 24,
+              "width": 24,
             },
           ]
         }
         testID="LeftIcon"
         vbHeight={24}
         vbWidth={24}
-        width={21}
+        width={24}
         xmlns="http://www.w3.org/2000/svg"
       >
         <RNSVGGroup
@@ -1398,7 +1398,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
             [
               {
                 "fontFamily": "Noto Sans",
-                "fontSize": 10.5,
+                "fontSize": 12,
                 "fontWeight": 700,
                 "lineHeight": 15,
                 "textTransform": "uppercase",
@@ -1426,7 +1426,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontSize": 16,
                   "includeFontPadding": false,
                   "lineHeight": 20,
                   "verticalAlign": "middle",
@@ -1435,7 +1435,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
                   "fontWeight": 400,
                 },
                 {
-                  "color": "#181a1f",
+                  "color": "#2b2e33",
                 },
                 undefined,
                 undefined,
@@ -1452,7 +1452,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                   "includeFontPadding": false,
                   "letterSpacing": -0.25,
                   "lineHeight": 15,
@@ -1567,11 +1567,11 @@ exports[`ListBase tests ListBase maximal config 1`] = `
         </View>
         <RNSVGSvgView
           align="xMidYMid"
-          bbHeight={21}
-          bbWidth={21}
+          bbHeight={24}
+          bbWidth={24}
           fill="none"
           focusable={false}
-          height={21}
+          height={24}
           meetOrSlice={0}
           minX={0}
           minY={0}
@@ -1587,15 +1587,15 @@ exports[`ListBase tests ListBase maximal config 1`] = `
               },
               {
                 "flex": 0,
-                "height": 21,
-                "width": 21,
+                "height": 24,
+                "width": 24,
               },
             ]
           }
           testID="RightIcon"
           vbHeight={24}
           vbWidth={24}
-          width={21}
+          width={24}
           xmlns="http://www.w3.org/2000/svg"
         >
           <RNSVGGroup
@@ -1760,7 +1760,7 @@ exports[`ListBase tests ListBase minimal config 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontSize": 16,
                   "includeFontPadding": false,
                   "lineHeight": 20,
                   "verticalAlign": "middle",
@@ -1769,7 +1769,7 @@ exports[`ListBase tests ListBase minimal config 1`] = `
                   "fontWeight": 400,
                 },
                 {
-                  "color": "#181a1f",
+                  "color": "#2b2e33",
                 },
                 undefined,
                 undefined,

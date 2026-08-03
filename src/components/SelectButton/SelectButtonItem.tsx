@@ -156,13 +156,18 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
 // TODO(tokens-migration): reason=missing; legacy=theme.Button.Disabled.disabledButtonBorderColor; light=#a2a5a9; dark=#56595f
 // TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
 // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-3; value=10.5; target=components.selectbutton.extend.gap; targetValue=4
-// TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-base; value=14; target=components.selectbutton.extend.iconSize.sm; targetValue=16
-// TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-xl; value=17.5; target=components.selectbutton.extend.iconSize.md; targetValue=20
-// TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-2xl; value=21; target=components.selectbutton.extend.iconSize.lg; targetValue=24
-// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-sm; value=12.25
 // TODO(tokens-migration): reason=missing; legacy=semantic.colorScheme.color.fg.muted; light=#85888e; dark=#a2a5a9
 const styles = StyleSheet.create(
-  ({ components, semantic, theme, typography, border, spacing, fonts }) => ({
+  ({
+    primitive,
+    components,
+    semantic,
+    theme,
+
+    border,
+    spacing,
+    fonts,
+  }) => ({
     container: {
       flex: 1,
       flexDirection: 'row',
@@ -183,23 +188,23 @@ const styles = StyleSheet.create(
       borderColor: theme.Button.Disabled.disabledButtonBorderColor,
     },
     iconSmall: {
-      width: typography.Size['text-base'],
-      height: typography.Size['text-base'],
+      width: primitive.fonts.fontSize[300],
+      height: primitive.fonts.fontSize[300],
     },
     iconBase: {
-      width: typography.Size['text-xl'],
-      height: typography.Size['text-xl'],
+      width: primitive.fonts.fontSize[500],
+      height: primitive.fonts.fontSize[500],
     },
     iconLarge: {
-      width: typography.Size['text-2xl'],
-      height: typography.Size['text-2xl'],
+      width: primitive.fonts.fontSize[600],
+      height: primitive.fonts.fontSize[600],
     },
     iconXLarge: { width: 28, height: 28 },
     label: { flexShrink: 1, fontWeight: 600, fontFamily: fonts.primary },
-    labelSmall: { fontSize: typography.Size['text-sm'] },
-    labelBase: { fontSize: typography.Size['text-base'] },
-    labelLarge: { fontSize: typography.Size['text-xl'] },
-    labelXLarge: { fontSize: typography.Size['text-2xl'] },
+    labelSmall: { fontSize: primitive.fonts.fontSize[100] },
+    labelBase: { fontSize: primitive.fonts.fontSize[300] },
+    labelLarge: { fontSize: primitive.fonts.fontSize[500] },
+    labelXLarge: { fontSize: primitive.fonts.fontSize[600] },
     textColor: { color: semantic.colorScheme.color.fg.muted },
     checkedTextColor: { color: components.selectbutton.extend.checkedColor },
     disabledTextColor: {

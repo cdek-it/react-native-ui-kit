@@ -85,34 +85,39 @@ export const Service = ({
   )
 }
 
-const styles = StyleSheet.create(({ typography, spacing, fonts }) => ({
-  iconBase: {
-    width: typography.Size['text-xl'],
-    height: typography.Size['text-xl'],
-  },
-  icon: {
-    width: typography.Size['text-base'],
-    height: typography.Size['text-base'],
-  },
+const styles = StyleSheet.create(
+  ({ primitive, typography, spacing, fonts }) => ({
+    iconBase: {
+      width: primitive.fonts.fontSize[500],
+      height: primitive.fonts.fontSize[500],
+    },
+    icon: {
+      width: primitive.fonts.fontSize[300],
+      height: primitive.fonts.fontSize[300],
+    },
 
-  containerBase: { flexDirection: 'row', gap: spacing.Gap['gap-2'] },
-  container: { flexDirection: 'row', gap: spacing.Gap['gap-1'] },
+    containerBase: { flexDirection: 'row', gap: spacing.Gap['gap-2'] },
+    container: { flexDirection: 'row', gap: spacing.Gap['gap-1'] },
 
-  textCommon: {
-    includeFontPadding: false,
-    verticalAlign: 'middle',
-    flexShrink: 1,
-    fontWeight: 400,
-    fontSize: typography.Size['text-sm'],
-    fontFamily: fonts.secondary,
-    lineHeight: 15,
-    letterSpacing: -0.25,
-  },
-  textBase: { lineHeight: undefined, fontSize: typography.Size['text-base'] },
+    textCommon: {
+      includeFontPadding: false,
+      verticalAlign: 'middle',
+      flexShrink: 1,
+      fontWeight: 400,
+      fontSize: primitive.fonts.fontSize[200],
+      fontFamily: fonts.secondary,
+      lineHeight: 15,
+      letterSpacing: -0.25,
+    },
+    textBase: {
+      lineHeight: undefined,
+      fontSize: primitive.fonts.fontSize[300],
+    },
 
-  warning: { color: typography.Color.Service['text-warning'] },
-  success: { color: typography.Color.Service['text-success'] },
-  info: { color: typography.Color.Service['text-info'] },
-  help: { color: typography.Color.Service['text-help'] },
-  danger: { color: typography.Color.Service['text-danger'] },
-}))
+    warning: { color: typography.Color.Service['text-warning'] },
+    success: { color: typography.Color.Service['text-success'] },
+    info: { color: typography.Color.Service['text-info'] },
+    help: { color: typography.Color.Service['text-help'] },
+    danger: { color: typography.Color.Service['text-danger'] },
+  })
+)

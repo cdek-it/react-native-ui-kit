@@ -73,7 +73,7 @@ exports[`ButtonSeverity component tests badge - basic 1`] = `
           {
             "color": "#2b2e33",
             "fontFamily": "TT Fellows",
-            "fontSize": 14,
+            "fontSize": 16,
             "fontWeight": 600,
             "includeFontPadding": false,
             "verticalAlign": "middle",
@@ -129,7 +129,7 @@ exports[`ButtonSeverity component tests badge - basic 1`] = `
               {
                 "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
-                "fontSize": 10.5,
+                "fontSize": 12,
                 "includeFontPadding": false,
                 "verticalAlign": "middle",
               },
@@ -164,7 +164,7 @@ exports[`ButtonSeverity component tests badge - basic 1`] = `
               {
                 "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
-                "fontSize": 10.5,
+                "fontSize": 12,
                 "includeFontPadding": false,
                 "verticalAlign": "middle",
               }
@@ -252,7 +252,7 @@ exports[`ButtonSeverity component tests badge - dot 1`] = `
           {
             "color": "#2b2e33",
             "fontFamily": "TT Fellows",
-            "fontSize": 14,
+            "fontSize": 16,
             "fontWeight": 600,
             "includeFontPadding": false,
             "verticalAlign": "middle",

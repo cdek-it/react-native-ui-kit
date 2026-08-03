@@ -103,7 +103,15 @@ export const Chip = memo<ChipProps>(
 // TODO(tokens-migration): reason=missing; legacy=border.Radius.rounded-full; value=100
 // TODO(tokens-migration): reason=missing; legacy=border.Width.border-3; value=3
 const styles = StyleSheet.create(
-  ({ components, semantic, typography, spacing, border, fonts }) => ({
+  ({
+    primitive,
+    components,
+    semantic,
+
+    spacing,
+    border,
+    fonts,
+  }) => ({
     chip: {
       alignSelf: 'flex-start',
       justifyContent: 'center',
@@ -129,11 +137,11 @@ const styles = StyleSheet.create(
     },
     icon: {
       // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-base; value=14; target=components.chip.icon.size; targetValue=16
-      width: typography.Size['text-base'],
-      height: typography.Size['text-base'],
+      width: primitive.fonts.fontSize[300],
+      height: primitive.fonts.fontSize[300],
     },
     text: {
-      fontSize: typography.Size['text-base'],
+      fontSize: primitive.fonts.fontSize[300],
       verticalAlign: 'middle',
       color: components.chip.colorScheme.root.color,
       includeFontPadding: false,

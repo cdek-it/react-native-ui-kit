@@ -104,7 +104,7 @@ export const Badge = memo<BadgeProps>(
 )
 
 const badgeStyles = StyleSheet.create(
-  ({ components, border, typography, fonts }) => ({
+  ({ primitive, components, border, fonts }) => ({
     container: { alignItems: 'flex-start' },
     dot: {
       variants: {
@@ -142,7 +142,7 @@ const badgeStyles = StyleSheet.create(
     textBadge: {
       color: components.badge.colorScheme.primary.color,
       // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-xs; value=10.5; target=components.badge.root.fontSize; targetValue=12
-      fontSize: typography.Size['text-xs'],
+      fontSize: primitive.fonts.fontSize[100],
       includeFontPadding: false,
       verticalAlign: 'middle',
       fontFamily: fonts.primary,

@@ -135,7 +135,7 @@ export const Divider = memo<DividerProps>(
 
 // TODO(tokens-migration): reason=missing; legacy=spacing.Gap.gap-4; value=14
 // TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-2; value=7
-const styles = StyleSheet.create(({ spacing, components, typography }) => ({
+const styles = StyleSheet.create(({ primitive, spacing, components }) => ({
   container: {
     minHeight: 28,
     flexDirection: 'row',
@@ -180,8 +180,8 @@ const styles = StyleSheet.create(({ spacing, components, typography }) => ({
   },
   icon: {
     // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-base; value=14; target=components.divider.extend.iconSize; targetValue=16
-    width: typography.Size['text-base'],
-    height: typography.Size['text-base'],
+    width: primitive.fonts.fontSize[300],
+    height: primitive.fonts.fontSize[300],
   },
   text: { flexShrink: 1 },
 }))

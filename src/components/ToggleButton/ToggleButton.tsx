@@ -128,15 +128,10 @@ export const ToggleButton = memo<ToggleButtonProps>(
 // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-2; value=7; target=components.togglebutton.root.gap; targetValue=8
 // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Padding.p-3; value=10.5; target=components.togglebutton.root.sm.paddingRight; targetValue=14
 // TODO(tokens-migration): reason=value-mismatch; legacy=theme.Button.Disabled.disabledButtonBg; light=#e2e2e4; dark=#404348; target=components.togglebutton.colorScheme.root.disabledBackground; targetValue=#e2e2e4
-// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-4xl; value=31.5
-// TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-2xl; value=21; target=components.togglebutton.extend.iconSize.lg; targetValue=24
-// TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-xl; value=17.5; target=components.togglebutton.extend.iconSize.md; targetValue=20
-// TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-base; value=14; target=components.togglebutton.extend.iconSize.sm; targetValue=16
 // TODO(tokens-migration): reason=value-mismatch; legacy=theme.Button.Disabled.disabledButtonTextColor; light=#85888e; dark=#f0f0f1; target=components.togglebutton.colorScheme.root.disabledColor; targetValue=#85888e
-// TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-sm; value=12.25; target=components.togglebutton.root.sm.fontSize; targetValue=14
 // TODO(tokens-migration): reason=missing; legacy=theme.Button.Common.buttonPaddingLeftRight; value=14
 const toggleStyles = StyleSheet.create(
-  ({ components, theme, spacing, border, fonts, typography }) => ({
+  ({ primitive, components, theme, spacing, border, fonts }) => ({
     container: {
       alignSelf: 'flex-start',
       borderRadius: border.Radius['rounded-full'],
@@ -242,20 +237,20 @@ const toggleStyles = StyleSheet.create(
       variants: {
         size: {
           xlarge: {
-            width: typography.Size['text-4xl'],
-            height: typography.Size['text-4xl'],
+            width: primitive.fonts.fontSize[700],
+            height: primitive.fonts.fontSize[700],
           },
           large: {
-            width: typography.Size['text-2xl'],
-            height: typography.Size['text-2xl'],
+            width: primitive.fonts.fontSize[600],
+            height: primitive.fonts.fontSize[600],
           },
           base: {
-            width: typography.Size['text-xl'],
-            height: typography.Size['text-xl'],
+            width: primitive.fonts.fontSize[500],
+            height: primitive.fonts.fontSize[500],
           },
           small: {
-            width: typography.Size['text-base'],
-            height: typography.Size['text-base'],
+            width: primitive.fonts.fontSize[300],
+            height: primitive.fonts.fontSize[300],
           },
         },
         checked: {
@@ -289,10 +284,10 @@ const toggleStyles = StyleSheet.create(
       verticalAlign: 'middle',
       variants: {
         size: {
-          xlarge: { fontSize: typography.Size['text-2xl'] },
-          large: { fontSize: typography.Size['text-xl'] },
-          base: { fontSize: typography.Size['text-base'] },
-          small: { fontSize: typography.Size['text-sm'] },
+          xlarge: { fontSize: primitive.fonts.fontSize[600] },
+          large: { fontSize: primitive.fonts.fontSize[500] },
+          base: { fontSize: primitive.fonts.fontSize[300] },
+          small: { fontSize: primitive.fonts.fontSize[100] },
         },
         checked: {
           true: {

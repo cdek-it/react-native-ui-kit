@@ -142,7 +142,7 @@ const ListBaseTestId = {
 }
 
 const styles = StyleSheet.create(
-  ({ spacing, typography, theme, background }) => ({
+  ({ primitive, spacing, theme, background }) => ({
     container: {
       flexDirection: 'row',
       paddingLeft: spacing.Padding['p-4'],
@@ -168,8 +168,8 @@ const styles = StyleSheet.create(
     titleContainer: { gap: spacing.Gap['gap-1'] },
     extraContainer: { paddingVertical: spacing.Padding['p-2'] },
     icon: {
-      width: typography.Size['text-2xl'],
-      height: typography.Size['text-2xl'],
+      width: primitive.fonts.fontSize[600],
+      height: primitive.fonts.fontSize[600],
     },
     rightSection: {
       flexDirection: 'row',

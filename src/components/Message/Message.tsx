@@ -221,12 +221,11 @@ export const Message = memo<MessageProps>(
 // TODO(tokens-migration): reason=value-mismatch; legacy=border.Width.border-3; value=3; target=components.message.extend.extAccentLine.width; targetValue=4
 // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Padding.p-5; value=17.5; target=components.message.content.padding; targetValue=14
 // TODO(tokens-migration): reason=value-mismatch; legacy=spacing.Gap.gap-1; value=3.5; target=components.message.extend.extText.gap; targetValue=4
-// TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-4xl; value=31.5; target=components.message.icon.size; targetValue=36
 // TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
 // TODO(tokens-migration): reason=missing; legacy=spacing.Gap.gap-4; value=14
 // TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-4; value=14
 const messageStyles = StyleSheet.create(
-  ({ components, typography, spacing, border }) => ({
+  ({ primitive, components, spacing, border }) => ({
     container: {
       borderRadius: components.message.root.borderRadius,
       borderWidth: border.Width.border,
@@ -282,8 +281,8 @@ const messageStyles = StyleSheet.create(
       gap: spacing.Gap['gap-1'],
     },
     iconSize: {
-      width: typography.Size['text-4xl'],
-      height: typography.Size['text-4xl'],
+      width: primitive.fonts.fontSize[700],
+      height: primitive.fonts.fontSize[700],
     },
   })
 )

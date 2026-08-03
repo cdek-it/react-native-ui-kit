@@ -190,7 +190,7 @@ exports[`ProgressBar component test value - -50, showValue - true, style - {"hei
         {
           "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }
@@ -268,7 +268,7 @@ exports[`ProgressBar component test value - -50, showValue - true, style - {"hei
         {
           "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }
@@ -470,7 +470,7 @@ exports[`ProgressBar component test value - 0, showValue - true, style - {"heigh
         {
           "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }
@@ -548,7 +548,7 @@ exports[`ProgressBar component test value - 0, showValue - true, style - {"heigh
         {
           "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }
@@ -750,7 +750,7 @@ exports[`ProgressBar component test value - 50, showValue - true, style - {"heig
         {
           "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }
@@ -828,7 +828,7 @@ exports[`ProgressBar component test value - 50, showValue - true, style - {"heig
         {
           "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }
@@ -1030,7 +1030,7 @@ exports[`ProgressBar component test value - 100, showValue - true, style - {"hei
         {
           "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }
@@ -1108,7 +1108,7 @@ exports[`ProgressBar component test value - 100, showValue - true, style - {"hei
         {
           "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }
@@ -1310,7 +1310,7 @@ exports[`ProgressBar component test value - 150, showValue - true, style - {"hei
         {
           "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }
@@ -1388,7 +1388,7 @@ exports[`ProgressBar component test value - 150, showValue - true, style - {"hei
         {
           "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }

@@ -89,9 +89,7 @@ export const DialogHeader = ({
 }
 
 // TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
-// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-base; value=14
-// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-2xl; value=21
-const styles = StyleSheet.create(({ components, typography, border }) => ({
+const styles = StyleSheet.create(({ primitive, components, border }) => ({
   text: { flex: 1 },
   header: {
     flexDirection: 'row',
@@ -107,12 +105,12 @@ const styles = StyleSheet.create(({ components, typography, border }) => ({
     backgroundColor: components.dialog.root.borderColor,
   },
   closeIcon: {
-    width: typography.Size['text-base'],
-    height: typography.Size['text-base'],
+    width: primitive.fonts.fontSize[300],
+    height: primitive.fonts.fontSize[300],
   },
   severityIcon: {
-    width: typography.Size['text-2xl'],
-    height: typography.Size['text-2xl'],
+    width: primitive.fonts.fontSize[600],
+    height: primitive.fonts.fontSize[600],
   },
 }))
 

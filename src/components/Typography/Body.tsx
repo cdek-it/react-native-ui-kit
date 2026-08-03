@@ -36,13 +36,11 @@ export const Body = ({
   )
 }
 
-// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-base; value=14
-// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-sm; value=12.25
 // Осознанный обход слоя components: цвет текста — семантическая роль, и своего
 // токена у Typography нет (компонент отсутствует в tokens.json).
-const styles = StyleSheet.create(({ semantic, typography, fonts }) => ({
+const styles = StyleSheet.create(({ primitive, semantic, fonts }) => ({
   text: {
-    fontSize: typography.Size['text-base'],
+    fontSize: primitive.fonts.fontSize[300],
     includeFontPadding: false,
     verticalAlign: 'middle',
     fontFamily: fonts.secondary,
@@ -53,7 +51,7 @@ const styles = StyleSheet.create(({ semantic, typography, fonts }) => ({
   default: { color: semantic.colorScheme.color.fg.default },
   primary: { color: semantic.colorScheme.color.fg.brand.default },
   secondary: { color: semantic.colorScheme.color.fg.muted },
-  base: { fontSize: typography.Size['text-sm'], lineHeight: 18 },
+  base: { fontSize: primitive.fonts.fontSize[200], lineHeight: 18 },
   paragraph: { lineHeight: 24 },
   paragraphBase: { lineHeight: 21 },
   disabled: { opacity: 0.6 },

@@ -133,36 +133,38 @@ export const Anchor = memo(
   }
 )
 
-const styles = StyleSheet.create(({ spacing, typography, fonts }) => ({
-  container: { flexDirection: 'row', alignItems: 'center' },
-  text: {
-    flexShrink: 1,
-    fontSize: typography.Size['text-sm'],
-    includeFontPadding: false,
-    verticalAlign: 'middle',
-    color: typography.Color.Service['text-info'],
-    fontFamily: fonts.secondary,
-    lineHeight: 15,
-    letterSpacing: -0.25,
-  },
-  underlined: { textDecorationLine: 'underline' },
-  base: {
-    fontSize: typography.Size['text-base'],
-    lineHeight: undefined,
-    letterSpacing: 0,
-  },
-  visited: { color: typography.Color.Service['text-help'] },
-  icon: {
-    width: typography.Size['text-base'],
-    height: typography.Size['text-base'],
-  },
-  iconBase: {
-    width: typography.Size['text-xl'],
-    height: typography.Size['text-xl'],
-  },
-  leftIconContainer: { paddingRight: spacing.Padding['p-2'] },
-  rightIconContainer: { paddingLeft: spacing.Padding['p-2'] },
-}))
+const styles = StyleSheet.create(
+  ({ primitive, spacing, typography, fonts }) => ({
+    container: { flexDirection: 'row', alignItems: 'center' },
+    text: {
+      flexShrink: 1,
+      fontSize: primitive.fonts.fontSize[200],
+      includeFontPadding: false,
+      verticalAlign: 'middle',
+      color: typography.Color.Service['text-info'],
+      fontFamily: fonts.secondary,
+      lineHeight: 15,
+      letterSpacing: -0.25,
+    },
+    underlined: { textDecorationLine: 'underline' },
+    base: {
+      fontSize: primitive.fonts.fontSize[300],
+      lineHeight: undefined,
+      letterSpacing: 0,
+    },
+    visited: { color: typography.Color.Service['text-help'] },
+    icon: {
+      width: primitive.fonts.fontSize[300],
+      height: primitive.fonts.fontSize[300],
+    },
+    iconBase: {
+      width: primitive.fonts.fontSize[500],
+      height: primitive.fonts.fontSize[500],
+    },
+    leftIconContainer: { paddingRight: spacing.Padding['p-2'] },
+    rightIconContainer: { paddingLeft: spacing.Padding['p-2'] },
+  })
+)
 
 export const AnchorTestId = {
   root: 'Anchor',

@@ -30,19 +30,17 @@ export const Subtitle = memo<SubtitleProps>(
   )
 )
 
-// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-sm; value=12.25
-// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-xs; value=10.5
 // Осознанный обход слоя components: цвет текста — семантическая роль, и своего
 // токена у Typography нет (компонент отсутствует в tokens.json).
-const styles = StyleSheet.create(({ semantic, typography, fonts }) => ({
+const styles = StyleSheet.create(({ primitive, semantic, fonts }) => ({
   text: {
-    fontSize: typography.Size['text-xs'],
+    fontSize: primitive.fonts.fontSize[100],
     fontWeight: 700,
     textTransform: 'uppercase',
     fontFamily: fonts.secondary,
     lineHeight: 15,
   },
-  base: { lineHeight: 18, fontSize: typography.Size['text-sm'] },
+  base: { lineHeight: 18, fontSize: primitive.fonts.fontSize[200] },
   default: { color: semantic.colorScheme.color.fg.default },
   primary: { color: semantic.colorScheme.color.fg.brand.default },
   secondary: { color: semantic.colorScheme.color.fg.muted },

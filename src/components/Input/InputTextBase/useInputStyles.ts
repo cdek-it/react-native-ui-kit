@@ -31,9 +31,16 @@ const containerMinHeight = StyleSheet.create(({ theme }) => ({
 // TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-1; value=3.5
 // TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-2; value=7
 // TODO(tokens-migration): reason=missing; legacy=typography.Color.Common.text-color-secondary; value=#85888e
-// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-sm; value=12.25
 export const inputStyles = StyleSheet.create(
-  ({ components, semantic, border, typography, spacing, fonts }) => ({
+  ({
+    primitive,
+    components,
+    semantic,
+    border,
+    typography,
+    spacing,
+    fonts,
+  }) => ({
     container: {
       flexDirection: 'row',
       borderWidth: border.Width.border,
@@ -78,7 +85,7 @@ export const inputStyles = StyleSheet.create(
       overflow: 'hidden',
     },
     inputFont: {
-      fontSize: typography.Size['text-base'],
+      fontSize: primitive.fonts.fontSize[300],
       color: components.inputtext.root.color,
       includeFontPadding: false,
       fontFamily: fonts.secondary,
@@ -96,13 +103,13 @@ export const inputStyles = StyleSheet.create(
     rightButtonContainer: { justifyContent: 'center' },
     iconSize: {
       // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-base; value=14; target=components.inputtext.extend.iconSize; targetValue=16
-      width: typography.Size['text-base'],
-      height: typography.Size['text-base'],
+      width: primitive.fonts.fontSize[300],
+      height: primitive.fonts.fontSize[300],
     },
     iconSizeFloatLabel: {
       // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-xl; value=17.5; target=components.inputtext.extend.iconSize; targetValue=16
-      width: typography.Size['text-xl'],
-      height: typography.Size['text-xl'],
+      width: primitive.fonts.fontSize[500],
+      height: primitive.fonts.fontSize[500],
     },
 
     label: {
@@ -116,11 +123,11 @@ export const inputStyles = StyleSheet.create(
       color: typography.Color.Common['text-color-secondary'],
       includeFontPadding: false,
       verticalAlign: 'middle',
-      fontSize: typography.Size['text-base'],
+      fontSize: primitive.fonts.fontSize[300],
       fontFamily: fonts.secondary,
     },
     labelReducedSize: {
-      fontSize: typography.Size['text-sm'],
+      fontSize: primitive.fonts.fontSize[100],
       paddingVertical: spacing.Padding['p-1'],
       top: 7,
       fontFamily: fonts.primary,

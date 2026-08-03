@@ -56,7 +56,7 @@ exports[`ButtonSeverity component tests severity - danger 1`] = `
       {
         "color": "#45120e",
         "fontFamily": "TT Fellows",
-        "fontSize": 14,
+        "fontSize": 16,
         "fontWeight": 600,
         "includeFontPadding": false,
         "verticalAlign": "middle",
@@ -125,7 +125,7 @@ exports[`ButtonSeverity component tests severity - info 1`] = `
       {
         "color": "#0e2a45",
         "fontFamily": "TT Fellows",
-        "fontSize": 14,
+        "fontSize": 16,
         "fontWeight": 600,
         "includeFontPadding": false,
         "verticalAlign": "middle",
@@ -194,7 +194,7 @@ exports[`ButtonSeverity component tests severity - success 1`] = `
       {
         "color": "#0e4514",
         "fontFamily": "TT Fellows",
-        "fontSize": 14,
+        "fontSize": 16,
         "fontWeight": 600,
         "includeFontPadding": false,
         "verticalAlign": "middle",
@@ -263,7 +263,7 @@ exports[`ButtonSeverity component tests severity - warning 1`] = `
       {
         "color": "#4f3709",
         "fontFamily": "TT Fellows",
-        "fontSize": 14,
+        "fontSize": 16,
         "fontWeight": 600,
         "includeFontPadding": false,
         "verticalAlign": "middle",

@@ -52,7 +52,7 @@ export const InputGroupAddon = memo<InputGroupAddonProps>(
 )
 
 const styles = StyleSheet.create(
-  ({ components, semantic, typography, fonts }) => ({
+  ({ primitive, components, semantic, fonts }) => ({
     container: {
       padding: components.inputgroup.addon.padding,
       justifyContent: 'center',
@@ -77,7 +77,7 @@ const styles = StyleSheet.create(
       backgroundColor: semantic.colorScheme.color.bg.neutral.weak.disabled,
     },
     text: {
-      fontSize: typography.Size['text-base'],
+      fontSize: primitive.fonts.fontSize[300],
       color: components.inputgroup.colorScheme.addon.color,
       includeFontPadding: false,
       verticalAlign: 'middle',
@@ -85,8 +85,8 @@ const styles = StyleSheet.create(
     },
     icon: {
       // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-base; value=14; target=components.inputgroup.extend.iconSize; targetValue=16
-      width: typography.Size['text-base'],
-      height: typography.Size['text-base'],
+      width: primitive.fonts.fontSize[300],
+      height: primitive.fonts.fontSize[300],
     },
   })
 )

@@ -137,7 +137,7 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
 // у menu.item нет background и borderColor, прозрачность не выражена semantic-токеном.
 // TODO(tokens-migration): reason=missing; legacy=border.Width.border; value=1
 const styles = StyleSheet.create(
-  ({ components, semantic, spacing, typography, border }) => ({
+  ({ primitive, components, semantic, spacing, border }) => ({
     container: {
       borderColor: 'transparent',
       borderWidth: border.Width.border,
@@ -176,8 +176,8 @@ const styles = StyleSheet.create(
     },
     icon: {
       // TODO(tokens-migration): reason=value-mismatch; legacy=typography.Size.text-xl; value=17.5; target=components.menu.extend.iconSize; targetValue=20
-      width: typography.Size['text-xl'],
-      height: typography.Size['text-xl'],
+      width: primitive.fonts.fontSize[500],
+      height: primitive.fonts.fontSize[500],
       color: components.menu.item.icon.color,
     },
     textContainer: { gap: spacing.Gap['gap-1'], flex: 1 },

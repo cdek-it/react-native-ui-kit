@@ -48,30 +48,27 @@ const ButtonIconComponent = ({
 
 export const ButtonIcon = genericMemo(ButtonIconComponent)
 
-// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-2xl; value=21
-// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-xl; value=17.5
-// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-base; value=14
 // TODO(tokens-migration): reason=missing; legacy=typography.Color.Common.text-color-secondary; value=#85888e
 const buttonIconStyles = StyleSheet.create(
-  ({ components: { button }, typography }) => ({
+  ({ primitive, components: { button }, typography }) => ({
     icon: {
       variants: {
         size: {
           xlarge: {
-            height: typography.Size['text-2xl'],
-            width: typography.Size['text-2xl'],
+            height: primitive.fonts.fontSize[600],
+            width: primitive.fonts.fontSize[600],
           },
           large: {
-            height: typography.Size['text-2xl'],
-            width: typography.Size['text-2xl'],
+            height: primitive.fonts.fontSize[600],
+            width: primitive.fonts.fontSize[600],
           },
           base: {
-            height: typography.Size['text-xl'],
-            width: typography.Size['text-xl'],
+            height: primitive.fonts.fontSize[500],
+            width: primitive.fonts.fontSize[500],
           },
           small: {
-            height: typography.Size['text-base'],
-            width: typography.Size['text-base'],
+            height: primitive.fonts.fontSize[300],
+            width: primitive.fonts.fontSize[300],
           },
         },
         variant: {

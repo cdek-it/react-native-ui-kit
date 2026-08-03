@@ -63,8 +63,7 @@ export const InputOtpItem = memo<InputOtpItemProps>(
 // Рамка, цвет и отступы намеренно берутся у inputtext: поле OTP должно выглядеть
 // как обычное поле ввода. Собственные токены inputotp описывают только отличия —
 // тот же приём, что в пресете PrimeUIX lara, где inputotp задаёт лишь gap и width.
-// TODO(tokens-migration): reason=missing; legacy=typography.Size.text-2xl; value=21
-const styles = StyleSheet.create(({ components, fonts, typography }) => ({
+const styles = StyleSheet.create(({ primitive, components, fonts }) => ({
   container: {
     minHeight: 35,
     minWidth: 35,
@@ -78,7 +77,7 @@ const styles = StyleSheet.create(({ components, fonts, typography }) => ({
   textRow: { flexDirection: 'row', alignItems: 'center' },
 
   text: {
-    fontSize: typography.Size['text-2xl'],
+    fontSize: primitive.fonts.fontSize[600],
     fontFamily: fonts.primary,
     fontWeight: '400',
     color: components.inputtext.root.color,

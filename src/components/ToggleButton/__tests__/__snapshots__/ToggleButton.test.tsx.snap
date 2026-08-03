@@ -41,11 +41,11 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -61,15 +61,15 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="ToggleButton.icon"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -147,7 +147,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           "color": "#2b2e33",
           "flexShrink": 1,
           "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
+          "fontSize": 12,
           "fontWeight": "600",
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -206,7 +206,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           "color": "#2b2e33",
           "flexShrink": 1,
           "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
+          "fontSize": 12,
           "fontWeight": "600",
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -218,11 +218,11 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
     </Text>
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -238,15 +238,15 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="ToggleButton.icon"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -368,11 +368,11 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={20}
+      bbWidth={20}
       fill="none"
       focusable={false}
-      height={17.5}
+      height={20}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -388,15 +388,15 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 20,
+            "width": 20,
           },
         ]
       }
       testID="ToggleButton.icon"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={20}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -514,11 +514,11 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={21}
-      bbWidth={21}
+      bbHeight={24}
+      bbWidth={24}
       fill="none"
       focusable={false}
-      height={21}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -534,15 +534,15 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
           },
           {
             "flex": 0,
-            "height": 21,
-            "width": 21,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="ToggleButton.icon"
       vbHeight={24}
       vbWidth={24}
-      width={21}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -620,7 +620,7 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
           "color": "#85888e",
           "flexShrink": 1,
           "fontFamily": "TT Fellows",
-          "fontSize": 17.5,
+          "fontSize": 20,
           "fontWeight": "600",
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -682,11 +682,11 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={31.5}
-      bbWidth={31.5}
+      bbHeight={36}
+      bbWidth={36}
       fill="none"
       focusable={false}
-      height={31.5}
+      height={36}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -702,15 +702,15 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
           },
           {
             "flex": 0,
-            "height": 31,
-            "width": 31,
+            "height": 36,
+            "width": 36,
           },
         ]
       }
       testID="ToggleButton.icon"
       vbHeight={24}
       vbWidth={24}
-      width={31.5}
+      width={36}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup

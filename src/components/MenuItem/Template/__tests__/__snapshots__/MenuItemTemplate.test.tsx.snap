@@ -92,11 +92,11 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
           <View>
             <RNSVGSvgView
               align="xMidYMid"
-              bbHeight={17.5}
-              bbWidth={17.5}
+              bbHeight={20}
+              bbWidth={20}
               fill="none"
               focusable={false}
-              height={17.5}
+              height={20}
               meetOrSlice={0}
               minX={0}
               minY={0}
@@ -112,15 +112,15 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
                   },
                   {
                     "flex": 0,
-                    "height": 17,
-                    "width": 17,
+                    "height": 20,
+                    "width": 20,
                   },
                 ]
               }
               testID="SvgUniversalComponent"
               vbHeight={24}
               vbWidth={24}
-              width={17.5}
+              width={20}
               xmlns="http://www.w3.org/2000/svg"
             >
               <RNSVGGroup
@@ -242,7 +242,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontSize": 16,
                   "includeFontPadding": false,
                   "lineHeight": 20,
                   "verticalAlign": "middle",
@@ -254,7 +254,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
                   "color": "#2b2e33",
                 },
                 {
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                   "lineHeight": 18,
                 },
                 undefined,
@@ -271,7 +271,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                   "includeFontPadding": false,
                   "letterSpacing": -0.25,
                   "lineHeight": 15,
@@ -609,7 +609,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate minimal config 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontSize": 16,
                   "includeFontPadding": false,
                   "lineHeight": 20,
                   "verticalAlign": "middle",
@@ -621,7 +621,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate minimal config 1`] = `
                   "color": "#2b2e33",
                 },
                 {
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                   "lineHeight": 18,
                 },
                 undefined,
@@ -811,7 +811,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontSize": 16,
                   "includeFontPadding": false,
                   "lineHeight": 20,
                   "verticalAlign": "middle",
@@ -823,7 +823,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
                   "color": "#2b2e33",
                 },
                 {
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                   "lineHeight": 18,
                 },
                 undefined,
@@ -840,7 +840,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                   "includeFontPadding": false,
                   "letterSpacing": -0.25,
                   "lineHeight": 15,
@@ -1034,11 +1034,11 @@ exports[`MenuItemTemplate tests MenuItemTemplate with colored icon 1`] = `
           <View>
             <RNSVGSvgView
               align="xMidYMid"
-              bbHeight={17.5}
-              bbWidth={17.5}
+              bbHeight={20}
+              bbWidth={20}
               fill="none"
               focusable={false}
-              height={17.5}
+              height={20}
               meetOrSlice={0}
               minX={0}
               minY={0}
@@ -1054,15 +1054,15 @@ exports[`MenuItemTemplate tests MenuItemTemplate with colored icon 1`] = `
                   },
                   {
                     "flex": 0,
-                    "height": 17,
-                    "width": 17,
+                    "height": 20,
+                    "width": 20,
                   },
                 ]
               }
               testID="SvgUniversalComponent"
               vbHeight={24}
               vbWidth={24}
-              width={17.5}
+              width={20}
               xmlns="http://www.w3.org/2000/svg"
             >
               <RNSVGGroup
@@ -1149,7 +1149,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with colored icon 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontSize": 16,
                   "includeFontPadding": false,
                   "lineHeight": 20,
                   "verticalAlign": "middle",
@@ -1161,7 +1161,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with colored icon 1`] = `
                   "color": "#2b2e33",
                 },
                 {
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                   "lineHeight": 18,
                 },
                 undefined,
@@ -1264,7 +1264,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with extra 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontSize": 16,
                   "includeFontPadding": false,
                   "lineHeight": 20,
                   "verticalAlign": "middle",
@@ -1276,7 +1276,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with extra 1`] = `
                   "color": "#2b2e33",
                 },
                 {
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                   "lineHeight": 18,
                 },
                 undefined,
@@ -1473,11 +1473,11 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
           <View>
             <RNSVGSvgView
               align="xMidYMid"
-              bbHeight={17.5}
-              bbWidth={17.5}
+              bbHeight={20}
+              bbWidth={20}
               fill="none"
               focusable={false}
-              height={17.5}
+              height={20}
               meetOrSlice={0}
               minX={0}
               minY={0}
@@ -1493,15 +1493,15 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
                   },
                   {
                     "flex": 0,
-                    "height": 17,
-                    "width": 17,
+                    "height": 20,
+                    "width": 20,
                   },
                 ]
               }
               testID="SvgUniversalComponent"
               vbHeight={24}
               vbWidth={24}
-              width={17.5}
+              width={20}
               xmlns="http://www.w3.org/2000/svg"
             >
               <RNSVGGroup
@@ -1588,7 +1588,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontSize": 16,
                   "includeFontPadding": false,
                   "lineHeight": 20,
                   "verticalAlign": "middle",
@@ -1600,7 +1600,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
                   "color": "#2b2e33",
                 },
                 {
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                   "lineHeight": 18,
                 },
                 undefined,
@@ -1701,11 +1701,11 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
           <View>
             <RNSVGSvgView
               align="xMidYMid"
-              bbHeight={17.5}
-              bbWidth={17.5}
+              bbHeight={20}
+              bbWidth={20}
               fill="none"
               focusable={false}
-              height={17.5}
+              height={20}
               meetOrSlice={0}
               minX={0}
               minY={0}
@@ -1721,15 +1721,15 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
                   },
                   {
                     "flex": 0,
-                    "height": 17,
-                    "width": 17,
+                    "height": 20,
+                    "width": 20,
                   },
                 ]
               }
               testID="SvgUniversalComponent"
               vbHeight={24}
               vbWidth={24}
-              width={17.5}
+              width={20}
               xmlns="http://www.w3.org/2000/svg"
             >
               <RNSVGGroup
@@ -1851,7 +1851,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontSize": 16,
                   "includeFontPadding": false,
                   "lineHeight": 20,
                   "verticalAlign": "middle",
@@ -1863,7 +1863,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
                   "color": "#2b2e33",
                 },
                 {
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                   "lineHeight": 18,
                 },
                 undefined,
@@ -1969,7 +1969,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with padding 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontSize": 16,
                   "includeFontPadding": false,
                   "lineHeight": 20,
                   "verticalAlign": "middle",
@@ -1981,7 +1981,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with padding 1`] = `
                   "color": "#2b2e33",
                 },
                 {
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                   "lineHeight": 18,
                 },
                 undefined,
@@ -2090,7 +2090,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with separator 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 14,
+                  "fontSize": 16,
                   "includeFontPadding": false,
                   "lineHeight": 20,
                   "verticalAlign": "middle",
@@ -2102,7 +2102,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with separator 1`] = `
                   "color": "#2b2e33",
                 },
                 {
-                  "fontSize": 12.25,
+                  "fontSize": 14,
                   "lineHeight": 18,
                 },
                 undefined,
