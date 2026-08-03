@@ -5,6 +5,8 @@ import Animated, { type AnimatedStyle } from 'react-native-reanimated'
 
 import { StyleSheet } from 'react-native-unistyles'
 
+import { effects } from '../../../theme/tokens/semantic/light.json'
+
 export interface InputOtpItemProps extends Pick<ViewProps, 'testID'> {
   value?: string
   error: boolean
@@ -15,10 +17,14 @@ export interface InputOtpItemProps extends Pick<ViewProps, 'testID'> {
 
 const CURSOR_ANIMATION_DURATION = 500
 
-// Объект вне StyleSheet.create, доступа к теме нет — значение продублировано
-// из semantic.effects.opacity[20].
+// Анимация не может жить в StyleSheet.create: Animated.Text из reanimated не
+// принимает Unistyles-стиль. Шкала непрозрачности одинакова в обеих темах,
+// поэтому токены берутся из сгенерированного файла напрямую.
 const cursorAnimationStyle = {
-  animationName: { from: { opacity: 1 }, to: { opacity: 0.2 } },
+  animationName: {
+    from: { opacity: effects.opacity[100] },
+    to: { opacity: effects.opacity[20] },
+  },
   animationDuration: CURSOR_ANIMATION_DURATION,
   animationDirection: 'alternate',
   animationIterationCount: 'infinite',
