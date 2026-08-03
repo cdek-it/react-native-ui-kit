@@ -83,7 +83,8 @@ export const ButtonContainer = genericMemo(ButtonContainerComponent)
 // TODO(tokens-migration): reason=missing; legacy=spacing.Padding.p-1; value=3.5
 // TODO(tokens-migration): reason=missing; legacy=spacing.Gap.gap-0; value=0
 // TODO(tokens-migration): reason=missing; legacy=spacing.Gap.gap-1; value=3.5
-// TODO(tokens-migration): reason=missing; legacy=hardcode.transparent; value=transparent
+// `transparent` здесь — отсутствие фона или границы, а не цвет дизайн-системы:
+// прозрачность не выражена ни semantic-токеном, ни свойствами button.extend.extText.
 const buttonContainerStyles = StyleSheet.create(
   ({ components: { button }, spacing }) => ({
     container: {
@@ -150,7 +151,7 @@ const buttonContainerStyles = StyleSheet.create(
             height: 'auto',
             minHeight: 'auto',
             borderColor: 'transparent',
-            backgroundColor: 'transparent',
+            backgroundColor: button.extend.extLink.background,
           },
           basic: {
             borderColor: button.colorScheme.root.primary.borderColor,

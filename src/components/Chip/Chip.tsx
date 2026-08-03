@@ -97,7 +97,8 @@ export const Chip = memo<ChipProps>(
   }
 )
 
-// TODO(tokens-migration): reason=missing; legacy=hardcode.transparent; value=transparent
+// `transparent` здесь — отсутствие границы, а не цвет дизайн-системы:
+// у chip.root нет borderColor, прозрачность не выражена semantic-токеном.
 // TODO(tokens-migration): reason=missing; legacy=components.button.extend.disabledColor; light=#85888e; dark=#a2a5a9
 // TODO(tokens-migration): reason=missing; legacy=components.button.extend.disabledBackground; light=#e2e2e4; dark=#404348
 // TODO(tokens-migration): reason=missing; legacy=border.Color.Service.border-success.400; value=#77f48a
