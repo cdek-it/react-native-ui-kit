@@ -185,22 +185,26 @@ const styles = StyleSheet.create(
     },
     disabledContainer: {
       borderRadius: components.selectbutton.extend.ext.borderRadius,
-      borderWidth: 1,
+      borderWidth: semantic.dimension.borderWidth[100],
       borderColor: semantic.colorScheme.color.border.neutral.strong,
     },
     iconSmall: {
-      width: primitive.fonts.fontSize[300],
-      height: primitive.fonts.fontSize[300],
+      width: components.selectbutton.extend.iconSize.sm,
+      height: components.selectbutton.extend.iconSize.sm,
     },
     iconBase: {
-      width: primitive.fonts.fontSize[500],
-      height: primitive.fonts.fontSize[500],
+      width: components.selectbutton.extend.iconSize.md,
+      height: components.selectbutton.extend.iconSize.md,
     },
     iconLarge: {
-      width: primitive.fonts.fontSize[600],
-      height: primitive.fonts.fontSize[600],
+      width: components.selectbutton.extend.iconSize.lg,
+      height: components.selectbutton.extend.iconSize.lg,
     },
-    iconXLarge: { width: 28, height: 28 },
+    // Токена iconSize для xlarge в дизайн-системе нет — размер взят semantic-ролью.
+    iconXLarge: {
+      width: semantic.dimension.size[800],
+      height: semantic.dimension.size[800],
+    },
     label: {
       flexShrink: 1,
       fontWeight: primitive.fonts.fontWeight.demibold,

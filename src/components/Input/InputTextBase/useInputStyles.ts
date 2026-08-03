@@ -57,7 +57,7 @@ export const inputStyles = StyleSheet.create(
       justifyContent: 'center',
     },
     input: {
-      padding: 0,
+      padding: semantic.dimension.space.none,
       paddingHorizontal: components.inputtext.root.paddingX,
       position: 'absolute',
       left: 0,
@@ -105,7 +105,7 @@ export const inputStyles = StyleSheet.create(
       left: 7,
       right: 7,
       top: 19,
-      paddingVertical: 0,
+      paddingVertical: semantic.dimension.space.none,
       paddingLeft: semantic.dimension.space[100],
       paddingRight: semantic.dimension.space[200],
       color: semantic.colorScheme.color.fg.muted,

@@ -87,12 +87,12 @@ export const Service = ({
 
 const styles = StyleSheet.create(({ semantic, primitive, fonts }) => ({
   iconBase: {
-    width: primitive.fonts.fontSize[500],
-    height: primitive.fonts.fontSize[500],
+    width: semantic.dimension.size[600],
+    height: semantic.dimension.size[600],
   },
   icon: {
-    width: primitive.fonts.fontSize[300],
-    height: primitive.fonts.fontSize[300],
+    width: semantic.dimension.size[450],
+    height: semantic.dimension.size[450],
   },
 
   containerBase: { flexDirection: 'row', gap: semantic.dimension.space[200] },

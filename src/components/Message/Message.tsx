@@ -218,70 +218,66 @@ export const Message = memo<MessageProps>(
   }
 )
 
-const messageStyles = StyleSheet.create(
-  ({ semantic, primitive, components }) => ({
-    container: {
-      borderRadius: components.message.root.borderRadius,
-      borderWidth: semantic.dimension.borderWidth[100],
-      overflow: 'hidden',
-      variants: {
-        severity: {
-          info: {
-            borderColor: components.message.colorScheme.info.borderColor,
-            backgroundColor: components.message.colorScheme.info.background,
-          },
-          success: {
-            borderColor: components.message.colorScheme.success.borderColor,
-            backgroundColor: components.message.colorScheme.success.background,
-          },
-          warning: {
-            borderColor: components.message.colorScheme.warn.borderColor,
-            backgroundColor: components.message.colorScheme.warn.background,
-          },
-          danger: {
-            borderColor: components.message.colorScheme.error.borderColor,
-            backgroundColor: components.message.colorScheme.error.background,
-          },
+const messageStyles = StyleSheet.create(({ semantic, components }) => ({
+  container: {
+    borderRadius: components.message.root.borderRadius,
+    borderWidth: semantic.dimension.borderWidth[100],
+    overflow: 'hidden',
+    variants: {
+      severity: {
+        info: {
+          borderColor: components.message.colorScheme.info.borderColor,
+          backgroundColor: components.message.colorScheme.info.background,
+        },
+        success: {
+          borderColor: components.message.colorScheme.success.borderColor,
+          backgroundColor: components.message.colorScheme.success.background,
+        },
+        warning: {
+          borderColor: components.message.colorScheme.warn.borderColor,
+          backgroundColor: components.message.colorScheme.warn.background,
+        },
+        danger: {
+          borderColor: components.message.colorScheme.error.borderColor,
+          backgroundColor: components.message.colorScheme.error.background,
         },
       },
     },
-    content: {
-      flexGrow: 1,
-      borderLeftWidth:
-        components.message.extend.extAccentLine.width -
-        semantic.dimension.borderWidth[100],
-      padding: semantic.dimension.space[400],
-      paddingLeft: components.message.content.padding,
-      gap: semantic.dimension.space[400],
-      variants: {
-        severity: {
-          info: {
-            borderColor: components.message.colorScheme.info.borderColor,
-          },
-          success: {
-            borderColor: components.message.colorScheme.success.borderColor,
-          },
-          warning: {
-            borderColor: components.message.colorScheme.warn.borderColor,
-          },
-          danger: {
-            borderColor: components.message.colorScheme.error.borderColor,
-          },
+  },
+  content: {
+    flexGrow: 1,
+    borderLeftWidth:
+      components.message.extend.extAccentLine.width -
+      semantic.dimension.borderWidth[100],
+    padding: semantic.dimension.space[400],
+    paddingLeft: components.message.content.padding,
+    gap: semantic.dimension.space[400],
+    variants: {
+      severity: {
+        info: { borderColor: components.message.colorScheme.info.borderColor },
+        success: {
+          borderColor: components.message.colorScheme.success.borderColor,
+        },
+        warning: {
+          borderColor: components.message.colorScheme.warn.borderColor,
+        },
+        danger: {
+          borderColor: components.message.colorScheme.error.borderColor,
         },
       },
     },
-    titleRow: { flexDirection: 'row', gap: semantic.dimension.space[400] },
-    titleTextContainer: {
-      flex: 1,
-      alignSelf: 'center',
-      gap: components.message.extend.extText.gap,
-    },
-    iconSize: {
-      width: primitive.fonts.fontSize[700],
-      height: primitive.fonts.fontSize[700],
-    },
-  })
-)
+  },
+  titleRow: { flexDirection: 'row', gap: semantic.dimension.space[400] },
+  titleTextContainer: {
+    flex: 1,
+    alignSelf: 'center',
+    gap: components.message.extend.extText.gap,
+  },
+  iconSize: {
+    width: components.message.icon.size,
+    height: components.message.icon.size,
+  },
+}))
 
 export enum TestId {
   Container = 'MessageContainer',

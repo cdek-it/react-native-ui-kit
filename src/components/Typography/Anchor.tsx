@@ -153,12 +153,12 @@ const styles = StyleSheet.create(({ semantic, primitive, fonts }) => ({
   },
   visited: { color: semantic.colorScheme.color.fg.status.help.default },
   icon: {
-    width: primitive.fonts.fontSize[300],
-    height: primitive.fonts.fontSize[300],
+    width: semantic.dimension.size[450],
+    height: semantic.dimension.size[450],
   },
   iconBase: {
-    width: primitive.fonts.fontSize[500],
-    height: primitive.fonts.fontSize[500],
+    width: semantic.dimension.size[600],
+    height: semantic.dimension.size[600],
   },
   leftIconContainer: { paddingRight: semantic.dimension.space[200] },
   rightIconContainer: { paddingLeft: semantic.dimension.space[200] },

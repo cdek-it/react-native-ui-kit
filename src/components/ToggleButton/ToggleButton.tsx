@@ -222,28 +222,29 @@ const toggleStyles = StyleSheet.create(
     },
     iconOnly: {
       aspectRatio: 1,
-      paddingHorizontal: 0,
-      paddingVertical: 0,
+      paddingHorizontal: semantic.dimension.space.none,
+      paddingVertical: semantic.dimension.space.none,
       justifyContent: 'center',
     },
     icon: {
       variants: {
         size: {
           xlarge: {
-            width: primitive.fonts.fontSize[700],
-            height: primitive.fonts.fontSize[700],
+            // Токена iconSize.xlg в дизайн-системе нет — размер взят semantic-ролью.
+            width: semantic.dimension.size[1000],
+            height: semantic.dimension.size[1000],
           },
           large: {
-            width: primitive.fonts.fontSize[600],
-            height: primitive.fonts.fontSize[600],
+            width: components.togglebutton.extend.iconSize.lg,
+            height: components.togglebutton.extend.iconSize.lg,
           },
           base: {
-            width: primitive.fonts.fontSize[500],
-            height: primitive.fonts.fontSize[500],
+            width: components.togglebutton.extend.iconSize.md,
+            height: components.togglebutton.extend.iconSize.md,
           },
           small: {
-            width: primitive.fonts.fontSize[300],
-            height: primitive.fonts.fontSize[300],
+            width: components.togglebutton.extend.iconSize.sm,
+            height: components.togglebutton.extend.iconSize.sm,
           },
         },
         checked: {

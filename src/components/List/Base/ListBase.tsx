@@ -141,7 +141,7 @@ const ListBaseTestId = {
   title: 'Title',
 }
 
-const styles = StyleSheet.create(({ semantic, primitive }) => ({
+const styles = StyleSheet.create(({ semantic }) => ({
   container: {
     flexDirection: 'row',
     paddingLeft: semantic.dimension.space[400],
@@ -169,8 +169,8 @@ const styles = StyleSheet.create(({ semantic, primitive }) => ({
   titleContainer: { gap: semantic.dimension.space[100] },
   extraContainer: { paddingVertical: semantic.dimension.space[200] },
   icon: {
-    width: primitive.fonts.fontSize[600],
-    height: primitive.fonts.fontSize[600],
+    width: semantic.dimension.size[700],
+    height: semantic.dimension.size[700],
   },
   rightSection: {
     flexDirection: 'row',

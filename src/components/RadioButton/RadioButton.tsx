@@ -73,7 +73,7 @@ const radioStyles = StyleSheet.create(({ semantic, components }) => ({
     width: components.radiobutton.root.width,
     height: components.radiobutton.root.height,
     borderRadius: semantic.dimension.borderRadius.max,
-    borderWidth: 1,
+    borderWidth: semantic.dimension.borderWidth[100],
     alignItems: 'center',
     justifyContent: 'center',
     transitionProperty: ['borderColor', 'backgroundColor'],

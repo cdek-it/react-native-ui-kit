@@ -143,7 +143,7 @@ const buttonContainerStyles = StyleSheet.create(
           },
           text: { borderColor: 'transparent', backgroundColor: 'transparent' },
           link: {
-            paddingHorizontal: 0,
+            paddingHorizontal: semantic.dimension.space.none,
             paddingVertical: semantic.dimension.space[100],
             height: 'auto',
             minHeight: 'auto',

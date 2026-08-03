@@ -135,13 +135,13 @@ export const Divider = memo<DividerProps>(
 
 const styles = StyleSheet.create(({ semantic, components }) => ({
   container: {
-    minHeight: 28,
+    minHeight: semantic.dimension.size[800],
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
   },
   containerVertical: {
-    minWidth: 28,
+    minWidth: semantic.dimension.size[800],
     flexDirection: 'column',
     flexGrow: 1,
     alignSelf: 'flex-start',
@@ -159,7 +159,7 @@ const styles = StyleSheet.create(({ semantic, components }) => ({
   line: {
     width: '100%',
     height: '100%',
-    borderWidth: 1,
+    borderWidth: semantic.dimension.borderWidth[100],
     borderColor: components.divider.root.borderColor,
   },
   lineDash: { borderStyle: 'dashed' },
@@ -172,7 +172,7 @@ const styles = StyleSheet.create(({ semantic, components }) => ({
     backgroundColor: components.divider.content.background,
   },
   contentVertical: {
-    paddingHorizontal: 0,
+    paddingHorizontal: semantic.dimension.space.none,
     paddingVertical: semantic.dimension.space[200],
   },
   icon: {

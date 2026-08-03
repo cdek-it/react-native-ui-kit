@@ -49,25 +49,25 @@ const ButtonIconComponent = ({
 export const ButtonIcon = genericMemo(ButtonIconComponent)
 
 const buttonIconStyles = StyleSheet.create(
-  ({ semantic, primitive, components: { button } }) => ({
+  ({ semantic, components: { button } }) => ({
     icon: {
       variants: {
         size: {
           xlarge: {
-            height: primitive.fonts.fontSize[600],
-            width: primitive.fonts.fontSize[600],
+            height: button.extend.iconSize.lg,
+            width: button.extend.iconSize.lg,
           },
           large: {
-            height: primitive.fonts.fontSize[600],
-            width: primitive.fonts.fontSize[600],
+            height: button.extend.iconSize.lg,
+            width: button.extend.iconSize.lg,
           },
           base: {
-            height: primitive.fonts.fontSize[500],
-            width: primitive.fonts.fontSize[500],
+            height: button.extend.iconSize.md,
+            width: button.extend.iconSize.md,
           },
           small: {
-            height: primitive.fonts.fontSize[300],
-            width: primitive.fonts.fontSize[300],
+            height: button.extend.iconSize.sm,
+            width: button.extend.iconSize.sm,
           },
         },
         variant: {

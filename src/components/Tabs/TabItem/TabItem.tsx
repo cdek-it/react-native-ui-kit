@@ -110,8 +110,8 @@ const styles = StyleSheet.create(
       mixBlendMode: 'luminosity',
     },
     icon: {
-      width: primitive.fonts.fontSize[500],
-      height: primitive.fonts.fontSize[500],
+      width: semantic.dimension.size[600],
+      height: semantic.dimension.size[600],
     },
     text: {
       fontFamily: fonts.primary,

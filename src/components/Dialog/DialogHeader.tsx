@@ -88,7 +88,7 @@ export const DialogHeader = ({
   )
 }
 
-const styles = StyleSheet.create(({ semantic, primitive, components }) => ({
+const styles = StyleSheet.create(({ semantic, components }) => ({
   text: { flex: 1 },
   header: {
     flexDirection: 'row',
@@ -104,12 +104,12 @@ const styles = StyleSheet.create(({ semantic, primitive, components }) => ({
     backgroundColor: components.dialog.root.borderColor,
   },
   closeIcon: {
-    width: primitive.fonts.fontSize[300],
-    height: primitive.fonts.fontSize[300],
+    width: semantic.dimension.size[450],
+    height: semantic.dimension.size[450],
   },
   severityIcon: {
-    width: primitive.fonts.fontSize[600],
-    height: primitive.fonts.fontSize[600],
+    width: semantic.dimension.size[700],
+    height: semantic.dimension.size[700],
   },
 }))
 

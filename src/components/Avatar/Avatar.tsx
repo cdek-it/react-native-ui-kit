@@ -257,12 +257,12 @@ export const Avatar = memo<AvatarProps>(
   }
 )
 
-const styles = StyleSheet.create(({ primitive, components, fonts }) => ({
+const styles = StyleSheet.create(({ semantic, components, fonts }) => ({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: components.avatar.root.borderRadius,
-    borderWidth: 1,
+    borderWidth: semantic.dimension.borderWidth[100],
     borderColor: components.avatar.extend.borderColor,
     backgroundColor: components.avatar.root.background,
     overflow: 'hidden',
@@ -279,7 +279,7 @@ const styles = StyleSheet.create(({ primitive, components, fonts }) => ({
   },
   badgeContainer: { position: 'absolute', right: 0, top: -7 },
   badgeMeasureContainer: { alignSelf: 'flex-start' },
-  icon: { width: primitive.fonts.fontSize[300] },
+  icon: { width: components.avatar.icon.size },
   iconXLarge: { width: components.avatar.xl.icon.size },
 }))
 

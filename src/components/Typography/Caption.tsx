@@ -78,7 +78,7 @@ const styles = StyleSheet.create(({ primitive, semantic, fonts }) => ({
     gap: semantic.dimension.space[100],
   },
   icon: {
-    width: primitive.fonts.fontSize[300],
-    height: primitive.fonts.fontSize[300],
+    width: semantic.dimension.size[450],
+    height: semantic.dimension.size[450],
   },
 }))
