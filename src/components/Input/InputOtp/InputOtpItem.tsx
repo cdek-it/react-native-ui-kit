@@ -74,8 +74,8 @@ export const InputOtpItem = memo<InputOtpItemProps>(
 const styles = StyleSheet.create(
   ({ semantic, primitive, components, fonts }) => ({
     container: {
-      minHeight: 35,
-      minWidth: 35,
+      minHeight: components.inputotp.extend.height,
+      minWidth: components.inputotp.extend.height,
       paddingHorizontal: components.inputtext.root.paddingX,
       borderBottomWidth: components.inputotp.extend.borderWidth,
       borderColor: components.inputtext.root.borderColor,

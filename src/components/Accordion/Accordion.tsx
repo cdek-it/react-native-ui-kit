@@ -169,9 +169,12 @@ const styles = StyleSheet.create(
       alignItems: 'center',
       backgroundColor: components.accordion.colorScheme.header.background,
     },
-    icon: { width: 17.5, height: 17.5 },
+    icon: {
+      width: components.accordion.extend.extHeader.iconSize,
+      height: components.accordion.extend.extHeader.iconSize,
+    },
     title: {
-      fontSize: 15.75,
+      fontSize: primitive.fonts.fontSize[400],
       includeFontPadding: false,
       verticalAlign: 'middle',
       fontWeight: primitive.fonts.fontWeight.bold,

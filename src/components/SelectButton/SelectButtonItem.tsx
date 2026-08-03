@@ -173,8 +173,8 @@ const styles = StyleSheet.create(
       borderWidth: semantic.dimension.borderWidth[100],
       borderColor: 'transparent',
     },
-    small: { height: 28 },
-    base: { height: 35 },
+    small: { height: semantic.dimension.size[800] },
+    base: { height: semantic.dimension.size[1100] },
     large: {
       height: semantic.dimension.size[1300],
       gap: components.selectbutton.extend.gap,

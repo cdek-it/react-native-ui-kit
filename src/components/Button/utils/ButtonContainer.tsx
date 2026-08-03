@@ -430,9 +430,9 @@ const buttonContainerStyles = StyleSheet.create(
           styles: {
             paddingHorizontal: semantic.dimension.space[100],
             paddingVertical: semantic.dimension.space[100],
-            height: 28,
-            minHeight: 28,
-            maxHeight: 28,
+            height: button.extend.extLink.xlg.iconOnlyWidth,
+            minHeight: button.extend.extLink.xlg.iconOnlyWidth,
+            maxHeight: button.extend.extLink.xlg.iconOnlyWidth,
           },
         },
         {
@@ -442,9 +442,9 @@ const buttonContainerStyles = StyleSheet.create(
           styles: {
             paddingHorizontal: semantic.dimension.space.none,
             paddingVertical: semantic.dimension.space.none,
-            height: 24.5,
-            minHeight: 24.5,
-            maxHeight: 24.5,
+            height: button.extend.extLink.lg.iconOnlyWidth,
+            minHeight: button.extend.extLink.lg.iconOnlyWidth,
+            maxHeight: button.extend.extLink.lg.iconOnlyWidth,
           },
         },
         {
@@ -454,9 +454,9 @@ const buttonContainerStyles = StyleSheet.create(
           styles: {
             paddingHorizontal: semantic.dimension.space[100],
             paddingVertical: semantic.dimension.space[100],
-            height: 21.5,
-            minHeight: 21.5,
-            maxHeight: 21.5,
+            height: button.extend.extLink.base.iconOnlyWidth,
+            minHeight: button.extend.extLink.base.iconOnlyWidth,
+            maxHeight: button.extend.extLink.base.iconOnlyWidth,
           },
         },
         {
@@ -466,9 +466,9 @@ const buttonContainerStyles = StyleSheet.create(
           styles: {
             paddingHorizontal: semantic.dimension.space[100],
             paddingVertical: semantic.dimension.space[100],
-            height: 14,
-            minHeight: 28,
-            maxHeight: 28,
+            height: button.extend.extLink.sm.iconOnlyWidth,
+            minHeight: button.extend.extLink.sm.iconOnlyWidth,
+            maxHeight: button.extend.extLink.sm.iconOnlyWidth,
           },
         },
       ],
