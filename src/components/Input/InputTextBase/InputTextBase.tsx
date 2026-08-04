@@ -36,8 +36,11 @@ import Animated, {
 
 import { useLoadingRotationAnimation } from '../../../hooks/useLoadingRotationAnimation'
 import { useMakeTestId } from '../../../hooks/useMakeTestId'
-import type { ThemeType } from '../../../theme/types'
-import { SvgUniversal } from '../../../utils/SvgUniversal'
+
+import {
+  SvgUniversal,
+  type SvgUniversalTheme,
+} from '../../../utils/SvgUniversal'
 
 import { InputTextBaseTestId } from './testIds'
 import type { InputTextBaseProps, RenderTextInputArgs } from './types'
@@ -52,9 +55,9 @@ interface PrivateInputTextBaseProps {
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5470&m=dev
  * @see InputText
  */
-const inputIconUniProps = ({ theme }: ThemeType) => ({
-  color: theme.Form.InputText.inputIconColor,
-})
+const inputIconUniProps = ({ components }: SvgUniversalTheme) => {
+  return { color: components.inputtext.root.color }
+}
 
 export const InputTextBase = memo<
   InputTextBaseProps & PrivateInputTextBaseProps
@@ -306,7 +309,6 @@ export const InputTextBase = memo<
           isFocused && styles.containerFocused,
           containerStyle,
           state === 'danger' && styles.danger,
-          state === 'danger' && isFocused && styles.dangerFocused,
           disabled && styles.disabled,
         ]}
         testID={makeTestId(InputTextBaseTestId.pressableContainer)}
