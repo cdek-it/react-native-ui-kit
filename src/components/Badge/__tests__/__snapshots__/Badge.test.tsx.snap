@@ -18,9 +18,9 @@ exports[`Badge component tests dot, severity: basic 1`] = `
           "backgroundColor": "#44e858",
         },
         {
-          "borderRadius": 100,
-          "height": 7,
-          "width": 7,
+          "borderRadius": 8,
+          "height": 8,
+          "width": 8,
         },
       ]
     }
@@ -43,12 +43,12 @@ exports[`Badge component tests dot, severity: danger 1`] = `
     style={
       [
         {
-          "backgroundColor": "#fbacaa",
+          "backgroundColor": "#f47f77",
         },
         {
-          "borderRadius": 100,
-          "height": 7,
-          "width": 7,
+          "borderRadius": 8,
+          "height": 8,
+          "width": 8,
         },
       ]
     }
@@ -71,12 +71,12 @@ exports[`Badge component tests dot, severity: info 1`] = `
     style={
       [
         {
-          "backgroundColor": "#aad7fb",
+          "backgroundColor": "#77baf4",
         },
         {
-          "borderRadius": 100,
-          "height": 7,
-          "width": 7,
+          "borderRadius": 8,
+          "height": 8,
+          "width": 8,
         },
       ]
     }
@@ -99,12 +99,12 @@ exports[`Badge component tests dot, severity: success 1`] = `
     style={
       [
         {
-          "backgroundColor": "#aafbb7",
+          "backgroundColor": "#77f48a",
         },
         {
-          "borderRadius": 100,
-          "height": 7,
-          "width": 7,
+          "borderRadius": 8,
+          "height": 8,
+          "width": 8,
         },
       ]
     }
@@ -127,12 +127,12 @@ exports[`Badge component tests dot, severity: warning 1`] = `
     style={
       [
         {
-          "backgroundColor": "#fddeaa",
+          "backgroundColor": "#facb75",
         },
         {
-          "borderRadius": 100,
-          "height": 7,
-          "width": 7,
+          "borderRadius": 8,
+          "height": 8,
+          "width": 8,
         },
       ]
     }
@@ -158,10 +158,10 @@ exports[`Badge component tests severity: basic 1`] = `
           "backgroundColor": "#44e858",
         },
         {
-          "borderRadius": 100,
-          "height": 21,
+          "borderRadius": 1600,
+          "height": 24,
           "justifyContent": "center",
-          "paddingHorizontal": 7,
+          "paddingHorizontal": 8,
         },
       ]
     }
@@ -171,9 +171,9 @@ exports[`Badge component tests severity: basic 1`] = `
       style={
         [
           {
-            "color": "#000000",
+            "color": "#2b2e33",
             "fontFamily": "TT Fellows",
-            "fontSize": 10.5,
+            "fontSize": 12,
             "includeFontPadding": false,
             "verticalAlign": "middle",
           },
@@ -206,9 +206,9 @@ exports[`Badge component tests severity: basic 1`] = `
         onLayout={[Function]}
         style={
           {
-            "color": "#000000",
+            "color": "#2b2e33",
             "fontFamily": "TT Fellows",
-            "fontSize": 10.5,
+            "fontSize": 12,
             "includeFontPadding": false,
             "verticalAlign": "middle",
           }
@@ -236,13 +236,13 @@ exports[`Badge component tests severity: basic 2`] = `
     style={
       [
         {
-          "backgroundColor": "#aad7fb",
+          "backgroundColor": "#77baf4",
         },
         {
-          "borderRadius": 100,
-          "height": 21,
+          "borderRadius": 1600,
+          "height": 24,
           "justifyContent": "center",
-          "paddingHorizontal": 7,
+          "paddingHorizontal": 8,
         },
       ]
     }
@@ -252,9 +252,9 @@ exports[`Badge component tests severity: basic 2`] = `
       style={
         [
           {
-            "color": "#000000",
+            "color": "#2b2e33",
             "fontFamily": "TT Fellows",
-            "fontSize": 10.5,
+            "fontSize": 12,
             "includeFontPadding": false,
             "verticalAlign": "middle",
           },
@@ -287,9 +287,9 @@ exports[`Badge component tests severity: basic 2`] = `
         onLayout={[Function]}
         style={
           {
-            "color": "#000000",
+            "color": "#2b2e33",
             "fontFamily": "TT Fellows",
-            "fontSize": 10.5,
+            "fontSize": 12,
             "includeFontPadding": false,
             "verticalAlign": "middle",
           }
@@ -317,13 +317,13 @@ exports[`Badge component tests severity: basic 3`] = `
     style={
       [
         {
-          "backgroundColor": "#aafbb7",
+          "backgroundColor": "#77f48a",
         },
         {
-          "borderRadius": 100,
-          "height": 21,
+          "borderRadius": 1600,
+          "height": 24,
           "justifyContent": "center",
-          "paddingHorizontal": 7,
+          "paddingHorizontal": 8,
         },
       ]
     }
@@ -333,9 +333,9 @@ exports[`Badge component tests severity: basic 3`] = `
       style={
         [
           {
-            "color": "#000000",
+            "color": "#2b2e33",
             "fontFamily": "TT Fellows",
-            "fontSize": 10.5,
+            "fontSize": 12,
             "includeFontPadding": false,
             "verticalAlign": "middle",
           },
@@ -368,9 +368,9 @@ exports[`Badge component tests severity: basic 3`] = `
         onLayout={[Function]}
         style={
           {
-            "color": "#000000",
+            "color": "#2b2e33",
             "fontFamily": "TT Fellows",
-            "fontSize": 10.5,
+            "fontSize": 12,
             "includeFontPadding": false,
             "verticalAlign": "middle",
           }
@@ -398,13 +398,13 @@ exports[`Badge component tests severity: basic 4`] = `
     style={
       [
         {
-          "backgroundColor": "#fddeaa",
+          "backgroundColor": "#facb75",
         },
         {
-          "borderRadius": 100,
-          "height": 21,
+          "borderRadius": 1600,
+          "height": 24,
           "justifyContent": "center",
-          "paddingHorizontal": 7,
+          "paddingHorizontal": 8,
         },
       ]
     }
@@ -414,9 +414,9 @@ exports[`Badge component tests severity: basic 4`] = `
       style={
         [
           {
-            "color": "#000000",
+            "color": "#2b2e33",
             "fontFamily": "TT Fellows",
-            "fontSize": 10.5,
+            "fontSize": 12,
             "includeFontPadding": false,
             "verticalAlign": "middle",
           },
@@ -449,9 +449,9 @@ exports[`Badge component tests severity: basic 4`] = `
         onLayout={[Function]}
         style={
           {
-            "color": "#000000",
+            "color": "#2b2e33",
             "fontFamily": "TT Fellows",
-            "fontSize": 10.5,
+            "fontSize": 12,
             "includeFontPadding": false,
             "verticalAlign": "middle",
           }
@@ -479,13 +479,13 @@ exports[`Badge component tests severity: basic 5`] = `
     style={
       [
         {
-          "backgroundColor": "#fbacaa",
+          "backgroundColor": "#f47f77",
         },
         {
-          "borderRadius": 100,
-          "height": 21,
+          "borderRadius": 1600,
+          "height": 24,
           "justifyContent": "center",
-          "paddingHorizontal": 7,
+          "paddingHorizontal": 8,
         },
       ]
     }
@@ -495,9 +495,9 @@ exports[`Badge component tests severity: basic 5`] = `
       style={
         [
           {
-            "color": "#000000",
+            "color": "#2b2e33",
             "fontFamily": "TT Fellows",
-            "fontSize": 10.5,
+            "fontSize": 12,
             "includeFontPadding": false,
             "verticalAlign": "middle",
           },
@@ -530,9 +530,9 @@ exports[`Badge component tests severity: basic 5`] = `
         onLayout={[Function]}
         style={
           {
-            "color": "#000000",
+            "color": "#2b2e33",
             "fontFamily": "TT Fellows",
-            "fontSize": 10.5,
+            "fontSize": 12,
             "includeFontPadding": false,
             "verticalAlign": "middle",
           }
@@ -563,10 +563,10 @@ exports[`Badge component tests severity: default 1`] = `
           "backgroundColor": "#44e858",
         },
         {
-          "borderRadius": 100,
-          "height": 21,
+          "borderRadius": 1600,
+          "height": 24,
           "justifyContent": "center",
-          "paddingHorizontal": 7,
+          "paddingHorizontal": 8,
         },
       ]
     }
@@ -576,9 +576,9 @@ exports[`Badge component tests severity: default 1`] = `
       style={
         [
           {
-            "color": "#000000",
+            "color": "#2b2e33",
             "fontFamily": "TT Fellows",
-            "fontSize": 10.5,
+            "fontSize": 12,
             "includeFontPadding": false,
             "verticalAlign": "middle",
           },
@@ -611,9 +611,9 @@ exports[`Badge component tests severity: default 1`] = `
         onLayout={[Function]}
         style={
           {
-            "color": "#000000",
+            "color": "#2b2e33",
             "fontFamily": "TT Fellows",
-            "fontSize": 10.5,
+            "fontSize": 12,
             "includeFontPadding": false,
             "verticalAlign": "middle",
           }
@@ -646,9 +646,9 @@ exports[`Badge component tests with custom style 1`] = `
           "backgroundColor": "#44e858",
         },
         {
-          "borderRadius": 100,
-          "height": 7,
-          "width": 7,
+          "borderRadius": 8,
+          "height": 8,
+          "width": 8,
         },
       ]
     }

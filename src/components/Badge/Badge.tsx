@@ -103,53 +103,51 @@ export const Badge = memo<BadgeProps>(
   }
 )
 
-const badgeStyles = StyleSheet.create(
-  ({ theme, border, typography, fonts }) => ({
-    container: { alignItems: 'flex-start' },
-    dot: {
-      variants: {
-        severity: {
-          basic: { backgroundColor: theme.Misc.Badge.badgeBg },
-          info: {
-            backgroundColor: theme.Button.Severity.Info.Basic.infoButtonBg,
-          },
-          success: {
-            backgroundColor:
-              theme.Button.Severity.Success.Basic.successButtonBg,
-          },
-          warning: {
-            backgroundColor:
-              theme.Button.Severity.Warning.Basic.warningButtonBg,
-          },
-          danger: {
-            backgroundColor: theme.Button.Severity.Danger.Basic.dangerButtonBg,
-          },
+const badgeStyles = StyleSheet.create(({ components, semantic, fonts }) => ({
+  container: { alignItems: 'flex-start' },
+  dot: {
+    variants: {
+      severity: {
+        basic: {
+          backgroundColor: components.badge.colorScheme.primary.background,
+        },
+        info: {
+          backgroundColor: components.badge.extend.extDot.info.background,
+        },
+        success: {
+          backgroundColor: components.badge.extend.extDot.success.background,
+        },
+        warning: {
+          backgroundColor: components.badge.extend.extDot.warn.background,
+        },
+        danger: {
+          backgroundColor: components.badge.extend.extDot.danger.background,
         },
       },
     },
-    dotShape: {
-      width: theme.Misc.Badge.badgeDotSize,
-      height: theme.Misc.Badge.badgeDotSize,
-      borderRadius: border.Radius['rounded-full'],
-    },
-    textBadgeContainer: {
-      height: theme.Misc.Badge.badgeHeight,
-      paddingHorizontal: theme.Misc.Tag.tagPadding,
-      justifyContent: 'center',
-      borderRadius: border.Radius['rounded-full'],
-    },
-    textBadge: {
-      color: theme.Misc.Badge.badgeTextColor,
-      fontSize: typography.Size['text-xs'],
-      includeFontPadding: false,
-      verticalAlign: 'middle',
-      fontFamily: fonts.primary,
-    },
-    hiddenContainer: {
-      width: Dimensions.get('window').width,
-      height: 0,
-      flexDirection: 'row',
-      position: 'absolute',
-    },
-  })
-)
+  },
+  dotShape: {
+    width: components.badge.dot.size,
+    height: components.badge.dot.size,
+    borderRadius: components.badge.root.borderRadius,
+  },
+  textBadgeContainer: {
+    height: components.badge.root.height,
+    paddingHorizontal: components.badge.root.padding,
+    justifyContent: 'center',
+    borderRadius: semantic.dimension.borderRadius.max,
+  },
+  textBadge: {
+    color: components.badge.colorScheme.primary.color,
+    fontSize: components.badge.root.fontSize,
+    includeFontPadding: false,
+    verticalAlign: 'middle',
+    fontFamily: fonts.fontFamily.heading,
+  },
+  hiddenContainer: {
+    width: Dimensions.get('window').width,
+    height: 0,
+    flexDirection: 'row',
+    position: 'absolute',
+  },
+}))
