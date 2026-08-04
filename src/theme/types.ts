@@ -1,3 +1,5 @@
+import type { TextStyle } from 'react-native'
+
 import type { InputSize } from './assets/InputSize'
 import type { ModalSize } from './assets/ModalSize'
 import type background from './assets/background.json'
@@ -12,6 +14,7 @@ import type sizing from './assets/sizing.json'
 import type spacing from './assets/spacing.json'
 import type lightTheme from './assets/themeLight.json'
 import type typography from './assets/typography.json'
+import type fontTokens from './tokens/fonts.json'
 import type lightSemanticColorSchemeTokens from './tokens/semantic/colorScheme/light.json'
 
 export interface ThemeType {
@@ -46,4 +49,11 @@ export interface FontsConfig {
 
 export interface FontsConfigType {
   fonts: FontsConfig
+}
+
+export type FontTokens = Omit<typeof fontTokens, 'fontWeight'> & {
+  fontWeight: Record<
+    keyof typeof fontTokens.fontWeight,
+    TextStyle['fontWeight']
+  >
 }
