@@ -10,21 +10,23 @@ export const Title = ({ level, style, ...other }: TitleProps) => (
   <Text style={[styles.text, styles[level], style]} testID='Title' {...other} />
 )
 
-const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
+// Осознанный обход слоя components: цвет текста — семантическая роль, и своего
+// токена у Typography нет (компонент отсутствует в tokens.json).
+const styles = StyleSheet.create(({ semantic, fonts }) => ({
   text: {
-    color: theme.General.textColor,
-    fontFamily: fonts.primary,
-    fontWeight: 700,
+    color: semantic.colorScheme.color.fg.default,
+    fontFamily: fonts.fontFamily.heading,
+    fontWeight: fonts.fontWeight.bold,
     includeFontPadding: false,
     verticalAlign: 'middle',
   },
-  d1: { fontSize: typography.Size['text-5xl'] },
-  d2: { fontSize: typography.Size['text-4xl'] },
-  d3: { fontSize: typography.Size['text-3xl'] },
-  h1: { fontSize: typography.Size['text-2xl'] },
-  h2: { fontSize: typography.Size['text-xl'] },
-  h3: { fontSize: typography.Size['text-lg'] },
-  h4: { fontSize: typography.Size['text-base'] },
-  h5: { fontSize: typography.Size['text-sm'] },
-  h6: { fontSize: typography.Size['text-xs'] },
+  d1: { fontSize: fonts.fontSize[750] },
+  d2: { fontSize: fonts.fontSize[700] },
+  d3: { fontSize: fonts.fontSize[650] },
+  h1: { fontSize: fonts.fontSize[600] },
+  h2: { fontSize: fonts.fontSize[500] },
+  h3: { fontSize: fonts.fontSize[400] },
+  h4: { fontSize: fonts.fontSize[300] },
+  h5: { fontSize: fonts.fontSize[100] },
+  h6: { fontSize: fonts.fontSize[100] },
 }))

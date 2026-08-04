@@ -39,13 +39,15 @@ export const Caption = ({
           {...styles.icon}
           source={Icon}
           testID={CaptionTestId.icon}
-          uniProps={({ theme }) => ({
-            color: {
-              default: theme.General.textColor,
-              primary: theme.General.primaryColor,
-              secondary: theme.General.textSecondaryColor,
-            }[color],
-          })}
+          uniProps={({ semantic }) => {
+            return {
+              color: {
+                default: semantic.colorScheme.color.fg.default,
+                primary: semantic.colorScheme.color.fg.brand.default,
+                secondary: semantic.colorScheme.color.fg.muted,
+              }[color],
+            }
+          }}
         />
         {text}
       </View>
@@ -57,23 +59,28 @@ export const Caption = ({
 
 const CaptionTestId = { text: 'CaptionText', icon: 'CaptionIcon' }
 
-const styles = StyleSheet.create(({ theme, spacing, typography, fonts }) => ({
+// Осознанный обход слоя components: цвет текста — семантическая роль, и своего
+// токена у Typography нет (компонент отсутствует в tokens.json).
+const styles = StyleSheet.create(({ semantic, fonts }) => ({
   text: {
-    fontSize: typography.Size['text-sm'],
+    fontSize: fonts.fontSize[200],
     includeFontPadding: false,
     verticalAlign: 'middle',
-    fontFamily: fonts.secondary,
-    lineHeight: 15,
-    letterSpacing: -0.25,
+    fontFamily: fonts.fontFamily.base,
+    lineHeight: fonts.lineHeight[300],
+    letterSpacing: fonts.letterSpacing[200],
   },
   textWithIcon: { flexShrink: 1 },
-  default: { color: theme.General.textColor },
-  primary: { color: theme.General.primaryColor },
-  secondary: { color: theme.General.textSecondaryColor },
-  disabled: { opacity: 0.6 },
-  withIconContainer: { flexDirection: 'row', gap: spacing.Gap['gap-1'] },
+  default: { color: semantic.colorScheme.color.fg.default },
+  primary: { color: semantic.colorScheme.color.fg.brand.default },
+  secondary: { color: semantic.colorScheme.color.fg.muted },
+  disabled: { opacity: semantic.effects.opacity[60] },
+  withIconContainer: {
+    flexDirection: 'row',
+    gap: semantic.dimension.space[100],
+  },
   icon: {
-    width: typography.Size['text-base'],
-    height: typography.Size['text-base'],
+    width: semantic.dimension.size[450],
+    height: semantic.dimension.size[450],
   },
 }))
