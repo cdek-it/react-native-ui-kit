@@ -41,9 +41,9 @@ export const InputGroupAddon = memo<InputGroupAddonProps>(
           <SvgUniversal
             {...styles.icon}
             source={content}
-            uniProps={({ theme }) => ({
-              color: theme.Form.InputGroup.inputGroupTextColor,
-            })}
+            uniProps={({ components }) => {
+              return { color: components.inputgroup.colorScheme.addon.color }
+            }}
           />
         )}
       </Pressable>
@@ -51,15 +51,14 @@ export const InputGroupAddon = memo<InputGroupAddonProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
+const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
   container: {
-    paddingVertical: theme.Form.InputText.inputPaddingTopBottom,
-    paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
+    padding: components.inputgroup.addon.padding,
     justifyContent: 'center',
-    borderRadius: theme.General.borderRadiusXL,
-    borderWidth: 1,
-    borderColor: theme.Form.InputText.inputBorderColor,
-    backgroundColor: theme.Form.InputGroup.inputGroupBg,
+    borderRadius: components.inputgroup.addon.borderRadius,
+    borderWidth: components.inputgroup.extend.borderWidth,
+    borderColor: components.inputgroup.colorScheme.addon.borderColor,
+    backgroundColor: components.inputgroup.colorScheme.addon.background,
   },
   left: {
     borderRightWidth: 0,
@@ -73,18 +72,18 @@ const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
     borderBottomLeftRadius: 0,
   },
   disabled: {
-    opacity: 0.6,
-    backgroundColor: theme.Button.Disabled.disabledButtonBg,
+    opacity: semantic.effects.opacity[60],
+    backgroundColor: semantic.colorScheme.color.bg.neutral.weak.disabled,
   },
   text: {
-    fontSize: typography.Size['text-base'],
-    color: theme.Form.InputGroup.inputGroupTextColor,
+    fontSize: fonts.fontSize[300],
+    color: components.inputgroup.colorScheme.addon.color,
     includeFontPadding: false,
     verticalAlign: 'middle',
-    fontFamily: fonts.secondary,
+    fontFamily: fonts.fontFamily.base,
   },
   icon: {
-    width: typography.Size['text-base'],
-    height: typography.Size['text-base'],
+    width: components.inputgroup.extend.iconSize,
+    height: components.inputgroup.extend.iconSize,
   },
 }))
