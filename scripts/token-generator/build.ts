@@ -57,7 +57,7 @@ const formatTokenIssues = (issues: GeneratedTokenIssues): string =>
     .filter(Boolean)
     .join('\n')
 
-export const run = (arguments_: string[]): void => {
+export const run = async (arguments_: string[]): Promise<void> => {
   const options = parseArgs(arguments_)
 
   if (options.help) {
@@ -69,7 +69,7 @@ export const run = (arguments_: string[]): void => {
   const compiled = compileInputTokens()
 
   if (options.check) {
-    const issues = findGeneratedTokenIssues(compiled, TOKENS_DIRECTORY)
+    const issues = await findGeneratedTokenIssues(compiled, TOKENS_DIRECTORY)
     const issueDescription = formatTokenIssues(issues)
 
     if (issueDescription) {
@@ -84,16 +84,14 @@ export const run = (arguments_: string[]): void => {
     return
   }
 
-  writeGeneratedTokens(compiled, TOKENS_DIRECTORY)
+  await writeGeneratedTokens(compiled, TOKENS_DIRECTORY)
   console.log(`Сгенерированные токены записаны в ${TOKENS_DIRECTORY}`)
 }
 
 if (require.main === module) {
-  try {
-    run(process.argv.slice(2))
-  } catch (error: unknown) {
+  void run(process.argv.slice(2)).catch((error: unknown) => {
     const message = error instanceof Error ? error.message : String(error)
     console.error(message)
     process.exitCode = 1
-  }
+  })
 }
