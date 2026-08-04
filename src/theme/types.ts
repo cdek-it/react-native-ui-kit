@@ -13,7 +13,7 @@ import type spacing from './assets/spacing.json'
 import type lightTheme from './assets/themeLight.json'
 import type typography from './assets/typography.json'
 import type lightComponentTokens from './tokens/components/light.json'
-import type lightSemanticTokens from './tokens/semantic/light.json'
+import type lightSemanticColorSchemeTokens from './tokens/semantic/colorScheme/light.json'
 
 export interface ThemeType {
   background: typeof background
@@ -23,7 +23,7 @@ export interface ThemeType {
   global: typeof global
   sizing: typeof sizing
   spacing: typeof spacing
-  semantic: typeof lightSemanticTokens
+  semantic: { colorScheme: typeof lightSemanticColorSchemeTokens }
   components: typeof lightComponentTokens
   theme: typeof lightTheme & {
     custom: typeof customLight

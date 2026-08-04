@@ -4,11 +4,11 @@ import { customLight } from './assets/customLight'
 import lightThemeAssets from './assets/themeLight.json'
 import { commonTheme } from './commonTheme'
 import lightComponentTokens from './tokens/components/light.json'
-import lightSemanticTokens from './tokens/semantic/light.json'
+import lightSemanticColorSchemeTokens from './tokens/semantic/colorScheme/light.json'
 import type { ThemeType } from './types'
 
 export const lightTheme: ThemeType = {
-  semantic: lightSemanticTokens,
+  semantic: { colorScheme: lightSemanticColorSchemeTokens },
   components: lightComponentTokens,
   theme: { ...lightThemeAssets, InputSize, ModalSize, custom: customLight },
   ...commonTheme,

@@ -14,8 +14,14 @@ export interface BoxEdges {
 
 export interface CompiledTokens {
   fonts: TokenTree
-  semantic: ThemeTokens
+  semantic: SemanticTokens
   components: ThemeTokens
+}
+
+export interface SemanticTokens {
+  colorScheme: ThemeTokens
+  dimension: TokenTree
+  effects: TokenTree
 }
 
 export interface ThemeTokens {

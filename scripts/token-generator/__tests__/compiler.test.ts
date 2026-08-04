@@ -51,7 +51,9 @@ const listJsonFiles = (directory: string, prefix = ''): string[] =>
 
 const expectedOutputFiles = [
   OUTPUT_FILES.fonts,
-  ...Object.values(OUTPUT_FILES.semantic),
+  ...Object.values(OUTPUT_FILES.semantic.colorScheme),
+  OUTPUT_FILES.semantic.dimensions,
+  OUTPUT_FILES.semantic.effects,
   ...Object.values(OUTPUT_FILES.components),
 ].sort()
 
@@ -290,16 +292,12 @@ describe('token compiler', () => {
       fontSize: { base: 16 },
     })
     expect(compiled.semantic).toStrictEqual({
-      light: {
-        colorScheme: { color: { text: '#111111' } },
-        dimension: { spacing: { small: 8, base: 16 } },
-        effects: { duration: 150 },
+      colorScheme: {
+        light: { color: { text: '#111111' } },
+        dark: { color: { text: '#eeeeee' } },
       },
-      dark: {
-        colorScheme: { color: { text: '#eeeeee' } },
-        dimension: { spacing: { small: 8, base: 16 } },
-        effects: { duration: 150 },
-      },
+      dimension: { spacing: { small: 8, base: 16 } },
+      effects: { duration: 150 },
     })
     expect(compiled.components.light).toStrictEqual({
       demo: {
@@ -366,12 +364,11 @@ describe('token compiler', () => {
 
     const compiled = compileTokens(source)
 
-    expect(compiled.semantic.light).toStrictEqual({
+    expect(compiled.semantic).toStrictEqual({
+      colorScheme: { light: {}, dark: {} },
       dimension: { focusRing: { width: 4, offset: 0 } },
       effects: { focusRing: { shadow: 'inset 0 0 0 4px #d4fedc' } },
-      colorScheme: {},
     })
-    expect(compiled.semantic.dark).toStrictEqual(compiled.semantic.light)
     expect(compiled.components.light.demo).toStrictEqual({
       root: {
         focusRing: {
@@ -395,6 +392,25 @@ describe('token compiler', () => {
 
     expect(() => compileTokens(source)).toThrow(
       'Expected an object at "semantic.colorScheme.dark"'
+    )
+  })
+
+  test('отклоняет общие semantic-токены, зависящие от цветовой схемы', () => {
+    const source: TokenTree = {
+      primitive: { fonts: {} },
+      semantic: {
+        colorScheme: {
+          light: { color: { spacing: '1rem' } },
+          dark: { color: { spacing: '2rem' } },
+        },
+        dimension: { spacing: '{color.spacing}' },
+        effects: {},
+      },
+      components: {},
+    }
+
+    expect(() => compileTokens(source)).toThrow(
+      'Semantic "dimension" tokens must not depend on colorScheme'
     )
   })
 
@@ -449,12 +465,12 @@ describe('production input tokens', () => {
     expect(lightOutputComponents.button).toHaveProperty('root')
     expect(lightOutputComponents.button).toHaveProperty('colorScheme')
     expect(darkOutputComponents.button).toHaveProperty('colorScheme')
-    expect(compiled.semantic.light).toHaveProperty('colorScheme.color')
-    expect(compiled.semantic.dark).toHaveProperty('colorScheme.color')
+    expect(compiled.semantic.colorScheme.light).toHaveProperty('color')
+    expect(compiled.semantic.colorScheme.dark).toHaveProperty('color')
     expect(
       [
-        compiled.semantic.light,
-        compiled.semantic.dark,
+        compiled.semantic.colorScheme.light,
+        compiled.semantic.colorScheme.dark,
         compiled.components.light,
         compiled.components.dark,
       ].filter(containsColorSchemeThemeBranch)
@@ -483,16 +499,16 @@ describe('production input tokens', () => {
   })
 
   test('преобразует animation-токены в runtime-формат', () => {
-    expect(compiled.semantic.light).toHaveProperty(
-      'effects.transition.easing.linear',
+    expect(compiled.semantic.effects).toHaveProperty(
+      'transition.easing.linear',
       { x1: 0, y1: 0, x2: 1, y2: 1 }
     )
-    expect(compiled.semantic.dark).toHaveProperty(
-      'effects.transition.easing.spring',
+    expect(compiled.semantic.effects).toHaveProperty(
+      'transition.easing.spring',
       { x1: 0.34, y1: 1.56, x2: 0.64, y2: 1 }
     )
-    expect(compiled.semantic.light).toHaveProperty(
-      'effects.transition.duration.200',
+    expect(compiled.semantic.effects).toHaveProperty(
+      'transition.duration.200',
       180
     )
     expect(compiled.components.light).toHaveProperty(
@@ -507,8 +523,8 @@ describe('production input tokens', () => {
   })
 
   test('экспортирует focusRing без изменения его структуры', () => {
-    expect(compiled.semantic.light).toHaveProperty(
-      'effects.focusRing.shadow',
+    expect(compiled.semantic.effects).toHaveProperty(
+      'focusRing.shadow',
       'inset 0 0 0 4px #d4fedc'
     )
     expect(compiled.components.light).toHaveProperty(
@@ -532,9 +548,9 @@ describe('production input tokens', () => {
   })
 
   test('преобразует числовые RN-значения', () => {
-    expect(compiled.semantic.light).toHaveProperty('dimension.depth.100', 1000)
-    expect(compiled.semantic.light).toHaveProperty('effects.opacity.4', 0.04)
-    expect(compiled.semantic.light).toHaveProperty('effects.blur.100', 4)
+    expect(compiled.semantic.dimension).toHaveProperty('depth.100', 1000)
+    expect(compiled.semantic.effects).toHaveProperty('opacity.4', 0.04)
+    expect(compiled.semantic.effects).toHaveProperty('blur.100', 4)
     expect(compiled.components.light).toHaveProperty(
       'button.root.label.fontWeight',
       600
@@ -564,8 +580,8 @@ describe('production input tokens', () => {
     const temporaryDirectory = mkdtempSync(join(tmpdir(), 'token-generator-'))
     const unexpectedFile = join(temporaryDirectory, 'common.json')
     const preservedFile = join(temporaryDirectory, 'README.md')
-    const missingFile = OUTPUT_FILES.semantic.dark
-    const changedFile = OUTPUT_FILES.semantic.light
+    const missingFile = OUTPUT_FILES.semantic.colorScheme.dark
+    const changedFile = OUTPUT_FILES.semantic.dimensions
 
     try {
       writeGeneratedTokens(compiled, temporaryDirectory)
