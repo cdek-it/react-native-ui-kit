@@ -10,8 +10,8 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
     [
       {
         "alignSelf": "flex-start",
-        "borderColor": "rgba(255, 255, 255, 0.0001)",
-        "borderRadius": 100,
+        "borderColor": "#e2e2e4",
+        "borderRadius": 1600,
         "borderWidth": 1,
         "overflow": "hidden",
       },
@@ -27,12 +27,12 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           "alignItems": "center",
           "alignSelf": "flex-start",
           "backgroundColor": "#e2e2e4",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "flexDirection": "row",
-          "gap": 7,
+          "gap": 8,
           "minHeight": 28,
-          "paddingHorizontal": 10.5,
-          "paddingVertical": 0,
+          "paddingHorizontal": 14,
+          "paddingVertical": 8,
         },
         false,
       ]
@@ -41,15 +41,15 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#181a1f"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -61,15 +61,15 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="ToggleButton.icon"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -85,7 +85,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
         }
         stroke={
           {
-            "payload": 4279769631,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -107,7 +107,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -130,7 +130,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -144,11 +144,11 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
     <Text
       style={
         {
-          "color": "#181a1f",
+          "color": "#2b2e33",
           "flexShrink": 1,
           "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-          "fontWeight": "600",
+          "fontSize": 12,
+          "fontWeight": 600,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         }
@@ -171,8 +171,8 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
     [
       {
         "alignSelf": "flex-start",
-        "borderColor": "rgba(255, 255, 255, 0.0001)",
-        "borderRadius": 100,
+        "borderColor": "#e2e2e4",
+        "borderRadius": 1600,
         "borderWidth": 1,
         "overflow": "hidden",
       },
@@ -188,12 +188,12 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           "alignItems": "center",
           "alignSelf": "flex-start",
           "backgroundColor": "#e2e2e4",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "flexDirection": "row",
-          "gap": 7,
+          "gap": 8,
           "minHeight": 28,
-          "paddingHorizontal": 10.5,
-          "paddingVertical": 0,
+          "paddingHorizontal": 14,
+          "paddingVertical": 8,
         },
         false,
       ]
@@ -203,11 +203,11 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
     <Text
       style={
         {
-          "color": "#181a1f",
+          "color": "#2b2e33",
           "flexShrink": 1,
           "fontFamily": "TT Fellows",
-          "fontSize": 12.25,
-          "fontWeight": "600",
+          "fontSize": 12,
+          "fontWeight": 600,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         }
@@ -218,15 +218,15 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
     </Text>
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#181a1f"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -238,15 +238,15 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="ToggleButton.icon"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -262,7 +262,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
         }
         stroke={
           {
-            "payload": 4279769631,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -284,7 +284,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -307,7 +307,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = fa
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -332,8 +332,8 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
     [
       {
         "alignSelf": "flex-start",
-        "borderColor": "rgba(255, 255, 255, 0.0001)",
-        "borderRadius": 100,
+        "borderColor": "#e2e2e4",
+        "borderRadius": 1600,
         "borderWidth": 1,
         "overflow": "hidden",
       },
@@ -349,12 +349,12 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
           "alignItems": "center",
           "alignSelf": "flex-start",
           "backgroundColor": "#e2e2e4",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "flexDirection": "row",
-          "gap": 7,
-          "minHeight": 35,
+          "gap": 8,
+          "minHeight": 40,
           "paddingHorizontal": 14,
-          "paddingVertical": 0,
+          "paddingVertical": 8,
         },
         {
           "aspectRatio": 1,
@@ -368,15 +368,15 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={20}
+      bbWidth={20}
       fill="none"
       focusable={false}
-      height={17.5}
+      height={20}
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#181a1f"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -388,15 +388,15 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 20,
+            "width": 20,
           },
         ]
       }
       testID="ToggleButton.icon"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={20}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -412,7 +412,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
         }
         stroke={
           {
-            "payload": 4279769631,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -434,7 +434,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -457,7 +457,7 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -546,8 +546,8 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
     [
       {
         "alignSelf": "flex-start",
-        "borderColor": "#a2a5a9",
-        "borderRadius": 100,
+        "borderColor": "#e2e2e4",
+        "borderRadius": 1600,
         "borderWidth": 1,
         "opacity": 0.6,
         "overflow": "hidden",
@@ -564,12 +564,12 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
           "alignItems": "center",
           "alignSelf": "flex-start",
           "backgroundColor": "#e2e2e4",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "flexDirection": "row",
-          "gap": 10.5,
-          "minHeight": 49,
-          "paddingHorizontal": 21,
-          "paddingVertical": 0,
+          "gap": 14,
+          "minHeight": 56,
+          "paddingHorizontal": 20,
+          "paddingVertical": 8,
         },
         false,
       ]
@@ -578,11 +578,11 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={21}
-      bbWidth={21}
+      bbHeight={24}
+      bbWidth={24}
       fill="none"
       focusable={false}
-      height={21}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -598,15 +598,15 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
           },
           {
             "flex": 0,
-            "height": 21,
-            "width": 21,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="ToggleButton.icon"
       vbHeight={24}
       vbWidth={24}
-      width={21}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -684,8 +684,8 @@ exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = fal
           "color": "#85888e",
           "flexShrink": 1,
           "fontFamily": "TT Fellows",
-          "fontSize": 17.5,
-          "fontWeight": "600",
+          "fontSize": 20,
+          "fontWeight": 600,
           "includeFontPadding": false,
           "verticalAlign": "middle",
         }
@@ -708,8 +708,8 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
     [
       {
         "alignSelf": "flex-start",
-        "borderColor": "rgba(255, 255, 255, 0.0001)",
-        "borderRadius": 100,
+        "borderColor": "#2b2e33",
+        "borderRadius": 1600,
         "borderWidth": 1,
         "overflow": "hidden",
       },
@@ -727,12 +727,12 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
           "alignItems": "center",
           "alignSelf": "flex-start",
           "backgroundColor": "#2b2e33",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "flexDirection": "row",
-          "gap": 10.5,
-          "minHeight": 56,
-          "paddingHorizontal": 21,
-          "paddingVertical": 0,
+          "gap": 14,
+          "minHeight": 64,
+          "paddingHorizontal": 20,
+          "paddingVertical": 8,
         },
         {
           "aspectRatio": 1,
@@ -746,11 +746,11 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={31.5}
-      bbWidth={31.5}
+      bbHeight={36}
+      bbWidth={36}
       fill="none"
       focusable={false}
-      height={31.5}
+      height={36}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -766,15 +766,15 @@ exports[`ToggleButton snapshots checked = true, disabled = false, iconOnly = fal
           },
           {
             "flex": 0,
-            "height": 31,
-            "width": 31,
+            "height": 36,
+            "width": 36,
           },
         ]
       }
       testID="ToggleButton.icon"
       vbHeight={24}
       vbWidth={24}
-      width={31.5}
+      width={36}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -860,8 +860,8 @@ exports[`ToggleButton snapshots default 1`] = `
     [
       {
         "alignSelf": "flex-start",
-        "borderColor": "rgba(255, 255, 255, 0.0001)",
-        "borderRadius": 100,
+        "borderColor": "#e2e2e4",
+        "borderRadius": 1600,
         "borderWidth": 1,
         "overflow": "hidden",
       },
@@ -877,12 +877,12 @@ exports[`ToggleButton snapshots default 1`] = `
           "alignItems": "center",
           "alignSelf": "flex-start",
           "backgroundColor": "#e2e2e4",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "flexDirection": "row",
-          "gap": 7,
-          "minHeight": 35,
+          "gap": 8,
+          "minHeight": 40,
           "paddingHorizontal": 14,
-          "paddingVertical": 0,
+          "paddingVertical": 8,
         },
         {
           "aspectRatio": 1,
