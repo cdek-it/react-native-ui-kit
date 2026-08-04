@@ -35,9 +35,9 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
     [
       {
         "alignItems": "center",
-        "height": 17.5,
+        "height": 24,
         "justifyContent": "center",
-        "width": 17.5,
+        "width": 24,
       },
       false,
     ]
@@ -45,11 +45,11 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={17.5}
-    bbWidth={17.5}
+    bbHeight={24}
+    bbWidth={24}
     fill="none"
     focusable={false}
-    height={17.5}
+    height={24}
     meetOrSlice={0}
     minX={0}
     minY={0}
@@ -65,15 +65,15 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
         },
         {
           "flex": 0,
-          "height": 17,
-          "width": 17,
+          "height": 24,
+          "width": 24,
         },
       ]
     }
     testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
-    width={17.5}
+    width={24}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -183,9 +183,9 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
     [
       {
         "alignItems": "center",
-        "height": 17.5,
+        "height": 24,
         "justifyContent": "center",
-        "width": 17.5,
+        "width": 24,
       },
       {
         "height": 42,
@@ -196,11 +196,11 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={17.5}
-    bbWidth={17.5}
+    bbHeight={24}
+    bbWidth={24}
     fill="none"
     focusable={false}
-    height={17.5}
+    height={24}
     meetOrSlice={0}
     minX={0}
     minY={0}
@@ -216,15 +216,15 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
         },
         {
           "flex": 0,
-          "height": 17,
-          "width": 17,
+          "height": 24,
+          "width": 24,
         },
       ]
     }
     testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
-    width={17.5}
+    width={24}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -334,9 +334,9 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
     [
       {
         "alignItems": "center",
-        "height": 17.5,
+        "height": 24,
         "justifyContent": "center",
-        "width": 17.5,
+        "width": 24,
       },
       false,
     ]
@@ -344,15 +344,15 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={17.5}
-    bbWidth={17.5}
+    bbHeight={24}
+    bbWidth={24}
     fill="none"
     focusable={false}
-    height={17.5}
+    height={24}
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#181a1f"
+    stroke="#f5b83d"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -364,15 +364,15 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
         },
         {
           "flex": 0,
-          "height": 17,
-          "width": 17,
+          "height": 24,
+          "width": 24,
         },
       ]
     }
     testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
-    width={17.5}
+    width={24}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -388,7 +388,7 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
       }
       stroke={
         {
-          "payload": 4279769631,
+          "payload": 4294293565,
           "type": 0,
         }
       }
@@ -410,7 +410,7 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
         }
         stroke={
           {
-            "payload": 4279769631,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -433,7 +433,7 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
         }
         stroke={
           {
-            "payload": 4279769631,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -482,9 +482,9 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
     [
       {
         "alignItems": "center",
-        "height": 17.5,
+        "height": 24,
         "justifyContent": "center",
-        "width": 17.5,
+        "width": 24,
       },
       {
         "height": 42,
@@ -495,15 +495,15 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={17.5}
-    bbWidth={17.5}
+    bbHeight={24}
+    bbWidth={24}
     fill="none"
     focusable={false}
-    height={17.5}
+    height={24}
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#181a1f"
+    stroke="#f5b83d"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -515,15 +515,15 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
         },
         {
           "flex": 0,
-          "height": 17,
-          "width": 17,
+          "height": 24,
+          "width": 24,
         },
       ]
     }
     testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
-    width={17.5}
+    width={24}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -539,7 +539,7 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
       }
       stroke={
         {
-          "payload": 4279769631,
+          "payload": 4294293565,
           "type": 0,
         }
       }
@@ -561,7 +561,7 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
         }
         stroke={
           {
-            "payload": 4279769631,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -584,7 +584,7 @@ exports[`RatingItem component tests checked - $checked, disabled - false, presse
         }
         stroke={
           {
-            "payload": 4279769631,
+            "payload": 4294293565,
             "type": 0,
           }
         }
@@ -633,9 +633,9 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
     [
       {
         "alignItems": "center",
-        "height": 17.5,
+        "height": 24,
         "justifyContent": "center",
-        "width": 17.5,
+        "width": 24,
       },
       false,
     ]
@@ -643,15 +643,15 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={17.5}
-    bbWidth={17.5}
+    bbHeight={24}
+    bbWidth={24}
     fill="none"
     focusable={false}
-    height={17.5}
+    height={24}
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#A3A3A3"
+    stroke="#85888e"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -663,15 +663,15 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
         },
         {
           "flex": 0,
-          "height": 17,
-          "width": 17,
+          "height": 24,
+          "width": 24,
         },
       ]
     }
     testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
-    width={17.5}
+    width={24}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -687,7 +687,7 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
       }
       stroke={
         {
-          "payload": 4288914339,
+          "payload": 4286941326,
           "type": 0,
         }
       }
@@ -709,7 +709,7 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
         }
         stroke={
           {
-            "payload": 4288914339,
+            "payload": 4286941326,
             "type": 0,
           }
         }
@@ -732,7 +732,7 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
         }
         stroke={
           {
-            "payload": 4288914339,
+            "payload": 4286941326,
             "type": 0,
           }
         }
@@ -781,9 +781,9 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
     [
       {
         "alignItems": "center",
-        "height": 17.5,
+        "height": 24,
         "justifyContent": "center",
-        "width": 17.5,
+        "width": 24,
       },
       {
         "height": 42,
@@ -794,15 +794,15 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={17.5}
-    bbWidth={17.5}
+    bbHeight={24}
+    bbWidth={24}
     fill="none"
     focusable={false}
-    height={17.5}
+    height={24}
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#A3A3A3"
+    stroke="#85888e"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -814,15 +814,15 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
         },
         {
           "flex": 0,
-          "height": 17,
-          "width": 17,
+          "height": 24,
+          "width": 24,
         },
       ]
     }
     testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
-    width={17.5}
+    width={24}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -838,7 +838,7 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
       }
       stroke={
         {
-          "payload": 4288914339,
+          "payload": 4286941326,
           "type": 0,
         }
       }
@@ -860,7 +860,7 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
         }
         stroke={
           {
-            "payload": 4288914339,
+            "payload": 4286941326,
             "type": 0,
           }
         }
@@ -883,7 +883,7 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
         }
         stroke={
           {
-            "payload": 4288914339,
+            "payload": 4286941326,
             "type": 0,
           }
         }
@@ -932,9 +932,9 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
     [
       {
         "alignItems": "center",
-        "height": 17.5,
+        "height": 24,
         "justifyContent": "center",
-        "width": 17.5,
+        "width": 24,
       },
       false,
     ]
@@ -942,15 +942,15 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={17.5}
-    bbWidth={17.5}
+    bbHeight={24}
+    bbWidth={24}
     fill="none"
     focusable={false}
-    height={17.5}
+    height={24}
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#A3A3A3"
+    stroke="#85888e"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -962,15 +962,15 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
         },
         {
           "flex": 0,
-          "height": 17,
-          "width": 17,
+          "height": 24,
+          "width": 24,
         },
       ]
     }
     testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
-    width={17.5}
+    width={24}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -986,7 +986,7 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
       }
       stroke={
         {
-          "payload": 4288914339,
+          "payload": 4286941326,
           "type": 0,
         }
       }
@@ -1008,7 +1008,7 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
         }
         stroke={
           {
-            "payload": 4288914339,
+            "payload": 4286941326,
             "type": 0,
           }
         }
@@ -1031,7 +1031,7 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
         }
         stroke={
           {
-            "payload": 4288914339,
+            "payload": 4286941326,
             "type": 0,
           }
         }
@@ -1080,9 +1080,9 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
     [
       {
         "alignItems": "center",
-        "height": 17.5,
+        "height": 24,
         "justifyContent": "center",
-        "width": 17.5,
+        "width": 24,
       },
       {
         "height": 42,
@@ -1093,15 +1093,15 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight={17.5}
-    bbWidth={17.5}
+    bbHeight={24}
+    bbWidth={24}
     fill="none"
     focusable={false}
-    height={17.5}
+    height={24}
     meetOrSlice={0}
     minX={0}
     minY={0}
-    stroke="#A3A3A3"
+    stroke="#85888e"
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
@@ -1113,15 +1113,15 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
         },
         {
           "flex": 0,
-          "height": 17,
-          "width": 17,
+          "height": 24,
+          "width": 24,
         },
       ]
     }
     testID="SvgUniversalComponent"
     vbHeight={24}
     vbWidth={24}
-    width={17.5}
+    width={24}
     xmlns="http://www.w3.org/2000/svg"
   >
     <RNSVGGroup
@@ -1137,7 +1137,7 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
       }
       stroke={
         {
-          "payload": 4288914339,
+          "payload": 4286941326,
           "type": 0,
         }
       }
@@ -1159,7 +1159,7 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
         }
         stroke={
           {
-            "payload": 4288914339,
+            "payload": 4286941326,
             "type": 0,
           }
         }
@@ -1182,7 +1182,7 @@ exports[`RatingItem component tests checked - $checked, disabled - true, pressed
         }
         stroke={
           {
-            "payload": 4288914339,
+            "payload": 4286941326,
             "type": 0,
           }
         }
