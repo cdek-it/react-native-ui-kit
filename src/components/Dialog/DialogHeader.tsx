@@ -46,15 +46,17 @@ export const DialogHeader = ({
       <SvgUniversal
         {...styles.severityIcon}
         source={source}
-        uniProps={({ typography: t }) => ({
-          color: {
-            danger: t.Color.Service['text-danger'],
-            warning: t.Color.Service['text-warning'],
-            info: t.Color.Service['text-info'],
-            success: t.Color.Service['text-success'],
-            help: t.Color.Service['text-help'],
-          }[severity],
-        })}
+        uniProps={({ semantic }) => {
+          return {
+            color: {
+              danger: semantic.colorScheme.color.fg.status.danger.default,
+              warning: semantic.colorScheme.color.fg.status.warning.default,
+              info: semantic.colorScheme.color.fg.status.info.default,
+              success: semantic.colorScheme.color.fg.status.success.default,
+              help: semantic.colorScheme.color.fg.status.help.default,
+            }[severity],
+          }
+        }}
       />
     )
   }, [severity])
@@ -75,9 +77,9 @@ export const DialogHeader = ({
             <SvgUniversal
               {...styles.closeIcon}
               source={IconX}
-              uniProps={({ theme }) => ({
-                color: theme.General.actionIconColor,
-              })}
+              uniProps={({ components }) => {
+                return { color: components.dialog.root.color }
+              }}
             />
           </TouchableOpacity>
         ) : null}
@@ -88,27 +90,28 @@ export const DialogHeader = ({
   )
 }
 
-const styles = StyleSheet.create(({ theme, spacing, typography, border }) => ({
+const styles = StyleSheet.create(({ components, semantic }) => ({
   text: { flex: 1 },
   header: {
     flexDirection: 'row',
-    gap: spacing.Gap['gap-4'],
+    gap: components.dialog.header.gap,
     alignItems: 'center',
-    paddingBottom: theme.Overlay.Dialog.Header.dialogHeaderPaddingTopBottom,
-    padding: theme.Overlay.Dialog.Header.dialogHeaderPaddingLeftRight,
+    paddingTop: components.dialog.header.paddingTop,
+    paddingBottom: components.dialog.header.paddingBottom,
+    paddingHorizontal: components.dialog.header.paddingLeft,
   },
   closeTouchable: { padding: 8 },
   separator: {
-    height: border.Width.border,
-    backgroundColor: theme.Overlay.Overlay.overlayContentBorderColor,
+    height: semantic.dimension.borderWidth[100],
+    backgroundColor: components.dialog.root.borderColor,
   },
   closeIcon: {
-    width: typography.Size['text-base'],
-    height: typography.Size['text-base'],
+    width: semantic.dimension.size[450],
+    height: semantic.dimension.size[450],
   },
   severityIcon: {
-    width: typography.Size['text-2xl'],
-    height: typography.Size['text-2xl'],
+    width: semantic.dimension.size[700],
+    height: semantic.dimension.size[700],
   },
 }))
 
