@@ -11,8 +11,8 @@ exports[`Avatar component tests Size: custom, shape: circle, type: icon, with cu
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -25,7 +25,7 @@ exports[`Avatar component tests Size: custom, shape: circle, type: icon, with cu
           "backgroundColor": "#44e858",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 1600,
         },
         undefined,
       ]
@@ -149,8 +149,8 @@ exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -163,7 +163,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
           "backgroundColor": "#44e858",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 1600,
         },
         undefined,
       ]
@@ -172,15 +172,15 @@ exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#000000"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -192,15 +192,15 @@ exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="Avatar.icon"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -216,7 +216,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
         }
         stroke={
           {
-            "payload": 4278190080,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -238,7 +238,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -261,7 +261,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -287,8 +287,8 @@ exports[`Avatar component tests Size: large, shape: circle, type: image 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -299,7 +299,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: image 1`] = `
         },
         false,
         {
-          "borderRadius": 100,
+          "borderRadius": 1600,
         },
         undefined,
       ]
@@ -336,8 +336,8 @@ exports[`Avatar component tests Size: large, shape: circle, type: label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -350,7 +350,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: label 1`] = `
           "backgroundColor": "#44e858",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 1600,
         },
         undefined,
       ]
@@ -362,9 +362,9 @@ exports[`Avatar component tests Size: large, shape: circle, type: label 1`] = `
       numberOfLines={1}
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "textTransform": "uppercase",
           "verticalAlign": "middle",
@@ -389,8 +389,8 @@ exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -410,15 +410,15 @@ exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#000000"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -430,15 +430,15 @@ exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="Avatar.icon"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -454,7 +454,7 @@ exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
         }
         stroke={
           {
-            "payload": 4278190080,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -476,7 +476,7 @@ exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -499,7 +499,7 @@ exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -525,8 +525,8 @@ exports[`Avatar component tests Size: large, shape: square, type: image 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -572,8 +572,8 @@ exports[`Avatar component tests Size: large, shape: square, type: label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -596,9 +596,9 @@ exports[`Avatar component tests Size: large, shape: square, type: label 1`] = `
       numberOfLines={1}
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "textTransform": "uppercase",
           "verticalAlign": "middle",
@@ -623,8 +623,8 @@ exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -637,7 +637,7 @@ exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
           "backgroundColor": "#44e858",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 1600,
         },
         undefined,
       ]
@@ -646,15 +646,15 @@ exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#000000"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -666,15 +666,15 @@ exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="Avatar.icon"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -690,7 +690,7 @@ exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
         }
         stroke={
           {
-            "payload": 4278190080,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -712,7 +712,7 @@ exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -735,7 +735,7 @@ exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -761,8 +761,8 @@ exports[`Avatar component tests Size: normal, shape: circle, type: image 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -773,7 +773,7 @@ exports[`Avatar component tests Size: normal, shape: circle, type: image 1`] = `
         },
         false,
         {
-          "borderRadius": 100,
+          "borderRadius": 1600,
         },
         undefined,
       ]
@@ -810,8 +810,8 @@ exports[`Avatar component tests Size: normal, shape: circle, type: label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -824,7 +824,7 @@ exports[`Avatar component tests Size: normal, shape: circle, type: label 1`] = `
           "backgroundColor": "#44e858",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 1600,
         },
         undefined,
       ]
@@ -836,9 +836,9 @@ exports[`Avatar component tests Size: normal, shape: circle, type: label 1`] = `
       numberOfLines={1}
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "textTransform": "uppercase",
           "verticalAlign": "middle",
@@ -863,8 +863,8 @@ exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -884,15 +884,15 @@ exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#000000"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -904,15 +904,15 @@ exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="Avatar.icon"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -928,7 +928,7 @@ exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
         }
         stroke={
           {
-            "payload": 4278190080,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -950,7 +950,7 @@ exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -973,7 +973,7 @@ exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -999,8 +999,8 @@ exports[`Avatar component tests Size: normal, shape: square, type: image 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1046,8 +1046,8 @@ exports[`Avatar component tests Size: normal, shape: square, type: label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1070,9 +1070,9 @@ exports[`Avatar component tests Size: normal, shape: square, type: label 1`] = `
       numberOfLines={1}
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "textTransform": "uppercase",
           "verticalAlign": "middle",
@@ -1097,8 +1097,8 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1111,7 +1111,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
           "backgroundColor": "#44e858",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 1600,
         },
         undefined,
       ]
@@ -1120,15 +1120,15 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={21}
-      bbWidth={21}
+      bbHeight={24}
+      bbWidth={24}
       fill="none"
       focusable={false}
-      height={21}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#000000"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -1140,15 +1140,15 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
           },
           {
             "flex": 0,
-            "height": 21,
-            "width": 21,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="Avatar.icon"
       vbHeight={24}
       vbWidth={24}
-      width={21}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -1164,7 +1164,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
         }
         stroke={
           {
-            "payload": 4278190080,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -1186,7 +1186,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -1209,7 +1209,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -1235,8 +1235,8 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: image 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1247,7 +1247,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: image 1`] = `
         },
         false,
         {
-          "borderRadius": 100,
+          "borderRadius": 1600,
         },
         undefined,
       ]
@@ -1284,8 +1284,8 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1298,7 +1298,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: label 1`] = `
           "backgroundColor": "#44e858",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 1600,
         },
         undefined,
       ]
@@ -1310,9 +1310,9 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: label 1`] = `
       numberOfLines={1}
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "textTransform": "uppercase",
           "verticalAlign": "middle",
@@ -1337,8 +1337,8 @@ exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1358,15 +1358,15 @@ exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={21}
-      bbWidth={21}
+      bbHeight={24}
+      bbWidth={24}
       fill="none"
       focusable={false}
-      height={21}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#000000"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -1378,15 +1378,15 @@ exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
           },
           {
             "flex": 0,
-            "height": 21,
-            "width": 21,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="Avatar.icon"
       vbHeight={24}
       vbWidth={24}
-      width={21}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -1402,7 +1402,7 @@ exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
         }
         stroke={
           {
-            "payload": 4278190080,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -1424,7 +1424,7 @@ exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -1447,7 +1447,7 @@ exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
           }
           stroke={
             {
-              "payload": 4278190080,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -1473,8 +1473,8 @@ exports[`Avatar component tests Size: xlarge, shape: square, type: image 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1520,8 +1520,8 @@ exports[`Avatar component tests Size: xlarge, shape: square, type: label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1544,9 +1544,9 @@ exports[`Avatar component tests Size: xlarge, shape: square, type: label 1`] = `
       numberOfLines={1}
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "textTransform": "uppercase",
           "verticalAlign": "middle",
@@ -1571,8 +1571,8 @@ exports[`Avatar component tests With badge, showBadge: false 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1585,7 +1585,7 @@ exports[`Avatar component tests With badge, showBadge: false 1`] = `
           "backgroundColor": "#44e858",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 1600,
         },
         undefined,
       ]
@@ -1597,9 +1597,9 @@ exports[`Avatar component tests With badge, showBadge: false 1`] = `
       numberOfLines={1}
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "textTransform": "uppercase",
           "verticalAlign": "middle",
@@ -1624,8 +1624,8 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#e2e2e4",
-          "borderRadius": 10.5,
+          "borderColor": "#cecfd2",
+          "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
           "overflow": "hidden",
@@ -1638,7 +1638,7 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
           "backgroundColor": "#44e858",
         },
         {
-          "borderRadius": 100,
+          "borderRadius": 1600,
         },
         undefined,
       ]
@@ -1650,9 +1650,9 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
       numberOfLines={1}
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 14,
+          "fontSize": 16,
           "includeFontPadding": false,
           "textTransform": "uppercase",
           "verticalAlign": "middle",
@@ -1706,10 +1706,10 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
                 "backgroundColor": "#44e858",
               },
               {
-                "borderRadius": 100,
-                "height": 21,
+                "borderRadius": 1600,
+                "height": 24,
                 "justifyContent": "center",
-                "paddingHorizontal": 7,
+                "paddingHorizontal": 8,
               },
             ]
           }
@@ -1719,9 +1719,9 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
             style={
               [
                 {
-                  "color": "#000000",
+                  "color": "#2b2e33",
                   "fontFamily": "TT Fellows",
-                  "fontSize": 10.5,
+                  "fontSize": 12,
                   "includeFontPadding": false,
                   "verticalAlign": "middle",
                 },
@@ -1754,9 +1754,9 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
               onLayout={[Function]}
               style={
                 {
-                  "color": "#000000",
+                  "color": "#2b2e33",
                   "fontFamily": "TT Fellows",
-                  "fontSize": 10.5,
+                  "fontSize": 12,
                   "includeFontPadding": false,
                   "verticalAlign": "middle",
                 }
