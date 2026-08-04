@@ -87,14 +87,16 @@ export const Skeleton = memo<SkeletonProps>(({ style, testID, ...rest }) => {
   )
 })
 
-const styles = StyleSheet.create(({ border, theme }) => ({
+const styles = StyleSheet.create(({ components: { skeleton } }) => ({
   container: {
-    borderRadius: border.Radius['rounded-lg'],
+    borderRadius: skeleton.root.borderRadius,
     overflow: 'hidden',
-    backgroundColor: theme.Misc.Skeleton.skeletonBg,
+    backgroundColor: skeleton.colorScheme.root.background,
   },
   gradientContainer: { position: 'absolute', height: '100%' },
-  gradientColor: { backgroundColor: theme.Misc.Skeleton.skeletonAnimationBg },
+  gradientColor: {
+    backgroundColor: skeleton.colorScheme.root.animationBackground,
+  },
 }))
 
 export const SkeletonTestId = {
