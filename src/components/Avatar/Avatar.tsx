@@ -188,9 +188,9 @@ export const Avatar = memo<AvatarProps>(
           height={iconSize}
           source={Icon}
           testID={AvatarTestId.icon}
-          uniProps={({ theme }) => ({
-            color: iconColor ?? theme.Misc.Avatar.avatarTextColor,
-          })}
+          uniProps={({ components }) => {
+            return { color: iconColor ?? components.avatar.root.color }
+          }}
           width={iconSize}
         />
       )
@@ -257,30 +257,30 @@ export const Avatar = memo<AvatarProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, border, typography, fonts }) => ({
+const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: theme.General.borderRadiusXL,
-    borderWidth: 1,
-    borderColor: theme.Misc.Avatar.avatarBorderColor,
-    backgroundColor: theme.Misc.Avatar.avatarBg,
+    borderRadius: components.avatar.root.borderRadius,
+    borderWidth: semantic.dimension.borderWidth[100],
+    borderColor: components.avatar.extend.borderColor,
+    backgroundColor: components.avatar.root.background,
     overflow: 'hidden',
   },
-  backgroundFill: { backgroundColor: theme.Misc.Avatar.avatarBg },
-  circle: { borderRadius: border.Radius['rounded-full'] },
+  backgroundFill: { backgroundColor: components.avatar.root.background },
+  circle: { borderRadius: components.avatar.extend.circle.borderRadius },
   text: {
-    fontSize: typography.Size['text-base'],
+    fontSize: components.avatar.root.fontSize,
     textTransform: 'uppercase',
-    color: theme.Misc.Avatar.avatarTextColor,
+    color: components.avatar.root.color,
     includeFontPadding: false,
     verticalAlign: 'middle',
-    fontFamily: fonts.secondary,
+    fontFamily: fonts.fontFamily.base,
   },
   badgeContainer: { position: 'absolute', right: 0, top: -7 },
   badgeMeasureContainer: { alignSelf: 'flex-start' },
-  icon: { width: typography.Size['text-base'] },
-  iconXLarge: { width: typography.Size['text-2xl'] },
+  icon: { width: components.avatar.icon.size },
+  iconXLarge: { width: components.avatar.xl.icon.size },
 }))
 
 export const AvatarTestId = {
