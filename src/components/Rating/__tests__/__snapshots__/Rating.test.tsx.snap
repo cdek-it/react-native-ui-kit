@@ -6,7 +6,7 @@ exports[`Rating component tests renders correctly with default props 1`] = `
     {
       "alignItems": "center",
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -44,9 +44,9 @@ exports[`Rating component tests renders correctly with default props 1`] = `
       [
         {
           "alignItems": "center",
-          "height": 17.5,
+          "height": 24,
           "justifyContent": "center",
-          "width": 17.5,
+          "width": 24,
         },
         false,
       ]
@@ -55,11 +55,11 @@ exports[`Rating component tests renders correctly with default props 1`] = `
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={24}
+      bbWidth={24}
       fill="none"
       focusable={false}
-      height={17.5}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -75,15 +75,15 @@ exports[`Rating component tests renders correctly with default props 1`] = `
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -190,9 +190,9 @@ exports[`Rating component tests renders correctly with default props 1`] = `
       [
         {
           "alignItems": "center",
-          "height": 17.5,
+          "height": 24,
           "justifyContent": "center",
-          "width": 17.5,
+          "width": 24,
         },
         false,
       ]
@@ -201,12 +201,12 @@ exports[`Rating component tests renders correctly with default props 1`] = `
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={24}
+      bbWidth={24}
       fill="#f5b83d"
       fillOpacity={1}
       focusable={false}
-      height={17.5}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -220,15 +220,15 @@ exports[`Rating component tests renders correctly with default props 1`] = `
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -308,9 +308,9 @@ exports[`Rating component tests renders correctly with default props 1`] = `
       [
         {
           "alignItems": "center",
-          "height": 17.5,
+          "height": 24,
           "justifyContent": "center",
-          "width": 17.5,
+          "width": 24,
         },
         false,
       ]
@@ -319,12 +319,12 @@ exports[`Rating component tests renders correctly with default props 1`] = `
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={24}
+      bbWidth={24}
       fill="#f5b83d"
       fillOpacity={1}
       focusable={false}
-      height={17.5}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -338,15 +338,15 @@ exports[`Rating component tests renders correctly with default props 1`] = `
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -426,9 +426,9 @@ exports[`Rating component tests renders correctly with default props 1`] = `
       [
         {
           "alignItems": "center",
-          "height": 17.5,
+          "height": 24,
           "justifyContent": "center",
-          "width": 17.5,
+          "width": 24,
         },
         false,
       ]
@@ -437,12 +437,12 @@ exports[`Rating component tests renders correctly with default props 1`] = `
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={24}
+      bbWidth={24}
       fill="#f5b83d"
       fillOpacity={1}
       focusable={false}
-      height={17.5}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -456,15 +456,15 @@ exports[`Rating component tests renders correctly with default props 1`] = `
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -544,9 +544,9 @@ exports[`Rating component tests renders correctly with default props 1`] = `
       [
         {
           "alignItems": "center",
-          "height": 17.5,
+          "height": 24,
           "justifyContent": "center",
-          "width": 17.5,
+          "width": 24,
         },
         false,
       ]
@@ -555,11 +555,11 @@ exports[`Rating component tests renders correctly with default props 1`] = `
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={24}
+      bbWidth={24}
       fillOpacity={0}
       focusable={false}
-      height={17.5}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -575,15 +575,15 @@ exports[`Rating component tests renders correctly with default props 1`] = `
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -679,9 +679,9 @@ exports[`Rating component tests renders correctly with default props 1`] = `
       [
         {
           "alignItems": "center",
-          "height": 17.5,
+          "height": 24,
           "justifyContent": "center",
-          "width": 17.5,
+          "width": 24,
         },
         false,
       ]
@@ -690,11 +690,11 @@ exports[`Rating component tests renders correctly with default props 1`] = `
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={24}
+      bbWidth={24}
       fillOpacity={0}
       focusable={false}
-      height={17.5}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -710,15 +710,15 @@ exports[`Rating component tests renders correctly with default props 1`] = `
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -789,7 +789,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
     {
       "alignItems": "center",
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -827,9 +827,9 @@ exports[`Rating component tests renders the correct number of checked items - $r
       [
         {
           "alignItems": "center",
-          "height": 17.5,
+          "height": 24,
           "justifyContent": "center",
-          "width": 17.5,
+          "width": 24,
         },
         false,
       ]
@@ -838,11 +838,11 @@ exports[`Rating component tests renders the correct number of checked items - $r
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={24}
+      bbWidth={24}
       fill="none"
       focusable={false}
-      height={17.5}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -858,15 +858,15 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -973,9 +973,9 @@ exports[`Rating component tests renders the correct number of checked items - $r
       [
         {
           "alignItems": "center",
-          "height": 17.5,
+          "height": 24,
           "justifyContent": "center",
-          "width": 17.5,
+          "width": 24,
         },
         false,
       ]
@@ -984,12 +984,12 @@ exports[`Rating component tests renders the correct number of checked items - $r
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={24}
+      bbWidth={24}
       fill="#f5b83d"
       fillOpacity={1}
       focusable={false}
-      height={17.5}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -1003,15 +1003,15 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -1091,9 +1091,9 @@ exports[`Rating component tests renders the correct number of checked items - $r
       [
         {
           "alignItems": "center",
-          "height": 17.5,
+          "height": 24,
           "justifyContent": "center",
-          "width": 17.5,
+          "width": 24,
         },
         false,
       ]
@@ -1102,12 +1102,12 @@ exports[`Rating component tests renders the correct number of checked items - $r
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={24}
+      bbWidth={24}
       fill="#f5b83d"
       fillOpacity={1}
       focusable={false}
-      height={17.5}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -1121,15 +1121,15 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -1209,9 +1209,9 @@ exports[`Rating component tests renders the correct number of checked items - $r
       [
         {
           "alignItems": "center",
-          "height": 17.5,
+          "height": 24,
           "justifyContent": "center",
-          "width": 17.5,
+          "width": 24,
         },
         false,
       ]
@@ -1220,12 +1220,12 @@ exports[`Rating component tests renders the correct number of checked items - $r
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={24}
+      bbWidth={24}
       fill="#f5b83d"
       fillOpacity={1}
       focusable={false}
-      height={17.5}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -1239,15 +1239,15 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -1327,9 +1327,9 @@ exports[`Rating component tests renders the correct number of checked items - $r
       [
         {
           "alignItems": "center",
-          "height": 17.5,
+          "height": 24,
           "justifyContent": "center",
-          "width": 17.5,
+          "width": 24,
         },
         false,
       ]
@@ -1338,11 +1338,11 @@ exports[`Rating component tests renders the correct number of checked items - $r
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={24}
+      bbWidth={24}
       fillOpacity={0}
       focusable={false}
-      height={17.5}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -1358,15 +1358,15 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -1462,9 +1462,9 @@ exports[`Rating component tests renders the correct number of checked items - $r
       [
         {
           "alignItems": "center",
-          "height": 17.5,
+          "height": 24,
           "justifyContent": "center",
-          "width": 17.5,
+          "width": 24,
         },
         false,
       ]
@@ -1473,11 +1473,11 @@ exports[`Rating component tests renders the correct number of checked items - $r
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={24}
+      bbWidth={24}
       fillOpacity={0}
       focusable={false}
-      height={17.5}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -1493,15 +1493,15 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -1572,7 +1572,7 @@ exports[`Rating component tests renders the correct number of checked items - $r
     {
       "alignItems": "center",
       "flexDirection": "row",
-      "gap": 7,
+      "gap": 8,
     }
   }
 >
@@ -1610,9 +1610,9 @@ exports[`Rating component tests renders the correct number of checked items - $r
       [
         {
           "alignItems": "center",
-          "height": 17.5,
+          "height": 24,
           "justifyContent": "center",
-          "width": 17.5,
+          "width": 24,
         },
         false,
       ]
@@ -1621,11 +1621,11 @@ exports[`Rating component tests renders the correct number of checked items - $r
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={24}
+      bbWidth={24}
       fill="none"
       focusable={false}
-      height={17.5}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -1641,15 +1641,15 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -1756,9 +1756,9 @@ exports[`Rating component tests renders the correct number of checked items - $r
       [
         {
           "alignItems": "center",
-          "height": 17.5,
+          "height": 24,
           "justifyContent": "center",
-          "width": 17.5,
+          "width": 24,
         },
         false,
       ]
@@ -1767,12 +1767,12 @@ exports[`Rating component tests renders the correct number of checked items - $r
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={24}
+      bbWidth={24}
       fill="#f5b83d"
       fillOpacity={1}
       focusable={false}
-      height={17.5}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -1786,15 +1786,15 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -1874,9 +1874,9 @@ exports[`Rating component tests renders the correct number of checked items - $r
       [
         {
           "alignItems": "center",
-          "height": 17.5,
+          "height": 24,
           "justifyContent": "center",
-          "width": 17.5,
+          "width": 24,
         },
         false,
       ]
@@ -1885,12 +1885,12 @@ exports[`Rating component tests renders the correct number of checked items - $r
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={24}
+      bbWidth={24}
       fill="#f5b83d"
       fillOpacity={1}
       focusable={false}
-      height={17.5}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -1904,15 +1904,15 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -1992,9 +1992,9 @@ exports[`Rating component tests renders the correct number of checked items - $r
       [
         {
           "alignItems": "center",
-          "height": 17.5,
+          "height": 24,
           "justifyContent": "center",
-          "width": 17.5,
+          "width": 24,
         },
         false,
       ]
@@ -2003,12 +2003,12 @@ exports[`Rating component tests renders the correct number of checked items - $r
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={24}
+      bbWidth={24}
       fill="#f5b83d"
       fillOpacity={1}
       focusable={false}
-      height={17.5}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -2022,15 +2022,15 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -2110,9 +2110,9 @@ exports[`Rating component tests renders the correct number of checked items - $r
       [
         {
           "alignItems": "center",
-          "height": 17.5,
+          "height": 24,
           "justifyContent": "center",
-          "width": 17.5,
+          "width": 24,
         },
         false,
       ]
@@ -2121,12 +2121,12 @@ exports[`Rating component tests renders the correct number of checked items - $r
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={24}
+      bbWidth={24}
       fill="#f5b83d"
       fillOpacity={1}
       focusable={false}
-      height={17.5}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -2140,15 +2140,15 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -2228,9 +2228,9 @@ exports[`Rating component tests renders the correct number of checked items - $r
       [
         {
           "alignItems": "center",
-          "height": 17.5,
+          "height": 24,
           "justifyContent": "center",
-          "width": 17.5,
+          "width": 24,
         },
         false,
       ]
@@ -2239,11 +2239,11 @@ exports[`Rating component tests renders the correct number of checked items - $r
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={24}
+      bbWidth={24}
       fillOpacity={0}
       focusable={false}
-      height={17.5}
+      height={24}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -2259,15 +2259,15 @@ exports[`Rating component tests renders the correct number of checked items - $r
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 24,
+            "width": 24,
           },
         ]
       }
       testID="SvgUniversalComponent"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
