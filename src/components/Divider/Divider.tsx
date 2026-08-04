@@ -111,9 +111,9 @@ export const Divider = memo<DividerProps>(
                 <SvgUniversal
                   {...styles.icon}
                   source={Icon}
-                  uniProps={({ theme }) => ({
-                    color: theme.General.textSecondaryColor,
-                  })}
+                  uniProps={({ components }) => {
+                    return { color: components.divider.content.color }
+                  }}
                 />
               ) : null}
               {text ? (
@@ -133,15 +133,15 @@ export const Divider = memo<DividerProps>(
   }
 )
 
-const styles = StyleSheet.create(({ spacing, theme, sizing, typography }) => ({
+const styles = StyleSheet.create(({ components, semantic }) => ({
   container: {
-    minHeight: sizing.Height['h-2'],
+    minHeight: semantic.dimension.size[800],
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
   },
   containerVertical: {
-    minWidth: sizing.Width['w-2'],
+    minWidth: semantic.dimension.size[800],
     flexDirection: 'column',
     flexGrow: 1,
     alignSelf: 'flex-start',
@@ -150,7 +150,7 @@ const styles = StyleSheet.create(({ spacing, theme, sizing, typography }) => ({
   containerColumnReverse: { flexDirection: 'column-reverse' },
   lineContainer: {
     flexGrow: 1,
-    flexBasis: spacing.Gap['gap-4'],
+    flexBasis: semantic.dimension.space[400],
     width: 1,
     height: 1,
     overflow: 'hidden',
@@ -159,25 +159,25 @@ const styles = StyleSheet.create(({ spacing, theme, sizing, typography }) => ({
   line: {
     width: '100%',
     height: '100%',
-    borderWidth: 1,
-    borderColor: theme.General.dividerColor,
+    borderWidth: semantic.dimension.borderWidth[100],
+    borderColor: components.divider.root.borderColor,
   },
   lineDash: { borderStyle: 'dashed' },
   content: {
     flexShrink: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: theme.General.inlineSpacing,
-    gap: spacing.Gap['gap-2'],
-    backgroundColor: theme.Panel.Panel.Body.panelContentBg,
+    paddingHorizontal: semantic.dimension.space[200],
+    gap: components.divider.extend.content.gap,
+    backgroundColor: components.divider.content.background,
   },
   contentVertical: {
-    paddingHorizontal: 0,
-    paddingVertical: theme.General.inlineSpacing,
+    paddingHorizontal: semantic.dimension.space.none,
+    paddingVertical: semantic.dimension.space[200],
   },
   icon: {
-    width: typography.Size['text-base'],
-    height: typography.Size['text-base'],
+    width: components.divider.extend.iconSize,
+    height: components.divider.extend.iconSize,
   },
   text: { flexShrink: 1 },
 }))
