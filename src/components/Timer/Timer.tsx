@@ -96,7 +96,7 @@ export const Timer = memo<TimerProps>(({ countFrom, onFinish }) => {
   )
 })
 
-const styles = StyleSheet.create(({ typography }) => ({
+const styles = StyleSheet.create(({ semantic }) => ({
   container: {
     overflow: 'hidden',
     width: COUNTER_SIZE,
@@ -111,7 +111,7 @@ const styles = StyleSheet.create(({ typography }) => ({
     width: COUNTER_SIZE,
     height: COUNTER_SIZE,
   },
-  circle: { color: typography.Color.Surface['text-surface-0'] },
+  circle: { color: semantic.colorScheme.color.fg.active },
 }))
 
 export enum TestId {
