@@ -8,7 +8,7 @@ exports[`Accordion Header elements maximal 1`] = `
         "width": "100%",
       },
       {
-        "borderTopColor": "#e2e2e4",
+        "borderTopColor": "#cecfd2",
         "borderTopWidth": 1,
       },
     ]
@@ -51,9 +51,9 @@ exports[`Accordion Header elements maximal 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
           "flexDirection": "row",
-          "gap": 7,
+          "gap": 8,
           "paddingVertical": 14,
         },
         {},
@@ -95,15 +95,15 @@ exports[`Accordion Header elements maximal 1`] = `
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={17.5}
-        bbWidth={17.5}
+        bbHeight={20}
+        bbWidth={20}
         fill="none"
         focusable={false}
-        height={17.5}
+        height={20}
         meetOrSlice={0}
         minX={0}
         minY={0}
-        stroke="#181a1f"
+        stroke="#2b2e33"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
@@ -115,15 +115,15 @@ exports[`Accordion Header elements maximal 1`] = `
             },
             {
               "flex": 0,
-              "height": 17,
-              "width": 17,
+              "height": 20,
+              "width": 20,
             },
           ]
         }
         testID="SvgUniversalComponent"
         vbHeight={24}
         vbWidth={24}
-        width={17.5}
+        width={20}
         xmlns="http://www.w3.org/2000/svg"
       >
         <RNSVGGroup
@@ -139,7 +139,7 @@ exports[`Accordion Header elements maximal 1`] = `
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -161,7 +161,7 @@ exports[`Accordion Header elements maximal 1`] = `
             }
             stroke={
               {
-                "payload": 4279769631,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -175,15 +175,15 @@ exports[`Accordion Header elements maximal 1`] = `
     </View>
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={20}
+      bbWidth={20}
       fill="none"
       focusable={false}
-      height={17.5}
+      height={20}
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#181a1f"
+      stroke="#2b2e33"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -195,15 +195,15 @@ exports[`Accordion Header elements maximal 1`] = `
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 20,
+            "width": 20,
           },
         ]
       }
       testID="TitleIcon"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={20}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -219,7 +219,7 @@ exports[`Accordion Header elements maximal 1`] = `
         }
         stroke={
           {
-            "payload": 4279769631,
+            "payload": 4281019955,
             "type": 0,
           }
         }
@@ -241,7 +241,7 @@ exports[`Accordion Header elements maximal 1`] = `
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -264,7 +264,7 @@ exports[`Accordion Header elements maximal 1`] = `
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -278,9 +278,9 @@ exports[`Accordion Header elements maximal 1`] = `
     <Text
       style={
         {
-          "color": "#181a1f",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 15.75,
+          "fontSize": 18,
           "fontWeight": 700,
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -516,8 +516,8 @@ exports[`Accordion Header elements maximal 1`] = `
       style={
         {
           "paddingBottom": 14,
-          "paddingLeft": 24.5,
-          "paddingRight": 0,
+          "paddingLeft": 24,
+          "paddingRight": 24,
           "paddingTop": 0,
           "position": "absolute",
           "width": "100%",
@@ -581,9 +581,9 @@ exports[`Accordion Header elements minimal 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "transparent",
           "flexDirection": "row",
-          "gap": 7,
+          "gap": 8,
           "paddingVertical": 14,
         },
         {},
@@ -625,15 +625,15 @@ exports[`Accordion Header elements minimal 1`] = `
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={17.5}
-        bbWidth={17.5}
+        bbHeight={20}
+        bbWidth={20}
         fill="none"
         focusable={false}
-        height={17.5}
+        height={20}
         meetOrSlice={0}
         minX={0}
         minY={0}
-        stroke="#181a1f"
+        stroke="#2b2e33"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
@@ -645,15 +645,15 @@ exports[`Accordion Header elements minimal 1`] = `
             },
             {
               "flex": 0,
-              "height": 17,
-              "width": 17,
+              "height": 20,
+              "width": 20,
             },
           ]
         }
         testID="SvgUniversalComponent"
         vbHeight={24}
         vbWidth={24}
-        width={17.5}
+        width={20}
         xmlns="http://www.w3.org/2000/svg"
       >
         <RNSVGGroup
@@ -669,7 +669,7 @@ exports[`Accordion Header elements minimal 1`] = `
           }
           stroke={
             {
-              "payload": 4279769631,
+              "payload": 4281019955,
               "type": 0,
             }
           }
@@ -691,7 +691,7 @@ exports[`Accordion Header elements minimal 1`] = `
             }
             stroke={
               {
-                "payload": 4279769631,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -706,9 +706,9 @@ exports[`Accordion Header elements minimal 1`] = `
     <Text
       style={
         {
-          "color": "#181a1f",
+          "color": "#2b2e33",
           "fontFamily": "Noto Sans",
-          "fontSize": 15.75,
+          "fontSize": 18,
           "fontWeight": 700,
           "includeFontPadding": false,
           "verticalAlign": "middle",
@@ -760,8 +760,8 @@ exports[`Accordion Header elements minimal 1`] = `
       style={
         {
           "paddingBottom": 14,
-          "paddingLeft": 24.5,
-          "paddingRight": 0,
+          "paddingLeft": 24,
+          "paddingRight": 24,
           "paddingTop": 0,
           "position": "absolute",
           "width": "100%",
