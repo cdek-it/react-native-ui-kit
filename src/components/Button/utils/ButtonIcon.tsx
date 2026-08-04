@@ -48,140 +48,111 @@ const ButtonIconComponent = ({
 
 export const ButtonIcon = genericMemo(ButtonIconComponent)
 
-const buttonIconStyles = StyleSheet.create(({ theme, typography }) => ({
-  icon: {
-    variants: {
-      size: {
-        xlarge: {
-          height: typography.Size['text-2xl'],
-          width: typography.Size['text-2xl'],
+const buttonIconStyles = StyleSheet.create(
+  ({ components: { button }, semantic }) => ({
+    icon: {
+      variants: {
+        size: {
+          xlarge: {
+            height: button.extend.iconSize.lg,
+            width: button.extend.iconSize.lg,
+          },
+          large: {
+            height: button.extend.iconSize.lg,
+            width: button.extend.iconSize.lg,
+          },
+          base: {
+            height: button.extend.iconSize.md,
+            width: button.extend.iconSize.md,
+          },
+          small: {
+            height: button.extend.iconSize.sm,
+            width: button.extend.iconSize.sm,
+          },
         },
-        large: {
-          height: typography.Size['text-2xl'],
-          width: typography.Size['text-2xl'],
+        variant: {
+          primary: { color: button.colorScheme.root.primary.color },
+          secondary: { color: button.colorScheme.root.secondary.color },
+          tertiary: { color: button.colorScheme.root.contrast.color },
+          text: { color: button.colorScheme.text.primary.color },
+          link: { color: button.colorScheme.link.color },
+          basic: { color: button.colorScheme.root.primary.color },
+          outlined: { color: button.colorScheme.outlined.primary.color },
         },
-        base: {
-          height: typography.Size['text-xl'],
-          width: typography.Size['text-xl'],
+        severity: { info: {}, success: {}, warning: {}, danger: {} },
+        pressed: { true: {}, false: {} },
+        disabled: { true: { color: button.extend.disabledColor }, false: {} },
+      },
+      compoundVariants: [
+        // link pressed
+        {
+          variant: 'link',
+          pressed: 'true',
+          styles: { color: semantic.colorScheme.color.fg.muted },
         },
-        small: {
-          height: typography.Size['text-base'],
-          width: typography.Size['text-base'],
-        },
-      },
-      variant: {
-        primary: { color: theme.Button.Brand.buttonTextColor },
-        secondary: { color: theme.Button.Primary.secondaryButtonTextColor },
-        tertiary: { color: theme.Button.Secondary.helpButtonTextColor },
-        text: { color: theme.Button.Text.textButtonTextColor },
-        link: { color: theme.Button.Text.textButtonTextColor },
-        basic: { color: theme.Button.Brand.buttonTextColor },
-        outlined: { color: theme.Button.Brand.buttonTextColor },
-      },
-      severity: { info: {}, success: {}, warning: {}, danger: {} },
-      pressed: { true: {}, false: {} },
-      disabled: {
-        true: { color: theme.Button.Disabled.disabledButtonTextColor },
-        false: {},
-      },
-    },
-    compoundVariants: [
-      // link pressed
-      {
-        variant: 'link',
-        pressed: 'true',
-        styles: { color: typography.Color.Common['text-color-secondary'] },
-      },
 
-      // severity icon colors
-      {
-        variant: 'basic',
-        severity: 'info',
-        styles: { color: theme.Button.Severity.Info.Basic.infoButtonTextColor },
-      },
-      {
-        variant: 'outlined',
-        severity: 'info',
-        styles: {
-          color:
-            theme.Button.Severity.Info.Outlined.infoOutlinedButtonTextColor,
+        // severity icon colors
+        {
+          variant: 'basic',
+          severity: 'info',
+          styles: { color: button.colorScheme.root.info.color },
         },
-      },
-      {
-        variant: 'text',
-        severity: 'info',
-        styles: {
-          color: theme.Button.Severity.Info.Text.infoTextButtonTextColor,
+        {
+          variant: 'outlined',
+          severity: 'info',
+          styles: { color: button.colorScheme.outlined.info.color },
         },
-      },
-      {
-        variant: 'basic',
-        severity: 'success',
-        styles: {
-          color: theme.Button.Severity.Success.Basic.successButtonTextColor,
+        {
+          variant: 'text',
+          severity: 'info',
+          styles: { color: button.colorScheme.text.info.color },
         },
-      },
-      {
-        variant: 'outlined',
-        severity: 'success',
-        styles: {
-          color:
-            theme.Button.Severity.Success.Outlined
-              .successOutlinedButtonTextColor,
+        {
+          variant: 'basic',
+          severity: 'success',
+          styles: { color: button.colorScheme.root.success.color },
         },
-      },
-      {
-        variant: 'text',
-        severity: 'success',
-        styles: {
-          color: theme.Button.Severity.Success.Text.successTextButtonTextColor,
+        {
+          variant: 'outlined',
+          severity: 'success',
+          styles: { color: button.colorScheme.outlined.success.color },
         },
-      },
-      {
-        variant: 'basic',
-        severity: 'warning',
-        styles: {
-          color: theme.Button.Severity.Warning.Basic.warningButtonTextColor,
+        {
+          variant: 'text',
+          severity: 'success',
+          styles: { color: button.colorScheme.text.success.color },
         },
-      },
-      {
-        variant: 'outlined',
-        severity: 'warning',
-        styles: {
-          color:
-            theme.Button.Severity.Warning.Outlined
-              .warningOutlinedButtonTextColor,
+        {
+          variant: 'basic',
+          severity: 'warning',
+          styles: { color: button.colorScheme.root.warn.color },
         },
-      },
-      {
-        variant: 'text',
-        severity: 'warning',
-        styles: {
-          color: theme.Button.Severity.Warning.Text.warningTextButtonTextColor,
+        {
+          variant: 'outlined',
+          severity: 'warning',
+          styles: { color: button.colorScheme.outlined.warn.color },
         },
-      },
-      {
-        variant: 'basic',
-        severity: 'danger',
-        styles: {
-          color: theme.Button.Severity.Danger.Basic.dangerButtonTextColor,
+        {
+          variant: 'text',
+          severity: 'warning',
+          styles: { color: button.colorScheme.text.warn.color },
         },
-      },
-      {
-        variant: 'outlined',
-        severity: 'danger',
-        styles: {
-          color:
-            theme.Button.Severity.Danger.Outlined.dangerOutlinedButtonTextColor,
+        {
+          variant: 'basic',
+          severity: 'danger',
+          styles: { color: button.colorScheme.root.danger.color },
         },
-      },
-      {
-        variant: 'text',
-        severity: 'danger',
-        styles: {
-          color: theme.Button.Severity.Danger.Text.dangerTextButtonTextColor,
+        {
+          variant: 'outlined',
+          severity: 'danger',
+          styles: { color: button.colorScheme.outlined.danger.color },
         },
-      },
-    ],
-  },
-}))
+        {
+          variant: 'text',
+          severity: 'danger',
+          styles: { color: button.colorScheme.text.danger.color },
+        },
+      ],
+    },
+  })
+)
