@@ -5,9 +5,11 @@ import { Text, Pressable, type PressableProps } from 'react-native'
 
 import { StyleSheet } from 'react-native-unistyles'
 
-import type { ThemeType } from '../../theme/types'
-
-import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
+import {
+  type SvgSource,
+  SvgUniversal,
+  type SvgUniversalTheme,
+} from '../../utils/SvgUniversal'
 
 export interface ChipProps extends PressableProps {
   /** SVG-иконка */
@@ -44,11 +46,13 @@ export const Chip = memo<ChipProps>(
     showIcon = true,
     ...rest
   }) => {
-    const iconUniProps = ({ theme }: ThemeType) => ({
-      color: disabled
-        ? theme.Button.Disabled.disabledButtonTextColor
-        : theme.Misc.Chip.chipTextColor,
-    })
+    const iconUniProps = ({ components, semantic }: SvgUniversalTheme) => {
+      return {
+        color: disabled
+          ? semantic.colorScheme.color.fg.muted
+          : components.chip.colorScheme.root.color,
+      }
+    }
 
     return (
       <Pressable
@@ -83,11 +87,13 @@ export const Chip = memo<ChipProps>(
                 {...styles.icon}
                 source={IconX}
                 style={pressed ? styles.pressedClose : null}
-                uniProps={({ theme }) => ({
-                  color: disabled
-                    ? theme.Button.Disabled.disabledButtonTextColor
-                    : theme.Misc.Chip.chipTextColor,
-                })}
+                uniProps={({ components, semantic }) => {
+                  return {
+                    color: disabled
+                      ? semantic.colorScheme.color.fg.muted
+                      : components.chip.colorScheme.root.color,
+                  }
+                }}
               />
             )}
           </Pressable>
@@ -97,46 +103,44 @@ export const Chip = memo<ChipProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, typography, border, fonts }) => ({
+// `transparent` здесь — отсутствие границы, а не цвет дизайн-системы:
+// у chip.root нет borderColor, прозрачность не выражена semantic-токеном.
+const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
   chip: {
-    height: theme.Misc.Chip.chipHeight,
     alignSelf: 'flex-start',
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
-    gap: theme.General.inlineSpacing,
+    gap: components.chip.root.gap,
 
-    paddingHorizontal: theme.Misc.Chip.chipPaddingLeftRight,
-    paddingVertical: theme.Misc.Chip.chipPaddingTopBottom,
+    paddingHorizontal: components.chip.root.paddingX,
+    paddingVertical: components.chip.root.paddingY,
 
-    borderRadius: theme.Misc.Chip.chipBorderRadius,
-    borderWidth: border.Width.border,
+    borderRadius: components.chip.root.borderRadius,
+    borderWidth: components.chip.extend.borderWidth,
 
-    backgroundColor: theme.Misc.Chip.chipBg,
-    borderColor: theme.Misc.Chip.chipBorderColor,
+    backgroundColor: components.chip.colorScheme.root.background,
+    borderColor: components.chip.extend.borderColor,
   },
   disabledChip: {
-    backgroundColor: theme.Button.Disabled.disabledButtonBg,
-    borderColor: theme.Button.Disabled.disabledButtonBorderColor,
-    opacity: 0.6,
+    backgroundColor: semantic.colorScheme.color.bg.neutral.weak.disabled,
+    borderColor: 'transparent',
+    opacity: semantic.effects.opacity[60],
     mixBlendMode: 'luminosity',
   },
-  icon: {
-    width: typography.Size['text-base'],
-    height: typography.Size['text-base'],
-  },
+  icon: { width: components.chip.icon.size, height: components.chip.icon.size },
   text: {
-    fontSize: typography.Size['text-base'],
+    fontSize: fonts.fontSize[300],
     verticalAlign: 'middle',
-    color: theme.Misc.Chip.chipTextColor,
+    color: components.chip.colorScheme.root.color,
     includeFontPadding: false,
-    fontFamily: fonts.secondary,
+    fontFamily: fonts.fontFamily.base,
   },
-  disabledText: { color: theme.General.textSecondaryColor },
+  disabledText: { color: semantic.colorScheme.color.fg.muted },
   pressedClose: {
-    borderWidth: border.Width['border-3'],
-    borderColor: border.Color.Service['border-success'][400],
-    borderRadius: border.Radius['rounded-full'],
+    borderWidth: semantic.dimension.borderWidth[300],
+    borderColor: semantic.colorScheme.color.border.status.success.strong,
+    borderRadius: semantic.dimension.borderRadius.max,
   },
 }))
 
