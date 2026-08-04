@@ -26,35 +26,45 @@ StyleSheet.create(({ components }) => ({
 }))
 ```
 
-Semantic-токены доступны потребителям библиотеки в `semantic`. Unistyles
-подставляет соответствующие light- или dark-токены при переключении темы.
+В `semantic` темы находится только `colorScheme`: Unistyles подставляет
+соответствующие light- или dark-токены при переключении темы. Не зависящие от
+темы `dimension` и `effects` доступны в статическом `semanticTokens`.
 
 ## Результат генерации
 
-Из `design-tokens/input/tokens.json` создаются пять файлов:
+Из `design-tokens/input/tokens.json` создаются семь файлов:
 
 ```text
 src/theme/tokens
 ├── fonts.json
 ├── semantic
-│   ├── light.json
-│   └── dark.json
+│   ├── colorScheme
+│   │   ├── light.json
+│   │   └── dark.json
+│   ├── dimensions.json
+│   └── effects.json
 └── components
     ├── light.json
     └── dark.json
 ```
 
-Для каждого выходного файла выбирается соответствующая ветка `colorScheme.light`
-или `colorScheme.dark`. Ключ `colorScheme` сохраняется, а уровень `light`/`dark`
-удаляется:
+Для `semantic/colorScheme` и component-файлов выбирается соответствующая ветка
+`colorScheme.light` или `colorScheme.dark`, а уровень `light`/`dark` удаляется.
+Semantic-файл подключается в тему как `semantic.colorScheme`; в component-файлах
+ключ `colorScheme` сохраняется:
 
 ```text
 semantic.colorScheme.light.color
-→ semantic/light.json: colorScheme.color
+→ semantic/colorScheme/light.json: color
 
 components.button.colorScheme.light.outlined
 → components/light.json: button.colorScheme.outlined
 ```
+
+`semantic.dimension` записывается в `semantic/dimensions.json`, а
+`semantic.effects` — в `semantic/effects.json`. Эти секции генерируются один раз
+и не входят в тему. Если их итоговые значения зависят от `colorScheme`,
+генератор завершится с ошибкой.
 
 `fonts.json` собирается из `primitive.fonts`, нормализуется по общим правилам и
 не разделяется по цветовым схемам. Пока файл не экспортируется из библиотеки.

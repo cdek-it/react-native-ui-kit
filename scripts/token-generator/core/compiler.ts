@@ -1,9 +1,12 @@
+import { isDeepStrictEqual } from 'node:util'
+
 import { normalizeTree } from './normalization'
 import { resolveReferences } from './resolution'
 import { mergeTrees, resolvePath } from './tree'
 import {
   isTokenTree,
   type CompiledTokens,
+  type SemanticTokens,
   type ThemeTokens,
   type TokenTree,
   type TokenValue,
@@ -199,6 +202,46 @@ const compileScheme = (
   }
 }
 
+const getSemanticGroup = (
+  semantic: TokenTree,
+  group: 'colorScheme' | 'dimension' | 'effects',
+  scheme: ColorScheme
+): TokenTree => {
+  const value = semantic[group]
+
+  if (!isTokenTree(value)) {
+    throw new Error(`Expected an object at "${scheme}.semantic.${group}"`)
+  }
+
+  return value
+}
+
+const splitSemantic = (light: TokenTree, dark: TokenTree): SemanticTokens => {
+  const dimension = getSemanticGroup(light, 'dimension', 'light')
+  const darkDimension = getSemanticGroup(dark, 'dimension', 'dark')
+  const effects = getSemanticGroup(light, 'effects', 'light')
+  const darkEffects = getSemanticGroup(dark, 'effects', 'dark')
+
+  if (!isDeepStrictEqual(dimension, darkDimension)) {
+    throw new Error(
+      'Semantic "dimension" tokens must not depend on colorScheme'
+    )
+  }
+
+  if (!isDeepStrictEqual(effects, darkEffects)) {
+    throw new Error('Semantic "effects" tokens must not depend on colorScheme')
+  }
+
+  return {
+    colorScheme: {
+      light: getSemanticGroup(light, 'colorScheme', 'light'),
+      dark: getSemanticGroup(dark, 'colorScheme', 'dark'),
+    },
+    dimension,
+    effects,
+  }
+}
+
 export const compileTokens = (source: TokenTree): CompiledTokens => {
   const primitive = getGroup(source, 'primitive')
   const semanticSource = getGroup(source, 'semantic')
@@ -216,11 +259,14 @@ export const compileTokens = (source: TokenTree): CompiledTokens => {
     componentsSource,
     'dark'
   )
-  const semantic = { light: light.semantic, dark: dark.semantic }
   const components = { light: light.components, dark: dark.components }
 
-  assertSameShape(semantic.light, semantic.dark)
+  assertSameShape(light.semantic, dark.semantic)
   assertSameShape(components.light, components.dark)
 
-  return { fonts, semantic, components }
+  return {
+    fonts,
+    semantic: splitSemantic(light.semantic, dark.semantic),
+    components,
+  }
 }
