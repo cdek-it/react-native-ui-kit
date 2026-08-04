@@ -68,10 +68,10 @@ export const Anchor = memo(
     }, [noWrapper, testID])
 
     const iconSize = base ? styles.iconBase : styles.icon
-    const iconUniProps = ({ typography: t }: ThemeType) => ({
+    const iconUniProps = ({ semantic }: ThemeType) => ({
       color: visited
-        ? t.Color.Service['text-help']
-        : t.Color.Service['text-info'],
+        ? semantic.colorScheme.color.fg.status.help.default
+        : semantic.colorScheme.color.fg.status.info.default,
     })
 
     return (
@@ -133,35 +133,35 @@ export const Anchor = memo(
   }
 )
 
-const styles = StyleSheet.create(({ spacing, typography, fonts }) => ({
+const styles = StyleSheet.create(({ semantic, fonts }) => ({
   container: { flexDirection: 'row', alignItems: 'center' },
   text: {
     flexShrink: 1,
-    fontSize: typography.Size['text-sm'],
+    fontSize: fonts.fontSize[200],
     includeFontPadding: false,
     verticalAlign: 'middle',
-    color: typography.Color.Service['text-info'],
-    fontFamily: fonts.secondary,
-    lineHeight: 15,
-    letterSpacing: -0.25,
+    color: semantic.colorScheme.color.fg.status.info.default,
+    fontFamily: fonts.fontFamily.base,
+    lineHeight: fonts.lineHeight[300],
+    letterSpacing: fonts.letterSpacing[200],
   },
   underlined: { textDecorationLine: 'underline' },
   base: {
-    fontSize: typography.Size['text-base'],
+    fontSize: fonts.fontSize[300],
     lineHeight: undefined,
-    letterSpacing: 0,
+    letterSpacing: fonts.letterSpacing[500],
   },
-  visited: { color: typography.Color.Service['text-help'] },
+  visited: { color: semantic.colorScheme.color.fg.status.help.default },
   icon: {
-    width: typography.Size['text-base'],
-    height: typography.Size['text-base'],
+    width: semantic.dimension.size[450],
+    height: semantic.dimension.size[450],
   },
   iconBase: {
-    width: typography.Size['text-xl'],
-    height: typography.Size['text-xl'],
+    width: semantic.dimension.size[600],
+    height: semantic.dimension.size[600],
   },
-  leftIconContainer: { paddingRight: spacing.Padding['p-2'] },
-  rightIconContainer: { paddingLeft: spacing.Padding['p-2'] },
+  leftIconContainer: { paddingRight: semantic.dimension.space[200] },
+  rightIconContainer: { paddingLeft: semantic.dimension.space[200] },
 }))
 
 export const AnchorTestId = {
