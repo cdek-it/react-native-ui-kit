@@ -1,6 +1,7 @@
 export { darkTheme } from './darkTheme'
 export { lightTheme } from './lightTheme'
 export { toEasing, type EasingToken } from './tokenAdapters'
+export { semanticTokens, type SemanticTokens } from './tokens'
 export {
   ThemeContext,
   ThemeContextProvider,

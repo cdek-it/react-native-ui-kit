@@ -15,8 +15,12 @@ import { isTokenTree, type CompiledTokens, type TokenTree } from './core/types'
 export const OUTPUT_FILES = {
   fonts: 'fonts.json',
   semantic: {
-    light: join('semantic', 'light.json'),
-    dark: join('semantic', 'dark.json'),
+    colorScheme: {
+      light: join('semantic', 'colorScheme', 'light.json'),
+      dark: join('semantic', 'colorScheme', 'dark.json'),
+    },
+    dimensions: join('semantic', 'dimensions.json'),
+    effects: join('semantic', 'effects.json'),
   },
   components: {
     light: join('components', 'light.json'),
@@ -47,8 +51,13 @@ const outputEntries = (
   compiled: CompiledTokens
 ): Array<[string, TokenTree]> => [
   [OUTPUT_FILES.fonts, compiled.fonts],
-  [OUTPUT_FILES.semantic.light, compiled.semantic.light],
-  [OUTPUT_FILES.semantic.dark, compiled.semantic.dark],
+  [
+    OUTPUT_FILES.semantic.colorScheme.light,
+    compiled.semantic.colorScheme.light,
+  ],
+  [OUTPUT_FILES.semantic.colorScheme.dark, compiled.semantic.colorScheme.dark],
+  [OUTPUT_FILES.semantic.dimensions, compiled.semantic.dimension],
+  [OUTPUT_FILES.semantic.effects, compiled.semantic.effects],
   [OUTPUT_FILES.components.light, compiled.components.light],
   [OUTPUT_FILES.components.dark, compiled.components.dark],
 ]

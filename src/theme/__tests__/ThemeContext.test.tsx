@@ -6,10 +6,13 @@ import { UnistylesRuntime } from 'react-native-unistyles'
 import { ThemeContextProvider } from '../ThemeContext'
 import { darkTheme } from '../darkTheme'
 import { lightTheme } from '../lightTheme'
+import { semanticTokens } from '../tokens'
 import darkComponentTokens from '../tokens/components/dark.json'
 import lightComponentTokens from '../tokens/components/light.json'
-import darkSemanticTokens from '../tokens/semantic/dark.json'
-import lightSemanticTokens from '../tokens/semantic/light.json'
+import darkSemanticColorSchemeTokens from '../tokens/semantic/colorScheme/dark.json'
+import lightSemanticColorSchemeTokens from '../tokens/semantic/colorScheme/light.json'
+import semanticDimensions from '../tokens/semantic/dimensions.json'
+import semanticEffects from '../tokens/semantic/effects.json'
 import { ThemeVariant } from '../types'
 
 describe('ThemeContextProvider', () => {
@@ -72,9 +75,16 @@ describe('ThemeContextProvider', () => {
     expect(UnistylesRuntime.updateTheme).not.toHaveBeenCalled()
   })
 
-  test('каждая тема содержит соответствующие semantic-токены', () => {
-    expect(lightTheme.semantic).toBe(lightSemanticTokens)
-    expect(darkTheme.semantic).toBe(darkSemanticTokens)
+  test('каждая тема содержит только соответствующую цветовую схему', () => {
+    expect(lightTheme.semantic.colorScheme).toBe(lightSemanticColorSchemeTokens)
+    expect(darkTheme.semantic.colorScheme).toBe(darkSemanticColorSchemeTokens)
+    expect(lightTheme.semantic).not.toHaveProperty('dimension')
+    expect(lightTheme.semantic).not.toHaveProperty('effects')
+  })
+
+  test('общие semantic-токены не зависят от темы', () => {
+    expect(semanticTokens.dimension).toBe(semanticDimensions)
+    expect(semanticTokens.effects).toBe(semanticEffects)
   })
 
   test('каждая тема содержит соответствующие component-токены', () => {
