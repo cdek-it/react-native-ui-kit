@@ -1,5 +1,5 @@
 name: Run Typechecks
-description: Typecheck the project and validate generated tokens
+description: Typecheck the project and check generated tokens
 
 runs:
   using: composite
@@ -10,6 +10,10 @@ runs:
       shell: bash
       run: yarn tsc --noEmit
 
-    - name: Validate Design Tokens
+    - name: Typecheck Token Generator
       shell: bash
-      run: yarn tokens:validate
+      run: yarn tokens:typecheck
+
+    - name: Check Generated Tokens
+      shell: bash
+      run: yarn tokens:check
