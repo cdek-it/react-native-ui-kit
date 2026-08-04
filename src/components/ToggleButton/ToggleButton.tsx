@@ -119,182 +119,186 @@ export const ToggleButton = memo<ToggleButtonProps>(
   }
 )
 
-const toggleStyles = StyleSheet.create(
-  ({ theme, spacing, border, fonts, typography }) => ({
-    container: {
-      alignSelf: 'flex-start',
-      borderRadius: border.Radius['rounded-full'],
-      borderWidth: border.Width.border,
-      overflow: 'hidden',
-      variants: {
-        checked: {
-          true: {
-            borderColor: theme.Form.ToggleButton.toggleButtonActiveBorderColor,
-          },
-          false: {
-            borderColor: theme.Form.ToggleButton.toggleButtonBorderColor,
-          },
+const toggleStyles = StyleSheet.create(({ components, semantic, fonts }) => ({
+  container: {
+    alignSelf: 'flex-start',
+    borderRadius: components.togglebutton.root.borderRadius,
+    borderWidth: semantic.dimension.borderWidth[100],
+    overflow: 'hidden',
+    variants: {
+      checked: {
+        true: {
+          borderColor:
+            components.togglebutton.colorScheme.root.checkedBorderColor,
         },
-        pressed: {
-          true: { borderColor: theme.Form.ToggleButton.toggleButtonHoverBg },
-          false: {},
-        },
-        disabled: {
-          true: {
-            borderColor: theme.Button.Disabled.disabledButtonBorderColor,
-            opacity: 0.6,
-          },
-          false: {},
+        false: {
+          borderColor: components.togglebutton.colorScheme.root.borderColor,
         },
       },
-      compoundVariants: [
-        {
-          checked: 'true',
-          pressed: 'true',
-          styles: {
-            borderColor:
-              theme.Form.ToggleButton.toggleButtonActiveHoverBorderColor,
-          },
+      pressed: {
+        true: { borderColor: components.togglebutton.extend.hoverBorderColor },
+        false: {},
+      },
+      disabled: {
+        true: {
+          borderColor:
+            components.togglebutton.colorScheme.root.disabledBorderColor,
+          opacity: semantic.effects.opacity[60],
         },
-      ],
+        false: {},
+      },
     },
-    contentContainer: {
-      flexDirection: 'row',
-      alignItems: 'center',
-      alignSelf: 'flex-start',
-      borderRadius: border.Radius['rounded-full'],
-      paddingVertical: theme.Button.Common.buttonPaddingTopBottom,
-      paddingHorizontal: spacing.Padding['p-6'],
-      gap: spacing.Gap['gap-3'],
-      variants: {
-        size: {
-          xlarge: { minHeight: theme.Button.Common.buttonHeightXL },
-          large: { minHeight: theme.Button.Common.buttonHeightLG },
-          base: {
-            minHeight: theme.Button.Common.buttonHeight,
-            paddingHorizontal: theme.Button.Common.buttonPaddingLeftRight,
-            gap: theme.General.inlineSpacing,
-          },
-          small: {
-            minHeight: theme.Button.Common.buttonHeightSM,
-            paddingHorizontal: spacing.Padding['p-3'],
-            gap: theme.General.inlineSpacing,
-          },
-        },
-        checked: {
-          true: {
-            backgroundColor: theme.Form.ToggleButton.toggleButtonActiveBg,
-          },
-          false: { backgroundColor: theme.Form.ToggleButton.toggleButtonBg },
-        },
-        pressed: {
-          true: {
-            backgroundColor: theme.Form.ToggleButton.toggleButtonHoverBg,
-          },
-          false: {},
-        },
-        disabled: {
-          true: { backgroundColor: theme.Button.Disabled.disabledButtonBg },
-          false: {},
+    compoundVariants: [
+      {
+        checked: 'true',
+        pressed: 'true',
+        styles: {
+          borderColor: components.togglebutton.extend.checkedHoverBorderColor,
         },
       },
-      compoundVariants: [
-        {
-          checked: 'true',
-          pressed: 'true',
-          styles: {
-            backgroundColor: theme.Form.ToggleButton.toggleButtonActiveHoverBg,
-          },
+    ],
+  },
+  contentContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    alignSelf: 'flex-start',
+    borderRadius: components.togglebutton.root.borderRadius,
+    paddingVertical: components.togglebutton.root.paddingTop,
+    paddingHorizontal: semantic.dimension.space[600],
+    gap: components.togglebutton.extend.ext.gap,
+    variants: {
+      size: {
+        xlarge: { minHeight: semantic.dimension.size[1400] },
+        large: { minHeight: semantic.dimension.size[1300] },
+        base: {
+          minHeight: semantic.dimension.size[1100],
+          paddingHorizontal: components.togglebutton.root.paddingLeft,
+          gap: components.togglebutton.root.gap,
         },
-      ],
-    },
-    iconOnly: {
-      aspectRatio: 1,
-      paddingHorizontal: 0,
-      paddingVertical: 0,
-      justifyContent: 'center',
-    },
-    icon: {
-      variants: {
-        size: {
-          xlarge: {
-            width: typography.Size['text-4xl'],
-            height: typography.Size['text-4xl'],
-          },
-          large: {
-            width: typography.Size['text-2xl'],
-            height: typography.Size['text-2xl'],
-          },
-          base: {
-            width: typography.Size['text-xl'],
-            height: typography.Size['text-xl'],
-          },
-          small: {
-            width: typography.Size['text-base'],
-            height: typography.Size['text-base'],
-          },
-        },
-        checked: {
-          true: { color: theme.Form.ToggleButton.toggleButtonActiveTextColor },
-          false: { color: theme.Form.ToggleButton.toggleButtonTextColor },
-        },
-        pressed: {
-          true: { color: theme.Form.ToggleButton.toggleButtonHoverTextColor },
-          false: {},
-        },
-        disabled: {
-          true: { color: theme.Button.Disabled.disabledButtonTextColor },
-          false: {},
+        small: {
+          minHeight: semantic.dimension.size[800],
+          paddingHorizontal: components.togglebutton.root.sm.paddingRight,
+          gap: components.togglebutton.root.gap,
         },
       },
-      compoundVariants: [
-        {
-          checked: 'true',
-          pressed: 'true',
-          styles: {
-            color: theme.Form.ToggleButton.toggleButtonTextActiveHoverColor,
-          },
+      checked: {
+        true: {
+          backgroundColor:
+            components.togglebutton.colorScheme.root.checkedBackground,
         },
-      ],
-    },
-    label: {
-      flexShrink: 1,
-      fontFamily: fonts.primary,
-      fontWeight: '600',
-      includeFontPadding: false,
-      verticalAlign: 'middle',
-      variants: {
-        size: {
-          xlarge: { fontSize: typography.Size['text-2xl'] },
-          large: { fontSize: typography.Size['text-xl'] },
-          base: { fontSize: typography.Size['text-base'] },
-          small: { fontSize: typography.Size['text-sm'] },
-        },
-        checked: {
-          true: { color: theme.Form.ToggleButton.toggleButtonActiveTextColor },
-          false: { color: theme.Form.ToggleButton.toggleButtonTextColor },
-        },
-        pressed: {
-          true: { color: theme.Form.ToggleButton.toggleButtonHoverTextColor },
-          false: {},
-        },
-        disabled: {
-          true: { color: theme.Button.Disabled.disabledButtonTextColor },
-          false: {},
+        false: {
+          backgroundColor: components.togglebutton.colorScheme.root.background,
         },
       },
-      compoundVariants: [
-        {
-          checked: 'true',
-          pressed: 'true',
-          styles: {
-            color: theme.Form.ToggleButton.toggleButtonTextActiveHoverColor,
-          },
+      pressed: {
+        true: {
+          backgroundColor:
+            components.togglebutton.colorScheme.root.hoverBackground,
         },
-      ],
+        false: {},
+      },
+      disabled: {
+        true: {
+          backgroundColor:
+            components.togglebutton.colorScheme.root.disabledBackground,
+        },
+        false: {},
+      },
     },
-  })
-)
+    compoundVariants: [
+      {
+        checked: 'true',
+        pressed: 'true',
+        styles: {
+          backgroundColor:
+            components.togglebutton.extend.checkedHoverBackground,
+        },
+      },
+    ],
+  },
+  iconOnly: {
+    aspectRatio: 1,
+    paddingHorizontal: semantic.dimension.space.none,
+    paddingVertical: semantic.dimension.space.none,
+    justifyContent: 'center',
+  },
+  icon: {
+    variants: {
+      size: {
+        xlarge: {
+          // Токена iconSize.xlg в дизайн-системе нет — размер взят semantic-ролью.
+          width: semantic.dimension.size[1000],
+          height: semantic.dimension.size[1000],
+        },
+        large: {
+          width: components.togglebutton.extend.iconSize.lg,
+          height: components.togglebutton.extend.iconSize.lg,
+        },
+        base: {
+          width: components.togglebutton.extend.iconSize.md,
+          height: components.togglebutton.extend.iconSize.md,
+        },
+        small: {
+          width: components.togglebutton.extend.iconSize.sm,
+          height: components.togglebutton.extend.iconSize.sm,
+        },
+      },
+      checked: {
+        true: { color: components.togglebutton.colorScheme.root.checkedColor },
+        false: { color: components.togglebutton.colorScheme.root.color },
+      },
+      pressed: {
+        true: { color: components.togglebutton.colorScheme.root.hoverColor },
+        false: {},
+      },
+      disabled: {
+        true: { color: components.togglebutton.colorScheme.root.disabledColor },
+        false: {},
+      },
+    },
+    compoundVariants: [
+      {
+        checked: 'true',
+        pressed: 'true',
+        styles: { color: components.togglebutton.extend.checkedHoverColor },
+      },
+    ],
+  },
+  label: {
+    flexShrink: 1,
+    fontFamily: fonts.fontFamily.heading,
+    fontWeight: fonts.fontWeight.demibold,
+    includeFontPadding: false,
+    verticalAlign: 'middle',
+    variants: {
+      size: {
+        xlarge: { fontSize: fonts.fontSize[600] },
+        large: { fontSize: fonts.fontSize[500] },
+        base: { fontSize: fonts.fontSize[300] },
+        small: { fontSize: fonts.fontSize[100] },
+      },
+      checked: {
+        true: { color: components.togglebutton.colorScheme.root.checkedColor },
+        false: { color: components.togglebutton.colorScheme.root.color },
+      },
+      pressed: {
+        true: { color: components.togglebutton.colorScheme.root.hoverColor },
+        false: {},
+      },
+      disabled: {
+        true: { color: components.togglebutton.colorScheme.root.disabledColor },
+        false: {},
+      },
+    },
+    compoundVariants: [
+      {
+        checked: 'true',
+        pressed: 'true',
+        styles: { color: components.togglebutton.extend.checkedHoverColor },
+      },
+    ],
+  },
+}))
 
 export const ToggleButtonTestId = {
   root: 'ToggleButton',
