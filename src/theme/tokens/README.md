@@ -1,11 +1,11 @@
 # Сгенерированные токены
 
-В публичный `ThemeType.semantic` подключается только выбранный `colorScheme`.
-Общие `dimension`, `effects` и `fonts` добавляются во внутреннюю тему Unistyles и
-не зависят от цветовой схемы. В неё же добавляются соответствующие светлой или
-тёмной теме `components`. В публичные темы и экспорты component- и font-токены
-не входят. Всё генерируется из `design-tokens/input/tokens.json` и не
-редактируется вручную.
+В `ThemeType`, `lightTheme` и `darkTheme` входят выбранный
+`semantic.colorScheme`, общие `semantic.dimension`, `semantic.effects`, `fonts`
+и соответствующие теме `components`. Отдельно из пакета экспортируются только
+общие `semanticTokens`; карты component- и font-токенов остаются внутренними.
+Всё генерируется из `design-tokens/input/tokens.json` и не редактируется
+вручную.
 
 Подробности: [генератор токенов](../../../scripts/token-generator/README.md).
 
