@@ -56,15 +56,17 @@ export const TabItem = memo<TabItemProps>(
               <SvgUniversal
                 {...styles.icon}
                 source={Icon}
-                uniProps={({ theme }) => ({
-                  color: disabled
-                    ? theme.Button.Disabled.disabledButtonTextColor
-                    : pressed
-                      ? theme.Panel.TabView.tabviewHeaderHoverTextColor
-                      : active
-                        ? theme.Panel.TabView.tabviewHeaderActiveTextColor
-                        : theme.Panel.TabView.tabviewHeaderTextColor,
-                })}
+                uniProps={({ components, semantic }) => {
+                  return {
+                    color: disabled
+                      ? semantic.colorScheme.color.fg.muted
+                      : pressed
+                        ? components.tabs.tab.hoverColor
+                        : active
+                          ? components.tabs.tab.activeColor
+                          : components.tabs.tab.color,
+                  }
+                }}
               />
             ) : null}
             <Text
@@ -86,42 +88,43 @@ export const TabItem = memo<TabItemProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
+const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
   container: {
     alignItems: 'center',
     flexDirection: 'row',
 
-    height:
-      theme.Misc.Badge.badgeHeight +
-      theme.Panel.TabView.tabviewHeaderPaddingTopBottom * 2,
-    gap: theme.General.inlineSpacing,
-    paddingHorizontal: theme.Panel.TabView.tabviewHeaderPaddingLeftRight,
-    paddingVertical: theme.Panel.TabView.tabviewHeaderPaddingTopBottom,
+    height: semantic.dimension.size[700] + components.tabs.tab.padding * 2,
+    gap: components.tabs.tab.gap,
+    paddingHorizontal: components.tabs.tab.padding,
+    paddingVertical: components.tabs.tab.padding,
 
-    backgroundColor: theme.Panel.TabView.tabviewHeaderBg,
+    backgroundColor: components.tabs.colorScheme.tab.background,
   },
   pressedContainer: {
-    backgroundColor: theme.Panel.TabView.tabviewHeaderHoverBg,
+    backgroundColor: components.tabs.colorScheme.tab.hoverBackground,
   },
   activeContainer: {
-    backgroundColor: theme.Panel.TabView.tabviewHeaderActiveBg,
+    backgroundColor: components.tabs.colorScheme.tab.activeBackground,
   },
-  disabledContainer: { opacity: 0.6, mixBlendMode: 'luminosity' },
+  disabledContainer: {
+    opacity: semantic.effects.opacity[60],
+    mixBlendMode: 'luminosity',
+  },
   icon: {
-    width: theme.Menu.Item.menuitemSubmenuIconFontSize,
-    height: theme.Menu.Item.menuitemSubmenuIconFontSize,
+    width: semantic.dimension.size[600],
+    height: semantic.dimension.size[600],
   },
   text: {
-    fontFamily: fonts.primary,
-    fontSize: typography.Size['text-base'],
+    fontFamily: fonts.fontFamily.heading,
+    fontSize: fonts.fontSize[300],
     verticalAlign: 'middle',
     includeFontPadding: false,
 
-    color: theme.Panel.TabView.tabviewHeaderTextColor,
+    color: components.tabs.tab.color,
   },
-  pressedText: { color: theme.Panel.TabView.tabviewHeaderHoverTextColor },
-  activeText: { color: theme.Panel.TabView.tabviewHeaderActiveTextColor },
-  disabledText: { color: theme.Button.Disabled.disabledButtonTextColor },
+  pressedText: { color: components.tabs.tab.hoverColor },
+  activeText: { color: components.tabs.tab.activeColor },
+  disabledText: { color: semantic.colorScheme.color.fg.muted },
 }))
 
 export enum TestId {
