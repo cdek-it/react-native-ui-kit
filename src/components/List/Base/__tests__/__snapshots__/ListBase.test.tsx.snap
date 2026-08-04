@@ -319,7 +319,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
                   "color": "#2b2e33",
                 },
                 {
-                  "fontSize": 14,
+                  "fontSize": 16,
                   "lineHeight": 20,
                 },
                 undefined,
@@ -876,7 +876,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
                   "color": "#2b2e33",
                 },
                 {
-                  "fontSize": 14,
+                  "fontSize": 16,
                   "lineHeight": 20,
                 },
                 undefined,
@@ -1440,7 +1440,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
                   "color": "#2b2e33",
                 },
                 {
-                  "fontSize": 14,
+                  "fontSize": 16,
                   "lineHeight": 20,
                 },
                 undefined,
@@ -1776,7 +1776,7 @@ exports[`ListBase tests ListBase minimal config 1`] = `
                   "color": "#2b2e33",
                 },
                 {
-                  "fontSize": 14,
+                  "fontSize": 16,
                   "lineHeight": 20,
                 },
                 undefined,

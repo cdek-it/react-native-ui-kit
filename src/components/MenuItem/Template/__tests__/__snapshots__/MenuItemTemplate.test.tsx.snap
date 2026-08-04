@@ -84,10 +84,10 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
         <View
           style={
             {
-              "height": 17.5,
+              "height": 20,
               "justifyContent": "center",
               "position": "relative",
-              "width": 17.5,
+              "width": 20,
             }
           }
         >
@@ -255,7 +255,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
                 },
                 {
                   "fontSize": 14,
-                  "lineHeight": 20,
+                  "lineHeight": 18,
                 },
                 undefined,
                 undefined,
@@ -621,7 +621,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate minimal config 1`] = `
                 },
                 {
                   "fontSize": 14,
-                  "lineHeight": 20,
+                  "lineHeight": 18,
                 },
                 undefined,
                 undefined,
@@ -822,7 +822,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
                 },
                 {
                   "fontSize": 14,
-                  "lineHeight": 20,
+                  "lineHeight": 18,
                 },
                 undefined,
                 undefined,
@@ -1025,10 +1025,10 @@ exports[`MenuItemTemplate tests MenuItemTemplate with colored icon 1`] = `
         <View
           style={
             {
-              "height": 17.5,
+              "height": 20,
               "justifyContent": "center",
               "position": "relative",
-              "width": 17.5,
+              "width": 20,
             }
           }
         >
@@ -1161,7 +1161,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with colored icon 1`] = `
                 },
                 {
                   "fontSize": 14,
-                  "lineHeight": 20,
+                  "lineHeight": 18,
                 },
                 undefined,
                 undefined,
@@ -1275,7 +1275,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with extra 1`] = `
                 },
                 {
                   "fontSize": 14,
-                  "lineHeight": 20,
+                  "lineHeight": 18,
                 },
                 undefined,
                 undefined,
@@ -1464,10 +1464,10 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
         <View
           style={
             {
-              "height": 17.5,
+              "height": 20,
               "justifyContent": "center",
               "position": "relative",
-              "width": 17.5,
+              "width": 20,
             }
           }
         >
@@ -1600,7 +1600,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
                 },
                 {
                   "fontSize": 14,
-                  "lineHeight": 20,
+                  "lineHeight": 18,
                 },
                 undefined,
                 undefined,
@@ -1693,10 +1693,10 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
         <View
           style={
             {
-              "height": 17.5,
+              "height": 20,
               "justifyContent": "center",
               "position": "relative",
-              "width": 17.5,
+              "width": 20,
             }
           }
         >
@@ -1864,7 +1864,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
                 },
                 {
                   "fontSize": 14,
-                  "lineHeight": 20,
+                  "lineHeight": 18,
                 },
                 undefined,
                 undefined,
@@ -1981,7 +1981,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with padding 1`] = `
                 },
                 {
                   "fontSize": 14,
-                  "lineHeight": 20,
+                  "lineHeight": 18,
                 },
                 undefined,
                 undefined,
@@ -2101,7 +2101,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with separator 1`] = `
                 },
                 {
                   "fontSize": 14,
-                  "lineHeight": 20,
+                  "lineHeight": 18,
                 },
                 undefined,
                 undefined,
