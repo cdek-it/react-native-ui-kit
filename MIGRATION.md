@@ -18,7 +18,7 @@ import {
 
 export const Root = () => (
   <ThemeContextProvider
-    fonts={{ primary: 'MyFont', secondary: 'MySecondaryFont' }}
+    fonts={{ heading: 'MyFont', base: 'MySecondaryFont' }}
     initialTheme={ThemeVariant.Light}
   >
     <App />
@@ -45,7 +45,7 @@ const fonts = useFonts()
 import { StyleSheet } from 'react-native-unistyles'
 
 const styles = StyleSheet.create(({ fonts }) => ({
-  title: { fontFamily: fonts.primary },
+  title: { fontFamily: fonts.fontFamily.heading },
 }))
 ```
 
