@@ -8,7 +8,8 @@ import {
   unlinkSync,
 } from 'node:fs'
 import { dirname, join } from 'node:path'
-import { isDeepStrictEqual } from 'node:util'
+
+import { format, resolveConfig, type Options } from 'prettier'
 
 import { isTokenTree, type CompiledTokens, type TokenTree } from './core/types'
 
@@ -44,8 +45,11 @@ export const parseTokenTree = (
 export const loadTokenTree = (filePath: string): TokenTree =>
   parseTokenTree(readFileSync(filePath, 'utf8'), filePath)
 
-export const renderJson = (value: TokenTree): string =>
-  `${JSON.stringify(value, null, 2)}\n`
+export const renderJson = (
+  value: TokenTree,
+  options: Options = {}
+): Promise<string> =>
+  format(JSON.stringify(value), { ...options, parser: 'json' })
 
 const outputEntries = (
   compiled: CompiledTokens
@@ -62,15 +66,30 @@ const outputEntries = (
   [OUTPUT_FILES.components.dark, compiled.components.dark],
 ]
 
-export const writeGeneratedTokens = (
+const renderOutputEntries = async (
   compiled: CompiledTokens,
   outputDirectory: string
-): void => {
+): Promise<Array<[string, string]>> => {
+  const options =
+    (await resolveConfig(join(outputDirectory, OUTPUT_FILES.fonts))) ?? {}
+
+  return Promise.all(
+    outputEntries(compiled).map(async ([fileName, value]) => [
+      fileName,
+      await renderJson(value, options),
+    ])
+  )
+}
+
+export const writeGeneratedTokens = async (
+  compiled: CompiledTokens,
+  outputDirectory: string
+): Promise<void> => {
+  const entries = await renderOutputEntries(compiled, outputDirectory)
+
   mkdirSync(outputDirectory, { recursive: true })
 
-  const expectedFiles = new Set(
-    outputEntries(compiled).map(([fileName]) => fileName)
-  )
+  const expectedFiles = new Set(entries.map(([fileName]) => fileName))
 
   for (const fileName of findJsonFiles(outputDirectory)) {
     if (!expectedFiles.has(fileName)) {
@@ -78,12 +97,12 @@ export const writeGeneratedTokens = (
     }
   }
 
-  for (const [fileName, value] of outputEntries(compiled)) {
+  for (const [fileName, contents] of entries) {
     const outputPath = join(outputDirectory, fileName)
     const temporaryPath = `${outputPath}.tmp`
 
     mkdirSync(dirname(outputPath), { recursive: true })
-    writeFileSync(temporaryPath, renderJson(value))
+    writeFileSync(temporaryPath, contents)
     renameSync(temporaryPath, outputPath)
   }
 }
@@ -112,24 +131,20 @@ export interface GeneratedTokenIssues {
   unexpected: string[]
 }
 
-export const findGeneratedTokenIssues = (
+export const findGeneratedTokenIssues = async (
   compiled: CompiledTokens,
   outputDirectory: string
-): GeneratedTokenIssues => {
-  const entries = outputEntries(compiled)
+): Promise<GeneratedTokenIssues> => {
+  const entries = await renderOutputEntries(compiled, outputDirectory)
   const expectedFiles = new Set(entries.map(([fileName]) => fileName))
   const missing: string[] = []
   const changed: string[] = []
 
-  for (const [fileName, value] of entries) {
+  for (const [fileName, contents] of entries) {
     const outputPath = join(outputDirectory, fileName)
 
     if (existsSync(outputPath)) {
-      try {
-        if (!isDeepStrictEqual(loadTokenTree(outputPath), value)) {
-          changed.push(fileName)
-        }
-      } catch {
+      if (readFileSync(outputPath, 'utf8') !== contents) {
         changed.push(fileName)
       }
     } else {
