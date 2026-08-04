@@ -4,56 +4,19 @@ import { StyleSheet, UnistylesRuntime } from 'react-native-unistyles'
 
 import { SkeletonContextProvider } from '../utils/SkeletonContext'
 
-import { darkTheme } from './darkTheme'
-import { lightTheme } from './lightTheme'
-import {
-  componentTokens,
-  fontTokens,
-  semanticTokens,
-  type ComponentTokens,
-  type SemanticTokens,
-} from './tokens'
-import {
-  type FontsConfig,
-  type FontTokens,
-  type ThemeType,
-  ThemeVariant,
-} from './types'
-
-type InternalTheme = Omit<ThemeType, 'fonts' | 'semantic'> & {
-  components: ComponentTokens
-  fonts: FontsConfig & FontTokens
-  semantic: ThemeType['semantic'] & SemanticTokens
-}
-
-const createInternalTheme = (
-  theme: ThemeType,
-  components: ComponentTokens
-): InternalTheme => ({
-  ...theme,
-  components,
-  fonts: {
-    ...fontTokens,
-    ...theme.fonts,
-    fontFamily: { base: theme.fonts.secondary, heading: theme.fonts.primary },
-  },
-  semantic: { ...semanticTokens, ...theme.semantic },
-})
-
-const internalThemes = {
-  light: createInternalTheme(lightTheme, componentTokens.light),
-  dark: createInternalTheme(darkTheme, componentTokens.dark),
-}
+import { applyFontConfig, type FontsConfig } from './legacyTokens'
+import { darkTheme, lightTheme } from './themes'
+import { ThemeVariant } from './types'
 
 StyleSheet.configure({
   settings: { initialTheme: 'light' },
-  themes: internalThemes,
+  themes: { light: lightTheme, dark: darkTheme },
 })
 
 declare module 'react-native-unistyles' {
   export interface UnistylesThemes {
-    light: (typeof internalThemes)['light']
-    dark: (typeof internalThemes)['dark']
+    light: typeof lightTheme
+    dark: typeof darkTheme
   }
 }
 
@@ -79,17 +42,12 @@ export const ThemeContextProvider = ({
     UnistylesRuntime.setTheme(THEME_NAME_MAP[initialTheme])
 
     if (fonts) {
-      const updateFonts = (theme: InternalTheme): InternalTheme => ({
-        ...theme,
-        fonts: {
-          ...theme.fonts,
-          ...fonts,
-          fontFamily: { base: fonts.secondary, heading: fonts.primary },
-        },
-      })
-
-      UnistylesRuntime.updateTheme('light', updateFonts)
-      UnistylesRuntime.updateTheme('dark', updateFonts)
+      UnistylesRuntime.updateTheme('light', (theme) =>
+        applyFontConfig(theme, fonts)
+      )
+      UnistylesRuntime.updateTheme('dark', (theme) =>
+        applyFontConfig(theme, fonts)
+      )
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- initial* props применяем только на mount
   }, [])
