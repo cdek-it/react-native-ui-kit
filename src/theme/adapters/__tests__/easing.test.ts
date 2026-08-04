@@ -1,4 +1,4 @@
-import { toEasing } from '../tokenAdapters'
+import { toEasing } from '../easing'
 
 describe('toEasing', () => {
   test('создаёт Reanimated easing из коэффициентов токена', () => {

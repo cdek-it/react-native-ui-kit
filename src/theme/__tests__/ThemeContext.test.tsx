@@ -4,15 +4,10 @@ import { Text } from 'react-native'
 import { UnistylesRuntime } from 'react-native-unistyles'
 
 import { ThemeContextProvider } from '../ThemeContext'
-import { darkTheme } from '../darkTheme'
-import { lightTheme } from '../lightTheme'
+import { darkTheme, lightTheme } from '../themes'
 import { componentTokens, fontTokens, semanticTokens } from '../tokens'
-import darkComponentTokens from '../tokens/components/dark.json'
-import lightComponentTokens from '../tokens/components/light.json'
 import darkSemanticColorSchemeTokens from '../tokens/semantic/colorScheme/dark.json'
 import lightSemanticColorSchemeTokens from '../tokens/semantic/colorScheme/light.json'
-import semanticDimensions from '../tokens/semantic/dimensions.json'
-import semanticEffects from '../tokens/semantic/effects.json'
 import { ThemeVariant } from '../types'
 
 describe('ThemeContextProvider', () => {
@@ -40,7 +35,7 @@ describe('ThemeContextProvider', () => {
     expect(UnistylesRuntime.setTheme).toHaveBeenCalledWith('light')
   })
 
-  test('при передаче fonts обновляет обе темы', () => {
+  test('при legacy-формате fonts обновляет обе темы', () => {
     const fonts = { primary: 'Roboto', secondary: 'Inter' }
 
     render(
@@ -59,14 +54,41 @@ describe('ThemeContextProvider', () => {
     )
 
     const [, updater] = jest.mocked(UnistylesRuntime.updateTheme).mock.calls[0]
-    const theme = UnistylesRuntime.getTheme('light')
+    const theme = lightTheme
 
     expect(updater(theme)).toStrictEqual({
       ...theme,
       fonts: {
         ...theme.fonts,
+        fontFamily: {
+          ...theme.fonts.fontFamily,
+          heading: fonts.primary,
+          base: fonts.secondary,
+        },
         ...fonts,
-        fontFamily: { base: fonts.secondary, heading: fonts.primary },
+      },
+    })
+  })
+
+  test('при актуальном формате fonts обновляет обе темы', () => {
+    const fonts = { heading: 'Roboto', base: 'Inter' }
+
+    render(
+      <ThemeContextProvider fonts={fonts}>
+        <Text>child</Text>
+      </ThemeContextProvider>
+    )
+
+    const [, updater] = jest.mocked(UnistylesRuntime.updateTheme).mock.calls[0]
+    const theme = lightTheme
+
+    expect(updater(theme)).toStrictEqual({
+      ...theme,
+      fonts: {
+        ...theme.fonts,
+        fontFamily: { ...theme.fonts.fontFamily, ...fonts },
+        primary: fonts.heading,
+        secondary: fonts.base,
       },
     })
   })
@@ -81,51 +103,57 @@ describe('ThemeContextProvider', () => {
     expect(UnistylesRuntime.updateTheme).not.toHaveBeenCalled()
   })
 
-  test('каждая тема содержит только соответствующую цветовую схему', () => {
+  test('каждая тема содержит соответствующие semantic-токены', () => {
     expect(lightTheme.semantic.colorScheme).toBe(lightSemanticColorSchemeTokens)
     expect(darkTheme.semantic.colorScheme).toBe(darkSemanticColorSchemeTokens)
-    expect(lightTheme.semantic).not.toHaveProperty('dimension')
-    expect(lightTheme.semantic).not.toHaveProperty('effects')
+    expect(lightTheme.semantic.dimension).toBe(semanticTokens.dimension)
+    expect(lightTheme.semantic.effects).toBe(semanticTokens.effects)
   })
 
   test('общие semantic-токены не зависят от темы', () => {
-    expect(semanticTokens.dimension).toBe(semanticDimensions)
-    expect(semanticTokens.effects).toBe(semanticEffects)
+    expect(lightTheme.semantic.dimension).toBe(darkTheme.semantic.dimension)
+    expect(lightTheme.semantic.effects).toBe(darkTheme.semantic.effects)
   })
 
-  test('component-токены не входят в публичные темы', () => {
-    expect(lightTheme).not.toHaveProperty('components')
-    expect(darkTheme).not.toHaveProperty('components')
+  test('каждая тема содержит соответствующие component-токены', () => {
+    expect(lightTheme.components).toBe(componentTokens.light)
+    expect(darkTheme.components).toBe(componentTokens.dark)
   })
 
-  test('внутренняя карта component-токенов содержит обе темы', () => {
-    expect(componentTokens.light).toBe(lightComponentTokens)
-    expect(componentTokens.dark).toBe(darkComponentTokens)
+  test('каждая тема содержит общие шрифтовые токены', () => {
+    expect(lightTheme.fonts.fontSize).toBe(fontTokens.fontSize)
+    expect(darkTheme.fonts.fontSize).toBe(fontTokens.fontSize)
   })
 
-  test('внутренняя тема Unistyles содержит сгенерированные токены', () => {
-    const internalLightTheme = UnistylesRuntime.getTheme('light')
-    const internalDarkTheme = UnistylesRuntime.getTheme('dark')
+  test('публичные темы сохраняют legacy-алиасы шрифтов', () => {
+    expect(lightTheme.fonts).toStrictEqual(
+      expect.objectContaining({
+        primary: fontTokens.fontFamily.heading,
+        secondary: fontTokens.fontFamily.base,
+      })
+    )
+  })
 
-    expect(internalLightTheme).toMatchObject({
-      components: lightComponentTokens,
-      fonts: fontTokens,
-      semantic: {
-        colorScheme: lightSemanticColorSchemeTokens,
-        dimension: semanticDimensions,
-        effects: semanticEffects,
-      },
-    })
+  test('публичные темы сохраняют legacy-токены', () => {
+    const legacyKeys = [
+      'background',
+      'border',
+      'colors',
+      'custom',
+      'effects',
+      'global',
+      'shadow',
+      'sizing',
+      'spacing',
+      'theme',
+      'typography',
+    ]
 
-    expect(internalDarkTheme).toMatchObject({
-      components: darkComponentTokens,
-      fonts: fontTokens,
-      semantic: {
-        colorScheme: darkSemanticColorSchemeTokens,
-        dimension: semanticDimensions,
-        effects: semanticEffects,
-      },
-    })
-    expect(internalLightTheme.fonts).toStrictEqual(internalDarkTheme.fonts)
+    expect(Object.keys(lightTheme)).toStrictEqual(
+      expect.arrayContaining(legacyKeys)
+    )
+    expect(Object.keys(darkTheme)).toStrictEqual(
+      expect.arrayContaining(legacyKeys)
+    )
   })
 })
