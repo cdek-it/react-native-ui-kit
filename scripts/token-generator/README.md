@@ -14,17 +14,10 @@
 результат. `tokens:validate` ничего не меняет: проверяет TypeScript генератора и
 актуальность сгенерированных токенов.
 
-## Использование в компонентах
+## Использование токенов
 
-Внутри UI Kit используются component-токены:
-
-```ts
-StyleSheet.create(({ components }) => ({
-  header: {
-    backgroundColor: components.accordion.colorScheme.header.background,
-  },
-}))
-```
+Component-токены предназначены только для реализации компонентов UI Kit. Они не
+входят в темы и публичные экспорты библиотеки.
 
 В `semantic` темы находится только `colorScheme`: Unistyles подставляет
 соответствующие light- или dark-токены при переключении темы. Не зависящие от
