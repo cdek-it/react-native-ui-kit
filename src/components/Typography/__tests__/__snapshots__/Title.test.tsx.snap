@@ -5,14 +5,14 @@ exports[`Title component tests level = h1 1`] = `
   style={
     [
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
         "fontFamily": "TT Fellows",
         "fontWeight": 700,
         "includeFontPadding": false,
         "verticalAlign": "middle",
       },
       {
-        "fontSize": 21,
+        "fontSize": 24,
       },
       undefined,
     ]
@@ -28,14 +28,14 @@ exports[`Title component tests level = h2 1`] = `
   style={
     [
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
         "fontFamily": "TT Fellows",
         "fontWeight": 700,
         "includeFontPadding": false,
         "verticalAlign": "middle",
       },
       {
-        "fontSize": 17.5,
+        "fontSize": 20,
       },
       undefined,
     ]
@@ -51,14 +51,14 @@ exports[`Title component tests level = h3 1`] = `
   style={
     [
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
         "fontFamily": "TT Fellows",
         "fontWeight": 700,
         "includeFontPadding": false,
         "verticalAlign": "middle",
       },
       {
-        "fontSize": 15.75,
+        "fontSize": 18,
       },
       undefined,
     ]
@@ -74,14 +74,14 @@ exports[`Title component tests level = h4 1`] = `
   style={
     [
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
         "fontFamily": "TT Fellows",
         "fontWeight": 700,
         "includeFontPadding": false,
         "verticalAlign": "middle",
       },
       {
-        "fontSize": 14,
+        "fontSize": 16,
       },
       undefined,
     ]
@@ -97,14 +97,14 @@ exports[`Title component tests level = h5 1`] = `
   style={
     [
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
         "fontFamily": "TT Fellows",
         "fontWeight": 700,
         "includeFontPadding": false,
         "verticalAlign": "middle",
       },
       {
-        "fontSize": 12.25,
+        "fontSize": 12,
       },
       undefined,
     ]
@@ -120,14 +120,14 @@ exports[`Title component tests level = h6 1`] = `
   style={
     [
       {
-        "color": "#181a1f",
+        "color": "#2b2e33",
         "fontFamily": "TT Fellows",
         "fontWeight": 700,
         "includeFontPadding": false,
         "verticalAlign": "middle",
       },
       {
-        "fontSize": 10.5,
+        "fontSize": 12,
       },
       undefined,
     ]
