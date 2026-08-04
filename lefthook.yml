@@ -73,5 +73,5 @@ pre-push:
       run: yarn eslint .
     type-check:
       run: yarn tsc --noEmit
-    tokens-validate:
-      run: yarn tokens:validate
+    tokens-check:
+      run: yarn tokens:typecheck && yarn tokens:check

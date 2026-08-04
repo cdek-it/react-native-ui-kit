@@ -539,12 +539,10 @@ describe('production input tokens', () => {
     )
   })
 
-  test('совпадает с закоммиченными сгенерированными токенами', () => {
-    expect(findGeneratedTokenIssues(compiled, TOKENS_DIRECTORY)).toStrictEqual({
-      missing: [],
-      changed: [],
-      unexpected: [],
-    })
+  test('совпадает с закоммиченными сгенерированными токенами', async () => {
+    await expect(
+      findGeneratedTokenIssues(compiled, TOKENS_DIRECTORY)
+    ).resolves.toStrictEqual({ missing: [], changed: [], unexpected: [] })
   })
 
   test('преобразует числовые RN-значения', () => {
@@ -576,7 +574,7 @@ describe('production input tokens', () => {
     )
   })
 
-  test('check находит расхождения, а generate приводит файлы к актуальному состоянию', () => {
+  test('check находит расхождения, а generate приводит файлы к актуальному состоянию', async () => {
     const temporaryDirectory = mkdtempSync(join(tmpdir(), 'token-generator-'))
     const unexpectedFile = join(temporaryDirectory, 'common.json')
     const preservedFile = join(temporaryDirectory, 'README.md')
@@ -584,23 +582,25 @@ describe('production input tokens', () => {
     const changedFile = OUTPUT_FILES.semantic.dimensions
 
     try {
-      writeGeneratedTokens(compiled, temporaryDirectory)
+      await writeGeneratedTokens(compiled, temporaryDirectory)
 
       expect(listJsonFiles(temporaryDirectory)).toStrictEqual(
         expectedOutputFiles
       )
-      expect(
+      await expect(
         findGeneratedTokenIssues(compiled, temporaryDirectory)
-      ).toStrictEqual({ missing: [], changed: [], unexpected: [] })
+      ).resolves.toStrictEqual({ missing: [], changed: [], unexpected: [] })
 
       writeFileSync(unexpectedFile, '{}\n')
       writeFileSync(preservedFile, '# Generated tokens\n')
       rmSync(join(temporaryDirectory, missingFile))
-      writeFileSync(join(temporaryDirectory, changedFile), '{}\n')
+      const changedPath = join(temporaryDirectory, changedFile)
 
-      expect(
+      writeFileSync(changedPath, JSON.stringify(loadTokenTree(changedPath)))
+
+      await expect(
         findGeneratedTokenIssues(compiled, temporaryDirectory)
-      ).toStrictEqual({
+      ).resolves.toStrictEqual({
         missing: [missingFile],
         changed: [changedFile],
         unexpected: ['common.json'],
@@ -608,11 +608,11 @@ describe('production input tokens', () => {
       expect(() => accessSync(unexpectedFile)).not.toThrow()
       expect(() => accessSync(preservedFile)).not.toThrow()
 
-      writeGeneratedTokens(compiled, temporaryDirectory)
+      await writeGeneratedTokens(compiled, temporaryDirectory)
 
-      expect(
+      await expect(
         findGeneratedTokenIssues(compiled, temporaryDirectory)
-      ).toStrictEqual({ missing: [], changed: [], unexpected: [] })
+      ).resolves.toStrictEqual({ missing: [], changed: [], unexpected: [] })
       expect(() => accessSync(unexpectedFile)).toThrow('ENOENT')
       expect(() => accessSync(preservedFile)).not.toThrow()
     } finally {
