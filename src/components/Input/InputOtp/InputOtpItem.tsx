@@ -5,6 +5,8 @@ import Animated, { type AnimatedStyle } from 'react-native-reanimated'
 
 import { StyleSheet } from 'react-native-unistyles'
 
+import effects from '../../../theme/tokens/semantic/effects.json'
+
 export interface InputOtpItemProps extends Pick<ViewProps, 'testID'> {
   value?: string
   error: boolean
@@ -15,8 +17,14 @@ export interface InputOtpItemProps extends Pick<ViewProps, 'testID'> {
 
 const CURSOR_ANIMATION_DURATION = 500
 
+// Анимация не может жить в StyleSheet.create: Animated.Text из reanimated не
+// принимает Unistyles-стиль. Шкала непрозрачности одинакова в обеих темах,
+// поэтому токены берутся из сгенерированного файла напрямую.
 const cursorAnimationStyle = {
-  animationName: { from: { opacity: 1 }, to: { opacity: 0.2 } },
+  animationName: {
+    from: { opacity: effects.opacity[100] },
+    to: { opacity: effects.opacity[20] },
+  },
   animationDuration: CURSOR_ANIMATION_DURATION,
   animationDirection: 'alternate',
   animationIterationCount: 'infinite',
@@ -60,14 +68,16 @@ export const InputOtpItem = memo<InputOtpItemProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, border, fonts, typography }) => ({
+// Рамка, цвет и отступы намеренно берутся у inputtext: поле OTP должно выглядеть
+// как обычное поле ввода. Собственные токены inputotp описывают только отличия —
+// тот же приём, что в пресете PrimeUIX lara, где inputotp задаёт лишь gap и width.
+const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
   container: {
-    minHeight: theme.Button.Common.buttonHeight,
-    minWidth: theme.Button.Common.buttonHeight,
-    paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
-    paddingVertical: theme.Form.InputText.inputPaddingTopBottom,
-    borderBottomWidth: border.Width.border,
-    borderColor: theme.Form.InputText.inputBorderColor,
+    minHeight: components.inputotp.extend.height,
+    minWidth: components.inputotp.extend.height,
+    paddingHorizontal: components.inputtext.root.paddingX,
+    borderBottomWidth: components.inputotp.extend.borderWidth,
+    borderColor: components.inputtext.root.borderColor,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -75,18 +85,21 @@ const styles = StyleSheet.create(({ theme, border, fonts, typography }) => ({
   textRow: { flexDirection: 'row', alignItems: 'center' },
 
   text: {
-    fontSize: typography.Size['text-2xl'],
-    fontFamily: fonts.primary,
-    fontWeight: '400',
-    color: theme.Form.InputText.inputTextColor,
+    fontSize: fonts.fontSize[600],
+    fontFamily: fonts.fontFamily.heading,
+    fontWeight: fonts.fontWeight.regular,
+    color: components.inputtext.root.color,
     includeFontPadding: false,
   },
 
-  pressed: { borderColor: theme.Form.InputText.inputHoverBorderColor },
+  pressed: { borderColor: components.inputtext.root.hoverBorderColor },
 
-  error: { borderColor: theme.Form.InputText.inputErrorBorderColor },
+  error: { borderColor: components.inputtext.root.invalidBorderColor },
 
-  disabled: { mixBlendMode: 'luminosity', opacity: 0.6 },
+  disabled: {
+    mixBlendMode: 'luminosity',
+    opacity: semantic.effects.opacity[60],
+  },
 
-  cursor: { color: theme.Form.InputText.inputTextColor, marginBottom: 3 },
+  cursor: { color: components.inputtext.root.color, marginBottom: 3 },
 }))
