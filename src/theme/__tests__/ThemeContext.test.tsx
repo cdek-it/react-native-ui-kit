@@ -7,8 +7,6 @@ import { ThemeContextProvider } from '../ThemeContext'
 import { darkTheme } from '../darkTheme'
 import { lightTheme } from '../lightTheme'
 import { semanticTokens } from '../tokens'
-import darkComponentTokens from '../tokens/components/dark.json'
-import lightComponentTokens from '../tokens/components/light.json'
 import darkSemanticColorSchemeTokens from '../tokens/semantic/colorScheme/dark.json'
 import lightSemanticColorSchemeTokens from '../tokens/semantic/colorScheme/light.json'
 import semanticDimensions from '../tokens/semantic/dimensions.json'
@@ -87,8 +85,8 @@ describe('ThemeContextProvider', () => {
     expect(semanticTokens.effects).toBe(semanticEffects)
   })
 
-  test('каждая тема содержит соответствующие component-токены', () => {
-    expect(lightTheme.components).toBe(lightComponentTokens)
-    expect(darkTheme.components).toBe(darkComponentTokens)
+  test('component-токены не входят в публичные темы', () => {
+    expect(lightTheme).not.toHaveProperty('components')
+    expect(darkTheme).not.toHaveProperty('components')
   })
 })
