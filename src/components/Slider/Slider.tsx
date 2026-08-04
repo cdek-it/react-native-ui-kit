@@ -252,41 +252,38 @@ export const Slider = memo<SliderProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, border }) => {
-  return {
-    container: {
-      width: '100%',
-      justifyContent: 'center',
-      alignItems: 'center',
-    },
-    track: {
-      height: theme.Form.Slider.sliderHorizontalHeight,
-      backgroundColor: theme.Form.Slider.sliderBg,
-      borderRadius: theme.Form.Slider.sliderHandleBorderRadius,
-      position: 'relative',
-      width: '100%',
-      justifyContent: 'center',
-    },
+const styles = StyleSheet.create(({ components, semantic }) => ({
+  container: { width: '100%', justifyContent: 'center', alignItems: 'center' },
+  track: {
+    height: components.slider.track.size,
+    backgroundColor: components.slider.track.background,
+    borderRadius: components.slider.track.borderRadius,
+    position: 'relative',
+    width: '100%',
+    justifyContent: 'center',
+  },
 
-    line: {
-      height: theme.Form.Slider.sliderHorizontalHeight,
-      borderRadius: theme.Form.Slider.sliderHandleBorderRadius,
-      position: 'absolute',
-      backgroundColor: theme.Form.Slider.sliderRangeBg,
-    },
+  line: {
+    height: components.slider.track.size,
+    borderRadius: components.slider.track.borderRadius,
+    position: 'absolute',
+    backgroundColor: components.slider.range.background,
+  },
 
-    point: {
-      width: theme.Form.Slider.sliderHandleWidth,
-      height: theme.Form.Slider.sliderHandleHeight,
-      borderRadius: theme.Form.Slider.sliderHandleHeight / 2,
-      position: 'absolute',
-      backgroundColor: theme.Form.Slider.sliderHandleBg,
-      borderWidth: border.Width['border-3'],
-      borderColor: theme.Form.Slider.sliderHandleBorder,
-    },
+  point: {
+    width: components.slider.handle.width,
+    height: components.slider.handle.height,
+    borderRadius: components.slider.handle.borderRadius,
+    position: 'absolute',
+    backgroundColor: components.slider.colorScheme.handle.content.background,
+    borderWidth: semantic.dimension.borderWidth[300],
+    borderColor: components.slider.handle.background,
+  },
 
-    disabled: { opacity: 0.6, mixBlendMode: 'luminosity' },
+  disabled: {
+    opacity: semantic.effects.opacity[60],
+    mixBlendMode: 'luminosity',
+  },
 
-    hovered: { backgroundColor: theme.Form.Slider.sliderHandleHoverBg },
-  }
-})
+  hovered: { backgroundColor: components.slider.handle.hoverBackground },
+}))
