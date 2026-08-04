@@ -54,11 +54,8 @@ UI kit использует следующие виды шрифтов.
 После этого шрифты доступны через `useUnistyles().theme.fonts` или прямо в
 `StyleSheet.create(({ fonts }) => ...)`.
 
-`ThemeContextProvider` только настраивает темы и шрифты для `unistyles`.
+`ThemeContextProvider` настраивает активную тему и шрифты для `unistyles`.
 `ThemeContext` остается пустым и всегда имеет значение `null`.
-
-Провайдер также принимает `lightTheme` и `darkTheme`, если нужно переопределить
-темы целиком.
 
 ### Пример подключения шрифтов с помощью expo-fonts через плагин
 
