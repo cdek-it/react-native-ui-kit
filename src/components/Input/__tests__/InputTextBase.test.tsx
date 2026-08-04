@@ -2,7 +2,7 @@ import { fireEvent, render, userEvent } from '@testing-library/react-native'
 
 import { TextInput } from 'react-native-gesture-handler'
 
-import { lightTheme } from '../../../theme'
+import { semanticTokens } from '../../../theme/tokens'
 import { InputTextBase } from '../InputTextBase/InputTextBase'
 import { InputTextBaseTestId } from '../InputTextBase/testIds'
 import type { RenderTextInputArgs } from '../InputTextBase/types'
@@ -190,7 +190,7 @@ describe('InputTextBase component functionality tests', () => {
       const { getByTestId } = render(<InputTextBase />)
 
       expect(getByTestId(containerTestId)).toHaveStyle({
-        minHeight: lightTheme.theme.InputSize.base['min-height'],
+        minHeight: semanticTokens.dimension.size[1100],
       })
     })
 
@@ -198,7 +198,7 @@ describe('InputTextBase component functionality tests', () => {
       const { getByTestId } = render(<InputTextBase size='base' />)
 
       expect(getByTestId(containerTestId)).toHaveStyle({
-        minHeight: lightTheme.theme.InputSize.base['min-height'],
+        minHeight: semanticTokens.dimension.size[1100],
       })
     })
 
@@ -206,7 +206,7 @@ describe('InputTextBase component functionality tests', () => {
       const { getByTestId } = render(<InputTextBase size='large' />)
 
       expect(getByTestId(containerTestId)).toHaveStyle({
-        minHeight: lightTheme.theme.InputSize.large['min-height'],
+        minHeight: semanticTokens.dimension.size[1300],
       })
     })
 
@@ -214,7 +214,7 @@ describe('InputTextBase component functionality tests', () => {
       const { getByTestId } = render(<InputTextBase size='xlarge' />)
 
       expect(getByTestId(containerTestId)).toHaveStyle({
-        minHeight: lightTheme.theme.InputSize.xlarge['min-height'],
+        minHeight: semanticTokens.dimension.size[1400],
       })
     })
 
@@ -222,7 +222,7 @@ describe('InputTextBase component functionality tests', () => {
       const { getByTestId } = render(<InputTextBase size={1} />)
 
       expect(getByTestId(containerTestId)).toHaveStyle({
-        minHeight: lightTheme.theme.InputSize.base['min-height'],
+        minHeight: semanticTokens.dimension.size[1100],
       })
     })
 
