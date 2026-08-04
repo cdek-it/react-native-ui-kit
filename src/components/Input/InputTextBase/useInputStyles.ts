@@ -18,37 +18,32 @@ export const useInputContainerMinHeight = (
   return { minHeight }
 }
 
-const containerMinHeight = StyleSheet.create(({ theme }) => ({
-  base: { minHeight: theme.InputSize.base['min-height'] },
-  large: { minHeight: theme.InputSize.large['min-height'] },
-  xlarge: { minHeight: theme.InputSize.xlarge['min-height'] },
+const containerMinHeight = StyleSheet.create(({ semantic }) => ({
+  base: { minHeight: semantic.dimension.size[1100] },
+  large: { minHeight: semantic.dimension.size[1300] },
+  xlarge: { minHeight: semantic.dimension.size[1400] },
 }))
 
 export const inputStyles = StyleSheet.create(
-  ({ theme, border, typography, spacing, fonts }) => ({
+  ({ components, semantic, fonts }) => ({
     container: {
       flexDirection: 'row',
-      borderWidth: border.Width.border,
-      borderRadius: border.Radius['rounded-xl'],
-      borderColor: theme.Form.InputText.inputBorderColor,
-      backgroundColor: theme.Form.InputText.inputBg,
+      borderWidth: semantic.dimension.borderWidth[100],
+      borderRadius: components.inputtext.root.borderRadius,
+      borderColor: components.inputtext.root.borderColor,
+      backgroundColor: components.inputtext.root.background,
     },
     containerFocused: {
-      outlineColor: theme.General.focusOutlineColor,
-      outlineWidth: Math.round(theme.General.focusShadowWidth),
-      borderColor: theme.General.focusBorderColor,
+      outlineColor: components.inputtext.root.focusRing.color,
+      outlineWidth: components.inputtext.root.focusRing.width,
+      borderColor: components.inputtext.root.focusBorderColor,
     },
-    containerFloatLabel: {
-      minHeight: theme.Button.Common.buttonHeightXL,
-      maxHeight: theme.Button.Common.buttonHeightXL,
-      height: theme.Button.Common.buttonHeightXL,
-    },
-    danger: { borderColor: theme.Form.InputText.inputErrorBorderColor },
-    dangerFocused: { outlineColor: theme.General.focusOutlineErrorColor },
+    containerFloatLabel: { minHeight: 56, maxHeight: 56, height: 56 },
+    danger: { borderColor: components.inputtext.root.invalidBorderColor },
     disabled: {
-      opacity: 0.6,
-      borderColor: theme.Form.InputText.inputBorderColor,
-      backgroundColor: theme.Button.Disabled.disabledButtonBg,
+      opacity: semantic.effects.opacity[60],
+      borderColor: components.inputtext.root.borderColor,
+      backgroundColor: semantic.colorScheme.color.bg.neutral.weak.disabled,
     },
     inputContainer: {
       flex: 1,
@@ -56,8 +51,8 @@ export const inputStyles = StyleSheet.create(
       justifyContent: 'center',
     },
     input: {
-      padding: 0,
-      paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
+      padding: semantic.dimension.space.none,
+      paddingHorizontal: components.inputtext.root.paddingX,
       position: 'absolute',
       left: 0,
       right: 0,
@@ -67,40 +62,36 @@ export const inputStyles = StyleSheet.create(
     inputWithRightContent: { paddingRight: 0 },
     floatLabelInput: {
       flex: 1,
-      paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
+      paddingHorizontal: components.inputtext.root.paddingX,
       paddingTop: 26,
       paddingBottom: 12,
-      borderRadius: border.Radius['rounded-xl'],
+      borderRadius: semantic.dimension.borderRadius[300],
       overflow: 'hidden',
     },
     inputFont: {
-      fontSize: typography.Size['text-base'],
-      color: theme.Form.InputText.inputTextColor,
+      fontSize: fonts.fontSize[300],
+      color: components.inputtext.root.color,
       includeFontPadding: false,
-      fontFamily: fonts.secondary,
+      fontFamily: fonts.fontFamily.base,
       verticalAlign: 'middle',
     },
-    placeholder: {
-      paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
-    },
-    placeholderTextColor: {
-      color: theme.Form.InputText.inputPlaceholderTextColor,
-    },
+    placeholder: { paddingHorizontal: components.inputtext.root.paddingX },
+    placeholderTextColor: { color: components.inputtext.root.placeholderColor },
     rightContainer: {
       flexDirection: 'row',
-      paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
-      gap: theme.Form.InputText.inputPaddingLeftRight,
+      paddingHorizontal: components.inputtext.root.paddingX,
+      gap: components.inputtext.root.paddingX,
       overflow: 'hidden',
       alignItems: 'center',
     },
     rightButtonContainer: { justifyContent: 'center' },
     iconSize: {
-      width: typography.Size['text-base'],
-      height: typography.Size['text-base'],
+      width: components.inputtext.extend.iconSize,
+      height: components.inputtext.extend.iconSize,
     },
     iconSizeFloatLabel: {
-      width: typography.Size['text-xl'],
-      height: typography.Size['text-xl'],
+      width: components.inputtext.extend.iconSize,
+      height: components.inputtext.extend.iconSize,
     },
 
     label: {
@@ -108,20 +99,20 @@ export const inputStyles = StyleSheet.create(
       left: 7,
       right: 7,
       top: 19,
-      paddingVertical: 0,
-      paddingLeft: spacing.Padding['p-1'],
-      paddingRight: spacing.Padding['p-2'],
-      color: typography.Color.Common['text-color-secondary'],
+      paddingVertical: semantic.dimension.space.none,
+      paddingLeft: semantic.dimension.space[100],
+      paddingRight: semantic.dimension.space[200],
+      color: semantic.colorScheme.color.fg.muted,
       includeFontPadding: false,
       verticalAlign: 'middle',
-      fontSize: typography.Size['text-base'],
-      fontFamily: fonts.secondary,
+      fontSize: fonts.fontSize[300],
+      fontFamily: fonts.fontFamily.base,
     },
     labelReducedSize: {
-      fontSize: typography.Size['text-sm'],
-      paddingVertical: spacing.Padding['p-1'],
+      fontSize: fonts.fontSize[100],
+      paddingVertical: semantic.dimension.space[100],
       top: 7,
-      fontFamily: fonts.primary,
+      fontFamily: fonts.fontFamily.heading,
     },
     hidden: { opacity: 0 },
   })

@@ -155,10 +155,10 @@ export const InputOtp = memo<InputOtpProps>(
   }
 )
 
-const styles = StyleSheet.create(({ spacing }) => ({
+const styles = StyleSheet.create(({ semantic }) => ({
   container: {},
 
-  content: { flexDirection: 'row', gap: spacing.Gap['gap-2'] },
+  content: { flexDirection: 'row', gap: semantic.dimension.space[200] },
 
   input: { position: 'absolute', width: 1, height: 1, opacity: 0 },
 }))
