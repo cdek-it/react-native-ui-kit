@@ -36,21 +36,26 @@ export const Body = ({
   )
 }
 
-const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
+// Осознанный обход слоя components: цвет текста — семантическая роль, и своего
+// токена у Typography нет (компонент отсутствует в tokens.json).
+const styles = StyleSheet.create(({ semantic, fonts }) => ({
   text: {
-    fontSize: typography.Size['text-base'],
+    fontSize: fonts.fontSize[300],
     includeFontPadding: false,
     verticalAlign: 'middle',
-    fontFamily: fonts.secondary,
-    lineHeight: 20,
+    fontFamily: fonts.fontFamily.base,
+    lineHeight: fonts.lineHeight[450],
   },
-  regular: { fontWeight: 400 },
-  bold: { fontWeight: 700, letterSpacing: -0.5 },
-  default: { color: theme.General.textColor },
-  primary: { color: theme.General.primaryColor },
-  secondary: { color: theme.General.textSecondaryColor },
-  base: { fontSize: typography.Size['text-sm'], lineHeight: 18 },
-  paragraph: { lineHeight: 24 },
-  paragraphBase: { lineHeight: 21 },
-  disabled: { opacity: 0.6 },
+  regular: { fontWeight: fonts.fontWeight.regular },
+  bold: {
+    fontWeight: fonts.fontWeight.bold,
+    letterSpacing: fonts.letterSpacing[400],
+  },
+  default: { color: semantic.colorScheme.color.fg.default },
+  primary: { color: semantic.colorScheme.color.fg.brand.default },
+  secondary: { color: semantic.colorScheme.color.fg.muted },
+  base: { fontSize: fonts.fontSize[200], lineHeight: fonts.lineHeight[400] },
+  paragraph: { lineHeight: fonts.lineHeight[600] },
+  paragraphBase: { lineHeight: fonts.lineHeight[500] },
+  disabled: { opacity: semantic.effects.opacity[60] },
 }))
