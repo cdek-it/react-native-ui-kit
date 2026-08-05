@@ -2861,6 +2861,7 @@ __metadata:
     expo-application: "npm:55.0.14"
     expo-constants: "npm:55.0.15"
     expo-doctor: "npm:1.18.20"
+    expo-font: "npm:55.0.6"
     expo-status-bar: "npm:55.0.5"
     inquirer-search-list: "npm:1.2.6"
     jest: "npm:29.7.0"
@@ -10542,7 +10543,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-font@npm:~55.0.6":
+"expo-font@npm:55.0.6, expo-font@npm:~55.0.6":
   version: 55.0.6
   resolution: "expo-font@npm:55.0.6"
   dependencies:
