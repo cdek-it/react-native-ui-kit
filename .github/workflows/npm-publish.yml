@@ -37,11 +37,20 @@ jobs:
     env:
       GH_TOKEN: ${{ secrets.ADD_TO_PROJECT_PAT }}
     steps:
-      - name: Check Main Branch
-        if: github.ref != 'refs/heads/main'
+      - name: Check Release Branch
+        env:
+          BRANCH_NAME: ${{ github.ref_name }}
+          IS_BETA: ${{ inputs.beta }}
         run: |
-          echo "❌ Этот workflow может быть запущен только на основной ветке (main)"
-          exit 1
+          if [[ "$IS_BETA" == "true" ]]; then
+            if [[ ! "$BRANCH_NAME" =~ ^release/[0-9]+\.[0-9]+(\.[0-9]+)?$ ]]; then
+              echo "❌ Beta-релиз может быть запущен только из ветки release/X.Y или release/X.Y.Z"
+              exit 1
+            fi
+          elif [[ "$BRANCH_NAME" != "main" ]]; then
+            echo "❌ Стабильный релиз может быть запущен только из ветки main"
+            exit 1
+          fi
 
       - name: Verify Release Team
         run: |
@@ -108,7 +117,7 @@ jobs:
         if: inputs.noIncrement == false && inputs.bumpMode == 'auto'
         run: |
           if [ "${{ inputs.beta }}" == "true" ]; then
-            yarn release --preRelease=beta
+            yarn release --preRelease=beta --git.requireBranch="$GITHUB_REF_NAME"
           else
             yarn release
           fi
@@ -117,7 +126,7 @@ jobs:
         if: inputs.noIncrement == false && inputs.bumpMode != 'auto'
         run: |
           if [ "${{ inputs.beta }}" == "true" ]; then
-            yarn release ${{ inputs.bumpMode }} --preRelease=beta
+            yarn release ${{ inputs.bumpMode }} --preRelease=beta --git.requireBranch="$GITHUB_REF_NAME"
           else
             yarn release ${{ inputs.bumpMode }}
           fi
@@ -126,7 +135,7 @@ jobs:
         if: inputs.noIncrement == true
         run: |
           if [ "${{ inputs.beta }}" == "true" ]; then
-            yarn release --no-increment --no-npm.publish --preRelease=beta
+            yarn release --no-increment --no-npm.publish --preRelease=beta --git.requireBranch="$GITHUB_REF_NAME"
           else
             yarn release --no-increment --no-npm.publish
           fi

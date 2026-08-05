@@ -25,10 +25,10 @@ prepare-commit-msg:
 
         if echo "$branch_name" | grep -Eq '^main$'; then
           echo "✅ Имя ветки корректно: $branch_name"
-        elif echo "$branch_name" | grep -Eq '^(feature|chore|fix)/[^/]+$'; then
+        elif echo "$branch_name" | grep -Eq '^((feature|chore|fix)/[^/]+|release/[0-9]+\.[0-9]+(\.[0-9]+)?)$'; then
           echo "✅ Имя ветки корректно: $branch_name"
         else
-          echo "❌ Ошибка!\nНекорректное имя ветки: $branch_name\nВетка может иметь следующие названия:\n  - main\n  - feature/название ветки\n  - fix/название ветки\n  - chore/название ветки"
+          echo "❌ Ошибка!\nНекорректное имя ветки: $branch_name\nВетка может иметь следующие названия:\n  - main\n  - feature/название ветки\n  - fix/название ветки\n  - chore/название ветки\n  - release/X.Y\n  - release/X.Y.Z"
           exit 1
         fi
     commitizen:
@@ -63,10 +63,10 @@ pre-push:
 
         if echo "$branch_name" | grep -Eq '^main$'; then
           echo "✅ Имя ветки корректно: $branch_name"
-        elif echo "$branch_name" | grep -Eq '^(feature|chore|fix)/[^/]+$'; then
+        elif echo "$branch_name" | grep -Eq '^((feature|chore|fix)/[^/]+|release/[0-9]+\.[0-9]+(\.[0-9]+)?)$'; then
           echo "✅ Имя ветки корректно: $branch_name"
         else
-          echo "❌ Ошибка!\nНекорректное имя ветки: $branch_name\nВетка может иметь следующие названия:\n  - main\n  - feature/название ветки\n  - fix/название ветки\n  - chore/название ветки"
+          echo "❌ Ошибка!\nНекорректное имя ветки: $branch_name\nВетка может иметь следующие названия:\n  - main\n  - feature/название ветки\n  - fix/название ветки\n  - chore/название ветки\n  - release/X.Y\n  - release/X.Y.Z"
           exit 1
         fi
     eslint:

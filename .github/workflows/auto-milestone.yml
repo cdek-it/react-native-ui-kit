@@ -3,7 +3,7 @@ name: Auto Milestone & Label Management
 on:
   push:
     branches:
-      - 'release/v*'
+      - 'release/*'
   pull_request:
     types: [opened, synchronize, reopened, edited]
   release:
@@ -31,7 +31,7 @@ jobs:
             const repo = context.repo.repo;
 
             function extractVersion(str) {
-              const match = str.match(/^v?(\d+\.\d+(\.\d+)?)$/);
+              const match = str.match(/^(\d+\.\d+(\.\d+)?)$/);
               return match ? match[1] : null;
             }
 
@@ -46,10 +46,10 @@ jobs:
               return 0;
             }
 
-            // 1) Создание label при push в release/v*
+            // 1) Создание label при push в release/*
             if (context.eventName === 'push') {
               const ref = context.ref;
-              if (!ref.startsWith('refs/heads/release/v')) return;
+              if (!ref.startsWith('refs/heads/release/')) return;
 
               const version = extractVersion(ref.replace('refs/heads/release/', ''));
               if (!version) return;
@@ -74,8 +74,8 @@ jobs:
             // 2) Присвоение label + назначение milestone для PR
             if (context.eventName === 'pull_request') {
               const pr = context.payload.pull_request;
-              const releaseMatch = pr.head.ref.match(/^release\/v(\d+\.\d+(\.\d+)?)$/)
-                                || pr.base.ref.match(/^release\/v(\d+\.\d+(\.\d+)?)$/);
+              const releaseMatch = pr.head.ref.match(/^release\/(\d+\.\d+(\.\d+)?)$/)
+                                || pr.base.ref.match(/^release\/(\d+\.\d+(\.\d+)?)$/);
 
               if (!releaseMatch) return;
               const version = releaseMatch[1];
