@@ -6,7 +6,7 @@ export default {
   expo: {
     name: 'CDEK UI',
     slug: 'cdek-uikit',
-    version,
+    version: version.replace(/[-+].*$/, ''),
     orientation: 'portrait',
     android: { package: 'ru.cdek.uikit.prime' },
     ios: {
