@@ -43,10 +43,11 @@ const internalFontsPlugin = [
 const plugins: NonNullable<ExpoConfig['plugins']> = [
   './expo/plugins/withEnsureBundler.js',
   '@react-native-async-storage/expo-with-async-storage',
-  ...(process.env.UI_KIT_INTERNAL_FONTS === 'true'
-    ? [internalFontsPlugin]
-    : []),
 ]
+
+if (process.env.UI_KIT_INTERNAL_FONTS === 'true') {
+  plugins.push(internalFontsPlugin)
+}
 
 export default {
   expo: {
