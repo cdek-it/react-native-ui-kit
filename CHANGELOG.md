@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.0](https://github.com/cdek-it/react-native-ui-kit/compare/v1.0.3...v1.1.0) (2026-08-06)
+
+### 🚀 Новый функционал
+
+* **Input:** добавлен размер medium ([b108339](https://github.com/cdek-it/react-native-ui-kit/commit/b10833990a2b1e6943935dfbdbf021db4d1ce0ed))
+
+### ♻️ Рефакторинг
+
+* улучшена читаемость конфигурации плагинов ([7e6bba9](https://github.com/cdek-it/react-native-ui-kit/commit/7e6bba95b87d1dc1b3a1fcf2414b6dee91b86c64))
+
 ## [1.0.3](https://github.com/cdek-it/react-native-ui-kit/compare/v1.0.2...v1.0.3) (2026-07-30)
 
 ### 🐛 Исправления багов
