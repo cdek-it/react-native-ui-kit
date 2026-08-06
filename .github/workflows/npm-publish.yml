@@ -108,6 +108,9 @@ jobs:
           ssh-key: ${{ secrets.SELF_DEPLOY_KEY }}
       - uses: ./.github/actions/setup-node
 
+      - name: Update npm for trusted publishing
+        run: npm install --global npm@11.18.0
+
       - name: Configure Git
         run: |
           git config user.name "${GITHUB_ACTOR}"
