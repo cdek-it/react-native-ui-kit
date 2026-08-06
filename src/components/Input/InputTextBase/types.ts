@@ -50,7 +50,7 @@ export interface InputTextBaseProps extends Omit<
    * Можно передать число. Если переданное число меньше размера base, будет использован размер base.
    * @default 'base'
    */
-  size?: 'base' | 'large' | 'xlarge' | number
+  size?: 'base' | 'medium' | 'large' | 'xlarge' | number
 }
 
 export type RenderTextInputArgs = TextInputProps & { inputRef: Ref<TextInput> }

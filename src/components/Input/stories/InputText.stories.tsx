@@ -26,7 +26,7 @@ const meta: Meta<typeof InputText & typeof InputTextBase> = {
       options: ['true', 'false', 'toggleable'],
       mapping: { true: true, false: false, toggleable: 'toggleable' },
     },
-    size: { control: 'radio', options: ['base', 'large', 'xlarge'] },
+    size: { control: 'radio', options: ['base', 'medium', 'large', 'xlarge'] },
   },
   render: (args) => {
     const [, updateArgs] = useArgs()

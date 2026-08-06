@@ -18,7 +18,7 @@ const meta: Meta<typeof InputGroup> = {
   },
   argTypes: {
     state: { control: 'radio', options: ['default', 'danger'] },
-    size: { control: 'radio', options: ['base', 'large', 'xlarge'] },
+    size: { control: 'radio', options: ['base', 'medium', 'large', 'xlarge'] },
   },
   render: (args) => {
     const [, updateArgs] = useArgs()

@@ -20,6 +20,7 @@ export const useInputContainerMinHeight = (
 
 const containerMinHeight = StyleSheet.create(({ theme }) => ({
   base: { minHeight: theme.InputSize.base['min-height'] },
+  medium: { minHeight: theme.InputSize.medium['min-height'] },
   large: { minHeight: theme.InputSize.large['min-height'] },
   xlarge: { minHeight: theme.InputSize.xlarge['min-height'] },
 }))
