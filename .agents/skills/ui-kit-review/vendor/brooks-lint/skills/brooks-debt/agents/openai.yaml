@@ -1,0 +1,6 @@
+interface:
+  display_name: "Brooks Tech Debt"
+  short_description: "Prioritize codebase technical debt"
+  default_prompt: "Use $brooks-debt to assess and prioritize technical debt across the codebase."
+policy:
+  allow_implicit_invocation: false

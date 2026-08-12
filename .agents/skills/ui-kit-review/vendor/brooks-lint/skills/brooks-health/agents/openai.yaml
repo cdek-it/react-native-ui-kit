@@ -1,0 +1,6 @@
+interface:
+  display_name: "Brooks Health Dashboard"
+  short_description: "Score overall codebase quality"
+  default_prompt: "Use $brooks-health to produce a read-only dashboard of overall codebase quality."
+policy:
+  allow_implicit_invocation: false

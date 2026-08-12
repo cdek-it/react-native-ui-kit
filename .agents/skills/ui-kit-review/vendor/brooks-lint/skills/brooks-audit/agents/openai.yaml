@@ -1,0 +1,6 @@
+interface:
+  display_name: "Brooks Architecture Audit"
+  short_description: "Audit codebase architecture"
+  default_prompt: "Use $brooks-audit to audit module dependencies, layering, and architecture."
+policy:
+  allow_implicit_invocation: false

@@ -1,61 +1,63 @@
-# Project Overview
+# React Native Prime UI Kit
 
-This is a React Native UI kit project based on Prime Faces and Prime Flex. It
-provides a set of reusable UI components for building React Native applications.
-The project is configured with Storybook for component development and testing.
+Take versions and scripts from `package.json`. Respect its `engines` and
+`packageManager` declarations; do not use npm or pnpm.
 
-**Key Technologies:**
+## Boundaries
 
-- React Native
-- Expo
-- Storybook
-- TypeScript
-- Jest
-- ESLint
-- Prettier
-- Yarn
+Treat `src/index.ts`, component barrels, exported props, refs, callbacks,
+accessibility behavior, and `peerDependencies` as compatibility-sensitive.
+Follow the closest existing component pattern for ordinary implementation work.
 
-# Building and Running
+## Project Skills
 
-**Installation:**
+Use only top-level skills under `.agents/skills/`; nested `vendor/` skills are
+source material, not runtime instructions.
 
-```shell
-yarn install
-```
+- Use `$ui-kit-testing` to write or refactor focused Jest/RNTL tests, including
+  controlled behavior, accessibility, mocks, timers, animations, snapshots, and
+  public TypeScript contracts.
+- Use `$ui-kit-review` for diffs and local changes or explicit architecture,
+  onboarding, test-suite, debt, health, agent-instruction, and diagnostic
+  audits. It is read-only unless the user requests fixes.
 
-**Running Storybook:**
+Do not load every skill preemptively; use the one matching the request.
 
-- `yarn start`: Starts the Metro Bundler for Storybook.
-- `yarn ios`: Runs Storybook on the iOS simulator.
-- `yarn android`: Runs Storybook on the Android emulator.
+## Component Rules
 
-**Building the library:**
+- Use named production exports and expose public components and types through
+  the proper barrels.
+- Use `StyleSheet.create` from `react-native-unistyles` and existing theme
+  tokens. Do not spread or destructure generated Unistyles style objects.
+- Controlled interactions emit callbacks; rendered state changes only after the
+  controlling prop changes.
+- In new source and test files, use `UpperPascalCase` `testID` values. Existing
+  IDs are compatibility-sensitive; do not flag or rename them only for format.
+- A new public component or material variant normally needs typed source, a
+  barrel export, focused tests, and representative Storybook states.
 
-```shell
-yarn build
-```
+## Verification
 
-**Testing:**
+- Runtime TypeScript: `yarn build` and `yarn lint:check`.
+- Changed behavior or tests: also run focused Jest with
+  `--runInBand --coverage=false`.
+- Documentation or agent instructions only: validate affected metadata and
+  references, run matching agent-script tests, then run targeted Prettier
+  checks; runtime checks are unnecessary.
+- Report successful and unavailable checks before claiming completion.
 
-```shell
-yarn test
-```
+## Git
 
-**Linting and Formatting:**
+Do not commit or push unless explicitly asked. Use Conventional Commits for
+requested commits.
 
-- `yarn lint:check`: Checks for linting errors.
-- `yarn lint:fix`: Fixes linting errors.
-- `yarn prettier:check`: Checks for formatting errors.
-- `yarn prettier:fix`: Formats the code.
+## Safety
 
-# Development Conventions
+Do not read, edit, or output `.secrets/**`, environment files, `*.p8`, `*.jks`,
+`*.keystore`, `*.enc`, `ios/**/*.plist`, or `android/app/*.json`. Ask the user
+to handle a required secret.
 
-- **Component Development:** Components are developed in isolation and showcased
-  in Storybook.
-- **Styling:** The project uses a theming approach, with `lightTheme` and
-  `darkTheme` defined.
-- **Testing:** Tests are written with Jest and React Native Testing Library.
-- **Commits:** The project follows the Conventional Commits specification for
-  commit messages.
-- **Code Style:** The project uses ESLint and Prettier to enforce a consistent
-  code style.
+Do not hand-edit `dist/`, `coverage/`, `.expo/`, or
+`.storybook/storybook.requires.ts`; approved build or generation commands may
+replace them. Modify `ios/` or `android/` only when native changes are
+explicitly requested.
