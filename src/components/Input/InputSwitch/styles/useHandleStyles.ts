@@ -4,7 +4,7 @@ import { useSharedValue, withTiming } from 'react-native-reanimated'
 
 import { StyleSheet } from 'react-native-unistyles'
 
-export const useHandleStyles = (checked: boolean) => {
+export const useHandleStyles = (checked: boolean, disabled: boolean) => {
   const styles = handleStyles
   const handleOnLeft = styles.handleOn.left
   const handleOffLeft = styles.handleOff.left
@@ -15,23 +15,39 @@ export const useHandleStyles = (checked: boolean) => {
   )
 
   const calculateHandleBackground = useCallback(
-    (checked: boolean) =>
-      checked ? styles.handleOn.backgroundColor : styles.handle.backgroundColor,
-    [styles.handle.backgroundColor, styles.handleOn.backgroundColor]
+    (checked: boolean, disabled: boolean) => {
+      if (disabled) {
+        return styles.handleDisabled.backgroundColor
+      }
+
+      return checked
+        ? styles.handleOn.backgroundColor
+        : styles.handle.backgroundColor
+    },
+    [
+      styles.handle.backgroundColor,
+      styles.handleDisabled.backgroundColor,
+      styles.handleOn.backgroundColor,
+    ]
   )
 
   const handleLeftPosition = useSharedValue(
     calculateHandleLeftPosition(checked)
   )
-  const handleBackground = useSharedValue(calculateHandleBackground(checked))
+  const handleBackground = useSharedValue(
+    calculateHandleBackground(checked, disabled)
+  )
 
   useEffect(() => {
     handleLeftPosition.value = withTiming(calculateHandleLeftPosition(checked))
-    handleBackground.value = withTiming(calculateHandleBackground(checked))
+    handleBackground.value = withTiming(
+      calculateHandleBackground(checked, disabled)
+    )
   }, [
     calculateHandleBackground,
     calculateHandleLeftPosition,
     checked,
+    disabled,
     handleLeftPosition,
     handleBackground,
   ])
@@ -61,6 +77,10 @@ const handleStyles = StyleSheet.create(({ components: { toggleswitch } }) => ({
   handleOff: {
     backgroundColor: toggleswitch.colorScheme.handle.background,
     left: toggleswitch.root.gap - toggleswitch.root.borderWidth,
+  },
+
+  handleDisabled: {
+    backgroundColor: toggleswitch.colorScheme.handle.disabledBackground,
   },
 
   handleOn: {
