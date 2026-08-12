@@ -1052,7 +1052,7 @@
       "background": "#404348",
       "borderColor": "#404348",
       "color": "#ffffff",
-      "borderRadius": 1600,
+      "borderRadius": 20,
       "shadow": "0 4px 8px rgba(0, 0, 0, 0.2000)"
     },
     "header": {
