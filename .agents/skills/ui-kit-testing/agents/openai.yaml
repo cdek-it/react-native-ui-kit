@@ -1,0 +1,6 @@
+interface:
+  display_name: 'UI Kit Testing'
+  short_description: 'Write focused Jest and RNTL tests'
+  default_prompt:
+    'Use $ui-kit-testing to write focused behavioral tests for a UI Kit
+    component or hook.'

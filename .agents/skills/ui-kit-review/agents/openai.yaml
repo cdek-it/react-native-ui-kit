@@ -1,0 +1,6 @@
+interface:
+  display_name: 'UI Kit Review'
+  short_description: 'Review UI Kit source and agent instructions'
+  default_prompt:
+    'Use $ui-kit-review to review UI Kit source, a diff, or project agent
+    instructions in the matching audit mode.'

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Brooks Code Review"
+  short_description: "Review diffs for design risks"
+  default_prompt: "Use $brooks-review to review an existing diff or file for maintainability and design risks."
+policy:
+  allow_implicit_invocation: false

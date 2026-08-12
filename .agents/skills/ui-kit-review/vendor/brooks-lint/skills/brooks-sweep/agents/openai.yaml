@@ -1,0 +1,6 @@
+interface:
+  display_name: "Brooks Full Sweep"
+  short_description: "Diagnose and fix codebase quality"
+  default_prompt: "Use $brooks-sweep to diagnose and fix quality problems across the whole codebase."
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Brooks Test Audit"
+  short_description: "Audit structural test quality"
+  default_prompt: "Use $brooks-test to audit an existing test suite for structural quality problems."
+policy:
+  allow_implicit_invocation: false
