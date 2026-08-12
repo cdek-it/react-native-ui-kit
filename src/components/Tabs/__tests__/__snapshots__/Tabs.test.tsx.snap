@@ -2114,7 +2114,7 @@ exports[`Tabs component tests disabled 1`] = `
 <View
   style={
     {
-      "borderBottomWidth": 1,
+      "borderBottomWidth": 2,
       "borderColor": "#e2e2e4",
       "flexDirection": "row",
       "gap": 0,
@@ -2558,7 +2558,7 @@ exports[`Tabs component tests disabled 1`] = `
       [
         {
           "backgroundColor": "#2b2e33",
-          "bottom": 0,
+          "bottom": -2,
           "height": 2,
           "position": "absolute",
         },
@@ -2568,7 +2568,7 @@ exports[`Tabs component tests disabled 1`] = `
       [
         {
           "backgroundColor": "#2b2e33",
-          "bottom": 0,
+          "bottom": -2,
           "height": 2,
           "position": "absolute",
         },
@@ -2586,7 +2586,7 @@ exports[`Tabs component tests normal 1`] = `
 <View
   style={
     {
-      "borderBottomWidth": 1,
+      "borderBottomWidth": 2,
       "borderColor": "#e2e2e4",
       "flexDirection": "row",
       "gap": 0,
@@ -3015,7 +3015,7 @@ exports[`Tabs component tests normal 1`] = `
       [
         {
           "backgroundColor": "#2b2e33",
-          "bottom": 0,
+          "bottom": -2,
           "height": 2,
           "position": "absolute",
         },
@@ -3025,7 +3025,7 @@ exports[`Tabs component tests normal 1`] = `
       [
         {
           "backgroundColor": "#2b2e33",
-          "bottom": 0,
+          "bottom": -2,
           "height": 2,
           "position": "absolute",
         },

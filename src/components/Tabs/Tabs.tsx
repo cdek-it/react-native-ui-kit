@@ -91,18 +91,19 @@ export const Tabs = memo<TabsProps>(
   }
 )
 
-const styles = StyleSheet.create(({ components, semantic }) => ({
+const styles = StyleSheet.create(({ components }) => ({
   container: {
     flexDirection: 'row',
     gap: components.tabs.tab.margin,
 
-    borderBottomWidth: semantic.dimension.borderWidth[100],
+    borderBottomWidth: components.tabs.tablist.borderBottomWidth,
     borderColor: components.tabs.tablist.borderColor,
   },
   line: {
     position: 'absolute',
-    bottom: 0,
-    height: semantic.dimension.borderWidth[200],
+    // Линия ложится поверх границы таб-листа: отрицательный сдвиг равен её толщине
+    bottom: components.tabs.activeBar.bottom,
+    height: components.tabs.activeBar.height,
 
     backgroundColor: components.tabs.activeBar.background,
   },
