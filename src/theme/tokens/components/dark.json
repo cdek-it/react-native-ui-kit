@@ -2813,9 +2813,9 @@
       },
       "root": {
         "background": "#6d7076",
-        "checkedBackground": "#2b2e33",
-        "checkedHoverBackground": "#404348",
-        "disabledBackground": "#e2e2e4",
+        "checkedBackground": "#f0f0f1",
+        "checkedHoverBackground": "#e2e2e4",
+        "disabledBackground": "#404348",
         "hoverBackground": "#85888e"
       }
     },
