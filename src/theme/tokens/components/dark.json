@@ -607,7 +607,7 @@
     "icon": {
       "size": 16,
       "color": "#f0f0f1",
-      "checkedColor": "#ffffff",
+      "checkedColor": "#2b2e33",
       "checkedHoverColor": "#ffffff",
       "disabledColor": "#a2a5a9",
       "sm": { "size": 12 },
