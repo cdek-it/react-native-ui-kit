@@ -1,6 +1,8 @@
 import { memo, useCallback, useMemo, useState } from 'react'
 import {
   type AccessibilityProps,
+  Image,
+  type ImageSourcePropType,
   Pressable,
   type StyleProp,
   Text,
@@ -43,8 +45,8 @@ export interface ToggleButtonProps
   size?: 'xlarge' | 'large' | 'base' | 'small'
   /** Дополнительная стилизация для контейнера компонента */
   style?: StyleProp<ViewStyle>
-  /** SVG-иконка */
-  Icon?: SvgSource
+  /** SVG-иконка или PNG / ImageSource */
+  Icon?: SvgSource | ImageSourcePropType
 }
 
 /**
@@ -75,11 +77,20 @@ export const ToggleButton = memo<ToggleButtonProps>(
     )
 
     const icon = Icon ? (
-      <SvgUniversal
-        {...toggleStyles.icon}
-        source={Icon}
-        testID={ToggleButtonTestId.icon}
-      />
+      isSvgIcon(Icon) ? (
+        <SvgUniversal
+          {...toggleStyles.icon}
+          source={Icon}
+          testID={ToggleButtonTestId.icon}
+        />
+      ) : (
+        <Image
+          resizeMode='contain'
+          source={Icon}
+          style={toggleStyles.icon}
+          testID={ToggleButtonTestId.icon}
+        />
+      )
     ) : null
 
     const onPressIn = useCallback(() => setPressed(true), [])
@@ -295,6 +306,26 @@ const toggleStyles = StyleSheet.create(
     },
   })
 )
+
+const isSvgIcon = (
+  source: SvgSource | ImageSourcePropType
+): source is SvgSource => {
+  if (typeof source === 'function') return true
+
+  if (typeof source === 'number') return false
+
+  if (Array.isArray(source)) return false
+
+  if (source === null || typeof source !== 'object') return false
+
+  if ('xml' in source) return true
+
+  if ('uri' in source && typeof source.uri === 'string') {
+    return /\.svg(?<temp1>$|[?#])/i.test(source.uri)
+  }
+
+  return false
+}
 
 export const ToggleButtonTestId = {
   root: 'ToggleButton',

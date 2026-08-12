@@ -70,6 +70,16 @@ describe('ToggleButton', () => {
           iconPos: 'right',
         },
       ],
+      [
+        'checked = false, disabled = false, iconOnly = true, size = base, with PNG Icon',
+        {
+          checked: false,
+          disabled: false,
+          iconOnly: true,
+          size: 'base',
+          Icon: require('../hotels.png'),
+        },
+      ],
     ]
 
     beforeAll(() => {
@@ -88,6 +98,19 @@ describe('ToggleButton', () => {
 
       expect(toJSON()).toMatchSnapshot()
     })
+  })
+
+  test('should render PNG Icon as Image', () => {
+    const { getByTestId } = render(
+      <ToggleButton
+        {...defaultProps}
+        iconOnly
+        Icon={require('../hotels.png')}
+      />
+    )
+    const icon = getByTestId(ToggleButtonTestId.icon)
+
+    expect(icon.type).toBe('Image')
   })
 
   test('should handle press', async () => {
