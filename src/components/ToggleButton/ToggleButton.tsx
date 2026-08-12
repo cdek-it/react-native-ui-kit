@@ -45,8 +45,10 @@ export interface ToggleButtonProps
   size?: 'xlarge' | 'large' | 'base' | 'small'
   /** Дополнительная стилизация для контейнера компонента */
   style?: StyleProp<ViewStyle>
-  /** SVG-иконка или PNG / ImageSource */
-  Icon?: SvgSource | ImageSourcePropType
+  /** SVG-иконка */
+  Icon?: SvgSource
+  /** SVG-иконка */
+  Image?: ImageSourcePropType
 }
 
 /**
@@ -64,6 +66,7 @@ export const ToggleButton = memo<ToggleButtonProps>(
     size = 'base',
     style,
     Icon,
+    Image: imageSource,
     testID,
     ...rest
   }) => {
@@ -77,20 +80,18 @@ export const ToggleButton = memo<ToggleButtonProps>(
     )
 
     const icon = Icon ? (
-      isSvgIcon(Icon) ? (
-        <SvgUniversal
-          {...toggleStyles.icon}
-          source={Icon}
-          testID={ToggleButtonTestId.icon}
-        />
-      ) : (
-        <Image
-          resizeMode='contain'
-          source={Icon}
-          style={toggleStyles.icon}
-          testID={ToggleButtonTestId.icon}
-        />
-      )
+      <SvgUniversal
+        {...toggleStyles.icon}
+        source={Icon}
+        testID={ToggleButtonTestId.icon}
+      />
+    ) : imageSource ? (
+      <Image
+        resizeMode='contain'
+        source={imageSource}
+        style={toggleStyles.icon}
+        testID={ToggleButtonTestId.icon}
+      />
     ) : null
 
     const onPressIn = useCallback(() => setPressed(true), [])
@@ -306,26 +307,6 @@ const toggleStyles = StyleSheet.create(
     },
   })
 )
-
-const isSvgIcon = (
-  source: SvgSource | ImageSourcePropType
-): source is SvgSource => {
-  if (typeof source === 'function') return true
-
-  if (typeof source === 'number') return false
-
-  if (Array.isArray(source)) return false
-
-  if (source === null || typeof source !== 'object') return false
-
-  if ('xml' in source) return true
-
-  if ('uri' in source && typeof source.uri === 'string') {
-    return /\.svg(?<temp1>$|[?#])/i.test(source.uri)
-  }
-
-  return false
-}
 
 export const ToggleButtonTestId = {
   root: 'ToggleButton',

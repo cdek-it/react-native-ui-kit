@@ -77,7 +77,7 @@ describe('ToggleButton', () => {
           disabled: false,
           iconOnly: true,
           size: 'base',
-          Icon: require('../hotels.png'),
+          Image: require('../hotels.png'),
         },
       ],
     ]
@@ -105,8 +105,73 @@ describe('ToggleButton', () => {
       <ToggleButton
         {...defaultProps}
         iconOnly
-        Icon={require('../hotels.png')}
+        Image={require('../hotels.png')}
       />
+    )
+    const icon = getByTestId(ToggleButtonTestId.icon)
+
+    expect(icon.type).toBe('Image')
+  })
+
+  test('should render SVG Icon as Svg (uri)', async () => {
+    const originalFetch = global.fetch
+    jest
+      .spyOn(global, 'fetch')
+      .mockImplementation()
+      .mockResolvedValue({
+        ok: true,
+        status: 200,
+        text: async () =>
+          '<svg width="10" height="10"><path d="M0 0h10v10H0z" /></svg>',
+      } as Response)
+
+    try {
+      const { findByTestId } = render(
+        <ToggleButton
+          {...defaultProps}
+          iconOnly
+          Icon={{ uri: 'https://example.com/icon.svg' }}
+        />
+      )
+      const icon = await findByTestId(ToggleButtonTestId.icon)
+
+      expect(icon.type).toBe('RNSVGSvgView')
+    } finally {
+      global.fetch = originalFetch
+    }
+  })
+
+  test('should render SVG Icon as Svg (xml)', () => {
+    const { getByTestId } = render(
+      <ToggleButton
+        {...defaultProps}
+        iconOnly
+        Icon={{
+          xml: '<svg width="10" height="10"><path d="M0 0h10v10H0z" /></svg>',
+        }}
+      />
+    )
+    const icon = getByTestId(ToggleButtonTestId.icon)
+
+    expect(icon.type).toBe('RNSVGSvgView')
+  })
+
+  test('should render non-svg uri Icon as Image', () => {
+    const { getByTestId } = render(
+      <ToggleButton
+        {...defaultProps}
+        iconOnly
+        Image={{ uri: 'https://example.com/icon.png' }}
+      />
+    )
+    const icon = getByTestId(ToggleButtonTestId.icon)
+
+    expect(icon.type).toBe('Image')
+  })
+
+  test('should render numeric Icon as Image', () => {
+    const { getByTestId } = render(
+      <ToggleButton {...defaultProps} iconOnly Image={1} />
     )
     const icon = getByTestId(ToggleButtonTestId.icon)
 
