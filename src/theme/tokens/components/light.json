@@ -1106,7 +1106,7 @@
         "paddingLeft": 0
       }
     },
-    "content": { "background": "#ffffff", "color": "#2b2e33" },
+    "content": { "background": "#ffffff", "color": "#85888e" },
     "root": { "borderColor": "#e2e2e4" }
   },
   "drawer": {

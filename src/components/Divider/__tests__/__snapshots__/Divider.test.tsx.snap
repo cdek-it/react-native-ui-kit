@@ -296,7 +296,7 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#2b2e33"
+      stroke="#85888e"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -332,7 +332,7 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
         }
         stroke={
           {
-            "payload": 4281019955,
+            "payload": 4286941326,
             "type": 0,
           }
         }
@@ -354,7 +354,7 @@ exports[`Divider {"Icon": [Object], "align": "end", "layout": "vertical", "text"
           }
           stroke={
             {
-              "payload": 4281019955,
+              "payload": 4286941326,
               "type": 0,
             }
           }
@@ -490,7 +490,7 @@ exports[`Divider {"Icon": [Object], "align": "start", "layout": "horizontal", "s
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#2b2e33"
+      stroke="#85888e"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -526,7 +526,7 @@ exports[`Divider {"Icon": [Object], "align": "start", "layout": "horizontal", "s
         }
         stroke={
           {
-            "payload": 4281019955,
+            "payload": 4286941326,
             "type": 0,
           }
         }
@@ -548,7 +548,7 @@ exports[`Divider {"Icon": [Object], "align": "start", "layout": "horizontal", "s
           }
           stroke={
             {
-              "payload": 4281019955,
+              "payload": 4286941326,
               "type": 0,
             }
           }
