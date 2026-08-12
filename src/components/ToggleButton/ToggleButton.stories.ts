@@ -3,7 +3,12 @@ import { IconArrowDownRight, IconUser } from '@tabler/icons-react-native'
 
 import { ToggleButton } from './ToggleButton'
 
-const icons = { IconArrowDownRight, IconUser, none: undefined }
+const icons = {
+  IconArrowDownRight,
+  IconUser,
+  hotels: require('./hotels.png'),
+  none: undefined,
+}
 
 const meta: Meta<typeof ToggleButton> = {
   title: 'Form/ToggleButton',

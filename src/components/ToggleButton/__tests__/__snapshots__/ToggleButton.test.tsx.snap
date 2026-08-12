@@ -472,6 +472,70 @@ exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = tr
 </Pressable>
 `;
 
+exports[`ToggleButton snapshots checked = false, disabled = false, iconOnly = true, size = base, with PNG Icon 1`] = `
+<Pressable
+  disabled={false}
+  onPress={[MockFunction]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+  style={
+    [
+      {
+        "alignSelf": "flex-start",
+        "borderColor": "rgba(255, 255, 255, 0.0001)",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "overflow": "hidden",
+      },
+      undefined,
+    ]
+  }
+  testID="ToggleButton"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "backgroundColor": "#e2e2e4",
+          "borderRadius": 100,
+          "flexDirection": "row",
+          "gap": 7,
+          "minHeight": 35,
+          "paddingHorizontal": 14,
+          "paddingVertical": 0,
+        },
+        {
+          "aspectRatio": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 0,
+          "paddingVertical": 0,
+        },
+      ]
+    }
+    testID="ToggleButton.container"
+  >
+    <Image
+      resizeMode="contain"
+      source={
+        {
+          "testUri": "../../../src/components/ToggleButton/hotels.png",
+        }
+      }
+      style={
+        {
+          "color": "#181a1f",
+          "height": 17.5,
+          "width": 17.5,
+        }
+      }
+      testID="ToggleButton.icon"
+    />
+  </View>
+</Pressable>
+`;
+
 exports[`ToggleButton snapshots checked = false, disabled = true, iconOnly = false, size = large, with Icon, with label 1`] = `
 <Pressable
   disabled={true}
