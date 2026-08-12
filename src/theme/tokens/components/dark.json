@@ -2387,7 +2387,7 @@
     "tablist": {
       "borderTopWidth": 0,
       "borderRightWidth": 0,
-      "borderBottomWidth": 1,
+      "borderBottomWidth": 2,
       "borderLeftWidth": 0,
       "background": "transparent",
       "borderColor": "#404348"
