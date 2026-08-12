@@ -14,7 +14,7 @@ import type { ThemeType } from '../../theme/types'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
 
 export interface TagProps
-  extends AccessibilityProps, Pick<ViewProps, 'testID'> {
+  extends AccessibilityProps, Pick<ViewProps, 'testID' | 'collapsable'> {
   /** Текст */
   text: string
 
@@ -64,13 +64,20 @@ export const Tag = memo<TagProps>(
     style,
     Icon,
     testID,
+    collapsable,
     ...rest
   }) => {
     tagStyles.useVariants({ severity })
 
     return (
-      <View style={style} testID={testID || TagTestId.root} {...rest}>
+      <View
+        collapsable={collapsable}
+        style={style}
+        testID={testID || TagTestId.root}
+        {...rest}
+      >
         <View
+          collapsable={collapsable}
           style={[tagStyles.container, rounded && tagStyles.roundedContainer]}
           testID={TagTestId.innerContainer}
         >
