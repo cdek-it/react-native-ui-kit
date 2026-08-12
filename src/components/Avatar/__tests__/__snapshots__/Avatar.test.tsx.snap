@@ -11,7 +11,7 @@ exports[`Avatar component tests Size: custom, shape: circle, type: icon, with cu
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -149,7 +149,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: icon 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -287,7 +287,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: image 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -336,7 +336,7 @@ exports[`Avatar component tests Size: large, shape: circle, type: label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -389,7 +389,7 @@ exports[`Avatar component tests Size: large, shape: sqare, type: icon 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -525,7 +525,7 @@ exports[`Avatar component tests Size: large, shape: square, type: image 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -572,7 +572,7 @@ exports[`Avatar component tests Size: large, shape: square, type: label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -623,7 +623,7 @@ exports[`Avatar component tests Size: nomal, shape: circle, type: icon 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -761,7 +761,7 @@ exports[`Avatar component tests Size: normal, shape: circle, type: image 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -810,7 +810,7 @@ exports[`Avatar component tests Size: normal, shape: circle, type: label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -863,7 +863,7 @@ exports[`Avatar component tests Size: normal, shape: sqare, type: icon 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -999,7 +999,7 @@ exports[`Avatar component tests Size: normal, shape: square, type: image 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -1046,7 +1046,7 @@ exports[`Avatar component tests Size: normal, shape: square, type: label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -1097,7 +1097,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: icon 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -1235,7 +1235,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: image 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -1284,7 +1284,7 @@ exports[`Avatar component tests Size: xlarge, shape: circle, type: label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -1337,7 +1337,7 @@ exports[`Avatar component tests Size: xlarge, shape: sqare, type: icon 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -1473,7 +1473,7 @@ exports[`Avatar component tests Size: xlarge, shape: square, type: image 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -1520,7 +1520,7 @@ exports[`Avatar component tests Size: xlarge, shape: square, type: label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -1571,7 +1571,7 @@ exports[`Avatar component tests With badge, showBadge: false 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -1624,7 +1624,7 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#44e858",
-          "borderColor": "#cecfd2",
+          "borderColor": "#ffffff",
           "borderRadius": 14,
           "borderWidth": 1,
           "justifyContent": "center",
