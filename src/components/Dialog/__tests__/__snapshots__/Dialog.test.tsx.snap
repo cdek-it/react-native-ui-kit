@@ -128,7 +128,7 @@ exports[`Dialog component tests basic dialog with title, body and footer 1`] = `
             {
               "backgroundColor": "#ffffff",
               "borderColor": "#e2e2e4",
-              "borderRadius": 1600,
+              "borderRadius": 20,
             },
             {
               "maxHeight": 1234,
