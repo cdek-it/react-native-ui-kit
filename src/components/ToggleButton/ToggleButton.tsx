@@ -45,9 +45,9 @@ export interface ToggleButtonProps
   size?: 'xlarge' | 'large' | 'base' | 'small'
   /** Дополнительная стилизация для контейнера компонента */
   style?: StyleProp<ViewStyle>
-  /** SVG-иконка */
+  /** SVG-иконка. Если передана, то изображение не будет отображаться */
   Icon?: SvgSource
-  /** SVG-иконка */
+  /** Изображение. Будет отображаться, только если не передана иконка Icon */
   Image?: ImageSourcePropType
 }
 
