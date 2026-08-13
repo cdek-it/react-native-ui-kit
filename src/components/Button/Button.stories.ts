@@ -3,10 +3,19 @@ import {
   IconArrowDownRight,
   IconArrowDownLeft,
 } from '@tabler/icons-react-native'
+import { createElement } from 'react'
+import { StyleSheet, View } from 'react-native'
+
+import { Body } from '../Typography'
 
 import { Button } from './Button'
+import type { ButtonBaseVariant, ButtonProps } from './types'
 
 const Icons = { IconArrowDownRight, IconArrowDownLeft, undefined }
+const styles = StyleSheet.create({
+  container: { gap: 16 },
+  example: { gap: 8 },
+})
 
 const meta: Meta<typeof Button> = {
   title: 'Button',
@@ -31,12 +40,44 @@ const meta: Meta<typeof Button> = {
     disabled: { control: 'boolean' },
     iconPosition: { control: 'radio', options: ['prefix', 'postfix'] },
     onPress: { action: 'OnPress' },
-    iconOnly: {
-      control: 'radio',
-      options: ['IconOnly', 'Not IconOnly'],
-      mapping: { IconOnly: true, 'Not IconOnly': undefined },
-    },
     Icon: { control: 'select', options: Object.keys(Icons), mapping: Icons },
+  },
+  parameters: { controls: { exclude: ['iconOnly'] } },
+  render: ({
+    iconOnly: _iconOnly,
+    Icon,
+    iconPosition,
+    label = 'Button',
+    ...args
+  }) => {
+    const buttonProps: ButtonProps<ButtonBaseVariant> = {
+      ...args,
+      Icon,
+      iconPosition,
+      label,
+    }
+    const iconOnlyButtonProps: ButtonProps<ButtonBaseVariant> = {
+      ...args,
+      iconOnly: true,
+      Icon: Icon ?? IconArrowDownRight,
+    }
+
+    return createElement(
+      View,
+      { style: styles.container },
+      createElement(
+        View,
+        { style: styles.example },
+        createElement(Body, null, 'С текстом'),
+        createElement(Button, buttonProps)
+      ),
+      createElement(
+        View,
+        { style: styles.example },
+        createElement(Body, null, 'Только иконка'),
+        createElement(Button, iconOnlyButtonProps)
+      )
+    )
   },
 }
 

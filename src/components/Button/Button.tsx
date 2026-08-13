@@ -17,6 +17,7 @@ import { ButtonVariantContext } from './utils/ButtonVariantContext'
  * @param label - button label
  * @param style - external style control for component
  * @see BaseButton
+ * @link https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=160-5223
  */
 export const Button = memo<ButtonProps<ButtonBaseVariant>>(
   ({ variant = 'primary', ...props }) => {
