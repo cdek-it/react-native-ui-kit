@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/cdek-it/react-native-ui-kit/compare/v1.1.0...v1.2.0) (2026-08-13)
+
+### 🚀 Новый функционал
+
+* добавлена поддержка изображений в toggleButton ([97c983c](https://github.com/cdek-it/react-native-ui-kit/commit/97c983c43de8d9900c0624cc836479dc47aaf6f4))
+* расширено покрытие кейсов для праверки png/svg ([3cee45e](https://github.com/cdek-it/react-native-ui-kit/commit/3cee45e2226c1052a9783069694654fd7096fde0))
+
 ## [1.1.0](https://github.com/cdek-it/react-native-ui-kit/compare/v1.0.3...v1.1.0) (2026-08-06)
 
 ### 🚀 Новый функционал
