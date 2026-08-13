@@ -1,0 +1,6 @@
+interface:
+  display_name: 'UI Kit Figma'
+  short_description: 'Sync UI Kit components from Figma tokens'
+  default_prompt:
+    'Use $ui-kit-figma to implement or sync a UI Kit component from its Figma
+    specification.'
