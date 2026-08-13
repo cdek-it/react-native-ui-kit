@@ -114,14 +114,14 @@ const buttonContainerStyles = StyleSheet.create(
             paddingVertical: button.root.paddingY,
             height: 'auto',
             gap: button.root.gap,
-            borderRadius: button.root.borderRadius,
+            borderRadius: button.extend.extSm.borderRadius,
           },
           small: {
             paddingHorizontal: button.root.sm.paddingX,
             paddingVertical: button.root.sm.paddingY,
             height: 'auto',
-            gap: button.extend.extSm.gap,
-            borderRadius: button.extend.extSm.borderRadius,
+            gap: button.root.gap,
+            borderRadius: button.root.borderRadius,
           },
         },
         shape: {
@@ -422,14 +422,48 @@ const buttonContainerStyles = StyleSheet.create(
           },
         },
 
-        // link + iconOnly special sizes
+        {
+          iconOnly: 'true',
+          size: 'xlarge',
+          styles: {
+            height: button.extend.extXlg.iconOnlyWidth,
+            minHeight: button.extend.extXlg.iconOnlyWidth,
+            maxHeight: button.extend.extXlg.iconOnlyWidth,
+          },
+        },
+        {
+          iconOnly: 'true',
+          size: 'large',
+          styles: {
+            height: button.root.lg.iconOnlyWidth,
+            minHeight: button.root.lg.iconOnlyWidth,
+            maxHeight: button.root.lg.iconOnlyWidth,
+          },
+        },
+        {
+          iconOnly: 'true',
+          size: 'base',
+          styles: {
+            height: button.root.iconOnlyWidth,
+            minHeight: button.root.iconOnlyWidth,
+            maxHeight: button.root.iconOnlyWidth,
+          },
+        },
+        {
+          iconOnly: 'true',
+          size: 'small',
+          styles: {
+            height: button.root.sm.iconOnlyWidth,
+            minHeight: button.root.sm.iconOnlyWidth,
+            maxHeight: button.root.sm.iconOnlyWidth,
+          },
+        },
+
         {
           variant: 'link',
           iconOnly: 'true',
           size: 'xlarge',
           styles: {
-            paddingHorizontal: semantic.dimension.space[100],
-            paddingVertical: semantic.dimension.space[100],
             height: button.extend.extLink.xlg.iconOnlyWidth,
             minHeight: button.extend.extLink.xlg.iconOnlyWidth,
             maxHeight: button.extend.extLink.xlg.iconOnlyWidth,
@@ -440,8 +474,6 @@ const buttonContainerStyles = StyleSheet.create(
           iconOnly: 'true',
           size: 'large',
           styles: {
-            paddingHorizontal: semantic.dimension.space.none,
-            paddingVertical: semantic.dimension.space.none,
             height: button.extend.extLink.lg.iconOnlyWidth,
             minHeight: button.extend.extLink.lg.iconOnlyWidth,
             maxHeight: button.extend.extLink.lg.iconOnlyWidth,
@@ -452,8 +484,6 @@ const buttonContainerStyles = StyleSheet.create(
           iconOnly: 'true',
           size: 'base',
           styles: {
-            paddingHorizontal: semantic.dimension.space[100],
-            paddingVertical: semantic.dimension.space[100],
             height: button.extend.extLink.base.iconOnlyWidth,
             minHeight: button.extend.extLink.base.iconOnlyWidth,
             maxHeight: button.extend.extLink.base.iconOnlyWidth,
@@ -464,8 +494,6 @@ const buttonContainerStyles = StyleSheet.create(
           iconOnly: 'true',
           size: 'small',
           styles: {
-            paddingHorizontal: semantic.dimension.space[100],
-            paddingVertical: semantic.dimension.space[100],
             height: button.extend.extLink.sm.iconOnlyWidth,
             minHeight: button.extend.extLink.sm.iconOnlyWidth,
             maxHeight: button.extend.extLink.sm.iconOnlyWidth,
@@ -473,6 +501,10 @@ const buttonContainerStyles = StyleSheet.create(
         },
       ],
     },
-    iconOnly: { aspectRatio: 1 },
+    iconOnly: {
+      aspectRatio: 1,
+      paddingHorizontal: semantic.dimension.space.none,
+      paddingVertical: semantic.dimension.space.none,
+    },
   })
 )

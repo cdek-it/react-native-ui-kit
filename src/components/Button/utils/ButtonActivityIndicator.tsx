@@ -34,10 +34,10 @@ const buttonActivityIndicatorStyles = StyleSheet.create(
       color: button.extend.disabledColor,
       variants: {
         size: {
-          xlarge: { height: 21 },
-          large: { height: 21 },
-          base: { height: 17.5 },
-          small: { height: 14 },
+          xlarge: { height: button.extend.iconSize.lg },
+          large: { height: button.extend.iconSize.lg },
+          base: { height: button.extend.iconSize.md },
+          small: { height: button.extend.iconSize.sm },
         },
       },
     },
