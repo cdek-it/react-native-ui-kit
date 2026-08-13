@@ -3,10 +3,19 @@ import {
   IconArrowDownRight,
   IconArrowDownLeft,
 } from '@tabler/icons-react-native'
+import { createElement } from 'react'
+import { StyleSheet, View } from 'react-native'
+
+import { Body } from '../Typography'
 
 import { ButtonBadge } from './ButtonBadge'
+import type { ButtonBadgeProps, ButtonBaseVariant, ButtonProps } from './types'
 
 const Icons = { IconArrowDownRight, IconArrowDownLeft, undefined }
+const styles = StyleSheet.create({
+  container: { gap: 16 },
+  example: { gap: 8 },
+})
 
 const meta: Meta<typeof ButtonBadge> = {
   title: 'Button/Badge',
@@ -37,12 +46,45 @@ const meta: Meta<typeof ButtonBadge> = {
       control: 'radio',
       options: ['basic', 'info', 'success', 'warning', 'danger'],
     },
-    iconOnly: {
-      control: 'radio',
-      options: ['IconOnly', 'Not IconOnly'],
-      mapping: { IconOnly: true, 'Not IconOnly': undefined },
-    },
     Icon: { control: 'select', options: Object.keys(Icons), mapping: Icons },
+  },
+  parameters: { controls: { exclude: ['iconOnly'] } },
+  render: ({
+    iconOnly: _iconOnly,
+    Icon,
+    iconPosition,
+    label = 'Button',
+    ...args
+  }) => {
+    const buttonProps: ButtonProps<ButtonBaseVariant> & ButtonBadgeProps = {
+      ...args,
+      Icon,
+      iconPosition,
+      label,
+    }
+    const iconOnlyButtonProps: ButtonProps<ButtonBaseVariant> &
+      ButtonBadgeProps = {
+      ...args,
+      iconOnly: true,
+      Icon: Icon ?? IconArrowDownRight,
+    }
+
+    return createElement(
+      View,
+      { style: styles.container },
+      createElement(
+        View,
+        { style: styles.example },
+        createElement(Body, null, 'С текстом'),
+        createElement(ButtonBadge, buttonProps)
+      ),
+      createElement(
+        View,
+        { style: styles.example },
+        createElement(Body, null, 'Только иконка'),
+        createElement(ButtonBadge, iconOnlyButtonProps)
+      )
+    )
   },
 }
 

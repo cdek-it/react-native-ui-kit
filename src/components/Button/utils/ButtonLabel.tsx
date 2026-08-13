@@ -55,12 +55,25 @@ const buttonLabelStyles = StyleSheet.create(
       includeFontPadding: false,
       verticalAlign: 'middle',
       fontFamily: fonts.fontFamily.heading,
+      letterSpacing: fonts.letterSpacing[500],
       variants: {
         size: {
-          xlarge: { fontSize: fonts.fontSize[500] },
-          large: { fontSize: fonts.fontSize[500] },
-          base: { fontSize: fonts.fontSize[300] },
-          small: { fontSize: fonts.fontSize[100] },
+          xlarge: {
+            fontSize: fonts.fontSize[500],
+            lineHeight: fonts.lineHeight[550],
+          },
+          large: {
+            fontSize: fonts.fontSize[500],
+            lineHeight: fonts.lineHeight[550],
+          },
+          base: {
+            fontSize: fonts.fontSize[300],
+            lineHeight: fonts.lineHeight[500],
+          },
+          small: {
+            fontSize: fonts.fontSize[100],
+            lineHeight: fonts.lineHeight[250],
+          },
         },
         variant: {
           primary: { color: button.colorScheme.root.primary.color },
