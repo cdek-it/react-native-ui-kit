@@ -52,7 +52,8 @@ Do not load every skill preemptively; use the one matching the request.
 ## Git
 
 Do not commit or push unless explicitly asked. Use Conventional Commits for
-requested commits.
+requested commits. Keep the conventional type and optional scope in English;
+write the commit subject in Russian.
 
 ## Safety
 
