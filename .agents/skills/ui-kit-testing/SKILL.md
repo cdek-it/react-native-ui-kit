@@ -2,9 +2,8 @@
 name: ui-kit-testing
 description: >
   Write or refactor React Native Prime UI Kit Jest and RNTL tests for
-  components, hooks, controlled behavior, timers, animations, snapshots,
-  accessibility, and public TypeScript contracts. Do not use for whole-suite
-  audits
+  components, hooks, controlled behavior, timers, animations, accessibility, and
+  public TypeScript contracts. Do not use for whole-suite audits
 ---
 
 # UI Kit Testing
@@ -18,8 +17,8 @@ inspect the implementation and nearest tests before choosing helpers or mocks.
 1. Search existing tests and Jest setup before adding a helper, mock, provider,
    timer utility, or console suppression
 2. Load only the references required by the test:
-   - test cases, render helpers, selectors, accessibility, snapshots, types, or
-     naming: `references/test-authoring.md`
+   - test cases, render helpers, selectors, accessibility, types, or naming:
+     `references/test-authoring.md`
    - child, external, native, animated, or console mocks:
      `references/mocks-and-native-ui.md`
    - timers, debounce, animations, delayed updates, or manual promises:
@@ -33,6 +32,15 @@ inspect the implementation and nearest tests before choosing helpers or mocks.
    public contract
 5. Before finishing, remove avoidable mocks, oversized helpers, redundant waits,
    and assertions that do not prove the public contract
+
+## Assertion Boundaries
+
+- Assert rendered data, presence or absence, callbacks, controlled behavior,
+  accessibility, and public contracts
+- Do not assert exact colors, dimensions, theme-token values, or style objects
+- Do not add or update snapshots to verify component appearance or structure.
+  Replace affected visual snapshots with explicit behavioral assertions
+- Use the normal build to validate public TypeScript contracts and token access
 
 ## Verification
 

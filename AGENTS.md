@@ -15,8 +15,11 @@ Use only top-level skills under `.agents/skills/`; nested `vendor/` skills are
 source material, not runtime instructions.
 
 - Use `$ui-kit-testing` to write or refactor focused Jest/RNTL tests, including
-  controlled behavior, accessibility, mocks, timers, animations, snapshots, and
-  public TypeScript contracts.
+  controlled behavior, accessibility, mocks, timers, animations, and public
+  TypeScript contracts.
+- Use `$ui-kit-figma` to implement or sync components from Figma, map design
+  variables to local theme tokens, and align material variants and Storybook
+  scenarios.
 - Use `$ui-kit-review` for diffs and local changes or explicit architecture,
   onboarding, test-suite, debt, health, agent-instruction, and diagnostic
   audits. It is read-only unless the user requests fixes.
