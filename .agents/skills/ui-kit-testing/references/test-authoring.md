@@ -1,7 +1,8 @@
 # Test Authoring
 
 Read this reference when creating or changing test cases, render helpers,
-selectors, accessibility assertions, snapshots, public types, or test names.
+selectors, accessibility assertions, public types, test names, or replacing
+snapshots with behavioral assertions.
 
 ## Placement And Helpers
 
@@ -37,7 +38,9 @@ normal build.
 
 ## Snapshots
 
-Snapshot only small, stable output whose complete structure is the behavior.
-Prefer explicit assertions for interaction, state, accessibility, layout, and
-animations. Update snapshots only for intentional UI changes. Do not snapshot
-mocked child trees, large style objects, or ordinary prop forwarding.
+Do not add or update snapshots for component appearance, structure, styles, or
+theme-token values. When a change invalidates a visual snapshot, replace it with
+explicit assertions for rendered data, presence or absence, interaction,
+controlled state, callbacks, or accessibility. Use a snapshot only when the user
+explicitly requests one and the contract cannot be stated more clearly with
+behavioral assertions.
