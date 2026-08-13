@@ -156,12 +156,12 @@
     }
   },
   "avatar": {
-    "extend": { "borderColor": "#2b2e33", "circle": { "borderRadius": 1600 } },
+    "extend": { "borderColor": "#56595f", "circle": { "borderRadius": 1600 } },
     "root": {
       "width": 32,
       "height": 32,
       "fontSize": 16,
-      "color": "#ffffff",
+      "color": "#2b2e33",
       "background": "#44e858",
       "borderRadius": 14
     },
@@ -200,7 +200,7 @@
       "info": { "background": "#18538d", "color": "#f0f9ff" },
       "primary": { "background": "#44e858", "color": "#2b2e33" },
       "secondary": { "background": "#2b2e33", "color": "#ffffff" },
-      "success": { "background": "#aafbb7", "color": "#f0fff3" },
+      "success": { "background": "#168322", "color": "#f0fff3" },
       "warn": { "background": "#9d6d0e", "color": "#fff9f0" }
     },
     "root": {
@@ -607,7 +607,7 @@
     "icon": {
       "size": 16,
       "color": "#f0f0f1",
-      "checkedColor": "#2b2e33",
+      "checkedColor": "#ffffff",
       "checkedHoverColor": "#ffffff",
       "disabledColor": "#a2a5a9",
       "sm": { "size": 12 },
@@ -1049,10 +1049,10 @@
   "dialog": {
     "extend": { "borderWidth": 1, "backdrop": "rgba(0, 0, 0, 0.6000)" },
     "root": {
-      "background": "#404348",
+      "background": "#56595f",
       "borderColor": "#404348",
       "color": "#ffffff",
-      "borderRadius": 20,
+      "borderRadius": 1600,
       "shadow": "0 4px 8px rgba(0, 0, 0, 0.2000)"
     },
     "header": {
@@ -1106,7 +1106,7 @@
         "paddingLeft": 0
       }
     },
-    "content": { "background": "#404348", "color": "#a2a5a9" },
+    "content": { "background": "#404348", "color": "#ffffff" },
     "root": { "borderColor": "#404348" }
   },
   "drawer": {
@@ -2387,7 +2387,7 @@
     "tablist": {
       "borderTopWidth": 0,
       "borderRightWidth": 0,
-      "borderBottomWidth": 2,
+      "borderBottomWidth": 1,
       "borderLeftWidth": 0,
       "background": "transparent",
       "borderColor": "#404348"
@@ -2801,21 +2801,21 @@
   "toggleswitch": {
     "colorScheme": {
       "handle": {
-        "background": "#ffffff",
-        "checkedBackground": "#181a1f",
+        "background": "#56595f",
+        "checkedBackground": "#56595f",
         "checkedColor": "#2b2e33",
-        "checkedHoverBackground": "#181a1f",
+        "checkedHoverBackground": "#56595f",
         "checkedHoverColor": "#2b2e33",
         "color": "#2b2e33",
         "disabledBackground": "#85888e",
-        "hoverBackground": "#ffffff",
+        "hoverBackground": "#56595f",
         "hoverColor": "#2b2e33"
       },
       "root": {
         "background": "#6d7076",
-        "checkedBackground": "#f0f0f1",
-        "checkedHoverBackground": "#e2e2e4",
-        "disabledBackground": "#404348",
+        "checkedBackground": "#2b2e33",
+        "checkedHoverBackground": "#404348",
+        "disabledBackground": "#e2e2e4",
         "hoverBackground": "#85888e"
       }
     },

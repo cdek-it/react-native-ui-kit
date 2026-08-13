@@ -156,7 +156,7 @@
     }
   },
   "avatar": {
-    "extend": { "borderColor": "#ffffff", "circle": { "borderRadius": 1600 } },
+    "extend": { "borderColor": "#cecfd2", "circle": { "borderRadius": 1600 } },
     "root": {
       "width": 32,
       "height": 32,
@@ -1052,7 +1052,7 @@
       "background": "#ffffff",
       "borderColor": "#e2e2e4",
       "color": "#2b2e33",
-      "borderRadius": 20,
+      "borderRadius": 1600,
       "shadow": "0 4px 8px rgba(0, 0, 0, 0.2000)"
     },
     "header": {
@@ -1106,7 +1106,7 @@
         "paddingLeft": 0
       }
     },
-    "content": { "background": "#ffffff", "color": "#85888e" },
+    "content": { "background": "#ffffff", "color": "#2b2e33" },
     "root": { "borderColor": "#e2e2e4" }
   },
   "drawer": {
@@ -2387,7 +2387,7 @@
     "tablist": {
       "borderTopWidth": 0,
       "borderRightWidth": 0,
-      "borderBottomWidth": 2,
+      "borderBottomWidth": 1,
       "borderLeftWidth": 0,
       "background": "transparent",
       "borderColor": "#e2e2e4"
