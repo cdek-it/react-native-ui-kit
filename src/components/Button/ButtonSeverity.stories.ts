@@ -3,10 +3,23 @@ import {
   IconArrowDownRight,
   IconArrowDownLeft,
 } from '@tabler/icons-react-native'
+import { createElement } from 'react'
+import { StyleSheet, View } from 'react-native'
+
+import { Body } from '../Typography'
 
 import { ButtonSeverity } from './ButtonSeverity'
+import type {
+  ButtonProps,
+  ButtonSeverityProps,
+  ButtonSeverityVariant,
+} from './types'
 
 const Icons = { IconArrowDownRight, IconArrowDownLeft, undefined }
+const styles = StyleSheet.create({
+  container: { gap: 16 },
+  example: { gap: 8 },
+})
 
 const meta: Meta<typeof ButtonSeverity> = {
   title: 'Button/Severity',
@@ -33,12 +46,41 @@ const meta: Meta<typeof ButtonSeverity> = {
       control: 'radio',
       options: ['info', 'success', 'warning', 'danger'],
     },
-    iconOnly: {
-      control: 'radio',
-      options: ['IconOnly', 'Not IconOnly'],
-      mapping: { IconOnly: true, 'Not IconOnly': undefined },
-    },
     Icon: { control: 'select', options: Object.keys(Icons), mapping: Icons },
+  },
+  parameters: { controls: { exclude: ['iconOnly'] } },
+  render: ({
+    iconOnly: _iconOnly,
+    Icon,
+    iconPosition,
+    label = 'Button',
+    ...args
+  }) => {
+    const buttonProps: ButtonProps<ButtonSeverityVariant> &
+      ButtonSeverityProps = { ...args, Icon, iconPosition, label }
+    const iconOnlyButtonProps: ButtonProps<ButtonSeverityVariant> &
+      ButtonSeverityProps = {
+      ...args,
+      iconOnly: true,
+      Icon: Icon ?? IconArrowDownRight,
+    }
+
+    return createElement(
+      View,
+      { style: styles.container },
+      createElement(
+        View,
+        { style: styles.example },
+        createElement(Body, null, 'С текстом'),
+        createElement(ButtonSeverity, buttonProps)
+      ),
+      createElement(
+        View,
+        { style: styles.example },
+        createElement(Body, null, 'Только иконка'),
+        createElement(ButtonSeverity, iconOnlyButtonProps)
+      )
+    )
   },
 }
 
