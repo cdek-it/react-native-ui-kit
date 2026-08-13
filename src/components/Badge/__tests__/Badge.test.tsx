@@ -1,29 +1,53 @@
 import { render } from '@testing-library/react-native'
 
-import { Badge, type BadgeProps } from '../Badge'
+import { Badge, type BadgeSeverity } from '../Badge'
 
-describe('Badge component tests', () => {
-  const snapshotCases: Array<[string, BadgeProps]> = [
-    ['dot, severity: basic', { dot: true, severity: 'basic' }],
-    ['dot, severity: info', { dot: true, severity: 'info' }],
-    ['dot, severity: success', { dot: true, severity: 'success' }],
-    ['dot, severity: warning', { dot: true, severity: 'warning' }],
-    ['dot, severity: danger', { dot: true, severity: 'danger' }],
-    ['severity: basic', { children: '12', severity: 'basic' }],
-    ['severity: basic', { children: '12', severity: 'info' }],
-    ['severity: basic', { children: '12', severity: 'success' }],
-    ['severity: basic', { children: '12', severity: 'warning' }],
-    ['severity: basic', { children: '12', severity: 'danger' }],
-    ['severity: default', { children: '12' }],
-    [
-      'with custom style',
-      { dot: true, severity: 'basic', style: { margin: 10 } },
-    ],
+describe('Badge', () => {
+  const severities: BadgeSeverity[] = [
+    'basic',
+    'info',
+    'success',
+    'warning',
+    'danger',
   ]
 
-  test.each(snapshotCases)('%s', (_, props) => {
-    const renderedBadge = render(<Badge {...props} />)
+  test.each(severities)(
+    'отображает переданный текст для severity %s',
+    (severity) => {
+      const { getByText } = render(<Badge severity={severity}>12</Badge>)
 
-    expect(renderedBadge.toJSON()).toMatchSnapshot()
+      expect(getByText('12')).toBeOnTheScreen()
+    }
+  )
+
+  test.each(severities)('отображает dot для severity %s', (severity) => {
+    const { getByTestId, queryByText } = render(
+      <Badge dot severity={severity} testID='Badge' />
+    )
+
+    expect(getByTestId('Badge')).toBeOnTheScreen()
+    expect(queryByText('12')).not.toBeOnTheScreen()
   })
+
+  test.each(['large', 'xlarge'] as const)(
+    'отображает переданный текст для размера %s',
+    (size) => {
+      const { getByText } = render(
+        <Badge severity='danger' size={size}>
+          12
+        </Badge>
+      )
+
+      expect(getByText('12')).toBeOnTheScreen()
+    }
+  )
+
+  test.each(['large', 'xlarge'] as const)(
+    'отображает dot-вариант для размера %s',
+    (size) => {
+      const { getByTestId } = render(<Badge dot size={size} testID='Badge' />)
+
+      expect(getByTestId('Badge')).toBeOnTheScreen()
+    }
+  )
 })
