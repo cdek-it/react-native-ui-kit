@@ -34,6 +34,7 @@ export interface ProgressSpinnerProps {
 /**
  * Используется для отображения состояний ожидания в интерфейсе
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=1219-3086
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24043-15392
  */
 export const ProgressSpinner = memo<ProgressSpinnerProps>(
   ({ size = 'md', fill = 'primary' }) => {

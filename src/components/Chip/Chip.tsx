@@ -34,6 +34,7 @@ export interface ChipProps extends PressableProps {
  * Компонет Нажимабельного тега с возможностью закрытия
  * Используется для представления массива данных в виде меток
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5126&t=jMMaE0JO924pG1ga-4
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24043-14962
  */
 export const Chip = memo<ChipProps>(
   ({

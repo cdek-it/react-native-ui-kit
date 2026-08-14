@@ -12,6 +12,7 @@ export interface InputTextProps extends InputTextBaseProps {
 /**
  * Компонент для ввода текста
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5470&m=dev
+ * @link https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24036-56
  * @see InputTextBase
  * @see InputTextBaseProps
  */

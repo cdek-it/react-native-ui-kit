@@ -40,6 +40,7 @@ export interface CheckboxProps
 /**
  * Используется для множественного выбора элементов
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5316
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24035-64
  */
 export const Checkbox = memo<CheckboxProps>(
   ({

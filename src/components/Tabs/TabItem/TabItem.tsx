@@ -32,6 +32,7 @@ export interface TabItemProps {
 
 // Часть навигационного компонента Tabs
 // @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=888-13076&t=hIQjdrqPKK8BWYev-4
+// @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24043-2196
 //
 export const TabItem = memo<TabItemProps>(
   ({ Icon, label, badge, index, onPress, disabled, active, onLayout }) => {

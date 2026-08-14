@@ -53,6 +53,7 @@ export interface SelectButtonItemProps extends Pick<
 /**
  * Дочерний элемент компонента SelectButton. Не используется отдельно от SelectButton.
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=481-4393
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24035-56
  */
 export const SelectButtonItem = memo<SelectButtonItemProps>(
   ({
