@@ -54,6 +54,7 @@ export interface MenuItemTemplateProps extends ViewProps {
  * Шаблон элемента меню. Содержит максимальное количество компонентов внутри пункта меню и используется как основа для создания пунктов меню любой возможной конфигурации.
  *
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=937-6724&m=dev
+ * @link https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24043-18237
  */
 export const MenuItemTemplate = memo<MenuItemTemplateProps>(
   ({

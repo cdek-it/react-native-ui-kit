@@ -266,6 +266,7 @@ const SelectButtonStrict = memo<StrictSelectButtonProps>(
 /**
  * Используется для маркировки элементов интерфейса
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4921
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24035-56
  */
 export const SelectButton = memo<SelectButtonProps>((props) => (
   <SelectButtonStrict {...normalizeSelectButtonProps(props)} />

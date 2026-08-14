@@ -60,6 +60,7 @@ const clamp = (val: number, min: number, max: number) => {
 /**
  * Используется для указания значения или диапазона значений с помощью ползунка
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-6090&m=dev
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24037-80
  */
 export const Slider = memo<SliderProps>(
   // TODO: refactor component to fix max-statements
