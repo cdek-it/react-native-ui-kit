@@ -1,10 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { createElement } from 'react'
 import { StyleSheet, View } from 'react-native'
 
 import { Body } from '../Typography'
 
-import { Badge, type BadgeProps } from './Badge'
+import { Badge } from './Badge'
 
 const styles = StyleSheet.create({
   container: { gap: 16 },
@@ -24,26 +23,20 @@ const meta: Meta<typeof Badge> = {
     size: { control: 'radio', options: ['base', 'large', 'xlarge'] },
   },
   parameters: { controls: { exclude: ['dot'] } },
-  render: ({ children = 'Badge', severity, size }) => {
-    const textBadgeProps: BadgeProps = { children, dot: false, severity, size }
-
-    return createElement(
-      View,
-      { style: styles.container },
-      createElement(
-        View,
-        { style: styles.example },
-        createElement(Body, null, 'Severity'),
-        createElement(Badge, textBadgeProps)
-      ),
-      createElement(
-        View,
-        { style: styles.example },
-        createElement(Body, null, 'Dot'),
-        createElement(Badge, { dot: true, severity, size })
-      )
-    )
-  },
+  render: ({ children = 'Badge', severity, size }) => (
+    <View style={styles.container}>
+      <View style={styles.example}>
+        <Body>Severity</Body>
+        <Badge severity={severity} size={size}>
+          {children}
+        </Badge>
+      </View>
+      <View style={styles.example}>
+        <Body>Dot</Body>
+        <Badge dot severity={severity} size={size} />
+      </View>
+    </View>
+  ),
 }
 
 export default meta
