@@ -115,7 +115,7 @@ const styles = StyleSheet.create(({ components, semantic }) => ({
     width: components.checkbox.root.width,
     height: components.checkbox.root.height,
   },
-  background: { ...RNStyleSheet.absoluteFillObject },
+  background: { ...RNStyleSheet.absoluteFill },
   backgroundState: {
     borderRadius: components.checkbox.root.borderRadius,
     borderWidth: components.checkbox.root.extend.borderWidth,
