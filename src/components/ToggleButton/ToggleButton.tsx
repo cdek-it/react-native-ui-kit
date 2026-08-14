@@ -54,6 +54,7 @@ export interface ToggleButtonProps
 /**
  * Используется для выбора нескольких значений с помощью кнопки
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4821
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24035-60
  */
 export const ToggleButton = memo<ToggleButtonProps>(
   ({

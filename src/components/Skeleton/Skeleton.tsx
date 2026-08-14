@@ -16,6 +16,7 @@ interface SkeletonProps extends ViewProps {}
 /**
  * Используется для отображения контента в момент загрузки
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=5241-3731
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24043-15545
  */
 export const Skeleton = memo<SkeletonProps>(({ style, testID, ...rest }) => {
   const {

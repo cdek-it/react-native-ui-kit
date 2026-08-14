@@ -99,6 +99,7 @@ const messageIconColor: Record<
 /**
  * Унифицированный компонент, который используется для отображения информационных сообщений
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=562-2947
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24043-21934
  */
 export const Message = memo<MessageProps>(
   ({
