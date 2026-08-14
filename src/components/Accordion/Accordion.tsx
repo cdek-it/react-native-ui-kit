@@ -39,6 +39,7 @@ export interface AccordionProps extends ViewProps {
  * @param withSeparator - Наличие разделитель. Когда true, верхняя граница заголовка становится разделителем
  * @param disabled - Отключенное состояние. Когда true компонент рендерится в соответствии со значением isInitiallyExpanded и не реагирует на нажатия
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace--DS-?node-id=1207-1852&m=dev
+ * @link https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24043-1592
  */
 export const Accordion: React.FC<AccordionProps> = ({
   Icon,

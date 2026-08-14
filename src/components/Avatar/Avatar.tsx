@@ -122,6 +122,7 @@ const ICON_MULTIPLIER = 0.43
  * @param badge - Компонент бейджа
  * @param showBadge - Показывать бейдж или нет
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4972&m=dev
+ * @link https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24043-14161
  */
 export const Avatar = memo<AvatarProps>(
   ({

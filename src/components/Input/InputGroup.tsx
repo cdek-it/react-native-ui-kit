@@ -28,6 +28,7 @@ export type InputGroupProps = InputGroupBaseProps & InputTextBaseProps
 /**
  * Компонент группы инпута. Позволяет обернуть инпут в группу и добавить кнопки-аддоны слева и справа
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5932&m=dev
+ * @link https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24037-68
  * @see InputTextBase
  * @see InputGroupAddon
  */

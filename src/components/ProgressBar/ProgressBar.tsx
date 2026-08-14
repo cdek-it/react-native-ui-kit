@@ -37,6 +37,7 @@ export interface ProgressBarProps extends Pick<ViewProps, 'testID'> {
  * @param style - стилизация компонента ProgressBar
  * @see ProgressBarProps
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5024&m=dev
+ * @link https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24043-14314
  */
 export const ProgressBar = memo<ProgressBarProps>(
   ({ value: propsValue, showValue = false, style }) => {

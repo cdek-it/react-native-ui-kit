@@ -52,6 +52,7 @@ export interface DividerProps {
 /**
  * Используется для визуального разделения контента
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5178
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24043-379
  */
 export const Divider = memo<DividerProps>(
   ({

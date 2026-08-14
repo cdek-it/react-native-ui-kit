@@ -19,6 +19,7 @@ export interface InputGroupAddonProps {
 /**
  * Служебный компонент для группировки инпута
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5932&m=dev
+ * @link https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24037-68
  * @see InputGroup
  */
 export const InputGroupAddon = memo<InputGroupAddonProps>(
