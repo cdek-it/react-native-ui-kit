@@ -36,6 +36,9 @@ Do not load every skill preemptively; use the one matching the request.
   controlling prop changes.
 - In new source and test files, use `UpperPascalCase` `testID` values. Existing
   IDs are compatibility-sensitive; do not flag or rename them only for format.
+- Story files containing JSX must use the `.stories.tsx` extension and JSX. Do
+  not use `createElement` to keep them as `.stories.ts`; reserve `.stories.ts`
+  for stories without JSX.
 - A new public component or material variant normally needs typed source, a
   barrel export, focused tests, and representative Storybook states.
 
