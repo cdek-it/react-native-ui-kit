@@ -34,16 +34,18 @@ change.
 
 - Treat Figma variable bindings as the source of token intent. Treat resolved
   pixel and color values as inspection data, not values to copy into source.
+- Treat `design-tokens/input/tokens.json` as the latest immutable export from
+  the designer. Never edit it during component or Figma synchronization work.
+- Treat `src/theme/tokens/**` as immutable generated output. Never edit or
+  regenerate these files during component or Figma synchronization work.
 - Reuse tokens from `src/theme/tokens`; do not hardcode a resolved value when a
   matching local token exists.
 - Prefer a component token when Figma explicitly binds the property to that
   component variable. Use a semantic token only when the design intent is
   semantic or no component binding exists.
-- Do not edit generated token JSON or token-generator output unless the user
-  explicitly includes token-source changes in scope.
-- Do not silently replace a missing component token with an approximate semantic
-  token. Report the gap and distinguish a component implementation change from a
-  token-source change.
+- If an exact Figma value has no matching existing token, do not hardcode it,
+  change token files, or silently substitute an approximate token. Report the
+  gap and explain which part cannot be matched exactly with the current tokens.
 - Apply severity, size, state, and theme bindings to every affected layer, not
   only the outer container. Check text, background, border, icon, and shape
   tokens independently.
