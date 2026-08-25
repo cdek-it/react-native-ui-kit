@@ -1,5 +1,11 @@
-import { memo } from 'react'
-import { View, Text, type TextStyle, type ViewProps } from 'react-native'
+import { memo, useState } from 'react'
+import {
+  Pressable,
+  View,
+  Text,
+  type PressableProps,
+  type TextStyle,
+} from 'react-native'
 
 import Animated, { type AnimatedStyle } from 'react-native-reanimated'
 
@@ -7,12 +13,17 @@ import { StyleSheet } from 'react-native-unistyles'
 
 import effects from '../../../theme/tokens/semantic/effects.json'
 
-export interface InputOtpItemProps extends Pick<ViewProps, 'testID'> {
+import { createInputOtpTestIds } from './testIds'
+
+export interface InputOtpItemProps extends Pick<
+  PressableProps,
+  'onPress' | 'testOnly_pressed'
+> {
   value?: string
   error: boolean
-  pressed: boolean
   disabled: boolean
   focused: boolean
+  testIdPrefix: string
 }
 
 const CURSOR_ANIMATION_DURATION = 500
@@ -32,52 +43,80 @@ const cursorAnimationStyle = {
 } satisfies AnimatedStyle<TextStyle>
 
 export const InputOtpItem = memo<InputOtpItemProps>(
-  ({ value, error, pressed, disabled, focused, testID }) => {
+  ({
+    value,
+    error,
+    disabled,
+    focused,
+    testIdPrefix,
+    testOnly_pressed,
+    onPress,
+  }) => {
+    const [isHovered, setIsHovered] = useState(false)
+    const testIds = createInputOtpTestIds(testIdPrefix)
+
     return (
-      <View
-        style={[
+      <Pressable
+        accessible={false}
+        disabled={disabled}
+        style={({ pressed }) => [
           styles.container,
+          (pressed || isHovered) && styles.hovered,
+          focused && styles.focused,
           error && styles.error,
-          pressed && styles.pressed,
+          error && focused && styles.errorFocused,
           disabled && styles.disabled,
         ]}
+        testID={testIds.itemContainer}
+        testOnly_pressed={testOnly_pressed}
+        onHoverIn={() => setIsHovered(true)}
+        onHoverOut={() => setIsHovered(false)}
+        onPress={onPress}
       >
         {focused ? (
-          <View style={styles.textRow} testID={`${testID}CursorRow`}>
+          <View style={styles.textRow} testID={testIds.cursorRow}>
             {value ? (
-              <Text style={styles.text} testID={testID}>
+              <Text
+                style={[styles.text, disabled && styles.disabledText]}
+                testID={testIds.item}
+              >
                 {value}
               </Text>
             ) : null}
             <Animated.Text
               accessibilityElementsHidden
               importantForAccessibility='no-hide-descendants'
-              style={[styles.text, styles.cursor, cursorAnimationStyle]}
-              testID={`${testID}Cursor`}
+              style={[
+                styles.text,
+                disabled && styles.disabledText,
+                cursorAnimationStyle,
+              ]}
+              testID={testIds.cursor}
             >
               |
             </Animated.Text>
           </View>
         ) : (
-          <Text style={styles.text} testID={testID}>
+          <Text
+            style={[styles.text, disabled && styles.disabledText]}
+            testID={testIds.item}
+          >
             {value}
           </Text>
         )}
-      </View>
+      </Pressable>
     )
   }
 )
 
-// Рамка, цвет и отступы намеренно берутся у inputtext: поле OTP должно выглядеть
-// как обычное поле ввода. Собственные токены inputotp описывают только отличия —
-// тот же приём, что в пресете PrimeUIX lara, где inputotp задаёт лишь gap и width.
 const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
   container: {
-    minHeight: components.inputotp.extend.height,
     minWidth: components.inputotp.extend.height,
-    paddingHorizontal: components.inputtext.root.paddingX,
-    borderBottomWidth: components.inputotp.extend.borderWidth,
-    borderColor: components.inputtext.root.borderColor,
+    minHeight: components.inputotp.extend.height,
+    borderWidth: components.inputotp.extend.borderWidth,
+    borderRadius: components.inputtext.root.borderRadius,
+    borderColor: semantic.colorScheme.color.border.neutral.strong,
+    backgroundColor: semantic.colorScheme.color.bg.surface.default.default,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -85,21 +124,36 @@ const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
   textRow: { flexDirection: 'row', alignItems: 'center' },
 
   text: {
-    fontSize: fonts.fontSize[600],
-    fontFamily: fonts.fontFamily.heading,
+    fontSize: fonts.fontSize[200],
+    lineHeight: fonts.lineHeight[200],
+    fontFamily: fonts.fontFamily.base,
     fontWeight: fonts.fontWeight.regular,
-    color: components.inputtext.root.color,
+    color: semantic.colorScheme.color.fg.active,
     includeFontPadding: false,
+    textAlign: 'center',
   },
 
-  pressed: { borderColor: components.inputtext.root.hoverBorderColor },
+  hovered: { borderColor: semantic.colorScheme.color.border.brand.strong },
 
-  error: { borderColor: components.inputtext.root.invalidBorderColor },
+  focused: {
+    borderColor: semantic.colorScheme.color.border.brand.strong,
+    boxShadow: `0 0 0 3.5px ${semantic.colorScheme.color.border.focus}`,
+  },
+
+  error: {
+    borderColor: semantic.colorScheme.color.border.status.danger.strong,
+  },
+
+  errorFocused: {
+    boxShadow: `0 0 0 3.5px ${semantic.colorScheme.color.bg.status.danger.weak.hover}`,
+  },
 
   disabled: {
-    mixBlendMode: 'luminosity',
-    opacity: semantic.effects.opacity[60],
+    backgroundColor: semantic.colorScheme.color.bg.neutral.weak.disabled,
+    borderColor: semantic.colorScheme.color.border.neutral.strong,
+    boxShadow: 'none',
+    opacity: semantic.effects.opacity[50],
   },
 
-  cursor: { color: components.inputtext.root.color, marginBottom: 3 },
+  disabledText: { color: semantic.colorScheme.color.fg.muted },
 }))
