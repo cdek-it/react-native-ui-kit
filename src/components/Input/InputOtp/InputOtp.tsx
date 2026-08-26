@@ -83,6 +83,9 @@ export const InputOtp = memo<InputOtpProps>(
     const inputRef = useRef<TextInput>(null)
     const isInputEditable = !disabled && editable !== false
     const inputValue = normalizeOtpValue(value, length)
+    const inputSelection = selection ?? getDefaultSelection(inputValue)
+    const hasSelectedText =
+      (inputSelection.end ?? inputSelection.start) > inputSelection.start
 
     useImperativeHandle<TextInput | null, TextInput | null>(
       propsInputRef,
@@ -108,12 +111,13 @@ export const InputOtp = memo<InputOtpProps>(
     const handleChange = useCallback(
       (text: string) => {
         const nextValue = normalizeOtpValue(text, length)
+        const isSameValueReplacement = hasSelectedText && text === inputValue
 
-        if (nextValue !== inputValue) {
+        if (nextValue !== inputValue || isSameValueReplacement) {
           onChange(nextValue)
         }
       },
-      [inputValue, length, onChange]
+      [hasSelectedText, inputValue, length, onChange]
     )
 
     const handleFocus = useCallback(
@@ -132,7 +136,6 @@ export const InputOtp = memo<InputOtpProps>(
       [onBlur]
     )
 
-    const inputSelection = selection ?? getDefaultSelection(inputValue)
     const activeIndex = getActiveIndex(inputSelection.start, length)
     const testIds = createInputOtpTestIds(testID ?? InputOtpTestId.root)
 
