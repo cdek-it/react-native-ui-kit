@@ -17,6 +17,10 @@ export interface InputTextBaseProps extends Omit<
    */
   clearable?: boolean
   /**
+   * Функция вызываемая при очистке поля
+   */
+  onClear?: () => void
+  /**
    * Управление режимом скрытия текста
    * - `true` — всегда скрывать (как в TextInput)
    * - `false` — не скрывать

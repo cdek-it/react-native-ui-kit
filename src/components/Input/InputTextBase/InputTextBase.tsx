@@ -63,6 +63,7 @@ export const InputTextBase = memo<
   ({
     state,
     clearable = true,
+    onClear,
     secureTextEntry: secureTextEntryProp = false,
     inputRef: propsInputRef,
     disabled,
@@ -115,8 +116,9 @@ export const InputTextBase = memo<
     )
 
     const clear = useCallback(() => {
+      onClear?.()
       onChangeText('')
-    }, [onChangeText])
+    }, [onChangeText, onClear])
 
     const value = useMemo(
       () => otherProps.value ?? valueState,
