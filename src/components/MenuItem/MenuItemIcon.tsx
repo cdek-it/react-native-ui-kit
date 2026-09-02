@@ -69,7 +69,7 @@ export const MenuItemIcon = ({
   )
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container(style)}>
       <View>
         <SvgUniversal source={Icon} {...style} />
         {badgeSeverity ? (
@@ -87,7 +87,9 @@ export const MenuItemIcon = ({
 }
 
 const styles = StyleSheet.create(() => ({
-  container: { justifyContent: 'center', position: 'relative' },
+  container: ({ width, height }: MenuItemIconStyle) => {
+    return { justifyContent: 'center', position: 'relative', width, height }
+  },
 
   badge: { position: 'absolute' },
 }))
