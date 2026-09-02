@@ -84,10 +84,7 @@ export const InputOtpItem = memo<InputOtpItemProps>(
                 >
                   |
                 </Text>
-                <Text
-                  style={[styles.text, disabled && styles.disabledText]}
-                  testID={testIds.item}
-                >
+                <Text style={styles.text} testID={testIds.item}>
                   {value}
                 </Text>
               </>
@@ -95,21 +92,14 @@ export const InputOtpItem = memo<InputOtpItemProps>(
             <Animated.Text
               accessibilityElementsHidden
               importantForAccessibility='no-hide-descendants'
-              style={[
-                styles.text,
-                disabled && styles.disabledText,
-                cursorAnimationStyle,
-              ]}
+              style={[styles.text, cursorAnimationStyle]}
               testID={testIds.cursor}
             >
               |
             </Animated.Text>
           </View>
         ) : (
-          <Text
-            style={[styles.text, disabled && styles.disabledText]}
-            testID={testIds.item}
-          >
+          <Text style={styles.text} testID={testIds.item}>
             {value}
           </Text>
         )}
@@ -120,12 +110,14 @@ export const InputOtpItem = memo<InputOtpItemProps>(
 
 const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
   container: {
-    minWidth: components.inputotp.input.width,
-    minHeight: components.inputotp.extend.height,
+    width: components.inputotp.input.width,
+    height: components.inputotp.extend.height,
+    paddingHorizontal: components.inputtext.root.paddingX,
+    paddingVertical: components.inputtext.root.paddingY,
     borderWidth: components.inputotp.extend.borderWidth,
     borderRadius: components.inputtext.root.borderRadius,
-    borderColor: semantic.colorScheme.color.border.neutral.strong,
-    backgroundColor: semantic.colorScheme.color.bg.surface.default.default,
+    borderColor: components.inputtext.root.borderColor,
+    backgroundColor: components.inputtext.root.background,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -136,19 +128,20 @@ const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
 
   text: {
     fontSize: fonts.fontSize[200],
-    lineHeight: fonts.lineHeight[200],
+    lineHeight: fonts.fontSize[200],
     fontFamily: fonts.fontFamily.base,
     fontWeight: fonts.fontWeight.regular,
-    color: semantic.colorScheme.color.fg.active,
+    letterSpacing: fonts.letterSpacing[500],
+    color: components.inputtext.root.color,
     includeFontPadding: false,
     textAlign: 'center',
   },
 
-  hovered: { borderColor: semantic.colorScheme.color.border.brand.strong },
+  hovered: { borderColor: components.inputtext.root.hoverBorderColor },
 
   focused: {
-    borderColor: semantic.colorScheme.color.border.brand.strong,
-    boxShadow: `0 0 0 3.5px ${semantic.colorScheme.color.border.focus}`,
+    borderColor: components.inputtext.root.focusBorderColor,
+    boxShadow: `0 0 0 ${components.inputtext.root.focusRing.width}px ${components.inputtext.root.focusRing.color}`,
   },
 
   error: {
@@ -160,11 +153,9 @@ const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
   },
 
   disabled: {
-    backgroundColor: semantic.colorScheme.color.bg.neutral.weak.disabled,
-    borderColor: semantic.colorScheme.color.border.neutral.strong,
+    backgroundColor: components.inputtext.root.disabledBackground,
+    borderColor: components.inputtext.root.borderColor,
     boxShadow: 'none',
     opacity: semantic.effects.opacity[50],
   },
-
-  disabledText: { color: semantic.colorScheme.color.fg.muted },
 }))
