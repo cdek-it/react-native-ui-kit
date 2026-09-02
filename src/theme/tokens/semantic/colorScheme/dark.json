@@ -176,7 +176,7 @@
           "selected": "#6d7076"
         },
         "overlay": { "default": "#404348", "hover": "#56595f" },
-        "backdrop": "rgba(0, 0, 0, 0.6000)"
+        "backdrop": "rgba(0, 0, 0, 0.3000)"
       },
       "neutral": {
         "weak": {
@@ -200,7 +200,7 @@
       }
     },
     "border": {
-      "focus": "#d4fedc",
+      "focus": "rgba(68, 232, 88, 0.2)",
       "neutral": {
         "default": "#404348",
         "strong": "#56595f",
@@ -216,7 +216,8 @@
         "danger": {
           "subtle": "#db3424",
           "default": "#e85244",
-          "strong": "#f47f77"
+          "strong": "#f47f77",
+          "focus": "rgba(232, 82, 68, 0.2)"
         },
         "info": { "default": "#4496e8", "strong": "#77baf4" },
         "warning": { "default": "#f5b83d", "strong": "#facb75" },
