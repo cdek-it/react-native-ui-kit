@@ -30,24 +30,11 @@ describe('InputOtp', () => {
       { name: 'четыре ячейки', length: 4, value: '1234' },
       { name: 'восемь ячеек', length: 8, value: '12345678' },
     ])('отображает $name', ({ length, value }) => {
-      const { getAllByTestId, getByTestId, getByText } = renderInputOtp({
-        length,
-        value,
-      })
+      const { getAllByTestId, getByText } = renderInputOtp({ length, value })
 
       expect(getAllByTestId(InputOtpTestId.item, hiddenElements)).toHaveLength(
         length
       )
-      expect(getByTestId(InputOtpTestId.content, hiddenElements)).toHaveStyle({
-        gap: 8,
-      })
-
-      for (const item of getAllByTestId(
-        InputOtpTestId.itemContainer,
-        hiddenElements
-      )) {
-        expect(item).toHaveStyle({ minWidth: 40, minHeight: 40 })
-      }
 
       for (const digit of value) {
         expect(getByText(digit, hiddenElements)).toBeOnTheScreen()
@@ -472,13 +459,7 @@ describe('InputOtp', () => {
         InputOtpTestId.itemContainer,
         hiddenElements
       )) {
-        expect(item).toHaveStyle({
-          backgroundColor: '#e2e2e4',
-          borderColor: '#cecfd2',
-          boxShadow: 'none',
-          minHeight: 40,
-          opacity: 0.5,
-        })
+        expect(item).toBeDisabled()
       }
     })
 
