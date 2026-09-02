@@ -383,6 +383,56 @@ describe('token compiler', () => {
     expect(compiled.components.dark).toStrictEqual(compiled.components.light)
   })
 
+  test('достраивает различающиеся component colorScheme из базовых токенов', () => {
+    const source: TokenTree = {
+      primitive: { fonts: {} },
+      semantic: {
+        dimension: {},
+        effects: {},
+        colorScheme: {
+          light: { color: { base: '#ffffff', override: '#eeeeee' } },
+          dark: { color: { base: '#111111', override: '#222222' } },
+        },
+      },
+      components: {
+        missingScheme: {
+          root: { background: '{color.base}' },
+          colorScheme: { dark: { root: { background: '{color.override}' } } },
+        },
+        partialScheme: {
+          root: { background: '{color.base}' },
+          overlay: { background: '{color.base}' },
+          colorScheme: {
+            light: { root: { background: '{color.override}' } },
+            dark: {
+              root: { background: '{color.override}' },
+              overlay: { background: '{color.override}' },
+            },
+          },
+        },
+      },
+    }
+
+    const compiled = compileTokens(source)
+
+    expect(compiled.components.light.missingScheme).toHaveProperty(
+      'colorScheme.root.background',
+      '#ffffff'
+    )
+    expect(compiled.components.dark.missingScheme).toHaveProperty(
+      'colorScheme.root.background',
+      '#222222'
+    )
+    expect(compiled.components.light.partialScheme).toHaveProperty(
+      'colorScheme.overlay.background',
+      '#ffffff'
+    )
+    expect(compiled.components.dark.partialScheme).toHaveProperty(
+      'colorScheme.overlay.background',
+      '#222222'
+    )
+  })
+
   test('отклоняет источник без одной из цветовых схем semantic', () => {
     const source: TokenTree = {
       primitive: { fonts: {} },

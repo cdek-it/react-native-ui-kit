@@ -89,6 +89,51 @@ const selectColorScheme = (
   )
 }
 
+const completeComponentColorScheme = (
+  selectedScheme: TokenTree,
+  alternateScheme: TokenTree,
+  componentBase: TokenTree,
+  componentPath: string
+): TokenTree => {
+  const result = mergeTrees({}, selectedScheme)
+
+  for (const [key, alternateValue] of Object.entries(alternateScheme)) {
+    const selectedValue = result[key]
+    const baseValue = componentBase[key]
+    const tokenPath = `${componentPath}.${key}`
+
+    if (selectedValue === undefined) {
+      if (baseValue === undefined) {
+        throw new Error(`Missing base token at "${tokenPath}"`)
+      }
+
+      if (isTokenTree(alternateValue)) {
+        if (!isTokenTree(baseValue)) {
+          throw new Error(`Expected an object at "${tokenPath}"`)
+        }
+
+        result[key] = completeComponentColorScheme(
+          {},
+          alternateValue,
+          baseValue,
+          tokenPath
+        )
+      } else {
+        result[key] = baseValue
+      }
+    } else if (isTokenTree(selectedValue) && isTokenTree(alternateValue)) {
+      result[key] = completeComponentColorScheme(
+        selectedValue,
+        alternateValue,
+        isTokenTree(baseValue) ? baseValue : {},
+        tokenPath
+      )
+    }
+  }
+
+  return result
+}
+
 const selectComponentColorSchemes = (
   components: TokenTree,
   scheme: ColorScheme
@@ -105,22 +150,42 @@ const selectComponentColorSchemes = (
         return [componentName, mergeTrees({}, base)]
       }
 
-      const selectedScheme = isTokenTree(colorScheme)
-        ? colorScheme[scheme]
-        : undefined
+      if (!isTokenTree(colorScheme)) {
+        throw new Error(
+          `Expected an object at "components.${componentName}.colorScheme"`
+        )
+      }
 
-      if (!isTokenTree(selectedScheme)) {
+      const alternateSchemeName: ColorScheme =
+        scheme === 'light' ? 'dark' : 'light'
+      const selectedScheme = colorScheme[scheme]
+      const alternateScheme = colorScheme[alternateSchemeName]
+
+      if (selectedScheme !== undefined && !isTokenTree(selectedScheme)) {
         throw new Error(
           `Expected an object at "components.${componentName}.colorScheme.${scheme}"`
         )
       }
+
+      if (alternateScheme !== undefined && !isTokenTree(alternateScheme)) {
+        throw new Error(
+          `Expected an object at "components.${componentName}.colorScheme.${alternateSchemeName}"`
+        )
+      }
+
+      const completedScheme = completeComponentColorScheme(
+        selectedScheme ?? {},
+        alternateScheme ?? {},
+        base,
+        `components.${componentName}`
+      )
 
       return [
         componentName,
         Object.fromEntries(
           Object.entries(component).map(([key, value]) => [
             key,
-            key === 'colorScheme' ? mergeTrees({}, selectedScheme) : value,
+            key === 'colorScheme' ? completedScheme : value,
           ])
         ),
       ]
