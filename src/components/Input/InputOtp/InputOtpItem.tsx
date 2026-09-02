@@ -76,12 +76,21 @@ export const InputOtpItem = memo<InputOtpItemProps>(
         {focused ? (
           <View style={styles.textRow} testID={testIds.cursorRow}>
             {value ? (
-              <Text
-                style={[styles.text, disabled && styles.disabledText]}
-                testID={testIds.item}
-              >
-                {value}
-              </Text>
+              <>
+                <Text
+                  accessibilityElementsHidden
+                  importantForAccessibility='no-hide-descendants'
+                  style={[styles.text, styles.cursorSpacer]}
+                >
+                  |
+                </Text>
+                <Text
+                  style={[styles.text, disabled && styles.disabledText]}
+                  testID={testIds.item}
+                >
+                  {value}
+                </Text>
+              </>
             ) : null}
             <Animated.Text
               accessibilityElementsHidden
@@ -122,6 +131,8 @@ const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
   },
 
   textRow: { flexDirection: 'row', alignItems: 'center' },
+
+  cursorSpacer: { opacity: semantic.effects.opacity[0] },
 
   text: {
     fontSize: fonts.fontSize[200],
