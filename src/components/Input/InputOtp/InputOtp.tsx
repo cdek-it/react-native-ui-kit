@@ -86,6 +86,7 @@ export const InputOtp = memo<InputOtpProps>(
     const inputSelection = selection ?? getDefaultSelection(inputValue)
     const hasSelectedText =
       (inputSelection.end ?? inputSelection.start) > inputSelection.start
+    const hasVisibleCursor = inputSelection.start < length
 
     useImperativeHandle<TextInput | null, TextInput | null>(
       propsInputRef,
@@ -158,7 +159,10 @@ export const InputOtp = memo<InputOtpProps>(
               disabled={!isInputEditable}
               error={error}
               focused={Boolean(
-                isFocused && isInputEditable && index === activeIndex
+                isFocused &&
+                isInputEditable &&
+                hasVisibleCursor &&
+                index === activeIndex
               )}
               key={`Otp-Item-${index}`}
               testIdPrefix={testIds.root}
