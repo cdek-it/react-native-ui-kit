@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/cdek-it/react-native-ui-kit/compare/v1.2.1...v1.2.2) (2026-09-02)
+
+### 🐛 Исправления багов
+
+* **ci:** разделена группа запусков для каждого PR ([4b63db1](https://github.com/cdek-it/react-native-ui-kit/commit/4b63db11e97b2a7cc2d2f5931243eaf021fd6c0a))
+* **MenuItemIcon:** добавлены минимальные размеры контейнера иконки ([6cdd650](https://github.com/cdek-it/react-native-ui-kit/commit/6cdd650d4bda7c64429b0aa380c9ead87fab9c57))
+
 ## [1.2.1](https://github.com/cdek-it/react-native-ui-kit/compare/v1.2.0...v1.2.1) (2026-08-13)
 
 ### 🐛 Исправления багов
