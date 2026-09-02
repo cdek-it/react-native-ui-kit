@@ -155,7 +155,7 @@ describe('InputOtp', () => {
 
     test('очищает вставленный код от символов и отбрасывает лишние цифры', () => {
       const mockedOnChange = jest.fn()
-      const { getAllByTestId, getByTestId, rerenderInputOtp } = renderInputOtp({
+      const { getByTestId, queryByText, rerenderInputOtp } = renderInputOtp({
         onChange: mockedOnChange,
         value: '',
       })
@@ -169,16 +169,14 @@ describe('InputOtp', () => {
 
       rerenderInputOtp({ value: '1234' })
 
-      expect(
-        within(
-          getAllByTestId(InputOtpTestId.itemContainer, hiddenElements)[3]
-        ).getByTestId(InputOtpTestId.cursor, hiddenElements)
-      ).toBeOnTheScreen()
+      expect(queryByText('|', hiddenElements)).not.toBeOnTheScreen()
     })
 
-    test('после последней цифры передаёт полный код и сохраняет фокус', () => {
+    test('после последней цифры сохраняет нативный фокус без визуальной каретки', () => {
+      const mockedOnBlur = jest.fn()
       const mockedOnChange = jest.fn()
-      const { getAllByTestId, getByTestId, rerenderInputOtp } = renderInputOtp({
+      const { getByTestId, queryByText, rerenderInputOtp } = renderInputOtp({
+        onBlur: mockedOnBlur,
         onChange: mockedOnChange,
         value: '123',
       })
@@ -191,11 +189,8 @@ describe('InputOtp', () => {
 
       rerenderInputOtp({ value: '1234' })
 
-      expect(
-        within(
-          getAllByTestId(InputOtpTestId.itemContainer, hiddenElements)[3]
-        ).getByTestId(InputOtpTestId.cursor, hiddenElements)
-      ).toBeOnTheScreen()
+      expect(mockedOnBlur).not.toHaveBeenCalled()
+      expect(queryByText('|', hiddenElements)).not.toBeOnTheScreen()
     })
 
     test('backspace очищает заполненную и предыдущую пустую позицию', () => {
@@ -311,6 +306,20 @@ describe('InputOtp', () => {
           getAllByTestId(InputOtpTestId.itemContainer, hiddenElements)[2]
         ).getByTestId(InputOtpTestId.cursor, hiddenElements)
       ).toBeOnTheScreen()
+    })
+
+    test('сообщает повторный ввод выделенной цифры при неизменившемся нативном значении', () => {
+      const mockedOnChange = jest.fn()
+      const { getByTestId } = renderInputOtp({
+        onChange: mockedOnChange,
+        selection: { start: 0, end: 1 },
+        value: '1234',
+      })
+
+      fireEvent.changeText(getByTestId(InputOtpTestId.hiddenInput), '1234')
+
+      expect(mockedOnChange).toHaveBeenCalledOnce()
+      expect(mockedOnChange).toHaveBeenCalledWith('1234')
     })
 
     test('при ошибке отражает управляемый снаружи selection', () => {
