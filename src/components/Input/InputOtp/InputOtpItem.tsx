@@ -145,12 +145,10 @@ const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
     boxShadow: `0 0 0 ${components.inputtext.root.focusRing.width}px ${components.inputtext.root.focusRing.color}`,
   },
 
-  error: {
-    borderColor: semantic.colorScheme.color.border.status.danger.strong,
-  },
+  error: { borderColor: components.inputtext.root.invalidBorderColor },
 
   errorFocused: {
-    boxShadow: `0 0 0 3.5px ${semantic.colorScheme.color.bg.status.danger.weak.hover}`,
+    boxShadow: `0 0 0 ${components.inputtext.root.focusRing.width}px ${semantic.colorScheme.color.border.status.danger.focus}`,
   },
 
   disabled: {
