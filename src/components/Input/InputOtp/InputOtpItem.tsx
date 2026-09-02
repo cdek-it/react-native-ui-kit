@@ -113,7 +113,8 @@ const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
     width: components.inputotp.input.width,
     height: components.inputotp.extend.height,
     paddingHorizontal: components.inputtext.root.paddingX,
-    paddingVertical: components.inputtext.root.paddingY,
+    paddingTop: components.inputotp.input.paddingTop,
+    paddingBottom: components.inputotp.input.paddingBottom,
     borderWidth: components.inputotp.extend.borderWidth,
     borderRadius: components.inputtext.root.borderRadius,
     borderColor: components.inputtext.root.borderColor,
@@ -129,7 +130,7 @@ const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
   text: {
     fontSize: fonts.fontSize[200],
     lineHeight: fonts.fontSize[200],
-    fontFamily: fonts.fontFamily.base,
+    fontFamily: fonts.fontFamily.heading,
     fontWeight: fonts.fontWeight.regular,
     letterSpacing: fonts.letterSpacing[500],
     color: components.inputtext.root.color,

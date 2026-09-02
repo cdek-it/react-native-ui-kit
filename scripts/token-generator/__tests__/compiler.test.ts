@@ -582,7 +582,7 @@ describe('production input tokens', () => {
       {
         width: 4,
         style: 'none',
-        color: '#d4fedc',
+        color: 'rgba(68, 232, 88, 0.2)',
         offset: 0,
         shadow: 'inset 0 0 0 4px #d4fedc',
       }
