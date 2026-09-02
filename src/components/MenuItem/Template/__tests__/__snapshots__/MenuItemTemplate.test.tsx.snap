@@ -84,8 +84,10 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
         <View
           style={
             {
+              "height": 17.5,
               "justifyContent": "center",
               "position": "relative",
+              "width": 17.5,
             }
           }
         >
@@ -1026,8 +1028,10 @@ exports[`MenuItemTemplate tests MenuItemTemplate with colored icon 1`] = `
         <View
           style={
             {
+              "height": 17.5,
               "justifyContent": "center",
               "position": "relative",
+              "width": 17.5,
             }
           }
         >
@@ -1465,8 +1469,10 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
         <View
           style={
             {
+              "height": 17.5,
               "justifyContent": "center",
               "position": "relative",
+              "width": 17.5,
             }
           }
         >
@@ -1693,8 +1699,10 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
         <View
           style={
             {
+              "height": 17.5,
               "justifyContent": "center",
               "position": "relative",
+              "width": 17.5,
             }
           }
         >
