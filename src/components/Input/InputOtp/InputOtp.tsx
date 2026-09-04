@@ -3,7 +3,6 @@ import {
   useCallback,
   useEffect,
   useImperativeHandle,
-  useMemo,
   useRef,
   useState,
   type Ref,
@@ -22,12 +21,20 @@ import {
 import { StyleSheet } from 'react-native-unistyles'
 
 import { InputOtpItem } from './InputOtpItem'
+import { createInputOtpTestIds, InputOtpTestId } from './testIds'
+
+export { InputOtpTestId } from './testIds'
 
 export interface InputOtpProps
   extends
     Omit<
       TextInputProps,
-      'onChangeText' | 'onChange' | 'ref' | 'keyboardType' | 'style'
+      | 'onChangeText'
+      | 'onChange'
+      | 'ref'
+      | 'style'
+      | 'inputMode'
+      | 'keyboardType'
     >,
     Pick<PressableProps, 'testOnly_pressed'> {
   length: number
@@ -37,6 +44,21 @@ export interface InputOtpProps
   inputRef?: Ref<TextInput | null>
 }
 
+const normalizeOtpValue = (value: string, length: number) =>
+  value.replace(/[^0-9]/g, '').slice(0, length)
+
+const getDefaultSelection = (value: string) => ({
+  start: value.length,
+  end: value.length,
+})
+
+const getActiveIndex = (selectionStart: number, length: number) =>
+  Math.min(Math.max(selectionStart, 0), length - 1)
+
+/**
+ * Поле для ввода одноразового пароля.
+ * @link https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=318-1373
+ */
 export const InputOtp = memo<InputOtpProps>(
   ({
     length,
@@ -49,6 +71,10 @@ export const InputOtp = memo<InputOtpProps>(
     value = '',
     onFocus,
     onBlur,
+    accessibilityState,
+    autoComplete = 'one-time-code',
+    selection,
+    textContentType = 'oneTimeCode',
     editable,
     ...rest
   }) => {
@@ -56,6 +82,11 @@ export const InputOtp = memo<InputOtpProps>(
 
     const inputRef = useRef<TextInput>(null)
     const isInputEditable = !disabled && editable !== false
+    const inputValue = normalizeOtpValue(value, length)
+    const inputSelection = selection ?? getDefaultSelection(inputValue)
+    const hasSelectedText =
+      (inputSelection.end ?? inputSelection.start) > inputSelection.start
+    const hasVisibleCursor = inputSelection.start < length
 
     useImperativeHandle<TextInput | null, TextInput | null>(
       propsInputRef,
@@ -80,10 +111,14 @@ export const InputOtp = memo<InputOtpProps>(
 
     const handleChange = useCallback(
       (text: string) => {
-        const sanitizedText = text.replace(/[^0-9]/g, '')
-        onChange(sanitizedText)
+        const nextValue = normalizeOtpValue(text, length)
+        const isSameValueReplacement = hasSelectedText && text === inputValue
+
+        if (nextValue !== inputValue || isSameValueReplacement) {
+          onChange(nextValue)
+        }
       },
-      [onChange]
+      [hasSelectedText, inputValue, length, onChange]
     )
 
     const handleFocus = useCallback(
@@ -102,63 +137,70 @@ export const InputOtp = memo<InputOtpProps>(
       [onBlur]
     )
 
-    const activeIndex = useMemo(
-      () => Math.min(value.length, length - 1),
-      [value.length, length]
-    )
-
-    const renderArray = useMemo(
-      () => Array.from({ length }, (_, i) => `Otp-Item-${i}`),
-      [length]
-    )
+    const activeIndex = getActiveIndex(inputSelection.start, length)
+    const testIds = createInputOtpTestIds(testID ?? InputOtpTestId.root)
 
     return (
       <Pressable
-        disabled={disabled}
+        accessible={false}
+        disabled={!isInputEditable}
         style={styles.container}
-        testID={testID}
-        testOnly_pressed={testOnly_pressed}
+        testID={testIds.root}
         onPress={handlePress}
       >
-        {({ pressed }) => (
-          <>
-            <View style={styles.content}>
-              {renderArray.map((key, index) => (
-                <InputOtpItem
-                  disabled={disabled}
-                  error={error}
-                  focused={isFocused ? index === activeIndex : false}
-                  key={key}
-                  pressed={pressed}
-                  testID={`${testID}Item`}
-                  value={value[index]}
-                />
-              ))}
-            </View>
-            <TextInput
-              editable={isInputEditable}
-              keyboardType='number-pad'
-              maxLength={length}
-              ref={inputRef}
-              style={styles.input}
-              testID={`${testID}HiddenInput`}
-              value={value}
-              onBlur={handleBlur}
-              onChangeText={handleChange}
-              onFocus={handleFocus}
-              {...rest}
+        <View
+          accessibilityElementsHidden
+          importantForAccessibility='no-hide-descendants'
+          style={styles.content}
+          testID={testIds.content}
+        >
+          {Array.from({ length }, (_, index) => (
+            <InputOtpItem
+              disabled={!isInputEditable}
+              error={error}
+              focused={Boolean(
+                isFocused &&
+                isInputEditable &&
+                hasVisibleCursor &&
+                index === activeIndex
+              )}
+              key={`Otp-Item-${index}`}
+              testIdPrefix={testIds.root}
+              testOnly_pressed={testOnly_pressed}
+              value={inputValue[index]}
+              onPress={handlePress}
             />
-          </>
-        )}
+          ))}
+        </View>
+        <TextInput
+          {...rest}
+          accessibilityState={{
+            ...accessibilityState,
+            disabled: !isInputEditable,
+          }}
+          autoComplete={autoComplete}
+          editable={isInputEditable}
+          inputMode='numeric'
+          keyboardType='number-pad'
+          ref={inputRef}
+          selection={inputSelection}
+          style={styles.input}
+          testID={testIds.hiddenInput}
+          textContentType={textContentType}
+          value={inputValue}
+          onBlur={handleBlur}
+          onChangeText={handleChange}
+          onFocus={handleFocus}
+        />
       </Pressable>
     )
   }
 )
 
-const styles = StyleSheet.create(({ spacing }) => ({
+const styles = StyleSheet.create(({ components }) => ({
   container: {},
 
-  content: { flexDirection: 'row', gap: spacing.Gap['gap-2'] },
+  content: { flexDirection: 'row', gap: components.inputotp.root.gap },
 
   input: { position: 'absolute', width: 1, height: 1, opacity: 0 },
 }))

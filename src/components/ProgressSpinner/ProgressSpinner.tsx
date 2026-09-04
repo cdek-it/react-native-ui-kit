@@ -34,6 +34,7 @@ export interface ProgressSpinnerProps {
 /**
  * Используется для отображения состояний ожидания в интерфейсе
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=1219-3086
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24043-15392
  */
 export const ProgressSpinner = memo<ProgressSpinnerProps>(
   ({ size = 'md', fill = 'primary' }) => {
@@ -125,10 +126,12 @@ export const ProgressSpinner = memo<ProgressSpinnerProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, global }) => ({
-  primary: { color: theme.General.primaryColor },
-  white: { color: global.Neutrals.White['white-100'] },
-}))
+const styles = StyleSheet.create(
+  ({ components: { progressspinner }, semantic }) => ({
+    primary: { color: progressspinner.colorScheme.root.colorOne },
+    white: { color: semantic.colorScheme.color.fg.on.fill.default },
+  })
+)
 
 enum TestId {
   ProgressSpinner = 'ProgressSpinner',

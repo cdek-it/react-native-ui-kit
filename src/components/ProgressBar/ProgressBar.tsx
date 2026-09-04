@@ -37,6 +37,7 @@ export interface ProgressBarProps extends Pick<ViewProps, 'testID'> {
  * @param style - стилизация компонента ProgressBar
  * @see ProgressBarProps
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5024&m=dev
+ * @link https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24043-14314
  */
 export const ProgressBar = memo<ProgressBarProps>(
   ({ value: propsValue, showValue = false, style }) => {
@@ -89,28 +90,28 @@ export const ProgressBar = memo<ProgressBarProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, typography, border, fonts }) => ({
+const styles = StyleSheet.create(({ components, fonts }) => ({
   container: {
-    borderRadius: border.Radius['rounded-full'],
-    backgroundColor: theme.Misc.ProgressBar.progressBarBg,
+    borderRadius: components.progressbar.root.borderRadius,
+    backgroundColor: components.progressbar.root.background,
     overflow: 'hidden',
   },
 
   indicator: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: theme.Misc.ProgressBar.progressBarValueBg,
+    backgroundColor: components.progressbar.value.background,
     height: '100%',
     overflow: 'hidden',
   },
 
-  containerShowValue: { height: theme.Misc.ProgressBar.progressBarHeight },
+  containerShowValue: { height: components.progressbar.root.height },
 
   indicatorText: {
-    fontSize: typography.Size['text-xs'],
+    fontSize: components.progressbar.label.fontSize,
     textAlign: 'center',
-    color: theme.Misc.ProgressBar.progressBarValueTextColor,
-    fontFamily: fonts.primary,
+    color: components.progressbar.label.color,
+    fontFamily: fonts.fontFamily.heading,
   },
 }))
 

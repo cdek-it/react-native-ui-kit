@@ -1,8 +1,8 @@
 import { useUnistyles } from 'react-native-unistyles'
 
-import type { FontsConfig } from '../theme'
+import type { ThemeType } from '../theme/types'
 
-export const useFonts = (): FontsConfig => {
+export const useFonts = (): ThemeType['fonts'] => {
   const { theme } = useUnistyles()
 
   return theme.fonts

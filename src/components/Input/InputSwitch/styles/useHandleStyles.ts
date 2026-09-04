@@ -4,7 +4,7 @@ import { useSharedValue, withTiming } from 'react-native-reanimated'
 
 import { StyleSheet } from 'react-native-unistyles'
 
-export const useHandleStyles = (checked: boolean) => {
+export const useHandleStyles = (checked: boolean, disabled: boolean) => {
   const styles = handleStyles
   const handleOnLeft = styles.handleOn.left
   const handleOffLeft = styles.handleOff.left
@@ -15,23 +15,39 @@ export const useHandleStyles = (checked: boolean) => {
   )
 
   const calculateHandleBackground = useCallback(
-    (checked: boolean) =>
-      checked ? styles.handleOn.backgroundColor : styles.handle.backgroundColor,
-    [styles.handle.backgroundColor, styles.handleOn.backgroundColor]
+    (checked: boolean, disabled: boolean) => {
+      if (disabled) {
+        return styles.handleDisabled.backgroundColor
+      }
+
+      return checked
+        ? styles.handleOn.backgroundColor
+        : styles.handle.backgroundColor
+    },
+    [
+      styles.handle.backgroundColor,
+      styles.handleDisabled.backgroundColor,
+      styles.handleOn.backgroundColor,
+    ]
   )
 
   const handleLeftPosition = useSharedValue(
     calculateHandleLeftPosition(checked)
   )
-  const handleBackground = useSharedValue(calculateHandleBackground(checked))
+  const handleBackground = useSharedValue(
+    calculateHandleBackground(checked, disabled)
+  )
 
   useEffect(() => {
     handleLeftPosition.value = withTiming(calculateHandleLeftPosition(checked))
-    handleBackground.value = withTiming(calculateHandleBackground(checked))
+    handleBackground.value = withTiming(
+      calculateHandleBackground(checked, disabled)
+    )
   }, [
     calculateHandleBackground,
     calculateHandleLeftPosition,
     checked,
+    disabled,
     handleLeftPosition,
     handleBackground,
   ])
@@ -48,27 +64,31 @@ export const useHandleStyles = (checked: boolean) => {
   return { handleStyle }
 }
 
-const handleStyles = StyleSheet.create(({ theme, border }) => ({
+const handleStyles = StyleSheet.create(({ components: { toggleswitch } }) => ({
   handle: {
-    height: theme.Form.inputSwitch.inputSwitchHandleHeight,
-    width: theme.Form.inputSwitch.inputSwitchHandleWidth,
-    borderRadius: border.Radius['rounded-full'],
-    backgroundColor: theme.Form.inputSwitch.inputSwitchHandleOffBg,
+    height: toggleswitch.handle.size,
+    width: toggleswitch.handle.size,
+    borderRadius: toggleswitch.handle.borderRadius,
+    backgroundColor: toggleswitch.colorScheme.handle.background,
     position: 'absolute',
-    top: theme.Form.inputSwitch.inputSwitchSliderPadding - border.Width.border,
+    top: toggleswitch.root.gap - toggleswitch.root.borderWidth,
   },
 
   handleOff: {
-    backgroundColor: theme.Form.inputSwitch.inputSwitchHandleOffBg,
-    left: theme.Form.inputSwitch.inputSwitchSliderPadding - border.Width.border,
+    backgroundColor: toggleswitch.colorScheme.handle.background,
+    left: toggleswitch.root.gap - toggleswitch.root.borderWidth,
+  },
+
+  handleDisabled: {
+    backgroundColor: toggleswitch.colorScheme.handle.disabledBackground,
   },
 
   handleOn: {
-    backgroundColor: theme.Form.inputSwitch.inputSwitchHandleOnBg,
+    backgroundColor: toggleswitch.colorScheme.handle.checkedBackground,
     left:
-      theme.Form.inputSwitch.inputSwitchWidth -
-      theme.Form.inputSwitch.inputSwitchSliderPadding -
-      theme.Form.inputSwitch.inputSwitchHandleWidth -
-      1,
+      toggleswitch.root.width -
+      toggleswitch.root.gap -
+      toggleswitch.handle.size -
+      toggleswitch.root.borderWidth,
   },
 }))

@@ -7,7 +7,7 @@ exports[`ProgressBar component test value - -50, showValue - false, style - {"he
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -69,7 +69,7 @@ exports[`ProgressBar component test value - -50, showValue - false, style - {"he
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -131,7 +131,7 @@ exports[`ProgressBar component test value - -50, showValue - true, style - {"hei
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -139,7 +139,7 @@ exports[`ProgressBar component test value - -50, showValue - true, style - {"hei
         "width": 100,
       },
       {
-        "height": 14,
+        "height": 16,
       },
     ]
   }
@@ -188,9 +188,9 @@ exports[`ProgressBar component test value - -50, showValue - true, style - {"hei
     <Text
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }
@@ -209,7 +209,7 @@ exports[`ProgressBar component test value - -50, showValue - true, style - {"hei
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -217,7 +217,7 @@ exports[`ProgressBar component test value - -50, showValue - true, style - {"hei
         "width": 150,
       },
       {
-        "height": 14,
+        "height": 16,
       },
     ]
   }
@@ -266,9 +266,9 @@ exports[`ProgressBar component test value - -50, showValue - true, style - {"hei
     <Text
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }
@@ -287,7 +287,7 @@ exports[`ProgressBar component test value - 0, showValue - false, style - {"heig
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -349,7 +349,7 @@ exports[`ProgressBar component test value - 0, showValue - false, style - {"heig
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -411,7 +411,7 @@ exports[`ProgressBar component test value - 0, showValue - true, style - {"heigh
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -419,7 +419,7 @@ exports[`ProgressBar component test value - 0, showValue - true, style - {"heigh
         "width": 100,
       },
       {
-        "height": 14,
+        "height": 16,
       },
     ]
   }
@@ -468,9 +468,9 @@ exports[`ProgressBar component test value - 0, showValue - true, style - {"heigh
     <Text
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }
@@ -489,7 +489,7 @@ exports[`ProgressBar component test value - 0, showValue - true, style - {"heigh
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -497,7 +497,7 @@ exports[`ProgressBar component test value - 0, showValue - true, style - {"heigh
         "width": 150,
       },
       {
-        "height": 14,
+        "height": 16,
       },
     ]
   }
@@ -546,9 +546,9 @@ exports[`ProgressBar component test value - 0, showValue - true, style - {"heigh
     <Text
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }
@@ -567,7 +567,7 @@ exports[`ProgressBar component test value - 50, showValue - false, style - {"hei
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -629,7 +629,7 @@ exports[`ProgressBar component test value - 50, showValue - false, style - {"hei
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -691,7 +691,7 @@ exports[`ProgressBar component test value - 50, showValue - true, style - {"heig
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -699,7 +699,7 @@ exports[`ProgressBar component test value - 50, showValue - true, style - {"heig
         "width": 100,
       },
       {
-        "height": 14,
+        "height": 16,
       },
     ]
   }
@@ -748,9 +748,9 @@ exports[`ProgressBar component test value - 50, showValue - true, style - {"heig
     <Text
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }
@@ -769,7 +769,7 @@ exports[`ProgressBar component test value - 50, showValue - true, style - {"heig
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -777,7 +777,7 @@ exports[`ProgressBar component test value - 50, showValue - true, style - {"heig
         "width": 150,
       },
       {
-        "height": 14,
+        "height": 16,
       },
     ]
   }
@@ -826,9 +826,9 @@ exports[`ProgressBar component test value - 50, showValue - true, style - {"heig
     <Text
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }
@@ -847,7 +847,7 @@ exports[`ProgressBar component test value - 100, showValue - false, style - {"he
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -909,7 +909,7 @@ exports[`ProgressBar component test value - 100, showValue - false, style - {"he
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -971,7 +971,7 @@ exports[`ProgressBar component test value - 100, showValue - true, style - {"hei
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -979,7 +979,7 @@ exports[`ProgressBar component test value - 100, showValue - true, style - {"hei
         "width": 100,
       },
       {
-        "height": 14,
+        "height": 16,
       },
     ]
   }
@@ -1028,9 +1028,9 @@ exports[`ProgressBar component test value - 100, showValue - true, style - {"hei
     <Text
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }
@@ -1049,7 +1049,7 @@ exports[`ProgressBar component test value - 100, showValue - true, style - {"hei
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -1057,7 +1057,7 @@ exports[`ProgressBar component test value - 100, showValue - true, style - {"hei
         "width": 150,
       },
       {
-        "height": 14,
+        "height": 16,
       },
     ]
   }
@@ -1106,9 +1106,9 @@ exports[`ProgressBar component test value - 100, showValue - true, style - {"hei
     <Text
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }
@@ -1127,7 +1127,7 @@ exports[`ProgressBar component test value - 150, showValue - false, style - {"he
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -1189,7 +1189,7 @@ exports[`ProgressBar component test value - 150, showValue - false, style - {"he
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -1251,7 +1251,7 @@ exports[`ProgressBar component test value - 150, showValue - true, style - {"hei
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -1259,7 +1259,7 @@ exports[`ProgressBar component test value - 150, showValue - true, style - {"hei
         "width": 100,
       },
       {
-        "height": 14,
+        "height": 16,
       },
     ]
   }
@@ -1308,9 +1308,9 @@ exports[`ProgressBar component test value - 150, showValue - true, style - {"hei
     <Text
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }
@@ -1329,7 +1329,7 @@ exports[`ProgressBar component test value - 150, showValue - true, style - {"hei
     [
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 100,
+        "borderRadius": 14,
         "overflow": "hidden",
       },
       {
@@ -1337,7 +1337,7 @@ exports[`ProgressBar component test value - 150, showValue - true, style - {"hei
         "width": 150,
       },
       {
-        "height": 14,
+        "height": 16,
       },
     ]
   }
@@ -1386,9 +1386,9 @@ exports[`ProgressBar component test value - 150, showValue - true, style - {"hei
     <Text
       style={
         {
-          "color": "#000000",
+          "color": "#2b2e33",
           "fontFamily": "TT Fellows",
-          "fontSize": 10.5,
+          "fontSize": 12,
           "textAlign": "center",
         }
       }

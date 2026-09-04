@@ -36,29 +36,25 @@ npm i @cdek-it/react-native-ui-kit
 
 UI kit использует следующие виды шрифтов.
 
-| Тип шрифта  | Используемые начертания                        | Рекомендуемый шрифт | Рекомендуемый аналог |
-| ----------- | ---------------------------------------------- | ------------------- | -------------------- |
-| `primary`   | – regular<br/>– demibold<br/>– demibold italic | TT Fellows          | Noto Sans            |
-| `secondary` | – regular<br/>– bold                           | Noto Sans           | —                    |
+| Тип шрифта | Используемые начертания                        | Рекомендуемый шрифт | Рекомендуемый аналог |
+| ---------- | ---------------------------------------------- | ------------------- | -------------------- |
+| `heading`  | – regular<br/>– demibold<br/>– demibold italic | TT Fellows          | Noto Sans            |
+| `base`     | – regular<br/>– bold                           | Noto Sans           | —                    |
 
 Исходники шрифтов не поставляются вместе с пакетом, их требуется подключать
-отдельно. После подключения шрифтов в проект, необходимо указать их в
-`ThemeContextProvider`.
+отдельно под именами, указанными в токенах.
 
 ```tsx
-<ThemeContextProvider
-  fonts={{ primary: 'MyFont', secondary: 'MySecondaryFont' }}
-/>
+<ThemeContextProvider fonts={{ heading: 'MyFont', base: 'MySecondaryFont' }} />
 ```
 
 После этого шрифты доступны через `useUnistyles().theme.fonts` или прямо в
 `StyleSheet.create(({ fonts }) => ...)`.
 
 `ThemeContextProvider` только настраивает темы и шрифты для `unistyles`.
-`ThemeContext` остается пустым и всегда имеет значение `null`.
-
-Провайдер также принимает `lightTheme` и `darkTheme`, если нужно переопределить
-темы целиком.
+`ThemeContext` остается пустым и всегда имеет значение `null`. Deprecated-формат
+`fonts={{ primary, secondary }}` временно сохраняется для обратной
+совместимости.
 
 ### Пример подключения шрифтов с помощью expo-fonts через плагин
 
@@ -159,6 +155,17 @@ UI kit использует следующие виды шрифтов.
     <string>NotoSans-Bold.ttf</string>
    </array>
    ```
+
+## Токены анимации
+
+Длительность анимации хранится в `semanticTokens` числом в миллисекундах.
+Easing-токен нужно передать в Reanimated через публичный адаптер:
+
+```ts
+import { semanticTokens, toEasing } from '@cdek-it/react-native-ui-kit'
+
+const easing = toEasing(semanticTokens.effects.transition.easing.standard)
+```
 
 ## Dependencies
 

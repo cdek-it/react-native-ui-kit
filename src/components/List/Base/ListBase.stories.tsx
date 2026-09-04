@@ -52,9 +52,7 @@ const meta: Meta<typeof ListBase> = {
   },
   decorators: [
     (Story) => (
-      <View
-        style={{ padding: 16, alignContent: 'center', alignItems: 'center' }}
-      >
+      <View style={{ padding: 16 }}>
         <Story />
       </View>
     ),

@@ -16,7 +16,7 @@ import {
 
 import { StyleSheet } from 'react-native-unistyles'
 
-import type { ThemeType } from '../../theme/types'
+import type { ComponentTokens } from '../../theme/tokens/index'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
 import { ButtonSeverity } from '../Button/ButtonSeverity'
 import { Timer } from '../Timer/Timer'
@@ -88,17 +88,18 @@ type MessageSeverityKey = NonNullable<MessageProps['severity']>
 
 const messageIconColor: Record<
   MessageSeverityKey,
-  (t: ThemeType['theme']) => string
+  (t: ComponentTokens) => string
 > = {
-  info: (t) => t.Message.Severities.Info.infoMessageIconColor,
-  success: (t) => t.Message.Severities.Success.successMessageIconColor,
-  warning: (t) => t.Message.Severities.Warning.warningMessageIconColor,
-  danger: (t) => t.Message.Severities.Danger.dangerMessageIconColor,
+  info: (t) => t.message.extend.extInfo.color,
+  success: (t) => t.message.extend.extSuccess.color,
+  warning: (t) => t.message.extend.extWarn.color,
+  danger: (t) => t.message.extend.extError.color,
 }
 
 /**
  * Унифицированный компонент, который используется для отображения информационных сообщений
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=562-2947
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24043-21934
  */
 export const Message = memo<MessageProps>(
   ({
@@ -180,9 +181,9 @@ export const Message = memo<MessageProps>(
             {...messageStyles.iconSize}
             source={Icon}
             testID={TestId.Icon}
-            uniProps={({ theme }) => ({
-              color: messageIconColor[severity](theme),
-            })}
+            uniProps={({ components }) => {
+              return { color: messageIconColor[severity](components) }
+            }}
           />
         )
       }
@@ -218,73 +219,66 @@ export const Message = memo<MessageProps>(
   }
 )
 
-const messageStyles = StyleSheet.create(
-  ({ theme, typography, spacing, border }) => ({
-    container: {
-      borderRadius: theme.General.borderRadiusXL,
-      borderWidth: border.Width.border,
-      overflow: 'hidden',
-      variants: {
-        severity: {
-          info: {
-            borderColor: theme.Message.Severities.Info.infoMessageBorderColor,
-            backgroundColor: theme.Message.Severities.Info.infoMessageBg,
-          },
-          success: {
-            borderColor:
-              theme.Message.Severities.Success.successMessageBorderColor,
-            backgroundColor: theme.Message.Severities.Success.successMessageBg,
-          },
-          warning: {
-            borderColor:
-              theme.Message.Severities.Warning.warningMessageBorderColor,
-            backgroundColor: theme.Message.Severities.Warning.warningMessageBg,
-          },
-          danger: {
-            borderColor:
-              theme.Message.Severities.Danger.dangerMessageBorderColor,
-            backgroundColor: theme.Message.Severities.Danger.dangerMessageBg,
-          },
+const messageStyles = StyleSheet.create(({ components, semantic }) => ({
+  container: {
+    borderRadius: components.message.root.borderRadius,
+    borderWidth: semantic.dimension.borderWidth[100],
+    overflow: 'hidden',
+    variants: {
+      severity: {
+        info: {
+          borderColor: components.message.colorScheme.info.borderColor,
+          backgroundColor: components.message.colorScheme.info.background,
+        },
+        success: {
+          borderColor: components.message.colorScheme.success.borderColor,
+          backgroundColor: components.message.colorScheme.success.background,
+        },
+        warning: {
+          borderColor: components.message.colorScheme.warn.borderColor,
+          backgroundColor: components.message.colorScheme.warn.background,
+        },
+        danger: {
+          borderColor: components.message.colorScheme.error.borderColor,
+          backgroundColor: components.message.colorScheme.error.background,
         },
       },
     },
-    content: {
-      flexGrow: 1,
-      borderLeftWidth: border.Width['border-3'] - border.Width.border,
-      padding: spacing.Padding['p-4'],
-      paddingLeft: spacing.Padding['p-5'],
-      gap: spacing.Gap['gap-4'],
-      variants: {
-        severity: {
-          info: {
-            borderColor: theme.Message.Severities.Info.infoMessageIconColor,
-          },
-          success: {
-            borderColor:
-              theme.Message.Severities.Success.successMessageIconColor,
-          },
-          warning: {
-            borderColor:
-              theme.Message.Severities.Warning.warningMessageIconColor,
-          },
-          danger: {
-            borderColor: theme.Message.Severities.Danger.dangerMessageIconColor,
-          },
+  },
+  content: {
+    flexGrow: 1,
+    borderLeftWidth:
+      components.message.extend.extAccentLine.width -
+      semantic.dimension.borderWidth[100],
+    padding: semantic.dimension.space[400],
+    paddingLeft: components.message.content.padding,
+    gap: semantic.dimension.space[400],
+    variants: {
+      severity: {
+        info: { borderColor: components.message.colorScheme.info.borderColor },
+        success: {
+          borderColor: components.message.colorScheme.success.borderColor,
+        },
+        warning: {
+          borderColor: components.message.colorScheme.warn.borderColor,
+        },
+        danger: {
+          borderColor: components.message.colorScheme.error.borderColor,
         },
       },
     },
-    titleRow: { flexDirection: 'row', gap: spacing.Gap['gap-4'] },
-    titleTextContainer: {
-      flex: 1,
-      alignSelf: 'center',
-      gap: spacing.Gap['gap-1'],
-    },
-    iconSize: {
-      width: typography.Size['text-4xl'],
-      height: typography.Size['text-4xl'],
-    },
-  })
-)
+  },
+  titleRow: { flexDirection: 'row', gap: semantic.dimension.space[400] },
+  titleTextContainer: {
+    flex: 1,
+    alignSelf: 'center',
+    gap: components.message.extend.extText.gap,
+  },
+  iconSize: {
+    width: components.message.icon.size,
+    height: components.message.icon.size,
+  },
+}))
 
 export enum TestId {
   Container = 'MessageContainer',
