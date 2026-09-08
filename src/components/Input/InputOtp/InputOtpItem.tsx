@@ -28,6 +28,13 @@ export interface InputOtpItemProps extends Pick<
 
 const CURSOR_ANIMATION_DURATION = 500
 
+const createFocusRingShadow = (
+  ringWidth: number,
+  ringColor: string,
+  borderWidth: number,
+  borderColor: string
+) => `0 0 0 ${ringWidth}px ${ringColor}, 0 0 0 ${borderWidth}px ${borderColor}`
+
 // Анимация не может жить в StyleSheet.create: Animated.Text из reanimated не
 // принимает Unistyles-стиль. Шкала непрозрачности одинакова в обеих темах,
 // поэтому токены берутся из сгенерированного файла напрямую.
@@ -92,7 +99,7 @@ export const InputOtpItem = memo<InputOtpItemProps>(
             <Animated.Text
               accessibilityElementsHidden
               importantForAccessibility='no-hide-descendants'
-              style={[styles.text, cursorAnimationStyle]}
+              style={[styles.text, styles.cursor, cursorAnimationStyle]}
               testID={testIds.cursor}
             >
               |
@@ -113,8 +120,7 @@ const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
     width: components.inputotp.input.width,
     height: components.inputotp.extend.height,
     paddingHorizontal: components.inputtext.root.paddingX,
-    paddingTop: components.inputotp.input.paddingTop,
-    paddingBottom: components.inputotp.input.paddingBottom,
+    paddingVertical: components.inputtext.root.paddingY,
     borderWidth: components.inputotp.extend.borderWidth,
     borderRadius: components.inputtext.root.borderRadius,
     borderColor: components.inputtext.root.borderColor,
@@ -127,10 +133,11 @@ const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
 
   cursorSpacer: { opacity: semantic.effects.opacity[0] },
 
+  cursor: { lineHeight: fonts.lineHeight[400] },
+
   text: {
     fontSize: fonts.fontSize[200],
-    lineHeight: fonts.fontSize[200],
-    fontFamily: fonts.fontFamily.heading,
+    fontFamily: fonts.fontFamily.base,
     fontWeight: fonts.fontWeight.regular,
     letterSpacing: fonts.letterSpacing[500],
     color: components.inputtext.root.color,
@@ -141,17 +148,28 @@ const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
   hovered: { borderColor: components.inputtext.root.hoverBorderColor },
 
   focused: {
-    borderColor: components.inputtext.root.focusBorderColor,
-    boxShadow: `0 0 0 ${components.inputtext.root.focusRing.width}px ${components.inputtext.root.focusRing.color}`,
+    borderWidth: 0,
+    boxShadow: createFocusRingShadow(
+      components.inputtext.root.focusRing.width,
+      components.inputtext.root.focusRing.color,
+      components.inputotp.extend.borderWidth,
+      components.inputtext.root.focusBorderColor
+    ),
   },
 
   error: { borderColor: components.inputtext.root.invalidBorderColor },
 
   errorFocused: {
-    boxShadow: `0 0 0 ${components.inputtext.root.focusRing.width}px ${semantic.colorScheme.color.border.status.danger.focus}`,
+    boxShadow: createFocusRingShadow(
+      components.inputtext.root.focusRing.width,
+      semantic.colorScheme.color.border.status.danger.focus,
+      components.inputotp.extend.borderWidth,
+      components.inputtext.root.invalidBorderColor
+    ),
   },
 
   disabled: {
+    borderWidth: components.inputotp.extend.borderWidth,
     backgroundColor: components.inputtext.root.disabledBackground,
     borderColor: components.inputtext.root.borderColor,
     boxShadow: 'none',
