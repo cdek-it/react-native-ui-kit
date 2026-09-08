@@ -1348,13 +1348,7 @@
   "inputotp": {
     "extend": { "height": 40, "borderWidth": 1 },
     "root": { "gap": 8 },
-    "input": {
-      "width": 40,
-      "paddingTop": 12,
-      "paddingBottom": 8,
-      "lg": { "width": 48 },
-      "sm": { "width": 28 }
-    },
+    "input": { "width": 40, "lg": { "width": 48 }, "sm": { "width": 28 } },
     "sm": { "width": 0 },
     "lg": { "width": 0 }
   },
@@ -1383,7 +1377,7 @@
       "shadow": "none",
       "paddingX": 10,
       "paddingY": 10,
-      "borderRadius": 14,
+      "borderRadius": 10,
       "transitionDuration": 180,
       "sm": { "fontSize": 16, "paddingX": 10, "paddingY": 8 },
       "lg": { "fontSize": 16, "paddingX": 10, "paddingY": 14 },
