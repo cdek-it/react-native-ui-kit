@@ -26,5 +26,5 @@ const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
   h3: { fontSize: typography.Size['text-lg'] },
   h4: { fontSize: typography.Size['text-base'] },
   h5: { fontSize: typography.Size['text-sm'] },
-  h6: { fontSize: typography.Size['text-xs'] },
+  h6: { fontSize: typography.Size['text-xs'], lineHeight: 12 },
 }))

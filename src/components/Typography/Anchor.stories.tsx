@@ -20,6 +20,7 @@ const meta: Meta<typeof Anchor> = {
     RightIcon: undefined,
   },
   argTypes: {
+    base: { control: 'boolean' },
     LeftIcon: { control: 'radio', options: Object.keys(Icons), mapping: Icons },
     RightIcon: {
       control: 'radio',
@@ -39,7 +40,7 @@ const AnchorStory: Story = {
     <View style={{ gap: 10 }}>
       <Anchor {...args} />
 
-      <Body base>
+      <Body size='base'>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
         adipisci ducimus est fuga hic iusto laborum minima modi, non reiciendis
         repellat repudiandae{' '}

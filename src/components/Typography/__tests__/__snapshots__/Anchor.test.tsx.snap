@@ -20,10 +20,10 @@ exports[`Body component tests default props 1`] = `
           "color": "#1e76cd",
           "flexShrink": 1,
           "fontFamily": "Noto Sans",
-          "fontSize": 12.25,
+          "fontSize": 14,
           "includeFontPadding": false,
-          "letterSpacing": -0.25,
-          "lineHeight": 15,
+          "letterSpacing": 0,
+          "lineHeight": undefined,
           "verticalAlign": "middle",
         },
         false,
@@ -89,11 +89,11 @@ exports[`Body component tests левая иконка, base, visited, testID = C
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={14}
+      bbWidth={14}
       fill="none"
       focusable={false}
-      height={17.5}
+      height={14}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -109,15 +109,15 @@ exports[`Body component tests левая иконка, base, visited, testID = C
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 14,
+            "width": 14,
           },
         ]
       }
       testID="LeftIcon"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={14}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -223,17 +223,17 @@ exports[`Body component tests левая иконка, base, visited, testID = C
           "color": "#1e76cd",
           "flexShrink": 1,
           "fontFamily": "Noto Sans",
-          "fontSize": 12.25,
+          "fontSize": 14,
           "includeFontPadding": false,
-          "letterSpacing": -0.25,
-          "lineHeight": 15,
+          "letterSpacing": 0,
+          "lineHeight": undefined,
           "verticalAlign": "middle",
         },
         false,
         {
-          "fontSize": 14,
-          "letterSpacing": 0,
-          "lineHeight": undefined,
+          "fontSize": 12.25,
+          "letterSpacing": -0.25,
+          "lineHeight": 15,
         },
         {
           "color": "#9457ea",
@@ -299,11 +299,11 @@ exports[`Body component tests левая иконка, правая иконка
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={17.5}
+      bbWidth={17.5}
       fill="none"
       focusable={false}
-      height={14}
+      height={17.5}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -319,15 +319,15 @@ exports[`Body component tests левая иконка, правая иконка
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 17,
+            "width": 17,
           },
         ]
       }
       testID="LeftIcon"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={17.5}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -433,10 +433,10 @@ exports[`Body component tests левая иконка, правая иконка
           "color": "#1e76cd",
           "flexShrink": 1,
           "fontFamily": "Noto Sans",
-          "fontSize": 12.25,
+          "fontSize": 14,
           "includeFontPadding": false,
-          "letterSpacing": -0.25,
-          "lineHeight": 15,
+          "letterSpacing": 0,
+          "lineHeight": undefined,
           "verticalAlign": "middle",
         },
         false,
@@ -491,11 +491,11 @@ exports[`Body component tests левая иконка, правая иконка
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={17.5}
+      bbWidth={17.5}
       fill="none"
       focusable={false}
-      height={14}
+      height={17.5}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -511,15 +511,15 @@ exports[`Body component tests левая иконка, правая иконка
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 17,
+            "width": 17,
           },
         ]
       }
       testID="RightIcon"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={17.5}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -630,10 +630,10 @@ exports[`Body component tests правая иконка, noWrapper 1`] = `
           "color": "#1e76cd",
           "flexShrink": 1,
           "fontFamily": "Noto Sans",
-          "fontSize": 12.25,
+          "fontSize": 14,
           "includeFontPadding": false,
-          "letterSpacing": -0.25,
-          "lineHeight": 15,
+          "letterSpacing": 0,
+          "lineHeight": undefined,
           "verticalAlign": "middle",
         },
         false,
@@ -687,11 +687,11 @@ exports[`Body component tests правая иконка, noWrapper 1`] = `
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={17.5}
+      bbWidth={17.5}
       fill="none"
       focusable={false}
-      height={14}
+      height={17.5}
       meetOrSlice={0}
       minX={0}
       minY={0}
@@ -707,15 +707,15 @@ exports[`Body component tests правая иконка, noWrapper 1`] = `
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 17,
+            "width": 17,
           },
         ]
       }
       testID="RightIcon"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={17.5}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup

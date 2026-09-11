@@ -128,6 +128,7 @@ exports[`Title component tests level = h6 1`] = `
       },
       {
         "fontSize": 10.5,
+        "lineHeight": 12,
       },
       undefined,
     ]
