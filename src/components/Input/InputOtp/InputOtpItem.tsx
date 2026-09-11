@@ -4,6 +4,7 @@ import {
   View,
   Text,
   type PressableProps,
+  type TextProps,
   type TextStyle,
 } from 'react-native'
 
@@ -15,10 +16,10 @@ import effects from '../../../theme/tokens/semantic/effects.json'
 
 import { createInputOtpTestIds } from './testIds'
 
-export interface InputOtpItemProps extends Pick<
-  PressableProps,
-  'onPress' | 'testOnly_pressed'
-> {
+export interface InputOtpItemProps
+  extends
+    Pick<PressableProps, 'onPress' | 'testOnly_pressed'>,
+    Pick<TextProps, 'allowFontScaling' | 'maxFontSizeMultiplier'> {
   value?: string
   error: boolean
   disabled: boolean
@@ -57,6 +58,8 @@ export const InputOtpItem = memo<InputOtpItemProps>(
     focused,
     testIdPrefix,
     testOnly_pressed,
+    allowFontScaling,
+    maxFontSizeMultiplier,
     onPress,
   }) => {
     const [isHovered, setIsHovered] = useState(false)
@@ -80,36 +83,52 @@ export const InputOtpItem = memo<InputOtpItemProps>(
         onHoverOut={() => setIsHovered(false)}
         onPress={onPress}
       >
-        {focused ? (
-          <View style={styles.textRow} testID={testIds.cursorRow}>
-            {value ? (
-              <>
-                <Text
-                  accessibilityElementsHidden
-                  importantForAccessibility='no-hide-descendants'
-                  style={[styles.text, styles.cursorSpacer]}
-                >
-                  |
-                </Text>
-                <Text style={styles.text} testID={testIds.item}>
-                  {value}
-                </Text>
-              </>
-            ) : null}
-            <Animated.Text
-              accessibilityElementsHidden
-              importantForAccessibility='no-hide-descendants'
-              style={[styles.text, styles.cursor, cursorAnimationStyle]}
-              testID={testIds.cursor}
+        <View style={styles.content}>
+          {focused ? (
+            <View style={styles.textRow} testID={testIds.cursorRow}>
+              {value ? (
+                <>
+                  <Text
+                    accessibilityElementsHidden
+                    allowFontScaling={allowFontScaling}
+                    importantForAccessibility='no-hide-descendants'
+                    maxFontSizeMultiplier={maxFontSizeMultiplier}
+                    style={[styles.text, styles.cursorSpacer]}
+                  >
+                    |
+                  </Text>
+                  <Text
+                    allowFontScaling={allowFontScaling}
+                    maxFontSizeMultiplier={maxFontSizeMultiplier}
+                    style={styles.text}
+                    testID={testIds.item}
+                  >
+                    {value}
+                  </Text>
+                </>
+              ) : null}
+              <Animated.Text
+                accessibilityElementsHidden
+                allowFontScaling={allowFontScaling}
+                importantForAccessibility='no-hide-descendants'
+                maxFontSizeMultiplier={maxFontSizeMultiplier}
+                style={[styles.text, cursorAnimationStyle]}
+                testID={testIds.cursor}
+              >
+                |
+              </Animated.Text>
+            </View>
+          ) : (
+            <Text
+              allowFontScaling={allowFontScaling}
+              maxFontSizeMultiplier={maxFontSizeMultiplier}
+              style={styles.text}
+              testID={testIds.item}
             >
-              |
-            </Animated.Text>
-          </View>
-        ) : (
-          <Text style={styles.text} testID={testIds.item}>
-            {value}
-          </Text>
-        )}
+              {value}
+            </Text>
+          )}
+        </View>
       </Pressable>
     )
   }
@@ -129,14 +148,23 @@ const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
     justifyContent: 'center',
   },
 
+  content: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
   textRow: { flexDirection: 'row', alignItems: 'center' },
 
   cursorSpacer: { opacity: semantic.effects.opacity[0] },
 
-  cursor: { lineHeight: fonts.lineHeight[400] },
-
   text: {
     fontSize: fonts.fontSize[200],
+    lineHeight: fonts.lineHeight[300],
     fontFamily: fonts.fontFamily.base,
     fontWeight: fonts.fontWeight.regular,
     letterSpacing: fonts.letterSpacing[500],
