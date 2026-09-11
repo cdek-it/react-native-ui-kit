@@ -309,9 +309,7 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 14,
                   "includeFontPadding": false,
-                  "lineHeight": 20,
                   "verticalAlign": "middle",
                 },
                 {
@@ -319,6 +317,10 @@ exports[`ListBase tests ListBase centered and full divider 1`] = `
                 },
                 {
                   "color": "#181a1f",
+                },
+                {
+                  "fontSize": 14,
+                  "lineHeight": 20,
                 },
                 undefined,
                 undefined,
@@ -864,9 +866,7 @@ exports[`ListBase tests ListBase full disabled 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 14,
                   "includeFontPadding": false,
-                  "lineHeight": 20,
                   "verticalAlign": "middle",
                 },
                 {
@@ -874,6 +874,10 @@ exports[`ListBase tests ListBase full disabled 1`] = `
                 },
                 {
                   "color": "#181a1f",
+                },
+                {
+                  "fontSize": 14,
+                  "lineHeight": 20,
                 },
                 undefined,
                 undefined,
@@ -1426,9 +1430,7 @@ exports[`ListBase tests ListBase maximal config 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 14,
                   "includeFontPadding": false,
-                  "lineHeight": 20,
                   "verticalAlign": "middle",
                 },
                 {
@@ -1436,6 +1438,10 @@ exports[`ListBase tests ListBase maximal config 1`] = `
                 },
                 {
                   "color": "#181a1f",
+                },
+                {
+                  "fontSize": 14,
+                  "lineHeight": 20,
                 },
                 undefined,
                 undefined,
@@ -1760,9 +1766,7 @@ exports[`ListBase tests ListBase minimal config 1`] = `
               [
                 {
                   "fontFamily": "Noto Sans",
-                  "fontSize": 14,
                   "includeFontPadding": false,
-                  "lineHeight": 20,
                   "verticalAlign": "middle",
                 },
                 {
@@ -1770,6 +1774,10 @@ exports[`ListBase tests ListBase minimal config 1`] = `
                 },
                 {
                   "color": "#181a1f",
+                },
+                {
+                  "fontSize": 14,
+                  "lineHeight": 20,
                 },
                 undefined,
                 undefined,

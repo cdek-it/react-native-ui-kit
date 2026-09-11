@@ -116,7 +116,7 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
                 />
               ) : null}
               <View style={styles.textContainer}>
-                <Body base>{title}</Body>
+                <Body size='base'>{title}</Body>
                 {caption ? (
                   <Caption color='secondary'>{caption}</Caption>
                 ) : null}
