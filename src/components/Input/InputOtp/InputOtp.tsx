@@ -72,7 +72,9 @@ export const InputOtp = memo<InputOtpProps>(
     onFocus,
     onBlur,
     accessibilityState,
+    allowFontScaling = true,
     autoComplete = 'one-time-code',
+    maxFontSizeMultiplier,
     selection,
     textContentType = 'oneTimeCode',
     editable,
@@ -156,6 +158,7 @@ export const InputOtp = memo<InputOtpProps>(
         >
           {Array.from({ length }, (_, index) => (
             <InputOtpItem
+              allowFontScaling={allowFontScaling}
               disabled={!isInputEditable}
               error={error}
               focused={Boolean(
@@ -165,6 +168,7 @@ export const InputOtp = memo<InputOtpProps>(
                 index === activeIndex
               )}
               key={`Otp-Item-${index}`}
+              maxFontSizeMultiplier={maxFontSizeMultiplier}
               testIdPrefix={testIds.root}
               testOnly_pressed={testOnly_pressed}
               value={inputValue[index]}
@@ -178,10 +182,12 @@ export const InputOtp = memo<InputOtpProps>(
             ...accessibilityState,
             disabled: !isInputEditable,
           }}
+          allowFontScaling={allowFontScaling}
           autoComplete={autoComplete}
           editable={isInputEditable}
           inputMode='numeric'
           keyboardType='number-pad'
+          maxFontSizeMultiplier={maxFontSizeMultiplier}
           ref={inputRef}
           selection={inputSelection}
           style={styles.input}
