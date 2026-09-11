@@ -50,7 +50,7 @@ exports[`Message {"Icon": [Object], "timerValue": 5} 1`] = `
         }
       >
         <Body
-          base={true}
+          size="base"
           testID="Title"
           weight="bold"
         >
@@ -211,7 +211,7 @@ exports[`Message {"Icon": [Object]} 1`] = `
         }
       >
         <Body
-          base={true}
+          size="base"
           testID="Title"
           weight="bold"
         >
@@ -397,7 +397,7 @@ exports[`Message {"body": [Object], "caption": "caption", "severity": "info", "s
         }
       >
         <Body
-          base={true}
+          size="base"
           testID="Title"
           weight="bold"
         >
@@ -593,7 +593,7 @@ exports[`Message {"body": [Object], "footer": [Object], "severity": "warning"} 1
         }
       >
         <Body
-          base={true}
+          size="base"
           testID="Title"
           weight="bold"
         >
@@ -764,7 +764,7 @@ exports[`Message {"closeLabel": "Close", "footer": [Object], "onClose": [Functio
         }
       >
         <Body
-          base={true}
+          size="base"
           testID="Title"
           weight="bold"
         >
@@ -997,7 +997,7 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
         }
       >
         <Body
-          base={true}
+          size="base"
           testID="Title"
           weight="bold"
         >
@@ -1342,7 +1342,7 @@ exports[`Message {"hiddenIcon": false} 1`] = `
         }
       >
         <Body
-          base={true}
+          size="base"
           testID="Title"
           weight="bold"
         >
@@ -1405,7 +1405,7 @@ exports[`Message {"onTimerFinish": [Function mockConstructor], "timerValue": 5} 
         }
       >
         <Body
-          base={true}
+          size="base"
           testID="Title"
           weight="bold"
         >
@@ -1589,7 +1589,7 @@ exports[`Message {"severity": "danger"} 1`] = `
         }
       >
         <Body
-          base={true}
+          size="base"
           testID="Title"
           weight="bold"
         >
@@ -1773,7 +1773,7 @@ exports[`Message {} 1`] = `
         }
       >
         <Body
-          base={true}
+          size="base"
           testID="Title"
           weight="bold"
         >

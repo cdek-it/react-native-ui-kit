@@ -15,7 +15,7 @@ export const reactConfig = defineConfig([
         'error',
         {
           validateNested: true,
-          rule: '(^(is|has|with|show)[A-Z]([A-Za-z0-9]?)+)|disabled|loading|paragraph|base|controlled',
+          rule: '(^(is|has|with|show)[A-Z]([A-Za-z0-9]?)+)|disabled|loading|paragraph|base|controlled|strikethrough',
         },
       ],
 

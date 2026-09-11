@@ -10,15 +10,17 @@ const meta: Meta<typeof Body> = {
     children: 'Test',
     disabled: false,
     paragraph: false,
+    size: 'lg',
+    strikethrough: false,
     weight: 'regular',
-    base: false,
   },
   argTypes: {
     color: { control: 'radio', options: ['default', 'secondary', 'primary'] },
     disabled: { control: 'boolean' },
     paragraph: { control: 'boolean' },
-    weight: { control: 'radio', options: ['regular', 'medium', 'bold'] },
-    base: { control: 'boolean' },
+    size: { control: 'radio', options: ['base', 'lg', 'xl'] },
+    strikethrough: { control: 'boolean' },
+    weight: { control: 'radio', options: ['regular', 'bold'] },
   },
 }
 

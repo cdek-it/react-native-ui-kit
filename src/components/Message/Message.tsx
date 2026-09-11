@@ -201,7 +201,7 @@ export const Message = memo<MessageProps>(
           <View style={messageStyles.titleRow}>
             {LeftContent}
             <View style={messageStyles.titleTextContainer}>
-              <Body base testID={TestId.Title} weight='bold'>
+              <Body size='base' testID={TestId.Title} weight='bold'>
                 {title}
               </Body>
               {caption ? (
