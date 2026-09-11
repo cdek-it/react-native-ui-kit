@@ -2368,6 +2368,7 @@ exports[`Service component tests base = true, showIcon = false, variant = danger
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
@@ -2405,6 +2406,7 @@ exports[`Service component tests base = true, showIcon = false, variant = danger
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
@@ -2442,6 +2444,7 @@ exports[`Service component tests base = true, showIcon = false, variant = help 1
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
@@ -2479,6 +2482,7 @@ exports[`Service component tests base = true, showIcon = false, variant = help 2
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
@@ -2516,6 +2520,7 @@ exports[`Service component tests base = true, showIcon = false, variant = info 1
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
@@ -2553,6 +2558,7 @@ exports[`Service component tests base = true, showIcon = false, variant = info 2
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
@@ -2590,6 +2596,7 @@ exports[`Service component tests base = true, showIcon = false, variant = succes
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
@@ -2627,6 +2634,7 @@ exports[`Service component tests base = true, showIcon = false, variant = succes
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
@@ -2664,6 +2672,7 @@ exports[`Service component tests base = true, showIcon = false, variant = warnin
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
@@ -2701,6 +2710,7 @@ exports[`Service component tests base = true, showIcon = false, variant = warnin
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
@@ -2840,6 +2850,7 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
@@ -3094,6 +3105,7 @@ exports[`Service component tests base = true, showIcon = true, variant = danger 
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
@@ -3256,6 +3268,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 1`
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
@@ -3510,6 +3523,7 @@ exports[`Service component tests base = true, showIcon = true, variant = help 2`
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
@@ -3672,6 +3686,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 1`
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
@@ -3926,6 +3941,7 @@ exports[`Service component tests base = true, showIcon = true, variant = info 2`
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
@@ -4065,6 +4081,7 @@ exports[`Service component tests base = true, showIcon = true, variant = success
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
@@ -4319,6 +4336,7 @@ exports[`Service component tests base = true, showIcon = true, variant = success
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
@@ -4481,6 +4499,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
@@ -4735,6 +4754,7 @@ exports[`Service component tests base = true, showIcon = true, variant = warning
         },
         {
           "fontSize": 14,
+          "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {

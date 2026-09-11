@@ -7,6 +7,7 @@ const meta: Meta<typeof Subtitle> = {
   component: Subtitle,
   args: { base: false, color: 'default', children: 'Subtitle' },
   argTypes: {
+    base: { control: 'boolean' },
     color: { control: 'radio', options: ['default', 'primary', 'secondary'] },
   },
 }
