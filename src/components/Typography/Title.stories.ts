@@ -7,7 +7,10 @@ const meta: Meta<typeof Title> = {
   component: Title,
   args: { level: 'h1', children: 'Test' },
   argTypes: {
-    level: { control: 'radio', options: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'] },
+    level: {
+      control: 'radio',
+      options: ['d1', 'd2', 'd3', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+    },
   },
 }
 

@@ -4,7 +4,7 @@ import { Title, type TitleProps } from '../Title'
 
 describe('Title component tests', () => {
   const snapshotCases = generatePropsCombinations<TitleProps>({
-    level: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+    level: ['d1', 'd2', 'd3', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
   })
 
   test.each(snapshotCases)('level = $level', (props) => {

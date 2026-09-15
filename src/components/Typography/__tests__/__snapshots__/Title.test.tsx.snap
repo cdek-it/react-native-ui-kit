@@ -1,5 +1,74 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Title component tests level = d1 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#181a1f",
+        "fontFamily": "TT Fellows",
+        "fontWeight": 700,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
+      },
+      {
+        "fontSize": 42,
+      },
+      undefined,
+    ]
+  }
+  testID="Title"
+>
+  Text
+</Text>
+`;
+
+exports[`Title component tests level = d2 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#181a1f",
+        "fontFamily": "TT Fellows",
+        "fontWeight": 700,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
+      },
+      {
+        "fontSize": 31.5,
+      },
+      undefined,
+    ]
+  }
+  testID="Title"
+>
+  Text
+</Text>
+`;
+
+exports[`Title component tests level = d3 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#181a1f",
+        "fontFamily": "TT Fellows",
+        "fontWeight": 700,
+        "includeFontPadding": false,
+        "verticalAlign": "middle",
+      },
+      {
+        "fontSize": 26.25,
+      },
+      undefined,
+    ]
+  }
+  testID="Title"
+>
+  Text
+</Text>
+`;
+
 exports[`Title component tests level = h1 1`] = `
 <Text
   style={
