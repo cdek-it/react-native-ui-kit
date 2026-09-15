@@ -141,45 +141,45 @@ const ListBaseTestId = {
   title: 'Title',
 }
 
-const styles = StyleSheet.create(
-  ({ spacing, typography, theme, background }) => ({
-    container: {
-      flexDirection: 'row',
-      paddingLeft: spacing.Padding['p-4'],
-      gap: spacing.Padding['p-4'],
-      alignItems: 'center',
-    },
-    pressed: { backgroundColor: background.Common['bg-surface-ground-hover'] },
-    disabled: { opacity: 0.6 },
-    leftIcon: { paddingVertical: spacing.Padding['p-4'] },
-    content: {
-      flex: 1,
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      paddingVertical: spacing.Padding['p-2'],
-      paddingEnd: spacing.Padding['p-4'],
-      gap: spacing.Gap['gap-4'],
-    },
-    labelContainer: {
-      paddingVertical: spacing.Padding['p-2'],
-      gap: spacing.Gap['gap-2'],
-      flex: 1,
-    },
-    titleContainer: { gap: spacing.Gap['gap-1'] },
-    extraContainer: { paddingVertical: spacing.Padding['p-2'] },
-    icon: {
-      width: typography.Size['text-2xl'],
-      height: typography.Size['text-2xl'],
-    },
-    rightSection: {
-      flexDirection: 'row',
-      alignItems: 'center',
-      paddingVertical: spacing.Padding['p-2'],
-      gap: spacing.Gap['gap-4'],
-    },
-    divider: {
-      borderTopColor: theme.Surface['surface-border'],
-      borderTopWidth: 1,
-    },
-  })
-)
+const styles = StyleSheet.create(({ semantic }) => ({
+  container: {
+    flexDirection: 'row',
+    paddingLeft: semantic.dimension.space[400],
+    gap: semantic.dimension.space[400],
+    alignItems: 'center',
+  },
+  pressed: {
+    backgroundColor: semantic.colorScheme.color.bg.neutral.weak.hover,
+  },
+  disabled: { opacity: semantic.effects.opacity[60] },
+  leftIcon: { paddingVertical: semantic.dimension.space[400] },
+  content: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingVertical: semantic.dimension.space[200],
+    paddingEnd: semantic.dimension.space[400],
+    gap: semantic.dimension.space[400],
+  },
+  labelContainer: {
+    paddingVertical: semantic.dimension.space[200],
+    gap: semantic.dimension.space[200],
+    flex: 1,
+  },
+  titleContainer: { gap: semantic.dimension.space[100] },
+  extraContainer: { paddingVertical: semantic.dimension.space[200] },
+  icon: {
+    width: semantic.dimension.size[700],
+    height: semantic.dimension.size[700],
+  },
+  rightSection: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: semantic.dimension.space[200],
+    gap: semantic.dimension.space[400],
+  },
+  divider: {
+    borderTopColor: semantic.colorScheme.color.border.neutral.default,
+    borderTopWidth: 1,
+  },
+}))

@@ -6,6 +6,10 @@ export default defineConfig([
   ...MobileConfig,
   { files: ['configs/eslint/**/*'], rules: { 'max-lines': 'off' } },
   {
+    files: ['scripts/**/*.ts'],
+    rules: { 'import-x/no-nodejs-modules': 'off' },
+  },
+  {
     ignores: [
       'node_modules/**/*',
       '.expo/**/*',

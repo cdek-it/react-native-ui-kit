@@ -21,7 +21,7 @@ export const InputSwitch = memo<InputSwitchProps>(
   }) => {
     const { containerStyle, sliderStyle, onPressIn, onPressOut } =
       useSliderStyles(checked, disabled, danger)
-    const { handleStyle } = useHandleStyles(checked)
+    const { handleStyle } = useHandleStyles(checked, disabled)
 
     const handlePress = useCallback(() => {
       onCheckedChange?.(!checked)

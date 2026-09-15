@@ -28,6 +28,57 @@
 
 ### ♻️ Рефакторинг
 
+## [1.1.0-beta.0](https://github.com/cdek-it/react-native-ui-kit/compare/v1.0.3...v1.1.0-beta.0) (2026-08-06)
+
+### 🚀 Новый функционал
+
+* **Accordion:** подключены сгенерированные токены ([1f05446](https://github.com/cdek-it/react-native-ui-kit/commit/1f05446129b7a224d6417cf700e5ea75f9de196a))
+* **Avatar:** подключены сгенерированные токены ([da7550e](https://github.com/cdek-it/react-native-ui-kit/commit/da7550e4be7bd49f900d17ebe84d10ab90764cb8))
+* **Badge:** подключены сгенерированные токены ([5f534f3](https://github.com/cdek-it/react-native-ui-kit/commit/5f534f326fe44c53b6211ca8c4518540cd160baf))
+* **Button:** подключены сгенерированные токены ([5a619a7](https://github.com/cdek-it/react-native-ui-kit/commit/5a619a7670d0eb56e7591e135c932cd41d7c8a01))
+* **Checkbox:** подключены сгенерированные токены ([706d49f](https://github.com/cdek-it/react-native-ui-kit/commit/706d49fc9e25773dab1cd063d767391b2d6495ac))
+* **Chip:** подключены сгенерированные токены ([7940416](https://github.com/cdek-it/react-native-ui-kit/commit/7940416299438daa6b6cf67f157b2297514bbe30))
+* **Dialog:** подключены сгенерированные токены ([f9acf57](https://github.com/cdek-it/react-native-ui-kit/commit/f9acf579c693ebc7ca62d8d41845eb3369b2e7d2))
+* **Divider:** подключены сгенерированные токены ([55d672f](https://github.com/cdek-it/react-native-ui-kit/commit/55d672f25676d15ac2d8110a554c166730aa602f))
+* **InputSwitch:** подключены сгенерированные токены ([ec5030f](https://github.com/cdek-it/react-native-ui-kit/commit/ec5030fce28a5de6385df38f3564c8c372b32d7d))
+* **Input:** подключены сгенерированные токены ([9e63339](https://github.com/cdek-it/react-native-ui-kit/commit/9e63339502e7ef6e377178b22c93b4bcffd60146))
+* **List:** подключены сгенерированные токены ([1c58202](https://github.com/cdek-it/react-native-ui-kit/commit/1c58202e36086865b9ee5164bd235c4a3fb099e4))
+* **MenuItem:** подключены сгенерированные токены ([74355e6](https://github.com/cdek-it/react-native-ui-kit/commit/74355e666247e0205aacb55f2f6cf2a6552c9a9a))
+* **Message:** подключены сгенерированные токены ([bb9c8de](https://github.com/cdek-it/react-native-ui-kit/commit/bb9c8de54fd30a6c69eef9c3e9716876939f465e))
+* **ProgressBar:** подключены сгенерированные токены ([1628475](https://github.com/cdek-it/react-native-ui-kit/commit/1628475a30b7bc16842b34b14c2998b2612805cb))
+* **ProgressSpinner:** подключены сгенерированные токены ([04fe461](https://github.com/cdek-it/react-native-ui-kit/commit/04fe46136a8ddf3f62c231641ff2ace6dbc85dfe))
+* **RadioButton:** подключены сгенерированные токены ([32bc17f](https://github.com/cdek-it/react-native-ui-kit/commit/32bc17fb083c36e4c830451e125fcd4bb6177643))
+* **Rating:** подключены сгенерированные токены ([1219e43](https://github.com/cdek-it/react-native-ui-kit/commit/1219e43a9068d081a19bcd96021d3d99b36e0f81))
+* **SelectButton:** подключены сгенерированные токены ([5e170ba](https://github.com/cdek-it/react-native-ui-kit/commit/5e170bae3e97cfe7f3604bc819c13f8d00602358))
+* **Skeleton:** подключены сгенерированные токены ([552b857](https://github.com/cdek-it/react-native-ui-kit/commit/552b8572912884b994bfe087c296a86d073868f3))
+* **Slider:** подключены сгенерированные токены ([1be33c0](https://github.com/cdek-it/react-native-ui-kit/commit/1be33c03f156b013228064db2dd2151e08f9f5b1))
+* **Tabs:** подключены сгенерированные токены ([42bf812](https://github.com/cdek-it/react-native-ui-kit/commit/42bf812b09da68e6023c3029749ff6f435007ea5))
+* **Tag:** подключены сгенерированные токены ([6cfc335](https://github.com/cdek-it/react-native-ui-kit/commit/6cfc335f6e06373f320b8d4d30865a30dd75aa05))
+* **Theme:** подключены сгенерированные токены ([8e5a257](https://github.com/cdek-it/react-native-ui-kit/commit/8e5a257cc2c1d90e27ab4e591a9a0ed969d2619b))
+* **Timer:** подключены сгенерированные токены ([0b74c4a](https://github.com/cdek-it/react-native-ui-kit/commit/0b74c4a5b5f030d3797eb4b29e48404af2f2ce3d))
+* **ToggleButton:** подключены сгенерированные токены ([82a4f40](https://github.com/cdek-it/react-native-ui-kit/commit/82a4f409fdda0641dcf001e2704850808e897def))
+* **Typography:** подключены сгенерированные токены ([b5e0ca1](https://github.com/cdek-it/react-native-ui-kit/commit/b5e0ca14ae4a9e77a2efff4e654dc2c937d223a2))
+* добавлен генератор дизайн-токенов ([83048a7](https://github.com/cdek-it/react-native-ui-kit/commit/83048a7bac41a41b516490aab4423f47b2fcd1e5))
+* добавлена генерация токенов шрифтов ([6838bb3](https://github.com/cdek-it/react-native-ui-kit/commit/6838bb37d6e25e2fd7911a55d71ba880648d1cbb))
+* добавлена поддержка focusRing-токенов ([566f0ec](https://github.com/cdek-it/react-native-ui-kit/commit/566f0ecf8b3fe7d0a57f97da04b609abb198309f))
+* добавлена поддержка токенов анимации ([6e81a29](https://github.com/cdek-it/react-native-ui-kit/commit/6e81a2951d00266371a3e4e0060e6139f541414b))
+* добавлены и подключены дизайн-токены ([a6ac14d](https://github.com/cdek-it/react-native-ui-kit/commit/a6ac14dceedd5d29de808896349e9606fce75548))
+
+### 🐛 Исправления багов
+
+* доработан генератор дизайн-токенов ([d5c0ed5](https://github.com/cdek-it/react-native-ui-kit/commit/d5c0ed5be85c5cf6e403132dc1d0e48ef597f191))
+* исправлена нормализация радиусов в токенах ([b1b2b19](https://github.com/cdek-it/react-native-ui-kit/commit/b1b2b197a0e18e9bb3714597856a4ee1d62df2c3))
+
+### 🧹 Другое
+
+* актуализирована документация тем и токенов ([0206449](https://github.com/cdek-it/react-native-ui-kit/commit/020644980ee011cacfcbaf23b2ebee9a5af9f34b))
+
+### ♻️ Рефакторинг
+
+* **theme:** добавлен слой legacy-совместимости ([d55fbde](https://github.com/cdek-it/react-native-ui-kit/commit/d55fbde0f0d058b09bb152d696580845a76d68f2))
+* **tokens:** component-токены скрыты из публичного API ([5c4e4bd](https://github.com/cdek-it/react-native-ui-kit/commit/5c4e4bd087d2b407c498f5100a72a90b1f54b69a))
+* **tokens:** объединены проверка и форматирование генерации ([f60cbd6](https://github.com/cdek-it/react-native-ui-kit/commit/f60cbd61b01dd4d2d8c79247a191fb8f1ab1f5c6))
+* **tokens:** разделены semantic-токены ([8ab1759](https://github.com/cdek-it/react-native-ui-kit/commit/8ab17593587bf96488f9f41a7fae80e395f33431))
 * улучшена читаемость конфигурации плагинов ([7e6bba9](https://github.com/cdek-it/react-native-ui-kit/commit/7e6bba95b87d1dc1b3a1fcf2414b6dee91b86c64))
 
 ## [1.0.3](https://github.com/cdek-it/react-native-ui-kit/compare/v1.0.2...v1.0.3) (2026-07-30)

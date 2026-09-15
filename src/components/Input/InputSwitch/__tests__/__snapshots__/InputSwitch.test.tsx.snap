@@ -33,8 +33,8 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
   onStartShouldSetResponder={[Function]}
   style={
     {
-      "height": 21,
-      "width": 35,
+      "height": 24,
+      "width": 40,
     }
   }
 >
@@ -52,25 +52,25 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
     }
     jestInlineStyle={
       {
-        "backgroundColor": ""#85888e"",
+        "backgroundColor": ""#a2a5a9"",
         "borderColor": ""transparent"",
-        "borderRadius": 100,
+        "borderRadius": 1600,
         "borderWidth": 1,
-        "height": 21,
-        "padding": 3.5,
-        "width": 35,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
       }
     }
     style={
       [
         {
-          "backgroundColor": "#85888e",
+          "backgroundColor": "#a2a5a9",
           "borderColor": "transparent",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "borderWidth": 1,
-          "height": 21,
-          "padding": 3.5,
-          "width": 35,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
         },
       ]
     }
@@ -90,24 +90,24 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
       jestInlineStyle={
         {
           "backgroundColor": ""#ffffff"",
-          "borderRadius": 100,
-          "height": 14,
-          "left": "2.5",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "3",
           "position": "absolute",
-          "top": 2.5,
-          "width": 14,
+          "top": 3,
+          "width": 16,
         }
       }
       style={
         [
           {
             "backgroundColor": "#ffffff",
-            "borderRadius": 100,
-            "height": 14,
-            "left": 2.5,
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 3,
             "position": "absolute",
-            "top": 2.5,
-            "width": 14,
+            "top": 3,
+            "width": 16,
           },
         ]
       }
@@ -149,8 +149,8 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
   onStartShouldSetResponder={[Function]}
   style={
     {
-      "height": 21,
-      "width": 35,
+      "height": 24,
+      "width": 40,
     }
   }
 >
@@ -168,25 +168,25 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
     }
     jestInlineStyle={
       {
-        "backgroundColor": ""#85888e"",
+        "backgroundColor": ""#a2a5a9"",
         "borderColor": ""transparent"",
-        "borderRadius": 100,
+        "borderRadius": 1600,
         "borderWidth": 1,
-        "height": 21,
-        "padding": 3.5,
-        "width": 35,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
       }
     }
     style={
       [
         {
-          "backgroundColor": "#85888e",
+          "backgroundColor": "#a2a5a9",
           "borderColor": "transparent",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "borderWidth": 1,
-          "height": 21,
-          "padding": 3.5,
-          "width": 35,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
         },
       ]
     }
@@ -206,24 +206,24 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
       jestInlineStyle={
         {
           "backgroundColor": ""#ffffff"",
-          "borderRadius": 100,
-          "height": 14,
-          "left": "2.5",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "3",
           "position": "absolute",
-          "top": 2.5,
-          "width": 14,
+          "top": 3,
+          "width": 16,
         }
       }
       style={
         [
           {
             "backgroundColor": "#ffffff",
-            "borderRadius": 100,
-            "height": 14,
-            "left": 2.5,
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 3,
             "position": "absolute",
-            "top": 2.5,
-            "width": 14,
+            "top": 3,
+            "width": 16,
           },
         ]
       }
@@ -265,8 +265,8 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
   onStartShouldSetResponder={[Function]}
   style={
     {
-      "height": 21,
-      "width": 35,
+      "height": 24,
+      "width": 40,
     }
   }
 >
@@ -284,25 +284,25 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
     }
     jestInlineStyle={
       {
-        "backgroundColor": ""#DFDFDF"",
+        "backgroundColor": ""#e2e2e4"",
         "borderColor": ""transparent"",
-        "borderRadius": 100,
+        "borderRadius": 1600,
         "borderWidth": 1,
-        "height": 21,
-        "padding": 3.5,
-        "width": 35,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
       }
     }
     style={
       [
         {
-          "backgroundColor": "#DFDFDF",
+          "backgroundColor": "#e2e2e4",
           "borderColor": "transparent",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "borderWidth": 1,
-          "height": 21,
-          "padding": 3.5,
-          "width": 35,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
         },
       ]
     }
@@ -321,25 +321,25 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
       }
       jestInlineStyle={
         {
-          "backgroundColor": ""#ffffff"",
-          "borderRadius": 100,
-          "height": 14,
-          "left": "2.5",
+          "backgroundColor": ""#85888e"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "3",
           "position": "absolute",
-          "top": 2.5,
-          "width": 14,
+          "top": 3,
+          "width": 16,
         }
       }
       style={
         [
           {
-            "backgroundColor": "#ffffff",
-            "borderRadius": 100,
-            "height": 14,
-            "left": 2.5,
+            "backgroundColor": "#85888e",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 3,
             "position": "absolute",
-            "top": 2.5,
-            "width": 14,
+            "top": 3,
+            "width": 16,
           },
         ]
       }
@@ -381,8 +381,8 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
   onStartShouldSetResponder={[Function]}
   style={
     {
-      "height": 21,
-      "width": 35,
+      "height": 24,
+      "width": 40,
     }
   }
 >
@@ -400,25 +400,25 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
     }
     jestInlineStyle={
       {
-        "backgroundColor": ""#DFDFDF"",
+        "backgroundColor": ""#e2e2e4"",
         "borderColor": ""transparent"",
-        "borderRadius": 100,
+        "borderRadius": 1600,
         "borderWidth": 1,
-        "height": 21,
-        "padding": 3.5,
-        "width": 35,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
       }
     }
     style={
       [
         {
-          "backgroundColor": "#DFDFDF",
+          "backgroundColor": "#e2e2e4",
           "borderColor": "transparent",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "borderWidth": 1,
-          "height": 21,
-          "padding": 3.5,
-          "width": 35,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
         },
       ]
     }
@@ -437,25 +437,25 @@ exports[`InputSwitch component tests checked - false, danger - false, disabled -
       }
       jestInlineStyle={
         {
-          "backgroundColor": ""#ffffff"",
-          "borderRadius": 100,
-          "height": 14,
-          "left": "2.5",
+          "backgroundColor": ""#85888e"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "3",
           "position": "absolute",
-          "top": 2.5,
-          "width": 14,
+          "top": 3,
+          "width": 16,
         }
       }
       style={
         [
           {
-            "backgroundColor": "#ffffff",
-            "borderRadius": 100,
-            "height": 14,
-            "left": 2.5,
+            "backgroundColor": "#85888e",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 3,
             "position": "absolute",
-            "top": 2.5,
-            "width": 14,
+            "top": 3,
+            "width": 16,
           },
         ]
       }
@@ -497,8 +497,8 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
   onStartShouldSetResponder={[Function]}
   style={
     {
-      "height": 21,
-      "width": 35,
+      "height": 24,
+      "width": 40,
     }
   }
 >
@@ -516,25 +516,25 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
     }
     jestInlineStyle={
       {
-        "backgroundColor": ""#85888e"",
-        "borderColor": ""#db3424"",
-        "borderRadius": 100,
+        "backgroundColor": ""#a2a5a9"",
+        "borderColor": ""#f47f77"",
+        "borderRadius": 1600,
         "borderWidth": 1,
-        "height": 21,
-        "padding": 3.5,
-        "width": 35,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
       }
     }
     style={
       [
         {
-          "backgroundColor": "#85888e",
-          "borderColor": "#db3424",
-          "borderRadius": 100,
+          "backgroundColor": "#a2a5a9",
+          "borderColor": "#f47f77",
+          "borderRadius": 1600,
           "borderWidth": 1,
-          "height": 21,
-          "padding": 3.5,
-          "width": 35,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
         },
       ]
     }
@@ -554,24 +554,24 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
       jestInlineStyle={
         {
           "backgroundColor": ""#ffffff"",
-          "borderRadius": 100,
-          "height": 14,
-          "left": "2.5",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "3",
           "position": "absolute",
-          "top": 2.5,
-          "width": 14,
+          "top": 3,
+          "width": 16,
         }
       }
       style={
         [
           {
             "backgroundColor": "#ffffff",
-            "borderRadius": 100,
-            "height": 14,
-            "left": 2.5,
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 3,
             "position": "absolute",
-            "top": 2.5,
-            "width": 14,
+            "top": 3,
+            "width": 16,
           },
         ]
       }
@@ -613,8 +613,8 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
   onStartShouldSetResponder={[Function]}
   style={
     {
-      "height": 21,
-      "width": 35,
+      "height": 24,
+      "width": 40,
     }
   }
 >
@@ -632,25 +632,25 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
     }
     jestInlineStyle={
       {
-        "backgroundColor": ""#85888e"",
-        "borderColor": ""#db3424"",
-        "borderRadius": 100,
+        "backgroundColor": ""#a2a5a9"",
+        "borderColor": ""#f47f77"",
+        "borderRadius": 1600,
         "borderWidth": 1,
-        "height": 21,
-        "padding": 3.5,
-        "width": 35,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
       }
     }
     style={
       [
         {
-          "backgroundColor": "#85888e",
-          "borderColor": "#db3424",
-          "borderRadius": 100,
+          "backgroundColor": "#a2a5a9",
+          "borderColor": "#f47f77",
+          "borderRadius": 1600,
           "borderWidth": 1,
-          "height": 21,
-          "padding": 3.5,
-          "width": 35,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
         },
       ]
     }
@@ -670,24 +670,24 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
       jestInlineStyle={
         {
           "backgroundColor": ""#ffffff"",
-          "borderRadius": 100,
-          "height": 14,
-          "left": "2.5",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "3",
           "position": "absolute",
-          "top": 2.5,
-          "width": 14,
+          "top": 3,
+          "width": 16,
         }
       }
       style={
         [
           {
             "backgroundColor": "#ffffff",
-            "borderRadius": 100,
-            "height": 14,
-            "left": 2.5,
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 3,
             "position": "absolute",
-            "top": 2.5,
-            "width": 14,
+            "top": 3,
+            "width": 16,
           },
         ]
       }
@@ -729,8 +729,8 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
   onStartShouldSetResponder={[Function]}
   style={
     {
-      "height": 21,
-      "width": 35,
+      "height": 24,
+      "width": 40,
     }
   }
 >
@@ -748,25 +748,25 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
     }
     jestInlineStyle={
       {
-        "backgroundColor": ""#DFDFDF"",
+        "backgroundColor": ""#e2e2e4"",
         "borderColor": ""transparent"",
-        "borderRadius": 100,
+        "borderRadius": 1600,
         "borderWidth": 1,
-        "height": 21,
-        "padding": 3.5,
-        "width": 35,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
       }
     }
     style={
       [
         {
-          "backgroundColor": "#DFDFDF",
+          "backgroundColor": "#e2e2e4",
           "borderColor": "transparent",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "borderWidth": 1,
-          "height": 21,
-          "padding": 3.5,
-          "width": 35,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
         },
       ]
     }
@@ -785,25 +785,25 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
       }
       jestInlineStyle={
         {
-          "backgroundColor": ""#ffffff"",
-          "borderRadius": 100,
-          "height": 14,
-          "left": "2.5",
+          "backgroundColor": ""#85888e"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "3",
           "position": "absolute",
-          "top": 2.5,
-          "width": 14,
+          "top": 3,
+          "width": 16,
         }
       }
       style={
         [
           {
-            "backgroundColor": "#ffffff",
-            "borderRadius": 100,
-            "height": 14,
-            "left": 2.5,
+            "backgroundColor": "#85888e",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 3,
             "position": "absolute",
-            "top": 2.5,
-            "width": 14,
+            "top": 3,
+            "width": 16,
           },
         ]
       }
@@ -845,8 +845,8 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
   onStartShouldSetResponder={[Function]}
   style={
     {
-      "height": 21,
-      "width": 35,
+      "height": 24,
+      "width": 40,
     }
   }
 >
@@ -864,25 +864,25 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
     }
     jestInlineStyle={
       {
-        "backgroundColor": ""#DFDFDF"",
+        "backgroundColor": ""#e2e2e4"",
         "borderColor": ""transparent"",
-        "borderRadius": 100,
+        "borderRadius": 1600,
         "borderWidth": 1,
-        "height": 21,
-        "padding": 3.5,
-        "width": 35,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
       }
     }
     style={
       [
         {
-          "backgroundColor": "#DFDFDF",
+          "backgroundColor": "#e2e2e4",
           "borderColor": "transparent",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "borderWidth": 1,
-          "height": 21,
-          "padding": 3.5,
-          "width": 35,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
         },
       ]
     }
@@ -901,25 +901,25 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
       }
       jestInlineStyle={
         {
-          "backgroundColor": ""#ffffff"",
-          "borderRadius": 100,
-          "height": 14,
-          "left": "2.5",
+          "backgroundColor": ""#85888e"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "3",
           "position": "absolute",
-          "top": 2.5,
-          "width": 14,
+          "top": 3,
+          "width": 16,
         }
       }
       style={
         [
           {
-            "backgroundColor": "#ffffff",
-            "borderRadius": 100,
-            "height": 14,
-            "left": 2.5,
+            "backgroundColor": "#85888e",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 3,
             "position": "absolute",
-            "top": 2.5,
-            "width": 14,
+            "top": 3,
+            "width": 16,
           },
         ]
       }
@@ -961,8 +961,8 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
   onStartShouldSetResponder={[Function]}
   style={
     {
-      "height": 21,
-      "width": 35,
+      "height": 24,
+      "width": 40,
     }
   }
 >
@@ -982,11 +982,11 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
       {
         "backgroundColor": ""#2b2e33"",
         "borderColor": ""transparent"",
-        "borderRadius": 100,
+        "borderRadius": 1600,
         "borderWidth": 1,
-        "height": 21,
-        "padding": 3.5,
-        "width": 35,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
       }
     }
     style={
@@ -994,11 +994,11 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
         {
           "backgroundColor": "#2b2e33",
           "borderColor": "transparent",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "borderWidth": 1,
-          "height": 21,
-          "padding": 3.5,
-          "width": 35,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
         },
       ]
     }
@@ -1017,25 +1017,25 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
       }
       jestInlineStyle={
         {
-          "backgroundColor": ""#fafafa"",
-          "borderRadius": 100,
-          "height": 14,
-          "left": "16.5",
+          "backgroundColor": ""#ffffff"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "19",
           "position": "absolute",
-          "top": 2.5,
-          "width": 14,
+          "top": 3,
+          "width": 16,
         }
       }
       style={
         [
           {
-            "backgroundColor": "#fafafa",
-            "borderRadius": 100,
-            "height": 14,
-            "left": 16.5,
+            "backgroundColor": "#ffffff",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 19,
             "position": "absolute",
-            "top": 2.5,
-            "width": 14,
+            "top": 3,
+            "width": 16,
           },
         ]
       }
@@ -1077,8 +1077,8 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
   onStartShouldSetResponder={[Function]}
   style={
     {
-      "height": 21,
-      "width": 35,
+      "height": 24,
+      "width": 40,
     }
   }
 >
@@ -1098,11 +1098,11 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
       {
         "backgroundColor": ""#2b2e33"",
         "borderColor": ""transparent"",
-        "borderRadius": 100,
+        "borderRadius": 1600,
         "borderWidth": 1,
-        "height": 21,
-        "padding": 3.5,
-        "width": 35,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
       }
     }
     style={
@@ -1110,11 +1110,11 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
         {
           "backgroundColor": "#2b2e33",
           "borderColor": "transparent",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "borderWidth": 1,
-          "height": 21,
-          "padding": 3.5,
-          "width": 35,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
         },
       ]
     }
@@ -1133,25 +1133,25 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
       }
       jestInlineStyle={
         {
-          "backgroundColor": ""#fafafa"",
-          "borderRadius": 100,
-          "height": 14,
-          "left": "16.5",
+          "backgroundColor": ""#ffffff"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "19",
           "position": "absolute",
-          "top": 2.5,
-          "width": 14,
+          "top": 3,
+          "width": 16,
         }
       }
       style={
         [
           {
-            "backgroundColor": "#fafafa",
-            "borderRadius": 100,
-            "height": 14,
-            "left": 16.5,
+            "backgroundColor": "#ffffff",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 19,
             "position": "absolute",
-            "top": 2.5,
-            "width": 14,
+            "top": 3,
+            "width": 16,
           },
         ]
       }
@@ -1193,8 +1193,8 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
   onStartShouldSetResponder={[Function]}
   style={
     {
-      "height": 21,
-      "width": 35,
+      "height": 24,
+      "width": 40,
     }
   }
 >
@@ -1212,25 +1212,25 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
     }
     jestInlineStyle={
       {
-        "backgroundColor": ""#9A9A9A"",
+        "backgroundColor": ""#e2e2e4"",
         "borderColor": ""transparent"",
-        "borderRadius": 100,
+        "borderRadius": 1600,
         "borderWidth": 1,
-        "height": 21,
-        "padding": 3.5,
-        "width": 35,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
       }
     }
     style={
       [
         {
-          "backgroundColor": "#9A9A9A",
+          "backgroundColor": "#e2e2e4",
           "borderColor": "transparent",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "borderWidth": 1,
-          "height": 21,
-          "padding": 3.5,
-          "width": 35,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
         },
       ]
     }
@@ -1249,25 +1249,25 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
       }
       jestInlineStyle={
         {
-          "backgroundColor": ""#fafafa"",
-          "borderRadius": 100,
-          "height": 14,
-          "left": "16.5",
+          "backgroundColor": ""#85888e"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "19",
           "position": "absolute",
-          "top": 2.5,
-          "width": 14,
+          "top": 3,
+          "width": 16,
         }
       }
       style={
         [
           {
-            "backgroundColor": "#fafafa",
-            "borderRadius": 100,
-            "height": 14,
-            "left": 16.5,
+            "backgroundColor": "#85888e",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 19,
             "position": "absolute",
-            "top": 2.5,
-            "width": 14,
+            "top": 3,
+            "width": 16,
           },
         ]
       }
@@ -1309,8 +1309,8 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
   onStartShouldSetResponder={[Function]}
   style={
     {
-      "height": 21,
-      "width": 35,
+      "height": 24,
+      "width": 40,
     }
   }
 >
@@ -1328,25 +1328,25 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
     }
     jestInlineStyle={
       {
-        "backgroundColor": ""#9A9A9A"",
+        "backgroundColor": ""#e2e2e4"",
         "borderColor": ""transparent"",
-        "borderRadius": 100,
+        "borderRadius": 1600,
         "borderWidth": 1,
-        "height": 21,
-        "padding": 3.5,
-        "width": 35,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
       }
     }
     style={
       [
         {
-          "backgroundColor": "#9A9A9A",
+          "backgroundColor": "#e2e2e4",
           "borderColor": "transparent",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "borderWidth": 1,
-          "height": 21,
-          "padding": 3.5,
-          "width": 35,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
         },
       ]
     }
@@ -1365,25 +1365,25 @@ exports[`InputSwitch component tests checked - true, danger - false, disabled - 
       }
       jestInlineStyle={
         {
-          "backgroundColor": ""#fafafa"",
-          "borderRadius": 100,
-          "height": 14,
-          "left": "16.5",
+          "backgroundColor": ""#85888e"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "19",
           "position": "absolute",
-          "top": 2.5,
-          "width": 14,
+          "top": 3,
+          "width": 16,
         }
       }
       style={
         [
           {
-            "backgroundColor": "#fafafa",
-            "borderRadius": 100,
-            "height": 14,
-            "left": 16.5,
+            "backgroundColor": "#85888e",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 19,
             "position": "absolute",
-            "top": 2.5,
-            "width": 14,
+            "top": 3,
+            "width": 16,
           },
         ]
       }
@@ -1425,8 +1425,8 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - f
   onStartShouldSetResponder={[Function]}
   style={
     {
-      "height": 21,
-      "width": 35,
+      "height": 24,
+      "width": 40,
     }
   }
 >
@@ -1445,24 +1445,24 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - f
     jestInlineStyle={
       {
         "backgroundColor": ""#2b2e33"",
-        "borderColor": ""#db3424"",
-        "borderRadius": 100,
+        "borderColor": ""#f47f77"",
+        "borderRadius": 1600,
         "borderWidth": 1,
-        "height": 21,
-        "padding": 3.5,
-        "width": 35,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
       }
     }
     style={
       [
         {
           "backgroundColor": "#2b2e33",
-          "borderColor": "#db3424",
-          "borderRadius": 100,
+          "borderColor": "#f47f77",
+          "borderRadius": 1600,
           "borderWidth": 1,
-          "height": 21,
-          "padding": 3.5,
-          "width": 35,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
         },
       ]
     }
@@ -1481,25 +1481,25 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - f
       }
       jestInlineStyle={
         {
-          "backgroundColor": ""#fafafa"",
-          "borderRadius": 100,
-          "height": 14,
-          "left": "16.5",
+          "backgroundColor": ""#ffffff"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "19",
           "position": "absolute",
-          "top": 2.5,
-          "width": 14,
+          "top": 3,
+          "width": 16,
         }
       }
       style={
         [
           {
-            "backgroundColor": "#fafafa",
-            "borderRadius": 100,
-            "height": 14,
-            "left": 16.5,
+            "backgroundColor": "#ffffff",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 19,
             "position": "absolute",
-            "top": 2.5,
-            "width": 14,
+            "top": 3,
+            "width": 16,
           },
         ]
       }
@@ -1541,8 +1541,8 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - f
   onStartShouldSetResponder={[Function]}
   style={
     {
-      "height": 21,
-      "width": 35,
+      "height": 24,
+      "width": 40,
     }
   }
 >
@@ -1561,24 +1561,24 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - f
     jestInlineStyle={
       {
         "backgroundColor": ""#2b2e33"",
-        "borderColor": ""#db3424"",
-        "borderRadius": 100,
+        "borderColor": ""#f47f77"",
+        "borderRadius": 1600,
         "borderWidth": 1,
-        "height": 21,
-        "padding": 3.5,
-        "width": 35,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
       }
     }
     style={
       [
         {
           "backgroundColor": "#2b2e33",
-          "borderColor": "#db3424",
-          "borderRadius": 100,
+          "borderColor": "#f47f77",
+          "borderRadius": 1600,
           "borderWidth": 1,
-          "height": 21,
-          "padding": 3.5,
-          "width": 35,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
         },
       ]
     }
@@ -1597,25 +1597,25 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - f
       }
       jestInlineStyle={
         {
-          "backgroundColor": ""#fafafa"",
-          "borderRadius": 100,
-          "height": 14,
-          "left": "16.5",
+          "backgroundColor": ""#ffffff"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "19",
           "position": "absolute",
-          "top": 2.5,
-          "width": 14,
+          "top": 3,
+          "width": 16,
         }
       }
       style={
         [
           {
-            "backgroundColor": "#fafafa",
-            "borderRadius": 100,
-            "height": 14,
-            "left": 16.5,
+            "backgroundColor": "#ffffff",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 19,
             "position": "absolute",
-            "top": 2.5,
-            "width": 14,
+            "top": 3,
+            "width": 16,
           },
         ]
       }
@@ -1657,8 +1657,8 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - t
   onStartShouldSetResponder={[Function]}
   style={
     {
-      "height": 21,
-      "width": 35,
+      "height": 24,
+      "width": 40,
     }
   }
 >
@@ -1676,25 +1676,25 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - t
     }
     jestInlineStyle={
       {
-        "backgroundColor": ""#9A9A9A"",
+        "backgroundColor": ""#e2e2e4"",
         "borderColor": ""transparent"",
-        "borderRadius": 100,
+        "borderRadius": 1600,
         "borderWidth": 1,
-        "height": 21,
-        "padding": 3.5,
-        "width": 35,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
       }
     }
     style={
       [
         {
-          "backgroundColor": "#9A9A9A",
+          "backgroundColor": "#e2e2e4",
           "borderColor": "transparent",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "borderWidth": 1,
-          "height": 21,
-          "padding": 3.5,
-          "width": 35,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
         },
       ]
     }
@@ -1713,25 +1713,25 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - t
       }
       jestInlineStyle={
         {
-          "backgroundColor": ""#fafafa"",
-          "borderRadius": 100,
-          "height": 14,
-          "left": "16.5",
+          "backgroundColor": ""#85888e"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "19",
           "position": "absolute",
-          "top": 2.5,
-          "width": 14,
+          "top": 3,
+          "width": 16,
         }
       }
       style={
         [
           {
-            "backgroundColor": "#fafafa",
-            "borderRadius": 100,
-            "height": 14,
-            "left": 16.5,
+            "backgroundColor": "#85888e",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 19,
             "position": "absolute",
-            "top": 2.5,
-            "width": 14,
+            "top": 3,
+            "width": 16,
           },
         ]
       }
@@ -1773,8 +1773,8 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - t
   onStartShouldSetResponder={[Function]}
   style={
     {
-      "height": 21,
-      "width": 35,
+      "height": 24,
+      "width": 40,
     }
   }
 >
@@ -1792,25 +1792,25 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - t
     }
     jestInlineStyle={
       {
-        "backgroundColor": ""#9A9A9A"",
+        "backgroundColor": ""#e2e2e4"",
         "borderColor": ""transparent"",
-        "borderRadius": 100,
+        "borderRadius": 1600,
         "borderWidth": 1,
-        "height": 21,
-        "padding": 3.5,
-        "width": 35,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
       }
     }
     style={
       [
         {
-          "backgroundColor": "#9A9A9A",
+          "backgroundColor": "#e2e2e4",
           "borderColor": "transparent",
-          "borderRadius": 100,
+          "borderRadius": 1600,
           "borderWidth": 1,
-          "height": 21,
-          "padding": 3.5,
-          "width": 35,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
         },
       ]
     }
@@ -1829,25 +1829,25 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - t
       }
       jestInlineStyle={
         {
-          "backgroundColor": ""#fafafa"",
-          "borderRadius": 100,
-          "height": 14,
-          "left": "16.5",
+          "backgroundColor": ""#85888e"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "19",
           "position": "absolute",
-          "top": 2.5,
-          "width": 14,
+          "top": 3,
+          "width": 16,
         }
       }
       style={
         [
           {
-            "backgroundColor": "#fafafa",
-            "borderRadius": 100,
-            "height": 14,
-            "left": 16.5,
+            "backgroundColor": "#85888e",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 19,
             "position": "absolute",
-            "top": 2.5,
-            "width": 14,
+            "top": 3,
+            "width": 16,
           },
         ]
       }

@@ -1,22 +1,49 @@
-import { memo } from 'react'
-import { View, Text, type TextStyle, type ViewProps } from 'react-native'
+import { memo, useState } from 'react'
+import {
+  Pressable,
+  View,
+  Text,
+  type PressableProps,
+  type TextProps,
+  type TextStyle,
+} from 'react-native'
 
 import Animated, { type AnimatedStyle } from 'react-native-reanimated'
 
 import { StyleSheet } from 'react-native-unistyles'
 
-export interface InputOtpItemProps extends Pick<ViewProps, 'testID'> {
+import effects from '../../../theme/tokens/semantic/effects.json'
+
+import { createInputOtpTestIds } from './testIds'
+
+export interface InputOtpItemProps
+  extends
+    Pick<PressableProps, 'onPress' | 'testOnly_pressed'>,
+    Pick<TextProps, 'allowFontScaling' | 'maxFontSizeMultiplier'> {
   value?: string
   error: boolean
-  pressed: boolean
   disabled: boolean
   focused: boolean
+  testIdPrefix: string
 }
 
 const CURSOR_ANIMATION_DURATION = 500
 
+const createFocusRingShadow = (
+  ringWidth: number,
+  ringColor: string,
+  borderWidth: number,
+  borderColor: string
+) => `0 0 0 ${ringWidth}px ${ringColor}, 0 0 0 ${borderWidth}px ${borderColor}`
+
+// Анимация не может жить в StyleSheet.create: Animated.Text из reanimated не
+// принимает Unistyles-стиль. Шкала непрозрачности одинакова в обеих темах,
+// поэтому токены берутся из сгенерированного файла напрямую.
 const cursorAnimationStyle = {
-  animationName: { from: { opacity: 1 }, to: { opacity: 0.2 } },
+  animationName: {
+    from: { opacity: effects.opacity[100] },
+    to: { opacity: effects.opacity[20] },
+  },
   animationDuration: CURSOR_ANIMATION_DURATION,
   animationDirection: 'alternate',
   animationIterationCount: 'infinite',
@@ -24,69 +51,156 @@ const cursorAnimationStyle = {
 } satisfies AnimatedStyle<TextStyle>
 
 export const InputOtpItem = memo<InputOtpItemProps>(
-  ({ value, error, pressed, disabled, focused, testID }) => {
+  ({
+    value,
+    error,
+    disabled,
+    focused,
+    testIdPrefix,
+    testOnly_pressed,
+    allowFontScaling,
+    maxFontSizeMultiplier,
+    onPress,
+  }) => {
+    const [isHovered, setIsHovered] = useState(false)
+    const testIds = createInputOtpTestIds(testIdPrefix)
+
     return (
-      <View
-        style={[
+      <Pressable
+        accessible={false}
+        disabled={disabled}
+        style={({ pressed }) => [
           styles.container,
+          (pressed || isHovered) && styles.hovered,
+          focused && styles.focused,
           error && styles.error,
-          pressed && styles.pressed,
+          error && focused && styles.errorFocused,
           disabled && styles.disabled,
         ]}
+        testID={testIds.itemContainer}
+        testOnly_pressed={testOnly_pressed}
+        onHoverIn={() => setIsHovered(true)}
+        onHoverOut={() => setIsHovered(false)}
+        onPress={onPress}
       >
-        {focused ? (
-          <View style={styles.textRow} testID={`${testID}CursorRow`}>
-            {value ? (
-              <Text style={styles.text} testID={testID}>
-                {value}
-              </Text>
-            ) : null}
-            <Animated.Text
-              accessibilityElementsHidden
-              importantForAccessibility='no-hide-descendants'
-              style={[styles.text, styles.cursor, cursorAnimationStyle]}
-              testID={`${testID}Cursor`}
+        <View style={styles.content}>
+          {focused ? (
+            <View style={styles.textRow} testID={testIds.cursorRow}>
+              {value ? (
+                <>
+                  <Text
+                    accessibilityElementsHidden
+                    allowFontScaling={allowFontScaling}
+                    importantForAccessibility='no-hide-descendants'
+                    maxFontSizeMultiplier={maxFontSizeMultiplier}
+                    style={[styles.text, styles.cursorSpacer]}
+                  >
+                    |
+                  </Text>
+                  <Text
+                    allowFontScaling={allowFontScaling}
+                    maxFontSizeMultiplier={maxFontSizeMultiplier}
+                    style={styles.text}
+                    testID={testIds.item}
+                  >
+                    {value}
+                  </Text>
+                </>
+              ) : null}
+              <Animated.Text
+                accessibilityElementsHidden
+                allowFontScaling={allowFontScaling}
+                importantForAccessibility='no-hide-descendants'
+                maxFontSizeMultiplier={maxFontSizeMultiplier}
+                style={[styles.text, cursorAnimationStyle]}
+                testID={testIds.cursor}
+              >
+                |
+              </Animated.Text>
+            </View>
+          ) : (
+            <Text
+              allowFontScaling={allowFontScaling}
+              maxFontSizeMultiplier={maxFontSizeMultiplier}
+              style={styles.text}
+              testID={testIds.item}
             >
-              |
-            </Animated.Text>
-          </View>
-        ) : (
-          <Text style={styles.text} testID={testID}>
-            {value}
-          </Text>
-        )}
-      </View>
+              {value}
+            </Text>
+          )}
+        </View>
+      </Pressable>
     )
   }
 )
 
-const styles = StyleSheet.create(({ theme, border, fonts, typography }) => ({
+const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
   container: {
-    minHeight: theme.Button.Common.buttonHeight,
-    minWidth: theme.Button.Common.buttonHeight,
-    paddingHorizontal: theme.Form.InputText.inputPaddingLeftRight,
-    paddingVertical: theme.Form.InputText.inputPaddingTopBottom,
-    borderBottomWidth: border.Width.border,
-    borderColor: theme.Form.InputText.inputBorderColor,
+    width: components.inputotp.input.width,
+    height: components.inputotp.extend.height,
+    paddingHorizontal: components.inputtext.root.paddingX,
+    paddingVertical: components.inputtext.root.paddingY,
+    borderWidth: components.inputotp.extend.borderWidth,
+    borderRadius: components.inputtext.root.borderRadius,
+    borderColor: components.inputtext.root.borderColor,
+    backgroundColor: components.inputtext.root.background,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  content: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
     alignItems: 'center',
     justifyContent: 'center',
   },
 
   textRow: { flexDirection: 'row', alignItems: 'center' },
 
+  cursorSpacer: { opacity: semantic.effects.opacity[0] },
+
   text: {
-    fontSize: typography.Size['text-2xl'],
-    fontFamily: fonts.primary,
-    fontWeight: '400',
-    color: theme.Form.InputText.inputTextColor,
+    fontSize: fonts.fontSize[200],
+    lineHeight: fonts.lineHeight[300],
+    fontFamily: fonts.fontFamily.base,
+    fontWeight: fonts.fontWeight.regular,
+    letterSpacing: fonts.letterSpacing[500],
+    color: components.inputtext.root.color,
     includeFontPadding: false,
+    textAlign: 'center',
   },
 
-  pressed: { borderColor: theme.Form.InputText.inputHoverBorderColor },
+  hovered: { borderColor: components.inputtext.root.hoverBorderColor },
 
-  error: { borderColor: theme.Form.InputText.inputErrorBorderColor },
+  focused: {
+    borderWidth: 0,
+    boxShadow: createFocusRingShadow(
+      components.inputtext.root.focusRing.width,
+      components.inputtext.root.focusRing.color,
+      components.inputotp.extend.borderWidth,
+      components.inputtext.root.focusBorderColor
+    ),
+  },
 
-  disabled: { mixBlendMode: 'luminosity', opacity: 0.6 },
+  error: { borderColor: components.inputtext.root.invalidBorderColor },
 
-  cursor: { color: theme.Form.InputText.inputTextColor, marginBottom: 3 },
+  errorFocused: {
+    boxShadow: createFocusRingShadow(
+      components.inputtext.root.focusRing.width,
+      semantic.colorScheme.color.border.status.danger.focus,
+      components.inputotp.extend.borderWidth,
+      components.inputtext.root.invalidBorderColor
+    ),
+  },
+
+  disabled: {
+    borderWidth: components.inputotp.extend.borderWidth,
+    backgroundColor: components.inputtext.root.disabledBackground,
+    borderColor: components.inputtext.root.borderColor,
+    boxShadow: 'none',
+    opacity: semantic.effects.opacity[50],
+  },
 }))

@@ -39,6 +39,7 @@ export interface AccordionProps extends ViewProps {
  * @param withSeparator - Наличие разделитель. Когда true, верхняя граница заголовка становится разделителем
  * @param disabled - Отключенное состояние. Когда true компонент рендерится в соответствии со значением isInitiallyExpanded и не реагирует на нажатия
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace--DS-?node-id=1207-1852&m=dev
+ * @link https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24043-1592
  */
 export const Accordion: React.FC<AccordionProps> = ({
   Icon,
@@ -109,9 +110,9 @@ export const Accordion: React.FC<AccordionProps> = ({
           <SvgUniversal
             {...styles.icon}
             source={IconChevronRight}
-            uniProps={({ theme }) => ({
-              color: theme.Panel.Accordion.accordionHeaderTextColor,
-            })}
+            uniProps={({ components }) => {
+              return { color: components.accordion.header.color }
+            }}
           />
         </Animated.View>
         {Icon ? (
@@ -119,9 +120,9 @@ export const Accordion: React.FC<AccordionProps> = ({
             {...styles.icon}
             source={Icon}
             testID={AccordionTestIds.icon}
-            uniProps={({ theme }) => ({
-              color: theme.Panel.Accordion.accordionHeaderTextColor,
-            })}
+            uniProps={({ components }) => {
+              return { color: components.accordion.header.color }
+            }}
           />
         ) : null}
         <Text style={styles.title}>{title}</Text>
@@ -159,36 +160,42 @@ export const AccordionTestIds = {
   separator: 'Separator',
 }
 
-const styles = StyleSheet.create(({ theme, fonts }) => ({
+const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
   component: { width: '100%' },
   header: {
-    paddingVertical: theme.Panel.Accordion.accordionHeaderPaddingTopBottom,
-    gap: 7,
+    paddingVertical: semantic.dimension.space[400],
+    gap: components.accordion.extend.extHeader.gap,
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: theme.Panel.Accordion.accordionHeaderBg,
+    backgroundColor: components.accordion.colorScheme.header.background,
   },
-  icon: { width: 17.5, height: 17.5 },
+  icon: {
+    width: components.accordion.extend.extHeader.iconSize,
+    height: components.accordion.extend.extHeader.iconSize,
+  },
   title: {
-    fontSize: 15.75,
+    fontSize: fonts.fontSize[400],
     includeFontPadding: false,
     verticalAlign: 'middle',
-    fontWeight: 700,
-    color: theme.Panel.Accordion.accordionHeaderTextColor,
-    fontFamily: fonts.secondary,
+    fontWeight: fonts.fontWeight.bold,
+    color: components.accordion.header.color,
+    fontFamily: fonts.fontFamily.base,
   },
   contentAnimated: { overflow: 'hidden' },
   contentWrapper: {
     position: 'absolute',
     width: '100%',
-    paddingLeft: theme.Panel.Accordion.accordionContentPaddingLeft,
-    paddingTop: theme.Panel.Accordion.accordionContentPaddingTop,
-    paddingRight: theme.Panel.Accordion.accordionContentPaddingRight,
-    paddingBottom: theme.Panel.Accordion.accordionContentPaddingBottom,
+    paddingLeft: components.accordion.content.paddingLeft,
+    paddingTop: semantic.dimension.space.none,
+    paddingRight: components.accordion.content.paddingRight,
+    paddingBottom: semantic.dimension.space[400],
   },
   separator: {
-    borderTopColor: theme.Panel.Accordion.accordionHeaderBorderColor,
+    borderTopColor: components.accordion.panel.borderColor,
     borderTopWidth: 1,
   },
-  disabled: { mixBlendMode: 'luminosity', opacity: 0.6 },
+  disabled: {
+    mixBlendMode: 'luminosity',
+    opacity: semantic.effects.opacity[60],
+  },
 }))

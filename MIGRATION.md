@@ -1,18 +1,14 @@
 # Миграция на Unistyles V3
 
-Стили переведены на `react-native-unistyles`. `ThemeContextProvider` доступен
-как внешний конфигуратор тем и шрифтов, но чтение темы и шрифтов теперь идет
-через API `unistyles`.
+Стили переведены на `react-native-unistyles`. UI kit предоставляет провайдер и
+хуки для настройки темы и шрифтов, а стили создаются через API `unistyles`.
 
 ## Изменения
 
-### `ThemeContextProvider` — доступен
+### Настройка темы и шрифтов
 
-UI kit по-прежнему использует `react-native-unistyles` внутри, но для внешнего
-потребителя снова доступен `ThemeContextProvider` как единая точка конфигурации
-тем и шрифтов.
-
-Если приложению нужны кастомные шрифты, настройте их через провайдер:
+Оберните приложение в `ThemeContextProvider`. Через `initialTheme` задаётся
+начальная тема, через `fonts` — используемые семейства шрифтов:
 
 ```tsx
 import {
@@ -22,7 +18,7 @@ import {
 
 export const Root = () => (
   <ThemeContextProvider
-    fonts={{ primary: 'MyFont', secondary: 'MySecondaryFont' }}
+    fonts={{ heading: 'MyFont', base: 'MySecondaryFont' }}
     initialTheme={ThemeVariant.Light}
   >
     <App />
@@ -30,18 +26,17 @@ export const Root = () => (
 )
 ```
 
-Провайдер также принимает `lightTheme` и `darkTheme`, если нужно передать
-полностью кастомные темы.
+Провайдер не принимает пользовательские объекты тем. Он настраивает
+зарегистрированные внутри UI kit темы `light` и `dark`.
 
 ### `useFonts`
 
-Используйте `useUnistyles`:
+Для получения настроенных шрифтов используйте экспортируемый UI kit хук:
 
 ```tsx
-import { useUnistyles } from '@cdek-it/react-native-ui-kit'
+import { useFonts } from '@cdek-it/react-native-ui-kit'
 
-const { theme } = useUnistyles()
-theme.fonts
+const fonts = useFonts()
 ```
 
 Или прямо в стилях через `StyleSheet.create(...)`:
@@ -50,29 +45,41 @@ theme.fonts
 import { StyleSheet } from 'react-native-unistyles'
 
 const styles = StyleSheet.create(({ fonts }) => ({
-  title: { fontFamily: fonts.primary },
+  title: { fontFamily: fonts.fontFamily.heading },
 }))
 ```
 
-### `useTheme()` / `useChangeTheme()`
+### Чтение и переключение темы
 
-`ThemeContextProvider` больше не является источником `theme/fonts` через React
-context. Он только конфигурирует `react-native-unistyles`.
+Для чтения и переключения темы используйте публичные хуки UI kit:
 
-- `useTheme()` читает `UnistylesRuntime.themeName`
-- `useFonts()` читает `useUnistyles().theme.fonts`
-- `ThemeContext` остается пустым и имеет значение `null`
-- `useChangeTheme()` всегда вызывает `UnistylesRuntime.setTheme(...)`
+```tsx
+import {
+  ThemeVariant,
+  useChangeTheme,
+  useTheme,
+} from '@cdek-it/react-native-ui-kit'
+
+const theme = useTheme()
+const changeTheme = useChangeTheme()
+
+changeTheme(ThemeVariant.Dark)
+```
+
+`ThemeContextProvider` не хранит тему и шрифты в React Context: `ThemeContext`
+имеет значение `null`, а источником состояния остаётся Unistyles.
 
 ### `makeStyles` — removed
 
 Используйте `StyleSheet.create(...)`:
 
 ```tsx
-import { StyleSheet } from '@cdek-it/react-native-ui-kit'
+import { StyleSheet } from 'react-native-unistyles'
 
-const styles = StyleSheet.create((theme) => ({
-  container: { backgroundColor: theme.Button.Brand.buttonBg },
+const styles = StyleSheet.create(({ semantic }) => ({
+  container: {
+    backgroundColor: semantic.colorScheme.color.bg.surface.default.default,
+  },
 }))
 ```
 
@@ -80,32 +87,9 @@ const styles = StyleSheet.create((theme) => ({
 темы. `StyleSheet.create(...)` — нативный путь, обновляет стили **без**
 ререндеров.
 
-SDK реэкспортирует `StyleSheet`, `useUnistyles`, `UnistylesRuntime` и
-`withUnistyles`, поэтому потребителям не нужно импортировать
-`react-native-unistyles` напрямую.
-
-### `useTheme()` — removed
-
-```tsx
-import { UnistylesRuntime, useUnistyles } from '@cdek-it/react-native-ui-kit'
-
-const themeName = UnistylesRuntime.themeName // 'light' | 'dark'
-```
-
-Для реактивного поведения используйте `useUnistyles()`:
-
-```tsx
-const { rt } = useUnistyles()
-rt.themeName
-```
-
-### `useChangeTheme()` — removed
-
-```tsx
-import { UnistylesRuntime } from '@cdek-it/react-native-ui-kit'
-
-UnistylesRuntime.setTheme('dark')
-```
+UI kit не реэкспортирует `StyleSheet`, `useUnistyles`, `UnistylesRuntime` и
+`withUnistyles`. Если они нужны приложению напрямую, импортируйте их из
+`react-native-unistyles`.
 
 ## ESLint Правила для Unistyles
 

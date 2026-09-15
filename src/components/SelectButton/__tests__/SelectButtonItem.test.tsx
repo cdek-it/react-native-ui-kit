@@ -5,6 +5,8 @@ import { Pressable } from 'react-native'
 import { useSharedValue } from 'react-native-reanimated'
 
 import { lightTheme } from '../../../theme'
+import { fontTokens, semanticTokens } from '../../../theme/tokens'
+import lightComponentTokens from '../../../theme/tokens/components/light.json'
 import {
   type SelectButtonItemProps,
   SelectButtonItem,
@@ -63,30 +65,30 @@ const sizeCases: Array<{
   {
     name: 'маленький',
     size: 'small',
-    height: lightTheme.theme.Button.Common.buttonHeightSM,
-    iconSize: lightTheme.typography.Size['text-base'],
-    fontSize: lightTheme.typography.Size['text-sm'],
+    height: semanticTokens.dimension.size[800],
+    iconSize: fontTokens.fontSize[300],
+    fontSize: fontTokens.fontSize[100],
   },
   {
     name: 'базовый',
     size: 'base',
-    height: lightTheme.theme.Button.Common.buttonHeight,
-    iconSize: lightTheme.typography.Size['text-xl'],
-    fontSize: lightTheme.typography.Size['text-base'],
+    height: semanticTokens.dimension.size[1100],
+    iconSize: fontTokens.fontSize[500],
+    fontSize: fontTokens.fontSize[300],
   },
   {
     name: 'большой',
     size: 'large',
-    height: lightTheme.theme.Button.Common.buttonHeightLG,
-    iconSize: lightTheme.typography.Size['text-2xl'],
-    fontSize: lightTheme.typography.Size['text-xl'],
+    height: semanticTokens.dimension.size[1300],
+    iconSize: fontTokens.fontSize[600],
+    fontSize: fontTokens.fontSize[500],
   },
   {
     name: 'самый большой',
     size: 'xlarge',
-    height: lightTheme.theme.Button.Common.buttonHeightXL,
+    height: semanticTokens.dimension.size[1400],
     iconSize: 28,
-    fontSize: lightTheme.typography.Size['text-2xl'],
+    fontSize: fontTokens.fontSize[600],
   },
 ]
 
@@ -192,12 +194,10 @@ describe('SelectButtonItem', () => {
       await waitFor(() => {
         expect(icon).toHaveProp(
           'stroke',
-          lightTheme.theme.Form.SelectButton.selectButtonIconActiveColor
+          lightComponentTokens.selectbutton.extend.checkedColor
         )
         expect(text).toHaveAnimatedStyle({
-          color: toRgba(
-            lightTheme.theme.Form.SelectButton.selectButtonIconActiveColor
-          ),
+          color: toRgba(lightComponentTokens.selectbutton.extend.checkedColor),
         })
       })
 
@@ -207,12 +207,10 @@ describe('SelectButtonItem', () => {
       await waitFor(() => {
         expect(icon).toHaveProp(
           'stroke',
-          lightTheme.theme.Form.SelectButton.selectButtonTextColor
+          lightTheme.semantic.colorScheme.color.fg.muted
         )
         expect(text).toHaveAnimatedStyle({
-          color: toRgba(
-            lightTheme.theme.Form.SelectButton.selectButtonTextColor
-          ),
+          color: toRgba(lightTheme.semantic.colorScheme.color.fg.muted),
         })
       })
     })

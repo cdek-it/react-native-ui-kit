@@ -69,15 +69,17 @@ export const Service = ({
         <SvgUniversal
           {...iconSize}
           source={Icon}
-          uniProps={({ typography: t }) => ({
-            color: {
-              danger: t.Color.Service['text-danger'],
-              warning: t.Color.Service['text-warning'],
-              success: t.Color.Service['text-success'],
-              info: t.Color.Service['text-info'],
-              help: t.Color.Service['text-help'],
-            }[variant],
-          })}
+          uniProps={({ semantic }) => {
+            return {
+              color: {
+                danger: semantic.colorScheme.color.fg.status.danger.default,
+                warning: semantic.colorScheme.color.fg.status.warning.default,
+                success: semantic.colorScheme.color.fg.status.success.default,
+                info: semantic.colorScheme.color.fg.status.info.default,
+                help: semantic.colorScheme.color.fg.status.help.default,
+              }[variant],
+            }
+          }}
         />
       ) : null}
       <Text style={textStyles} {...other} />
@@ -85,34 +87,34 @@ export const Service = ({
   )
 }
 
-const styles = StyleSheet.create(({ typography, spacing, fonts }) => ({
+const styles = StyleSheet.create(({ semantic, fonts }) => ({
   iconBase: {
-    width: typography.Size['text-xl'],
-    height: typography.Size['text-xl'],
+    width: semantic.dimension.size[600],
+    height: semantic.dimension.size[600],
   },
   icon: {
-    width: typography.Size['text-base'],
-    height: typography.Size['text-base'],
+    width: semantic.dimension.size[450],
+    height: semantic.dimension.size[450],
   },
 
-  containerBase: { flexDirection: 'row', gap: spacing.Gap['gap-2'] },
-  container: { flexDirection: 'row', gap: spacing.Gap['gap-1'] },
+  containerBase: { flexDirection: 'row', gap: semantic.dimension.space[200] },
+  container: { flexDirection: 'row', gap: semantic.dimension.space[100] },
 
   textCommon: {
     includeFontPadding: false,
     verticalAlign: 'middle',
     flexShrink: 1,
-    fontWeight: 400,
-    fontSize: typography.Size['text-sm'],
-    fontFamily: fonts.secondary,
-    lineHeight: 15,
-    letterSpacing: -0.25,
+    fontWeight: fonts.fontWeight.regular,
+    fontSize: fonts.fontSize[200],
+    fontFamily: fonts.fontFamily.base,
+    lineHeight: fonts.lineHeight[300],
+    letterSpacing: fonts.letterSpacing[200],
   },
-  textBase: { lineHeight: undefined, fontSize: typography.Size['text-base'] },
+  textBase: { lineHeight: undefined, fontSize: fonts.fontSize[300] },
 
-  warning: { color: typography.Color.Service['text-warning'] },
-  success: { color: typography.Color.Service['text-success'] },
-  info: { color: typography.Color.Service['text-info'] },
-  help: { color: typography.Color.Service['text-help'] },
-  danger: { color: typography.Color.Service['text-danger'] },
+  warning: { color: semantic.colorScheme.color.fg.status.warning.default },
+  success: { color: semantic.colorScheme.color.fg.status.success.default },
+  info: { color: semantic.colorScheme.color.fg.status.info.default },
+  help: { color: semantic.colorScheme.color.fg.status.help.default },
+  danger: { color: semantic.colorScheme.color.fg.status.danger.default },
 }))

@@ -36,9 +36,9 @@ exports[`Checkbox snapshots checked = false, indeterminate = false, disabled = f
   style={
     {
       "alignItems": "center",
-      "height": 21,
+      "height": 24,
       "justifyContent": "center",
-      "width": 21,
+      "width": 24,
     }
   }
   testID="CheckboxButton_Pressable"
@@ -55,12 +55,9 @@ exports[`Checkbox snapshots checked = false, indeterminate = false, disabled = f
         },
         {
           "backgroundColor": "#ffffff",
-          "borderColor": "#db3424",
-          "borderRadius": 7,
+          "borderColor": "#f47f77",
+          "borderRadius": 8,
           "borderWidth": 1,
-          "outlineColor": "#fff0f0",
-          "outlineStyle": "solid",
-          "outlineWidth": 4,
         },
       ]
     }
@@ -104,9 +101,9 @@ exports[`Checkbox snapshots checked = false, indeterminate = false, disabled = f
   style={
     {
       "alignItems": "center",
-      "height": 21,
+      "height": 24,
       "justifyContent": "center",
-      "width": 21,
+      "width": 24,
     }
   }
   testID="CheckboxButton_Pressable"
@@ -124,7 +121,7 @@ exports[`Checkbox snapshots checked = false, indeterminate = false, disabled = f
         {
           "backgroundColor": "#ffffff",
           "borderColor": "#cecfd2",
-          "borderRadius": 7,
+          "borderRadius": 8,
           "borderWidth": 1,
         },
       ]
@@ -169,9 +166,9 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
   style={
     {
       "alignItems": "center",
-      "height": 21,
+      "height": 24,
       "justifyContent": "center",
-      "width": 21,
+      "width": 24,
     }
   }
   testID="CheckboxButton_Pressable"
@@ -188,12 +185,9 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
         },
         {
           "backgroundColor": "#2b2e33",
-          "borderColor": "#db3424",
-          "borderRadius": 7,
+          "borderColor": "#f47f77",
+          "borderRadius": 8,
           "borderWidth": 1,
-          "outlineColor": "#fff0f0",
-          "outlineStyle": "solid",
-          "outlineWidth": 4,
         },
       ]
     }
@@ -316,9 +310,9 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
   style={
     {
       "alignItems": "center",
-      "height": 21,
+      "height": 24,
       "justifyContent": "center",
-      "width": 21,
+      "width": 24,
     }
   }
   testID="CheckboxButton_Pressable"
@@ -336,7 +330,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
         {
           "backgroundColor": "#2b2e33",
           "borderColor": "#2b2e33",
-          "borderRadius": 7,
+          "borderRadius": 8,
           "borderWidth": 1,
         },
       ]
@@ -460,9 +454,9 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
   style={
     {
       "alignItems": "center",
-      "height": 21,
+      "height": 24,
       "justifyContent": "center",
-      "width": 21,
+      "width": 24,
     }
   }
   testID="CheckboxButton_Pressable"
@@ -479,12 +473,9 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
         },
         {
           "backgroundColor": "#2b2e33",
-          "borderColor": "#db3424",
-          "borderRadius": 7,
+          "borderColor": "#f47f77",
+          "borderRadius": 8,
           "borderWidth": 1,
-          "outlineColor": "#fff0f0",
-          "outlineStyle": "solid",
-          "outlineWidth": 4,
         },
       ]
     }
@@ -607,9 +598,9 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
   style={
     {
       "alignItems": "center",
-      "height": 21,
+      "height": 24,
       "justifyContent": "center",
-      "width": 21,
+      "width": 24,
     }
   }
   testID="CheckboxButton_Pressable"
@@ -627,7 +618,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
         {
           "backgroundColor": "#2b2e33",
           "borderColor": "#2b2e33",
-          "borderRadius": 7,
+          "borderRadius": 8,
           "borderWidth": 1,
         },
       ]
@@ -751,9 +742,9 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
   style={
     {
       "alignItems": "center",
-      "height": 21,
+      "height": 24,
       "justifyContent": "center",
-      "width": 21,
+      "width": 24,
     }
   }
   testID="CheckboxButton_Pressable"
@@ -771,13 +762,10 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
         {
           "backgroundColor": "#2b2e33",
           "borderColor": "#2b2e33",
-          "borderRadius": 7,
+          "borderRadius": 8,
           "borderWidth": 1,
           "mixBlendMode": "luminosity",
           "opacity": 0.2,
-          "outlineColor": "#fff0f0",
-          "outlineStyle": "solid",
-          "outlineWidth": 0,
         },
       ]
     }
@@ -900,9 +888,9 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
   style={
     {
       "alignItems": "center",
-      "height": 21,
+      "height": 24,
       "justifyContent": "center",
-      "width": 21,
+      "width": 24,
     }
   }
   testID="CheckboxButton_Pressable"
@@ -920,11 +908,10 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = tru
         {
           "backgroundColor": "#2b2e33",
           "borderColor": "#2b2e33",
-          "borderRadius": 7,
+          "borderRadius": 8,
           "borderWidth": 1,
           "mixBlendMode": "luminosity",
           "opacity": 0.2,
-          "outlineWidth": 0,
         },
       ]
     }
@@ -1047,9 +1034,9 @@ exports[`Checkbox snapshots default 1`] = `
   style={
     {
       "alignItems": "center",
-      "height": 21,
+      "height": 24,
       "justifyContent": "center",
-      "width": 21,
+      "width": 24,
     }
   }
   testID="CheckboxButton_Pressable"
@@ -1067,7 +1054,7 @@ exports[`Checkbox snapshots default 1`] = `
         {
           "backgroundColor": "#ffffff",
           "borderColor": "#cecfd2",
-          "borderRadius": 7,
+          "borderRadius": 8,
           "borderWidth": 1,
         },
       ]

@@ -3,7 +3,7 @@ import { View } from 'react-native'
 
 import { StyleSheet } from 'react-native-unistyles'
 
-import { Badge } from '../Badge'
+import { Badge, type BadgeProps } from '../Badge'
 
 import { BaseButton } from './BaseButton'
 import type { ButtonBadgeProps, ButtonBaseVariant, ButtonProps } from './types'
@@ -30,39 +30,27 @@ export const ButtonBadge = memo<
 >(({ badgeLabel, badgeSeverity, variant = 'primary', ...props }) => {
   const variantContextValue = useMemo(() => ({ variant }), [variant])
 
-  const badgeCommonProps = useMemo(
-    () => ({ severity: badgeSeverity, testID: ButtonBadgeTestId.badge }),
-    [badgeSeverity]
-  )
+  const badgeCommonProps = {
+    severity: badgeSeverity,
+    testID: ButtonBadgeTestId.badge,
+  }
+  const badgeProps: BadgeProps = badgeLabel
+    ? { ...badgeCommonProps, children: badgeLabel, style: styles.badge }
+    : { ...badgeCommonProps, dot: true, style: styles.badgeDot }
 
   return (
     <ButtonVariantContext.Provider value={variantContextValue}>
-      <View style={styles.root}>
-        <View
-          style={[
-            styles.contentContainer,
-            props.iconOnly && styles.iconOnlyContainer,
-          ]}
-        >
-          <BaseButton variant={variant} {...props} />
+      <View style={styles.container}>
+        <BaseButton variant={variant} {...props} />
 
-          {badgeLabel ? (
-            <Badge {...badgeCommonProps} style={styles.badge}>
-              {badgeLabel}
-            </Badge>
-          ) : (
-            <Badge {...badgeCommonProps} dot style={styles.badgeDot} />
-          )}
-        </View>
+        <Badge {...badgeProps} />
       </View>
     </ButtonVariantContext.Provider>
   )
 })
 
 const styles = StyleSheet.create(() => ({
-  root: { flexDirection: 'row' },
-  contentContainer: { flex: 1 },
-  iconOnlyContainer: { flex: 0 },
+  container: { alignSelf: 'flex-start' },
   badgeDot: { position: 'absolute', top: 0, right: -0.5 },
   badge: {
     position: 'absolute',

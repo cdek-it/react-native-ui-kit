@@ -266,30 +266,32 @@ const SelectButtonStrict = memo<StrictSelectButtonProps>(
 /**
  * Используется для маркировки элементов интерфейса
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4921
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24035-56
  */
 export const SelectButton = memo<SelectButtonProps>((props) => (
   <SelectButtonStrict {...normalizeSelectButtonProps(props)} />
 ))
 
-const styles = StyleSheet.create(({ theme }) => ({
+// Осознанный обход слоя components: цвет невыбранного пункта — семантическая
+// роль «приглушённый текст». Собственного токена у selectbutton нет, а то же
+// значение приходит в tabs.tab.color и menu.item.color.
+const styles = StyleSheet.create(({ components, semantic }) => ({
   container: {
     flexDirection: 'row',
-    padding: theme.Form.SelectButton.selectButtonGroupPadding,
-    gap: theme.Form.SelectButton.selectButtonGroupPadding,
-    borderRadius: theme.General.borderRadiusXL,
-    backgroundColor: theme.Form.SelectButton.selectButtonGroupBg,
+    padding: components.selectbutton.extend.paddingX,
+    gap: components.selectbutton.extend.paddingX,
+    borderRadius: components.selectbutton.root.borderRadius,
+    backgroundColor: components.selectbutton.colorScheme.extend.background,
   },
   frame: {
     position: 'absolute',
-    top: theme.Form.SelectButton.selectButtonGroupPadding,
-    bottom: theme.Form.SelectButton.selectButtonGroupPadding,
-    left: theme.Form.SelectButton.selectButtonGroupPadding,
-    borderRadius: theme.Form.SelectButton.selectButtonBorderRadius,
-    backgroundColor: theme.Form.SelectButton.selectButtonActiveBg,
+    top: components.selectbutton.extend.paddingY,
+    bottom: components.selectbutton.extend.paddingY,
+    left: components.selectbutton.extend.paddingX,
+    borderRadius: components.selectbutton.extend.ext.borderRadius,
+    backgroundColor: components.selectbutton.extend.checkedBackground,
     zIndex: -1,
   },
-  textColor: { color: theme.Form.SelectButton.selectButtonTextColor },
-  checkedTextColor: {
-    color: theme.Form.SelectButton.selectButtonIconActiveColor,
-  },
+  textColor: { color: semantic.colorScheme.color.fg.muted },
+  checkedTextColor: { color: components.selectbutton.extend.checkedColor },
 }))

@@ -15,8 +15,11 @@ Use only top-level skills under `.agents/skills/`; nested `vendor/` skills are
 source material, not runtime instructions.
 
 - Use `$ui-kit-testing` to write or refactor focused Jest/RNTL tests, including
-  controlled behavior, accessibility, mocks, timers, animations, snapshots, and
-  public TypeScript contracts.
+  controlled behavior, accessibility, mocks, timers, animations, and public
+  TypeScript contracts.
+- Use `$ui-kit-figma` to implement or sync components from Figma, map design
+  variables to local theme tokens, and align material variants and Storybook
+  scenarios.
 - Use `$ui-kit-review` for diffs and local changes or explicit architecture,
   onboarding, test-suite, debt, health, agent-instruction, and diagnostic
   audits. It is read-only unless the user requests fixes.
@@ -33,6 +36,9 @@ Do not load every skill preemptively; use the one matching the request.
   controlling prop changes.
 - In new source and test files, use `UpperPascalCase` `testID` values. Existing
   IDs are compatibility-sensitive; do not flag or rename them only for format.
+- Story files containing JSX must use the `.stories.tsx` extension and JSX. Do
+  not use `createElement` to keep them as `.stories.ts`; reserve `.stories.ts`
+  for stories without JSX.
 - A new public component or material variant normally needs typed source, a
   barrel export, focused tests, and representative Storybook states.
 
@@ -49,7 +55,8 @@ Do not load every skill preemptively; use the one matching the request.
 ## Git
 
 Do not commit or push unless explicitly asked. Use Conventional Commits for
-requested commits.
+requested commits. Keep the conventional type and optional scope in English;
+write the commit subject in Russian.
 
 ## Safety
 

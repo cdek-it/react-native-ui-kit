@@ -17,13 +17,13 @@ exports[`Body component tests default props 1`] = `
     style={
       [
         {
-          "color": "#1e76cd",
+          "color": "#4496e8",
           "flexShrink": 1,
           "fontFamily": "Noto Sans",
-          "fontSize": 12.25,
+          "fontSize": 14,
           "includeFontPadding": false,
-          "letterSpacing": -0.25,
-          "lineHeight": 15,
+          "letterSpacing": -0.32,
+          "lineHeight": 18,
           "verticalAlign": "middle",
         },
         false,
@@ -82,22 +82,22 @@ exports[`Body component tests левая иконка, base, visited, testID = C
     onStartShouldSetResponder={[Function]}
     style={
       {
-        "paddingRight": 7,
+        "paddingRight": 8,
       }
     }
     testID="AnchorLeftPressable"
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={17.5}
-      bbWidth={17.5}
+      bbHeight={20}
+      bbWidth={20}
       fill="none"
       focusable={false}
-      height={17.5}
+      height={20}
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#9457ea"
+      stroke="#a855f7"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -109,15 +109,15 @@ exports[`Body component tests левая иконка, base, visited, testID = C
           },
           {
             "flex": 0,
-            "height": 17,
-            "width": 17,
+            "height": 20,
+            "width": 20,
           },
         ]
       }
       testID="LeftIcon"
       vbHeight={24}
       vbWidth={24}
-      width={17.5}
+      width={20}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -133,7 +133,7 @@ exports[`Body component tests левая иконка, base, visited, testID = C
         }
         stroke={
           {
-            "payload": 4287911914,
+            "payload": 4289222135,
             "type": 0,
           }
         }
@@ -155,7 +155,7 @@ exports[`Body component tests левая иконка, base, visited, testID = C
           }
           stroke={
             {
-              "payload": 4287911914,
+              "payload": 4289222135,
               "type": 0,
             }
           }
@@ -178,7 +178,7 @@ exports[`Body component tests левая иконка, base, visited, testID = C
           }
           stroke={
             {
-              "payload": 4287911914,
+              "payload": 4289222135,
               "type": 0,
             }
           }
@@ -201,7 +201,7 @@ exports[`Body component tests левая иконка, base, visited, testID = C
           }
           stroke={
             {
-              "payload": 4287911914,
+              "payload": 4289222135,
               "type": 0,
             }
           }
@@ -220,23 +220,23 @@ exports[`Body component tests левая иконка, base, visited, testID = C
     style={
       [
         {
-          "color": "#1e76cd",
+          "color": "#4496e8",
           "flexShrink": 1,
           "fontFamily": "Noto Sans",
-          "fontSize": 12.25,
+          "fontSize": 14,
           "includeFontPadding": false,
-          "letterSpacing": -0.25,
-          "lineHeight": 15,
+          "letterSpacing": -0.32,
+          "lineHeight": 18,
           "verticalAlign": "middle",
         },
         false,
         {
-          "fontSize": 14,
+          "fontSize": 16,
           "letterSpacing": 0,
           "lineHeight": undefined,
         },
         {
-          "color": "#9457ea",
+          "color": "#a855f7",
         },
         undefined,
       ]
@@ -292,22 +292,22 @@ exports[`Body component tests левая иконка, правая иконка
     onStartShouldSetResponder={[Function]}
     style={
       {
-        "paddingRight": 7,
+        "paddingRight": 8,
       }
     }
     testID="AnchorLeftPressable"
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#1e76cd"
+      stroke="#4496e8"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -319,15 +319,15 @@ exports[`Body component tests левая иконка, правая иконка
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="LeftIcon"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -343,7 +343,7 @@ exports[`Body component tests левая иконка, правая иконка
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -365,7 +365,7 @@ exports[`Body component tests левая иконка, правая иконка
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -388,7 +388,7 @@ exports[`Body component tests левая иконка, правая иконка
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -411,7 +411,7 @@ exports[`Body component tests левая иконка, правая иконка
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -430,13 +430,13 @@ exports[`Body component tests левая иконка, правая иконка
     style={
       [
         {
-          "color": "#1e76cd",
+          "color": "#4496e8",
           "flexShrink": 1,
           "fontFamily": "Noto Sans",
-          "fontSize": 12.25,
+          "fontSize": 14,
           "includeFontPadding": false,
-          "letterSpacing": -0.25,
-          "lineHeight": 15,
+          "letterSpacing": -0.32,
+          "lineHeight": 18,
           "verticalAlign": "middle",
         },
         false,
@@ -484,22 +484,22 @@ exports[`Body component tests левая иконка, правая иконка
     onStartShouldSetResponder={[Function]}
     style={
       {
-        "paddingLeft": 7,
+        "paddingLeft": 8,
       }
     }
     testID="AnchorRightPressable"
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#1e76cd"
+      stroke="#4496e8"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -511,15 +511,15 @@ exports[`Body component tests левая иконка, правая иконка
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="RightIcon"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -535,7 +535,7 @@ exports[`Body component tests левая иконка, правая иконка
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -557,7 +557,7 @@ exports[`Body component tests левая иконка, правая иконка
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -580,7 +580,7 @@ exports[`Body component tests левая иконка, правая иконка
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -603,7 +603,7 @@ exports[`Body component tests левая иконка, правая иконка
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -627,13 +627,13 @@ exports[`Body component tests правая иконка, noWrapper 1`] = `
     style={
       [
         {
-          "color": "#1e76cd",
+          "color": "#4496e8",
           "flexShrink": 1,
           "fontFamily": "Noto Sans",
-          "fontSize": 12.25,
+          "fontSize": 14,
           "includeFontPadding": false,
-          "letterSpacing": -0.25,
-          "lineHeight": 15,
+          "letterSpacing": -0.32,
+          "lineHeight": 18,
           "verticalAlign": "middle",
         },
         false,
@@ -680,22 +680,22 @@ exports[`Body component tests правая иконка, noWrapper 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       {
-        "paddingLeft": 7,
+        "paddingLeft": 8,
       }
     }
     testID="AnchorRightPressable"
   >
     <RNSVGSvgView
       align="xMidYMid"
-      bbHeight={14}
-      bbWidth={14}
+      bbHeight={16}
+      bbWidth={16}
       fill="none"
       focusable={false}
-      height={14}
+      height={16}
       meetOrSlice={0}
       minX={0}
       minY={0}
-      stroke="#1e76cd"
+      stroke="#4496e8"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -707,15 +707,15 @@ exports[`Body component tests правая иконка, noWrapper 1`] = `
           },
           {
             "flex": 0,
-            "height": 14,
-            "width": 14,
+            "height": 16,
+            "width": 16,
           },
         ]
       }
       testID="RightIcon"
       vbHeight={24}
       vbWidth={24}
-      width={14}
+      width={16}
       xmlns="http://www.w3.org/2000/svg"
     >
       <RNSVGGroup
@@ -731,7 +731,7 @@ exports[`Body component tests правая иконка, noWrapper 1`] = `
         }
         stroke={
           {
-            "payload": 4280186573,
+            "payload": 4282685160,
             "type": 0,
           }
         }
@@ -753,7 +753,7 @@ exports[`Body component tests правая иконка, noWrapper 1`] = `
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -776,7 +776,7 @@ exports[`Body component tests правая иконка, noWrapper 1`] = `
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }
@@ -799,7 +799,7 @@ exports[`Body component tests правая иконка, noWrapper 1`] = `
           }
           stroke={
             {
-              "payload": 4280186573,
+              "payload": 4282685160,
               "type": 0,
             }
           }

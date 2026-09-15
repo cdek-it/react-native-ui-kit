@@ -55,16 +55,13 @@ export const RatingItemContainer = memo<RatingItemContainerProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, sizing }) => ({
+const styles = StyleSheet.create(({ components }) => ({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
-    width: theme.Form.Rating.ratingIconFontSize,
-    height: theme.Form.Rating.ratingIconFontSize,
+    width: components.rating.icon.size,
+    height: components.rating.icon.size,
   },
 
-  containerWithPaddings: {
-    width: sizing.Width['w-3'],
-    height: sizing.Height['h-3'],
-  },
+  containerWithPaddings: { width: 42, height: 42 },
 }))

@@ -1,0 +1,229 @@
+{
+  "color": {
+    "fg": {
+      "default": "#ffffff",
+      "hover": "#cecfd2",
+      "active": "#f0f0f1",
+      "focus": "#ffffff",
+      "muted": "#a2a5a9",
+      "subtle": "#a2a5a9",
+      "brand": {
+        "default": "#77f48a",
+        "hover": "#aafbb7",
+        "active": "#d4fedc",
+        "disabled": "#168322",
+        "visited": "#aafbb7",
+        "muted": "#44e858"
+      },
+      "inverse": {
+        "default": "#2b2e33",
+        "hover": "#56595f",
+        "active": "#181a1f",
+        "focus": "#2b2e33",
+        "muted": "#85888e"
+      },
+      "status": {
+        "danger": {
+          "default": "#f47f77",
+          "hover": "#fbacaa",
+          "active": "#fed4d4",
+          "disabled": "#8d2218",
+          "visited": "#fbacaa",
+          "muted": "#e85244"
+        },
+        "info": {
+          "default": "#77baf4",
+          "hover": "#aad7fb",
+          "active": "#d4ecfe",
+          "disabled": "#18538d",
+          "visited": "#aad7fb",
+          "muted": "#4496e8"
+        },
+        "warning": {
+          "default": "#facb75",
+          "hover": "#fddeaa",
+          "active": "#ffeed4",
+          "disabled": "#9d6d0e",
+          "visited": "#fddeaa",
+          "muted": "#f5b83d"
+        },
+        "success": {
+          "default": "#77f48a",
+          "hover": "#aafbb7",
+          "active": "#d4fedc",
+          "disabled": "#168322",
+          "visited": "#aafbb7",
+          "muted": "#44e858"
+        },
+        "help": {
+          "default": "#c084fc",
+          "hover": "#d8b4fe",
+          "active": "#e9d5ff",
+          "disabled": "#7e22ce",
+          "visited": "#d8b4fe",
+          "muted": "#a855f7"
+        }
+      },
+      "on": {
+        "brand": {
+          "default": "#2b2e33",
+          "hover": "#2b2e33",
+          "active": "#2b2e33"
+        },
+        "fill": {
+          "default": "#ffffff",
+          "hover": "#ffffff",
+          "active": "#ffffff",
+          "muted": "#e2e2e4"
+        },
+        "status": {
+          "danger": { "default": "#fff0f0", "hover": "#fffafa" },
+          "info": { "default": "#f0f9ff", "hover": "#fafdff" },
+          "warning": { "default": "#fff9f0", "hover": "#fffdfa" },
+          "success": { "default": "#f0fff3", "hover": "#fafffb" },
+          "help": { "default": "#f3e8ff", "hover": "#faf5ff" }
+        }
+      }
+    },
+    "bg": {
+      "status": {
+        "danger": {
+          "weak": {
+            "default": "#3b100c",
+            "hover": "#45120e",
+            "active": "#611912"
+          },
+          "strong": {
+            "default": "#8d2218",
+            "hover": "#db3424",
+            "active": "#e85244"
+          }
+        },
+        "info": {
+          "weak": {
+            "default": "#0c243b",
+            "hover": "#0e2a45",
+            "active": "#123a61"
+          },
+          "strong": {
+            "default": "#18538d",
+            "hover": "#1e76cd",
+            "active": "#4496e8"
+          }
+        },
+        "warning": {
+          "weak": {
+            "default": "#453008",
+            "hover": "#4f3709",
+            "active": "#6d4c0b"
+          },
+          "strong": {
+            "default": "#9d6d0e",
+            "hover": "#dc9710",
+            "active": "#f5b83d"
+          }
+        },
+        "success": {
+          "weak": {
+            "default": "#0c3b11",
+            "hover": "#0e4514",
+            "active": "#12611b"
+          },
+          "strong": {
+            "default": "#168322",
+            "hover": "#1dc831",
+            "active": "#44e858"
+          }
+        },
+        "help": {
+          "weak": {
+            "default": "#3b0764",
+            "hover": "#581c87",
+            "active": "#6b21a8"
+          },
+          "strong": {
+            "default": "#7e22ce",
+            "hover": "#9333ea",
+            "active": "#a855f7"
+          }
+        }
+      },
+      "brand": {
+        "weak": { "hover": "#0c3b11", "active": "#0e4514" },
+        "strong": {
+          "default": "#44e858",
+          "hover": "#77f48a",
+          "active": "#aafbb7"
+        }
+      },
+      "surface": {
+        "canvas": {
+          "default": "#2b2e33",
+          "hover": "#404348",
+          "active": "#56595f",
+          "selected": "#404348"
+        },
+        "default": {
+          "default": "#404348",
+          "hover": "#56595f",
+          "active": "#6d7076",
+          "selected": "#56595f"
+        },
+        "raised": {
+          "default": "#56595f",
+          "hover": "#6d7076",
+          "active": "#85888e",
+          "selected": "#6d7076"
+        },
+        "overlay": { "default": "#404348", "hover": "#56595f" },
+        "backdrop": "rgba(0, 0, 0, 0.3000)"
+      },
+      "neutral": {
+        "weak": {
+          "default": "#2b2e33",
+          "hover": "#404348",
+          "active": "#56595f",
+          "disabled": "#404348"
+        },
+        "medium": {
+          "default": "#404348",
+          "hover": "#56595f",
+          "active": "#6d7076",
+          "strong": "#85888e"
+        },
+        "strong": {
+          "default": "#f0f0f1",
+          "hover": "#e2e2e4",
+          "active": "#cecfd2",
+          "selected": "#f0f0f1"
+        }
+      }
+    },
+    "border": {
+      "focus": "rgba(68, 232, 88, 0.2)",
+      "neutral": {
+        "default": "#404348",
+        "strong": "#56595f",
+        "bold": { "default": "#f0f0f1", "hover": "#e2e2e4" },
+        "inverse": "#2b2e33"
+      },
+      "brand": {
+        "subtle": "#12611b",
+        "default": "#44e858",
+        "strong": "#77f48a"
+      },
+      "status": {
+        "danger": {
+          "subtle": "#db3424",
+          "default": "#e85244",
+          "strong": "#f47f77",
+          "focus": "rgba(232, 82, 68, 0.2)"
+        },
+        "info": { "default": "#4496e8", "strong": "#77baf4" },
+        "warning": { "default": "#f5b83d", "strong": "#facb75" },
+        "success": { "default": "#44e858", "strong": "#77f48a" },
+        "help": { "strong": "#c084fc" }
+      }
+    }
+  }
+}

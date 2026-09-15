@@ -32,22 +32,24 @@ export const RatingClear = memo<RatingClearProps>(({ ...rest }) => {
         <SvgUniversal
           {...styles.icon}
           source={IconBan}
-          uniProps={({ theme }) => ({
-            color: disabled
-              ? theme.custom.rating.ratingCancelIconDisabledColor
-              : pressed
-                ? theme.Form.Rating.ratingCancelIconHoverColor
-                : theme.Form.Rating.ratingCancelIconColor,
-          })}
+          uniProps={({ components }) => {
+            return {
+              color: disabled
+                ? components.rating.icon.color
+                : pressed
+                  ? components.rating.icon.hoverColor
+                  : components.rating.icon.color,
+            }
+          }}
         />
       )}
     </RatingItemContainer>
   )
 })
 
-const styles = StyleSheet.create(({ theme }) => ({
+const styles = StyleSheet.create(({ components }) => ({
   icon: {
-    height: theme.Form.Rating.ratingIconFontSize,
-    width: theme.Form.Rating.ratingIconFontSize,
+    height: components.rating.icon.size,
+    width: components.rating.icon.size,
   },
 }))
