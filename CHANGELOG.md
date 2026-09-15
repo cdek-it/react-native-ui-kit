@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.3.0](https://github.com/cdek-it/react-native-ui-kit/compare/v1.2.2...v1.3.0) (2026-09-15)
+
+### 🚀 Новый функционал
+
+* **Body:** добавить размеры и fallback для base ([c902c48](https://github.com/cdek-it/react-native-ui-kit/commit/c902c48a5faec6c29251a590a7299e76d51a0480))
+* **Typography:** добавить варианты d1-d3 в Title ([457fa41](https://github.com/cdek-it/react-native-ui-kit/commit/457fa41eccfa17bc9cb81a2f209bfa6703318b06))
+
+### 🐛 Исправления багов
+
+* **Typography:** синхронизировать стили с Figma ([492bdd7](https://github.com/cdek-it/react-native-ui-kit/commit/492bdd7b13f8f16a4b62c11e9b958b28b36ef1d6))
+
 ## [1.2.2](https://github.com/cdek-it/react-native-ui-kit/compare/v1.2.1...v1.2.2) (2026-09-02)
 
 ### 🐛 Исправления багов
