@@ -1,13 +1,13 @@
 import { memo, useMemo } from 'react'
 
-import { BaseButton } from './BaseButton'
+import { BaseButton } from './internal/BaseButton'
+import { ButtonVariantContext } from './internal/contexts/ButtonVariantContext'
 import type { ButtonBaseVariant, ButtonProps } from './types'
-import { ButtonVariantContext } from './utils/ButtonVariantContext'
 
 /**
  * Button component
  * @param size - button size
- * @param shape - button shape
+ * @param rounded - rounded corners
  * @param loading - button loading state
  * @param variant - button variant
  * @param disabled - button disabled state

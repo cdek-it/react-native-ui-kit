@@ -4,11 +4,11 @@ import { Pressable, type PressableStateCallbackType } from 'react-native'
 
 import { StyleSheet } from 'react-native-unistyles'
 
-import { genericMemo } from '../../../utils/genericMemo'
-import type { BaseButtonProps, ButtonShape, ButtonSize } from '../types'
+import { genericMemo } from '../../../../utils/genericMemo'
+import type { BaseButtonProps, ButtonShape, ButtonSize } from '../../types'
 
-import { ButtonPressedContext } from './ButtonPressedContext'
-import { ButtonVariantContext } from './ButtonVariantContext'
+import { ButtonPressedContext } from '../contexts/ButtonPressedContext'
+import { ButtonVariantContext } from '../contexts/ButtonVariantContext'
 
 export interface ButtonContainerComponentProps {
   readonly size: ButtonSize
@@ -39,7 +39,6 @@ const ButtonContainerComponent = ({
 }: ButtonContainerComponentProps) => {
   const pressed = useContext(ButtonPressedContext)
   const { variant, severity } = useContext(ButtonVariantContext)
-
   buttonContainerStyles.useVariants({
     size,
     shape,
@@ -66,12 +65,12 @@ const ButtonContainerComponent = ({
   return (
     <Pressable
       accessibilityRole='button'
+      {...props}
       disabled={disabled || loading}
       ref={pressableRef}
       style={resolvedStyle}
       onPressIn={onPressIn}
       onPressOut={onPressOut}
-      {...props}
     >
       {children}
     </Pressable>
@@ -176,24 +175,24 @@ const buttonContainerStyles = StyleSheet.create(
           variant: 'primary',
           pressed: 'true',
           styles: {
-            borderColor: button.colorScheme.root.primary.hoverBorderColor,
-            backgroundColor: button.colorScheme.root.primary.hoverBackground,
+            borderColor: button.colorScheme.root.primary.activeBorderColor,
+            backgroundColor: button.colorScheme.root.primary.activeBackground,
           },
         },
         {
           variant: 'secondary',
           pressed: 'true',
           styles: {
-            borderColor: button.colorScheme.root.secondary.hoverBorderColor,
-            backgroundColor: button.colorScheme.root.secondary.hoverBackground,
+            borderColor: button.colorScheme.root.secondary.activeBorderColor,
+            backgroundColor: button.colorScheme.root.secondary.activeBackground,
           },
         },
         {
           variant: 'tertiary',
           pressed: 'true',
           styles: {
-            borderColor: button.colorScheme.root.contrast.hoverBorderColor,
-            backgroundColor: button.colorScheme.root.contrast.hoverBackground,
+            borderColor: button.colorScheme.root.contrast.activeBorderColor,
+            backgroundColor: button.colorScheme.root.contrast.activeBackground,
           },
         },
         {
@@ -201,7 +200,7 @@ const buttonContainerStyles = StyleSheet.create(
           pressed: 'true',
           styles: {
             borderColor: 'transparent',
-            backgroundColor: button.colorScheme.text.primary.hoverBackground,
+            backgroundColor: button.colorScheme.text.primary.activeBackground,
           },
         },
         {
@@ -217,6 +216,7 @@ const buttonContainerStyles = StyleSheet.create(
         {
           variant: 'basic',
           severity: 'info',
+          disabled: 'false',
           styles: {
             borderColor: button.colorScheme.root.info.borderColor,
             backgroundColor: button.colorScheme.root.info.background,
@@ -225,6 +225,7 @@ const buttonContainerStyles = StyleSheet.create(
         {
           variant: 'outlined',
           severity: 'info',
+          disabled: 'false',
           styles: {
             borderColor: button.colorScheme.outlined.info.borderColor,
             backgroundColor: 'transparent',
@@ -233,6 +234,7 @@ const buttonContainerStyles = StyleSheet.create(
         {
           variant: 'text',
           severity: 'info',
+          disabled: 'false',
           styles: {
             borderColor: 'transparent',
             backgroundColor: 'transparent',
@@ -241,6 +243,7 @@ const buttonContainerStyles = StyleSheet.create(
         {
           variant: 'basic',
           severity: 'success',
+          disabled: 'false',
           styles: {
             borderColor: button.colorScheme.root.success.borderColor,
             backgroundColor: button.colorScheme.root.success.background,
@@ -249,6 +252,7 @@ const buttonContainerStyles = StyleSheet.create(
         {
           variant: 'outlined',
           severity: 'success',
+          disabled: 'false',
           styles: {
             borderColor: button.colorScheme.outlined.success.borderColor,
             backgroundColor: 'transparent',
@@ -257,6 +261,7 @@ const buttonContainerStyles = StyleSheet.create(
         {
           variant: 'text',
           severity: 'success',
+          disabled: 'false',
           styles: {
             borderColor: 'transparent',
             backgroundColor: 'transparent',
@@ -265,6 +270,7 @@ const buttonContainerStyles = StyleSheet.create(
         {
           variant: 'basic',
           severity: 'warning',
+          disabled: 'false',
           styles: {
             borderColor: button.colorScheme.root.warn.borderColor,
             backgroundColor: button.colorScheme.root.warn.background,
@@ -273,6 +279,7 @@ const buttonContainerStyles = StyleSheet.create(
         {
           variant: 'outlined',
           severity: 'warning',
+          disabled: 'false',
           styles: {
             borderColor: button.colorScheme.outlined.warn.borderColor,
             backgroundColor: 'transparent',
@@ -281,6 +288,7 @@ const buttonContainerStyles = StyleSheet.create(
         {
           variant: 'text',
           severity: 'warning',
+          disabled: 'false',
           styles: {
             borderColor: 'transparent',
             backgroundColor: 'transparent',
@@ -289,6 +297,7 @@ const buttonContainerStyles = StyleSheet.create(
         {
           variant: 'basic',
           severity: 'danger',
+          disabled: 'false',
           styles: {
             borderColor: button.colorScheme.root.danger.borderColor,
             backgroundColor: button.colorScheme.root.danger.background,
@@ -297,6 +306,7 @@ const buttonContainerStyles = StyleSheet.create(
         {
           variant: 'outlined',
           severity: 'danger',
+          disabled: 'false',
           styles: {
             borderColor: button.colorScheme.outlined.danger.borderColor,
             backgroundColor: 'transparent',
@@ -305,6 +315,7 @@ const buttonContainerStyles = StyleSheet.create(
         {
           variant: 'text',
           severity: 'danger',
+          disabled: 'false',
           styles: {
             borderColor: 'transparent',
             backgroundColor: 'transparent',
@@ -315,110 +326,123 @@ const buttonContainerStyles = StyleSheet.create(
         {
           variant: 'basic',
           severity: 'info',
+          disabled: 'false',
           pressed: 'true',
           styles: {
-            borderColor: button.colorScheme.root.info.hoverBorderColor,
-            backgroundColor: button.colorScheme.root.info.hoverBackground,
+            borderColor: button.colorScheme.root.info.activeBorderColor,
+            backgroundColor: button.colorScheme.root.info.activeBackground,
           },
         },
         {
           variant: 'outlined',
           severity: 'info',
+          disabled: 'false',
           pressed: 'true',
           styles: {
             borderColor: button.colorScheme.outlined.info.borderColor,
-            backgroundColor: button.colorScheme.outlined.info.hoverBackground,
+            backgroundColor: button.colorScheme.outlined.info.activeBackground,
           },
         },
         {
           variant: 'text',
           severity: 'info',
+          disabled: 'false',
           pressed: 'true',
           styles: {
             borderColor: 'transparent',
-            backgroundColor: button.colorScheme.text.info.hoverBackground,
+            backgroundColor: button.colorScheme.text.info.activeBackground,
           },
         },
         {
           variant: 'basic',
           severity: 'success',
+          disabled: 'false',
           pressed: 'true',
           styles: {
-            borderColor: button.colorScheme.root.success.hoverBorderColor,
-            backgroundColor: button.colorScheme.root.success.hoverBackground,
+            borderColor: button.colorScheme.root.success.activeBorderColor,
+            backgroundColor: button.colorScheme.root.success.activeBackground,
           },
         },
         {
           variant: 'outlined',
           severity: 'success',
+          disabled: 'false',
           pressed: 'true',
           styles: {
             borderColor: button.colorScheme.outlined.success.borderColor,
             backgroundColor:
-              button.colorScheme.outlined.success.hoverBackground,
+              button.colorScheme.outlined.success.activeBackground,
           },
         },
         {
           variant: 'text',
           severity: 'success',
+          disabled: 'false',
           pressed: 'true',
           styles: {
             borderColor: 'transparent',
-            backgroundColor: button.colorScheme.text.success.hoverBackground,
+            backgroundColor: button.colorScheme.text.success.activeBackground,
           },
         },
         {
           variant: 'basic',
           severity: 'warning',
+          disabled: 'false',
           pressed: 'true',
           styles: {
-            borderColor: button.colorScheme.root.warn.hoverBorderColor,
-            backgroundColor: button.colorScheme.root.warn.hoverBackground,
+            borderColor: button.colorScheme.root.warn.activeBorderColor,
+            backgroundColor: button.colorScheme.root.warn.activeBackground,
           },
         },
         {
           variant: 'outlined',
           severity: 'warning',
+          disabled: 'false',
           pressed: 'true',
           styles: {
             borderColor: button.colorScheme.outlined.warn.borderColor,
-            backgroundColor: button.colorScheme.outlined.warn.hoverBackground,
+            backgroundColor: button.colorScheme.outlined.warn.activeBackground,
           },
         },
         {
           variant: 'text',
           severity: 'warning',
+          disabled: 'false',
           pressed: 'true',
           styles: {
             borderColor: 'transparent',
-            backgroundColor: button.colorScheme.text.warn.hoverBackground,
+            backgroundColor: button.colorScheme.text.warn.activeBackground,
           },
         },
         {
           variant: 'basic',
           severity: 'danger',
+          disabled: 'false',
           pressed: 'true',
           styles: {
-            borderColor: button.colorScheme.root.danger.hoverBorderColor,
-            backgroundColor: button.colorScheme.root.danger.hoverBackground,
+            borderColor: button.colorScheme.root.danger.activeBorderColor,
+            backgroundColor: button.colorScheme.root.danger.activeBackground,
           },
         },
         {
           variant: 'outlined',
           severity: 'danger',
+          disabled: 'false',
           pressed: 'true',
           styles: {
             borderColor: button.colorScheme.outlined.danger.borderColor,
-            backgroundColor: button.colorScheme.outlined.danger.hoverBackground,
+            backgroundColor:
+              button.colorScheme.outlined.danger.activeBackground,
           },
         },
         {
           variant: 'text',
           severity: 'danger',
+          disabled: 'false',
           pressed: 'true',
           styles: {
             borderColor: 'transparent',
-            backgroundColor: button.colorScheme.text.danger.hoverBackground,
+            backgroundColor: button.colorScheme.text.danger.activeBackground,
           },
         },
 
