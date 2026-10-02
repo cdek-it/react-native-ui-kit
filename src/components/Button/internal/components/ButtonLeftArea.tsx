@@ -1,5 +1,5 @@
-import { genericMemo } from '../../../utils/genericMemo'
-import type { BaseButtonProps, ButtonSize } from '../types'
+import { genericMemo } from '../../../../utils/genericMemo'
+import type { BaseButtonProps, ButtonSize } from '../../types'
 
 import { ButtonActivityIndicator } from './ButtonActivityIndicator'
 import { ButtonIcon } from './ButtonIcon'
@@ -20,7 +20,7 @@ const ButtonLeftAreaComponent = ({
   disabled,
 }: ButtonLeftAreaProps) => {
   if (iconPosition === 'prefix') {
-    if (loading && !disabled) {
+    if (loading) {
       return <ButtonActivityIndicator size={size} />
     }
 

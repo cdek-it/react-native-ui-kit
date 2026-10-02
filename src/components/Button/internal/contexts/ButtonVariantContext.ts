@@ -1,6 +1,6 @@
 import { createContext } from 'react'
 
-import type { ButtonSeverity, ButtonVariant } from '../types'
+import type { ButtonSeverity, ButtonVariant } from '../../types'
 
 export interface ButtonVariantContextValue {
   variant: ButtonVariant
