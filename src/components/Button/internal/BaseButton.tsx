@@ -1,16 +1,21 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import type { GestureResponderEvent } from 'react-native'
 
-import { genericMemo } from '../../utils/genericMemo'
+import { genericMemo } from '../../../utils/genericMemo'
 
-import type { ButtonProps, ButtonVariant } from './types'
+import type { ButtonProps, ButtonVariant } from '../types'
+
 import {
   ButtonLeftArea,
   ButtonRightArea,
   ButtonLabel,
   ButtonContainer,
-} from './utils'
-import { ButtonPressedContext } from './utils/ButtonPressedContext'
+} from './components'
+import { ButtonPressedContext } from './contexts/ButtonPressedContext'
+import {
+  resolveButtonShape,
+  resolveButtonVisualState,
+} from './resolveButtonProps'
 
 export type BaseButtonComponentProps<Variant extends ButtonVariant> = Omit<
   ButtonProps<Variant>,
@@ -19,7 +24,9 @@ export type BaseButtonComponentProps<Variant extends ButtonVariant> = Omit<
 
 const BaseButtonComponent = <Variant extends ButtonVariant>({
   size = 'base',
-  shape = 'square',
+  // eslint-disable-next-line @typescript-eslint/no-deprecated -- Preserve the alias until 2.0.
+  shape: deprecatedShape,
+  rounded,
   loading = false,
   variant,
   disabled = false,
@@ -28,19 +35,31 @@ const BaseButtonComponent = <Variant extends ButtonVariant>({
   Icon,
   label,
   style,
+  accessibilityLabel,
+  accessibilityState,
+  onPress,
+  onLongPress,
   onPressIn: onPressInProp,
   onPressOut: onPressOutProp,
   ...props
 }: BaseButtonComponentProps<Variant>) => {
-  const isDisabled = !!disabled
   const [pressed, setPressed] = useState(false)
+  const interactionDisabled = !!disabled || loading
+  const visualState = resolveButtonVisualState(loading, !!disabled, pressed)
+  const shape = resolveButtonShape(rounded, deprecatedShape)
+  const isDisabled = visualState === 'disabled'
+
+  useEffect(() => {
+    if (interactionDisabled) setPressed(false)
+  }, [interactionDisabled])
 
   const onPressIn = useCallback(
     (event: GestureResponderEvent) => {
       onPressInProp?.(event)
-      setPressed(true)
+
+      if (!interactionDisabled) setPressed(true)
     },
-    [onPressInProp]
+    [interactionDisabled, onPressInProp]
   )
 
   const onPressOut = useCallback(
@@ -52,19 +71,27 @@ const BaseButtonComponent = <Variant extends ButtonVariant>({
   )
 
   return (
-    <ButtonPressedContext.Provider value={pressed}>
+    <ButtonPressedContext.Provider value={visualState === 'pressed'}>
       <ButtonContainer
+        {...props}
         {...{
           size,
           shape,
-          disabled: isDisabled,
+          disabled: interactionDisabled,
           loading,
           isIconOnly: !!iconOnly,
           style,
           onPressIn,
           onPressOut,
         }}
-        {...props}
+        accessibilityLabel={accessibilityLabel ?? label}
+        accessibilityState={{
+          ...accessibilityState,
+          disabled: interactionDisabled,
+          busy: loading,
+        }}
+        onLongPress={interactionDisabled ? undefined : onLongPress}
+        onPress={interactionDisabled ? undefined : onPress}
       >
         <ButtonLeftArea
           {...{ size, loading, disabled: isDisabled, Icon, iconPosition }}

@@ -1,19 +1,20 @@
 import { memo, useMemo } from 'react'
 
-import { BaseButton } from './BaseButton'
+import { BaseButton } from './internal/BaseButton'
+import { ButtonVariantContext } from './internal/contexts/ButtonVariantContext'
+import { resolveButtonSeverityVariant } from './internal/resolveButtonProps'
 import type {
   ButtonProps,
   ButtonSeverityProps,
   ButtonSeverityVariant,
 } from './types'
-import { ButtonVariantContext } from './utils/ButtonVariantContext'
 
 /**
  * Button component
  * @param size - button size
- * @param shape - button shape
+ * @param rounded - rounded corners
  * @param loading - button loading state
- * @param variant - button variant
+ * @param appearance - button presentation
  * @param disabled - button disabled state
  * @param iconOnly - button with only Icon
  * @param iconPosition - icon position
@@ -25,15 +26,24 @@ import { ButtonVariantContext } from './utils/ButtonVariantContext'
  */
 export const ButtonSeverity = memo<
   ButtonProps<ButtonSeverityVariant> & ButtonSeverityProps
->(({ severity, variant = 'basic', ...props }) => {
-  const variantContextValue = useMemo(
-    () => ({ variant, severity }),
-    [severity, variant]
-  )
+>(
+  ({
+    severity,
+    appearance,
+    // eslint-disable-next-line @typescript-eslint/no-deprecated -- Preserve the alias until 2.0.
+    variant: deprecatedVariant,
+    ...props
+  }) => {
+    const variant = resolveButtonSeverityVariant(appearance, deprecatedVariant)
+    const variantContextValue = useMemo(
+      () => ({ variant, severity }),
+      [severity, variant]
+    )
 
-  return (
-    <ButtonVariantContext.Provider value={variantContextValue}>
-      <BaseButton variant={variant} {...props} />
-    </ButtonVariantContext.Provider>
-  )
-})
+    return (
+      <ButtonVariantContext.Provider value={variantContextValue}>
+        <BaseButton variant={variant} {...props} />
+      </ButtonVariantContext.Provider>
+    )
+  }
+)

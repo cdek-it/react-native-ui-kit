@@ -5,4 +5,5 @@ export type {
   ButtonProps,
   ButtonBadgeProps,
   ButtonSeverityProps,
+  ButtonSeverityAppearance,
 } from './types'
