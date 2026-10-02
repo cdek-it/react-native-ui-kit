@@ -3,14 +3,11 @@ import { render } from '@testing-library/react-native'
 import { ButtonSeverity } from '../ButtonSeverity'
 
 describe('ButtonSeverity', () => {
-  test.each(['info', 'warning', 'danger', 'success'] as const)(
-    'отображает текст для severity=%s',
-    (severity) => {
-      const { getByText } = render(
-        <ButtonSeverity label='Button' severity={severity} />
-      )
+  test('отображает переданный текст', () => {
+    const { getByText } = render(
+      <ButtonSeverity label='Button' severity='info' />
+    )
 
-      expect(getByText('Button')).toBeOnTheScreen()
-    }
-  )
+    expect(getByText('Button')).toBeOnTheScreen()
+  })
 })

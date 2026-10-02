@@ -5,10 +5,10 @@ import {
 } from '@tabler/icons-react-native'
 import { StyleSheet, View } from 'react-native'
 
-import { Body } from '../Typography'
+import { Body } from '../../Typography'
 
-import { Button } from './Button'
-import type { ButtonBaseVariant, ButtonProps } from './types'
+import { ButtonBadge } from '../ButtonBadge'
+import type { ButtonBadgeProps, ButtonBaseVariant, ButtonProps } from '../types'
 
 const Icons = { IconArrowDownRight, IconArrowDownLeft, undefined }
 const styles = StyleSheet.create({
@@ -16,21 +16,23 @@ const styles = StyleSheet.create({
   example: { gap: 8 },
 })
 
-const meta: Meta<typeof Button> = {
-  title: 'Button',
-  component: Button,
+const meta: Meta<typeof ButtonBadge> = {
+  title: 'Button/Badge',
+  component: ButtonBadge,
   args: {
     size: 'base',
-    shape: 'square',
+    rounded: false,
     variant: 'primary',
     label: 'Button',
     loading: false,
     disabled: false,
     iconPosition: 'prefix',
+    badgeSeverity: 'basic',
+    badgeLabel: 'Badge',
   },
   argTypes: {
     size: { control: 'radio', options: ['small', 'base', 'large', 'xlarge'] },
-    shape: { control: 'radio', options: ['square', 'circle'] },
+    rounded: { control: 'boolean' },
     variant: {
       control: 'radio',
       options: ['primary', 'secondary', 'tertiary', 'text', 'link'],
@@ -38,10 +40,14 @@ const meta: Meta<typeof Button> = {
     loading: { control: 'boolean' },
     disabled: { control: 'boolean' },
     iconPosition: { control: 'radio', options: ['prefix', 'postfix'] },
-    onPress: { action: 'OnPress' },
+    onPress: { action: 'onPress' },
+    badgeSeverity: {
+      control: 'radio',
+      options: ['basic', 'info', 'success', 'warning', 'danger'],
+    },
     Icon: { control: 'select', options: Object.keys(Icons), mapping: Icons },
   },
-  parameters: { controls: { exclude: ['iconOnly'] } },
+  parameters: { controls: { exclude: ['iconOnly', 'shape'] } },
   render: ({
     iconOnly: _iconOnly,
     Icon,
@@ -49,15 +55,17 @@ const meta: Meta<typeof Button> = {
     label = 'Button',
     ...args
   }) => {
-    const buttonProps: ButtonProps<ButtonBaseVariant> = {
+    const buttonProps: ButtonProps<ButtonBaseVariant> & ButtonBadgeProps = {
       ...args,
       Icon,
       iconPosition,
       label,
     }
-    const iconOnlyButtonProps: ButtonProps<ButtonBaseVariant> = {
+    const iconOnlyButtonProps: ButtonProps<ButtonBaseVariant> &
+      ButtonBadgeProps = {
       ...args,
       iconOnly: true,
+      accessibilityLabel: args.accessibilityLabel ?? label,
       Icon: Icon ?? IconArrowDownRight,
     }
 
@@ -65,11 +73,11 @@ const meta: Meta<typeof Button> = {
       <View style={styles.container}>
         <View style={styles.example}>
           <Body>С текстом</Body>
-          <Button {...buttonProps} />
+          <ButtonBadge {...buttonProps} />
         </View>
         <View style={styles.example}>
           <Body>Только иконка</Body>
-          <Button {...iconOnlyButtonProps} />
+          <ButtonBadge {...iconOnlyButtonProps} />
         </View>
       </View>
     )
@@ -78,8 +86,8 @@ const meta: Meta<typeof Button> = {
 
 export default meta
 
-type Story = StoryObj<typeof Button>
+type Story = StoryObj<typeof ButtonBadge>
 
 const ButtonStory: Story = { args: {}, argTypes: {} }
 
-export { ButtonStory as Button }
+export { ButtonStory as Badge }

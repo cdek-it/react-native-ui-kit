@@ -11,6 +11,7 @@ export type ButtonBaseVariant =
   | 'text'
   | 'link'
 export type ButtonSeverityVariant = 'basic' | 'outlined' | 'text'
+export type ButtonSeverityAppearance = 'filled' | 'outlined' | 'text'
 export type ButtonVariant = ButtonBaseVariant | ButtonSeverityVariant
 export type ButtonSize = 'xlarge' | 'large' | 'base' | 'small'
 export type ButtonShape = 'square' | 'circle'
@@ -26,9 +27,14 @@ export interface BaseButtonProps<
   size?: ButtonSize
   /**
    * Controls button shape
-   * @default 'square'
+   * @deprecated Use rounded instead. Removed in 2.0.
    */
   shape?: ButtonShape
+  /**
+   * Controls rounded corners
+   * @default false
+   */
+  rounded?: boolean
   /**
    * Controls button loading state
    * @default false
@@ -89,6 +95,13 @@ export interface ButtonSeverityProps {
    * Controls severity button styling variant
    */
   severity: ButtonSeverity
+  /**
+   * @default 'filled'
+   */
+  appearance?: ButtonSeverityAppearance
+  /**
+   * @deprecated Use appearance instead. Removed in 2.0.
+   */
   variant?: ButtonSeverityVariant
 }
 

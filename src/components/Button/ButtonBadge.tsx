@@ -5,9 +5,9 @@ import { StyleSheet } from 'react-native-unistyles'
 
 import { Badge, type BadgeProps } from '../Badge'
 
-import { BaseButton } from './BaseButton'
+import { BaseButton } from './internal/BaseButton'
+import { ButtonVariantContext } from './internal/contexts/ButtonVariantContext'
 import type { ButtonBadgeProps, ButtonBaseVariant, ButtonProps } from './types'
-import { ButtonVariantContext } from './utils/ButtonVariantContext'
 
 /**
  * Button component with badge
