@@ -20,4 +20,22 @@ describe('ButtonBadge', () => {
     expect(getByTestId(ButtonBadgeTestId.badge)).toBeOnTheScreen()
     expect(queryByText('Badge')).not.toBeOnTheScreen()
   })
+
+  test.each([
+    { loading: true },
+    { disabled: true },
+    { loading: true, disabled: true },
+  ])('сохраняет бейдж при %j', (state) => {
+    const { getByText, getAllByRole } = render(
+      <ButtonBadge
+        badgeLabel='3'
+        badgeSeverity='danger'
+        label='Уведомления'
+        {...state}
+      />
+    )
+
+    expect(getByText('3')).toBeOnTheScreen()
+    expect(getAllByRole('button')).toHaveLength(1)
+  })
 })

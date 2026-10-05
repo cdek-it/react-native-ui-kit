@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
 })
 
 const meta: Meta<typeof ButtonBadge> = {
-  title: 'Button/Badge',
+  title: 'Button/ButtonBadge',
   component: ButtonBadge,
   args: {
     size: 'base',
@@ -90,4 +90,4 @@ type Story = StoryObj<typeof ButtonBadge>
 
 const ButtonStory: Story = { args: {}, argTypes: {} }
 
-export { ButtonStory as Badge }
+export { ButtonStory as ButtonBadge }

@@ -21,49 +21,49 @@ export interface BaseButtonProps<
   Variant extends ButtonVariant,
 > extends PressableProps {
   /**
-   * Controls button size
+   * Размер кнопки
    * @default 'base'
    */
   size?: ButtonSize
   /**
-   * Controls button shape
-   * @deprecated Use rounded instead. Removed in 2.0.
+   * Форма кнопки.
+   * @deprecated Используйте rounded. Удаляется в версии 2.0
    */
   shape?: ButtonShape
   /**
-   * Controls rounded corners
+   * Скругление углов кнопки
    * @default false
    */
   rounded?: boolean
   /**
-   * Controls button loading state
+   * Состояние загрузки кнопки
    * @default false
    */
   loading?: boolean
   /**
-   * Button visual presentation type
+   * Вариант оформления кнопки
    */
   variant?: Variant
   /**
-   * Icon position
+   * Положение иконки относительно текста
    * @default 'prefix'
    */
   iconPosition?: ButtonIconPosition
   /**
-   * Controls icon only button variant
+   * Кнопка только с иконкой, без текста
    */
   iconOnly?: unknown
   /**
-   * SVG icon
+   * SVG-иконка
    * @default undefined
    */
   Icon?: SvgSource
   /**
-   * Label in button
+   * Текст кнопки
    */
   label?: string
   /**
-   * Ref for the pressable component
+   * Ссылка на компонент Pressable
    */
   pressableRef?: Ref<View>
 }
@@ -92,7 +92,7 @@ export type ButtonSeverity = 'info' | 'success' | 'warning' | 'danger'
 
 export interface ButtonSeverityProps {
   /**
-   * Controls severity button styling variant
+   * Семантический цвет кнопки
    */
   severity: ButtonSeverity
   /**
@@ -100,20 +100,20 @@ export interface ButtonSeverityProps {
    */
   appearance?: ButtonSeverityAppearance
   /**
-   * @deprecated Use appearance instead. Removed in 2.0.
+   * @deprecated Используйте appearance. Удаляется в версии 2.0
    */
   variant?: ButtonSeverityVariant
 }
 
 export interface ButtonBadgeProps {
   /**
-   * Controls color of Badge component
+   * Цвет бейджа.
    *
    * @type {BadgeSeverity}
    */
   badgeSeverity: BadgeSeverity
   /**
-   * Текст внутри бейджа. Если не указан, то бейдж будет в форме точки.
+   * Текст внутри бейджа. Если не указан, то бейдж будет в форме точки
    */
   badgeLabel?: string
 }

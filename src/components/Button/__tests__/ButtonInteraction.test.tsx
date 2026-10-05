@@ -3,6 +3,7 @@ import { fireEvent, render, userEvent } from '@testing-library/react-native'
 import type { PressableProps } from 'react-native'
 
 import { Button } from '../Button'
+import { ButtonBadge } from '../ButtonBadge'
 import { ButtonSeverity } from '../ButtonSeverity'
 import type { ButtonIconPosition } from '../types'
 
@@ -16,6 +17,18 @@ describe.each([
     name: 'Button',
     createButton: (props: InteractionProps) => (
       <Button Icon={IconArrowDownRight} label='Сохранить' {...props} />
+    ),
+  },
+  {
+    name: 'ButtonBadge',
+    createButton: (props: InteractionProps) => (
+      <ButtonBadge
+        Icon={IconArrowDownRight}
+        badgeLabel='3'
+        badgeSeverity='danger'
+        label='Сохранить'
+        {...props}
+      />
     ),
   },
   {

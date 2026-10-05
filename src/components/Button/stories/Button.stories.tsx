@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
 })
 
 const meta: Meta<typeof Button> = {
-  title: 'Button',
+  title: 'Button/Button',
   component: Button,
   args: {
     size: 'base',
@@ -84,7 +84,3 @@ type Story = StoryObj<typeof Button>
 const ButtonStory: Story = { args: {}, argTypes: {} }
 
 export { ButtonStory as Button }
-
-export const LoadingDisabled: Story = {
-  args: { loading: true, disabled: true },
-}
