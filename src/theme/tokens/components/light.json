@@ -287,14 +287,14 @@
         "lg": { "iconOnlyWidth": 28 },
         "xlg": { "iconOnlyWidth": 32 }
       },
-      "extSm": { "borderRadius": 14, "gap": 8, "height": 28 },
-      "extLg": { "borderRadius": 14, "gap": 14, "height": 48 },
+      "extSm": { "borderRadius": 14, "gap": 8, "height": 36 },
+      "extLg": { "borderRadius": 14, "gap": 10, "height": 50 },
       "extXlg": {
         "borderRadius": 14,
-        "gap": 14,
+        "gap": 10,
         "iconOnlyWidth": 56,
         "paddingX": 24,
-        "paddingY": 20,
+        "paddingY": 14,
         "height": 56
       },
       "borderWidth": 1,
@@ -518,28 +518,28 @@
       }
     },
     "root": {
-      "borderRadius": 14,
+      "borderRadius": 10,
       "roundedBorderRadius": 1600,
       "gap": 8,
       "paddingX": 14,
       "paddingY": 8,
-      "height": 36,
-      "iconOnlyWidth": 36,
+      "height": 42,
+      "iconOnlyWidth": 42,
       "raisedShadow": "none",
       "badgeSize": 16,
       "transitionDuration": 180,
       "focusRing": { "width": 4, "style": "none", "offset": 0 },
       "sm": {
-        "fontSize": 14,
-        "iconOnlyWidth": 28,
+        "fontSize": 12,
+        "iconOnlyWidth": 36,
         "paddingX": 14,
         "paddingY": 8
       },
       "lg": {
-        "fontSize": 20,
-        "iconOnlyWidth": 48,
+        "fontSize": 18,
+        "iconOnlyWidth": 50,
         "paddingX": 24,
-        "paddingY": 14
+        "paddingY": 12
       },
       "label": { "fontWeight": 600 }
     }
