@@ -1,110 +1,86 @@
-import { useCallback, useEffect, useState } from 'react'
-import type { GestureResponderEvent } from 'react-native'
+import { memo } from 'react'
+import { Pressable, type PressableStateCallbackType } from 'react-native'
 
-import { genericMemo } from '../../../utils/genericMemo'
+import type { BaseButtonProps } from '../types'
 
-import type { ButtonProps, ButtonVariant } from '../types'
+import { ButtonActivityIndicator } from './components/ButtonActivityIndicator'
+import { ButtonIcon } from './components/ButtonIcon'
+import { ButtonLabel } from './components/ButtonLabel'
+import type { ButtonLayoutProps, ButtonStyleResolver } from './types'
 
-import {
-  ButtonLeftArea,
-  ButtonRightArea,
-  ButtonLabel,
-  ButtonContainer,
-} from './components'
-import { ButtonPressedContext } from './contexts/ButtonPressedContext'
-import {
-  resolveButtonShape,
-  resolveButtonVisualState,
-} from './resolveButtonProps'
+type BaseButtonComponentProps = Omit<
+  BaseButtonProps<never>,
+  'variant' | 'shape'
+> & { readonly resolveStyles: ButtonStyleResolver }
 
-export type BaseButtonComponentProps<Variant extends ButtonVariant> = Omit<
-  ButtonProps<Variant>,
-  'variant'
-> & { readonly variant: Variant }
+export const BaseButton = memo<BaseButtonComponentProps>(
+  ({
+    size = 'base',
+    rounded = false,
+    loading = false,
+    resolveStyles,
+    disabled = false,
+    iconOnly,
+    iconPosition = 'prefix',
+    Icon,
+    label,
+    style,
+    pressableRef,
+    accessibilityLabel,
+    accessibilityState,
+    onPress,
+    onLongPress,
+    ...props
+  }) => {
+    const interactionDisabled = disabled || loading
+    const getStyles = ({ pressed }: PressableStateCallbackType) => {
+      const state: ButtonLayoutProps['state'] = loading
+        ? 'loading'
+        : disabled
+          ? 'disabled'
+          : pressed
+            ? 'pressed'
+            : 'default'
 
-const BaseButtonComponent = <Variant extends ButtonVariant>({
-  size = 'base',
-  // eslint-disable-next-line @typescript-eslint/no-deprecated -- Preserve the alias until 2.0.
-  shape: deprecatedShape,
-  rounded,
-  loading = false,
-  variant,
-  disabled = false,
-  iconOnly,
-  iconPosition = 'prefix',
-  Icon,
-  label,
-  style,
-  accessibilityLabel,
-  accessibilityState,
-  onPress,
-  onLongPress,
-  onPressIn: onPressInProp,
-  onPressOut: onPressOutProp,
-  ...props
-}: BaseButtonComponentProps<Variant>) => {
-  const [pressed, setPressed] = useState(false)
-  const interactionDisabled = !!disabled || loading
-  const visualState = resolveButtonVisualState(loading, !!disabled, pressed)
-  const shape = resolveButtonShape(rounded, deprecatedShape)
-  const isDisabled = visualState === 'disabled'
+      return resolveStyles({ size, rounded, iconOnly: !!iconOnly, state })
+    }
 
-  useEffect(() => {
-    if (interactionDisabled) setPressed(false)
-  }, [interactionDisabled])
-
-  const onPressIn = useCallback(
-    (event: GestureResponderEvent) => {
-      onPressInProp?.(event)
-
-      if (!interactionDisabled) setPressed(true)
-    },
-    [interactionDisabled, onPressInProp]
-  )
-
-  const onPressOut = useCallback(
-    (event: GestureResponderEvent) => {
-      onPressOutProp?.(event)
-      setPressed(false)
-    },
-    [onPressOutProp]
-  )
-
-  return (
-    <ButtonPressedContext.Provider value={visualState === 'pressed'}>
-      <ButtonContainer
+    return (
+      <Pressable
+        accessibilityRole='button'
         {...props}
-        {...{
-          size,
-          shape,
-          disabled: interactionDisabled,
-          loading,
-          isIconOnly: !!iconOnly,
-          style,
-          onPressIn,
-          onPressOut,
-        }}
         accessibilityLabel={accessibilityLabel ?? label}
         accessibilityState={{
           ...accessibilityState,
           disabled: interactionDisabled,
           busy: loading,
         }}
+        disabled={interactionDisabled}
+        ref={pressableRef}
+        style={(state) => [
+          getStyles(state).container,
+          typeof style === 'function' ? style(state) : style,
+        ]}
         onLongPress={interactionDisabled ? undefined : onLongPress}
         onPress={interactionDisabled ? undefined : onPress}
       >
-        <ButtonLeftArea
-          {...{ size, loading, disabled: isDisabled, Icon, iconPosition }}
-        />
-        <ButtonLabel
-          {...{ size, loading, disabled: isDisabled, iconOnly, label }}
-        />
-        <ButtonRightArea
-          {...{ size, loading, disabled: isDisabled, Icon, iconPosition }}
-        />
-      </ButtonContainer>
-    </ButtonPressedContext.Provider>
-  )
-}
+        {(state) => {
+          const styles = getStyles(state)
+          const icon = loading ? (
+            <ButtonActivityIndicator size={size} />
+          ) : Icon ? (
+            <ButtonIcon Icon={Icon} uniProps={styles.icon} />
+          ) : null
 
-export const BaseButton = genericMemo(BaseButtonComponent)
+          return (
+            <>
+              {iconPosition === 'prefix' && icon}
+              {!iconOnly && <ButtonLabel label={label} style={styles.label} />}
+              {iconPosition === 'postfix' && icon}
+            </>
+          )
+        }}
+      </Pressable>
+    )
+  }
+)

@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
 })
 
 const meta: Meta<typeof ButtonSeverity> = {
-  title: 'Button/Severity',
+  title: 'Button/ButtonSeverity',
   component: ButtonSeverity,
   args: {
     size: 'base',
@@ -86,8 +86,4 @@ type Story = StoryObj<typeof ButtonSeverity>
 
 const ButtonStory: Story = { args: {}, argTypes: {} }
 
-export { ButtonStory as Severity }
-
-export const LoadingDisabled: Story = {
-  args: { loading: true, disabled: true },
-}
+export { ButtonStory as ButtonSeverity }

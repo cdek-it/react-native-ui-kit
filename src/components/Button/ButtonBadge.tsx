@@ -1,4 +1,4 @@
-import { memo, useMemo } from 'react'
+import { memo } from 'react'
 import { View } from 'react-native'
 
 import { StyleSheet } from 'react-native-unistyles'
@@ -6,13 +6,14 @@ import { StyleSheet } from 'react-native-unistyles'
 import { Badge, type BadgeProps } from '../Badge'
 
 import { BaseButton } from './internal/BaseButton'
-import { ButtonVariantContext } from './internal/contexts/ButtonVariantContext'
+import { adaptButtonProps } from './internal/deprecated/adaptButtonProps'
+import { getButtonStyles } from './internal/getButtonStyles'
 import type { ButtonBadgeProps, ButtonBaseVariant, ButtonProps } from './types'
 
 /**
  * Button component with badge
  * @param size - button size
- * @param shape - button shape
+ * @param rounded - rounded corners
  * @param loading - button loading state
  * @param variant - button variant
  * @param disabled - button disabled state
@@ -28,8 +29,6 @@ import type { ButtonBadgeProps, ButtonBaseVariant, ButtonProps } from './types'
 export const ButtonBadge = memo<
   ButtonProps<ButtonBaseVariant> & ButtonBadgeProps
 >(({ badgeLabel, badgeSeverity, variant = 'primary', ...props }) => {
-  const variantContextValue = useMemo(() => ({ variant }), [variant])
-
   const badgeCommonProps = {
     severity: badgeSeverity,
     testID: ButtonBadgeTestId.badge,
@@ -39,13 +38,14 @@ export const ButtonBadge = memo<
     : { ...badgeCommonProps, dot: true, style: styles.badgeDot }
 
   return (
-    <ButtonVariantContext.Provider value={variantContextValue}>
-      <View style={styles.container}>
-        <BaseButton variant={variant} {...props} />
+    <View style={styles.container}>
+      <BaseButton
+        resolveStyles={getButtonStyles(variant)}
+        {...adaptButtonProps(props)}
+      />
 
-        <Badge {...badgeProps} />
-      </View>
-    </ButtonVariantContext.Provider>
+      <Badge {...badgeProps} />
+    </View>
   )
 })
 
