@@ -23,29 +23,25 @@ const createButtonStyles = <Props extends ButtonStyleProps>(
       const sizes = {
         xlarge: {
           paddingX: button.extend.extXlg.paddingX,
-          paddingY: button.extend.extXlg.paddingY,
           height: button.extend.extXlg.height,
           gap: button.extend.extXlg.gap,
           borderRadius: button.extend.extXlg.borderRadius,
         },
         large: {
           paddingX: button.root.lg.paddingX,
-          paddingY: button.root.lg.paddingY,
           height: button.extend.extLg.height,
           gap: button.extend.extLg.gap,
           borderRadius: button.extend.extLg.borderRadius,
         },
         base: {
           paddingX: button.root.paddingX,
-          paddingY: button.root.paddingY,
-          height: 'auto' as const,
+          height: button.root.height,
           gap: button.root.gap,
-          borderRadius: button.extend.extSm.borderRadius,
+          borderRadius: button.root.borderRadius,
         },
         small: {
           paddingX: button.root.sm.paddingX,
-          paddingY: button.root.sm.paddingY,
-          height: 'auto' as const,
+          height: button.extend.extSm.height,
           gap: button.root.gap,
           borderRadius: button.root.borderRadius,
         },
@@ -64,15 +60,12 @@ const createButtonStyles = <Props extends ButtonStyleProps>(
       }
       const { size, rounded, iconOnly, variant } = props
       const sizing = sizes[size]
-      const boundedHeight = sizing.height === 'auto' ? undefined : sizing.height
       const link = variant === 'link'
       const height = iconOnly
         ? link
           ? linkIconOnlyHeights[size]
           : iconOnlyHeights[size]
-        : link
-          ? 'auto'
-          : sizing.height
+        : undefined
       const colors = getButtonColors(button, props)
 
       return {
@@ -81,41 +74,42 @@ const createButtonStyles = <Props extends ButtonStyleProps>(
         alignItems: 'center' as const,
         backgroundColor: colors.backgroundColor,
         borderColor: colors.borderColor,
-        borderWidth: button.extend.borderWidth,
+        borderWidth: link
+          ? semantic.dimension.space.none
+          : button.extend.borderWidth,
         borderRadius: rounded
           ? button.root.roundedBorderRadius
           : sizing.borderRadius,
         paddingHorizontal:
           iconOnly || link ? semantic.dimension.space.none : sizing.paddingX,
-        paddingVertical: iconOnly
-          ? semantic.dimension.space.none
-          : link
-            ? semantic.dimension.space[100]
-            : sizing.paddingY,
+        paddingVertical:
+          link && !iconOnly
+            ? button.extend.extLink.paddingY
+            : semantic.dimension.space.none,
         gap: sizing.gap,
         height,
-        minHeight: iconOnly ? height : link ? ('auto' as const) : boundedHeight,
-        maxHeight: iconOnly ? height : boundedHeight,
+        minHeight: iconOnly ? height : link ? undefined : sizing.height,
+        maxHeight: height,
         aspectRatio: iconOnly ? 1 : undefined,
       }
     },
     label: (props: Props) => {
       const sizes = {
         xlarge: {
-          fontSize: fonts.fontSize[500],
+          fontSize: button.root.lg.fontSize,
           lineHeight: fonts.lineHeight[550],
         },
         large: {
-          fontSize: fonts.fontSize[500],
-          lineHeight: fonts.lineHeight[550],
+          fontSize: button.root.lg.fontSize,
+          lineHeight: fonts.lineHeight[500],
         },
         base: {
-          fontSize: fonts.fontSize[300],
+          fontSize: fonts.fontSize[200],
           lineHeight: fonts.lineHeight[500],
         },
         small: {
-          fontSize: fonts.fontSize[100],
-          lineHeight: fonts.lineHeight[250],
+          fontSize: button.root.sm.fontSize,
+          lineHeight: fonts.lineHeight[300],
         },
       }
 
