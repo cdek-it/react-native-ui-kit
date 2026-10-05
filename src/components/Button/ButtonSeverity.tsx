@@ -1,8 +1,8 @@
-import { memo, useMemo } from 'react'
+import { memo } from 'react'
 
 import { BaseButton } from './internal/BaseButton'
-import { ButtonVariantContext } from './internal/contexts/ButtonVariantContext'
-import { resolveButtonSeverityVariant } from './internal/resolveButtonProps'
+import { adaptButtonSeverityProps } from './internal/deprecated/adaptButtonSeverityProps'
+import { getSeverityButtonStyles } from './internal/getSeverityButtonStyles'
 import type {
   ButtonProps,
   ButtonSeverityProps,
@@ -26,24 +26,14 @@ import type {
  */
 export const ButtonSeverity = memo<
   ButtonProps<ButtonSeverityVariant> & ButtonSeverityProps
->(
-  ({
-    severity,
-    appearance,
-    // eslint-disable-next-line @typescript-eslint/no-deprecated -- Preserve the alias until 2.0.
-    variant: deprecatedVariant,
-    ...props
-  }) => {
-    const variant = resolveButtonSeverityVariant(appearance, deprecatedVariant)
-    const variantContextValue = useMemo(
-      () => ({ variant, severity }),
-      [severity, variant]
-    )
+>((props) => {
+  const { appearance, severity, ...buttonProps } =
+    adaptButtonSeverityProps(props)
 
-    return (
-      <ButtonVariantContext.Provider value={variantContextValue}>
-        <BaseButton variant={variant} {...props} />
-      </ButtonVariantContext.Provider>
-    )
-  }
-)
+  return (
+    <BaseButton
+      resolveStyles={getSeverityButtonStyles(appearance, severity)}
+      {...buttonProps}
+    />
+  )
+})

@@ -1,7 +1,8 @@
-import { memo, useMemo } from 'react'
+import { memo } from 'react'
 
 import { BaseButton } from './internal/BaseButton'
-import { ButtonVariantContext } from './internal/contexts/ButtonVariantContext'
+import { adaptButtonProps } from './internal/deprecated/adaptButtonProps'
+import { getButtonStyles } from './internal/getButtonStyles'
 import type { ButtonBaseVariant, ButtonProps } from './types'
 
 /**
@@ -20,13 +21,10 @@ import type { ButtonBaseVariant, ButtonProps } from './types'
  * @link https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=160-5223
  */
 export const Button = memo<ButtonProps<ButtonBaseVariant>>(
-  ({ variant = 'primary', ...props }) => {
-    const variantContextValue = useMemo(() => ({ variant }), [variant])
-
-    return (
-      <ButtonVariantContext.Provider value={variantContextValue}>
-        <BaseButton variant={variant} {...props} />
-      </ButtonVariantContext.Provider>
-    )
-  }
+  ({ variant = 'primary', ...props }) => (
+    <BaseButton
+      resolveStyles={getButtonStyles(variant)}
+      {...adaptButtonProps(props)}
+    />
+  )
 )
