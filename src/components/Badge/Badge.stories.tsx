@@ -13,12 +13,12 @@ const styles = StyleSheet.create({
 const meta: Meta<typeof Badge> = {
   title: 'Misc/Badge',
   component: Badge,
-  args: { children: 'Badge', severity: 'basic', size: 'base' },
+  args: { children: 'Badge', severity: 'primary', size: 'base' },
   argTypes: {
     children: { control: 'text' },
     severity: {
       control: 'radio',
-      options: ['basic', 'info', 'success', 'warning', 'danger'],
+      options: ['primary', 'info', 'success', 'warning', 'danger'],
     },
     size: { control: 'radio', options: ['base', 'large', 'xlarge'] },
   },
