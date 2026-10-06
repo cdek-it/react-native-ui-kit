@@ -1,5 +1,12 @@
-import { Dimensions } from 'react-native'
+import type { ViewStyle } from 'react-native'
 import { StyleSheet } from 'react-native-unistyles'
+
+// Unistyles пересекает ViewStyle с ImageStyle, исключающим overflow: 'scroll'.
+export const badgeMeasurementStyle: ViewStyle = {
+  flexDirection: 'row',
+  alignItems: 'flex-start',
+  overflow: 'scroll',
+}
 
 export const badgeStyles = StyleSheet.create(
   ({ components, semantic, fonts }) => ({
@@ -88,7 +95,7 @@ export const badgeStyles = StyleSheet.create(
       color: components.badge.colorScheme.primary.color,
       fontSize: components.badge.root.fontSize,
       fontWeight: fonts.fontWeight.regular,
-      lineHeight: fonts.lineHeight[100],
+      textAlign: 'center',
       letterSpacing: fonts.letterSpacing[500],
       includeFontPadding: false,
       verticalAlign: 'middle',
@@ -107,12 +114,6 @@ export const badgeStyles = StyleSheet.create(
           xlarge: { lineHeight: fonts.lineHeight[350] },
         },
       },
-    },
-    hiddenContainer: {
-      width: Dimensions.get('window').width,
-      height: 0,
-      flexDirection: 'row',
-      position: 'absolute',
     },
   })
 )
