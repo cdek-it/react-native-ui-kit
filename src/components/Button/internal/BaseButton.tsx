@@ -6,12 +6,25 @@ import type { BaseButtonProps } from '../types'
 import { ButtonActivityIndicator } from './components/ButtonActivityIndicator'
 import { ButtonIcon } from './components/ButtonIcon'
 import { ButtonLabel } from './components/ButtonLabel'
-import type { ButtonLayoutProps, ButtonStyleResolver } from './types'
+import type { ButtonStyleResolver, ButtonVisualState } from './types'
 
 type BaseButtonComponentProps = Omit<
   BaseButtonProps<never>,
   'variant' | 'shape'
 > & { readonly resolveStyles: ButtonStyleResolver }
+
+const getButtonState = ({
+  loading,
+  disabled,
+  pressed,
+}: Pick<BaseButtonProps<never>, 'loading' | 'disabled'> &
+  PressableStateCallbackType): ButtonVisualState => {
+  if (loading) return 'loading'
+
+  if (disabled) return 'disabled'
+
+  return pressed ? 'pressed' : 'default'
+}
 
 export const BaseButton = memo<BaseButtonComponentProps>(
   ({
@@ -34,13 +47,7 @@ export const BaseButton = memo<BaseButtonComponentProps>(
   }) => {
     const interactionDisabled = disabled || loading
     const getStyles = ({ pressed }: PressableStateCallbackType) => {
-      const state: ButtonLayoutProps['state'] = loading
-        ? 'loading'
-        : disabled
-          ? 'disabled'
-          : pressed
-            ? 'pressed'
-            : 'default'
+      const state = getButtonState({ loading, disabled, pressed })
 
       return resolveStyles({ size, rounded, iconOnly: !!iconOnly, state })
     }
