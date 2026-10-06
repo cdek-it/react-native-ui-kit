@@ -1,15 +1,15 @@
 import { memo, useCallback, useState } from 'react'
 import {
   type LayoutChangeEvent,
-  type LayoutRectangle,
   type StyleProp,
   Text,
   View,
   type ViewProps,
   type ViewStyle,
+  useWindowDimensions,
 } from 'react-native'
 
-import { badgeStyles } from './Badge.styles'
+import { badgeMeasurementStyle, badgeStyles } from './Badge.styles'
 
 import {
   adaptBadgeSeverity,
@@ -78,11 +78,18 @@ export const Badge = memo<BadgeProps>(
     ...rest
   }) => {
     badgeStyles.useVariants({ severity: adaptBadgeSeverity(severity), size })
-    const [textLayout, setTextLayout] = useState<LayoutRectangle>()
+    // На iOS пересоздание Text сбрасывает старое измерение при уменьшении системного шрифта.
+    const { fontScale } = useWindowDimensions()
+    const [contentWidth, setContentWidth] = useState<number>()
 
-    const onTextLayout = useCallback((e: LayoutChangeEvent) => {
-      setTextLayout(e.nativeEvent.layout)
-    }, [])
+    // Без minWidth по размеру содержимого обёртка обрезает однострочный Badge
+    // в узком родителе.
+    const onContentLayout = useCallback(
+      ({ nativeEvent }: LayoutChangeEvent) => {
+        setContentWidth(nativeEvent.layout.width)
+      },
+      []
+    )
 
     return (
       <View
@@ -98,35 +105,26 @@ export const Badge = memo<BadgeProps>(
             testID={testID}
           />
         ) : (
-          <>
-            <View style={badgeStyles.textBadgeContainer} testID={testID}>
+          <View
+            accessible={false}
+            style={[badgeMeasurementStyle, { minWidth: contentWidth }]}
+          >
+            <View
+              style={badgeStyles.textBadgeContainer}
+              testID={testID}
+              onLayout={onContentLayout}
+            >
               <Text
                 accessible={false}
+                importantForAccessibility='no'
+                key={fontScale}
                 numberOfLines={1}
-                style={[badgeStyles.textBadge, { minWidth: textLayout?.width }]}
+                style={badgeStyles.textBadge}
               >
                 {children}
               </Text>
             </View>
-
-            {/* скрытый элемент для подсчета ширины текста в 1 строку */}
-            <View
-              accessibilityElementsHidden
-              importantForAccessibility='no-hide-descendants'
-              style={badgeStyles.hiddenContainer}
-            >
-              <View collapsable={false}>
-                <Text
-                  accessible={false}
-                  numberOfLines={1}
-                  style={badgeStyles.textBadge}
-                  onLayout={onTextLayout}
-                >
-                  {children}
-                </Text>
-              </View>
-            </View>
-          </>
+          </View>
         )}
       </View>
     )

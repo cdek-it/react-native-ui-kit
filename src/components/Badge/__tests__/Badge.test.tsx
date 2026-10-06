@@ -55,11 +55,38 @@ describe('Badge', () => {
     expect(getAllByRole('text')).toHaveLength(1)
   })
 
-  test('не делает измерительный текст доступным', () => {
-    const { getAllByText, getByText } = render(<Badge>12</Badge>)
+  test('измерение содержимого не вызывает onLayout корневого View', () => {
+    const onLayout = jest.fn()
+    const { getByTestId, getByRole } = render(
+      <Badge testID='Badge' onLayout={onLayout}>
+        99999
+      </Badge>
+    )
 
-    expect(getByText('12')).toBeOnTheScreen()
-    expect(getAllByText('12', { includeHiddenElements: true })).toHaveLength(2)
+    fireEvent(getByTestId('Badge'), 'layout', {
+      nativeEvent: { layout: { x: 0, y: 0, width: 56, height: 24 } },
+    })
+
+    expect(onLayout).not.toHaveBeenCalled()
+    expect(getByRole('text', { name: '99999' })).toBeOnTheScreen()
+  })
+
+  test('переключает текстовый Badge в декоративную точку и обратно', () => {
+    const { getByTestId, getByRole, queryByRole, rerender } = render(
+      <Badge testID='Badge'>99999</Badge>
+    )
+
+    fireEvent(getByTestId('Badge'), 'layout', {
+      nativeEvent: { layout: { x: 0, y: 0, width: 56, height: 24 } },
+    })
+    rerender(<Badge dot testID='Badge' />)
+
+    expect(getByTestId('Badge')).toBeOnTheScreen()
+    expect(queryByRole('text')).toBeNull()
+
+    rerender(<Badge testID='Badge'>1</Badge>)
+
+    expect(getByRole('text', { name: '1' })).toBeOnTheScreen()
   })
 
   test('передает нативные пропсы и событие layout корневому View', () => {
