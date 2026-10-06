@@ -78,6 +78,10 @@ export interface IconTextButton<
 export interface IconOnlyButtonProps<
   Variant extends ButtonVariant,
 > extends BaseButtonProps<Variant> {
+  /**
+   * До версии 2.0 необязательное для совместимости; в 2.0 станет обязательным
+   */
+  accessibilityLabel?: string
   Icon: SvgSource
   iconOnly: true
   iconPosition?: never

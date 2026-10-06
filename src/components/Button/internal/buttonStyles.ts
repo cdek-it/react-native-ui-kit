@@ -6,6 +6,17 @@ import type { ButtonResolvedStyles, ButtonStyleProps } from './types'
 
 type ButtonTokens = ThemeType['components']['button']
 
+const getButtonLineHeight = (
+  fonts: ThemeType['fonts'],
+  size: ButtonStyleProps['size']
+) =>
+  ({
+    small: fonts.lineHeight[300],
+    base: fonts.lineHeight[500],
+    large: fonts.lineHeight[500],
+    xlarge: fonts.lineHeight[550],
+  })[size]
+
 type ButtonColorProps = Pick<ButtonStyleProps, 'variant' | 'severity' | 'state'>
 
 export type ButtonColorResolver<
@@ -66,6 +77,9 @@ const createButtonStyles = <Props extends ButtonStyleProps>(
           ? linkIconOnlyHeights[size]
           : iconOnlyHeights[size]
         : undefined
+      const minHeight = link
+        ? getButtonLineHeight(fonts, size) + button.extend.extLink.paddingY * 2
+        : sizing.height
       const colors = getButtonColors(button, props)
 
       return {
@@ -82,35 +96,20 @@ const createButtonStyles = <Props extends ButtonStyleProps>(
           : sizing.borderRadius,
         paddingHorizontal:
           iconOnly || link ? semantic.dimension.space.none : sizing.paddingX,
-        paddingVertical:
-          link && !iconOnly
-            ? button.extend.extLink.paddingY
-            : semantic.dimension.space.none,
+        paddingVertical: semantic.dimension.space.none,
         gap: sizing.gap,
         height,
-        minHeight: iconOnly ? height : link ? undefined : sizing.height,
+        minHeight: iconOnly ? height : minHeight,
         maxHeight: height,
         aspectRatio: iconOnly ? 1 : undefined,
       }
     },
     label: (props: Props) => {
       const sizes = {
-        xlarge: {
-          fontSize: button.root.lg.fontSize,
-          lineHeight: fonts.lineHeight[550],
-        },
-        large: {
-          fontSize: button.root.lg.fontSize,
-          lineHeight: fonts.lineHeight[500],
-        },
-        base: {
-          fontSize: fonts.fontSize[200],
-          lineHeight: fonts.lineHeight[500],
-        },
-        small: {
-          fontSize: button.root.sm.fontSize,
-          lineHeight: fonts.lineHeight[300],
-        },
+        xlarge: button.root.lg.fontSize,
+        large: button.root.lg.fontSize,
+        base: fonts.fontSize[200],
+        small: button.root.sm.fontSize,
       }
 
       return {
@@ -120,8 +119,8 @@ const createButtonStyles = <Props extends ButtonStyleProps>(
         fontFamily: fonts.fontFamily.heading,
         letterSpacing: fonts.letterSpacing[500],
         color: getButtonColors(button, props).color,
-        fontSize: sizes[props.size].fontSize,
-        lineHeight: sizes[props.size].lineHeight,
+        fontSize: sizes[props.size],
+        lineHeight: getButtonLineHeight(fonts, props.size),
       }
     },
   }))
