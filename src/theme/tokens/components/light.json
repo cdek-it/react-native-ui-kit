@@ -212,7 +212,7 @@
       "contrast": { "background": "#2b2e33", "color": "#ffffff" }
     },
     "root": {
-      "borderRadius": 8,
+      "borderRadius": 1600,
       "padding": 8,
       "fontSize": 12,
       "fontWeight": 400,
