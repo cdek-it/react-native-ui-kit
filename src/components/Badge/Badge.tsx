@@ -1,25 +1,36 @@
 import { memo, useCallback, useState } from 'react'
 import {
-  type AccessibilityProps,
   Dimensions,
   type LayoutChangeEvent,
   type LayoutRectangle,
   type StyleProp,
   Text,
   View,
+  type ViewProps,
   type ViewStyle,
 } from 'react-native'
-import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 
 import { StyleSheet } from 'react-native-unistyles'
 
-export type BadgeSeverity = 'basic' | 'info' | 'success' | 'warning' | 'danger'
+import {
+  adaptBadgeSeverity,
+  type DeprecatedBadgeSeverity,
+} from './deprecated/adaptBadgeSeverity'
 
-export interface BadgeBase
-  extends AccessibilityProps, Pick<ViewProps, 'onLayout' | 'testID'> {
+export type BadgeSeverity =
+  | 'primary'
+  | 'info'
+  | 'success'
+  | 'warning'
+  | 'danger'
+  // eslint-disable-next-line @typescript-eslint/no-deprecated -- Сохраняем совместимость публичного API до версии 2.0.
+  | DeprecatedBadgeSeverity
+
+export interface BadgeBase extends ViewProps {
   /**
    * Выбор варианта стиля компонента
-   * @default 'basic'
+   * Значение basic устарело; используйте primary
+   * @default 'primary'
    */
   severity?: BadgeSeverity
   /**
@@ -60,13 +71,14 @@ export const Badge = memo<BadgeProps>(
   ({
     children,
     dot,
-    severity = 'basic',
+    severity = 'primary',
     size = 'base',
     style,
     testID,
+    accessibilityLabel,
     ...rest
   }) => {
-    badgeStyles.useVariants({ severity, size })
+    badgeStyles.useVariants({ severity: adaptBadgeSeverity(severity), size })
     const [textLayout, setTextLayout] = useState<LayoutRectangle>()
 
     const onTextLayout = useCallback((e: LayoutChangeEvent) => {
@@ -74,7 +86,13 @@ export const Badge = memo<BadgeProps>(
     }, [])
 
     return (
-      <View style={[badgeStyles.container, style]} {...rest}>
+      <View
+        accessibilityLabel={accessibilityLabel ?? children}
+        accessibilityRole='text'
+        accessible={!dot || accessibilityLabel !== undefined}
+        style={[badgeStyles.container, style]}
+        {...rest}
+      >
         {dot ? (
           <View
             style={[badgeStyles.dot, badgeStyles.dotShape]}
@@ -84,6 +102,7 @@ export const Badge = memo<BadgeProps>(
           <>
             <View style={badgeStyles.textBadgeContainer} testID={testID}>
               <Text
+                accessible={false}
                 numberOfLines={1}
                 style={[badgeStyles.textBadge, { minWidth: textLayout?.width }]}
               >
@@ -99,6 +118,7 @@ export const Badge = memo<BadgeProps>(
             >
               <View collapsable={false}>
                 <Text
+                  accessible={false}
                   numberOfLines={1}
                   style={badgeStyles.textBadge}
                   onLayout={onTextLayout}
@@ -119,7 +139,7 @@ const badgeStyles = StyleSheet.create(({ components, semantic, fonts }) => ({
   dot: {
     variants: {
       severity: {
-        basic: {
+        primary: {
           backgroundColor: components.badge.colorScheme.primary.background,
         },
         info: {
@@ -158,7 +178,7 @@ const badgeStyles = StyleSheet.create(({ components, semantic, fonts }) => ({
     },
   },
   textBadgeContainer: {
-    height: components.badge.root.height,
+    minHeight: components.badge.root.height,
     minWidth: components.badge.root.minWidth,
     paddingHorizontal: components.badge.root.padding,
     justifyContent: 'center',
@@ -167,7 +187,7 @@ const badgeStyles = StyleSheet.create(({ components, semantic, fonts }) => ({
     borderColor: components.overlaybadge.root.outline.color,
     variants: {
       severity: {
-        basic: {
+        primary: {
           backgroundColor: components.badge.colorScheme.primary.background,
         },
         info: { backgroundColor: components.badge.colorScheme.info.background },
@@ -184,11 +204,11 @@ const badgeStyles = StyleSheet.create(({ components, semantic, fonts }) => ({
       size: {
         base: {},
         large: {
-          height: components.badge.lg.height,
+          minHeight: components.badge.lg.height,
           minWidth: components.badge.lg.minWidth,
         },
         xlarge: {
-          height: components.badge.xl.height,
+          minHeight: components.badge.xl.height,
           minWidth: components.badge.xl.minWidth,
         },
       },
@@ -205,7 +225,7 @@ const badgeStyles = StyleSheet.create(({ components, semantic, fonts }) => ({
     fontFamily: fonts.fontFamily.heading,
     variants: {
       severity: {
-        basic: { color: components.badge.colorScheme.primary.color },
+        primary: { color: components.badge.colorScheme.primary.color },
         info: { color: components.badge.colorScheme.info.color },
         success: { color: components.badge.colorScheme.success.color },
         warning: { color: components.badge.colorScheme.warn.color },
