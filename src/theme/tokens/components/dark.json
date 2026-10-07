@@ -275,7 +275,9 @@
         "warn": { "focusBackground": "transparent" },
         "info": { "focusBackground": "transparent" },
         "help": { "focusBackground": "transparent" },
-        "success": { "focusBackground": "transparent" }
+        "success": { "focusBackground": "transparent" },
+        "background": "transparent",
+        "borderColor": "transparent"
       },
       "extLink": {
         "background": "transparent",
@@ -302,9 +304,9 @@
     },
     "colorScheme": {
       "link": {
-        "activeColor": "#85888e",
-        "color": "#2b2e33",
-        "hoverColor": "#56595f"
+        "activeColor": "#a2a5a9",
+        "color": "#ffffff",
+        "hoverColor": "#cecfd2"
       },
       "outlined": {
         "contrast": {
@@ -366,17 +368,17 @@
         "contrast": {
           "activeBackground": "#6d7076",
           "activeBorderColor": "transparent",
-          "activeColor": "#2b2e33",
-          "background": "#e2e2e4",
+          "activeColor": "#ffffff",
+          "background": "#404348",
           "borderColor": "transparent",
-          "color": "#2b2e33",
+          "color": "#ffffff",
           "focusRing": {
             "color": "rgba(68, 232, 88, 0.2)",
             "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
           },
-          "hoverBackground": "#cecfd2",
+          "hoverBackground": "#56595f",
           "hoverBorderColor": "transparent",
-          "hoverColor": "#2b2e33"
+          "hoverColor": "#ffffff"
         },
         "danger": {
           "activeBackground": "#e85244",
@@ -415,7 +417,7 @@
           "hoverColor": "#fafdff"
         },
         "primary": {
-          "activeBackground": "#168322",
+          "activeBackground": "#aafbb7",
           "activeBorderColor": "transparent",
           "activeColor": "#2b2e33",
           "background": "#44e858",
@@ -425,34 +427,34 @@
             "color": "rgba(68, 232, 88, 0.2)",
             "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
           },
-          "hoverBackground": "#1dc831",
+          "hoverBackground": "#77f48a",
           "hoverBorderColor": "transparent",
           "hoverColor": "#2b2e33"
         },
         "secondary": {
-          "activeBackground": "#56595f",
+          "activeBackground": "#cecfd2",
           "activeBorderColor": "transparent",
-          "activeColor": "#ffffff",
-          "background": "#2b2e33",
+          "activeColor": "#181a1f",
+          "background": "#f0f0f1",
           "borderColor": "transparent",
-          "color": "#ffffff",
+          "color": "#2b2e33",
           "focusRing": {
             "color": "rgba(68, 232, 88, 0.2)",
             "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
           },
-          "hoverBackground": "#404348",
+          "hoverBackground": "#e2e2e4",
           "hoverBorderColor": "transparent",
-          "hoverColor": "#ffffff"
+          "hoverColor": "#56595f"
         },
         "success": {
           "activeBackground": "#44e858",
           "activeBorderColor": "transparent",
           "activeColor": "#f0fff3",
-          "background": "#aafbb7",
+          "background": "#168322",
           "borderColor": "transparent",
           "color": "#f0fff3",
           "focusRing": { "color": "rgba(68, 232, 88, 0.2)", "shadow": "none" },
-          "hoverBackground": "#77f48a",
+          "hoverBackground": "#1dc831",
           "hoverBorderColor": "transparent",
           "hoverColor": "#fafffb"
         },
@@ -496,9 +498,9 @@
           "hoverBackground": "#f0f0f1"
         },
         "primary": {
-          "activeBackground": "#e2e2e4",
-          "color": "#2b2e33",
-          "hoverBackground": "#f0f0f1"
+          "activeBackground": "transparent",
+          "color": "#ffffff",
+          "hoverBackground": "transparent"
         },
         "secondary": {
           "activeBackground": "#e2e2e4",

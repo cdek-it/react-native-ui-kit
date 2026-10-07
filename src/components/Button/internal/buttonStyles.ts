@@ -1,3 +1,4 @@
+import type { TextStyle } from 'react-native'
 import { StyleSheet } from 'react-native-unistyles'
 
 import type { ThemeType } from '../../../theme'
@@ -94,8 +95,11 @@ const createButtonStyles = <Props extends ButtonStyleProps>(
         borderRadius: rounded
           ? button.root.roundedBorderRadius
           : sizing.borderRadius,
-        paddingHorizontal:
-          iconOnly || link ? semantic.dimension.space.none : sizing.paddingX,
+        paddingHorizontal: iconOnly
+          ? semantic.dimension.space.none
+          : link
+            ? button.extend.extLink.paddingX
+            : sizing.paddingX,
         paddingVertical: semantic.dimension.space.none,
         gap: sizing.gap,
         height,
@@ -113,7 +117,7 @@ const createButtonStyles = <Props extends ButtonStyleProps>(
       }
 
       return {
-        fontWeight: fonts.fontWeight.demibold,
+        fontWeight: button.root.label.fontWeight as TextStyle['fontWeight'],
         includeFontPadding: false,
         verticalAlign: 'middle' as const,
         fontFamily: fonts.fontFamily.heading,
