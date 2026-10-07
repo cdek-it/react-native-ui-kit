@@ -12,17 +12,19 @@ import type {
 const getSeverityButtonColors: ButtonColorResolver<
   SeverityButtonAppearanceProps
 > = (button, props) => {
-  if (props.state === 'disabled' || props.state === 'loading') {
-    return {
-      backgroundColor: button.extend.disabledBackground,
-      borderColor: 'transparent',
-      color: button.extend.disabledColor,
-    }
-  }
-
   const { variant, severity, state } = props
   const key = severity === 'warning' ? 'warn' : severity
   const pressed = state === 'pressed'
+  const root = button.colorScheme.root[key]
+  const borderColor = pressed ? root.activeBorderColor : root.borderColor
+
+  if (props.state === 'disabled' || props.state === 'loading') {
+    return {
+      backgroundColor: button.extend.disabledBackground,
+      borderColor,
+      color: button.extend.disabledColor,
+    }
+  }
 
   if (variant === 'outlined' || variant === 'text') {
     const tokens = button.colorScheme[variant][key]
@@ -32,17 +34,15 @@ const getSeverityButtonColors: ButtonColorResolver<
       borderColor:
         variant === 'outlined'
           ? button.colorScheme.outlined[key].borderColor
-          : 'transparent',
+          : borderColor,
       color: tokens.color,
     }
   }
 
-  const tokens = button.colorScheme.root[key]
-
   return {
-    backgroundColor: pressed ? tokens.activeBackground : tokens.background,
-    borderColor: pressed ? tokens.activeBorderColor : tokens.borderColor,
-    color: pressed ? tokens.activeColor : tokens.color,
+    backgroundColor: pressed ? root.activeBackground : root.background,
+    borderColor,
+    color: pressed ? root.activeColor : root.color,
   }
 }
 
