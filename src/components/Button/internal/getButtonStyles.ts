@@ -11,12 +11,21 @@ const getButtonColors: ButtonColorResolver<ButtonAppearanceProps> = (
   props
 ) => {
   if (props.state === 'disabled' || props.state === 'loading') {
+    let borderColor = 'transparent'
+
+    if (props.variant === 'text') {
+      borderColor = button.extend.extText.borderColor
+    } else if (props.variant !== 'link') {
+      const key = props.variant === 'tertiary' ? 'contrast' : props.variant
+      borderColor = button.colorScheme.root[key].borderColor
+    }
+
     return {
       backgroundColor:
         props.variant === 'link'
           ? 'transparent'
           : button.extend.disabledBackground,
-      borderColor: 'transparent',
+      borderColor,
       color: button.extend.disabledColor,
     }
   }
@@ -38,8 +47,8 @@ const getButtonColors: ButtonColorResolver<ButtonAppearanceProps> = (
     const tokens = button.colorScheme.text.primary
 
     return {
-      backgroundColor: pressed ? tokens.activeBackground : 'transparent',
-      borderColor: 'transparent',
+      backgroundColor: button.extend.extText.background,
+      borderColor: button.extend.extText.borderColor,
       color: tokens.color,
     }
   }

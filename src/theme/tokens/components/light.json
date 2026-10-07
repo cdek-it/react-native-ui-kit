@@ -275,7 +275,9 @@
         "warn": { "focusBackground": "transparent" },
         "info": { "focusBackground": "transparent" },
         "help": { "focusBackground": "transparent" },
-        "success": { "focusBackground": "transparent" }
+        "success": { "focusBackground": "transparent" },
+        "background": "transparent",
+        "borderColor": "transparent"
       },
       "extLink": {
         "background": "transparent",
