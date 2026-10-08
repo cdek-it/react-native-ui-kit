@@ -12,7 +12,7 @@ import Animated, { type AnimatedStyle } from 'react-native-reanimated'
 
 import { StyleSheet } from 'react-native-unistyles'
 
-import effects from '../../../theme/tokens/semantic/effects.json'
+import effects from '../../theme/tokens/semantic/effects.json'
 
 import { createInputOtpTestIds } from './testIds'
 
