@@ -83,4 +83,4 @@ const ListBaseStory: Story = {
   },
 }
 
-export { ListBaseStory as Base }
+export { ListBaseStory as List }

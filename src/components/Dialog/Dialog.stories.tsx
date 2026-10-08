@@ -90,6 +90,4 @@ export default meta
 
 type Story = StoryObj<typeof Dialog>
 
-const DialogStory: Story = { args: {} }
-
-export { DialogStory as 'Dialog modal=true' }
+export const Modal: Story = { name: 'Dialog modal=true', args: {} }
