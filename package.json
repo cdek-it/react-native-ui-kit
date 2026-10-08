@@ -28,6 +28,10 @@
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
+    },
+    "./legacy": {
+      "types": "./dist/legacy.d.ts",
+      "default": "./dist/legacy.js"
     }
   },
   "scripts": {

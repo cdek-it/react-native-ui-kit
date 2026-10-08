@@ -2,8 +2,8 @@ import { useArgs } from '@storybook/preview-api'
 import type { Meta, StoryObj } from '@storybook/react'
 import { useCallback, useEffect, useState } from 'react'
 
-import { InputText } from '../InputText'
-import type { InputTextBase } from '../InputTextBase/InputTextBase'
+import type { InputTextBase } from '../deprecated/InputTextBase/InputTextBase'
+import { LegacyInputText as InputText } from '../deprecated/LegacyInputText'
 
 const meta: Meta<typeof InputText & typeof InputTextBase> = {
   title: 'Form/InputText',
