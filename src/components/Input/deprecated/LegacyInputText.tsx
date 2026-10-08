@@ -4,7 +4,12 @@ import { View, type StyleProp, type ViewStyle } from 'react-native'
 import { InputTextBase } from './InputTextBase/InputTextBase'
 import type { InputTextBaseProps } from './InputTextBase/types'
 
-export interface InputTextProps extends InputTextBaseProps {
+import {
+  isInputTextCoreProps,
+  useLegacyInputTextWrapper,
+} from './useLegacyInputTextWrapper'
+
+export interface LegacyInputTextProps extends InputTextBaseProps {
   /** Дополнительная стилизация для контейнера компонента */
   style?: StyleProp<ViewStyle>
 }
@@ -16,10 +21,19 @@ export interface InputTextProps extends InputTextBaseProps {
  * @see InputTextBase
  * @see InputTextBaseProps
  */
-export const InputText = memo<InputTextProps>(({ style, ...otherProps }) => {
-  return (
-    <View style={style}>
-      <InputTextBase {...otherProps} />
-    </View>
-  )
-})
+export const LegacyInputText = memo<LegacyInputTextProps>(
+  ({ style, secureTextEntry = false, ...otherProps }) => {
+    const inputProps = { ...otherProps, secureTextEntry }
+    const wrapLegacyInputText = useLegacyInputTextWrapper()
+
+    return (
+      <View style={style}>
+        {isInputTextCoreProps(inputProps) ? (
+          <InputTextBase {...inputProps} />
+        ) : (
+          wrapLegacyInputText(inputProps)
+        )}
+      </View>
+    )
+  }
+)

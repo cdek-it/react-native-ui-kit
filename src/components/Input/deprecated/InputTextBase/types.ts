@@ -4,26 +4,23 @@ import type {
   ViewStyle,
   TextInput,
   StyleProp,
+  Insets,
 } from 'react-native'
 
+import type { useMakeTestId } from '../../../../hooks/useMakeTestId'
+
+export type { InputTextCompatibilityProps as InputTextBaseProps } from '../types'
+
+export type InputTextSize = 'small' | 'base' | 'large' | 'xlarge'
+
 /** @see TextInputProps */
-export interface InputTextBaseProps extends Omit<
-  TextInputProps,
-  'style' | 'secureTextEntry'
-> {
+export interface InputTextCoreProps extends Omit<TextInputProps, 'style'> {
   /**
    * Управление отображения иконки очистки поля
    * @default true
    */
   clearable?: boolean
-  /**
-   * Управление режимом скрытия текста
-   * - `true` — всегда скрывать (как в TextInput)
-   * - `false` — не скрывать
-   * - `"toggleable"` — скрытие управляется пользователем через кнопку-глаз
-   */
-  secureTextEntry?: boolean | 'toggleable'
-  /** Озвучка для кнопки очистки поля */
+  /** Локализованное имя кнопки очистки. По умолчанию «Очистить поле» */
   clearButtonAccessibilityLabel?: string
   /** Управление стилем контейнера поля ввода */
   containerStyle?: StyleProp<ViewStyle>
@@ -45,12 +42,26 @@ export interface InputTextBaseProps extends Omit<
    */
   floatLabel?: boolean
   /**
-   * Управление высотой поля ввода.
-   * Работает только если floatLabel = false.
-   * Можно передать число. Если переданное число меньше размера base, будет использован размер base.
+   * Высота поля без floating label. small и base временно имеют одинаковую высоту.
    * @default 'base'
    */
-  size?: 'base' | 'medium' | 'large' | 'xlarge' | number
+  size?: InputTextSize
 }
 
 export type RenderTextInputArgs = TextInputProps & { inputRef: Ref<TextInput> }
+
+export interface InputTextRightAccessoryArgs {
+  readonly hitSlop: Insets
+  readonly iconSize: { readonly width: number; readonly height: number }
+  readonly makeTestId: ReturnType<typeof useMakeTestId>['makeTestId']
+}
+
+export type RenderInputTextRightAccessory = (
+  props: InputTextRightAccessoryArgs
+) => ReactNode
+
+export interface InputTextPrivateProps {
+  /** Управление отображением иконки загрузки */
+  loading?: boolean
+  renderRightAccessory?: RenderInputTextRightAccessory
+}

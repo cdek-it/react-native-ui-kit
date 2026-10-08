@@ -3,9 +3,9 @@ import { Pressable, Text } from 'react-native'
 
 import { StyleSheet } from 'react-native-unistyles'
 
-import { SvgUniversal, type SvgSource } from '../../utils/SvgUniversal'
+import { SvgUniversal, type SvgSource } from '../../../utils/SvgUniversal'
 
-export interface InputGroupAddonProps {
+export interface LegacyInputGroupAddonProps {
   /** Содержимое аддона инпут группы, текст или SVG-иконка */
   content: string | SvgSource
   /** Расположение аддона слева или справа в группе */
@@ -20,9 +20,9 @@ export interface InputGroupAddonProps {
  * Служебный компонент для группировки инпута
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5932&m=dev
  * @link https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24037-68
- * @see InputGroup
+ * @see LegacyInputGroup
  */
-export const InputGroupAddon = memo<InputGroupAddonProps>(
+export const LegacyInputGroupAddon = memo<LegacyInputGroupAddonProps>(
   ({ content, onPress, position, disabled }) => {
     return (
       <Pressable
