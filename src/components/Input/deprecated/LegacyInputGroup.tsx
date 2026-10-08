@@ -9,9 +9,13 @@ import {
 
 import { StyleSheet } from 'react-native-unistyles'
 
-import { InputGroupAddon, type InputGroupAddonProps } from './InputGroupAddon'
-import { InputTextBase } from './InputTextBase/InputTextBase'
 import type { InputTextBaseProps } from './InputTextBase/types'
+
+import {
+  LegacyInputGroupAddon as InputGroupAddon,
+  type LegacyInputGroupAddonProps as InputGroupAddonProps,
+} from './LegacyInputGroupAddon'
+import { LegacyInputText as InputText } from './LegacyInputText'
 
 /** @see InputTextBaseProps */
 interface InputGroupBaseProps {
@@ -23,16 +27,16 @@ interface InputGroupBaseProps {
   style?: StyleProp<ViewStyle>
 }
 
-export type InputGroupProps = InputGroupBaseProps & InputTextBaseProps
+export type LegacyInputGroupProps = InputGroupBaseProps & InputTextBaseProps
 
 /**
  * Компонент группы инпута. Позволяет обернуть инпут в группу и добавить кнопки-аддоны слева и справа
  * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5932&m=dev
  * @link https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24037-68
  * @see InputTextBase
- * @see InputGroupAddon
+ * @see LegacyInputGroupAddon
  */
-export const InputGroup = memo<InputGroupProps>(
+export const LegacyInputGroup = memo<LegacyInputGroupProps>(
   ({
     left,
     right,
@@ -70,7 +74,7 @@ export const InputGroup = memo<InputGroupProps>(
         ) : null}
 
         <View style={styles.inputWrapper}>
-          <InputTextBase
+          <InputText
             containerStyle={containerStyle}
             disabled={disabled}
             inputRef={inputRef}

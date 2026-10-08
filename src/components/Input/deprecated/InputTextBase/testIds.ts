@@ -4,7 +4,6 @@ export const InputTextBaseTestId = {
   dangerOutline: 'DangerOutline',
   loading: 'Loading',
   clearButton: 'ClearButton',
-  secureInputButton: 'SecureInputButton',
   disabledIcon: 'DisabledIcon',
   floatingPlaceholder: 'FloatingPlaceholder',
   placeholder: 'Placeholder',

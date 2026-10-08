@@ -1,5 +1,5 @@
-export { InputGroup } from './InputGroup'
-export { InputText } from './InputText'
+export { LegacyInputGroup as InputGroup } from './deprecated/LegacyInputGroup'
+export { LegacyInputText as InputText } from './deprecated/LegacyInputText'
 export { InputSwitch } from '../InputSwitch'
-export type { InputTextBaseProps } from './InputTextBase/types'
+export type { InputTextBaseProps } from './deprecated/InputTextBase/types'
 export { InputOtp, InputOtpTestId, type InputOtpProps } from '../InputOtp'
