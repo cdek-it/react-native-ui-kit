@@ -14,7 +14,7 @@ const validateOtp = () =>
   })
 
 const meta: Meta<typeof InputOtp> = {
-  title: 'Form/InputOtp',
+  title: 'Other Form/InputOtp',
   component: InputOtp,
   args: { disabled: false, error: false, length: 4, value: '' },
   render: (args) => {
