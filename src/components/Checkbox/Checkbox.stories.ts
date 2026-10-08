@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Checkbox } from './Checkbox'
 
 const meta: Meta<typeof Checkbox> = {
-  title: 'Form/Checkbox',
+  title: 'Other Form/Checkbox',
   component: Checkbox,
   args: {
     checked: false,
