@@ -8,7 +8,7 @@ const svgIcons = { IconArrowDownRight, IconUser, none: undefined }
 const imageIcons = { hotels: require('./hotels.png'), none: undefined }
 
 const meta: Meta<typeof ToggleButton> = {
-  title: 'Form/ToggleButton',
+  title: 'Other Form/ToggleButton',
   component: ToggleButton,
   args: {
     checked: false,
