@@ -56,7 +56,13 @@ export const InputCaption = ({
   const { makeTestId } = useMakeTestId(testID)
 
   return (
-    <View {...props} style={[styles.row, style]} testID={testID}>
+    <View
+      accessible
+      accessibilityRole='text'
+      {...props}
+      style={[styles.row, style]}
+      testID={testID}
+    >
       {showIcon ? (
         <SvgUniversal
           accessible={false}
@@ -72,7 +78,9 @@ export const InputCaption = ({
           })}
         />
       ) : null}
-      <Caption style={[styles.text, styles[variant]]}>{children}</Caption>
+      <Caption accessible={false} style={[styles.text, styles[variant]]}>
+        {children}
+      </Caption>
     </View>
   )
 }
