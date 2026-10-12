@@ -13,7 +13,7 @@ export type InputState = 'default' | 'danger'
 export type RenderTextInputArgs = TextInputProps & { inputRef: Ref<TextInput> }
 
 export interface InputLabelInfo {
-  /** Обработчик нажатия на иконку ⓘ */
+  /** Обработчик нажатия на label с иконкой ⓘ */
   onPress: NonNullable<PressableProps['onPress']>
   /**
    * Название действия для скринридера; добавляется после текста label
@@ -24,7 +24,7 @@ export interface InputLabelInfo {
 
 export type InputLabelProps =
   | {
-      /** Постоянная подпись над полем, взаимоисключающая с floatLabel */
+      /** Постоянная подпись над полем; скринридер читает её в имени поля */
       label?: string
       floatLabel?: never
       labelInfo?: never
@@ -32,7 +32,7 @@ export type InputLabelProps =
   | {
       label: string
       floatLabel?: never
-      /** Иконка ⓘ с обработчиком нажатия; доступно только у обычного label */
+      /** Label с иконкой ⓘ читается отдельной кнопкой; имя поля сохраняется */
       labelInfo?: InputLabelInfo
     }
   | {
@@ -59,12 +59,13 @@ export interface InputNativeProps extends Omit<
   ref?: Ref<TextInput | null>
   /**
    * Имя для скринридера; по умолчанию label, floatLabel или placeholder
-   * При required добавляется «обязательное поле»
+   * При required добавляется «обязательное поле», при danger — «ошибка»
    */
   accessibilityLabel?: TextInputProps['accessibilityLabel']
   /**
    * Строка или число оборачиваются в InputCaption; нода отображается как передана.
    * Для статуса подписи передайте InputCaption с нужным variant.
+   * Подпись доступна скринридеру отдельно от поля
    */
   caption?: ReactNode
   /**
