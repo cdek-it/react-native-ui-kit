@@ -10,6 +10,44 @@ const components = [
 
 describe('Input: доступное имя и состояние', () => {
   test.each(
+    components.flatMap(({ name, Component }) =>
+      [false, true].map((required) => ({
+        name: `${name}: required=${String(required)}`,
+        Component,
+        required,
+      }))
+    )
+  )(
+    'обновляет признак ошибки в имени поля при изменении state в $name',
+    ({ Component, required }) => {
+      const label = required
+        ? 'Контактный email, обязательное поле'
+        : 'Контактный email'
+      const props = {
+        required,
+        'aria-label': 'Контактный email',
+        accessibilityLabel: 'Запасное имя',
+        accessibilityHint: '',
+        label: 'Email',
+        value: 'name@',
+      }
+      const { getByLabelText, rerender } = render(
+        <Component {...props} state='danger' />
+      )
+
+      expect(getByLabelText(`${label}, ошибка`)).toHaveDisplayValue('name@')
+      expect(getByLabelText(`${label}, ошибка`)).toHaveProp(
+        'accessibilityHint',
+        ''
+      )
+
+      rerender(<Component {...props} state='default' />)
+
+      expect(getByLabelText(label)).toHaveDisplayValue('name@')
+    }
+  )
+
+  test.each(
     components.flatMap(({ name, Component }) => [
       { name: `${name}: label`, Component, labelProps: { label: 'Email' } },
       {
@@ -25,9 +63,7 @@ describe('Input: доступное имя и состояние', () => {
         <Component {...labelProps} required testID='RequiredInput' />
       )
 
-      expect(
-        getByText('*', { includeHiddenElements: true })
-      ).toBeOnTheScreen()
+      expect(getByText('*', { includeHiddenElements: true })).toBeOnTheScreen()
       expect(getByTestId('RequiredInput')).toHaveProp(
         'accessibilityLabel',
         'Email, обязательное поле'
