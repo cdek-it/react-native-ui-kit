@@ -40,6 +40,33 @@ const renderNativeInput = ({ inputRef, ...props }: RenderTextInputArgs) => (
   <TextInput {...props} ref={inputRef} />
 )
 
+// VoiceOver позволяет отключить hint, поэтому обязательность и ошибка входят в имя поля
+const getAccessibilityLabel = ({
+  nativeProps,
+  label,
+  required,
+  isDanger,
+}: Pick<
+  InputControlProps,
+  'nativeProps' | 'label' | 'required' | 'isDanger'
+>) => {
+  const name =
+    nativeProps['aria-label'] ??
+    nativeProps.accessibilityLabel ??
+    label ??
+    nativeProps.placeholder
+
+  return required || isDanger
+    ? [
+        name,
+        required ? inputStrings.requiredField : undefined,
+        isDanger ? inputStrings.fieldError : undefined,
+      ]
+        .filter(Boolean)
+        .join(', ')
+    : name
+}
+
 export const InputControl = ({
   label,
   required,
@@ -82,19 +109,16 @@ export const InputControl = ({
     isFloating && { paddingTop: floatingLabel.inputPaddingTop },
     inputStyle,
   ]
-  const { 'aria-label': ariaLabel, ...inputNativeProps } = nativeProps
-  const inputName =
-    ariaLabel ??
-    nativeProps.accessibilityLabel ??
-    label ??
-    nativeProps.placeholder
-  const accessibilityLabel = required
-    ? [inputName, inputStrings.requiredField].filter(Boolean).join(', ')
-    : inputName
+  const { 'aria-label': _ariaLabel, ...inputNativeProps } = nativeProps
   const textInputProps: RenderTextInputArgs = {
     ...inputNativeProps,
     'aria-disabled': disabled,
-    accessibilityLabel,
+    accessibilityLabel: getAccessibilityLabel({
+      nativeProps,
+      label,
+      required,
+      isDanger,
+    }),
     accessibilityState: { ...nativeProps.accessibilityState, disabled },
     editable: isEditable,
     readOnly: !isEditable,

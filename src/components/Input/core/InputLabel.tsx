@@ -25,11 +25,6 @@ interface InputLabelProps extends Pick<
   readonly testID?: string
 }
 
-export const getLabelInfoAccessibilityLabel = (
-  label: string,
-  labelInfo: InputLabelInfo
-) => `${label}. ${labelInfo.accessibilityLabel ?? inputStrings.labelInfoButton}`
-
 export const InputLabel = ({
   label,
   labelInfo,
@@ -91,21 +86,20 @@ export const InputLabel = ({
               *
             </Text>
           ) : null}
-          <Text {...textProps} pointerEvents='none' style={styles.label}>
+          <Text
+            {...textProps}
+            accessibilityElementsHidden
+            accessible={false}
+            importantForAccessibility='no-hide-descendants'
+            pointerEvents='none'
+            style={styles.label}
+          >
             {label}
           </Text>
         </>
       )}
       {labelInfo ? (
-        <Pressable
-          accessibilityLabel={getLabelInfoAccessibilityLabel(label, labelInfo)}
-          accessibilityRole='button'
-          accessibilityState={{ disabled }}
-          disabled={disabled}
-          style={styles.labelInfo}
-          testID={infoTestID}
-          onPress={labelInfo.onPress}
-        >
+        <View style={styles.labelInfo}>
           <SvgUniversal
             accessible={false}
             source={IconInfoCircle}
@@ -115,7 +109,7 @@ export const InputLabel = ({
               color: semantic.colorScheme.color.fg.default,
             })}
           />
-        </Pressable>
+        </View>
       ) : null}
     </>
   )
@@ -142,8 +136,31 @@ export const InputLabel = ({
     )
   }
 
+  if (labelInfo) {
+    return (
+      <Pressable
+        accessible
+        accessibilityLabel={`${label}. ${labelInfo.accessibilityLabel ?? inputStrings.labelInfoButton}`}
+        accessibilityRole='button'
+        accessibilityState={{ disabled }}
+        disabled={disabled}
+        style={styles.labelRow}
+        testID={infoTestID}
+        onPress={labelInfo.onPress}
+      >
+        {content}
+      </Pressable>
+    )
+  }
+
   return (
-    <View style={styles.labelRow} testID={testID}>
+    <View
+      accessibilityElementsHidden
+      accessible={false}
+      importantForAccessibility='no-hide-descendants'
+      style={styles.labelRow}
+      testID={testID}
+    >
       {content}
     </View>
   )
