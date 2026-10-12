@@ -25,6 +25,11 @@ interface InputLabelProps extends Pick<
   readonly testID?: string
 }
 
+export const getLabelInfoAccessibilityLabel = (
+  label: string,
+  labelInfo: InputLabelInfo
+) => `${label}. ${labelInfo.accessibilityLabel ?? inputStrings.labelInfoButton}`
+
 export const InputLabel = ({
   label,
   labelInfo,
@@ -93,9 +98,7 @@ export const InputLabel = ({
       )}
       {labelInfo ? (
         <Pressable
-          accessibilityLabel={
-            labelInfo.accessibilityLabel ?? inputStrings.labelInfoButton
-          }
+          accessibilityLabel={getLabelInfoAccessibilityLabel(label, labelInfo)}
           accessibilityRole='button'
           accessibilityState={{ disabled }}
           disabled={disabled}

@@ -20,6 +20,21 @@ describe('InputCaption', () => {
     expect(queryByRole('button')).toBeNull()
   })
 
+  test.each([
+    { name: 'без иконки', showIcon: false },
+    { name: 'с иконкой', showIcon: true },
+  ])('объединяет подпись $name в доступный контейнер', ({ showIcon }) => {
+    const { getByRole, getByTestId, getByText, getAllByRole } = render(
+      <InputCaption showIcon={showIcon}>Подсказка к полю</InputCaption>
+    )
+
+    expect(getByRole('text', { name: 'Подсказка к полю' })).toBe(
+      getByTestId('InputCaption')
+    )
+    expect(getAllByRole('text')).toHaveLength(1)
+    expect(getByText('Подсказка к полю')).toHaveProp('accessible', false)
+  })
+
   test('showIcon управляет показом независимо от переданного SVG, а очистка Icon возвращает стандартную иконку', () => {
     const { getAllByTestId, getByText, queryByTestId, rerender } = render(
       <InputCaption Icon={CustomIcon} variant='warning'>
