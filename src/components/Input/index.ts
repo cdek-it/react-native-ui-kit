@@ -8,6 +8,7 @@ export {
   InputCaption,
   type InputCaptionProps,
 } from './InputCaption/InputCaption'
+export { Password, type PasswordProps } from './Password/Password'
 export type {
   InputTextSize,
   InputState,
