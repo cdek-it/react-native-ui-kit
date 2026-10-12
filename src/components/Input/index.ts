@@ -1,4 +1,4 @@
-export { LegacyInputGroup as InputGroup } from './deprecated/LegacyInputGroup'
+export { InputGroup, type InputGroupProps } from './InputGroup/InputGroup'
 export { InputText, type InputTextProps } from './InputText/InputText'
 export {
   InputGroupAddon,
