@@ -6,6 +6,7 @@ import { useMakeTestId } from '../../../hooks/useMakeTestId'
 import { InputActions } from './InputActions'
 import { InputLabel } from './InputLabel'
 import { InputPlaceholder } from './InputPlaceholder'
+import { inputStrings } from './strings'
 import { styles } from './styles'
 import type {
   InputLabelProps,
@@ -81,10 +82,19 @@ export const InputControl = ({
     isFloating && { paddingTop: floatingLabel.inputPaddingTop },
     inputStyle,
   ]
+  const { 'aria-label': ariaLabel, ...inputNativeProps } = nativeProps
+  const inputName =
+    ariaLabel ??
+    nativeProps.accessibilityLabel ??
+    label ??
+    nativeProps.placeholder
+  const accessibilityLabel = required
+    ? [inputName, inputStrings.requiredField].filter(Boolean).join(', ')
+    : inputName
   const textInputProps: RenderTextInputArgs = {
-    ...nativeProps,
-    accessibilityLabel:
-      nativeProps.accessibilityLabel ?? label ?? nativeProps.placeholder,
+    ...inputNativeProps,
+    'aria-disabled': disabled,
+    accessibilityLabel,
     accessibilityState: { ...nativeProps.accessibilityState, disabled },
     editable: isEditable,
     readOnly: !isEditable,

@@ -86,12 +86,12 @@ describe('InputText: базовая доступность', () => {
     {
       name: 'имя по умолчанию',
       accessibilityLabel: undefined,
-      label: 'Подробнее',
+      label: 'ИНН. Подробнее',
     },
     {
       name: 'явное имя',
       accessibilityLabel: 'Как узнать ИНН',
-      label: 'Как узнать ИНН',
+      label: 'ИНН. Как узнать ИНН',
     },
   ])('озвучивает кнопку info: $name', async ({ accessibilityLabel, label }) => {
     const onPress = jest.fn()
@@ -117,7 +117,7 @@ describe('InputText: базовая доступность', () => {
       const { getByRole } = render(
         <InputText {...props} label='Email' labelInfo={{ onPress }} />
       )
-      const button = getByRole('button', { name: 'Подробнее' })
+      const button = getByRole('button', { name: 'Email. Подробнее' })
 
       expect(button).toHaveProp('accessibilityState', { disabled })
 
@@ -127,8 +127,8 @@ describe('InputText: базовая доступность', () => {
     }
   )
 
-  test('сохраняет разные testID кнопок info при одинаковых названиях', () => {
-    const { getAllByRole, getByTestId } = render(
+  test('различает контекст и testID кнопок info у разных полей', () => {
+    const { getByRole } = render(
       <>
         <InputText
           label='Email'
@@ -143,14 +143,13 @@ describe('InputText: базовая доступность', () => {
       </>
     )
 
-    expect(getAllByRole('button', { name: 'Подробнее' })).toHaveLength(2)
-    expect(getByTestId('EmailInputLabelInfo')).toHaveProp(
-      'accessibilityRole',
-      'button'
+    expect(getByRole('button', { name: 'Email. Подробнее' })).toHaveProp(
+      'testID',
+      'EmailInputLabelInfo'
     )
-    expect(getByTestId('PhoneInputLabelInfo')).toHaveProp(
-      'accessibilityRole',
-      'button'
+    expect(getByRole('button', { name: 'Телефон. Подробнее' })).toHaveProp(
+      'testID',
+      'PhoneInputLabelInfo'
     )
   })
 })

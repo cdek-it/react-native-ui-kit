@@ -16,7 +16,7 @@ export interface InputLabelInfo {
   /** Обработчик нажатия на иконку ⓘ */
   onPress: NonNullable<PressableProps['onPress']>
   /**
-   * Название кнопки для скринридера
+   * Название действия для скринридера; добавляется после текста label
    * @default Подробнее
    */
   accessibilityLabel?: string
@@ -53,16 +53,23 @@ export type InputLabelProps =
  */
 export interface InputNativeProps extends Omit<
   TextInputProps,
-  'style' | 'editable' | 'children' | 'clearButtonMode'
+  'style' | 'editable' | 'children' | 'clearButtonMode' | 'aria-disabled'
 > {
   /** Методы TextInput; clear() вызывает onChangeText('') с учётом controlled-режима. */
   ref?: Ref<TextInput | null>
+  /**
+   * Имя для скринридера; по умолчанию label, floatLabel или placeholder
+   * При required добавляется «обязательное поле»
+   */
+  accessibilityLabel?: TextInputProps['accessibilityLabel']
   /**
    * Строка или число оборачиваются в InputCaption; нода отображается как передана.
    * Для статуса подписи передайте InputCaption с нужным variant.
    */
   caption?: ReactNode
-  /** Показывает * у подписи */
+  /**
+   * Показывает * у подписи и добавляет «обязательное поле» к имени поля для скринридера
+   */
   required?: boolean
   /** @default 'base' */
   size?: InputTextSize

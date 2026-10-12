@@ -5,6 +5,25 @@ import { Text } from 'react-native'
 import { InputGroupAddon } from '../InputGroupAddon'
 
 describe('InputGroupAddon', () => {
+  test('вычисляет доступный disabled из своего disabled, сохраняя остальные состояния', () => {
+    const onPress = jest.fn()
+    const { getByRole } = render(
+      <InputGroupAddon
+        {...{ 'aria-disabled': false }}
+        disabled
+        accessibilityState={{ busy: true }}
+        onPress={onPress}
+      >
+        Найти
+      </InputGroupAddon>
+    )
+
+    expect(getByRole('button', { name: 'Найти' })).toHaveProp(
+      'accessibilityState',
+      { disabled: true, busy: true }
+    )
+  })
+
   test.each([
     { name: 'строки', children: 'Найти' },
     { name: 'числа', children: 42 },

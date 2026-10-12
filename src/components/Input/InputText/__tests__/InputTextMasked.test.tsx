@@ -176,13 +176,20 @@ describe('InputText: пример с маской', () => {
     const labelArgs = { ...args, labelInfo: { onPress: jest.fn() } }
     const {
       getByDisplayValue,
+      getByLabelText,
+      getByRole,
       getByTestId,
       queryByTestId,
+      queryByRole,
       queryByText,
       rerender,
     } = render(
       <MaskedExample {...labelArgs} ref={ref} testID='MaskedLabelStory' />
     )
+
+    expect(
+      getByRole('button', { name: 'Телефон. Подробнее' })
+    ).toBeOnTheScreen()
 
     fireEvent.changeText(getByTestId('MaskedLabelStory'), '+7 (900) 123-45-67')
     const nativeInput = ref.current
@@ -199,9 +206,8 @@ describe('InputText: пример с маской', () => {
     expect(getByTestId('MaskedLabelStoryFloatingLabel')).toHaveTextContent(
       'Телефон'
     )
-    expect(getByTestId('MaskedLabelStory')).toHaveDisplayValue(
-      '+7 (900) 123-45-67'
-    )
+    expect(getByLabelText('Телефон')).toHaveDisplayValue('+7 (900) 123-45-67')
+    expect(queryByRole('button', { name: 'Телефон. Подробнее' })).toBeNull()
     expect(ref.current).toBe(nativeInput)
 
     rerender(
