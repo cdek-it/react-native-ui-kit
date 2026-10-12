@@ -39,7 +39,7 @@ describe('InputText: новый API', () => {
   })
 
   test('отображает caption и обычный label, сохраняя имя поля для скринридера', () => {
-    const { getByLabelText, getByText } = render(
+    const { getByLabelText, getByText, queryByRole } = render(
       <InputText
         accessibilityLabel='Контактный телефон'
         caption='Получит уведомление'
@@ -48,6 +48,7 @@ describe('InputText: новый API', () => {
     )
 
     expect(getByLabelText('Контактный телефон')).toHaveDisplayValue('')
+    expect(queryByRole('text', { name: 'Телефон' })).toBeNull()
     expect(
       getByText('Телефон', { includeHiddenElements: true })
     ).toBeOnTheScreen()
