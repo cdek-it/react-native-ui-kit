@@ -12,7 +12,7 @@ import { InputText, InputCaption, type RenderTextInputArgs } from '../..'
 
 describe('InputText: новый API', () => {
   test('разделяет label, placeholder и произвольный caption', () => {
-    const { getByText, queryByTestId } = render(
+    const { getByText, queryByRole, getByTestId } = render(
       <InputText
         required
         caption={
@@ -25,14 +25,20 @@ describe('InputText: новый API', () => {
       />
     )
 
+    expect(getByTestId('InputText')).toHaveProp(
+      'accessibilityLabel',
+      'Телефон, обязательное поле'
+    )
     expect(
       getByText('+7 999', { includeHiddenElements: true })
     ).toBeOnTheScreen()
-    expect(getByText('Неверный номер')).toBeOnTheScreen()
-    expect(queryByTestId('InputTextClearButton')).not.toBeOnTheScreen()
+    expect(
+      getByText('Неверный номер', { includeHiddenElements: true })
+    ).toBeOnTheScreen()
+    expect(queryByRole('button')).not.toBeOnTheScreen()
   })
 
-  test('отображает строковый caption и передаёт нативные props поля', () => {
+  test('отображает caption и обычный label, сохраняя имя поля для скринридера', () => {
     const { getByLabelText, getByText } = render(
       <InputText
         accessibilityLabel='Контактный телефон'
@@ -42,12 +48,17 @@ describe('InputText: новый API', () => {
     )
 
     expect(getByLabelText('Контактный телефон')).toHaveDisplayValue('')
-    expect(getByText('Получит уведомление')).toBeOnTheScreen()
+    expect(
+      getByText('Телефон', { includeHiddenElements: true })
+    ).toBeOnTheScreen()
+    expect(
+      getByText('Получит уведомление', { includeHiddenElements: true })
+    ).toBeOnTheScreen()
   })
 
   test('инициализирует defaultValue один раз и обновляет неконтролируемое поле', async () => {
     const onChangeText = jest.fn()
-    const { rerender, getByTestId } = render(
+    const { getByRole, rerender, getByTestId } = render(
       <InputText
         defaultValue='Москва'
         label='Адрес'
@@ -68,7 +79,7 @@ describe('InputText: новый API', () => {
 
     expect(getByTestId('InputText')).toHaveDisplayValue('Казань')
 
-    await userEvent.press(getByTestId('InputTextClearButton'))
+    await userEvent.press(getByRole('button', { name: 'Очистить поле' }))
 
     expect(onChangeText).toHaveBeenLastCalledWith('')
     expect(getByTestId('InputText')).toHaveDisplayValue('')
@@ -117,7 +128,7 @@ describe('InputText: новый API', () => {
   test('сохраняет отдельную подсказку и callbacks при фокусе floating label', () => {
     const onFocus = jest.fn()
     const onBlur = jest.fn()
-    const { getByTestId, rerender } = render(
+    const { getByLabelText, getByTestId, rerender } = render(
       <InputText
         floatLabel='Email'
         placeholder='name@example.com'
@@ -126,7 +137,7 @@ describe('InputText: новый API', () => {
         onFocus={onFocus}
       />
     )
-    const input = getByTestId('InputText')
+    const input = getByLabelText('Email')
 
     expect(
       getByTestId('InputTextPlaceholder', { includeHiddenElements: true })
@@ -152,19 +163,20 @@ describe('InputText: новый API', () => {
       />
     )
 
-    expect(getByTestId('InputText')).toHaveDisplayValue('a@b.ru')
+    expect(getByLabelText('Email')).toHaveDisplayValue('a@b.ru')
     expect(getByTestId('InputTextFloatingLabel')).toBeOnTheScreen()
   })
 
   test.each([
-    { name: 'disabled', props: { disabled: true } },
-    { name: 'readOnly', props: { readOnly: true } },
+    { name: 'disabled', props: { disabled: true }, disabled: true },
+    { name: 'readOnly', props: { readOnly: true }, disabled: false },
     {
       name: 'disabled при readOnly=false',
       props: { disabled: true, readOnly: false },
+      disabled: true,
     },
-  ])('нормализует renderer при $name', ({ props }) => {
-    const { queryByTestId, getByTestId } = render(
+  ])('нормализует renderer при $name', ({ props, disabled }) => {
+    const { queryByRole, getByTestId } = render(
       <InputText
         {...props}
         label='Поле'
@@ -176,7 +188,10 @@ describe('InputText: новый API', () => {
     )
 
     expect(getByTestId('InputText')).toHaveProp('editable', false)
-    expect(queryByTestId('InputTextClearButton')).not.toBeOnTheScreen()
+    expect(getByTestId('InputText')).toHaveProp('accessibilityState', {
+      disabled,
+    })
+    expect(queryByRole('button')).not.toBeOnTheScreen()
   })
 
   test('при вводе controlled value вызывает callback и ждёт обновления props', () => {
@@ -200,7 +215,7 @@ describe('InputText: новый API', () => {
 
   test('clearable=false убирает очистку, а пустое controlled value скрывает её после обновления', async () => {
     const onChangeText = jest.fn()
-    const { rerender, getByTestId, queryByTestId } = render(
+    const { getByRole, queryByRole, rerender, getByTestId } = render(
       <InputText
         clearable={false}
         label='Адрес'
@@ -209,12 +224,12 @@ describe('InputText: новый API', () => {
       />
     )
 
-    expect(queryByTestId('InputTextClearButton')).toBeNull()
+    expect(queryByRole('button', { name: 'Очистить поле' })).toBeNull()
 
     rerender(
       <InputText label='Адрес' value='Москва' onChangeText={onChangeText} />
     )
-    await userEvent.press(getByTestId('InputTextClearButton'))
+    await userEvent.press(getByRole('button', { name: 'Очистить поле' }))
 
     expect(onChangeText).toHaveBeenCalledOnce()
     expect(onChangeText).toHaveBeenCalledWith('')
@@ -222,7 +237,7 @@ describe('InputText: новый API', () => {
 
     rerender(<InputText label='Адрес' value='' onChangeText={onChangeText} />)
 
-    expect(queryByTestId('InputTextClearButton')).toBeNull()
+    expect(queryByRole('button', { name: 'Очистить поле' })).toBeNull()
     expect(onChangeText).toHaveBeenCalledOnce()
   })
 
@@ -239,7 +254,7 @@ describe('InputText: новый API', () => {
 
       return <TextInput {...props} />
     }
-    const { getByTestId, queryByTestId } = render(
+    const { getByTestId, queryByRole } = render(
       <InputText
         defaultValue='Москва'
         label='Адрес'
@@ -265,7 +280,7 @@ describe('InputText: новый API', () => {
     expect(onChangeText).toHaveBeenCalledOnce()
     expect(onChangeText).toHaveBeenCalledWith('')
     expect(getByTestId('InputText')).toHaveDisplayValue('')
-    expect(queryByTestId('InputTextClearButton')).toBeNull()
+    expect(queryByRole('button', { name: 'Очистить поле' })).toBeNull()
   })
 
   test('убирает пустой caption и сохраняет число 0 при обновлении подписи', () => {
@@ -273,7 +288,9 @@ describe('InputText: новый API', () => {
       <InputText caption='Описание' label='Адрес' />
     )
 
-    expect(getByText('Описание')).toBeOnTheScreen()
+    expect(
+      getByText('Описание', { includeHiddenElements: true })
+    ).toBeOnTheScreen()
 
     rerender(<InputText caption='' label='Адрес' />)
 
@@ -281,10 +298,26 @@ describe('InputText: новый API', () => {
 
     rerender(<InputText caption={0} label='Адрес' />)
 
-    expect(getByText('0')).toBeOnTheScreen()
+    expect(getByText('0', { includeHiddenElements: true })).toBeOnTheScreen()
 
     rerender(<InputText label='Адрес' />)
 
     expect(queryByTestId('InputCaption')).toBeNull()
+  })
+
+  test('сохраняет переданное доступное состояние, нормализуя только disabled', () => {
+    const { getByTestId } = render(
+      <InputText
+        disabled
+        accessibilityState={{ busy: true, selected: true, disabled: false }}
+        label='Адрес'
+      />
+    )
+
+    expect(getByTestId('InputText')).toHaveProp('accessibilityState', {
+      busy: true,
+      selected: true,
+      disabled: true,
+    })
   })
 })

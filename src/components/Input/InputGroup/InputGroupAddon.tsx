@@ -8,7 +8,10 @@ import { SvgUniversal, type SvgSource } from '../../../utils/SvgUniversal'
 import { InputGroupContext } from '../core/InputGroupContext'
 import { styles as inputStyles } from '../core/styles'
 
-export interface InputGroupAddonProps extends PressableProps {
+export interface InputGroupAddonProps extends Omit<
+  PressableProps,
+  'aria-disabled'
+> {
   /** Имя для скринридера; по умолчанию берётся из строкового или числового children */
   readonly accessibilityLabel?: string
   /** SVG-иконка; для кнопки только с иконкой задайте accessibilityLabel */
@@ -45,6 +48,7 @@ export const InputGroupAddon = ({
       accessibilityRole={onPress ? 'button' : undefined}
       accessibilityState={{ ...props.accessibilityState, disabled }}
       accessible={!!onPress}
+      aria-disabled={disabled}
       disabled={disabled}
       style={(state) => [
         styles.addon,

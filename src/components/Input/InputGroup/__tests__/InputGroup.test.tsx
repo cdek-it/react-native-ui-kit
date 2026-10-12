@@ -19,7 +19,7 @@ describe('InputGroup: новый API', () => {
       />
     )
     const input = getByLabelText('Номер заказа')
-    const info = getByRole('button', { name: 'Подробнее' })
+    const info = getByRole('button', { name: 'Заказ. Подробнее' })
 
     expect(input).toHaveDisplayValue('123')
     expect(input).toHaveProp('testID', 'OrderInput')
