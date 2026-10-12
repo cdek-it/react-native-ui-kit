@@ -1,6 +1,10 @@
 export { LegacyInputGroup as InputGroup } from './deprecated/LegacyInputGroup'
 export { LegacyInputText as InputText } from './deprecated/LegacyInputText'
 export {
+  InputGroupAddon,
+  type InputGroupAddonProps,
+} from './InputGroup/InputGroupAddon'
+export {
   InputCaption,
   type InputCaptionProps,
 } from './InputCaption/InputCaption'
