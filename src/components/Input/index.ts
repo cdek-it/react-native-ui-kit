@@ -1,5 +1,5 @@
 export { LegacyInputGroup as InputGroup } from './deprecated/LegacyInputGroup'
-export { LegacyInputText as InputText } from './deprecated/LegacyInputText'
+export { InputText, type InputTextProps } from './InputText/InputText'
 export {
   InputGroupAddon,
   type InputGroupAddonProps,
@@ -8,6 +8,11 @@ export {
   InputCaption,
   type InputCaptionProps,
 } from './InputCaption/InputCaption'
+export type {
+  InputTextSize,
+  InputState,
+  InputLabelInfo,
+  RenderTextInputArgs,
+} from './core/types'
 export { InputSwitch } from '../InputSwitch'
-export type { InputTextBaseProps } from './deprecated/InputTextBase/types'
 export { InputOtp, InputOtpTestId, type InputOtpProps } from '../InputOtp'
