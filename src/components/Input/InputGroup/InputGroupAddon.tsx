@@ -9,7 +9,7 @@ import { InputGroupContext } from '../core/InputGroupContext'
 import { styles as inputStyles } from '../core/styles'
 
 export interface InputGroupAddonProps extends PressableProps {
-  /** Имя для экранного диктора; по умолчанию берётся из строкового или числового children. */
+  /** Имя для скринридера; по умолчанию берётся из строкового или числового children */
   readonly accessibilityLabel?: string
   /** SVG-иконка; для кнопки только с иконкой задайте accessibilityLabel */
   readonly Icon?: SvgSource
