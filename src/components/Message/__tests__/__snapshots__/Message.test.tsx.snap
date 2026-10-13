@@ -772,10 +772,11 @@ exports[`Message {"closeLabel": "Close", "footer": [Object], "onClose": [Functio
         </Body>
       </View>
       <View
+        accessibilityLabel="Close"
         accessibilityRole="button"
         accessibilityState={
           {
-            "busy": undefined,
+            "busy": false,
             "checked": undefined,
             "disabled": false,
             "expanded": undefined,
@@ -806,18 +807,21 @@ exports[`Message {"closeLabel": "Close", "footer": [Object], "onClose": [Functio
           [
             {
               "alignItems": "center",
+              "aspectRatio": undefined,
               "backgroundColor": "transparent",
               "borderColor": "#1dc831",
-              "borderRadius": 14,
+              "borderRadius": 10,
               "borderWidth": 1,
               "flexDirection": "row",
               "gap": 8,
-              "height": "auto",
+              "height": undefined,
               "justifyContent": "center",
+              "maxHeight": undefined,
+              "minHeight": 36,
               "paddingHorizontal": 14,
-              "paddingVertical": 8,
+              "paddingVertical": 0,
             },
-            false,
+            undefined,
           ]
         }
         testID="CloseButton"
@@ -830,6 +834,8 @@ exports[`Message {"closeLabel": "Close", "footer": [Object], "onClose": [Functio
               "fontSize": 12,
               "fontWeight": 600,
               "includeFontPadding": false,
+              "letterSpacing": 0,
+              "lineHeight": 18,
               "verticalAlign": "middle",
             }
           }
@@ -1006,7 +1012,7 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
         accessibilityRole="button"
         accessibilityState={
           {
-            "busy": undefined,
+            "busy": false,
             "checked": undefined,
             "disabled": false,
             "expanded": undefined,
@@ -1037,20 +1043,21 @@ exports[`Message {"footer": [Object], "onClose": [Function mockConstructor], "se
           [
             {
               "alignItems": "center",
+              "aspectRatio": 1,
               "backgroundColor": "transparent",
               "borderColor": "#1dc831",
-              "borderRadius": 14,
+              "borderRadius": 10,
               "borderWidth": 1,
               "flexDirection": "row",
               "gap": 8,
-              "height": "auto",
+              "height": 36,
               "justifyContent": "center",
-              "paddingHorizontal": 14,
-              "paddingVertical": 8,
+              "maxHeight": 36,
+              "minHeight": 36,
+              "paddingHorizontal": 0,
+              "paddingVertical": 0,
             },
-            {
-              "aspectRatio": 1,
-            },
+            undefined,
           ]
         }
         testID="CloseButton"

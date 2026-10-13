@@ -55,7 +55,7 @@ exports[`Checkbox snapshots checked = false, indeterminate = false, disabled = f
         },
         {
           "backgroundColor": "#ffffff",
-          "borderColor": "#f47f77",
+          "borderColor": "#db3424",
           "borderRadius": 8,
           "borderWidth": 1,
         },
@@ -185,7 +185,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = false, disabled = fa
         },
         {
           "backgroundColor": "#2b2e33",
-          "borderColor": "#f47f77",
+          "borderColor": "#db3424",
           "borderRadius": 8,
           "borderWidth": 1,
         },
@@ -473,7 +473,7 @@ exports[`Checkbox snapshots checked = true, indeterminate = true, disabled = fal
         },
         {
           "backgroundColor": "#2b2e33",
-          "borderColor": "#f47f77",
+          "borderColor": "#db3424",
           "borderRadius": 8,
           "borderWidth": 1,
         },

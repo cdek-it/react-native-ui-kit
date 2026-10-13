@@ -517,7 +517,7 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
     jestInlineStyle={
       {
         "backgroundColor": ""#a2a5a9"",
-        "borderColor": ""#f47f77"",
+        "borderColor": ""#db3424"",
         "borderRadius": 1600,
         "borderWidth": 1,
         "height": 24,
@@ -529,7 +529,7 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
       [
         {
           "backgroundColor": "#a2a5a9",
-          "borderColor": "#f47f77",
+          "borderColor": "#db3424",
           "borderRadius": 1600,
           "borderWidth": 1,
           "height": 24,
@@ -633,7 +633,7 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
     jestInlineStyle={
       {
         "backgroundColor": ""#a2a5a9"",
-        "borderColor": ""#f47f77"",
+        "borderColor": ""#db3424"",
         "borderRadius": 1600,
         "borderWidth": 1,
         "height": 24,
@@ -645,7 +645,7 @@ exports[`InputSwitch component tests checked - false, danger - true, disabled - 
       [
         {
           "backgroundColor": "#a2a5a9",
-          "borderColor": "#f47f77",
+          "borderColor": "#db3424",
           "borderRadius": 1600,
           "borderWidth": 1,
           "height": 24,
@@ -1445,7 +1445,7 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - f
     jestInlineStyle={
       {
         "backgroundColor": ""#2b2e33"",
-        "borderColor": ""#f47f77"",
+        "borderColor": ""#db3424"",
         "borderRadius": 1600,
         "borderWidth": 1,
         "height": 24,
@@ -1457,7 +1457,7 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - f
       [
         {
           "backgroundColor": "#2b2e33",
-          "borderColor": "#f47f77",
+          "borderColor": "#db3424",
           "borderRadius": 1600,
           "borderWidth": 1,
           "height": 24,
@@ -1561,7 +1561,7 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - f
     jestInlineStyle={
       {
         "backgroundColor": ""#2b2e33"",
-        "borderColor": ""#f47f77"",
+        "borderColor": ""#db3424"",
         "borderRadius": 1600,
         "borderWidth": 1,
         "height": 24,
@@ -1573,7 +1573,7 @@ exports[`InputSwitch component tests checked - true, danger - true, disabled - f
       [
         {
           "backgroundColor": "#2b2e33",
-          "borderColor": "#f47f77",
+          "borderColor": "#db3424",
           "borderRadius": 1600,
           "borderWidth": 1,
           "height": 24,

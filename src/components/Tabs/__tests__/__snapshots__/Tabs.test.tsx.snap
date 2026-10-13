@@ -155,6 +155,9 @@ exports[`TabItem component tests active: label, badge 1`] = `
       label
     </Text>
     <View
+      accessibilityLabel="99"
+      accessibilityRole="text"
+      accessible={true}
       style={
         [
           {
@@ -165,64 +168,48 @@ exports[`TabItem component tests active: label, badge 1`] = `
       }
     >
       <View
+        accessible={false}
         style={
           [
             {
-              "backgroundColor": "#44e858",
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+              "overflow": "scroll",
             },
             {
-              "borderRadius": 1600,
-              "height": 24,
-              "justifyContent": "center",
-              "paddingHorizontal": 8,
+              "minWidth": undefined,
             },
           ]
         }
       >
-        <Text
-          numberOfLines={1}
-          style={
-            [
-              {
-                "color": "#2b2e33",
-                "fontFamily": "TT Fellows",
-                "fontSize": 12,
-                "includeFontPadding": false,
-                "verticalAlign": "middle",
-              },
-              {
-                "minWidth": undefined,
-              },
-            ]
-          }
-        >
-          99
-        </Text>
-      </View>
-      <View
-        accessibilityElementsHidden={true}
-        importantForAccessibility="no-hide-descendants"
-        style={
-          {
-            "flexDirection": "row",
-            "height": 0,
-            "position": "absolute",
-            "width": 750,
-          }
-        }
-      >
         <View
-          collapsable={false}
+          onLayout={[Function]}
+          style={
+            {
+              "backgroundColor": "#44e858",
+              "borderColor": "transparent",
+              "borderRadius": 100,
+              "borderWidth": 0,
+              "justifyContent": "center",
+              "minHeight": 24,
+              "minWidth": 24,
+              "paddingHorizontal": 8,
+            }
+          }
         >
           <Text
+            accessible={false}
+            importantForAccessibility="no"
             numberOfLines={1}
-            onLayout={[Function]}
             style={
               {
                 "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 12,
+                "fontWeight": 400,
                 "includeFontPadding": false,
+                "letterSpacing": 0,
+                "textAlign": "center",
                 "verticalAlign": "middle",
               }
             }
@@ -595,6 +582,9 @@ exports[`TabItem component tests active: label, icon, badge 1`] = `
       label
     </Text>
     <View
+      accessibilityLabel="99"
+      accessibilityRole="text"
+      accessible={true}
       style={
         [
           {
@@ -605,64 +595,48 @@ exports[`TabItem component tests active: label, icon, badge 1`] = `
       }
     >
       <View
+        accessible={false}
         style={
           [
             {
-              "backgroundColor": "#44e858",
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+              "overflow": "scroll",
             },
             {
-              "borderRadius": 1600,
-              "height": 24,
-              "justifyContent": "center",
-              "paddingHorizontal": 8,
+              "minWidth": undefined,
             },
           ]
         }
       >
-        <Text
-          numberOfLines={1}
-          style={
-            [
-              {
-                "color": "#2b2e33",
-                "fontFamily": "TT Fellows",
-                "fontSize": 12,
-                "includeFontPadding": false,
-                "verticalAlign": "middle",
-              },
-              {
-                "minWidth": undefined,
-              },
-            ]
-          }
-        >
-          99
-        </Text>
-      </View>
-      <View
-        accessibilityElementsHidden={true}
-        importantForAccessibility="no-hide-descendants"
-        style={
-          {
-            "flexDirection": "row",
-            "height": 0,
-            "position": "absolute",
-            "width": 750,
-          }
-        }
-      >
         <View
-          collapsable={false}
+          onLayout={[Function]}
+          style={
+            {
+              "backgroundColor": "#44e858",
+              "borderColor": "transparent",
+              "borderRadius": 100,
+              "borderWidth": 0,
+              "justifyContent": "center",
+              "minHeight": 24,
+              "minWidth": 24,
+              "paddingHorizontal": 8,
+            }
+          }
         >
           <Text
+            accessible={false}
+            importantForAccessibility="no"
             numberOfLines={1}
-            onLayout={[Function]}
             style={
               {
                 "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 12,
+                "fontWeight": 400,
                 "includeFontPadding": false,
+                "letterSpacing": 0,
+                "textAlign": "center",
                 "verticalAlign": "middle",
               }
             }
@@ -917,6 +891,9 @@ exports[`TabItem component tests disabled: label, badge 1`] = `
       label
     </Text>
     <View
+      accessibilityLabel="99"
+      accessibilityRole="text"
+      accessible={true}
       style={
         [
           {
@@ -927,64 +904,48 @@ exports[`TabItem component tests disabled: label, badge 1`] = `
       }
     >
       <View
+        accessible={false}
         style={
           [
             {
-              "backgroundColor": "#44e858",
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+              "overflow": "scroll",
             },
             {
-              "borderRadius": 1600,
-              "height": 24,
-              "justifyContent": "center",
-              "paddingHorizontal": 8,
+              "minWidth": undefined,
             },
           ]
         }
       >
-        <Text
-          numberOfLines={1}
-          style={
-            [
-              {
-                "color": "#2b2e33",
-                "fontFamily": "TT Fellows",
-                "fontSize": 12,
-                "includeFontPadding": false,
-                "verticalAlign": "middle",
-              },
-              {
-                "minWidth": undefined,
-              },
-            ]
-          }
-        >
-          99
-        </Text>
-      </View>
-      <View
-        accessibilityElementsHidden={true}
-        importantForAccessibility="no-hide-descendants"
-        style={
-          {
-            "flexDirection": "row",
-            "height": 0,
-            "position": "absolute",
-            "width": 750,
-          }
-        }
-      >
         <View
-          collapsable={false}
+          onLayout={[Function]}
+          style={
+            {
+              "backgroundColor": "#44e858",
+              "borderColor": "transparent",
+              "borderRadius": 100,
+              "borderWidth": 0,
+              "justifyContent": "center",
+              "minHeight": 24,
+              "minWidth": 24,
+              "paddingHorizontal": 8,
+            }
+          }
         >
           <Text
+            accessible={false}
+            importantForAccessibility="no"
             numberOfLines={1}
-            onLayout={[Function]}
             style={
               {
                 "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 12,
+                "fontWeight": 400,
                 "includeFontPadding": false,
+                "letterSpacing": 0,
+                "textAlign": "center",
                 "verticalAlign": "middle",
               }
             }
@@ -1359,6 +1320,9 @@ exports[`TabItem component tests disabled: label, icon, badge 1`] = `
       label
     </Text>
     <View
+      accessibilityLabel="99"
+      accessibilityRole="text"
+      accessible={true}
       style={
         [
           {
@@ -1369,64 +1333,48 @@ exports[`TabItem component tests disabled: label, icon, badge 1`] = `
       }
     >
       <View
+        accessible={false}
         style={
           [
             {
-              "backgroundColor": "#44e858",
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+              "overflow": "scroll",
             },
             {
-              "borderRadius": 1600,
-              "height": 24,
-              "justifyContent": "center",
-              "paddingHorizontal": 8,
+              "minWidth": undefined,
             },
           ]
         }
       >
-        <Text
-          numberOfLines={1}
-          style={
-            [
-              {
-                "color": "#2b2e33",
-                "fontFamily": "TT Fellows",
-                "fontSize": 12,
-                "includeFontPadding": false,
-                "verticalAlign": "middle",
-              },
-              {
-                "minWidth": undefined,
-              },
-            ]
-          }
-        >
-          99
-        </Text>
-      </View>
-      <View
-        accessibilityElementsHidden={true}
-        importantForAccessibility="no-hide-descendants"
-        style={
-          {
-            "flexDirection": "row",
-            "height": 0,
-            "position": "absolute",
-            "width": 750,
-          }
-        }
-      >
         <View
-          collapsable={false}
+          onLayout={[Function]}
+          style={
+            {
+              "backgroundColor": "#44e858",
+              "borderColor": "transparent",
+              "borderRadius": 100,
+              "borderWidth": 0,
+              "justifyContent": "center",
+              "minHeight": 24,
+              "minWidth": 24,
+              "paddingHorizontal": 8,
+            }
+          }
         >
           <Text
+            accessible={false}
+            importantForAccessibility="no"
             numberOfLines={1}
-            onLayout={[Function]}
             style={
               {
                 "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 12,
+                "fontWeight": 400,
                 "includeFontPadding": false,
+                "letterSpacing": 0,
+                "textAlign": "center",
                 "verticalAlign": "middle",
               }
             }
@@ -1587,6 +1535,9 @@ exports[`TabItem component tests label, badge 1`] = `
       label
     </Text>
     <View
+      accessibilityLabel="99"
+      accessibilityRole="text"
+      accessible={true}
       style={
         [
           {
@@ -1597,64 +1548,48 @@ exports[`TabItem component tests label, badge 1`] = `
       }
     >
       <View
+        accessible={false}
         style={
           [
             {
-              "backgroundColor": "#44e858",
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+              "overflow": "scroll",
             },
             {
-              "borderRadius": 1600,
-              "height": 24,
-              "justifyContent": "center",
-              "paddingHorizontal": 8,
+              "minWidth": undefined,
             },
           ]
         }
       >
-        <Text
-          numberOfLines={1}
-          style={
-            [
-              {
-                "color": "#2b2e33",
-                "fontFamily": "TT Fellows",
-                "fontSize": 12,
-                "includeFontPadding": false,
-                "verticalAlign": "middle",
-              },
-              {
-                "minWidth": undefined,
-              },
-            ]
-          }
-        >
-          99
-        </Text>
-      </View>
-      <View
-        accessibilityElementsHidden={true}
-        importantForAccessibility="no-hide-descendants"
-        style={
-          {
-            "flexDirection": "row",
-            "height": 0,
-            "position": "absolute",
-            "width": 750,
-          }
-        }
-      >
         <View
-          collapsable={false}
+          onLayout={[Function]}
+          style={
+            {
+              "backgroundColor": "#44e858",
+              "borderColor": "transparent",
+              "borderRadius": 100,
+              "borderWidth": 0,
+              "justifyContent": "center",
+              "minHeight": 24,
+              "minWidth": 24,
+              "paddingHorizontal": 8,
+            }
+          }
         >
           <Text
+            accessible={false}
+            importantForAccessibility="no"
             numberOfLines={1}
-            onLayout={[Function]}
             style={
               {
                 "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 12,
+                "fontWeight": 400,
                 "includeFontPadding": false,
+                "letterSpacing": 0,
+                "textAlign": "center",
                 "verticalAlign": "middle",
               }
             }
@@ -2019,6 +1954,9 @@ exports[`TabItem component tests label, icon, badge 1`] = `
       label
     </Text>
     <View
+      accessibilityLabel="99"
+      accessibilityRole="text"
+      accessible={true}
       style={
         [
           {
@@ -2029,64 +1967,48 @@ exports[`TabItem component tests label, icon, badge 1`] = `
       }
     >
       <View
+        accessible={false}
         style={
           [
             {
-              "backgroundColor": "#44e858",
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+              "overflow": "scroll",
             },
             {
-              "borderRadius": 1600,
-              "height": 24,
-              "justifyContent": "center",
-              "paddingHorizontal": 8,
+              "minWidth": undefined,
             },
           ]
         }
       >
-        <Text
-          numberOfLines={1}
-          style={
-            [
-              {
-                "color": "#2b2e33",
-                "fontFamily": "TT Fellows",
-                "fontSize": 12,
-                "includeFontPadding": false,
-                "verticalAlign": "middle",
-              },
-              {
-                "minWidth": undefined,
-              },
-            ]
-          }
-        >
-          99
-        </Text>
-      </View>
-      <View
-        accessibilityElementsHidden={true}
-        importantForAccessibility="no-hide-descendants"
-        style={
-          {
-            "flexDirection": "row",
-            "height": 0,
-            "position": "absolute",
-            "width": 750,
-          }
-        }
-      >
         <View
-          collapsable={false}
+          onLayout={[Function]}
+          style={
+            {
+              "backgroundColor": "#44e858",
+              "borderColor": "transparent",
+              "borderRadius": 100,
+              "borderWidth": 0,
+              "justifyContent": "center",
+              "minHeight": 24,
+              "minWidth": 24,
+              "paddingHorizontal": 8,
+            }
+          }
         >
           <Text
+            accessible={false}
+            importantForAccessibility="no"
             numberOfLines={1}
-            onLayout={[Function]}
             style={
               {
                 "color": "#2b2e33",
                 "fontFamily": "TT Fellows",
                 "fontSize": 12,
+                "fontWeight": 400,
                 "includeFontPadding": false,
+                "letterSpacing": 0,
+                "textAlign": "center",
                 "verticalAlign": "middle",
               }
             }
@@ -2460,6 +2382,9 @@ exports[`Tabs component tests disabled 1`] = `
         Third Tab
       </Text>
       <View
+        accessibilityLabel="0"
+        accessibilityRole="text"
+        accessible={true}
         style={
           [
             {
@@ -2470,64 +2395,48 @@ exports[`Tabs component tests disabled 1`] = `
         }
       >
         <View
+          accessible={false}
           style={
             [
               {
-                "backgroundColor": "#f47f77",
+                "alignItems": "flex-start",
+                "flexDirection": "row",
+                "overflow": "scroll",
               },
               {
-                "borderRadius": 1600,
-                "height": 24,
-                "justifyContent": "center",
-                "paddingHorizontal": 8,
+                "minWidth": undefined,
               },
             ]
           }
         >
-          <Text
-            numberOfLines={1}
-            style={
-              [
-                {
-                  "color": "#2b2e33",
-                  "fontFamily": "TT Fellows",
-                  "fontSize": 12,
-                  "includeFontPadding": false,
-                  "verticalAlign": "middle",
-                },
-                {
-                  "minWidth": undefined,
-                },
-              ]
-            }
-          >
-            0
-          </Text>
-        </View>
-        <View
-          accessibilityElementsHidden={true}
-          importantForAccessibility="no-hide-descendants"
-          style={
-            {
-              "flexDirection": "row",
-              "height": 0,
-              "position": "absolute",
-              "width": 750,
-            }
-          }
-        >
           <View
-            collapsable={false}
+            onLayout={[Function]}
+            style={
+              {
+                "backgroundColor": "#fbacaa",
+                "borderColor": "transparent",
+                "borderRadius": 100,
+                "borderWidth": 0,
+                "justifyContent": "center",
+                "minHeight": 24,
+                "minWidth": 24,
+                "paddingHorizontal": 8,
+              }
+            }
           >
             <Text
+              accessible={false}
+              importantForAccessibility="no"
               numberOfLines={1}
-              onLayout={[Function]}
               style={
                 {
-                  "color": "#2b2e33",
+                  "color": "#45120e",
                   "fontFamily": "TT Fellows",
                   "fontSize": 12,
+                  "fontWeight": 400,
                   "includeFontPadding": false,
+                  "letterSpacing": 0,
+                  "textAlign": "center",
                   "verticalAlign": "middle",
                 }
               }
@@ -2917,6 +2826,9 @@ exports[`Tabs component tests normal 1`] = `
         Third Tab
       </Text>
       <View
+        accessibilityLabel="0"
+        accessibilityRole="text"
+        accessible={true}
         style={
           [
             {
@@ -2927,64 +2839,48 @@ exports[`Tabs component tests normal 1`] = `
         }
       >
         <View
+          accessible={false}
           style={
             [
               {
-                "backgroundColor": "#f47f77",
+                "alignItems": "flex-start",
+                "flexDirection": "row",
+                "overflow": "scroll",
               },
               {
-                "borderRadius": 1600,
-                "height": 24,
-                "justifyContent": "center",
-                "paddingHorizontal": 8,
+                "minWidth": undefined,
               },
             ]
           }
         >
-          <Text
-            numberOfLines={1}
-            style={
-              [
-                {
-                  "color": "#2b2e33",
-                  "fontFamily": "TT Fellows",
-                  "fontSize": 12,
-                  "includeFontPadding": false,
-                  "verticalAlign": "middle",
-                },
-                {
-                  "minWidth": undefined,
-                },
-              ]
-            }
-          >
-            0
-          </Text>
-        </View>
-        <View
-          accessibilityElementsHidden={true}
-          importantForAccessibility="no-hide-descendants"
-          style={
-            {
-              "flexDirection": "row",
-              "height": 0,
-              "position": "absolute",
-              "width": 750,
-            }
-          }
-        >
           <View
-            collapsable={false}
+            onLayout={[Function]}
+            style={
+              {
+                "backgroundColor": "#fbacaa",
+                "borderColor": "transparent",
+                "borderRadius": 100,
+                "borderWidth": 0,
+                "justifyContent": "center",
+                "minHeight": 24,
+                "minWidth": 24,
+                "paddingHorizontal": 8,
+              }
+            }
           >
             <Text
+              accessible={false}
+              importantForAccessibility="no"
               numberOfLines={1}
-              onLayout={[Function]}
               style={
                 {
-                  "color": "#2b2e33",
+                  "color": "#45120e",
                   "fontFamily": "TT Fellows",
                   "fontSize": 12,
+                  "fontWeight": 400,
                   "includeFontPadding": false,
+                  "letterSpacing": 0,
+                  "textAlign": "center",
                   "verticalAlign": "middle",
                 }
               }

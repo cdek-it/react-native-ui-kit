@@ -1690,6 +1690,9 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
       testID="Avatar.badgeInnerContainer"
     >
       <View
+        accessibilityLabel="12"
+        accessibilityRole="text"
+        accessible={true}
         style={
           [
             {
@@ -1700,64 +1703,48 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
         }
       >
         <View
+          accessible={false}
           style={
             [
               {
-                "backgroundColor": "#44e858",
+                "alignItems": "flex-start",
+                "flexDirection": "row",
+                "overflow": "scroll",
               },
               {
-                "borderRadius": 1600,
-                "height": 24,
-                "justifyContent": "center",
-                "paddingHorizontal": 8,
+                "minWidth": undefined,
               },
             ]
           }
         >
-          <Text
-            numberOfLines={1}
-            style={
-              [
-                {
-                  "color": "#2b2e33",
-                  "fontFamily": "TT Fellows",
-                  "fontSize": 12,
-                  "includeFontPadding": false,
-                  "verticalAlign": "middle",
-                },
-                {
-                  "minWidth": undefined,
-                },
-              ]
-            }
-          >
-            12
-          </Text>
-        </View>
-        <View
-          accessibilityElementsHidden={true}
-          importantForAccessibility="no-hide-descendants"
-          style={
-            {
-              "flexDirection": "row",
-              "height": 0,
-              "position": "absolute",
-              "width": 750,
-            }
-          }
-        >
           <View
-            collapsable={false}
+            onLayout={[Function]}
+            style={
+              {
+                "backgroundColor": "#44e858",
+                "borderColor": "transparent",
+                "borderRadius": 100,
+                "borderWidth": 0,
+                "justifyContent": "center",
+                "minHeight": 24,
+                "minWidth": 24,
+                "paddingHorizontal": 8,
+              }
+            }
           >
             <Text
+              accessible={false}
+              importantForAccessibility="no"
               numberOfLines={1}
-              onLayout={[Function]}
               style={
                 {
                   "color": "#2b2e33",
                   "fontFamily": "TT Fellows",
                   "fontSize": 12,
+                  "fontWeight": 400,
                   "includeFontPadding": false,
+                  "letterSpacing": 0,
+                  "textAlign": "center",
                   "verticalAlign": "middle",
                 }
               }
