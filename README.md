@@ -2,6 +2,8 @@
 
 Репозиторий UI kit на основе Prime Faces, Prime Flex для React Native
 
+Документация компонентов: [Поля ввода](src/components/Input/Input.md)
+
 ## Installation
 
 **Yarn**
