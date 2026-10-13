@@ -4,6 +4,7 @@
 
 Документация компонентов:
 
+- [Поля ввода](src/components/Input/Input.md)
 - [Skeleton](src/components/Skeleton/Skeleton.md)
 
 ## Installation

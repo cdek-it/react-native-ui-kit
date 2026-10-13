@@ -2,6 +2,7 @@ import { useArgs } from '@storybook/preview-api'
 import type { StoryObj } from '@storybook/react'
 import { useCallback, useEffect, useState } from 'react'
 
+import { inputDocumentationNotes } from '../../../../.storybook/inputDocumentation'
 import {
   getInputLabelProps,
   inputLabelControls,
@@ -62,6 +63,7 @@ const meta: InputStoryMeta<PasswordProps, StoryArgs> = {
     onChangeText: { action: 'onChangeText' },
   },
   parameters: {
+    notes: inputDocumentationNotes.Password,
     controls: {
       exclude: [
         'onChangeText',
