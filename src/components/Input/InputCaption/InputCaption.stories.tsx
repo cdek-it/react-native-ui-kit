@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
+import { inputDocumentationNotes } from '../../../../.storybook/inputDocumentation'
+
 import { InputCaption } from './InputCaption'
 
 const meta: Meta<typeof InputCaption> = {
@@ -14,7 +16,10 @@ const meta: Meta<typeof InputCaption> = {
     },
     showIcon: { control: 'boolean' },
   },
-  parameters: { controls: { include: ['children', 'variant', 'showIcon'] } },
+  parameters: {
+    notes: inputDocumentationNotes.InputCaption,
+    controls: { include: ['children', 'variant', 'showIcon'] },
+  },
   render: (args) => <InputCaption {...args} />,
 }
 

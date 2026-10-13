@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from 'react'
 
 import { Alert } from 'react-native'
 
+import { inputDocumentationNotes } from '../../../../.storybook/inputDocumentation'
 import {
   getInputLabelProps,
   inputLabelControls,
@@ -99,6 +100,7 @@ const meta = {
     onChangeText: { action: 'onChangeText' },
   },
   parameters: {
+    notes: inputDocumentationNotes.InputGroup,
     controls: {
       exclude: [
         'onChangeText',
