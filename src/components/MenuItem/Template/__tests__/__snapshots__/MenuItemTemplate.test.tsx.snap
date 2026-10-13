@@ -195,6 +195,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
               </RNSVGGroup>
             </RNSVGSvgView>
             <View
+              accessibilityRole="text"
+              accessible={false}
               onLayout={[Function]}
               style={
                 [
@@ -220,7 +222,9 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
                       "backgroundColor": "#f47f77",
                     },
                     {
-                      "borderRadius": 8,
+                      "borderColor": "transparent",
+                      "borderRadius": 1600,
+                      "borderWidth": 0,
                       "height": 8,
                       "width": 8,
                     },
@@ -1804,6 +1808,8 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
               </RNSVGGroup>
             </RNSVGSvgView>
             <View
+              accessibilityRole="text"
+              accessible={false}
               onLayout={[Function]}
               style={
                 [
@@ -1829,7 +1835,9 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
                       "backgroundColor": "#facb75",
                     },
                     {
-                      "borderRadius": 8,
+                      "borderColor": "transparent",
+                      "borderRadius": 1600,
+                      "borderWidth": 0,
                       "height": 8,
                       "width": 8,
                     },

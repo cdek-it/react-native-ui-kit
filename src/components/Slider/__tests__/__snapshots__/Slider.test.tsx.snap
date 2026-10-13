@@ -18,7 +18,7 @@ exports[`Slider snapshots default 1`] = `
     style={
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 14,
+        "borderRadius": 12,
         "height": 4,
         "justifyContent": "center",
         "position": "relative",
@@ -46,7 +46,7 @@ exports[`Slider snapshots default 1`] = `
           [
             {
               "backgroundColor": "#2b2e33",
-              "borderRadius": 14,
+              "borderRadius": 12,
               "height": 4,
               "position": "absolute",
             },
@@ -58,7 +58,7 @@ exports[`Slider snapshots default 1`] = `
         [
           {
             "backgroundColor": "#2b2e33",
-            "borderRadius": 14,
+            "borderRadius": 12,
             "height": 4,
             "position": "absolute",
           },
@@ -149,7 +149,7 @@ exports[`Slider snapshots disabled = false, range = false 1`] = `
     style={
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 14,
+        "borderRadius": 12,
         "height": 4,
         "justifyContent": "center",
         "position": "relative",
@@ -177,7 +177,7 @@ exports[`Slider snapshots disabled = false, range = false 1`] = `
           [
             {
               "backgroundColor": "#2b2e33",
-              "borderRadius": 14,
+              "borderRadius": 12,
               "height": 4,
               "position": "absolute",
             },
@@ -189,7 +189,7 @@ exports[`Slider snapshots disabled = false, range = false 1`] = `
         [
           {
             "backgroundColor": "#2b2e33",
-            "borderRadius": 14,
+            "borderRadius": 12,
             "height": 4,
             "position": "absolute",
           },
@@ -280,7 +280,7 @@ exports[`Slider snapshots disabled = false, range = true 1`] = `
     style={
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 14,
+        "borderRadius": 12,
         "height": 4,
         "justifyContent": "center",
         "position": "relative",
@@ -308,7 +308,7 @@ exports[`Slider snapshots disabled = false, range = true 1`] = `
           [
             {
               "backgroundColor": "#2b2e33",
-              "borderRadius": 14,
+              "borderRadius": 12,
               "height": 4,
               "position": "absolute",
             },
@@ -320,7 +320,7 @@ exports[`Slider snapshots disabled = false, range = true 1`] = `
         [
           {
             "backgroundColor": "#2b2e33",
-            "borderRadius": 14,
+            "borderRadius": 12,
             "height": 4,
             "position": "absolute",
           },
@@ -468,7 +468,7 @@ exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 
     style={
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 14,
+        "borderRadius": 12,
         "height": 4,
         "justifyContent": "center",
         "position": "relative",
@@ -496,7 +496,7 @@ exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 
           [
             {
               "backgroundColor": "#2b2e33",
-              "borderRadius": 14,
+              "borderRadius": 12,
               "height": 4,
               "position": "absolute",
             },
@@ -508,7 +508,7 @@ exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 
         [
           {
             "backgroundColor": "#2b2e33",
-            "borderRadius": 14,
+            "borderRadius": 12,
             "height": 4,
             "position": "absolute",
           },
@@ -659,7 +659,7 @@ exports[`Slider snapshots disabled = true, range = false 1`] = `
     style={
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 14,
+        "borderRadius": 12,
         "height": 4,
         "justifyContent": "center",
         "position": "relative",
@@ -687,7 +687,7 @@ exports[`Slider snapshots disabled = true, range = false 1`] = `
           [
             {
               "backgroundColor": "#2b2e33",
-              "borderRadius": 14,
+              "borderRadius": 12,
               "height": 4,
               "position": "absolute",
             },
@@ -699,7 +699,7 @@ exports[`Slider snapshots disabled = true, range = false 1`] = `
         [
           {
             "backgroundColor": "#2b2e33",
-            "borderRadius": 14,
+            "borderRadius": 12,
             "height": 4,
             "position": "absolute",
           },
@@ -793,7 +793,7 @@ exports[`Slider snapshots disabled = true, range = true 1`] = `
     style={
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 14,
+        "borderRadius": 12,
         "height": 4,
         "justifyContent": "center",
         "position": "relative",
@@ -821,7 +821,7 @@ exports[`Slider snapshots disabled = true, range = true 1`] = `
           [
             {
               "backgroundColor": "#2b2e33",
-              "borderRadius": 14,
+              "borderRadius": 12,
               "height": 4,
               "position": "absolute",
             },
@@ -833,7 +833,7 @@ exports[`Slider snapshots disabled = true, range = true 1`] = `
         [
           {
             "backgroundColor": "#2b2e33",
-            "borderRadius": 14,
+            "borderRadius": 12,
             "height": 4,
             "position": "absolute",
           },
@@ -984,7 +984,7 @@ exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 8
     style={
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 14,
+        "borderRadius": 12,
         "height": 4,
         "justifyContent": "center",
         "position": "relative",
@@ -1012,7 +1012,7 @@ exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 8
           [
             {
               "backgroundColor": "#2b2e33",
-              "borderRadius": 14,
+              "borderRadius": 12,
               "height": 4,
               "position": "absolute",
             },
@@ -1024,7 +1024,7 @@ exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 8
         [
           {
             "backgroundColor": "#2b2e33",
-            "borderRadius": 14,
+            "borderRadius": 12,
             "height": 4,
             "position": "absolute",
           },

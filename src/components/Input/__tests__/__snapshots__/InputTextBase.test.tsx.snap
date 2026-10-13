@@ -25,7 +25,7 @@ exports[`InputTextBase component functionality tests should pass args to custom 
         "bottom": 0,
         "left": 0,
         "padding": 0,
-        "paddingHorizontal": 14,
+        "paddingHorizontal": 10,
         "position": "absolute",
         "right": 0,
         "top": 0,

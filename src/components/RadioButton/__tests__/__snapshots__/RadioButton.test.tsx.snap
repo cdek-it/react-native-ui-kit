@@ -37,7 +37,7 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = danger
       {
         "alignItems": "center",
         "backgroundColor": "#ffffff",
-        "borderColor": "#f47f77",
+        "borderColor": "#db3424",
         "borderRadius": 1600,
         "borderWidth": 1,
         "height": 24,
@@ -64,7 +64,7 @@ exports[`RadioButton snapshots checked = false, disabled = false, state = danger
         {
           "alignItems": "center",
           "backgroundColor": "#ffffff",
-          "borderColor": "#f47f77",
+          "borderColor": "#db3424",
           "borderRadius": 1600,
           "borderWidth": 1,
           "height": 24,
