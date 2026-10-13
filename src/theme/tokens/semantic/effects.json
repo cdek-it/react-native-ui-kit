@@ -47,5 +47,5 @@
       "contrast": "0px 4px 8px 0px rgba(0, 0, 0, 0.0400)"
     }
   },
-  "focusRing": { "shadow": "inset 0 0 0 4px #d4fedc" }
+  "focusRing": { "shadow": "inset 0 0 0 2px #d4fedc" }
 }
