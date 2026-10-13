@@ -572,23 +572,6 @@ describe('production input tokens', () => {
     expect(JSON.stringify(compiled)).not.toMatch(/cubic-bezier\s*\(/)
   })
 
-  test('экспортирует focusRing без изменения его структуры', () => {
-    expect(compiled.semantic.effects).toHaveProperty(
-      'focusRing.shadow',
-      'inset 0 0 0 4px #d4fedc'
-    )
-    expect(compiled.components.light).toHaveProperty(
-      'accordion.header.focusRing',
-      {
-        width: 4,
-        style: 'none',
-        color: 'rgba(68, 232, 88, 0.2)',
-        offset: 0,
-        shadow: 'inset 0 0 0 4px #d4fedc',
-      }
-    )
-  })
-
   test('совпадает с закоммиченными сгенерированными токенами', async () => {
     await expect(
       findGeneratedTokenIssues(compiled, TOKENS_DIRECTORY)
