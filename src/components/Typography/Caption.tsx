@@ -77,6 +77,7 @@ const styles = StyleSheet.create(({ semantic, fonts }) => ({
   disabled: { opacity: semantic.effects.opacity[60] },
   withIconContainer: {
     flexDirection: 'row',
+    alignItems: 'center',
     gap: semantic.dimension.space[100],
   },
   icon: {
