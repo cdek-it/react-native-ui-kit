@@ -1,18 +1,19 @@
-import { memo, useMemo } from 'react'
+import { memo } from 'react'
 import { View } from 'react-native'
 
 import { StyleSheet } from 'react-native-unistyles'
 
-import { Badge } from '../Badge'
+import { Badge, type BadgeProps } from '../Badge'
 
-import { BaseButton } from './BaseButton'
+import { BaseButton } from './internal/BaseButton'
+import { adaptButtonProps } from './internal/deprecated/adaptButtonProps'
+import { getButtonStyles } from './internal/getButtonStyles'
 import type { ButtonBadgeProps, ButtonBaseVariant, ButtonProps } from './types'
-import { ButtonVariantContext } from './utils/ButtonVariantContext'
 
 /**
  * Button component with badge
  * @param size - button size
- * @param shape - button shape
+ * @param rounded - rounded corners
  * @param loading - button loading state
  * @param variant - button variant
  * @param disabled - button disabled state
@@ -28,41 +29,28 @@ import { ButtonVariantContext } from './utils/ButtonVariantContext'
 export const ButtonBadge = memo<
   ButtonProps<ButtonBaseVariant> & ButtonBadgeProps
 >(({ badgeLabel, badgeSeverity, variant = 'primary', ...props }) => {
-  const variantContextValue = useMemo(() => ({ variant }), [variant])
-
-  const badgeCommonProps = useMemo(
-    () => ({ severity: badgeSeverity, testID: ButtonBadgeTestId.badge }),
-    [badgeSeverity]
-  )
+  const badgeCommonProps = {
+    severity: badgeSeverity,
+    testID: ButtonBadgeTestId.badge,
+  }
+  const badgeProps: BadgeProps = badgeLabel
+    ? { ...badgeCommonProps, children: badgeLabel, style: styles.badge }
+    : { ...badgeCommonProps, dot: true, style: styles.badgeDot }
 
   return (
-    <ButtonVariantContext.Provider value={variantContextValue}>
-      <View style={styles.root}>
-        <View
-          style={[
-            styles.contentContainer,
-            props.iconOnly && styles.iconOnlyContainer,
-          ]}
-        >
-          <BaseButton variant={variant} {...props} />
+    <View style={styles.container}>
+      <BaseButton
+        resolveStyles={getButtonStyles(variant)}
+        {...adaptButtonProps(props)}
+      />
 
-          {badgeLabel ? (
-            <Badge {...badgeCommonProps} style={styles.badge}>
-              {badgeLabel}
-            </Badge>
-          ) : (
-            <Badge {...badgeCommonProps} dot style={styles.badgeDot} />
-          )}
-        </View>
-      </View>
-    </ButtonVariantContext.Provider>
+      <Badge {...badgeProps} />
+    </View>
   )
 })
 
 const styles = StyleSheet.create(() => ({
-  root: { flexDirection: 'row' },
-  contentContainer: { flex: 1 },
-  iconOnlyContainer: { flex: 0 },
+  container: { alignSelf: 'flex-start' },
   badgeDot: { position: 'absolute', top: 0, right: -0.5 },
   badge: {
     position: 'absolute',

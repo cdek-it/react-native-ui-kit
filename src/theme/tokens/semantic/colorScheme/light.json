@@ -1,0 +1,229 @@
+{
+  "color": {
+    "fg": {
+      "default": "#2b2e33",
+      "hover": "#56595f",
+      "active": "#181a1f",
+      "focus": "#2b2e33",
+      "muted": "#85888e",
+      "subtle": "#6d7076",
+      "brand": {
+        "default": "#44e858",
+        "hover": "#1dc831",
+        "active": "#168322",
+        "disabled": "#aafbb7",
+        "visited": "#12611b",
+        "muted": "#77f48a"
+      },
+      "inverse": {
+        "default": "#ffffff",
+        "hover": "#ffffff",
+        "active": "#ffffff",
+        "focus": "#ffffff",
+        "muted": "rgba(255, 255, 255, 0.7000)"
+      },
+      "status": {
+        "danger": {
+          "default": "#e85244",
+          "hover": "#db3424",
+          "active": "#8d2218",
+          "disabled": "#fbacaa",
+          "visited": "#611912",
+          "muted": "#f47f77"
+        },
+        "info": {
+          "default": "#4496e8",
+          "hover": "#1e76cd",
+          "active": "#18538d",
+          "disabled": "#aad7fb",
+          "visited": "#123a61",
+          "muted": "#77baf4"
+        },
+        "warning": {
+          "default": "#f5b83d",
+          "hover": "#dc9710",
+          "active": "#9d6d0e",
+          "disabled": "#fddeaa",
+          "visited": "#6d4c0b",
+          "muted": "#facb75"
+        },
+        "success": {
+          "default": "#44e858",
+          "hover": "#1dc831",
+          "active": "#168322",
+          "disabled": "#aafbb7",
+          "visited": "#12611b",
+          "muted": "#77f48a"
+        },
+        "help": {
+          "default": "#a855f7",
+          "hover": "#9333ea",
+          "active": "#7e22ce",
+          "disabled": "#d8b4fe",
+          "visited": "#6b21a8",
+          "muted": "#c084fc"
+        }
+      },
+      "on": {
+        "brand": {
+          "default": "#2b2e33",
+          "hover": "#2b2e33",
+          "active": "#2b2e33"
+        },
+        "fill": {
+          "default": "#ffffff",
+          "hover": "#ffffff",
+          "active": "#ffffff",
+          "muted": "#e2e2e4"
+        },
+        "status": {
+          "danger": { "default": "#45120e", "hover": "#3b100c" },
+          "info": { "default": "#0e2a45", "hover": "#0c243b" },
+          "warning": { "default": "#4f3709", "hover": "#453008" },
+          "success": { "default": "#0e4514", "hover": "#0c3b11" },
+          "help": { "default": "#581c87", "hover": "#3b0764" }
+        }
+      }
+    },
+    "bg": {
+      "status": {
+        "danger": {
+          "weak": {
+            "default": "#fffafa",
+            "hover": "#fff0f0",
+            "active": "#fed4d4"
+          },
+          "strong": {
+            "default": "#fbacaa",
+            "hover": "#f47f77",
+            "active": "#e85244"
+          }
+        },
+        "info": {
+          "weak": {
+            "default": "#fafdff",
+            "hover": "#f0f9ff",
+            "active": "#d4ecfe"
+          },
+          "strong": {
+            "default": "#aad7fb",
+            "hover": "#77baf4",
+            "active": "#4496e8"
+          }
+        },
+        "warning": {
+          "weak": {
+            "default": "#fffdfa",
+            "hover": "#fff9f0",
+            "active": "#ffeed4"
+          },
+          "strong": {
+            "default": "#fddeaa",
+            "hover": "#facb75",
+            "active": "#f5b83d"
+          }
+        },
+        "success": {
+          "weak": {
+            "default": "#fafffb",
+            "hover": "#f0fff3",
+            "active": "#d4fedc"
+          },
+          "strong": {
+            "default": "#aafbb7",
+            "hover": "#77f48a",
+            "active": "#44e858"
+          }
+        },
+        "help": {
+          "weak": {
+            "default": "#faf5ff",
+            "hover": "#f3e8ff",
+            "active": "#e9d5ff"
+          },
+          "strong": {
+            "default": "#d8b4fe",
+            "hover": "#c084fc",
+            "active": "#a855f7"
+          }
+        }
+      },
+      "brand": {
+        "weak": { "hover": "#fafffb", "active": "#f0fff3" },
+        "strong": {
+          "default": "#44e858",
+          "hover": "#1dc831",
+          "active": "#168322"
+        }
+      },
+      "surface": {
+        "canvas": {
+          "default": "#f0f0f1",
+          "hover": "#e2e2e4",
+          "active": "#cecfd2",
+          "selected": "#e2e2e4"
+        },
+        "default": {
+          "default": "#ffffff",
+          "hover": "#fafafa",
+          "active": "#f0f0f1",
+          "selected": "#fafafa"
+        },
+        "raised": {
+          "default": "#ffffff",
+          "hover": "#fafafa",
+          "active": "#f0f0f1",
+          "selected": "#fafafa"
+        },
+        "overlay": { "default": "#ffffff", "hover": "#fafafa" },
+        "backdrop": "rgba(0, 0, 0, 0.3000)"
+      },
+      "neutral": {
+        "weak": {
+          "default": "#f0f0f1",
+          "hover": "#e2e2e4",
+          "active": "#cecfd2",
+          "disabled": "#e2e2e4"
+        },
+        "medium": {
+          "default": "#e2e2e4",
+          "hover": "#cecfd2",
+          "active": "#a2a5a9",
+          "strong": "#85888e"
+        },
+        "strong": {
+          "default": "#2b2e33",
+          "hover": "#404348",
+          "active": "#56595f",
+          "selected": "#2b2e33"
+        }
+      }
+    },
+    "border": {
+      "focus": "rgba(68, 232, 88, 0.2)",
+      "neutral": {
+        "default": "#e2e2e4",
+        "strong": "#cecfd2",
+        "bold": { "default": "#2b2e33", "hover": "#404348" },
+        "inverse": "#ffffff"
+      },
+      "brand": {
+        "subtle": "#d4fedc",
+        "default": "#44e858",
+        "strong": "#1dc831"
+      },
+      "status": {
+        "danger": {
+          "subtle": "#f47f77",
+          "default": "#e85244",
+          "strong": "#db3424",
+          "focus": "rgba(232, 82, 68, 0.2)"
+        },
+        "info": { "default": "#4496e8", "strong": "#1e76cd" },
+        "warning": { "default": "#f5b83d", "strong": "#dc9710" },
+        "success": { "default": "#44e858", "strong": "#1dc831" },
+        "help": { "strong": "#9333ea" }
+      }
+    }
+  }
+}

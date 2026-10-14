@@ -100,10 +100,10 @@ export const Rating = memo<RatingProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme }) => ({
+const styles = StyleSheet.create(({ components }) => ({
   container: {
     flexDirection: 'row',
-    gap: theme.General.inlineSpacing,
+    gap: components.rating.root.gap,
     alignItems: 'center',
   },
 }))

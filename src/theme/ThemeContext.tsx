@@ -4,9 +4,9 @@ import { StyleSheet, UnistylesRuntime } from 'react-native-unistyles'
 
 import { SkeletonContextProvider } from '../utils/SkeletonContext'
 
-import { darkTheme } from './darkTheme'
-import { lightTheme } from './lightTheme'
-import { type FontsConfig, ThemeVariant } from './types'
+import { applyFontConfig, type FontsConfig } from './legacyTokens'
+import { darkTheme, lightTheme } from './themes'
+import { ThemeVariant } from './types'
 
 StyleSheet.configure({
   settings: { initialTheme: 'light' },
@@ -42,8 +42,12 @@ export const ThemeContextProvider = ({
     UnistylesRuntime.setTheme(THEME_NAME_MAP[initialTheme])
 
     if (fonts) {
-      UnistylesRuntime.updateTheme('light', (t) => ({ ...t, fonts }))
-      UnistylesRuntime.updateTheme('dark', (t) => ({ ...t, fonts }))
+      UnistylesRuntime.updateTheme('light', (theme) =>
+        applyFontConfig(theme, fonts)
+      )
+      UnistylesRuntime.updateTheme('dark', (theme) =>
+        applyFontConfig(theme, fonts)
+      )
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- initial* props применяем только на mount
   }, [])

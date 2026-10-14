@@ -128,7 +128,7 @@ exports[`Dialog component tests basic dialog with title, body and footer 1`] = `
             {
               "backgroundColor": "#ffffff",
               "borderColor": "#e2e2e4",
-              "borderRadius": 14,
+              "borderRadius": 20,
             },
             {
               "maxHeight": 1234,
@@ -143,8 +143,7 @@ exports[`Dialog component tests basic dialog with title, body and footer 1`] = `
         <View
           style={
             {
-              "paddingHorizontal": 21,
-              "paddingVertical": 21,
+              "padding": 24,
             }
           }
         >
@@ -155,8 +154,9 @@ exports[`Dialog component tests basic dialog with title, body and footer 1`] = `
         <View
           style={
             {
-              "paddingBottom": 21,
-              "paddingHorizontal": 21,
+              "paddingBottom": 24,
+              "paddingHorizontal": 24,
+              "paddingTop": 0,
             }
           }
         >
