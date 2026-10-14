@@ -398,7 +398,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.cdek.uikit.prime;
 				PRODUCT_NAME = "CDEKUI";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore ru.cdek.uikit.prime";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore ru.cdek.uikit.prime 1791962578";
 				SWIFT_OBJC_BRIDGING_HEADER = "CDEKUI/CDEKUI-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1";
