@@ -159,7 +159,7 @@ export const AccordionTestIds = {
   separator: 'Separator',
 }
 
-const styles = StyleSheet.create(({ theme, fonts }) => ({
+const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
   component: { width: '100%' },
   header: {
     paddingVertical: theme.Panel.Accordion.accordionHeaderPaddingTopBottom,
@@ -170,7 +170,10 @@ const styles = StyleSheet.create(({ theme, fonts }) => ({
   },
   icon: { width: 17.5, height: 17.5 },
   title: {
-    fontSize: 15.75,
+    flexShrink: 1,
+    fontSize: typography.Size['text-xl'],
+    lineHeight: 26,
+    letterSpacing: -0.5,
     includeFontPadding: false,
     verticalAlign: 'middle',
     fontWeight: 700,
