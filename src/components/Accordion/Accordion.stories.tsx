@@ -81,3 +81,18 @@ type Story = StoryObj<typeof Accordion>
 const AccordionStory: Story = {}
 
 export { AccordionStory as Accordion }
+
+export const Expanded: Story = { args: { isInitiallyExpanded: true } }
+
+export const LongTitle: Story = {
+  args: {
+    title:
+      'Длинный заголовок аккордеона, который занимает несколько строк и остаётся читаемым при раскрытии содержимого',
+    Icon: IconUser,
+    titleExtra: Extras.IconDiamond,
+  },
+}
+
+export const LongTitleExpanded: Story = {
+  args: { ...LongTitle.args, isInitiallyExpanded: true },
+}
