@@ -279,10 +279,13 @@ exports[`Accordion Header elements maximal 1`] = `
       style={
         {
           "color": "#181a1f",
+          "flexShrink": 1,
           "fontFamily": "Noto Sans",
-          "fontSize": 15.75,
+          "fontSize": 17.5,
           "fontWeight": 700,
           "includeFontPadding": false,
+          "letterSpacing": -0.5,
+          "lineHeight": 26,
           "verticalAlign": "middle",
         }
       }
@@ -707,10 +710,13 @@ exports[`Accordion Header elements minimal 1`] = `
       style={
         {
           "color": "#181a1f",
+          "flexShrink": 1,
           "fontFamily": "Noto Sans",
-          "fontSize": 15.75,
+          "fontSize": 17.5,
           "fontWeight": 700,
           "includeFontPadding": false,
+          "letterSpacing": -0.5,
+          "lineHeight": 26,
           "verticalAlign": "middle",
         }
       }
