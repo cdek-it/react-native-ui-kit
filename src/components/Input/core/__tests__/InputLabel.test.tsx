@@ -10,6 +10,36 @@ const components = [
 
 describe('Input: подпись', () => {
   test.each(components)(
+    'передаёт настройки масштабирования обычной подписи в $name',
+    ({ Component }) => {
+      const { getByText, getByLabelText, rerender } = render(
+        <Component allowFontScaling label='Email' maxFontSizeMultiplier={2} />
+      )
+      const label = getByText('Email', { includeHiddenElements: true })
+
+      expect(label).toHaveProp('allowFontScaling', true)
+      expect(label).toHaveProp('maxFontSizeMultiplier', 2)
+      expect(getByLabelText('Email')).toHaveProp('allowFontScaling', true)
+      expect(getByLabelText('Email')).toHaveProp('maxFontSizeMultiplier', 2)
+
+      rerender(
+        <Component
+          allowFontScaling={false}
+          label='Email'
+          maxFontSizeMultiplier={1}
+        />
+      )
+
+      const updatedLabel = getByText('Email', { includeHiddenElements: true })
+
+      expect(updatedLabel).toHaveProp('allowFontScaling', false)
+      expect(updatedLabel).toHaveProp('maxFontSizeMultiplier', 1)
+      expect(getByLabelText('Email')).toHaveProp('allowFontScaling', false)
+      expect(getByLabelText('Email')).toHaveProp('maxFontSizeMultiplier', 1)
+    }
+  )
+
+  test.each(components)(
     'сохраняет видимый label без отдельной остановки скринридера в $name',
     ({ Component }) => {
       const { getByLabelText, getByText, queryByRole, queryByText } = render(

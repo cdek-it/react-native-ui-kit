@@ -10,6 +10,7 @@ import { InputGroupContext } from './InputGroupContext'
 import { InputLabel } from './InputLabel'
 import { styles } from './styles'
 import type { InputLabelProps, InputNativeProps } from './types'
+import { useInputFontScale } from './useInputFontScale'
 import { useInputTextController } from './useInputTextController'
 
 type InputFieldProps = InputNativeProps &
@@ -82,6 +83,7 @@ export const InputField = ({
   const controller = useInputTextController({ ...nativeProps, inputRef: ref })
   const isEditable = !disabled && !readOnly
   const floating = floatLabel !== undefined
+  const fontScale = useInputFontScale(nativeProps)
   const labelText = floatLabel ?? label
   const danger = state === 'danger'
   const { makeTestId } = useMakeTestId(testID)
@@ -112,12 +114,15 @@ export const InputField = ({
         accessible={false}
         disabled={disabled}
         pointerEvents={disabled ? 'none' : 'auto'}
-        style={frameStyle({
-          isFocused: controller.isFocused,
-          isEditable,
-          isDanger: danger,
-          disabled,
-        })}
+        style={[
+          frameStyle({
+            isFocused: controller.isFocused,
+            isEditable,
+            isDanger: danger,
+            disabled,
+          }),
+          floating && styles.floatingFrame(fontScale),
+        ]}
         testID={makeTestId('Frame')}
         onPress={controller.focus}
       >
