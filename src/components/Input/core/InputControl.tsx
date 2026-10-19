@@ -88,10 +88,10 @@ export const InputControl = ({
   const isClearVisible = !!clearable && !!controller.value && isEditable
   const hasActions = isClearVisible || !!action
   const placeholderLayout = usePlaceholderLayout()
-  const floatText = styles.floatText(isDanger, size)
+  const floatText = styles.floatText(isDanger)
   const floatingLabel = useFloatingLabel(active, nativeProps, {
     labelTop: styles.floatLabel.top,
-    reducedTop: styles[size].paddingVertical,
+    reducedTop: styles.floatReduced.top,
     labelPadding: styles.floatLabel.paddingVertical,
     reducedPadding: styles.floatReduced.paddingVertical,
     fontSize: floatText.fontSize,
@@ -106,7 +106,10 @@ export const InputControl = ({
     hasActions && styles.inputWithActions,
     disabled && styles.disabledText,
     isFloating && styles.floatInput,
-    isFloating && { paddingTop: floatingLabel.inputPaddingTop },
+    isFloating &&
+      floatingLabel.fontScale > 1 && {
+        paddingTop: floatingLabel.inputPaddingTop,
+      },
     inputStyle,
   ]
   const { 'aria-label': _ariaLabel, ...inputNativeProps } = nativeProps
@@ -133,7 +136,7 @@ export const InputControl = ({
   }
 
   return (
-    <View style={[styles.control, isFloating && styles.floatControl]}>
+    <View style={styles.control}>
       <View
         style={[
           styles.inputContainer,

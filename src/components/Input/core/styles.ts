@@ -12,6 +12,10 @@ export const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
     borderColor: components.inputtext.root.borderColor,
     backgroundColor: components.inputtext.root.background,
   },
+  floatingFrame: (fontScale: number) => ({
+    minHeight: semantic.dimension.size[1300],
+    height: fontScale <= 1 ? semantic.dimension.size[1300] : undefined,
+  }),
   focused: {
     borderColor: components.inputtext.root.focusBorderColor,
     outlineWidth: components.inputtext.root.focusRing.width,
@@ -71,9 +75,10 @@ export const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
     paddingHorizontal: components.inputtext.extend.extXlg.paddingX,
     paddingVertical: components.inputtext.extend.extXlg.paddingY,
   },
-  floatControl: { minHeight: components.floatlabel.extend.height },
   floatInput: {
-    paddingTop: components.floatlabel.inside.input.paddingTop,
+    fontSize: fonts.fontSize[200],
+    lineHeight: fonts.lineHeight[200],
+    paddingTop: semantic.dimension.space[700],
     paddingBottom: components.floatlabel.inside.input.paddingBottom,
   },
   label: {
@@ -107,13 +112,9 @@ export const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
     top: components.floatlabel.root.positionY,
     paddingVertical: semantic.dimension.space.none,
   },
-  floatText: (isDanger: boolean, size: InputTextSize = 'base') => ({
-    fontSize: {
-      small: components.inputtext.root.sm.fontSize,
-      base: fonts.fontSize[300],
-      large: components.inputtext.root.lg.fontSize,
-      xlarge: components.inputtext.extend.extXlg.fontSize,
-    }[size],
+  floatText: (isDanger: boolean) => ({
+    fontSize: fonts.fontSize[200],
+    lineHeight: fonts.lineHeight[200],
     fontFamily: fonts.fontFamily.base,
     color: isDanger
       ? components.floatlabel.root.invalidColor
@@ -122,9 +123,14 @@ export const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
     flexShrink: 1,
   }),
   floatReduced: {
+    top: semantic.dimension.space[300],
     paddingVertical: semantic.dimension.space.none,
     fontSize: components.floatlabel.root.active.fontSize,
     fontFamily: fonts.fontFamily.base,
+  },
+  floatLabelInfo: {
+    width: semantic.dimension.size[400],
+    height: semantic.dimension.size[400],
   },
   actions: (size: InputTextSize = 'base') => ({
     flexDirection: 'row',
