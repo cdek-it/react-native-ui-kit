@@ -8,6 +8,7 @@ import { inputStrings } from './strings'
 import { styles } from './styles'
 import type { InputLabelInfo, InputTextSize } from './types'
 import type { useFloatingLabel } from './useFloatingLabel'
+import { useInputFontScale } from './useInputFontScale'
 
 interface InputLabelProps extends Pick<
   TextInputProps,
@@ -38,6 +39,7 @@ export const InputLabel = ({
   testID,
   ...textProps
 }: InputLabelProps) => {
+  const fontScale = useInputFontScale(textProps)
   const content = (
     <>
       {floating ? (
@@ -50,7 +52,7 @@ export const InputLabel = ({
               importantForAccessibility='no-hide-descendants'
               pointerEvents='none'
               style={[
-                styles.floatText(isDanger, size),
+                styles.floatText(isDanger),
                 styles.required,
                 floating.animatedTextStyle,
               ]}
@@ -63,11 +65,9 @@ export const InputLabel = ({
             accessibilityElementsHidden
             accessible={false}
             importantForAccessibility='no-hide-descendants'
+            numberOfLines={floating.fontScale > 1 ? undefined : 1}
             pointerEvents='none'
-            style={[
-              styles.floatText(isDanger, size),
-              floating.animatedTextStyle,
-            ]}
+            style={[styles.floatText(isDanger), floating.animatedTextStyle]}
           >
             {label}
           </Animated.Text>
@@ -76,6 +76,7 @@ export const InputLabel = ({
         <>
           {isRequired ? (
             <Text
+              key={`Required${fontScale}`}
               {...textProps}
               accessibilityElementsHidden
               accessible={false}
@@ -87,6 +88,8 @@ export const InputLabel = ({
             </Text>
           ) : null}
           <Text
+            // Native Text сохраняет старые метрики строки после смены Dynamic Type
+            key={`Label${fontScale}`}
             {...textProps}
             accessibilityElementsHidden
             accessible={false}
@@ -99,7 +102,7 @@ export const InputLabel = ({
         </>
       )}
       {labelInfo ? (
-        <View style={styles.labelInfo}>
+        <View style={[styles.labelInfo, floating && styles.floatLabelInfo]}>
           <SvgUniversal
             accessible={false}
             source={IconInfoCircle}

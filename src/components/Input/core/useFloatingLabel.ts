@@ -1,15 +1,13 @@
 import { useCallback, useEffect, useState } from 'react'
-import {
-  type LayoutChangeEvent,
-  type TextInputProps,
-  useWindowDimensions,
-} from 'react-native'
+import type { LayoutChangeEvent, TextInputProps } from 'react-native'
 import {
   interpolate,
   useAnimatedStyle,
   useSharedValue,
   withTiming,
 } from 'react-native-reanimated'
+
+import { useInputFontScale } from './useInputFontScale'
 
 export interface FloatingLabelMetrics {
   labelTop: number
@@ -31,19 +29,10 @@ export const useFloatingLabel = (
   }: Pick<TextInputProps, 'allowFontScaling' | 'maxFontSizeMultiplier'>,
   metrics: FloatingLabelMetrics
 ) => {
-  const { fontScale } = useWindowDimensions()
+  const scale = useInputFontScale({ allowFontScaling, maxFontSizeMultiplier })
   const [labelHeight, setLabelHeight] = useState(0)
   const [containerHeight, setContainerHeight] = useState(0)
   const animation = useSharedValue(0)
-  const scale =
-    allowFontScaling === false
-      ? 1
-      : Math.min(
-          fontScale,
-          maxFontSizeMultiplier && maxFontSizeMultiplier > 0
-            ? maxFontSizeMultiplier
-            : Infinity
-        )
 
   const {
     labelTop,
@@ -100,6 +89,7 @@ export const useFloatingLabel = (
   )
 
   return {
+    fontScale: scale,
     animatedStyle,
     animatedContainerStyle,
     animatedTextStyle,
