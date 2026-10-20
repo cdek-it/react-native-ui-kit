@@ -2,6 +2,10 @@
 
 Репозиторий UI kit на основе Prime Faces, Prime Flex для React Native
 
+Документация компонентов:
+
+- [Tag](src/components/Tag/Tag.md)
+
 ## Installation
 
 **Yarn**
