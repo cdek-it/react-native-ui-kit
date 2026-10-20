@@ -8,6 +8,7 @@
 - [InputGroup](src/components/Input/InputGroup/InputGroup.md)
 - [Password](src/components/Input/Password/Password.md)
 - [Skeleton](src/components/Skeleton/Skeleton.md)
+- [Tag](src/components/Tag/Tag.md)
 
 ## Installation
 
