@@ -72,7 +72,11 @@ export interface InputNativeProps extends Omit<
    * Показывает * у подписи и добавляет «обязательное поле» к имени поля для скринридера
    */
   required?: boolean
-  /** @default 'base' */
+  /**
+   * С floatLabel высота и типографика не зависят от size согласно макету
+   * Увеличенный системный шрифт может увеличивать высоту поля
+   * @default 'base'
+   */
   size?: InputTextSize
   /**
    * Валидация поля: default или danger.
