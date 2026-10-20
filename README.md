@@ -2,6 +2,10 @@
 
 Репозиторий UI kit на основе Prime Faces, Prime Flex для React Native
 
+Документация компонентов:
+
+- [Skeleton](src/components/Skeleton/Skeleton.md)
+
 ## Installation
 
 **Yarn**
