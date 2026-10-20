@@ -9,6 +9,7 @@ import { memo } from 'react'
 import {
   View,
   Text,
+  useWindowDimensions,
   type ViewStyle,
   type TextStyle,
   type StyleProp,
@@ -90,6 +91,8 @@ export const Tag = memo<TagProps>(
     accessibilityLabel,
     ...rest
   }) => {
+    // На iOS пересоздание Text сбрасывает измерения при смене масштаба шрифта.
+    const { fontScale } = useWindowDimensions()
     const resolvedSeverity = severity === 'basic' ? 'primary' : severity
     const colorSchemeKey =
       resolvedSeverity === 'warning' ? 'warn' : resolvedSeverity
@@ -134,6 +137,7 @@ export const Tag = memo<TagProps>(
           <Text
             accessibilityRole='text'
             accessible={!hasAccessibilityLabel}
+            key={fontScale}
             numberOfLines={1}
             style={tagStyles.text}
             testID={TagTestId.text}
