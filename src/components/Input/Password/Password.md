@@ -20,38 +20,27 @@ export function PasswordField() {
 
 ## Props
 
-- `toggleMask` — показывает кнопку переключения видимости; по умолчанию `true`.
-- `clearable` — показывает кнопку очистки; по умолчанию `false`.
+- `toggleMask` — показывает кнопку переключения видимости, по умолчанию `true`.
+- `clearable` — включает очистку непустого редактируемого поля, по умолчанию
+  `false`.
 
 Остальные props, обработчики и `ref` — как у
 [InputText](../InputText/InputText.md). `secureTextEntry` и `multiline`
 исключены из API Password.
 
+Режимы подписей — в разделе
+[«Режимы label»](../InputText/InputText.md#режимы-label).
+
 Полный контракт — [PasswordProps](./types.ts).
 
 ## Автозаполнение
 
-Автозаполнение настраивается нативными props под сценарий приложения:
-
-```tsx
-import { Password } from '@cdek-it/react-native-ui-kit'
-
-export function LoginPasswordField() {
-  return (
-    <Password
-      label='Пароль'
-      autoComplete='current-password'
-      textContentType='password'
-    />
-  )
-}
-```
-
-Для нового пароля доступны `autoComplete='new-password'` и
+Для текущего пароля задайте `autoComplete='current-password'` и
+`textContentType='password'`. Для нового — `autoComplete='new-password'` и
 `textContentType='newPassword'`.
 
 ## Доступность
 
 Кнопка озвучивается как «Показать пароль» или «Скрыть пароль» в зависимости от
-текущего действия. `disabled` отключает поле и кнопку; `readOnly` сохраняет
+текущего действия. `disabled` отключает поле и кнопку. `readOnly` сохраняет
 переключение видимости.

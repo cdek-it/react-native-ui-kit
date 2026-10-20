@@ -4,7 +4,9 @@
 
 Документация компонентов:
 
-- [Поля ввода](src/components/Input/Input.md)
+- [InputText](src/components/Input/InputText/InputText.md)
+- [InputGroup](src/components/Input/InputGroup/InputGroup.md)
+- [Password](src/components/Input/Password/Password.md)
 - [Skeleton](src/components/Skeleton/Skeleton.md)
 
 ## Installation
