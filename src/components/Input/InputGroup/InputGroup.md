@@ -6,17 +6,6 @@
 ## Использование
 
 ```tsx
-import { InputGroup } from '@cdek-it/react-native-ui-kit'
-
-export function PriceField() {
-  return <InputGroup label='Стоимость' rightAddon='₽' />
-}
-```
-
-Строки и числа оформляются автоматически. Для SVG и действий доступен
-[InputGroupAddon](./InputGroupAddon.md):
-
-```tsx
 import { InputGroup, InputGroupAddon } from '@cdek-it/react-native-ui-kit'
 
 export function OrderField({ onSearch }: { onSearch: () => void }) {
@@ -30,16 +19,20 @@ export function OrderField({ onSearch }: { onSearch: () => void }) {
 }
 ```
 
-Дополнения, `label`, `floatLabel` и `caption` необязательны. `onSearch` —
-обработчик приложения.
+Строки и числа оформляются автоматически. Для SVG и действий доступен
+[InputGroupAddon](./InputGroupAddon.md). В примере `onSearch` — обработчик
+приложения.
 
 ## Props
 
-- `leftAddon` — дополнение слева (`ReactNode`).
-- `rightAddon` — дополнение справа (`ReactNode`).
+- `leftAddon` и `rightAddon` — необязательные дополнения слева и справа
+  (`ReactNode`).
 
 Остальные props, обработчики и `ref` — как у
 [InputText](../InputText/InputText.md).
+
+Режимы подписей — в разделе
+[«Режимы label»](../InputText/InputText.md#режимы-label).
 
 Полный контракт — [InputGroupProps](./types.ts).
 
