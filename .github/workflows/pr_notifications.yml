@@ -16,100 +16,91 @@ concurrency:
 jobs:
   notify:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.draft != true
     env:
-      MM_USERS_JSON: "${{ secrets.MM_USERS }}"
-      PR_AUTHOR: "${{ github.event.pull_request.user.login }}"
-      GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      MM_USERS_JSON: ${{ secrets.MM_USERS }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      PR_NUMBER: ${{ github.event.pull_request.number }}
     steps:
-      - name: Timeout
+      - name: Wait for automatic reviewer assignment
+        if: github.event.pull_request.draft != true
         run: sleep 1m
-      - name: Get Available Reviewers
-        run: |
-          AVAILABLE_REVIEWERS_ENTRIES=$(
-            echo "$MM_USERS_JSON" | 
-              jq -c --arg exclude "$PR_AUTHOR" 'to_entries | map(select(.key != $exclude))'
-          )
-          echo "::add-mask::$AVAILABLE_REVIEWERS_ENTRIES"
-          echo "AVAILABLE_REVIEWERS_ENTRIES=$AVAILABLE_REVIEWERS_ENTRIES" >> $GITHUB_ENV
-      - name: Check Requested Reviewers
-        run: |
-          REQUESTED_REVIEWERS_LOGIN_LIST=$(gh pr view ${{ github.event.pull_request.number }} --repo ${{ github.repository }} --json reviewRequests --jq '.reviewRequests | map(select(.login)) | map(.login)')
-          SELECTED_REVIEWER_ENTRY=$(
-            echo "$AVAILABLE_REVIEWERS_ENTRIES" | 
-              jq -c --argjson requested "$REQUESTED_REVIEWERS_LOGIN_LIST" 'first(.[] | select(.key as $gh_login | $requested | index($gh_login)))'
-          )
-          echo "::add-mask::$SELECTED_REVIEWER_ENTRY"
-          echo "SELECTED_REVIEWER_ENTRY=$SELECTED_REVIEWER_ENTRY" >> $GITHUB_ENV
-      - name: Check Last Review
-        run: |
-          if [ -z "$SELECTED_REVIEWER_ENTRY" ]; then
-            LAST_REVIEW=$(gh pr view ${{ github.event.pull_request.number }} --repo ${{ github.repository }} --json reviews --jq '.reviews | last')
-            LAST_REVIEWER_LOGIN=$(echo "$LAST_REVIEW" | jq -r '.author.login')
-            SELECTED_REVIEWER_ENTRY=$(
-              echo $AVAILABLE_REVIEWERS_ENTRIES |
-                jq -c --arg lastReviewerLogin "$LAST_REVIEWER_LOGIN" 'map(select(.key == $lastReviewerLogin)) | first'
-            )
-            echo "::add-mask::$SELECTED_REVIEWER_ENTRY"
-            echo "LAST_REVIEW=$LAST_REVIEW" >> $GITHUB_ENV
 
-            if [[ "$SELECTED_REVIEWER_ENTRY" != "null" ]]; then
-              echo "SELECTED_REVIEWER_ENTRY=$SELECTED_REVIEWER_ENTRY" >> $GITHUB_ENV
-            else
-              echo "Last review check failed"
+      - name: Load Pull Request
+        id: pr
+        shell: bash
+        run: |
+          gh pr view "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" \
+            --json number,url,author,headRefName,state,isDraft,reviewRequests,reviews \
+            > "$RUNNER_TEMP/review-pr.json"
+
+          if ! jq -e '.state == "OPEN" and (.isDraft | not)' "$RUNNER_TEMP/review-pr.json" > /dev/null; then
+            echo "::notice::Уведомления доступны только для открытых PR, готовых к ревью."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Select Reviewer
+        id: reviewer
+        if: steps.pr.outputs.ready == 'true'
+        shell: bash
+        run: |
+          PR_JSON="$RUNNER_TEMP/review-pr.json"
+          PR_AUTHOR=$(jq -r '.author.login' "$PR_JSON")
+          AVAILABLE_REVIEWERS=$(jq -c --arg author "$PR_AUTHOR" \
+            'to_entries | map(select(.key != $author))' <<< "$MM_USERS_JSON")
+          REQUESTED_REVIEWERS=$(jq -c '[.reviewRequests[] | .login // empty]' "$PR_JSON")
+          LAST_REVIEWER=$(jq -r '.reviews | last | .author.login // ""' "$PR_JSON")
+
+          SELECTED_REVIEWER=$(jq -c --argjson requested "$REQUESTED_REVIEWERS" \
+            'map(select(.key as $login | $requested | index($login))) | first' <<< "$AVAILABLE_REVIEWERS")
+          HAS_REQUESTED_REVIEWER=false
+          if [[ "$SELECTED_REVIEWER" != "null" ]]; then
+            HAS_REQUESTED_REVIEWER=true
+          else
+            SELECTED_REVIEWER=$(jq -c --arg login "$LAST_REVIEWER" \
+              'map(select(.key == $login)) | first' <<< "$AVAILABLE_REVIEWERS")
+          fi
+
+          if [[ "$SELECTED_REVIEWER" == "null" ]]; then
+            REVIEWER_COUNT=$(jq 'length' <<< "$AVAILABLE_REVIEWERS")
+            if [[ "$REVIEWER_COUNT" -eq 0 ]]; then
+              echo "::error::В MM_USERS нет доступного ревьюера, кроме автора PR."
+              exit 1
             fi
-          else
-            echo "The reviewer was selected on the previous steps. Skip checking last review"
+            SELECTED_REVIEWER=$(jq -c --argjson index "$((RANDOM % REVIEWER_COUNT))" \
+              '.[$index]' <<< "$AVAILABLE_REVIEWERS")
           fi
 
-      - name: Assign Reviewer
-        run: |
-          if [ -z "$SELECTED_REVIEWER_ENTRY" ]; then
-            AVAILABLE_REVIEWERS_LENGTH=$(echo "$AVAILABLE_REVIEWERS_ENTRIES" | jq 'length')
-            SELECTED_REVIEWER_INDEX=$((RANDOM % AVAILABLE_REVIEWERS_LENGTH))
-            SELECTED_REVIEWER_ENTRY=$(echo "$AVAILABLE_REVIEWERS_ENTRIES" | jq -c --argjson index "$SELECTED_REVIEWER_INDEX" '.[$index]')
-          else
-            echo "The reviewer was selected on the previous steps. Skip assigning a reviewer"
-          fi
-
-          REVIEWER_GH=$(echo "$SELECTED_REVIEWER_ENTRY" | jq -r '.key')
-          REVIEWER_MM=$(echo "$SELECTED_REVIEWER_ENTRY" | jq -r '.value')
-
-          gh pr edit ${{ github.event.pull_request.number }} --repo ${{ github.repository }} --add-reviewer "$REVIEWER_GH"
-
+          echo "::add-mask::$SELECTED_REVIEWER"
+          REVIEWER_GH=$(jq -r '.key' <<< "$SELECTED_REVIEWER")
           echo "::add-mask::$REVIEWER_GH"
-          echo "REVIEWER_GH=$REVIEWER_GH" >> $GITHUB_ENV
+          echo "$SELECTED_REVIEWER" > "$RUNNER_TEMP/review-recipient.json"
 
+          if [[ "$HAS_REQUESTED_REVIEWER" == "false" ]] && \
+            jq -e --arg login "$REVIEWER_GH" \
+              '.reviews | last | .state == "APPROVED" and .author.login == $login' "$PR_JSON" > /dev/null; then
+            echo "::notice::Ревьюер уже одобрил PR."
+            echo "notify=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          gh pr edit "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --add-reviewer "$REVIEWER_GH"
+          echo "notify=true" >> "$GITHUB_OUTPUT"
+
+      - name: Notify Reviewer
+        if: steps.reviewer.outputs.notify == 'true'
+        env:
+          REVIEW_CHAT_WEBHOOK: ${{ secrets.REVIEW_CHAT_WEBHOOK }}
+        shell: bash
+        run: |
+          REVIEWER_MM=$(jq -r '.value' "$RUNNER_TEMP/review-recipient.json")
           echo "::add-mask::$REVIEWER_MM"
-          echo "REVIEWER_MM=$REVIEWER_MM" >> $GITHUB_ENV
-      - name: Check Notification Need
-        run: |
-          PR_STATE=$(echo "$LAST_REVIEW" | jq -r '.state')
-          REVIEWER_LOGIN=$(echo "$LAST_REVIEW" | jq -r '.author.login')
-
-          if [[ "$PR_STATE" == "APPROVED" ]] && [[ "$REVIEWER_LOGIN" == "$REVIEWER_GH" ]]; then
-            NEED_NOTIFY=0
-          else
-            NEED_NOTIFY=1
-          fi
-
-          echo "NEED_NOTIFY=$NEED_NOTIFY" >> $GITHUB_ENV
-      - name: "Notify Reviewer"
-        run: |
-          if [ "$NEED_NOTIFY" -ne 0 ]; then
-            BRANCH_URL="${{ github.event.pull_request.head.repo.html_url }}/tree/${{ github.event.pull_request.head.ref }}"
-
-            MESSAGE="MR [!${{ github.event.pull_request.number }}](${{ github.event.pull_request.html_url }})"
-            MESSAGE+=" от [${{ github.event.pull_request.user.login }} ${USER_NAME}]"
-            MESSAGE+="(${{ github.event.pull_request.user.html_url }})"
-            MESSAGE+="(ветка: [${{ github.event.pull_request.head.ref }}](${BRANCH_URL})) готов на ревью.\n"
-            MESSAGE+="Выбран ревьюер: @${REVIEWER_MM}.\n"
-            MESSAGE+="Ссылка на MR: ${{ github.event.pull_request.html_url }}"
-
-            curl -X POST \
+          jq --arg reviewer "$REVIEWER_MM" --arg server "$GITHUB_SERVER_URL" \
+            '{text: ("PR [#\(.number)](\(.url)) от [\(.author.login)](\($server)/\(.author.login)) " +
+              "(ветка: \(.headRefName)) готов к ревью.\n" +
+              "Ревьюер: @\($reviewer).\nСсылка на PR: \(.url)")}' \
+            "$RUNNER_TEMP/review-pr.json" | \
+            curl --fail-with-body --silent --show-error \
               -H "Content-Type: application/json" \
-              -d "{\"text\": \"$MESSAGE\"}" \
-              "${{ secrets.REVIEW_CHAT_WEBHOOK }}"
-          else
-            echo "Notification is not needed. Skip notification step"
-          fi
+              --data-binary @- "$REVIEW_CHAT_WEBHOOK"
