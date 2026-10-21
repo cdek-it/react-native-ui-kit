@@ -2,7 +2,7 @@ name: PR Notifications
 
 on:
   pull_request_target:
-    branches: [main]
+    branches: [main, 'release/**']
     types: [opened, synchronize, edited, reopened, ready_for_review]
 
 permissions:
