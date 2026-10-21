@@ -4,31 +4,83 @@ on:
   pull_request_target:
     branches: [main, 'release/**']
     types: [opened, synchronize, edited, reopened, ready_for_review]
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'Номер PR'
+        required: true
+        type: string
+      mode:
+        description: 'Режим запуска'
+        required: true
+        default: full
+        type: choice
+        options:
+          - full
+          - notify-only
 
 permissions:
   contents: read
   pull-requests: write
 
-concurrency:
-  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
-  cancel-in-progress: true
-
 jobs:
-  notify:
+  authorize-comment:
+    if: >-
+      github.event_name == 'issue_comment' && github.event.issue.pull_request &&
+      (github.event.comment.body == '/review' || github.event.comment.body ==
+      '/notify')
     runs-on: ubuntu-latest
+    steps:
+      - name: Check Comment Author Permission
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMENT_AUTHOR: ${{ github.event.comment.user.login }}
+        shell: bash
+        run: |
+          PERMISSION=$(gh api "repos/$GITHUB_REPOSITORY/collaborators/$COMMENT_AUTHOR/permission" --jq '.permission')
+          if [[ "$PERMISSION" != "write" && "$PERMISSION" != "admin" ]]; then
+            echo "::error::Команды ревью доступны пользователям с правом записи в репозиторий."
+            exit 1
+          fi
+
+  notify:
+    needs: authorize-comment
+    if: >-
+      !cancelled() && (github.event_name != 'issue_comment' ||
+      needs.authorize-comment.result == 'success')
+    runs-on: ubuntu-latest
+    concurrency:
+      group:
+        ${{ github.workflow }}-${{ inputs.pr_number ||
+        github.event.pull_request.number || github.event.issue.number }}
+      cancel-in-progress: true
     env:
       MM_USERS_JSON: ${{ secrets.MM_USERS }}
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      PR_NUMBER: ${{ github.event.pull_request.number }}
+      PR_NUMBER:
+        ${{ inputs.pr_number || github.event.pull_request.number ||
+        github.event.issue.number }}
+      MODE:
+        ${{ inputs.mode || (github.event_name == 'issue_comment' &&
+        github.event.comment.body == '/notify' && 'notify-only') || 'full' }}
     steps:
       - name: Wait for automatic reviewer assignment
-        if: github.event.pull_request.draft != true
+        if:
+          github.event_name == 'pull_request_target' &&
+          github.event.pull_request.draft != true
         run: sleep 1m
 
       - name: Load Pull Request
         id: pr
         shell: bash
         run: |
+          if [[ ! "$PR_NUMBER" =~ ^[1-9][0-9]*$ ]]; then
+            echo "::error::Укажите положительный номер PR."
+            exit 1
+          fi
+
           gh pr view "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" \
             --json number,url,author,headRefName,state,isDraft,reviewRequests,reviews \
             > "$RUNNER_TEMP/review-pr.json"
@@ -63,6 +115,10 @@ jobs:
           fi
 
           if [[ "$SELECTED_REVIEWER" == "null" ]]; then
+            if [[ "$MODE" == "notify-only" ]]; then
+              echo "::error::Нет текущего или последнего ревьюера из MM_USERS. Запустите режим full."
+              exit 1
+            fi
             REVIEWER_COUNT=$(jq 'length' <<< "$AVAILABLE_REVIEWERS")
             if [[ "$REVIEWER_COUNT" -eq 0 ]]; then
               echo "::error::В MM_USERS нет доступного ревьюера, кроме автора PR."
@@ -77,7 +133,7 @@ jobs:
           echo "::add-mask::$REVIEWER_GH"
           echo "$SELECTED_REVIEWER" > "$RUNNER_TEMP/review-recipient.json"
 
-          if [[ "$HAS_REQUESTED_REVIEWER" == "false" ]] && \
+          if [[ "$GITHUB_EVENT_NAME" == "pull_request_target" && "$HAS_REQUESTED_REVIEWER" == "false" ]] && \
             jq -e --arg login "$REVIEWER_GH" \
               '.reviews | last | .state == "APPROVED" and .author.login == $login' "$PR_JSON" > /dev/null; then
             echo "::notice::Ревьюер уже одобрил PR."
@@ -85,7 +141,9 @@ jobs:
             exit 0
           fi
 
-          gh pr edit "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --add-reviewer "$REVIEWER_GH"
+          if [[ "$MODE" == "full" ]]; then
+            gh pr edit "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --add-reviewer "$REVIEWER_GH"
+          fi
           echo "notify=true" >> "$GITHUB_OUTPUT"
 
       - name: Notify Reviewer
