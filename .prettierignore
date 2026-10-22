@@ -6,3 +6,4 @@ android/app/.cxx
 android/app/build
 android/build
 CHANGELOG.md
+.storybook/storybook.requires.ts
