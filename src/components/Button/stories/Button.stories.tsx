@@ -55,10 +55,10 @@ const meta: Meta<StoryArgs> = {
   parameters: { controls: { exclude: ['badge', 'iconOnly', 'shape'] } },
   render: ({
     showBadge,
-    badgeDot,
-    badgeText,
-    badgeSize,
-    badgeSeverity,
+    'badge.dot': badgeDot,
+    'badge.text': badgeText,
+    'badge.size': badgeSize,
+    'badge.severity': badgeSeverity,
     iconOnly: _iconOnly,
     Icon,
     iconPosition,
@@ -67,10 +67,10 @@ const meta: Meta<StoryArgs> = {
   }) => {
     const badge = createBadge({
       showBadge,
-      badgeDot,
-      badgeText,
-      badgeSize,
-      badgeSeverity,
+      'badge.dot': badgeDot,
+      'badge.text': badgeText,
+      'badge.size': badgeSize,
+      'badge.severity': badgeSeverity,
     })
     const buttonProps: ButtonProps<ButtonBaseVariant> = {
       ...args,
