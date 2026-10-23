@@ -1,21 +1,20 @@
 import { memo, useCallback, useContext, useEffect, useRef } from 'react'
-import { View } from 'react-native'
+import { View, type ViewProps } from 'react-native'
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
 } from 'react-native-reanimated'
 import Svg, { Defs, LinearGradient, Rect, Stop } from 'react-native-svg'
-import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 
 import { StyleSheet } from 'react-native-unistyles'
 
 import { SkeletonContext } from '../../utils/SkeletonContext'
 
-interface SkeletonProps extends ViewProps {}
+export interface SkeletonProps extends Omit<ViewProps, 'onLayout'> {}
 
 /**
  * Используется для отображения контента в момент загрузки
- * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=5241-3731
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=5221-12465
  */
 export const Skeleton = memo<SkeletonProps>(({ style, testID, ...rest }) => {
   const {
@@ -47,6 +46,7 @@ export const Skeleton = memo<SkeletonProps>(({ style, testID, ...rest }) => {
   return (
     <View
       {...rest}
+      accessible={false}
       ref={skeletonRef}
       style={[styles.container, style]}
       testID={testID ?? SkeletonTestId.root}
@@ -60,7 +60,7 @@ export const Skeleton = memo<SkeletonProps>(({ style, testID, ...rest }) => {
         ]}
         testID={SkeletonTestId.animatedView}
       >
-        <Svg testID={SkeletonTestId.svg}>
+        <Svg accessible={false} testID={SkeletonTestId.svg}>
           <Defs>
             <LinearGradient id='gradient' x1='0' x2='1' y1='1' y2='1'>
               <Stop
@@ -87,14 +87,16 @@ export const Skeleton = memo<SkeletonProps>(({ style, testID, ...rest }) => {
   )
 })
 
-const styles = StyleSheet.create(({ border, theme }) => ({
+const styles = StyleSheet.create(({ components: { skeleton } }) => ({
   container: {
-    borderRadius: border.Radius['rounded-lg'],
+    borderRadius: skeleton.root.borderRadius,
     overflow: 'hidden',
-    backgroundColor: theme.Misc.Skeleton.skeletonBg,
+    backgroundColor: skeleton.colorScheme.root.background,
   },
   gradientContainer: { position: 'absolute', height: '100%' },
-  gradientColor: { backgroundColor: theme.Misc.Skeleton.skeletonAnimationBg },
+  gradientColor: {
+    backgroundColor: skeleton.colorScheme.root.animationBackground,
+  },
 }))
 
 export const SkeletonTestId = {

@@ -13,8 +13,12 @@ jest.mock('react-native-worklets', () =>
 )
 
 interface MockedUnistylesModule {
-  StyleSheet: { create: (...args: unknown[]) => unknown }
+  StyleSheet: {
+    configure: jest.Mock<void, [{ themes?: { dark: unknown; light: unknown } }]>
+    create: (...args: unknown[]) => unknown
+  }
   UnistylesRuntime: {
+    getTheme: jest.Mock<unknown, [ThemeName?]>
     miniRuntime: unknown
     setTheme: jest.Mock<void, [ThemeName]>
     updateTheme: jest.Mock<void, [ThemeName, (theme: unknown) => unknown]>
@@ -32,22 +36,27 @@ const unistyles = jest.requireMock(
 // загрузки src/theme (и как следствие — src/utils/SvgUniversal с
 // `withUnistyles(...)` на top-level) в модуле уже стояли наши моки, а не
 // исходные identity-заглушки.
-const themeRef: {
-  current: { darkTheme: unknown; lightTheme: unknown } | null
-} = { current: null }
+const themeRef: { current: { dark: unknown; light: unknown } | null } = {
+  current: null,
+}
 
 const getTheme = (themeName: ThemeName | undefined) =>
-  themeName === 'dark'
-    ? themeRef.current?.darkTheme
-    : themeRef.current?.lightTheme
+  themeName === 'dark' ? themeRef.current?.dark : themeRef.current?.light
 
 const runtime = unistyles.UnistylesRuntime
 
 runtime.themeName = 'light'
+runtime.getTheme = jest.fn(getTheme)
 runtime.setTheme = jest.fn((themeName: ThemeName) => {
   runtime.themeName = themeName
 })
 runtime.updateTheme = jest.fn()
+
+unistyles.StyleSheet.configure = jest.fn(({ themes }) => {
+  if (themes) {
+    themeRef.current = themes
+  }
+})
 
 unistyles.useUnistyles = jest.fn(() => ({
   theme: getTheme(runtime.themeName),
@@ -174,9 +183,14 @@ unistyles.withUnistyles = jest.fn(
   }
 )
 
-themeRef.current = require('./src/theme') as {
+const publicThemes = require('./src/theme') as {
   darkTheme: unknown
   lightTheme: unknown
+}
+
+themeRef.current ??= {
+  dark: publicThemes.darkTheme,
+  light: publicThemes.lightTheme,
 }
 
 generatePropsCombinations = <T>(properties: PropertyCombinations<T>): T[] => {

@@ -53,6 +53,7 @@ export interface SelectButtonItemProps extends Pick<
 /**
  * Дочерний элемент компонента SelectButton. Не используется отдельно от SelectButton.
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=481-4393
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24035-56
  */
 export const SelectButtonItem = memo<SelectButtonItemProps>(
   ({
@@ -127,13 +128,15 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
             {...iconSize}
             source={Icon}
             testID='SelectButtonItem_Icon'
-            uniProps={({ theme }) => ({
-              color: disabled
-                ? theme.Button.Disabled.disabledButtonBorderColor
-                : isSelected
-                  ? theme.Form.SelectButton.selectButtonIconActiveColor
-                  : theme.Form.SelectButton.selectButtonTextColor,
-            })}
+            uniProps={({ components, semantic }) => {
+              return {
+                color: disabled
+                  ? semantic.colorScheme.color.border.neutral.strong
+                  : isSelected
+                    ? components.selectbutton.extend.checkedColor
+                    : semantic.colorScheme.color.fg.muted,
+              }
+            }}
           />
         ) : null}
         <Animated.Text
@@ -153,56 +156,63 @@ export const SelectButtonItem = memo<SelectButtonItemProps>(
   }
 )
 
-const styles = StyleSheet.create(
-  ({ theme, typography, border, spacing, fonts }) => ({
-    container: {
-      flex: 1,
-      flexDirection: 'row',
-      alignItems: 'center',
-      justifyContent: 'center',
-      gap: theme.General.inlineSpacing,
-      borderWidth: border.Width.border,
-      borderColor: 'transparent',
-    },
-    small: { height: theme.Button.Common.buttonHeightSM },
-    base: { height: theme.Button.Common.buttonHeight },
-    large: {
-      height: theme.Button.Common.buttonHeightLG,
-      gap: spacing.Gap['gap-3'],
-    },
-    xlarge: {
-      height: theme.Button.Common.buttonHeightXL,
-      gap: spacing.Gap['gap-3'],
-    },
-    disabledContainer: {
-      borderRadius: theme.Form.SelectButton.selectButtonBorderRadius,
-      borderWidth: 1,
-      borderColor: theme.Button.Disabled.disabledButtonBorderColor,
-    },
-    iconSmall: {
-      width: typography.Size['text-base'],
-      height: typography.Size['text-base'],
-    },
-    iconBase: {
-      width: typography.Size['text-xl'],
-      height: typography.Size['text-xl'],
-    },
-    iconLarge: {
-      width: typography.Size['text-2xl'],
-      height: typography.Size['text-2xl'],
-    },
-    iconXLarge: { width: 28, height: 28 },
-    label: { flexShrink: 1, fontWeight: 600, fontFamily: fonts.primary },
-    labelSmall: { fontSize: typography.Size['text-sm'] },
-    labelBase: { fontSize: typography.Size['text-base'] },
-    labelLarge: { fontSize: typography.Size['text-xl'] },
-    labelXLarge: { fontSize: typography.Size['text-2xl'] },
-    textColor: { color: theme.Form.SelectButton.selectButtonTextColor },
-    checkedTextColor: {
-      color: theme.Form.SelectButton.selectButtonIconActiveColor,
-    },
-    disabledTextColor: {
-      color: theme.Button.Disabled.disabledButtonBorderColor,
-    },
-  })
-)
+// Осознанный обход слоя components: цвет невыбранного пункта — семантическая
+// роль «приглушённый текст». Собственного токена у selectbutton нет, а то же
+// значение приходит в tabs.tab.color и menu.item.color.
+const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
+  container: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: components.selectbutton.extend.gap,
+    borderWidth: semantic.dimension.borderWidth[100],
+    borderColor: 'transparent',
+  },
+  small: { height: semantic.dimension.size[800] },
+  base: { height: semantic.dimension.size[1100] },
+  large: {
+    height: semantic.dimension.size[1300],
+    gap: components.selectbutton.extend.gap,
+  },
+  xlarge: {
+    height: semantic.dimension.size[1400],
+    gap: components.selectbutton.extend.gap,
+  },
+  disabledContainer: {
+    borderRadius: components.selectbutton.extend.ext.borderRadius,
+    borderWidth: semantic.dimension.borderWidth[100],
+    borderColor: semantic.colorScheme.color.border.neutral.strong,
+  },
+  iconSmall: {
+    width: components.selectbutton.extend.iconSize.sm,
+    height: components.selectbutton.extend.iconSize.sm,
+  },
+  iconBase: {
+    width: components.selectbutton.extend.iconSize.md,
+    height: components.selectbutton.extend.iconSize.md,
+  },
+  iconLarge: {
+    width: components.selectbutton.extend.iconSize.lg,
+    height: components.selectbutton.extend.iconSize.lg,
+  },
+  // Токена iconSize для xlarge в дизайн-системе нет — размер взят semantic-ролью.
+  iconXLarge: {
+    width: semantic.dimension.size[800],
+    height: semantic.dimension.size[800],
+  },
+  label: {
+    flexShrink: 1,
+    fontWeight: fonts.fontWeight.demibold,
+    fontFamily: fonts.fontFamily.heading,
+  },
+  labelSmall: { fontSize: fonts.fontSize[100] },
+  labelBase: { fontSize: fonts.fontSize[300] },
+  labelLarge: { fontSize: fonts.fontSize[500] },
+  labelXLarge: { fontSize: fonts.fontSize[600] },
+  textColor: { color: semantic.colorScheme.color.fg.muted },
+  checkedTextColor: { color: components.selectbutton.extend.checkedColor },
+  disabledTextColor: {
+    color: semantic.colorScheme.color.border.neutral.strong,
+  },
+}))

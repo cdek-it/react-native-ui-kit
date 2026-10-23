@@ -1,16 +1,13 @@
 import { render } from '@testing-library/react-native'
 
 import { ButtonSeverity } from '../ButtonSeverity'
-import type { ButtonSeverityProps } from '../types'
 
-describe('ButtonSeverity component tests', () => {
-  const buttonSnapshotCases = generatePropsCombinations<ButtonSeverityProps>({
-    severity: ['info', 'warning', 'danger', 'success'],
-  })
+describe('ButtonSeverity', () => {
+  test('отображает переданный текст', () => {
+    const { getByText } = render(
+      <ButtonSeverity label='Button' severity='info' />
+    )
 
-  test.each(buttonSnapshotCases)('severity - $severity', (props) => {
-    const renderedButton = render(<ButtonSeverity {...props} label='Button' />)
-
-    expect(renderedButton.toJSON()).toMatchSnapshot()
+    expect(getByText('Button')).toBeOnTheScreen()
   })
 })

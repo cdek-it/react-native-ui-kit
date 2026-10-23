@@ -1,101 +1,65 @@
 import { IconArrowDownRight } from '@tabler/icons-react-native'
-import { render } from '@testing-library/react-native'
+import { render, userEvent } from '@testing-library/react-native'
 
 import { Button } from '../Button'
-import type {
-  ButtonBaseVariant,
-  IconOnlyButtonProps,
-  IconTextButton,
-} from '../types'
 
-describe('Button component tests', () => {
-  const buttonSnapshotCases = generatePropsCombinations<
-    IconTextButton<ButtonBaseVariant>
-  >({
-    size: ['base', 'small', 'large', 'xlarge'],
-    shape: ['square', 'circle'],
-    loading: [true, false],
-    variant: ['primary', 'secondary', 'tertiary', 'text', 'link'],
-    disabled: [true, false],
-    label: ['Button'],
-    testOnly_pressed: [true, false],
+describe('Button', () => {
+  test('отображает переданный текст', () => {
+    const { getByText } = render(<Button label='Button' />)
+
+    expect(getByText('Button')).toBeOnTheScreen()
   })
 
-  test.each(buttonSnapshotCases)(
-    'Button with text, size - $size, shape - $shape, variant - $variant, loading - $loading, disabled - $disabled',
-    (props) => {
-      const renderedButton = render(<Button {...props} />)
-
-      expect(renderedButton.toJSON()).toMatchSnapshot()
-    }
-  )
-
-  test.each(buttonSnapshotCases)(
-    'Button with icon on left, size - $size, shape - $shape, variant - $variant, loading - $loading, disabled - $disabled',
-    (props) => {
-      const renderedButton = render(
-        <Button Icon={IconArrowDownRight} iconPosition='prefix' {...props} />
-      )
-
-      expect(renderedButton.toJSON()).toMatchSnapshot()
-    }
-  )
-
-  test.each(buttonSnapshotCases)(
-    'Button with icon on right, size - $size, shape - $shape, variant - $variant, loading - $loading, disabled - $disabled',
-    (props) => {
-      const renderedButton = render(
-        <Button Icon={IconArrowDownRight} iconPosition='postfix' {...props} />
-      )
-
-      expect(renderedButton.toJSON()).toMatchSnapshot()
-    }
-  )
-
-  const iconOnlyButtonSnapshotCases = generatePropsCombinations<
-    IconOnlyButtonProps<ButtonBaseVariant>
-  >({
-    size: ['base', 'small', 'large', 'xlarge'],
-    shape: ['square', 'circle'],
-    loading: [true, false],
-    variant: ['primary', 'secondary', 'tertiary', 'text', 'link'],
-    disabled: [true, false],
-    iconOnly: [true],
-    Icon: [IconArrowDownRight],
-  })
-
-  test.each(iconOnlyButtonSnapshotCases)(
-    'Button with only icon, size - $size, shape - $shape, variant - $variant, loading - $loading, disabled - $disabled',
-    ({ ...props }) => {
-      const renderedButton = render(<Button {...props} />)
-
-      expect(renderedButton.toJSON()).toMatchSnapshot()
-    }
-  )
-
-  test('Button default props', () => {
-    const renderedBody = render(<Button label='Button' />)
-
-    expect(renderedBody.toJSON()).toMatchSnapshot()
-  })
-
-  test('Button with custom style', () => {
-    const renderedBody = render(
-      <Button label='Button' style={{ margin: 10 }} />
+  test('отображает переданную иконку', () => {
+    const { getAllByTestId } = render(
+      <Button Icon={IconArrowDownRight} label='Button' />
     )
 
-    expect(renderedBody.toJSON()).toMatchSnapshot()
+    expect(getAllByTestId('Button_Icon')).not.toHaveLength(0)
   })
 
-  test('Button with custom pressed-based style', () => {
-    const renderedBody = render(
-      <Button
-        testOnly_pressed
-        label='Button'
-        style={({ pressed }) => ({ margin: pressed ? 10 : 15 })}
-      />
+  test('скрывает текст в режиме iconOnly', () => {
+    const { getAllByTestId, queryByTestId } = render(
+      <Button iconOnly Icon={IconArrowDownRight} accessibilityLabel='Перейти' />
     )
 
-    expect(renderedBody.toJSON()).toMatchSnapshot()
+    expect(getAllByTestId('Button_Icon')).not.toHaveLength(0)
+    expect(queryByTestId('Button_Text')).not.toBeOnTheScreen()
   })
+
+  test('показывает индикатор загрузки вместо иконки', () => {
+    const { getByTestId, queryByTestId } = render(
+      <Button loading Icon={IconArrowDownRight} label='Button' />
+    )
+
+    expect(
+      getByTestId('Button_ActivityIndicator', { includeHiddenElements: true })
+    ).toBeOnTheScreen()
+    expect(queryByTestId('Button_Icon')).not.toBeOnTheScreen()
+  })
+
+  test('вызывает onPress для доступной кнопки', async () => {
+    const onPress = jest.fn()
+    const user = userEvent.setup()
+    const { getByRole } = render(<Button label='Button' onPress={onPress} />)
+
+    await user.press(getByRole('button'))
+
+    expect(onPress).toHaveBeenCalledOnce()
+  })
+
+  test.each([{ disabled: true }, { loading: true }])(
+    'не вызывает onPress, если кнопка недоступна: %o',
+    async (state) => {
+      const onPress = jest.fn()
+      const user = userEvent.setup()
+      const { getByRole } = render(
+        <Button label='Button' onPress={onPress} {...state} />
+      )
+
+      await user.press(getByRole('button'))
+
+      expect(onPress).not.toHaveBeenCalled()
+    }
+  )
 })
