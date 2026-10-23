@@ -3,7 +3,6 @@ import { Pressable, Text, TextInput, View } from 'react-native'
 import Animated from 'react-native-reanimated'
 
 import { useMakeTestId } from '../../../../hooks/useMakeTestId'
-import { useFloatingLabel } from '../../core/useFloatingLabel'
 import { useInputTextController } from '../../core/useInputTextController'
 import { usePlaceholderLayout } from '../../core/usePlaceholderLayout'
 
@@ -18,6 +17,7 @@ import {
   inputStyles as styles,
   useInputContainerMinHeightStyle,
 } from './useInputStyles'
+import { useLegacyFloatingLabel } from './useLegacyFloatingLabel'
 
 export const InputTextBase = memo<InputTextCoreProps & InputTextPrivateProps>(
   ({
@@ -46,20 +46,9 @@ export const InputTextBase = memo<InputTextCoreProps & InputTextPrivateProps>(
     const hasRightContent =
       loading || showClearButton || renderRightAccessory || disabled
     const containerMinHeightStyle = useInputContainerMinHeightStyle(size)
-    const floatingLabel = useFloatingLabel(
+    const floatingLabel = useLegacyFloatingLabel(
       controller.isFocused || !!controller.value,
-      otherProps,
-      {
-        labelTop: styles.label.top,
-        reducedTop: styles.labelReducedSize.top,
-        labelPadding: styles.label.paddingVertical,
-        reducedPadding: styles.labelReducedSize.paddingVertical,
-        fontSize: styles.label.fontSize,
-        reducedFontSize: styles.labelReducedSize.fontSize,
-        fontFamily: styles.label.fontFamily,
-        reducedFontFamily: styles.labelReducedSize.fontFamily,
-        inputPaddingTop: styles.floatLabelInput.paddingTop,
-      }
+      otherProps
     )
     const placeholderLayout = usePlaceholderLayout()
     const { makeTestId } = useMakeTestId(

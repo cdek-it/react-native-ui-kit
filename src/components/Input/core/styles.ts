@@ -15,7 +15,12 @@ export const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
   floatingFrame: (fontScale: number) => ({
     minHeight: semantic.dimension.size[1300],
     height: fontScale <= 1 ? semantic.dimension.size[1300] : undefined,
+    borderRadius: semantic.dimension.borderRadius[400],
   }),
+  filled: { backgroundColor: components.inputtext.root.filledBackground },
+  filledFocused: {
+    backgroundColor: components.inputtext.root.filledFocusBackground,
+  },
   focused: {
     borderColor: components.inputtext.root.focusBorderColor,
     outlineWidth: components.inputtext.root.focusRing.width,
@@ -32,6 +37,11 @@ export const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
       components.inputtext.root.borderRadius -
       components.inputtext.extend.borderWidth,
   },
+  floatingFrameClip: {
+    borderRadius:
+      semantic.dimension.borderRadius[400] -
+      components.inputtext.extend.borderWidth,
+  },
   danger: { borderColor: components.inputtext.root.invalidBorderColor },
   dangerFocused: {
     outlineColor: components.inputtext.extend.invalidFocusRing.color,
@@ -41,6 +51,7 @@ export const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
   disabledText: { color: components.inputtext.root.disabledColor },
   control: { flex: 1, minWidth: 0, flexDirection: 'row' },
   inputContainer: { flex: 1, minWidth: 0, justifyContent: 'center' },
+  floatingInputContainer: { alignSelf: 'center' },
   placeholder: { position: 'absolute', left: 0, right: 0 },
   placeholderText: { color: components.inputtext.root.placeholderColor },
   dangerPlaceholder: {
@@ -77,8 +88,10 @@ export const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
   },
   floatInput: {
     fontSize: fonts.fontSize[200],
+    fontWeight: fonts.fontWeight.regular,
     lineHeight: fonts.lineHeight[200],
-    paddingTop: semantic.dimension.space[700],
+    paddingHorizontal: semantic.dimension.space[350],
+    paddingTop: semantic.dimension.space[300] + fonts.lineHeight[200],
     paddingBottom: components.floatlabel.inside.input.paddingBottom,
   },
   label: {
@@ -112,13 +125,14 @@ export const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
     top: components.floatlabel.root.positionY,
     paddingVertical: semantic.dimension.space.none,
   },
-  floatText: (isDanger: boolean) => ({
+  floatText: (isDanger: boolean, isRequired = false) => ({
     fontSize: fonts.fontSize[200],
-    lineHeight: fonts.lineHeight[200],
+    lineHeight: fonts.lineHeight[400],
     fontFamily: fonts.fontFamily.base,
-    color: isDanger
-      ? components.floatlabel.root.invalidColor
-      : components.floatlabel.root.color,
+    color:
+      isDanger || isRequired
+        ? components.floatlabel.root.invalidColor
+        : components.floatlabel.root.color,
     includeFontPadding: false,
     flexShrink: 1,
   }),
@@ -126,32 +140,37 @@ export const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
     top: semantic.dimension.space[300],
     paddingVertical: semantic.dimension.space.none,
     fontSize: components.floatlabel.root.active.fontSize,
+    lineHeight: fonts.lineHeight[200],
     fontFamily: fonts.fontFamily.base,
   },
   floatLabelInfo: {
     width: semantic.dimension.size[400],
     height: semantic.dimension.size[400],
   },
-  actions: (size: InputTextSize = 'base') => ({
+  actions: (size: InputTextSize = 'base', floating = false) => ({
     flexDirection: 'row',
     alignItems: 'stretch',
     paddingLeft: semantic.dimension.space[100],
-    paddingRight: {
-      small: components.inputtext.root.sm.paddingX,
-      base: components.inputtext.root.paddingX,
-      large: components.inputtext.root.lg.paddingX,
-      xlarge: components.inputtext.extend.extXlg.paddingX,
-    }[size],
+    paddingRight: floating
+      ? semantic.dimension.space[350]
+      : {
+          small: components.inputtext.root.sm.paddingX,
+          base: components.inputtext.root.paddingX,
+          large: components.inputtext.root.lg.paddingX,
+          xlarge: components.inputtext.extend.extXlg.paddingX,
+        }[size],
     gap: semantic.dimension.space[100],
   }),
   action: { justifyContent: 'center', alignItems: 'center' },
-  icon: (size: InputTextSize = 'base') => {
-    const iconSize = {
-      small: semantic.dimension.size[400],
-      base: components.inputtext.extend.iconSize,
-      large: semantic.dimension.size[500],
-      xlarge: semantic.dimension.size[600],
-    }[size]
+  icon: (size: InputTextSize = 'base', floating = false) => {
+    const iconSize = floating
+      ? semantic.dimension.size[450]
+      : {
+          small: semantic.dimension.size[400],
+          base: components.inputtext.extend.iconSize,
+          large: semantic.dimension.size[500],
+          xlarge: semantic.dimension.size[600],
+        }[size]
 
     return { width: iconSize, height: iconSize }
   },

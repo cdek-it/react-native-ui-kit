@@ -10,6 +10,7 @@ import type { InputTextSize } from './types'
 
 interface InputActionsProps {
   readonly isClearVisible: boolean
+  readonly isFloating: boolean
   readonly size: InputTextSize
   readonly onClear: () => void
   readonly children?: ReactNode
@@ -18,12 +19,13 @@ interface InputActionsProps {
 
 export const InputActions = ({
   isClearVisible,
+  isFloating,
   size,
   onClear,
   children,
   testID,
 }: InputActionsProps) => {
-  const actionStyle = styles.actions(size)
+  const actionStyle = styles.actions(size, isFloating)
 
   return (
     <View style={actionStyle}>
@@ -45,7 +47,7 @@ export const InputActions = ({
             accessible={false}
             source={IconX}
             uniProps={({ components }) => {
-              const iconStyle = styles.icon(size)
+              const iconStyle = styles.icon(size, isFloating)
 
               return {
                 width: iconStyle.width,
