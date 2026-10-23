@@ -14,13 +14,24 @@ import type {
   ButtonSeverityVariant,
 } from '../types'
 
+import {
+  badgeArgs,
+  badgeArgTypes,
+  createBadge,
+  type BadgeStoryArgs,
+} from './badgeControls'
+
+type StoryArgs = ButtonProps<ButtonSeverityVariant> &
+  ButtonSeverityProps &
+  BadgeStoryArgs
+
 const Icons = { IconArrowDownRight, IconArrowDownLeft, undefined }
 const styles = StyleSheet.create({
   container: { gap: 16 },
   example: { gap: 8 },
 })
 
-const meta: Meta<typeof ButtonSeverity> = {
+const meta: Meta<StoryArgs> = {
   title: 'Button/ButtonSeverity',
   component: ButtonSeverity,
   args: {
@@ -30,6 +41,7 @@ const meta: Meta<typeof ButtonSeverity> = {
     label: 'Button',
     loading: false,
     disabled: false,
+    ...badgeArgs,
     iconPosition: 'prefix',
     severity: 'info',
   },
@@ -40,6 +52,7 @@ const meta: Meta<typeof ButtonSeverity> = {
     loading: { control: 'boolean' },
     disabled: { control: 'boolean' },
     iconPosition: { control: 'radio', options: ['prefix', 'postfix'] },
+    ...badgeArgTypes,
     onPress: { action: 'OnPress' },
     severity: {
       control: 'radio',
@@ -47,19 +60,34 @@ const meta: Meta<typeof ButtonSeverity> = {
     },
     Icon: { control: 'select', options: Object.keys(Icons), mapping: Icons },
   },
-  parameters: { controls: { exclude: ['iconOnly', 'shape', 'variant'] } },
+  parameters: {
+    controls: { exclude: ['badge', 'iconOnly', 'shape', 'variant'] },
+  },
   render: ({
+    showBadge,
+    'badge.dot': badgeDot,
+    'badge.text': badgeText,
+    'badge.size': badgeSize,
+    'badge.severity': badgeSeverity,
     iconOnly: _iconOnly,
     Icon,
     iconPosition,
     label = 'Button',
     ...args
   }) => {
+    const badge = createBadge({
+      showBadge,
+      'badge.dot': badgeDot,
+      'badge.text': badgeText,
+      'badge.size': badgeSize,
+      'badge.severity': badgeSeverity,
+    })
     const buttonProps: ButtonProps<ButtonSeverityVariant> &
-      ButtonSeverityProps = { ...args, Icon, iconPosition, label }
+      ButtonSeverityProps = { ...args, badge, Icon, iconPosition, label }
     const iconOnlyButtonProps: ButtonProps<ButtonSeverityVariant> &
       ButtonSeverityProps = {
       ...args,
+      badge,
       iconOnly: true,
       accessibilityLabel: args.accessibilityLabel ?? label,
       Icon: Icon ?? IconArrowDownRight,
@@ -82,7 +110,7 @@ const meta: Meta<typeof ButtonSeverity> = {
 
 export default meta
 
-type Story = StoryObj<typeof ButtonSeverity>
+type Story = StoryObj<StoryArgs>
 
 const ButtonStory: Story = { args: {}, argTypes: {} }
 
