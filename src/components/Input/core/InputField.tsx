@@ -9,7 +9,11 @@ import { InputControl } from './InputControl'
 import { InputGroupContext } from './InputGroupContext'
 import { InputLabel } from './InputLabel'
 import { styles } from './styles'
-import type { InputLabelProps, InputNativeProps } from './types'
+import type {
+  InputLabelProps,
+  InputNativeProps,
+  InputVisualVariant,
+} from './types'
 import { useInputFontScale } from './useInputFontScale'
 import { useInputTextController } from './useInputTextController'
 
@@ -17,7 +21,7 @@ type InputFieldProps = InputNativeProps &
   InputLabelProps & {
     readonly leftAddon?: ReactNode
     readonly rightAddon?: ReactNode
-    readonly action?: ReactNode
+    readonly renderTrailingAction?: (variant: InputVisualVariant) => ReactNode
   }
 
 const addonContent = (node: ReactNode) => {
@@ -79,7 +83,7 @@ export const InputField = ({
   renderTextInput,
   leftAddon,
   rightAddon,
-  action,
+  renderTrailingAction,
   readOnly = false,
   testID = 'InputText',
   ...nativeProps
@@ -87,6 +91,7 @@ export const InputField = ({
   const controller = useInputTextController({ ...nativeProps, inputRef: ref })
   const isEditable = !disabled && !readOnly
   const floating = floatLabel !== undefined
+  const variant = floating ? 'floating' : size
   const fontScale = useInputFontScale(nativeProps)
   const labelText = floatLabel ?? label
   const danger = state === 'danger'
@@ -136,20 +141,19 @@ export const InputField = ({
             {addonContent(leftAddon)}
           </InputGroupContext.Provider>
           <InputControl
-            action={action}
             clearable={clearable}
             controller={controller}
             disabled={disabled}
             inputStyle={inputStyle}
             isDanger={danger}
             isEditable={isEditable}
-            isFloating={floating}
             label={labelText}
             nativeProps={nativeProps}
             renderTextInput={renderTextInput}
             required={required}
-            size={size}
             testID={testID}
+            trailingAction={renderTrailingAction?.(variant)}
+            variant={variant}
           />
           <InputGroupContext.Provider value={rightContext}>
             {addonContent(rightAddon)}

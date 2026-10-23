@@ -1,12 +1,9 @@
 import { IconEye, IconEyeOff } from '@tabler/icons-react-native'
 import { memo, useState } from 'react'
-import { Pressable } from 'react-native'
-
-import { SvgUniversal } from '../../../utils/SvgUniversal'
 
 import { InputField } from '../core/InputField'
+import { InputIconButton } from '../core/InputIconButton'
 import { inputStrings } from '../core/strings'
-import { styles } from '../core/styles'
 
 import type { PasswordProps } from './types'
 
@@ -30,51 +27,36 @@ export const Password = memo<PasswordProps>(
   }) => {
     const [visible, setVisible] = useState(false)
     const Icon = visible ? IconEyeOff : IconEye
-    const actionGap = styles.actions(props.size).gap
 
     return (
       <InputField
         {...props}
-        action={
-          toggleMask ? (
-            <Pressable
-              accessibilityLabel={
-                visible ? inputStrings.hidePassword : inputStrings.showPassword
-              }
-              accessibilityRole='button'
-              accessibilityState={{ disabled }}
-              disabled={disabled}
-              hitSlop={{
-                top: actionGap * 2,
-                bottom: actionGap * 2,
-                left: actionGap,
-                right: actionGap,
-              }}
-              style={styles.action}
-              testID={`${testID}ToggleMask`}
-              onPress={() => setVisible((current) => !current)}
-            >
-              <SvgUniversal
-                accessible={false}
-                source={Icon}
-                uniProps={({ components }) => {
-                  const iconStyle = styles.icon(props.size)
-
-                  return {
-                    width: iconStyle.width,
-                    height: iconStyle.height,
-                    color: components.password.icon.color,
-                  }
-                }}
-              />
-            </Pressable>
-          ) : undefined
-        }
         autoCapitalize={autoCapitalize}
         autoCorrect={autoCorrect}
         clearable={clearable}
         disabled={disabled}
         multiline={false}
+        renderTrailingAction={
+          toggleMask
+            ? (variant) => (
+                <InputIconButton
+                  accessibilityLabel={
+                    visible
+                      ? inputStrings.hidePassword
+                      : inputStrings.showPassword
+                  }
+                  disabled={disabled}
+                  getIconColor={({ components }) =>
+                    components.password.icon.color
+                  }
+                  icon={Icon}
+                  testID={`${testID}ToggleMask`}
+                  variant={variant}
+                  onPress={() => setVisible((current) => !current)}
+                />
+              )
+            : undefined
+        }
         secureTextEntry={!visible}
         testID={testID}
       />
