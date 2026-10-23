@@ -2582,13 +2582,13 @@
       "danger": { "background": "#8d2218", "color": "#fff0f0" },
       "info": { "background": "#18538d", "color": "#f0f9ff" },
       "primary": { "background": "#44e858", "color": "#2b2e33" },
-      "secondary": { "background": "#e2e2e4", "color": "#2b2e33" },
-      "success": { "background": "#77f48a", "color": "#f0fff3" },
+      "secondary": { "background": "#404348", "color": "#ffffff" },
+      "success": { "background": "#1dc831", "color": "#f0fff3" },
       "warn": { "background": "#9d6d0e", "color": "#fff9f0" }
     },
     "root": {
       "fontSize": 12,
-      "fontWeight": 400,
+      "fontWeight": 600,
       "paddingTop": 4,
       "paddingRight": 8,
       "paddingBottom": 4,

@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import {
   IconAlertTriangle,
   IconCheck,
+  IconCircleCheck,
   IconCircleX,
   IconInfoCircle,
 } from '@tabler/icons-react-native'
@@ -10,26 +11,24 @@ import { Tag } from './Tag'
 
 const icons = {
   IconCheck,
+  IconCircleCheck,
   IconInfoCircle,
   IconAlertTriangle,
   IconCircleX,
-  none: undefined,
+  default: undefined,
 }
 
 const meta: Meta<typeof Tag> = {
   title: 'Misc/Tag',
   component: Tag,
-  args: {
-    text: 'Tag',
-    rounded: false,
-    severity: 'basic',
-    showIcon: true,
-    Icon: IconCheck,
-  },
+  args: { text: 'Tag', rounded: false, severity: 'primary', showIcon: true },
   argTypes: {
+    text: { control: 'text' },
+    rounded: { control: 'boolean' },
+    showIcon: { control: 'boolean' },
     severity: {
       control: 'radio',
-      options: ['basic', 'info', 'success', 'warning', 'danger', 'secondary'],
+      options: ['primary', 'info', 'success', 'warning', 'danger', 'secondary'],
     },
     Icon: { control: 'radio', options: Object.keys(icons), mapping: icons },
   },

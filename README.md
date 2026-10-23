@@ -4,7 +4,9 @@
 
 Документация компонентов:
 
+- [Tag](src/components/Tag/Tag.md)
 - [Skeleton](src/components/Skeleton/Skeleton.md)
+
 
 ## Installation
 
