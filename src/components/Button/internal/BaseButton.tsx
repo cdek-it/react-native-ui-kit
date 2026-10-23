@@ -1,5 +1,6 @@
 import { memo } from 'react'
-import { Pressable, type PressableStateCallbackType } from 'react-native'
+import { Pressable, View, type PressableStateCallbackType } from 'react-native'
+import { StyleSheet } from 'react-native-unistyles'
 
 import type { BaseButtonProps } from '../types'
 
@@ -37,6 +38,7 @@ export const BaseButton = memo<BaseButtonComponentProps>(
     iconPosition = 'prefix',
     Icon,
     label,
+    badge,
     style,
     pressableRef,
     accessibilityLabel,
@@ -84,6 +86,17 @@ export const BaseButton = memo<BaseButtonComponentProps>(
               {iconPosition === 'prefix' && icon}
               {!iconOnly && <ButtonLabel label={label} style={styles.label} />}
               {iconPosition === 'postfix' && icon}
+              {!!badge && (
+                <View
+                  accessibilityElementsHidden
+                  accessible={false}
+                  importantForAccessibility='no-hide-descendants'
+                  pointerEvents='none'
+                  style={badgeStyles.overlay}
+                >
+                  {badge}
+                </View>
+              )}
             </>
           )
         }}
@@ -91,3 +104,12 @@ export const BaseButton = memo<BaseButtonComponentProps>(
     )
   }
 )
+
+const badgeStyles = StyleSheet.create({
+  overlay: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    transform: [{ translateX: '50%' }, { translateY: '-50%' }],
+  },
+})
