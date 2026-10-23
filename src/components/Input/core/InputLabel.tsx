@@ -6,7 +6,7 @@ import { SvgUniversal } from '../../../utils/SvgUniversal'
 
 import { inputStrings } from './strings'
 import { styles } from './styles'
-import type { InputLabelInfo, InputTextSize } from './types'
+import type { InputLabelInfo } from './types'
 import type { useFloatingLabel } from './useFloatingLabel'
 import { useInputFontScale } from './useInputFontScale'
 
@@ -21,7 +21,6 @@ interface InputLabelProps extends Pick<
   readonly isDanger?: boolean
   readonly floating?: ReturnType<typeof useFloatingLabel>
   readonly hasActions?: boolean
-  readonly size?: InputTextSize
   readonly infoTestID?: string
   readonly testID?: string
 }
@@ -34,7 +33,6 @@ export const InputLabel = ({
   isDanger = false,
   floating,
   hasActions = false,
-  size = 'base',
   infoTestID,
   testID,
   ...textProps
@@ -52,8 +50,7 @@ export const InputLabel = ({
               importantForAccessibility='no-hide-descendants'
               pointerEvents='none'
               style={[
-                styles.floatText(isDanger),
-                styles.required,
+                styles.floatText(isDanger, true),
                 floating.animatedTextStyle,
               ]}
             >
@@ -124,10 +121,10 @@ export const InputLabel = ({
         style={[
           styles.floatLabel,
           {
-            left: styles[size].paddingHorizontal,
+            left: styles.floatInput.paddingHorizontal,
             right: hasActions
               ? styles.inputWithActions.paddingRight
-              : styles[size].paddingHorizontal,
+              : styles.floatInput.paddingHorizontal,
           },
           floating.animatedContainerStyle,
         ]}
