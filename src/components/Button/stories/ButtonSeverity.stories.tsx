@@ -5,6 +5,7 @@ import {
 } from '@tabler/icons-react-native'
 import { StyleSheet, View } from 'react-native'
 
+import { Badge } from '../../Badge'
 import { Body } from '../../Typography'
 
 import { ButtonSeverity } from '../ButtonSeverity'
@@ -30,6 +31,7 @@ const meta: Meta<typeof ButtonSeverity> = {
     label: 'Button',
     loading: false,
     disabled: false,
+    badge: undefined,
     iconPosition: 'prefix',
     severity: 'info',
   },
@@ -40,6 +42,16 @@ const meta: Meta<typeof ButtonSeverity> = {
     loading: { control: 'boolean' },
     disabled: { control: 'boolean' },
     iconPosition: { control: 'radio', options: ['prefix', 'postfix'] },
+    badge: {
+      control: 'select',
+      options: ['none', 'dot', 'text', 'longText'],
+      mapping: {
+        none: undefined,
+        dot: <Badge dot severity='danger' />,
+        text: <Badge severity='danger'>3</Badge>,
+        longText: <Badge severity='danger'>Длинный текст бейджа</Badge>,
+      },
+    },
     onPress: { action: 'OnPress' },
     severity: {
       control: 'radio',
