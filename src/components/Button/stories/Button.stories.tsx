@@ -5,11 +5,19 @@ import {
 } from '@tabler/icons-react-native'
 import { StyleSheet, View } from 'react-native'
 
-import { Badge } from '../../Badge'
 import { Body } from '../../Typography'
 
 import { Button } from '../Button'
 import type { ButtonBaseVariant, ButtonProps } from '../types'
+
+import {
+  badgeArgs,
+  badgeArgTypes,
+  createBadge,
+  type BadgeStoryArgs,
+} from './badgeControls'
+
+type StoryArgs = ButtonProps<ButtonBaseVariant> & BadgeStoryArgs
 
 const Icons = { IconArrowDownRight, IconArrowDownLeft, undefined }
 const styles = StyleSheet.create({
@@ -17,7 +25,7 @@ const styles = StyleSheet.create({
   example: { gap: 8 },
 })
 
-const meta: Meta<typeof Button> = {
+const meta: Meta<StoryArgs> = {
   title: 'Button/Button',
   component: Button,
   args: {
@@ -27,7 +35,7 @@ const meta: Meta<typeof Button> = {
     label: 'Button',
     loading: false,
     disabled: false,
-    badge: undefined,
+    ...badgeArgs,
     iconPosition: 'prefix',
   },
   argTypes: {
@@ -40,35 +48,40 @@ const meta: Meta<typeof Button> = {
     loading: { control: 'boolean' },
     disabled: { control: 'boolean' },
     iconPosition: { control: 'radio', options: ['prefix', 'postfix'] },
-    badge: {
-      control: 'select',
-      options: ['none', 'dot', 'text', 'longText'],
-      mapping: {
-        none: undefined,
-        dot: <Badge dot severity='danger' />,
-        text: <Badge severity='danger'>3</Badge>,
-        longText: <Badge severity='danger'>Длинный текст бейджа</Badge>,
-      },
-    },
+    ...badgeArgTypes,
     onPress: { action: 'OnPress' },
     Icon: { control: 'select', options: Object.keys(Icons), mapping: Icons },
   },
-  parameters: { controls: { exclude: ['iconOnly', 'shape'] } },
+  parameters: { controls: { exclude: ['badge', 'iconOnly', 'shape'] } },
   render: ({
+    showBadge,
+    badgeDot,
+    badgeText,
+    badgeSize,
+    badgeSeverity,
     iconOnly: _iconOnly,
     Icon,
     iconPosition,
     label = 'Button',
     ...args
   }) => {
+    const badge = createBadge({
+      showBadge,
+      badgeDot,
+      badgeText,
+      badgeSize,
+      badgeSeverity,
+    })
     const buttonProps: ButtonProps<ButtonBaseVariant> = {
       ...args,
+      badge,
       Icon,
       iconPosition,
       label,
     }
     const iconOnlyButtonProps: ButtonProps<ButtonBaseVariant> = {
       ...args,
+      badge,
       iconOnly: true,
       accessibilityLabel: args.accessibilityLabel ?? label,
       Icon: Icon ?? IconArrowDownRight,
@@ -91,7 +104,7 @@ const meta: Meta<typeof Button> = {
 
 export default meta
 
-type Story = StoryObj<typeof Button>
+type Story = StoryObj<StoryArgs>
 
 const ButtonStory: Story = { args: {}, argTypes: {} }
 
