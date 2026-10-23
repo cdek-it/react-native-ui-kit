@@ -2,7 +2,7 @@ import { memo } from 'react'
 import { Pressable, View, type PressableStateCallbackType } from 'react-native'
 import { StyleSheet } from 'react-native-unistyles'
 
-import type { BaseButtonProps } from '../types'
+import type { BaseButtonProps, ButtonSize } from '../types'
 
 import { ButtonActivityIndicator } from './components/ButtonActivityIndicator'
 import { ButtonIcon } from './components/ButtonIcon'
@@ -92,7 +92,11 @@ export const BaseButton = memo<BaseButtonComponentProps>(
                   accessible={false}
                   importantForAccessibility='no-hide-descendants'
                   pointerEvents='none'
-                  style={badgeStyles.overlay}
+                  style={badgeStyles.overlay(
+                    !!badge.props.dot,
+                    size,
+                    styles.container.borderWidth
+                  )}
                 >
                   {badge}
                 </View>
@@ -106,10 +110,11 @@ export const BaseButton = memo<BaseButtonComponentProps>(
 )
 
 const badgeStyles = StyleSheet.create({
-  overlay: {
+  overlay: (dot: boolean, size: ButtonSize, borderWidth = 0) => ({
     position: 'absolute',
-    top: 0,
-    right: 0,
+    // В Figma центр точки смещён внутрь от внешней границы кнопки.
+    top: dot ? (size === 'base' ? 1.5 : 3.5) - borderWidth : 0,
+    right: dot ? (size === 'small' ? 2 : 3) - borderWidth : 0,
     transform: [{ translateX: '50%' }, { translateY: '-50%' }],
-  },
+  }),
 })
