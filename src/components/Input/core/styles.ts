@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native-unistyles'
 
-import type { InputTextSize } from './types'
+import type { InputVisualVariant } from './types'
 
 export const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
   root: { gap: semantic.dimension.space[100] },
@@ -147,30 +147,32 @@ export const styles = StyleSheet.create(({ components, semantic, fonts }) => ({
     width: semantic.dimension.size[400],
     height: semantic.dimension.size[400],
   },
-  actions: (size: InputTextSize = 'base', floating = false) => ({
+  trailingContent: (variant: InputVisualVariant) => ({
     flexDirection: 'row',
     alignItems: 'stretch',
     paddingLeft: semantic.dimension.space[100],
-    paddingRight: floating
-      ? semantic.dimension.space[350]
-      : {
-          small: components.inputtext.root.sm.paddingX,
-          base: components.inputtext.root.paddingX,
-          large: components.inputtext.root.lg.paddingX,
-          xlarge: components.inputtext.extend.extXlg.paddingX,
-        }[size],
+    paddingRight:
+      variant === 'floating'
+        ? semantic.dimension.space[350]
+        : {
+            small: components.inputtext.root.sm.paddingX,
+            base: components.inputtext.root.paddingX,
+            large: components.inputtext.root.lg.paddingX,
+            xlarge: components.inputtext.extend.extXlg.paddingX,
+          }[variant],
     gap: semantic.dimension.space[100],
   }),
-  action: { justifyContent: 'center', alignItems: 'center' },
-  icon: (size: InputTextSize = 'base', floating = false) => {
-    const iconSize = floating
-      ? semantic.dimension.size[450]
-      : {
-          small: semantic.dimension.size[400],
-          base: components.inputtext.extend.iconSize,
-          large: semantic.dimension.size[500],
-          xlarge: semantic.dimension.size[600],
-        }[size]
+  iconButton: { justifyContent: 'center', alignItems: 'center' },
+  icon: (variant: InputVisualVariant = 'base') => {
+    const iconSize =
+      variant === 'floating'
+        ? semantic.dimension.size[450]
+        : {
+            small: semantic.dimension.size[400],
+            base: components.inputtext.extend.iconSize,
+            large: semantic.dimension.size[500],
+            xlarge: semantic.dimension.size[600],
+          }[variant]
 
     return { width: iconSize, height: iconSize }
   },

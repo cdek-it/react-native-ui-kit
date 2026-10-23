@@ -1,16 +1,19 @@
+import { IconX } from '@tabler/icons-react-native'
 import type { ReactNode } from 'react'
 import { TextInput, View, type TextInputProps } from 'react-native'
 
 import { useMakeTestId } from '../../../hooks/useMakeTestId'
 
-import { InputActions } from './InputActions'
+import { InputIconButton } from './InputIconButton'
 import { InputLabel } from './InputLabel'
 import { InputPlaceholder } from './InputPlaceholder'
+import { InputTrailingContent } from './InputTrailingContent'
 import { inputStrings } from './strings'
 import { styles } from './styles'
 import type {
   InputLabelProps,
   InputNativeProps,
+  InputVisualVariant,
   RenderTextInputArgs,
 } from './types'
 import { useFloatingLabel } from './useFloatingLabel'
@@ -21,7 +24,6 @@ type InputControlProps = Pick<
   InputNativeProps & InputLabelProps,
   | 'label'
   | 'required'
-  | 'size'
   | 'disabled'
   | 'clearable'
   | 'inputStyle'
@@ -30,10 +32,10 @@ type InputControlProps = Pick<
   readonly controller: ReturnType<typeof useInputTextController>
   readonly nativeProps: TextInputProps
   readonly isEditable: boolean
-  readonly isFloating: boolean
+  readonly variant: InputVisualVariant
   readonly isDanger: boolean
   readonly testID: string
-  readonly action?: ReactNode
+  readonly trailingAction?: ReactNode
 }
 
 const renderNativeInput = ({ inputRef, ...props }: RenderTextInputArgs) => (
@@ -70,7 +72,6 @@ const getAccessibilityLabel = ({
 export const InputControl = ({
   label,
   required,
-  size = 'base',
   disabled,
   clearable,
   inputStyle,
@@ -78,22 +79,22 @@ export const InputControl = ({
   controller,
   nativeProps,
   isEditable,
-  isFloating,
+  variant,
   isDanger,
   testID,
-  action,
+  trailingAction,
 }: InputControlProps) => {
   const { makeTestId } = useMakeTestId(testID)
   const active = controller.isFocused || !!controller.value
   const isClearVisible = !!clearable && !!controller.value && isEditable
-  const hasActions = isClearVisible || !!action
+  const isFloating = variant === 'floating'
+  const hasActions = isClearVisible || !!trailingAction
   const placeholderLayout = usePlaceholderLayout()
   const floatingLabel = useFloatingLabel(active, nativeProps)
   const textStyle = [
     styles.input,
-    styles[size],
+    isFloating ? styles.floatInput : styles[variant],
     disabled && styles.disabledText,
-    isFloating && styles.floatInput,
     hasActions && styles.inputWithActions,
     isFloating && { paddingTop: floatingLabel.inputPaddingTop },
     inputStyle,
@@ -154,15 +155,19 @@ export const InputControl = ({
         {(renderTextInput ?? renderNativeInput)(textInputProps)}
       </View>
       {hasActions ? (
-        <InputActions
-          isClearVisible={isClearVisible}
-          isFloating={isFloating}
-          size={size}
-          testID={makeTestId('ClearButton')}
-          onClear={controller.clear}
-        >
-          {action}
-        </InputActions>
+        <InputTrailingContent variant={variant}>
+          {isClearVisible ? (
+            <InputIconButton
+              accessibilityLabel={inputStrings.clearButton}
+              getIconColor={({ components }) => components.inputtext.root.color}
+              icon={IconX}
+              testID={makeTestId('ClearButton')}
+              variant={variant}
+              onPress={controller.clear}
+            />
+          ) : null}
+          {trailingAction}
+        </InputTrailingContent>
       ) : null}
     </View>
   )

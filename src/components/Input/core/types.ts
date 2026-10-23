@@ -9,6 +9,7 @@ import type {
 } from 'react-native'
 
 export type InputTextSize = 'small' | 'base' | 'large' | 'xlarge'
+export type InputVisualVariant = InputTextSize | 'floating'
 export type InputState = 'default' | 'danger'
 export type RenderTextInputArgs = TextInputProps & { inputRef: Ref<TextInput> }
 

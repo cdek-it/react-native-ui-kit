@@ -125,6 +125,52 @@ describe('Password', () => {
     ).not.toBeOnTheScreen()
   })
 
+  test('разделяет очистку и переключение маски в поле с плавающей подписью', async () => {
+    const onChangeText = jest.fn()
+    const { getByRole, getByTestId, queryByRole, rerender } = render(
+      <Password
+        clearable
+        floatLabel='Пароль'
+        size='xlarge'
+        value='secret'
+        onChangeText={onChangeText}
+      />
+    )
+
+    await userEvent.press(getByRole('button', { name: 'Показать пароль' }))
+
+    expect(getByTestId('Password')).toHaveProp('secureTextEntry', false)
+    expect(onChangeText).not.toHaveBeenCalled()
+
+    await userEvent.press(getByRole('button', { name: 'Очистить поле' }))
+
+    expect(onChangeText).toHaveBeenCalledOnce()
+    expect(onChangeText).toHaveBeenCalledWith('')
+    expect(getByTestId('Password')).toHaveDisplayValue('secret')
+    expect(getByTestId('Password')).toHaveProp('secureTextEntry', false)
+
+    rerender(
+      <Password
+        clearable
+        floatLabel='Пароль'
+        size='xlarge'
+        value=''
+        onChangeText={onChangeText}
+      />
+    )
+
+    expect(
+      queryByRole('button', { name: 'Очистить поле' })
+    ).not.toBeOnTheScreen()
+    expect(getByTestId('Password')).toHaveDisplayValue('')
+    expect(getByTestId('Password')).toHaveProp('secureTextEntry', false)
+
+    await userEvent.press(getByRole('button', { name: 'Скрыть пароль' }))
+
+    expect(getByTestId('Password')).toHaveProp('secureTextEntry', true)
+    expect(onChangeText).toHaveBeenCalledOnce()
+  })
+
   test('disabled блокирует переключение без сброса видимости, readOnly сохраняет действие', async () => {
     const { getByRole, rerender, getByTestId } = render(
       <Password label='Пароль' value='secret' />
