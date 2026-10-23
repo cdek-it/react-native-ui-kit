@@ -42,17 +42,21 @@ const captionContent = (node: ReactNode) => {
 
 const frameStyle = ({
   isFocused,
+  isFilled,
   isEditable,
   isDanger,
   disabled,
 }: {
   isFocused: boolean
+  isFilled: boolean
   isEditable: boolean
   isDanger: boolean
   disabled: boolean
 }) => [
   styles.frame,
+  isFilled && styles.filled,
   isFocused && styles.focused,
+  isFilled && isFocused && styles.filledFocused,
   !isEditable && !disabled && styles.readOnly,
   isDanger && styles.danger,
   isDanger && isFocused && styles.dangerFocused,
@@ -117,6 +121,7 @@ export const InputField = ({
         style={[
           frameStyle({
             isFocused: controller.isFocused,
+            isFilled: floating && !!controller.value,
             isEditable,
             isDanger: danger,
             disabled,
@@ -126,7 +131,7 @@ export const InputField = ({
         testID={makeTestId('Frame')}
         onPress={controller.focus}
       >
-        <View style={styles.frameClip}>
+        <View style={[styles.frameClip, floating && styles.floatingFrameClip]}>
           <InputGroupContext.Provider value={leftContext}>
             {addonContent(leftAddon)}
           </InputGroupContext.Provider>

@@ -88,28 +88,14 @@ export const InputControl = ({
   const isClearVisible = !!clearable && !!controller.value && isEditable
   const hasActions = isClearVisible || !!action
   const placeholderLayout = usePlaceholderLayout()
-  const floatText = styles.floatText(isDanger)
-  const floatingLabel = useFloatingLabel(active, nativeProps, {
-    labelTop: styles.floatLabel.top,
-    reducedTop: styles.floatReduced.top,
-    labelPadding: styles.floatLabel.paddingVertical,
-    reducedPadding: styles.floatReduced.paddingVertical,
-    fontSize: floatText.fontSize,
-    reducedFontSize: styles.floatReduced.fontSize,
-    fontFamily: floatText.fontFamily,
-    reducedFontFamily: styles.floatReduced.fontFamily,
-    inputPaddingTop: styles.floatInput.paddingTop,
-  })
+  const floatingLabel = useFloatingLabel(active, nativeProps)
   const textStyle = [
     styles.input,
     styles[size],
-    hasActions && styles.inputWithActions,
     disabled && styles.disabledText,
     isFloating && styles.floatInput,
-    isFloating &&
-      floatingLabel.fontScale > 1 && {
-        paddingTop: floatingLabel.inputPaddingTop,
-      },
+    hasActions && styles.inputWithActions,
+    isFloating && { paddingTop: floatingLabel.inputPaddingTop },
     inputStyle,
   ]
   const { 'aria-label': _ariaLabel, ...inputNativeProps } = nativeProps
@@ -140,6 +126,7 @@ export const InputControl = ({
       <View
         style={[
           styles.inputContainer,
+          isFloating && styles.floatingInputContainer,
           isFloating ? undefined : { minHeight: placeholderLayout.minHeight },
         ]}
         onLayout={isFloating ? floatingLabel.onContainerLayout : undefined}
@@ -153,7 +140,6 @@ export const InputControl = ({
             isRequired={required}
             label={label}
             maxFontSizeMultiplier={nativeProps.maxFontSizeMultiplier}
-            size={size}
             testID={makeTestId('FloatingLabel')}
           />
         ) : null}
@@ -170,6 +156,7 @@ export const InputControl = ({
       {hasActions ? (
         <InputActions
           isClearVisible={isClearVisible}
+          isFloating={isFloating}
           size={size}
           testID={makeTestId('ClearButton')}
           onClear={controller.clear}
