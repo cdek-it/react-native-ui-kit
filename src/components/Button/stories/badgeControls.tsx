@@ -4,30 +4,30 @@ import { Badge, type BadgeProps } from '../../Badge'
 
 export interface BadgeStoryArgs {
   showBadge: boolean
-  badgeDot: boolean
-  badgeText: string
-  badgeSize: NonNullable<BadgeProps['size']>
-  badgeSeverity: NonNullable<BadgeProps['severity']>
+  'badge.dot': boolean
+  'badge.text': string
+  'badge.size': NonNullable<BadgeProps['size']>
+  'badge.severity': NonNullable<BadgeProps['severity']>
 }
 
 export const badgeArgs: BadgeStoryArgs = {
   showBadge: false,
-  badgeDot: false,
-  badgeText: '3',
-  badgeSize: 'large',
-  badgeSeverity: 'danger',
+  'badge.dot': false,
+  'badge.text': '3',
+  'badge.size': 'large',
+  'badge.severity': 'danger',
 }
 
 export const badgeArgTypes: ArgTypes<BadgeStoryArgs> = {
   showBadge: { control: 'boolean' },
-  badgeDot: { control: 'boolean', if: { arg: 'showBadge' } },
-  badgeText: { control: 'text', if: { arg: 'showBadge' } },
-  badgeSize: {
+  'badge.dot': { control: 'boolean', if: { arg: 'showBadge' } },
+  'badge.text': { control: 'text', if: { arg: 'showBadge' } },
+  'badge.size': {
     control: 'radio',
     options: ['base', 'large', 'xlarge'],
     if: { arg: 'showBadge' },
   },
-  badgeSeverity: {
+  'badge.severity': {
     control: 'radio',
     options: ['primary', 'info', 'success', 'warning', 'danger'],
     if: { arg: 'showBadge' },
@@ -36,10 +36,10 @@ export const badgeArgTypes: ArgTypes<BadgeStoryArgs> = {
 
 export const createBadge = ({
   showBadge,
-  badgeDot,
-  badgeText,
-  badgeSize,
-  badgeSeverity,
+  'badge.dot': badgeDot,
+  'badge.text': badgeText,
+  'badge.size': badgeSize,
+  'badge.severity': badgeSeverity,
 }: BadgeStoryArgs) => {
   if (!showBadge) return undefined
 

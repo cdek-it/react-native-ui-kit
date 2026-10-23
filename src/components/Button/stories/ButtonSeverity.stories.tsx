@@ -65,10 +65,10 @@ const meta: Meta<StoryArgs> = {
   },
   render: ({
     showBadge,
-    badgeDot,
-    badgeText,
-    badgeSize,
-    badgeSeverity,
+    'badge.dot': badgeDot,
+    'badge.text': badgeText,
+    'badge.size': badgeSize,
+    'badge.severity': badgeSeverity,
     iconOnly: _iconOnly,
     Icon,
     iconPosition,
@@ -77,10 +77,10 @@ const meta: Meta<StoryArgs> = {
   }) => {
     const badge = createBadge({
       showBadge,
-      badgeDot,
-      badgeText,
-      badgeSize,
-      badgeSeverity,
+      'badge.dot': badgeDot,
+      'badge.text': badgeText,
+      'badge.size': badgeSize,
+      'badge.severity': badgeSeverity,
     })
     const buttonProps: ButtonProps<ButtonSeverityVariant> &
       ButtonSeverityProps = { ...args, badge, Icon, iconPosition, label }
