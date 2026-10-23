@@ -1,34 +1,20 @@
 import { IconArrowDownRight } from '@tabler/icons-react-native'
 import { fireEvent, render, userEvent } from '@testing-library/react-native'
-import type { PressableProps } from 'react-native'
+import { createRef } from 'react'
+import type { PressableProps, View } from 'react-native'
 
 import { Button } from '../Button'
-import { ButtonBadge } from '../ButtonBadge'
 import { ButtonSeverity } from '../ButtonSeverity'
-import type { ButtonIconPosition } from '../types'
+import type { BaseButtonProps } from '../types'
 
-type InteractionProps = PressableProps & {
-  loading?: boolean
-  iconPosition?: ButtonIconPosition
-}
+type InteractionProps = PressableProps &
+  Pick<BaseButtonProps<never>, 'loading' | 'iconPosition' | 'pressableRef'>
 
 describe.each([
   {
     name: 'Button',
     createButton: (props: InteractionProps) => (
       <Button Icon={IconArrowDownRight} label='Сохранить' {...props} />
-    ),
-  },
-  {
-    name: 'ButtonBadge',
-    createButton: (props: InteractionProps) => (
-      <ButtonBadge
-        Icon={IconArrowDownRight}
-        badgeLabel='3'
-        badgeSeverity='danger'
-        label='Сохранить'
-        {...props}
-      />
     ),
   },
   {
@@ -43,6 +29,14 @@ describe.each([
     ),
   },
 ])('$name interactions', ({ createButton }) => {
+  test('передаёт pressableRef корневому нативному элементу', () => {
+    const pressableRef = createRef<View>()
+    render(createButton({ pressableRef }))
+
+    expect(pressableRef.current).not.toBeNull()
+    expect(pressableRef.current?.props.accessibilityRole).toBe('button')
+  })
+
   test.each([
     { name: 'default', disabled: false, loading: false },
     { name: 'disabled', disabled: true, loading: false },

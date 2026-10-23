@@ -1,7 +1,8 @@
-import type { Ref } from 'react'
+import type { ReactElement, Ref } from 'react'
 import type { PressableProps, View } from 'react-native'
 
 import type { SvgSource } from '../../utils/SvgUniversal'
+import type { BadgeProps } from '../Badge'
 import type { BadgeSeverity } from '../Badge/Badge'
 
 export type ButtonBaseVariant =
@@ -20,6 +21,13 @@ export type ButtonIconPosition = 'prefix' | 'postfix'
 export interface BaseButtonProps<
   Variant extends ButtonVariant,
 > extends PressableProps {
+  /**
+   * Готовый бейдж кнопки с пропсами {@link BadgeProps}.
+   *
+   * Бейдж скрыт от скринридера. При необходимости потребитель сам описывает
+   * его значение в accessibilityLabel кнопки. Автоматически имя не дополняется.
+   */
+  badge?: ReactElement<BadgeProps>
   /**
    * Размер кнопки
    * @default 'base'
@@ -51,6 +59,7 @@ export interface BaseButtonProps<
   iconPosition?: ButtonIconPosition
   /**
    * Кнопка только с иконкой, без текста
+   * Обязательно задайте accessibilityLabel, чтобы у кнопки было доступное имя.
    */
   iconOnly?: unknown
   /**
@@ -79,6 +88,7 @@ export interface IconOnlyButtonProps<
   Variant extends ButtonVariant,
 > extends BaseButtonProps<Variant> {
   /**
+   * Доступное имя кнопки с иконкой.
    * До версии 2.0 необязательное для совместимости; в 2.0 станет обязательным
    */
   accessibilityLabel?: string
@@ -109,6 +119,7 @@ export interface ButtonSeverityProps {
   variant?: ButtonSeverityVariant
 }
 
+/** @deprecated Используйте Button с пропом badge. Удаляется в версии 2.0. */
 export interface ButtonBadgeProps {
   /**
    * Цвет бейджа.

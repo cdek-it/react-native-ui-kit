@@ -1,41 +1,37 @@
-import { render } from '@testing-library/react-native'
+import { render, within } from '@testing-library/react-native'
 
 import { ButtonBadge, ButtonBadgeTestId } from '../ButtonBadge'
 
 describe('ButtonBadge', () => {
-  test('отображает текст кнопки и бейджа', () => {
+  test('преобразует badgeLabel в текстовый бейдж', () => {
     const { getByText } = render(
       <ButtonBadge badgeLabel='Badge' badgeSeverity='danger' label='Button' />
     )
 
-    expect(getByText('Button')).toBeOnTheScreen()
-    expect(getByText('Badge')).toBeOnTheScreen()
+    expect(
+      getByText('Badge', { includeHiddenElements: true })
+    ).toBeOnTheScreen()
   })
 
-  test('отображает бейдж без текста в режиме dot', () => {
-    const { getByTestId, queryByText } = render(
-      <ButtonBadge badgeSeverity='info' label='Button' />
-    )
+  test.each([undefined, ''])(
+    'отображает точку при badgeLabel=%p',
+    (badgeLabel) => {
+      const { getByTestId } = render(
+        <ButtonBadge
+          badgeLabel={badgeLabel}
+          badgeSeverity='info'
+          label='Button'
+        />
+      )
 
-    expect(getByTestId(ButtonBadgeTestId.badge)).toBeOnTheScreen()
-    expect(queryByText('Badge')).not.toBeOnTheScreen()
-  })
+      const badge = getByTestId(ButtonBadgeTestId.badge, {
+        includeHiddenElements: true,
+      })
 
-  test.each([
-    { loading: true },
-    { disabled: true },
-    { loading: true, disabled: true },
-  ])('сохраняет бейдж при %j', (state) => {
-    const { getByText, getAllByRole } = render(
-      <ButtonBadge
-        badgeLabel='3'
-        badgeSeverity='danger'
-        label='Уведомления'
-        {...state}
-      />
-    )
-
-    expect(getByText('3')).toBeOnTheScreen()
-    expect(getAllByRole('button')).toHaveLength(1)
-  })
+      expect(badge).toBeOnTheScreen()
+      expect(
+        within(badge).queryAllByText(/.*/, { includeHiddenElements: true })
+      ).toHaveLength(0)
+    }
+  )
 })
