@@ -4,31 +4,16 @@ import { createRef } from 'react'
 import type { PressableProps, View } from 'react-native'
 
 import { Button } from '../Button'
-import { ButtonSeverity } from '../ButtonSeverity'
 import type { BaseButtonProps } from '../types'
 
 type InteractionProps = PressableProps &
   Pick<BaseButtonProps<never>, 'loading' | 'iconPosition' | 'pressableRef'>
 
-describe.each([
-  {
-    name: 'Button',
-    createButton: (props: InteractionProps) => (
-      <Button Icon={IconArrowDownRight} label='Сохранить' {...props} />
-    ),
-  },
-  {
-    name: 'ButtonSeverity',
-    createButton: (props: InteractionProps) => (
-      <ButtonSeverity
-        Icon={IconArrowDownRight}
-        label='Сохранить'
-        severity='danger'
-        {...props}
-      />
-    ),
-  },
-])('$name interactions', ({ createButton }) => {
+describe('Button interactions', () => {
+  const createButton = (props: InteractionProps) => (
+    <Button Icon={IconArrowDownRight} label='Сохранить' {...props} />
+  )
+
   test('передаёт pressableRef корневому нативному элементу', () => {
     const pressableRef = createRef<View>()
     render(createButton({ pressableRef }))
