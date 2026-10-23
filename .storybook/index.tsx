@@ -10,7 +10,7 @@ const StorybookUIRoot = view.getStorybookUI({
     typography: {
       size: {
         s1: 16,
-        s2: 20,
+        s2: 14,
         s3: 24,
         m1: 16,
         m2: 20,
