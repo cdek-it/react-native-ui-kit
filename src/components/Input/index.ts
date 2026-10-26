@@ -15,5 +15,5 @@ export type {
   InputLabelInfo,
   RenderTextInputArgs,
 } from './core/types'
-export { InputSwitch } from '../InputSwitch'
+export { InputSwitch, type InputSwitchProps } from '../InputSwitch'
 export { InputOtp, InputOtpTestId, type InputOtpProps } from '../InputOtp'
