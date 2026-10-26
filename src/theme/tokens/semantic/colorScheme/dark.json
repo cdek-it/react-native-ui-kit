@@ -204,6 +204,7 @@
       "neutral": {
         "default": "#404348",
         "strong": "#56595f",
+        "focus": "rgba(255, 255, 255, 0.1000)",
         "bold": { "default": "#f0f0f1", "hover": "#e2e2e4" },
         "inverse": "#2b2e33"
       },
