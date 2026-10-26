@@ -1,1 +1,1 @@
-export { InputSwitch } from './InputSwitch'
+export { InputSwitch, type InputSwitchProps } from './InputSwitch'

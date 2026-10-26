@@ -4,6 +4,7 @@ import Animated from 'react-native-reanimated'
 
 import { useHandleStyles, useSliderStyles } from './styles'
 
+/** @deprecated Используйте ToggleSwitchProps. */
 export interface InputSwitchProps extends PressableProps {
   checked: boolean
   onCheckedChange?: (checked: boolean) => void
@@ -11,6 +12,7 @@ export interface InputSwitchProps extends PressableProps {
   danger?: boolean
 }
 
+/** @deprecated Используйте ToggleSwitch. */
 export const InputSwitch = memo<InputSwitchProps>(
   ({
     checked,
