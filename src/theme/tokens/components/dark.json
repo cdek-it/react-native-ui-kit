@@ -2815,14 +2815,14 @@
   "toggleswitch": {
     "colorScheme": {
       "handle": {
-        "background": "#ffffff",
-        "checkedBackground": "#181a1f",
+        "background": "#56595f",
+        "checkedBackground": "#56595f",
         "checkedColor": "#2b2e33",
-        "checkedHoverBackground": "#181a1f",
+        "checkedHoverBackground": "#56595f",
         "checkedHoverColor": "#2b2e33",
         "color": "#2b2e33",
         "disabledBackground": "#85888e",
-        "hoverBackground": "#ffffff",
+        "hoverBackground": "#56595f",
         "hoverColor": "#2b2e33"
       },
       "root": {
