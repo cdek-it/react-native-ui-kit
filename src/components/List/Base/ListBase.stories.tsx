@@ -18,6 +18,7 @@ const Extras = {
 
 const meta: Meta<typeof ListBase> = {
   title: 'Menu/List',
+  tags: ['deprecated'],
   component: ListBase,
   args: {
     iconAlignment: 'top',
