@@ -31,7 +31,13 @@ const preview: Preview = {
     },
   ],
   parameters: {
-    options: { storySort: { method: 'alphabetical', includeNames: true } },
+    options: {
+      storySort: {
+        method: 'alphabetical',
+        includeNames: true,
+        order: ['*', 'Typography', ['Overview', '*'], 'Legacy'],
+      },
+    },
     actions: { argTypesRegex: '^on[A-Z].*' },
     controls: { matchers: { color: /(background|color)$/i, date: /Date$/ } },
   },
