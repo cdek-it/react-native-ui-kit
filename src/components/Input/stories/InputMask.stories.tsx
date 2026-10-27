@@ -73,7 +73,7 @@ const MaskedInput = <T extends InputTextProps>({
 }
 
 const meta: Meta<typeof MaskedInput> = {
-  title: 'Legacy/InputMask',
+  title: 'Form Input/LegacyInputMask',
   tags: ['deprecated'],
   args: {
     clearable: true,
@@ -121,4 +121,4 @@ type Story = StoryObj<typeof MaskedInput>
 
 const MaskedInputStory: Story = {}
 
-export { MaskedInputStory as InputMask }
+export { MaskedInputStory as LegacyInputMask }
