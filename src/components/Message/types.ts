@@ -26,4 +26,5 @@ export interface MessageProps
   style?: StyleProp<ViewStyle>
 }
 
+export type ToastMessageProps = MessageProps
 export type MessageSeverity = NonNullable<MessageProps['severity']>

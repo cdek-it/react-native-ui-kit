@@ -2,16 +2,19 @@ import { fireEvent, render, userEvent } from '@testing-library/react-native'
 import { Pressable, Text } from 'react-native'
 import Svg from 'react-native-svg'
 
-import { Message } from '..'
+import { Message, ToastMessage } from '..'
 
 const CustomIcon = () => <Svg testID='CustomMessageIcon' />
 
-describe('Message', () => {
+describe.each([
+  { name: 'Message', Component: Message },
+  { name: 'ToastMessage', Component: ToastMessage },
+])('$name', ({ name, Component }) => {
   test.each(['info', 'success', 'warning', 'danger'] as const)(
     'отображает содержимое при severity=%s',
     (severity) => {
       const screen = render(
-        <Message
+        <Component
           body={<Text>Содержимое</Text>}
           caption='Подпись'
           footer={<Text>Футер</Text>}
@@ -33,7 +36,7 @@ describe('Message', () => {
     'показывает независимые body=$body и footer=$footer без caption',
     ({ body, footer }) => {
       const screen = render(
-        <Message
+        <Component
           body={body ? <Text>Тело</Text> : undefined}
           footer={footer ? <Text>Действие</Text> : undefined}
           title='Заголовок'
@@ -46,9 +49,9 @@ describe('Message', () => {
   )
 
   test('добавляет и удаляет ноды после обновления props', () => {
-    const screen = render(<Message title='Заголовок' />)
+    const screen = render(<Component title='Заголовок' />)
     screen.rerender(
-      <Message
+      <Component
         body={<Text>Тело</Text>}
         footer={<Text>Футер</Text>}
         title='Заголовок'
@@ -58,31 +61,33 @@ describe('Message', () => {
     expect(screen.getByText('Тело')).toBeOnTheScreen()
     expect(screen.getByText('Футер')).toBeOnTheScreen()
 
-    screen.rerender(<Message title='Заголовок' />)
+    screen.rerender(<Component title='Заголовок' />)
 
     expect(screen.queryByText('Тело')).toBeNull()
     expect(screen.queryByText('Футер')).toBeNull()
   })
 
   test('поддерживает пользовательскую иконку и hiddenIcon', () => {
-    const screen = render(<Message Icon={CustomIcon} title='Заголовок' />)
+    const screen = render(<Component Icon={CustomIcon} title='Заголовок' />)
 
     expect(
       screen.getByTestId('CustomMessageIcon', { includeHiddenElements: true })
     ).toBeOnTheScreen()
 
-    screen.rerender(<Message hiddenIcon Icon={CustomIcon} title='Заголовок' />)
+    screen.rerender(
+      <Component hiddenIcon Icon={CustomIcon} title='Заголовок' />
+    )
 
     expect(
       screen.queryByTestId('CustomMessageIcon', { includeHiddenElements: true })
     ).toBeNull()
     expect(
-      screen.queryByTestId('MessageIcon', { includeHiddenElements: true })
+      screen.queryByTestId(`${name}Icon`, { includeHiddenElements: true })
     ).toBeNull()
   })
 
   test('не показывает закрытие без onClose даже при наличии closeLabel', () => {
-    const screen = render(<Message closeLabel='Отменить' title='Заголовок' />)
+    const screen = render(<Component closeLabel='Отменить' title='Заголовок' />)
 
     expect(screen.queryByRole('button')).toBeNull()
     expect(screen.queryByText('Отменить')).toBeNull()
@@ -93,7 +98,11 @@ describe('Message', () => {
     async (closeLabel) => {
       const onClose = jest.fn()
       const screen = render(
-        <Message closeLabel={closeLabel} title='Заголовок' onClose={onClose} />
+        <Component
+          closeLabel={closeLabel}
+          title='Заголовок'
+          onClose={onClose}
+        />
       )
       await userEvent
         .setup()
@@ -109,7 +118,7 @@ describe('Message', () => {
     const bodyAction = jest.fn()
     const footerAction = jest.fn()
     const screen = render(
-      <Message
+      <Component
         body={
           <Pressable accessibilityRole='button' onPress={bodyAction}>
             <Text>Подробнее</Text>
@@ -131,7 +140,9 @@ describe('Message', () => {
   })
 
   test('передаёт пользовательский testID контейнеру', () => {
-    const screen = render(<Message testID='CustomMessage' title='Заголовок' />)
+    const screen = render(
+      <Component testID='CustomMessage' title='Заголовок' />
+    )
 
     expect(screen.getByTestId('CustomMessage')).toBeOnTheScreen()
   })

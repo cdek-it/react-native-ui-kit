@@ -44,7 +44,8 @@ import { Message } from '@cdek-it/react-native-ui-kit'
 ## Миграция
 
 Прежний компонент доступен через
-`import { Message } from '@cdek-it/react-native-ui-kit/legacy'`.
+`import { Message } from '@cdek-it/react-native-ui-kit/legacy'`. Для содержимого
+всплывающих уведомлений используйте [ToastMessage](./ToastMessage.md).
 
 ## Макет
 

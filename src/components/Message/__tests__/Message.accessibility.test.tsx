@@ -1,18 +1,21 @@
 import { render } from '@testing-library/react-native'
 import { Pressable, Text } from 'react-native'
 
-import { Message } from '..'
+import { Message, ToastMessage } from '..'
 
-describe('Message — доступность', () => {
+describe.each([
+  { name: 'Message', Component: Message },
+  { name: 'ToastMessage', Component: ToastMessage },
+])('$name — доступность', ({ name, Component }) => {
   test('использует имя «Закрыть» для крестика без обязательной подписи', () => {
-    const screen = render(<Message title='Сообщение' onClose={jest.fn()} />)
+    const screen = render(<Component title='Сообщение' onClose={jest.fn()} />)
 
     expect(screen.getByRole('button', { name: 'Закрыть' })).toBeOnTheScreen()
   })
 
   test('переопределяет имя крестика через closeAccessibilityLabel', () => {
     const screen = render(
-      <Message
+      <Component
         closeAccessibilityLabel='Dismiss notification'
         title='Сообщение'
         onClose={jest.fn()}
@@ -26,7 +29,7 @@ describe('Message — доступность', () => {
 
   test('использует видимый closeLabel как имя текстовой кнопки', () => {
     const screen = render(
-      <Message
+      <Component
         closeAccessibilityLabel='Закрыть уведомление'
         closeLabel='Отменить'
         title='Сообщение'
@@ -42,7 +45,7 @@ describe('Message — доступность', () => {
 
   test('сохраняет отдельные действия и не объединяет содержимое корнем', () => {
     const screen = render(
-      <Message
+      <Component
         body={
           <Pressable accessibilityRole='button'>
             <Text>Подробнее</Text>
@@ -59,7 +62,7 @@ describe('Message — доступность', () => {
       />
     )
 
-    expect(screen.getByTestId('MessageContainer')).not.toHaveProp(
+    expect(screen.getByTestId(`${name}Container`)).not.toHaveProp(
       'accessible',
       true
     )
@@ -71,8 +74,8 @@ describe('Message — доступность', () => {
   })
 
   test('скрывает декоративную иконку от отдельного озвучивания', () => {
-    const screen = render(<Message title='Сообщение' />)
-    const icon = screen.getByTestId('MessageIcon', {
+    const screen = render(<Component title='Сообщение' />)
+    const icon = screen.getByTestId(`${name}Icon`, {
       includeHiddenElements: true,
     })
 
@@ -82,18 +85,18 @@ describe('Message — доступность', () => {
 
   test('сохраняет переданные accessibility props контейнера', () => {
     const screen = render(
-      <Message
+      <Component
         accessibilityHint='Проверьте данные'
         accessibilityLanguage='ru-RU'
         title='Сообщение'
       />
     )
 
-    expect(screen.getByTestId('MessageContainer')).toHaveProp(
+    expect(screen.getByTestId(`${name}Container`)).toHaveProp(
       'accessibilityHint',
       'Проверьте данные'
     )
-    expect(screen.getByTestId('MessageContainer')).toHaveProp(
+    expect(screen.getByTestId(`${name}Container`)).toHaveProp(
       'accessibilityLanguage',
       'ru-RU'
     )

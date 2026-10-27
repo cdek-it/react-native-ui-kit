@@ -1,8 +1,11 @@
 import { act, cleanup, render } from '@testing-library/react-native'
 
-import { Message } from '..'
+import { Message, ToastMessage } from '..'
 
-describe('Message — таймер', () => {
+describe.each([
+  { name: 'Message', Component: Message },
+  { name: 'ToastMessage', Component: ToastMessage },
+])('$name — таймер', ({ name, Component }) => {
   beforeEach(() => jest.useFakeTimers())
 
   afterEach(() => {
@@ -15,7 +18,7 @@ describe('Message — таймер', () => {
     const onTimerFinish = jest.fn()
     const onClose = jest.fn()
     const screen = render(
-      <Message
+      <Component
         timerValue={3}
         title='Сообщение'
         onClose={onClose}
@@ -42,11 +45,11 @@ describe('Message — таймер', () => {
     const first = jest.fn()
     const latest = jest.fn()
     const screen = render(
-      <Message timerValue={3} title='Сообщение' onTimerFinish={first} />
+      <Component timerValue={3} title='Сообщение' onTimerFinish={first} />
     )
     act(() => jest.advanceTimersByTime(1000))
     screen.rerender(
-      <Message timerValue={3} title='Сообщение' onTimerFinish={latest} />
+      <Component timerValue={3} title='Сообщение' onTimerFinish={latest} />
     )
     act(() => jest.advanceTimersByTime(2000))
 
@@ -55,7 +58,7 @@ describe('Message — таймер', () => {
 
     const afterFinish = jest.fn()
     screen.rerender(
-      <Message timerValue={3} title='Сообщение' onTimerFinish={afterFinish} />
+      <Component timerValue={3} title='Сообщение' onTimerFinish={afterFinish} />
     )
     act(() => jest.advanceTimersByTime(3000))
 
@@ -65,11 +68,19 @@ describe('Message — таймер', () => {
   test('перезапускает отсчёт при изменении timerValue', () => {
     const onTimerFinish = jest.fn()
     const screen = render(
-      <Message timerValue={3} title='Сообщение' onTimerFinish={onTimerFinish} />
+      <Component
+        timerValue={3}
+        title='Сообщение'
+        onTimerFinish={onTimerFinish}
+      />
     )
     act(() => jest.advanceTimersByTime(2000))
     screen.rerender(
-      <Message timerValue={5} title='Сообщение' onTimerFinish={onTimerFinish} />
+      <Component
+        timerValue={5}
+        title='Сообщение'
+        onTimerFinish={onTimerFinish}
+      />
     )
     act(() => jest.advanceTimersByTime(3000))
 
@@ -83,7 +94,11 @@ describe('Message — таймер', () => {
   test('отменяет завершение при размонтировании', () => {
     const onTimerFinish = jest.fn()
     const screen = render(
-      <Message timerValue={3} title='Сообщение' onTimerFinish={onTimerFinish} />
+      <Component
+        timerValue={3}
+        title='Сообщение'
+        onTimerFinish={onTimerFinish}
+      />
     )
     act(() => jest.advanceTimersByTime(1000))
     screen.unmount()
@@ -95,12 +110,18 @@ describe('Message — таймер', () => {
   test('отменяет отсчёт при удалении timerValue', () => {
     const onTimerFinish = jest.fn()
     const screen = render(
-      <Message timerValue={3} title='Сообщение' onTimerFinish={onTimerFinish} />
+      <Component
+        timerValue={3}
+        title='Сообщение'
+        onTimerFinish={onTimerFinish}
+      />
     )
-    screen.rerender(<Message title='Сообщение' onTimerFinish={onTimerFinish} />)
+    screen.rerender(
+      <Component title='Сообщение' onTimerFinish={onTimerFinish} />
+    )
 
     expect(
-      screen.queryByTestId('MessageTimer', { includeHiddenElements: true })
+      screen.queryByTestId(`${name}Timer`, { includeHiddenElements: true })
     ).toBeNull()
 
     act(() => jest.advanceTimersByTime(5000))
@@ -109,8 +130,8 @@ describe('Message — таймер', () => {
   })
 
   test('исключает визуальный таймер из accessibility', () => {
-    const screen = render(<Message timerValue={3} title='Сообщение' />)
-    const timer = screen.getByTestId('MessageTimer', {
+    const screen = render(<Component timerValue={3} title='Сообщение' />)
+    const timer = screen.getByTestId(`${name}Timer`, {
       includeHiddenElements: true,
     })
 
@@ -139,5 +160,30 @@ describe('Визуальные варианты таймера', () => {
       screen.getByTestId('MessageTimer', { includeHiddenElements: true })
     ).toBeOnTheScreen()
     expect(screen.queryByTestId('MessageContent')).toBeNull()
+  })
+
+  test('ToastMessage заменяет иконку числовым отсчётом даже при hiddenIcon', () => {
+    const screen = render(
+      <ToastMessage hiddenIcon timerValue={3} title='Сообщение' />
+    )
+
+    expect(
+      screen.queryByTestId('ToastMessageIcon', { includeHiddenElements: true })
+    ).toBeNull()
+    expect(
+      screen.getByText('3', { includeHiddenElements: true })
+    ).toBeOnTheScreen()
+
+    act(() => jest.advanceTimersByTime(1000))
+
+    expect(
+      screen.getByText('2', { includeHiddenElements: true })
+    ).toBeOnTheScreen()
+
+    act(() => jest.advanceTimersByTime(2000))
+
+    expect(
+      screen.getByText('0', { includeHiddenElements: true })
+    ).toBeOnTheScreen()
   })
 })
