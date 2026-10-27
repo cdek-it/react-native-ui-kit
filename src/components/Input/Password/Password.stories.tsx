@@ -23,7 +23,7 @@ type StoryArgs = InputLabelStoryArgs<PasswordProps> & {
 }
 
 const meta: InputStoryMeta<PasswordProps, StoryArgs> = {
-  title: 'Input/Password',
+  title: 'Form Input/Password',
   tags: ['version:2.0', 'design:pending'],
   component: Password,
   args: {

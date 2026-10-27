@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { RatingItem } from '../RatingItem'
 
 const meta: Meta<typeof RatingItem> = {
-  title: 'Rating/RatingItem',
+  title: 'Form Rating/RatingItem',
   component: RatingItem,
   args: { checked: false, disabled: false, paddings: false },
   argTypes: { onPress: { action: 'onPress' } },
