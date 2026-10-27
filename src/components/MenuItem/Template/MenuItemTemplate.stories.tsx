@@ -18,7 +18,7 @@ const Extras = {
 }
 
 const meta: Meta<typeof MenuItemTemplate> = {
-  title: 'Mixins/MenuItemTemplate',
+  title: 'Menu/MenuItemTemplate',
   component: MenuItemTemplate,
   args: {
     title: 'Menu Item',

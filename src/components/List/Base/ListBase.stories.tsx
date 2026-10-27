@@ -17,7 +17,7 @@ const Extras = {
 }
 
 const meta: Meta<typeof ListBase> = {
-  title: 'Templates/List',
+  title: 'Menu/List',
   component: ListBase,
   args: {
     iconAlignment: 'top',
