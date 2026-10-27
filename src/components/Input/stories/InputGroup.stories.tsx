@@ -7,6 +7,7 @@ import { LegacyInputGroup as InputGroup } from '../deprecated/LegacyInputGroup'
 
 const meta: Meta<typeof InputGroup> = {
   title: 'Legacy/InputGroup',
+  tags: ['deprecated'],
   args: {
     clearable: true,
     disabled: false,

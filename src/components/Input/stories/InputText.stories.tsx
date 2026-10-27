@@ -7,6 +7,7 @@ import { LegacyInputText as InputText } from '../deprecated/LegacyInputText'
 
 const meta: Meta<typeof InputText & typeof InputTextBase> = {
   title: 'Legacy/InputText',
+  tags: ['deprecated'],
   args: {
     clearable: true,
     disabled: false,

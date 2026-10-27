@@ -6,6 +6,7 @@ import { InputCaption } from './InputCaption'
 
 const meta: Meta<typeof InputCaption> = {
   title: 'Input/InputCaption',
+  tags: ['version:2.0', 'design:pending'],
   component: InputCaption,
   args: { children: 'Подсказка к полю', variant: 'base', showIcon: false },
   argTypes: {

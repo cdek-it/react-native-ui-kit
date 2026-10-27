@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
 
 const meta: Meta<typeof Badge> = {
   title: 'Misc/Badge',
+  tags: ['version:2.0'],
   component: Badge,
   args: { children: 'Badge', severity: 'primary', size: 'base' },
   argTypes: {
