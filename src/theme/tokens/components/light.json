@@ -1686,8 +1686,8 @@
     },
     "colorScheme": {
       "success": {
-        "background": "#fafffb",
-        "borderColor": "#44e858",
+        "background": "#d4fedc",
+        "borderColor": "#aafbb7",
         "color": "#2b2e33",
         "shadow": "none",
         "outlined": { "color": "#2b2e33", "borderColor": "#44e858" },
@@ -1696,9 +1696,13 @@
           "focusRing": {
             "color": "rgba(68, 232, 88, 0.2)",
             "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
-          }
+          },
+          "color": "#2b2e33",
+          "borderColor": "#44e858"
         },
-        "simple": { "color": "#2b2e33" }
+        "simple": { "color": "#2b2e33" },
+        "iconColor": "#1dc831",
+        "captionColor": "#2b2e33"
       },
       "outlined": {
         "root": { "borderWidth": 0 },
@@ -1714,8 +1718,8 @@
       },
       "simple": { "content": { "padding": 0 } },
       "warn": {
-        "background": "#fffdfa",
-        "borderColor": "#f5b83d",
+        "background": "#ffeed4",
+        "borderColor": "#fddeaa",
         "color": "#2b2e33",
         "shadow": "none",
         "outlined": { "color": "#2b2e33", "borderColor": "#f5b83d" },
@@ -1724,13 +1728,17 @@
           "focusRing": {
             "color": "rgba(68, 232, 88, 0.2)",
             "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
-          }
+          },
+          "color": "#2b2e33",
+          "borderColor": "#f5b83d"
         },
-        "simple": { "color": "#2b2e33" }
+        "simple": { "color": "#2b2e33" },
+        "iconColor": "#f5b83d",
+        "captionColor": "#2b2e33"
       },
       "error": {
-        "background": "#fffafa",
-        "borderColor": "#e85244",
+        "background": "#fed4d4",
+        "borderColor": "#fbacaa",
         "color": "#2b2e33",
         "shadow": "none",
         "outlined": { "color": "#2b2e33", "borderColor": "#e85244" },
@@ -1739,9 +1747,13 @@
           "focusRing": {
             "color": "rgba(68, 232, 88, 0.2)",
             "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
-          }
+          },
+          "color": "#2b2e33",
+          "borderColor": "#e85244"
         },
-        "simple": { "color": "#2b2e33" }
+        "simple": { "color": "#2b2e33" },
+        "iconColor": "#e85244",
+        "captionColor": "#2b2e33"
       },
       "secondary": {
         "borderColor": "transparent",
@@ -1774,8 +1786,8 @@
         "color": "#ffffff"
       },
       "info": {
-        "background": "#fafdff",
-        "borderColor": "#4496e8",
+        "background": "#d4ecfe",
+        "borderColor": "#aad7fb",
         "color": "#2b2e33",
         "shadow": "none",
         "closeButton": {
@@ -1783,10 +1795,14 @@
           "focusRing": {
             "color": "rgba(68, 232, 88, 0.2)",
             "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
-          }
+          },
+          "color": "#2b2e33",
+          "borderColor": "#4496e8"
         },
         "outlined": { "color": "#2b2e33", "borderColor": "#4496e8" },
-        "simple": { "color": "#2b2e33" }
+        "simple": { "color": "#2b2e33" },
+        "iconColor": "#4496e8",
+        "captionColor": "#2b2e33"
       }
     },
     "root": { "borderRadius": 14, "borderWidth": 1, "transitionDuration": 180 },
@@ -1794,24 +1810,31 @@
       "padding": 14,
       "gap": 14,
       "sm": { "padding": 14 },
-      "lg": { "padding": 14 }
+      "lg": { "padding": 14 },
+      "background": "#ffffff",
+      "borderRadius": 14,
+      "iconGap": 4
     },
     "text": {
       "fontSize": 16,
       "fontWeight": 700,
       "sm": { "fontSize": 16 },
-      "lg": { "fontSize": 16 }
+      "lg": { "fontSize": 16 },
+      "lineHeight": 20
     },
-    "icon": { "size": 36, "sm": { "size": 36 }, "lg": { "size": 36 } },
+    "icon": { "size": 24, "sm": { "size": 36 }, "lg": { "size": 36 } },
     "closeButton": {
       "width": 32,
       "height": 32,
-      "borderRadius": 14,
-      "focusRing": { "width": 2, "style": "none", "offset": 0 }
+      "borderRadius": 10,
+      "focusRing": { "width": 2, "style": "none", "offset": 0 },
+      "hitSlop": 6
     },
     "closeIcon": { "size": 16, "sm": { "size": 16 }, "lg": { "size": 16 } },
     "outlined": { "root": { "borderWidth": 1 } },
-    "simple": { "content": { "padding": 0 } }
+    "simple": { "content": { "padding": 0 } },
+    "timer": { "height": 4 },
+    "caption": { "fontSize": 14, "fontWeight": 400, "lineHeight": 18 }
   },
   "metergroup": {
     "extend": { "extLabel": { "color": "#85888e" } },
@@ -2485,53 +2508,129 @@
         "borderColor": "#4496e8",
         "color": "#2b2e33",
         "detailColor": "#2b2e33",
-        "shadow": "0 4px 8px rgba(0, 0, 0, 0.2000)",
+        "shadow": [
+          {
+            "offsetX": 0,
+            "offsetY": 8,
+            "blurRadius": 16,
+            "spreadDistance": 0,
+            "color": "rgba(0, 0, 0, 0.1)"
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "blurRadius": 2,
+            "spreadDistance": 0,
+            "color": "rgba(0, 0, 0, 0.05)"
+          }
+        ],
         "closeButton": {
           "hoverBackground": "#d4ecfe",
           "focusRing": {
             "color": "rgba(68, 232, 88, 0.2)",
             "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
-          }
-        }
+          },
+          "color": "#4496e8",
+          "borderColor": "#4496e8"
+        },
+        "iconColor": "#4496e8",
+        "captionColor": "#2b2e33"
       },
       "success": {
         "background": "#fafffb",
         "borderColor": "#44e858",
         "color": "#2b2e33",
         "detailColor": "#2b2e33",
-        "shadow": "0 4px 8px rgba(0, 0, 0, 0.2000)",
+        "shadow": [
+          {
+            "offsetX": 0,
+            "offsetY": 8,
+            "blurRadius": 16,
+            "spreadDistance": 0,
+            "color": "rgba(0, 0, 0, 0.1)"
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "blurRadius": 2,
+            "spreadDistance": 0,
+            "color": "rgba(0, 0, 0, 0.05)"
+          }
+        ],
         "closeButton": {
           "hoverBackground": "#d4fedc",
           "focusRing": {
             "color": "rgba(68, 232, 88, 0.2)",
             "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
-          }
-        }
+          },
+          "color": "#1dc831",
+          "borderColor": "#44e858"
+        },
+        "iconColor": "#1dc831",
+        "captionColor": "#2b2e33"
       },
       "warn": {
         "background": "#fffdfa",
         "borderColor": "#f5b83d",
         "color": "#2b2e33",
         "detailColor": "#2b2e33",
-        "shadow": "0 4px 8px rgba(0, 0, 0, 0.2000)",
+        "shadow": [
+          {
+            "offsetX": 0,
+            "offsetY": 8,
+            "blurRadius": 16,
+            "spreadDistance": 0,
+            "color": "rgba(0, 0, 0, 0.1)"
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "blurRadius": 2,
+            "spreadDistance": 0,
+            "color": "rgba(0, 0, 0, 0.05)"
+          }
+        ],
         "closeButton": {
           "hoverBackground": "#ffeed4",
-          "focusRing": { "color": "rgba(68, 232, 88, 0.2)", "shadow": "none" }
-        }
+          "focusRing": { "color": "rgba(68, 232, 88, 0.2)", "shadow": "none" },
+          "color": "#f5b83d",
+          "borderColor": "#f5b83d"
+        },
+        "iconColor": "#f5b83d",
+        "captionColor": "#2b2e33"
       },
       "error": {
         "background": "#fffafa",
         "borderColor": "#e85244",
         "color": "#2b2e33",
         "detailColor": "#2b2e33",
-        "shadow": "0 4px 8px rgba(0, 0, 0, 0.2000)",
+        "shadow": [
+          {
+            "offsetX": 0,
+            "offsetY": 8,
+            "blurRadius": 16,
+            "spreadDistance": 0,
+            "color": "rgba(0, 0, 0, 0.1)"
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "blurRadius": 2,
+            "spreadDistance": 0,
+            "color": "rgba(0, 0, 0, 0.05)"
+          }
+        ],
         "closeButton": {
           "hoverBackground": "#fed4d4",
           "focusRing": {
             "color": "rgba(68, 232, 88, 0.2)",
             "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
-          }
-        }
+          },
+          "color": "#e85244",
+          "borderColor": "#e85244"
+        },
+        "iconColor": "#e85244",
+        "captionColor": "#2b2e33"
       },
       "secondary": {
         "shadow": "0 4px 8px rgba(0, 0, 0, 0.2000)",
@@ -2565,16 +2664,19 @@
     },
     "icon": { "size": 36 },
     "content": { "padding": 14, "gap": 14 },
-    "text": { "gap": 4 },
+    "text": { "gap": 4, "lineHeight": 20 },
     "summary": { "fontWeight": 700, "fontSize": 16 },
     "detail": { "fontWeight": 400, "fontSize": 14 },
     "closeButton": {
       "width": 32,
       "height": 32,
-      "borderRadius": 14,
-      "focusRing": { "width": 2, "style": "none", "offset": 0 }
+      "borderRadius": 10,
+      "focusRing": { "width": 2, "style": "none", "offset": 0 },
+      "hitSlop": 6
     },
-    "closeIcon": { "size": 16 }
+    "closeIcon": { "size": 16 },
+    "caption": { "fontSize": 14, "fontWeight": 400, "lineHeight": 18 },
+    "timer": { "size": 28, "borderWidth": 2, "fontSize": 14 }
   },
   "tag": {
     "colorScheme": {
@@ -2930,5 +3032,40 @@
   },
   "overlaybadge": {
     "root": { "outline": { "width": 0, "color": "transparent" } }
+  },
+  "legacyMessage": {
+    "root": { "borderRadius": 14 },
+    "content": { "padding": 14 },
+    "icon": { "size": 36 },
+    "extend": {
+      "extText": { "gap": 4 },
+      "extAccentLine": { "width": 4 },
+      "extInfo": {
+        "color": "#4496e8",
+        "closeButton": { "color": "#4496e8", "borderColor": "#4496e8" },
+        "caption": { "color": "#2b2e33" }
+      },
+      "extSuccess": {
+        "color": "#44e858",
+        "closeButton": { "color": "#44e858", "borderColor": "#44e858" },
+        "caption": { "color": "#2b2e33" }
+      },
+      "extWarn": {
+        "color": "#f5b83d",
+        "closeButton": { "color": "#f5b83d", "borderColor": "#f5b83d" },
+        "caption": { "color": "#2b2e33" }
+      },
+      "extError": {
+        "color": "#e85244",
+        "closeButton": { "color": "#e85244", "borderColor": "#e85244" },
+        "caption": { "color": "#2b2e33" }
+      }
+    },
+    "colorScheme": {
+      "info": { "background": "#fafdff", "borderColor": "#4496e8" },
+      "success": { "background": "#fafffb", "borderColor": "#44e858" },
+      "warn": { "background": "#fffdfa", "borderColor": "#f5b83d" },
+      "error": { "background": "#fffafa", "borderColor": "#e85244" }
+    }
   }
 }

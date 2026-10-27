@@ -90,10 +90,10 @@ const messageIconColor: Record<
   MessageSeverityKey,
   (t: ComponentTokens) => string
 > = {
-  info: (t) => t.message.extend.extInfo.color,
-  success: (t) => t.message.extend.extSuccess.color,
-  warning: (t) => t.message.extend.extWarn.color,
-  danger: (t) => t.message.extend.extError.color,
+  info: (t) => t.legacyMessage.extend.extInfo.color,
+  success: (t) => t.legacyMessage.extend.extSuccess.color,
+  warning: (t) => t.legacyMessage.extend.extWarn.color,
+  danger: (t) => t.legacyMessage.extend.extError.color,
 }
 
 /**
@@ -183,8 +183,8 @@ export const LegacyMessage = memo<LegacyMessageProps>(
             uniProps={({ components }) => {
               return {
                 color: messageIconColor[severity](components),
-                width: components.message.icon.size,
-                height: components.message.icon.size,
+                width: components.legacyMessage.icon.size,
+                height: components.legacyMessage.icon.size,
               }
             }}
           />
@@ -224,26 +224,28 @@ export const LegacyMessage = memo<LegacyMessageProps>(
 
 const messageStyles = StyleSheet.create(({ components, semantic }) => ({
   container: {
-    borderRadius: components.message.root.borderRadius,
+    borderRadius: components.legacyMessage.root.borderRadius,
     borderWidth: semantic.dimension.borderWidth[100],
     overflow: 'hidden',
     variants: {
       severity: {
         info: {
-          borderColor: components.message.colorScheme.info.borderColor,
-          backgroundColor: components.message.colorScheme.info.background,
+          borderColor: components.legacyMessage.colorScheme.info.borderColor,
+          backgroundColor: components.legacyMessage.colorScheme.info.background,
         },
         success: {
-          borderColor: components.message.colorScheme.success.borderColor,
-          backgroundColor: components.message.colorScheme.success.background,
+          borderColor: components.legacyMessage.colorScheme.success.borderColor,
+          backgroundColor:
+            components.legacyMessage.colorScheme.success.background,
         },
         warning: {
-          borderColor: components.message.colorScheme.warn.borderColor,
-          backgroundColor: components.message.colorScheme.warn.background,
+          borderColor: components.legacyMessage.colorScheme.warn.borderColor,
+          backgroundColor: components.legacyMessage.colorScheme.warn.background,
         },
         danger: {
-          borderColor: components.message.colorScheme.error.borderColor,
-          backgroundColor: components.message.colorScheme.error.background,
+          borderColor: components.legacyMessage.colorScheme.error.borderColor,
+          backgroundColor:
+            components.legacyMessage.colorScheme.error.background,
         },
       },
     },
@@ -251,22 +253,24 @@ const messageStyles = StyleSheet.create(({ components, semantic }) => ({
   content: {
     flexGrow: 1,
     borderLeftWidth:
-      components.message.extend.extAccentLine.width -
+      components.legacyMessage.extend.extAccentLine.width -
       semantic.dimension.borderWidth[100],
     padding: semantic.dimension.space[400],
-    paddingLeft: components.message.content.padding,
+    paddingLeft: components.legacyMessage.content.padding,
     gap: semantic.dimension.space[400],
     variants: {
       severity: {
-        info: { borderColor: components.message.colorScheme.info.borderColor },
+        info: {
+          borderColor: components.legacyMessage.colorScheme.info.borderColor,
+        },
         success: {
-          borderColor: components.message.colorScheme.success.borderColor,
+          borderColor: components.legacyMessage.colorScheme.success.borderColor,
         },
         warning: {
-          borderColor: components.message.colorScheme.warn.borderColor,
+          borderColor: components.legacyMessage.colorScheme.warn.borderColor,
         },
         danger: {
-          borderColor: components.message.colorScheme.error.borderColor,
+          borderColor: components.legacyMessage.colorScheme.error.borderColor,
         },
       },
     },
@@ -275,7 +279,7 @@ const messageStyles = StyleSheet.create(({ components, semantic }) => ({
   titleTextContainer: {
     flex: 1,
     alignSelf: 'center',
-    gap: components.message.extend.extText.gap,
+    gap: components.legacyMessage.extend.extText.gap,
   },
 }))
 
