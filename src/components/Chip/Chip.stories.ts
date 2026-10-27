@@ -7,6 +7,7 @@ const icons = { IconCheck, IconUser, none: undefined }
 
 const meta: Meta<typeof Chip> = {
   title: 'Misc/Chip',
+  tags: ['migration:excluded'],
   component: Chip,
   args: {
     Icon: IconCheck,

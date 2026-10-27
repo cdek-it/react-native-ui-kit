@@ -4,6 +4,7 @@ import { RatingItem } from '../RatingItem'
 
 const meta: Meta<typeof RatingItem> = {
   title: 'Form Rating/RatingItem',
+  tags: ['migration:excluded'],
   component: RatingItem,
   args: { checked: false, disabled: false, paddings: false },
   argTypes: { onPress: { action: 'onPress' } },

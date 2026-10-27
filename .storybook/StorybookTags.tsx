@@ -12,6 +12,7 @@ const tagDefinitions: Record<
   deprecated: { label: 'deprecated', tone: 'warn' },
   'version:2.0': { label: '2.0', tone: 'info' },
   'design:pending': { label: 'design pending', tone: 'secondary' },
+  'migration:excluded': { label: '× no migration', tone: 'danger' },
 }
 
 const StorybookTag = ({ tag }: { readonly tag: string }) => {

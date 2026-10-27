@@ -21,6 +21,7 @@ const Extras = {
 
 const meta: Meta<typeof Accordion> = {
   title: 'Panel/Accordion',
+  tags: ['migration:excluded'],
   component: Accordion,
   args: {
     title: 'Accordion',

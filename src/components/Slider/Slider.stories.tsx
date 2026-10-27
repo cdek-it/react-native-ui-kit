@@ -8,6 +8,7 @@ import { Slider, type SliderProps } from './Slider'
 
 const meta: Meta<typeof Slider> = {
   title: 'Form/Slider',
+  tags: ['migration:excluded'],
   component: Slider,
   args: { disabled: false },
   render: (args) => Template(args),
