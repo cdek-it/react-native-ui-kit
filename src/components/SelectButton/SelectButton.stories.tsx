@@ -40,6 +40,7 @@ const AnimatedExample = ({ buttons, ...props }: CommonProps) => {
 
 const meta: Meta<typeof SelectButton> = {
   title: 'Form/SelectButton',
+  tags: ['design:pending'],
   component: SelectButton,
   args: { buttons, size: 'base', disabled: false },
   argTypes: {

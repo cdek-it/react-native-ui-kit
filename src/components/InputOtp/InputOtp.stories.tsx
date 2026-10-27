@@ -15,6 +15,7 @@ const validateOtp = () =>
 
 const meta: Meta<typeof InputOtp> = {
   title: 'Form Input/InputOtp',
+  tags: ['design:pending'],
   component: InputOtp,
   args: { disabled: false, error: false, length: 4, value: '' },
   render: (args) => {
