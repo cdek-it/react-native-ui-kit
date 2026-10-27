@@ -14,7 +14,7 @@ import { InputText, type InputTextProps } from './InputText'
 type StoryArgs = InputLabelStoryArgs<InputTextProps>
 
 const meta = {
-  title: 'Input/InputText',
+  title: 'Form Input/InputText',
   tags: ['version:2.0', 'design:pending'],
   component: InputText,
   args: {

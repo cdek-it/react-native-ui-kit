@@ -74,7 +74,7 @@ const MaskedControl = ({
 
 const meta = {
   ...inputTextMeta,
-  title: 'Input/Input Text With Mask',
+  title: 'Form Input/Input Text With Mask',
   tags: ['version:2.0', 'design:pending'],
   args: {
     ...inputTextMeta.args,

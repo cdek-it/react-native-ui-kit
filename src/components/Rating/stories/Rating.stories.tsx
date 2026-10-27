@@ -5,7 +5,7 @@ import { useCallback } from 'react'
 import { Rating } from '../Rating'
 
 const meta: Meta<typeof Rating> = {
-  title: 'Rating/Rating',
+  title: 'Form Rating/Rating',
   args: { disabled: false, paddings: false, maxRating: 5 },
   argTypes: { rating: { control: 'number' } },
   parameters: {
