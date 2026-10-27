@@ -9,3 +9,8 @@ export {
   type LegacyInputGroupProps as InputGroupProps,
 } from './components/Input/deprecated/LegacyInputGroup'
 export type { InputTextCompatibilityProps as InputTextBaseProps } from './components/Input/deprecated/types'
+
+export {
+  LegacyMessage as Message,
+  type LegacyMessageProps as MessageProps,
+} from './components/Message/deprecated/LegacyMessage'

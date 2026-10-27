@@ -3,9 +3,9 @@ import { IconUserCircle } from '@tabler/icons-react-native'
 import { View } from 'react-native'
 import { action } from 'storybook/actions'
 
-import { Body } from '../Typography'
+import { Body } from '../../Typography'
 
-import { Message } from './Message'
+import { LegacyMessage as Message } from './LegacyMessage'
 
 const icons = { IconUserCircle, default: undefined }
 
@@ -23,7 +23,7 @@ const Stub = ({ children }: { readonly children: string }) => (
 )
 
 const meta: Meta<typeof Message> = {
-  title: 'Message/Message',
+  title: 'Legacy/LegacyMessage',
   args: {
     title: 'Message',
     caption: 'caption',
@@ -59,6 +59,6 @@ export default meta
 
 type Story = StoryObj<typeof Message>
 
-const MessageStory: Story = {}
+const LegacyMessageStory: Story = { name: 'LegacyMessage' }
 
-export { MessageStory as Message }
+export { LegacyMessageStory as LegacyMessage }

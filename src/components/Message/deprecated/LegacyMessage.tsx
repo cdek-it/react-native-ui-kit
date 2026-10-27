@@ -16,13 +16,13 @@ import {
 
 import { StyleSheet } from 'react-native-unistyles'
 
-import type { ComponentTokens } from '../../theme/tokens/index'
-import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
-import { ButtonSeverity } from '../Button/ButtonSeverity'
-import { Timer } from '../Timer/Timer'
-import { Body, Caption } from '../Typography'
+import type { ComponentTokens } from '../../../theme/tokens/index'
+import { type SvgSource, SvgUniversal } from '../../../utils/SvgUniversal'
+import { ButtonSeverity } from '../../Button/ButtonSeverity'
+import { Timer } from '../../Timer/Timer'
+import { Body, Caption } from '../../Typography'
 
-export interface MessageProps
+export interface LegacyMessageProps
   extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /** Текст заголовка */
   title: string
@@ -84,7 +84,7 @@ export interface MessageProps
   hiddenIcon?: boolean
 }
 
-type MessageSeverityKey = NonNullable<MessageProps['severity']>
+type MessageSeverityKey = NonNullable<LegacyMessageProps['severity']>
 
 const messageIconColor: Record<
   MessageSeverityKey,
@@ -101,7 +101,7 @@ const messageIconColor: Record<
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=562-2947
  * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24043-21934
  */
-export const Message = memo<MessageProps>(
+export const LegacyMessage = memo<LegacyMessageProps>(
   ({
     title,
     body,
@@ -178,11 +178,14 @@ export const Message = memo<MessageProps>(
       if (!hiddenIcon) {
         return (
           <SvgUniversal
-            {...messageStyles.iconSize}
             source={Icon}
             testID={TestId.Icon}
             uniProps={({ components }) => {
-              return { color: messageIconColor[severity](components) }
+              return {
+                color: messageIconColor[severity](components),
+                width: components.message.icon.size,
+                height: components.message.icon.size,
+              }
             }}
           />
         )
@@ -273,10 +276,6 @@ const messageStyles = StyleSheet.create(({ components, semantic }) => ({
     flex: 1,
     alignSelf: 'center',
     gap: components.message.extend.extText.gap,
-  },
-  iconSize: {
-    width: components.message.icon.size,
-    height: components.message.icon.size,
   },
 }))
 

@@ -4,7 +4,11 @@ import { render, userEvent } from '@testing-library/react-native'
 import type { ReactNode } from 'react'
 import { View } from 'react-native'
 
-import { Message, type MessageProps, TestId } from '../Message'
+import {
+  LegacyMessage as Message,
+  type LegacyMessageProps as MessageProps,
+  TestId,
+} from '../deprecated/LegacyMessage'
 
 const Stub = ({ children }: { readonly children: ReactNode }) => (
   <View>{children}</View>
