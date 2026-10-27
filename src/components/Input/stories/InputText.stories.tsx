@@ -6,7 +6,7 @@ import type { InputTextBase } from '../deprecated/InputTextBase/InputTextBase'
 import { LegacyInputText as InputText } from '../deprecated/LegacyInputText'
 
 const meta: Meta<typeof InputText & typeof InputTextBase> = {
-  title: 'Legacy/InputText',
+  title: 'Form Input/LegacyInputText',
   tags: ['deprecated'],
   args: {
     clearable: true,
@@ -55,4 +55,4 @@ type Story = StoryObj<typeof InputText>
 
 const InputTextStory: Story = {}
 
-export { InputTextStory as InputText }
+export { InputTextStory as LegacyInputText }

@@ -5,7 +5,7 @@ import { useCallback } from 'react'
 import { InputSwitch } from './InputSwitch'
 
 const meta: Meta<typeof InputSwitch> = {
-  title: 'Legacy/InputSwitch',
+  title: 'Form/LegacyInputSwitch',
   tags: ['deprecated'],
   component: InputSwitch,
   args: { disabled: false, danger: false, checked: false },
@@ -35,6 +35,6 @@ export default meta
 
 type Story = StoryObj<typeof InputSwitch>
 
-const InputSwitchStory: Story = { name: 'InputSwitch' }
+const InputSwitchStory: Story = { name: 'LegacyInputSwitch' }
 
-export { InputSwitchStory as InputSwitch }
+export { InputSwitchStory as LegacyInputSwitch }

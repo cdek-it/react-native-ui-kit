@@ -6,7 +6,7 @@ import { useCallback } from 'react'
 import { LegacyInputGroup as InputGroup } from '../deprecated/LegacyInputGroup'
 
 const meta: Meta<typeof InputGroup> = {
-  title: 'Legacy/InputGroup',
+  title: 'Form Input/LegacyInputGroup',
   tags: ['deprecated'],
   args: {
     clearable: true,
@@ -54,4 +54,4 @@ const InputGroupStory: Story = {
   },
 }
 
-export { InputGroupStory as InputGroup }
+export { InputGroupStory as LegacyInputGroup }

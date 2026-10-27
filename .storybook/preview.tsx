@@ -35,7 +35,7 @@ const preview: Preview = {
       storySort: {
         method: 'alphabetical',
         includeNames: true,
-        order: ['*', 'Typography', ['Overview', '*'], 'Legacy'],
+        order: ['*', 'Typography', ['Overview', '*']],
       },
     },
     actions: { argTypesRegex: '^on[A-Z].*' },
