@@ -62,6 +62,7 @@ const MaskedInput = <T extends InputTextProps>({
           {...otherRenderTextInputProps}
           mask={mask}
           ref={inputRef as unknown as RefObject<MaskedTextInputRef>}
+          value={value}
           onChangeText={onChangeText}
         />
       )}
