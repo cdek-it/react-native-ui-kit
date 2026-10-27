@@ -74,6 +74,7 @@ const MaskedInput = <T extends InputTextProps>({
 
 const meta: Meta<typeof MaskedInput> = {
   title: 'Legacy/InputMask',
+  tags: ['deprecated'],
   args: {
     clearable: true,
     disabled: false,

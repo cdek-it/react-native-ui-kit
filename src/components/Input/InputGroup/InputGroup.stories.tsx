@@ -54,6 +54,7 @@ type StoryArgs = Omit<InputLabelStoryArgs<InputGroupProps>, 'rightAddon'> & {
 
 const meta = {
   title: 'Input/InputGroup',
+  tags: ['version:2.0', 'design:pending'],
   component: InputGroup,
   args: {
     labelMode: 'none',

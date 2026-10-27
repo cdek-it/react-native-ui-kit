@@ -1,10 +1,14 @@
+import '../src/theme/ThemeContext'
+
 import { createAsyncStorage } from '@react-native-async-storage/async-storage'
 
+import { StorybookStatusUI } from './StorybookStatusUI'
 import { view } from './storybook.requires'
 
 const storage = createAsyncStorage('storybook')
 
 const StorybookUIRoot = view.getStorybookUI({
+  CustomUIComponent: StorybookStatusUI,
   storage,
   theme: {
     typography: {

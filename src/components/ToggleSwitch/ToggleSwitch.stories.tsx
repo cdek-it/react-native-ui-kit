@@ -6,6 +6,7 @@ import type { ToggleSwitchProps } from './types'
 
 const meta: Meta<ToggleSwitchProps> = {
   title: 'Form/ToggleSwitch',
+  tags: ['version:2.0', 'design:pending'],
   component: ToggleSwitch,
   args: {
     checked: false,

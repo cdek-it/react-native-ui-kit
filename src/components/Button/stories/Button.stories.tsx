@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
 
 const meta: Meta<StoryArgs> = {
   title: 'Button/Button',
+  tags: ['version:2.0'],
   component: Button,
   args: {
     size: 'base',

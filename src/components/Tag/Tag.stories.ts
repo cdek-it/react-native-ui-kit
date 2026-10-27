@@ -20,6 +20,7 @@ const icons = {
 
 const meta: Meta<typeof Tag> = {
   title: 'Misc/Tag',
+  tags: ['design:pending'],
   component: Tag,
   args: { text: 'Tag', rounded: false, severity: 'primary', showIcon: true },
   argTypes: {

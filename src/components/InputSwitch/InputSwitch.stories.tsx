@@ -6,6 +6,7 @@ import { InputSwitch } from './InputSwitch'
 
 const meta: Meta<typeof InputSwitch> = {
   title: 'Legacy/InputSwitch',
+  tags: ['deprecated'],
   component: InputSwitch,
   args: { disabled: false, danger: false, checked: false },
   argTypes: {

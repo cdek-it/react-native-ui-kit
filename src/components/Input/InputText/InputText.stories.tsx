@@ -15,6 +15,7 @@ type StoryArgs = InputLabelStoryArgs<InputTextProps>
 
 const meta = {
   title: 'Input/InputText',
+  tags: ['version:2.0', 'design:pending'],
   component: InputText,
   args: {
     labelMode: 'label',

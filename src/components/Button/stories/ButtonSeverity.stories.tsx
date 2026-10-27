@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
 
 const meta: Meta<StoryArgs> = {
   title: 'Button/ButtonSeverity',
+  tags: ['version:2.0'],
   component: ButtonSeverity,
   args: {
     size: 'base',
