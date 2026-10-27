@@ -4,6 +4,7 @@ import { RatingClear } from '../RatingClear'
 
 const meta: Meta<typeof RatingClear> = {
   title: 'Form Rating/RatingClear',
+  tags: ['migration:excluded'],
   component: RatingClear,
   args: { disabled: false, paddings: false },
   argTypes: { onPress: { action: 'onPress' } },

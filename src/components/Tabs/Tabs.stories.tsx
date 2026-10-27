@@ -7,7 +7,11 @@ import { Badge } from '../Badge'
 
 import { Tabs, TabPanel } from '.'
 
-const meta: Meta<typeof Tabs> = { title: 'Panel/Tabs', component: Tabs }
+const meta: Meta<typeof Tabs> = {
+  title: 'Panel/Tabs',
+  tags: ['migration:excluded'],
+  component: Tabs,
+}
 export default meta
 
 type Story = StoryObj<typeof Tabs>
