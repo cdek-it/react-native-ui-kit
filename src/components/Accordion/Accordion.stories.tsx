@@ -6,12 +6,12 @@ import {
   IconUser,
 } from '@tabler/icons-react-native'
 
-import { memo } from 'react'
 import { View } from 'react-native'
+import { StyleSheet } from 'react-native-unistyles'
 
 import { Body } from '../Typography'
 
-import { Accordion, type AccordionProps } from './Accordion'
+import { Accordion } from './Accordion'
 
 const Icons = { undefined, IconUser, IconList, IconSquare }
 const Extras = {
@@ -19,24 +19,16 @@ const Extras = {
   IconDiamond: <IconDiamond height={21} width={21} />,
 }
 
-const TestAccordion = memo<Omit<AccordionProps, 'childern'>>((props) => {
-  return (
-    <Accordion {...props}>
-      <View style={{ padding: 24, backgroundColor: 'blanchedalmond' }}>
-        <Body>Это контент аккордеона</Body>
-      </View>
-    </Accordion>
-  )
-})
-
 const meta: Meta<typeof Accordion> = {
   title: 'Panel/Accordion',
-  component: TestAccordion,
+  component: Accordion,
   args: {
     title: 'Accordion',
     Icon: undefined,
     titleExtra: undefined,
     withSeparator: false,
+    disabled: false,
+    isInitiallyExpanded: false,
   },
   argTypes: {
     Icon: { control: 'select', options: Object.keys(Icons), mapping: Icons },
@@ -48,30 +40,20 @@ const meta: Meta<typeof Accordion> = {
     },
     withSeparator: { control: 'boolean' },
     disabled: { control: 'boolean' },
+    isInitiallyExpanded: { control: 'boolean' },
   },
-  parameters: {
-    notes: `
-      #### Акордеон - полный набор свойств
-
-      <Accordion
-        title="Menu item title"
-        Icon=IconUser,
-        extra=IconDiamond,
-        isExpanded
-      >
-        // Content
-      </Accordion>
-  `,
-  },
-  decorators: [
-    (Story) => (
-      <View
-        style={{ padding: 16, alignContent: 'center', alignItems: 'center' }}
-      >
-        <Story />
+  parameters: { controls: { exclude: ['children', 'style', 'testID'] } },
+  render: (args) => (
+    // Начальное состояние Accordion применяется только при монтировании.
+    <Accordion
+      key={args.isInitiallyExpanded ? 'expanded' : 'collapsed'}
+      {...args}
+    >
+      <View style={styles.content}>
+        <Body>Это контент аккордеона</Body>
       </View>
-    ),
-  ],
+    </Accordion>
+  ),
 }
 
 export default meta
@@ -82,17 +64,4 @@ const AccordionStory: Story = {}
 
 export { AccordionStory as Accordion }
 
-export const Expanded: Story = { args: { isInitiallyExpanded: true } }
-
-export const LongTitle: Story = {
-  args: {
-    title:
-      'Длинный заголовок аккордеона, который занимает несколько строк и остаётся читаемым при раскрытии содержимого',
-    Icon: IconUser,
-    titleExtra: Extras.IconDiamond,
-  },
-}
-
-export const LongTitleExpanded: Story = {
-  args: { ...LongTitle.args, isInitiallyExpanded: true },
-}
+const styles = StyleSheet.create({ content: { padding: 24 } })
