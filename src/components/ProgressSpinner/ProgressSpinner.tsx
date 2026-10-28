@@ -1,7 +1,14 @@
-import { memo, useEffect, useMemo } from 'react'
+import { memo, useEffect, useMemo, useState } from 'react'
+import {
+  AccessibilityInfo,
+  type AccessibilityProps,
+  type ViewProps,
+} from 'react-native'
 import Animated, {
+  cancelAnimation,
   Easing,
   interpolate,
+  ReduceMotion,
   useAnimatedProps,
   useAnimatedStyle,
   useSharedValue,
@@ -15,14 +22,21 @@ import { StyleSheet } from 'react-native-unistyles'
 const AnimatedSvg = Animated.createAnimatedComponent(Svg)
 const AnimatedCircle = Animated.createAnimatedComponent(Circle)
 
-const STROKE_WIDTH = 2
+type ProgressSpinnerSize = 'small' | 'base' | 'large' | 'xlarge'
 
-export interface ProgressSpinnerProps {
+/** @deprecated Используйте small/base/large/xlarge (sm→small, md→base, lg→large, xl→xlarge). Удаляется в 2.0. */
+type DeprecatedProgressSpinnerSize = 'sm' | 'md' | 'lg' | 'xl'
+
+const legacySizes: Record<DeprecatedProgressSpinnerSize, ProgressSpinnerSize> =
+  { sm: 'small', md: 'base', lg: 'large', xl: 'xlarge' }
+
+export interface ProgressSpinnerProps
+  extends AccessibilityProps, Pick<ViewProps, 'testID'> {
   /**
    * Выбор размера компонента
-   * @default 'md'
+   * @default 'base'
    */
-  size?: 'xl' | 'lg' | 'md' | 'sm'
+  size?: ProgressSpinnerSize | DeprecatedProgressSpinnerSize
 
   /**
    * Выбор цвета компонента
@@ -33,29 +47,31 @@ export interface ProgressSpinnerProps {
 
 /**
  * Используется для отображения состояний ожидания в интерфейсе
+ * При Reduce Motion отображается статичная полуокружность вместо анимации дуги.
  * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=1219-3086
  * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24043-15392
  */
 export const ProgressSpinner = memo<ProgressSpinnerProps>(
-  ({ size = 'md', fill = 'primary' }) => {
+  ({
+    size = 'base',
+    fill = 'primary',
+    testID = TestId.ProgressSpinner,
+    accessible = true,
+    accessibilityRole = 'progressbar',
+    accessibilityState,
+    ...rest
+  }) => {
+    const [reduceMotion, setReduceMotion] = useState(false)
     const circleAnimation = useSharedValue(0)
     const containerAnimation = useSharedValue(0)
 
-    const sizeInDp = useMemo(() => {
-      switch (size) {
-        case 'xl':
-          return 56
+    const canonicalSize: ProgressSpinnerSize =
+      size in legacySizes
+        ? legacySizes[size as DeprecatedProgressSpinnerSize]
+        : (size as ProgressSpinnerSize)
 
-        case 'lg':
-          return 42
-
-        case 'md':
-          return 28
-
-        case 'sm':
-          return 14
-      }
-    }, [size])
+    const sizeStyle = styles[canonicalSize]
+    const strokeWidth = styles.geometry.borderWidth
 
     const color = useMemo(() => {
       switch (fill) {
@@ -67,49 +83,108 @@ export const ProgressSpinner = memo<ProgressSpinnerProps>(
       }
     }, [fill])
 
-    const center = useMemo(() => sizeInDp / 2, [sizeInDp])
-    const radius = useMemo(() => center - STROKE_WIDTH / 2, [center])
-    const circleLength = useMemo(() => 2 * Math.PI * radius, [radius])
+    const center = sizeStyle.width / 2
+    const radius = (sizeStyle.width - strokeWidth) / 2
+    const circleLength = 2 * Math.PI * radius
 
     const containerAnimatedStyle = useAnimatedStyle(() => ({
-      transform: [{ rotate: `${containerAnimation.value * 360}deg` }],
+      transform: [
+        { rotate: `${reduceMotion ? 0 : containerAnimation.value * 360}deg` },
+      ],
     }))
 
     const circleAnimatedProps = useAnimatedProps(() => ({
       strokeDasharray: [
-        interpolate(
-          circleAnimation.value,
-          [0, 0.5, 1],
-          [1, 0.7 * circleLength, circleLength]
-        ),
+        reduceMotion
+          ? 0.5 * circleLength
+          : interpolate(
+              circleAnimation.value,
+              [0, 0.5, 1],
+              [1, 0.7 * circleLength, circleLength]
+            ),
         circleLength,
       ],
-      strokeDashoffset: interpolate(
-        circleAnimation.value,
-        [0, 0.5, 1],
-        [0, -(0.3 * circleLength), -circleLength + 2]
-      ),
+      strokeDashoffset: reduceMotion
+        ? 0
+        : interpolate(
+            circleAnimation.value,
+            [0, 0.5, 1],
+            [0, -(0.3 * circleLength), -circleLength + 2]
+          ),
     }))
 
     useEffect(() => {
-      circleAnimation.value = withRepeat(
-        withTiming(1, { duration: 1500, easing: Easing.inOut(Easing.ease) }),
-        -1,
-        false
+      let mounted = true
+      let eventReceived = false
+      const subscription = AccessibilityInfo.addEventListener(
+        'reduceMotionChanged',
+        (enabled) => {
+          eventReceived = true
+
+          if (mounted) {
+            setReduceMotion(enabled)
+          }
+        }
       )
-    }, [circleAnimation])
+      AccessibilityInfo.isReduceMotionEnabled()
+        .then((enabled) => {
+          if (mounted && !eventReceived) {
+            setReduceMotion(enabled)
+          }
+        })
+        .catch(() => {
+          // При неудаче запроса сохраняем текущее состояние анимации.
+        })
+
+      return () => {
+        mounted = false
+        subscription.remove()
+      }
+    }, [])
 
     useEffect(() => {
-      containerAnimation.value = withRepeat(
-        withTiming(1, { duration: 2000, easing: Easing.linear }),
-        -1
-      )
-    }, [containerAnimation])
+      circleAnimation.value = reduceMotion ? 0.5 : 0
+      containerAnimation.value = 0
+
+      if (!reduceMotion) {
+        circleAnimation.value = withRepeat(
+          withTiming(1, {
+            duration: 1500,
+            easing: Easing.inOut(Easing.ease),
+            reduceMotion: ReduceMotion.Never,
+          }),
+          -1,
+          false,
+          undefined,
+          ReduceMotion.Never
+        )
+        containerAnimation.value = withRepeat(
+          withTiming(1, {
+            duration: 2000,
+            easing: Easing.linear,
+            reduceMotion: ReduceMotion.Never,
+          }),
+          -1,
+          false,
+          undefined,
+          ReduceMotion.Never
+        )
+      }
+
+      return () => {
+        cancelAnimation(circleAnimation)
+        cancelAnimation(containerAnimation)
+      }
+    }, [reduceMotion, circleAnimation, containerAnimation])
 
     return (
       <AnimatedSvg
-        style={[containerAnimatedStyle, { width: sizeInDp, height: sizeInDp }]}
-        testID={TestId.ProgressSpinner}
+        {...rest}
+        accessibilityRole={accessibilityRole}
+        accessibilityState={{ ...accessibilityState, busy: true }}
+        accessible={accessible}
+        style={[containerAnimatedStyle, sizeStyle]}
+        testID={testID}
       >
         <AnimatedCircle
           animatedProps={circleAnimatedProps}
@@ -119,7 +194,7 @@ export const ProgressSpinner = memo<ProgressSpinnerProps>(
           r={radius}
           stroke={color}
           strokeLinecap='round'
-          strokeWidth={STROKE_WIDTH}
+          strokeWidth={strokeWidth}
         />
       </AnimatedSvg>
     )
@@ -128,6 +203,23 @@ export const ProgressSpinner = memo<ProgressSpinnerProps>(
 
 const styles = StyleSheet.create(
   ({ components: { progressspinner }, semantic }) => ({
+    small: {
+      height: progressspinner.extend.small,
+      width: progressspinner.extend.small,
+    },
+    base: {
+      height: progressspinner.extend.medium,
+      width: progressspinner.extend.medium,
+    },
+    large: {
+      height: progressspinner.extend.large,
+      width: progressspinner.extend.large,
+    },
+    xlarge: {
+      height: progressspinner.extend.xlarge,
+      width: progressspinner.extend.xlarge,
+    },
+    geometry: { borderWidth: 4 },
     primary: { color: progressspinner.colorScheme.root.colorOne },
     white: { color: semantic.colorScheme.color.fg.on.fill.default },
   })
