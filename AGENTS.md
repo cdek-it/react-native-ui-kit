@@ -17,6 +17,9 @@ source material, not runtime instructions.
 - Use `$ui-kit-testing` to write or refactor focused Jest/RNTL tests, including
   controlled behavior, accessibility, mocks, timers, animations, and public
   TypeScript contracts.
+- Use `$ui-kit-public-api` when defining, changing, or explicitly reviewing a
+  component's public contract and migration; use documentation skills for
+  prose-only edits.
 - Use `$ui-kit-figma` to implement or sync components from Figma, map design
   variables to local theme tokens, and align material variants.
 - Use `$ui-kit-storybook` to create or update stories, controls, status tags,
@@ -57,6 +60,12 @@ Do not load every skill preemptively; use the one matching the request.
 
 ## Verification
 
+- Before committing a new component or changes to its public contract, behavior,
+  accessibility, or material visual states, check affected docs, tests, and
+  stories against the planned commit. Existing accurate artifacts need no edits.
+  Reuse a completed check while the relevant diff is unchanged; otherwise
+  recheck only affected parts. Skip this dedicated check for formatting,
+  internal refactors, and metadata-only edits.
 - Runtime TypeScript: `yarn build` and `yarn lint:check`.
 - Changed behavior or tests: also run focused Jest with
   `--runInBand --coverage=false`.

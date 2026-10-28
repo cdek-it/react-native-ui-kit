@@ -1,6 +1,6 @@
 interface:
   display_name: 'UI Kit Figma'
-  short_description: 'Sync UI Kit components from Figma tokens'
+  short_description: 'Inspect Figma designs and sync UI Kit components'
   default_prompt:
-    'Use $ui-kit-figma to implement or sync a UI Kit component from its Figma
-    specification.'
+    'Use $ui-kit-figma to inspect a design or sync a UI Kit component from its
+    Figma specification.'

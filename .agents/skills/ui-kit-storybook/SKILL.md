@@ -12,6 +12,9 @@ does not require Figma access.
 
 ## Scenarios And Controls
 
+For controls replacing public prop types, composed nodes, or custom controlled
+handlers, read [controls-and-render.md](references/controls-and-render.md).
+
 - Default to one interactive story per public component unless the user asks for
   additional stories. Expose variants, states, and optional content through
   controls rather than separate named stories.
