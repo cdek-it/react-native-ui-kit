@@ -35,6 +35,8 @@
     }
   },
   "scripts": {
+    "skills:check": "node .agents/scripts/check-skills.mjs",
+    "skills:test": "node --test .agents/scripts/test-check-skills.mjs && bash .agents/skills/ui-kit-review/scripts/test-resolve-review-scope.sh",
     "build": "yarn tokens:typecheck && yarn tokens:check && rm -rf dist && tsc -p tsconfig.build.json",
     "test": "jest",
     "start": "expo start --dev-client --clear",
@@ -136,7 +138,8 @@
     "ts-node": "10.9.2",
     "typescript": "5.9.3",
     "typescript-eslint": "8.50.0",
-    "word-wrap": "1.2.5"
+    "word-wrap": "1.2.5",
+    "yaml": "2.8.2"
   },
   "peerDependencies": {
     "expo": ">=55.x.x",

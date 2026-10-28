@@ -1,7 +1,7 @@
 # UI Kit Review Format
 
-Return a diff review as one GitLab Markdown comment. Match the user's language;
-Russian is the default for a Russian request.
+Use this expanded diff-review template only when requested. Return one GitLab
+Markdown comment in the user's language.
 
 ## Rules
 
