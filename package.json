@@ -28,15 +28,24 @@
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
+    },
+    "./legacy": {
+      "types": "./dist/legacy.d.ts",
+      "default": "./dist/legacy.js"
     }
   },
   "scripts": {
-    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "skills:check": "node .agents/scripts/check-skills.mjs",
+    "skills:test": "node --test .agents/scripts/test-check-skills.mjs && bash .agents/skills/ui-kit-review/scripts/test-resolve-review-scope.sh",
+    "build": "yarn tokens:typecheck && yarn tokens:check && rm -rf dist && tsc -p tsconfig.build.json",
     "test": "jest",
     "start": "expo start --dev-client --clear",
     "android": "expo run:android",
     "ios": "expo run:ios --no-install",
     "storybook-generate": "sb-rn-get-stories --config-path .storybook && sed -i -e 's/export const view = global.view/export const view: ReturnType<typeof start> = global.view/' .storybook/storybook.requires.ts && prettier .storybook --write",
+    "tokens:generate": "ts-node --project scripts/token-generator/tsconfig.json scripts/token-generator/build.ts",
+    "tokens:check": "ts-node --transpile-only --project scripts/token-generator/tsconfig.json scripts/token-generator/build.ts --check",
+    "tokens:typecheck": "tsc --noEmit -p scripts/token-generator/tsconfig.json",
     "doctor": "expo-doctor",
     "check": "expo install --check",
     "lint:check": "eslint --cache .",
@@ -71,10 +80,12 @@
     "@storybook/core": "8.6.14",
     "@storybook/preview-api": "8.6.14",
     "@storybook/react-native": "10.3.2",
+    "@storybook/react-native-ui": "10.3.2",
     "@stylistic/eslint-plugin": "5.6.1",
     "@testing-library/react-native": "13.3.3",
     "@types/jest": "29.5.14",
     "@types/lodash.map": "4.6.13",
+    "@types/node": "22.7.7",
     "@types/react": "19.2.14",
     "babel-loader": "8.2.3",
     "chalk": "4.1.2",
@@ -127,7 +138,8 @@
     "ts-node": "10.9.2",
     "typescript": "5.9.3",
     "typescript-eslint": "8.50.0",
-    "word-wrap": "1.2.5"
+    "word-wrap": "1.2.5",
+    "yaml": "2.8.2"
   },
   "peerDependencies": {
     "expo": ">=55.x.x",

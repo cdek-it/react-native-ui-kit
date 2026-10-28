@@ -13,8 +13,8 @@ through it. For external UI components, rely on visible output, accessibility,
 internal props.
 
 Mock native or animated infrastructure only when Jest cannot execute the real
-implementation reliably. For Reanimated behavior, prefer the project Jest mock
-and assert public animated styles with `toHaveAnimatedStyle`.
+implementation reliably. For Reanimated behavior, prefer the project Jest mock;
+follow `references/timers-and-async.md` for observing animated progress.
 
 Suppress only identified third-party or test-environment noise with a narrow
 matcher. Never suppress application errors, unknown `act(...)` warnings, timer

@@ -23,6 +23,7 @@ const internalFontsPlugin = [
           fontFamily: 'Noto Sans',
           fontDefinitions: [
             { path: './assets/fonts/NotoSans-Bold.ttf', weight: 700 },
+            { path: './assets/fonts/NotoSans-SemiBold.ttf', weight: 600 },
             { path: './assets/fonts/NotoSans-Regular.ttf', weight: 400 },
           ],
         },
@@ -34,6 +35,7 @@ const internalFontsPlugin = [
         './assets/fonts/TTFellows-DemiBoldItalic.ttf',
         './assets/fonts/TTFellows-Regular.ttf',
         './assets/fonts/NotoSans-Regular.ttf',
+        './assets/fonts/NotoSans-SemiBold.ttf',
         './assets/fonts/NotoSans-Bold.ttf',
       ],
     },

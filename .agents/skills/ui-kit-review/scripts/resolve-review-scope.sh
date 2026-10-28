@@ -3,7 +3,7 @@
 set -euo pipefail
 
 usage() {
-  echo "Usage: $0 [--base <git-ref> | --working-tree] [--include-vendor]" >&2
+  echo "Usage: $0 (--base <git-ref> | --working-tree) [--include-vendor]" >&2
   exit 2
 }
 
@@ -37,6 +37,11 @@ while [ "$#" -gt 0 ]; do
   esac
 done
 
+if [ -z "$base_ref" ] && [ "$working_tree_only" -eq 0 ]; then
+  echo 'error=scope-required use=--base-or--working-tree' >&2
+  exit 1
+fi
+
 repo_root="$(git rev-parse --show-toplevel)"
 cd "$repo_root"
 
@@ -68,14 +73,6 @@ if [ -n "$base_ref" ]; then
   branch_files="$(git -c core.quotepath=false diff --find-renames --name-only "$base_ref"...HEAD)"
   files="$(combine_files "$branch_files" "$local_files")"
   scope="base:$base_ref+working-tree"
-elif [ "$working_tree_only" -eq 1 ]; then
-  files="$local_files"
-  scope="working-tree"
-elif git rev-parse --verify origin/develop >/dev/null 2>&1 &&
-  git merge-base origin/develop HEAD >/dev/null 2>&1; then
-  branch_files="$(git -c core.quotepath=false diff --find-renames --name-only origin/develop...HEAD)"
-  files="$(combine_files "$branch_files" "$local_files")"
-  scope="base:origin/develop+working-tree"
 else
   files="$local_files"
   scope="working-tree"

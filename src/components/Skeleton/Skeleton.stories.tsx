@@ -11,9 +11,15 @@ const styles = StyleSheet.create({
 
 const meta: Meta<typeof Skeleton> = {
   title: 'Misc/Skeleton',
+  tags: ['version:2.0'],
   component: Skeleton,
   render: () => (
-    <View style={{ gap: 10 }}>
+    <View
+      accessible
+      accessibilityLabel='Загрузка контента'
+      accessibilityState={{ busy: true }}
+      style={{ gap: 10 }}
+    >
       <Skeleton style={{ height: 50 }} />
       <View style={styles.row}>
         <Skeleton style={{ height: 50, width: 100 }} />

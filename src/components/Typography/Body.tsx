@@ -53,26 +53,30 @@ export const Body = ({
   )
 }
 
-const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
+// Цвета Typography берутся из семантических ролей: отдельных токенов компонента нет
+const styles = StyleSheet.create(({ semantic, fonts }) => ({
   text: {
     includeFontPadding: false,
     verticalAlign: 'middle',
-    fontFamily: fonts.secondary,
+    fontFamily: fonts.fontFamily.base,
   },
-  regular: { fontWeight: 400 },
-  bold: { fontWeight: 700, letterSpacing: -0.5 },
-  default: { color: theme.General.textColor },
-  primary: { color: theme.General.primaryColor },
-  secondary: { color: theme.General.textSecondaryColor },
-  base: { fontSize: typography.Size['text-sm'], lineHeight: 18 },
-  lg: { fontSize: typography.Size['text-base'], lineHeight: 20 },
+  regular: { fontWeight: fonts.fontWeight.regular },
+  bold: {
+    fontWeight: fonts.fontWeight.bold,
+    letterSpacing: fonts.letterSpacing[400],
+  },
+  default: { color: semantic.colorScheme.color.fg.default },
+  primary: { color: semantic.colorScheme.color.fg.brand.default },
+  secondary: { color: semantic.colorScheme.color.fg.muted },
+  base: { fontSize: fonts.fontSize[200], lineHeight: fonts.lineHeight[300] },
+  lg: { fontSize: fonts.fontSize[300], lineHeight: fonts.lineHeight[400] },
   xl: {
-    fontSize: typography.Size['text-xl'],
-    lineHeight: 30,
-    letterSpacing: 0,
+    fontSize: fonts.fontSize[500],
+    lineHeight: fonts.lineHeight[700],
+    letterSpacing: fonts.letterSpacing[500],
   },
-  paragraphLg: { lineHeight: 24 },
+  paragraphLg: { lineHeight: fonts.lineHeight[500] },
   paragraphBase: { lineHeight: 21 },
   strikethrough: { textDecorationLine: 'line-through' },
-  disabled: { opacity: 0.6 },
+  disabled: { opacity: semantic.effects.opacity[60] },
 }))

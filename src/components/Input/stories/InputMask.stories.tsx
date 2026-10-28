@@ -14,7 +14,7 @@ import {
 } from 'react-native-advanced-input-mask'
 
 import { Body } from '../../Typography'
-import { InputText } from '../InputText'
+import { LegacyInputText as InputText } from '../deprecated/LegacyInputText'
 
 type InputTextProps = ComponentProps<typeof InputText>
 
@@ -62,6 +62,7 @@ const MaskedInput = <T extends InputTextProps>({
           {...otherRenderTextInputProps}
           mask={mask}
           ref={inputRef as unknown as RefObject<MaskedTextInputRef>}
+          value={value}
           onChangeText={onChangeText}
         />
       )}
@@ -73,7 +74,8 @@ const MaskedInput = <T extends InputTextProps>({
 }
 
 const meta: Meta<typeof MaskedInput> = {
-  title: 'Form/InputMask',
+  title: 'Form Input/LegacyInputMask',
+  tags: ['deprecated'],
   args: {
     clearable: true,
     disabled: false,
@@ -120,4 +122,4 @@ type Story = StoryObj<typeof MaskedInput>
 
 const MaskedInputStory: Story = {}
 
-export { MaskedInputStory as InputMask }
+export { MaskedInputStory as LegacyInputMask }

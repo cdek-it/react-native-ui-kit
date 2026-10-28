@@ -1,0 +1,1857 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputSwitch component tests checked - false, danger - false, disabled - false, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "height": 24,
+      "width": 40,
+    }
+  }
+>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": ""#a2a5a9"",
+        "borderColor": ""transparent"",
+        "borderRadius": 1600,
+        "borderWidth": 1,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
+      }
+    }
+    style={
+      [
+        {
+          "backgroundColor": "#a2a5a9",
+          "borderColor": "transparent",
+          "borderRadius": 1600,
+          "borderWidth": 1,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        {
+          "backgroundColor": ""#ffffff"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "3",
+          "position": "absolute",
+          "top": 3,
+          "width": 16,
+        }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 3,
+            "position": "absolute",
+            "top": 3,
+            "width": 16,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`InputSwitch component tests checked - false, danger - false, disabled - false, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "height": 24,
+      "width": 40,
+    }
+  }
+>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": ""#a2a5a9"",
+        "borderColor": ""transparent"",
+        "borderRadius": 1600,
+        "borderWidth": 1,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
+      }
+    }
+    style={
+      [
+        {
+          "backgroundColor": "#a2a5a9",
+          "borderColor": "transparent",
+          "borderRadius": 1600,
+          "borderWidth": 1,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        {
+          "backgroundColor": ""#ffffff"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "3",
+          "position": "absolute",
+          "top": 3,
+          "width": 16,
+        }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 3,
+            "position": "absolute",
+            "top": 3,
+            "width": 16,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`InputSwitch component tests checked - false, danger - false, disabled - true, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "height": 24,
+      "width": 40,
+    }
+  }
+>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": ""#e2e2e4"",
+        "borderColor": ""transparent"",
+        "borderRadius": 1600,
+        "borderWidth": 1,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
+      }
+    }
+    style={
+      [
+        {
+          "backgroundColor": "#e2e2e4",
+          "borderColor": "transparent",
+          "borderRadius": 1600,
+          "borderWidth": 1,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        {
+          "backgroundColor": ""#85888e"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "3",
+          "position": "absolute",
+          "top": 3,
+          "width": 16,
+        }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#85888e",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 3,
+            "position": "absolute",
+            "top": 3,
+            "width": 16,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`InputSwitch component tests checked - false, danger - false, disabled - true, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "height": 24,
+      "width": 40,
+    }
+  }
+>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": ""#e2e2e4"",
+        "borderColor": ""transparent"",
+        "borderRadius": 1600,
+        "borderWidth": 1,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
+      }
+    }
+    style={
+      [
+        {
+          "backgroundColor": "#e2e2e4",
+          "borderColor": "transparent",
+          "borderRadius": 1600,
+          "borderWidth": 1,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        {
+          "backgroundColor": ""#85888e"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "3",
+          "position": "absolute",
+          "top": 3,
+          "width": 16,
+        }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#85888e",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 3,
+            "position": "absolute",
+            "top": 3,
+            "width": 16,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`InputSwitch component tests checked - false, danger - true, disabled - false, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "height": 24,
+      "width": 40,
+    }
+  }
+>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": ""#a2a5a9"",
+        "borderColor": ""#db3424"",
+        "borderRadius": 1600,
+        "borderWidth": 1,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
+      }
+    }
+    style={
+      [
+        {
+          "backgroundColor": "#a2a5a9",
+          "borderColor": "#db3424",
+          "borderRadius": 1600,
+          "borderWidth": 1,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        {
+          "backgroundColor": ""#ffffff"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "3",
+          "position": "absolute",
+          "top": 3,
+          "width": 16,
+        }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 3,
+            "position": "absolute",
+            "top": 3,
+            "width": 16,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`InputSwitch component tests checked - false, danger - true, disabled - false, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "height": 24,
+      "width": 40,
+    }
+  }
+>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": ""#a2a5a9"",
+        "borderColor": ""#db3424"",
+        "borderRadius": 1600,
+        "borderWidth": 1,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
+      }
+    }
+    style={
+      [
+        {
+          "backgroundColor": "#a2a5a9",
+          "borderColor": "#db3424",
+          "borderRadius": 1600,
+          "borderWidth": 1,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        {
+          "backgroundColor": ""#ffffff"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "3",
+          "position": "absolute",
+          "top": 3,
+          "width": 16,
+        }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 3,
+            "position": "absolute",
+            "top": 3,
+            "width": 16,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`InputSwitch component tests checked - false, danger - true, disabled - true, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "height": 24,
+      "width": 40,
+    }
+  }
+>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": ""#e2e2e4"",
+        "borderColor": ""transparent"",
+        "borderRadius": 1600,
+        "borderWidth": 1,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
+      }
+    }
+    style={
+      [
+        {
+          "backgroundColor": "#e2e2e4",
+          "borderColor": "transparent",
+          "borderRadius": 1600,
+          "borderWidth": 1,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        {
+          "backgroundColor": ""#85888e"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "3",
+          "position": "absolute",
+          "top": 3,
+          "width": 16,
+        }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#85888e",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 3,
+            "position": "absolute",
+            "top": 3,
+            "width": 16,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`InputSwitch component tests checked - false, danger - true, disabled - true, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "height": 24,
+      "width": 40,
+    }
+  }
+>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": ""#e2e2e4"",
+        "borderColor": ""transparent"",
+        "borderRadius": 1600,
+        "borderWidth": 1,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
+      }
+    }
+    style={
+      [
+        {
+          "backgroundColor": "#e2e2e4",
+          "borderColor": "transparent",
+          "borderRadius": 1600,
+          "borderWidth": 1,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        {
+          "backgroundColor": ""#85888e"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "3",
+          "position": "absolute",
+          "top": 3,
+          "width": 16,
+        }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#85888e",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 3,
+            "position": "absolute",
+            "top": 3,
+            "width": 16,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`InputSwitch component tests checked - true, danger - false, disabled - false, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "height": 24,
+      "width": 40,
+    }
+  }
+>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": ""#2b2e33"",
+        "borderColor": ""transparent"",
+        "borderRadius": 1600,
+        "borderWidth": 1,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
+      }
+    }
+    style={
+      [
+        {
+          "backgroundColor": "#2b2e33",
+          "borderColor": "transparent",
+          "borderRadius": 1600,
+          "borderWidth": 1,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        {
+          "backgroundColor": ""#ffffff"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "19",
+          "position": "absolute",
+          "top": 3,
+          "width": 16,
+        }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 19,
+            "position": "absolute",
+            "top": 3,
+            "width": 16,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`InputSwitch component tests checked - true, danger - false, disabled - false, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "height": 24,
+      "width": 40,
+    }
+  }
+>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": ""#2b2e33"",
+        "borderColor": ""transparent"",
+        "borderRadius": 1600,
+        "borderWidth": 1,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
+      }
+    }
+    style={
+      [
+        {
+          "backgroundColor": "#2b2e33",
+          "borderColor": "transparent",
+          "borderRadius": 1600,
+          "borderWidth": 1,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        {
+          "backgroundColor": ""#ffffff"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "19",
+          "position": "absolute",
+          "top": 3,
+          "width": 16,
+        }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 19,
+            "position": "absolute",
+            "top": 3,
+            "width": 16,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`InputSwitch component tests checked - true, danger - false, disabled - true, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "height": 24,
+      "width": 40,
+    }
+  }
+>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": ""#e2e2e4"",
+        "borderColor": ""transparent"",
+        "borderRadius": 1600,
+        "borderWidth": 1,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
+      }
+    }
+    style={
+      [
+        {
+          "backgroundColor": "#e2e2e4",
+          "borderColor": "transparent",
+          "borderRadius": 1600,
+          "borderWidth": 1,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        {
+          "backgroundColor": ""#85888e"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "19",
+          "position": "absolute",
+          "top": 3,
+          "width": 16,
+        }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#85888e",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 19,
+            "position": "absolute",
+            "top": 3,
+            "width": 16,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`InputSwitch component tests checked - true, danger - false, disabled - true, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "height": 24,
+      "width": 40,
+    }
+  }
+>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": ""#e2e2e4"",
+        "borderColor": ""transparent"",
+        "borderRadius": 1600,
+        "borderWidth": 1,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
+      }
+    }
+    style={
+      [
+        {
+          "backgroundColor": "#e2e2e4",
+          "borderColor": "transparent",
+          "borderRadius": 1600,
+          "borderWidth": 1,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        {
+          "backgroundColor": ""#85888e"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "19",
+          "position": "absolute",
+          "top": 3,
+          "width": 16,
+        }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#85888e",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 19,
+            "position": "absolute",
+            "top": 3,
+            "width": 16,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`InputSwitch component tests checked - true, danger - true, disabled - false, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "height": 24,
+      "width": 40,
+    }
+  }
+>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": ""#2b2e33"",
+        "borderColor": ""#db3424"",
+        "borderRadius": 1600,
+        "borderWidth": 1,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
+      }
+    }
+    style={
+      [
+        {
+          "backgroundColor": "#2b2e33",
+          "borderColor": "#db3424",
+          "borderRadius": 1600,
+          "borderWidth": 1,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        {
+          "backgroundColor": ""#ffffff"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "19",
+          "position": "absolute",
+          "top": 3,
+          "width": 16,
+        }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 19,
+            "position": "absolute",
+            "top": 3,
+            "width": 16,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`InputSwitch component tests checked - true, danger - true, disabled - false, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "height": 24,
+      "width": 40,
+    }
+  }
+>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": ""#2b2e33"",
+        "borderColor": ""#db3424"",
+        "borderRadius": 1600,
+        "borderWidth": 1,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
+      }
+    }
+    style={
+      [
+        {
+          "backgroundColor": "#2b2e33",
+          "borderColor": "#db3424",
+          "borderRadius": 1600,
+          "borderWidth": 1,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        {
+          "backgroundColor": ""#ffffff"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "19",
+          "position": "absolute",
+          "top": 3,
+          "width": 16,
+        }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 19,
+            "position": "absolute",
+            "top": 3,
+            "width": 16,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`InputSwitch component tests checked - true, danger - true, disabled - true, pressed - false 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "height": 24,
+      "width": 40,
+    }
+  }
+>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": ""#e2e2e4"",
+        "borderColor": ""transparent"",
+        "borderRadius": 1600,
+        "borderWidth": 1,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
+      }
+    }
+    style={
+      [
+        {
+          "backgroundColor": "#e2e2e4",
+          "borderColor": "transparent",
+          "borderRadius": 1600,
+          "borderWidth": 1,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        {
+          "backgroundColor": ""#85888e"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "19",
+          "position": "absolute",
+          "top": 3,
+          "width": 16,
+        }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#85888e",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 19,
+            "position": "absolute",
+            "top": 3,
+            "width": 16,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`InputSwitch component tests checked - true, danger - true, disabled - true, pressed - true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "height": 24,
+      "width": 40,
+    }
+  }
+>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      {
+        "backgroundColor": ""#e2e2e4"",
+        "borderColor": ""transparent"",
+        "borderRadius": 1600,
+        "borderWidth": 1,
+        "height": 24,
+        "padding": 4,
+        "width": 40,
+      }
+    }
+    style={
+      [
+        {
+          "backgroundColor": "#e2e2e4",
+          "borderColor": "transparent",
+          "borderRadius": 1600,
+          "borderWidth": 1,
+          "height": 24,
+          "padding": 4,
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        {
+          "backgroundColor": ""#85888e"",
+          "borderRadius": 1600,
+          "height": 16,
+          "left": "19",
+          "position": "absolute",
+          "top": 3,
+          "width": 16,
+        }
+      }
+      style={
+        [
+          {
+            "backgroundColor": "#85888e",
+            "borderRadius": 1600,
+            "height": 16,
+            "left": 19,
+            "position": "absolute",
+            "top": 3,
+            "width": 16,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;

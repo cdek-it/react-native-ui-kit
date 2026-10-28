@@ -9,6 +9,7 @@ const icons = { IconInfoCircle, IconCircleCheck, none: undefined }
 
 const meta: Meta<typeof Divider> = {
   title: 'Panel/Divider',
+  tags: ['migration:excluded'],
   component: Divider,
   decorators: (Story) => (
     <View style={{ height: 300 }}>

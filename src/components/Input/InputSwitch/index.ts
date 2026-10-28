@@ -1,1 +1,0 @@
-export { InputSwitch } from './InputSwitch'

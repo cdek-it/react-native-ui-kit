@@ -7,7 +7,11 @@ import { Badge } from '../Badge'
 
 import { Tabs, TabPanel } from '.'
 
-const meta: Meta<typeof Tabs> = { title: 'Menu/Tab', component: Tabs }
+const meta: Meta<typeof Tabs> = {
+  title: 'Panel/Tabs',
+  tags: ['migration:excluded'],
+  component: Tabs,
+}
 export default meta
 
 type Story = StoryObj<typeof Tabs>
@@ -42,9 +46,9 @@ const TabsExample = ({ disabled }: { readonly disabled?: boolean }) => {
   )
 }
 
-const TabStory: Story = {
+const TabsStory: Story = {
   args: { disabled: false },
   render: (args) => <TabsExample {...args} />,
 }
 
-export { TabStory as Tab }
+export { TabsStory as Tabs }

@@ -1,7 +1,8 @@
-import type { Ref } from 'react'
+import type { ReactElement, Ref } from 'react'
 import type { PressableProps, View } from 'react-native'
 
 import type { SvgSource } from '../../utils/SvgUniversal'
+import type { BadgeProps } from '../Badge'
 import type { BadgeSeverity } from '../Badge/Badge'
 
 export type ButtonBaseVariant =
@@ -11,6 +12,7 @@ export type ButtonBaseVariant =
   | 'text'
   | 'link'
 export type ButtonSeverityVariant = 'basic' | 'outlined' | 'text'
+export type ButtonSeverityAppearance = 'filled' | 'outlined' | 'text'
 export type ButtonVariant = ButtonBaseVariant | ButtonSeverityVariant
 export type ButtonSize = 'xlarge' | 'large' | 'base' | 'small'
 export type ButtonShape = 'square' | 'circle'
@@ -20,44 +22,57 @@ export interface BaseButtonProps<
   Variant extends ButtonVariant,
 > extends PressableProps {
   /**
-   * Controls button size
+   * Готовый бейдж кнопки с пропсами {@link BadgeProps}.
+   *
+   * Бейдж скрыт от скринридера. При необходимости потребитель сам описывает
+   * его значение в accessibilityLabel кнопки. Автоматически имя не дополняется.
+   */
+  badge?: ReactElement<BadgeProps>
+  /**
+   * Размер кнопки
    * @default 'base'
    */
   size?: ButtonSize
   /**
-   * Controls button shape
-   * @default 'square'
+   * Форма кнопки.
+   * @deprecated Используйте rounded. Удаляется в версии 2.0
    */
   shape?: ButtonShape
   /**
-   * Controls button loading state
+   * Скругление углов кнопки
+   * @default false
+   */
+  rounded?: boolean
+  /**
+   * Состояние загрузки кнопки
    * @default false
    */
   loading?: boolean
   /**
-   * Button visual presentation type
+   * Вариант оформления кнопки
    */
   variant?: Variant
   /**
-   * Icon position
+   * Положение иконки относительно текста
    * @default 'prefix'
    */
   iconPosition?: ButtonIconPosition
   /**
-   * Controls icon only button variant
+   * Кнопка только с иконкой, без текста
+   * Обязательно задайте accessibilityLabel, чтобы у кнопки было доступное имя.
    */
   iconOnly?: unknown
   /**
-   * SVG icon
+   * SVG-иконка
    * @default undefined
    */
   Icon?: SvgSource
   /**
-   * Label in button
+   * Текст кнопки
    */
   label?: string
   /**
-   * Ref for the pressable component
+   * Ссылка на компонент Pressable
    */
   pressableRef?: Ref<View>
 }
@@ -72,6 +87,11 @@ export interface IconTextButton<
 export interface IconOnlyButtonProps<
   Variant extends ButtonVariant,
 > extends BaseButtonProps<Variant> {
+  /**
+   * Доступное имя кнопки с иконкой.
+   * До версии 2.0 необязательное для совместимости; в 2.0 станет обязательным
+   */
+  accessibilityLabel?: string
   Icon: SvgSource
   iconOnly: true
   iconPosition?: never
@@ -86,21 +106,29 @@ export type ButtonSeverity = 'info' | 'success' | 'warning' | 'danger'
 
 export interface ButtonSeverityProps {
   /**
-   * Controls severity button styling variant
+   * Семантический цвет кнопки
    */
   severity: ButtonSeverity
+  /**
+   * @default 'filled'
+   */
+  appearance?: ButtonSeverityAppearance
+  /**
+   * @deprecated Используйте appearance. Удаляется в версии 2.0
+   */
   variant?: ButtonSeverityVariant
 }
 
+/** @deprecated Используйте Button с пропом badge. Удаляется в версии 2.0. */
 export interface ButtonBadgeProps {
   /**
-   * Controls color of Badge component
+   * Цвет бейджа.
    *
    * @type {BadgeSeverity}
    */
   badgeSeverity: BadgeSeverity
   /**
-   * Текст внутри бейджа. Если не указан, то бейдж будет в форме точки.
+   * Текст внутри бейджа. Если не указан, то бейдж будет в форме точки
    */
   badgeLabel?: string
 }

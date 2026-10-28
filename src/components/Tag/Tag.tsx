@@ -1,8 +1,17 @@
+import {
+  IconAlertTriangle,
+  IconCheck,
+  IconCircleCheck,
+  IconCircleX,
+  IconInfoCircle,
+} from '@tabler/icons-react-native'
 import { memo } from 'react'
 import {
   View,
   Text,
+  useWindowDimensions,
   type ViewStyle,
+  type TextStyle,
   type StyleProp,
   type AccessibilityProps,
   type ViewProps,
@@ -10,8 +19,10 @@ import {
 
 import { StyleSheet } from 'react-native-unistyles'
 
-import type { ThemeType } from '../../theme/types'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
+
+/** @deprecated Используйте primary. Будет удалён в 2.0 после миграции SuperApp */
+type DeprecatedTagSeverity = 'basic'
 
 export interface TagProps
   extends AccessibilityProps, Pick<ViewProps, 'testID' | 'collapsable'> {
@@ -23,9 +34,16 @@ export interface TagProps
 
   /**
    *  Выбор варианта стиля компонента
-   *  @default 'basic'
+   *  @default 'primary'
    */
-  severity?: 'basic' | 'info' | 'success' | 'warning' | 'danger' | 'secondary'
+  severity?:
+    | 'primary'
+    | 'info'
+    | 'success'
+    | 'warning'
+    | 'danger'
+    | 'secondary'
+    | DeprecatedTagSeverity
 
   /**
    * Показать или скрыть иконку внутри компонента
@@ -36,38 +54,51 @@ export interface TagProps
   /** Дополнительная стилизация для контейнера компонента */
   style?: StyleProp<ViewStyle>
 
-  /** SVG-иконка */
+  /** SVG-иконка. Заменяет стандартную иконку выбранного severity */
   Icon?: SvgSource
 }
 
-type TagSeverity = NonNullable<TagProps['severity']>
+type TagSeverity = Exclude<
+  NonNullable<TagProps['severity']>,
+  DeprecatedTagSeverity
+>
 
-const tagIconColor: Record<TagSeverity, (t: ThemeType['theme']) => string> = {
-  basic: (t) => t.Misc.Badge.badgeTextColor,
-  info: (t) => t.Misc.Badge.badgeInfoTextColor,
-  success: (t) => t.Misc.Badge.badgeSuccessTextColor,
-  warning: (t) => t.Misc.Badge.badgeWarningTextColor,
-  danger: (t) => t.Misc.Badge.badgeDangerTextColor,
-  secondary: (t) => t.Misc.Badge.badgeTextColor,
+const tagIcons: Record<TagSeverity, SvgSource> = {
+  primary: IconCheck,
+  info: IconInfoCircle,
+  success: IconCircleCheck,
+  warning: IconAlertTriangle,
+  danger: IconCircleX,
+  secondary: IconCircleX,
 }
 
 /**
  * Используется для маркировки элементов интерфейса
- * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4921
+ * Внутри интерактивного родителя задавайте доступное имя родителю,
+ * оставляя Tag без собственного accessibilityLabel
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=21-1238
  */
 export const Tag = memo<TagProps>(
   ({
     text,
     rounded,
-    severity = 'basic',
+    severity = 'primary',
     showIcon = true,
     style,
     Icon,
     testID,
     collapsable,
+    accessibilityLabel,
     ...rest
   }) => {
-    tagStyles.useVariants({ severity })
+    // На iOS пересоздание Text сбрасывает измерения при смене масштаба шрифта.
+    const { fontScale } = useWindowDimensions()
+    const resolvedSeverity = severity === 'basic' ? 'primary' : severity
+    const colorSchemeKey =
+      resolvedSeverity === 'warning' ? 'warn' : resolvedSeverity
+    const hasAccessibilityLabel = accessibilityLabel !== undefined
+
+    tagStyles.useVariants({ severity: resolvedSeverity })
 
     return (
       <View
@@ -75,23 +106,38 @@ export const Tag = memo<TagProps>(
         style={style}
         testID={testID || TagTestId.root}
         {...rest}
+        accessibilityLabel={accessibilityLabel}
+        accessibilityRole={hasAccessibilityLabel ? 'text' : undefined}
+        accessible={hasAccessibilityLabel}
       >
         <View
+          accessibilityElementsHidden={hasAccessibilityLabel}
+          accessible={false}
           collapsable={collapsable}
+          importantForAccessibility={
+            hasAccessibilityLabel ? 'no-hide-descendants' : 'auto'
+          }
           style={[tagStyles.container, rounded && tagStyles.roundedContainer]}
           testID={TagTestId.innerContainer}
         >
-          {showIcon && Icon ? (
+          {showIcon ? (
             <SvgUniversal
-              {...tagStyles.icon}
-              source={Icon}
+              accessibilityElementsHidden
+              accessible={false}
+              importantForAccessibility='no-hide-descendants'
+              source={Icon ?? tagIcons[resolvedSeverity]}
               testID={TagTestId.icon}
-              uniProps={({ theme }) => ({
-                color: tagIconColor[severity](theme),
+              uniProps={({ components }) => ({
+                color: components.tag.colorScheme[colorSchemeKey].color,
+                width: components.tag.icon.size,
+                height: components.tag.icon.size,
               })}
             />
           ) : null}
           <Text
+            accessibilityRole='text'
+            accessible={!hasAccessibilityLabel}
+            key={fontScale}
             numberOfLines={1}
             style={tagStyles.text}
             testID={TagTestId.text}
@@ -104,61 +150,57 @@ export const Tag = memo<TagProps>(
   }
 )
 
-const tagStyles = StyleSheet.create(
-  ({ theme, border, spacing, typography, fonts }) => ({
-    container: {
-      alignSelf: 'flex-start',
-      flexDirection: 'row',
-      alignItems: 'center',
-      gap: spacing.Gap['gap-1'],
-      paddingHorizontal: theme.Misc.Tag.tagPadding,
-      height: theme.Misc.Tag.tagHeight,
-      borderRadius: border.Radius['rounded-lg'],
-      variants: {
-        severity: {
-          basic: { backgroundColor: theme.Misc.Badge.badgeBg },
-          info: {
-            backgroundColor: theme.Button.Severity.Info.Basic.infoButtonBg,
-          },
-          success: {
-            backgroundColor:
-              theme.Button.Severity.Success.Basic.successButtonBg,
-          },
-          warning: {
-            backgroundColor:
-              theme.Button.Severity.Warning.Basic.warningButtonBg,
-          },
-          danger: {
-            backgroundColor: theme.Button.Severity.Danger.Basic.dangerButtonBg,
-          },
-          secondary: { backgroundColor: theme.Surface['surface-border'] },
+const tagStyles = StyleSheet.create(({ components, fonts }) => ({
+  container: {
+    alignSelf: 'flex-start',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: components.tag.root.gap,
+    paddingHorizontal: components.tag.root.paddingLeft,
+    paddingVertical: components.tag.root.paddingTop,
+    borderRadius: components.tag.root.borderRadius,
+    variants: {
+      severity: {
+        primary: {
+          backgroundColor: components.tag.colorScheme.primary.background,
+        },
+        info: { backgroundColor: components.tag.colorScheme.info.background },
+        success: {
+          backgroundColor: components.tag.colorScheme.success.background,
+        },
+        warning: {
+          backgroundColor: components.tag.colorScheme.warn.background,
+        },
+        danger: {
+          backgroundColor: components.tag.colorScheme.danger.background,
+        },
+        secondary: {
+          backgroundColor: components.tag.colorScheme.secondary.background,
         },
       },
     },
-    roundedContainer: { borderRadius: border.Radius['rounded-full'] },
-    icon: {
-      width: theme.Misc.Tag.tagFontSize,
-      height: theme.Misc.Tag.tagFontSize,
-    },
-    text: {
-      flexShrink: 1,
-      fontSize: typography.Size['text-xs'],
-      includeFontPadding: false,
-      verticalAlign: 'middle',
-      fontFamily: fonts.primary,
-      variants: {
-        severity: {
-          basic: { color: theme.Misc.Badge.badgeTextColor },
-          info: { color: theme.Misc.Badge.badgeInfoTextColor },
-          success: { color: theme.Misc.Badge.badgeSuccessTextColor },
-          warning: { color: theme.Misc.Badge.badgeWarningTextColor },
-          danger: { color: theme.Misc.Badge.badgeDangerTextColor },
-          secondary: { color: theme.Misc.Badge.badgeTextColor },
-        },
+  },
+  roundedContainer: { borderRadius: components.tag.root.roundedBorderRadius },
+  text: {
+    flexShrink: 1,
+    fontSize: components.tag.root.fontSize,
+    includeFontPadding: false,
+    verticalAlign: 'middle',
+    fontFamily: fonts.fontFamily.base,
+    fontWeight: components.tag.root.fontWeight as TextStyle['fontWeight'],
+    lineHeight: fonts.lineHeight[250],
+    variants: {
+      severity: {
+        primary: { color: components.tag.colorScheme.primary.color },
+        info: { color: components.tag.colorScheme.info.color },
+        success: { color: components.tag.colorScheme.success.color },
+        warning: { color: components.tag.colorScheme.warn.color },
+        danger: { color: components.tag.colorScheme.danger.color },
+        secondary: { color: components.tag.colorScheme.secondary.color },
       },
     },
-  })
-)
+  },
+}))
 
 export const TagTestId = {
   root: 'Tag',

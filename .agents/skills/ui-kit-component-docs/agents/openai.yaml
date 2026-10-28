@@ -1,0 +1,3 @@
+interface:
+  display_name: 'UI Kit Component Docs'
+  short_description: 'Write Russian component Markdown and API JSDoc'
