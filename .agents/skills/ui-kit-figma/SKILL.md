@@ -1,16 +1,25 @@
 ---
 name: ui-kit-figma
 description: >
-  Implement or sync UI Kit components with Figma, map theme tokens, or update
-  exact design links. Read-only toward Figma.
+  Inspect Figma components, sync UI Kit implementations and theme-token
+  bindings, or update exact design links. Read-only toward Figma.
 ---
 
 # UI Kit Figma
 
-Choose component synchronization or links-only work. Use the Figma
-design-to-code skill before design-context calls. Both workflows use existing
-tokens; proposed token changes or regeneration require confirmation under
-`AGENTS.md`.
+Use the node and file/branch identity from the supplied link; do not substitute
+the current selection. Use the Figma design-to-code skill before design-context
+calls. Implementation uses existing tokens; token changes or regeneration
+require confirmation under `AGENTS.md`.
+
+## Inspect A Design
+
+For identification, description, or a screenshot, inspect the explicit node and
+use structural metadata as needed. Return the actual image when a screenshot is
+requested. Distinguish visible facts, metadata-backed properties, and behavioral
+inference; a static frame does not prove interaction behavior. Skip token
+mapping, implementation, tests, and story edits for inspection-only requests.
+Report unavailable evidence without inventing results.
 
 ## Component Synchronization
 
@@ -23,7 +32,8 @@ tokens; proposed token changes or regeneration require confirmation under
 3. Read variable definitions for the target frame and map each relevant Figma
    variable to the existing runtime theme path.
 4. Implement the smallest compatible source change, following the nearest
-   component pattern and root `AGENTS.md`.
+   component pattern and root `AGENTS.md`. Use `ui-kit-public-api` when the
+   public contract changes.
 5. Use `ui-kit-testing` for changed behavior and `ui-kit-storybook` for affected
    public scenarios, controls, and device verification. Compare rendered states
    with the exact frame when visual alignment is in scope. Do not use static
