@@ -2896,6 +2896,7 @@ __metadata:
     typescript: "npm:5.9.3"
     typescript-eslint: "npm:8.50.0"
     word-wrap: "npm:1.2.5"
+    yaml: "npm:2.8.2"
   peerDependencies:
     expo: ">=55.x.x"
     react: ">=19.2"
@@ -19807,7 +19808,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yaml@npm:^2.6.1":
+"yaml@npm:2.8.2, yaml@npm:^2.6.1":
   version: 2.8.2
   resolution: "yaml@npm:2.8.2"
   bin:

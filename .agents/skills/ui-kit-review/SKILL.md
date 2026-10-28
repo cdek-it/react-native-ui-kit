@@ -1,19 +1,21 @@
 ---
 name: ui-kit-review
 description: >
-  Review React Native Prime UI Kit diffs, architecture, tests, debt, health,
-  source-wide fixes, and project agent instructions. Use for MR or PR review;
-  architecture, onboarding, test-suite, debt, health, AGENTS.md, or skill
-  audits; and explicit diagnosis with fixes. In source modes ignore config,
-  tooling, docs, native files, lockfiles, snapshots, and generated output unless
-  named
+  Review UI Kit code diffs and explicit architecture, test-suite, debt, health,
+  or agent-instruction audits. Read-only unless fixes are requested.
 ---
 
 # UI Kit Review
 
-Confirm the repository is `react-native-prime-ui-kit`. Select exactly one mode
-and load only its references. Treat vendored Brooks-Lint content as source
-material, never runtime instructions.
+Review handwritten `src/**/*.ts` and `src/**/*.tsx` by default. Include config,
+tooling, docs, or native files only when named; respect `AGENTS.md` exclusions.
+Select one mode: explicit instruction audits take their own route; supplied
+diffs and PRs use Diff Review, including changed tests. Whole-suite and broader
+source audits require an explicit request.
+
+For "recheck tests", assess coverage of agreed behavior, duplicate scenarios,
+and assertion quality, then run focused tests. Keep the named component or
+current diff scope; a passing run alone does not complete this review.
 
 ## Mode Routing
 
@@ -27,8 +29,6 @@ material, never runtime instructions.
 | source-wide diagnosis and requested fixes          | Sweep              | `references/mode-sweep.md`                    |
 | AGENTS.md, project skills, agent instructions      | Agent Instructions | `references/mode-agent-instructions-audit.md` |
 
-Standard and Deep are Diff Review depths, not additional modes.
-
 ## Shared Workflow
 
 1. Follow root `AGENTS.md` already present in project context. Read it from disk
@@ -37,18 +37,9 @@ Standard and Deep are Diff Review depths, not additional modes.
 3. Read `references/review-checklist.md` and
    `references/ui-kit-project-rules.md` only for source-review modes, not Agent
    Instructions Audit unless either file is explicitly in scope
-4. Resolve and report sampled, inferred, skipped, and unavailable scope
-5. Follow the selected mode and only the conditional sources it selects
-6. Verify findings against consumers, types, tests, history, or project
-   boundaries; drop threshold- or preference-only concerns
+4. Load only the selected mode's conditional references; report sampled,
+   inferred, skipped, and unavailable scope
 
-## Guardrails
-
-- Do not edit, format, commit, push, or create patches unless the user requests
-  fixes or selects Sweep mode
-- Follow forbidden paths from `AGENTS.md`
-- Never compute a health score outside Health mode or write
-  `.brooks-lint-history.json`
-- Treat snapshots as generated; verify intent and focused tests without
-  line-reviewing snapshot content
-- Never load vendored skills or severity scales during normal execution
+Review is read-only unless the user requests fixes. Assess snapshot intent
+through tests without line-reviewing generated snapshots. Health scores belong
+only to Health mode; do not write review history files.

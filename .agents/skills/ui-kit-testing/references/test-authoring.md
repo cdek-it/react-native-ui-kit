@@ -1,14 +1,27 @@
 # Test Authoring
 
-Read this reference when creating or changing test cases, render helpers,
-selectors, accessibility assertions, public types, test names, or replacing
-snapshots with behavioral assertions.
+Assert public rendered data, presence or absence, callbacks, refs, hook results,
+controlled behavior, accessibility, and type contracts. Do not assert static
+colors, dimensions, theme-token values, or style objects to prove appearance.
+Time-dependent animated-style checks follow `references/timers-and-async.md`.
 
 ## Placement And Helpers
 
 Place component tests in `src/components/<Component>/__tests__/`. Keep helpers
 local until more than one suite shares the setup. Create the smallest useful
 render helper and add only providers required by the subject or behavior.
+
+When extending a component, run its existing focused tests first. Choose new
+cases from agreed requirements and consumer documentation; use implementation to
+exercise that contract without inventing additional guarantees. Remove obsolete
+cases for intentionally removed behavior, while preserving coverage for
+still-public legacy contracts in scope.
+
+When both are tested, put ordinary behavior in `<Component>.test.tsx` and
+accessibility in `<Component>.accessibility.test.tsx`. Repeat an interaction in
+the accessibility suite only to prove a distinct accessibility contract, without
+duplicating ordinary assertions. Use a separate `.timers.test.tsx` or
+`.animation.test.tsx` when that behavior needs its own setup.
 
 Put default callbacks as `jest.fn()` inside the helper. Create named mocks only
 inside tests that assert them.
@@ -34,7 +47,8 @@ changing the UI. Rerender with the new prop before asserting the updated state.
 
 Keep compile-time assertions out of Jest. Use `@ts-expect-error` only in a
 dedicated CI type-test setup; otherwise validate public declarations through the
-normal build.
+normal build. Use that build for declaration and token-access checks; it does
+not execute compile-time examples placed in excluded Jest files.
 
 ## Snapshots
 
