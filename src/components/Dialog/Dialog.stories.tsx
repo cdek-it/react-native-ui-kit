@@ -7,7 +7,7 @@ import { StyleSheet } from 'react-native-unistyles'
 import { Button } from '../Button'
 import { Body } from '../Typography'
 
-import { Dialog, type DialogProps } from './Dialog'
+import { Dialog as DialogView, type DialogProps } from './Dialog'
 import { DialogComponent } from './DialogComponent'
 import { DialogHeader, type DialogHeaderProps } from './DialogHeader'
 
@@ -61,7 +61,7 @@ const DialogExample = ({
         />
       </View>
       <Button label='Показать модальный Dialog' onPress={showDialog} />
-      <Dialog
+      <DialogView
         body={DialogBody}
         footer={Footer}
         header={<DialogHeader {...headerProps} onClose={hideDialog} />}
@@ -75,7 +75,7 @@ const DialogExample = ({
 
 const meta: Meta<DialogStoryArgs> = {
   title: 'Overlay/Dialog',
-  component: Dialog,
+  component: DialogView,
   render: DialogExample,
   args: { severity: 'info', isVisible: false },
   argTypes: {
@@ -94,9 +94,7 @@ export default meta
 
 type Story = StoryObj<DialogStoryArgs>
 
-const DialogStory: Story = {}
-
-export { DialogStory as Dialog }
+export const Dialog: Story = {}
 
 const styles = StyleSheet.create(({ components, semantic }) => ({
   container: { gap: 16 },
