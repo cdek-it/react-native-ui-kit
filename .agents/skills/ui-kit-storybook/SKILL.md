@@ -45,6 +45,8 @@ handlers, read [controls-and-render.md](references/controls-and-render.md).
   the developer in the task result to choose the status tag. Do not invent a
   placeholder tag or infer design, release, or migration status from code,
   neighbouring stories, or absence of usages.
+- Do not duplicate component Markdown or public API JSDoc in story `notes`. Keep
+  notes specific to operating the demo.
 - Add README or documentation links when requested, preserving existing format.
 
 ## Verification
