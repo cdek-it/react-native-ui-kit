@@ -6,6 +6,7 @@
     "node_modules",
     "**/*.stories.ts",
     "**/*.stories.tsx",
+    "**/stories/**",
     "index.js",
     "metro.config.js",
     "babel.config.js",
