@@ -1,142 +1,175 @@
-import { memo, useCallback, useState } from 'react'
-import {
-  type AccessibilityProps,
-  Pressable,
-  View,
-  type ViewProps,
-} from 'react-native'
+import { memo, useState } from 'react'
+import { Pressable, type PressableProps, View } from 'react-native'
 import Animated from 'react-native-reanimated'
+import { useUnistyles } from 'react-native-unistyles'
 
-import { StyleSheet } from 'react-native-unistyles'
+import { Body, Caption } from '../Typography'
 
-const AnimatedPressable = Animated.createAnimatedComponent(Pressable)
+import { styles } from './RadioButton.styles'
+import { useRadioButtonTextLayout } from './useRadioButtonTextLayout'
 
-export interface RadioButtonProps
-  extends AccessibilityProps, Pick<ViewProps, 'testID'> {
-  /** Обработчик нажатия на кнопку */
-  onPress: () => void
+export interface RadioButtonProps extends Omit<
+  PressableProps,
+  'children' | 'accessible' | 'accessibilityRole' | 'role' | 'aria-checked'
+> {
   /**
-   * true, если необходим компонент в активном состоянии
+   * Выбран ли вариант. Меняется только при обновлении prop
    * @default false
    */
   checked?: boolean
   /**
-   * Управление доступностью компонента
+   * Блокирует взаимодействие
    * @default false
    */
   disabled?: boolean
-  /** Выбор состояния компонента */
-  state?: 'default' | 'danger'
+  /**
+   * Оформление ошибки
+   * @default false
+   */
+  danger?: boolean
+  /**
+   * Обработчик нажатия. Выбором и исключением остальных вариантов управляет
+   * потребитель. Повторное нажатие не снимает checked самостоятельно
+   */
+  onPress?: PressableProps['onPress']
+  /** Текст справа от круга. По умолчанию задаёт доступное имя */
+  label?: string
+  /** Подпись под label. Без label не отображается */
+  caption?: string
+  /**
+   * Расширяет область нажатия без изменения размера компонента.
+   * Ограничена границами родителя
+   * @default 10
+   */
+  hitSlop?: PressableProps['hitSlop']
 }
 
+/**
+ * Управляемая радиокнопка с необязательными label и caption.
+ * Вся строка — единая область нажатия и один accessibility-элемент.
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=17-13535
+ */
 export const RadioButton = memo<RadioButtonProps>(
   ({
-    onPress,
     checked = false,
     disabled = false,
-    state = 'default',
-    testID,
+    danger = false,
+    label,
+    caption,
+    style,
+    testID = 'RadioButton_Pressable',
+    hitSlop = 10,
+    accessibilityLabel,
+    accessibilityLabelledBy,
+    accessibilityHint,
+    accessibilityState,
+    onFocus,
+    onBlur,
+    onHoverIn,
+    onHoverOut,
     ...rest
   }) => {
-    const [pressed, setPressed] = useState(false)
+    const [focused, setFocused] = useState(false)
+    const [hovered, setHovered] = useState(false)
+    // Обход Unistyles: нативное обновление цветов при смене темы
+    // key={rt.themeName} пересоздаёт только внутренний Animated.View с актуальной палитрой
+    // https://github.com/jpudysz/react-native-unistyles/issues/1007 исправление в Unistyles 3.6.0
+    const { rt } = useUnistyles()
+    const {
+      visibleCaption,
+      alignToFirstLine,
+      firstLineHeight,
+      onLabelTextLayout,
+      onCaptionTextLayout,
+    } = useRadioButtonTextLayout(label, caption)
+    const resolvedAccessibilityLabel =
+      accessibilityLabel ??
+      (accessibilityLabelledBy === undefined ? label : undefined)
 
-    radioStyles.useVariants({
-      checked: checked ? 'true' : 'false',
-      pressed: pressed ? 'true' : 'false',
-      state: state === 'danger' ? 'danger' : undefined,
-      disabled: disabled ? 'true' : 'false',
-    })
-
-    const onPressIn = useCallback(() => setPressed(true), [])
-    const onPressOut = useCallback(() => setPressed(false), [])
+    const textContent = label !== undefined && (
+      <View
+        accessibilityElementsHidden
+        accessible={false}
+        importantForAccessibility='no-hide-descendants'
+        style={styles.content(firstLineHeight)}
+      >
+        <Body size='base' style={styles.label} onTextLayout={onLabelTextLayout}>
+          {label}
+        </Body>
+        {visibleCaption !== undefined && (
+          <Caption style={styles.caption} onTextLayout={onCaptionTextLayout}>
+            {visibleCaption}
+          </Caption>
+        )}
+      </View>
+    )
 
     return (
-      <View>
-        <AnimatedPressable
-          disabled={disabled}
-          style={radioStyles.container}
-          testID={testID || 'RadioButton_Pressable'}
-          onPress={onPress}
-          onPressIn={onPressIn}
-          onPressOut={onPressOut}
-          {...rest}
-        >
-          <Animated.View style={radioStyles.center} />
-        </AnimatedPressable>
-      </View>
+      <Pressable
+        {...rest}
+        accessible
+        accessibilityHint={accessibilityHint ?? visibleCaption}
+        accessibilityLabel={resolvedAccessibilityLabel}
+        accessibilityLabelledBy={accessibilityLabelledBy}
+        accessibilityRole='radio'
+        accessibilityState={{ ...accessibilityState, checked, disabled }}
+        disabled={disabled}
+        hitSlop={hitSlop}
+        style={(pressState) => [
+          styles.root(alignToFirstLine),
+          typeof style === 'function' ? style(pressState) : style,
+        ]}
+        testID={testID}
+        onBlur={(event) => {
+          setFocused(false)
+          onBlur?.(event)
+        }}
+        onFocus={(event) => {
+          setFocused(true)
+          onFocus?.(event)
+        }}
+        onHoverIn={(event) => {
+          setHovered(true)
+          onHoverIn?.(event)
+        }}
+        onHoverOut={(event) => {
+          setHovered(false)
+          onHoverOut?.(event)
+        }}
+      >
+        {({ pressed }) => {
+          const active = pressed || hovered
+
+          return (
+            <>
+              <Animated.View
+                accessibilityElementsHidden
+                accessible={false}
+                focusable={false}
+                importantForAccessibility='no-hide-descendants'
+                key={rt.themeName}
+                pointerEvents='none'
+                style={styles.circle({
+                  checked,
+                  active,
+                  disabled,
+                  focused,
+                  danger,
+                  firstLineHeight,
+                })}
+              >
+                {!disabled && (focused || danger) ? (
+                  <View pointerEvents='none' style={styles.ring(danger)} />
+                ) : null}
+                <Animated.View
+                  style={styles.center({ checked, active, disabled })}
+                />
+              </Animated.View>
+              {textContent}
+            </>
+          )
+        }}
+      </Pressable>
     )
   }
 )
-
-const radioStyles = StyleSheet.create(({ components, semantic }) => ({
-  container: {
-    width: components.radiobutton.root.width,
-    height: components.radiobutton.root.height,
-    borderRadius: semantic.dimension.borderRadius.max,
-    borderWidth: semantic.dimension.borderWidth[100],
-    alignItems: 'center',
-    justifyContent: 'center',
-    transitionProperty: ['borderColor', 'backgroundColor'],
-    transitionDuration: 100,
-    variants: {
-      checked: {
-        true: {
-          borderColor: components.radiobutton.root.checkedBorderColor,
-          backgroundColor: components.radiobutton.root.checkedBackground,
-        },
-        false: {
-          borderColor: components.radiobutton.root.borderColor,
-          backgroundColor: components.radiobutton.root.background,
-        },
-      },
-      pressed: { true: {}, false: {} },
-      disabled: {
-        true: {
-          borderColor: components.radiobutton.root.borderColor,
-          backgroundColor: components.radiobutton.root.disabledBackground,
-          opacity: semantic.effects.opacity[60],
-        },
-        false: {},
-      },
-      state: { danger: {}, default: {} },
-    },
-    compoundVariants: [
-      {
-        checked: 'true',
-        pressed: 'true',
-        styles: {
-          borderColor: components.radiobutton.root.checkedHoverBorderColor,
-          backgroundColor: components.radiobutton.root.checkedHoverBackground,
-        },
-      },
-      {
-        checked: 'true',
-        disabled: 'true',
-        styles: {
-          borderColor: components.radiobutton.root.checkedBorderColor,
-          backgroundColor: components.radiobutton.root.checkedBackground,
-        },
-      },
-      {
-        state: 'danger',
-        disabled: 'false',
-        checked: 'false',
-        styles: { borderColor: components.radiobutton.root.invalidBorderColor },
-      },
-      {
-        checked: 'false',
-        pressed: 'true',
-        styles: { borderColor: components.radiobutton.root.hoverBorderColor },
-      },
-    ],
-  },
-  center: {
-    width: components.radiobutton.icon.size,
-    height: components.radiobutton.icon.size,
-    borderRadius: semantic.dimension.borderRadius.max,
-    backgroundColor: components.radiobutton.root.background,
-    transitionProperty: ['opacity'],
-    transitionDuration: 100,
-    variants: { checked: { false: { opacity: 0 }, true: { opacity: 1 } } },
-  },
-}))
