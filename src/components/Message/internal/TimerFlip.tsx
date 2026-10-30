@@ -1,6 +1,7 @@
-import React, { memo, useEffect, useState } from 'react'
-import { View, Text } from 'react-native'
+import { memo, useEffect, useState } from 'react'
+import { Text, View } from 'react-native'
 import Animated, {
+  cancelAnimation,
   useSharedValue,
   useAnimatedStyle,
   withTiming,
@@ -9,83 +10,76 @@ import Animated, {
 import { StyleSheet } from 'react-native-unistyles'
 import { scheduleOnRN } from 'react-native-worklets'
 
-import { COUNTER_SIZE } from './constants'
-
 interface TimerFlipProps {
   readonly value: number
+  readonly size: number
+  readonly color: string
   readonly duration?: number
 }
 
-export const TimerFlip = memo<TimerFlipProps>(({ value, duration = 300 }) => {
-  const [currentValue, setCurrentValue] = useState(value)
-  const [nextValue, setNextValue] = useState<number | null>(value)
-  const progress = useSharedValue(0)
+export const TimerFlip = memo<TimerFlipProps>(
+  ({ value, size, color, duration = 300 }) => {
+    const [currentValue, setCurrentValue] = useState(value)
+    const progress = useSharedValue(0)
 
-  const currentStyle = useAnimatedStyle(() => ({
-    transform: [{ translateY: progress.value * COUNTER_SIZE }],
-    opacity: 1 - progress.value,
-  }))
+    const currentStyle = useAnimatedStyle(() => ({
+      transform: [{ translateY: progress.value * size }],
+      opacity: 1 - progress.value,
+    }))
 
-  const nextStyle = useAnimatedStyle(() => ({
-    transform: [{ translateY: progress.value * COUNTER_SIZE }],
-    opacity: progress.value,
-    bottom: COUNTER_SIZE,
-  }))
+    const nextStyle = useAnimatedStyle(() => ({
+      transform: [{ translateY: progress.value * size }],
+      opacity: progress.value,
+      bottom: size,
+    }))
 
-  useEffect(() => {
-    if (nextValue === currentValue && value !== currentValue) {
-      setNextValue(null)
+    useEffect(() => {
+      if (value === currentValue) return
+
       progress.value = 0
-    }
-  }, [currentValue, nextValue, progress, value])
+      progress.value = withTiming(1, { duration }, (finished) => {
+        if (finished) {
+          scheduleOnRN(setCurrentValue, value)
+        }
+      })
 
-  useEffect(() => {
-    if (value === currentValue || nextValue !== null) return
+      return () => cancelAnimation(progress)
+    }, [value, currentValue, duration, progress])
 
-    setNextValue(value)
-    progress.value = withTiming(1, { duration }, (finished) => {
-      if (finished) {
-        scheduleOnRN(setCurrentValue, value)
-      }
-    })
-  }, [value, currentValue, duration, progress, nextValue])
-
-  return (
-    <View style={styles.container}>
-      {nextValue !== null && (
-        <Animated.View style={[styles.textWrapper, nextStyle]}>
-          <Text style={styles.text}>{nextValue}</Text>
+    return (
+      <View style={styles.container(size)}>
+        <Animated.View style={[styles.textWrapper(size), nextStyle]}>
+          <Text style={[styles.text, { color }]}>{value}</Text>
         </Animated.View>
-      )}
-      <Animated.View style={[styles.textWrapper, currentStyle]}>
-        <Text style={styles.text}>{currentValue}</Text>
-      </Animated.View>
-    </View>
-  )
-})
+        <Animated.View style={[styles.textWrapper(size), currentStyle]}>
+          <Text style={[styles.text, { color }]}>{currentValue}</Text>
+        </Animated.View>
+      </View>
+    )
+  }
+)
 
-const styles = StyleSheet.create(({ semantic, fonts }) => ({
-  container: {
+const styles = StyleSheet.create(({ components, fonts }) => ({
+  container: (size: number) => ({
     overflow: 'hidden',
-    width: COUNTER_SIZE,
-    height: COUNTER_SIZE,
+    width: size,
+    height: size,
     alignItems: 'center',
     justifyContent: 'center',
     position: 'relative',
-  },
-  textWrapper: {
-    height: COUNTER_SIZE,
-    width: COUNTER_SIZE,
+  }),
+  textWrapper: (size: number) => ({
+    height: size,
+    width: size,
     justifyContent: 'center',
     alignItems: 'center',
     position: 'absolute',
-  },
+  }),
   text: {
-    fontSize: fonts.fontSize[300],
+    fontSize: components.message.timer.fontSize,
     fontWeight: fonts.fontWeight.bold,
     includeFontPadding: false,
     verticalAlign: 'middle',
-    color: semantic.colorScheme.color.fg.active,
     fontFamily: fonts.fontFamily.base,
   },
 }))
