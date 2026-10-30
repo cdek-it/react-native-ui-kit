@@ -19,8 +19,9 @@ import { StyleSheet } from 'react-native-unistyles'
 import type { ComponentTokens } from '../../theme/tokens/index'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
 import { ButtonSeverity } from '../Button/ButtonSeverity'
-import { Timer } from '../Timer/Timer'
 import { Body, Caption } from '../Typography'
+
+import { Timer } from './internal/Timer'
 
 export interface MessageProps
   extends AccessibilityProps, Pick<ViewProps, 'testID'> {
