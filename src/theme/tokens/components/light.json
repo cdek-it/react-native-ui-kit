@@ -1696,9 +1696,12 @@
           "focusRing": {
             "color": "rgba(68, 232, 88, 0.2)",
             "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
-          }
+          },
+          "color": "#1dc831",
+          "borderColor": "#44e858"
         },
-        "simple": { "color": "#2b2e33" }
+        "simple": { "color": "#2b2e33" },
+        "iconColor": "#1dc831"
       },
       "outlined": {
         "root": { "borderWidth": 0 },
@@ -1724,9 +1727,12 @@
           "focusRing": {
             "color": "rgba(68, 232, 88, 0.2)",
             "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
-          }
+          },
+          "color": "#f5b83d",
+          "borderColor": "#f5b83d"
         },
-        "simple": { "color": "#2b2e33" }
+        "simple": { "color": "#2b2e33" },
+        "iconColor": "#f5b83d"
       },
       "error": {
         "background": "#fffafa",
@@ -1739,9 +1745,12 @@
           "focusRing": {
             "color": "rgba(68, 232, 88, 0.2)",
             "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
-          }
+          },
+          "color": "#e85244",
+          "borderColor": "#e85244"
         },
-        "simple": { "color": "#2b2e33" }
+        "simple": { "color": "#2b2e33" },
+        "iconColor": "#e85244"
       },
       "secondary": {
         "borderColor": "transparent",
@@ -1783,10 +1792,13 @@
           "focusRing": {
             "color": "rgba(68, 232, 88, 0.2)",
             "shadow": "0 0 4px rgba(0, 0, 0, 0.2000)"
-          }
+          },
+          "color": "#4496e8",
+          "borderColor": "#4496e8"
         },
         "outlined": { "color": "#2b2e33", "borderColor": "#4496e8" },
-        "simple": { "color": "#2b2e33" }
+        "simple": { "color": "#2b2e33" },
+        "iconColor": "#4496e8"
       }
     },
     "root": { "borderRadius": 14, "borderWidth": 1, "transitionDuration": 180 },
@@ -1806,12 +1818,20 @@
     "closeButton": {
       "width": 32,
       "height": 32,
-      "borderRadius": 14,
-      "focusRing": { "width": 2, "style": "none", "offset": 0 }
+      "borderRadius": 10,
+      "focusRing": { "width": 2, "style": "none", "offset": 0 },
+      "hitSlop": 6
     },
     "closeIcon": { "size": 16, "sm": { "size": 16 }, "lg": { "size": 16 } },
     "outlined": { "root": { "borderWidth": 1 } },
-    "simple": { "content": { "padding": 0 } }
+    "simple": { "content": { "padding": 0 } },
+    "caption": {
+      "fontSize": 14,
+      "fontWeight": 400,
+      "lineHeight": 18,
+      "letterSpacing": 0
+    },
+    "timer": { "size": 28, "fontSize": 14, "borderWidth": 2 }
   },
   "metergroup": {
     "extend": { "extLabel": { "color": "#85888e" } },
