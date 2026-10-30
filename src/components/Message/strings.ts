@@ -1,0 +1,1 @@
+export const MESSAGE_CLOSE_ACCESSIBILITY_LABEL = 'Закрыть'
