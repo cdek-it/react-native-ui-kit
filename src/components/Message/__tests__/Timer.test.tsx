@@ -1,6 +1,6 @@
 import { act, render } from '@testing-library/react-native'
 
-import { Timer } from '../Timer'
+import { Timer } from '../internal/Timer'
 
 describe('Timer', () => {
   test('snapshot', () => {
