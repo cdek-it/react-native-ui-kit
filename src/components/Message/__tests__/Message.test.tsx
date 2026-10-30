@@ -12,7 +12,7 @@ const Stub = ({ children }: { readonly children: ReactNode }) => (
 
 jest.mock('../../Button', () => ({ ButtonSeverity: 'ButtonSeverity' }))
 jest.mock('../../Typography', () => ({ Body: 'Body', Caption: 'Caption' }))
-jest.mock('../../Timer/Timer', () => ({ Timer: 'Timer' }))
+jest.mock('../internal/Timer', () => ({ Timer: 'Timer' }))
 
 describe('Message', () => {
   const defaultProps: MessageProps = { title: 'Message' }
