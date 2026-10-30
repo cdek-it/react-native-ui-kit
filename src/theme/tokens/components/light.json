@@ -2865,9 +2865,10 @@
   "tooltip": {
     "colorScheme": { "root": { "background": "#2b2e33", "color": "#ffffff" } },
     "root": {
-      "maxWidth": 400,
+      "maxWidth": 240,
       "gutter": 4,
-      "shadow": "0 4px 8px rgba(0, 0, 0, 0.2000)",
+      "shadow": "0 4px 8px rgba(0, 0, 0, 0.1000)",
+      "subtleShadow": "0 0 2px rgba(0, 0, 0, 0.05)",
       "paddingTop": 8,
       "paddingRight": 14,
       "paddingBottom": 8,
