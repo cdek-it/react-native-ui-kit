@@ -1,66 +1,103 @@
-import { IconUser } from '@tabler/icons-react-native'
-import { render, userEvent } from '@testing-library/react-native'
+import { render, screen, userEvent } from '@testing-library/react-native'
+import { Text, View } from 'react-native'
 
-import type { ReactNode } from 'react'
-import { View } from 'react-native'
+import { Message } from '../Message'
+import { TestId } from '../testIds'
 
-import { Message, type MessageProps, TestId } from '../Message'
-
-const Stub = ({ children }: { readonly children: ReactNode }) => (
-  <View>{children}</View>
-)
-
-jest.mock('../../Button', () => ({ ButtonSeverity: 'ButtonSeverity' }))
-jest.mock('../../Typography', () => ({ Body: 'Body', Caption: 'Caption' }))
-jest.mock('../internal/Timer', () => ({ Timer: 'Timer' }))
+const CustomIcon = () => <View testID='CustomIcon' />
 
 describe('Message', () => {
-  const defaultProps: MessageProps = { title: 'Message' }
-  const snapshotCases: Array<Partial<MessageProps>> = [
-    {},
-    {
-      severity: 'info',
-      body: <Stub>body</Stub>,
-      caption: 'caption',
-      style: { margin: 10 },
-    },
-    { severity: 'success', footer: <Stub>footer</Stub>, onClose: jest.fn() },
-    {
-      severity: 'success',
-      footer: <Stub>footer</Stub>,
-      onClose: jest.fn(),
-      closeLabel: 'Close',
-    },
-    {
-      severity: 'warning',
-      body: <Stub>body</Stub>,
-      footer: <Stub>footer</Stub>,
-    },
-    { severity: 'danger' },
-    { timerValue: 5, onTimerFinish: jest.fn() },
-    { timerValue: 5, Icon: IconUser },
-    { Icon: IconUser },
-    { hiddenIcon: false },
-  ]
-
-  test.each(snapshotCases)('%p', (props) => {
-    const { toJSON } = render(<Message {...defaultProps} {...props} />)
-
-    expect(toJSON()).toMatchSnapshot()
-  })
-
-  test('should handle close', async () => {
-    const mockedOnClose = jest.fn()
-    const { getByTestId } = render(
-      <Message title='Message' onClose={mockedOnClose} />
+  test('показывает заголовок без ограничения строк и необязательную подпись', () => {
+    render(
+      <Message caption='Подробности' title='Длинный заголовок сообщения' />
     )
-    const closeButton = getByTestId(TestId.CloseButton)
-    const user = userEvent.setup()
 
-    expect(mockedOnClose).not.toHaveBeenCalled()
-
-    await user.press(closeButton)
-
-    expect(mockedOnClose).toHaveBeenCalledWith(expect.any(Object))
+    expect(screen.getByText('Длинный заголовок сообщения')).not.toHaveProp(
+      'numberOfLines'
+    )
+    expect(screen.getByText('Подробности')).toBeOnTheScreen()
   })
+
+  test.each([
+    { name: 'без severity', severity: undefined },
+    { name: 'info', severity: 'info' as const },
+    { name: 'success', severity: 'success' as const },
+    { name: 'warning', severity: 'warning' as const },
+    { name: 'danger', severity: 'danger' as const },
+  ])('показывает штатную иконку для $name', ({ severity }) => {
+    render(<Message severity={severity} title='Сообщение' />)
+
+    expect(
+      screen.getByTestId(TestId.Icon, { includeHiddenElements: true })
+    ).toBeOnTheScreen()
+  })
+
+  test('показывает пользовательскую иконку и скрывает её через hiddenIcon', () => {
+    const { rerender } = render(<Message Icon={CustomIcon} title='Сообщение' />)
+
+    expect(
+      screen.getByTestId('CustomIcon', { includeHiddenElements: true })
+    ).toBeOnTheScreen()
+
+    rerender(<Message hiddenIcon Icon={CustomIcon} title='Сообщение' />)
+
+    expect(
+      screen.queryByTestId('CustomIcon', { includeHiddenElements: true })
+    ).toBeNull()
+    expect(
+      screen.queryByTestId(TestId.Icon, { includeHiddenElements: true })
+    ).toBeNull()
+  })
+
+  test.each([
+    { name: 'только body', body: <Text>Содержимое</Text>, footer: undefined },
+    { name: 'только footer', body: undefined, footer: <Text>Действия</Text> },
+    {
+      name: 'обе ноды',
+      body: <Text>Содержимое</Text>,
+      footer: <Text>Действия</Text>,
+    },
+  ])('отображает независимое содержимое: $name', ({ body, footer }) => {
+    render(<Message body={body} footer={footer} title='Сообщение' />)
+
+    expect(!!screen.queryByText('Содержимое')).toBe(!!body)
+    expect(!!screen.queryByText('Действия')).toBe(!!footer)
+  })
+
+  test('не создаёт секцию body для отсутствующих нод', () => {
+    render(<Message body={[]} footer={false} title='Сообщение' />)
+
+    expect(screen.queryByTestId(TestId.Body)).toBeNull()
+    expect(screen.queryByTestId(TestId.Caption)).toBeNull()
+  })
+
+  test('сохраняет пользовательский testID корня', () => {
+    render(<Message testID='CustomMessage' title='Сообщение' />)
+
+    expect(screen.getByTestId('CustomMessage')).toBeOnTheScreen()
+  })
+
+  test('не показывает закрытие без onClose даже при наличии closeLabel', () => {
+    render(<Message closeLabel='Понятно' title='Сообщение' />)
+
+    expect(screen.queryByRole('button')).toBeNull()
+  })
+
+  test.each([
+    { name: 'крестиком', closeLabel: undefined, buttonName: 'Закрыть' },
+    { name: 'текстом', closeLabel: 'Понятно', buttonName: 'Понятно' },
+  ])(
+    'вызывает onClose без native event при закрытии $name',
+    async ({ closeLabel, buttonName }) => {
+      const onClose = jest.fn()
+      const user = userEvent.setup()
+      render(
+        <Message closeLabel={closeLabel} title='Сообщение' onClose={onClose} />
+      )
+      await user.press(screen.getByRole('button', { name: buttonName }))
+
+      expect(onClose).toHaveBeenCalledExactlyOnceWith()
+      expect(screen.getByText('Сообщение')).toBeOnTheScreen()
+    }
+  )
 })
