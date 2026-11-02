@@ -12,7 +12,7 @@ const meta: Meta<RadioButtonProps> = {
   tags: ['version:2.0'],
   component: RadioButton,
   argTypes: { onPress: { action: 'onPress' } },
-  parameters: { controls: { include: ['theme'] } },
+  parameters: { controls: { include: [] } },
   render: ({ onPress }) => (
     <ScrollView contentContainerStyle={styles.root}>
       <RadioButtonGroupExample onPress={onPress} />
