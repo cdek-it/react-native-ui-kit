@@ -33,7 +33,7 @@ export interface RadioButtonProps extends Omit<
   onPress?: PressableProps['onPress']
   /** Текст справа от круга. По умолчанию задаёт доступное имя */
   label?: string
-  /** Подпись под label. Без label не отображается */
+  /** Дополнительная подпись. Отображается и без label */
   caption?: string
   /**
    * Расширяет область нажатия без изменения размера компонента.
@@ -75,23 +75,24 @@ export const RadioButton = memo<RadioButtonProps>(
     // key={rt.themeName} пересоздаёт только внутренний Animated.View с актуальной палитрой
     // https://github.com/jpudysz/react-native-unistyles/issues/1007 исправление в Unistyles 3.6.0
     const { rt } = useUnistyles()
-    const visibleCaption = label === undefined ? undefined : caption
     const resolvedAccessibilityLabel =
       accessibilityLabel ??
       (accessibilityLabelledBy === undefined ? label : undefined)
 
-    const textContent = label !== undefined && (
+    const textContent = (label !== undefined || caption !== undefined) && (
       <View
         accessibilityElementsHidden
         accessible={false}
         importantForAccessibility='no-hide-descendants'
         style={styles.content}
       >
-        <Body size='base' style={styles.label}>
-          {label}
-        </Body>
-        {visibleCaption !== undefined && (
-          <Caption style={styles.caption}>{visibleCaption}</Caption>
+        {label !== undefined && (
+          <Body size='base' style={styles.label}>
+            {label}
+          </Body>
+        )}
+        {caption !== undefined && (
+          <Caption style={styles.caption}>{caption}</Caption>
         )}
       </View>
     )
@@ -100,7 +101,7 @@ export const RadioButton = memo<RadioButtonProps>(
       <Pressable
         {...rest}
         accessible
-        accessibilityHint={accessibilityHint ?? visibleCaption}
+        accessibilityHint={accessibilityHint ?? caption}
         accessibilityLabel={resolvedAccessibilityLabel}
         accessibilityLabelledBy={accessibilityLabelledBy}
         accessibilityRole='radio'

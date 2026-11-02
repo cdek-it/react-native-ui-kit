@@ -54,7 +54,7 @@ describe('RadioButton', () => {
     }
   )
 
-  test('вызывает прежний onPress при использовании существующих props', async () => {
+  test('вызывает onPress с настройками по умолчанию', async () => {
     const props: RadioButtonProps = { onPress: jest.fn() }
     const screen = render(<RadioButton {...props} />)
 
@@ -102,24 +102,27 @@ describe('RadioButton', () => {
     )
   })
 
-  test('показывает label и caption при передаче текста', () => {
-    const screen = render(
-      <RadioButton caption='Привезём заказ' label='Доставка курьером' />
-    )
+  test.each([
+    { name: 'без подписей', props: {}, text: /^$/ },
+    {
+      name: 'с label',
+      props: { label: 'Доставка курьером' },
+      text: /^Доставка курьером$/,
+    },
+    {
+      name: 'с caption',
+      props: { caption: 'Привезём заказ' },
+      text: /^Привезём заказ$/,
+    },
+    {
+      name: 'с label и caption',
+      props: { label: 'Доставка курьером', caption: 'Привезём заказ' },
+      text: /^Доставка курьеромПривезём заказ$/,
+    },
+  ])('отображает компонент $name', ({ props, text }) => {
+    const screen = render(<RadioButton {...props} />)
 
-    expect(screen.getByRole('radio')).toHaveTextContent(
-      'Доставка курьеромПривезём заказ'
-    )
-  })
-
-  test('скрывает caption при удалении label', () => {
-    const screen = render(
-      <RadioButton caption='Привезём заказ' label='Доставка курьером' />
-    )
-
-    screen.rerender(<RadioButton caption='Привезём заказ' />)
-
-    expect(screen.getByRole('radio')).toHaveTextContent('')
+    expect(screen.getByRole('radio')).toHaveTextContent(text)
   })
 
   test('передаёт нативные props при их указании', () => {
