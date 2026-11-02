@@ -5,7 +5,7 @@ import { RadioButton, type RadioButtonProps } from '../RadioButton'
 
 const meta: Meta<RadioButtonProps> = {
   title: 'Form/RadioButton',
-  tags: ['version:2.0'],
+  tags: ['version:2.0', 'design:pending'],
   component: RadioButton,
   args: {
     checked: false,
