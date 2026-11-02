@@ -164,14 +164,19 @@
     }
   },
   "avatar": {
-    "extend": { "borderColor": "#ffffff", "circle": { "borderRadius": 1600 } },
+    "extend": {
+      "borderColor": "#ffffff",
+      "circle": { "borderRadius": 1600 },
+      "xl": { "borderRadius": 14 },
+      "lg": { "borderRadius": 12 }
+    },
     "root": {
       "width": 32,
       "height": 32,
       "fontSize": 16,
       "color": "#2b2e33",
       "background": "#44e858",
-      "borderRadius": 14
+      "borderRadius": 10
     },
     "icon": { "size": 16 },
     "group": { "borderColor": "#ffffff", "offset": -12 },
