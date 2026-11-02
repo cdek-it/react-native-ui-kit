@@ -21,7 +21,7 @@ const meta: Meta<CheckboxProps> = {
     disabled: { control: 'boolean' },
     danger: { control: 'boolean' },
     label: { control: 'text' },
-    caption: { control: 'text', if: { arg: 'label', truthy: true } },
+    caption: { control: 'text' },
     onCheckedChange: { action: 'onCheckedChange' },
     onPress: { action: 'onPress' },
   },
