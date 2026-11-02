@@ -6,26 +6,18 @@ interface BoxStyleParams {
   disabled: boolean
   focused: boolean
   danger: boolean
-  firstLineHeight: number
 }
 
 export const styles = StyleSheet.create(
   ({ components: { checkbox }, semantic, fonts }) => ({
-    root: (alignToFirstLine: boolean) => ({
+    root: {
       flexDirection: 'row',
-      alignItems: alignToFirstLine ? 'flex-start' : 'center',
+      alignItems: 'flex-start',
       alignSelf: 'flex-start',
       flexShrink: 1,
       gap: semantic.dimension.space[350],
-    }),
-    box: ({
-      filled,
-      active,
-      disabled,
-      focused,
-      danger,
-      firstLineHeight,
-    }: BoxStyleParams) => {
+    },
+    box: ({ filled, active, disabled, focused, danger }: BoxStyleParams) => {
       let borderColor = filled
         ? checkbox.root.checkedBorderColor
         : checkbox.root.borderColor
@@ -57,7 +49,6 @@ export const styles = StyleSheet.create(
       return {
         width: checkbox.root.width,
         height: checkbox.root.height,
-        marginTop: Math.max(0, (firstLineHeight - checkbox.root.height) / 2),
         flexShrink: 0,
         alignItems: 'center',
         justifyContent: 'center',
@@ -76,13 +67,7 @@ export const styles = StyleSheet.create(
         ? semantic.colorScheme.color.border.status.danger.focus
         : checkbox.root.focusRing.color,
     }),
-    content: (firstLineHeight: number) => ({
-      flexShrink: 1,
-      paddingTop:
-        firstLineHeight > 0
-          ? Math.max(0, (checkbox.root.height - firstLineHeight) / 2)
-          : 0,
-    }),
+    content: { flexShrink: 1, paddingTop: semantic.dimension.space[50] },
     label: {
       fontSize: fonts.fontSize[200],
       lineHeight: fonts.lineHeight[400],

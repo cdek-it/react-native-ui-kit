@@ -6,7 +6,6 @@ import { SvgUniversal } from '../../utils'
 import { Body, Caption } from '../Typography'
 
 import { styles } from './Checkbox.styles'
-import { useCheckboxTextLayout } from './useCheckboxTextLayout'
 
 export interface CheckboxProps extends Omit<
   PressableProps,
@@ -52,6 +51,7 @@ export interface CheckboxProps extends Omit<
 /**
  * Управляемый чекбокс с необязательными label и caption.
  * Вся строка — единая область нажатия и один accessibility-элемент.
+ * Чекбокс и label всегда выровнены по верхнему краю.
  * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=16-13529
  */
 export const Checkbox = memo<CheckboxProps>(
@@ -79,13 +79,7 @@ export const Checkbox = memo<CheckboxProps>(
   }) => {
     const [focused, setFocused] = useState(false)
     const [hovered, setHovered] = useState(false)
-    const {
-      visibleCaption,
-      alignToFirstLine,
-      firstLineHeight,
-      onLabelTextLayout,
-      onCaptionTextLayout,
-    } = useCheckboxTextLayout(label, caption)
+    const visibleCaption = label === undefined ? undefined : caption
     const filled = checked || indeterminate
     const Icon = indeterminate ? IconMinus : checked ? IconCheck : null
     const accessibilityChecked = indeterminate ? 'mixed' : checked
@@ -98,15 +92,13 @@ export const Checkbox = memo<CheckboxProps>(
         accessibilityElementsHidden
         accessible={false}
         importantForAccessibility='no-hide-descendants'
-        style={styles.content(firstLineHeight)}
+        style={styles.content}
       >
-        <Body size='base' style={styles.label} onTextLayout={onLabelTextLayout}>
+        <Body size='base' style={styles.label}>
           {label}
         </Body>
         {visibleCaption !== undefined && (
-          <Caption style={styles.caption} onTextLayout={onCaptionTextLayout}>
-            {visibleCaption}
-          </Caption>
+          <Caption style={styles.caption}>{visibleCaption}</Caption>
         )}
       </View>
     )
@@ -127,7 +119,7 @@ export const Checkbox = memo<CheckboxProps>(
         disabled={disabled}
         hitSlop={hitSlop}
         style={(pressState) => [
-          styles.root(alignToFirstLine),
+          styles.root,
           typeof style === 'function' ? style(pressState) : style,
         ]}
         testID={testID}
@@ -167,7 +159,6 @@ export const Checkbox = memo<CheckboxProps>(
                   disabled,
                   focused,
                   danger,
-                  firstLineHeight,
                 })}
               >
                 {!disabled && (focused || danger) ? (
