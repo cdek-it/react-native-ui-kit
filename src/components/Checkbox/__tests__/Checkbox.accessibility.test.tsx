@@ -65,12 +65,15 @@ describe('Checkbox — доступность', () => {
     expect(screen.getByHintText('Дополнительная информация')).toBeOnTheScreen()
   })
 
-  test('использует явное доступное имя при отсутствии label', () => {
-    const screen = render(<Checkbox accessibilityLabel='Уведомления' />)
+  test.each([
+    { name: 'задан', caption: 'Подпись' },
+    { name: 'не задан', caption: undefined },
+  ])('передаёт caption в accessibilityHint: $name', ({ caption }) => {
+    const screen = render(<Checkbox caption={caption} />)
+    const control = screen.getByRole('checkbox')
 
-    expect(
-      screen.getByRole('checkbox', { name: 'Уведомления' })
-    ).toBeOnTheScreen()
+    expect(control.props.accessibilityHint).toBe(caption)
+    expect(control.props.accessibilityLabel).toBeUndefined()
   })
 
   test('передаёт связь с внешним текстом без автоматического имени при accessibilityLabelledBy', () => {
@@ -84,14 +87,5 @@ describe('Checkbox — доступность', () => {
 
     expect(control).toHaveProp('accessibilityLabelledBy', 'NotificationsLabel')
     expect(control.props.accessibilityLabel).toBeUndefined()
-  })
-
-  test.each([
-    { name: 'label', props: { caption: 'Подпись' } },
-    { name: 'caption', props: { label: 'Уведомления' } },
-  ])('не задаёт подсказку из caption при отсутствии $name', ({ props }) => {
-    const screen = render(<Checkbox {...props} />)
-
-    expect(screen.getByRole('checkbox').props.accessibilityHint).toBeUndefined()
   })
 })

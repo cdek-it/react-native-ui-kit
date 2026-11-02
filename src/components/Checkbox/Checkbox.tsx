@@ -38,7 +38,7 @@ export interface CheckboxProps extends Omit<
   onCheckedChange?: (checked: boolean) => void
   /** Текст справа от квадрата. По умолчанию задаёт доступное имя */
   label?: string
-  /** Подпись под label. Без label не отображается */
+  /** Дополнительная подпись. Отображается и без label */
   caption?: string
   /**
    * Расширяет область нажатия без изменения размера компонента.
@@ -79,7 +79,6 @@ export const Checkbox = memo<CheckboxProps>(
   }) => {
     const [focused, setFocused] = useState(false)
     const [hovered, setHovered] = useState(false)
-    const visibleCaption = label === undefined ? undefined : caption
     const filled = checked || indeterminate
     const Icon = indeterminate ? IconMinus : checked ? IconCheck : null
     const accessibilityChecked = indeterminate ? 'mixed' : checked
@@ -87,18 +86,20 @@ export const Checkbox = memo<CheckboxProps>(
       accessibilityLabel ??
       (accessibilityLabelledBy === undefined ? label : undefined)
 
-    const textContent = label !== undefined && (
+    const textContent = (label !== undefined || caption !== undefined) && (
       <View
         accessibilityElementsHidden
         accessible={false}
         importantForAccessibility='no-hide-descendants'
         style={styles.content}
       >
-        <Body size='base' style={styles.label}>
-          {label}
-        </Body>
-        {visibleCaption !== undefined && (
-          <Caption style={styles.caption}>{visibleCaption}</Caption>
+        {label !== undefined && (
+          <Body size='base' style={styles.label}>
+            {label}
+          </Body>
+        )}
+        {caption !== undefined && (
+          <Caption style={styles.caption}>{caption}</Caption>
         )}
       </View>
     )
@@ -107,7 +108,7 @@ export const Checkbox = memo<CheckboxProps>(
       <Pressable
         {...rest}
         accessible
-        accessibilityHint={accessibilityHint ?? visibleCaption}
+        accessibilityHint={accessibilityHint ?? caption}
         accessibilityLabel={resolvedAccessibilityLabel}
         accessibilityLabelledBy={accessibilityLabelledBy}
         accessibilityRole='checkbox'

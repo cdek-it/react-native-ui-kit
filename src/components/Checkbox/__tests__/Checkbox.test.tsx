@@ -89,7 +89,7 @@ describe('Checkbox', () => {
     }
   )
 
-  test('вызывает прежний onPress при использовании существующих props', async () => {
+  test('вызывает onPress с настройками по умолчанию', async () => {
     const props: CheckboxProps = { onPress: jest.fn() }
     const screen = render(<Checkbox {...props} />)
 
@@ -131,22 +131,19 @@ describe('Checkbox', () => {
     )
   })
 
-  test('показывает label и caption при передаче текста', () => {
-    const screen = render(
-      <Checkbox caption='Сообщать о доставке' label='Уведомления' />
-    )
+  test.each([
+    { name: 'без подписей', props: {}, text: /^$/ },
+    { name: 'с label', props: { label: 'Уведомления' }, text: /^Уведомления$/ },
+    { name: 'с caption', props: { caption: 'Подпись' }, text: /^Подпись$/ },
+    {
+      name: 'с label и caption',
+      props: { label: 'Уведомления', caption: 'Подпись' },
+      text: /^УведомленияПодпись$/,
+    },
+  ])('отображает компонент $name', ({ props, text }) => {
+    const screen = render(<Checkbox {...props} />)
 
-    expect(screen.getByRole('checkbox')).toHaveTextContent(
-      'УведомленияСообщать о доставке'
-    )
-  })
-
-  test('скрывает caption при удалении label', () => {
-    const screen = render(<Checkbox caption='Подпись' label='Уведомления' />)
-
-    screen.rerender(<Checkbox caption='Подпись' />)
-
-    expect(screen.getByRole('checkbox')).toHaveTextContent('')
+    expect(screen.getByRole('checkbox')).toHaveTextContent(text)
   })
 
   test.each([
