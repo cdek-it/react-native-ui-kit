@@ -1,7 +1,7 @@
-import { act, render, screen } from '@testing-library/react-native'
+import { act, render, screen, within } from '@testing-library/react-native'
 
 import { Message } from '../Message'
-import { TestId } from '../testIds'
+import { TestId, TimerTestId } from '../testIds'
 
 describe('Message: таймер', () => {
   beforeEach(() => jest.useFakeTimers())
@@ -73,6 +73,30 @@ describe('Message: таймер', () => {
     act(() => jest.advanceTimersByTime(1500))
 
     expect(onTimerFinish).toHaveBeenCalledExactlyOnceWith()
+  })
+
+  test('восстанавливает цифру при перезапуске во время перехода к следующему значению', () => {
+    const { rerender } = render(<Message timerValue={5} title='Сообщение' />)
+
+    for (let second = 0; second < 3; second += 1) {
+      act(() => jest.advanceTimersByTime(1000))
+    }
+
+    act(() => jest.advanceTimersByTime(100))
+    rerender(<Message timerValue={3} title='Сообщение' />)
+    act(() => jest.advanceTimersByTime(500))
+
+    const currentValue = screen.getByTestId(TimerTestId.CurrentValue, {
+      includeHiddenElements: true,
+    })
+
+    expect(
+      within(currentValue).getByText('3', { includeHiddenElements: true })
+    ).toBeOnTheScreen()
+    expect(currentValue).toHaveAnimatedStyle({
+      opacity: 1,
+      transform: [{ translateY: 0 }],
+    })
   })
 
   test('отменяет завершение после выключения таймера', () => {

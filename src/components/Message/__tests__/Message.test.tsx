@@ -74,7 +74,7 @@ describe('Message', () => {
   test('сохраняет пользовательский testID корня', () => {
     render(<Message testID='CustomMessage' title='Сообщение' />)
 
-    expect(screen.getByTestId('CustomMessage')).toBeOnTheScreen()
+    expect(screen.root).toHaveProp('testID', 'CustomMessage')
   })
 
   test('не показывает закрытие без onClose даже при наличии closeLabel', () => {

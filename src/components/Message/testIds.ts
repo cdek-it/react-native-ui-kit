@@ -9,4 +9,5 @@ export enum TestId {
 
 export enum TimerTestId {
   Container = 'TimerContainer',
+  CurrentValue = 'TimerCurrentValue',
 }
