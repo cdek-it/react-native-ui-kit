@@ -6,7 +6,6 @@ import { useUnistyles } from 'react-native-unistyles'
 import { Body, Caption } from '../Typography'
 
 import { styles } from './RadioButton.styles'
-import { useRadioButtonTextLayout } from './useRadioButtonTextLayout'
 
 export interface RadioButtonProps extends Omit<
   PressableProps,
@@ -47,6 +46,7 @@ export interface RadioButtonProps extends Omit<
 /**
  * Управляемая радиокнопка с необязательными label и caption.
  * Вся строка — единая область нажатия и один accessibility-элемент.
+ * Радиокнопка и label всегда выровнены по верхнему краю.
  * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=17-13535
  */
 export const RadioButton = memo<RadioButtonProps>(
@@ -75,13 +75,7 @@ export const RadioButton = memo<RadioButtonProps>(
     // key={rt.themeName} пересоздаёт только внутренний Animated.View с актуальной палитрой
     // https://github.com/jpudysz/react-native-unistyles/issues/1007 исправление в Unistyles 3.6.0
     const { rt } = useUnistyles()
-    const {
-      visibleCaption,
-      alignToFirstLine,
-      firstLineHeight,
-      onLabelTextLayout,
-      onCaptionTextLayout,
-    } = useRadioButtonTextLayout(label, caption)
+    const visibleCaption = label === undefined ? undefined : caption
     const resolvedAccessibilityLabel =
       accessibilityLabel ??
       (accessibilityLabelledBy === undefined ? label : undefined)
@@ -91,15 +85,13 @@ export const RadioButton = memo<RadioButtonProps>(
         accessibilityElementsHidden
         accessible={false}
         importantForAccessibility='no-hide-descendants'
-        style={styles.content(firstLineHeight)}
+        style={styles.content}
       >
-        <Body size='base' style={styles.label} onTextLayout={onLabelTextLayout}>
+        <Body size='base' style={styles.label}>
           {label}
         </Body>
         {visibleCaption !== undefined && (
-          <Caption style={styles.caption} onTextLayout={onCaptionTextLayout}>
-            {visibleCaption}
-          </Caption>
+          <Caption style={styles.caption}>{visibleCaption}</Caption>
         )}
       </View>
     )
@@ -116,7 +108,7 @@ export const RadioButton = memo<RadioButtonProps>(
         disabled={disabled}
         hitSlop={hitSlop}
         style={(pressState) => [
-          styles.root(alignToFirstLine),
+          styles.root,
           typeof style === 'function' ? style(pressState) : style,
         ]}
         testID={testID}
@@ -155,7 +147,6 @@ export const RadioButton = memo<RadioButtonProps>(
                   disabled,
                   focused,
                   danger,
-                  firstLineHeight,
                 })}
               >
                 {!disabled && (focused || danger) ? (
