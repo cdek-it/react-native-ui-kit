@@ -6,7 +6,7 @@ import Animated, {
 } from 'react-native-reanimated'
 import Svg, { Defs, LinearGradient, Rect, Stop } from 'react-native-svg'
 
-import { StyleSheet } from 'react-native-unistyles'
+import { StyleSheet, useUnistyles } from 'react-native-unistyles'
 
 import { SkeletonContext } from '../../utils/SkeletonContext'
 
@@ -17,6 +17,9 @@ export interface SkeletonProps extends Omit<ViewProps, 'onLayout'> {}
  * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=5221-12465
  */
 export const Skeleton = memo<SkeletonProps>(({ style, testID, ...rest }) => {
+  const { theme } = useUnistyles()
+  const { background, animationBackground } =
+    theme.components.skeleton.colorScheme.root
   const {
     globalTranslateX,
     registerSkeleton,
@@ -63,21 +66,13 @@ export const Skeleton = memo<SkeletonProps>(({ style, testID, ...rest }) => {
         <Svg accessible={false} testID={SkeletonTestId.svg}>
           <Defs>
             <LinearGradient id='gradient' x1='0' x2='1' y1='1' y2='1'>
-              <Stop
-                offset='0'
-                stopColor={styles.container.backgroundColor}
-                stopOpacity='0.4'
-              />
+              <Stop offset='0' stopColor={background} stopOpacity='0.4' />
               <Stop
                 offset='0.5'
-                stopColor={styles.gradientColor.backgroundColor}
+                stopColor={animationBackground}
                 stopOpacity='0.4'
               />
-              <Stop
-                offset='1'
-                stopColor={styles.container.backgroundColor}
-                stopOpacity='0.4'
-              />
+              <Stop offset='1' stopColor={background} stopOpacity='0.4' />
             </LinearGradient>
           </Defs>
           <Rect fill='url(#gradient)' height='100%' width='100%' />
@@ -94,9 +89,6 @@ const styles = StyleSheet.create(({ components: { skeleton } }) => ({
     backgroundColor: skeleton.colorScheme.root.background,
   },
   gradientContainer: { position: 'absolute', height: '100%' },
-  gradientColor: {
-    backgroundColor: skeleton.colorScheme.root.animationBackground,
-  },
 }))
 
 export const SkeletonTestId = {
