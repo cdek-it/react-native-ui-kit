@@ -10,6 +10,8 @@ import Animated, {
 import { StyleSheet } from 'react-native-unistyles'
 import { scheduleOnRN } from 'react-native-worklets'
 
+import { TimerTestId } from '../testIds'
+
 interface TimerFlipProps {
   readonly value: number
   readonly size: number
@@ -34,9 +36,10 @@ export const TimerFlip = memo<TimerFlipProps>(
     }))
 
     useEffect(() => {
+      progress.value = 0
+
       if (value === currentValue) return
 
-      progress.value = 0
       progress.value = withTiming(1, { duration }, (finished) => {
         if (finished) {
           scheduleOnRN(setCurrentValue, value)
@@ -51,7 +54,10 @@ export const TimerFlip = memo<TimerFlipProps>(
         <Animated.View style={[styles.textWrapper(size), nextStyle]}>
           <Text style={[styles.text, { color }]}>{value}</Text>
         </Animated.View>
-        <Animated.View style={[styles.textWrapper(size), currentStyle]}>
+        <Animated.View
+          style={[styles.textWrapper(size), currentStyle]}
+          testID={TimerTestId.CurrentValue}
+        >
           <Text style={[styles.text, { color }]}>{currentValue}</Text>
         </Animated.View>
       </View>
