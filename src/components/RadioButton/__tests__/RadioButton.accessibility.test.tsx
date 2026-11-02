@@ -47,14 +47,15 @@ describe('RadioButton — доступность', () => {
     expect(screen.getByHintText('Дополнительная информация')).toBeOnTheScreen()
   })
 
-  test('использует явное доступное имя при отсутствии label', () => {
-    const screen = render(
-      <RadioButton accessibilityLabel='Доставка курьером' />
-    )
+  test.each([
+    { name: 'задан', caption: 'Привезём заказ' },
+    { name: 'не задан', caption: undefined },
+  ])('передаёт caption в accessibilityHint: $name', ({ caption }) => {
+    const screen = render(<RadioButton caption={caption} />)
+    const control = screen.getByRole('radio')
 
-    expect(
-      screen.getByRole('radio', { name: 'Доставка курьером' })
-    ).toBeOnTheScreen()
+    expect(control.props.accessibilityHint).toBe(caption)
+    expect(control.props.accessibilityLabel).toBeUndefined()
   })
 
   test('передаёт связь с внешним текстом без автоматического имени при accessibilityLabelledBy', () => {
@@ -68,14 +69,5 @@ describe('RadioButton — доступность', () => {
 
     expect(control).toHaveProp('accessibilityLabelledBy', 'DeliveryMethodLabel')
     expect(control.props.accessibilityLabel).toBeUndefined()
-  })
-
-  test.each([
-    { name: 'label', props: { caption: 'Подпись' } },
-    { name: 'caption', props: { label: 'Доставка курьером' } },
-  ])('не задаёт подсказку из caption при отсутствии $name', ({ props }) => {
-    const screen = render(<RadioButton {...props} />)
-
-    expect(screen.getByRole('radio').props.accessibilityHint).toBeUndefined()
   })
 })

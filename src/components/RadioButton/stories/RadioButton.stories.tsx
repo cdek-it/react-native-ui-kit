@@ -19,7 +19,7 @@ const meta: Meta<RadioButtonProps> = {
     disabled: { control: 'boolean' },
     danger: { control: 'boolean' },
     label: { control: 'text' },
-    caption: { control: 'text', if: { arg: 'label', truthy: true } },
+    caption: { control: 'text' },
     onPress: { action: 'onPress' },
   },
   parameters: {
