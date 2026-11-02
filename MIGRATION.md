@@ -198,3 +198,54 @@ module.exports = function (api) {
 - [useUnistyles](https://www.unistyl.es/v3/references/use-unistyles/)
 - [StyleSheet](https://www.unistyl.es/v3/references/stylesheet/)
 - [Babel plugin](https://www.unistyl.es/v3/other/babel-plugin/)
+
+## Avatar: переходный API до 2.0
+
+Публичные типы: [AvatarProps и AvatarSize](src/components/Avatar/Avatar.tsx),
+[BadgeProps](src/components/Badge/Badge.tsx).
+
+- Используйте `size='base'` вместо `normal`. Размеры base/large/xlarge приведены
+  к Figma: 32/40/56; `normal` соответствует base. Для сохранения старого размера
+  передавайте число 28/35/49.
+- Вместо `showBadge={condition}` передавайте
+  `badge={condition ? <Badge>3</Badge> : null}`. До 2.0 явный
+  `showBadge={false}` продолжает скрывать badge.
+- Замените произвольный ReactNode в `badge` готовым `<Badge>`. Его текст, dot,
+  размер и оформление принадлежат Badge; Avatar не меняет переданный узел. До
+  2.0 произвольный ReactNode ещё поддерживается.
+- Для image передавайте нативный `source`: локальный `require` или `{ uri }`. До
+  2.0 source необязателен, в 2.0 станет обязательным. `onError` разрешён только
+  для `type='image'`. При ошибке переключайте внешний state на `type='icon'`,
+  передавая `Icon` и при необходимости `iconColor`, без `source` и `onError`.
+  Встроенного fallback у Avatar нет.
+- Самостоятельный Avatar получает имя через `accessibilityLabel` или
+  `aria-label`; при конфликте выигрывает `accessibilityLabel`. Без имени Avatar
+  декоративен, включая его текст, изображение, иконку и badge. Именованный
+  Avatar — один image на внешнем View. Явное скрытие через `accessible={false}`,
+  `accessibilityElementsHidden`, `aria-hidden` или
+  `importantForAccessibility='no-hide-descendants'` сохраняется.
+- В Pressable имя, hint и состояние задавайте родителю; вложенный Avatar
+  оставляйте без собственного имени:
+
+  ```tsx
+  import { Avatar, Badge } from '@cdek-it/react-native-ui-kit'
+  import { Pressable } from 'react-native'
+
+  const Profile = () => (
+    <Pressable
+      accessibilityLabel='Открыть профиль Ивана'
+      accessibilityRole='button'
+      accessibilityState={{ selected: true }}
+    >
+      <Avatar badge={<Badge>3</Badge>} size={84} type='label'>
+        ИИ
+      </Avatar>
+    </Pressable>
+  )
+  ```
+
+Публичный `style` остаётся на внутреннем визуальном контейнере. Внешний View
+ограничен размером Avatar; badge расположен отдельно от обрезаемого контента.
+Текст лейбла отображается одной строкой в верхнем регистре, без системного
+масштабирования шрифта и автоматической подгонки; не помещающийся текст
+обрезается.

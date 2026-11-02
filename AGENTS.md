@@ -80,6 +80,9 @@ Do not commit or push unless explicitly asked. Use Conventional Commits for
 requested commits. Keep the conventional type and optional scope in English;
 write the commit subject in Russian.
 
+Do not edit `CHANGELOG.md` manually or as part of ordinary changes. It is
+updated automatically when a new version is released.
+
 ## Safety
 
 Do not read, edit, or output `.secrets/**`, environment files, `*.p8`, `*.jks`,
