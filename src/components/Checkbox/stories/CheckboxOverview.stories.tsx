@@ -15,7 +15,7 @@ const meta: Meta<CheckboxProps> = {
     onCheckedChange: { action: 'onCheckedChange' },
     onPress: { action: 'onPress' },
   },
-  parameters: { controls: { include: ['theme'] } },
+  parameters: { controls: { include: [] } },
   render: ({ onCheckedChange, onPress }) => (
     <ScrollView contentContainerStyle={styles.root}>
       <CheckboxGroupExample

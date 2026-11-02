@@ -25,7 +25,7 @@ const meta: Meta<ToggleSwitchProps> = {
   },
   parameters: {
     controls: {
-      include: ['theme', 'checked', 'disabled', 'danger', 'label', 'caption'],
+      include: ['checked', 'disabled', 'danger', 'label', 'caption'],
     },
   },
   render: ({ label, caption, ...args }) => {

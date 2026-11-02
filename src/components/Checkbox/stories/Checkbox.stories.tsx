@@ -28,7 +28,6 @@ const meta: Meta<CheckboxProps> = {
   parameters: {
     controls: {
       include: [
-        'theme',
         'checked',
         'indeterminate',
         'disabled',

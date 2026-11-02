@@ -2,6 +2,7 @@ import '../src/theme/ThemeContext'
 
 import { createAsyncStorage } from '@react-native-async-storage/async-storage'
 
+import { StorybookShell } from './StorybookShell'
 import { StorybookStatusUI } from './StorybookStatusUI'
 import { view } from './storybook.requires'
 
@@ -28,4 +29,10 @@ const StorybookUIRoot = view.getStorybookUI({
   },
 })
 
-export default StorybookUIRoot
+const Storybook = () => (
+  <StorybookShell>
+    <StorybookUIRoot />
+  </StorybookShell>
+)
+
+export default Storybook

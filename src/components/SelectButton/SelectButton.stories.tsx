@@ -48,7 +48,7 @@ const meta: Meta<typeof SelectButton> = {
     disabled: { control: 'boolean' },
     onPress: { action: 'onPress' },
   },
-  parameters: { controls: { include: ['theme', 'size', 'disabled'] } },
+  parameters: { controls: { include: ['size', 'disabled'] } },
 }
 
 export default meta
@@ -64,9 +64,7 @@ export const Controlled: Story = {
       control: { type: 'range', min: 0, max: buttons.length - 1, step: 1 },
     },
   },
-  parameters: {
-    controls: { include: ['theme', 'size', 'disabled', 'selectedIndex'] },
-  },
+  parameters: { controls: { include: ['size', 'disabled', 'selectedIndex'] } },
   render: ({
     buttons,
     disabled,
