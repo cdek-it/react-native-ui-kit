@@ -5,7 +5,7 @@ import { Checkbox, type CheckboxProps } from '../Checkbox'
 
 const meta: Meta<CheckboxProps> = {
   title: 'Form/Checkbox',
-  tags: ['version:2.0'],
+  tags: ['version:2.0', 'design:pending'],
   component: Checkbox,
   args: {
     checked: false,
