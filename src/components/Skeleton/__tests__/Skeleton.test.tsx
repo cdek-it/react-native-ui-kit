@@ -1,83 +1,63 @@
 import { render } from '@testing-library/react-native'
-import { useMemo, type FC, type ReactNode } from 'react'
-import { View } from 'react-native'
 import type { SharedValue } from 'react-native-reanimated'
 
 import { SkeletonContext } from '../../../utils/SkeletonContext'
-import { Skeleton } from '../Skeleton'
+import { SkeletonTestId } from '../Skeleton'
+import { Skeleton } from '../index'
 
-const createTestSharedValue = (value: number): SharedValue<number> =>
-  ({ value }) as SharedValue<number>
+describe('Skeleton', () => {
+  test('передаёт свойства корневому View и сохраняет пользовательский testID', () => {
+    const { getByTestId } = render(
+      <Skeleton nativeID='SkeletonPlaceholder' testID='CustomSkeleton' />
+    )
 
-const registerSkeleton = jest.fn()
-const unregisterSkeleton = jest.fn()
+    expect(getByTestId('CustomSkeleton')).toHaveProp(
+      'nativeID',
+      'SkeletonPlaceholder'
+    )
+  })
 
-const TestWrapper: FC<{
-  readonly children: ReactNode
-  readonly globalTranslateXValue: number
-}> = ({ children, globalTranslateXValue }) => {
-  const contextValue = useMemo(
-    () => ({
-      globalTranslateX: createTestSharedValue(globalTranslateXValue),
+  test('остаётся декоративным даже при переданном accessible', () => {
+    const { getByTestId } = render(<Skeleton accessible />)
+
+    const root = getByTestId(SkeletonTestId.root)
+    const svg = getByTestId(SkeletonTestId.svg)
+
+    expect(root.props.accessible).toBeFalse()
+    expect(svg.props.accessible).toBeFalse()
+    expect(root.props.accessibilityRole).toBeUndefined()
+    expect(root.props.accessibilityLabel).toBeUndefined()
+    expect(root.props.accessibilityState).toBeUndefined()
+  })
+
+  test('регистрируется при монтировании и снимает регистрацию при удалении', () => {
+    const registerSkeleton = jest.fn()
+    const unregisterSkeleton = jest.fn()
+    const contextValue = {
+      globalTranslateX: { value: 0 } as SharedValue<number>,
       registerSkeleton,
       unregisterSkeleton,
       skeletonWidth: 500,
-    }),
-    [globalTranslateXValue]
-  )
-
-  return (
-    <SkeletonContext.Provider value={contextValue}>
-      {children}
-    </SkeletonContext.Provider>
-  )
-}
-
-describe('Skeleton', () => {
-  test('before animation started', () => {
-    const { toJSON } = render(<Skeleton style={{ height: 50 }} />, {
-      wrapper: ({ children }) => (
-        <TestWrapper globalTranslateXValue={-200}>{children}</TestWrapper>
-      ),
-    })
-
-    expect(toJSON()).toMatchSnapshot('before animation started')
-  })
-
-  test('50% animation', () => {
-    const { toJSON } = render(<Skeleton style={{ height: 50 }} />, {
-      wrapper: ({ children }) => (
-        <TestWrapper globalTranslateXValue={100}>{children}</TestWrapper>
-      ),
-    })
-
-    expect(toJSON()).toMatchSnapshot()
-  })
-
-  test('100% animation', () => {
-    const { toJSON } = render(<Skeleton style={{ height: 50 }} />, {
-      wrapper: ({ children }) => (
-        <TestWrapper globalTranslateXValue={400}>{children}</TestWrapper>
-      ),
-    })
-
-    expect(toJSON()).toMatchSnapshot()
-  })
-
-  test('skeleton registration', () => {
-    registerSkeleton.mockReset()
-    unregisterSkeleton.mockClear()
-
-    const { rerender } = render(<Skeleton style={{ height: 50 }} />, {
-      wrapper: ({ children }) => (
-        <TestWrapper globalTranslateXValue={0}>{children}</TestWrapper>
-      ),
-    })
+    }
+    const { rerender, unmount } = render(
+      <SkeletonContext.Provider value={contextValue}>
+        <Skeleton />
+      </SkeletonContext.Provider>
+    )
 
     expect(registerSkeleton).toHaveBeenCalledOnce()
     expect(unregisterSkeleton).not.toHaveBeenCalled()
 
-    rerender(<View />)
+    rerender(
+      <SkeletonContext.Provider value={contextValue}>
+        <Skeleton nativeID='UpdatedSkeleton' />
+      </SkeletonContext.Provider>
+    )
+
+    expect(registerSkeleton).toHaveBeenCalledOnce()
+    expect(unregisterSkeleton).not.toHaveBeenCalled()
+
+    unmount()
 
     expect(unregisterSkeleton).toHaveBeenCalledOnce()
   })

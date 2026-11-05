@@ -1,64 +1,123 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { IconUserCircle } from '@tabler/icons-react-native'
+import { useState } from 'react'
 import { View } from 'react-native'
 import { action } from 'storybook/actions'
 
+import { Button } from '../Button'
 import { Body } from '../Typography'
 
-import { Message } from './Message'
+import { Message, type MessageProps } from './Message'
 
-const icons = { IconUserCircle, default: undefined }
+type StoryArgs = Omit<MessageProps, 'body' | 'footer'> & {
+  readonly body: string
+  readonly withFooter: boolean
+  readonly withClose: boolean
+}
 
-const Stub = ({ children }: { readonly children: string }) => (
-  <View
-    style={{
-      padding: 14,
-      justifyContent: 'center',
-      alignItems: 'center',
-      borderWidth: 1,
-    }}
-  >
-    <Body>{children}</Body>
-  </View>
-)
+const icons = { default: undefined, IconUserCircle }
 
-const meta: Meta<typeof Message> = {
+const Example = ({ body, withFooter, withClose, ...args }: StoryArgs) => {
+  const [attempt, setAttempt] = useState(0)
+
+  return (
+    <View style={{ gap: 14 }}>
+      <Message
+        {...args}
+        body={body ? <Body size='base'>{body}</Body> : undefined}
+        footer={
+          withFooter ? (
+            <>
+              <Button
+                label='Отмена'
+                variant='secondary'
+                onPress={action('footer.cancel')}
+              />
+              <Button label='Подробнее' onPress={action('footer.details')} />
+            </>
+          ) : undefined
+        }
+        key={attempt}
+        onClose={withClose ? args.onClose : undefined}
+      />
+      {args.timerValue !== undefined && args.timerValue > 0 ? (
+        <Button
+          label='Перезапустить таймер'
+          onPress={() => setAttempt((value) => value + 1)}
+        />
+      ) : null}
+    </View>
+  )
+}
+
+const meta = {
   title: 'Message/Message',
+  component: Message,
+  tags: ['version:2.0', 'design:pending'],
   args: {
-    title: 'Message',
-    caption: 'caption',
+    title: 'Заголовок сообщения',
+    caption: 'Подробности сообщения',
     severity: 'info',
-    timerValue: undefined,
+    timerValue: 0,
+    Icon: undefined,
     hiddenIcon: false,
+    body: '',
+    withFooter: false,
+    withClose: true,
+    closeLabel: '',
+    closeAccessibilityLabel: '',
+    onClose: action('onClose'),
+    onTimerFinish: action('onTimerFinish'),
   },
   argTypes: {
+    title: { control: 'text' },
+    caption: { control: 'text' },
     severity: {
       control: 'radio',
       options: ['info', 'success', 'warning', 'danger'],
     },
-    Icon: { control: 'radio', options: Object.keys(icons), mapping: icons },
-    onTimerFinish: { action: 'onTimerFinish' },
+    timerValue: { control: { type: 'number', min: 0, max: 99 } },
+    Icon: {
+      control: 'radio',
+      options: Object.keys(icons),
+      mapping: icons,
+      if: { arg: 'timerValue', eq: 0 },
+    },
+    hiddenIcon: { control: 'boolean', if: { arg: 'timerValue', eq: 0 } },
+    body: { control: 'text' },
+    withFooter: { control: 'boolean' },
+    withClose: { control: 'boolean' },
+    closeLabel: { control: 'text', if: { arg: 'withClose', truthy: true } },
+    closeAccessibilityLabel: {
+      control: 'text',
+      if: { arg: 'withClose', truthy: true },
+    },
   },
-  render: (args) => (
-    <View style={{ gap: 10 }}>
-      <Message {...args} />
-      <Message {...args} style={{ width: 250, height: 150 }} />
-      <Message {...args} body={<Stub>body</Stub>} onClose={action('onClose')} />
-      <Message {...args} footer={<Stub>footer</Stub>} />
-      <Message
-        {...args}
-        body={<Stub>body</Stub>}
-        footer={<Stub>footer</Stub>}
-        timerValue={12}
-      />
-    </View>
-  ),
-}
+  parameters: {
+    controls: {
+      include: [
+        'theme',
+        'title',
+        'caption',
+        'severity',
+        'timerValue',
+        'Icon',
+        'hiddenIcon',
+        'body',
+        'withFooter',
+        'withClose',
+        'closeLabel',
+        'closeAccessibilityLabel',
+      ],
+    },
+  },
+  render: (args) => <Example {...args} />,
+} satisfies Meta<StoryArgs>
 
 export default meta
 
-type Story = StoryObj<typeof Message>
+type Story = StoryObj<typeof meta>
 
-const MessageStory: Story = {}
+const MessageStory: Story = { name: 'Message' }
 
 export { MessageStory as Message }

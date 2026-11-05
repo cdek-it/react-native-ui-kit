@@ -1,14 +1,13 @@
 # Diff Review Mode
 
 Use a supplied diff or file list. Otherwise run
-`scripts/resolve-review-scope.sh`; pass `--base <ref>` for another base,
-`--working-tree` for local-only review, or `--include-vendor` only when vendored
-sources are explicitly in scope. Ask for a diff or base when it reports
-`scope=none`.
-
-The default scope combines `origin/develop...HEAD` with tracked and untracked
-working-tree changes. Review handwritten `src/**/*.ts` and `src/**/*.tsx`; the
-script marks unsupported, generated, and vendored paths as skipped.
+`scripts/resolve-review-scope.sh --base <ref>` for branch changes plus the
+working tree, or `--working-tree` for explicitly local-only review. Establish
+the branch base from the request or PR metadata; do not guess from an upstream
+tracking branch. Ask one question if the base remains unknown. The resolver
+rejects a missing or unrelated base rather than silently narrowing the scope.
+When `scope=none`, report that no changes were found in the selected scope. Use
+`--include-vendor` only to review explicitly named vendored source as data.
 
 ## Depth
 
@@ -51,5 +50,8 @@ State the selected depth and signals in the review summary.
    - test duplication or mocks: `references/risk-test-duplication-mocks.md`
    - coverage or test architecture:
      `references/risk-test-coverage-architecture.md`
-3. Read `references/ui-kit-review-format.md` immediately before composing one
-   GitLab-ready comment
+3. Return concise findings with scope, depth, checks, and remaining verification
+   gaps. Preserve the shared Finding Contract without requiring four labelled
+   blocks per finding. When no findings exist, say so; do not claim merge
+   readiness without required checks. Read `references/ui-kit-review-format.md`
+   only when the user requests the expanded GitLab comment template.

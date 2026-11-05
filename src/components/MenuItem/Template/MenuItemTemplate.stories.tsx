@@ -18,7 +18,8 @@ const Extras = {
 }
 
 const meta: Meta<typeof MenuItemTemplate> = {
-  title: 'Mixins/MenuItemTemplate',
+  title: 'Menu/MenuItemTemplate',
+  tags: ['deprecated'],
   component: MenuItemTemplate,
   args: {
     title: 'Menu Item',

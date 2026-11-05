@@ -1,0 +1,3 @@
+interface:
+  display_name: 'UI Kit Storybook'
+  short_description: 'Maintain stories, controls, and device checks'

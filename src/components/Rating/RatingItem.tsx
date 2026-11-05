@@ -41,25 +41,25 @@ export const RatingItem = memo<RatingItemProps>(({ checked, ...rest }) => {
           {...styles.icon}
           fillOpacity={checked ? 1 : 0}
           source={Icon}
-          uniProps={({ theme }) => {
+          uniProps={({ components }) => {
             const color = disabled
               ? checked
-                ? theme.custom.rating.ratingStarIconOnDisabledColor
-                : theme.custom.rating.ratingStarIconOffDisabledColor
+                ? components.rating.icon.activeColor
+                : components.rating.icon.color
               : pressed
-                ? theme.Form.Rating.ratingStarIconHoverColor
+                ? components.rating.icon.hoverColor
                 : checked
-                  ? theme.Form.Rating.ratingStarIconOnColor
-                  : theme.Form.Rating.ratingStarIconOffColor
+                  ? components.rating.icon.activeColor
+                  : components.rating.icon.color
 
             return {
               color,
               fill: checked
                 ? disabled
-                  ? theme.custom.rating.ratingStarIconOnDisabledColor
+                  ? components.rating.icon.activeColor
                   : pressed
-                    ? theme.Form.Rating.ratingStarIconHoverColor
-                    : theme.Form.Rating.ratingStarIconOnColor
+                    ? components.rating.icon.hoverColor
+                    : components.rating.icon.activeColor
                 : undefined,
             }
           }}
@@ -69,9 +69,9 @@ export const RatingItem = memo<RatingItemProps>(({ checked, ...rest }) => {
   )
 })
 
-const styles = StyleSheet.create(({ theme }) => ({
+const styles = StyleSheet.create(({ components }) => ({
   icon: {
-    height: theme.Form.Rating.ratingIconFontSize,
-    width: theme.Form.Rating.ratingIconFontSize,
+    height: components.rating.icon.size,
+    width: components.rating.icon.size,
   },
 }))

@@ -30,16 +30,18 @@ export const Subtitle = memo<SubtitleProps>(
   )
 )
 
-const styles = StyleSheet.create(({ theme, typography, fonts }) => ({
+// Осознанный обход слоя components: цвет текста — семантическая роль, и своего
+// токена у Typography нет (компонент отсутствует в tokens.json).
+const styles = StyleSheet.create(({ semantic, fonts }) => ({
   text: {
-    fontSize: typography.Size['text-xs'],
-    fontWeight: 700,
+    fontSize: fonts.fontSize[100],
+    fontWeight: fonts.fontWeight.bold,
     textTransform: 'uppercase',
-    fontFamily: fonts.secondary,
-    lineHeight: 15,
+    fontFamily: fonts.fontFamily.base,
+    lineHeight: fonts.lineHeight[300],
   },
-  base: { lineHeight: 18, fontSize: typography.Size['text-sm'] },
-  default: { color: theme.General.textColor },
-  primary: { color: theme.General.primaryColor },
-  secondary: { color: theme.General.textSecondaryColor },
+  base: { lineHeight: fonts.lineHeight[400], fontSize: fonts.fontSize[200] },
+  default: { color: semantic.colorScheme.color.fg.default },
+  primary: { color: semantic.colorScheme.color.fg.brand.default },
+  secondary: { color: semantic.colorScheme.color.fg.muted },
 }))

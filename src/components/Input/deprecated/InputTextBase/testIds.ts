@@ -1,0 +1,11 @@
+export const InputTextBaseTestId = {
+  default: 'InputTextBase',
+  focusOutline: 'FocusOutline',
+  dangerOutline: 'DangerOutline',
+  loading: 'Loading',
+  clearButton: 'ClearButton',
+  disabledIcon: 'DisabledIcon',
+  floatingPlaceholder: 'FloatingPlaceholder',
+  placeholder: 'Placeholder',
+  pressableContainer: 'PressableContainer',
+}

@@ -1,9 +1,23 @@
+import { useArgs } from '@storybook/preview-api'
 import type { Meta, StoryObj } from '@storybook/react'
-import { useCallback, useState } from 'react'
-import { Text, TouchableOpacity, View } from 'react-native'
+import { useCallback } from 'react'
+import { View } from 'react-native'
+import { StyleSheet } from 'react-native-unistyles'
 
-import { Dialog, type DialogProps } from './Dialog'
+import { Button } from '../Button'
+import { Body } from '../Typography'
+
+import { Dialog as DialogView, type DialogProps } from './Dialog'
+import { DialogComponent } from './DialogComponent'
 import { DialogHeader, type DialogHeaderProps } from './DialogHeader'
+
+type DialogStoryArgs = DialogProps & Pick<DialogHeaderProps, 'severity'>
+
+const DialogBody = () => (
+  <Body>Войдите в приложение, чтобы заказ сохранился в списке заказов</Body>
+)
+
+const InlineFooter = () => <Button label='Войти' />
 
 const severityMap = {
   info: 'info',
@@ -14,11 +28,56 @@ const severityMap = {
   none: undefined,
 }
 
-const meta: Meta<DialogProps & DialogHeaderProps> = {
-  title: 'Overlay/Dialog Modal=true',
-  component: Dialog,
-  render: (props) => Template(props),
-  args: { severity: 'info' },
+const DialogExample = ({
+  isVisible,
+  severity,
+  onHideComplete,
+  onClose,
+}: DialogStoryArgs) => {
+  const [, updateArgs] = useArgs<DialogStoryArgs>()
+
+  const showDialog = () => {
+    updateArgs({ isVisible: true })
+  }
+
+  const hideDialog = useCallback(() => {
+    updateArgs({ isVisible: false })
+    onClose?.()
+  }, [onClose, updateArgs])
+
+  const Footer = useCallback(() => {
+    return <Button label='Войти' onPress={hideDialog} />
+  }, [hideDialog])
+
+  const headerProps = { severity, title: 'Найденный заказ не сохранится' }
+
+  return (
+    <View style={styles.container}>
+      <View style={styles.preview}>
+        <DialogComponent
+          body={DialogBody}
+          footer={InlineFooter}
+          header={<DialogHeader {...headerProps} />}
+        />
+      </View>
+      <Button label='Показать модальный Dialog' onPress={showDialog} />
+      <DialogView
+        body={DialogBody}
+        footer={Footer}
+        header={<DialogHeader {...headerProps} onClose={hideDialog} />}
+        isVisible={isVisible}
+        onClose={hideDialog}
+        onHideComplete={onHideComplete}
+      />
+    </View>
+  )
+}
+
+const meta: Meta<DialogStoryArgs> = {
+  title: 'Overlay/Dialog',
+  component: DialogView,
+  render: DialogExample,
+  args: { severity: 'info', isVisible: false },
   argTypes: {
     severity: {
       control: 'radio',
@@ -28,68 +87,20 @@ const meta: Meta<DialogProps & DialogHeaderProps> = {
     onClose: { action: 'onClose' },
     onHideComplete: { action: 'onHideComplete' },
   },
-}
-
-const Template = ({
-  severity,
-  onHideComplete,
-  onClose,
-}: DialogProps & DialogHeaderProps) => {
-  const [isVisible, setIsVisible] = useState(false)
-
-  const showDialog = () => {
-    setIsVisible(true)
-  }
-
-  const hideDialog = useCallback(() => {
-    setIsVisible(false)
-    onClose?.()
-  }, [onClose])
-
-  const Body = useCallback(() => {
-    return (
-      <Text>Войдите в приложение, чтобы заказ сохранился в списке заказов</Text>
-    )
-  }, [])
-
-  const Footer = useCallback(() => {
-    return (
-      <TouchableOpacity onPress={hideDialog}>
-        <Text>Войти</Text>
-      </TouchableOpacity>
-    )
-  }, [hideDialog])
-
-  return (
-    <View>
-      <View>
-        <TouchableOpacity onPress={showDialog}>
-          <Text>Показать Dialog</Text>
-        </TouchableOpacity>
-      </View>
-
-      <Dialog
-        body={Body}
-        footer={Footer}
-        header={
-          <DialogHeader
-            severity={severity}
-            title='Найденный заказ не сохранится'
-            onClose={hideDialog}
-          />
-        }
-        isVisible={isVisible}
-        onClose={hideDialog}
-        onHideComplete={onHideComplete}
-      />
-    </View>
-  )
+  parameters: { controls: { include: ['severity'] } },
 }
 
 export default meta
 
-type Story = StoryObj<typeof Dialog>
+type Story = StoryObj<DialogStoryArgs>
 
-const DialogStory: Story = { args: {} }
+export const Dialog: Story = {}
 
-export { DialogStory as 'Dialog modal=true' }
+const styles = StyleSheet.create(({ components, semantic }) => ({
+  container: { gap: 16 },
+  preview: {
+    borderWidth: 1,
+    borderColor: semantic.colorScheme.color.border.neutral.default,
+    borderRadius: components.dialog.root.borderRadius,
+  },
+}))

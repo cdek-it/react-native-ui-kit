@@ -17,7 +17,8 @@ const Extras = {
 }
 
 const meta: Meta<typeof ListBase> = {
-  title: 'Templates/List',
+  title: 'Menu/List',
+  tags: ['deprecated'],
   component: ListBase,
   args: {
     iconAlignment: 'top',
@@ -52,9 +53,7 @@ const meta: Meta<typeof ListBase> = {
   },
   decorators: [
     (Story) => (
-      <View
-        style={{ padding: 16, alignContent: 'center', alignItems: 'center' }}
-      >
+      <View style={{ padding: 16 }}>
         <Story />
       </View>
     ),
@@ -85,4 +84,4 @@ const ListBaseStory: Story = {
   },
 }
 
-export { ListBaseStory as Base }
+export { ListBaseStory as List }

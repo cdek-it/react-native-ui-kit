@@ -35,6 +35,7 @@ printf 'export const changed = 1\n' >"$fixture_root/src/Changed.ts"
 printf 'export const deleted = true\n' >"$fixture_root/src/Deleted.ts"
 git -C "$fixture_root" add src/Changed.ts src/Deleted.ts
 git -C "$fixture_root" commit --quiet -m 'test: initial fixture'
+base_ref="$(git -C "$fixture_root" rev-parse HEAD)"
 
 printf 'export const changed = 2\n' >"$fixture_root/src/Changed.ts"
 git -C "$fixture_root" add src/Changed.ts
@@ -57,5 +58,29 @@ if missing_base_output="$(cd "$fixture_root" && "$resolver" --base missing-base 
   exit 1
 fi
 assert_line "$missing_base_output" 'error=missing-base-ref value=missing-base'
+
+empty_tree="$(git -C "$fixture_root" mktree </dev/null)"
+unrelated_base="$(printf 'unrelated fixture\n' | git -C "$fixture_root" commit-tree "$empty_tree")"
+git -C "$fixture_root" update-ref refs/remotes/origin/develop "$unrelated_base"
+
+if implicit_scope_output="$(cd "$fixture_root" && "$resolver" 2>&1)"; then
+  printf 'implicit scope unexpectedly succeeded\n' >&2
+  exit 1
+fi
+assert_line "$implicit_scope_output" 'error=scope-required use=--base-or--working-tree'
+
+if unrelated_base_output="$(cd "$fixture_root" && "$resolver" --base origin/develop 2>&1)"; then
+  printf 'unrelated base unexpectedly succeeded\n' >&2
+  exit 1
+fi
+assert_line "$unrelated_base_output" 'error=unrelated-base-ref value=origin/develop'
+
+git -C "$fixture_root" add -u
+git -C "$fixture_root" commit --quiet -m 'test: committed changes'
+branch_scope_output="$(cd "$fixture_root" && "$resolver" --base "$base_ref")"
+assert_line "$branch_scope_output" "scope=base:$base_ref+working-tree"
+assert_line "$branch_scope_output" $'file=changed\tsrc/Changed.ts'
+assert_line "$branch_scope_output" $'file=deleted\tsrc/Deleted.ts'
+assert_line "$branch_scope_output" $'file=untracked\tsrc/Untracked.ts'
 
 printf 'resolve-review-scope fixtures=ok\n'

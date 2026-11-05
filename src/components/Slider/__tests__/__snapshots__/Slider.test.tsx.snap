@@ -18,8 +18,8 @@ exports[`Slider snapshots default 1`] = `
     style={
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 14,
-        "height": 3.5,
+        "borderRadius": 12,
+        "height": 4,
         "justifyContent": "center",
         "position": "relative",
         "width": "100%",
@@ -37,7 +37,7 @@ exports[`Slider snapshots default 1`] = `
         {
           "value": {
             "left": 0,
-            "width": 8.75,
+            "width": 10,
           },
         }
       }
@@ -46,8 +46,8 @@ exports[`Slider snapshots default 1`] = `
           [
             {
               "backgroundColor": "#2b2e33",
-              "borderRadius": 14,
-              "height": 3.5,
+              "borderRadius": 12,
+              "height": 4,
               "position": "absolute",
             },
             false,
@@ -58,14 +58,14 @@ exports[`Slider snapshots default 1`] = `
         [
           {
             "backgroundColor": "#2b2e33",
-            "borderRadius": 14,
-            "height": 3.5,
+            "borderRadius": 12,
+            "height": 4,
             "position": "absolute",
           },
           false,
           {
             "left": 0,
-            "width": 8.75,
+            "width": 10,
           },
         ]
       }
@@ -94,11 +94,11 @@ exports[`Slider snapshots default 1`] = `
             {
               "backgroundColor": "#ffffff",
               "borderColor": "#2b2e33",
-              "borderRadius": 8.75,
-              "borderWidth": 3,
-              "height": 17.5,
+              "borderRadius": 1600,
+              "borderWidth": 4,
+              "height": 20,
               "position": "absolute",
-              "width": 17.5,
+              "width": 20,
             },
             false,
           ],
@@ -110,11 +110,11 @@ exports[`Slider snapshots default 1`] = `
           {
             "backgroundColor": "#ffffff",
             "borderColor": "#2b2e33",
-            "borderRadius": 8.75,
-            "borderWidth": 3,
-            "height": 17.5,
+            "borderRadius": 1600,
+            "borderWidth": 4,
+            "height": 20,
             "position": "absolute",
-            "width": 17.5,
+            "width": 20,
           },
           false,
           {
@@ -149,8 +149,8 @@ exports[`Slider snapshots disabled = false, range = false 1`] = `
     style={
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 14,
-        "height": 3.5,
+        "borderRadius": 12,
+        "height": 4,
         "justifyContent": "center",
         "position": "relative",
         "width": "100%",
@@ -168,7 +168,7 @@ exports[`Slider snapshots disabled = false, range = false 1`] = `
         {
           "value": {
             "left": 0,
-            "width": 8.75,
+            "width": 10,
           },
         }
       }
@@ -177,8 +177,8 @@ exports[`Slider snapshots disabled = false, range = false 1`] = `
           [
             {
               "backgroundColor": "#2b2e33",
-              "borderRadius": 14,
-              "height": 3.5,
+              "borderRadius": 12,
+              "height": 4,
               "position": "absolute",
             },
             false,
@@ -189,14 +189,14 @@ exports[`Slider snapshots disabled = false, range = false 1`] = `
         [
           {
             "backgroundColor": "#2b2e33",
-            "borderRadius": 14,
-            "height": 3.5,
+            "borderRadius": 12,
+            "height": 4,
             "position": "absolute",
           },
           false,
           {
             "left": 0,
-            "width": 8.75,
+            "width": 10,
           },
         ]
       }
@@ -225,11 +225,11 @@ exports[`Slider snapshots disabled = false, range = false 1`] = `
             {
               "backgroundColor": "#ffffff",
               "borderColor": "#2b2e33",
-              "borderRadius": 8.75,
-              "borderWidth": 3,
-              "height": 17.5,
+              "borderRadius": 1600,
+              "borderWidth": 4,
+              "height": 20,
               "position": "absolute",
-              "width": 17.5,
+              "width": 20,
             },
             false,
           ],
@@ -241,11 +241,11 @@ exports[`Slider snapshots disabled = false, range = false 1`] = `
           {
             "backgroundColor": "#ffffff",
             "borderColor": "#2b2e33",
-            "borderRadius": 8.75,
-            "borderWidth": 3,
-            "height": 17.5,
+            "borderRadius": 1600,
+            "borderWidth": 4,
+            "height": 20,
             "position": "absolute",
-            "width": 17.5,
+            "width": 20,
           },
           false,
           {
@@ -280,8 +280,8 @@ exports[`Slider snapshots disabled = false, range = true 1`] = `
     style={
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 14,
-        "height": 3.5,
+        "borderRadius": 12,
+        "height": 4,
         "justifyContent": "center",
         "position": "relative",
         "width": "100%",
@@ -298,7 +298,7 @@ exports[`Slider snapshots disabled = false, range = true 1`] = `
       jestAnimatedStyle={
         {
           "value": {
-            "left": 8.75,
+            "left": 10,
             "width": 0,
           },
         }
@@ -308,8 +308,8 @@ exports[`Slider snapshots disabled = false, range = true 1`] = `
           [
             {
               "backgroundColor": "#2b2e33",
-              "borderRadius": 14,
-              "height": 3.5,
+              "borderRadius": 12,
+              "height": 4,
               "position": "absolute",
             },
             false,
@@ -320,13 +320,13 @@ exports[`Slider snapshots disabled = false, range = true 1`] = `
         [
           {
             "backgroundColor": "#2b2e33",
-            "borderRadius": 14,
-            "height": 3.5,
+            "borderRadius": 12,
+            "height": 4,
             "position": "absolute",
           },
           false,
           {
-            "left": 8.75,
+            "left": 10,
             "width": 0,
           },
         ]
@@ -356,11 +356,11 @@ exports[`Slider snapshots disabled = false, range = true 1`] = `
             {
               "backgroundColor": "#ffffff",
               "borderColor": "#2b2e33",
-              "borderRadius": 8.75,
-              "borderWidth": 3,
-              "height": 17.5,
+              "borderRadius": 1600,
+              "borderWidth": 4,
+              "height": 20,
               "position": "absolute",
-              "width": 17.5,
+              "width": 20,
             },
             false,
           ],
@@ -372,11 +372,11 @@ exports[`Slider snapshots disabled = false, range = true 1`] = `
           {
             "backgroundColor": "#ffffff",
             "borderColor": "#2b2e33",
-            "borderRadius": 8.75,
-            "borderWidth": 3,
-            "height": 17.5,
+            "borderRadius": 1600,
+            "borderWidth": 4,
+            "height": 20,
             "position": "absolute",
-            "width": 17.5,
+            "width": 20,
           },
           false,
           {
@@ -413,11 +413,11 @@ exports[`Slider snapshots disabled = false, range = true 1`] = `
             {
               "backgroundColor": "#ffffff",
               "borderColor": "#2b2e33",
-              "borderRadius": 8.75,
-              "borderWidth": 3,
-              "height": 17.5,
+              "borderRadius": 1600,
+              "borderWidth": 4,
+              "height": 20,
               "position": "absolute",
-              "width": 17.5,
+              "width": 20,
             },
             false,
           ],
@@ -429,11 +429,11 @@ exports[`Slider snapshots disabled = false, range = true 1`] = `
           {
             "backgroundColor": "#ffffff",
             "borderColor": "#2b2e33",
-            "borderRadius": 8.75,
-            "borderWidth": 3,
-            "height": 17.5,
+            "borderRadius": 1600,
+            "borderWidth": 4,
+            "height": 20,
             "position": "absolute",
-            "width": 17.5,
+            "width": 20,
           },
           false,
           {
@@ -468,8 +468,8 @@ exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 
     style={
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 14,
-        "height": 3.5,
+        "borderRadius": 12,
+        "height": 4,
         "justifyContent": "center",
         "position": "relative",
         "width": "100%",
@@ -486,7 +486,7 @@ exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 
       jestAnimatedStyle={
         {
           "value": {
-            "left": 8.75,
+            "left": 10,
             "width": 0,
           },
         }
@@ -496,8 +496,8 @@ exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 
           [
             {
               "backgroundColor": "#2b2e33",
-              "borderRadius": 14,
-              "height": 3.5,
+              "borderRadius": 12,
+              "height": 4,
               "position": "absolute",
             },
             false,
@@ -508,13 +508,13 @@ exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 
         [
           {
             "backgroundColor": "#2b2e33",
-            "borderRadius": 14,
-            "height": 3.5,
+            "borderRadius": 12,
+            "height": 4,
             "position": "absolute",
           },
           false,
           {
-            "left": 8.75,
+            "left": 10,
             "width": 0,
           },
         ]
@@ -544,11 +544,11 @@ exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 
             {
               "backgroundColor": "#ffffff",
               "borderColor": "#2b2e33",
-              "borderRadius": 8.75,
-              "borderWidth": 3,
-              "height": 17.5,
+              "borderRadius": 1600,
+              "borderWidth": 4,
+              "height": 20,
               "position": "absolute",
-              "width": 17.5,
+              "width": 20,
             },
             false,
           ],
@@ -560,11 +560,11 @@ exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 
           {
             "backgroundColor": "#ffffff",
             "borderColor": "#2b2e33",
-            "borderRadius": 8.75,
-            "borderWidth": 3,
-            "height": 17.5,
+            "borderRadius": 1600,
+            "borderWidth": 4,
+            "height": 20,
             "position": "absolute",
-            "width": 17.5,
+            "width": 20,
           },
           false,
           {
@@ -601,11 +601,11 @@ exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 
             {
               "backgroundColor": "#ffffff",
               "borderColor": "#2b2e33",
-              "borderRadius": 8.75,
-              "borderWidth": 3,
-              "height": 17.5,
+              "borderRadius": 1600,
+              "borderWidth": 4,
+              "height": 20,
               "position": "absolute",
-              "width": 17.5,
+              "width": 20,
             },
             false,
           ],
@@ -617,11 +617,11 @@ exports[`Slider snapshots disabled = false, range = true, maxPointerValueInit = 
           {
             "backgroundColor": "#ffffff",
             "borderColor": "#2b2e33",
-            "borderRadius": 8.75,
-            "borderWidth": 3,
-            "height": 17.5,
+            "borderRadius": 1600,
+            "borderWidth": 4,
+            "height": 20,
             "position": "absolute",
-            "width": 17.5,
+            "width": 20,
           },
           false,
           {
@@ -659,8 +659,8 @@ exports[`Slider snapshots disabled = true, range = false 1`] = `
     style={
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 14,
-        "height": 3.5,
+        "borderRadius": 12,
+        "height": 4,
         "justifyContent": "center",
         "position": "relative",
         "width": "100%",
@@ -678,7 +678,7 @@ exports[`Slider snapshots disabled = true, range = false 1`] = `
         {
           "value": {
             "left": 0,
-            "width": 8.75,
+            "width": 10,
           },
         }
       }
@@ -687,8 +687,8 @@ exports[`Slider snapshots disabled = true, range = false 1`] = `
           [
             {
               "backgroundColor": "#2b2e33",
-              "borderRadius": 14,
-              "height": 3.5,
+              "borderRadius": 12,
+              "height": 4,
               "position": "absolute",
             },
             false,
@@ -699,14 +699,14 @@ exports[`Slider snapshots disabled = true, range = false 1`] = `
         [
           {
             "backgroundColor": "#2b2e33",
-            "borderRadius": 14,
-            "height": 3.5,
+            "borderRadius": 12,
+            "height": 4,
             "position": "absolute",
           },
           false,
           {
             "left": 0,
-            "width": 8.75,
+            "width": 10,
           },
         ]
       }
@@ -735,11 +735,11 @@ exports[`Slider snapshots disabled = true, range = false 1`] = `
             {
               "backgroundColor": "#ffffff",
               "borderColor": "#2b2e33",
-              "borderRadius": 8.75,
-              "borderWidth": 3,
-              "height": 17.5,
+              "borderRadius": 1600,
+              "borderWidth": 4,
+              "height": 20,
               "position": "absolute",
-              "width": 17.5,
+              "width": 20,
             },
             false,
           ],
@@ -751,11 +751,11 @@ exports[`Slider snapshots disabled = true, range = false 1`] = `
           {
             "backgroundColor": "#ffffff",
             "borderColor": "#2b2e33",
-            "borderRadius": 8.75,
-            "borderWidth": 3,
-            "height": 17.5,
+            "borderRadius": 1600,
+            "borderWidth": 4,
+            "height": 20,
             "position": "absolute",
-            "width": 17.5,
+            "width": 20,
           },
           false,
           {
@@ -793,8 +793,8 @@ exports[`Slider snapshots disabled = true, range = true 1`] = `
     style={
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 14,
-        "height": 3.5,
+        "borderRadius": 12,
+        "height": 4,
         "justifyContent": "center",
         "position": "relative",
         "width": "100%",
@@ -811,7 +811,7 @@ exports[`Slider snapshots disabled = true, range = true 1`] = `
       jestAnimatedStyle={
         {
           "value": {
-            "left": 8.75,
+            "left": 10,
             "width": 0,
           },
         }
@@ -821,8 +821,8 @@ exports[`Slider snapshots disabled = true, range = true 1`] = `
           [
             {
               "backgroundColor": "#2b2e33",
-              "borderRadius": 14,
-              "height": 3.5,
+              "borderRadius": 12,
+              "height": 4,
               "position": "absolute",
             },
             false,
@@ -833,13 +833,13 @@ exports[`Slider snapshots disabled = true, range = true 1`] = `
         [
           {
             "backgroundColor": "#2b2e33",
-            "borderRadius": 14,
-            "height": 3.5,
+            "borderRadius": 12,
+            "height": 4,
             "position": "absolute",
           },
           false,
           {
-            "left": 8.75,
+            "left": 10,
             "width": 0,
           },
         ]
@@ -869,11 +869,11 @@ exports[`Slider snapshots disabled = true, range = true 1`] = `
             {
               "backgroundColor": "#ffffff",
               "borderColor": "#2b2e33",
-              "borderRadius": 8.75,
-              "borderWidth": 3,
-              "height": 17.5,
+              "borderRadius": 1600,
+              "borderWidth": 4,
+              "height": 20,
               "position": "absolute",
-              "width": 17.5,
+              "width": 20,
             },
             false,
           ],
@@ -885,11 +885,11 @@ exports[`Slider snapshots disabled = true, range = true 1`] = `
           {
             "backgroundColor": "#ffffff",
             "borderColor": "#2b2e33",
-            "borderRadius": 8.75,
-            "borderWidth": 3,
-            "height": 17.5,
+            "borderRadius": 1600,
+            "borderWidth": 4,
+            "height": 20,
             "position": "absolute",
-            "width": 17.5,
+            "width": 20,
           },
           false,
           {
@@ -926,11 +926,11 @@ exports[`Slider snapshots disabled = true, range = true 1`] = `
             {
               "backgroundColor": "#ffffff",
               "borderColor": "#2b2e33",
-              "borderRadius": 8.75,
-              "borderWidth": 3,
-              "height": 17.5,
+              "borderRadius": 1600,
+              "borderWidth": 4,
+              "height": 20,
               "position": "absolute",
-              "width": 17.5,
+              "width": 20,
             },
             false,
           ],
@@ -942,11 +942,11 @@ exports[`Slider snapshots disabled = true, range = true 1`] = `
           {
             "backgroundColor": "#ffffff",
             "borderColor": "#2b2e33",
-            "borderRadius": 8.75,
-            "borderWidth": 3,
-            "height": 17.5,
+            "borderRadius": 1600,
+            "borderWidth": 4,
+            "height": 20,
             "position": "absolute",
-            "width": 17.5,
+            "width": 20,
           },
           false,
           {
@@ -984,8 +984,8 @@ exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 8
     style={
       {
         "backgroundColor": "#e2e2e4",
-        "borderRadius": 14,
-        "height": 3.5,
+        "borderRadius": 12,
+        "height": 4,
         "justifyContent": "center",
         "position": "relative",
         "width": "100%",
@@ -1002,7 +1002,7 @@ exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 8
       jestAnimatedStyle={
         {
           "value": {
-            "left": 8.75,
+            "left": 10,
             "width": 0,
           },
         }
@@ -1012,8 +1012,8 @@ exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 8
           [
             {
               "backgroundColor": "#2b2e33",
-              "borderRadius": 14,
-              "height": 3.5,
+              "borderRadius": 12,
+              "height": 4,
               "position": "absolute",
             },
             false,
@@ -1024,13 +1024,13 @@ exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 8
         [
           {
             "backgroundColor": "#2b2e33",
-            "borderRadius": 14,
-            "height": 3.5,
+            "borderRadius": 12,
+            "height": 4,
             "position": "absolute",
           },
           false,
           {
-            "left": 8.75,
+            "left": 10,
             "width": 0,
           },
         ]
@@ -1060,11 +1060,11 @@ exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 8
             {
               "backgroundColor": "#ffffff",
               "borderColor": "#2b2e33",
-              "borderRadius": 8.75,
-              "borderWidth": 3,
-              "height": 17.5,
+              "borderRadius": 1600,
+              "borderWidth": 4,
+              "height": 20,
               "position": "absolute",
-              "width": 17.5,
+              "width": 20,
             },
             false,
           ],
@@ -1076,11 +1076,11 @@ exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 8
           {
             "backgroundColor": "#ffffff",
             "borderColor": "#2b2e33",
-            "borderRadius": 8.75,
-            "borderWidth": 3,
-            "height": 17.5,
+            "borderRadius": 1600,
+            "borderWidth": 4,
+            "height": 20,
             "position": "absolute",
-            "width": 17.5,
+            "width": 20,
           },
           false,
           {
@@ -1117,11 +1117,11 @@ exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 8
             {
               "backgroundColor": "#ffffff",
               "borderColor": "#2b2e33",
-              "borderRadius": 8.75,
-              "borderWidth": 3,
-              "height": 17.5,
+              "borderRadius": 1600,
+              "borderWidth": 4,
+              "height": 20,
               "position": "absolute",
-              "width": 17.5,
+              "width": 20,
             },
             false,
           ],
@@ -1133,11 +1133,11 @@ exports[`Slider snapshots disabled = true, range = true, maxPointerValueInit = 8
           {
             "backgroundColor": "#ffffff",
             "borderColor": "#2b2e33",
-            "borderRadius": 8.75,
-            "borderWidth": 3,
-            "height": 17.5,
+            "borderRadius": 1600,
+            "borderWidth": 4,
+            "height": 20,
             "position": "absolute",
-            "width": 17.5,
+            "width": 20,
           },
           false,
           {

@@ -36,18 +36,16 @@ export const DialogComponent: React.FC<DialogComponentProps> = ({
   )
 }
 
-const styles = StyleSheet.create(({ theme }) => ({
+const styles = StyleSheet.create(({ components }) => ({
   root: {
-    backgroundColor: theme.Overlay.Dialog.Header.dialogHeaderBg,
-    borderColor: theme.Overlay.Overlay.overlayContentBorderColor,
-    borderRadius: theme.General.borderRadius2XL,
+    backgroundColor: components.dialog.root.background,
+    borderColor: components.dialog.root.borderColor,
+    borderRadius: components.dialog.root.borderRadius,
   },
-  body: {
-    paddingVertical: theme.Overlay.Dialog.Body.dialogContentPaddingTopBottom,
-    paddingHorizontal: theme.Overlay.Dialog.Body.dialogContentPaddingLeftRight,
-  },
+  body: { padding: components.dialog.content.padding },
   footer: {
-    paddingBottom: theme.Overlay.Dialog.Footer.dialogFooterPaddingLeftRight,
-    paddingHorizontal: theme.Overlay.Dialog.Footer.dialogFooterPaddingLeftRight,
+    paddingTop: components.dialog.footer.paddingTop,
+    paddingBottom: components.dialog.footer.paddingBottom,
+    paddingHorizontal: components.dialog.footer.paddingLeft,
   },
 }))

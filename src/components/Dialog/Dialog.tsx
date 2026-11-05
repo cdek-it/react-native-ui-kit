@@ -105,7 +105,7 @@ export const Dialog: React.FC<DialogProps> = ({
 
 const styles = StyleSheet.create({
   container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
-  backdrop: { ...StyleSheet.absoluteFillObject, backgroundColor: 'black' },
+  backdrop: { ...StyleSheet.absoluteFill, backgroundColor: 'black' },
 })
 
 export const DialogTestId = {

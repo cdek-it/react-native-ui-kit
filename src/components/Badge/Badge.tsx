@@ -1,27 +1,42 @@
 import { memo, useCallback, useState } from 'react'
 import {
-  type AccessibilityProps,
-  Dimensions,
   type LayoutChangeEvent,
-  type LayoutRectangle,
   type StyleProp,
   Text,
   View,
+  type ViewProps,
   type ViewStyle,
+  useWindowDimensions,
 } from 'react-native'
-import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
 
-import { StyleSheet } from 'react-native-unistyles'
+import { badgeMeasurementStyle, badgeStyles } from './Badge.styles'
 
-export type BadgeSeverity = 'basic' | 'info' | 'success' | 'warning' | 'danger'
+import {
+  adaptBadgeSeverity,
+  type DeprecatedBadgeSeverity,
+} from './deprecated/adaptBadgeSeverity'
 
-export interface BadgeBase
-  extends AccessibilityProps, Pick<ViewProps, 'onLayout' | 'testID'> {
+export type BadgeSeverity =
+  | 'primary'
+  | 'info'
+  | 'success'
+  | 'warning'
+  | 'danger'
+  // eslint-disable-next-line @typescript-eslint/no-deprecated -- Сохраняем совместимость публичного API до версии 2.0.
+  | DeprecatedBadgeSeverity
+
+export interface BadgeBase extends ViewProps {
   /**
    * Выбор варианта стиля компонента
-   * @default 'basic'
+   * Значение basic устарело; используйте primary
+   * @default 'primary'
    */
   severity?: BadgeSeverity
+  /**
+   * Выбор размера компонента
+   * @default 'base'
+   */
+  size?: 'base' | 'large' | 'xlarge'
   /** Дополнительная стилизация для контейнера компонента */
   style?: StyleProp<ViewStyle>
 }
@@ -46,110 +61,72 @@ export type BadgeProps = BadgeText | BadgeDot
  * Компонент Badge
  * @param children - Текст внутри бейджа
  * @param dot - Отображать бейдж в форме точки
- * @param severiy - Выбор варианта стиля компонента
+ * @param severity - Выбор варианта стиля компонента
+ * @param size - Выбор размера компонента
  * @param style - Дополнительная стилизация для контейнера компонента
- * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4871&m=dev
+ * @link https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24043-13668
  */
 export const Badge = memo<BadgeProps>(
-  ({ children, dot, severity = 'basic', style, testID, ...rest }) => {
-    badgeStyles.useVariants({ severity })
-    const [textLayout, setTextLayout] = useState<LayoutRectangle>()
+  ({
+    children,
+    dot,
+    severity = 'primary',
+    size = 'base',
+    style,
+    testID,
+    accessibilityLabel,
+    ...rest
+  }) => {
+    badgeStyles.useVariants({ severity: adaptBadgeSeverity(severity), size })
+    // На iOS пересоздание Text сбрасывает старое измерение при уменьшении системного шрифта.
+    const { fontScale } = useWindowDimensions()
+    const [contentWidth, setContentWidth] = useState<number>()
 
-    const onTextLayout = useCallback((e: LayoutChangeEvent) => {
-      setTextLayout(e.nativeEvent.layout)
-    }, [])
+    // Без minWidth по размеру содержимого обёртка обрезает однострочный Badge
+    // в узком родителе.
+    const onContentLayout = useCallback(
+      ({ nativeEvent }: LayoutChangeEvent) => {
+        setContentWidth(nativeEvent.layout.width)
+      },
+      []
+    )
 
     return (
-      <View style={[badgeStyles.container, style]} {...rest}>
+      <View
+        accessibilityLabel={accessibilityLabel ?? children}
+        accessibilityRole='text'
+        accessible={!dot || accessibilityLabel !== undefined}
+        style={[badgeStyles.container, style]}
+        {...rest}
+      >
         {dot ? (
           <View
             style={[badgeStyles.dot, badgeStyles.dotShape]}
             testID={testID}
           />
         ) : (
-          <>
+          <View
+            accessible={false}
+            style={[badgeMeasurementStyle, { minWidth: contentWidth }]}
+          >
             <View
-              style={[badgeStyles.dot, badgeStyles.textBadgeContainer]}
+              style={badgeStyles.textBadgeContainer}
               testID={testID}
+              onLayout={onContentLayout}
             >
               <Text
+                accessible={false}
+                importantForAccessibility='no'
+                key={fontScale}
                 numberOfLines={1}
-                style={[badgeStyles.textBadge, { minWidth: textLayout?.width }]}
+                style={badgeStyles.textBadge}
               >
                 {children}
               </Text>
             </View>
-
-            {/* скрытый элемент для подсчета ширины текста в 1 строку */}
-            <View
-              accessibilityElementsHidden
-              importantForAccessibility='no-hide-descendants'
-              style={badgeStyles.hiddenContainer}
-            >
-              <View collapsable={false}>
-                <Text
-                  numberOfLines={1}
-                  style={badgeStyles.textBadge}
-                  onLayout={onTextLayout}
-                >
-                  {children}
-                </Text>
-              </View>
-            </View>
-          </>
+          </View>
         )}
       </View>
     )
   }
-)
-
-const badgeStyles = StyleSheet.create(
-  ({ theme, border, typography, fonts }) => ({
-    container: { alignItems: 'flex-start' },
-    dot: {
-      variants: {
-        severity: {
-          basic: { backgroundColor: theme.Misc.Badge.badgeBg },
-          info: {
-            backgroundColor: theme.Button.Severity.Info.Basic.infoButtonBg,
-          },
-          success: {
-            backgroundColor:
-              theme.Button.Severity.Success.Basic.successButtonBg,
-          },
-          warning: {
-            backgroundColor:
-              theme.Button.Severity.Warning.Basic.warningButtonBg,
-          },
-          danger: {
-            backgroundColor: theme.Button.Severity.Danger.Basic.dangerButtonBg,
-          },
-        },
-      },
-    },
-    dotShape: {
-      width: theme.Misc.Badge.badgeDotSize,
-      height: theme.Misc.Badge.badgeDotSize,
-      borderRadius: border.Radius['rounded-full'],
-    },
-    textBadgeContainer: {
-      height: theme.Misc.Badge.badgeHeight,
-      paddingHorizontal: theme.Misc.Tag.tagPadding,
-      justifyContent: 'center',
-      borderRadius: border.Radius['rounded-full'],
-    },
-    textBadge: {
-      color: theme.Misc.Badge.badgeTextColor,
-      fontSize: typography.Size['text-xs'],
-      includeFontPadding: false,
-      verticalAlign: 'middle',
-      fontFamily: fonts.primary,
-    },
-    hiddenContainer: {
-      width: Dimensions.get('window').width,
-      height: 0,
-      flexDirection: 'row',
-      position: 'absolute',
-    },
-  })
 )
