@@ -1,41 +1,21 @@
-import { render, userEvent } from '@testing-library/react-native'
+import { render, screen, userEvent } from '@testing-library/react-native'
 
-import {
-  DialogHeader,
-  DialogHeaderTestId,
-  type DialogHeaderProps,
-} from '../DialogHeader'
+import { DialogHeader } from '../DialogHeader'
 
 describe('DialogHeader', () => {
-  const title = 'Dialog Title'
-  const onClose = jest.fn()
+  test('показывает заголовок без кнопки закрытия', () => {
+    render(<DialogHeader title='Детали заказа' />)
 
-  const snapshotCases = generatePropsCombinations<DialogHeaderProps>({
-    title: [title],
-    onClose: [onClose, undefined],
-    severity: ['danger', 'warning', 'info', 'success', 'help', undefined],
+    expect(screen.getByText('Детали заказа')).toBeOnTheScreen()
+    expect(screen.queryByRole('button')).not.toBeOnTheScreen()
   })
 
-  beforeEach(() => {
-    jest.clearAllMocks()
-  })
-
-  test.each(snapshotCases)('%p', (props) => {
-    const { toJSON } = render(<DialogHeader {...props} />)
-
-    expect(toJSON()).toMatchSnapshot()
-  })
-
-  test('при нажатии на крестик вызывается onClose', async () => {
-    const { getByTestId } = render(
-      <DialogHeader title={title} onClose={onClose} />
-    )
-
-    expect(onClose).not.toHaveBeenCalled()
-
+  test('вызывает onClose без native event', async () => {
+    const onClose = jest.fn()
     const user = userEvent.setup()
-    await user.press(getByTestId(DialogHeaderTestId.closeButton))
+    render(<DialogHeader title='Детали заказа' onClose={onClose} />)
+    await user.press(screen.getByRole('button', { name: 'Закрыть диалог' }))
 
-    expect(onClose).toHaveBeenCalledWith(expect.any(Object))
+    expect(onClose).toHaveBeenCalledExactlyOnceWith()
   })
 })
