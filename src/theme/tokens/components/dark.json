@@ -1069,23 +1069,23 @@
       "background": "#56595f",
       "borderColor": "#404348",
       "color": "#ffffff",
-      "borderRadius": 20,
+      "borderRadius": 24,
       "shadow": "0 4px 8px rgba(0, 0, 0, 0.2000)"
     },
     "header": {
-      "paddingTop": 24,
-      "paddingRight": 24,
+      "paddingTop": 20,
+      "paddingRight": 20,
       "paddingBottom": 14,
-      "paddingLeft": 24,
+      "paddingLeft": 20,
       "gap": 8
     },
-    "title": { "fontSize": 20, "fontWeight": 600 },
+    "title": { "fontSize": 18, "fontWeight": 600 },
     "content": { "padding": 24 },
     "footer": {
       "paddingTop": 0,
-      "paddingRight": 24,
-      "paddingBottom": 24,
-      "paddingLeft": 24,
+      "paddingRight": 20,
+      "paddingBottom": 20,
+      "paddingLeft": 20,
       "gap": 8
     },
     "colorScheme": { "root": { "background": "#2b2e33" } }
