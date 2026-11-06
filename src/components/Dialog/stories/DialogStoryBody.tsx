@@ -1,4 +1,4 @@
-import { ScrollView, View } from 'react-native'
+import { ScrollView } from 'react-native'
 import { StyleSheet } from 'react-native-unistyles'
 
 import { InputText } from '../../Input'
@@ -27,7 +27,12 @@ export const DialogStoryBody = ({
 
   if (variant === 'input') {
     return (
-      <View style={styles.form}>
+      <ScrollView
+        nestedScrollEnabled
+        contentContainerStyle={styles.form}
+        keyboardShouldPersistTaps='handled'
+        style={styles.scroll}
+      >
         <Body>Добавьте короткий комментарий к заказу.</Body>
         <InputText
           accessibilityLabel='Комментарий к заказу'
@@ -35,7 +40,7 @@ export const DialogStoryBody = ({
           placeholder='Например, позвонить заранее'
           returnKeyType='done'
         />
-      </View>
+      </ScrollView>
     )
   }
 

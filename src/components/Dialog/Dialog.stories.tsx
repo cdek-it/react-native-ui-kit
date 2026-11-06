@@ -27,7 +27,7 @@ const actionIconControl = {
 
 type DialogStoryArgs = Pick<
   DialogProps,
-  'closeOnBackdropPress' | 'onClose' | 'onHideComplete'
+  'closeOnBackdropPress' | 'avoidKeyboard' | 'onClose' | 'onHideComplete'
 > & {
   readonly headerTitle: string
   readonly showHeader: boolean
@@ -51,6 +51,7 @@ type DialogStoryArgs = Pick<
 
 const DialogExample = ({
   closeOnBackdropPress,
+  avoidKeyboard,
   onClose,
   onHideComplete,
   headerTitle,
@@ -142,6 +143,7 @@ const DialogExample = ({
       />
       <DialogView
         accessibilityLabel={showHeader ? undefined : 'Информация о заказе'}
+        avoidKeyboard={avoidKeyboard}
         closeOnBackdropPress={closeOnBackdropPress}
         footer={footer}
         header={header}
@@ -162,6 +164,7 @@ const meta: Meta<DialogStoryArgs> = {
   tags: ['version:2.0', 'design:pending'],
   args: {
     closeOnBackdropPress: true,
+    avoidKeyboard: true,
     headerTitle: 'Детали заказа',
     showHeader: true,
     showClose: true,
@@ -182,6 +185,7 @@ const meta: Meta<DialogStoryArgs> = {
   },
   argTypes: {
     closeOnBackdropPress: { control: 'boolean' },
+    avoidKeyboard: { control: 'boolean' },
     showHeader: { control: 'boolean' },
     headerTitle: { control: 'text' },
     showClose: { control: 'boolean' },
@@ -238,9 +242,12 @@ const meta: Meta<DialogStoryArgs> = {
     onHideComplete: { action: 'onHideComplete' },
   },
   parameters: {
+    notes:
+      'На маленьком экране диалог располагается сверху, нижняя часть может не поместиться. Прокрутка всего окна доступна при открытой клавиатуре.',
     controls: {
       include: [
         'closeOnBackdropPress',
+        'avoidKeyboard',
         'showHeader',
         'headerTitle',
         'showClose',

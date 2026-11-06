@@ -120,7 +120,7 @@ unistyles.StyleSheet.create = jest.fn(
   (stylesheet: ((theme: ReturnType<typeof getTheme>) => unknown) | unknown) => {
     const styleDefinitions =
       typeof stylesheet === 'function'
-        ? stylesheet(getTheme(runtime.themeName))
+        ? stylesheet(getTheme(runtime.themeName), runtime.miniRuntime)
         : stylesheet
 
     const activeVariants: Record<string, unknown> = {}

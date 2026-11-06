@@ -20,6 +20,7 @@ import {
   type DialogHeaderAccessibility,
 } from './DialogAccessibilityContext'
 import { DialogComponent, type DialogComponentProps } from './DialogComponent'
+import { DialogKeyboardViewport } from './DialogKeyboardViewport'
 
 const ANIMATION_BACKDROP_DURATION = 200
 const ANIMATION_CONTENT_DURATION = 500
@@ -41,6 +42,9 @@ export interface DialogProps
   /** Разрешает запрос закрытия по нажатию на фон. По умолчанию true. */
   // eslint-disable-next-line react/boolean-prop-naming -- Согласованное публичное имя Dialog.
   readonly closeOnBackdropPress?: boolean
+  /** Адаптирует окно к клавиатуре и разрешает прокрутку всего окна при нехватке высоты с открытой клавиатурой. По умолчанию true. false — для собственной обработки. Не отменяет нативное изменение размера окна Android. */
+  // eslint-disable-next-line react/boolean-prop-naming -- Описывает поведение, аналогично closeOnBackdropPress.
+  readonly avoidKeyboard?: boolean
   /** Запрашивает закрытие. Для скрытия окна обновите visible в родителе. */
   readonly onClose?: () => void
   /** Вызывается один раз после завершённой анимации закрытия. */
@@ -62,6 +66,7 @@ export const Dialog = ({
   isVisible,
   // TODO: пересмотреть default закрытия по фону при следующем изменении контракта; true сохраняет совместимость.
   closeOnBackdropPress = true,
+  avoidKeyboard = true,
   onClose,
   onHideComplete,
   header,
@@ -164,37 +169,41 @@ export const Dialog = ({
           testID={DialogTestId.backdrop}
           onPress={closeOnBackdropPress ? requestClose : undefined}
         />
-        <Animated.View
-          {...accessibilityProps}
-          accessibilityViewIsModal
-          accessibilityLabel={accessibilityLabel ?? headerAccessibility?.title}
-          accessible={false}
-          role='dialog'
-          style={dialogAnimatedStyle}
-          testID={DialogTestId.contentContainer}
-          onAccessibilityEscape={handleEscape}
-        >
-          <DialogComponent
-            body={body}
-            footer={footer}
-            header={
-              <DialogAccessibilityContext.Provider
-                value={setHeaderAccessibility}
-              >
-                {header}
-              </DialogAccessibilityContext.Provider>
+        <DialogKeyboardViewport isEnabled={avoidKeyboard}>
+          <Animated.View
+            {...accessibilityProps}
+            accessibilityViewIsModal
+            accessibilityLabel={
+              accessibilityLabel ?? headerAccessibility?.title
             }
+            accessible={false}
+            role='dialog'
+            style={dialogAnimatedStyle}
+            testID={DialogTestId.contentContainer}
+            onAccessibilityEscape={handleEscape}
           >
-            {children}
-          </DialogComponent>
-        </Animated.View>
+            <DialogComponent
+              body={body}
+              footer={footer}
+              header={
+                <DialogAccessibilityContext.Provider
+                  value={setHeaderAccessibility}
+                >
+                  {header}
+                </DialogAccessibilityContext.Provider>
+              }
+            >
+              {children}
+            </DialogComponent>
+          </Animated.View>
+        </DialogKeyboardViewport>
       </View>
     </Modal>
   )
 }
 
 const styles = StyleSheet.create(({ components }) => ({
-  container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
+  container: { flex: 1 },
   backdrop: {
     position: 'absolute',
     top: 0,
