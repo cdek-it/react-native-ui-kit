@@ -54,7 +54,7 @@ const AnimatedPressable = Animated.createAnimatedComponent(Pressable)
 
 /**
  * Показывает окно поверх экрана. Ширина не больше 336, боковые отступы не меньше 16.
- * Прокрутку длинного тела задаёт потребитель. Вложенные кнопки и поля остаются отдельными целями фокуса.
+ * Прокрутку длинного тела и обработку клавиатуры задаёт потребитель. Вложенные кнопки и поля остаются отдельными целями фокуса.
  * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=520-6572
  */
 export const Dialog = ({
@@ -164,37 +164,54 @@ export const Dialog = ({
           testID={DialogTestId.backdrop}
           onPress={closeOnBackdropPress ? requestClose : undefined}
         />
-        <Animated.View
-          {...accessibilityProps}
-          accessibilityViewIsModal
-          accessibilityLabel={accessibilityLabel ?? headerAccessibility?.title}
-          accessible={false}
-          role='dialog'
-          style={dialogAnimatedStyle}
-          testID={DialogTestId.contentContainer}
-          onAccessibilityEscape={handleEscape}
-        >
-          <DialogComponent
-            body={body}
-            footer={footer}
-            header={
-              <DialogAccessibilityContext.Provider
-                value={setHeaderAccessibility}
-              >
-                {header}
-              </DialogAccessibilityContext.Provider>
+        <View pointerEvents='box-none' style={styles.viewport}>
+          <Animated.View
+            {...accessibilityProps}
+            accessibilityViewIsModal
+            accessibilityLabel={
+              accessibilityLabel ?? headerAccessibility?.title
             }
+            accessible={false}
+            role='dialog'
+            style={[styles.content, dialogAnimatedStyle]}
+            testID={DialogTestId.contentContainer}
+            onAccessibilityEscape={handleEscape}
           >
-            {children}
-          </DialogComponent>
-        </Animated.View>
+            <DialogComponent
+              body={body}
+              footer={footer}
+              header={
+                <DialogAccessibilityContext.Provider
+                  value={setHeaderAccessibility}
+                >
+                  {header}
+                </DialogAccessibilityContext.Provider>
+              }
+            >
+              {children}
+            </DialogComponent>
+          </Animated.View>
+        </View>
       </View>
     </Modal>
   )
 }
 
-const styles = StyleSheet.create(({ components }) => ({
-  container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
+const styles = StyleSheet.create(({ components, semantic }, rt) => ({
+  container: { flex: 1 },
+  viewport: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: semantic.dimension.size[450],
+    paddingTop: Math.max(rt.insets.top, semantic.dimension.size[450]),
+    paddingBottom: Math.max(rt.insets.bottom, semantic.dimension.size[450]),
+  },
+  content: {
+    width: '100%',
+    maxWidth: semantic.dimension.size[1900],
+    flexShrink: 1,
+  },
   backdrop: {
     position: 'absolute',
     top: 0,

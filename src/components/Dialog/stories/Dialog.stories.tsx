@@ -10,6 +10,8 @@ import { Dialog as DialogView, type DialogProps } from '../Dialog'
 import { DialogActions, type DialogAction } from '../DialogActions'
 import { DialogComponent } from '../DialogComponent'
 import { DialogHeader, type DialogHeaderProps } from '../DialogHeader'
+
+import { DialogInputExample } from './DialogInputExample'
 import { DialogStoryBody, type DialogBodyVariant } from './DialogStoryBody'
 
 type ActionIconPosition = NonNullable<DialogAction['iconPosition']> | 'none'
@@ -189,13 +191,9 @@ const meta: Meta<DialogStoryArgs> = {
     bodyVariant: {
       control: {
         type: 'radio',
-        labels: {
-          text: 'Текст',
-          longText: 'Большой текст',
-          input: 'Текст с инпутом',
-        },
+        labels: { text: 'Текст', longText: 'Большой текст' },
       },
-      options: ['text', 'longText', 'input'],
+      options: ['text', 'longText'],
     },
     showCancelAction: { control: 'boolean' },
     cancelLabel: { control: 'text', if: { arg: 'showCancelAction' } },
@@ -235,6 +233,8 @@ const meta: Meta<DialogStoryArgs> = {
     onHideComplete: { action: 'onHideComplete' },
   },
   parameters: {
+    notes:
+      'На маленьком экране нижняя часть диалога может не поместиться. Прокрутку тела и обработку клавиатуры задаёт потребитель.',
     controls: {
       include: [
         'closeOnBackdropPress',
@@ -265,6 +265,16 @@ export default meta
 type Story = StoryObj<DialogStoryArgs>
 
 export const Dialog: Story = {}
+
+export const WithInput: Story = {
+  name: 'Dialog with input',
+  render: () => <DialogInputExample />,
+  parameters: {
+    controls: { include: [] },
+    notes:
+      'Пример управления клавиатурой на стороне потребителя: Modal и KeyboardAvoidingView из React Native с DialogComponent. Dialog не реализует это поведение.',
+  },
+}
 
 const styles = StyleSheet.create(({ semantic }) => ({
   container: { alignItems: 'center', gap: semantic.dimension.size[450] },

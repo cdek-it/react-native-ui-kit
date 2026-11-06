@@ -1,10 +1,9 @@
-import { ScrollView, View } from 'react-native'
+import { ScrollView } from 'react-native'
 import { StyleSheet } from 'react-native-unistyles'
 
-import { InputText } from '../../Input'
 import { Body } from '../../Typography'
 
-export type DialogBodyVariant = 'text' | 'longText' | 'input'
+export type DialogBodyVariant = 'text' | 'longText'
 
 const MESSAGE = 'Проверьте данные перед сохранением.'
 
@@ -25,24 +24,9 @@ export const DialogStoryBody = ({
     )
   }
 
-  if (variant === 'input') {
-    return (
-      <View style={styles.form}>
-        <Body>Добавьте короткий комментарий к заказу.</Body>
-        <InputText
-          accessibilityLabel='Комментарий к заказу'
-          label='Комментарий'
-          placeholder='Например, позвонить заранее'
-          returnKeyType='done'
-        />
-      </View>
-    )
-  }
-
   return <Body>{MESSAGE}</Body>
 }
 
-const styles = StyleSheet.create(({ semantic }) => ({
+const styles = StyleSheet.create(() => ({
   scroll: { flexGrow: 0, flexShrink: 1 },
-  form: { gap: semantic.dimension.space[350] },
 }))
