@@ -2,12 +2,17 @@ import type { Preview } from '@storybook/react'
 import { StyleSheet } from 'react-native-unistyles'
 import { View } from 'react-native'
 
+import { StorybookToolbar } from './StorybookToolbar'
+
 const preview: Preview = {
   decorators: [
     (Story) => (
-      <View style={styles.container}>
-        <Story />
-      </View>
+      <>
+        <StorybookToolbar />
+        <View style={styles.container}>
+          <Story />
+        </View>
+      </>
     ),
   ],
   parameters: {
