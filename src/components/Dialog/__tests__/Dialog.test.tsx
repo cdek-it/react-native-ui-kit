@@ -1,30 +1,121 @@
-import { render } from '@testing-library/react-native'
+import {
+  fireEvent,
+  render,
+  screen,
+  userEvent,
+} from '@testing-library/react-native'
+import { memo } from 'react'
+import { Modal, Text } from 'react-native'
 
-import { Text } from 'react-native'
+import { Dialog, DialogTestId } from '../Dialog'
+import { DialogComponent } from '../DialogComponent'
+import { DialogHeader } from '../DialogHeader'
 
-import { Dialog, type DialogProps } from '../Dialog'
+describe('Dialog', () => {
+  test('показывает готовые шапку и футер и содержимое children', () => {
+    render(
+      <Dialog visible footer={<Text>Футер</Text>} header={<Text>Шапка</Text>}>
+        <Text>Содержимое</Text>
+      </Dialog>
+    )
 
-describe('Dialog component tests', () => {
-  const MockBody = () => <Text>This is the dialog body content</Text>
-  const MockFooter = () => <Text>This is the dialog footer</Text>
-  const header = <Text>This is custom dialog header</Text>
+    expect(screen.getByText('Шапка')).toBeOnTheScreen()
+    expect(screen.getByText('Содержимое')).toBeOnTheScreen()
+    expect(screen.getByText('Футер')).toBeOnTheScreen()
+  })
 
-  const snapshotCases: Array<[string, DialogProps]> = [
-    [
-      'basic dialog with title, body and footer',
-      {
-        isVisible: true,
-        header,
-        body: MockBody,
-        footer: MockFooter,
-        onClose: jest.fn(),
-      },
-    ],
-  ]
+  test('сохраняет старые props и компонентную форму футера', () => {
+    const Body = () => <Text>Прежнее содержимое</Text>
+    const Footer = memo(() => <Text>Прежний футер</Text>)
+    render(<Dialog isVisible body={Body} footer={Footer} />)
 
-  test.each(snapshotCases)('%s', (_, props) => {
-    const renderedDialog = render(<Dialog {...props} />)
+    expect(screen.getByText('Прежнее содержимое')).toBeOnTheScreen()
+    expect(screen.getByText('Прежний футер')).toBeOnTheScreen()
+  })
 
-    expect(renderedDialog.toJSON()).toMatchSnapshot()
+  test('сохраняет самостоятельный DialogComponent', () => {
+    const Body = () => <Text>Прежнее содержимое</Text>
+    const Footer = () => <Text>Прежний футер</Text>
+    render(<DialogComponent body={Body} footer={Footer} />)
+
+    expect(screen.getByText('Прежнее содержимое')).toBeOnTheScreen()
+    expect(screen.getByText('Прежний футер')).toBeOnTheScreen()
+  })
+
+  test('отдаёт приоритет children перед body, включая явный null', () => {
+    const Body = () => <Text>Прежнее содержимое</Text>
+    const { rerender } = render(
+      <Dialog visible body={Body}>
+        <Text>Новое содержимое</Text>
+      </Dialog>
+    )
+
+    expect(screen.getByText('Новое содержимое')).toBeOnTheScreen()
+    expect(screen.queryByText('Прежнее содержимое')).not.toBeOnTheScreen()
+
+    rerender(
+      <Dialog visible body={Body}>
+        {null}
+      </Dialog>
+    )
+
+    expect(screen.queryByText('Новое содержимое')).not.toBeOnTheScreen()
+    expect(screen.queryByText('Прежнее содержимое')).not.toBeOnTheScreen()
+  })
+
+  test('явный visible=false имеет приоритет над isVisible=true', () => {
+    render(
+      <Dialog isVisible visible={false}>
+        <Text>Содержимое</Text>
+      </Dialog>
+    )
+
+    expect(screen.queryByText('Содержимое')).not.toBeOnTheScreen()
+  })
+
+  test('остаётся скрытым без управляющего prop', () => {
+    render(
+      <Dialog>
+        <Text>Содержимое</Text>
+      </Dialog>
+    )
+
+    expect(screen.queryByText('Содержимое')).not.toBeOnTheScreen()
+  })
+
+  test('нажатия запрашивают закрытие, сохраняя окно до изменения visible', async () => {
+    const onClose = jest.fn()
+    const user = userEvent.setup()
+    render(
+      <Dialog
+        visible
+        header={<DialogHeader title='Заказ' onClose={onClose} />}
+        onClose={onClose}
+      >
+        <Text>Содержимое</Text>
+      </Dialog>
+    )
+    await user.press(
+      screen.getByTestId(DialogTestId.backdrop, { includeHiddenElements: true })
+    )
+    await user.press(screen.getByRole('button', { name: 'Закрыть диалог' }))
+
+    expect(onClose.mock.calls).toStrictEqual([[], []])
+    expect(screen.getByText('Содержимое')).toBeOnTheScreen()
+  })
+
+  test('запрет закрытия по фону не блокирует системное закрытие', async () => {
+    const onClose = jest.fn()
+    const user = userEvent.setup()
+    render(<Dialog visible closeOnBackdropPress={false} onClose={onClose} />)
+    await user.press(
+      screen.getByTestId(DialogTestId.backdrop, { includeHiddenElements: true })
+    )
+
+    expect(onClose).not.toHaveBeenCalled()
+
+    fireEvent(screen.UNSAFE_getByType(Modal), 'requestClose')
+
+    expect(onClose).toHaveBeenCalledExactlyOnceWith()
   })
 })
