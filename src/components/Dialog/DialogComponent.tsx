@@ -1,5 +1,6 @@
 import {
   isValidElement,
+  useState,
   type ComponentType,
   type ReactElement,
   type ReactNode,
@@ -30,33 +31,76 @@ export const DialogComponent = ({
   footer: Footer,
   header,
 }: DialogComponentProps) => {
-  const { height } = useWindowDimensions()
+  const { height: windowHeight } = useWindowDimensions()
+  const [headerHeight, setHeaderHeight] = useState(0)
+  const [footerHeight, setFooterHeight] = useState(0)
   const content = children === undefined && Body ? <Body /> : children
   const footer = isValidElement(Footer) ? Footer : Footer ? <Footer /> : null
 
+  const headerAndFooterHeight =
+    (header ? headerHeight : 0) + (footer ? footerHeight : 0)
+
   return (
-    <View style={styles.root(height)}>
-      {header}
+    <View style={styles.root}>
+      <View
+        style={styles.header}
+        testID='DialogHeaderContainer'
+        onLayout={({ nativeEvent }) =>
+          setHeaderHeight(nativeEvent.layout.height)
+        }
+      >
+        {header}
+      </View>
       {content !== null && content !== undefined && (
-        <View style={styles.body}>{content}</View>
+        <View
+          style={styles.body(windowHeight, headerAndFooterHeight)}
+          testID='DialogBody'
+        >
+          {content}
+        </View>
       )}
-      {footer !== null && <View style={styles.footer}>{footer}</View>}
+      {footer !== null && (
+        <View
+          style={styles.footer}
+          testID='DialogFooterContainer'
+          onLayout={({ nativeEvent }) =>
+            setFooterHeight(nativeEvent.layout.height)
+          }
+        >
+          {footer}
+        </View>
+      )}
     </View>
   )
 }
 
 const styles = StyleSheet.create(({ components, semantic }) => ({
-  root: (height: number) => ({
+  root: {
     width: semantic.dimension.size[1900],
     maxWidth: '100%',
-    maxHeight: height - 100,
     overflow: 'hidden',
     backgroundColor: components.dialog.root.background,
     borderColor: components.dialog.root.borderColor,
     borderWidth: components.dialog.extend.borderWidth,
     borderRadius: components.dialog.root.borderRadius,
-  }),
-  body: { padding: components.dialog.content.padding, flexShrink: 1 },
+  },
+  header: { flexShrink: 0 },
+  body: (windowHeight: number, headerAndFooterHeight: number) => {
+    const padding = components.dialog.content.padding
+    const availableHeight =
+      windowHeight -
+      100 -
+      headerAndFooterHeight -
+      components.dialog.extend.borderWidth * 2
+    // При большой шапке или футере сохраняем место для тела, даже если окно не помещается целиком.
+    const minimumBodyHeight = padding * 2 + semantic.dimension.size[1200]
+
+    return {
+      padding,
+      maxHeight:
+        availableHeight >= minimumBodyHeight ? availableHeight : windowHeight,
+    }
+  },
   footer: {
     flexShrink: 0,
     paddingTop: components.dialog.footer.paddingTop,
