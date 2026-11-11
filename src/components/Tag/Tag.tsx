@@ -74,8 +74,9 @@ const tagIcons: Record<TagSeverity, SvgSource> = {
 
 /**
  * Используется для маркировки элементов интерфейса
+ * Доступное имя задаётся через accessibilityLabel или aria-label.
  * Внутри интерактивного родителя задавайте доступное имя родителю,
- * оставляя Tag без собственного accessibilityLabel
+ * оставляя Tag без собственного имени
  * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=21-1238
  */
 export const Tag = memo<TagProps>(
@@ -88,7 +89,9 @@ export const Tag = memo<TagProps>(
     Icon,
     testID,
     collapsable,
+    accessible,
     accessibilityLabel,
+    'aria-label': ariaLabel,
     ...rest
   }) => {
     // На iOS пересоздание Text сбрасывает измерения при смене масштаба шрифта.
@@ -96,7 +99,8 @@ export const Tag = memo<TagProps>(
     const resolvedSeverity = severity === 'basic' ? 'primary' : severity
     const colorSchemeKey =
       resolvedSeverity === 'warning' ? 'warn' : resolvedSeverity
-    const hasAccessibilityLabel = accessibilityLabel !== undefined
+    const resolvedAccessibilityLabel = ariaLabel ?? accessibilityLabel
+    const hasAccessibilityLabel = resolvedAccessibilityLabel !== undefined
 
     tagStyles.useVariants({ severity: resolvedSeverity })
 
@@ -106,9 +110,9 @@ export const Tag = memo<TagProps>(
         style={style}
         testID={testID || TagTestId.root}
         {...rest}
-        accessibilityLabel={accessibilityLabel}
+        accessibilityLabel={resolvedAccessibilityLabel}
         accessibilityRole={hasAccessibilityLabel ? 'text' : undefined}
-        accessible={hasAccessibilityLabel}
+        accessible={accessible ?? hasAccessibilityLabel}
       >
         <View
           accessibilityElementsHidden={hasAccessibilityLabel}
