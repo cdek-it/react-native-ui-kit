@@ -64,6 +64,7 @@ export const BaseButton = memo<BaseButtonComponentProps>(
           disabled: interactionDisabled,
           busy: loading,
         }}
+        aria-busy={loading}
         disabled={interactionDisabled}
         ref={pressableRef}
         style={(state) => [
