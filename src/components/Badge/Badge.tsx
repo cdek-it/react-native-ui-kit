@@ -59,6 +59,7 @@ export type BadgeProps = BadgeText | BadgeDot
 
 /**
  * Компонент Badge
+ * Точка с accessibilityLabel или aria-label доступна скринридеру, без имени декоративна.
  * @param children - Текст внутри бейджа
  * @param dot - Отображать бейдж в форме точки
  * @param severity - Выбор варианта стиля компонента
@@ -75,8 +76,10 @@ export const Badge = memo<BadgeProps>(
     style,
     testID,
     accessibilityLabel,
+    'aria-label': ariaLabel,
     ...rest
   }) => {
+    const resolvedAccessibilityLabel = ariaLabel ?? accessibilityLabel
     badgeStyles.useVariants({ severity: adaptBadgeSeverity(severity), size })
     // На iOS пересоздание Text сбрасывает старое измерение при уменьшении системного шрифта.
     const { fontScale } = useWindowDimensions()
@@ -93,9 +96,9 @@ export const Badge = memo<BadgeProps>(
 
     return (
       <View
-        accessibilityLabel={accessibilityLabel ?? children}
+        accessibilityLabel={resolvedAccessibilityLabel ?? children}
         accessibilityRole='text'
-        accessible={!dot || accessibilityLabel !== undefined}
+        accessible={!dot || resolvedAccessibilityLabel !== undefined}
         style={[badgeStyles.container, style]}
         {...rest}
       >
