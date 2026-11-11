@@ -102,6 +102,11 @@ export interface InputNativeProps extends Omit<
    * @default true
    */
   clearable?: boolean
+  /**
+   * Имя кнопки очистки для скринридера. Пустая строка использует имя по умолчанию.
+   * @default 'Очистить поле'
+   */
+  clearButtonAccessibilityLabel?: string
   /** Внешний контейнер: размеры и отступы */
   style?: StyleProp<ViewStyle>
   /** Стиль нативного ввода */
