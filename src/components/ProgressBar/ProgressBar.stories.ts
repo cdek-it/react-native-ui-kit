@@ -4,6 +4,7 @@ import { ProgressBar } from './ProgressBar'
 
 const meta: Meta<typeof ProgressBar> = {
   title: 'Misc/ProgressBar',
+  tags: ['migration:excluded'],
   component: ProgressBar,
   args: { showValue: false, value: 20, style: { height: 7 } },
   parameters: {

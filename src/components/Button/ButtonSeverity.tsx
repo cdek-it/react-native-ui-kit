@@ -1,19 +1,20 @@
-import { memo, useMemo } from 'react'
+import { memo } from 'react'
 
-import { BaseButton } from './BaseButton'
+import { BaseButton } from './internal/BaseButton'
+import { adaptButtonSeverityProps } from './internal/deprecated/adaptButtonSeverityProps'
+import { getSeverityButtonStyles } from './internal/getSeverityButtonStyles'
 import type {
   ButtonProps,
   ButtonSeverityProps,
   ButtonSeverityVariant,
 } from './types'
-import { ButtonVariantContext } from './utils/ButtonVariantContext'
 
 /**
  * Button component
  * @param size - button size
- * @param shape - button shape
+ * @param rounded - rounded corners
  * @param loading - button loading state
- * @param variant - button variant
+ * @param appearance - button presentation
  * @param disabled - button disabled state
  * @param iconOnly - button with only Icon
  * @param iconPosition - icon position
@@ -25,15 +26,14 @@ import { ButtonVariantContext } from './utils/ButtonVariantContext'
  */
 export const ButtonSeverity = memo<
   ButtonProps<ButtonSeverityVariant> & ButtonSeverityProps
->(({ severity, variant = 'basic', ...props }) => {
-  const variantContextValue = useMemo(
-    () => ({ variant, severity }),
-    [severity, variant]
-  )
+>((props) => {
+  const { appearance, severity, ...buttonProps } =
+    adaptButtonSeverityProps(props)
 
   return (
-    <ButtonVariantContext.Provider value={variantContextValue}>
-      <BaseButton variant={variant} {...props} />
-    </ButtonVariantContext.Provider>
+    <BaseButton
+      resolveStyles={getSeverityButtonStyles(appearance, severity)}
+      {...buttonProps}
+    />
   )
 })

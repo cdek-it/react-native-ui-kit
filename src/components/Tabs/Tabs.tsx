@@ -34,6 +34,7 @@ export interface TabsProps
 
 // Навигационный компонент Tabs
 // @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=888-13076&t=hIQjdrqPKK8BWYev-4
+// @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=24043-2196
 //
 export const Tabs = memo<TabsProps>(
   ({ items, disabled = false, activeIndex, onChange, testID, ...rest }) => {
@@ -91,19 +92,20 @@ export const Tabs = memo<TabsProps>(
   }
 )
 
-const styles = StyleSheet.create(({ theme, border }) => ({
+const styles = StyleSheet.create(({ components }) => ({
   container: {
     flexDirection: 'row',
-    gap: theme.Panel.TabView.tabviewHeaderSpacing,
+    gap: components.tabs.tab.margin,
 
-    borderBottomWidth: border.Width.border,
-    borderColor: theme.Panel.TabView.tabviewNavBorderColor,
+    borderBottomWidth: components.tabs.tablist.borderBottomWidth,
+    borderColor: components.tabs.tablist.borderColor,
   },
   line: {
     position: 'absolute',
-    bottom: 0,
-    height: border.Width['border-2'],
+    // Линия ложится поверх границы таб-листа: отрицательный сдвиг равен её толщине
+    bottom: components.tabs.activeBar.bottom,
+    height: components.tabs.activeBar.height,
 
-    backgroundColor: theme.Panel.TabView.tabviewHeaderActiveBorderColor,
+    backgroundColor: components.tabs.activeBar.background,
   },
 }))

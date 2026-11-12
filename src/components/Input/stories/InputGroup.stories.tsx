@@ -3,10 +3,11 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { IconLock, IconUser } from '@tabler/icons-react-native'
 import { useCallback } from 'react'
 
-import { InputGroup } from '../InputGroup'
+import { LegacyInputGroup as InputGroup } from '../deprecated/LegacyInputGroup'
 
 const meta: Meta<typeof InputGroup> = {
-  title: 'Form/InputGroup',
+  title: 'Form Input/LegacyInputGroup',
+  tags: ['deprecated'],
   args: {
     clearable: true,
     disabled: false,
@@ -53,4 +54,4 @@ const InputGroupStory: Story = {
   },
 }
 
-export { InputGroupStory as InputGroup }
+export { InputGroupStory as LegacyInputGroup }

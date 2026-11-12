@@ -1,176 +1,190 @@
 import { IconCheck, IconMinus } from '@tabler/icons-react-native'
-import { memo, useCallback, useMemo, useState } from 'react'
-import {
-  type AccessibilityProps,
-  StyleSheet as RNStyleSheet,
-  Pressable,
-  View,
-} from 'react-native'
-import type { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils'
-
-import { StyleSheet } from 'react-native-unistyles'
+import { memo, useState } from 'react'
+import { Pressable, type PressableProps, View } from 'react-native'
 
 import { SvgUniversal } from '../../utils'
+import { Body, Caption } from '../Typography'
 
-type CheckboxState = 'default' | 'danger'
+import { styles } from './Checkbox.styles'
 
-export interface CheckboxProps
-  extends AccessibilityProps, Pick<ViewProps, 'testID'> {
-  /** Обработчик нажатия на чекбокс */
-  onPress: () => void
+export interface CheckboxProps extends Omit<
+  PressableProps,
+  'children' | 'accessible' | 'accessibilityRole' | 'role' | 'aria-checked'
+> {
   /**
-   * true, если необходим компонент в активном состоянии
+   * Текущее значение. Меняется только при обновлении prop
    * @default false
    */
   checked?: boolean
   /**
-   * true, если необходим компонент в неопределенном состоянии
+   * Частично выбранное состояние. Переопределяет отображение checked
    * @default false
    */
   indeterminate?: boolean
   /**
-   * Управление доступностью компонента
+   * Блокирует взаимодействие
    * @default false
    */
   disabled?: boolean
-  /** Выбор состояния компонента */
-  state: CheckboxState
+  /**
+   * Оформление ошибки
+   * @default false
+   */
+  danger?: boolean
+  /**
+   * Сообщает следующее значение checked: !checked.
+   * Потребитель обновляет checked и управляет indeterminate самостоятельно
+   */
+  onCheckedChange?: (checked: boolean) => void
+  /** Текст справа от квадрата. По умолчанию задаёт доступное имя */
+  label?: string
+  /** Дополнительная подпись. Отображается и без label */
+  caption?: string
+  /**
+   * Расширяет область нажатия без изменения размера компонента.
+   * Ограничена границами родителя
+   * @default 10
+   */
+  hitSlop?: PressableProps['hitSlop']
 }
 
 /**
- * Используется для множественного выбора элементов
- * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-5316
+ * Управляемый чекбокс с необязательными label и caption.
+ * Вся строка — единая область нажатия и один accessibility-элемент.
+ * Чекбокс и label всегда выровнены по верхнему краю.
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=16-13529
  */
 export const Checkbox = memo<CheckboxProps>(
   ({
-    onPress,
     checked = false,
-    disabled = false,
     indeterminate = false,
-    testID,
-    state,
+    disabled = false,
+    danger = false,
+    onCheckedChange,
+    label,
+    caption,
+    style,
+    testID = 'CheckboxButton_Pressable',
+    hitSlop = 10,
+    accessibilityLabel,
+    accessibilityLabelledBy,
+    accessibilityHint,
+    accessibilityState,
+    onPress,
+    onFocus,
+    onBlur,
+    onHoverIn,
+    onHoverOut,
+    ...rest
   }) => {
-    const [isPressed, setIsPressed] = useState(false)
-
+    const [focused, setFocused] = useState(false)
+    const [hovered, setHovered] = useState(false)
     const filled = checked || indeterminate
+    const Icon = indeterminate ? IconMinus : checked ? IconCheck : null
+    const accessibilityChecked = indeterminate ? 'mixed' : checked
+    const resolvedAccessibilityLabel =
+      accessibilityLabel ??
+      (accessibilityLabelledBy === undefined ? label : undefined)
 
-    styles.useVariants({
-      filled: filled ? 'true' : 'false',
-      pressed: isPressed ? 'true' : 'false',
-      state: state === 'danger' ? 'danger' : undefined,
-      disabled: disabled ? 'true' : 'false',
-    })
-
-    const Icon = useMemo(() => {
-      if (indeterminate) {
-        return IconMinus
-      }
-
-      if (checked) {
-        return IconCheck
-      }
-
-      return null
-    }, [indeterminate, checked])
-
-    const onPressIn = useCallback(() => {
-      setIsPressed(true)
-    }, [])
-
-    const onPressOut = useCallback(() => {
-      setIsPressed(false)
-    }, [])
+    const textContent = (label !== undefined || caption !== undefined) && (
+      <View
+        accessibilityElementsHidden
+        accessible={false}
+        importantForAccessibility='no-hide-descendants'
+        style={styles.content}
+      >
+        {label !== undefined && (
+          <Body size='base' style={styles.label}>
+            {label}
+          </Body>
+        )}
+        {caption !== undefined && (
+          <Caption style={styles.caption}>{caption}</Caption>
+        )}
+      </View>
+    )
 
     return (
       <Pressable
-        accessibilityRole='button'
+        {...rest}
+        accessible
+        accessibilityHint={accessibilityHint ?? caption}
+        accessibilityLabel={resolvedAccessibilityLabel}
+        accessibilityLabelledBy={accessibilityLabelledBy}
+        accessibilityRole='checkbox'
+        accessibilityState={{
+          ...accessibilityState,
+          checked: accessibilityChecked,
+          disabled,
+        }}
         disabled={disabled}
-        hitSlop={10}
-        style={styles.container}
-        testID={testID || 'CheckboxButton_Pressable'}
-        onPress={onPress}
-        onPressIn={onPressIn}
-        onPressOut={onPressOut}
+        hitSlop={hitSlop}
+        style={(pressState) => [
+          styles.root,
+          typeof style === 'function' ? style(pressState) : style,
+        ]}
+        testID={testID}
+        onBlur={(event) => {
+          setFocused(false)
+          onBlur?.(event)
+        }}
+        onFocus={(event) => {
+          setFocused(true)
+          onFocus?.(event)
+        }}
+        onHoverIn={(event) => {
+          setHovered(true)
+          onHoverIn?.(event)
+        }}
+        onHoverOut={(event) => {
+          setHovered(false)
+          onHoverOut?.(event)
+        }}
+        onPress={(event) => {
+          onCheckedChange?.(!checked)
+          onPress?.(event)
+        }}
       >
-        <View style={[styles.background, styles.backgroundState]} />
-        {Icon ? (
-          <SvgUniversal
-            {...styles.icon}
-            source={Icon}
-            uniProps={({ theme }) => ({
-              color: theme.Form.Checkbox.checkboxIconActiveColor,
-            })}
-          />
-        ) : null}
+        {({ pressed }) => {
+          const active = pressed || hovered
+
+          return (
+            <>
+              <View
+                accessibilityElementsHidden
+                accessible={false}
+                importantForAccessibility='no-hide-descendants'
+                style={styles.box({
+                  filled,
+                  active,
+                  disabled,
+                  focused,
+                  danger,
+                })}
+              >
+                {!disabled && (focused || danger) ? (
+                  <View pointerEvents='none' style={styles.ring(danger)} />
+                ) : null}
+                {Icon ? (
+                  <SvgUniversal
+                    source={Icon}
+                    uniProps={({ components: { checkbox } }) => ({
+                      width: checkbox.icon.size,
+                      height: checkbox.icon.size,
+                      color: disabled
+                        ? checkbox.icon.disabledColor
+                        : active
+                          ? checkbox.icon.checkedHoverColor
+                          : checkbox.icon.checkedColor,
+                    })}
+                  />
+                ) : null}
+              </View>
+              {textContent}
+            </>
+          )
+        }}
       </Pressable>
     )
   }
 )
-
-const styles = StyleSheet.create(({ theme, border, sizing }) => ({
-  container: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: theme.Form.Checkbox.checkboxWidth,
-    height: theme.Form.Checkbox.checkboxHeight,
-  },
-  background: { ...RNStyleSheet.absoluteFillObject },
-  backgroundState: {
-    borderRadius: border.Radius['rounded-lg'],
-    borderWidth: border.Width.border,
-    variants: {
-      filled: {
-        true: {
-          backgroundColor: theme.Form.Checkbox.checkboxActiveBg,
-          borderColor: theme.Form.Checkbox.checkboxActiveBorderColor,
-        },
-        false: {
-          backgroundColor: theme.Form.InputText.inputBg,
-          borderColor: theme.Form.InputText.inputBorderColor,
-        },
-      },
-      pressed: {
-        true: { borderColor: theme.Form.InputText.inputHoverBorderColor },
-        false: {},
-      },
-      state: {
-        danger: {
-          borderColor: theme.Form.InputText.inputErrorBorderColor,
-          outlineStyle: 'solid',
-          outlineColor: theme.General.focusOutlineErrorColor,
-          outlineWidth: Math.round(theme.General.focusShadowWidth),
-        },
-      },
-      disabled: { true: { outlineWidth: 0 }, false: {} },
-    },
-    compoundVariants: [
-      {
-        filled: 'true',
-        pressed: 'true',
-        styles: {
-          backgroundColor: theme.Form.Checkbox.checkboxActiveHoverBg,
-          borderColor: theme.Form.Checkbox.checkboxActiveHoverBorderColor,
-        },
-      },
-      {
-        filled: 'false',
-        disabled: 'true',
-        styles: {
-          backgroundColor: theme.Button.Disabled.disabledButtonBg,
-          borderColor: theme.Form.InputText.inputBorderColor,
-          mixBlendMode: 'luminosity',
-        },
-      },
-      {
-        filled: 'true',
-        disabled: 'true',
-        styles: {
-          borderColor: theme.Form.Checkbox.checkboxActiveBorderColor,
-          opacity: 0.2,
-          mixBlendMode: 'luminosity',
-        },
-      },
-    ],
-  },
-  icon: { height: sizing.Height['h-1'], width: sizing.Width['w-1'] },
-}))

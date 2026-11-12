@@ -23,6 +23,7 @@
     "jsx": "react-native",
     "resolveJsonModule": true
   },
+  "include": ["**/*", ".storybook/**/*"],
   "exclude": [
     "artifacts",
     "scripts",

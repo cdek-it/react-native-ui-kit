@@ -3,9 +3,8 @@ import {
   IconAlertTriangle,
   IconCircleCheck,
   IconInfoCircle,
-  IconX,
 } from '@tabler/icons-react-native'
-import { memo, type ComponentProps, type ReactNode, useMemo } from 'react'
+import { Children, memo, type ReactNode } from 'react'
 import {
   type AccessibilityProps,
   type StyleProp,
@@ -14,26 +13,24 @@ import {
   type ViewStyle,
 } from 'react-native'
 
-import { StyleSheet } from 'react-native-unistyles'
-
-import type { ThemeType } from '../../theme/types'
 import { type SvgSource, SvgUniversal } from '../../utils/SvgUniversal'
-import { ButtonSeverity } from '../Button/ButtonSeverity'
-import { Timer } from '../Timer/Timer'
 import { Body, Caption } from '../Typography'
+
+import { styles } from './Message.styles'
+import { MessageCloseButton } from './MessageCloseButton'
+import { type MessageSeverity, severityKey } from './constants'
+import { Timer } from './internal/Timer'
+import { TestId } from './testIds'
 
 export interface MessageProps
   extends AccessibilityProps, Pick<ViewProps, 'testID'> {
-  /** Текст заголовка */
+  /** Заголовок */
   title: string
-
-  /** Тело сообщения */
+  /** Произвольное содержимое тела компонента */
   body?: ReactNode
-
-  /** Текст подписи */
+  /** Подпись под заголовком */
   caption?: string
-
-  /** Футер сообщения */
+  /** Независимая нода под содержимым, чаще всего кнопки */
   footer?: ReactNode
 
   /**
@@ -48,20 +45,20 @@ export interface MessageProps
    * Это свойство игнорируется если onClose = undefined
    */
   closeLabel?: string
-
-  /** Срабатывает при истечении таймера */
+  /** Доступное имя крестика, по умолчанию «Закрыть». Для текстовой кнопки игнорируется */
+  closeAccessibilityLabel?: string
+  /** Обработчик истечения таймера. Вызывается однократно после окончания отсчёта. Сообщение остаётся видимым */
   onTimerFinish?: () => void
 
   /**
    * Выбор варианта стиля компонента
    * @default 'info'
    */
-  severity?: 'info' | 'success' | 'warning' | 'danger'
+  severity?: MessageSeverity
 
   /** Дополнительная стилизация для контейнера компонента */
   style?: StyleProp<ViewStyle>
-
-  /** Значение таймера, если нужно отображать таймер вместо иконки */
+  /** Положительная длительность в секундах. Таймер заменяет иконку, 0 выключает отсчёт */
   timerValue?: number
 
   /**
@@ -77,28 +74,29 @@ export interface MessageProps
   Icon?: SvgSource
 
   /**
-   * Скрыть иконку.
-   * Позволяет скрывать установленные или дефолтные иконки
-   * Дефолтное значение: false
+   * Признак скрытия иконки пользовательской или дефолтной. Не скрывает работающий таймер
+   * @default false
    */
   hiddenIcon?: boolean
 }
 
-type MessageSeverityKey = NonNullable<MessageProps['severity']>
-
-const messageIconColor: Record<
-  MessageSeverityKey,
-  (t: ThemeType['theme']) => string
-> = {
-  info: (t) => t.Message.Severities.Info.infoMessageIconColor,
-  success: (t) => t.Message.Severities.Success.successMessageIconColor,
-  warning: (t) => t.Message.Severities.Warning.warningMessageIconColor,
-  danger: (t) => t.Message.Severities.Danger.dangerMessageIconColor,
+const icons = {
+  info: IconInfoCircle,
+  success: IconCircleCheck,
+  warning: IconAlertTriangle,
+  danger: IconAlertCircle,
 }
 
+const decorativeProps = {
+  accessible: false,
+  accessibilityElementsHidden: true,
+  importantForAccessibility: 'no-hide-descendants',
+} as const
+
 /**
- * Унифицированный компонент, который используется для отображения информационных сообщений
- * @see https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=562-2947
+ * Сообщение со статусом, произвольным содержимым и необязательными действиями.
+ * Вложенные действия доступны отдельно. Объявление сообщения обеспечивает потребитель.
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=15963-3163&m=dev
  */
 export const Message = memo<MessageProps>(
   ({
@@ -108,189 +106,86 @@ export const Message = memo<MessageProps>(
     footer,
     onClose,
     closeLabel,
+    closeAccessibilityLabel,
     onTimerFinish,
     severity = 'info',
     hiddenIcon = false,
     style,
     testID,
     timerValue,
-    Icon: IconProp,
+    Icon = icons[severity],
     ...rest
   }) => {
-    messageStyles.useVariants({ severity })
-
-    const Icon = useMemo(() => {
-      if (IconProp) {
-        return IconProp
-      }
-
-      switch (severity) {
-        case 'info':
-          return IconInfoCircle
-
-        case 'success':
-          return IconCircleCheck
-
-        case 'warning':
-          return IconAlertTriangle
-
-        case 'danger':
-          return IconAlertCircle
-      }
-    }, [IconProp, severity])
-
-    const button = useMemo(() => {
-      if (!onClose) {
-        return null
-      }
-
-      const buttonCommonProps: Omit<
-        ComponentProps<typeof ButtonSeverity>,
-        'iconOnly' | 'Icon' | 'iconPosition' | 'label'
-      > = { severity, size: 'small', variant: 'outlined', onPress: onClose }
-
-      if (closeLabel) {
-        return (
-          <ButtonSeverity
-            label={closeLabel}
-            {...buttonCommonProps}
-            testID={TestId.CloseButton}
-          />
-        )
-      }
-
-      return (
-        <ButtonSeverity
-          iconOnly
-          Icon={IconX}
-          {...buttonCommonProps}
-          testID={TestId.CloseButton}
-        />
-      )
-    }, [closeLabel, onClose, severity])
-
-    const LeftContent = useMemo(() => {
-      if (timerValue) {
-        return <Timer countFrom={timerValue} onFinish={onTimerFinish} />
-      }
-
-      if (!hiddenIcon) {
-        return (
-          <SvgUniversal
-            {...messageStyles.iconSize}
-            source={Icon}
-            testID={TestId.Icon}
-            uniProps={({ theme }) => ({
-              color: messageIconColor[severity](theme),
-            })}
-          />
-        )
-      }
-
-      return undefined
-    }, [hiddenIcon, Icon, onTimerFinish, severity, timerValue])
-
     return (
       <View
-        accessible
-        style={[messageStyles.container, style]}
+        style={[styles.container(severity), style]}
         testID={testID || TestId.Container}
         {...rest}
       >
-        <View style={messageStyles.content}>
-          <View style={messageStyles.titleRow}>
-            {LeftContent}
-            <View style={messageStyles.titleTextContainer}>
-              <Body size='base' testID={TestId.Title} weight='bold'>
+        <View
+          {...decorativeProps}
+          pointerEvents='none'
+          style={styles.accent(severity)}
+        />
+        <View style={styles.content}>
+          <View style={styles.titleRow}>
+            {timerValue !== undefined && timerValue > 0 ? (
+              <Timer
+                countFrom={timerValue}
+                severity={severity}
+                onFinish={onTimerFinish}
+              />
+            ) : hiddenIcon ? null : (
+              <View
+                {...decorativeProps}
+                style={styles.icon}
+                testID={TestId.Icon}
+              >
+                <SvgUniversal
+                  source={Icon}
+                  uniProps={({ components }) => ({
+                    width: components.message.icon.size,
+                    height: components.message.icon.size,
+                    color:
+                      components.message.colorScheme[severityKey[severity]]
+                        .iconColor,
+                  })}
+                />
+              </View>
+            )}
+            <View style={styles.titleTextContainer}>
+              <Body
+                size='lg'
+                style={styles.title(severity)}
+                testID={TestId.Title}
+                weight='bold'
+              >
                 {title}
               </Body>
               {caption ? (
-                <Caption testID={TestId.Caption}>{caption}</Caption>
+                <Caption
+                  style={styles.caption(severity)}
+                  testID={TestId.Caption}
+                >
+                  {caption}
+                </Caption>
               ) : null}
             </View>
-            {button}
+            <MessageCloseButton
+              closeAccessibilityLabel={closeAccessibilityLabel}
+              closeLabel={closeLabel}
+              severity={severity}
+              onClose={onClose}
+            />
           </View>
-          {body ? <View testID={TestId.Body}>{body}</View> : null}
-          {footer}
+          {Children.toArray(body).length > 0 ? (
+            <View testID={TestId.Body}>{body}</View>
+          ) : null}
+          {Children.toArray(footer).length > 0 ? (
+            <View style={styles.footer}>{footer}</View>
+          ) : null}
         </View>
       </View>
     )
   }
 )
-
-const messageStyles = StyleSheet.create(
-  ({ theme, typography, spacing, border }) => ({
-    container: {
-      borderRadius: theme.General.borderRadiusXL,
-      borderWidth: border.Width.border,
-      overflow: 'hidden',
-      variants: {
-        severity: {
-          info: {
-            borderColor: theme.Message.Severities.Info.infoMessageBorderColor,
-            backgroundColor: theme.Message.Severities.Info.infoMessageBg,
-          },
-          success: {
-            borderColor:
-              theme.Message.Severities.Success.successMessageBorderColor,
-            backgroundColor: theme.Message.Severities.Success.successMessageBg,
-          },
-          warning: {
-            borderColor:
-              theme.Message.Severities.Warning.warningMessageBorderColor,
-            backgroundColor: theme.Message.Severities.Warning.warningMessageBg,
-          },
-          danger: {
-            borderColor:
-              theme.Message.Severities.Danger.dangerMessageBorderColor,
-            backgroundColor: theme.Message.Severities.Danger.dangerMessageBg,
-          },
-        },
-      },
-    },
-    content: {
-      flexGrow: 1,
-      borderLeftWidth: border.Width['border-3'] - border.Width.border,
-      padding: spacing.Padding['p-4'],
-      paddingLeft: spacing.Padding['p-5'],
-      gap: spacing.Gap['gap-4'],
-      variants: {
-        severity: {
-          info: {
-            borderColor: theme.Message.Severities.Info.infoMessageIconColor,
-          },
-          success: {
-            borderColor:
-              theme.Message.Severities.Success.successMessageIconColor,
-          },
-          warning: {
-            borderColor:
-              theme.Message.Severities.Warning.warningMessageIconColor,
-          },
-          danger: {
-            borderColor: theme.Message.Severities.Danger.dangerMessageIconColor,
-          },
-        },
-      },
-    },
-    titleRow: { flexDirection: 'row', gap: spacing.Gap['gap-4'] },
-    titleTextContainer: {
-      flex: 1,
-      alignSelf: 'center',
-      gap: spacing.Gap['gap-1'],
-    },
-    iconSize: {
-      width: typography.Size['text-4xl'],
-      height: typography.Size['text-4xl'],
-    },
-  })
-)
-
-export enum TestId {
-  Container = 'MessageContainer',
-  CloseButton = 'CloseButton',
-  Title = 'Title',
-  Caption = 'Caption',
-  Body = 'Body',
-  Icon = 'Icon',
-}

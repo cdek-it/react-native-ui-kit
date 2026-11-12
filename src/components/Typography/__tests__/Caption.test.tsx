@@ -1,24 +1,32 @@
 import { IconInfoCircle } from '@tabler/icons-react-native'
 import { render } from '@testing-library/react-native'
 
-import { Caption, type CaptionProps } from '../Caption'
+import { Caption } from '../Caption'
 
-describe('Caption component tests', () => {
-  const snapshotCases = generatePropsCombinations<CaptionProps>({
-    color: ['default', 'secondary', 'primary'],
-    disabled: [true, false],
-    Icon: [undefined, IconInfoCircle],
+describe('Caption', () => {
+  test('отображает текст и передаёт нативные props', () => {
+    const { getByLabelText, queryByTestId } = render(
+      <Caption accessibilityLabel='Подсказка' numberOfLines={2}>
+        Подсказка к полю
+      </Caption>
+    )
+
+    expect(getByLabelText('Подсказка')).toHaveTextContent('Подсказка к полю')
+    expect(getByLabelText('Подсказка')).toHaveProp('numberOfLines', 2)
+    expect(queryByTestId('CaptionIcon')).not.toBeOnTheScreen()
   })
 
-  test.each(snapshotCases)('color = $color, disabled = $disabled', (props) => {
-    const renderedCaption = render(<Caption {...props}>Text</Caption>)
+  test('показывает и убирает SVG-иконку при изменении props', () => {
+    const { getByText, getAllByTestId, queryByTestId, rerender } = render(
+      <Caption Icon={IconInfoCircle}>Подсказка к полю</Caption>
+    )
 
-    expect(renderedCaption.toJSON()).toMatchSnapshot()
-  })
+    expect(getByText('Подсказка к полю')).toBeOnTheScreen()
+    expect(getAllByTestId('CaptionIcon')[0]).toBeOnTheScreen()
 
-  test('default props', () => {
-    const renderedCaption = render(<Caption>Text</Caption>)
+    rerender(<Caption>Подсказка к полю</Caption>)
 
-    expect(renderedCaption.toJSON()).toMatchSnapshot()
+    expect(getByText('Подсказка к полю')).toBeOnTheScreen()
+    expect(queryByTestId('CaptionIcon')).not.toBeOnTheScreen()
   })
 })

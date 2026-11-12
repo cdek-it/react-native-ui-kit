@@ -6,9 +6,7 @@ import {
   memo,
 } from 'react'
 import { SvgUri, SvgXml, type SvgProps } from 'react-native-svg'
-import { withUnistyles } from 'react-native-unistyles'
-
-import type { ThemeType } from '../theme/types'
+import { withUnistyles, type UnistylesThemes } from 'react-native-unistyles'
 
 export type SvgSource =
   | { uri: string }
@@ -19,6 +17,8 @@ export interface SvgUniversalProps extends SvgProps {
   /** Источник SVG */
   source: SvgSource
 }
+
+export type SvgUniversalTheme = UnistylesThemes[keyof UnistylesThemes]
 
 /**
  * Компонент для рендера SVG из разных источников
@@ -57,7 +57,7 @@ type SvgUniversalComponent = ForwardRefExoticComponent<
   PropsWithoutRef<
     Partial<SvgUniversalProps> & {
       uniProps?: (
-        theme: ThemeType
+        theme: SvgUniversalTheme
       ) => Omit<
         Partial<SvgUniversalProps>,
         'style' | 'contentContainerStyle'

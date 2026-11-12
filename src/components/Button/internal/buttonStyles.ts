@@ -1,0 +1,153 @@
+import type { TextStyle } from 'react-native'
+import { StyleSheet } from 'react-native-unistyles'
+
+import type { ThemeType } from '../../../theme'
+
+import type { ButtonResolvedStyles, ButtonStyleProps } from './types'
+
+type ButtonTokens = ThemeType['components']['button']
+
+const getButtonLineHeight = (
+  fonts: ThemeType['fonts'],
+  size: ButtonStyleProps['size']
+) =>
+  ({
+    small: fonts.lineHeight[300],
+    base: fonts.lineHeight[500],
+    large: fonts.lineHeight[500],
+    xlarge: fonts.lineHeight[550],
+  })[size]
+
+type ButtonColorProps = Pick<ButtonStyleProps, 'variant' | 'severity' | 'state'>
+
+export type ButtonColorResolver<
+  Props extends ButtonColorProps = ButtonColorProps,
+> = (
+  button: ButtonTokens,
+  props: Props
+) => { backgroundColor: string; borderColor: string; color: string }
+
+const createButtonStyles = <Props extends ButtonStyleProps>(
+  getButtonColors: ButtonColorResolver<Props>
+) =>
+  StyleSheet.create(({ components: { button }, fonts, semantic }) => ({
+    container: (props: Props) => {
+      const sizes = {
+        xlarge: {
+          paddingX: button.extend.extXlg.paddingX,
+          height: button.extend.extXlg.height,
+          gap: button.extend.extXlg.gap,
+          borderRadius: button.extend.extXlg.borderRadius,
+        },
+        large: {
+          paddingX: button.root.lg.paddingX,
+          height: button.extend.extLg.height,
+          gap: button.extend.extLg.gap,
+          borderRadius: button.extend.extLg.borderRadius,
+        },
+        base: {
+          paddingX: button.root.paddingX,
+          height: button.root.height,
+          gap: button.root.gap,
+          borderRadius: button.root.borderRadius,
+        },
+        small: {
+          paddingX: button.root.sm.paddingX,
+          height: button.extend.extSm.height,
+          gap: button.root.gap,
+          borderRadius: button.root.borderRadius,
+        },
+      }
+      const iconOnlyHeights = {
+        xlarge: button.extend.extXlg.iconOnlyWidth,
+        large: button.root.lg.iconOnlyWidth,
+        base: button.root.iconOnlyWidth,
+        small: button.root.sm.iconOnlyWidth,
+      }
+      const linkIconOnlyHeights = {
+        xlarge: button.extend.extLink.xlg.iconOnlyWidth,
+        large: button.extend.extLink.lg.iconOnlyWidth,
+        base: button.extend.extLink.base.iconOnlyWidth,
+        small: button.extend.extLink.sm.iconOnlyWidth,
+      }
+      const { size, rounded, iconOnly, variant } = props
+      const sizing = sizes[size]
+      const link = variant === 'link'
+      const height = iconOnly
+        ? link
+          ? linkIconOnlyHeights[size]
+          : iconOnlyHeights[size]
+        : undefined
+      const minHeight = link
+        ? getButtonLineHeight(fonts, size) + button.extend.extLink.paddingY * 2
+        : sizing.height
+      const colors = getButtonColors(button, props)
+
+      return {
+        flexDirection: 'row' as const,
+        justifyContent: 'center' as const,
+        alignItems: 'center' as const,
+        backgroundColor: colors.backgroundColor,
+        borderColor: colors.borderColor,
+        borderWidth: link
+          ? semantic.dimension.space.none
+          : button.extend.borderWidth,
+        borderRadius: rounded
+          ? button.root.roundedBorderRadius
+          : sizing.borderRadius,
+        paddingHorizontal: iconOnly
+          ? semantic.dimension.space.none
+          : link
+            ? button.extend.extLink.paddingX
+            : sizing.paddingX,
+        paddingVertical: semantic.dimension.space.none,
+        gap: sizing.gap,
+        height,
+        minHeight: iconOnly ? height : minHeight,
+        maxHeight: height,
+        aspectRatio: iconOnly ? 1 : undefined,
+      }
+    },
+    label: (props: Props) => {
+      const sizes = {
+        xlarge: button.root.lg.fontSize,
+        large: button.root.lg.fontSize,
+        base: fonts.fontSize[200],
+        small: button.root.sm.fontSize,
+      }
+
+      return {
+        fontWeight: button.root.label.fontWeight as TextStyle['fontWeight'],
+        includeFontPadding: false,
+        verticalAlign: 'middle' as const,
+        fontFamily: fonts.fontFamily.heading,
+        letterSpacing: fonts.letterSpacing[500],
+        color: getButtonColors(button, props).color,
+        fontSize: sizes[props.size],
+        lineHeight: getButtonLineHeight(fonts, props.size),
+      }
+    },
+  }))
+
+export const createButtonStyleResolver = <Props extends ButtonStyleProps>(
+  getColors: ButtonColorResolver<Props>
+) => {
+  const styles = createButtonStyles(getColors)
+
+  return (props: Props): ButtonResolvedStyles => ({
+    container: styles.container(props),
+    label: styles.label(props),
+    icon: ({ components: { button } }) => {
+      const dimension =
+        button.extend.iconSize[
+          props.size === 'small' ? 'sm' : props.size === 'base' ? 'md' : 'lg'
+        ]
+
+      return {
+        color: getColors(button, props).color,
+        width: dimension,
+        height: dimension,
+      }
+    },
+  })
+}

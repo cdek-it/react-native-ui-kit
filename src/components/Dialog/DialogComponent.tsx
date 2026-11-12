@@ -1,53 +1,75 @@
-import React, { type ReactNode } from 'react'
-import { View, useWindowDimensions } from 'react-native'
-
+import {
+  isValidElement,
+  type ComponentType,
+  type ReactElement,
+  type ReactNode,
+} from 'react'
+import { View } from 'react-native'
 import { StyleSheet } from 'react-native-unistyles'
 
+/** Немодальное содержимое окна с отдельными шапкой, телом и футером. */
 export interface DialogComponentProps {
-  readonly body?: React.ComponentType
-  readonly footer?: React.ComponentType
+  /** Основное содержимое. Прокрутку задаёт потребитель через ScrollView или список. */
+  readonly children?: ReactNode
+  /** @deprecated Передавайте готовое содержимое через children. */
+  readonly body?: ComponentType
+  /** Готовый футер. Передача ComponentType устарела, используйте <Footer />. */
+  readonly footer?: ReactElement | ComponentType | null
+  /** Готовая шапка, обычно DialogHeader. */
   readonly header?: ReactNode
 }
 
-export const DialogComponent: React.FC<DialogComponentProps> = ({
+/**
+ * Немодальный вариант Dialog для размещения внутри экрана, без затемнения.
+ * Доступную высоту, показ, фокус и адаптацию к клавиатуре задаёт потребитель. Для модального показа используйте Dialog.
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=520-6572
+ */
+export const DialogComponent = ({
   body: Body,
+  children,
   footer: Footer,
-  header = null,
-}) => {
-  const { width, height } = useWindowDimensions()
-  const maxSize = { maxWidth: width - 40, maxHeight: height - 100 }
+  header,
+}: DialogComponentProps) => {
+  const content = children === undefined && Body ? <Body /> : children
+  const footer = isValidElement(Footer) ? Footer : Footer ? <Footer /> : null
 
   return (
-    <View style={[styles.root, maxSize]}>
-      {header}
-
-      {Body ? (
-        <View style={styles.body}>
-          <Body />
+    <View style={styles.root}>
+      <View style={styles.header} testID='DialogHeaderContainer'>
+        {header}
+      </View>
+      {content !== null && content !== undefined && (
+        <View style={styles.body} testID='DialogBody'>
+          {content}
         </View>
-      ) : null}
-
-      {Footer ? (
-        <View style={styles.footer}>
-          <Footer />
+      )}
+      {footer !== null && (
+        <View style={styles.footer} testID='DialogFooterContainer'>
+          {footer}
         </View>
-      ) : null}
+      )}
     </View>
   )
 }
 
-const styles = StyleSheet.create(({ theme }) => ({
+const styles = StyleSheet.create(({ components, semantic }) => ({
   root: {
-    backgroundColor: theme.Overlay.Dialog.Header.dialogHeaderBg,
-    borderColor: theme.Overlay.Overlay.overlayContentBorderColor,
-    borderRadius: theme.General.borderRadius2XL,
+    width: semantic.dimension.size[1900],
+    maxWidth: '100%',
+    flexShrink: 1,
+    overflow: 'hidden',
+    backgroundColor: components.dialog.root.background,
+    borderColor: components.dialog.root.borderColor,
+    borderWidth: components.dialog.extend.borderWidth,
+    borderRadius: components.dialog.root.borderRadius,
   },
-  body: {
-    paddingVertical: theme.Overlay.Dialog.Body.dialogContentPaddingTopBottom,
-    paddingHorizontal: theme.Overlay.Dialog.Body.dialogContentPaddingLeftRight,
-  },
+  header: { flexShrink: 0 },
+  body: { padding: components.dialog.content.padding, flexShrink: 1 },
   footer: {
-    paddingBottom: theme.Overlay.Dialog.Footer.dialogFooterPaddingLeftRight,
-    paddingHorizontal: theme.Overlay.Dialog.Footer.dialogFooterPaddingLeftRight,
+    flexShrink: 0,
+    paddingTop: components.dialog.footer.paddingTop,
+    paddingBottom: components.dialog.footer.paddingBottom,
+    paddingLeft: components.dialog.footer.paddingLeft,
+    paddingRight: components.dialog.footer.paddingRight,
   },
 }))
