@@ -79,6 +79,9 @@ export function InputFields({ showInfo }: { showInfo: () => void }) {
 
 InputCaption озвучивается отдельно, `accessibilityHint` задаётся явно.
 
+Имя кнопки очистки задаётся через `clearButtonAccessibilityLabel`. Если prop не
+передан или равен пустой строке, используется «Очистить поле».
+
 Увеличенный системный шрифт может увеличивать высоту поля.
 
 ## Связанные компоненты

@@ -44,10 +44,14 @@ describe('Badge', () => {
     expect(queryByRole('text')).toBeNull()
   })
 
-  test('делает точку с accessibilityLabel одним доступным элементом', () => {
-    const { getByRole, getAllByRole } = render(
-      <Badge dot accessibilityLabel='Есть новые уведомления' />
-    )
+  test.each([
+    {
+      name: 'accessibilityLabel',
+      props: { accessibilityLabel: 'Есть новые уведомления' },
+    },
+    { name: 'aria-label', props: { 'aria-label': 'Есть новые уведомления' } },
+  ])('делает точку с $name одним доступным элементом', ({ props }) => {
+    const { getByRole, getAllByRole } = render(<Badge {...props} dot />)
 
     expect(
       getByRole('text', { name: 'Есть новые уведомления' })

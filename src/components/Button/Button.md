@@ -30,7 +30,9 @@ export function OpenCartButton({ onPress }: { onPress: () => void }) {
   По умолчанию `primary`
 - `size` — `small | base | large | xlarge`. По умолчанию `base`
 - `rounded` — полное скругление углов. По умолчанию `false`
-- `loading` — показывает индикатор вместо иконки. По умолчанию `false`
+- `loading` — показывает индикатор вместо иконки. По умолчанию `false`.
+  Определяет `busy`, независимо от переданных `accessibilityState.busy` и
+  `aria-busy`
 - `badge` — готовый элемент `Badge` типа `ReactElement<BadgeProps>`. Размещается
   в верхнем правом углу, не меняет размер кнопки и остаётся видимым при
   `loading` и `disabled`
