@@ -22,6 +22,11 @@ export interface BadgeBase
    * @default 'basic'
    */
   severity?: BadgeSeverity
+  /**
+   * Размер текстового бейджа и точки
+   * @default 'small'
+   */
+  size?: 'small' | 'medium' | 'large'
   /** Дополнительная стилизация для контейнера компонента */
   style?: StyleProp<ViewStyle>
 }
@@ -43,16 +48,27 @@ interface BadgeDot extends BadgeBase {
 export type BadgeProps = BadgeText | BadgeDot
 
 /**
- * Компонент Badge
+ * Текстовый счётчик или точка для обозначения статуса.
+ * Для точки с самостоятельным смыслом задайте accessible и accessibilityLabel.
+ * В интерактивном родителе включайте значение бейджа в доступное имя родителя.
  * @param children - Текст внутри бейджа
  * @param dot - Отображать бейдж в форме точки
- * @param severiy - Выбор варианта стиля компонента
+ * @param severity - Выбор варианта стиля компонента
+ * @param size - Размер текстового бейджа и точки, по умолчанию small
  * @param style - Дополнительная стилизация для контейнера компонента
- * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=484-4871&m=dev
+ * @see https://www.figma.com/design/HOLKdvQJ8jCLeX17s9d0Yf/UI-Kit--DS--v2.0?node-id=21-1193
  */
 export const Badge = memo<BadgeProps>(
-  ({ children, dot, severity = 'basic', style, testID, ...rest }) => {
-    badgeStyles.useVariants({ severity })
+  ({
+    children,
+    dot,
+    severity = 'basic',
+    size = 'small',
+    style,
+    testID,
+    ...rest
+  }) => {
+    badgeStyles.useVariants({ severity, size })
     const [textLayout, setTextLayout] = useState<LayoutRectangle>()
 
     const onTextLayout = useCallback((e: LayoutChangeEvent) => {
@@ -103,53 +119,88 @@ export const Badge = memo<BadgeProps>(
   }
 )
 
-const badgeStyles = StyleSheet.create(
-  ({ theme, border, typography, fonts }) => ({
-    container: { alignItems: 'flex-start' },
-    dot: {
-      variants: {
-        severity: {
-          basic: { backgroundColor: theme.Misc.Badge.badgeBg },
-          info: {
-            backgroundColor: theme.Button.Severity.Info.Basic.infoButtonBg,
-          },
-          success: {
-            backgroundColor:
-              theme.Button.Severity.Success.Basic.successButtonBg,
-          },
-          warning: {
-            backgroundColor:
-              theme.Button.Severity.Warning.Basic.warningButtonBg,
-          },
-          danger: {
-            backgroundColor: theme.Button.Severity.Danger.Basic.dangerButtonBg,
-          },
+const badgeStyles = StyleSheet.create(({ theme, fonts }) => ({
+  container: { alignItems: 'flex-start' },
+  dot: {
+    variants: {
+      severity: {
+        basic: { backgroundColor: theme.Misc.Badge.badgeBg },
+        info: {
+          backgroundColor: theme.Button.Severity.Info.Basic.infoButtonBg,
+        },
+        success: {
+          backgroundColor: theme.Button.Severity.Success.Basic.successButtonBg,
+        },
+        warning: {
+          backgroundColor: theme.Button.Severity.Warning.Basic.warningButtonBg,
+        },
+        danger: {
+          backgroundColor: theme.Button.Severity.Danger.Basic.dangerButtonBg,
         },
       },
     },
-    dotShape: {
-      width: theme.Misc.Badge.badgeDotSize,
-      height: theme.Misc.Badge.badgeDotSize,
-      borderRadius: border.Radius['rounded-full'],
+  },
+  dotShape: {
+    width: theme.Misc.Badge.badgeDotSize,
+    height: theme.Misc.Badge.badgeDotSize,
+    borderRadius: theme.Misc.Badge.badgeBorderRadius,
+    variants: {
+      size: {
+        small: {},
+        medium: {
+          width: theme.Misc.Badge.badgeDotLgSize,
+          height: theme.Misc.Badge.badgeDotLgSize,
+        },
+        large: {
+          width: theme.Misc.Badge.badgeDotXlSize,
+          height: theme.Misc.Badge.badgeDotXlSize,
+        },
+      },
     },
-    textBadgeContainer: {
-      height: theme.Misc.Badge.badgeHeight,
-      paddingHorizontal: theme.Misc.Tag.tagPadding,
-      justifyContent: 'center',
-      borderRadius: border.Radius['rounded-full'],
+  },
+  textBadgeContainer: {
+    minHeight: theme.Misc.Badge.badgeHeight,
+    minWidth: theme.Misc.Badge.badgeMinWidth,
+    paddingHorizontal: theme.Misc.Badge.badgePaddingX,
+    paddingVertical: theme.Misc.Badge.badgePaddingY,
+    justifyContent: 'center',
+    borderRadius: theme.Misc.Badge.badgeBorderRadius,
+    variants: {
+      size: {
+        small: {},
+        medium: {
+          minHeight: theme.Misc.Badge.badgeLgHeight,
+          minWidth: theme.Misc.Badge.badgeLgMinWidth,
+          paddingHorizontal: theme.Misc.Badge.badgeLgPaddingX,
+          paddingVertical: theme.Misc.Badge.badgeLgPaddingY,
+        },
+        large: {
+          minHeight: theme.Misc.Badge.badgeXlHeight,
+          minWidth: theme.Misc.Badge.badgeXlMinWidth,
+          paddingHorizontal: theme.Misc.Badge.badgeXlPaddingX,
+          paddingVertical: theme.Misc.Badge.badgeXlPaddingY,
+        },
+      },
     },
-    textBadge: {
-      color: theme.Misc.Badge.badgeTextColor,
-      fontSize: typography.Size['text-xs'],
-      includeFontPadding: false,
-      verticalAlign: 'middle',
-      fontFamily: fonts.primary,
+  },
+  textBadge: {
+    color: theme.Misc.Badge.badgeTextColor,
+    fontSize: theme.Misc.Badge.badgeFontSize,
+    includeFontPadding: false,
+    verticalAlign: 'middle',
+    fontFamily: fonts.primary,
+    variants: {
+      size: {
+        small: {},
+        medium: { fontSize: theme.Misc.Badge.badgeLgFontSize },
+        large: { fontSize: theme.Misc.Badge.badgeXlFontSize },
+      },
     },
-    hiddenContainer: {
-      width: Dimensions.get('window').width,
-      height: 0,
-      flexDirection: 'row',
-      position: 'absolute',
-    },
-  })
-)
+  },
+  hiddenContainer: {
+    width: Dimensions.get('window').width,
+    height: 0,
+    flexDirection: 'row',
+    position: 'absolute',
+  },
+}))

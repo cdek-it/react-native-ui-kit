@@ -5,8 +5,9 @@ import { Badge } from './Badge'
 const meta: Meta<typeof Badge> = {
   title: 'Misc/Badge',
   component: Badge,
-  args: { severity: 'basic', dot: false, children: 'Test' },
+  args: { severity: 'basic', dot: false, children: 'Test', size: 'small' },
   argTypes: {
+    size: { control: 'radio', options: ['small', 'medium', 'large'] },
     severity: {
       control: 'radio',
       options: ['basic', 'info', 'success', 'warning', 'danger'],
