@@ -1706,10 +1706,12 @@ exports[`Avatar component tests With badge, showBadge: true 1`] = `
                 "backgroundColor": "#44e858",
               },
               {
-                "borderRadius": 100,
-                "height": 21,
+                "borderRadius": 999,
                 "justifyContent": "center",
+                "minHeight": 21,
+                "minWidth": 21,
                 "paddingHorizontal": 7,
+                "paddingVertical": 3.5,
               },
             ]
           }

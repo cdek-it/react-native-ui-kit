@@ -171,10 +171,12 @@ exports[`TabItem component tests active: label, badge 1`] = `
               "backgroundColor": "#44e858",
             },
             {
-              "borderRadius": 100,
-              "height": 21,
+              "borderRadius": 999,
               "justifyContent": "center",
+              "minHeight": 21,
+              "minWidth": 21,
               "paddingHorizontal": 7,
+              "paddingVertical": 3.5,
             },
           ]
         }
@@ -611,10 +613,12 @@ exports[`TabItem component tests active: label, icon, badge 1`] = `
               "backgroundColor": "#44e858",
             },
             {
-              "borderRadius": 100,
-              "height": 21,
+              "borderRadius": 999,
               "justifyContent": "center",
+              "minHeight": 21,
+              "minWidth": 21,
               "paddingHorizontal": 7,
+              "paddingVertical": 3.5,
             },
           ]
         }
@@ -933,10 +937,12 @@ exports[`TabItem component tests disabled: label, badge 1`] = `
               "backgroundColor": "#44e858",
             },
             {
-              "borderRadius": 100,
-              "height": 21,
+              "borderRadius": 999,
               "justifyContent": "center",
+              "minHeight": 21,
+              "minWidth": 21,
               "paddingHorizontal": 7,
+              "paddingVertical": 3.5,
             },
           ]
         }
@@ -1375,10 +1381,12 @@ exports[`TabItem component tests disabled: label, icon, badge 1`] = `
               "backgroundColor": "#44e858",
             },
             {
-              "borderRadius": 100,
-              "height": 21,
+              "borderRadius": 999,
               "justifyContent": "center",
+              "minHeight": 21,
+              "minWidth": 21,
               "paddingHorizontal": 7,
+              "paddingVertical": 3.5,
             },
           ]
         }
@@ -1603,10 +1611,12 @@ exports[`TabItem component tests label, badge 1`] = `
               "backgroundColor": "#44e858",
             },
             {
-              "borderRadius": 100,
-              "height": 21,
+              "borderRadius": 999,
               "justifyContent": "center",
+              "minHeight": 21,
+              "minWidth": 21,
               "paddingHorizontal": 7,
+              "paddingVertical": 3.5,
             },
           ]
         }
@@ -2035,10 +2045,12 @@ exports[`TabItem component tests label, icon, badge 1`] = `
               "backgroundColor": "#44e858",
             },
             {
-              "borderRadius": 100,
-              "height": 21,
+              "borderRadius": 999,
               "justifyContent": "center",
+              "minHeight": 21,
+              "minWidth": 21,
               "paddingHorizontal": 7,
+              "paddingVertical": 3.5,
             },
           ]
         }
@@ -2476,10 +2488,12 @@ exports[`Tabs component tests disabled 1`] = `
                 "backgroundColor": "#fbacaa",
               },
               {
-                "borderRadius": 100,
-                "height": 21,
+                "borderRadius": 999,
                 "justifyContent": "center",
+                "minHeight": 21,
+                "minWidth": 21,
                 "paddingHorizontal": 7,
+                "paddingVertical": 3.5,
               },
             ]
           }
@@ -2933,10 +2947,12 @@ exports[`Tabs component tests normal 1`] = `
                 "backgroundColor": "#fbacaa",
               },
               {
-                "borderRadius": 100,
-                "height": 21,
+                "borderRadius": 999,
                 "justifyContent": "center",
+                "minHeight": 21,
+                "minWidth": 21,
                 "paddingHorizontal": 7,
+                "paddingVertical": 3.5,
               },
             ]
           }
