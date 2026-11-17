@@ -15,6 +15,7 @@ import { Caption } from '../Typography'
 
 import { Tooltip as TooltipComponent } from './Tooltip'
 import { TooltipProvider } from './TooltipProvider'
+import { TooltipOverview } from './stories/TooltipOverview'
 import type { TooltipPosition, TooltipProps } from './types'
 
 type StoryArgs = Omit<TooltipProps, 'anchorRef' | 'isVisible' | 'position'>
@@ -164,6 +165,10 @@ const meta: Meta<StoryArgs> = {
 }
 
 export default meta
+
+export const Overview: StoryObj<StoryArgs> = {
+  render: () => <TooltipOverview text={sampleText} />,
+}
 
 export const Tooltip: StoryObj<StoryArgs> = {
   parameters: { controls: { include: ['text'] } },
