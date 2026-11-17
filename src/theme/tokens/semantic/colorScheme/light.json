@@ -225,6 +225,10 @@
         "success": { "default": "#44e858", "strong": "#1dc831" },
         "help": { "strong": "#9333ea" }
       }
+    },
+    "shadow": {
+      "default": "rgba(0, 0, 0, 0.1000)",
+      "subtle": "rgba(0, 0, 0, 0.05)"
     }
   }
 }
