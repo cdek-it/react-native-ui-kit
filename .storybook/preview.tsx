@@ -1,6 +1,7 @@
 import type { Preview } from '@storybook/react'
 import { StyleSheet } from 'react-native-unistyles'
 import { View } from 'react-native'
+import { TooltipProvider } from '../src/components/Tooltip'
 
 import { StorybookToolbar } from './StorybookToolbar'
 
@@ -9,9 +10,11 @@ const preview: Preview = {
     (Story) => (
       <>
         <StorybookToolbar />
-        <View style={styles.container}>
-          <Story />
-        </View>
+        <TooltipProvider>
+          <View style={styles.container}>
+            <Story />
+          </View>
+        </TooltipProvider>
       </>
     ),
   ],
