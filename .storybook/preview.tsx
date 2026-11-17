@@ -7,16 +7,26 @@ import { StorybookToolbar } from './StorybookToolbar'
 
 const preview: Preview = {
   decorators: [
-    (Story) => (
-      <>
-        <StorybookToolbar />
-        <TooltipProvider>
-          <View style={styles.container}>
-            <Story />
-          </View>
-        </TooltipProvider>
-      </>
-    ),
+    (Story, context) => {
+      const componentName = context.title.substring(
+        context.title.lastIndexOf('/') + 1
+      )
+      const title =
+        componentName === context.name
+          ? componentName
+          : `${componentName} · ${context.name}`
+
+      return (
+        <>
+          <StorybookToolbar title={title} />
+          <TooltipProvider>
+            <View style={styles.container}>
+              <Story />
+            </View>
+          </TooltipProvider>
+        </>
+      )
+    },
   ],
   parameters: {
     options: {
