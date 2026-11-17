@@ -11,7 +11,7 @@ const THEME_TOGGLE_LABELS = {
   dark: 'Включить светлую тему',
 }
 
-export const StorybookToolbar = () => {
+export const StorybookToolbar = ({ title }: { readonly title: string }) => {
   const { theme, rt } = useUnistyles()
   const isDark = rt.themeName === 'dark'
   const ThemeIcon = isDark ? IconSun : IconMoon
@@ -24,7 +24,9 @@ export const StorybookToolbar = () => {
 
   return (
     <View style={styles.toolbar}>
-      <Text style={styles.title}>Storybook</Text>
+      <Text numberOfLines={1} style={styles.title}>
+        {title}
+      </Text>
       <Pressable
         accessibilityRole='button'
         accessibilityLabel={THEME_TOGGLE_LABELS[isDark ? 'dark' : 'light']}
