@@ -5,6 +5,7 @@ import type {
   TextInputProps,
   TextStyle,
   ViewStyle,
+  View,
   PressableProps,
 } from 'react-native'
 
@@ -14,6 +15,8 @@ export type InputState = 'default' | 'danger'
 export type RenderTextInputArgs = TextInputProps & { inputRef: Ref<TextInput> }
 
 export interface InputLabelInfo {
+  /** Ссылка на native View иконки ⓘ, например для якоря Tooltip. */
+  iconRef?: Ref<View>
   /** Обработчик нажатия на label с иконкой ⓘ */
   onPress: NonNullable<PressableProps['onPress']>
   /**

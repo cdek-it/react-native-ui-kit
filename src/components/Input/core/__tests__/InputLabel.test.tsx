@@ -1,4 +1,6 @@
 import { render, userEvent } from '@testing-library/react-native'
+import { createRef } from 'react'
+import type { View } from 'react-native'
 
 import { InputCaption, InputText, InputGroup, Password } from '../..'
 
@@ -59,11 +61,16 @@ describe('Input: подпись', () => {
     'объединяет label и иконку в одну кнопку при добавлении info в $name',
     async ({ Component }) => {
       const onPress = jest.fn()
+      const iconRef = createRef<View>()
       const { getByRole, getAllByRole, getByLabelText, queryByRole, rerender } =
         render(<Component label='Email' testID='InputLabel' />)
 
       rerender(
-        <Component label='Email' labelInfo={{ onPress }} testID='InputLabel' />
+        <Component
+          label='Email'
+          labelInfo={{ onPress, iconRef }}
+          testID='InputLabel'
+        />
       )
 
       const button = getByRole('button', { name: 'Email. Подробнее' })
@@ -72,6 +79,7 @@ describe('Input: подпись', () => {
         1
       )
       expect(button).toHaveProp('testID', 'InputLabelLabelInfo')
+      expect(typeof iconRef.current?.measure).toBe('function')
       expect(queryByRole('text', { name: 'Email' })).toBeNull()
       expect(getByLabelText('Email')).toHaveDisplayValue('')
 
@@ -81,6 +89,7 @@ describe('Input: подпись', () => {
 
       rerender(<Component label='Email' testID='InputLabel' />)
 
+      expect(iconRef.current).toBeNull()
       expect(queryByRole('button', { name: 'Email. Подробнее' })).toBeNull()
       expect(getByLabelText('Email')).toHaveDisplayValue('')
     }
