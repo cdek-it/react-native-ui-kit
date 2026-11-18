@@ -1,7 +1,7 @@
 import { IconLock } from '@tabler/icons-react-native'
 import { memo, useMemo } from 'react'
 
-import { View } from 'react-native'
+import { View, type ColorValue } from 'react-native'
 
 import { StyleSheet } from 'react-native-unistyles'
 
@@ -12,13 +12,15 @@ export interface MenuItemAccessoryProps {
   readonly Icon: SvgSource
   /** Неактивное состояние. Если true, заменяет Icon на иконку замка. */
   readonly disabled?: boolean
+  /** Цвет аксессуара для текущего состояния родительского пункта меню. */
+  readonly color?: ColorValue
 }
 
 /**
  * Аксессуар элемента меню. Выводится в крайней левой или крайней правой позиции пункта меню.
  */
 export const MenuItemAccessory = memo<MenuItemAccessoryProps>(
-  ({ Icon, disabled }) => {
+  ({ Icon, disabled, color }) => {
     const IconComponent = useMemo(
       () => (disabled ? IconLock : Icon),
       [Icon, disabled]
@@ -27,11 +29,12 @@ export const MenuItemAccessory = memo<MenuItemAccessoryProps>(
     return (
       <View style={styles.container}>
         <SvgUniversal
-          {...styles.icon}
+          height={styles.icon.height}
           source={IconComponent}
           uniProps={({ theme }) => ({
-            color: theme.Menu.Item.menuitemIconColor,
+            color: color ?? theme.Menu.Item.menuitemIconColor,
           })}
+          width={styles.icon.width}
         />
       </View>
     )

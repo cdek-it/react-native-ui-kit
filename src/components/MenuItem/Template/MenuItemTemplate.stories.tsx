@@ -23,11 +23,11 @@ const meta: Meta<typeof MenuItemTemplate> = {
   args: {
     title: 'Menu Item',
     Icon: undefined,
-    iconColor: 'rgba(0, 0, 0, 0.8000)',
     badgeSeverity: undefined,
     caption: 'Caption',
     separator: false,
     disabled: false,
+    selected: false,
     extra: undefined,
   },
   argTypes: {
@@ -42,16 +42,20 @@ const meta: Meta<typeof MenuItemTemplate> = {
       mapping: Icons,
     },
     Icon: { control: 'select', options: Object.keys(Icons), mapping: Icons },
-    iconColor: { control: { type: 'color' } },
     badgeSeverity: {
       control: 'radio',
       options: ['undefined', 'basic', 'info', 'success', 'warning', 'danger'],
     },
     title: { control: 'text' },
     separator: { control: 'boolean' },
+    selected: {
+      control: 'boolean',
+      description: 'Выбранный пункт меню, управляемый через selected',
+    },
     extra: { control: 'select', options: Object.keys(Extras), mapping: Extras },
     onPress: { action: 'pressed' },
   },
+  parameters: { controls: { exclude: ['iconColor'] } },
   decorators: [
     (Story) => (
       <View style={{ padding: 16 }}>
@@ -66,26 +70,7 @@ export default meta
 type Story = StoryObj<typeof MenuItemTemplate>
 
 const MenuItemTemplateStory: Story = {
-  args: { title: 'Menu item template' },
+  args: { title: 'MenuItemTemplate' },
   argTypes: {},
-  parameters: {
-    notes: `
-      #### Элемент меню - полный набор свойств
-
-      <MenuItemTemplate
-        title="Menu item title"
-        caption="Menu item subtitle"
-        Icon={IconUser}
-        iconColor="#ff0000"
-        badgeSeverity="warning"
-        prefix="down"
-        suffix="right"
-        extra={IconDiamond}
-        separator={false}
-        disabled={false}
-        onPress={() => console.log("Menu item pressed)}
-      />
-  `,
-  },
 }
 export { MenuItemTemplateStory as MenuItemTemplate }

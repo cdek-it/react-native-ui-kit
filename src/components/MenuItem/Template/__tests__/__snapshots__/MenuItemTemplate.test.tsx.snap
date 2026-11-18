@@ -19,7 +19,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
         "checked": undefined,
         "disabled": true,
         "expanded": undefined,
-        "selected": undefined,
+        "selected": false,
       }
     }
     accessibilityValue={
@@ -45,16 +45,13 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
     style={
       [
         {
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "#ffffff00",
+          "borderColor": "#ffffff00",
           "borderRadius": 7,
           "borderWidth": 1,
         },
-        false,
         undefined,
         {
-          "backgroundColor": "#e2e2e4",
-          "borderColor": "#a2a5a9",
           "opacity": 0.6,
         },
       ]
@@ -102,7 +99,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
               meetOrSlice={0}
               minX={0}
               minY={0}
-              stroke="#181a1f"
+              stroke="#2b2e33"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
@@ -138,7 +135,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
                 }
                 stroke={
                   {
-                    "payload": 4279769631,
+                    "payload": 4281019955,
                     "type": 0,
                   }
                 }
@@ -160,7 +157,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
                   }
                   stroke={
                     {
-                      "payload": 4279769631,
+                      "payload": 4281019955,
                       "type": 0,
                     }
                   }
@@ -183,7 +180,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
                   }
                   stroke={
                     {
-                      "payload": 4279769631,
+                      "payload": 4281019955,
                       "type": 0,
                     }
                   }
@@ -260,7 +257,9 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
                 undefined,
                 undefined,
                 undefined,
-                undefined,
+                {
+                  "color": "#2b2e33",
+                },
               ]
             }
             testID="Body"
@@ -279,11 +278,13 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
                   "verticalAlign": "middle",
                 },
                 {
-                  "color": "#85888e",
+                  "color": "#181a1f",
                 },
                 undefined,
                 undefined,
-                undefined,
+                {
+                  "color": "#85888e",
+                },
               ]
             }
             testID="CaptionText"
@@ -405,7 +406,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
           meetOrSlice={0}
           minX={0}
           minY={0}
-          stroke="#181a1f"
+          stroke="#2b2e33"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
@@ -441,7 +442,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
             }
             stroke={
               {
-                "payload": 4279769631,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -463,7 +464,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
               }
               stroke={
                 {
-                  "payload": 4279769631,
+                  "payload": 4281019955,
                   "type": 0,
                 }
               }
@@ -486,7 +487,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
               }
               stroke={
                 {
-                  "payload": 4279769631,
+                  "payload": 4281019955,
                   "type": 0,
                 }
               }
@@ -509,7 +510,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate full disabled 1`] = `
               }
               stroke={
                 {
-                  "payload": 4279769631,
+                  "payload": 4281019955,
                   "type": 0,
                 }
               }
@@ -537,9 +538,9 @@ exports[`MenuItemTemplate tests MenuItemTemplate minimal config 1`] = `
       {
         "busy": undefined,
         "checked": undefined,
-        "disabled": undefined,
+        "disabled": false,
         "expanded": undefined,
-        "selected": undefined,
+        "selected": false,
       }
     }
     accessibilityValue={
@@ -565,12 +566,11 @@ exports[`MenuItemTemplate tests MenuItemTemplate minimal config 1`] = `
     style={
       [
         {
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "#ffffff00",
+          "borderColor": "#ffffff00",
           "borderRadius": 7,
           "borderWidth": 1,
         },
-        false,
         undefined,
         undefined,
       ]
@@ -626,7 +626,9 @@ exports[`MenuItemTemplate tests MenuItemTemplate minimal config 1`] = `
                 undefined,
                 undefined,
                 undefined,
-                undefined,
+                {
+                  "color": "#2b2e33",
+                },
               ]
             }
             testID="Body"
@@ -651,9 +653,9 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
       {
         "busy": undefined,
         "checked": undefined,
-        "disabled": undefined,
+        "disabled": false,
         "expanded": undefined,
-        "selected": undefined,
+        "selected": false,
       }
     }
     accessibilityValue={
@@ -679,12 +681,11 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
     style={
       [
         {
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "#ffffff00",
+          "borderColor": "#ffffff00",
           "borderRadius": 7,
           "borderWidth": 1,
         },
-        false,
         undefined,
         undefined,
       ]
@@ -719,7 +720,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
           meetOrSlice={0}
           minX={0}
           minY={0}
-          stroke="#181a1f"
+          stroke="#2b2e33"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
@@ -755,7 +756,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
             }
             stroke={
               {
-                "payload": 4279769631,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -777,7 +778,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
               }
               stroke={
                 {
-                  "payload": 4279769631,
+                  "payload": 4281019955,
                   "type": 0,
                 }
               }
@@ -827,7 +828,9 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
                 undefined,
                 undefined,
                 undefined,
-                undefined,
+                {
+                  "color": "#2b2e33",
+                },
               ]
             }
             testID="Body"
@@ -846,11 +849,13 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
                   "verticalAlign": "middle",
                 },
                 {
-                  "color": "#85888e",
+                  "color": "#181a1f",
                 },
                 undefined,
                 undefined,
-                undefined,
+                {
+                  "color": "#85888e",
+                },
               ]
             }
             testID="CaptionText"
@@ -876,7 +881,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
           meetOrSlice={0}
           minX={0}
           minY={0}
-          stroke="#181a1f"
+          stroke="#2b2e33"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
@@ -912,7 +917,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
             }
             stroke={
               {
-                "payload": 4279769631,
+                "payload": 4281019955,
                 "type": 0,
               }
             }
@@ -934,7 +939,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
               }
               stroke={
                 {
-                  "payload": 4279769631,
+                  "payload": 4281019955,
                   "type": 0,
                 }
               }
@@ -945,235 +950,6 @@ exports[`MenuItemTemplate tests MenuItemTemplate prefix,suffix = right 1`] = `
             />
           </RNSVGGroup>
         </RNSVGSvgView>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`MenuItemTemplate tests MenuItemTemplate with colored icon 1`] = `
-<View
-  style={null}
->
-  <View
-    accessibilityLabel="Menu Item"
-    accessibilityRole="button"
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
-    accessibilityValue={
-      {
-        "max": undefined,
-        "min": undefined,
-        "now": undefined,
-        "text": undefined,
-      }
-    }
-    accessible={true}
-    collapsable={false}
-    focusable={true}
-    onBlur={[Function]}
-    onClick={[Function]}
-    onFocus={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      [
-        {
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
-          "borderRadius": 7,
-          "borderWidth": 1,
-        },
-        false,
-        undefined,
-        undefined,
-      ]
-    }
-    testID="menuItemButton"
-  >
-    <View
-      style={
-        {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "gap": 7,
-          "paddingHorizontal": 10.5,
-          "paddingVertical": 7,
-        }
-      }
-    >
-      <View
-        style={
-          {
-            "flex": 1,
-            "flexDirection": "row",
-            "gap": 7,
-          }
-        }
-      >
-        <View
-          style={
-            {
-              "height": 17.5,
-              "justifyContent": "center",
-              "position": "relative",
-              "width": 17.5,
-            }
-          }
-        >
-          <View>
-            <RNSVGSvgView
-              align="xMidYMid"
-              bbHeight={17.5}
-              bbWidth={17.5}
-              fill="none"
-              focusable={false}
-              height={17.5}
-              meetOrSlice={0}
-              minX={0}
-              minY={0}
-              stroke="red"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              style={
-                [
-                  {
-                    "backgroundColor": "transparent",
-                    "borderWidth": 0,
-                  },
-                  {
-                    "flex": 0,
-                    "height": 17,
-                    "width": 17,
-                  },
-                ]
-              }
-              testID="SvgUniversalComponent"
-              vbHeight={24}
-              vbWidth={24}
-              width={17.5}
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <RNSVGGroup
-                fill={null}
-                propList={
-                  [
-                    "fill",
-                    "stroke",
-                    "strokeWidth",
-                    "strokeLinecap",
-                    "strokeLinejoin",
-                  ]
-                }
-                stroke={
-                  {
-                    "payload": 4294901760,
-                    "type": 0,
-                  }
-                }
-                strokeLinecap={1}
-                strokeLinejoin={1}
-                strokeWidth={2}
-              >
-                <RNSVGPath
-                  d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
-                  fill={null}
-                  propList={
-                    [
-                      "fill",
-                      "stroke",
-                      "strokeWidth",
-                      "strokeLinecap",
-                      "strokeLinejoin",
-                    ]
-                  }
-                  stroke={
-                    {
-                      "payload": 4294901760,
-                      "type": 0,
-                    }
-                  }
-                  strokeLinecap={1}
-                  strokeLinejoin={1}
-                  strokeWidth={2}
-                  testID="SvgUniversalComponent"
-                />
-                <RNSVGPath
-                  d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
-                  fill={null}
-                  propList={
-                    [
-                      "fill",
-                      "stroke",
-                      "strokeWidth",
-                      "strokeLinecap",
-                      "strokeLinejoin",
-                    ]
-                  }
-                  stroke={
-                    {
-                      "payload": 4294901760,
-                      "type": 0,
-                    }
-                  }
-                  strokeLinecap={1}
-                  strokeLinejoin={1}
-                  strokeWidth={2}
-                  testID="SvgUniversalComponent"
-                />
-              </RNSVGGroup>
-            </RNSVGSvgView>
-          </View>
-        </View>
-        <View
-          style={
-            {
-              "flex": 1,
-              "gap": 3.5,
-            }
-          }
-        >
-          <Text
-            style={
-              [
-                {
-                  "fontFamily": "Noto Sans",
-                  "includeFontPadding": false,
-                  "verticalAlign": "middle",
-                },
-                {
-                  "fontWeight": 400,
-                },
-                {
-                  "color": "#181a1f",
-                },
-                {
-                  "fontSize": 12.25,
-                  "lineHeight": 18,
-                },
-                undefined,
-                undefined,
-                undefined,
-                undefined,
-              ]
-            }
-            testID="Body"
-          >
-            Menu Item
-          </Text>
-        </View>
       </View>
     </View>
   </View>
@@ -1191,9 +967,9 @@ exports[`MenuItemTemplate tests MenuItemTemplate with extra 1`] = `
       {
         "busy": undefined,
         "checked": undefined,
-        "disabled": undefined,
+        "disabled": false,
         "expanded": undefined,
-        "selected": undefined,
+        "selected": false,
       }
     }
     accessibilityValue={
@@ -1219,12 +995,11 @@ exports[`MenuItemTemplate tests MenuItemTemplate with extra 1`] = `
     style={
       [
         {
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "#ffffff00",
+          "borderColor": "#ffffff00",
           "borderRadius": 7,
           "borderWidth": 1,
         },
-        false,
         undefined,
         undefined,
       ]
@@ -1280,7 +1055,9 @@ exports[`MenuItemTemplate tests MenuItemTemplate with extra 1`] = `
                 undefined,
                 undefined,
                 undefined,
-                undefined,
+                {
+                  "color": "#2b2e33",
+                },
               ]
             }
             testID="Body"
@@ -1401,9 +1178,9 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
       {
         "busy": undefined,
         "checked": undefined,
-        "disabled": undefined,
+        "disabled": false,
         "expanded": undefined,
-        "selected": undefined,
+        "selected": false,
       }
     }
     accessibilityValue={
@@ -1429,12 +1206,11 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
     style={
       [
         {
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "#ffffff00",
+          "borderColor": "#ffffff00",
           "borderRadius": 7,
           "borderWidth": 1,
         },
-        false,
         undefined,
         undefined,
       ]
@@ -1482,7 +1258,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
               meetOrSlice={0}
               minX={0}
               minY={0}
-              stroke="#181a1f"
+              stroke="#2b2e33"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
@@ -1518,7 +1294,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
                 }
                 stroke={
                   {
-                    "payload": 4279769631,
+                    "payload": 4281019955,
                     "type": 0,
                   }
                 }
@@ -1540,7 +1316,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
                   }
                   stroke={
                     {
-                      "payload": 4279769631,
+                      "payload": 4281019955,
                       "type": 0,
                     }
                   }
@@ -1563,7 +1339,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
                   }
                   stroke={
                     {
-                      "payload": 4279769631,
+                      "payload": 4281019955,
                       "type": 0,
                     }
                   }
@@ -1605,7 +1381,9 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon 1`] = `
                 undefined,
                 undefined,
                 undefined,
-                undefined,
+                {
+                  "color": "#2b2e33",
+                },
               ]
             }
             testID="Body"
@@ -1630,9 +1408,9 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
       {
         "busy": undefined,
         "checked": undefined,
-        "disabled": undefined,
+        "disabled": false,
         "expanded": undefined,
-        "selected": undefined,
+        "selected": false,
       }
     }
     accessibilityValue={
@@ -1658,12 +1436,11 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
     style={
       [
         {
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "#ffffff00",
+          "borderColor": "#ffffff00",
           "borderRadius": 7,
           "borderWidth": 1,
         },
-        false,
         undefined,
         undefined,
       ]
@@ -1711,7 +1488,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
               meetOrSlice={0}
               minX={0}
               minY={0}
-              stroke="#181a1f"
+              stroke="#2b2e33"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
@@ -1747,7 +1524,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
                 }
                 stroke={
                   {
-                    "payload": 4279769631,
+                    "payload": 4281019955,
                     "type": 0,
                   }
                 }
@@ -1769,7 +1546,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
                   }
                   stroke={
                     {
-                      "payload": 4279769631,
+                      "payload": 4281019955,
                       "type": 0,
                     }
                   }
@@ -1792,7 +1569,7 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
                   }
                   stroke={
                     {
-                      "payload": 4279769631,
+                      "payload": 4281019955,
                       "type": 0,
                     }
                   }
@@ -1869,7 +1646,9 @@ exports[`MenuItemTemplate tests MenuItemTemplate with icon and badge 1`] = `
                 undefined,
                 undefined,
                 undefined,
-                undefined,
+                {
+                  "color": "#2b2e33",
+                },
               ]
             }
             testID="Body"
@@ -1894,9 +1673,9 @@ exports[`MenuItemTemplate tests MenuItemTemplate with padding 1`] = `
       {
         "busy": undefined,
         "checked": undefined,
-        "disabled": undefined,
+        "disabled": false,
         "expanded": undefined,
-        "selected": undefined,
+        "selected": false,
       }
     }
     accessibilityValue={
@@ -1922,12 +1701,11 @@ exports[`MenuItemTemplate tests MenuItemTemplate with padding 1`] = `
     style={
       [
         {
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "#ffffff00",
+          "borderColor": "#ffffff00",
           "borderRadius": 7,
           "borderWidth": 1,
         },
-        false,
         {
           "paddingBottom": 2,
           "paddingTop": 2,
@@ -1986,7 +1764,9 @@ exports[`MenuItemTemplate tests MenuItemTemplate with padding 1`] = `
                 undefined,
                 undefined,
                 undefined,
-                undefined,
+                {
+                  "color": "#2b2e33",
+                },
               ]
             }
             testID="Body"
@@ -2017,9 +1797,9 @@ exports[`MenuItemTemplate tests MenuItemTemplate with separator 1`] = `
       {
         "busy": undefined,
         "checked": undefined,
-        "disabled": undefined,
+        "disabled": false,
         "expanded": undefined,
-        "selected": undefined,
+        "selected": false,
       }
     }
     accessibilityValue={
@@ -2045,12 +1825,11 @@ exports[`MenuItemTemplate tests MenuItemTemplate with separator 1`] = `
     style={
       [
         {
-          "backgroundColor": "rgba(255, 255, 255, 0.0001)",
-          "borderColor": "rgba(255, 255, 255, 0.0001)",
+          "backgroundColor": "#ffffff00",
+          "borderColor": "#ffffff00",
           "borderRadius": 7,
           "borderWidth": 1,
         },
-        false,
         undefined,
         undefined,
       ]
@@ -2106,7 +1885,239 @@ exports[`MenuItemTemplate tests MenuItemTemplate with separator 1`] = `
                 undefined,
                 undefined,
                 undefined,
+                {
+                  "color": "#2b2e33",
+                },
+              ]
+            }
+            testID="Body"
+          >
+            Menu Item
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`MenuItemTemplate tests MenuItemTemplate не применяет устаревший iconColor 1`] = `
+<View
+  style={null}
+>
+  <View
+    accessibilityLabel="Menu Item"
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": false,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "backgroundColor": "#ffffff00",
+          "borderColor": "#ffffff00",
+          "borderRadius": 7,
+          "borderWidth": 1,
+        },
+        undefined,
+        undefined,
+      ]
+    }
+    testID="menuItemButton"
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 7,
+          "paddingHorizontal": 10.5,
+          "paddingVertical": 7,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "flex": 1,
+            "flexDirection": "row",
+            "gap": 7,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "height": 17.5,
+              "justifyContent": "center",
+              "position": "relative",
+              "width": 17.5,
+            }
+          }
+        >
+          <View>
+            <RNSVGSvgView
+              align="xMidYMid"
+              bbHeight={17.5}
+              bbWidth={17.5}
+              fill="none"
+              focusable={false}
+              height={17.5}
+              meetOrSlice={0}
+              minX={0}
+              minY={0}
+              stroke="#2b2e33"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              style={
+                [
+                  {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  {
+                    "flex": 0,
+                    "height": 17,
+                    "width": 17,
+                  },
+                ]
+              }
+              testID="SvgUniversalComponent"
+              vbHeight={24}
+              vbWidth={24}
+              width={17.5}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <RNSVGGroup
+                fill={null}
+                propList={
+                  [
+                    "fill",
+                    "stroke",
+                    "strokeWidth",
+                    "strokeLinecap",
+                    "strokeLinejoin",
+                  ]
+                }
+                stroke={
+                  {
+                    "payload": 4281019955,
+                    "type": 0,
+                  }
+                }
+                strokeLinecap={1}
+                strokeLinejoin={1}
+                strokeWidth={2}
+              >
+                <RNSVGPath
+                  d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+                  fill={null}
+                  propList={
+                    [
+                      "fill",
+                      "stroke",
+                      "strokeWidth",
+                      "strokeLinecap",
+                      "strokeLinejoin",
+                    ]
+                  }
+                  stroke={
+                    {
+                      "payload": 4281019955,
+                      "type": 0,
+                    }
+                  }
+                  strokeLinecap={1}
+                  strokeLinejoin={1}
+                  strokeWidth={2}
+                  testID="SvgUniversalComponent"
+                />
+                <RNSVGPath
+                  d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"
+                  fill={null}
+                  propList={
+                    [
+                      "fill",
+                      "stroke",
+                      "strokeWidth",
+                      "strokeLinecap",
+                      "strokeLinejoin",
+                    ]
+                  }
+                  stroke={
+                    {
+                      "payload": 4281019955,
+                      "type": 0,
+                    }
+                  }
+                  strokeLinecap={1}
+                  strokeLinejoin={1}
+                  strokeWidth={2}
+                  testID="SvgUniversalComponent"
+                />
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "flex": 1,
+              "gap": 3.5,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Noto Sans",
+                  "includeFontPadding": false,
+                  "verticalAlign": "middle",
+                },
+                {
+                  "fontWeight": 400,
+                },
+                {
+                  "color": "#181a1f",
+                },
+                {
+                  "fontSize": 12.25,
+                  "lineHeight": 18,
+                },
                 undefined,
+                undefined,
+                undefined,
+                {
+                  "color": "#2b2e33",
+                },
               ]
             }
             testID="Body"

@@ -1,4 +1,4 @@
-import { memo, useCallback, useMemo, type ReactNode } from 'react'
+import { memo, useCallback, useState, type ReactNode } from 'react'
 import {
   View,
   Pressable,
@@ -9,7 +9,7 @@ import {
   type ViewStyle,
 } from 'react-native'
 
-import { StyleSheet } from 'react-native-unistyles'
+import { StyleSheet, useUnistyles } from 'react-native-unistyles'
 
 import type { SvgSource } from '../../../utils/SvgUniversal'
 import type { BadgeSeverity } from '../../Badge/Badge'
@@ -24,7 +24,10 @@ export interface MenuItemTemplateProps extends ViewProps {
   caption?: string
   /** SVG-иконка слева от заголовка */
   Icon?: SvgSource
-  /** Цвет иконки. Если цвет не задан - применяется такой же цвет что и для аксессуаров (prefix, suffix) */
+  /**
+   * @deprecated Цвет основной иконки определяется состоянием пункта меню, как у аксессуаров.
+   * Переданное значение игнорируется.
+   */
   iconColor?: ColorValue
   /** Цвет бейджа (точки) в правом верхнем углу иконки. Бейдж может выводиться только при наличии иконки. */
   badgeSeverity?: BadgeSeverity
@@ -36,8 +39,17 @@ export interface MenuItemTemplateProps extends ViewProps {
    * Дополнительный контент пункта меню, выводится справа от текста. Может быть любым react компонентом. Важно! Размеры доплолнительного контента не контролируются пунктом меню и могут его растягивать. Использовать с осторожностью.
    */
   extra?: ReactNode
-  /** Неактивное состояние. В неактивном состоянии отключается чувствительность к нажатиям, компонент становится полупрозрачным, а аксессуары заменяются иконкой с замком*/
+  /**
+   * Отключает нажатия и визуальное выделение, применяет обычные цвета с непрозрачностью 60%.
+   * Аксессуары заменяются замками. Значение selected сохраняется в доступном состоянии.
+   */
   disabled?: boolean
+  /**
+   * Выбранное состояние пункта, по умолчанию false.
+   * Управляется потребителем и не меняется автоматически при нажатии.
+   * Имеет приоритет над accessibilityState.selected и aria-selected.
+   */
+  selected?: boolean
   /** Разделитель. Выводится как полоска сверху. Изменяет общую высоту элемента меню.*/
   separator?: boolean
   /** Обработчик нажатия */
@@ -51,16 +63,20 @@ export interface MenuItemTemplateProps extends ViewProps {
 }
 
 /**
- * Шаблон элемента меню. Содержит максимальное количество компонентов внутри пункта меню и используется как основа для создания пунктов меню любой возможной конфигурации.
+ * Шаблон пункта меню с иконками, подписью и дополнительным содержимым.
+ * Цвета текста, основной иконки и аксессуаров задаются темой по текущему состоянию.
+ * Отслеживает нативный фокус и отображает выбранность из selected.
+ * Нажатие вызывает onPress; accessibilityState.selected формируется из selected.
  *
- * @link https://www.figma.com/design/4TYeki0MDLhfPGJstbIicf/UI-kit-PrimeFace-(DS)?node-id=937-6724&m=dev
+ * @see https://www.figma.com/design/HOLKdvQJ8jCLeX17s9d0Yf/UI-Kit--DS--v2.0?node-id=937-6724
  */
 export const MenuItemTemplate = memo<MenuItemTemplateProps>(
   ({
     title,
     caption,
     Icon,
-    iconColor,
+    // eslint-disable-next-line @typescript-eslint/no-deprecated -- исключаем устаревший проп из нативных props
+    iconColor: _iconColor,
     badgeSeverity,
     PrefixIcon,
     SuffixIcon,
@@ -68,27 +84,53 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
     separator,
     testID,
     onPress,
+    onFocus,
+    onBlur,
     disabled,
+    selected = false,
+    accessibilityState,
     style,
     ...rest
   }) => {
-    const iconStyle = useMemo(
-      () => ({
-        width: styles.icon.width,
-        height: styles.icon.height,
-        color: iconColor || styles.icon.color,
-      }),
-      [iconColor]
+    const { theme } = useUnistyles()
+    const [focused, setFocused] = useState(false)
+    const item = theme.theme.Menu.Item
+    const handleFocus = useCallback<NonNullable<ViewProps['onFocus']>>(
+      (event) => {
+        setFocused(true)
+        onFocus?.(event)
+      },
+      [onFocus]
+    )
+    const handleBlur = useCallback<NonNullable<ViewProps['onBlur']>>(
+      (event) => {
+        setFocused(false)
+        onBlur?.(event)
+      },
+      [onBlur]
+    )
+    const getState = useCallback(
+      (pressed: boolean): MenuItemState => {
+        if (disabled) return 'default'
+
+        if (selected) {
+          return pressed || focused ? 'selectedHighlighted' : 'selected'
+        }
+
+        if (pressed) return 'pressed'
+
+        return focused ? 'focused' : 'default'
+      },
+      [disabled, focused, selected]
     )
 
     const pressableStyle = useCallback(
       ({ pressed }: PressableStateCallbackType) => [
-        styles.container,
-        pressed && styles.containerPressed,
+        styles.container(getState(pressed)),
         style,
         disabled && styles.containerDisabled,
       ],
-      [disabled, style]
+      [disabled, getState, style]
     )
 
     return (
@@ -96,56 +138,95 @@ export const MenuItemTemplate = memo<MenuItemTemplateProps>(
         <Pressable
           accessibilityLabel={title}
           accessibilityRole='button'
+          accessibilityState={{
+            ...accessibilityState,
+            selected,
+            disabled: Boolean(disabled),
+          }}
           accessibilityValue={{ text: caption }}
           disabled={disabled}
           style={pressableStyle}
           testID={testID || 'menuItemButton'}
+          onBlur={handleBlur}
+          onFocus={handleFocus}
           onPress={onPress}
           {...rest}
+          aria-selected={selected}
         >
-          <View style={styles.contentContainer}>
-            {PrefixIcon ? (
-              <MenuItemAccessory Icon={PrefixIcon} disabled={disabled} />
-            ) : null}
-            <View style={styles.templateContainer}>
-              {Icon ? (
-                <MenuItemIcon
-                  Icon={Icon}
-                  badgeSeverity={badgeSeverity}
-                  style={iconStyle}
-                />
-              ) : null}
-              <View style={styles.textContainer}>
-                <Body size='base'>{title}</Body>
-                {caption ? (
-                  <Caption color='secondary'>{caption}</Caption>
+          {({ pressed }) => {
+            const state = getState(pressed)
+            const stateIconColor =
+              item[`${tokensByState[state].color}IconColor`]
+            const iconStyle = {
+              width: styles.icon.width,
+              height: styles.icon.height,
+              color: stateIconColor,
+            }
+
+            return (
+              <View style={styles.contentContainer}>
+                {PrefixIcon ? (
+                  <MenuItemAccessory
+                    Icon={PrefixIcon}
+                    color={stateIconColor}
+                    disabled={disabled}
+                  />
+                ) : null}
+                <View style={styles.templateContainer}>
+                  {Icon ? (
+                    <MenuItemIcon
+                      Icon={Icon}
+                      badgeSeverity={badgeSeverity}
+                      style={iconStyle}
+                    />
+                  ) : null}
+                  <View style={styles.textContainer}>
+                    <Body size='base' style={styles.title(state)}>
+                      {title}
+                    </Body>
+                    {caption ? (
+                      <Caption style={styles.caption}>{caption}</Caption>
+                    ) : null}
+                  </View>
+                </View>
+                {extra}
+                {SuffixIcon ? (
+                  <MenuItemAccessory
+                    Icon={SuffixIcon}
+                    color={stateIconColor}
+                    disabled={disabled}
+                  />
                 ) : null}
               </View>
-            </View>
-            {extra}
-            {SuffixIcon ? (
-              <MenuItemAccessory Icon={SuffixIcon} disabled={disabled} />
-            ) : null}
-          </View>
+            )
+          }}
         </Pressable>
       </View>
     )
   }
 )
 
+const tokensByState = {
+  default: { color: 'menuitem', background: 'menuitemBg' },
+  pressed: { color: 'menuitemHover', background: 'menuitemHoverBg' },
+  focused: { color: 'menuitemFocus', background: 'menuitemFocusBg' },
+  selected: { color: 'menuitemActive', background: 'menuitemActiveBg' },
+  selectedHighlighted: {
+    color: 'menuitemActive',
+    background: 'menuitemActiveHoverBg',
+  },
+} as const
+
+type MenuItemState = keyof typeof tokensByState
+
 const styles = StyleSheet.create(({ theme, spacing, typography, border }) => ({
-  container: {
+  container: (state: MenuItemState) => ({
     borderColor: theme.Menu.Item.menuitemBorderColor,
     borderWidth: border.Width.border,
     borderRadius: theme.Menu.Item.menuitemBorderRadius,
-    backgroundColor: theme.Menu.Item.menuitemBg,
-  },
-  containerPressed: { backgroundColor: theme.Menu.Item.menuitemHoverBg },
-  containerDisabled: {
-    borderColor: theme.Button.Disabled.disabledButtonBorderColor,
-    backgroundColor: theme.Button.Disabled.disabledButtonBg,
-    opacity: 0.6,
-  },
+    backgroundColor: theme.Menu.Item[tokensByState[state].background],
+  }),
+  containerDisabled: { opacity: 0.6 },
   separator: {
     borderTopWidth: 1,
     borderTopColor: theme.Menu.Overlay.overlayMenuBorderColor,
@@ -158,11 +239,10 @@ const styles = StyleSheet.create(({ theme, spacing, typography, border }) => ({
     paddingHorizontal: theme.Menu.Item.menuitemPaddingLeftRight,
     paddingVertical: theme.Menu.Item.menuitemPaddingTopBottom,
   },
-  accessory: {
-    color: theme.Menu.Item.menuitemIconColor,
-    width: theme.Menu.Item.menuitemSubmenuIconFontSize,
-    height: theme.Menu.Item.menuitemSubmenuIconFontSize,
-  },
+  title: (state: MenuItemState) => ({
+    color: theme.Menu.Item[`${tokensByState[state].color}TextColor`],
+  }),
+  caption: { color: theme.Menu.Common.menuTextColor },
   templateContainer: {
     flexDirection: 'row',
     gap: spacing.Gap['gap-2'],
@@ -171,7 +251,6 @@ const styles = StyleSheet.create(({ theme, spacing, typography, border }) => ({
   icon: {
     width: typography.Size['text-xl'],
     height: typography.Size['text-xl'],
-    color: theme.Menu.Item.menuitemIconColor,
   },
   textContainer: { gap: spacing.Gap['gap-1'], flex: 1 },
 }))
