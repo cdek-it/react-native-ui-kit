@@ -412,7 +412,7 @@
       "badgeXlMinWidth": 25,
       "badgeXlHeight": 25,
       "badgeXlFontSize": 14,
-      "badgeXlPaddingX": 10.5,
+      "badgeXlPaddingX": 7,
       "badgeXlPaddingY": 3.5,
       "badgeDotXlSize": 17.5,
       "badgeFontWeight": "bold",
