@@ -24,7 +24,7 @@ describe('MenuItemTemplate tests', () => {
     ],
     ['with icon', { title: 'Menu Item', Icon: IconUser }],
     [
-      'with colored icon',
+      'не применяет устаревший iconColor',
       { title: 'Menu Item', Icon: IconUser, iconColor: 'red' },
     ],
     [
@@ -68,20 +68,38 @@ describe('MenuItemTemplate tests', () => {
   /**
    * Behavioral tests
    */
-  test('MenuItemTemplate press', () => {
-    let pressCount = 0
-    const minimal = render(
+  test('вызывает onPress при нажатии', () => {
+    const onPress = jest.fn()
+    const { getByRole } = render(
+      <MenuItemTemplate title='Menu item' onPress={onPress} />
+    )
+
+    fireEvent.press(getByRole('button', { name: 'Menu item' }))
+
+    expect(onPress).toHaveBeenCalledOnce()
+  })
+
+  test('отражает selected в доступном состоянии', () => {
+    const { getByRole, rerender } = render(
       <MenuItemTemplate
+        aria-selected
+        accessibilityState={{ selected: true }}
+        selected={false}
         title='Menu item'
-        onPress={() => {
-          pressCount += 1
-        }}
       />
     )
 
-    const button = minimal.getByTestId('menuItemButton')
-    fireEvent.press(button)
+    expect(getByRole('button', { selected: false })).toBeOnTheScreen()
 
-    expect(pressCount).toBe(1)
+    rerender(
+      <MenuItemTemplate
+        selected
+        accessibilityState={{ selected: false }}
+        aria-selected={false}
+        title='Menu item'
+      />
+    )
+
+    expect(getByRole('button', { selected: true })).toBeOnTheScreen()
   })
 })
