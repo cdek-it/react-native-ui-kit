@@ -138,6 +138,37 @@ describe('Tooltip — размещение', () => {
     ).toStrictEqual({ x: 12, y: 40, width: 336, height: 680 })
   })
 
+  test.each([
+    {
+      name: 'полноэкранный слой',
+      viewport: { x: 0, y: 0, width: 360, height: 740 },
+      expected: { x: 4, y: 40, width: 352, height: 456 },
+    },
+    {
+      name: 'слой ниже заголовка',
+      viewport: { x: 0, y: 100, width: 360, height: 640 },
+      expected: { x: 4, y: 4, width: 352, height: 392 },
+    },
+    {
+      name: 'окно уже уменьшено клавиатурой',
+      viewport: { x: 0, y: 0, width: 360, height: 500 },
+      expected: { x: 4, y: 40, width: 352, height: 456 },
+    },
+  ])(
+    'ограничивает область над клавиатурой: $name',
+    ({ viewport, expected }) => {
+      expect(
+        getTooltipBounds({
+          viewport,
+          window: { width: 360, height: 740 },
+          insets: { top: 36, bottom: 16, left: 0, right: 0 },
+          gutter: 4,
+          keyboard: { screenX: 0, screenY: 500, width: 360, height: 240 },
+        })
+      ).toStrictEqual(expected)
+    }
+  )
+
   test('отличает видимый якорь от полностью скрытого за краем', () => {
     expect(rectsIntersect(bounds, anchor)).toBeTrue()
     expect(rectsIntersect(bounds, { ...anchor, y: 800 })).toBeFalse()

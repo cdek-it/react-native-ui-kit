@@ -14,9 +14,10 @@ import { StyleSheet, useUnistyles } from 'react-native-unistyles'
 import { TooltipContext } from './internal/TooltipContext'
 import { measureInViewport } from './internal/measureInViewport'
 import { getTooltipBounds, type Rect } from './internal/placement'
+import { useKeyboardFrame } from './internal/useKeyboardFrame'
 
 /**
- * Слой подсказок поверх содержимого экрана.
+ * Слой подсказок поверх содержимого экрана, сохраняющий фокус и клавиатуру.
  * Размещайте вокруг экрана вне ScrollView. В native Modal нужен свой провайдер,
  * Android Back обрабатывается через onRequestClose самой модалки.
  */
@@ -28,6 +29,7 @@ export const TooltipProvider = ({ children }: PropsWithChildren) => {
   const { theme, rt } = useUnistyles()
   const { top, bottom, left, right } = rt.insets
   const gutter = theme.components.tooltip.root.gutter
+  const keyboard = useKeyboardFrame()
 
   const measure = useCallback(() => {
     const root = rootRef.current
@@ -66,8 +68,9 @@ export const TooltipProvider = ({ children }: PropsWithChildren) => {
         window: { width, height },
         insets: { top, bottom, left, right },
         gutter,
+        keyboard,
       }),
-    [viewport, width, height, top, bottom, left, right, gutter]
+    [viewport, width, height, top, bottom, left, right, gutter, keyboard]
   )
   const host = useMemo(
     () => ({ viewport, bounds, update, remove }),

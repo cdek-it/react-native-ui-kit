@@ -13,6 +13,7 @@ export interface TooltipProps extends Pick<ViewProps, 'testID'> {
   isVisible: boolean
   /**
    * Запрос закрытия при касании вне подсказки (включая начало свайпа) или Android Back.
+   * На Android открытая клавиатура обрабатывает первое нажатие Back сама.
    * Обновите isVisible снаружи.
    */
   onClose: () => void
