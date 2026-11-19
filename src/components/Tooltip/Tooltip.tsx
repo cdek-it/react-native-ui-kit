@@ -5,6 +5,7 @@ import { TooltipPortal, useTooltipHost } from './internal/TooltipContext'
 import { TooltipOverlay } from './internal/TooltipOverlay'
 import { measureInViewport } from './internal/measureInViewport'
 import { rectsIntersect, type Rect } from './internal/placement'
+import { useScreenReaderEnabled } from './internal/useScreenReaderEnabled'
 import type { TooltipProps } from './types'
 
 const VisibleTooltip = ({
@@ -14,6 +15,7 @@ const VisibleTooltip = ({
   onClose,
   testID,
 }: Omit<TooltipProps, 'isVisible'>) => {
+  const screenReaderEnabled = useScreenReaderEnabled()
   const { fontScale } = useWindowDimensions()
   const { viewport, bounds } = useTooltipHost()
   const [measurement, setMeasurement] = useState<{
@@ -22,6 +24,14 @@ const VisibleTooltip = ({
   }>({ pending: true })
 
   useLayoutEffect(() => {
+    if (screenReaderEnabled !== false) {
+      setMeasurement((previous) =>
+        previous.anchor ? { pending: true } : previous
+      )
+
+      return
+    }
+
     let active = true
     const node = anchorRef.current
 
@@ -43,11 +53,20 @@ const VisibleTooltip = ({
     return () => {
       active = false
     }
-  }, [anchorRef, text, position, viewport, bounds, fontScale])
+  }, [
+    anchorRef,
+    text,
+    position,
+    viewport,
+    bounds,
+    fontScale,
+    screenReaderEnabled,
+  ])
 
   const { anchor, pending } = measurement
 
   if (
+    screenReaderEnabled !== false ||
     !anchor ||
     !viewport ||
     !bounds ||
@@ -78,6 +97,14 @@ const VisibleTooltip = ({
   )
 }
 
-/** Управляемая текстовая подсказка возле native View. Требует TooltipProvider. */
+/**
+ * Управляемая текстовая подсказка возле native View.
+ *
+ * Потребитель задаёт доступное имя и при необходимости accessibilityHint на якоре.
+ * При включённом VoiceOver/TalkBack overlay подавляется без вызова onClose.
+ * Требует TooltipProvider вокруг экрана, сохраняет фокус и открытую клавиатуру.
+ * Закрывайте подсказку при уходе с экрана и программном перемещении якоря.
+ * @see https://www.figma.com/design/Q1BWgZ7zoV5UzlBOnjW0cM/UI-Kit--DS--v2.1?node-id=26170-69166
+ */
 export const Tooltip = ({ isVisible, ...props }: TooltipProps) =>
   isVisible ? <VisibleTooltip {...props} /> : null

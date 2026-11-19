@@ -5,11 +5,11 @@ import type { View, ViewProps } from 'react-native'
 export type TooltipPosition = 'top' | 'bottom' | 'left' | 'right'
 
 export interface TooltipProps extends Pick<ViewProps, 'testID'> {
-  /** Текст визуальной подсказки. */
+  /** Текст визуальной подсказки. Доступное имя и hint задаются на якоре. */
   text: string
   /** Ссылка на native View якоря. При отдельной обёртке задайте collapsable={false}. */
   anchorRef: RefObject<View | null>
-  /** Управляет показом. */
+  /** Управляет показом. При включённом VoiceOver/TalkBack overlay не отображается. */
   isVisible: boolean
   /**
    * Запрос закрытия при касании вне подсказки (включая начало свайпа) или Android Back.
