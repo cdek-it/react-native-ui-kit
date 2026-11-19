@@ -1,5 +1,6 @@
 import { act, fireEvent, render, screen } from '@testing-library/react-native'
 import {
+  AccessibilityInfo,
   BackHandler,
   Dimensions,
   Keyboard,
@@ -59,6 +60,9 @@ describe('Tooltip', () => {
     jest
       .spyOn(Dimensions, 'get')
       .mockReturnValue({ width: 360, height: 740, scale: 1, fontScale: 1 })
+    jest
+      .spyOn(AccessibilityInfo, 'isScreenReaderEnabled')
+      .mockResolvedValue(false)
     jest.spyOn(View.prototype, 'measure').mockImplementation(measureViewport)
     jest.spyOn(Keyboard, 'metrics').mockReturnValue(undefined)
   })
@@ -143,10 +147,22 @@ describe('Tooltip', () => {
     expect(screen.queryByTestId('TooltipViewport')).not.toBeOnTheScreen()
   })
 
-  test('не создаёт overlay, пока закрыт', () => {
+  test('не создаёт overlay и не обращается к читалке, пока закрыт', async () => {
+    const query = jest
+      .mocked(AccessibilityInfo.isScreenReaderEnabled)
+      .mockClear()
+    const subscribe = jest
+      .spyOn(AccessibilityInfo, 'addEventListener')
+      .mockClear()
     setup({ isVisible: false })
+    await act(() => Promise.resolve())
 
     expect(screen.queryByTestId('TooltipViewport')).not.toBeOnTheScreen()
+    expect(query).not.toHaveBeenCalled()
+    expect(subscribe).not.toHaveBeenCalledWith(
+      'screenReaderChanged',
+      expect.any(Function)
+    )
   })
 
   test('обновляет текст после повторного измерения', async () => {
