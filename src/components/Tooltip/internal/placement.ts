@@ -1,3 +1,5 @@
+import type { KeyboardMetrics } from 'react-native'
+
 import type { TooltipPosition } from '../types'
 
 export interface Rect {
@@ -44,11 +46,13 @@ export const getTooltipBounds = ({
   window,
   insets,
   gutter,
+  keyboard,
 }: {
   viewport: Rect
   window: Size
   insets: Record<'top' | 'bottom' | 'left' | 'right', number>
   gutter: number
+  keyboard?: KeyboardMetrics
 }): Rect => {
   const x = Math.max(0, insets.left - viewport.x) + gutter
   const y = Math.max(0, insets.top - viewport.y) + gutter
@@ -56,9 +60,15 @@ export const getTooltipBounds = ({
     viewport.width,
     window.width - insets.right - viewport.x
   )
+  const keyboardOverlaps =
+    keyboard &&
+    keyboard.height > 0 &&
+    keyboard.screenX < viewport.x + viewport.width &&
+    keyboard.screenX + keyboard.width > viewport.x
   const bottom = Math.min(
     viewport.height,
-    window.height - insets.bottom - viewport.y
+    window.height - insets.bottom - viewport.y,
+    keyboardOverlaps ? keyboard.screenY - viewport.y : Infinity
   )
 
   return {

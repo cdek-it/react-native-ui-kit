@@ -98,10 +98,11 @@ export const TooltipBubble = ({
           <ScrollView
             bounces={false}
             contentContainerStyle={styles.scrollContent}
+            keyboardShouldPersistTaps='always'
             showsVerticalScrollIndicator={false}
             style={styles.scroll}
           >
-            <View>
+            <View onStartShouldSetResponder={() => true}>
               <Text accessible={false} style={styles.text}>
                 {text}
               </Text>

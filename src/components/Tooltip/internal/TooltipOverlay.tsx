@@ -131,7 +131,12 @@ export const TooltipOverlay = ({ onClose, ...props }: TooltipOverlayProps) => {
   }, [onClose])
 
   return (
-    <View style={styles.backdrop} testID='TooltipViewport'>
+    <View
+      style={styles.backdrop}
+      testID='TooltipViewport'
+      // Касания подсказки не должны запускать сброс фокуса у предков экрана.
+      onStartShouldSetResponder={() => true}
+    >
       <Pressable
         accessible={false}
         style={styles.backdrop}

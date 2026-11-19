@@ -1,5 +1,12 @@
 import { act, fireEvent, render, screen } from '@testing-library/react-native'
-import { BackHandler, Dimensions, Modal, View } from 'react-native'
+import {
+  BackHandler,
+  Dimensions,
+  Keyboard,
+  Modal,
+  View,
+  type KeyboardEvent,
+} from 'react-native'
 
 import { Tooltip, TooltipProvider } from '..'
 import type { TooltipProps } from '../types'
@@ -53,6 +60,7 @@ describe('Tooltip', () => {
       .spyOn(Dimensions, 'get')
       .mockReturnValue({ width: 360, height: 740, scale: 1, fontScale: 1 })
     jest.spyOn(View.prototype, 'measure').mockImplementation(measureViewport)
+    jest.spyOn(Keyboard, 'metrics').mockReturnValue(undefined)
   })
 
   afterEach(() => jest.restoreAllMocks())
@@ -153,6 +161,48 @@ describe('Tooltip', () => {
 
     expect(screen.getByText('Новый текст')).toBeVisible()
     expect(screen.queryByText('Подсказка')).not.toBeOnTheScreen()
+  })
+
+  test('учитывает уже открытую клавиатуру и её закрытие без изменения isVisible', async () => {
+    const frame = { screenX: 0, screenY: 500, width: 360, height: 240 }
+    const event: KeyboardEvent = {
+      duration: 0,
+      easing: 'keyboard',
+      startCoordinates: frame,
+      endCoordinates: frame,
+    }
+    jest.mocked(Keyboard.metrics).mockReturnValue(frame)
+    const subscribe = jest.spyOn(Keyboard, 'addListener')
+    const anchor: Pick<View, 'measure'> = {
+      measure: (callback) => callback(0, 0, 60, 40, 150, 600),
+    }
+    const { props, unmount } = setup({ anchorRef: { current: anchor as View } })
+    await act(() => Promise.resolve())
+
+    expect(screen.queryByTestId('TooltipViewport')).not.toBeOnTheScreen()
+
+    const hide = subscribe.mock.calls.find(
+      ([event]) => event === 'keyboardDidHide'
+    )?.[1]
+    act(() => hide?.(event))
+    await show()
+
+    expect(screen.getByText('Подсказка')).toBeVisible()
+
+    const showKeyboard = subscribe.mock.calls.find(
+      ([event]) => event === 'keyboardDidShow'
+    )?.[1]
+    act(() => showKeyboard?.(event))
+
+    expect(screen.queryByTestId('TooltipViewport')).not.toBeOnTheScreen()
+    expect(props.onClose).not.toHaveBeenCalled()
+
+    const removals = subscribe.mock.results.map(({ value }) =>
+      jest.spyOn(value, 'remove')
+    )
+    unmount()
+
+    for (const remove of removals) expect(remove).toHaveBeenCalledOnce()
   })
 
   test('размещает подсказку относительно смещённого провайдера в координатах viewport', async () => {
