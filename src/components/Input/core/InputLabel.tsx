@@ -99,7 +99,11 @@ export const InputLabel = ({
         </>
       )}
       {labelInfo ? (
-        <View style={[styles.labelInfo, floating && styles.floatLabelInfo]}>
+        <View
+          collapsable={false}
+          ref={labelInfo.iconRef}
+          style={[styles.labelInfo, floating && styles.floatLabelInfo]}
+        >
           <SvgUniversal
             accessible={false}
             source={IconInfoCircle}

@@ -22,3 +22,5 @@ export * from './Tabs'
 export * from './List/Base'
 export * from './Accordion'
 export * from './Dialog'
+
+export * from './Tooltip'

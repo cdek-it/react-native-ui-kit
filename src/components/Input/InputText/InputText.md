@@ -36,7 +36,8 @@ export function InputFields({ showInfo }: { showInfo: () => void }) {
 - `floatLabel` — подпись внутри поля, поднимающаяся при фокусе или наличии
   текста.
 - `labelInfo` — делает постоянный `label` кнопкой с иконкой ⓘ и обработчиком
-  `labelInfo.onPress`. С `floatLabel` недоступен.
+  `labelInfo.onPress`. `labelInfo.iconRef` даёт ссылку на иконку, чтобы
+  привязать к ней Tooltip. С `floatLabel` недоступен.
 
 `label` и `floatLabel` взаимоисключающие и необязательные. Без них место под
 подпись не резервируется. С `floatLabel` отдельный `placeholder` появляется при

@@ -1,19 +1,32 @@
 import type { Preview } from '@storybook/react'
 import { StyleSheet } from 'react-native-unistyles'
 import { View } from 'react-native'
+import { TooltipProvider } from '../src/components/Tooltip'
 
 import { StorybookToolbar } from './StorybookToolbar'
 
 const preview: Preview = {
   decorators: [
-    (Story) => (
-      <>
-        <StorybookToolbar />
-        <View style={styles.container}>
-          <Story />
-        </View>
-      </>
-    ),
+    (Story, context) => {
+      const componentName = context.title.substring(
+        context.title.lastIndexOf('/') + 1
+      )
+      const title =
+        componentName === context.name
+          ? componentName
+          : `${componentName} · ${context.name}`
+
+      return (
+        <>
+          <StorybookToolbar title={title} />
+          <TooltipProvider>
+            <View style={styles.container}>
+              <Story />
+            </View>
+          </TooltipProvider>
+        </>
+      )
+    },
   ],
   parameters: {
     options: {
