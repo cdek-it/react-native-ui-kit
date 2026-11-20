@@ -1,14 +1,9 @@
 import { ScrollView, Text, View, type LayoutChangeEvent } from 'react-native'
-import { SvgXml } from 'react-native-svg'
 import { StyleSheet, useUnistyles } from 'react-native-unistyles'
 
 import type { TooltipPosition } from '../types'
 
-import arrowAsset from './assets/arrow.json'
-
-// Размеры исходного SVG из Figma, без масштабирования при повороте.
-export const ARROW_WIDTH = arrowAsset.width
-export const ARROW_DEPTH = arrowAsset.height
+import { ARROW_DEPTH, ARROW_WIDTH, TooltipArrow } from './TooltipArrow'
 
 interface TooltipBubbleProps {
   readonly text: string
@@ -72,12 +67,9 @@ export const TooltipBubble = ({
             : { marginTop: arrowOffset },
       ]}
     >
-      <SvgXml
+      <TooltipArrow
         color={theme.components.tooltip.colorScheme.root.background}
-        height={ARROW_DEPTH}
         style={{ transform: [{ rotate: rotation }] }}
-        width={ARROW_WIDTH}
-        xml={arrowAsset.xml}
       />
     </View>
   )

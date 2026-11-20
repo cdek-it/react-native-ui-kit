@@ -4,7 +4,8 @@ import { StyleSheet, useUnistyles } from 'react-native-unistyles'
 
 import type { TooltipProps } from '../types'
 
-import { ARROW_DEPTH, ARROW_WIDTH, TooltipBubble } from './TooltipBubble'
+import { ARROW_DEPTH, ARROW_WIDTH } from './TooltipArrow'
+import { TooltipBubble } from './TooltipBubble'
 import {
   getTooltipCoordinates,
   getTooltipPlacement,
