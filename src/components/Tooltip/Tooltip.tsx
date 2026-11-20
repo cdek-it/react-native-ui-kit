@@ -1,11 +1,12 @@
 import { useLayoutEffect, useState } from 'react'
 import { useWindowDimensions } from 'react-native'
 
+import { useScreenReaderEnabled } from '../../hooks/useScreenReaderEnabled'
+
 import { TooltipPortal, useTooltipHost } from './internal/TooltipContext'
 import { TooltipOverlay } from './internal/TooltipOverlay'
 import { measureInViewport } from './internal/measureInViewport'
 import { rectsIntersect, type Rect } from './internal/placement'
-import { useScreenReaderEnabled } from './internal/useScreenReaderEnabled'
 import type { TooltipProps } from './types'
 
 const VisibleTooltip = ({
