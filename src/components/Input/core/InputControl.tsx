@@ -26,6 +26,7 @@ type InputControlProps = Pick<
   | 'required'
   | 'disabled'
   | 'clearable'
+  | 'clearButtonAccessibilityLabel'
   | 'inputStyle'
   | 'renderTextInput'
 > & {
@@ -74,6 +75,7 @@ export const InputControl = ({
   required,
   disabled,
   clearable,
+  clearButtonAccessibilityLabel,
   inputStyle,
   renderTextInput,
   controller,
@@ -158,7 +160,9 @@ export const InputControl = ({
         <InputTrailingContent variant={variant}>
           {isClearVisible ? (
             <InputIconButton
-              accessibilityLabel={inputStrings.clearButton}
+              accessibilityLabel={
+                clearButtonAccessibilityLabel || inputStrings.clearButton
+              }
               getIconColor={({ components }) => components.inputtext.root.color}
               icon={IconX}
               testID={makeTestId('ClearButton')}

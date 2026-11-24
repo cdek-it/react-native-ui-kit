@@ -111,32 +111,43 @@ describe('Tag', () => {
     expect(screen.getByTestId(TagTestId.root)).toHaveProp('accessible', false)
   })
 
-  test('использует accessibilityLabel как единое имя и скрывает дочерний текст', () => {
-    const { rerender } = render(
-      <Tag
-        Icon={IconCheck}
-        accessibilityLabel='Статус заказа: доставлен'
-        text='Доставлен'
-      />
-    )
+  test.each([
+    {
+      name: 'accessibilityLabel',
+      props: { accessibilityLabel: 'Статус заказа: доставлен' },
+    },
+    { name: 'aria-label', props: { 'aria-label': 'Статус заказа: доставлен' } },
+  ])(
+    'использует $name как единое имя и скрывает дочерний текст',
+    ({ props }) => {
+      const { rerender } = render(
+        <Tag Icon={IconCheck} {...props} text='Доставлен' />
+      )
 
-    expect(screen.getAllByRole('text')).toHaveLength(1)
-    expect(screen.getByRole('text', { name: 'Статус заказа: доставлен' })).toBe(
-      screen.getByTestId(TagTestId.root)
-    )
-    expect(screen.queryByRole('text', { name: 'Доставлен' })).toBeNull()
-    expect(
-      screen.getByText('Доставлен', { includeHiddenElements: true })
-    ).toBeOnTheScreen()
+      expect(screen.getAllByRole('text')).toHaveLength(1)
+      expect(
+        screen.getByRole('text', { name: 'Статус заказа: доставлен' })
+      ).toBe(screen.getByTestId(TagTestId.root))
+      expect(screen.queryByRole('text', { name: 'Доставлен' })).toBeNull()
+      expect(
+        screen.getByText('Доставлен', { includeHiddenElements: true })
+      ).toBeOnTheScreen()
 
-    rerender(<Tag Icon={IconCheck} text='Доставлен' />)
+      rerender(<Tag {...props} accessible={false} text='Доставлен' />)
 
-    expect(screen.getAllByRole('text')).toHaveLength(1)
-    expect(screen.getByRole('text', { name: 'Доставлен' })).toBeOnTheScreen()
-    expect(
-      screen.queryByRole('text', { name: 'Статус заказа: доставлен' })
-    ).toBeNull()
-  })
+      expect(
+        screen.queryByRole('text', { name: 'Статус заказа: доставлен' })
+      ).toBeNull()
+
+      rerender(<Tag Icon={IconCheck} text='Доставлен' />)
+
+      expect(screen.getAllByRole('text')).toHaveLength(1)
+      expect(screen.getByRole('text', { name: 'Доставлен' })).toBeOnTheScreen()
+      expect(
+        screen.queryByRole('text', { name: 'Статус заказа: доставлен' })
+      ).toBeNull()
+    }
+  )
 
   test('скрывает декоративную иконку от accessibility', () => {
     render(<Tag text='Доставлен' />)

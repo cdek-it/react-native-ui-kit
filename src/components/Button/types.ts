@@ -44,7 +44,7 @@ export interface BaseButtonProps<
    */
   rounded?: boolean
   /**
-   * Состояние загрузки кнопки
+   * Состояние загрузки кнопки. Определяет busy независимо от внешних accessibility-пропсов.
    * @default false
    */
   loading?: boolean

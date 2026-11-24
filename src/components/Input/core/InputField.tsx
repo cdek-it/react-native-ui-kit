@@ -77,6 +77,7 @@ export const InputField = ({
   state = 'default',
   disabled = false,
   clearable = true,
+  clearButtonAccessibilityLabel,
   ref,
   style,
   inputStyle,
@@ -141,6 +142,7 @@ export const InputField = ({
             {addonContent(leftAddon)}
           </InputGroupContext.Provider>
           <InputControl
+            clearButtonAccessibilityLabel={clearButtonAccessibilityLabel}
             clearable={clearable}
             controller={controller}
             disabled={disabled}

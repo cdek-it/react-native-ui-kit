@@ -11,6 +11,43 @@ const components = [
 describe('Input: доступное имя и состояние', () => {
   test.each(
     components.flatMap(({ name, Component }) =>
+      [
+        {
+          name: `${name}: пользовательское имя очистки`,
+          clearButtonAccessibilityLabel: 'Clear input',
+          expectedLabel: 'Clear input',
+        },
+        {
+          name: `${name}: без переопределения`,
+          clearButtonAccessibilityLabel: undefined,
+          expectedLabel: 'Очистить поле',
+        },
+        {
+          name: `${name}: пустое переопределение`,
+          clearButtonAccessibilityLabel: '',
+          expectedLabel: 'Очистить поле',
+        },
+      ].map((props) => ({ ...props, Component }))
+    )
+  )(
+    'задаёт имя кнопки отдельно от имени поля в $name',
+    ({ Component, clearButtonAccessibilityLabel, expectedLabel }) => {
+      const { getByRole, getByLabelText } = render(
+        <Component
+          clearable
+          clearButtonAccessibilityLabel={clearButtonAccessibilityLabel}
+          label='Email'
+          value='name@example.com'
+        />
+      )
+
+      expect(getByRole('button', { name: expectedLabel })).toBeOnTheScreen()
+      expect(getByLabelText('Email')).toHaveDisplayValue('name@example.com')
+    }
+  )
+
+  test.each(
+    components.flatMap(({ name, Component }) =>
       [false, true].map((required) => ({
         name: `${name}: required=${String(required)}`,
         Component,
